@@ -47,6 +47,11 @@ namespace
         {
             QPainter painter {this};
 
+            // Header band so the section title stands out from the rows below it
+            painter.fillRect(rect(), palette().window());
+            painter.setPen(palette().color(QPalette::Mid));
+            painter.drawLine(rect().bottomLeft(), rect().bottomRight());
+
             QStyleOptionViewItem indicatorOption;
             indicatorOption.initFrom(this);
             indicatorOption.rect = style()->subElementRect(QStyle::SE_CheckBoxIndicator, &indicatorOption, this);
@@ -70,7 +75,11 @@ TransferListFiltersWidgetItem::TransferListFiltersWidgetItem(const QString &capt
     QFont font;
     font.setBold(true);
     font.setCapitalization(QFont::AllUppercase);
+    font.setPointSizeF(font.pointSizeF() + 1);
     m_caption->setFont(font);
+    m_caption->setMinimumHeight(m_caption->sizeHint().height() + 6);
+    // Full width even when the section is collapsed, so the header band doesn't shrink to the text
+    m_caption->setSizePolicy(QSizePolicy::Expanding, m_caption->sizePolicy().verticalPolicy());
 
     auto *layout = new QVBoxLayout(this);
     layout->setContentsMargins(0, 2, 0, 0);

@@ -1,0 +1,43 @@
+{
+    "id": "./",
+    "name": "qBittorrent WebUI",
+    "short_name": "qBittorrent",
+    "description": "qBittorrent WebUI",
+    "start_url": "./",
+    "scope": "./",
+    "display": "standalone",
+    "icons": [
+        {
+            "src": "images/qbittorrent-app-192.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "images/qbittorrent-app-512.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        },
+        {
+            "src": "images/qbittorrent-tray.svg",
+            "sizes": "any",
+            "type": "image/svg+xml"
+        }
+    ],
+    "file_handlers": [
+        {
+            "action": "./",
+            "accept": {
+                "application/x-bittorrent": [".torrent"]
+            }
+        }
+    ],
+    "protocol_handlers": [
+        {
+            "protocol": "magnet",
+            "url": "./?magnet=%s"
+        }
+    ],
+    "launch_handler": {
+        "client_mode": "focus-existing"
+    }
+}

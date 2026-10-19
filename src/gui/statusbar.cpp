@@ -33,8 +33,8 @@
 #include <QFrame>
 #include <QHBoxLayout>
 #include <QLabel>
-#include <QPushButton>
 #include <QStyle>
+#include <QToolButton>
 
 #include "base/bittorrent/session.h"
 #include "base/bittorrent/sessionstatus.h"
@@ -73,8 +73,8 @@ StatusBar::StatusBar(QWidget *parent)
     layout->setContentsMargins(0,0,0,0);
 
     container->setLayout(layout);
-    m_connecStatusLblIcon = new QPushButton(this);
-    m_connecStatusLblIcon->setFlat(true);
+    m_connecStatusLblIcon = new QToolButton(this);
+    m_connecStatusLblIcon->setAutoRaise(true);
     m_connecStatusLblIcon->setFocusPolicy(Qt::NoFocus);
     m_connecStatusLblIcon->setCursor(Qt::PointingHandCursor);
     m_connecStatusLblIcon->setIcon(UIThemeManager::instance()->getIcon(u"firewalled"_s));
@@ -82,22 +82,22 @@ StatusBar::StatusBar(QWidget *parent)
         , tr("No direct connections. This may indicate network configuration problems.")));
     connect(m_connecStatusLblIcon, &QAbstractButton::clicked, this, &StatusBar::connectionButtonClicked);
 
-    m_dlSpeedLbl = new QPushButton(this);
+    m_dlSpeedLbl = new QToolButton(this);
     m_dlSpeedLbl->setIcon(UIThemeManager::instance()->getIcon(u"downloading"_s, u"downloading_small"_s));
     connect(m_dlSpeedLbl, &QAbstractButton::clicked, this, &StatusBar::capSpeed);
-    m_dlSpeedLbl->setFlat(true);
+    m_dlSpeedLbl->setAutoRaise(true);
     m_dlSpeedLbl->setFocusPolicy(Qt::NoFocus);
     m_dlSpeedLbl->setCursor(Qt::PointingHandCursor);
-    m_dlSpeedLbl->setStyleSheet(u"text-align:left;"_s);
+    m_dlSpeedLbl->setToolButtonStyle(Qt::ToolButtonTextBesideIcon);
     m_dlSpeedLbl->setMinimumWidth(200);
 
-    m_upSpeedLbl = new QPushButton(this);
+    m_upSpeedLbl = new QToolButton(this);
     m_upSpeedLbl->setIcon(UIThemeManager::instance()->getIcon(u"upload"_s, u"seeding"_s));
     connect(m_upSpeedLbl, &QAbstractButton::clicked, this, &StatusBar::capSpeed);
-    m_upSpeedLbl->setFlat(true);
+    m_upSpeedLbl->setAutoRaise(true);
     m_upSpeedLbl->setFocusPolicy(Qt::NoFocus);
     m_upSpeedLbl->setCursor(Qt::PointingHandCursor);
-    m_upSpeedLbl->setStyleSheet(u"text-align:left;"_s);
+    m_upSpeedLbl->setToolButtonStyle(Qt::ToolButtonTextBesideIcon);
     m_upSpeedLbl->setMinimumWidth(200);
 
     m_freeDiskSpaceLbl = new QLabel(tr("Free space: N/A"));
@@ -112,8 +112,8 @@ StatusBar::StatusBar(QWidget *parent)
     m_DHTLbl->setSizePolicy(QSizePolicy::Maximum, QSizePolicy::Preferred);
     m_DHTSeparator = createSeparator(m_DHTLbl);
 
-    m_altSpeedsBtn = new QPushButton(this);
-    m_altSpeedsBtn->setFlat(true);
+    m_altSpeedsBtn = new QToolButton(this);
+    m_altSpeedsBtn->setAutoRaise(true);
     m_altSpeedsBtn->setFocusPolicy(Qt::NoFocus);
     m_altSpeedsBtn->setCursor(Qt::PointingHandCursor);
     updateAltSpeedsBtn(session->isAltGlobalSpeedLimitEnabled());
@@ -153,7 +153,6 @@ StatusBar::StatusBar(QWidget *parent)
     layout->addWidget(m_upSpeedLbl);
 
     addPermanentWidget(container);
-    setStyleSheet(u"QWidget {margin: 0;}"_s);
     container->adjustSize();
     adjustSize();
     updateFreeDiskSpaceVisibility();

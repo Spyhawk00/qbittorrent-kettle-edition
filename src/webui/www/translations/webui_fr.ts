@@ -590,6 +590,10 @@
         <source>Error:</source>
         <translation>Erreur :</translation>
     </message>
+    <message>
+        <source>More</source>
+        <translation>Plus</translation>
+    </message>
 </context>
 <context>
     <name>MainWindow</name>

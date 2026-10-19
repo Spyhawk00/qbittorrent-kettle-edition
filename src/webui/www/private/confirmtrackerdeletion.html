@@ -51,13 +51,13 @@
     </script>
 </head>
 
-<body>
-    <div style="padding: 10px 10px 0px 10px;">
-        <p id="confirmDeleteTrackerText"></p>
-        <div style="text-align: right;">
-            <input type="button" id="cancelBtn" value="QBT_TR(Cancel)QBT_TR[CONTEXT=MainWindow]">
-            <input type="button" id="confirmBtn" value="QBT_TR(Remove)QBT_TR[CONTEXT=MainWindow]">
-        </div>
+<body class="dialogPage">
+    <div class="dialogPageContent">
+        <p id="confirmDeleteTrackerText" class="dialogMessage"></p>
+    </div>
+    <div class="dialogButtons">
+        <button type="button" id="confirmBtn">QBT_TR(Remove)QBT_TR[CONTEXT=MainWindow]</button>
+        <button type="button" id="cancelBtn">QBT_TR(Cancel)QBT_TR[CONTEXT=MainWindow]</button>
     </div>
 </body>
 

@@ -145,17 +145,20 @@
     </script>
 </head>
 
-<body>
-    <div style="padding-top: 10px; width: 100%; text-align: center; margin: 0 auto; overflow: hidden">
+<body class="dialogPage">
+    <div class="dialogPageContent">
         <div class="slider">
             <div class="update">
                 <label id="limitUpdateLabel" for="limitUpdateValue">QBT_TR(Limit:)QBT_TR[CONTEXT=SpeedLimit]</label>
-                <input type="text" id="limitUpdateValue" size="6" placeholder="∞" style="text-align: center;">
+                <input type="text" id="limitUpdateValue" size="6" placeholder="∞" class="dialogNumber">
                 <span id="limitUnit">QBT_TR(KiB/s)QBT_TR[CONTEXT=SpeedLimit]</span>
             </div>
-            <input type="range" id="limitSliderInput" min="0" value="0" style="width: 100%;" aria-label="QBT_TR(Speed limit)QBT_TR[CONTEXT=SpeedLimit]">
+            <input type="range" id="limitSliderInput" min="0" value="0" aria-label="QBT_TR(Speed limit)QBT_TR[CONTEXT=SpeedLimit]">
         </div>
-        <input type="button" id="applyButton" value="QBT_TR(Apply)QBT_TR[CONTEXT=HttpServer]">
+    </div>
+    <div class="dialogButtons">
+        <button type="button" id="applyButton">QBT_TR(Apply)QBT_TR[CONTEXT=HttpServer]</button>
+        <button type="button" onclick="parent.qBittorrent.Client.closeFrameWindow(window);">QBT_TR(Cancel)QBT_TR[CONTEXT=MainWindow]</button>
     </div>
 </body>
 

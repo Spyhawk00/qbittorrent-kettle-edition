@@ -590,6 +590,10 @@
         <source>Error:</source>
         <translation>Hiba:</translation>
     </message>
+    <message>
+        <source>More</source>
+        <translation>Továbbiak</translation>
+    </message>
 </context>
 <context>
     <name>MainWindow</name>

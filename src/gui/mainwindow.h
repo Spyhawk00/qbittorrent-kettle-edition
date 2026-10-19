@@ -61,6 +61,7 @@ class StatusBar;
 class TorrentCreatorDialog;
 class TransferListFiltersWidget;
 class TransferListWidget;
+class UpdateInstaller;
 
 #ifdef Q_OS_MACOS
 namespace MacUtils
@@ -260,6 +261,7 @@ private:
     void handleUpdateCheckFinished(ProgramUpdater *updater, bool invokedByUser);
 
     QTimer *m_programUpdateTimer = nullptr;
+    UpdateInstaller *m_updateInstaller = nullptr;
 #endif
 #ifdef Q_OS_MACOS
     std::unique_ptr<MacUtils::Badger> m_badger;

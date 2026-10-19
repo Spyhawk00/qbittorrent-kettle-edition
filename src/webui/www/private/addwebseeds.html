@@ -42,13 +42,14 @@
     </script>
 </head>
 
-<body>
-    <div style="text-align: center;">
-        <br>
+<body class="dialogPage">
+    <div class="dialogPageContent dialogPageGrow">
         <label for="urls">QBT_TR(List of web seeds to add (one per line):)QBT_TR[CONTEXT=HttpServer]</label>
-        <textarea name="list" id="urls" rows="10" cols="1"></textarea>
-        <br>
-        <input type="button" value="QBT_TR(Add)QBT_TR[CONTEXT=HttpServer]" id="addWebSeedsButton">
+        <textarea name="list" id="urls"></textarea>
+    </div>
+    <div class="dialogButtons">
+        <button type="button" id="addWebSeedsButton">QBT_TR(Add)QBT_TR[CONTEXT=HttpServer]</button>
+        <button type="button" onclick="parent.qBittorrent.Client.closeFrameWindow(window);">QBT_TR(Cancel)QBT_TR[CONTEXT=MainWindow]</button>
     </div>
 </body>
 

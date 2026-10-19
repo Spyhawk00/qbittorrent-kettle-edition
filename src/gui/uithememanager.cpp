@@ -44,6 +44,14 @@
 #include "base/preferences.h"
 #include "uithemecommon.h"
 
+#ifdef Q_OS_WIN
+#include <QEvent>
+#include <QWidget>
+
+#include <windows.h>
+#include <dwmapi.h>
+#endif
+
 namespace
 {
     bool isDarkTheme()
@@ -52,6 +60,24 @@ namespace
         const QColor &color = palette.color(QPalette::Active, QPalette::Base);
         return (color.lightness() < 127);
     }
+
+#ifdef Q_OS_WIN
+    // DWMWA_CAPTION_COLOR and DWMWA_TEXT_COLOR (Windows 11 and later)
+    const DWORD DWM_CAPTION_COLOR = 35;
+    const DWORD DWM_TEXT_COLOR = 36;
+
+    QColor mixColors(const QColor &base, const QColor &top, const int topPercent)
+    {
+        return QColor(((base.red() * (100 - topPercent)) + (top.red() * topPercent)) / 100
+            , ((base.green() * (100 - topPercent)) + (top.green() * topPercent)) / 100
+            , ((base.blue() * (100 - topPercent)) + (top.blue() * topPercent)) / 100);
+    }
+
+    COLORREF toColorRef(const QColor &color)
+    {
+        return RGB(color.red(), color.green(), color.blue());
+    }
+#endif
 
     Path resolveThemePath(const Path &themePath)
     {
@@ -94,6 +120,11 @@ UIThemeManager::UIThemeManager()
 
     // NOTE: Qt::QueuedConnection can be omitted as soon as support for Qt 6.5 is dropped
     connect(QApplication::styleHints(), &QStyleHints::colorSchemeChanged, this, &UIThemeManager::onColorSchemeChanged, Qt::QueuedConnection);
+
+#ifdef Q_OS_WIN
+    // give every window a title bar that stands out from the window body
+    qApp->installEventFilter(this);
+#endif
 
     if (m_useCustomTheme)
     {
@@ -170,7 +201,56 @@ void UIThemeManager::onColorSchemeChanged()
 
     // workaround to refresh styled controls once color scheme is changed
     QApplication::setStyle(QApplication::style()->name());
+
+#ifdef Q_OS_WIN
+    for (QWidget *widget : QApplication::topLevelWidgets())
+        applyTitleBarColor(widget);
+#endif
 }
+
+#ifdef Q_OS_WIN
+bool UIThemeManager::eventFilter(QObject *watched, QEvent *event)
+{
+    if (event->type() == QEvent::Show)
+    {
+        if (auto *widget = qobject_cast<QWidget *>(watched))
+            applyTitleBarColor(widget);
+    }
+
+    return QObject::eventFilter(watched, event);
+}
+
+void UIThemeManager::applyTitleBarColor(QWidget *window) const
+{
+    if (!window->isWindow() || window->testAttribute(Qt::WA_DontShowOnScreen))
+        return;
+
+    // only windows with a regular title bar, not menus, tooltips, splash screens or frameless windows
+    switch (window->windowType())
+    {
+    case Qt::Window:
+    case Qt::Dialog:
+    case Qt::Tool:
+        break;
+    default:
+        return;
+    }
+    if (window->windowFlags().testFlag(Qt::FramelessWindowHint))
+        return;
+
+    // a shade away from the window color: lighter on a dark window, darker on a light one
+    const QPalette palette = window->palette();
+    const QColor captionColor = mixColors(palette.color(QPalette::Window), palette.color(QPalette::WindowText), 10);
+    const QColor textColor = palette.color(QPalette::WindowText);
+
+    // unsupported before Windows 11, then the title bar just keeps the system color
+    const HWND hwnd = reinterpret_cast<HWND>(window->winId());
+    const COLORREF caption = toColorRef(captionColor);
+    const COLORREF text = toColorRef(textColor);
+    ::DwmSetWindowAttribute(hwnd, DWM_CAPTION_COLOR, &caption, sizeof(caption));
+    ::DwmSetWindowAttribute(hwnd, DWM_TEXT_COLOR, &text, sizeof(text));
+}
+#endif
 
 QIcon UIThemeManager::getIcon(const QString &iconId, [[maybe_unused]] const QString &fallback) const
 {

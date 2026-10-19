@@ -43,6 +43,25 @@
       </attribute>
       <layout class="QVBoxLayout" name="tabBanLayout"/>
      </widget>
+     <widget class="QWidget" name="tabWebUIActivity">
+      <attribute name="title">
+       <string>WebUI Activity</string>
+      </attribute>
+      <layout class="QVBoxLayout" name="tabWebUIActivityLayout">
+       <property name="leftMargin">
+        <number>0</number>
+       </property>
+       <property name="topMargin">
+        <number>0</number>
+       </property>
+       <property name="rightMargin">
+        <number>0</number>
+       </property>
+       <property name="bottomMargin">
+        <number>0</number>
+       </property>
+      </layout>
+     </widget>
     </widget>
    </item>
   </layout>

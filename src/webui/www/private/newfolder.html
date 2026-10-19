@@ -61,13 +61,14 @@
     </script>
 </head>
 
-<body>
-    <div style="padding: 10px 10px 0px 10px;">
-        <label for="folderName" style="font-weight: bold;">QBT_TR(Folder name:)QBT_TR[CONTEXT=RSSWidget]</label>
-        <input type="text" id="folderName" style="width: 320px;">
-        <div style="text-align: center; padding-top: 10px;">
-            <input type="button" value="QBT_TR(OK)QBT_TR[CONTEXT=HttpServer]" id="submitButton">
-        </div>
+<body class="dialogPage">
+    <div class="dialogPageContent">
+        <label for="folderName">QBT_TR(Folder name:)QBT_TR[CONTEXT=RSSWidget]</label>
+        <input type="text" id="folderName">
+    </div>
+    <div class="dialogButtons">
+        <button type="button" id="submitButton">QBT_TR(OK)QBT_TR[CONTEXT=HttpServer]</button>
+        <button type="button" onclick="parent.qBittorrent.Client.closeFrameWindow(window);">QBT_TR(Cancel)QBT_TR[CONTEXT=MainWindow]</button>
     </div>
 </body>
 

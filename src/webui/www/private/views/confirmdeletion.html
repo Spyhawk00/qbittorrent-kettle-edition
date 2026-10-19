@@ -7,15 +7,13 @@
         </span>
         <span class="deletionGridItem">
             <input type="checkbox" id="deleteFromDiskCB">
-            <label for="deleteFromDiskCB">
-                <em>QBT_TR(Also remove the content files)QBT_TR[CONTEXT=confirmDeletionDlg]</em>
-            </label>
+            <label for="deleteFromDiskCB">QBT_TR(Also remove the content files)QBT_TR[CONTEXT=confirmDeletionDlg]</label>
         </span>
     </div>
 </div>
-<div>
-    <input type="button" value="QBT_TR(Remove)QBT_TR[CONTEXT=MainWindow]" id="confirmDeletionButton">
-    <input type="button" value="QBT_TR(Cancel)QBT_TR[CONTEXT=MainWindow]" id="cancelDeletionButton">
+<div class="dialogButtons">
+    <button type="button" id="confirmDeletionButton">QBT_TR(Remove)QBT_TR[CONTEXT=MainWindow]</button>
+    <button type="button" id="cancelDeletionButton">QBT_TR(Cancel)QBT_TR[CONTEXT=MainWindow]</button>
 </div>
 
 <script>
@@ -40,6 +38,15 @@
         } = window.MUI.Windows.instances["confirmDeletionPage"].options.data;
         let prefDeleteContentFiles = window.qBittorrent.Cache.preferences.get().delete_torrent_content_files;
         deleteCB.checked = forceDeleteFiles || prefDeleteContentFiles;
+
+        // the signed-in person's role may only remove torrents from the list
+        if (!window.qBittorrent.Cache.account.can("delete_files")) {
+            deleteCB.checked = false;
+            deleteCB.closest(".deletionGridItem").classList.add("roleHidden");
+        }
+        // remembering the choice changes a setting
+        if (!window.qBittorrent.Cache.account.can("delete_files") || !window.qBittorrent.Cache.account.can("settings"))
+            rememberButton.closest(".deletionGridItem").classList.add("roleHidden");
 
         let deleteMessage;
         if (hashes.length === 1) {

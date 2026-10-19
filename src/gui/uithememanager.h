@@ -50,6 +50,9 @@
 #include "colorscheme.h"
 #endif
 
+class QEvent;
+class QWidget;
+
 class UIThemeManager final : public QObject
 {
     Q_OBJECT
@@ -80,6 +83,11 @@ private:
     void applyPalette() const;
     void applyStyleSheet() const;
     void onColorSchemeChanged();
+
+#ifdef Q_OS_WIN
+    bool eventFilter(QObject *watched, QEvent *event) override;
+    void applyTitleBarColor(QWidget *window) const;
+#endif
 
 #ifdef QBT_HAS_COLORSCHEME_OPTION
     void applyColorScheme() const;

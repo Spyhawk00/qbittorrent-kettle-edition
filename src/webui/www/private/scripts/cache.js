@@ -32,6 +32,7 @@ window.qBittorrent ??= {};
 window.qBittorrent.Cache ??= (() => {
     const exports = () => {
         return {
+            account: new AccountCache(),
             buildInfo: new BuildInfoCache(),
             preferences: new PreferencesCache(),
             qbtVersion: new QbtVersionCache()
@@ -49,6 +50,34 @@ window.qBittorrent.Cache ??= (() => {
         }
         Object.freeze(obj);
     };
+
+    // Who is signed in and what their role allows (api/v2/access/me)
+    class AccountCache {
+        #m_store = { username: "", role: "", kind: "none", permissions: [] };
+
+        init() {
+            return fetch("api/v2/access/me", {
+                    method: "GET",
+                    cache: "no-store"
+                })
+                .then(async (response) => {
+                    if (!response.ok)
+                        return;
+
+                    const responseJSON = await response.json();
+                    deepFreeze(responseJSON);
+                    this.#m_store = responseJSON;
+                });
+        }
+
+        get() {
+            return this.#m_store;
+        }
+
+        can(permission) {
+            return this.#m_store.permissions.includes(permission);
+        }
+    }
 
     class BuildInfoCache {
         #m_store = {};

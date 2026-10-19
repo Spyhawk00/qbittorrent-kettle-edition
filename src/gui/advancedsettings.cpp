@@ -28,6 +28,7 @@
 
 #include "advancedsettings.h"
 
+#include <algorithm>
 #include <limits>
 
 #include <QtVersionChecks>
@@ -35,6 +36,7 @@
 #include <QHostAddress>
 #include <QLabel>
 #include <QNetworkInterface>
+#include <QTextDocumentFragment>
 
 #include "base/bittorrent/session.h"
 #include "base/global.h"
@@ -1001,6 +1003,51 @@ void AdvancedSettings::loadAdvancedSettings()
     addRow(I2P_OUTBOUND_LENGTH, (tr("I2P outbound length") + u' ' + makeLink(u"https://www.libtorrent.org/reference-Settings.html#i2p_outbound_length", u"(?)"))
         , &m_spinBoxI2POutboundLength);
 #endif
+}
+
+bool AdvancedSettings::setFilterText(const QString &text)
+{
+    const QStringList words = text.split(u' ', Qt::SkipEmptyParts);
+    bool anyShown = false;
+    int headerRow = -1;  // a section header stays while any of its rows is shown
+    bool sectionShown = false;
+    for (int row = 0; row < rowCount(); ++row)
+    {
+        if ((row == QBITTORRENT_HEADER) || (row == LIBTORRENT_HEADER))
+        {
+            if (headerRow >= 0)
+                setRowHidden(headerRow, !sectionShown);
+            headerRow = row;
+            sectionShown = false;
+            continue;
+        }
+
+        const auto *label = qobject_cast<QLabel *>(cellWidget(row, PROPERTY));
+        const QString name = label ? QTextDocumentFragment::fromHtml(label->text()).toPlainText() : QString();
+        const bool shown = std::all_of(words.cbegin(), words.cend(), [&name](const QString &word)
+        {
+            return name.contains(word, Qt::CaseInsensitive);
+        });
+        setRowHidden(row, !shown);
+        sectionShown = sectionShown || shown;
+        anyShown = anyShown || shown;
+    }
+    if (headerRow >= 0)
+        setRowHidden(headerRow, !sectionShown);
+    return anyShown;
+}
+
+void AdvancedSettings::focusFirstRow()
+{
+    for (int row = 0; row < rowCount(); ++row)
+    {
+        QWidget *widget = cellWidget(row, VALUE);
+        if (isRowHidden(row) || !widget || qobject_cast<QLabel *>(widget))
+            continue;
+        scrollTo(model()->index(row, VALUE));
+        widget->setFocus(Qt::ShortcutFocusReason);
+        return;
+    }
 }
 
 template <typename T>

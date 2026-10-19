@@ -45,3 +45,11 @@
 
 #define QBT_VERSION "v" PROJECT_VERSION
 #define QBT_VERSION_2 PROJECT_VERSION
+
+// Version of Kettle Edition. It is separate from the qBittorrent version above, which has to stay
+// as it is (Sonarr and Radarr check it). publish-update.ps1 changes these three numbers.
+#define QBT_EDITION_VERSION_MAJOR 1
+#define QBT_EDITION_VERSION_MINOR 0
+#define QBT_EDITION_VERSION_PATCH 0
+
+#define QBT_EDITION_VERSION QBT_STRINGIFY(QBT_EDITION_VERSION_MAJOR.QBT_EDITION_VERSION_MINOR.QBT_EDITION_VERSION_PATCH)

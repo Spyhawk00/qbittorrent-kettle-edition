@@ -1,6 +1,10 @@
 add_library(qbt_base STATIC
     # headers
     3rdparty/expected.hpp
+    access/accessstore.h
+    access/activitytext.h
+    access/identity.h
+    access/permissions.h
     addtorrentmanager.h
     algorithm.h
     applicationcomponent.h
@@ -118,6 +122,7 @@ add_library(qbt_base STATIC
     utils/os.h
     utils/password.h
     utils/random.h
+    utils/signature.h
     utils/sslkey.h
     utils/string.h
     utils/thread.h
@@ -125,6 +130,9 @@ add_library(qbt_base STATIC
     version.h
 
     # sources
+    access/accessstore.cpp
+    access/activitytext.cpp
+    access/permissions.cpp
     addtorrentmanager.cpp
     applicationcomponent.cpp
     asyncfilestorage.cpp
@@ -216,6 +224,7 @@ add_library(qbt_base STATIC
     utils/os.cpp
     utils/password.cpp
     utils/random.cpp
+    utils/signature.cpp
     utils/sslkey.cpp
     utils/string.cpp
     utils/thread.cpp

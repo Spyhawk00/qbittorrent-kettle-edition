@@ -43,6 +43,7 @@
 #include "base/path.h"
 #include "base/utils/string.h"
 #include "autoexpandabledialog.h"
+#include "listviewlayout.h"
 #include "raisedmessagebox.h"
 #include "torrentcontentfiltermodel.h"
 #include "torrentcontentitemdelegate.h"
@@ -90,6 +91,7 @@ TorrentContentWidget::TorrentContentWidget(QWidget *parent)
     m_filterModel = new TorrentContentFilterModel(this);
     m_filterModel->setSourceModel(m_model);
     QTreeView::setModel(m_filterModel);
+    new ListViewLayout(this);
 
     auto *itemDelegate = new TorrentContentItemDelegate(this);
     setItemDelegate(itemDelegate);

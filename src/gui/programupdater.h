@@ -29,8 +29,9 @@
 
 #pragma once
 
+#include <QByteArray>
 #include <QObject>
-#include <QUrl>
+#include <QString>
 
 #include "base/utils/version.h"
 
@@ -46,34 +47,49 @@ class ProgramUpdater final : public QObject
 
 public:
     using Version = Utils::Version<4, 3>;
+    // Kettle Edition has its own number: major.minor.patch
+    using EditionVersion = Utils::Version<3>;
 
     using QObject::QObject;
 
     void checkForUpdates();
+    // newest official qBittorrent release, if it is newer than the one this edition is based on
     Version getNewVersion() const;
-    bool updateProgram() const;
+    // newest Kettle Edition release with a valid signature, if it is newer than this one
+    EditionVersion getNewEditionVersion() const;
+    QString getNewEditionLevel() const;
+    QString getNewEditionNotes() const;
+    // content of kettle-update.json of that release (its signature was verified)
+    QByteArray getNewEditionManifest() const;
+    // where a file of the release `tag` is downloaded from
+    static QString editionFileUrl(const QString &tag, const QString &fileName);
+    // true when the test settings (KETTLE_UPDATE_*) are in use: only outside the Program Files folders
+    static bool isTestMode();
 
 signals:
     void updateCheckFinished();
 
 private slots:
-    void rssDownloadFinished(const Net::DownloadResult &result);
+    void editionDownloadFinished(const Net::DownloadResult &result, QByteArray &data);
     void fallbackDownloadFinished(const Net::DownloadResult &result, Version &version);
 
 private:
     enum class RemoteSource
     {
-        Fosshub,
         QbtMain,
         QbtBackup
     };
 
     void handleFinishedRequest();
+    void processEditionManifest();
     RemoteSource getLatestRemoteSource() const;
 
     int m_pendingRequestCount = 0;
-    Version m_fosshubVersion;
     Version m_qbtMainVersion;
     Version m_qbtBackupVersion;
-    QUrl m_updateURL;
+    QByteArray m_manifestData;
+    QByteArray m_manifestSignature;
+    EditionVersion m_newEdition;
+    QString m_newEditionLevel;
+    QString m_newEditionNotes;
 };

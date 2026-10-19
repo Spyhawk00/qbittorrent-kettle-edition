@@ -47,6 +47,10 @@ class AdvancedSettings final : public GUIApplicationComponent<QTableWidget>
 public:
     explicit AdvancedSettings(IGUIApplication *app, QWidget *parent = nullptr);
 
+    // shows only the rows whose setting contains every word of text; returns whether any row is shown
+    bool setFilterText(const QString &text);
+    void focusFirstRow();
+
 public slots:
     void saveAdvancedSettings() const;
 

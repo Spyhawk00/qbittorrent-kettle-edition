@@ -590,6 +590,10 @@
         <source>Error:</source>
         <translation>错误：</translation>
     </message>
+    <message>
+        <source>More</source>
+        <translation>更多</translation>
+    </message>
 </context>
 <context>
     <name>MainWindow</name>

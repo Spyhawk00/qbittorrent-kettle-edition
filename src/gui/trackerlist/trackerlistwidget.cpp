@@ -51,6 +51,7 @@
 #include "base/global.h"
 #include "base/preferences.h"
 #include "gui/autoexpandabledialog.h"
+#include "gui/listviewlayout.h"
 #include "gui/trackersadditiondialog.h"
 #include "gui/uithememanager.h"
 #include "gui/utils/keysequence.h"
@@ -81,6 +82,7 @@ TrackerListWidget::TrackerListWidget(QWidget *parent)
     m_model = new TrackerListModel(BitTorrent::Session::instance(), this);
     auto *sortModel = new TrackerListSortModel(m_model, this);
     QTreeView::setModel(sortModel);
+    new ListViewLayout(this);
 
     setItemDelegate(new TrackerListItemDelegate(this));
 

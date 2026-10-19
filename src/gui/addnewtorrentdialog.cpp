@@ -32,6 +32,10 @@
 #include <algorithm>
 #include <functional>
 
+#ifdef Q_OS_WIN
+#include <windows.h>
+#endif
+
 #include <QtVersionChecks>
 #include <QAction>
 #include <QByteArray>
@@ -48,6 +52,7 @@
 #include <QSignalBlocker>
 #include <QSize>
 #include <QString>
+#include <QTimer>
 #include <QUrl>
 
 #include "base/bittorrent/addtorrentparams.h"
@@ -59,6 +64,7 @@
 #include "base/bittorrent/torrentcontentlayout.h"
 #include "base/bittorrent/torrentdescriptor.h"
 #include "base/global.h"
+#include "base/logger.h"
 #include "base/preferences.h"
 #include "base/settingsstorage.h"
 #include "base/torrentfileguard.h"
@@ -67,6 +73,7 @@
 #include "base/utils/misc.h"
 #include "base/utils/string.h"
 #include "filterpatternformatmenu.h"
+#include "groupboxheadingstyle.h"
 #include "lineedit.h"
 #include "torrenttagsdialog.h"
 
@@ -110,6 +117,28 @@ namespace
         }
         return freeSpace;
     }
+
+#ifdef Q_OS_WIN
+    // Windows keeps a window that asks to come forward behind the window in front unless its program was the last one used.
+    // Sharing the input state of the window in front for a moment lets it come forward anyway (Qt does the same when asked to).
+    void forceToForeground(const HWND window)
+    {
+        const HWND foreground = ::GetForegroundWindow();
+        const DWORD foregroundThread = (foreground ? ::GetWindowThreadProcessId(foreground, nullptr) : 0);
+        const DWORD currentThread = ::GetCurrentThreadId();
+        const bool attached = (foregroundThread != 0) && (foregroundThread != currentThread)
+            && ::AttachThreadInput(currentThread, foregroundThread, TRUE);
+
+        // above the window in front even if Windows still keeps the keyboard there
+        const UINT flags = SWP_NOMOVE | SWP_NOSIZE | SWP_NOOWNERZORDER;
+        ::SetWindowPos(window, HWND_TOPMOST, 0, 0, 0, 0, flags);
+        ::SetWindowPos(window, HWND_NOTOPMOST, 0, 0, 0, 0, flags);
+        ::SetForegroundWindow(window);
+
+        if (attached)
+            ::AttachThreadInput(currentThread, foregroundThread, FALSE);
+    }
+#endif
 
     void setPath(FileSystemPathComboEdit *fsPathEdit, const Path &newPath)
     {
@@ -305,6 +334,8 @@ AddNewTorrentDialog::AddNewTorrentDialog(const BitTorrent::TorrentDescriptor &to
     , m_storeFilterPatternFormat {u"GUI/" SETTINGS_KEY(u"FilterPatternFormat"_s)}
 {
     m_ui->setupUi(this);
+    // sections are headings with a line under them, as in Options
+    GroupBoxHeadingStyle::apply(this);
 
     m_ui->savePath->setMode(FileSystemPathEdit::Mode::DirectorySave);
     m_ui->savePath->setDialogCaption(tr("Choose save path"));
@@ -385,6 +416,9 @@ AddNewTorrentDialog::AddNewTorrentDialog(const BitTorrent::TorrentDescriptor &to
     });
 
     setCurrentContext(std::make_shared<Context>(Context {torrentDescr, inParams}));
+
+    // the controls of "label: control" rows start at the same column
+    GroupBoxHeadingStyle::alignRows(this);
 }
 
 AddNewTorrentDialog::~AddNewTorrentDialog()
@@ -428,6 +462,22 @@ void AddNewTorrentDialog::showEvent(QShowEvent *event)
 
     activateWindow();
     raise();
+
+#ifdef Q_OS_WIN
+    // the window is on screen only after this event, so check then whether Windows let it come forward
+    QTimer::singleShot(0, this, [this]
+    {
+        const auto window = reinterpret_cast<HWND>(winId());
+        if (!isVisible() || (::GetForegroundWindow() == window))
+            return;
+
+        forceToForeground(window);
+        if (::GetForegroundWindow() == window)
+            LogMsg(tr("Windows kept the Add torrent window behind other windows. It was brought to the front."));
+        else
+            LogMsg(tr("Windows kept the keyboard on another window. The Add torrent window was placed above it."), Log::WARNING);
+    });
+#endif
 }
 
 void AddNewTorrentDialog::setCurrentContext(const std::shared_ptr<Context> context)

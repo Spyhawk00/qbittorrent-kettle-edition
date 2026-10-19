@@ -49,6 +49,7 @@
 #include "base/global.h"
 #include "base/utils/fs.h"
 #include "base/utils/misc.h"
+#include "groupboxheadingstyle.h"
 #include "ui_torrentcreatordialog.h"
 #include "utils.h"
 
@@ -120,6 +121,8 @@ TorrentCreatorDialog::TorrentCreatorDialog(QWidget *parent, const Path &defaultP
     , m_storeSource(SETTINGS_KEY(u"Source"_s))
 {
     m_ui->setupUi(this);
+    // sections are headings with a line under them, as in Options
+    GroupBoxHeadingStyle::apply(this);
 
     m_ui->comboPieceSize->addItem(tr("Auto"), 0);
     for (int i = 4; i <= 17; ++i)
@@ -150,6 +153,9 @@ TorrentCreatorDialog::TorrentCreatorDialog(QWidget *parent, const Path &defaultP
 #else
     m_ui->widgetTorrentFormat->hide();
 #endif
+
+    // the controls of "label: control" rows start at the same column
+    GroupBoxHeadingStyle::alignRows(this);
 }
 
 TorrentCreatorDialog::~TorrentCreatorDialog()

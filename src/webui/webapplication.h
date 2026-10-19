@@ -30,6 +30,7 @@
 #pragma once
 
 #include <chrono>
+#include <optional>
 #include <type_traits>
 #include <utility>
 
@@ -45,6 +46,7 @@
 #include <QSet>
 #include <QTranslator>
 
+#include "base/access/identity.h"
 #include "base/applicationcomponent.h"
 #include "base/global.h"
 #include "base/http/irequesthandler.h"
@@ -53,6 +55,7 @@
 #include "base/path.h"
 #include "base/utils/net.h"
 #include "base/utils/version.h"
+#include "api/accesscontroller.h"
 #include "api/isessionmanager.h"
 
 using namespace std::chrono_literals;
@@ -63,6 +66,11 @@ class APIController;
 class AuthController;
 class ClientDataStorage;
 class WebApplication;
+
+namespace Access
+{
+    class AccessStore;
+}
 
 namespace BitTorrent
 {
@@ -84,15 +92,19 @@ public:
     void registerAPIController(const QString &scope, APIController *controller);
     APIController *getAPIController(const QString &scope) const;
 
+    const Access::Identity &identity() const;
+    void setIdentity(const Access::Identity &identity);
+
 private:
     const QString m_sid;
     QElapsedTimer m_timestamp;
     QDeadlineTimer m_cookieRefreshTimer;
     QMap<QString, APIController *> m_apiControllers;
+    Access::Identity m_identity;
 };
 
 class WebApplication final : public ApplicationComponent<QObject>
-        , public Http::IRequestHandler, public ISessionManager
+        , public Http::IRequestHandler, public ISessionManager, public IAccessContext
         , private Http::ResponseBuilder
 {
     Q_OBJECT
@@ -109,6 +121,14 @@ public:
 
     void setUsername(const QString &username);
     void setPasswordHash(const QByteArray &passwordHash);
+
+    // IAccessContext
+    Access::AccessStore *accessStore() const override;
+    Access::Identity currentIdentity() const override;
+    QString currentSessionId() const override;
+    QString currentClientAddress() const override;
+    void logAccessEvent(const QString &category, const QString &endpoint, const QString &summary
+            , const QString &outcome, const QJsonObject &details = {}) override;
 
 private:
     QString clientId() const;
@@ -148,6 +168,16 @@ private:
     // reverse proxy
     QHostAddress resolveClientAddress() const;
 
+    // multi-user access control
+    void restoreStoredSession(const QString &sessionId);
+    void checkAccess(const QString &endpoint, QHash<QString, QString> &params, const QStringList &fileNames);
+    void logRequest(const QString &endpoint, const QHash<QString, QString> &params, const QStringList &fileNames
+            , const QHash<QString, QString> &names, const QString &outcome, const QString &error) const;
+    void logEvent(const Access::Identity &identity, const QString &category, const QString &endpoint
+            , const QString &summary, const QString &outcome, const QJsonObject &details = {}) const;
+    QHash<QString, QString> torrentNames(const QHash<QString, QString> &params) const;
+    ClientDataStorage *clientDataStorage(const Access::Identity &identity);
+
     // Persistent data
     QHash<QString, WebSession *> m_sessions;
 
@@ -164,6 +194,15 @@ private:
     const QHash<std::pair<QString, QString>, QString> m_allowedMethod =
     {
         // <<controller name, action name>, HTTP method>
+        {{u"access"_s, u"changePassword"_s}, Http::METHOD_POST},
+        {{u"access"_s, u"createRole"_s}, Http::METHOD_POST},
+        {{u"access"_s, u"createUser"_s}, Http::METHOD_POST},
+        {{u"access"_s, u"deleteRole"_s}, Http::METHOD_POST},
+        {{u"access"_s, u"deleteUser"_s}, Http::METHOD_POST},
+        {{u"access"_s, u"revokeSession"_s}, Http::METHOD_POST},
+        {{u"access"_s, u"signOutUser"_s}, Http::METHOD_POST},
+        {{u"access"_s, u"updateRole"_s}, Http::METHOD_POST},
+        {{u"access"_s, u"updateUser"_s}, Http::METHOD_POST},
         {{u"app"_s, u"deleteAPIKey"_s}, Http::METHOD_POST},
         {{u"app"_s, u"rotateAPIKey"_s}, Http::METHOD_POST},
         {{u"app"_s, u"sendTestEmail"_s}, Http::METHOD_POST},
@@ -283,6 +322,12 @@ private:
 
     BitTorrent::TorrentCreationManager *m_torrentCreationManager = nullptr;
     ClientDataStorage *m_clientDataStorage = nullptr;
+
+    Access::AccessStore *m_accessStore = nullptr;
+    // Who the next session started by sessionStart() belongs to (set right before starting it).
+    mutable std::optional<Access::Identity> m_pendingIdentity;
+    // The current session ends with this request (a user account signed in with HTTP Basic authentication).
+    bool m_isRequestOnlySession = false;
 
     struct FailedLogin
     {

@@ -53,6 +53,7 @@
 #include "base/utils/string.h"
 #include "gui/autoexpandabledialog.h"
 #include "gui/filterpatternformatmenu.h"
+#include "gui/groupboxheadingstyle.h"
 #include "gui/lineedit.h"
 #include "gui/trackerlist/trackerlistwidget.h"
 #include "gui/uithememanager.h"
@@ -71,6 +72,8 @@ PropertiesWidget::PropertiesWidget(QWidget *parent)
     , m_storeFilterPatternFormat {u"GUI/PropertiesWidget/FilterPatternFormat"_s}
 {
     m_ui->setupUi(this);
+    // sections are headings with a line under them, as in Options
+    GroupBoxHeadingStyle::apply(this);
 #ifndef Q_OS_MACOS
     setAutoFillBackground(true);
 #endif

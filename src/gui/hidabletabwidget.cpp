@@ -28,6 +28,9 @@
 
 #include "hidabletabwidget.h"
 
+#include <QApplication>
+#include <QFont>
+#include <QProxyStyle>
 #include <QTabBar>
 
 #ifdef Q_OS_MACOS
@@ -35,9 +38,40 @@
 #include <QStyle>
 #endif
 
+namespace
+{
+    // The style of the application, with every tab a bit taller and wider
+    class RoomyTabStyle final : public QProxyStyle
+    {
+    public:
+        explicit RoomyTabStyle(QObject *parent)
+            : QProxyStyle(QApplication::style()->name())
+        {
+            setParent(parent);
+        }
+
+        QSize sizeFromContents(const ContentsType type, const QStyleOption *option, const QSize &size, const QWidget *widget) const override
+        {
+            QSize result = QProxyStyle::sizeFromContents(type, option, size, widget);
+            if ((type == CT_TabBarTab) && widget)
+            {
+                result.rheight() += qRound(widget->fontMetrics().height() * 0.5);
+                result.rwidth() += (2 * widget->fontMetrics().averageCharWidth());
+            }
+            return result;
+        }
+    };
+}
+
 HidableTabWidget::HidableTabWidget(QWidget *parent)
     : QTabWidget(parent)
 {
+    // Make the tabs easier to see: bold labels, more room around them
+    QFont tabFont = tabBar()->font();
+    tabFont.setBold(true);
+    tabBar()->setFont(tabFont);
+    tabBar()->setStyle(new RoomyTabStyle(tabBar()));
+
     // Skip single tab in keyboard navigation (no point navigating to it)
     tabBar()->setFocusPolicy(Qt::NoFocus);
 }

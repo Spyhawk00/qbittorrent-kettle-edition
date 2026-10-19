@@ -684,7 +684,7 @@ window.qBittorrent.Search ??= (() => {
                 paddingVertical: 0,
                 paddingHorizontal: 0,
                 width: loadWindowWidth(id, 600),
-                height: loadWindowHeight(id, 360),
+                height: loadWindowHeight(id, 400),
                 onResize: window.qBittorrent.Misc.createDebounceHandler(500, (e) => {
                     saveWindowSize(id);
                 }),

@@ -590,6 +590,10 @@
         <source>Error:</source>
         <translation>Greška:</translation>
     </message>
+    <message>
+        <source>More</source>
+        <translation>Više</translation>
+    </message>
 </context>
 <context>
     <name>MainWindow</name>

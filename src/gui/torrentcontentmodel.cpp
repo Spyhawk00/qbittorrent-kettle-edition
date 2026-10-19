@@ -415,11 +415,8 @@ QVariant TorrentContentModel::data(const QModelIndex &index, const int role) con
         return Qt::Checked;
 
     case Qt::TextAlignmentRole:
-        if ((index.column() == TorrentContentModelItem::COL_SIZE)
-            || (index.column() == TorrentContentModelItem::COL_REMAINING))
-        {
-            return QVariant {Qt::AlignRight | Qt::AlignVCenter};
-        }
+        if (index.column() != TorrentContentModelItem::COL_NAME)
+            return QVariant {Qt::AlignHCenter | Qt::AlignVCenter};
 
         return {};
 
@@ -462,11 +459,8 @@ QVariant TorrentContentModel::headerData(int section, Qt::Orientation orientatio
         return m_rootItem->displayData(section);
 
     case Qt::TextAlignmentRole:
-        if ((section == TorrentContentModelItem::COL_SIZE)
-            || (section == TorrentContentModelItem::COL_REMAINING))
-        {
-            return QVariant {Qt::AlignRight | Qt::AlignVCenter};
-        }
+        if (section != TorrentContentModelItem::COL_NAME)
+            return QVariant {Qt::AlignHCenter | Qt::AlignVCenter};
 
         return {};
 

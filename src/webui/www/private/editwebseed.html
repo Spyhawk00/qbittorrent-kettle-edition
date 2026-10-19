@@ -51,15 +51,14 @@
     </script>
 </head>
 
-<body>
-    <div style="text-align: center;">
-        <br>
+<body class="dialogPage">
+    <div class="dialogPageContent">
         <label for="url">QBT_TR(Web seed URL:)QBT_TR[CONTEXT=PropertiesWidget]</label>
-        <div style="text-align: center; padding-top: 10px;">
-            <input type="text" id="url" style="width: 90%;">
-        </div>
-        <br>
-        <input type="button" value="QBT_TR(Edit)QBT_TR[CONTEXT=HttpServer]" id="editWebSeedButton">
+        <input type="text" id="url">
+    </div>
+    <div class="dialogButtons">
+        <button type="button" id="editWebSeedButton">QBT_TR(Edit)QBT_TR[CONTEXT=HttpServer]</button>
+        <button type="button" onclick="parent.qBittorrent.Client.closeFrameWindow(window);">QBT_TR(Cancel)QBT_TR[CONTEXT=MainWindow]</button>
     </div>
 </body>
 

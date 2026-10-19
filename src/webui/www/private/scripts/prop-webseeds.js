@@ -181,7 +181,7 @@ window.qBittorrent.PropWebseeds ??= (() => {
             paddingVertical: 0,
             paddingHorizontal: 0,
             width: window.qBittorrent.Dialog.limitWidthToViewport(500),
-            height: 150,
+            height: 120,
             onCloseComplete: () => {
                 updateData();
             }

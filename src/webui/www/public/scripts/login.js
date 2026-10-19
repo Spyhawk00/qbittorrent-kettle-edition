@@ -65,4 +65,6 @@ document.addEventListener("DOMContentLoaded", () => {
     const loginForm = document.getElementById("loginform");
     loginForm.method = "POST";
     loginForm.addEventListener("submit", submitLoginForm);
+
+    window.qBittorrent.AppLaunch.keepForSignIn();
 });

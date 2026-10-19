@@ -590,6 +590,10 @@
         <source>Error:</source>
         <translation>Chyba:</translation>
     </message>
+    <message>
+        <source>More</source>
+        <translation>Viac</translation>
+    </message>
 </context>
 <context>
     <name>MainWindow</name>

@@ -37,6 +37,7 @@
 #include "base/global.h"
 #include "base/utils/misc.h"
 #include "base/utils/string.h"
+#include "groupboxheadingstyle.h"
 #include "ui_statsdialog.h"
 #include "utils.h"
 
@@ -48,6 +49,8 @@ StatsDialog::StatsDialog(QWidget *parent)
     , m_storeDialogSize(SETTINGS_KEY(u"Size"_s))
 {
     m_ui->setupUi(this);
+    // sections are headings with a line under them, as in Options
+    GroupBoxHeadingStyle::apply(this);
 
     connect(m_ui->buttonBox, &QDialogButtonBox::accepted, this, &StatsDialog::close);
 

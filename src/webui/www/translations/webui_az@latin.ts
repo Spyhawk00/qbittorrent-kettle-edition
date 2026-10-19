@@ -590,6 +590,10 @@
         <source>Error:</source>
         <translation>Xəta</translation>
     </message>
+    <message>
+        <source>More</source>
+        <translation>Daha çox</translation>
+    </message>
 </context>
 <context>
     <name>MainWindow</name>

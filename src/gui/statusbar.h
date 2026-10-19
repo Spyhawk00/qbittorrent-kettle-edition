@@ -31,7 +31,7 @@
 #include <QStatusBar>
 
 class QLabel;
-class QPushButton;
+class QToolButton;
 
 namespace BitTorrent
 {
@@ -69,14 +69,14 @@ private:
     void updateExternalAddressesVisibility();
     void updateSpeedLabels();
 
-    QPushButton *m_dlSpeedLbl = nullptr;
-    QPushButton *m_upSpeedLbl = nullptr;
+    QToolButton *m_dlSpeedLbl = nullptr;
+    QToolButton *m_upSpeedLbl = nullptr;
     QLabel *m_freeDiskSpaceLbl = nullptr;
     QWidget *m_freeDiskSpaceSeparator = nullptr;
     QLabel *m_lastExternalIPsLbl = nullptr;
     QWidget *m_lastExternalIPsSeparator = nullptr;
     QLabel *m_DHTLbl = nullptr;
     QWidget *m_DHTSeparator = nullptr;
-    QPushButton *m_connecStatusLblIcon = nullptr;
-    QPushButton *m_altSpeedsBtn = nullptr;
+    QToolButton *m_connecStatusLblIcon = nullptr;
+    QToolButton *m_altSpeedsBtn = nullptr;
 };

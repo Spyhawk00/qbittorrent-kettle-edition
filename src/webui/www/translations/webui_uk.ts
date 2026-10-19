@@ -590,6 +590,10 @@
         <source>Error:</source>
         <translation>Помилка:</translation>
     </message>
+    <message>
+        <source>More</source>
+        <translation>Ще</translation>
+    </message>
 </context>
 <context>
     <name>MainWindow</name>

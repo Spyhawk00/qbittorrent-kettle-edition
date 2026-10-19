@@ -52,6 +52,7 @@
 #include "base/utils/string.h"
 #include "gui/addtorrentparamswidget.h"
 #include "gui/autoexpandabledialog.h"
+#include "gui/groupboxheadingstyle.h"
 #include "gui/torrentcategorydialog.h"
 #include "gui/uithememanager.h"
 #include "gui/utils.h"
@@ -72,6 +73,8 @@ AutomatedRssDownloader::AutomatedRssDownloader(QWidget *parent)
     , m_storeRuleDefSplitterState {u"GUI/Qt6/RSSFeedDownloader/RuleDefSplitterState"_s}
 {
     m_ui->setupUi(this);
+    // sections are headings with a line under them, as in Options
+    GroupBoxHeadingStyle::apply(this);
 
     connect(m_ui->buttonBox, &QDialogButtonBox::accepted, this, &QDialog::accept);
     connect(m_ui->buttonBox, &QDialogButtonBox::rejected, this, &QDialog::reject);
@@ -171,6 +174,9 @@ AutomatedRssDownloader::AutomatedRssDownloader(QWidget *parent)
 
     connect(RSS::AutoDownloader::instance(), &RSS::AutoDownloader::processingStateChanged
             , this, &AutomatedRssDownloader::handleProcessingStateChanged);
+
+    // the controls of "label: control" rows start at the same column
+    GroupBoxHeadingStyle::alignRows(this);
 }
 
 AutomatedRssDownloader::~AutomatedRssDownloader()

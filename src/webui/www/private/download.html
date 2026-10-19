@@ -81,20 +81,20 @@
     </script>
 </head>
 
-<body>
+<body class="dialogPage">
     <iframe id="download_frame" name="download_frame" class="invisible" title="" src="about:blank"></iframe>
-    <div style="text-align: center;">
-        <br>
-        <h2 class="vcenter">QBT_TR(Add torrent links)QBT_TR[CONTEXT=DownloadFromURLDialog]</h2>
-        <textarea id="urls" name="urls" rows="10" required style="width: 80%;" aria-label="QBT_TR(URLs)QBT_TR[CONTEXT=DownloadFromURLDialog]"></textarea>
-        <p><i>QBT_TR(One link per line (HTTP links, Magnet links and info-hashes are supported))QBT_TR[CONTEXT=DownloadFromURLDialog]</i></p>
-        <div style="margin-top: 8px;">
+    <div class="dialogPageContent dialogPageGrow">
+        <label for="urls">QBT_TR(Add torrent links)QBT_TR[CONTEXT=DownloadFromURLDialog]</label>
+        <textarea id="urls" name="urls" rows="10" required aria-label="QBT_TR(URLs)QBT_TR[CONTEXT=DownloadFromURLDialog]"></textarea>
+        <p class="dialogNote">QBT_TR(One link per line (HTTP links, Magnet links and info-hashes are supported))QBT_TR[CONTEXT=DownloadFromURLDialog]</p>
+        <div>
             <input type="checkbox" id="separateDialogPerTorrent">
             <label for="separateDialogPerTorrent">QBT_TR(Open separate dialog for each torrent)QBT_TR[CONTEXT=DownloadFromURLDialog]</label>
         </div>
-        <div id="submitbutton" style="margin-top: 12px; text-align: center;">
-            <button type="submit" id="submitButton">QBT_TR(Continue)QBT_TR[CONTEXT=DownloadFromURLDialog]</button>
-        </div>
+    </div>
+    <div class="dialogButtons" id="submitbutton">
+        <button type="submit" id="submitButton">QBT_TR(Continue)QBT_TR[CONTEXT=DownloadFromURLDialog]</button>
+        <button type="button" onclick="parent.qBittorrent.Client.closeFrameWindow(window);">QBT_TR(Cancel)QBT_TR[CONTEXT=MainWindow]</button>
     </div>
 </body>
 

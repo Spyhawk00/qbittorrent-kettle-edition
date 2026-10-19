@@ -43,6 +43,7 @@
 #include "base/global.h"
 #include "base/unicodestrings.h"
 #include "base/utils/fs.h"
+#include "groupboxheadingstyle.h"
 #include "ui_torrentoptionsdialog.h"
 #include "utils.h"
 
@@ -67,6 +68,8 @@ TorrentOptionsDialog::TorrentOptionsDialog(QWidget *parent, const QList<BitTorre
     Q_ASSERT(!torrents.empty());
 
     m_ui->setupUi(this);
+    // sections are headings with a line under them, as in Options
+    GroupBoxHeadingStyle::apply(this);
 
     connect(m_ui->buttonBox, &QDialogButtonBox::accepted, this, &QDialog::accept);
     connect(m_ui->buttonBox, &QDialogButtonBox::rejected, this, &QDialog::reject);
@@ -384,6 +387,9 @@ TorrentOptionsDialog::TorrentOptionsDialog(QWidget *parent, const QList<BitTorre
 
     if (const QSize dialogSize = m_storeDialogSize; dialogSize.isValid())
         resize(dialogSize);
+
+    // the controls of "label: control" rows start at the same column
+    GroupBoxHeadingStyle::alignRows(this);
 }
 
 TorrentOptionsDialog::~TorrentOptionsDialog()

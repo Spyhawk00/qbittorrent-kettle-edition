@@ -36,6 +36,7 @@
 #include "log/logfiltermodel.h"
 #include "log/loglistview.h"
 #include "log/logmodel.h"
+#include "log/webuiactivitywidget.h"
 #include "ui_executionlogwidget.h"
 #include "uithememanager.h"
 
@@ -67,10 +68,12 @@ ExecutionLogWidget::ExecutionLogWidget(const Log::MsgTypes types, QWidget *paren
 
     m_ui->tabGeneral->layout()->addWidget(messageView);
     m_ui->tabBan->layout()->addWidget(peerView);
+    m_ui->tabWebUIActivity->layout()->addWidget(new WebUIActivityWidget(this));
 
 #ifndef Q_OS_MACOS
     m_ui->tabConsole->setTabIcon(0, UIThemeManager::instance()->getIcon(u"help-contents"_s, u"view-calendar-journal"_s));
     m_ui->tabConsole->setTabIcon(1, UIThemeManager::instance()->getIcon(u"ip-blocked"_s, u"view-filter"_s));
+    m_ui->tabConsole->setTabIcon(2, UIThemeManager::instance()->getIcon(u"peers"_s, u"system-users"_s));
 #endif
 }
 

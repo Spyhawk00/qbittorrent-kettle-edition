@@ -22,29 +22,11 @@
      <property name="childrenCollapsible">
       <bool>false</bool>
      </property>
-     <widget class="QListWidget" name="tabSelection">
-      <property name="layoutDirection">
-       <enum>Qt::LayoutDirection::LeftToRight</enum>
-      </property>
-      <property name="horizontalScrollBarPolicy">
+     <widget class="QWidget" name="sidebarWidget"><layout class="QVBoxLayout" name="sidebarLayout"><property name="leftMargin"><number>0</number></property><property name="topMargin"><number>0</number></property><property name="rightMargin"><number>0</number></property><property name="bottomMargin"><number>0</number></property><item><widget class="QLineEdit" name="searchEdit"><property name="accessibleName"><string>Search settings</string></property><property name="placeholderText"><string>Search settings</string></property><property name="clearButtonEnabled"><bool>true</bool></property></widget></item><item><widget class="QLabel" name="labelNoSearchMatch"><property name="enabled"><bool>false</bool></property><property name="text"><string>No settings match</string></property><property name="alignment"><set>Qt::AlignmentFlag::AlignCenter</set></property></widget></item><item><widget class="QListWidget" name="tabSelection">
+      <property name="uniformItemSizes"><bool>true</bool></property><property name="horizontalScrollBarPolicy">
        <enum>Qt::ScrollBarPolicy::ScrollBarAlwaysOff</enum>
       </property>
-      <property name="movement">
-       <enum>QListView::Movement::Static</enum>
-      </property>
-      <property name="flow">
-       <enum>QListView::Flow::TopToBottom</enum>
-      </property>
-      <property name="isWrapping" stdset="0">
-       <bool>false</bool>
-      </property>
-      <property name="resizeMode">
-       <enum>QListView::ResizeMode::Adjust</enum>
-      </property>
-      <property name="viewMode">
-       <enum>QListView::ViewMode::IconMode</enum>
-      </property>
-      <property name="currentRow">
+      <property name="iconSize"><size><width>24</width><height>24</height></size></property><property name="currentRow">
        <number>0</number>
       </property>
       <item>
@@ -74,11 +56,6 @@
       </item>
       <item>
        <property name="text">
-        <string>Search</string>
-       </property>
-      </item>
-      <item>
-       <property name="text">
         <string>RSS</string>
        </property>
       </item>
@@ -89,11 +66,16 @@
       </item>
       <item>
        <property name="text">
+        <string>User Accounts</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
         <string>Advanced</string>
        </property>
       </item>
      </widget>
-     <widget class="QStackedWidget" name="tabOption">
+     </item></layout></widget><widget class="QWidget" name="pageWidget"><layout class="QVBoxLayout" name="pageLayout"><property name="leftMargin"><number>6</number></property><property name="topMargin"><number>0</number></property><property name="rightMargin"><number>0</number></property><property name="bottomMargin"><number>0</number></property><item><widget class="QLabel" name="labelPageTitle"/></item><item><widget class="QStackedWidget" name="tabOption">
       <property name="currentIndex">
        <number>0</number>
       </property>
@@ -113,7 +95,7 @@
         </property>
         <item>
          <widget class="QScrollArea" name="scrollArea">
-          <property name="sizePolicy">
+          <property name="frameShape"><enum>QFrame::Shape::NoFrame</enum></property><property name="sizePolicy">
            <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
             <horstretch>0</horstretch>
             <verstretch>0</verstretch>
@@ -195,6 +177,9 @@
                     <font>
                      <italic>true</italic>
                     </font>
+                   </property>
+                   <property name="wordWrap">
+                    <bool>true</bool>
                    </property>
                   </widget>
                  </item>
@@ -712,7 +697,7 @@
                <item>
                 <widget class="QCheckBox" name="checkProgramUpdates">
                  <property name="text">
-                  <string>Check for program updates</string>
+                  <string>Automatically install Kettle Edition updates</string>
                  </property>
                 </widget>
                </item>
@@ -752,6 +737,68 @@
                   <string>Inhibit system sleep when torrents are seeding</string>
                  </property>
                 </widget>
+               </item>
+              </layout>
+             </widget>
+            </item>
+            <item>
+             <widget class="QGroupBox" name="groupSearchUI">
+              <property name="title">
+               <string>Search UI</string>
+              </property>
+              <layout class="QVBoxLayout" name="groupSearchUILayout">
+               <item>
+                <widget class="QGroupBox" name="groupStoreOpenedTabs">
+                 <property name="title">
+                  <string>Store opened tabs</string>
+                 </property>
+                 <property name="checkable">
+                  <bool>true</bool>
+                 </property>
+                 <property name="checked">
+                  <bool>false</bool>
+                 </property>
+                 <layout class="QVBoxLayout" name="groupStoreOpenedTabsLayout">
+                  <item>
+                   <widget class="QCheckBox" name="checkStoreTabsSearchResults">
+                    <property name="text">
+                     <string>Also store search results</string>
+                    </property>
+                   </widget>
+                  </item>
+                 </layout>
+                </widget>
+               </item>
+               <item>
+                <layout class="QHBoxLayout" name="searchHistoryLayout">
+                 <item>
+                  <widget class="QLabel" name="searchHistoryLengthLabel">
+                   <property name="text">
+                    <string>History length</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QSpinBox" name="searchHistoryLengthSpinBox">
+                   <property name="maximum">
+                    <number>99</number>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <spacer name="searchHistoryLengthSpacer">
+                   <property name="orientation">
+                    <enum>Qt::Orientation::Horizontal</enum>
+                   </property>
+                   <property name="sizeHint" stdset="0">
+                    <size>
+                     <width>40</width>
+                     <height>20</height>
+                    </size>
+                   </property>
+                  </spacer>
+                 </item>
+                </layout>
                </item>
               </layout>
              </widget>
@@ -893,7 +940,7 @@
               </layout>
              </widget>
             </item>
-            <item>
+            <item><widget class="QGroupBox" name="groupStatusBarAndLog"><property name="title"><string>Status bar and log</string></property><layout class="QVBoxLayout" name="groupStatusBarAndLogLayout"><item>
              <widget class="QCheckBox" name="checkBoxFreeDiskSpaceStatusBar">
               <property name="text">
                <string>Show free disk space in status bar</string>
@@ -914,7 +961,7 @@
               </property>
              </widget>
             </item>
-            <item>
+            </layout></widget></item><item>
              <spacer name="verticalSpacer_4">
               <property name="orientation">
                <enum>Qt::Orientation::Vertical</enum>
@@ -949,7 +996,7 @@
         </property>
         <item>
          <widget class="QScrollArea" name="scrollArea_2">
-          <property name="widgetResizable">
+          <property name="frameShape"><enum>QFrame::Shape::NoFrame</enum></property><property name="widgetResizable">
            <bool>true</bool>
           </property>
           <widget class="QWidget" name="scrollAreaWidgetContents_2">
@@ -1186,7 +1233,7 @@
               </layout>
              </widget>
             </item>
-            <item>
+            <item><widget class="QGroupBox" name="groupFiles"><property name="title"><string>Files</string></property><layout class="QVBoxLayout" name="groupFilesLayout"><item>
              <widget class="QCheckBox" name="checkPreallocateAll">
               <property name="toolTip">
                <string>Allocate full file sizes on disk before starting downloads, to minimize fragmentation. Only useful for HDDs.</string>
@@ -1220,7 +1267,7 @@
               </property>
              </widget>
             </item>
-            <item>
+            </layout></widget></item><item>
              <widget class="QGroupBox" name="groupSavingManagement">
               <property name="title">
                <string>Saving Management</string>
@@ -1781,7 +1828,7 @@ readme[0-9].txt: filter 'readme1.txt', 'readme2.txt' but not 'readme10.txt'.</st
         </property>
         <item>
          <widget class="QScrollArea" name="scrollArea_3">
-          <property name="widgetResizable">
+          <property name="frameShape"><enum>QFrame::Shape::NoFrame</enum></property><property name="widgetResizable">
            <bool>true</bool>
           </property>
           <widget class="QWidget" name="scrollAreaWidgetContents_3">
@@ -2357,7 +2404,7 @@ readme[0-9].txt: filter 'readme1.txt', 'readme2.txt' but not 'readme10.txt'.</st
         </property>
         <item>
          <widget class="QScrollArea" name="scrollArea_9">
-          <property name="widgetResizable">
+          <property name="frameShape"><enum>QFrame::Shape::NoFrame</enum></property><property name="widgetResizable">
            <bool>true</bool>
           </property>
           <widget class="QWidget" name="scrollAreaWidgetContents_9">
@@ -2706,7 +2753,7 @@ readme[0-9].txt: filter 'readme1.txt', 'readme2.txt' but not 'readme10.txt'.</st
         </property>
         <item>
          <widget class="QScrollArea" name="scrollArea_4">
-          <property name="widgetResizable">
+          <property name="frameShape"><enum>QFrame::Shape::NoFrame</enum></property><property name="widgetResizable">
            <bool>true</bool>
           </property>
           <widget class="QWidget" name="scrollAreaWidgetContents_4">
@@ -2855,7 +2902,7 @@ Disable encryption: Only connect to peers without protocol encryption</string>
               </layout>
              </widget>
             </item>
-            <item>
+            <item><widget class="QGroupBox" name="groupChecking"><property name="title"><string>Checking</string></property><layout class="QVBoxLayout" name="groupCheckingLayout"><item>
              <layout class="QHBoxLayout" name="horizontalLayout_20">
               <item>
                <widget class="QLabel" name="labelMaxActiveCheckingTorrents">
@@ -2892,7 +2939,7 @@ Disable encryption: Only connect to peers without protocol encryption</string>
               </item>
              </layout>
             </item>
-            <item>
+            </layout></widget></item><item>
              <widget class="QGroupBox" name="checkEnableQueueing">
               <property name="title">
                <string>&amp;Torrent Queueing</string>
@@ -3286,116 +3333,6 @@ Disable encryption: Only connect to peers without protocol encryption</string>
         </item>
        </layout>
       </widget>
-      <widget class="QWidget" name="tabSearchPage">
-       <layout class="QVBoxLayout" name="searchPageLayout">
-        <property name="leftMargin">
-         <number>0</number>
-        </property>
-        <property name="topMargin">
-         <number>0</number>
-        </property>
-        <property name="rightMargin">
-         <number>0</number>
-        </property>
-        <property name="bottomMargin">
-         <number>0</number>
-        </property>
-        <item>
-         <widget class="QScrollArea" name="searchPageScrollArea">
-          <property name="widgetResizable">
-           <bool>true</bool>
-          </property>
-          <widget class="QWidget" name="searchPageScrollAreaWidgetContents">
-           <property name="geometry">
-            <rect>
-             <x>0</x>
-             <y>0</y>
-             <width>521</width>
-             <height>541</height>
-            </rect>
-           </property>
-           <layout class="QVBoxLayout" name="searchPageScrollAreaWidgetContentsLayout">
-            <item>
-             <widget class="QGroupBox" name="groupSearchUI">
-              <property name="title">
-               <string>Search UI</string>
-              </property>
-              <layout class="QVBoxLayout" name="groupSearchUILayout">
-               <item>
-                <widget class="QGroupBox" name="groupStoreOpenedTabs">
-                 <property name="title">
-                  <string>Store opened tabs</string>
-                 </property>
-                 <property name="checkable">
-                  <bool>true</bool>
-                 </property>
-                 <property name="checked">
-                  <bool>false</bool>
-                 </property>
-                 <layout class="QVBoxLayout" name="groupStoreOpenedTabsLayout">
-                  <item>
-                   <widget class="QCheckBox" name="checkStoreTabsSearchResults">
-                    <property name="text">
-                     <string>Also store search results</string>
-                    </property>
-                   </widget>
-                  </item>
-                 </layout>
-                </widget>
-               </item>
-               <item>
-                <layout class="QHBoxLayout" name="searchHistoryLayout">
-                 <item>
-                  <widget class="QLabel" name="searchHistoryLengthLabel">
-                   <property name="text">
-                    <string>History length</string>
-                   </property>
-                  </widget>
-                 </item>
-                 <item>
-                  <widget class="QSpinBox" name="searchHistoryLengthSpinBox">
-                   <property name="maximum">
-                    <number>99</number>
-                   </property>
-                  </widget>
-                 </item>
-                 <item>
-                  <spacer name="searchHistoryLengthSpacer">
-                   <property name="orientation">
-                    <enum>Qt::Orientation::Horizontal</enum>
-                   </property>
-                   <property name="sizeHint" stdset="0">
-                    <size>
-                     <width>40</width>
-                     <height>20</height>
-                    </size>
-                   </property>
-                  </spacer>
-                 </item>
-                </layout>
-               </item>
-              </layout>
-             </widget>
-            </item>
-            <item>
-             <spacer name="searchPageScrollAreaSpacer">
-              <property name="orientation">
-               <enum>Qt::Orientation::Vertical</enum>
-              </property>
-              <property name="sizeHint" stdset="0">
-               <size>
-                <width>20</width>
-                <height>422</height>
-               </size>
-              </property>
-             </spacer>
-            </item>
-           </layout>
-          </widget>
-         </widget>
-        </item>
-       </layout>
-      </widget>
       <widget class="QWidget" name="tabRSSPage">
        <layout class="QVBoxLayout" name="verticalLayout_25">
         <property name="leftMargin">
@@ -3412,7 +3349,7 @@ Disable encryption: Only connect to peers without protocol encryption</string>
         </property>
         <item>
          <widget class="QScrollArea" name="scrollArea_5">
-          <property name="widgetResizable">
+          <property name="frameShape"><enum>QFrame::Shape::NoFrame</enum></property><property name="widgetResizable">
            <bool>true</bool>
           </property>
           <widget class="QWidget" name="scrollAreaWidgetContents_5">
@@ -3606,7 +3543,7 @@ Disable encryption: Only connect to peers without protocol encryption</string>
         </property>
         <item>
          <widget class="QScrollArea" name="scrollArea_7">
-          <property name="widgetResizable">
+          <property name="frameShape"><enum>QFrame::Shape::NoFrame</enum></property><property name="widgetResizable">
            <bool>true</bool>
           </property>
           <widget class="QWidget" name="scrollAreaWidgetContents_7">
@@ -3695,7 +3632,7 @@ Specify an IPv4 or IPv6 address. You can specify &quot;0.0.0.0&quot; for any IPv
                </item>
                <item>
                 <widget class="QGroupBox" name="checkWebUIHttps">
-                 <property name="title">
+                 <property name="heading" stdset="0"><bool>true</bool></property><property name="title">
                   <string>&amp;Use HTTPS instead of HTTP</string>
                  </property>
                  <property name="checkable">
@@ -3749,7 +3686,7 @@ Specify an IPv4 or IPv6 address. You can specify &quot;0.0.0.0&quot; for any IPv
                </item>
                <item>
                 <widget class="QGroupBox" name="groupWebUIAuth">
-                 <property name="title">
+                 <property name="heading" stdset="0"><bool>true</bool></property><property name="title">
                   <string>Authentication</string>
                  </property>
                  <layout class="QVBoxLayout" name="verticalLayout_35">
@@ -3783,6 +3720,16 @@ Specify an IPv4 or IPv6 address. You can specify &quot;0.0.0.0&quot; for any IPv
                        </property>
                        <property name="placeholderText">
                         <string>Change current password</string>
+                       </property>
+                      </widget>
+                     </item>
+                     <item row="2" column="0" colspan="2">
+                      <widget class="QCheckBox" name="checkWebUISharedLogin">
+                       <property name="toolTip">
+                        <string>Until the first user account is created, this login always works.</string>
+                       </property>
+                       <property name="text">
+                        <string>Allow this login when user accounts exist</string>
                        </property>
                       </widget>
                      </item>
@@ -3855,7 +3802,7 @@ Specify an IPv4 or IPv6 address. You can specify &quot;0.0.0.0&quot; for any IPv
                     </layout>
                    </widget>
                   </item>
-                  <item>
+                  <item><widget class="QGroupBox" name="groupWebUIAccess"><property name="title"><string>Access</string></property><layout class="QVBoxLayout" name="groupWebUIAccessLayout"><item>
                    <widget class="QCheckBox" name="checkBypassLocalAuth">
                     <property name="text">
                      <string>Bypass authentication for clients on localhost</string>
@@ -3891,16 +3838,6 @@ Specify an IPv4 or IPv6 address. You can specify &quot;0.0.0.0&quot; for any IPv
                       </property>
                      </widget>
                     </item>
-                    <item row="0" column="1">
-                     <widget class="QSpinBox" name="spinBanCounter">
-                      <property name="specialValueText">
-                       <string>Never</string>
-                      </property>
-                      <property name="maximum">
-                       <number>2147483647</number>
-                      </property>
-                     </widget>
-                    </item>
                     <item row="0" column="2">
                      <spacer name="horizontalSpacer_15">
                       <property name="orientation">
@@ -3914,17 +3851,24 @@ Specify an IPv4 or IPv6 address. You can specify &quot;0.0.0.0&quot; for any IPv
                       </property>
                      </spacer>
                     </item>
-                    <item row="1" column="0">
+                    <item row="0" column="1"><layout class="QHBoxLayout" name="horizontalLayoutBan"><item>
+                     <widget class="QSpinBox" name="spinBanCounter">
+                      <property name="specialValueText">
+                       <string>Never</string>
+                      </property>
+                      <property name="maximum">
+                       <number>2147483647</number>
+                      </property>
+                     </widget>
+                    </item>
+                    <item>
                      <widget class="QLabel" name="lblBanDuration">
                       <property name="text">
                        <string>ban for:</string>
                       </property>
-                      <property name="alignment">
-                       <set>Qt::AlignmentFlag::AlignRight|Qt::AlignmentFlag::AlignTrailing|Qt::AlignmentFlag::AlignVCenter</set>
-                      </property>
-                     </widget>
+                      </widget>
                     </item>
-                    <item row="1" column="1">
+                    <item>
                      <widget class="QSpinBox" name="spinBanDuration">
                       <property name="suffix">
                        <string> sec</string>
@@ -3937,7 +3881,7 @@ Specify an IPv4 or IPv6 address. You can specify &quot;0.0.0.0&quot; for any IPv
                       </property>
                      </widget>
                     </item>
-                   </layout>
+                   <item><spacer name="horizontalLayoutBanSpacer"><property name="orientation"><enum>Qt::Orientation::Horizontal</enum></property></spacer></item></layout></item></layout>
                   </item>
                   <item>
                    <layout class="QHBoxLayout" name="horizontalLayout_13">
@@ -3976,12 +3920,12 @@ Specify an IPv4 or IPv6 address. You can specify &quot;0.0.0.0&quot; for any IPv
                     </item>
                    </layout>
                   </item>
-                 </layout>
+                 </layout></widget></item></layout>
                 </widget>
                </item>
                <item>
                 <widget class="QGroupBox" name="groupAltWebUI">
-                 <property name="title">
+                 <property name="heading" stdset="0"><bool>true</bool></property><property name="title">
                   <string>Use alternative WebUI</string>
                  </property>
                  <property name="checkable">
@@ -4023,7 +3967,7 @@ Specify an IPv4 or IPv6 address. You can specify &quot;0.0.0.0&quot; for any IPv
                </item>
                <item>
                 <widget class="QGroupBox" name="groupBox_3">
-                 <property name="title">
+                 <property name="heading" stdset="0"><bool>true</bool></property><property name="title">
                   <string>Security</string>
                  </property>
                  <layout class="QVBoxLayout" name="verticalLayout_33">
@@ -4087,7 +4031,7 @@ Use ';' to split multiple entries. Can use wildcard '*'.</string>
                </item>
                <item>
                 <widget class="QGroupBox" name="groupWebUIAddCustomHTTPHeaders">
-                 <property name="title">
+                 <property name="heading" stdset="0"><bool>true</bool></property><property name="title">
                   <string>Add custom HTTP headers</string>
                  </property>
                  <property name="checkable">
@@ -4112,7 +4056,7 @@ Use ';' to split multiple entries. Can use wildcard '*'.</string>
                </item>
                <item>
                 <widget class="QGroupBox" name="groupEnableReverseProxySupport">
-                 <property name="title">
+                 <property name="heading" stdset="0"><bool>true</bool></property><property name="title">
                   <string>Enable reverse proxy support</string>
                  </property>
                  <property name="checkable">
@@ -4155,7 +4099,7 @@ Use ';' to split multiple entries. Can use wildcard '*'.</string>
                </item>
                <item>
                 <widget class="QGroupBox" name="checkDynDNS">
-                 <property name="title">
+                 <property name="heading" stdset="0"><bool>true</bool></property><property name="title">
                   <string>Upda&amp;te my dynamic domain name</string>
                  </property>
                  <property name="checkable">
@@ -4260,6 +4204,138 @@ Use ';' to split multiple entries. Can use wildcard '*'.</string>
         </item>
        </layout>
       </widget>
+      <widget class="QWidget" name="tabUserAccountsPage">
+       <layout class="QVBoxLayout" name="userAccountsPageLayout">
+        <property name="leftMargin">
+         <number>0</number>
+        </property>
+        <property name="topMargin">
+         <number>0</number>
+        </property>
+        <property name="rightMargin">
+         <number>0</number>
+        </property>
+        <property name="bottomMargin">
+         <number>0</number>
+        </property>
+        <item>
+         <widget class="QLabel" name="labelUserAccountsNote">
+          <property name="text">
+           <string>Changes to users, roles and logins apply at once. The settings below apply with OK or Apply.</string>
+          </property>
+          <property name="wordWrap">
+           <bool>true</bool>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QGroupBox" name="groupWebUIUserAccounts">
+          <property name="title">
+           <string>Logins and Activity Log</string>
+          </property>
+          <layout class="QVBoxLayout" name="verticalLayoutUserAccounts">
+           <item>
+            <layout class="QGridLayout" name="gridLayoutUserAccounts">
+             <item row="0" column="0">
+              <widget class="QLabel" name="lblWebUIUserSignInDays">
+               <property name="toolTip">
+                <string>0 means users are logged out after the session timeout.</string>
+               </property>
+               <property name="text">
+                <string>Keep users logged in for:</string>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="1">
+              <widget class="QSpinBox" name="spinWebUIUserSignInDays">
+               <property name="specialValueText">
+                <string>Until session timeout</string>
+               </property>
+               <property name="suffix">
+                <string> days</string>
+               </property>
+               <property name="maximum">
+                <number>365</number>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="2">
+              <spacer name="horizontalSpacerUserAccounts">
+               <property name="orientation">
+                <enum>Qt::Orientation::Horizontal</enum>
+               </property>
+               <property name="sizeHint" stdset="0">
+                <size>
+                 <width>40</width>
+                 <height>20</height>
+                </size>
+               </property>
+              </spacer>
+             </item>
+             <item row="1" column="0">
+              <widget class="QLabel" name="lblWebUIUserLockCounter">
+               <property name="text">
+                <string>Lock account after consecutive failures:</string>
+               </property>
+              </widget>
+             </item>
+             <item row="2" column="0">
+              <widget class="QLabel" name="lblWebUIActivityLogDays">
+               <property name="text">
+                <string>Keep WebUI activity log for:</string>
+               </property>
+              </widget>
+             </item>
+             <item row="2" column="1">
+              <widget class="QSpinBox" name="spinWebUIActivityLogDays">
+               <property name="suffix">
+                <string> days</string>
+               </property>
+               <property name="minimum">
+                <number>1</number>
+               </property>
+               <property name="maximum">
+                <number>3650</number>
+               </property>
+              </widget>
+             </item>
+            <item row="1" column="1"><layout class="QHBoxLayout" name="horizontalLayoutUserLock"><item>
+              <widget class="QSpinBox" name="spinWebUIUserLockCounter">
+               <property name="specialValueText">
+                <string>Never</string>
+               </property>
+               <property name="maximum">
+                <number>2147483647</number>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="lblWebUIUserLockDuration">
+               <property name="text">
+                <string>lock for:</string>
+               </property>
+               </widget>
+             </item>
+             <item>
+              <widget class="QSpinBox" name="spinWebUIUserLockDuration">
+               <property name="suffix">
+                <string> sec</string>
+               </property>
+               <property name="minimum">
+                <number>1</number>
+               </property>
+               <property name="maximum">
+                <number>2147483647</number>
+               </property>
+              </widget>
+             </item>
+             <item><spacer name="horizontalLayoutUserLockSpacer"><property name="orientation"><enum>Qt::Orientation::Horizontal</enum></property></spacer></item></layout></item></layout>
+           </item>
+          </layout>
+         </widget>
+        </item>
+       </layout>
+      </widget>
       <widget class="QWidget" name="tabAdvancedPage">
        <layout class="QVBoxLayout" name="advPageLayout">
         <property name="leftMargin">
@@ -4277,7 +4353,7 @@ Use ';' to split multiple entries. Can use wildcard '*'.</string>
        </layout>
       </widget>
      </widget>
-    </widget>
+    </item></layout></widget></widget>
    </item>
    <item>
     <widget class="QDialogButtonBox" name="buttonBox">

@@ -38,6 +38,7 @@ window.qBittorrent.ContextMenu ??= (() => {
             CategoriesFilterContextMenu: CategoriesFilterContextMenu,
             TagsFilterContextMenu: TagsFilterContextMenu,
             TrackersFilterContextMenu: TrackersFilterContextMenu,
+            MoreContextMenu: MoreContextMenu,
             SearchPluginsTableContextMenu: SearchPluginsTableContextMenu,
             RssFeedContextMenu: RssFeedContextMenu,
             RssArticleContextMenu: RssArticleContextMenu,
@@ -625,6 +626,16 @@ window.qBittorrent.ContextMenu ??= (() => {
             }
 
             this.updateTorrentActions();
+        }
+    }
+
+    // the toolbar buttons that don't fit on a phone; an item is left out when the person's role or the settings leave out what it stands for
+    class MoreContextMenu extends ContextMenu {
+        updateMenuItems() {
+            for (const anchor of this.menu.querySelectorAll("a[data-source]")) {
+                const source = document.getElementById(anchor.dataset.source).closest("li");
+                anchor.parentElement.classList.toggle("invisible", source.matches(".roleHidden, .invisible"));
+            }
         }
     }
 

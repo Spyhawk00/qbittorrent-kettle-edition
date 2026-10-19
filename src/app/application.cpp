@@ -65,6 +65,7 @@
 #endif // Q_OS_MACOS
 #endif
 
+#include "base/access/accessstore.h"
 #include "base/addtorrentmanager.h"
 #include "base/bittorrent/infohash.h"
 #include "base/bittorrent/session.h"
@@ -98,6 +99,7 @@
 #include "gui/mainwindow.h"
 #include "gui/shutdownconfirmdialog.h"
 #include "gui/uithememanager.h"
+#include "gui/updateinstaller.h"
 #include "gui/windowstate.h"
 #endif // DISABLE_GUI
 
@@ -134,6 +136,33 @@ namespace
     const QString PARAM_SEQUENTIAL = u"@sequential"_s;
     const QString PARAM_SKIPCHECKING = u"@skipChecking"_s;
     const QString PARAM_SKIPDIALOG = u"@skipDialog"_s;
+
+#if defined(Q_OS_WIN) && !defined(DISABLE_GUI)
+    // how UpdateInstaller names a window state
+    QString windowStateName(const WindowState state)
+    {
+        switch (state)
+        {
+        case WindowState::Minimized:
+            return u"minimized"_s;
+        case WindowState::Hidden:
+            return u"hidden"_s;
+        default:
+            return u"normal"_s;
+        }
+    }
+
+    WindowState windowStateFromName(const QString &name, const WindowState defaultState)
+    {
+        if (name == u"minimized")
+            return WindowState::Minimized;
+        if (name == u"hidden")
+            return WindowState::Hidden;
+        if (name == u"normal")
+            return WindowState::Normal;
+        return defaultState;
+    }
+#endif
 
     QString bindParamValue(const QStringView paramName, const QStringView paramValue)
     {
@@ -852,6 +881,15 @@ void Application::processParams(const QBtCommandLineParameters &params)
 
 int Application::exec()
 {
+#if defined(Q_OS_WIN) && !defined(DISABLE_GUI)
+    // An update that is already downloaded is installed before anything is loaded: the helper takes over and this program ends
+    if (UpdateInstaller::installPendingUpdate(windowStateName(startUpWindowState())))
+    {
+        QMetaObject::invokeMethod(qApp, &QCoreApplication::quit, Qt::QueuedConnection);
+        return BaseApplication::exec();
+    }
+#endif
+
 #if !defined(DISABLE_WEBUI) && defined(DISABLE_GUI)
     const QString loadingStr = tr("WebUI will be started shortly after internal preparations. Please wait...");
     printf("%s\n", qUtf8Printable(loadingStr));
@@ -868,10 +906,20 @@ int Application::exec()
 
     Net::ProxyConfigurationManager::initInstance();
     Net::DownloadManager::initInstance();
+#ifndef DISABLE_WEBUI
+    Access::AccessStore::initInstance();
+#endif
 
     BitTorrent::Session::initInstance();
 #ifndef DISABLE_GUI
     UIThemeManager::initInstance();
+
+    // after an update restart, the window is as it was before the restart (not on screen at 4 AM)
+#ifdef Q_OS_WIN
+    const WindowState startWindowState = windowStateFromName(UpdateInstaller::restoredWindowState(), startUpWindowState());
+#else
+    const WindowState startWindowState = startUpWindowState();
+#endif
 
     m_desktopIntegration = new DesktopIntegration;
     m_desktopIntegration->setToolTip(tr("Loading torrents..."));
@@ -887,7 +935,7 @@ int Application::exec()
     });
     desktopIntegrationMenu->addAction(actionExit);
 
-    const bool isHidden = m_desktopIntegration->isActive() && (startUpWindowState() == WindowState::Hidden);
+    const bool isHidden = m_desktopIntegration->isActive() && (startWindowState == WindowState::Hidden);
 #else
     const bool isHidden = false;
 #endif
@@ -897,7 +945,7 @@ int Application::exec()
         createStartupProgressDialog();
         // Add a small delay to avoid "flashing" the progress dialog in case there are not many torrents to restore.
         m_startupProgressDialog->setMinimumDuration(1000);
-        if (startUpWindowState() != WindowState::Normal)
+        if (startWindowState != WindowState::Normal)
             m_startupProgressDialog->setWindowState(Qt::WindowMinimized);
     }
     else
@@ -1415,6 +1463,7 @@ void Application::cleanup()
 
 #ifndef DISABLE_WEBUI
     delete m_webui;
+    Access::AccessStore::freeInstance();
 #endif
 
     delete RSS::AutoDownloader::instance();

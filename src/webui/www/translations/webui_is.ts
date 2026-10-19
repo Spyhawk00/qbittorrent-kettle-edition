@@ -582,6 +582,10 @@
         <source>Error:</source>
         <translation type="unfinished" />
     </message>
+    <message>
+        <source>More</source>
+        <translation>Meira</translation>
+    </message>
 </context>
 <context>
     <name>MainWindow</name>

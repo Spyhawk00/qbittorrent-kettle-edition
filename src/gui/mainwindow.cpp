@@ -48,12 +48,15 @@
 #include <QMessageBox>
 #include <QMetaObject>
 #include <QMimeData>
+#include <QPainter>
+#include <QPen>
 #include <QProcess>
 #include <QPushButton>
 #include <QShortcut>
 #include <QSplitter>
 #include <QStatusBar>
 #include <QString>
+#include <QStyle>
 #include <QTimer>
 
 #ifdef Q_OS_WIN
@@ -110,6 +113,7 @@
 #endif
 #if defined(Q_OS_WIN) || defined(Q_OS_MACOS)
 #include "programupdater.h"
+#include "updateinstaller.h"
 #endif
 
 using namespace std::chrono_literals;
@@ -126,6 +130,39 @@ namespace
     const QByteArray PYTHON_INSTALLER_MD5 = QByteArrayLiteral("c887e19e66e66e6961c444283dafaa33");
     const QByteArray PYTHON_INSTALLER_SHA3_512 = QByteArrayLiteral("b5d83ec914dcb0c3892a521d0cbd96bf9bcb267bdee36ea4ee48a54c53fabd0aea98531eda81d1c1db31be8830f7b94430e0c838f5c2f2f8999a273f2833e450");
 #endif
+
+    // The Windows 11 style draws the line above the toolbar white, which can't be seen on a light window.
+    // This draws a visible one over it, on the toolbar's top edge.
+    class ToolBarTopLine final : public QWidget
+    {
+    public:
+        explicit ToolBarTopLine(QWidget *toolBar)
+            : QWidget(toolBar)
+        {
+            setAttribute(Qt::WA_TransparentForMouseEvents);
+            toolBar->installEventFilter(this);
+            setGeometry(0, 0, toolBar->width(), 1);
+        }
+
+    private:
+        bool eventFilter(QObject *watched, QEvent *event) override
+        {
+            if (event->type() == QEvent::Resize)
+                setGeometry(0, 0, static_cast<QWidget *>(watched)->width(), 1);
+            return QWidget::eventFilter(watched, event);
+        }
+
+        void paintEvent(QPaintEvent *) override
+        {
+            const bool isDark = (qApp->palette().color(QPalette::Active, QPalette::Base).lightness() < 127);
+            if (isDark || (style()->name() != u"windows11"_s))
+                return;
+
+            QPainter painter {this};
+            painter.setPen(QPen(parentWidget()->palette().color(QPalette::Window).darker(130), 0));
+            painter.drawLine(0, 0, width(), 0);
+        }
+    };
 }
 
 MainWindow::MainWindow(IGUIApplication *app, const WindowState initialState, const QString &titleSuffix)
@@ -162,6 +199,8 @@ MainWindow::MainWindow(IGUIApplication *app, const WindowState initialState, con
 #endif
 
     addToolbarContextMenu();
+
+    new ToolBarTopLine(m_ui->toolBar);
 
     m_ui->actionOpen->setIcon(UIThemeManager::instance()->getIcon(u"list-add"_s));
     m_ui->actionDownloadFromURL->setIcon(UIThemeManager::instance()->getIcon(u"insert-link"_s));
@@ -325,6 +364,9 @@ MainWindow::MainWindow(IGUIApplication *app, const WindowState initialState, con
     connect(m_ui->actionUseAlternativeSpeedLimits, &QAction::triggered, this, &MainWindow::toggleAlternativeSpeeds);
 
 #if defined(Q_OS_WIN) || defined(Q_OS_MACOS)
+    m_updateInstaller = new UpdateInstaller(this);
+    m_updateInstaller->start();
+
     connect(m_ui->actionCheckForUpdates, &QAction::triggered, this, [this]() { checkProgramUpdate(true); });
 
     // trigger an early check on startup
@@ -564,7 +606,7 @@ void MainWindow::setTitleSuffix(const QString &suffix)
 {
     const auto emDash = QChar(0x2014);
     const QString separator = u' ' + emDash + u' ';
-    m_windowTitle = QStringLiteral("qBittorrent " QBT_VERSION)
+    m_windowTitle = QStringLiteral("qBittorrent " QBT_VERSION " - Kettle Edition")
         + (!suffix.isEmpty() ? (separator + suffix) : QString());
 
     refreshWindowTitle();
@@ -1378,7 +1420,10 @@ void MainWindow::showFiltersSidebar(const bool show)
         // according to the relative weight of the sizes.
         m_splitter->setStretchFactor(0, 0);
         m_splitter->setStretchFactor(1, 1);
-        m_splitter->setSizes({Preferences::instance()->getFiltersSidebarWidth()});
+        // wide enough for the longest filter name and its count, so no name is cut off; a wider saved width stays
+        const int charWidth = m_transferListFiltersWidget->fontMetrics().averageCharWidth();
+        const int widthForNames = std::min((m_transferListFiltersWidget->sizeHint().width() + (6 * charWidth)), (48 * charWidth));
+        m_splitter->setSizes({std::max(Preferences::instance()->getFiltersSidebarWidth(), widthForNames)});
     }
     else if (!show && m_transferListFiltersWidget)
     {
@@ -1685,44 +1730,40 @@ void MainWindow::handleUpdateCheckFinished(ProgramUpdater *updater, const bool i
         updater->deleteLater();
     };
 
+    // Official releases are only reported: this edition is updated from its own releases, not from the official ones
     const ProgramUpdater::Version newVersion = updater->getNewVersion();
     if (newVersion.isValid())
     {
-        const QString msg {tr("A new version is available.") + u"<br/>"
-            + tr("Do you want to download %1?").arg(newVersion.toString()) + u"<br/><br/>"
-            + u"<a href=\"https://www.qbittorrent.org/news\">%1</a>"_s.arg(tr("Open changelog..."))};
-        auto *msgBox = new QMessageBox {QMessageBox::Question, tr("qBittorrent Update Available"), msg
-            , (QMessageBox::Yes | QMessageBox::No), this};
+        LogMsg(tr("Official qBittorrent %1 is available. This edition is based on %2.")
+            .arg(newVersion.toString(), QStringLiteral(QBT_VERSION_2)), Log::INFO);
+    }
+
+    const ProgramUpdater::EditionVersion newEdition = updater->getNewEditionVersion();
+    if (newEdition.isValid())
+    {
+        const QString notes = updater->getNewEditionNotes();
+        LogMsg(tr("Kettle Edition %1 is available.").arg(newEdition.toString())
+            + (notes.isEmpty() ? QString() : (u' ' + notes)), Log::INFO);
+
+        // The files are downloaded and checked now; the install follows at 4:00 AM or at the next start
+        m_updateInstaller->download(updater->getNewEditionManifest());
+    }
+
+    if (invokedByUser)
+    {
+        const QString msg = newEdition.isValid()
+            ? tr("Kettle Edition %1 is available. It is downloaded now and installed at 4:00 AM, or when qBittorrent starts next.")
+                    .arg(newEdition.toString())
+            : tr("No updates available.\nYou are already using the latest version.");
+        auto *msgBox = new QMessageBox {QMessageBox::Information, u"qBittorrent"_s, msg, QMessageBox::Ok, this};
         msgBox->setAttribute(Qt::WA_DeleteOnClose);
-        msgBox->setAttribute(Qt::WA_ShowWithoutActivating);
-        msgBox->setDefaultButton(QMessageBox::Yes);
         msgBox->setWindowModality(Qt::NonModal);
-        connect(msgBox, &QMessageBox::buttonClicked, this, [msgBox, updater](QAbstractButton *button)
-        {
-            if (msgBox->buttonRole(button) == QMessageBox::YesRole)
-            {
-                updater->updateProgram();
-            }
-        });
         connect(msgBox, &QDialog::finished, this, cleanup);
         msgBox->show();
     }
     else
     {
-        if (invokedByUser)
-        {
-            auto *msgBox = new QMessageBox {QMessageBox::Information, u"qBittorrent"_s
-                , tr("No updates available.\nYou are already using the latest version.")
-                , QMessageBox::Ok, this};
-            msgBox->setAttribute(Qt::WA_DeleteOnClose);
-            msgBox->setWindowModality(Qt::NonModal);
-            connect(msgBox, &QDialog::finished, this, cleanup);
-            msgBox->show();
-        }
-        else
-        {
-            cleanup();
-        }
+        cleanup();
     }
 }
 #endif

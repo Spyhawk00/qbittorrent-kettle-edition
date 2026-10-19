@@ -1,40 +1,483 @@
+<style>
+    /* Laid out like the desktop Options window: pages in a sidebar, plain section headings, and one column where
+       the controls of a page start. Colors come from the WebUI's own variables. */
+    #preferencesPage_content {
+        height: 100%;
+    }
+
+    #preferencesLayout {
+        background-color: var(--color-background-default);
+        container-type: inline-size;
+        height: 100%;
+    }
+
+    #preferencesBody {
+        display: flex;
+        height: 100%;
+    }
+
+    #preferencesSidebar {
+        display: flex;
+        flex: 0 0 auto;
+        flex-direction: column;
+        padding: 10px 0 10px 10px;
+    }
+
+    #preferencesTabs {
+        background-color: var(--color-background-popup);
+        border: 1px solid var(--color-border-default);
+        border-radius: 4px;
+        flex: 1 1 auto;
+        margin: 0;
+        overflow-y: auto;
+        padding: 3px;
+    }
+
+    /* as wide as the page list, not wider */
+    #preferencesSearch,
+    #preferencesNoSearchMatch {
+        box-sizing: border-box;
+        min-width: 100%;
+        width: 0;
+    }
+
+    #preferencesSearch {
+        margin-bottom: 6px;
+    }
+
+    #preferencesNoSearchMatch {
+        color: var(--color-text-disabled);
+        padding: 6px 4px;
+        text-align: center;
+    }
+
+    /* a page without a match still counts for the sidebar's width, so that it keeps its width while typing */
+    #preferencesTabs li.prefsNoMatch {
+        height: 0;
+        overflow: hidden;
+        visibility: hidden;
+    }
+
+    #preferencesPages #AdvancedTab .prefsNoMatch {
+        display: none;
+    }
+
+    /* a setting that matches the search */
+    #preferencesPages .prefsSearchMatch {
+        box-shadow: inset 0 0 0 100vmax color-mix(in srgb, var(--color-accent-blue) 30%, transparent);
+    }
+
+    #preferencesTabs a {
+        align-items: center;
+        border-radius: 3px;
+        color: var(--color-text-default);
+        display: flex;
+        gap: 8px;
+        padding: 6px 10px 6px 8px;
+        position: relative;
+        text-decoration: none;
+        white-space: nowrap;
+    }
+
+    /* the selected page is shaded, with a short accent bar on its left, as in the desktop list */
+    #preferencesTabs a:hover,
+    #preferencesTabs li.selected a {
+        background-color: color-mix(in srgb, var(--color-text-default) 9%, transparent);
+    }
+
+    #preferencesTabs li.selected a::before {
+        background-color: var(--color-accent-blue);
+        border-radius: 2px;
+        bottom: 25%;
+        content: "";
+        left: 0;
+        position: absolute;
+        top: 25%;
+        width: 3px;
+    }
+
+    #preferencesContent {
+        display: flex;
+        flex: 1 1 auto;
+        flex-direction: column;
+        min-height: 0;
+        min-width: 0;
+    }
+
+    #preferencesPageTitle {
+        color: var(--color-text-default);
+        font-size: 18px;
+        font-weight: bold;
+        margin: 0;
+        padding: 10px 16px 8px;
+    }
+
+    #preferencesPages {
+        flex: 1 1 auto;
+        overflow: auto;
+        padding: 0 16px 16px;
+    }
+
+    #preferencesPages .PrefTab > :not(style) + * {
+        margin-top: 20px;
+    }
+
+    /* a section: a bold title with a line under it, then its rows in two columns (label, control) */
+    #preferencesPages fieldset.settings {
+        align-items: center;
+        border: 0;
+        display: grid;
+        gap: 4px 8px;
+        grid-template-columns: max-content minmax(0, 1fr);
+        margin-bottom: 0;
+        margin-inline: 0;
+        min-width: 0;
+        padding: 0;
+    }
+
+    #preferencesPages fieldset.settings > * {
+        grid-column: 1 / -1;
+    }
+
+    #preferencesPages fieldset.settings > .prefsLabel {
+        grid-column: 1;
+    }
+
+    #preferencesPages fieldset.settings > .prefsControl {
+        grid-column: 2;
+    }
+
+    #preferencesPages fieldset.settings > legend {
+        border-bottom: 1px solid var(--color-border-default);
+        font-weight: bold;
+        margin: 0 0 6px;
+        padding: 0 0 4px;
+        width: 100%;
+    }
+
+    #preferencesPages fieldset.settings label {
+        padding: 2px;
+    }
+
+    #preferencesPages .prefsControl {
+        align-items: center;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 4px;
+    }
+
+    #preferencesPages .prefsWide {
+        box-sizing: border-box;
+        width: 100%;
+    }
+
+    #preferencesPages textarea {
+        box-sizing: border-box;
+        max-width: 100%;
+    }
+
+    /* a section inside a section: no line, and its rows are indented by one check box */
+    #preferencesPages fieldset.settings fieldset.settings {
+        margin-top: 4px;
+        padding-left: 20px;
+    }
+
+    #preferencesPages fieldset.settings fieldset.settings > legend {
+        border-bottom: 0;
+        margin-left: -20px;
+        padding-bottom: 0;
+    }
+
+    /* a check box in a sub-section title reads as an ordinary option */
+    #preferencesPages fieldset.settings fieldset.settings > legend:has(> input[type="checkbox"]) {
+        font-weight: normal;
+    }
+
+    #preferencesPages .prefsIndent {
+        padding-left: 20px;
+    }
+
+    #preferencesPages .prefsNote {
+        font-style: italic;
+    }
+
+    /* a field that takes the rest of its row */
+    #preferencesPages .prefsGrow {
+        flex: 1 1 auto;
+        min-width: 0;
+    }
+
+    /* "then": next to its control */
+    #preferencesPages .prefsLabelEnd {
+        justify-self: end;
+    }
+
+    /* the text of a setting that can't be changed now is grayed out with it */
+    #preferencesPages input[type="checkbox"]:disabled + label,
+    #preferencesPages .prefsLabel:has(+ :disabled),
+    #preferencesPages .prefsLabel:has(+ .prefsControl > :is(input, select, textarea):first-child:disabled),
+    #preferencesPages .prefsLabel:has(> input:disabled),
+    #preferencesPages .prefsControl > :disabled ~ label {
+        color: var(--color-text-disabled);
+    }
+
+    /* tool buttons: a faded icon while they can't be used (graying the red icon would hide it on dark) */
+    #preferencesPages .prefsControl button:disabled img {
+        opacity: 0.4;
+    }
+
+    /* Speed: the speed icon next to its two rows */
+    #preferencesPages .prefsRates {
+        align-items: center;
+        display: grid;
+        gap: 4px 8px;
+        grid-template-columns: repeat(3, max-content);
+    }
+
+    #preferencesPages .prefsRates > img {
+        grid-row: span 2;
+        height: 24px;
+        width: 24px;
+    }
+
+    /* a list, framed on the base color like the desktop's */
+    #preferencesPages #watched_folders_tab {
+        background-color: var(--color-background-popup);
+        border-collapse: collapse;
+        width: 100%;
+    }
+
+    #preferencesPages #watched_folders_tab :is(td, th) {
+        border: 0;
+        border-bottom: 1px solid var(--color-border-default);
+        font-weight: normal;
+        padding: 4px 6px;
+        text-align: left;
+    }
+
+    #preferencesPages #watched_folders_tab th + th {
+        border-left: 1px solid var(--color-border-default);
+    }
+
+    #AdvancedTab:not(.invisible) {
+        background-color: var(--color-background-popup);
+        border: 1px solid var(--color-border-default);
+        border-radius: 4px;
+        overflow: hidden;
+    }
+
+    #preferencesPages #AdvancedTab > :not(style) + * {
+        margin-top: 0;
+    }
+
+    #advancedHeader {
+        display: flex;
+        font-weight: bold;
+    }
+
+    #advancedHeader::before,
+    #advancedHeader::after {
+        border-bottom: 1px solid var(--color-border-default);
+        flex: 1 1 50%;
+        padding: 4px 6px;
+        text-align: center;
+    }
+
+    #advancedHeader::before {
+        border-right: 1px solid var(--color-border-default);
+        content: attr(data-setting);
+    }
+
+    #advancedHeader::after {
+        content: attr(data-value);
+    }
+
+    #preferencesPages #AdvancedTab fieldset.settings:not(.prefsNoMatch) {
+        display: block;
+    }
+
+    #preferencesPages #AdvancedTab fieldset.settings > legend {
+        border-bottom: 1px solid var(--color-border-default);
+        display: flex;
+        font-weight: normal;
+        margin: 0;
+        padding: 0;
+    }
+
+    #AdvancedTab legend > * {
+        flex: 1 1 50%;
+        padding: 4px 6px;
+    }
+
+    #AdvancedTab legend > span {
+        border-right: 1px solid var(--color-border-default);
+        font-weight: bold;
+        text-align: center;
+    }
+
+    #AdvancedTab table {
+        border-collapse: collapse;
+        table-layout: fixed;
+        width: 100%;
+    }
+
+    #AdvancedTab td {
+        padding: 3px 6px;
+        width: 50%;
+    }
+
+    #AdvancedTab td:first-child {
+        border-right: 1px solid var(--color-border-default);
+    }
+
+    #AdvancedTab td + td {
+        white-space: nowrap;
+    }
+
+    #AdvancedTab tr + tr td {
+        border-top: 1px solid var(--color-border-default);
+    }
+
+    #AdvancedTab tr:nth-child(even) td {
+        background-color: color-mix(in srgb, var(--color-text-default) 5%, transparent);
+    }
+
+    #AdvancedTab td + td > :is(input:not([type="checkbox"]), select) {
+        width: calc(100% - 3.5em) !important;
+    }
+
+    #preferencesSaveRow {
+        display: flex;
+        gap: 8px;
+        justify-content: flex-end;
+        padding: 10px 12px;
+    }
+
+    #preferencesOkButton {
+        border-color: var(--color-accent-blue);
+    }
+
+    #preferencesSaveRow.invisible {
+        display: none;
+    }
+
+    #preferencesSaveRow button {
+        min-width: 80px;
+        padding-bottom: 4px;
+        padding-top: 4px;
+    }
+
+    #preferencesLayout :focus-visible {
+        outline: 2px solid var(--color-accent-blue);
+        outline-offset: 1px;
+    }
+
+    /* narrow windows and phones: the pages run along the top and each row stacks */
+    @container (max-width: 600px) {
+        #preferencesBody {
+            flex-direction: column;
+        }
+
+        #preferencesSidebar {
+            border-bottom: 1px solid var(--color-border-default);
+            border-right: 0;
+            overflow: visible;
+        }
+
+        #preferencesTabs {
+            display: flex;
+            gap: 4px;
+            overflow-x: auto;
+        }
+
+        #preferencesTabs li.prefsNoMatch {
+            display: none;
+        }
+
+        #preferencesPageTitle {
+            padding-top: 8px;
+        }
+
+        #preferencesPages fieldset.settings {
+            grid-template-columns: minmax(0, 1fr);
+        }
+
+        #preferencesPages fieldset.settings > .prefsLabel,
+        #preferencesPages fieldset.settings > .prefsControl {
+            grid-column: 1;
+        }
+
+        #preferencesPages fieldset.settings > .prefsControl {
+            margin-bottom: 4px;
+        }
+    }
+</style>
+
+<div id="preferencesLayout">
+<div id="preferencesBody">
+<nav id="preferencesSidebar">
+    <input type="search" id="preferencesSearch" autocomplete="off" placeholder="QBT_TR(Search settings)QBT_TR[CONTEXT=OptionsDialog]" aria-label="QBT_TR(Search settings)QBT_TR[CONTEXT=OptionsDialog]">
+    <div id="preferencesNoSearchMatch" class="invisible">QBT_TR(No settings match)QBT_TR[CONTEXT=OptionsDialog]</div>
+    <ul id="preferencesTabs">
+        <li id="PrefBehaviorLink" data-page="BehaviorTab" class="selected">
+            <a href="#"><img alt="" src="images/preferences-desktop.svg" width="20" height="20">QBT_TR(Behavior)QBT_TR[CONTEXT=OptionsDialog]</a>
+        </li>
+        <li id="PrefDownloadsLink" data-page="DownloadsTab">
+            <a href="#"><img alt="" src="images/download.svg" width="20" height="20">QBT_TR(Downloads)QBT_TR[CONTEXT=OptionsDialog]</a>
+        </li>
+        <li id="PrefConnectionLink" data-page="ConnectionTab">
+            <a href="#"><img alt="" src="images/network-connect.svg" width="20" height="20">QBT_TR(Connection)QBT_TR[CONTEXT=OptionsDialog]</a>
+        </li>
+        <li id="PrefSpeedLink" data-page="SpeedTab">
+            <a href="#"><img alt="" src="images/slow_off.svg" width="20" height="20">QBT_TR(Speed)QBT_TR[CONTEXT=OptionsDialog]</a>
+        </li>
+        <li id="PrefBittorrentLink" data-page="BittorrentTab">
+            <a href="#"><img alt="" src="images/preferences-bittorrent.svg" width="20" height="20">QBT_TR(BitTorrent)QBT_TR[CONTEXT=OptionsDialog]</a>
+        </li>
+        <li id="PrefRSSLink" data-page="RSSTab">
+            <a href="#"><img alt="" src="images/application-rss.svg" width="20" height="20">QBT_TR(RSS)QBT_TR[CONTEXT=OptionsDialog]</a>
+        </li>
+        <li id="PrefWebUILink" data-page="WebUITab">
+            <a href="#"><img alt="" src="images/preferences-webui.svg" width="20" height="20">QBT_TR(WebUI)QBT_TR[CONTEXT=OptionsDialog]</a>
+        </li>
+        <li id="PrefUserAccountsLink" data-page="UserAccountsTab">
+            <a href="#"><img alt="" src="images/peers.svg" width="20" height="20">QBT_TR(User Accounts)QBT_TR[CONTEXT=OptionsDialog]</a>
+        </li>
+        <li id="PrefAdvancedLink" data-page="AdvancedTab">
+            <a href="#"><img alt="" src="images/preferences-advanced.svg" width="20" height="20">QBT_TR(Advanced)QBT_TR[CONTEXT=OptionsDialog]</a>
+        </li>
+    </ul>
+</nav>
+
+<div id="preferencesContent">
+<h2 id="preferencesPageTitle">QBT_TR(Behavior)QBT_TR[CONTEXT=OptionsDialog]</h2>
+<div id="preferencesPages">
+
 <div id="BehaviorTab" class="PrefTab">
     <fieldset class="settings">
-        <legend>QBT_TR(Localization)QBT_TR[CONTEXT=OptionsDialog]</legend>
-        <table>
-            <tbody>
-                <tr>
-                    <td><label for="locale_select">QBT_TR(User interface language:)QBT_TR[CONTEXT=OptionsDialog]</label></td>
-                    <td>
-                        <select id="locale_select">
-                            ${LANGUAGE_OPTIONS}
-                        </select>
-                    </td>
-                </tr>
-                <tr>
-                    <td><label for="dateFormatSelect">QBT_TR(Date format:)QBT_TR[CONTEXT=OptionsDialog]</label></td>
-                    <td>
-                        <select id="dateFormatSelect">
-                            <option value="default" selected>QBT_TR(Browser default)QBT_TR[CONTEXT=OptionsDialog]</option>
-                        </select>
-                    </td>
-                </tr>
-            </tbody>
-        </table>
-    </fieldset>
-
-    <fieldset class="settings">
         <legend>QBT_TR(Interface)QBT_TR[CONTEXT=OptionsDialog]</legend>
-        <div class="formRow" style="margin-bottom: 3px;">
-            <label for="colorSchemeSelect">QBT_TR(Color scheme:)QBT_TR[CONTEXT=OptionsDialog]</label>
+        <label class="prefsLabel" for="locale_select">QBT_TR(Language:)QBT_TR[CONTEXT=OptionsDialog]</label>
+        <div class="prefsControl">
+            <select id="locale_select">
+                ${LANGUAGE_OPTIONS}
+            </select>
+        </div>
+        <label class="prefsLabel" for="dateFormatSelect">QBT_TR(Date format:)QBT_TR[CONTEXT=OptionsDialog]</label>
+        <div class="prefsControl">
+            <select id="dateFormatSelect">
+                <option value="default" selected>QBT_TR(Browser default)QBT_TR[CONTEXT=OptionsDialog]</option>
+            </select>
+        </div>
+        <label class="prefsLabel" for="colorSchemeSelect">QBT_TR(Color scheme:)QBT_TR[CONTEXT=OptionsDialog]</label>
+        <div class="prefsControl">
             <select id="colorSchemeSelect">
                 <option value="0">QBT_TR(Auto)QBT_TR[CONTEXT=OptionsDialog]</option>
                 <option value="1">QBT_TR(Light)QBT_TR[CONTEXT=OptionsDialog]</option>
                 <option value="2">QBT_TR(Dark)QBT_TR[CONTEXT=OptionsDialog]</option>
             </select>
         </div>
-        <div class="formRow">
-            <label for="displayDensitySelect">QBT_TR(Display density:)QBT_TR[CONTEXT=OptionsDialog]</label>
+        <label class="prefsLabel" for="displayDensitySelect">QBT_TR(Display density:)QBT_TR[CONTEXT=OptionsDialog]</label>
+        <div class="prefsControl">
             <select id="displayDensitySelect">
                 <option value="default">QBT_TR(Default)QBT_TR[CONTEXT=OptionsDialog]</option>
                 <option value="compact">QBT_TR(Compact)QBT_TR[CONTEXT=OptionsDialog]</option>
@@ -43,50 +486,40 @@
     </fieldset>
 
     <fieldset class="settings">
-        <legend>QBT_TR(Transfer list)QBT_TR[CONTEXT=OptionsDialog]</legend>
-        <div class="formRow" style="margin-bottom: 3px;" title="QBT_TR(Shows a confirmation dialog upon torrent deletion)QBT_TR[CONTEXT=OptionsDialog]">
+        <legend>QBT_TR(Transfer List)QBT_TR[CONTEXT=OptionsDialog]</legend>
+        <div class="formRow" title="QBT_TR(Shows a confirmation dialog upon torrent deletion)QBT_TR[CONTEXT=OptionsDialog]">
             <input type="checkbox" id="confirmTorrentDeletion">
             <label for="confirmTorrentDeletion">QBT_TR(Confirm when deleting torrents)QBT_TR[CONTEXT=OptionsDialog]</label>
         </div>
-        <div class="formRow" style="margin-bottom: 3px;">
+        <div class="formRow">
             <input type="checkbox" id="useAltRowColorsInput">
             <label for="useAltRowColorsInput">QBT_TR(Use alternating row colors)QBT_TR[CONTEXT=OptionsDialog]</label>
         </div>
         <fieldset class="settings">
             <legend>QBT_TR(Action on double-click)QBT_TR[CONTEXT=OptionsDialog]</legend>
-            <table>
-                <tbody>
-                    <tr>
-                        <td><label for="dblclickDownloadSelect">QBT_TR(Downloading torrents:)QBT_TR[CONTEXT=OptionsDialog]</label></td>
-                        <td>
-                            <select id="dblclickDownloadSelect">
-                                <option value="1" selected>QBT_TR(Start / stop torrent)QBT_TR[CONTEXT=OptionsDialog]</option>
-                                <option value="0">QBT_TR(No action)QBT_TR[CONTEXT=OptionsDialog]</option>
-                            </select>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td><label for="dblclickCompleteSelect">QBT_TR(Completed torrents:)QBT_TR[CONTEXT=OptionsDialog]</label></td>
-                        <td>
-                            <select id="dblclickCompleteSelect">
-                                <option value="1" selected>QBT_TR(Start / stop torrent)QBT_TR[CONTEXT=OptionsDialog]</option>
-                                <option value="0">QBT_TR(No action)QBT_TR[CONTEXT=OptionsDialog]</option>
-                            </select>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td><label for="dblclickFiltersSelect">QBT_TR(Filters:)QBT_TR[CONTEXT=OptionsDialog]</label></td>
-                        <td>
-                            <select id="dblclickFiltersSelect">
-                                <option value="1" selected>QBT_TR(Reset filter selection)QBT_TR[CONTEXT=OptionsDialog]</option>
-                                <option value="0">QBT_TR(No action)QBT_TR[CONTEXT=OptionsDialog]</option>
-                            </select>
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
+            <label class="prefsLabel" for="dblclickDownloadSelect">QBT_TR(Downloading torrents:)QBT_TR[CONTEXT=OptionsDialog]</label>
+            <div class="prefsControl">
+                <select id="dblclickDownloadSelect">
+                    <option value="1" selected>QBT_TR(Start / stop torrent)QBT_TR[CONTEXT=OptionsDialog]</option>
+                    <option value="0">QBT_TR(No action)QBT_TR[CONTEXT=OptionsDialog]</option>
+                </select>
+            </div>
+            <label class="prefsLabel" for="dblclickCompleteSelect">QBT_TR(Completed torrents:)QBT_TR[CONTEXT=OptionsDialog]</label>
+            <div class="prefsControl">
+                <select id="dblclickCompleteSelect">
+                    <option value="1" selected>QBT_TR(Start / stop torrent)QBT_TR[CONTEXT=OptionsDialog]</option>
+                    <option value="0">QBT_TR(No action)QBT_TR[CONTEXT=OptionsDialog]</option>
+                </select>
+            </div>
+            <label class="prefsLabel" for="dblclickFiltersSelect">QBT_TR(Filters:)QBT_TR[CONTEXT=OptionsDialog]</label>
+            <div class="prefsControl">
+                <select id="dblclickFiltersSelect">
+                    <option value="1" selected>QBT_TR(Reset filter selection)QBT_TR[CONTEXT=OptionsDialog]</option>
+                    <option value="0">QBT_TR(No action)QBT_TR[CONTEXT=OptionsDialog]</option>
+                </select>
+            </div>
         </fieldset>
-        <div class="formRow" style="margin-bottom: 3px;">
+        <div class="formRow">
             <input type="checkbox" id="hideZeroFiltersCheckbox">
             <label for="hideZeroFiltersCheckbox">QBT_TR(Auto hide zero status filters)QBT_TR[CONTEXT=OptionsDialog]</label>
         </div>
@@ -97,50 +530,48 @@
             <input type="checkbox" id="filelog_checkbox" onclick="qBittorrent.Preferences.updateFileLogEnabled();">
             <label for="filelog_checkbox">QBT_TR(Log Files)QBT_TR[CONTEXT=OptionsDialog]</label>
         </legend>
-        <div class="formRow">
-            <label for="filelog_save_path_input">QBT_TR(Save path:)QBT_TR[CONTEXT=OptionsDialog]</label>
-            <input type="text" id="filelog_save_path_input" class="pathDirectory">
+        <label class="prefsLabel" for="filelog_save_path_input">QBT_TR(Save path:)QBT_TR[CONTEXT=OptionsDialog]</label>
+        <input type="text" id="filelog_save_path_input" class="pathDirectory prefsControl prefsWide">
+        <div class="prefsLabel">
+            <input type="checkbox" id="filelog_backup_checkbox" onclick="qBittorrent.Preferences.updateFileLogBackupEnabled();">
+            <label id="filelogMaxSizeLabel" for="filelog_backup_checkbox">QBT_TR(Backup the log file after:)QBT_TR[CONTEXT=OptionsDialog]</label>
         </div>
-        <table>
-            <tbody>
-                <tr>
-                    <td><input type="checkbox" id="filelog_backup_checkbox" onclick="qBittorrent.Preferences.updateFileLogBackupEnabled();"></td>
-                    <td><label id="filelogMaxSizeLabel" for="filelog_backup_checkbox">QBT_TR(Backup the log file after:)QBT_TR[CONTEXT=OptionsDialog]</label></td>
-                    <td><input id="filelog_max_size_input" type="number" min="1" max="1024000" value="65" onchange="qBittorrent.Preferences.numberInputLimiter(this);" aria-labelledby="filelogMaxSizeLabel">QBT_TR(KiB)QBT_TR[CONTEXT=OptionsDialog]</td>
-                </tr>
-                <tr>
-                    <td><input type="checkbox" id="filelog_delete_old_checkbox" onclick="qBittorrent.Preferences.updateFileLogDeleteEnabled();"></td>
-                    <td><label id="filelogDeleteOldLabel" for="filelog_delete_old_checkbox">QBT_TR(Delete backup logs older than:)QBT_TR[CONTEXT=OptionsDialog]</label></td>
-                    <td>
-                        <input type="number" min="1" max="365" value="6" id="filelog_age_input" onchange="qBittorrent.Preferences.numberInputLimiter(this);" aria-labelledby="filelogDeleteOldLabel">
-                        <select id="filelog_age_type_select" aria-labelledby="filelogDeleteOldLabel">
-                            <option value="0">QBT_TR(days)QBT_TR[CONTEXT=OptionsDialog]</option>
-                            <option value="1" selected>QBT_TR(months)QBT_TR[CONTEXT=OptionsDialog]</option>
-                            <option value="2">QBT_TR(years)QBT_TR[CONTEXT=OptionsDialog]</option>
-                        </select>
-                    </td>
-                </tr>
-            </tbody>
-        </table>
+        <div class="prefsControl">
+            <input id="filelog_max_size_input" type="number" min="1" max="1024000" value="65" onchange="qBittorrent.Preferences.numberInputLimiter(this);" aria-labelledby="filelogMaxSizeLabel" style="width: 8em;">QBT_TR(KiB)QBT_TR[CONTEXT=OptionsDialog]
+        </div>
+        <div class="prefsLabel">
+            <input type="checkbox" id="filelog_delete_old_checkbox" onclick="qBittorrent.Preferences.updateFileLogDeleteEnabled();">
+            <label id="filelogDeleteOldLabel" for="filelog_delete_old_checkbox">QBT_TR(Delete backup logs older than:)QBT_TR[CONTEXT=OptionsDialog]</label>
+        </div>
+        <div class="prefsControl">
+            <input type="number" min="1" max="365" value="6" id="filelog_age_input" onchange="qBittorrent.Preferences.numberInputLimiter(this);" aria-labelledby="filelogDeleteOldLabel" style="width: 8em;">
+            <select id="filelog_age_type_select" aria-labelledby="filelogDeleteOldLabel">
+                <option value="0">QBT_TR(days)QBT_TR[CONTEXT=OptionsDialog]</option>
+                <option value="1" selected>QBT_TR(months)QBT_TR[CONTEXT=OptionsDialog]</option>
+                <option value="2">QBT_TR(years)QBT_TR[CONTEXT=OptionsDialog]</option>
+            </select>
+        </div>
     </fieldset>
 
-    <div class="formRow" style="margin-bottom: 3px;">
-        <input type="checkbox" id="statusBarExternalIP">
-        <label for="statusBarExternalIP">QBT_TR(Show external IP in status bar)QBT_TR[CONTEXT=OptionsDialog]</label>
-    </div>
-
-    <div class="formRow" style="margin-bottom: 5px;">
-        <input type="checkbox" id="performanceWarning">
-        <label for="performanceWarning">QBT_TR(Log performance warnings)QBT_TR[CONTEXT=OptionsDialog]</label>
-    </div>
+    <fieldset class="settings">
+        <legend>QBT_TR(Status bar and log)QBT_TR[CONTEXT=OptionsDialog]</legend>
+        <div class="formRow">
+            <input type="checkbox" id="statusBarExternalIP">
+            <label for="statusBarExternalIP">QBT_TR(Show external IP in status bar)QBT_TR[CONTEXT=OptionsDialog]</label>
+        </div>
+        <div class="formRow">
+            <input type="checkbox" id="performanceWarning">
+            <label for="performanceWarning">QBT_TR(Log performance warnings)QBT_TR[CONTEXT=OptionsDialog]</label>
+        </div>
+    </fieldset>
 
     <fieldset class="settings">
         <legend title="QBT_TR(Following settings are WebUI only)QBT_TR[CONTEXT=OptionsDialog]">QBT_TR(Custom WebUI settings)QBT_TR[CONTEXT=OptionsDialog]</legend>
-        <div class="formRow" style="margin-bottom: 3px;">
+        <div class="formRow">
             <input type="checkbox" id="displayFullURLTrackerColumn">
             <label for="displayFullURLTrackerColumn">QBT_TR(Display full announce URL in the Tracker column)QBT_TR[CONTEXT=OptionsDialog]</label>
         </div>
-        <div class="formRow" style="margin-bottom: 3px;">
+        <div class="formRow">
             <input type="checkbox" id="useVirtualList">
             <label for="useVirtualList">QBT_TR(Enable optimized table rendering (experimental))QBT_TR[CONTEXT=OptionsDialog]</label>
         </div>
@@ -150,8 +581,8 @@
 <div id="DownloadsTab" class="PrefTab invisible">
     <fieldset class="settings">
         <legend>QBT_TR(When adding a torrent)QBT_TR[CONTEXT=OptionsDialog]</legend>
-        <div class="formRow">
-            <label for="contentlayout_select">QBT_TR(Torrent content layout:)QBT_TR[CONTEXT=OptionsDialog]</label>
+        <label class="prefsLabel" for="contentlayout_select">QBT_TR(Torrent content layout:)QBT_TR[CONTEXT=OptionsDialog]</label>
+        <div class="prefsControl">
             <select id="contentlayout_select">
                 <option value="Original">QBT_TR(Original)QBT_TR[CONTEXT=OptionsDialog]</option>
                 <option value="Subfolder">QBT_TR(Create subfolder)QBT_TR[CONTEXT=OptionsDialog]</option>
@@ -166,8 +597,8 @@
             <input type="checkbox" id="dontstartdownloads_checkbox">
             <label for="dontstartdownloads_checkbox">QBT_TR(Do not start the download automatically)QBT_TR[CONTEXT=OptionsDialog]</label>
         </div>
-        <div class="formRow">
-            <label for="stopConditionSelect">QBT_TR(Torrent stop condition:)QBT_TR[CONTEXT=OptionsDialog]</label>
+        <label class="prefsLabel" for="stopConditionSelect">QBT_TR(Torrent stop condition:)QBT_TR[CONTEXT=OptionsDialog]</label>
+        <div class="prefsControl">
             <select id="stopConditionSelect">
                 <option value="None">QBT_TR(None)QBT_TR[CONTEXT=OptionsDialog]</option>
                 <option value="MetadataReceived">QBT_TR(Metadata received)QBT_TR[CONTEXT=OptionsDialog]</option>
@@ -181,135 +612,101 @@
                 <label for="mergeTrackersInput">QBT_TR(Merge trackers to existing torrent)QBT_TR[CONTEXT=OptionsDialog]</label>
             </div>
         </fieldset>
+        <fieldset class="settings">
+            <legend>
+                <input type="checkbox" id="deletetorrentfileafter_checkbox" onclick="qBittorrent.Preferences.updateDeleteTorrentFileSettings();">
+                <label for="deletetorrentfileafter_checkbox">QBT_TR(Delete .torrent files afterwards)QBT_TR[CONTEXT=OptionsDialog]</label>
+            </legend>
+            <div class="formRow">
+                <input type="checkbox" id="deleteCancelledTorrentFileCheckbox">
+                <label for="deleteCancelledTorrentFileCheckbox">QBT_TR(Also when addition is cancelled)QBT_TR[CONTEXT=OptionsDialog]</label>
+            </div>
+            <div id="deleteTorrentFileWarning" style="color: var(--color-text-red);">QBT_TR(Warning! Data loss possible!)QBT_TR[CONTEXT=OptionsDialog]</div>
+        </fieldset>
+    </fieldset>
+
+    <fieldset class="settings">
+        <legend>QBT_TR(Files)QBT_TR[CONTEXT=OptionsDialog]</legend>
         <div class="formRow">
-            <input type="checkbox" id="deletetorrentfileafter_checkbox">
-            <label for="deletetorrentfileafter_checkbox">QBT_TR(Delete .torrent files afterwards)QBT_TR[CONTEXT=OptionsDialog]</label>
+            <input type="checkbox" id="preallocateall_checkbox">
+            <label for="preallocateall_checkbox">QBT_TR(Pre-allocate disk space for all files)QBT_TR[CONTEXT=OptionsDialog]</label>
+        </div>
+        <div class="formRow" id="appendexttr">
+            <input type="checkbox" id="appendext_checkbox">
+            <label for="appendext_checkbox">QBT_TR(Append .!qB extension to incomplete files)QBT_TR[CONTEXT=OptionsDialog]</label>
+        </div>
+        <div class="formRow" id="unwantedfoldertr">
+            <input type="checkbox" id="unwantedfolder_checkbox">
+            <label for="unwantedfolder_checkbox">QBT_TR(Keep unselected files in ".unwanted" folder)QBT_TR[CONTEXT=OptionsDialog]</label>
         </div>
     </fieldset>
 
-    <div class="formRow">
-        <input type="checkbox" id="preallocateall_checkbox">
-        <label for="preallocateall_checkbox">QBT_TR(Pre-allocate disk space for all files)QBT_TR[CONTEXT=OptionsDialog]</label>
-    </div>
-    <div class="formRow">
-        <span id="appendexttr">
-            <input type="checkbox" id="appendext_checkbox">
-            <label for="appendext_checkbox">QBT_TR(Append .!qB extension to incomplete files)QBT_TR[CONTEXT=OptionsDialog]</label>
-        </span>
-    </div>
-    <div class="formRow">
-        <span id="unwantedfoldertr">
-            <input type="checkbox" id="unwantedfolder_checkbox">
-            <label for="unwantedfolder_checkbox">QBT_TR(Keep unselected files in ".unwanted" folder)QBT_TR[CONTEXT=OptionsDialog]</label>
-        </span>
-    </div>
-
     <fieldset class="settings">
-        <legend>QBT_TR(Saving Management)QBT_TR[CONTEXT=HttpServer]</legend>
-        <table>
-            <tbody>
-                <tr>
-                    <td>
-                        <label for="default_tmm_combobox">QBT_TR(Default Torrent Management Mode:)QBT_TR[CONTEXT=OptionsDialog]</label>
-                    </td>
-                    <td>
-                        <select id="default_tmm_combobox">
-                            <option value="false" selected>QBT_TR(Manual)QBT_TR[CONTEXT=OptionsDialog]</option>
-                            <option value="true">QBT_TR(Automatic)QBT_TR[CONTEXT=OptionsDialog]</option>
-                        </select>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <label for="torrent_changed_tmm_combobox">QBT_TR(When Torrent Category changed:)QBT_TR[CONTEXT=OptionsDialog]</label>
-                    </td>
-                    <td>
-                        <select id="torrent_changed_tmm_combobox">
-                            <option value="true">QBT_TR(Relocate torrent)QBT_TR[CONTEXT=OptionsDialog]</option>
-                            <option value="false" selected>QBT_TR(Switch torrent to Manual Mode)QBT_TR[CONTEXT=OptionsDialog]</option>
-                        </select>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <label for="save_path_changed_tmm_combobox">QBT_TR(When Default Save Path changed:)QBT_TR[CONTEXT=OptionsDialog]</label>
-                    </td>
-                    <td>
-                        <select id="save_path_changed_tmm_combobox">
-                            <option value="true">QBT_TR(Relocate affected torrents)QBT_TR[CONTEXT=OptionsDialog]</option>
-                            <option value="false" selected>QBT_TR(Switch affected torrents to Manual Mode)QBT_TR[CONTEXT=OptionsDialog]</option>
-                        </select>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <label for="category_changed_tmm_combobox">QBT_TR(When Category Save Path changed:)QBT_TR[CONTEXT=OptionsDialog]</label>
-                    </td>
-                    <td>
-                        <select id="category_changed_tmm_combobox">
-                            <option value="true">QBT_TR(Relocate affected torrents)QBT_TR[CONTEXT=OptionsDialog]</option>
-                            <option value="false" selected>QBT_TR(Switch affected torrents to Manual Mode)QBT_TR[CONTEXT=OptionsDialog]</option>
-                        </select>
-                    </td>
-                </tr>
-            </tbody>
-        </table>
+        <legend>QBT_TR(Saving Management)QBT_TR[CONTEXT=OptionsDialog]</legend>
+        <label class="prefsLabel" for="default_tmm_combobox">QBT_TR(Default Torrent Management Mode:)QBT_TR[CONTEXT=OptionsDialog]</label>
+        <div class="prefsControl">
+            <select id="default_tmm_combobox">
+                <option value="false" selected>QBT_TR(Manual)QBT_TR[CONTEXT=OptionsDialog]</option>
+                <option value="true">QBT_TR(Automatic)QBT_TR[CONTEXT=OptionsDialog]</option>
+            </select>
+        </div>
+        <label class="prefsLabel" for="torrent_changed_tmm_combobox">QBT_TR(When Torrent Category changed:)QBT_TR[CONTEXT=OptionsDialog]</label>
+        <div class="prefsControl">
+            <select id="torrent_changed_tmm_combobox">
+                <option value="true">QBT_TR(Relocate torrent)QBT_TR[CONTEXT=OptionsDialog]</option>
+                <option value="false" selected>QBT_TR(Switch torrent to Manual Mode)QBT_TR[CONTEXT=OptionsDialog]</option>
+            </select>
+        </div>
+        <label class="prefsLabel" for="save_path_changed_tmm_combobox">QBT_TR(When Default Save/Incomplete Path changed:)QBT_TR[CONTEXT=OptionsDialog]</label>
+        <div class="prefsControl">
+            <select id="save_path_changed_tmm_combobox">
+                <option value="true">QBT_TR(Relocate affected torrents)QBT_TR[CONTEXT=OptionsDialog]</option>
+                <option value="false" selected>QBT_TR(Switch affected torrents to Manual Mode)QBT_TR[CONTEXT=OptionsDialog]</option>
+            </select>
+        </div>
+        <label class="prefsLabel" for="category_changed_tmm_combobox">QBT_TR(When Category Save Path changed:)QBT_TR[CONTEXT=OptionsDialog]</label>
+        <div class="prefsControl">
+            <select id="category_changed_tmm_combobox">
+                <option value="true">QBT_TR(Relocate affected torrents)QBT_TR[CONTEXT=OptionsDialog]</option>
+                <option value="false" selected>QBT_TR(Switch affected torrents to Manual Mode)QBT_TR[CONTEXT=OptionsDialog]</option>
+            </select>
+        </div>
         <div class="formRow">
             <input type="checkbox" id="categoryPathsManualModeCheckbox" title="QBT_TR(Resolve relative Save Path against appropriate Category path instead of Default one)QBT_TR[CONTEXT=OptionsDialog]">
             <label for="categoryPathsManualModeCheckbox">QBT_TR(Use Category paths in Manual Mode)QBT_TR[CONTEXT=OptionsDialog]</label>
         </div>
-        <table>
-            <tbody>
-                <tr>
-                    <td>
-                        <label for="savepath_text">QBT_TR(Default Save Path:)QBT_TR[CONTEXT=OptionsDialog]</label>
-                    </td>
-                    <td>
-                        <input type="text" id="savepath_text" class="pathDirectory" autocorrect="off" autocapitalize="none">
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <input type="checkbox" id="temppath_checkbox" onclick="qBittorrent.Preferences.updateTempDirEnabled();">
-                        <label id="tempPathLabel" for="temppath_checkbox">QBT_TR(Keep incomplete torrents in:)QBT_TR[CONTEXT=OptionsDialog]</label>
-                    </td>
-                    <td>
-                        <input type="text" id="temppath_text" class="pathDirectory" autocorrect="off" autocapitalize="none" aria-labelledby="tempPathLabel">
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <input type="checkbox" id="exportdir_checkbox" onclick="qBittorrent.Preferences.updateExportDirEnabled();">
-                        <label id="exportDirLabel" for="exportdir_checkbox">QBT_TR(Copy .torrent files to:)QBT_TR[CONTEXT=OptionsDialog]</label>
-                    </td>
-                    <td>
-                        <input type="text" id="exportdir_text" class="pathDirectory" autocorrect="off" autocapitalize="none" aria-labelledby="exportDirLabel">
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <input type="checkbox" id="exportdirfin_checkbox" onclick="qBittorrent.Preferences.updateExportDirFinEnabled();">
-                        <label id="exportDirFinLabel" for="exportdirfin_checkbox">QBT_TR(Copy .torrent files for finished downloads to:)QBT_TR[CONTEXT=OptionsDialog]</label>
-                    </td>
-                    <td>
-                        <input type="text" id="exportdirfin_text" class="pathDirectory" autocorrect="off" autocapitalize="none" aria-labelledby="exportDirFinLabel">
-                    </td>
-                </tr>
-            </tbody>
-        </table>
+        <label class="prefsLabel" for="savepath_text">QBT_TR(Default Save Path:)QBT_TR[CONTEXT=OptionsDialog]</label>
+        <input type="text" id="savepath_text" class="pathDirectory prefsControl prefsWide" autocorrect="off" autocapitalize="none">
+        <div class="prefsLabel">
+            <input type="checkbox" id="temppath_checkbox" onclick="qBittorrent.Preferences.updateTempDirEnabled();">
+            <label id="tempPathLabel" for="temppath_checkbox">QBT_TR(Use another path for incomplete torrents:)QBT_TR[CONTEXT=OptionsDialog]</label>
+        </div>
+        <input type="text" id="temppath_text" class="pathDirectory prefsControl prefsWide" autocorrect="off" autocapitalize="none" aria-labelledby="tempPathLabel">
+        <div class="prefsLabel">
+            <input type="checkbox" id="exportdir_checkbox" onclick="qBittorrent.Preferences.updateExportDirEnabled();">
+            <label id="exportDirLabel" for="exportdir_checkbox">QBT_TR(Copy .torrent files to:)QBT_TR[CONTEXT=OptionsDialog]</label>
+        </div>
+        <input type="text" id="exportdir_text" class="pathDirectory prefsControl prefsWide" autocorrect="off" autocapitalize="none" aria-labelledby="exportDirLabel">
+        <div class="prefsLabel">
+            <input type="checkbox" id="exportdirfin_checkbox" onclick="qBittorrent.Preferences.updateExportDirFinEnabled();">
+            <label id="exportDirFinLabel" for="exportdirfin_checkbox">QBT_TR(Copy .torrent files for finished downloads to:)QBT_TR[CONTEXT=OptionsDialog]</label>
+        </div>
+        <input type="text" id="exportdirfin_text" class="pathDirectory prefsControl prefsWide" autocorrect="off" autocapitalize="none" aria-labelledby="exportDirFinLabel">
     </fieldset>
 
     <fieldset class="settings">
         <legend>QBT_TR(Automatically add torrents from:)QBT_TR[CONTEXT=OptionsDialog]</legend>
-        <table id="watched_folders_tab" style="border: 1px solid black;">
-            <thead>
-                <tr>
-                    <th scope="col">QBT_TR(Monitored Folder)QBT_TR[CONTEXT=ScanFoldersModel]</th>
-                    <th scope="col">QBT_TR(Override Save Location)QBT_TR[CONTEXT=ScanFoldersModel]</th>
-                </tr>
-            </thead>
-            <tbody></tbody>
-        </table>
+        <div>
+            <table id="watched_folders_tab" style="border: 1px solid var(--color-border-default);">
+                <thead>
+                    <tr>
+                        <th scope="col">QBT_TR(Monitored Folder)QBT_TR[CONTEXT=ScanFoldersModel]</th>
+                        <th scope="col">QBT_TR(Override Save Location)QBT_TR[CONTEXT=ScanFoldersModel]</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </div>
     </fieldset>
 
     <fieldset class="settings">
@@ -325,62 +722,25 @@
             <input type="checkbox" id="mail_notification_checkbox" onclick="qBittorrent.Preferences.updateMailNotification();">
             <label for="mail_notification_checkbox">QBT_TR(Email notification upon download completion)QBT_TR[CONTEXT=OptionsDialog]</label>
         </legend>
-        <table>
-            <tbody>
-                <tr>
-                    <td>
-                        <label for="src_email_txt">QBT_TR(From:)QBT_TR[CONTEXT=OptionsDialog]</label>
-                    </td>
-                    <td>
-                        <input type="text" id="src_email_txt">
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <label for="dest_email_txt">QBT_TR(To:)QBT_TR[CONTEXT=OptionsDialog]</label>
-                    </td>
-                    <td>
-                        <input type="text" id="dest_email_txt">
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <label for="smtp_server_txt">QBT_TR(SMTP server:)QBT_TR[CONTEXT=OptionsDialog]</label>
-                    </td>
-                    <td>
-                        <input type="text" id="smtp_server_txt">
-                    </td>
-                </tr>
-            </tbody>
-        </table>
+        <label class="prefsLabel" for="src_email_txt">QBT_TR(From:)QBT_TR[CONTEXT=OptionsDialog]</label>
+        <div class="prefsControl"><input type="text" id="src_email_txt"></div>
+        <label class="prefsLabel" for="dest_email_txt">QBT_TR(To:)QBT_TR[CONTEXT=OptionsDialog]</label>
+        <div class="prefsControl"><input type="text" id="dest_email_txt"></div>
+        <label class="prefsLabel" for="smtp_server_txt">QBT_TR(SMTP server:)QBT_TR[CONTEXT=OptionsDialog]</label>
+        <div class="prefsControl"><input type="text" id="smtp_server_txt"></div>
         <div class="formRow">
-            <input type="checkbox" id="mail_ssl_checkbox"><label for="mail_ssl_checkbox">QBT_TR(This server requires a secure connection (SSL))QBT_TR[CONTEXT=OptionsDialog]</label>
+            <input type="checkbox" id="mail_ssl_checkbox">
+            <label for="mail_ssl_checkbox">QBT_TR(This server requires a secure connection (SSL))QBT_TR[CONTEXT=OptionsDialog]</label>
         </div>
         <fieldset class="settings">
             <legend>
                 <input type="checkbox" id="mail_auth_checkbox" onclick="qBittorrent.Preferences.updateMailAuthSettings();">
                 <label for="mail_auth_checkbox">QBT_TR(Authentication)QBT_TR[CONTEXT=OptionsDialog]</label>
             </legend>
-            <table>
-                <tbody>
-                    <tr>
-                        <td>
-                            <label for="mail_username_text">QBT_TR(Username:)QBT_TR[CONTEXT=OptionsDialog]</label>
-                        </td>
-                        <td>
-                            <input type="text" id="mail_username_text">
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <label for="mail_password_text">QBT_TR(Password:)QBT_TR[CONTEXT=OptionsDialog]</label>
-                        </td>
-                        <td>
-                            <input type="password" id="mail_password_text" autocomplete="new-password">
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
+            <label class="prefsLabel" for="mail_username_text">QBT_TR(Username:)QBT_TR[CONTEXT=OptionsDialog]</label>
+            <div class="prefsControl"><input type="text" id="mail_username_text"></div>
+            <label class="prefsLabel" for="mail_password_text">QBT_TR(Password:)QBT_TR[CONTEXT=OptionsDialog]</label>
+            <div class="prefsControl"><input type="password" id="mail_password_text" autocomplete="new-password"></div>
         </fieldset>
         <div class="formRow">
             <input type="button" id="mail_test_button" value="QBT_TR(Send test email)QBT_TR[CONTEXT=OptionsDialog]" onclick="qBittorrent.Preferences.sendTestEmail();">
@@ -388,20 +748,26 @@
     </fieldset>
 
     <fieldset class="settings">
-        <legend>
-            QBT_TR(Run external program)QBT_TR[CONTEXT=OptionsDialog]
-        </legend>
-        <div class="formRow">
-            <input type="checkbox" id="autorunOnTorrentAddedCheckbox" onclick="qBittorrent.Preferences.updateAutoRunOnTorrentAdded();">
-            <label id="autorunOnTorrentAddedLabel" for="autorunOnTorrentAddedCheckbox">QBT_TR(Run on torrent added:)QBT_TR[CONTEXT=OptionsDialog]</label>
-            <input type="text" id="autorunOnTorrentAddedProgram" aria-labelledby="autorunOnTorrentAddedLabel" style="width: 100%;">
+        <legend>QBT_TR(Run external program)QBT_TR[CONTEXT=OptionsDialog]</legend>
+        <fieldset class="settings">
+            <legend>
+                <input type="checkbox" id="autorunOnTorrentAddedCheckbox" onclick="qBittorrent.Preferences.updateAutoRunOnTorrentAdded();">
+                <label id="autorunOnTorrentAddedLabel" for="autorunOnTorrentAddedCheckbox">QBT_TR(Run on torrent added:)QBT_TR[CONTEXT=OptionsDialog]</label>
+            </legend>
+            <input type="text" id="autorunOnTorrentAddedProgram" class="prefsWide" aria-labelledby="autorunOnTorrentAddedLabel">
+        </fieldset>
+        <fieldset class="settings">
+            <legend>
+                <input type="checkbox" id="autorun_checkbox" onclick="qBittorrent.Preferences.updateAutoRun();">
+                <label id="autorunLabel" for="autorun_checkbox">QBT_TR(Run on torrent finished:)QBT_TR[CONTEXT=OptionsDialog]</label>
+            </legend>
+            <input type="text" id="autorunProg_txt" class="prefsWide" aria-labelledby="autorunLabel">
+        </fieldset>
+        <div class="formRow" id="autorunConsoleRow">
+            <input type="checkbox" id="autorunConsoleCheckbox">
+            <label for="autorunConsoleCheckbox">QBT_TR(Show console window)QBT_TR[CONTEXT=OptionsDialog]</label>
         </div>
-        <div class="formRow">
-            <input type="checkbox" id="autorun_checkbox" onclick="qBittorrent.Preferences.updateAutoRun();">
-            <label id="autorunLabel" for="autorun_checkbox">QBT_TR(Run on torrent finished:)QBT_TR[CONTEXT=OptionsDialog]</label>
-            <input type="text" id="autorunProg_txt" aria-labelledby="autorunLabel" style="width: 100%;">
-        </div>
-        <div style="font-style: italic;">QBT_TR(Supported parameters (case sensitive):)QBT_TR[CONTEXT=OptionsDialog]
+        <div class="prefsNote">QBT_TR(Supported parameters (case sensitive):)QBT_TR[CONTEXT=OptionsDialog]
             <ul>
                 <li>QBT_TR(%N: Torrent name)QBT_TR[CONTEXT=OptionsDialog]</li>
                 <li>QBT_TR(%L: Category)QBT_TR[CONTEXT=OptionsDialog]</li>
@@ -423,19 +789,22 @@
 </div>
 
 <div id="ConnectionTab" class="PrefTab invisible">
-    <div class="formRow">
-        <label for="enable_protocol_combobox">QBT_TR(Peer connection protocol:)QBT_TR[CONTEXT=OptionsDialog]</label>
-        <select id="enable_protocol_combobox">
-            <option value="0" selected>QBT_TR(TCP and μTP)QBT_TR[CONTEXT=OptionsDialog]</option>
-            <option value="1">TCP</option>
-            <option value="2">μTP</option>
-        </select>
-    </div>
+    <fieldset class="settings">
+        <label class="prefsLabel" for="enable_protocol_combobox">QBT_TR(Peer connection protocol:)QBT_TR[CONTEXT=OptionsDialog]</label>
+        <div class="prefsControl">
+            <select id="enable_protocol_combobox">
+                <option value="0" selected>QBT_TR(TCP and μTP)QBT_TR[CONTEXT=OptionsDialog]</option>
+                <option value="1">TCP</option>
+                <option value="2">μTP</option>
+            </select>
+        </div>
+    </fieldset>
+
     <fieldset class="settings">
         <legend>QBT_TR(Listening Port)QBT_TR[CONTEXT=OptionsDialog]</legend>
-        <div class="formRow">
-            <label for="portValue">QBT_TR(Port used for incoming connections:)QBT_TR[CONTEXT=OptionsDialog]</label>
-            <input type="text" id="portValue" style="width: 6em;" title="QBT_TR(Set to 0 to let your system pick an unused port)QBT_TR[CONTEXT=OptionsDialog]">
+        <label class="prefsLabel" for="portValue">QBT_TR(Port used for incoming connections:)QBT_TR[CONTEXT=OptionsDialog]</label>
+        <div class="prefsControl">
+            <input type="text" id="portValue" style="width: 8em;" title="QBT_TR(Set to 0 to let your system pick an unused port)QBT_TR[CONTEXT=OptionsDialog]">
             <button type="button" onclick="qBittorrent.Preferences.generateRandomPort();">QBT_TR(Random)QBT_TR[CONTEXT=OptionsDialog]</button>
         </div>
         <div class="formRow">
@@ -446,63 +815,39 @@
 
     <fieldset class="settings">
         <legend>QBT_TR(Connections Limits)QBT_TR[CONTEXT=OptionsDialog]</legend>
-        <table>
-            <tbody>
-                <tr>
-                    <td>
-                        <input type="checkbox" id="maxConnectionsCheckbox" onclick="qBittorrent.Preferences.updateMaxConnecEnabled();">
-                        <label id="maxConnectionsLabel" for="maxConnectionsCheckbox">QBT_TR(Global maximum number of connections:)QBT_TR[CONTEXT=OptionsDialog]</label>
-                    </td>
-                    <td><input type="text" id="maxConnectionsValue" aria-labelledby="maxConnectionsLabel" style="width: 6em;"></td>
-                </tr>
-                <tr>
-                    <td>
-                        <input type="checkbox" id="maxConnectionsPerTorrentCheckbox" onclick="qBittorrent.Preferences.updateMaxConnecPerTorrentEnabled();">
-                        <label id="maxConnectionsPerTorrentLabel" for="maxConnectionsPerTorrentCheckbox">QBT_TR(Maximum number of connections per torrent:)QBT_TR[CONTEXT=OptionsDialog]</label>
-                    </td>
-                    <td><input type="text" id="maxConnectionsPerTorrentValue" aria-labelledby="maxConnectionsPerTorrentLabel" style="width: 6em;"></td>
-                </tr>
-                <tr>
-                    <td>
-                        <input type="checkbox" id="maxUploadsCheckbox" onclick="qBittorrent.Preferences.updateMaxUploadsEnabled();">
-                        <label id="maxUploadsLabel" for="maxUploadsCheckbox">QBT_TR(Global maximum number of upload slots:)QBT_TR[CONTEXT=OptionsDialog]</label>
-                    </td>
-                    <td><input type="text" id="max_uploads_value" aria-labelledby="maxUploadsLabel" style="width: 6em;"></td>
-                </tr>
-                <tr>
-                    <td>
-                        <input type="checkbox" id="maxUploadsPerTorrentCheckbox" onclick="qBittorrent.Preferences.updateMaxUploadsPerTorrentEnabled();">
-                        <label id="maxUploadsPerTorrentLabel" for="maxUploadsPerTorrentCheckbox">QBT_TR(Maximum number of upload slots per torrent:)QBT_TR[CONTEXT=OptionsDialog]</label>
-                    </td>
-                    <td><input type="text" id="maxUploadsPerTorrentValue" aria-labelledby="maxUploadsPerTorrentLabel" style="width: 6em;"></td>
-                </tr>
-            </tbody>
-        </table>
+        <div class="prefsLabel">
+            <input type="checkbox" id="maxConnectionsCheckbox" onclick="qBittorrent.Preferences.updateMaxConnecEnabled();">
+            <label id="maxConnectionsLabel" for="maxConnectionsCheckbox">QBT_TR(Global maximum number of connections:)QBT_TR[CONTEXT=OptionsDialog]</label>
+        </div>
+        <div class="prefsControl"><input type="text" id="maxConnectionsValue" aria-labelledby="maxConnectionsLabel" style="width: 8em;"></div>
+        <div class="prefsLabel">
+            <input type="checkbox" id="maxConnectionsPerTorrentCheckbox" onclick="qBittorrent.Preferences.updateMaxConnecPerTorrentEnabled();">
+            <label id="maxConnectionsPerTorrentLabel" for="maxConnectionsPerTorrentCheckbox">QBT_TR(Maximum number of connections per torrent:)QBT_TR[CONTEXT=OptionsDialog]</label>
+        </div>
+        <div class="prefsControl"><input type="text" id="maxConnectionsPerTorrentValue" aria-labelledby="maxConnectionsPerTorrentLabel" style="width: 8em;"></div>
+        <div class="prefsLabel">
+            <input type="checkbox" id="maxUploadsCheckbox" onclick="qBittorrent.Preferences.updateMaxUploadsEnabled();">
+            <label id="maxUploadsLabel" for="maxUploadsCheckbox">QBT_TR(Global maximum number of upload slots:)QBT_TR[CONTEXT=OptionsDialog]</label>
+        </div>
+        <div class="prefsControl"><input type="text" id="max_uploads_value" aria-labelledby="maxUploadsLabel" style="width: 8em;"></div>
+        <div class="prefsLabel">
+            <input type="checkbox" id="maxUploadsPerTorrentCheckbox" onclick="qBittorrent.Preferences.updateMaxUploadsPerTorrentEnabled();">
+            <label id="maxUploadsPerTorrentLabel" for="maxUploadsPerTorrentCheckbox">QBT_TR(Maximum number of upload slots per torrent:)QBT_TR[CONTEXT=OptionsDialog]</label>
+        </div>
+        <div class="prefsControl"><input type="text" id="maxUploadsPerTorrentValue" aria-labelledby="maxUploadsPerTorrentLabel" style="width: 8em;"></div>
     </fieldset>
 
     <fieldset class="settings" id="fieldsetI2p">
         <legend>
             <input type="checkbox" id="i2pEnabledCheckbox" onclick="qBittorrent.Preferences.updateI2PSettingsEnabled();">
-            <label for="i2pEnabledCheckbox">QBT_TR(I2P (Experimental))QBT_TR[CONTEXT=OptionsDialog]</label>
+            <label for="i2pEnabledCheckbox">QBT_TR(I2P (experimental))QBT_TR[CONTEXT=OptionsDialog]</label>
         </legend>
-        <table>
-            <tbody>
-                <tr>
-                    <td>
-                        <label for="i2pAddress">QBT_TR(Host:)QBT_TR[CONTEXT=OptionsDialog]</label>
-                    </td>
-                    <td>
-                        <input type="text" id="i2pAddress">
-                    </td>
-                    <td>
-                        <label for="i2pPort">QBT_TR(Port:)QBT_TR[CONTEXT=OptionsDialog]</label>
-                    </td>
-                    <td>
-                        <input type="number" id="i2pPort" min="0" max="65535" onchange="qBittorrent.Preferences.numberInputLimiter(this);" style="width: 6em;">
-                    </td>
-                </tr>
-            </tbody>
-        </table>
+        <label class="prefsLabel" for="i2pAddress">QBT_TR(Host:)QBT_TR[CONTEXT=OptionsDialog]</label>
+        <div class="prefsControl">
+            <input type="text" id="i2pAddress">
+            <label for="i2pPort">QBT_TR(Port:)QBT_TR[CONTEXT=OptionsDialog]</label>
+            <input type="number" id="i2pPort" min="0" max="65535" onchange="qBittorrent.Preferences.numberInputLimiter(this);" style="width: 8em;">
+        </div>
         <div class="formRow">
             <input type="checkbox" id="i2pMixedMode" title="QBT_TR(If &quot;mixed mode&quot; is enabled, I2P torrents are allowed to also get peers from other sources than the tracker, and connect to regular IPs, not providing any anonymization. This may be useful if the user is not interested in the anonymization of I2P, but still wants to be able to connect to I2P peers.)QBT_TR[CONTEXT=OptionsDialog]">
             <label for="i2pMixedMode">QBT_TR(Mixed mode)QBT_TR[CONTEXT=OptionsDialog]</label>
@@ -511,71 +856,34 @@
 
     <fieldset class="settings">
         <legend>QBT_TR(Proxy Server)QBT_TR[CONTEXT=OptionsDialog]</legend>
-        <table>
-            <tbody>
-                <tr>
-                    <td>
-                        <label for="peer_proxy_type_select">QBT_TR(Type:)QBT_TR[CONTEXT=OptionsDialog]</label>
-                    </td>
-                    <td>
-                        <select id="peer_proxy_type_select" onchange="qBittorrent.Preferences.updatePeerProxySettings();">
-                            <option value="None">QBT_TR((None))QBT_TR[CONTEXT=OptionsDialog]</option>
-                            <option value="SOCKS4">QBT_TR(SOCKS4)QBT_TR[CONTEXT=OptionsDialog]</option>
-                            <option value="SOCKS5">QBT_TR(SOCKS5)QBT_TR[CONTEXT=OptionsDialog]</option>
-                            <option value="HTTP">QBT_TR(HTTP)QBT_TR[CONTEXT=OptionsDialog]</option>
-                        </select>
-                    </td>
-                    <td>
-                        <label for="peer_proxy_host_text">QBT_TR(Host:)QBT_TR[CONTEXT=OptionsDialog]</label>
-                    </td>
-                    <td>
-                        <input type="text" id="peer_proxy_host_text">
-                    </td>
-                    <td>
-                        <label for="peer_proxy_port_value">QBT_TR(Port:)QBT_TR[CONTEXT=OptionsDialog]</label>
-                    </td>
-                    <td>
-                        <input type="text" id="peer_proxy_port_value" style="width: 6em;">
-                    </td>
-                </tr>
-            </tbody>
-        </table>
-
+        <label class="prefsLabel" for="peer_proxy_type_select">QBT_TR(Type:)QBT_TR[CONTEXT=OptionsDialog]</label>
+        <div class="prefsControl">
+            <select id="peer_proxy_type_select" onchange="qBittorrent.Preferences.updatePeerProxySettings();">
+                <option value="None">QBT_TR((None))QBT_TR[CONTEXT=OptionsDialog]</option>
+                <option value="SOCKS4">QBT_TR(SOCKS4)QBT_TR[CONTEXT=OptionsDialog]</option>
+                <option value="SOCKS5">QBT_TR(SOCKS5)QBT_TR[CONTEXT=OptionsDialog]</option>
+                <option value="HTTP">QBT_TR(HTTP)QBT_TR[CONTEXT=OptionsDialog]</option>
+            </select>
+            <label for="peer_proxy_host_text">QBT_TR(Host:)QBT_TR[CONTEXT=OptionsDialog]</label>
+            <input type="text" id="peer_proxy_host_text">
+            <label for="peer_proxy_port_value">QBT_TR(Port:)QBT_TR[CONTEXT=OptionsDialog]</label>
+            <input type="text" id="peer_proxy_port_value" style="width: 8em;">
+        </div>
         <div class="formRow">
             <input type="checkbox" id="proxyHostnameLookupCheckbox" title="QBT_TR(If checked, hostname lookups are done via the proxy.)QBT_TR[CONTEXT=OptionsDialog]">
             <label for="proxyHostnameLookupCheckbox">QBT_TR(Perform hostname lookup via proxy)QBT_TR[CONTEXT=OptionsDialog]</label>
         </div>
-
         <fieldset class="settings">
             <legend>
                 <input type="checkbox" id="peer_proxy_auth_checkbox" onclick="qBittorrent.Preferences.updatePeerProxyAuthSettings();">
                 <label for="peer_proxy_auth_checkbox">QBT_TR(Authentication)QBT_TR[CONTEXT=OptionsDialog]</label>
             </legend>
-            <table>
-                <tbody>
-                    <tr>
-                        <td>
-                            <label for="peer_proxy_username_text">QBT_TR(Username:)QBT_TR[CONTEXT=OptionsDialog]</label>
-                        </td>
-                        <td>
-                            <input type="text" id="peer_proxy_username_text">
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <label for="peer_proxy_password_text">QBT_TR(Password:)QBT_TR[CONTEXT=OptionsDialog]</label>
-                        </td>
-                        <td>
-                            <input type="password" id="peer_proxy_password_text" autocomplete="new-password">
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
-            <div class="formRow">
-                <span>QBT_TR(Note: The password is saved unencrypted)QBT_TR[CONTEXT=OptionsDialog]</span>
-            </div>
+            <label class="prefsLabel" for="peer_proxy_username_text">QBT_TR(Username:)QBT_TR[CONTEXT=OptionsDialog]</label>
+            <input type="text" id="peer_proxy_username_text" class="prefsControl prefsWide">
+            <label class="prefsLabel" for="peer_proxy_password_text">QBT_TR(Password:)QBT_TR[CONTEXT=OptionsDialog]</label>
+            <input type="password" id="peer_proxy_password_text" class="prefsControl prefsWide" autocomplete="new-password">
+            <div class="formRow">QBT_TR(Note: The password is saved unencrypted)QBT_TR[CONTEXT=OptionsDialog]</div>
         </fieldset>
-
         <fieldset class="settings">
             <legend>
                 <input type="checkbox" id="proxy_bittorrent_checkbox" onclick="qBittorrent.Preferences.updatePeerProxySettings();">
@@ -597,23 +905,17 @@
     </fieldset>
 
     <fieldset class="settings">
-        <legend>
-            <label>QBT_TR(IP Filtering)QBT_TR[CONTEXT=OptionsDialog]</label>
-        </legend>
-        <div class="formRow">
+        <legend>QBT_TR(IP Filtering)QBT_TR[CONTEXT=OptionsDialog]</legend>
+        <div class="prefsLabel">
             <input type="checkbox" id="ipfilter_text_checkbox" onclick="qBittorrent.Preferences.updateFilterSettings();">
             <label id="ipfilterTextLabel" for="ipfilter_text_checkbox">QBT_TR(Filter path (.dat, .p2p, .p2b):)QBT_TR[CONTEXT=OptionsDialog]</label>
-            <input type="text" id="ipfilter_text" aria-labelledby="ipfilterTextLabel">
         </div>
+        <input type="text" id="ipfilter_text" class="prefsControl prefsWide" aria-labelledby="ipfilterTextLabel">
+        <label id="manuallyBannedIPAddressesLabel" for="banned_IPs_textarea">QBT_TR(Manually banned IP addresses...)QBT_TR[CONTEXT=OptionsDialog]</label>
+        <textarea id="banned_IPs_textarea" class="prefsWide" aria-labelledby="manuallyBannedIPAddressesLabel" rows="5" cols="70"></textarea>
         <div class="formRow">
             <input type="checkbox" id="ipfilter_trackers_checkbox">
             <label for="ipfilter_trackers_checkbox">QBT_TR(Apply to trackers)QBT_TR[CONTEXT=OptionsDialog]</label>
-        </div>
-        <div class="formRow">
-            <fieldset class="settings">
-                <legend id="manuallyBannedIPAddressesLabel">QBT_TR(Manually banned IP addresses...)QBT_TR[CONTEXT=OptionsDialog]</legend>
-                <textarea id="banned_IPs_textarea" aria-labelledby="manuallyBannedIPAddressesLabel" rows="5" cols="70"></textarea>
-            </fieldset>
         </div>
     </fieldset>
 </div>
@@ -621,56 +923,39 @@
 <div id="SpeedTab" class="PrefTab invisible">
     <fieldset class="settings">
         <legend>QBT_TR(Global Rate Limits)QBT_TR[CONTEXT=OptionsDialog]</legend>
-        <table>
-            <tbody>
-                <tr>
-                    <td rowspan="2">
-                        <img src="images/slow_off.svg" style="height: 2.5em;" alt="QBT_TR(Alternative speed limits)QBT_TR[CONTEXT=MainWindow]">
-                    </td>
-                    <td><label for="upLimitValue">QBT_TR(Upload:)QBT_TR[CONTEXT=OptionsDialog]</label></td>
-                    <td><input type="number" id="upLimitValue" style="width: 6em;" min="0">&nbsp;&nbsp;QBT_TR(KiB/s)QBT_TR[CONTEXT=OptionsDialog]</td>
-                </tr>
-                <tr>
-                    <td><label for="dlLimitValue">QBT_TR(Download:)QBT_TR[CONTEXT=OptionsDialog]</label></td>
-                    <td><input type="number" id="dlLimitValue" style="width: 6em;" min="0">&nbsp;&nbsp;QBT_TR(KiB/s)QBT_TR[CONTEXT=OptionsDialog]</td>
-                </tr>
-            </tbody>
-        </table>
-        <i>QBT_TR(0 means unlimited)QBT_TR[CONTEXT=OptionsDialog]</i>
+        <div class="prefsRates">
+            <img src="images/slow_off.svg" alt="">
+            <label for="upLimitValue">QBT_TR(Upload:)QBT_TR[CONTEXT=OptionsDialog]</label>
+            <div class="prefsControl"><input type="number" id="upLimitValue" style="width: 8em;" min="0">QBT_TR(KiB/s)QBT_TR[CONTEXT=OptionsDialog]</div>
+            <label for="dlLimitValue">QBT_TR(Download:)QBT_TR[CONTEXT=OptionsDialog]</label>
+            <div class="prefsControl"><input type="number" id="dlLimitValue" style="width: 8em;" min="0">QBT_TR(KiB/s)QBT_TR[CONTEXT=OptionsDialog]</div>
+        </div>
+        <div class="prefsNote">QBT_TR(0 means unlimited)QBT_TR[CONTEXT=OptionsDialog]</div>
     </fieldset>
 
     <fieldset class="settings">
         <legend>QBT_TR(Alternative Rate Limits)QBT_TR[CONTEXT=OptionsDialog]</legend>
-        <table>
-            <tbody>
-                <tr>
-                    <td rowspan="2">
-                        <img src="images/slow.svg" style="height: 2.5em;" alt="QBT_TR(Alternative speed limits)QBT_TR[CONTEXT=MainWindow]">
-                    </td>
-                    <td><label for="altUpLimitValue">QBT_TR(Upload:)QBT_TR[CONTEXT=OptionsDialog]</label></td>
-                    <td><input type="number" id="altUpLimitValue" style="width: 6em;" min="0">&nbsp;&nbsp;QBT_TR(KiB/s)QBT_TR[CONTEXT=OptionsDialog]</td>
-                </tr>
-                <tr>
-                    <td><label for="altDlLimitValue">QBT_TR(Download:)QBT_TR[CONTEXT=OptionsDialog]</label></td>
-                    <td><input type="number" id="altDlLimitValue" style="width: 6em;" min="0">&nbsp;&nbsp;QBT_TR(KiB/s)QBT_TR[CONTEXT=OptionsDialog]</td>
-                </tr>
-            </tbody>
-        </table>
-        <i>QBT_TR(0 means unlimited)QBT_TR[CONTEXT=OptionsDialog]</i>
-
+        <div class="prefsRates">
+            <img src="images/slow.svg" alt="">
+            <label for="altUpLimitValue">QBT_TR(Upload:)QBT_TR[CONTEXT=OptionsDialog]</label>
+            <div class="prefsControl"><input type="number" id="altUpLimitValue" style="width: 8em;" min="0">QBT_TR(KiB/s)QBT_TR[CONTEXT=OptionsDialog]</div>
+            <label for="altDlLimitValue">QBT_TR(Download:)QBT_TR[CONTEXT=OptionsDialog]</label>
+            <div class="prefsControl"><input type="number" id="altDlLimitValue" style="width: 8em;" min="0">QBT_TR(KiB/s)QBT_TR[CONTEXT=OptionsDialog]</div>
+        </div>
+        <div class="prefsNote">QBT_TR(0 means unlimited)QBT_TR[CONTEXT=OptionsDialog]</div>
         <fieldset class="settings">
             <legend>
                 <input type="checkbox" id="limitSchedulingCheckbox" onclick="qBittorrent.Preferences.updateSchedulingEnabled();">
                 <label for="limitSchedulingCheckbox">QBT_TR(Schedule the use of alternative rate limits)QBT_TR[CONTEXT=OptionsDialog]</label>
             </legend>
-            <div class="formRow">
-                <label id="scheduleFromHourLabel">QBT_TR(From:)QBT_TR[CONTEXT=OptionsDialog]</label>
+            <label class="prefsLabel" id="scheduleFromHourLabel">QBT_TR(From:)QBT_TR[CONTEXT=OptionsDialog]</label>
+            <div class="prefsControl">
                 <input type="text" id="schedule_from_hour" aria-labelledby="scheduleFromHourLabel" style="width: 3.6em;">:<input type="text" id="schedule_from_min" aria-labelledby="scheduleFromHourLabel" style="width: 3.6em;">
                 <label id="scheduleToHourLabel">QBT_TR(To:)QBT_TR[CONTEXT=OptionsDialog]</label>
                 <input type="text" id="schedule_to_hour" aria-labelledby="scheduleToHourLabel" style="width: 3.6em;">:<input type="text" id="schedule_to_min" aria-labelledby="scheduleToHourLabel" style="width: 3.6em;">
             </div>
-            <div class="formRow">
-                <label for="schedule_freq_select">QBT_TR(When:)QBT_TR[CONTEXT=OptionsDialog]</label>
+            <label class="prefsLabel" for="schedule_freq_select">QBT_TR(When:)QBT_TR[CONTEXT=OptionsDialog]</label>
+            <div class="prefsControl">
                 <select id="schedule_freq_select">
                     <option value="0">QBT_TR(Every day)QBT_TR[CONTEXT=OptionsDialog]</option>
                     <option value="1">QBT_TR(Weekdays)QBT_TR[CONTEXT=OptionsDialog]</option>
@@ -719,8 +1004,8 @@
             <input type="checkbox" id="lsd_checkbox">
             <label for="lsd_checkbox">QBT_TR(Enable Local Peer Discovery to find more peers)QBT_TR[CONTEXT=OptionsDialog]</label>
         </div>
-        <div class="formRow">
-            <label for="encryption_select">QBT_TR(Encryption mode:)QBT_TR[CONTEXT=OptionsDialog]</label>
+        <label class="prefsLabel" for="encryption_select">QBT_TR(Encryption mode:)QBT_TR[CONTEXT=OptionsDialog]</label>
+        <div class="prefsControl">
             <select id="encryption_select">
                 <option value="0">QBT_TR(Allow encryption)QBT_TR[CONTEXT=OptionsDialog]</option>
                 <option value="1">QBT_TR(Require encryption)QBT_TR[CONTEXT=OptionsDialog]</option>
@@ -733,124 +1018,63 @@
         </div>
     </fieldset>
 
-    <div class="formRow">
-        <label for="maxActiveCheckingTorrents">QBT_TR(Max active checking torrents:)QBT_TR[CONTEXT=OptionsDialog]</label>
-        <input type="number" id="maxActiveCheckingTorrents" style="width: 6em;" min="-1">
-    </div>
+    <fieldset class="settings">
+        <legend>QBT_TR(Checking)QBT_TR[CONTEXT=OptionsDialog]</legend>
+        <label class="prefsLabel" for="maxActiveCheckingTorrents">QBT_TR(Maximum active checking torrents:)QBT_TR[CONTEXT=OptionsDialog]</label>
+        <div class="prefsControl"><input type="number" id="maxActiveCheckingTorrents" style="width: 8em;" min="-1"></div>
+    </fieldset>
 
     <fieldset class="settings">
         <legend>
             <input type="checkbox" id="queueingCheckbox" onclick="qBittorrent.Preferences.updateQueueingSystem();">
             <label for="queueingCheckbox">QBT_TR(Torrent Queueing)QBT_TR[CONTEXT=OptionsDialog]</label>
         </legend>
-        <table>
-            <tbody>
-                <tr>
-                    <td>
-                        <label for="maxActiveDlValue">QBT_TR(Maximum active downloads:)QBT_TR[CONTEXT=OptionsDialog]</label>
-                    </td>
-                    <td>
-                        <input type="text" id="maxActiveDlValue" style="width: 6em;">
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <label for="maxActiveUpValue">QBT_TR(Maximum active uploads:)QBT_TR[CONTEXT=OptionsDialog]</label>
-                    </td>
-                    <td>
-                        <input type="text" id="maxActiveUpValue" style="width: 6em;">
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <label for="maxActiveToValue">QBT_TR(Maximum active torrents:)QBT_TR[CONTEXT=OptionsDialog]</label>
-                    </td>
-                    <td>
-                        <input type="text" id="maxActiveToValue" style="width: 6em;">
-                    </td>
-                </tr>
-            </tbody>
-        </table>
+        <label class="prefsLabel" for="maxActiveDlValue">QBT_TR(Maximum active downloads:)QBT_TR[CONTEXT=OptionsDialog]</label>
+        <div class="prefsControl"><input type="text" id="maxActiveDlValue" style="width: 8em;"></div>
+        <label class="prefsLabel" for="maxActiveUpValue">QBT_TR(Maximum active uploads:)QBT_TR[CONTEXT=OptionsDialog]</label>
+        <div class="prefsControl"><input type="text" id="maxActiveUpValue" style="width: 8em;"></div>
+        <label class="prefsLabel" for="maxActiveToValue">QBT_TR(Maximum active torrents:)QBT_TR[CONTEXT=OptionsDialog]</label>
+        <div class="prefsControl"><input type="text" id="maxActiveToValue" style="width: 8em;"></div>
         <fieldset class="settings">
             <legend>
                 <input type="checkbox" id="dontCountSlowTorrentsCheckbox" onclick="qBittorrent.Preferences.updateSlowTorrentsSettings();">
                 <label for="dontCountSlowTorrentsCheckbox">QBT_TR(Do not count slow torrents in these limits)QBT_TR[CONTEXT=OptionsDialog]</label>
             </legend>
-            <table>
-                <tbody>
-                    <tr>
-                        <td>
-                            <label for="dlRateThresholdValue">QBT_TR(Download rate threshold:)QBT_TR[CONTEXT=OptionsDialog]</label>
-                        </td>
-                        <td>
-                            <input type="text" id="dlRateThresholdValue" style="width: 6em;">&nbsp;&nbsp;QBT_TR(KiB/s)QBT_TR[CONTEXT=OptionsDialog]
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <label for="ulRateThresholdValue">QBT_TR(Upload rate threshold:)QBT_TR[CONTEXT=OptionsDialog]</label>
-                        </td>
-                        <td>
-                            <input type="text" id="ulRateThresholdValue" style="width: 6em;">&nbsp;&nbsp;QBT_TR(KiB/s)QBT_TR[CONTEXT=OptionsDialog]
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <label for="torrentInactiveTimerValue">QBT_TR(Torrent inactivity timer:)QBT_TR[CONTEXT=OptionsDialog]</label>
-                        </td>
-                        <td>
-                            <input type="text" id="torrentInactiveTimerValue" style="width: 6em;">&nbsp;&nbsp;QBT_TR(seconds)QBT_TR[CONTEXT=OptionsDialog]
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
+            <label class="prefsLabel" for="dlRateThresholdValue">QBT_TR(Download rate threshold:)QBT_TR[CONTEXT=OptionsDialog]</label>
+            <div class="prefsControl"><input type="text" id="dlRateThresholdValue" style="width: 8em;">QBT_TR(KiB/s)QBT_TR[CONTEXT=OptionsDialog]</div>
+            <label class="prefsLabel" for="ulRateThresholdValue">QBT_TR(Upload rate threshold:)QBT_TR[CONTEXT=OptionsDialog]</label>
+            <div class="prefsControl"><input type="text" id="ulRateThresholdValue" style="width: 8em;">QBT_TR(KiB/s)QBT_TR[CONTEXT=OptionsDialog]</div>
+            <label class="prefsLabel" for="torrentInactiveTimerValue">QBT_TR(Torrent inactivity timer:)QBT_TR[CONTEXT=OptionsDialog]</label>
+            <div class="prefsControl"><input type="text" id="torrentInactiveTimerValue" style="width: 8em;">QBT_TR(seconds)QBT_TR[CONTEXT=OptionsDialog]</div>
         </fieldset>
     </fieldset>
 
     <fieldset class="settings">
         <legend>QBT_TR(Seeding Limits)QBT_TR[CONTEXT=OptionsDialog]</legend>
-        <table>
-            <tbody>
-                <tr>
-                    <td>
-                        <input type="checkbox" id="maxRatioCheckbox" onclick="qBittorrent.Preferences.updateMaxRatioTimeEnabled();">
-                        <label id="maxRatioLabel" for="maxRatioCheckbox">QBT_TR(When ratio reaches)QBT_TR[CONTEXT=OptionsDialog]</label>
-                    </td>
-                    <td>
-                        <input type="text" id="maxRatioValue" style="width: 6em;" aria-labelledby="maxRatioLabel">
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <input type="checkbox" id="maxSeedingTimeCheckbox" onclick="qBittorrent.Preferences.updateMaxRatioTimeEnabled();">
-                        <label id="maxSeedingTimeLabel" for="maxSeedingTimeCheckbox">QBT_TR(When total seeding time reaches)QBT_TR[CONTEXT=OptionsDialog]</label>
-                    </td>
-                    <td>
-                        <input type="text" id="maxSeedingTimeValue" style="width: 6em;" aria-labelledby="maxSeedingTimeLabel">QBT_TR(minutes)QBT_TR[CONTEXT=OptionsDialog]
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <input type="checkbox" id="maxInactiveSeedingTimeCheckbox" onclick="qBittorrent.Preferences.updateMaxRatioTimeEnabled();">
-                        <label id="maxInactiveSeedingTimeLabel" for="maxInactiveSeedingTimeCheckbox">QBT_TR(When inactive seeding time reaches)QBT_TR[CONTEXT=OptionsDialog]</label>
-                    </td>
-                    <td>
-                        <input type="text" id="maxInactiveSeedingTimeValue" style="width: 6em;" aria-labelledby="maxInactiveSeedingTimeLabel">QBT_TR(minutes)QBT_TR[CONTEXT=OptionsDialog]
-                    </td>
-                </tr>
-                <tr>
-                    <td style="text-align: right;"><label for="maxRatioSelect">QBT_TR(then)QBT_TR[CONTEXT=OptionsDialog]</label></td>
-                    <td>
-                        <select id="maxRatioSelect">
-                            <option value="0">QBT_TR(Stop torrent)QBT_TR[CONTEXT=OptionsDialog]</option>
-                            <option value="1">QBT_TR(Remove torrent)QBT_TR[CONTEXT=OptionsDialog]</option>
-                            <option value="3">QBT_TR(Remove torrent and its files)QBT_TR[CONTEXT=OptionsDialog]</option>
-                            <option value="2">QBT_TR(Enable super seeding for torrent)QBT_TR[CONTEXT=OptionsDialog]</option>
-                        </select>
-                    </td>
-                </tr>
-            </tbody>
-        </table>
+        <div class="prefsLabel">
+            <input type="checkbox" id="maxRatioCheckbox" onclick="qBittorrent.Preferences.updateMaxRatioTimeEnabled();">
+            <label id="maxRatioLabel" for="maxRatioCheckbox">QBT_TR(When ratio reaches)QBT_TR[CONTEXT=OptionsDialog]</label>
+        </div>
+        <div class="prefsControl"><input type="text" id="maxRatioValue" style="width: 8em;" aria-labelledby="maxRatioLabel"></div>
+        <div class="prefsLabel">
+            <input type="checkbox" id="maxSeedingTimeCheckbox" onclick="qBittorrent.Preferences.updateMaxRatioTimeEnabled();">
+            <label id="maxSeedingTimeLabel" for="maxSeedingTimeCheckbox">QBT_TR(When total seeding time reaches)QBT_TR[CONTEXT=OptionsDialog]</label>
+        </div>
+        <div class="prefsControl"><input type="text" id="maxSeedingTimeValue" style="width: 8em;" aria-labelledby="maxSeedingTimeLabel">QBT_TR(minutes)QBT_TR[CONTEXT=OptionsDialog]</div>
+        <div class="prefsLabel">
+            <input type="checkbox" id="maxInactiveSeedingTimeCheckbox" onclick="qBittorrent.Preferences.updateMaxRatioTimeEnabled();">
+            <label id="maxInactiveSeedingTimeLabel" for="maxInactiveSeedingTimeCheckbox">QBT_TR(When inactive seeding time reaches)QBT_TR[CONTEXT=OptionsDialog]</label>
+        </div>
+        <div class="prefsControl"><input type="text" id="maxInactiveSeedingTimeValue" style="width: 8em;" aria-labelledby="maxInactiveSeedingTimeLabel">QBT_TR(minutes)QBT_TR[CONTEXT=OptionsDialog]</div>
+        <label class="prefsLabel prefsLabelEnd" for="maxRatioSelect">QBT_TR(then)QBT_TR[CONTEXT=OptionsDialog]</label>
+        <div class="prefsControl">
+            <select id="maxRatioSelect">
+                <option value="0">QBT_TR(Stop torrent)QBT_TR[CONTEXT=OptionsDialog]</option>
+                <option value="1">QBT_TR(Remove torrent)QBT_TR[CONTEXT=OptionsDialog]</option>
+                <option value="3">QBT_TR(Remove torrent and its files)QBT_TR[CONTEXT=OptionsDialog]</option>
+                <option value="2">QBT_TR(Enable super seeding for torrent)QBT_TR[CONTEXT=OptionsDialog]</option>
+            </select>
+        </div>
     </fieldset>
 
     <fieldset class="settings">
@@ -866,16 +1090,10 @@
             <input type="checkbox" id="addTrackersFromURLCheckbox" onclick="qBittorrent.Preferences.updateAddTrackersFromURLEnabled();">
             <label for="addTrackersFromURLCheckbox">QBT_TR(Automatically append trackers from URL to new downloads:)QBT_TR[CONTEXT=OptionsDialog]</label>
         </legend>
-        <div class="formRow">
-            <label for="addTrackersURL">QBT_TR(URL:)QBT_TR[CONTEXT=OptionsDialog]</label>
-            <input type="text" id="addTrackersURL" style="width: 40em;">
-        </div>
-        <div class="formRow">
-            <fieldset class="settings">
-                <legend id="fetchedTrackersFromURLLabel">QBT_TR(Fetched trackers)QBT_TR[CONTEXT=OptionsDialog]</legend>
-                <textarea id="addTrackersURLListTextarea" aria-labelledby="fetchedTrackersFromURLLabel" rows="5" cols="70" readonly></textarea>
-            </fieldset>
-        </div>
+        <label class="prefsLabel" for="addTrackersURL">QBT_TR(URL:)QBT_TR[CONTEXT=OptionsDialog]</label>
+        <input type="text" id="addTrackersURL" class="prefsControl prefsWide">
+        <label id="fetchedTrackersFromURLLabel" for="addTrackersURLListTextarea">QBT_TR(Fetched trackers)QBT_TR[CONTEXT=OptionsDialog]</label>
+        <textarea id="addTrackersURLListTextarea" class="prefsWide" aria-labelledby="fetchedTrackersFromURLLabel" rows="5" cols="70" readonly></textarea>
     </fieldset>
 </div>
 
@@ -886,34 +1104,12 @@
             <input type="checkbox" id="enable_fetching_rss_feeds_checkbox">
             <label for="enable_fetching_rss_feeds_checkbox">QBT_TR(Enable fetching RSS feeds)QBT_TR[CONTEXT=OptionsDialog]</label>
         </div>
-        <table>
-            <tbody>
-                <tr>
-                    <td>
-                        <label for="feed_refresh_interval">QBT_TR(Feeds refresh interval:)QBT_TR[CONTEXT=OptionsDialog]</label>
-                    </td>
-                    <td>
-                        <input type="text" id="feed_refresh_interval" style="width: 6em;">&nbsp;&nbsp;QBT_TR( min)QBT_TR[CONTEXT=OptionsDialog]
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <label for="feedFetchDelay">QBT_TR(Same host request delay:)QBT_TR[CONTEXT=OptionsDialog]</label>
-                    </td>
-                    <td>
-                        <input type="text" id="feedFetchDelay" style="width: 6em;">&nbsp;&nbsp;QBT_TR( sec)QBT_TR[CONTEXT=OptionsDialog]
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <label for="maximum_article_number">QBT_TR(Maximum number of articles per feed:)QBT_TR[CONTEXT=OptionsDialog]</label>
-                    </td>
-                    <td>
-                        <input type="text" id="maximum_article_number" style="width: 6em;">
-                    </td>
-                </tr>
-            </tbody>
-        </table>
+        <label class="prefsLabel" for="feed_refresh_interval">QBT_TR(Feeds refresh interval:)QBT_TR[CONTEXT=OptionsDialog]</label>
+        <div class="prefsControl"><input type="text" id="feed_refresh_interval" style="width: 8em;">QBT_TR( min)QBT_TR[CONTEXT=OptionsDialog]</div>
+        <label class="prefsLabel" for="feedFetchDelay">QBT_TR(Same host request delay:)QBT_TR[CONTEXT=OptionsDialog]</label>
+        <div class="prefsControl"><input type="text" id="feedFetchDelay" style="width: 8em;">QBT_TR( sec)QBT_TR[CONTEXT=OptionsDialog]</div>
+        <label class="prefsLabel" for="maximum_article_number">QBT_TR(Maximum number of articles per feed:)QBT_TR[CONTEXT=OptionsDialog]</label>
+        <div class="prefsControl"><input type="text" id="maximum_article_number" style="width: 8em;"></div>
     </fieldset>
 
     <fieldset class="settings">
@@ -922,126 +1118,81 @@
             <input type="checkbox" id="enable_auto_downloading_rss_torrents_checkbox">
             <label for="enable_auto_downloading_rss_torrents_checkbox">QBT_TR(Enable auto downloading of RSS torrents)QBT_TR[CONTEXT=OptionsDialog]</label>
         </div>
-        <button type="button" style="margin: 0 1em; width: calc(100% - 2.2em)" onclick="window.qBittorrent.Rss.openRssDownloader();">QBT_TR(Edit auto downloading rules...)QBT_TR[CONTEXT=OptionsDialog]</button>
+        <div class="formRow">
+            <button type="button" onclick="window.qBittorrent.Rss.openRssDownloader();">QBT_TR(Edit auto downloading rules...)QBT_TR[CONTEXT=OptionsDialog]</button>
+        </div>
     </fieldset>
 
     <fieldset class="settings">
         <legend>QBT_TR(RSS Smart Episode Filter)QBT_TR[CONTEXT=OptionsDialog]</legend>
         <div class="formRow">
             <input type="checkbox" id="downlock_repack_proper_episodes">
-
             <label for="downlock_repack_proper_episodes">QBT_TR(Download REPACK/PROPER episodes)QBT_TR[CONTEXT=OptionsDialog]</label>
         </div>
-        <label for="rss_filter_textarea">QBT_TR(Filters:)QBT_TR[CONTEXT=OptionsDialog]</label><br>
-        <textarea id="rss_filter_textarea" rows="6" cols="70"></textarea>
+        <label for="rss_filter_textarea">QBT_TR(Filters:)QBT_TR[CONTEXT=OptionsDialog]</label>
+        <textarea id="rss_filter_textarea" class="prefsWide" rows="16" cols="70"></textarea>
     </fieldset>
 </div>
 
 <div id="WebUITab" class="PrefTab invisible">
     <fieldset class="settings">
         <legend>QBT_TR(Web User Interface (Remote control))QBT_TR[CONTEXT=OptionsDialog]</legend>
-        <table>
-            <tbody>
-                <tr>
-                    <td>
-                        <label for="webuiAddressValue">QBT_TR(IP address:)QBT_TR[CONTEXT=OptionsDialog]</label>
-                    </td>
-                    <td>
-                        <input type="text" id="webuiAddressValue">
-                        <label for="webuiPortValue" style="margin-left: 10px;">QBT_TR(Port:)QBT_TR[CONTEXT=OptionsDialog]</label>
-                        <input type="text" id="webuiPortValue" style="width: 6em;">
-                    </td>
-                </tr>
-            </tbody>
-        </table>
+        <label class="prefsLabel" for="webuiAddressValue">QBT_TR(IP address:)QBT_TR[CONTEXT=OptionsDialog]</label>
+        <div class="prefsControl">
+            <input type="text" id="webuiAddressValue" class="prefsGrow">
+            <label for="webuiPortValue">QBT_TR(Port:)QBT_TR[CONTEXT=OptionsDialog]</label>
+            <input type="text" id="webuiPortValue" style="width: 8em;">
+        </div>
         <div class="formRow">
             <input type="checkbox" id="webuiUpnpCheckbox">
             <label for="webuiUpnpCheckbox">QBT_TR(Use UPnP / NAT-PMP to forward the port from my router)QBT_TR[CONTEXT=OptionsDialog]</label>
         </div>
-        <fieldset class="settings">
-            <legend>
-                <input type="checkbox" id="use_https_checkbox" onclick="qBittorrent.Preferences.updateHttpsSettings();">
-                <label for="use_https_checkbox">QBT_TR(Use HTTPS instead of HTTP)QBT_TR[CONTEXT=OptionsDialog]</label>
-            </legend>
-            <table>
-                <tbody>
-                    <tr>
-                        <td>
-                            <label for="ssl_cert_text">QBT_TR(Certificate:)QBT_TR[CONTEXT=OptionsDialog]</label>
-                        </td>
-                        <td>
-                            <input type="text" id="ssl_cert_text" class="pathFile" style="width: 30em;">
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <label for="ssl_key_text">QBT_TR(Key:)QBT_TR[CONTEXT=OptionsDialog]</label>
-                        </td>
-                        <td>
-                            <input type="text" id="ssl_key_text" class="pathFile" style="width: 30em;">
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
-            <div style="padding-left: 10px;"><a target="_blank" href="https://httpd.apache.org/docs/current/ssl/ssl_faq.html#aboutcerts">QBT_TR(Information about certificates)QBT_TR[CONTEXT=HttpServer]</a></div>
-        </fieldset>
+    </fieldset>
 
+    <fieldset class="settings">
+        <legend>
+            <input type="checkbox" id="use_https_checkbox" onclick="qBittorrent.Preferences.updateHttpsSettings();">
+            <label for="use_https_checkbox">QBT_TR(Use HTTPS instead of HTTP)QBT_TR[CONTEXT=OptionsDialog]</label>
+        </legend>
+        <label class="prefsLabel" for="ssl_cert_text">QBT_TR(Certificate:)QBT_TR[CONTEXT=OptionsDialog]</label>
+        <input type="text" id="ssl_cert_text" class="pathFile prefsControl prefsWide">
+        <label class="prefsLabel" for="ssl_key_text">QBT_TR(Key:)QBT_TR[CONTEXT=OptionsDialog]</label>
+        <input type="text" id="ssl_key_text" class="pathFile prefsControl prefsWide">
+        <div class="formRow"><a target="_blank" href="https://httpd.apache.org/docs/current/ssl/ssl_faq.html#aboutcerts">QBT_TR(Information about certificates)QBT_TR[CONTEXT=HttpServer]</a></div>
+    </fieldset>
+
+    <fieldset class="settings">
+        <legend>QBT_TR(Authentication)QBT_TR[CONTEXT=OptionsDialog]</legend>
         <fieldset class="settings">
-            <legend>QBT_TR(Authentication)QBT_TR[CONTEXT=OptionsDialog]</legend>
-            <fieldset class="settings">
-                <legend>QBT_TR(User)QBT_TR[CONTEXT=OptionsDialog]</legend>
-                <table>
-                    <tbody>
-                        <tr>
-                            <td>
-                                <label for="webui_username_text">QBT_TR(Username:)QBT_TR[CONTEXT=OptionsDialog]</label>
-                            </td>
-                            <td>
-                                <input type="text" id="webui_username_text">
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <label for="webui_password_text">QBT_TR(Password:)QBT_TR[CONTEXT=OptionsDialog]</label>
-                            </td>
-                            <td>
-                                <input type="password" id="webui_password_text" placeholder="QBT_TR(Change current password)QBT_TR[CONTEXT=OptionsDialog]" autocomplete="new-password">
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
-            </fieldset>
-            <fieldset class="settings">
-                <legend>QBT_TR(API Key)QBT_TR[CONTEXT=OptionsDialog]</legend>
-                <table>
-                    <tbody>
-                        <tr>
-                            <td>
-                                <label for="WebUIAPIKeyText">QBT_TR(Key:)QBT_TR[CONTEXT=OptionsDialog]</label>
-                            </td>
-                            <td>
-                                <input type="text" disabled id="WebUIAPIKeyText" placeholder="QBT_TR(Generate a key)QBT_TR[CONTEXT=OptionsDialog]" style="width: 200px;">
-                            </td>
-                            <td>
-                                <button type="button" disabled id="webUIAPIKeyCopyButton" style="padding: 0;" aria-label="QBT_TR(Copy API key)QBT_TR[CONTEXT=OptionsDialog]">
-                                    <img class="copyImg" src="images/edit-copy.svg" alt="QBT_TR(Copy API key)QBT_TR[CONTEXT=OptionsDialog]" title="QBT_TR(Copy API key)QBT_TR[CONTEXT=OptionsDialog]" width="16" height="16" style="margin: 4px; top: 2px; position: relative;">
-                                    <img class="checkImg" src="images/checked-completed.svg" alt="QBT_TR(Copied)QBT_TR[CONTEXT=OptionsDialog]" title="QBT_TR(Copied)QBT_TR[CONTEXT=OptionsDialog]" width="16" height="16" style="margin: 4px; top: 2px; position: relative; display: none;">
-                                </button>
-                            </td>
-                            <td>
-                                <button type="button" id="webUIAPIKeyRotateButton" style="padding: 0;" data-has-key="false" aria-label="QBT_TR(Generate API key)QBT_TR[CONTEXT=OptionsDialog]">
-                                    <img src="images/force-recheck.svg" alt="QBT_TR(Generate API key)QBT_TR[CONTEXT=OptionsDialog]" title="QBT_TR(Generate API key)QBT_TR[CONTEXT=OptionsDialog]" width="16" height="16" style="margin: 4px; top: 2px; position: relative;">
-                                </button>
-                            </td>
-                            <td>
-                                <button type="button" disabled id="webUIAPIKeyDeleteButton" style="padding: 0;" data-has-key="false" aria-label="QBT_TR(Delete API key)QBT_TR[CONTEXT=OptionsDialog]">
-                                    <img src="images/list-remove.svg" alt="QBT_TR(Delete API key)QBT_TR[CONTEXT=OptionsDialog]" title="QBT_TR(Delete API key)QBT_TR[CONTEXT=OptionsDialog]" width="16" height="16" style="margin: 4px; top: 2px; position: relative;">
-                                </button>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
-            </fieldset>
+            <legend>QBT_TR(User)QBT_TR[CONTEXT=OptionsDialog]</legend>
+            <label class="prefsLabel" for="webui_username_text">QBT_TR(Username:)QBT_TR[CONTEXT=OptionsDialog]</label>
+            <input type="text" id="webui_username_text" class="prefsControl prefsWide">
+            <label class="prefsLabel" for="webui_password_text">QBT_TR(Password:)QBT_TR[CONTEXT=OptionsDialog]</label>
+            <input type="password" id="webui_password_text" class="prefsControl prefsWide" placeholder="QBT_TR(Change current password)QBT_TR[CONTEXT=OptionsDialog]" autocomplete="new-password">
+            <div class="formRow">
+                <input type="checkbox" id="webUISharedLoginAllowedCheckbox">
+                <label for="webUISharedLoginAllowedCheckbox" title="QBT_TR(Until the first user account is created, this login always works.)QBT_TR[CONTEXT=OptionsDialog]">QBT_TR(Allow this login when user accounts exist)QBT_TR[CONTEXT=OptionsDialog]</label>
+            </div>
+        </fieldset>
+        <fieldset class="settings">
+            <legend>QBT_TR(API Key)QBT_TR[CONTEXT=OptionsDialog]</legend>
+            <label class="prefsLabel" for="WebUIAPIKeyText">QBT_TR(Key:)QBT_TR[CONTEXT=OptionsDialog]</label>
+            <div class="prefsControl">
+                <input type="text" disabled id="WebUIAPIKeyText" class="prefsGrow" placeholder="QBT_TR(Generate a key)QBT_TR[CONTEXT=OptionsDialog]">
+                <button type="button" disabled id="webUIAPIKeyCopyButton" style="padding: 0;" aria-label="QBT_TR(Copy API key)QBT_TR[CONTEXT=OptionsDialog]">
+                    <img class="copyImg" src="images/edit-copy.svg" alt="QBT_TR(Copy API key)QBT_TR[CONTEXT=OptionsDialog]" title="QBT_TR(Copy API key)QBT_TR[CONTEXT=OptionsDialog]" width="16" height="16" style="margin: 4px; top: 2px; position: relative;">
+                    <img class="checkImg" src="images/checked-completed.svg" alt="QBT_TR(Copied)QBT_TR[CONTEXT=OptionsDialog]" title="QBT_TR(Copied)QBT_TR[CONTEXT=OptionsDialog]" width="16" height="16" style="margin: 4px; top: 2px; position: relative; display: none;">
+                </button>
+                <button type="button" id="webUIAPIKeyRotateButton" style="padding: 0;" data-has-key="false" aria-label="QBT_TR(Generate API key)QBT_TR[CONTEXT=OptionsDialog]">
+                    <img src="images/view-refresh.svg" alt="QBT_TR(Generate API key)QBT_TR[CONTEXT=OptionsDialog]" title="QBT_TR(Generate API key)QBT_TR[CONTEXT=OptionsDialog]" width="16" height="16" style="margin: 4px; top: 2px; position: relative;">
+                </button>
+                <button type="button" disabled id="webUIAPIKeyDeleteButton" style="padding: 0;" data-has-key="false" aria-label="QBT_TR(Delete API key)QBT_TR[CONTEXT=OptionsDialog]">
+                    <img src="images/list-remove.svg" alt="QBT_TR(Delete API key)QBT_TR[CONTEXT=OptionsDialog]" title="QBT_TR(Delete API key)QBT_TR[CONTEXT=OptionsDialog]" width="16" height="16" style="margin: 4px; top: 2px; position: relative;">
+                </button>
+            </div>
+        </fieldset>
+        <fieldset class="settings">
+            <legend>QBT_TR(Access)QBT_TR[CONTEXT=OptionsDialog]</legend>
             <div class="formRow">
                 <input type="checkbox" id="bypass_local_auth_checkbox">
                 <label for="bypass_local_auth_checkbox">QBT_TR(Bypass authentication for clients on localhost)QBT_TR[CONTEXT=OptionsDialog]</label>
@@ -1050,105 +1201,78 @@
                 <input type="checkbox" id="bypass_auth_subnet_whitelist_checkbox" onclick="qBittorrent.Preferences.updateBypasssAuthSettings();">
                 <label id="bypassAuthSubnetWhitelistLabel" for="bypass_auth_subnet_whitelist_checkbox">QBT_TR(Bypass authentication for clients in whitelisted IP subnets)QBT_TR[CONTEXT=OptionsDialog]</label>
             </div>
-            <div class="formRow" style="padding-left: 30px; padding-top: 5px;">
+            <div class="formRow prefsIndent">
                 <textarea id="bypass_auth_subnet_whitelist_textarea" rows="5" cols="48" placeholder="QBT_TR(Example: 172.17.32.0/24, fdff:ffff:c8::/40)QBT_TR[CONTEXT=OptionsDialog]" aria-labelledby="bypassAuthSubnetWhitelistLabel"></textarea>
             </div>
-            <table>
-                <tbody>
-                    <tr>
-                        <td><label for="webUIMaxAuthFailCountInput">QBT_TR(Ban client after consecutive failures:)QBT_TR[CONTEXT=OptionsDialog]</label></td>
-                        <td><input type="number" id="webUIMaxAuthFailCountInput" style="width: 6em;" min="0"></td>
-                    </tr>
-                    <tr>
-                        <td style="text-align: right;"><label for="webUIBanDurationInput">QBT_TR(ban for:)QBT_TR[CONTEXT=OptionsDialog]</label></td>
-                        <td><input type="number" id="webUIBanDurationInput" style="width: 6em;" min="1">QBT_TR(sec)QBT_TR[CONTEXT=OptionsDialog]</td>
-                    </tr>
-                </tbody>
-            </table>
-            <table>
-                <tbody>
-                    <tr>
-                        <td><label for="webUISessionTimeoutInput">QBT_TR(Session timeout:)QBT_TR[CONTEXT=OptionsDialog]</label></td>
-                        <td><input type="number" id="webUISessionTimeoutInput" style="width: 6em;" min="0">&nbsp;&nbsp;QBT_TR(sec)QBT_TR[CONTEXT=OptionsDialog]</td>
-                    </tr>
-                </tbody>
-            </table>
+            <label class="prefsLabel" for="webUIMaxAuthFailCountInput">QBT_TR(Ban client after consecutive failures:)QBT_TR[CONTEXT=OptionsDialog]</label>
+            <div class="prefsControl">
+                <input type="number" id="webUIMaxAuthFailCountInput" style="width: 8em;" min="0">
+                <label for="webUIBanDurationInput">QBT_TR(ban for:)QBT_TR[CONTEXT=OptionsDialog]</label>
+                <input type="number" id="webUIBanDurationInput" style="width: 8em;" min="1">QBT_TR(sec)QBT_TR[CONTEXT=OptionsDialog]
+            </div>
+            <label class="prefsLabel" for="webUISessionTimeoutInput">QBT_TR(Session timeout:)QBT_TR[CONTEXT=OptionsDialog]</label>
+            <div class="prefsControl"><input type="number" id="webUISessionTimeoutInput" style="width: 8em;" min="0">QBT_TR(sec)QBT_TR[CONTEXT=OptionsDialog]</div>
         </fieldset>
+    </fieldset>
 
+    <fieldset class="settings">
+        <legend>
+            <input type="checkbox" id="use_alt_webui_checkbox" onclick="qBittorrent.Preferences.updateAlternativeWebUISettings();">
+            <label for="use_alt_webui_checkbox">QBT_TR(Use alternative WebUI)QBT_TR[CONTEXT=OptionsDialog]</label>
+        </legend>
+        <label class="prefsLabel" for="webui_files_location_textarea">QBT_TR(Files location:)QBT_TR[CONTEXT=OptionsDialog]</label>
+        <input type="text" id="webui_files_location_textarea" class="pathDirectory prefsControl prefsWide">
+        <div class="formRow">
+            <a href="https://github.com/qbittorrent/qBittorrent/wiki/List-of-known-alternate-WebUIs" target="_blank">QBT_TR(List of alternative WebUI)QBT_TR[CONTEXT=OptionsDialog]</a>
+        </div>
+    </fieldset>
+
+    <fieldset class="settings">
+        <legend>QBT_TR(Security)QBT_TR[CONTEXT=OptionsDialog]</legend>
+        <div class="formRow">
+            <input type="checkbox" id="clickjacking_protection_checkbox">
+            <label for="clickjacking_protection_checkbox">QBT_TR(Enable clickjacking protection)QBT_TR[CONTEXT=OptionsDialog]</label>
+        </div>
+        <div class="formRow">
+            <input type="checkbox" id="csrf_protection_checkbox">
+            <label for="csrf_protection_checkbox">QBT_TR(Enable Cross-Site Request Forgery (CSRF) protection)QBT_TR[CONTEXT=OptionsDialog]</label>
+        </div>
+        <div class="formRow">
+            <input type="checkbox" id="secureCookieCheckbox">
+            <label for="secureCookieCheckbox">QBT_TR(Enable cookie Secure flag (requires HTTPS or localhost connection))QBT_TR[CONTEXT=OptionsDialog]</label>
+        </div>
         <fieldset class="settings">
-            <legend><input type="checkbox" id="use_alt_webui_checkbox" onclick="qBittorrent.Preferences.updateAlternativeWebUISettings();">
-                <label for="use_alt_webui_checkbox">QBT_TR(Use alternative WebUI)QBT_TR[CONTEXT=OptionsDialog]</label>
+            <legend>
+                <input type="checkbox" id="host_header_validation_checkbox" onclick="qBittorrent.Preferences.updateHostHeaderValidationSettings();">
+                <label for="host_header_validation_checkbox">QBT_TR(Enable Host header validation)QBT_TR[CONTEXT=OptionsDialog]</label>
             </legend>
-            <div class="formRow">
-                <label for="webui_files_location_textarea">QBT_TR(Files location:)QBT_TR[CONTEXT=OptionsDialog]</label>
-                <input type="text" id="webui_files_location_textarea" class="pathDirectory">
-            </div>
-            <div class="formRow">
-                <a href="https://github.com/qbittorrent/qBittorrent/wiki/List-of-known-alternate-WebUIs" target="_blank">QBT_TR(List of alternative WebUI)QBT_TR[CONTEXT=OptionsDialog]</a>
-            </div>
-        </fieldset>
-
-        <fieldset class="settings">
-            <legend>QBT_TR(Security)QBT_TR[CONTEXT=OptionsDialog]</legend>
-            <div class="formRow">
-                <input type="checkbox" id="clickjacking_protection_checkbox">
-                <label for="clickjacking_protection_checkbox">QBT_TR(Enable clickjacking protection)QBT_TR[CONTEXT=OptionsDialog]</label>
-            </div>
-            <div class="formRow">
-                <input type="checkbox" id="csrf_protection_checkbox">
-                <label for="csrf_protection_checkbox">QBT_TR(Enable Cross-Site Request Forgery (CSRF) protection)QBT_TR[CONTEXT=OptionsDialog]</label>
-            </div>
-            <div class="formRow">
-                <input type="checkbox" id="secureCookieCheckbox">
-                <label for="secureCookieCheckbox">QBT_TR(Enable cookie Secure flag (requires HTTPS or localhost connection))QBT_TR[CONTEXT=OptionsDialog]</label>
-            </div>
-
-            <fieldset class="settings">
-                <legend>
-                    <input type="checkbox" id="host_header_validation_checkbox" onclick="qBittorrent.Preferences.updateHostHeaderValidationSettings();">
-                    <label for="host_header_validation_checkbox">QBT_TR(Enable Host header validation)QBT_TR[CONTEXT=OptionsDialog]</label>
-                </legend>
-                <table>
-                    <tbody>
-                        <tr>
-                            <td>
-                                <label for="webuiDomainTextarea">QBT_TR(Server domains:)QBT_TR[CONTEXT=OptionsDialog]</label>
-                            </td>
-                            <td>
-                                <textarea id="webuiDomainTextarea" rows="1" cols="60" title="QBT_TR(Whitelist for filtering HTTP Host header values.
+            <label class="prefsLabel" for="webuiDomainTextarea">QBT_TR(Server domains:)QBT_TR[CONTEXT=OptionsDialog]</label>
+            <input type="text" id="webuiDomainTextarea" class="prefsControl prefsWide" title="QBT_TR(Whitelist for filtering HTTP Host header values.
 In order to defend against DNS rebinding attack,
 you should put in domain names used by WebUI server.
 
-Use ';' to split multiple entries. Can use wildcard '*'.)QBT_TR[CONTEXT=OptionsDialog]"></textarea>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
-            </fieldset>
+Use ';' to split multiple entries. Can use wildcard '*'.)QBT_TR[CONTEXT=OptionsDialog]">
         </fieldset>
+    </fieldset>
 
-        <fieldset class="settings">
-            <legend>
-                <input type="checkbox" id="webUIUseCustomHTTPHeadersCheckbox" onclick="qBittorrent.Preferences.updateWebUICustomHTTPHeadersSettings();">
-                <label id="webUIUseCustomHTTPHeadersLabel" for="webUIUseCustomHTTPHeadersCheckbox">QBT_TR(Add custom HTTP headers)QBT_TR[CONTEXT=OptionsDialog]</label>
-            </legend>
-            <textarea id="webUICustomHTTPHeadersTextarea" placeholder="QBT_TR(Header: value pairs, one per line)QBT_TR[CONTEXT=OptionsDialog]" aria-labelledby="webUIUseCustomHTTPHeadersLabel" style="width: 90%;"></textarea>
-        </fieldset>
+    <fieldset class="settings">
+        <legend>
+            <input type="checkbox" id="webUIUseCustomHTTPHeadersCheckbox" onclick="qBittorrent.Preferences.updateWebUICustomHTTPHeadersSettings();">
+            <label id="webUIUseCustomHTTPHeadersLabel" for="webUIUseCustomHTTPHeadersCheckbox">QBT_TR(Add custom HTTP headers)QBT_TR[CONTEXT=OptionsDialog]</label>
+        </legend>
+        <textarea id="webUICustomHTTPHeadersTextarea" class="prefsWide" placeholder="QBT_TR(Header: value pairs, one per line)QBT_TR[CONTEXT=OptionsDialog]" aria-labelledby="webUIUseCustomHTTPHeadersLabel"></textarea>
+    </fieldset>
 
-        <fieldset class="settings">
-            <legend>
-                <input type="checkbox" id="webUIReverseProxySupportCheckbox" onclick="qBittorrent.Preferences.updateWebUIReverseProxySettings();">
-                <label for="webUIReverseProxySupportCheckbox">QBT_TR(Enable reverse proxy support)QBT_TR[CONTEXT=OptionsDialog]</label>
-            </legend>
-            <div class="formRow">
-                <label for="webUIReverseProxiesListTextarea">QBT_TR(Trusted proxies list:)QBT_TR[CONTEXT=OptionsDialog]</label>
-                <input type="text" id="webUIReverseProxiesListTextarea" title="QBT_TR(Specify reverse proxy IPs (or subnets, e.g. 0.0.0.0/24) in order to use forwarded client address (X-Forwarded-For header). Use ';' to split multiple entries.)QBT_TR[CONTEXT=OptionsDialog]">
-            </div>
-            <div class="formRow">
-                <a href="https://github.com/qbittorrent/qBittorrent/wiki#reverse-proxy-setup-for-webui-access" target="_blank">QBT_TR(Reverse proxy setup examples)QBT_TR[CONTEXT=HttpServer]</a>
-            </div>
-        </fieldset>
-
+    <fieldset class="settings">
+        <legend>
+            <input type="checkbox" id="webUIReverseProxySupportCheckbox" onclick="qBittorrent.Preferences.updateWebUIReverseProxySettings();">
+            <label for="webUIReverseProxySupportCheckbox">QBT_TR(Enable reverse proxy support)QBT_TR[CONTEXT=OptionsDialog]</label>
+        </legend>
+        <label class="prefsLabel" for="webUIReverseProxiesListTextarea">QBT_TR(Trusted proxies list:)QBT_TR[CONTEXT=OptionsDialog]</label>
+        <input type="text" id="webUIReverseProxiesListTextarea" class="prefsControl prefsWide" title="QBT_TR(Specify reverse proxy IPs (or subnets, e.g. 0.0.0.0/24) in order to use forwarded client address (X-Forwarded-For header). Use ';' to split multiple entries.)QBT_TR[CONTEXT=OptionsDialog]">
+        <div class="formRow">
+            <a href="https://github.com/qbittorrent/qBittorrent/wiki#reverse-proxy-setup-for-webui-access" target="_blank">QBT_TR(Reverse proxy setup examples)QBT_TR[CONTEXT=HttpServer]</a>
+        </div>
     </fieldset>
 
     <fieldset class="settings">
@@ -1156,45 +1280,214 @@ Use ';' to split multiple entries. Can use wildcard '*'.)QBT_TR[CONTEXT=OptionsD
             <input type="checkbox" id="use_dyndns_checkbox" onclick="qBittorrent.Preferences.updateDynDnsSettings();">
             <label id="UseDyndnsLabel" for="use_dyndns_checkbox">QBT_TR(Update my dynamic domain name)QBT_TR[CONTEXT=OptionsDialog]</label>
         </legend>
-        <select id="dyndns_select" aria-labelledby="UseDyndnsLabel">
-            <option value="0">DynDNS</option>
-            <option value="1">NO-IP</option>
-        </select>
-        <input type="button" value="QBT_TR(Register)QBT_TR[CONTEXT=OptionsDialog]" onclick="qBittorrent.Preferences.registerDynDns();">
-        <table style="margin-top: 10px;">
-            <tbody>
-                <tr>
-                    <td>
-                        <label for="dyndns_domain_text">QBT_TR(Domain name:)QBT_TR[CONTEXT=OptionsDialog]</label>
-                    </td>
-                    <td>
-                        <input type="text" id="dyndns_domain_text">
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <label for="dyndns_username_text">QBT_TR(Username:)QBT_TR[CONTEXT=OptionsDialog]</label>
-                    </td>
-                    <td>
-                        <input type="text" id="dyndns_username_text">
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <label for="dyndns_password_text">QBT_TR(Password:)QBT_TR[CONTEXT=OptionsDialog]</label>
-                    </td>
-                    <td>
-                        <input type="password" id="dyndns_password_text" autocomplete="new-password">
-                    </td>
-                </tr>
-            </tbody>
-        </table>
+        <label class="prefsLabel" for="dyndns_select">QBT_TR(Service:)QBT_TR[CONTEXT=OptionsDialog]</label>
+        <div class="prefsControl">
+            <select id="dyndns_select">
+                <option value="0">DynDNS</option>
+                <option value="1">NO-IP</option>
+            </select>
+            <input type="button" value="QBT_TR(Register)QBT_TR[CONTEXT=OptionsDialog]" onclick="qBittorrent.Preferences.registerDynDns();">
+        </div>
+        <label class="prefsLabel" for="dyndns_domain_text">QBT_TR(Domain name:)QBT_TR[CONTEXT=OptionsDialog]</label>
+        <div class="prefsControl"><input type="text" id="dyndns_domain_text"></div>
+        <label class="prefsLabel" for="dyndns_username_text">QBT_TR(Username:)QBT_TR[CONTEXT=OptionsDialog]</label>
+        <div class="prefsControl"><input type="text" id="dyndns_username_text"></div>
+        <label class="prefsLabel" for="dyndns_password_text">QBT_TR(Password:)QBT_TR[CONTEXT=OptionsDialog]</label>
+        <div class="prefsControl"><input type="password" id="dyndns_password_text" autocomplete="new-password"></div>
+    </fieldset>
+</div>
+
+<div id="UserAccountsTab" class="PrefTab invisible">
+    <style>
+        #userAccountsTabs {
+            font-size: inherit;
+            gap: 2px;
+            margin: 0;
+            overflow: visible;
+        }
+
+        #userAccountsTabs li a,
+        #userAccountsTabs li:first-child a {
+            background-color: var(--color-background-default);
+            border: 1px solid var(--color-border-default);
+            border-bottom: 0;
+            border-radius: 4px 4px 0 0;
+            color: var(--color-text-default);
+            margin: 0;
+            padding: 4px 12px;
+        }
+
+        #userAccountsTabs li.selected a::after {
+            content: none;
+        }
+
+        #userAccountsTabs li:hover a {
+            background-color: color-mix(in srgb, var(--color-text-default) 9%, var(--color-background-default));
+            color: var(--color-text-default);
+        }
+
+        #userAccountsTabs li.selected a {
+            background-color: var(--color-background-popup);
+            position: relative;
+            top: 1px;
+            z-index: 1;
+        }
+
+        .userAccountsTab {
+            background-color: var(--color-background-popup);
+            border: 1px solid var(--color-border-default);
+            border-radius: 0 4px 4px 4px;
+            padding: 8px;
+        }
+
+        /* more specific than the dynamic tables' own "height: 100%" */
+        #UserAccountsTab .userAccountsTable {
+            border: 1px solid var(--color-border-default);
+            height: 320px;
+        }
+
+        .userAccountsTable .dynamicTableDiv {
+            height: calc(100% - 26px);
+        }
+
+        .userAccountsTable .dynamicTableFixedHeaderDiv {
+            height: 26px;
+        }
+
+        .userAccountsButtons {
+            display: flex;
+            gap: 5px;
+            margin-top: 10px;
+        }
+
+        .userAccountsButtons button {
+            align-items: center;
+            display: flex;
+            gap: 4px;
+            line-height: 1.4em;
+            padding: 3px 12px;
+        }
+
+        .userAccountsHint {
+            margin-bottom: 8px;
+        }
+    </style>
+
+    <div id="userAccountsListsFieldset">
+        <div class="formRow" style="margin-bottom: 8px;">QBT_TR(Changes to users, roles and logins apply at once.)QBT_TR[CONTEXT=OptionsDialog]<span id="userAccountsSaveNote"> QBT_TR(The settings below apply with OK or Apply.)QBT_TR[CONTEXT=OptionsDialog]</span></div>
+        <menu id="userAccountsTabs" class="tab-menu">
+            <li id="userAccountsUsersLink" class="selected">
+                <a><img alt="QBT_TR(Users)QBT_TR[CONTEXT=UserAccounts]" src="images/peers.svg" width="16" height="16">QBT_TR(Users)QBT_TR[CONTEXT=UserAccounts]</a>
+            </li>
+            <li id="userAccountsRolesLink">
+                <a><img alt="QBT_TR(Roles)QBT_TR[CONTEXT=UserAccounts]" src="images/object-locked.svg" width="16" height="16">QBT_TR(Roles)QBT_TR[CONTEXT=UserAccounts]</a>
+            </li>
+            <li id="userAccountsSessionsLink">
+                <a><img alt="QBT_TR(Logged In)QBT_TR[CONTEXT=UserAccounts]" src="images/system-log-out.svg" width="16" height="16">QBT_TR(Logged In)QBT_TR[CONTEXT=UserAccounts]</a>
+            </li>
+        </menu>
+        <div class="clear"></div>
+        <div id="userAccountsUsersTab" class="userAccountsTab">
+            <div class="userAccountsHint">QBT_TR(People who can log in to the WebUI with their own username and password.)QBT_TR[CONTEXT=UserAccounts]</div>
+            <div class="userAccountsTable">
+                <div id="userAccountsTableFixedHeaderDiv" class="dynamicTableFixedHeaderDiv">
+                    <table class="dynamicTable unselectable" style="position:relative;">
+                        <thead>
+                            <tr class="dynamicTableHeader"></tr>
+                        </thead>
+                    </table>
+                </div>
+                <div id="userAccountsTableDiv" class="dynamicTableDiv">
+                    <table class="dynamicTable unselectable">
+                        <tbody></tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="userAccountsButtons">
+                <button type="button" id="addUserButton"><img src="images/list-add.svg" alt="" width="16" height="16">QBT_TR(Add User...)QBT_TR[CONTEXT=UserAccounts]</button>
+                <button type="button" id="editUserButton">QBT_TR(Edit...)QBT_TR[CONTEXT=UserAccounts]</button>
+                <button type="button" id="removeUserButton"><img src="images/list-remove.svg" alt="" width="16" height="16">QBT_TR(Remove)QBT_TR[CONTEXT=UserAccounts]</button>
+            </div>
+        </div>
+        <div id="userAccountsRolesTab" class="userAccountsTab invisible">
+            <div class="userAccountsHint">QBT_TR(A role decides what its users are allowed to do.)QBT_TR[CONTEXT=UserAccounts]</div>
+            <div class="userAccountsTable">
+                <div id="userRolesTableFixedHeaderDiv" class="dynamicTableFixedHeaderDiv">
+                    <table class="dynamicTable unselectable" style="position:relative;">
+                        <thead>
+                            <tr class="dynamicTableHeader"></tr>
+                        </thead>
+                    </table>
+                </div>
+                <div id="userRolesTableDiv" class="dynamicTableDiv">
+                    <table class="dynamicTable unselectable">
+                        <tbody></tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="userAccountsButtons">
+                <button type="button" id="addRoleButton"><img src="images/list-add.svg" alt="" width="16" height="16">QBT_TR(Add Role...)QBT_TR[CONTEXT=UserAccounts]</button>
+                <button type="button" id="editRoleButton">QBT_TR(Edit...)QBT_TR[CONTEXT=UserAccounts]</button>
+                <button type="button" id="removeRoleButton"><img src="images/list-remove.svg" alt="" width="16" height="16">QBT_TR(Remove)QBT_TR[CONTEXT=UserAccounts]</button>
+            </div>
+        </div>
+        <div id="userAccountsSessionsTab" class="userAccountsTab invisible">
+            <div class="userAccountsHint">QBT_TR(Browsers and devices where someone is logged in with a user account.)QBT_TR[CONTEXT=UserAccounts]</div>
+            <div class="userAccountsTable">
+                <div id="userSessionsTableFixedHeaderDiv" class="dynamicTableFixedHeaderDiv">
+                    <table class="dynamicTable unselectable" style="position:relative;">
+                        <thead>
+                            <tr class="dynamicTableHeader"></tr>
+                        </thead>
+                    </table>
+                </div>
+                <div id="userSessionsTableDiv" class="dynamicTableDiv">
+                    <table class="dynamicTable unselectable">
+                        <tbody></tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="userAccountsButtons">
+                <button type="button" id="revokeSessionButton">QBT_TR(Log Out)QBT_TR[CONTEXT=UserAccounts]</button>
+            </div>
+        </div>
+        <ul id="userAccountsTableMenu" class="contextMenu">
+            <li><a href="#editUser"><img src="images/edit-rename.svg" alt="QBT_TR(Edit...)QBT_TR[CONTEXT=UserAccounts]"> QBT_TR(Edit...)QBT_TR[CONTEXT=UserAccounts]</a></li>
+            <li><a href="#enableUser"><img src="images/checked-completed.svg" alt="QBT_TR(Enable)QBT_TR[CONTEXT=UserAccounts]"> QBT_TR(Enable)QBT_TR[CONTEXT=UserAccounts]</a></li>
+            <li><a href="#disableUser"><img src="images/object-locked.svg" alt="QBT_TR(Disable)QBT_TR[CONTEXT=UserAccounts]"> QBT_TR(Disable)QBT_TR[CONTEXT=UserAccounts]</a></li>
+            <li><a href="#logOutUser"><img src="images/system-log-out.svg" alt="QBT_TR(Log Out Everywhere)QBT_TR[CONTEXT=UserAccounts]"> QBT_TR(Log Out Everywhere)QBT_TR[CONTEXT=UserAccounts]</a></li>
+            <li class="separator"><a href="#removeUser"><img src="images/list-remove.svg" alt="QBT_TR(Remove)QBT_TR[CONTEXT=UserAccounts]"> QBT_TR(Remove)QBT_TR[CONTEXT=UserAccounts]</a></li>
+        </ul>
+
+        <ul id="userRolesTableMenu" class="contextMenu">
+            <li><a href="#editRole"><img src="images/edit-rename.svg" alt="QBT_TR(Edit...)QBT_TR[CONTEXT=UserAccounts]"> QBT_TR(Edit...)QBT_TR[CONTEXT=UserAccounts]</a></li>
+            <li class="separator"><a href="#removeRole"><img src="images/list-remove.svg" alt="QBT_TR(Remove)QBT_TR[CONTEXT=UserAccounts]"> QBT_TR(Remove)QBT_TR[CONTEXT=UserAccounts]</a></li>
+        </ul>
+
+        <ul id="userSessionsTableMenu" class="contextMenu">
+            <li><a href="#revokeSession"><img src="images/system-log-out.svg" alt="QBT_TR(Log Out)QBT_TR[CONTEXT=UserAccounts]"> QBT_TR(Log Out)QBT_TR[CONTEXT=UserAccounts]</a></li>
+        </ul>
+    </div>
+
+    <fieldset class="settings" id="userAccountsSettingsFieldset">
+        <legend>QBT_TR(Logins and Activity Log)QBT_TR[CONTEXT=OptionsDialog]</legend>
+        <label class="prefsLabel" for="webUIUserSignInDaysInput" title="QBT_TR(0 means users are logged out after the session timeout.)QBT_TR[CONTEXT=OptionsDialog]">QBT_TR(Keep users logged in for:)QBT_TR[CONTEXT=OptionsDialog]</label>
+        <div class="prefsControl"><input type="number" id="webUIUserSignInDaysInput" style="width: 8em;" min="0" max="365">QBT_TR(days)QBT_TR[CONTEXT=OptionsDialog]</div>
+        <label class="prefsLabel" for="webUIUserMaxAuthFailCountInput">QBT_TR(Lock account after consecutive failures:)QBT_TR[CONTEXT=OptionsDialog]</label>
+        <div class="prefsControl">
+            <input type="number" id="webUIUserMaxAuthFailCountInput" style="width: 8em;" min="0">
+            <label for="webUIUserLockDurationInput">QBT_TR(lock for:)QBT_TR[CONTEXT=OptionsDialog]</label>
+            <input type="number" id="webUIUserLockDurationInput" style="width: 8em;" min="1">QBT_TR(sec)QBT_TR[CONTEXT=OptionsDialog]
+        </div>
+        <label class="prefsLabel" for="webUIActivityLogDaysInput">QBT_TR(Keep WebUI activity log for:)QBT_TR[CONTEXT=OptionsDialog]</label>
+        <div class="prefsControl"><input type="number" id="webUIActivityLogDaysInput" style="width: 8em;" min="1" max="3650">QBT_TR(days)QBT_TR[CONTEXT=OptionsDialog]</div>
     </fieldset>
 </div>
 
 <div id="AdvancedTab" class="PrefTab invisible">
+    <div id="advancedHeader" data-setting="QBT_TR(Setting)QBT_TR[CONTEXT=AdvancedSettings]" data-value="QBT_TR(Value)QBT_TR[CONTEXT=AdvancedSettings]"></div>
     <fieldset class="settings">
-        <legend>QBT_TR(qBittorrent Section)QBT_TR[CONTEXT=OptionsDialog]&nbsp;(<a href="https://github.com/qbittorrent/qBittorrent/wiki/Explanation-of-Options-in-qBittorrent#Advanced" target="_blank">QBT_TR(Open documentation)QBT_TR[CONTEXT=HttpServer]</a>)</legend>
+        <legend><span>QBT_TR(qBittorrent Section)QBT_TR[CONTEXT=OptionsDialog]</span><a href="https://github.com/qbittorrent/qBittorrent/wiki/Explanation-of-Options-in-qBittorrent#Advanced" target="_blank">QBT_TR(Open documentation)QBT_TR[CONTEXT=HttpServer]</a></legend>
         <table>
             <tbody>
                 <tr>
@@ -1227,6 +1520,20 @@ Use ';' to split multiple entries. Can use wildcard '*'.)QBT_TR[CONTEXT=OptionsD
                         <input type="text" id="memoryWorkingSetLimit" style="width: 15em;">&nbsp;&nbsp;QBT_TR(MiB)QBT_TR[CONTEXT=OptionsDialog]
                     </td>
                 </tr>
+                <tr id="rowMemoryPriority">
+                    <td>
+                        <label for="memoryPriority">QBT_TR(Process memory priority:)QBT_TR[CONTEXT=OptionsDialog]&nbsp;<a href="https://docs.microsoft.com/en-us/windows/win32/api/processthreadsapi/ns-processthreadsapi-memory_priority_information" target="_blank">(?)</a></label>
+                    </td>
+                    <td>
+                        <select id="memoryPriority" style="width: 15em;">
+                            <option value="Normal">QBT_TR(Normal)QBT_TR[CONTEXT=OptionsDialog]</option>
+                            <option value="BelowNormal">QBT_TR(Below normal)QBT_TR[CONTEXT=OptionsDialog]</option>
+                            <option value="Medium">QBT_TR(Medium)QBT_TR[CONTEXT=OptionsDialog]</option>
+                            <option value="Low">QBT_TR(Low)QBT_TR[CONTEXT=OptionsDialog]</option>
+                            <option value="VeryLow">QBT_TR(Very low)QBT_TR[CONTEXT=OptionsDialog]</option>
+                        </select>
+                    </td>
+                </tr>
                 <tr>
                     <td>
                         <label for="networkInterface">QBT_TR(Network interface:)QBT_TR[CONTEXT=OptionsDialog]</label>
@@ -1247,7 +1554,7 @@ Use ';' to split multiple entries. Can use wildcard '*'.)QBT_TR[CONTEXT=OptionsD
                 </tr>
                 <tr>
                     <td>
-                        <label for="saveResumeDataInterval">QBT_TR(Save resume data interval:)QBT_TR[CONTEXT=OptionsDialog]</label>
+                        <label for="saveResumeDataInterval">QBT_TR(Save resume data interval [0: disabled]:)QBT_TR[CONTEXT=OptionsDialog]</label>
                     </td>
                     <td>
                         <input type="text" id="saveResumeDataInterval" style="width: 15em;">&nbsp;&nbsp;QBT_TR(min)QBT_TR[CONTEXT=OptionsDialog]
@@ -1255,7 +1562,7 @@ Use ';' to split multiple entries. Can use wildcard '*'.)QBT_TR[CONTEXT=OptionsD
                 </tr>
                 <tr>
                     <td>
-                        <label for="saveStatisticsInterval">QBT_TR(Save statistics interval:)QBT_TR[CONTEXT=OptionsDialog]</label>
+                        <label for="saveStatisticsInterval">QBT_TR(Save statistics interval [0: disabled]:)QBT_TR[CONTEXT=OptionsDialog]</label>
                     </td>
                     <td>
                         <input type="text" id="saveStatisticsInterval" style="width: 15em;">&nbsp;&nbsp;QBT_TR(min)QBT_TR[CONTEXT=OptionsDialog]
@@ -1373,11 +1680,27 @@ Use ';' to split multiple entries. Can use wildcard '*'.)QBT_TR[CONTEXT=OptionsD
                         <input type="text" id="pythonExecutablePath" class="pathFile" placeholder="QBT_TR((Auto detect if empty))QBT_TR[CONTEXT=OptionsDialog]" style="width: 15em;">
                     </td>
                 </tr>
+                <tr>
+                    <td>
+                        <label for="startSessionPaused">QBT_TR(Start BitTorrent session in paused state:)QBT_TR[CONTEXT=OptionsDialog]</label>
+                    </td>
+                    <td>
+                        <input type="checkbox" id="startSessionPaused">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="sessionShutdownTimeout">QBT_TR(BitTorrent session shutdown timeout [-1: unlimited]:)QBT_TR[CONTEXT=OptionsDialog]</label>
+                    </td>
+                    <td>
+                        <input type="number" id="sessionShutdownTimeout" style="width: 15em;" min="-1">&nbsp;&nbsp;QBT_TR(sec)QBT_TR[CONTEXT=OptionsDialog]
+                    </td>
+                </tr>
             </tbody>
         </table>
     </fieldset>
     <fieldset class="settings">
-        <legend>QBT_TR(libtorrent Section)QBT_TR[CONTEXT=OptionsDialog]&nbsp;(<a href="https://www.libtorrent.org/reference-Settings.html" target="_blank">QBT_TR(Open documentation)QBT_TR[CONTEXT=HttpServer]</a>)</legend>
+        <legend><span>QBT_TR(libtorrent Section)QBT_TR[CONTEXT=OptionsDialog]</span><a href="https://www.libtorrent.org/reference-Settings.html" target="_blank">QBT_TR(Open documentation)QBT_TR[CONTEXT=HttpServer]</a></legend>
         <table>
             <tbody>
                 <tr>
@@ -1637,7 +1960,7 @@ Use ';' to split multiple entries. Can use wildcard '*'.)QBT_TR[CONTEXT=OptionsD
                 </tr>
                 <tr>
                     <td>
-                        <label for="validateHTTPSTrackerCertificate">QBT_TR(Validate HTTPS tracker certificate:)QBT_TR[CONTEXT=OptionsDialog]&nbsp;<a href="https://www.libtorrent.org/reference-Settings.html#validate_https_trackers" target="_blank">(?)</a></label>
+                        <label for="validateHTTPSTrackerCertificate">QBT_TR(Validate HTTPS tracker certificates:)QBT_TR[CONTEXT=OptionsDialog]&nbsp;<a href="https://www.libtorrent.org/reference-Settings.html#validate_https_trackers" target="_blank">(?)</a></label>
                     </td>
                     <td>
                         <input type="checkbox" id="validateHTTPSTrackerCertificate">
@@ -1807,7 +2130,319 @@ Use ';' to split multiple entries. Can use wildcard '*'.)QBT_TR[CONTEXT=OptionsD
     </fieldset>
 </div>
 
-<div style="text-align: center; margin-top: 1em;"><input type="button" value="QBT_TR(Save)QBT_TR[CONTEXT=HttpServer]" onclick="qBittorrent.Preferences.applyPreferences();"></div>
+</div>
+<div id="preferencesSaveRow">
+    <button type="button" id="preferencesOkButton">QBT_TR(OK)QBT_TR[CONTEXT=HttpServer]</button>
+    <button type="button" id="preferencesCancelButton">QBT_TR(Cancel)QBT_TR[CONTEXT=MainWindow]</button>
+    <button type="button" id="preferencesApplyButton" disabled>QBT_TR(Apply)QBT_TR[CONTEXT=HttpServer]</button>
+</div>
+</div>
+</div>
+</div>
+
+<script>
+    "use strict";
+
+    window.qBittorrent ??= {};
+    window.qBittorrent.UserAccounts ??= (() => {
+        const exports = () => {
+            return {
+                load: load,
+                show: show,
+                hide: hide,
+                refresh: refresh,
+                getUser: getUser,
+                getRoles: getRoles,
+                getRole: getRole,
+                getCatalog: getCatalog,
+                permissionLabel: permissionLabel
+            };
+        };
+
+        // a page of the Options window: the lists are set up the first time the page is shown
+        const windowId = "preferencesPage";
+        let usersTable;
+        let rolesTable;
+        let sessionsTable;
+        let contextMenus = [];
+        let users = [];
+        let roles = [];
+        let catalog = { permissions: [], password_min_length: 8 };
+        let refreshTimer = null;
+        let isSetUp = false;
+
+        // Errors from the server are written for people, so show them as they are.
+        const post = async (action, params) => {
+            const response = await fetch(`api/v2/access/${action}`, {
+                method: "POST",
+                body: new URLSearchParams(params)
+            });
+            if (!response.ok) {
+                alert(await response.text());
+                return false;
+            }
+            return true;
+        };
+
+        const getJSON = async (action) => {
+            const response = await fetch(`api/v2/access/${action}`, {
+                method: "GET",
+                cache: "no-store"
+            });
+            if (!response.ok)
+                throw new Error(await response.text());
+            return await response.json();
+        };
+
+        const getUser = (id) => users.find(user => `${user.id}` === `${id}`);
+        const getRoles = () => roles;
+        const getRole = (id) => roles.find(role => `${role.id}` === `${id}`);
+        const getCatalog = () => catalog;
+        const permissionLabel = (id) => catalog.permissions.find(permission => permission.id === id)?.label ?? id;
+
+        const contextMenuOffsets = () => {
+            const rect = document.getElementById(windowId).getBoundingClientRect();
+            return { x: -rect.left, y: -rect.top };
+        };
+
+        const createContextMenu = (targets, menu, actions, updateMenuItems) => {
+            class UserAccountsContextMenu extends window.qBittorrent.ContextMenu.ContextMenu {
+                updateMenuItems() {
+                    this.options.offsets = contextMenuOffsets();
+                    updateMenuItems?.(this);
+                }
+            }
+            const contextMenu = new UserAccountsContextMenu({
+                targets: targets,
+                menu: menu,
+                actions: actions,
+                offsets: contextMenuOffsets()
+            });
+            contextMenus.push(contextMenu);
+            return contextMenu;
+        };
+
+        // replace a table's rows, keeping the selection
+        const fillTable = (table, rows) => {
+            const selected = table.selectedRowsIds();
+            table.clear();
+            for (const row of rows)
+                table.updateRowData(row);
+            table.reselectRows(selected.filter(id => table.getRow(id) !== undefined));
+            table.updateTable();
+        };
+
+        const refresh = async () => {
+            try {
+                const [usersData, sessionsData] = await Promise.all([getJSON("users"), getJSON("sessions")]);
+                users = usersData.users;
+                roles = usersData.roles;
+
+                fillTable(usersTable, users.map(user => ({ ...user, rowId: user.id, last_login_at: user.last_login_at ?? 0 })));
+                fillTable(rolesTable, roles.map(role => ({ ...role, rowId: role.id })));
+                fillTable(sessionsTable, sessionsData.sessions.map(session => ({ ...session, rowId: session.id })));
+            }
+            catch (error) {
+                console.error(error);
+            }
+        };
+
+        const openUserDialog = (userId) => {
+            const contentURL = new URL("useraccount.html", window.location);
+            contentURL.search = new URLSearchParams({
+                v: "${CACHEID}",
+                id: userId ?? ""
+            });
+            new MochaUI.Window({
+                id: "userAccountPage",
+                icon: "images/peers.svg",
+                title: (userId === undefined) ? "QBT_TR(Add User)QBT_TR[CONTEXT=UserAccounts]" : "QBT_TR(Edit User)QBT_TR[CONTEXT=UserAccounts]",
+                loadMethod: "iframe",
+                contentURL: contentURL.toString(),
+                scrollbars: false,
+                resizable: false,
+                maximizable: false,
+                paddingVertical: 0,
+                paddingHorizontal: 0,
+                width: window.qBittorrent.Dialog.limitWidthToViewport(400),
+                height: 230
+            });
+        };
+
+        const openRoleDialog = (roleId) => {
+            const contentURL = new URL("userrole.html", window.location);
+            contentURL.search = new URLSearchParams({
+                v: "${CACHEID}",
+                id: roleId ?? ""
+            });
+            new MochaUI.Window({
+                id: "userRolePage",
+                icon: "images/object-locked.svg",
+                title: (roleId === undefined) ? "QBT_TR(Add Role)QBT_TR[CONTEXT=UserAccounts]" : "QBT_TR(Edit Role)QBT_TR[CONTEXT=UserAccounts]",
+                loadMethod: "iframe",
+                contentURL: contentURL.toString(),
+                scrollbars: false,
+                resizable: true,
+                maximizable: false,
+                paddingVertical: 0,
+                paddingHorizontal: 0,
+                width: window.qBittorrent.Dialog.limitWidthToViewport(520),
+                height: window.qBittorrent.Dialog.limitHeightToViewport(560)
+            });
+        };
+
+        const selectedUser = () => getUser(usersTable.selectedRowsIds()[0]);
+        const selectedRole = () => getRole(rolesTable.selectedRowsIds()[0]);
+
+        const editUser = () => {
+            const user = selectedUser();
+            if (user)
+                openUserDialog(user.id);
+        };
+
+        const setUserDisabled = async (disabled) => {
+            const user = selectedUser();
+            if (user && await post("updateUser", { id: user.id, disabled: disabled }))
+                refresh();
+        };
+
+        const logOutUser = async () => {
+            const user = selectedUser();
+            if (user && await post("signOutUser", { id: user.id }))
+                refresh();
+        };
+
+        const removeUser = async () => {
+            const user = selectedUser();
+            if (!user)
+                return;
+            if (!confirm("QBT_TR(Are you sure you want to remove the user '%1'?)QBT_TR[CONTEXT=UserAccounts]".replace("%1", user.username)))
+                return;
+            if (await post("deleteUser", { id: user.id }))
+                refresh();
+        };
+
+        const editRole = () => {
+            const role = selectedRole();
+            if (role)
+                openRoleDialog(role.id);
+        };
+
+        const removeRole = async () => {
+            const role = selectedRole();
+            if (!role)
+                return;
+            if (!confirm("QBT_TR(Are you sure you want to remove the role '%1'?)QBT_TR[CONTEXT=UserAccounts]".replace("%1", role.name)))
+                return;
+            if (await post("deleteRole", { id: role.id }))
+                refresh();
+        };
+
+        const revokeSession = async () => {
+            const ids = sessionsTable.selectedRowsIds();
+            for (const id of ids)
+                await post("revokeSession", { id: id });
+            if (ids.length > 0)
+                refresh();
+        };
+
+        const setupTables = () => {
+            MochaUI.initializeTabs("userAccountsTabs");
+            const showTab = (element) => {
+                for (const tab of document.querySelectorAll(".userAccountsTab"))
+                    tab.classList.toggle("invisible", (tab !== element));
+            };
+            document.getElementById("userAccountsUsersLink").addEventListener("click", (e) => {
+                showTab(document.getElementById("userAccountsUsersTab"));
+            });
+            document.getElementById("userAccountsRolesLink").addEventListener("click", (e) => {
+                showTab(document.getElementById("userAccountsRolesTab"));
+            });
+            document.getElementById("userAccountsSessionsLink").addEventListener("click", (e) => {
+                showTab(document.getElementById("userAccountsSessionsTab"));
+                refresh();
+            });
+
+            usersTable = new window.qBittorrent.DynamicTable.UserAccountsTable();
+            rolesTable = new window.qBittorrent.DynamicTable.UserRolesTable();
+            sessionsTable = new window.qBittorrent.DynamicTable.UserSessionsTable();
+            contextMenus = [];
+
+            const usersMenu = createContextMenu("#userAccountsTableDiv tbody tr", "userAccountsTableMenu", {
+                editUser: editUser,
+                enableUser: () => setUserDisabled(false),
+                disableUser: () => setUserDisabled(true),
+                logOutUser: logOutUser,
+                removeUser: removeUser
+            }, (menu) => {
+                const user = selectedUser();
+                if (user?.disabled)
+                    menu.hideItem("disableUser").showItem("enableUser");
+                else
+                    menu.hideItem("enableUser").showItem("disableUser");
+            });
+            const rolesMenu = createContextMenu("#userRolesTableDiv tbody tr", "userRolesTableMenu", {
+                editRole: editRole,
+                removeRole: removeRole
+            });
+            const sessionsMenu = createContextMenu("#userSessionsTableDiv tbody tr", "userSessionsTableMenu", {
+                revokeSession: revokeSession
+            });
+
+            usersTable.setup("userAccountsTableDiv", "userAccountsTableFixedHeaderDiv", usersMenu);
+            rolesTable.setup("userRolesTableDiv", "userRolesTableFixedHeaderDiv", rolesMenu);
+            sessionsTable.setup("userSessionsTableDiv", "userSessionsTableFixedHeaderDiv", sessionsMenu);
+
+            usersTable.dynamicTableDiv.addEventListener("dblclick", editUser);
+            rolesTable.dynamicTableDiv.addEventListener("dblclick", editRole);
+
+            document.getElementById("addUserButton").addEventListener("click", () => openUserDialog());
+            document.getElementById("editUserButton").addEventListener("click", editUser);
+            document.getElementById("removeUserButton").addEventListener("click", removeUser);
+            document.getElementById("addRoleButton").addEventListener("click", () => openRoleDialog());
+            document.getElementById("editRoleButton").addEventListener("click", editRole);
+            document.getElementById("removeRoleButton").addEventListener("click", removeRole);
+            document.getElementById("revokeSessionButton").addEventListener("click", revokeSession);
+
+            getJSON("catalog")
+                .then((data) => {
+                    catalog = data;
+                    rolesTable.updateTable(true);
+                })
+                .catch(console.error);
+        };
+
+        // called each time the Options window loads its page
+        const load = () => {
+            hide();
+            isSetUp = false;
+        };
+
+        const show = () => {
+            if (!window.qBittorrent.Cache.account.can("manage_users"))
+                return;
+
+            if (!isSetUp) {
+                setupTables();
+                isSetUp = true;
+            }
+            refresh();
+            clearInterval(refreshTimer);
+            refreshTimer = setInterval(() => {
+                if (!document.hidden)
+                    refresh();
+            }, 10000);
+        };
+
+        const hide = () => {
+            clearInterval(refreshTimer);
+            refreshTimer = null;
+        };
+
+        return exports();
+    })();
+    Object.freeze(window.qBittorrent.UserAccounts);
+</script>
 
 <script>
     "use strict";
@@ -1830,6 +2465,7 @@ Use ';' to split multiple entries. Can use wildcard '*'.)QBT_TR[CONTEXT=OptionsD
                 updateMailNotification: updateMailNotification,
                 updateMailAuthSettings: updateMailAuthSettings,
                 sendTestEmail: sendTestEmail,
+                updateDeleteTorrentFileSettings: updateDeleteTorrentFileSettings,
                 updateAutoRun: updateAutoRun,
                 updateAutoRunOnTorrentAdded: updateAutoRunOnTorrentAdded,
                 generateRandomPort: generateRandomPort,
@@ -2022,6 +2658,12 @@ Use ';' to split multiple entries. Can use wildcard '*'.)QBT_TR[CONTEXT=OptionsD
 
                     alert("QBT_TR(Attempted to send email. Check your inbox to confirm success)QBT_TR[CONTEXT=OptionsDialog]");
                 });
+        };
+
+        const updateDeleteTorrentFileSettings = () => {
+            const isDeleteTorrentFileEnabled = document.getElementById("deletetorrentfileafter_checkbox").checked;
+            document.getElementById("deleteCancelledTorrentFileCheckbox").disabled = !isDeleteTorrentFileEnabled;
+            document.getElementById("deleteTorrentFileWarning").classList.toggle("invisible", !isDeleteTorrentFileEnabled);
         };
 
         const updateAutoRunOnTorrentAdded = () => {
@@ -2290,6 +2932,192 @@ Use ';' to split multiple entries. Can use wildcard '*'.)QBT_TR[CONTEXT=OptionsD
                 combobox.options[0].selected = true;
         };
 
+        // Sidebar
+        const NARROW_WIDTH = 600; // the same as the @container rule above
+
+        // As in the desktop app, the controls of a page start at one column: every row label is as wide as the
+        // widest one, less its indent. On a narrow window the rows stack instead.
+        const alignRows = (page) => {
+            const labels = [...page.querySelectorAll("fieldset.settings > .prefsLabel")];
+            for (const label of labels)
+                label.style.removeProperty("min-width");
+            if (document.getElementById("preferencesLayout").clientWidth <= NARROW_WIDTH)
+                return;
+
+            const pageLeft = page.getBoundingClientRect().left;
+            const rows = labels
+                .filter((label) => label.offsetParent !== null)
+                .map((label) => {
+                    const rect = label.getBoundingClientRect();
+                    return { label: label, left: (rect.left - pageLeft), right: (rect.right - pageLeft) };
+                });
+            const column = Math.max(0, ...rows.map((row) => row.right));
+            for (const row of rows)
+                row.label.style.minWidth = `${column - row.left}px`;
+        };
+
+        const showPage = (link) => {
+            const page = document.getElementById(link.dataset.page);
+            for (const item of document.querySelectorAll("#preferencesTabs li"))
+                item.classList.toggle("selected", (item === link));
+            for (const tab of document.querySelectorAll(".PrefTab"))
+                tab.classList.toggle("invisible", (tab !== page));
+            document.getElementById("preferencesPageTitle").textContent = link.textContent.trim();
+            document.getElementById("preferencesPages").scrollTop = 0;
+            // on a narrow window the pages run along the top, partly out of view
+            link.scrollIntoView({ block: "nearest", inline: "nearest" });
+            alignRows(page);
+            showFirstSearchMatch(false);
+
+            // the account lists refresh themselves only while they're shown
+            if (page.id === "UserAccountsTab")
+                window.qBittorrent.UserAccounts.show();
+            else
+                window.qBittorrent.UserAccounts.hide();
+        };
+
+        // Search, as in the desktop app: every word typed must be in a setting's text. Pages without a match leave
+        // the sidebar, and the matches are tinted; Advanced shows only its matching rows instead.
+        let searchWords = [];
+        let searchMatches = [];
+        const FOCUSABLE = "input:not([type=hidden]), select, textarea, button, a[href]";
+
+        const containsAll = (text, words) => {
+            const lowerText = text.toLowerCase();
+            return words.every((word) => lowerText.includes(word));
+        };
+
+        // the elements with text of their own: labels, section titles, buttons, choices, notes and tab names
+        const searchCandidates = (page) => [...page.querySelectorAll("*")].filter((element) => {
+            if (element.closest("script, style, .dynamicTable, .contextMenu"))
+                return false;
+            return [...element.childNodes].some((node) => (node.nodeType === Node.TEXT_NODE) && (node.nodeValue.trim() !== ""));
+        });
+
+        // what to tint for an element: itself (a choice tints its drop-down box), the tab it's on when that tab is
+        // closed, or null when it isn't shown on this system or for this account
+        const searchTarget = (element, page) => {
+            let target = (element.tagName === "OPTION") ? element.closest("select") : element;
+            for (let node = target; (node !== null) && (node !== page); node = node.parentElement) {
+                if (getComputedStyle(node).display !== "none")
+                    continue;
+                if (!node.classList.contains("userAccountsTab"))
+                    return null;
+                target = document.getElementById(node.id.replace(/Tab$/, "Link")).querySelector("a");
+            }
+            return target;
+        };
+
+        // a section of Advanced stays while any of its rows is shown; returns whether any row is shown
+        const filterAdvancedRows = (words) => {
+            let anyShown = false;
+            for (const section of document.querySelectorAll("#AdvancedTab fieldset")) {
+                let sectionShown = false;
+                for (const row of section.querySelectorAll("tr")) {
+                    const shown = containsAll(row.cells[0].textContent, words);
+                    row.classList.toggle("prefsNoMatch", !shown);
+                    // rows hidden on this system don't count
+                    sectionShown = sectionShown || (shown && (row.style.display !== "none"));
+                }
+                section.classList.toggle("prefsNoMatch", !sectionShown);
+                anyShown = anyShown || sectionShown;
+            }
+            return anyShown;
+        };
+
+        const searchSettings = () => {
+            for (const element of document.querySelectorAll("#preferencesLayout .prefsSearchMatch, #preferencesLayout .prefsNoMatch"))
+                element.classList.remove("prefsSearchMatch", "prefsNoMatch");
+            searchWords = document.getElementById("preferencesSearch").value.toLowerCase().split(/\s+/).filter((word) => (word !== ""));
+            searchMatches = [];
+            document.getElementById("preferencesNoSearchMatch").classList.add("invisible");
+            if (searchWords.length === 0)
+                return;
+
+            let anyPageMatches = false;
+            // only the pages this account can see
+            for (const link of document.querySelectorAll("#preferencesTabs li:not(.invisible)")) {
+                const page = document.getElementById(link.dataset.page);
+                // a page whose name matches is shown whole
+                const nameMatches = containsAll(link.textContent, searchWords);
+                let pageMatches = nameMatches;
+                if (page.id === "AdvancedTab") {
+                    pageMatches = filterAdvancedRows(nameMatches ? [] : searchWords) || nameMatches;
+                }
+                else {
+                    const matches = searchCandidates(page)
+                        .filter((element) => containsAll(element.textContent, searchWords) && (searchTarget(element, page) !== null));
+                    // the innermost match, so that a row isn't tinted around the label that matched
+                    const innermost = matches.filter((element) => !matches.some((other) => (other !== element) && element.contains(other)));
+                    const targets = [...new Set(innermost.map((element) => searchTarget(element, page)))]
+                        .sort((a, b) => ((a.compareDocumentPosition(b) & Node.DOCUMENT_POSITION_FOLLOWING) ? -1 : 1));
+                    for (const target of targets)
+                        target.classList.add("prefsSearchMatch");
+                    searchMatches.push(...targets);
+                    pageMatches = pageMatches || (targets.length > 0);
+                }
+                link.classList.toggle("prefsNoMatch", !pageMatches);
+                anyPageMatches = anyPageMatches || pageMatches;
+            }
+            document.getElementById("preferencesNoSearchMatch").classList.toggle("invisible", anyPageMatches);
+
+            if (document.querySelector("#preferencesTabs li.selected").classList.contains("prefsNoMatch")) {
+                const firstLink = document.querySelector("#preferencesTabs li:not(.invisible, .prefsNoMatch)");
+                if (firstLink !== null) {
+                    showPage(firstLink); // which shows its first match
+                    return;
+                }
+            }
+            showFirstSearchMatch(false);
+        };
+
+        // scrolls only the page, not the window around it
+        const scrollToSearchMatch = (element) => {
+            const pages = document.getElementById("preferencesPages");
+            const elementRect = element.getBoundingClientRect();
+            const pagesRect = pages.getBoundingClientRect();
+            if ((elementRect.top < pagesRect.top) || (elementRect.bottom > pagesRect.bottom))
+                pages.scrollTop += elementRect.top - pagesRect.top - 8;
+        };
+
+        // the control a match is about: the one it labels or holds, or else the next one after it
+        const focusTargetFor = (element, page) => {
+            const usable = (control) => ((control !== null) && !control.disabled && (control.offsetParent !== null));
+            if (element.matches(FOCUSABLE) && usable(element))
+                return element;
+            if ((element.control !== undefined) && usable(element.control))
+                return element.control;
+            return [...page.querySelectorAll(FOCUSABLE)]
+                .find((control) => usable(control) && (element.compareDocumentPosition(control) & Node.DOCUMENT_POSITION_FOLLOWING));
+        };
+
+        // scrolls the first match on the shown page into view; with giveFocus the keyboard goes there too
+        const showFirstSearchMatch = (giveFocus) => {
+            if (searchWords.length === 0)
+                return;
+
+            const page = document.querySelector(".PrefTab:not(.invisible)");
+            if (page.id === "AdvancedTab") {
+                const row = [...page.querySelectorAll("tr:not(.prefsNoMatch)")].find((tr) => (tr.offsetParent !== null));
+                const control = (row !== undefined) ? focusTargetFor(row.cells[1], page) : undefined;
+                if (giveFocus && (control !== undefined)) {
+                    scrollToSearchMatch(row);
+                    control.focus({ preventScroll: true });
+                }
+                return;
+            }
+
+            const match = searchMatches.find((element) => page.contains(element));
+            if (match === undefined)
+                return;
+            // a match on a closed tab opens that tab
+            if (giveFocus && match.closest("#userAccountsTabs") && !match.closest("li").classList.contains("selected"))
+                match.closest("li").click();
+            scrollToSearchMatch(match);
+            if (giveFocus)
+                focusTargetFor(match, page)?.focus({ preventScroll: true });
+        };
+
         const loadPreferences = () => {
             window.parent.qBittorrent.Cache.preferences.init()
                 .then((pref) => {
@@ -2371,7 +3199,10 @@ Use ';' to split multiple entries. Can use wildcard '*'.)QBT_TR[CONTEXT=OptionsD
                     }
                     document.getElementById("stopConditionSelect").getChildren("option")[index].selected = true;
                     document.getElementById("mergeTrackersInput").checked = pref.merge_trackers;
-                    document.getElementById("deletetorrentfileafter_checkbox").checked = pref.auto_delete_mode;
+                    // 0: never, 1: if added, 2: always (also when addition is cancelled)
+                    document.getElementById("deletetorrentfileafter_checkbox").checked = (pref.auto_delete_mode !== 0);
+                    document.getElementById("deleteCancelledTorrentFileCheckbox").checked = (pref.auto_delete_mode === 2);
+                    updateDeleteTorrentFileSettings();
 
                     document.getElementById("preallocateall_checkbox").checked = pref.preallocate_all;
                     document.getElementById("appendext_checkbox").checked = pref.incomplete_files_ext;
@@ -2446,6 +3277,7 @@ Use ';' to split multiple entries. Can use wildcard '*'.)QBT_TR[CONTEXT=OptionsD
                     document.getElementById("autorun_checkbox").checked = pref.autorun_enabled;
                     document.getElementById("autorunProg_txt").value = pref.autorun_program;
                     updateAutoRun();
+                    document.getElementById("autorunConsoleCheckbox").checked = pref.autorun_console;
 
                     // Connection tab
                     // Listening Port
@@ -2633,6 +3465,13 @@ Use ';' to split multiple entries. Can use wildcard '*'.)QBT_TR[CONTEXT=OptionsD
                     document.getElementById("webUIBanDurationInput").value = Number(pref.web_ui_ban_duration);
                     document.getElementById("webUISessionTimeoutInput").value = Number(pref.web_ui_session_timeout);
 
+                    // User accounts
+                    document.getElementById("webUISharedLoginAllowedCheckbox").checked = pref.web_ui_shared_login_allowed;
+                    document.getElementById("webUIUserSignInDaysInput").value = Number(pref.web_ui_user_sign_in_days);
+                    document.getElementById("webUIUserMaxAuthFailCountInput").value = Number(pref.web_ui_user_max_auth_fail_count);
+                    document.getElementById("webUIUserLockDurationInput").value = Number(pref.web_ui_user_lock_duration);
+                    document.getElementById("webUIActivityLogDaysInput").value = Number(pref.web_ui_activity_log_days);
+
                     // API key
                     if (pref.web_ui_api_key.length > 0) {
                         document.getElementById("WebUIAPIKeyText").value = maskAPIKey(pref.web_ui_api_key);
@@ -2678,8 +3517,13 @@ Use ';' to split multiple entries. Can use wildcard '*'.)QBT_TR[CONTEXT=OptionsD
                     document.getElementById("resumeDataStorageType").value = pref.resume_data_storage_type;
                     document.getElementById("torrentContentRemoveOption").value = pref.torrent_content_remove_option;
                     document.getElementById("memoryWorkingSetLimit").value = pref.memory_working_set_limit;
-                    updateNetworkInterfaces(pref.current_network_interface, pref.current_interface_name);
-                    updateInterfaceAddresses(pref.current_network_interface, pref.current_interface_address);
+                    if (pref.memory_priority !== undefined)
+                        document.getElementById("memoryPriority").value = pref.memory_priority;
+                    // the interface lists need "Change qBittorrent settings"
+                    if (window.qBittorrent.Cache.account.can("settings")) {
+                        updateNetworkInterfaces(pref.current_network_interface, pref.current_interface_name);
+                        updateInterfaceAddresses(pref.current_network_interface, pref.current_interface_address);
+                    }
                     document.getElementById("saveResumeDataInterval").value = pref.save_resume_data_interval;
                     document.getElementById("saveStatisticsInterval").value = pref.save_statistics_interval;
                     document.getElementById("torrentFileSizeLimit").value = (pref.torrent_file_size_limit / 1024 / 1024);
@@ -2696,6 +3540,8 @@ Use ';' to split multiple entries. Can use wildcard '*'.)QBT_TR[CONTEXT=OptionsD
                     document.getElementById("markOfTheWeb").checked = pref.mark_of_the_web;
                     document.getElementById("ignoreSSLErrors").checked = pref.ignore_ssl_errors;
                     document.getElementById("pythonExecutablePath").value = pref.python_executable_path;
+                    document.getElementById("startSessionPaused").checked = pref.start_session_paused;
+                    document.getElementById("sessionShutdownTimeout").value = pref.session_shutdown_timeout;
                     // libtorrent section
                     document.getElementById("bdecodeDepthLimit").value = pref.bdecode_depth_limit;
                     document.getElementById("bdecodeTokenLimit").value = pref.bdecode_token_limit;
@@ -2753,7 +3599,8 @@ Use ';' to split multiple entries. Can use wildcard '*'.)QBT_TR[CONTEXT=OptionsD
                 });
         };
 
-        const applyPreferences = () => {
+        // OK saves, closes the window and reloads the page; Apply (closeWindow = false) saves and keeps the window open
+        const applyPreferences = (closeWindow = true) => {
             const settings = {};
             const clientData = {};
             // Validate form data
@@ -2796,7 +3643,8 @@ Use ';' to split multiple entries. Can use wildcard '*'.)QBT_TR[CONTEXT=OptionsD
             settings["add_stopped_enabled"] = document.getElementById("dontstartdownloads_checkbox").checked;
             settings["torrent_stop_condition"] = document.getElementById("stopConditionSelect").getSelected()[0].value;
             settings["merge_trackers"] = document.getElementById("mergeTrackersInput").checked;
-            settings["auto_delete_mode"] = Number(document.getElementById("deletetorrentfileafter_checkbox").checked);
+            settings["auto_delete_mode"] = !document.getElementById("deletetorrentfileafter_checkbox").checked ? 0
+                : !document.getElementById("deleteCancelledTorrentFileCheckbox").checked ? 1 : 2;
 
             settings["preallocate_all"] = document.getElementById("preallocateall_checkbox").checked;
             settings["incomplete_files_ext"] = document.getElementById("appendext_checkbox").checked;
@@ -2843,6 +3691,7 @@ Use ';' to split multiple entries. Can use wildcard '*'.)QBT_TR[CONTEXT=OptionsD
             // Run an external program on torrent finished
             settings["autorun_enabled"] = document.getElementById("autorun_checkbox").checked;
             settings["autorun_program"] = document.getElementById("autorunProg_txt").value;
+            settings["autorun_console"] = document.getElementById("autorunConsoleCheckbox").checked;
 
             // Connection tab
             // Listening Port
@@ -3083,6 +3932,11 @@ Use ';' to split multiple entries. Can use wildcard '*'.)QBT_TR[CONTEXT=OptionsD
                 alert("QBT_TR(The port used for the WebUI must be between 1 and 65535.)QBT_TR[CONTEXT=HttpServer]");
                 return;
             }
+            // a loopback address shuts out every other device, including a reverse proxy on another machine
+            if ((webUIAddress.trim() !== window.parent.qBittorrent.Cache.preferences.get().web_ui_address)
+                && /^(127\.|::1$|\[::1\]$|localhost$)/i.test(webUIAddress.trim())
+                && !confirm("QBT_TR(With the WebUI address set to %1, only this PC can reach the WebUI. Remote access, including through a reverse proxy on another machine, will stop working.\n\nSave anyway?)QBT_TR[CONTEXT=OptionsDialog]".replace("%1", webUIAddress.trim())))
+                return;
             settings["web_ui_address"] = webUIAddress;
             settings["web_ui_port"] = webUIPort;
             settings["web_ui_upnp"] = document.getElementById("webuiUpnpCheckbox").checked;
@@ -3130,6 +3984,23 @@ Use ';' to split multiple entries. Can use wildcard '*'.)QBT_TR[CONTEXT=OptionsD
             settings["web_ui_ban_duration"] = Number(document.getElementById("webUIBanDurationInput").value);
             settings["web_ui_session_timeout"] = Number(document.getElementById("webUISessionTimeoutInput").value);
 
+            // User accounts
+            const web_ui_user_sign_in_days = Number(document.getElementById("webUIUserSignInDaysInput").value);
+            if (!Number.isInteger(web_ui_user_sign_in_days) || (web_ui_user_sign_in_days < 0) || (web_ui_user_sign_in_days > 365)) {
+                alert("QBT_TR(Users can be kept logged in for 0 to 365 days.)QBT_TR[CONTEXT=OptionsDialog]");
+                return;
+            }
+            const web_ui_activity_log_days = Number(document.getElementById("webUIActivityLogDaysInput").value);
+            if (!Number.isInteger(web_ui_activity_log_days) || (web_ui_activity_log_days < 1) || (web_ui_activity_log_days > 3650)) {
+                alert("QBT_TR(The WebUI activity log can be kept for 1 to 3650 days.)QBT_TR[CONTEXT=OptionsDialog]");
+                return;
+            }
+            settings["web_ui_shared_login_allowed"] = document.getElementById("webUISharedLoginAllowedCheckbox").checked;
+            settings["web_ui_user_sign_in_days"] = web_ui_user_sign_in_days;
+            settings["web_ui_user_max_auth_fail_count"] = Number(document.getElementById("webUIUserMaxAuthFailCountInput").value);
+            settings["web_ui_user_lock_duration"] = Number(document.getElementById("webUIUserLockDurationInput").value);
+            settings["web_ui_activity_log_days"] = web_ui_activity_log_days;
+
             // Use alternative WebUI
             const alternative_webui_enabled = document.getElementById("use_alt_webui_checkbox").checked;
             const webui_files_location_textarea = document.getElementById("webui_files_location_textarea").value;
@@ -3166,6 +4037,7 @@ Use ';' to split multiple entries. Can use wildcard '*'.)QBT_TR[CONTEXT=OptionsD
             settings["resume_data_storage_type"] = document.getElementById("resumeDataStorageType").value;
             settings["torrent_content_remove_option"] = document.getElementById("torrentContentRemoveOption").value;
             settings["memory_working_set_limit"] = Number(document.getElementById("memoryWorkingSetLimit").value);
+            settings["memory_priority"] = document.getElementById("memoryPriority").value;
             settings["current_network_interface"] = document.getElementById("networkInterface").value;
             settings["current_interface_address"] = document.getElementById("optionalIPAddressToBind").value;
             settings["save_resume_data_interval"] = Number(document.getElementById("saveResumeDataInterval").value);
@@ -3184,6 +4056,13 @@ Use ';' to split multiple entries. Can use wildcard '*'.)QBT_TR[CONTEXT=OptionsD
             settings["mark_of_the_web"] = document.getElementById("markOfTheWeb").checked;
             settings["ignore_ssl_errors"] = document.getElementById("ignoreSSLErrors").checked;
             settings["python_executable_path"] = document.getElementById("pythonExecutablePath").value;
+            settings["start_session_paused"] = document.getElementById("startSessionPaused").checked;
+            const sessionShutdownTimeout = Number(document.getElementById("sessionShutdownTimeout").value);
+            if (!Number.isInteger(sessionShutdownTimeout) || (sessionShutdownTimeout < -1)) {
+                alert("QBT_TR(BitTorrent session shutdown timeout must be -1 (unlimited) or greater.)QBT_TR[CONTEXT=OptionsDialog]");
+                return;
+            }
+            settings["session_shutdown_timeout"] = sessionShutdownTimeout;
 
             // libtorrent section
             settings["bdecode_depth_limit"] = Number(document.getElementById("bdecodeDepthLimit").value);
@@ -3275,17 +4154,36 @@ Use ';' to split multiple entries. Can use wildcard '*'.)QBT_TR[CONTEXT=OptionsD
             settings["i2p_inbound_length"] = Number(document.getElementById("i2pInboundLength").value);
             settings["i2p_outbound_length"] = Number(document.getElementById("i2pOutboundLength").value);
 
+            // Saving a new WebUI address, port or HTTPS setting moves the WebUI, so this page can't stay open
+            const savedPreferences = window.parent.qBittorrent.Cache.preferences.get();
+            if (!closeWindow
+                && ((settings["web_ui_address"] !== savedPreferences.web_ui_address)
+                    || (settings["web_ui_port"] !== savedPreferences.web_ui_port)
+                    || (settings["use_https"] !== savedPreferences.use_https))) {
+                if (!confirm("QBT_TR(You changed the address, port or HTTPS setting of the WebUI. Saving moves the WebUI, so Options will save, close and reload the page, the same as OK. If the page doesn't come back, open the WebUI at its new address.\n\nSave anyway?)QBT_TR[CONTEXT=OptionsDialog]"))
+                    return;
+                closeWindow = true;
+            }
+
             // Send data to qBT
             Promise.allSettled([
                 window.parent.qBittorrent.ClientData.set(clientData),
                 window.parent.qBittorrent.Cache.preferences.set(settings)
             ]).then((results) => {
                 if (results.every((result) => result.status === "fulfilled")) {
-                    window.parent.location.reload();
-                    window.parent.qBittorrent.Client.closeWindow(document.getElementById("preferencesPage"));
+                    if (closeWindow) {
+                        window.parent.location.reload();
+                        window.parent.qBittorrent.Client.closeWindow(document.getElementById("preferencesPage"));
+                    }
+                    else {
+                        // a new password is sent only once
+                        document.getElementById("webui_password_text").value = "";
+                        document.getElementById("preferencesApplyButton").disabled = true;
+                    }
                 }
                 else {
                     // keep window open so user can reattempt saving
+                    const error = results.find((result) => result.status === "rejected").reason;
                     if (error.name === "ServerError")
                         alert(`QBT_TR(Error:)QBT_TR[CONTEXT=HttpServer] ${error.message}`);
                     else
@@ -3296,6 +4194,13 @@ Use ';' to split multiple entries. Can use wildcard '*'.)QBT_TR[CONTEXT=OptionsD
 
         const setup = () => {
             watchedFoldersTable = new HtmlTable(document.getElementById("watched_folders_tab"));
+
+            // the desktop's Advanced rows have no colon; the text stays the translated one
+            for (const label of document.querySelectorAll("#AdvancedTab td:first-child > label")) {
+                const text = label.firstChild;
+                if (text?.nodeType === Node.TEXT_NODE)
+                    text.textContent = text.textContent.replace(/:(\s*)$/, "$1");
+            }
 
             const buildInfo = window.qBittorrent.Cache.buildInfo.get();
 
@@ -3328,9 +4233,95 @@ Use ';' to split multiple entries. Can use wildcard '*'.)QBT_TR[CONTEXT=OptionsD
             if ((buildInfo.platform !== "macos") && (buildInfo.platform !== "windows"))
                 document.getElementById("rowMarkOfTheWeb").style.display = "none";
 
+            if (buildInfo.platform !== "windows") {
+                document.getElementById("autorunConsoleRow").style.display = "none";
+                document.getElementById("rowMemoryPriority").style.display = "none";
+            }
+
             document.getElementById("networkInterface").addEventListener("change", function(event) {
                 updateInterfaceAddresses(this.value, "");
             });
+
+            for (const link of document.querySelectorAll("#preferencesTabs li")) {
+                link.addEventListener("click", (e) => {
+                    e.preventDefault();
+                    showPage(link);
+                });
+            }
+            const layout = document.getElementById("preferencesLayout");
+            const resizeObserver = new ResizeObserver(() => {
+                // the window is gone once it's closed
+                if (!layout.isConnected) {
+                    resizeObserver.disconnect();
+                    return;
+                }
+                alignRows(layout.querySelector(".PrefTab:not(.invisible)"));
+            });
+            resizeObserver.observe(layout);
+
+            const searchInput = document.getElementById("preferencesSearch");
+            searchInput.addEventListener("input", searchSettings);
+            searchInput.addEventListener("keydown", (event) => {
+                // Enter goes to the first match
+                if (event.key === "Enter") {
+                    event.preventDefault();
+                    showFirstSearchMatch(true);
+                }
+                // Esc clears the search first, and only then closes the window
+                else if ((event.key === "Escape") && (searchInput.value !== "")) {
+                    event.preventDefault();
+                    event.stopPropagation();
+                    searchInput.value = "";
+                    searchSettings();
+                }
+            });
+            // Ctrl+F searches the settings while the keyboard is in this window, instead of filtering the torrents
+            layout.addEventListener("keydown", (event) => {
+                if (((event.key === "f") || (event.key === "F")) && (event.ctrlKey || event.metaKey) && !event.altKey) {
+                    event.preventDefault();
+                    event.stopPropagation();
+                    searchInput.focus();
+                    searchInput.select();
+                }
+            });
+            // the tint moves from a tab's name to its rows once the tab is opened
+            document.getElementById("userAccountsTabs").addEventListener("click", () => {
+                if (searchWords.length > 0)
+                    searchSettings();
+            });
+
+            // Apply is enabled once a setting changes; changes in the account lists apply at once
+            const enableApply = (event) => {
+                if (!event.target.closest("#userAccountsListsFieldset"))
+                    document.getElementById("preferencesApplyButton").disabled = false;
+            };
+            document.getElementById("preferencesPages").addEventListener("input", enableApply);
+            document.getElementById("preferencesPages").addEventListener("change", enableApply);
+            document.getElementById("preferencesOkButton").addEventListener("click", () => {
+                applyPreferences();
+            });
+            document.getElementById("preferencesCancelButton").addEventListener("click", () => {
+                window.qBittorrent.Client.closeWindow(document.getElementById("preferencesPage"));
+            });
+            document.getElementById("preferencesApplyButton").addEventListener("click", () => {
+                applyPreferences(false);
+            });
+
+            // People who can manage users but not change settings only get the User Accounts page,
+            // with its settings read-only.
+            const account = window.qBittorrent.Cache.account;
+            window.qBittorrent.UserAccounts.load();
+            if (!account.can("manage_users"))
+                document.getElementById("userAccountsListsFieldset").classList.add("invisible");
+            if (!account.can("settings")) {
+                for (const link of document.querySelectorAll("#preferencesTabs li"))
+                    link.classList.toggle("invisible", (link.id !== "PrefUserAccountsLink"));
+                for (const input of document.querySelectorAll("#userAccountsSettingsFieldset input"))
+                    input.disabled = true;
+                document.getElementById("userAccountsSaveNote").classList.add("invisible");
+                document.getElementById("preferencesSaveRow").classList.add("invisible");
+            }
+            showPage(document.querySelector("#preferencesTabs li:not(.invisible)"));
 
             loadPreferences();
 

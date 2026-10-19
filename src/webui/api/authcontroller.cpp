@@ -42,7 +42,10 @@ AuthController::AuthController(ISessionManager *sessionManager, IApplication *ap
 
 void AuthController::loginAction()
 {
-    if (m_sessionManager->session())
+    // Signing in with a username replaces the current session, so a person can sign in with their own account
+    // even where qBittorrent would let them in without one (for example, on localhost).
+    const bool hasCredentials = !params().value(u"username"_s).isEmpty();
+    if (m_sessionManager->session() && !hasCredentials)
     {
         setStatus(APIStatus::Ok);
         return;
@@ -50,6 +53,8 @@ void AuthController::loginAction()
 
     if (m_sessionManager->validateCredentials(params()[u"username"_s], params()[u"password"_s]))
     {
+        if (m_sessionManager->session())
+            m_sessionManager->sessionEnd();
         m_sessionManager->sessionStart();
         setStatus(APIStatus::Ok);
     }

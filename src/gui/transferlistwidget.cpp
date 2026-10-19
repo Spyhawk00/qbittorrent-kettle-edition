@@ -59,6 +59,7 @@
 #include "autoexpandabledialog.h"
 #include "deletionconfirmationdialog.h"
 #include "interfaces/iguiapplication.h"
+#include "listviewlayout.h"
 #include "mainwindow.h"
 #include "optionsdialog.h"
 #include "previewselectdialog.h"
@@ -132,6 +133,7 @@ TransferListWidget::TransferListWidget(IGUIApplication *app, QWidget *parent)
     m_sortFilterModel->setSortCaseSensitivity(Qt::CaseInsensitive);
     m_sortFilterModel->setSortRole(TransferListModel::UnderlyingDataRole);
     setModel(m_sortFilterModel);
+    new ListViewLayout(this);
 
     // Visual settings
     setUniformRowHeights(true);

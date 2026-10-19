@@ -39,17 +39,18 @@
     </script>
 </head>
 
-<body>
-    <div style="text-align: center; padding: 10px;">
-        <h2 class="vcenter" id="heading">QBT_TR(Add %1 torrents)QBT_TR[CONTEXT=DownloadFromURLDialog]</h2>
-        <p><i>QBT_TR(All torrents will use a single options dialog. Check below to configure each one separately.)QBT_TR[CONTEXT=DownloadFromURLDialog]</i></p>
-        <div style="margin-top: 8px;">
+<body class="dialogPage">
+    <div class="dialogPageContent">
+        <p class="dialogHeading" id="heading">QBT_TR(Add %1 torrents)QBT_TR[CONTEXT=DownloadFromURLDialog]</p>
+        <p class="dialogNote">QBT_TR(All torrents will use a single options dialog. Check below to configure each one separately.)QBT_TR[CONTEXT=DownloadFromURLDialog]</p>
+        <div>
             <input type="checkbox" id="separateDialogPerTorrent">
             <label for="separateDialogPerTorrent">QBT_TR(Open separate dialog for each torrent)QBT_TR[CONTEXT=DownloadFromURLDialog]</label>
         </div>
-        <div style="margin-top: 12px;">
-            <button type="button" id="addButton">QBT_TR(Continue)QBT_TR[CONTEXT=DownloadFromURLDialog]</button>
-        </div>
+    </div>
+    <div class="dialogButtons">
+        <button type="button" id="addButton">QBT_TR(Continue)QBT_TR[CONTEXT=DownloadFromURLDialog]</button>
+        <button type="button" onclick="parent.qBittorrent.Client.closeFrameWindow(window);">QBT_TR(Cancel)QBT_TR[CONTEXT=MainWindow]</button>
     </div>
 </body>
 

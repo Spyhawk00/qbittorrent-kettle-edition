@@ -590,6 +590,10 @@
         <source>Error:</source>
         <translation>Virhe:</translation>
     </message>
+    <message>
+        <source>More</source>
+        <translation>Lisää</translation>
+    </message>
 </context>
 <context>
     <name>MainWindow</name>

@@ -115,8 +115,10 @@ void AppController::buildInfoAction()
         {u"boost"_s, Utils::Misc::boostVersionString()},
         {u"openssl"_s, Utils::Misc::opensslVersionString()},
         {u"zlib"_s, Utils::Misc::zlibVersionString()},
+        {u"sqlite"_s, Utils::Misc::sqliteVersionString()},
         {u"bitness"_s, (QT_POINTER_SIZE * 8)},
-        {u"platform"_s, platformName}
+        {u"platform"_s, platformName},
+        {u"edition_version"_s, QStringLiteral(QBT_EDITION_VERSION)}
     };
     setResult(versions);
 }
@@ -228,6 +230,10 @@ void AppController::preferencesAction()
     // Run an external program on torrent finished
     data[u"autorun_enabled"_s] = pref->isAutoRunOnTorrentFinishedEnabled();
     data[u"autorun_program"_s] = pref->getAutoRunOnTorrentFinishedProgram();
+#ifdef Q_OS_WIN
+    // Show console window for the external program
+    data[u"autorun_console"_s] = pref->isAutoRunConsoleEnabled();
+#endif
 
     // Connection
     // Listening Port
@@ -347,6 +353,12 @@ void AppController::preferencesAction()
     data[u"web_ui_max_auth_fail_count"_s] = pref->getWebUIMaxAuthFailCount();
     data[u"web_ui_ban_duration"_s] = static_cast<int>(pref->getWebUIBanDuration().count());
     data[u"web_ui_session_timeout"_s] = pref->getWebUISessionTimeout();
+    // User accounts
+    data[u"web_ui_shared_login_allowed"_s] = pref->isWebUISharedLoginAllowed();
+    data[u"web_ui_user_sign_in_days"_s] = pref->getWebUIUserSignInDays();
+    data[u"web_ui_user_max_auth_fail_count"_s] = pref->getWebUIUserMaxAuthFailCount();
+    data[u"web_ui_user_lock_duration"_s] = static_cast<int>(pref->getWebUIUserLockDuration().count());
+    data[u"web_ui_activity_log_days"_s] = pref->getWebUIActivityLogDays();
     // API key
     data[u"web_ui_api_key"_s] = pref->getWebUIApiKey();
     // Use alternative WebUI
@@ -387,6 +399,10 @@ void AppController::preferencesAction()
     data[u"torrent_content_remove_option"_s] = Utils::String::fromEnum(session->torrentContentRemoveOption());
     // Physical memory (RAM) usage limit
     data[u"memory_working_set_limit"_s] = app()->memoryWorkingSetLimit();
+#ifdef Q_OS_WIN
+    // Process memory priority
+    data[u"memory_priority"_s] = Utils::String::fromEnum(app()->processMemoryPriority());
+#endif
     // Current network interface
     data[u"current_network_interface"_s] = session->networkInterface();
     // Current network interface name
@@ -423,6 +439,10 @@ void AppController::preferencesAction()
     data[u"ignore_ssl_errors"_s] = pref->isIgnoreSSLErrors();
     // Python executable path
     data[u"python_executable_path"_s] = pref->getPythonExecutablePath().toString();
+    // Start BitTorrent session in paused state
+    data[u"start_session_paused"_s] = session->isStartPaused();
+    // BitTorrent session shutdown timeout
+    data[u"session_shutdown_timeout"_s] = session->shutdownTimeout();
 
     // libtorrent preferences
     // Bdecode depth limit
@@ -699,6 +719,11 @@ void AppController::setPreferencesAction()
         pref->setAutoRunOnTorrentFinishedEnabled(it.value().toBool());
     if (hasKey(u"autorun_program"_s))
         pref->setAutoRunOnTorrentFinishedProgram(it.value().toString().trimmed());
+#ifdef Q_OS_WIN
+    // Show console window for the external program
+    if (hasKey(u"autorun_console"_s))
+        pref->setAutoRunConsoleEnabled(it.value().toBool());
+#endif
 
     // Connection
     // Listening Port
@@ -935,6 +960,17 @@ void AppController::setPreferencesAction()
         pref->setWebUIBanDuration(std::chrono::seconds {it.value().toInt()});
     if (hasKey(u"web_ui_session_timeout"_s))
         pref->setWebUISessionTimeout(it.value().toInt());
+    // User accounts
+    if (hasKey(u"web_ui_shared_login_allowed"_s))
+        pref->setWebUISharedLoginAllowed(it.value().toBool());
+    if (hasKey(u"web_ui_user_sign_in_days"_s))
+        pref->setWebUIUserSignInDays(it.value().toInt());
+    if (hasKey(u"web_ui_user_max_auth_fail_count"_s))
+        pref->setWebUIUserMaxAuthFailCount(it.value().toInt());
+    if (hasKey(u"web_ui_user_lock_duration"_s))
+        pref->setWebUIUserLockDuration(std::chrono::seconds {it.value().toInt()});
+    if (hasKey(u"web_ui_activity_log_days"_s))
+        pref->setWebUIActivityLogDays(it.value().toInt());
     // Use alternative WebUI
     if (hasKey(u"alternative_webui_enabled"_s))
         pref->setAltWebUIEnabled(it.value().toBool());
@@ -997,6 +1033,11 @@ void AppController::setPreferencesAction()
     // Physical memory (RAM) usage limit
     if (hasKey(u"memory_working_set_limit"_s))
         app()->setMemoryWorkingSetLimit(it.value().toInt());
+#ifdef Q_OS_WIN
+    // Process memory priority
+    if (hasKey(u"memory_priority"_s))
+        app()->setProcessMemoryPriority(Utils::String::toEnum(it.value().toString(), MemoryPriority::Normal));
+#endif
     // Current network interface
     if (hasKey(u"current_network_interface"_s))
     {
@@ -1065,6 +1106,12 @@ void AppController::setPreferencesAction()
     // Python executable path
     if (hasKey(u"python_executable_path"_s))
         pref->setPythonExecutablePath(Path(it.value().toString()));
+    // Start BitTorrent session in paused state
+    if (hasKey(u"start_session_paused"_s))
+        session->setStartPaused(it.value().toBool());
+    // BitTorrent session shutdown timeout
+    if (hasKey(u"session_shutdown_timeout"_s))
+        session->setShutdownTimeout(std::max(-1, it.value().toInt()));
 
     // libtorrent preferences
     // Bdecode depth limit

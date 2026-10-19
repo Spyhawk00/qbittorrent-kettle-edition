@@ -36,6 +36,7 @@
 #include "guiapplicationcomponent.h"
 
 class QListWidgetItem;
+class QTabBar;
 
 class AdvancedSettings;
 
@@ -73,9 +74,9 @@ class OptionsDialog final : public GUIApplicationComponent<QDialog>
         TAB_CONNECTION,
         TAB_SPEED,
         TAB_BITTORRENT,
-        TAB_SEARCH,
         TAB_RSS,
         TAB_WEBUI,
+        TAB_USERACCOUNTS,
         TAB_ADVANCED
     };
 
@@ -118,6 +119,7 @@ private slots:
 
 private:
     void showEvent(QShowEvent *e) override;
+    bool eventFilter(QObject *watched, QEvent *event) override;
 
     // Methods
     bool applySettings();
@@ -200,9 +202,25 @@ private:
     QString webUIPassword() const;
     bool webUIAuthenticationOk();
     bool isAlternativeWebUIPathValid();
+    bool webUIAddressOk();
 #endif
 
     bool schedTimesOk();
+
+    // Search
+    struct SearchEntry
+    {
+        int page = 0;
+        QWidget *widget = nullptr;
+        QTabBar *tabBar = nullptr;  // the tab the widget is on, if it is on one
+        int tab = -1;
+        QString text;
+    };
+
+    void buildSearchIndex();
+    void searchSettings(const QString &text);
+    void showFirstSearchMatch(bool giveFocus);
+    bool isSearchMatch(const SearchEntry &entry) const;
 
     Ui::OptionsDialog *m_ui = nullptr;
     SettingValue<QSize> m_storeDialogSize;
@@ -210,6 +228,10 @@ private:
     SettingValue<int> m_storeLastViewedPage;
 
     QPushButton *m_applyButton = nullptr;
+
+    QList<SearchEntry> m_searchIndex;
+    QStringList m_searchWords;
+    QList<QWidget *> m_searchMarks;
 
     AdvancedSettings *m_advancedSettings = nullptr;
 

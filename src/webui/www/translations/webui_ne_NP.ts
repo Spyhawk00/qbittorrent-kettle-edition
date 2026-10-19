@@ -590,6 +590,10 @@
         <source>Error:</source>
         <translation type="unfinished" />
     </message>
+    <message>
+        <source>More</source>
+        <translation>थप</translation>
+    </message>
 </context>
 <context>
     <name>MainWindow</name>

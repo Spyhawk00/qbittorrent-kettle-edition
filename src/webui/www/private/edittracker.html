@@ -58,20 +58,18 @@
     </script>
 </head>
 
-<body>
-    <div style="text-align: center;">
-        <br>
-        <label for="trackerUrl">QBT_TR(Tracker URL:)QBT_TR[CONTEXT=TrackerListWidget]</label>
-        <div style="text-align: center; padding-top: 10px;">
-            <input type="text" id="trackerUrl" style="width: 90%;">
+<body class="dialogPage">
+    <div class="dialogPageContent">
+        <div class="dialogForm">
+            <label for="trackerUrl">QBT_TR(Tracker URL:)QBT_TR[CONTEXT=TrackerListWidget]</label>
+            <input type="text" id="trackerUrl">
+            <label for="trackerTier">QBT_TR(Tier:)QBT_TR[CONTEXT=TrackerListWidget]</label>
+            <input type="number" id="trackerTier" min="0" max="255" class="dialogNumber">
         </div>
-        <br>
-        <label for="trackerTier">QBT_TR(Tier:)QBT_TR[CONTEXT=TrackerListWidget]</label>
-        <div style="text-align: center; padding-top: 10px;">
-            <input type="number" id="trackerTier" style="width: 90%; max-width: 100px;" min="0" max="255">
-        </div>
-        <br>
-        <input type="button" value="QBT_TR(Edit)QBT_TR[CONTEXT=HttpServer]" id="editTrackerButton">
+    </div>
+    <div class="dialogButtons">
+        <button type="button" id="editTrackerButton">QBT_TR(Edit)QBT_TR[CONTEXT=HttpServer]</button>
+        <button type="button" onclick="parent.qBittorrent.Client.closeFrameWindow(window);">QBT_TR(Cancel)QBT_TR[CONTEXT=MainWindow]</button>
     </div>
 </body>
 

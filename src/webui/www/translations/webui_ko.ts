@@ -590,6 +590,10 @@
         <source>Error:</source>
         <translation>오류:</translation>
     </message>
+    <message>
+        <source>More</source>
+        <translation>더 보기</translation>
+    </message>
 </context>
 <context>
     <name>MainWindow</name>

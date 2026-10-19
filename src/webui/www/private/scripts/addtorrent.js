@@ -428,6 +428,17 @@ window.qBittorrent.AddTorrent ??= (() => {
         getPreferences();
         getCategories();
         getTags();
+
+        // without "Choose save locations" the server saves to the default folders
+        if (!window.parent.qBittorrent.Cache.account.can("save_location")) {
+            const title = "QBT_TR(Your role saves torrents in the default folders.)QBT_TR[CONTEXT=AddNewTorrentDialog]";
+            for (const id of ["savepath", "downloadPath"]) {
+                document.getElementById(id).readOnly = true;
+                document.getElementById(id).title = title;
+            }
+            document.getElementById("useDownloadPath").addEventListener("click", (e) => { e.preventDefault(); });
+            document.getElementById("useDownloadPath").title = title;
+        }
     });
 
     window.addEventListener("DOMContentLoaded", (event) => {

@@ -586,6 +586,10 @@
         <source>Error:</source>
         <translation type="unfinished" />
     </message>
+    <message>
+        <source>More</source>
+        <translation>เพิ่มเติม</translation>
+    </message>
 </context>
 <context>
     <name>MainWindow</name>
