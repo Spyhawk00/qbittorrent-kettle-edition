@@ -38,7 +38,9 @@
 #include <QMessageBox>
 #include <QRegularExpression>
 #include <QShortcut>
+#include <QStandardItemModel>
 #include <QString>
+#include <QVBoxLayout>
 
 #include "base/global.h"
 #include "base/logger.h"
@@ -114,6 +116,34 @@ RSSWidget::RSSWidget(IGUIApplication *app, QWidget *parent)
 {
     m_ui->setupUi(this);
 
+    // the two right columns get a header bar like the feed list has, so the tops line up
+    const auto addHeader = [this](const int index, const QString &title)
+    {
+        auto *column = new QWidget(this);
+        auto *layout = new QVBoxLayout(column);
+        layout->setContentsMargins(0, 0, 0, 0);
+        layout->setSpacing(0);
+
+        auto *model = new QStandardItemModel(0, 1, column);
+        model->setHeaderData(0, Qt::Horizontal, title);
+        auto *header = new QHeaderView(Qt::Horizontal, column);
+        header->setModel(model);
+        header->setDefaultAlignment(Qt::AlignLeft | Qt::AlignVCenter);
+        header->setSectionsClickable(false);
+        header->setStretchLastSection(true);
+        header->setSectionResizeMode(QHeaderView::Stretch);
+        header->setFixedHeight(header->sizeHint().height());
+
+        QWidget *oldView = m_ui->splitterMain->replaceWidget(index, column);
+        layout->addWidget(header);
+        layout->addWidget(oldView);
+        oldView->show();
+    };
+    addHeader(0, tr("Torrents: (double-click to download)"));
+    addHeader(1, tr("Details"));
+    // the Windows 11 style draws the frame of a text box as a dark line along its lower edge; the lists have no frame
+    m_ui->textBrowser->setFrameShape(QFrame::NoFrame);
+
     // Icons
     m_ui->actionCopyFeedURL->setIcon(UIThemeManager::instance()->getIcon(u"edit-copy"_s));
     m_ui->actionDelete->setIcon(UIThemeManager::instance()->getIcon(u"edit-clear"_s));
@@ -138,6 +168,12 @@ RSSWidget::RSSWidget(IGUIApplication *app, QWidget *parent)
 
     const int spacerIndex = m_ui->horizontalLayout->indexOf(m_ui->spacer1);
     m_ui->horizontalLayout->insertWidget((spacerIndex + 1), m_rssFilter);
+
+    // the warning is in the row of the buttons, between them and the filter; it is cut short when there is no room
+    m_ui->labelWarn->setSizePolicy(QSizePolicy::Ignored, QSizePolicy::Preferred);
+    m_ui->labelWarn->setToolTip(m_ui->labelWarn->text());
+    m_ui->labelWarn->setContentsMargins(6, 0, 6, 0);
+    m_ui->horizontalLayout->setStretchFactor(m_ui->labelWarn, 1);
 
     connect(m_rssFilter, &QLineEdit::textChanged, this, &RSSWidget::handleRSSFilterTextChanged);
     connect(m_ui->articleListWidget, &ArticleListWidget::customContextMenuRequested, this, &RSSWidget::displayItemsListMenu);

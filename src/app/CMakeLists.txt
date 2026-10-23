@@ -67,7 +67,7 @@ target_link_libraries(qbt_app PRIVATE
 
 set_target_properties(qbt_app PROPERTIES RUNTIME_OUTPUT_DIRECTORY "${CMAKE_BINARY_DIR}")
 if (GUI)
-    set_target_properties(qbt_app PROPERTIES OUTPUT_NAME qbittorrent)
+    set_target_properties(qbt_app PROPERTIES OUTPUT_NAME qbittorrent-ke)
 else()
     set_target_properties(qbt_app PROPERTIES OUTPUT_NAME qbittorrent-nox)
 endif()

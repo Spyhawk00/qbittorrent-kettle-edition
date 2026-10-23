@@ -34,25 +34,34 @@
 
 #include <utility>
 
+#include <QApplication>
 #include <QCompleter>
 #include <QDebug>
 #include <QEvent>
+#include <QFrame>
+#include <QHBoxLayout>
+#include <QHeaderView>
 #include <QJsonArray>
 #include <QJsonDocument>
 #include <QJsonObject>
 #include <QJsonParseError>
 #include <QJsonValue>
 #include <QList>
+#include <QListWidget>
 #include <QMenu>
 #include <QMessageBox>
 #include <QMouseEvent>
 #include <QObject>
+#include <QPainter>
+#include <QProxyStyle>
 #include <QRegularExpression>
 #include <QShortcut>
+#include <QSplitter>
 #include <QSortFilterProxyModel>
 #include <QStringList>
 #include <QStringListModel>
 #include <QThread>
+#include <QToolButton>
 
 #include "base/global.h"
 #include "base/logger.h"
@@ -69,6 +78,7 @@
 #include "gui/desktopintegration.h"
 #include "gui/interfaces/iguiapplication.h"
 #include "gui/uithememanager.h"
+#include "gui/utils.h"
 #include "searchjobwidget.h"
 #include "searchpluginselectdialog.h"
 #include "ui_searchwidget.h"
@@ -157,9 +167,11 @@ namespace
         if (!searchJobWdget) [[unlikely]]
             return {};
 
-        QString tabName = searchJobWdget->searchPattern();
-        tabName.replace(QRegularExpression(u"&{1}"_s), u"&&"_s);
-        return tabName;
+        const QString pattern = searchJobWdget->searchPattern();
+        if (searchJobWdget->status() == SearchJobWidget::Status::Ready)
+            return pattern;
+
+        return u"%1 (%2)"_s.arg(pattern, QString::number(searchJobWdget->visibleResultsCount()));
     }
 
     nonstd::expected<QStringList, QString> loadHistory(const Path &filePath)
@@ -345,6 +357,9 @@ signals:
 
 SearchWidget::SearchWidget(IGUIApplication *app, QWidget *parent)
     : GUIApplicationComponent(app, parent)
+    , m_lastCategory {u"Search/LastCategory"_s}
+    , m_lastPlugin {u"Search/LastPlugin"_s}
+    , m_listWidth {u"Search/ListWidth"_s}
     , m_ui {new Ui::SearchWidget()}
     , m_ioThread {new QThread}
     , m_dataStorage {new DataStorage}
@@ -352,7 +367,78 @@ SearchWidget::SearchWidget(IGUIApplication *app, QWidget *parent)
     m_ui->setupUi(this);
 
     m_ui->stopButton->hide();
-    m_ui->tabWidget->tabBar()->installEventFilter(this);
+
+    // the header looks like the section titles of the Transfers sidebar (TransferListFiltersWidgetItem)
+    QFont headerFont = m_ui->searchesLabel->font();
+    headerFont.setBold(true);
+    headerFont.setCapitalization(QFont::AllUppercase);
+    headerFont.setPointSizeF(headerFont.pointSizeF() + 1);
+    m_ui->searchesLabel->setFont(headerFont);
+    m_ui->listHeader->setAutoFillBackground(true);
+    m_ui->listHeader->layout()->setContentsMargins(6, 0, 4, 0);
+    m_ui->listHeader->setMinimumHeight(m_ui->listHeader->sizeHint().height() + 4);
+    // the list reaches the edges of the page, as the sidebar of the Transfers tab does; the search bar is above the results
+    const int pageMargin = style()->pixelMetric(QStyle::PM_LayoutLeftMargin, nullptr, this);
+    m_ui->verticalLayout_3->setContentsMargins(0, 0, 0, 0);
+    m_ui->listHeaderLine->setForegroundRole(QPalette::Mid);
+    m_ui->listPaneLayout->setContentsMargins(0, 5, 0, 0); // SEARCHES starts at the height of the box of the search bar
+    m_ui->listPaneLayout->setSpacing(0);
+    // white like the sidebar and the list of the Transfers tab, except for the strip above the header
+    QPalette headerPalette = m_ui->listHeader->palette();
+    headerPalette.setColor(QPalette::Window, Utils::Gui::sectionHeaderColor(headerPalette));
+    m_ui->listHeader->setPalette(headerPalette);
+    m_ui->listHeader->setBackgroundRole(QPalette::Window);
+    m_ui->resultsStack->setBackgroundRole(QPalette::Base);
+    m_ui->resultsStack->setAutoFillBackground(true);
+    m_ui->searchList->setFrameShape(QFrame::NoFrame);
+    Utils::Gui::dividerVerticalScrollBar(m_ui->searchList, m_ui->splitter);
+    m_ui->searchList->viewport()->setBackgroundRole(QPalette::Base); // as the rows of the Transfers sidebar
+    m_ui->searchList->viewport()->setAutoFillBackground(true);
+    // the Windows 11 style leaves the lists on the window color
+    m_ui->searchList->setStyleSheet(u"QAbstractScrollArea { background: palette(base); }"_s);
+    m_ui->searchList->setUniformItemSizes(true);
+    m_ui->searchList->setSpacing(0);
+    m_ui->searchList->setIconSize(Utils::Gui::smallIconSize());
+    m_ui->searchList->setContextMenuPolicy(Qt::CustomContextMenu);
+    m_ui->searchList->viewport()->installEventFilter(this);
+    // the gap between the list and the results is as wide as between the sidebar and the list of the Transfers tab,
+    // with a thin edge on each side
+    m_ui->splitter->setHandleWidth(8);
+    // the search bar reaches the list on the left and the edge of the page on the right
+    m_ui->searchBarLayout->setContentsMargins(0, 3, 0, (pageMargin * 3) / 4);
+    auto *handleLayout = new QHBoxLayout(m_ui->splitter->handle(1));
+    handleLayout->setContentsMargins(0, 0, 0, 0);
+    handleLayout->setSpacing(0);
+    const QColor windowColor = palette().color(QPalette::Window);
+    const QColor textColor = palette().color(QPalette::WindowText);
+    const int textPercent = (windowColor.lightness() < 127) ? 14 : 3;
+    const auto addHandleEdge = [this, handleLayout, windowColor, textColor, textPercent]()
+    {
+        auto *edge = new QFrame(m_ui->splitter->handle(1));
+        edge->setFixedWidth(1);
+        edge->setAutoFillBackground(true);
+        QPalette edgePalette = edge->palette();
+        edgePalette.setColor(QPalette::Window, QColor::fromRgbF(
+                (windowColor.redF() * (100 - textPercent) + textColor.redF() * textPercent) / 100
+                , (windowColor.greenF() * (100 - textPercent) + textColor.greenF() * textPercent) / 100
+                , (windowColor.blueF() * (100 - textPercent) + textColor.blueF() * textPercent) / 100));
+        edge->setPalette(edgePalette);
+        handleLayout->addWidget(edge);
+    };
+    addHandleEdge();
+    handleLayout->addStretch();
+    addHandleEdge();
+    m_ui->splitter->setStretchFactor(0, 0);
+    m_ui->splitter->setStretchFactor(1, 1);
+    // until it is dragged, as wide as the sidebar of the Transfers tab
+    // (wide enough for the names, as it is there)
+    const int namesWidth = 28 * fontMetrics().averageCharWidth();
+    const int listWidth = m_listWidth.get(std::max(Preferences::instance()->getFiltersSidebarWidth(), namesWidth));
+    m_ui->splitter->setSizes({listWidth, std::max((width() - listWidth), 1)});
+    connect(m_ui->splitter, &QSplitter::splitterMoved, this, [this]
+    {
+        m_listWidth = m_ui->splitter->sizes().value(0);
+    });
 
     const QString searchPatternHint = u"<html><head/><body><p>"
         + tr("A phrase to search for.") + u"<br>"
@@ -374,24 +460,56 @@ SearchWidget::SearchWidget(IGUIApplication *app, QWidget *parent)
     // Icons
     m_ui->searchButton->setIcon(UIThemeManager::instance()->getIcon(u"edit-find"_s));
     m_ui->pluginsButton->setIcon(UIThemeManager::instance()->getIcon(u"plugins"_s, u"preferences-system-network"_s));
-#else
-    // On macOS the icons overlap the text otherwise
-    QSize iconSize = m_ui->tabWidget->iconSize();
-    iconSize.setWidth(iconSize.width() + 16);
-    m_ui->tabWidget->setIconSize(iconSize);
 #endif
-    connect(m_ui->tabWidget, &QTabWidget::tabCloseRequested, this, &SearchWidget::closeTab);
-    connect(m_ui->tabWidget, &QTabWidget::currentChanged, this, &SearchWidget::currentTabChanged);
-    connect(m_ui->tabWidget, &QTabWidget::currentChanged, this, &SearchWidget::saveSession);
-    connect(m_ui->tabWidget->tabBar(), &QTabBar::tabMoved, this, &SearchWidget::saveSession);
-
-    connect(m_ui->tabWidget, &QTabWidget::tabBarDoubleClicked, this, [this](const int tabIndex)
+    // The search bar: one height and the same gap between all controls
+    const QList<QWidget *> barWidgets {m_ui->lineEditSearchPattern, m_ui->comboCategory, m_ui->selectPlugin
+            , m_ui->searchButton, m_ui->stopButton, m_ui->pluginsButton};
+#ifdef Q_OS_WIN
+    // the Windows 11 style draws a combo box about 2 px smaller than its box; the square Fusion look fills it like the buttons
+    if (qApp->style()->name() == u"windows11"_s)
     {
-        if (tabIndex < 0)
+        static auto *squareStyle = new QProxyStyle(u"fusion"_s);
+        m_ui->comboCategory->setStyle(squareStyle);
+        m_ui->selectPlugin->setStyle(squareStyle);
+    }
+#endif
+    // polish first: the push buttons only get their (taller) square style while being polished
+    for (QWidget *widget : barWidgets)
+        widget->ensurePolished();
+    int barHeight = 0;
+    for (const QWidget *widget : barWidgets)
+        barHeight = std::max(barHeight, widget->sizeHint().height());
+    for (QWidget *widget : barWidgets)
+        widget->setMinimumHeight(barHeight);
+    // the SEARCHES header, with the rule under it, is as tall as the STATUS header of the Transfers sidebar (the
+    // column headers of the transfer list); the rule is painted in eventFilter()
+    constexpr int ruleHeight = 2;
+    m_ui->listHeaderLine->setFixedHeight(ruleHeight);
+    m_ui->listHeaderLine->installEventFilter(this);
+    // a header without columns measures 0, so it gets one
+    QStringListModel columnModel;
+    QHeaderView columnHeader {Qt::Horizontal, this};
+    columnHeader.setModel(&columnModel);
+    columnHeader.ensurePolished();
+    m_ui->listHeader->setFixedHeight(columnHeader.sizeHint().height() - ruleHeight);
+    m_ui->searchBarLayout->setSpacing(pageMargin);
+    m_ui->resultsPaneLayout->setSpacing(0);
+    connect(m_ui->closeSearchButton, &QToolButton::clicked, this, [this]() { closeTab(m_ui->searchList->currentRow()); });
+    connect(m_ui->searchList, &QListWidget::currentRowChanged, this, &SearchWidget::currentTabChanged);
+    connect(m_ui->searchList, &QListWidget::currentRowChanged, this, &SearchWidget::saveSession);
+    connect(m_ui->searchList, &QListWidget::customContextMenuRequested, this, &SearchWidget::showTabMenu);
+
+    auto *deleteTabHotkey = new QShortcut(Qt::Key_Delete, m_ui->searchList);
+    deleteTabHotkey->setContext(Qt::WidgetShortcut);
+    connect(deleteTabHotkey, &QShortcut::activated, this, [this]() { closeTab(m_ui->searchList->currentRow()); });
+
+    connect(m_ui->searchList, &QListWidget::itemDoubleClicked, this, [this](const QListWidgetItem *item)
+    {
+        // Reset current search pattern
+        auto *searchJobWidget = tabAt(m_ui->searchList->row(item));
+        if (!searchJobWidget)
             return;
 
-        // Reset current search pattern
-        auto *searchJobWidget = static_cast<SearchJobWidget *>(m_ui->tabWidget->widget(tabIndex));
         const QString pattern = searchJobWidget->searchPattern();
         if (pattern != m_ui->lineEditSearchPattern->text())
         {
@@ -405,7 +523,11 @@ SearchWidget::SearchWidget(IGUIApplication *app, QWidget *parent)
     const auto onPluginChanged = [this]()
     {
         fillPluginComboBox();
+        if (const int pluginIndex = m_ui->selectPlugin->findData(m_lastPlugin.get()); pluginIndex >= 0)
+            m_ui->selectPlugin->setCurrentIndex(pluginIndex);
         fillCatCombobox();
+        if (const int categoryIndex = m_ui->comboCategory->findData(m_lastCategory.get()); categoryIndex >= 0)
+            m_ui->comboCategory->setCurrentIndex(categoryIndex);
         selectActivePage();
     };
     connect(searchManager, &SearchPluginManager::pluginInstalled, this, onPluginChanged);
@@ -419,7 +541,10 @@ SearchWidget::SearchWidget(IGUIApplication *app, QWidget *parent)
     connect(m_ui->pluginsButton, &QPushButton::clicked, this, &SearchWidget::pluginsButtonClicked);
     connect(m_ui->searchButton, &QPushButton::clicked, this, &SearchWidget::searchButtonClicked);
     connect(m_ui->stopButton, &QPushButton::clicked, this, &SearchWidget::stopButtonClicked);
-    connect(m_ui->lineEditSearchPattern, &LineEdit::returnPressed, m_ui->searchButton, &QPushButton::click);
+    connect(m_ui->lineEditSearchPattern, &LineEdit::returnPressed, this, &SearchWidget::searchButtonClicked);
+    connect(m_ui->lineEditSearchPattern, &LineEdit::textChanged, this, &SearchWidget::updateSearchButtonEnabled);
+    connect(m_ui->comboCategory, qOverload<int>(&QComboBox::activated), this, &SearchWidget::saveLastSelection);
+    connect(m_ui->selectPlugin, qOverload<int>(&QComboBox::activated), this, &SearchWidget::saveLastSelection);
     connect(m_ui->lineEditSearchPattern, &LineEdit::textEdited, this, &SearchWidget::searchTextEdited);
     connect(m_ui->selectPlugin, qOverload<int>(&QComboBox::currentIndexChanged)
             , this, &SearchWidget::selectMultipleBox);
@@ -434,7 +559,7 @@ SearchWidget::SearchWidget(IGUIApplication *app, QWidget *parent)
     const auto *closeTabHotkey = new QShortcut(QKeySequence::Close, this);
     connect(closeTabHotkey, &QShortcut::activated, this, [this]()
     {
-        const int currentIndex = m_ui->tabWidget->currentIndex();
+        const int currentIndex = m_ui->searchList->currentRow();
         if (currentIndex >= 0)
             closeTab(currentIndex);
     });
@@ -455,27 +580,33 @@ SearchWidget::SearchWidget(IGUIApplication *app, QWidget *parent)
 
 bool SearchWidget::eventFilter(QObject *object, QEvent *event)
 {
-    if (object == m_ui->tabWidget->tabBar())
+    if (object == m_ui->listHeaderLine)
     {
-        // Close tabs when middle-clicked
+        if (event->type() != QEvent::Paint)
+            return false;
+
+        // as thick as the underline of the search box and ending where it ends
+        const qreal width = m_ui->listHeaderLine->width();
+        const qreal bottom = m_ui->listHeaderLine->height();
+        QPainter painter {m_ui->listHeaderLine};
+        painter.fillRect(QRectF(0, 0, width, bottom), Utils::Gui::sectionHeaderColor(palette()));
+        painter.fillRect(QRectF(0, (bottom - 1), width, 1), palette().color(QPalette::Mid));
+        return true;
+    }
+
+    if (object == m_ui->searchList->viewport())
+    {
+        // Close searches when middle-clicked
         if (event->type() != QEvent::MouseButtonRelease)
             return false;
 
         const auto *mouseEvent = static_cast<QMouseEvent *>(event);
-        const int tabIndex = m_ui->tabWidget->tabBar()->tabAt(mouseEvent->pos());
-        if (tabIndex >= 0)
+        if (mouseEvent->button() == Qt::MiddleButton)
         {
-            if (mouseEvent->button() == Qt::MiddleButton)
+            if (const int row = m_ui->searchList->row(m_ui->searchList->itemAt(mouseEvent->pos()))
+                ; (row >= 0) && Preferences::instance()->closeSearchTabWithMiddleClick())
             {
-                if (Preferences::instance()->closeSearchTabWithMiddleClick())
-                    closeTab(tabIndex);
-
-                return true;
-            }
-
-            if (mouseEvent->button() == Qt::RightButton)
-            {
-                showTabMenu(tabIndex);
+                closeTab(row);
                 return true;
             }
         }
@@ -515,9 +646,9 @@ void SearchWidget::onPreferencesChanged()
     {
         if (m_storeOpenedTabsResults)
         {
-            for (int tabIndex = (m_ui->tabWidget->count() - 1); tabIndex >= 0; --tabIndex)
+            for (int tabIndex = (m_ui->searchList->count() - 1); tabIndex >= 0; --tabIndex)
             {
-                const auto *tab = static_cast<SearchJobWidget *>(m_ui->tabWidget->widget(tabIndex));
+                const auto *tab = tabAt(tabIndex);
                 QMetaObject::invokeMethod(m_dataStorage, [this, tabID = tab->id(), searchResults = tab->searchResults()]
                 {
                     m_dataStorage->storeTab(tabID, searchResults);
@@ -526,9 +657,9 @@ void SearchWidget::onPreferencesChanged()
         }
         else
         {
-            for (int tabIndex = (m_ui->tabWidget->count() - 1); tabIndex >= 0; --tabIndex)
+            for (int tabIndex = (m_ui->searchList->count() - 1); tabIndex >= 0; --tabIndex)
             {
-                const auto *tab = static_cast<SearchJobWidget *>(m_ui->tabWidget->widget(tabIndex));
+                const auto *tab = tabAt(tabIndex);
                 QMetaObject::invokeMethod(m_dataStorage, [this, tabID = tab->id()] { m_dataStorage->removeTab(tabID); });
             }
         }
@@ -637,13 +768,57 @@ QString SearchWidget::generateTabID() const
     return {};
 }
 
-int SearchWidget::addTab(const QString &tabID, SearchJobWidget *searchJobWdget)
+void SearchWidget::addTab(const QString &tabID, SearchJobWidget *searchJobWdget)
 {
     Q_ASSERT(!m_tabWidgets.contains(tabID));
 
     connect(searchJobWdget, &SearchJobWidget::statusChanged, this, [this, searchJobWdget]() { tabStatusChanged(searchJobWdget); });
+    connect(searchJobWdget, &SearchJobWidget::resultsCountUpdated, this, [this, searchJobWdget]() { updateTabItem(searchJobWdget); });
     m_tabWidgets.insert(tabID, searchJobWdget);
-    return m_ui->tabWidget->addTab(searchJobWdget, makeTabName(searchJobWdget));
+    m_ui->resultsStack->addWidget(searchJobWdget);
+
+    auto *item = new QListWidgetItem;
+    item->setData(Qt::UserRole, tabID);
+    m_ui->searchList->addItem(item);
+    updateTabItem(searchJobWdget);
+    if (m_ui->searchList->currentRow() < 0)
+        m_ui->searchList->setCurrentRow(0);
+
+    selectActivePage();
+}
+
+SearchJobWidget *SearchWidget::tabAt(const int index) const
+{
+    const QListWidgetItem *item = m_ui->searchList->item(index);
+    return item ? m_tabWidgets.value(item->data(Qt::UserRole).toString()) : nullptr;
+}
+
+QListWidgetItem *SearchWidget::itemOf(const SearchJobWidget *tab) const
+{
+    for (int i = 0; i < m_ui->searchList->count(); ++i)
+    {
+        if (m_ui->searchList->item(i)->data(Qt::UserRole).toString() == tab->id())
+            return m_ui->searchList->item(i);
+    }
+
+    return nullptr;
+}
+
+void SearchWidget::setCurrentTab(SearchJobWidget *tab)
+{
+    if (const QListWidgetItem *item = (tab ? itemOf(tab) : nullptr))
+        m_ui->searchList->setCurrentRow(m_ui->searchList->row(item));
+}
+
+void SearchWidget::updateTabItem(SearchJobWidget *tab)
+{
+    QListWidgetItem *item = itemOf(tab);
+    if (!item)
+        return;
+
+    item->setText(makeTabName(tab));
+    item->setToolTip(tab->searchPattern() + u'\n' + tab->statusTip());
+    item->setIcon(UIThemeManager::instance()->getIcon(statusIconName(tab->status())));
 }
 
 void SearchWidget::updateHistory(const QString &newSearchPattern)
@@ -699,11 +874,11 @@ void SearchWidget::saveSession() const
     if (!m_storeOpenedTabs)
         return;
 
-    const int currentIndex = m_ui->tabWidget->currentIndex();
+    const int currentIndex = m_ui->searchList->currentRow();
     SessionData sessionData;
-    for (int tabIndex = 0; tabIndex < m_ui->tabWidget->count(); ++tabIndex)
+    for (int tabIndex = 0; tabIndex < m_ui->searchList->count(); ++tabIndex)
     {
-        auto *searchJobWidget = static_cast<SearchJobWidget *>(m_ui->tabWidget->widget(tabIndex));
+        auto *searchJobWidget = tabAt(tabIndex);
         sessionData.tabs.emplaceBack(TabData {searchJobWidget->id(), searchJobWidget->searchPattern()});
         if (currentIndex == tabIndex)
             sessionData.currentTabID = searchJobWidget->id();
@@ -740,7 +915,7 @@ void SearchWidget::restoreSession()
 
     connect(m_dataStorage, &DataStorage::sessionLoaded, this, [this](const SessionData &sessionData)
     {
-        m_ui->tabWidget->setCurrentWidget(m_tabWidgets.value(sessionData.currentTabID));
+        setCurrentTab(m_tabWidgets.value(sessionData.currentTabID));
     });
 
     QMetaObject::invokeMethod(m_dataStorage, [this] { m_dataStorage->loadSession(m_storeOpenedTabsResults); });
@@ -751,19 +926,40 @@ void SearchWidget::selectActivePage()
     if (SearchPluginManager::instance()->allPlugins().isEmpty())
     {
         m_ui->stackedPages->setCurrentWidget(m_ui->emptyPage);
+        m_ui->listPane->hide();
         m_ui->lineEditSearchPattern->setEnabled(false);
         m_ui->comboCategory->setEnabled(false);
         m_ui->selectPlugin->setEnabled(false);
-        m_ui->searchButton->setEnabled(false);
     }
     else
     {
         m_ui->stackedPages->setCurrentWidget(m_ui->searchPage);
+        m_ui->listPane->show();
         m_ui->lineEditSearchPattern->setEnabled(true);
         m_ui->comboCategory->setEnabled(true);
         m_ui->selectPlugin->setEnabled(true);
-        m_ui->searchButton->setEnabled(true);
     }
+
+    if (m_ui->searchList->count() == 0)
+        m_ui->resultsStack->setCurrentWidget(m_ui->hintPage);
+
+    updateSearchButtonEnabled();
+}
+
+void SearchWidget::updateSearchButtonEnabled()
+{
+    m_ui->searchButton->setEnabled(!SearchPluginManager::instance()->allPlugins().isEmpty()
+            && !m_ui->lineEditSearchPattern->text().trimmed().isEmpty());
+}
+
+void SearchWidget::saveLastSelection()
+{
+    const QString plugin = m_ui->selectPlugin->currentData().toString();
+    if (plugin == u"multi") // opens the plugins dialog, not a choice to restore
+        return;
+
+    m_lastPlugin = plugin;
+    m_lastCategory = selectedCategory();
 }
 
 SearchWidget::~SearchWidget()
@@ -776,9 +972,9 @@ void SearchWidget::currentTabChanged(const int index)
 {
     // when we switch from a tab that is not empty to another that is empty
     // the download button doesn't have to be available
-    m_currentSearchTab = (index >= 0)
-        ? static_cast<SearchJobWidget *>(m_ui->tabWidget->widget(index))
-        : nullptr;
+    m_currentSearchTab = tabAt(index);
+    m_ui->closeSearchButton->setEnabled(m_currentSearchTab);
+    m_ui->resultsStack->setCurrentWidget(m_currentSearchTab ? static_cast<QWidget *>(m_currentSearchTab) : m_ui->hintPage);
 
     if (!m_currentSearchTab)
         m_isNewQueryString = true;
@@ -831,14 +1027,17 @@ void SearchWidget::adjustSearchButton()
     }
 }
 
-void SearchWidget::showTabMenu(const int index)
+void SearchWidget::showTabMenu(const QPoint &pos)
 {
+    const int index = m_ui->searchList->row(m_ui->searchList->itemAt(pos));
+    if (index < 0)
+        return;
+
     QMenu *menu = new QMenu(this);
 
-    if (auto *searchJobWidget = static_cast<SearchJobWidget *>(m_ui->tabWidget->widget(index));
-            searchJobWidget->status() != SearchJobWidget::Status::Ongoing)
+    if (auto *searchJobWidget = tabAt(index); searchJobWidget->status() != SearchJobWidget::Status::Ongoing)
     {
-        menu->addAction(tr("Refresh tab"), this, [this, searchJobWidget] { refreshTab(searchJobWidget); });
+        menu->addAction(tr("Refresh search"), this, [this, searchJobWidget] { refreshTab(searchJobWidget); });
     }
     else
     {
@@ -846,11 +1045,11 @@ void SearchWidget::showTabMenu(const int index)
     }
 
     menu->addSeparator();
-    menu->addAction(tr("Close tab"), this, [this, index] { closeTab(index); });
-    menu->addAction(tr("Close all tabs"), this, &SearchWidget::closeAllTabs);
+    menu->addAction(tr("Close search"), this, [this, index] { closeTab(index); });
+    menu->addAction(tr("Close all searches"), this, &SearchWidget::closeAllTabs);
 
     menu->setAttribute(Qt::WA_DeleteOnClose);
-    menu->popup(QCursor::pos());
+    menu->popup(m_ui->searchList->viewport()->mapToGlobal(pos));
 }
 
 void SearchWidget::pluginsButtonClicked()
@@ -901,10 +1100,8 @@ void SearchWidget::searchButtonClicked()
     // Tab Addition
     const QString newTabID = generateTabID();
     auto *newTab = new SearchJobWidget(newTabID, searchHandler, app(), this);
-    const int tabIndex = addTab(newTabID, newTab);
-    m_ui->tabWidget->setTabToolTip(tabIndex, newTab->statusTip());
-    m_ui->tabWidget->setTabIcon(tabIndex, UIThemeManager::instance()->getIcon(statusIconName(newTab->status())));
-    m_ui->tabWidget->setCurrentWidget(newTab);
+    addTab(newTabID, newTab);
+    setCurrentTab(newTab);
     adjustSearchButton();
     updateHistory(pattern);
     saveSession();
@@ -917,10 +1114,7 @@ void SearchWidget::stopButtonClicked()
 
 void SearchWidget::tabStatusChanged(SearchJobWidget *tab)
 {
-    const int tabIndex = m_ui->tabWidget->indexOf(tab);
-    m_ui->tabWidget->setTabToolTip(tabIndex, tab->statusTip());
-    m_ui->tabWidget->setTabIcon(tabIndex, UIThemeManager::instance()->getIcon(
-            statusIconName(static_cast<SearchJobWidget *>(tab)->status())));
+    updateTabItem(tab);
 
     if (tab->status() != SearchJobWidget::Status::Ongoing)
     {
@@ -941,9 +1135,14 @@ void SearchWidget::tabStatusChanged(SearchJobWidget *tab)
 
 void SearchWidget::closeTab(const int index)
 {
-    const auto *tab = static_cast<SearchJobWidget *>(m_ui->tabWidget->widget(index));
+    const auto *tab = tabAt(index);
+    if (!tab)
+        return;
+
     const QString tabID = tab->id();
+    delete m_ui->searchList->takeItem(index);
     delete m_tabWidgets.take(tabID);
+    selectActivePage();
 
     QMetaObject::invokeMethod(m_dataStorage, [this, tabID] { m_dataStorage->removeTab(tabID); });
     saveSession();
@@ -951,14 +1150,16 @@ void SearchWidget::closeTab(const int index)
 
 void SearchWidget::closeAllTabs()
 {
-    for (int tabIndex = (m_ui->tabWidget->count() - 1); tabIndex >= 0; --tabIndex)
+    for (int tabIndex = (m_ui->searchList->count() - 1); tabIndex >= 0; --tabIndex)
     {
-        const auto *tab = static_cast<SearchJobWidget *>(m_ui->tabWidget->widget(tabIndex));
+        const auto *tab = tabAt(tabIndex);
         const QString tabID = tab->id();
+        delete m_ui->searchList->takeItem(tabIndex);
         delete m_tabWidgets.take(tabID);
         QMetaObject::invokeMethod(m_dataStorage, [this, tabID] { m_dataStorage->removeTab(tabID); });
     }
 
+    selectActivePage();
     saveSession();
 }
 

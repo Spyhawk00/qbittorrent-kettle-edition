@@ -38,7 +38,9 @@
 #define ENGINE_URL_COLUMN 4
 #define URL_COLUMN 5
 
+class QHBoxLayout;
 class QHeaderView;
+class QLabel;
 class QModelIndex;
 class QStandardItemModel;
 
@@ -96,6 +98,7 @@ signals:
     void statusChanged();
 
 protected:
+    bool eventFilter(QObject *watched, QEvent *event) override;
     void keyPressEvent(QKeyEvent *event) override;
 
 private slots:
@@ -117,6 +120,9 @@ private:
     void searchFailed(const QString &errorMessage);
     void appendSearchResults(const QList<SearchResult> &results);
     void updateResultsCount();
+    void updateStatusText();
+    void updateActionButtons();
+    void updateFilterLayout();
     void setStatus(Status value);
     void downloadTorrent(const QModelIndex &rowIndex, AddTorrentOption option = AddTorrentOption::Default);
     void addTorrentToSession(const QString &source, AddTorrentOption option = AddTorrentOption::Default);
@@ -144,6 +150,10 @@ private:
     QStandardItemModel *m_searchListModel = nullptr;
     SearchSortModel *m_proxyModel = nullptr;
     LineEdit *m_lineEditSearchResultsFilter = nullptr;
+    QHBoxLayout *m_filterRow2 = nullptr;
+    QLabel *m_emptyResultsLabel = nullptr;
+    QString m_errorMessage;
+    bool m_filterWrapped = false;
     Status m_status = Status::Ready;
     bool m_noSearchResults = true;
 };

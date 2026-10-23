@@ -2,6 +2,7 @@ Section "un.$(remove_files)" ;"un.Remove files"
   SectionIn RO
 
 ; Remove files and uninstaller
+  Delete "$INSTDIR\qbittorrent-ke.exe"
   Delete "$INSTDIR\qbittorrent.exe"
   Delete "$INSTDIR\qbittorrent.pdb"
   Delete "$INSTDIR\qt.conf"
@@ -9,13 +10,24 @@ Section "un.$(remove_files)" ;"un.Remove files"
 
   ; Remove directories used
   RMDir /r "$INSTDIR\translations"
+
+  ; The files of this version (list made by make-installer.ps1), for a folder that is shared with other programs
+  !include "${KETTLE_UNINSTALL_LIST}"
+
+  ; Updates add and replace files, so the list can be out of date. Everything in a folder of its own goes.
+  ${un.GetFileName} "$INSTDIR" $0
+  StrCmp $0 "qBittorrent-ke" +2 0
+  StrCmp $0 "qBittorrent" 0 +2
+    RMDir /r "$INSTDIR"
   RMDir "$INSTDIR"
 SectionEnd
 
 Section "un.$(remove_shortcuts)" ;"un.Remove shortcuts"
   SectionIn RO
-; Remove shortcuts, if any
+; Remove shortcuts, if any (the ones of the official installer too)
+  RMDir /r "$SMPROGRAMS\qBittorrent Kettle Edition"
   RMDir /r "$SMPROGRAMS\qBittorrent"
+  Delete "$DESKTOP\qBittorrent Kettle Edition.lnk"
   Delete "$DESKTOP\qBittorrent.lnk"
 SectionEnd
 
@@ -24,6 +36,7 @@ Section "un.$(remove_registry)" ;"un.Remove registry keys"
   ; Remove registry keys
   DeleteRegKey HKLM "Software\Microsoft\Windows\CurrentVersion\Uninstall\qBittorrent"
   DeleteRegKey HKLM "Software\qBittorrent"
+  DeleteRegKey HKLM "Software\qBittorrent-ke"
   ; Remove ProgIDs
   DeleteRegKey HKLM "Software\Classes\qBittorrent.File.Torrent"
   DeleteRegKey HKLM "Software\Classes\qBittorrent.Url.Magnet"
@@ -33,7 +46,7 @@ SectionEnd
 Section "un.$(remove_firewall)" ;
 
   DetailPrint $(remove_firewallinfo)
-  nsisFirewallW::RemoveAuthorizedApplication "$INSTDIR\qbittorrent.exe"
+  nsisFirewallW::RemoveAuthorizedApplication "$INSTDIR\qbittorrent-ke.exe"
 
 SectionEnd
 
@@ -78,7 +91,7 @@ FunctionEnd
 Function un.check_instance
 
   check:
-  FindProcDLL::FindProc "qbittorrent.exe"
+  FindProcDLL::FindProc "qbittorrent-ke.exe"
   StrCmp $R0 "1" 0 notfound
   MessageBox MB_RETRYCANCEL|MB_ICONEXCLAMATION $(uninst_warning) /SD IDCANCEL IDRETRY check IDCANCEL canceled
 

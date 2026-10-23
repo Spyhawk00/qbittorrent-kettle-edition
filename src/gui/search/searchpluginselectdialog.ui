@@ -109,6 +109,13 @@
       </widget>
      </item>
      <item>
+      <widget class="QPushButton" name="kettlePluginsButton">
+       <property name="text">
+        <string>Install Kettle Plugins</string>
+       </property>
+      </widget>
+     </item>
+     <item>
       <widget class="QPushButton" name="updateButton">
        <property name="text">
         <string>Check for updates</string>

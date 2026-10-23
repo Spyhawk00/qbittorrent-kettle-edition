@@ -80,13 +80,14 @@
     </script>
 </head>
 
-<body>
-    <div style="padding: 10px 10px 0px 10px;">
-        <label for="rename" style="font-weight: bold;">QBT_TR(New name:)QBT_TR[CONTEXT=TorrentContentTreeView]</label>
-        <input type="text" id="rename" style="width: 99%;">
-        <div style="text-align: center; padding-top: 10px;">
-            <input type="button" value="QBT_TR(Save)QBT_TR[CONTEXT=HttpServer]" id="renameButton">
-        </div>
+<body class="dialogPage">
+    <div class="dialogPageContent">
+        <label for="rename">QBT_TR(New name:)QBT_TR[CONTEXT=TorrentContentTreeView]</label>
+        <input type="text" id="rename">
+    </div>
+    <div class="dialogButtons">
+        <button type="button" id="renameButton">QBT_TR(Save)QBT_TR[CONTEXT=HttpServer]</button>
+        <button type="button" onclick="parent.qBittorrent.Client.closeFrameWindow(window);">QBT_TR(Cancel)QBT_TR[CONTEXT=MainWindow]</button>
     </div>
 </body>
 

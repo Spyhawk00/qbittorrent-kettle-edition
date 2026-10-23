@@ -3,8 +3,8 @@
         margin: 10px;
 
         .buttonContainer {
-            text-align: center;
             margin-top: 1em;
+            padding: 0;
         }
     }
 
@@ -77,8 +77,9 @@
         </tfoot>
     </table>
 
-    <div class="buttonContainer">
+    <div class="buttonContainer dialogButtons">
         <button type="button" id="saveButton">QBT_TR(Save)QBT_TR[CONTEXT=HttpServer]</button>
+        <button type="button" onclick="window.qBittorrent.Client.closeWindow(document.getElementById('cookiesPage'));">QBT_TR(Cancel)QBT_TR[CONTEXT=MainWindow]</button>
     </div>
 </div>
 

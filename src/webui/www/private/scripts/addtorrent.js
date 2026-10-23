@@ -93,6 +93,7 @@ window.qBittorrent.AddTorrent ??= (() => {
         defaultTempPath = pref.temp_path;
         defaultTempPathEnabled = pref.temp_path_enabled;
         document.getElementById("startTorrent").checked = !pref.add_stopped_enabled;
+        updateStopConditionState();
         document.getElementById("addToTopOfQueue").checked = pref.add_to_top_of_queue;
 
         const autoTMM = document.getElementById("autoTMM");
@@ -202,6 +203,7 @@ window.qBittorrent.AddTorrent ??= (() => {
         showFreeSpace(savepath.value);
         savepath.disabled = autoTMMEnabled;
         useDownloadPath.disabled = autoTMMEnabled;
+        document.getElementById("saveGroup").classList.toggle("greyed", autoTMMEnabled);
 
         // only submit this value when using manual tmm
         document.getElementById("useDownloadPathHidden").disabled = autoTMMEnabled;
@@ -224,21 +226,17 @@ window.qBittorrent.AddTorrent ??= (() => {
     };
 
     const updateDiskInfo = () => {
-        const el = document.getElementById("diskInfo");
-        if (freeSpaceBytes === null)
+        const el = document.getElementById("sizeInfo");
+        const size = (torrentSizeBytes === null)
+            ? "QBT_TR(Not available)QBT_TR[CONTEXT=AddNewTorrentDialog]"
+            : window.qBittorrent.Misc.friendlyUnit(torrentSizeBytes, false);
+        if (freeSpaceBytes === null) {
+            el.textContent = size;
             return;
+        }
         const free = window.qBittorrent.Misc.friendlyUnit(freeSpaceBytes, false);
-        if (torrentSizeBytes === null) {
-            el.textContent = "QBT_TR(%1 free)QBT_TR[CONTEXT=AddNewTorrentDialog]".replace("%1", free);
-            el.classList.remove("red");
-        }
-        else {
-            const size = window.qBittorrent.Misc.friendlyUnit(torrentSizeBytes, false);
-            const fits = torrentSizeBytes <= freeSpaceBytes;
-            el.textContent = "QBT_TR(%1 needed · %2 free)QBT_TR[CONTEXT=AddNewTorrentDialog]"
-                .replace("%1", size).replace("%2", free);
-            el.classList.toggle("red", !fits);
-        }
+        el.textContent = `${size} (${"QBT_TR(Free space on disk: %1)QBT_TR[CONTEXT=AddNewTorrentDialog]".replace("%1", free)})`;
+        el.classList.toggle("red", (torrentSizeBytes !== null) && (torrentSizeBytes > freeSpaceBytes));
     };
 
     const showFreeSpace = (path) => {
@@ -352,7 +350,28 @@ window.qBittorrent.AddTorrent ??= (() => {
         windowId = id;
     };
 
+    // like the desktop dialog: the stop condition only matters while the torrent is started
+    const updateStopConditionState = () => {
+        const started = document.getElementById("startTorrent").checked;
+        document.getElementById("stopConditionRow").classList.toggle("greyed", !started);
+        document.getElementById("stopCondition").tabIndex = started ? 0 : -1;
+    };
+
+    // the header checkbox of the file list flips between all and none; set it to the wanted state
+    const setAllFiles = (checked) => {
+        const checkbox = document.getElementById("tristate_cb");
+        if (checkbox === null)
+            return;
+        const isChecked = () => (checkbox.checked && !checkbox.indeterminate);
+        const isUnchecked = () => (!checkbox.checked && !checkbox.indeterminate);
+        for (let i = 0; (i < 2) && !(checked ? isChecked() : isUnchecked()); ++i)
+            checkbox.click();
+    };
+
     const submitForm = () => {
+        if (document.getElementById("neverShowAgain").checked)
+            clientData.set({ add_new_torrent_dialog_enabled: false }).catch(console.error);
+
         document.getElementById("startTorrentHidden").value = document.getElementById("startTorrent").checked ? "false" : "true";
 
         document.getElementById("dlLimitHidden").value = Number(document.getElementById("dlLimitText").value) * 1024;
@@ -430,11 +449,25 @@ window.qBittorrent.AddTorrent ??= (() => {
         getPreferences();
         getCategories();
         getTags();
+
+        // without "Choose save locations" the server saves to the default folders
+        if (!window.parent.qBittorrent.Cache.account.can("save_location")) {
+            const title = "QBT_TR(Your role saves torrents in the default folders.)QBT_TR[CONTEXT=AddNewTorrentDialog]";
+            for (const id of ["savepath", "downloadPath"]) {
+                document.getElementById(id).readOnly = true;
+                document.getElementById(id).title = title;
+            }
+            document.getElementById("useDownloadPath").addEventListener("click", (e) => { e.preventDefault(); });
+            document.getElementById("useDownloadPath").title = title;
+        }
     });
 
     window.addEventListener("DOMContentLoaded", (event) => {
         document.getElementById("useDownloadPath").addEventListener("change", (e) => changeUseDownloadPath(e.target.checked));
         document.getElementById("tagsSelect").addEventListener("change", (e) => changeTagsSelect(e.target));
+        document.getElementById("startTorrent").addEventListener("change", updateStopConditionState);
+        document.getElementById("selectAllFiles").addEventListener("click", () => setAllFiles(true));
+        document.getElementById("selectNoneFiles").addEventListener("click", () => setAllFiles(false));
         document.getElementById("savepath").addEventListener("input", (event) => { showFreeSpace(event.target.value); });
     });
 

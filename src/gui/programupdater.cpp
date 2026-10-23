@@ -31,21 +31,19 @@
 
 #include <algorithm>
 
-#include <libtorrent/version.hpp>
-
-#include <QtCore/qconfig.h>
 #include <QtSystemDetection>
-#include <QDebug>
-#include <QDesktopServices>
+#include <QCoreApplication>
+#include <QDir>
 #include <QJsonDocument>
+#include <QJsonObject>
 #include <QJsonValue>
 #include <QRegularExpression>
-#include <QXmlStreamReader>
 
 #include "base/global.h"
 #include "base/logger.h"
 #include "base/net/downloadmanager.h"
 #include "base/preferences.h"
+#include "base/utils/signature.h"
 #include "base/version.h"
 
 namespace
@@ -65,20 +63,84 @@ namespace
         }
         return (remoteVersion > currentVersion);
     }
+
+    ProgramUpdater::EditionVersion currentEditionVersion()
+    {
+        return {QBT_EDITION_VERSION_MAJOR, QBT_EDITION_VERSION_MINOR, QBT_EDITION_VERSION_PATCH};
+    }
+
+    // Turned off on purpose: this edition follows its own releases, and the official version is looked at by hand.
+    // Set to true to ask qbittorrent.org again and log when a newer official release exists.
+    const bool CHECK_OFFICIAL_RELEASES = false;
+
+    // The test suite points the updater at a local server and at its own key with environment variables.
+    // They are ignored in the Program Files folders, so they cannot redirect an installed copy.
+    bool areTestSettingsAllowed()
+    {
+        const QString appFolder = QDir::fromNativeSeparators(QCoreApplication::applicationDirPath());
+        return !appFolder.contains(u"/Program Files"_s, Qt::CaseInsensitive);
+    }
+
+    bool areTestSettingsUsed()
+    {
+        return areTestSettingsAllowed() && qEnvironmentVariableIsSet("KETTLE_UPDATE_URL");
+    }
+
+    // Folder of the Kettle Edition release files (kettle-update.json and its signature)
+    QString editionBaseUrl()
+    {
+        if (areTestSettingsUsed())
+            return qEnvironmentVariable("KETTLE_UPDATE_URL");
+
+        return u"https://github.com/Spyhawk00/qbittorrent-kettle-edition/releases/latest/download/"_s;
+    }
+
+    // Public half of the key that signs Kettle Edition releases; publish-update.ps1 signs with the private half
+    QByteArray editionPublicKey()
+    {
+        if (areTestSettingsUsed() && qEnvironmentVariableIsSet("KETTLE_UPDATE_PUBLIC_KEY"))
+            return QByteArray::fromHex(qEnvironmentVariable("KETTLE_UPDATE_PUBLIC_KEY").toLatin1());
+
+        return QByteArray::fromHex("1ae98e63ba000613a1539de878be6fce49a908857623c9cbf4cfe495a1f95fae");
+    }
+}
+
+bool ProgramUpdater::isTestMode()
+{
+    return areTestSettingsUsed();
+}
+
+QString ProgramUpdater::editionFileUrl(const QString &tag, const QString &fileName)
+{
+    // GitHub's "latest" address only serves the two small release info files; the program files come from the tag named in them
+    if (areTestSettingsUsed())
+        return editionBaseUrl() + u"download/"_s + tag + u'/' + fileName;
+
+    return u"https://github.com/Spyhawk00/qbittorrent-kettle-edition/releases/download/"_s + tag + u'/' + fileName;
 }
 
 void ProgramUpdater::checkForUpdates()
 {
-    // Don't change this User-Agent. In case our updater goes haywire,
-    // the filehost can identify it and contact us.
-    const auto USER_AGENT = QStringLiteral("qBittorrent/" QBT_VERSION_2 " ProgramUpdater (www.qbittorrent.org)");
-    const auto QBT_MAIN_URL = u"https://www.qbittorrent.org/versions.json"_s;
-    const auto QBT_BACKUP_URL = u"https://qbittorrent.github.io/qBittorrent-website/versions.json"_s;
+    const auto EDITION_MANIFEST_URL = editionBaseUrl() + u"kettle-update.json"_s;
+    const auto EDITION_SIGNATURE_URL = editionBaseUrl() + u"kettle-update.json.sig"_s;
+    const auto QBT_MAIN_URL = areTestSettingsUsed() ? (editionBaseUrl() + u"versions.json"_s) : u"https://www.qbittorrent.org/versions.json"_s;
+    const auto QBT_BACKUP_URL = areTestSettingsUsed() ? (editionBaseUrl() + u"versions.json"_s) : u"https://qbittorrent.github.io/qBittorrent-website/versions.json"_s;
 
     Net::DownloadManager *netManager = Net::DownloadManager::instance();
     const bool useProxy = Preferences::instance()->useProxyForGeneralPurposes();
 
-    m_pendingRequestCount = 2;
+    m_pendingRequestCount = CHECK_OFFICIAL_RELEASES ? 4 : 2;
+    netManager->download(Net::DownloadRequest(EDITION_MANIFEST_URL), useProxy, this, [this](const Net::DownloadResult &result)
+    {
+        editionDownloadFinished(result, m_manifestData);
+    });
+    netManager->download(Net::DownloadRequest(EDITION_SIGNATURE_URL), useProxy, this, [this](const Net::DownloadResult &result)
+    {
+        editionDownloadFinished(result, m_manifestSignature);
+    });
+    if (!CHECK_OFFICIAL_RELEASES)
+        return;
+
     // don't use the custom user agent for the following requests, disguise as a normal browser instead
     netManager->download(Net::DownloadRequest(QBT_MAIN_URL), useProxy, this, [this](const Net::DownloadResult &result)
     {
@@ -100,6 +162,57 @@ ProgramUpdater::Version ProgramUpdater::getNewVersion() const
         return m_qbtBackupVersion;
     }
     Q_UNREACHABLE();
+}
+
+bool ProgramUpdater::isEditionCheckVerified() const
+{
+    return m_isEditionCheckVerified;
+}
+
+ProgramUpdater::EditionVersion ProgramUpdater::getNewEditionVersion() const
+{
+    return m_newEdition;
+}
+
+QString ProgramUpdater::getNewEditionLevel() const
+{
+    return m_newEditionLevel;
+}
+
+QString ProgramUpdater::getNewEditionNotes() const
+{
+    return m_newEditionNotes;
+}
+
+QByteArray ProgramUpdater::getNewEditionManifest() const
+{
+    return m_newEdition.isValid() ? m_manifestData : QByteArray();
+}
+
+void ProgramUpdater::editionDownloadFinished(const Net::DownloadResult &result, QByteArray &data)
+{
+    data.clear();
+
+    if (result.status != Net::DownloadStatus::Success)
+    {
+        LogMsg(tr("Failed to download the program update info. URL: \"%1\". Error: \"%2\"").arg(result.url, result.errorString) , Log::WARNING);
+        handleFinishedRequest();
+        return;
+    }
+
+    // The release files are small. Anything bigger is not what was asked for.
+    // (The size limit of DownloadRequest is not used: it can report a download as finished more than once.)
+    const qsizetype maxFileSize = 1024 * 1024;
+    if (result.data.size() > maxFileSize)
+    {
+        LogMsg(tr("Failed to download the program update info. URL: \"%1\". Error: \"%2\"")
+            .arg(result.url, tr("The file is larger than expected")), Log::WARNING);
+        handleFinishedRequest();
+        return;
+    }
+
+    data = result.data;
+    handleFinishedRequest();
 }
 
 void ProgramUpdater::fallbackDownloadFinished(const Net::DownloadResult &result, Version &version)
@@ -131,23 +244,43 @@ void ProgramUpdater::fallbackDownloadFinished(const Net::DownloadResult &result,
     handleFinishedRequest();
 }
 
-bool ProgramUpdater::updateProgram() const
-{
-    switch (getLatestRemoteSource())
-    {
-    case RemoteSource::QbtMain:
-        return QDesktopServices::openUrl(u"https://www.qbittorrent.org/download"_s);
-    case RemoteSource::QbtBackup:
-        return QDesktopServices::openUrl(u"https://qbittorrent.github.io/qBittorrent-website/download"_s);
-    }
-    Q_UNREACHABLE();
-}
-
 void ProgramUpdater::handleFinishedRequest()
 {
     --m_pendingRequestCount;
     if (m_pendingRequestCount == 0)
+    {
+        processEditionManifest();
         emit updateCheckFinished();
+    }
+}
+
+void ProgramUpdater::processEditionManifest()
+{
+    m_isEditionCheckVerified = false;
+    m_newEdition = {};
+    m_newEditionLevel.clear();
+    m_newEditionNotes.clear();
+
+    // nothing to check when the release files could not be downloaded, which was logged already
+    if (m_manifestData.isEmpty() || m_manifestSignature.isEmpty())
+        return;
+
+    if (!Utils::Signature::verifyEd25519(m_manifestData, m_manifestSignature, editionPublicKey()))
+    {
+        LogMsg(tr("Ignored the Kettle Edition update info because its signature is not valid."), Log::WARNING);
+        return;
+    }
+
+    m_isEditionCheckVerified = true;
+
+    const QJsonObject json = QJsonDocument::fromJson(m_manifestData).object();
+    const EditionVersion edition {json[u"edition"_s].toString()};
+    if (edition > currentEditionVersion())
+    {
+        m_newEdition = edition;
+        m_newEditionLevel = json[u"level"_s].toString();
+        m_newEditionNotes = json[u"notes"_s].toString();
+    }
 }
 
 ProgramUpdater::RemoteSource ProgramUpdater::getLatestRemoteSource() const

@@ -16,6 +16,14 @@
 ; 4.5.0beta -> bad
 !define /ifndef QBT_VERSION "5.3.0"
 
+; Kettle Edition number (major.minor.patch), see QBT_EDITION_VERSION_* in src/base/version.h.in
+; make-installer.ps1 passes the real one
+!define /ifndef KETTLE_EDITION "0.0.0"
+
+; Folder the finished installer is written to, and the file list for the uninstaller (both made by make-installer.ps1)
+!define /ifndef QBT_OUTPUT_DIR "."
+!define /ifndef KETTLE_UNINSTALL_LIST "uninstall-files.nsh"
+
 ; Option that controls the installer's window name
 ; If set, its value will be used like this:
 ; "qBittorrent ${QBT_INSTALLER_FILENAME}"
@@ -82,16 +90,16 @@ SetCompressorDictSize 64
 !define MUI_FINISHPAGE_RUN_TEXT $(launch_qbt)
 
 ; The name of the installer
-Name "qBittorrent ${QBT_INSTALLER_WINDOWNAME}"
+Name "qBittorrent Kettle Edition ${KETTLE_EDITION}"
 
 ; The file to write
-OutFile "qbittorrent_${QBT_INSTALLER_FILENAME}_setup.exe"
+OutFile "${QBT_OUTPUT_DIR}\qbittorrent-kettle-edition_${KETTLE_EDITION}_${QBT_CPU_ARCH}_setup.exe"
 
 ;Installer Version Information
-VIAddVersionKey "ProductName" "qBittorrent"
-VIAddVersionKey "CompanyName" "The qBittorrent project"
+VIAddVersionKey "ProductName" "qBittorrent Kettle Edition"
+VIAddVersionKey "CompanyName" "Spyhawk"
 VIAddVersionKey "LegalCopyright" "Copyright ©2006-2026 The qBittorrent project"
-VIAddVersionKey "FileDescription" "qBittorrent - A Bittorrent Client"
+VIAddVersionKey "FileDescription" "qBittorrent Kettle Edition - A Bittorrent Client"
 VIAddVersionKey "FileVersion" "${QBT_VERSION}"
 
 ; VIProductVersion needs a 4 part version.
@@ -100,11 +108,11 @@ ${VersionCompleteXXXX} ${QBT_VERSION} VERSION_4_PART
 VIProductVersion "${VERSION_4_PART}"
 
 ; The default installation directory.
-InstallDir $PROGRAMFILES64\qBittorrent
+InstallDir $PROGRAMFILES64\qBittorrent-ke
 
 ; Registry key to check for directory (so if you install again, it will
 ; overwrite the old one automatically)
-InstallDirRegKey HKLM Software\qbittorrent InstallLocation
+InstallDirRegKey HKLM Software\qBittorrent-ke InstallLocation
 
 ; Request application privileges for Windows Vista
 RequestExecutionLevel user
@@ -127,6 +135,8 @@ RequestExecutionLevel user
 
 ;--------------------------------
 ;Installer Pages
+; Kettle Edition takes the place of the official qBittorrent: same file associations, Start Menu folder and uninstall entry.
+!define MUI_WELCOMEPAGE_TEXT "This wizard installs qBittorrent Kettle Edition.$\r$\n$\r$\nIt replaces the official qBittorrent on this computer: the shortcuts, the file associations for .torrent files and magnet links, and the uninstall entry of the official version are taken over, and removed again when you uninstall Kettle Edition. Your settings and torrents are not touched.$\r$\n$\r$\nClick Next to continue."
 !insertmacro MUI_PAGE_WELCOME
 !insertmacro MUI_PAGE_LICENSE "license.txt"
 !insertmacro MUI_PAGE_COMPONENTS

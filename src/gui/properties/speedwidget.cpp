@@ -48,7 +48,9 @@ ComboBoxMenuButton::ComboBoxMenuButton(QWidget *parent, QMenu *menu)
 
 void ComboBoxMenuButton::showPopup()
 {
-    const QPoint p = mapToGlobal(QPoint(0, height()));
+    // the button sits at the right edge of the window, so the menu lines up with its right side to stay inside
+    const int menuWidth = m_menu->sizeHint().width();
+    const QPoint p = mapToGlobal(QPoint((width() - menuWidth), height()));
     m_menu->popup(p);
 
     QComboBox::hidePopup();
@@ -102,6 +104,14 @@ SpeedWidget::SpeedWidget(PropertiesWidget *parent)
 
     m_graphsButton = new ComboBoxMenuButton(this, m_graphsMenu);
     m_graphsButton->addItem(tr("Select Graphs"));
+
+    // Some styles size these boxes to their text with no room to spare, which clips the text, so they get a little more
+    for (QComboBox *comboBox : {m_periodCombobox, static_cast<QComboBox *>(m_graphsButton)})
+    {
+        comboBox->ensurePolished();
+        comboBox->setSizeAdjustPolicy(QComboBox::AdjustToContents);
+        comboBox->setMinimumWidth(comboBox->sizeHint().width() + (2 * comboBox->fontMetrics().averageCharWidth()));
+    }
 
     m_hlayout->addWidget(m_periodLabel);
     m_hlayout->addWidget(m_periodCombobox);

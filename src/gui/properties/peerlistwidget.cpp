@@ -58,6 +58,7 @@
 #include "base/preferences.h"
 #include "base/utils/misc.h"
 #include "base/utils/string.h"
+#include "gui/listviewlayout.h"
 #include "gui/uithememanager.h"
 #include "gui/utils/keysequence.h"
 #include "peerlistsortmodel.h"
@@ -126,21 +127,24 @@ PeerListWidget::PeerListWidget(PropertiesWidget *parent)
     m_listModel->setHeaderData(PeerListColumns::RELEVANCE, Qt::Horizontal, tr("Relevance", "i.e: How relevant this peer is to us. How many pieces it has that we don't."));
     m_listModel->setHeaderData(PeerListColumns::CONTRIBUTION, Qt::Horizontal, tr("Contribution", "i.e: How much of this peer's current progress was provided by us"));
     m_listModel->setHeaderData(PeerListColumns::DOWNLOADING_PIECE, Qt::Horizontal, tr("Files", "i.e. files that are being downloaded right now"));
-    // Set header text alignment
-    m_listModel->setHeaderData(PeerListColumns::PORT, Qt::Horizontal, QVariant(Qt::AlignRight | Qt::AlignVCenter), Qt::TextAlignmentRole);
-    m_listModel->setHeaderData(PeerListColumns::PROGRESS, Qt::Horizontal, QVariant(Qt::AlignRight | Qt::AlignVCenter), Qt::TextAlignmentRole);
-    m_listModel->setHeaderData(PeerListColumns::DOWN_SPEED, Qt::Horizontal, QVariant(Qt::AlignRight | Qt::AlignVCenter), Qt::TextAlignmentRole);
-    m_listModel->setHeaderData(PeerListColumns::UP_SPEED, Qt::Horizontal, QVariant(Qt::AlignRight | Qt::AlignVCenter), Qt::TextAlignmentRole);
-    m_listModel->setHeaderData(PeerListColumns::TOT_DOWN, Qt::Horizontal, QVariant(Qt::AlignRight | Qt::AlignVCenter), Qt::TextAlignmentRole);
-    m_listModel->setHeaderData(PeerListColumns::TOT_UP, Qt::Horizontal, QVariant(Qt::AlignRight | Qt::AlignVCenter), Qt::TextAlignmentRole);
-    m_listModel->setHeaderData(PeerListColumns::RELEVANCE, Qt::Horizontal, QVariant(Qt::AlignRight | Qt::AlignVCenter), Qt::TextAlignmentRole);
-    m_listModel->setHeaderData(PeerListColumns::CONTRIBUTION, Qt::Horizontal, QVariant(Qt::AlignRight | Qt::AlignVCenter), Qt::TextAlignmentRole);
+    // Set header text alignment: everything but text is centered
+    m_listModel->setHeaderData(PeerListColumns::PORT, Qt::Horizontal, QVariant(Qt::AlignHCenter | Qt::AlignVCenter), Qt::TextAlignmentRole);
+    m_listModel->setHeaderData(PeerListColumns::CONNECTION, Qt::Horizontal, QVariant(Qt::AlignHCenter | Qt::AlignVCenter), Qt::TextAlignmentRole);
+    m_listModel->setHeaderData(PeerListColumns::FLAGS, Qt::Horizontal, QVariant(Qt::AlignHCenter | Qt::AlignVCenter), Qt::TextAlignmentRole);
+    m_listModel->setHeaderData(PeerListColumns::PROGRESS, Qt::Horizontal, QVariant(Qt::AlignHCenter | Qt::AlignVCenter), Qt::TextAlignmentRole);
+    m_listModel->setHeaderData(PeerListColumns::DOWN_SPEED, Qt::Horizontal, QVariant(Qt::AlignHCenter | Qt::AlignVCenter), Qt::TextAlignmentRole);
+    m_listModel->setHeaderData(PeerListColumns::UP_SPEED, Qt::Horizontal, QVariant(Qt::AlignHCenter | Qt::AlignVCenter), Qt::TextAlignmentRole);
+    m_listModel->setHeaderData(PeerListColumns::TOT_DOWN, Qt::Horizontal, QVariant(Qt::AlignHCenter | Qt::AlignVCenter), Qt::TextAlignmentRole);
+    m_listModel->setHeaderData(PeerListColumns::TOT_UP, Qt::Horizontal, QVariant(Qt::AlignHCenter | Qt::AlignVCenter), Qt::TextAlignmentRole);
+    m_listModel->setHeaderData(PeerListColumns::RELEVANCE, Qt::Horizontal, QVariant(Qt::AlignHCenter | Qt::AlignVCenter), Qt::TextAlignmentRole);
+    m_listModel->setHeaderData(PeerListColumns::CONTRIBUTION, Qt::Horizontal, QVariant(Qt::AlignHCenter | Qt::AlignVCenter), Qt::TextAlignmentRole);
     // Proxy model to support sorting without actually altering the underlying model
     m_proxyModel = new PeerListSortModel(this);
     m_proxyModel->setDynamicSortFilter(true);
     m_proxyModel->setSourceModel(m_listModel);
     m_proxyModel->setSortCaseSensitivity(Qt::CaseInsensitive);
     setModel(m_proxyModel);
+    new ListViewLayout(this);
 
     hideColumn(PeerListColumns::IP_HIDDEN);
     hideColumn(PeerListColumns::COL_COUNT);
@@ -240,6 +244,12 @@ void PeerListWidget::displayColumnHeaderMenu()
         saveSettings();
     });
     resizeAction->setToolTip(tr("Resize all non-hidden columns to the size of their contents"));
+    QAction *resetAction = menu->addAction(tr("Reset auto width"), this, [this]()
+    {
+        findChild<ListViewLayout *>()->reset();
+        saveSettings();
+    });
+    resetAction->setToolTip(tr("Fit all non-hidden columns to their contents again, and forget the widths that were set by hand"));
 
     menu->popup(QCursor::pos());
 }
@@ -451,7 +461,7 @@ void PeerListWidget::loadPeers(const BitTorrent::Torrent *torrent)
                 setModelData(m_listModel, row, PeerListColumns::IP_HIDDEN, peerIPHiddenString, peerIPHiddenString);
 
                 const QString peerPortString = useI2PSocket ? tr("N/A") : QString::number(peer.address().port);
-                setModelData(m_listModel, row, PeerListColumns::PORT, peerPortString, peer.address().port, (Qt::AlignRight | Qt::AlignVCenter));
+                setModelData(m_listModel, row, PeerListColumns::PORT, peerPortString, peer.address().port, (Qt::AlignHCenter | Qt::AlignVCenter));
 
                 if (useI2PSocket)
                 {
@@ -492,7 +502,7 @@ void PeerListWidget::loadPeers(const BitTorrent::Torrent *torrent)
 
 void PeerListWidget::updatePeer(const int row, const BitTorrent::Torrent *torrent, const BitTorrent::PeerInfo &peer, const bool hideZeroValues)
 {
-    const Qt::Alignment intDataTextAlignment = Qt::AlignRight | Qt::AlignVCenter;
+    const Qt::Alignment centerTextAlignment = Qt::AlignHCenter | Qt::AlignVCenter;
 
     const QString client = peer.client().toHtmlEscaped();
     setModelData(m_listModel, row, PeerListColumns::CLIENT, client, client, {}, client);
@@ -502,26 +512,26 @@ void PeerListWidget::updatePeer(const int row, const BitTorrent::Torrent *torren
 
     const QString downSpeed = (hideZeroValues && (peer.payloadDownSpeed() <= 0))
             ? QString() : Utils::Misc::friendlyUnit(peer.payloadDownSpeed(), true);
-    setModelData(m_listModel, row, PeerListColumns::DOWN_SPEED, downSpeed, peer.payloadDownSpeed(), intDataTextAlignment);
+    setModelData(m_listModel, row, PeerListColumns::DOWN_SPEED, downSpeed, peer.payloadDownSpeed(), centerTextAlignment);
 
     const QString upSpeed = (hideZeroValues && (peer.payloadUpSpeed() <= 0))
             ? QString() : Utils::Misc::friendlyUnit(peer.payloadUpSpeed(), true);
-    setModelData(m_listModel, row, PeerListColumns::UP_SPEED, upSpeed, peer.payloadUpSpeed(), intDataTextAlignment);
+    setModelData(m_listModel, row, PeerListColumns::UP_SPEED, upSpeed, peer.payloadUpSpeed(), centerTextAlignment);
 
     const QString totalDown = (hideZeroValues && (peer.totalDownload() <= 0))
             ? QString() : Utils::Misc::friendlyUnit(peer.totalDownload());
-    setModelData(m_listModel, row, PeerListColumns::TOT_DOWN, totalDown, peer.totalDownload(), intDataTextAlignment);
+    setModelData(m_listModel, row, PeerListColumns::TOT_DOWN, totalDown, peer.totalDownload(), centerTextAlignment);
 
     const QString totalUp = (hideZeroValues && (peer.totalUpload() <= 0))
             ? QString() : Utils::Misc::friendlyUnit(peer.totalUpload());
-    setModelData(m_listModel, row, PeerListColumns::TOT_UP, totalUp, peer.totalUpload(), intDataTextAlignment);
+    setModelData(m_listModel, row, PeerListColumns::TOT_UP, totalUp, peer.totalUpload(), centerTextAlignment);
 
-    setModelData(m_listModel, row, PeerListColumns::CONNECTION, peer.connectionType(), peer.connectionType());
-    setModelData(m_listModel, row, PeerListColumns::FLAGS, peer.flags(), peer.flags(), {}, peer.flagsDescription());
+    setModelData(m_listModel, row, PeerListColumns::CONNECTION, peer.connectionType(), peer.connectionType(), centerTextAlignment);
+    setModelData(m_listModel, row, PeerListColumns::FLAGS, peer.flags(), peer.flags(), centerTextAlignment, peer.flagsDescription());
     setModelData(m_listModel, row, PeerListColumns::PROGRESS, (Utils::String::fromDouble(peer.progress() * 100, 1) + u'%')
-            , peer.progress(), intDataTextAlignment);
+            , peer.progress(), centerTextAlignment);
     setModelData(m_listModel, row, PeerListColumns::RELEVANCE, (Utils::String::fromDouble(peer.relevance() * 100, 1) + u'%')
-            , peer.relevance(), intDataTextAlignment);
+            , peer.relevance(), centerTextAlignment);
 
     const qlonglong totalUpload = peer.totalUpload();
     qreal contribution = 0;
@@ -533,7 +543,7 @@ void PeerListWidget::updatePeer(const int row, const BitTorrent::Torrent *torren
         contribution = static_cast<qreal>(totalUpload) / ((progressBytes <= 0) ? totalSize : progressBytes);
     }
     setModelData(m_listModel, row, PeerListColumns::CONTRIBUTION, (Utils::String::fromDouble((contribution * 100), 1) + u'%')
-            , contribution, intDataTextAlignment);
+            , contribution, centerTextAlignment);
 
     const PathList filePaths = torrent->info().filesForPiece(peer.downloadingPieceIndex());
     QStringList downloadingFiles;

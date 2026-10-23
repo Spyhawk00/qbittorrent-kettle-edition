@@ -35,6 +35,8 @@
 #include <QStyleOptionViewItem>
 #include <QVBoxLayout>
 
+#include "utils.h"
+
 namespace
 {
     class ArrowCheckBox final : public QCheckBox
@@ -46,6 +48,11 @@ namespace
         void paintEvent(QPaintEvent *) override
         {
             QPainter painter {this};
+
+            // Header band so the section title stands out from the rows below it
+            painter.fillRect(rect(), Utils::Gui::sectionHeaderColor(palette()));
+            // the last row, as the lower edge of the column headers of the transfer list
+            painter.fillRect(QRectF(0, (height() - 1), width(), 1), palette().color(QPalette::Mid));
 
             QStyleOptionViewItem indicatorOption;
             indicatorOption.initFrom(this);
@@ -70,10 +77,14 @@ TransferListFiltersWidgetItem::TransferListFiltersWidgetItem(const QString &capt
     QFont font;
     font.setBold(true);
     font.setCapitalization(QFont::AllUppercase);
+    font.setPointSizeF(font.pointSizeF() + 1);
     m_caption->setFont(font);
+    m_caption->setMinimumHeight(m_caption->sizeHint().height() + 6);
+    // Full width even when the section is collapsed, so the header band doesn't shrink to the text
+    m_caption->setSizePolicy(QSizePolicy::Expanding, m_caption->sizePolicy().verticalPolicy());
 
     auto *layout = new QVBoxLayout(this);
-    layout->setContentsMargins(0, 2, 0, 0);
+    layout->setContentsMargins(0, 0, 0, 0);
     layout->setSpacing(2);
     layout->setAlignment(Qt::AlignLeft | Qt::AlignTop);
     layout->addWidget(m_caption);
@@ -93,4 +104,9 @@ bool TransferListFiltersWidgetItem::isChecked() const
 void TransferListFiltersWidgetItem::setChecked(const bool value)
 {
     m_caption->setChecked(value);
+}
+
+void TransferListFiltersWidgetItem::setCaptionHeight(const int height)
+{
+    m_caption->setFixedHeight(height);
 }

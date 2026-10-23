@@ -607,6 +607,10 @@ The piece hash will be checked when it is requested for the first time by a peer
         <source>Unable to pause the session.</source>
         <translation type="unfinished" />
     </message>
+    <message>
+        <source>More</source>
+        <translation type="unfinished" />
+    </message>
 </context>
 <context>
     <name>MainWindow</name>

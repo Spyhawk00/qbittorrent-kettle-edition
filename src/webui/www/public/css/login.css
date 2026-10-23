@@ -1,5 +1,30 @@
+/* the same palette as the main page; the page follows the browser's color scheme */
+:root {
+    --color-accent-blue: hsl(209deg 100% 38%);
+    --color-background-control: hsl(0deg 0% 100%);
+    --color-background-default: hsl(0deg 0% 95%);
+    --color-border-default: hsl(0deg 0% 82%);
+    --color-text-default: hsl(0deg 0% 11%);
+    --color-text-red: hsl(5deg 74% 44%);
+
+    color-scheme: light dark;
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --color-accent-blue: hsl(199deg 100% 65%);
+        --color-background-control: hsl(0deg 0% 24%);
+        --color-background-default: hsl(0deg 0% 13%);
+        --color-border-default: hsl(0deg 0% 30%);
+        --color-text-default: hsl(0deg 0% 100%);
+        --color-text-red: hsl(354deg 100% 80%);
+    }
+}
+
 body {
-    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--color-background-default);
+    color: var(--color-text-default);
+    font-family: system-ui, "Segoe UI", sans-serif;
     font-size: 12px;
     line-height: 18px;
     margin: 0;
@@ -25,6 +50,29 @@ body {
     text-align: center;
 }
 
+.login-input,
+#loginButton {
+    background-color: var(--color-background-control);
+    border: 1px solid var(--color-border-default);
+    color: var(--color-text-default);
+    font-family: inherit;
+}
+
+.login-input:focus {
+    border-bottom-color: var(--color-accent-blue);
+    box-shadow: 0 1px 0 var(--color-accent-blue);
+    outline: none;
+}
+
+:focus-visible {
+    outline: 2px solid var(--color-accent-blue);
+    outline-offset: 1px;
+}
+
+#loginButton {
+    cursor: pointer;
+}
+
 .login-input {
     box-sizing: border-box;
     font-size: 1rem;
@@ -39,7 +87,7 @@ body {
 }
 
 #error_msg {
-    color: #ff0000;
+    color: var(--color-text-red);
     white-space: pre;
 }
 

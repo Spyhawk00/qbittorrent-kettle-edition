@@ -32,12 +32,12 @@ BEGIN
         BLOCK "040904B0"
         BEGIN
             VALUE "CompanyName",      "The qBittorrent Project"
-            VALUE "FileDescription",  "qBittorrent - A Bittorrent Client"
+            VALUE "FileDescription",  "qBittorrent - Kettle Edition"
             VALUE "FileVersion",      VER_FILEVERSION_STR
             VALUE "InternalName",     "qbittorrent"
             VALUE "LegalCopyright",   "Copyright ©2006-2026 The qBittorrent Project"
-            VALUE "OriginalFilename", "qbittorrent.exe"
-            VALUE "ProductName",      "qBittorrent"
+            VALUE "OriginalFilename", "qbittorrent-ke.exe"
+            VALUE "ProductName",      "qBittorrent Kettle Edition"
             VALUE "ProductVersion",   VER_PRODUCTVERSION_STR
         END
     END

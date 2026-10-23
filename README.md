@@ -1,60 +1,45 @@
-# qBittorrent - A BitTorrent client in Qt
+Kettle Edition
+--------------
 
-[![GitHub Actions CI Status](https://github.com/qbittorrent/qBittorrent/actions/workflows/ci_ubuntu.yaml/badge.svg)](https://github.com/qbittorrent/qBittorrent/actions)
-[![Coverity Status](https://scan.coverity.com/projects/5494/badge.svg)](https://scan.coverity.com/projects/5494)
+Kettle Edition is an unofficial build of [qBittorrent](https://www.qbittorrent.org) 5.3.0 for Windows, made for
+sharing one qBittorrent between several people. It is not affiliated with or endorsed by the qBittorrent project.
+A kettle is a group of hawks soaring together.
 
-qBittorrent is a [BitTorrent] client programmed in C++ / Qt that uses
-[libtorrent] (sometimes called libtorrent-rasterbar) by Arvid Norberg.
+### What is different from qBittorrent 5.3.0
 
-It aims to be a good alternative to all other BitTorrent clients
-out there. qBittorrent is fast, stable and provides Unicode
-support as well as many features.
+* **User accounts and roles in the WebUI.** Each person signs in with their own account. Roles decide what they may do
+  (view, add, start/stop, edit, choose save locations, delete, delete files, change settings, and so on).
+  Accounts, roles and sessions are managed from the WebUI and from the desktop program.
+* **Activity log.** Who did what, from which address, and what was refused. Available in the WebUI and on the desktop.
+* **Sign-in protection.** An address is banned after too many wrong passwords, and an account is locked for the
+  address that keeps failing, so a stranger can't lock the owner out.
+* **Redesigned desktop and WebUI**, with a WebUI that works as an installable app on a phone.
+* **Silent signed updates.** The program checks this repository's releases, downloads what changed, verifies the
+  signature and file hashes, installs at 4:00 AM or at the next start, and goes back to the previous version by itself
+  if the new one doesn't run well.
 
-The free [IP to Country Lite database] by [DB-IP] is used for resolving the countries of peers.
-The database is licensed under the [Creative Commons Attribution 4.0 International License].
+The qBittorrent version stays `v5.3.0`, and the WebUI API is the same one, so tools such as Sonarr and Radarr keep
+working. Kettle Edition has its own version number (see About).
 
-[BitTorrent]: https://en.wikipedia.org/wiki/BitTorrent
-[Creative Commons Attribution 4.0 International License]: https://creativecommons.org/licenses/by/4.0/
-[DB-IP]: https://db-ip.com/
-[IP to Country Lite database]: https://db-ip.com/db/download/ip-to-country-lite
-[libtorrent]: https://libtorrent.org/
+### Installing
 
-## Installation
+Download `qbittorrent-kettle-edition_<version>_x64_setup.exe` from the [releases](../../releases) page and run it.
+The installer is not code-signed, so Windows SmartScreen may ask you to confirm. Kettle Edition replaces the official
+qBittorrent: it takes over the Start Menu folder, the `.torrent` and magnet associations and the uninstall entry, and
+removes them again when you uninstall it. Settings and torrents are kept. For automatic updates, the user who runs the
+program must be allowed to change the program folder (a ticked option on the installer's components page); that also
+means anything running as that user can replace the program.
 
-Refer to the [INSTALL] file.
+Python is needed only for the search plugins.
 
-[INSTALL]: INSTALL
+### Building
 
-## License
+See [INSTALL](INSTALL). The Kettle Edition code is in `src/base/access`, `src/webui/api/accesscontroller.*`,
+`src/gui/useraccount*`, `src/gui/userrole*`, `src/gui/log/webuiactivitywidget.*` and `src/updatehelper`.
 
-Refer to the [COPYING] file.
+### Licence
 
-[COPYING]: COPYING
-
-## PGP Public Key
-
-Starting from v3.3.4 all source tarballs and binaries are signed. \
-The key currently used is 4096R/[5B7CC9A2](https://pgp.mit.edu/pks/lookup?op=get&search=0x6E4A2D025B7CC9A2) with fingerprint `D8F3DA77AAC6741053599C136E4A2D025B7CC9A2`. \
-You can also [download it](https://github.com/qbittorrent/qBittorrent/raw/master/5B7CC9A2.asc). \
-**PREVIOUSLY** the following key was used to sign the v3.3.4 source tarballs and v3.3.4 Windows installer **only**: 4096R/[520EC6F6](https://pgp.mit.edu/pks/lookup?op=get&search=0xA1ACCAE4520EC6F6) with fingerprint `F4A5FD201B117B1C2AB590E2A1ACCAE4520EC6F6`.
-
-## Misc
-
-For more information please visit:
-<https://www.qbittorrent.org>
-
-Check out our wiki at:
-<https://wiki.qbittorrent.org>
-
-Use the forum for troubleshooting before reporting bugs:
-<https://forum.qbittorrent.org>
-
-Please report any bug (or feature request) to:
-<https://bugs.qbittorrent.org>
-
-Official IRC channel:
-[#qbittorrent on irc.libera.chat](ircs://irc.libera.chat:6697/qbittorrent)
-
------------------------------------------------------
-
-sledgehammer999 \<<sledgehammer999@qbittorrent.org>\>
+GNU General Public License version 2 or later, with the additional permission to link with OpenSSL (see
+[COPYING](COPYING)). Kettle Edition is based on qBittorrent, copyright the qBittorrent project. The free
+[IP to Country Lite database](https://db-ip.com/db/download/ip-to-country-lite) by [DB-IP](https://db-ip.com/) is
+licensed under the Creative Commons Attribution 4.0 International License.

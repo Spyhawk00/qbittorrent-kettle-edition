@@ -34,6 +34,7 @@
 #include <chrono>
 #include <limits>
 
+#include <QAbstractButton>
 #include <QApplication>
 #include <QClipboard>
 #include <QDebug>
@@ -41,9 +42,21 @@
 #include <QDialogButtonBox>
 #include <QEvent>
 #include <QFileDialog>
+#include <QGroupBox>
+#include <QHostAddress>
+#include <QKeyEvent>
+#include <QLabel>
 #include <QMessageBox>
+#include <QPainter>
+#include <QScrollArea>
+#include <QShortcut>
+#include <QStackedWidget>
 #include <QStyleFactory>
 #include <QSystemTrayIcon>
+#include <QTabBar>
+#include <QTabWidget>
+#include <QTextDocumentFragment>
+#include <QTranslator>
 
 #ifdef Q_OS_WIN
 #include <QProcess>
@@ -73,12 +86,14 @@
 #include "base/utils/sslkey.h"
 #include "advancedsettings.h"
 #include "banlistoptionsdialog.h"
+#include "groupboxheadingstyle.h"
 #include "interfaces/iguiapplication.h"
 #include "ipsubnetwhitelistoptionsdialog.h"
 #include "rss/automatedrssdownloader.h"
 #include "ui_optionsdialog.h"
 #include "uithemedialog.h"
 #include "uithememanager.h"
+#include "useraccountswidget.h"
 #include "utils.h"
 #include "watchedfolderoptionsdialog.h"
 #include "watchedfoldersmodel.h"
@@ -127,6 +142,93 @@ namespace
         }
     };
 
+    // A light tint of the highlight color over a search match: the whole widget, a section title or one tab
+    class SearchMark final : public QWidget
+    {
+    public:
+        SearchMark(QWidget *target, const int tab)
+            : QWidget(target)
+            , m_tab {tab}
+        {
+            setAttribute(Qt::WA_TransparentForMouseEvents);
+            target->installEventFilter(this);
+            place();
+            show();
+        }
+
+    private:
+        bool eventFilter(QObject *, QEvent *event) override
+        {
+            if ((event->type() == QEvent::Resize) || (event->type() == QEvent::LayoutRequest))
+                place();
+            return false;
+        }
+
+        void paintEvent(QPaintEvent *) override
+        {
+            QColor color = palette().color(QPalette::Highlight);
+            color.setAlphaF(0.3);
+            QPainter painter {this};
+            painter.fillRect(rect(), color);
+        }
+
+        void place()
+        {
+            const QWidget *target = parentWidget();
+            if (const auto *tabBar = qobject_cast<const QTabBar *>(target); tabBar && (m_tab >= 0))
+                setGeometry(tabBar->tabRect(m_tab));
+            else if (const auto *groupBox = qobject_cast<const QGroupBox *>(target))
+                setGeometry(0, 0, groupBox->width(), groupBox->contentsRect().top());
+            else
+                setGeometry(target->rect());
+            raise();
+        }
+
+        int m_tab = -1;
+    };
+
+    // the text a person reads: without the & of a keyboard shortcut and without HTML
+    QString searchText(QString text)
+    {
+        if (Qt::mightBeRichText(text))
+            text = QTextDocumentFragment::fromHtml(text).toPlainText();
+        return text.remove(u'&');
+    }
+
+    bool containsAll(const QString &text, const QStringList &words)
+    {
+        return std::all_of(words.cbegin(), words.cend(), [&text](const QString &word)
+        {
+            return text.contains(word, Qt::CaseInsensitive);
+        });
+    }
+
+    // shown whenever its page is: neither it nor a box around it is hidden (pages of a tab widget only wait their turn)
+    bool isShownOnPage(const QWidget *widget, const QWidget *page)
+    {
+        for (; widget && (widget != page); widget = widget->parentWidget())
+        {
+            if (widget->isHidden() && !qobject_cast<const QStackedWidget *>(widget->parentWidget()))
+                return false;
+        }
+        return true;
+    }
+
+    // where the keyboard goes for a match: the match itself, a label's buddy, or the next control after it
+    QWidget *focusTargetFor(QWidget *widget)
+    {
+        if (const auto *label = qobject_cast<const QLabel *>(widget); label && label->buddy())
+            return label->buddy();
+        for (QWidget *next = widget; next; next = next->nextInFocusChain())
+        {
+            if ((next->focusPolicy() & Qt::TabFocus) && next->isVisible() && next->isEnabled())
+                return next;
+            if (next->nextInFocusChain() == widget)
+                break;
+        }
+        return nullptr;
+    }
+
     bool isValidWebUIUsernameLength(const QString &username)
     {
         return (username.length() >= WEBUI_MIN_USERNAME_LENGTH);
@@ -168,6 +270,20 @@ OptionsDialog::OptionsDialog(IGUIApplication *app, QWidget *parent)
     m_ui->setupUi(this);
     m_applyButton = m_ui->buttonBox->button(QDialogButtonBox::Apply);
 
+    // sections are headings with a line under them, not framed boxes
+    GroupBoxHeadingStyle::apply(this);
+    for (QScrollArea *page : asConst(m_ui->tabOption->findChildren<QScrollArea *>()))
+    {
+        page->widget()->layout()->setSpacing(fontMetrics().height());
+        page->setHorizontalScrollBarPolicy(Qt::ScrollBarAlwaysOff);
+    }
+
+    QFont pageTitleFont = m_ui->labelPageTitle->font();
+    if (pageTitleFont.pointSizeF() > 0)
+        pageTitleFont.setPointSizeF(pageTitleFont.pointSizeF() * 1.5);
+    pageTitleFont.setBold(true);
+    m_ui->labelPageTitle->setFont(pageTitleFont);
+
 #ifdef Q_OS_UNIX
     setWindowTitle(tr("Preferences"));
 #endif
@@ -182,23 +298,14 @@ OptionsDialog::OptionsDialog(IGUIApplication *app, QWidget *parent)
     m_ui->tabSelection->item(TAB_DOWNLOADS)->setIcon(UIThemeManager::instance()->getIcon(u"download"_s, u"folder-download"_s));
     m_ui->tabSelection->item(TAB_SPEED)->setIcon(UIThemeManager::instance()->getIcon(u"speedometer"_s, u"chronometer"_s));
     m_ui->tabSelection->item(TAB_RSS)->setIcon(UIThemeManager::instance()->getIcon(u"application-rss"_s, u"application-rss+xml"_s));
-    m_ui->tabSelection->item(TAB_SEARCH)->setIcon(UIThemeManager::instance()->getIcon(u"edit-find"_s));
 #ifdef DISABLE_WEBUI
     m_ui->tabSelection->item(TAB_WEBUI)->setHidden(true);
+    m_ui->tabSelection->item(TAB_USERACCOUNTS)->setHidden(true);
 #else
     m_ui->tabSelection->item(TAB_WEBUI)->setIcon(UIThemeManager::instance()->getIcon(u"preferences-webui"_s, u"network-server"_s));
+    m_ui->tabSelection->item(TAB_USERACCOUNTS)->setIcon(UIThemeManager::instance()->getIcon(u"peers"_s, u"system-users"_s));
 #endif
     m_ui->tabSelection->item(TAB_ADVANCED)->setIcon(UIThemeManager::instance()->getIcon(u"preferences-advanced"_s, u"preferences-other"_s));
-
-    // set uniform size for all icons
-    int maxHeight = -1;
-    for (int i = 0; i < m_ui->tabSelection->count(); ++i)
-        maxHeight = std::max(maxHeight, m_ui->tabSelection->visualItemRect(m_ui->tabSelection->item(i)).size().height());
-    for (int i = 0; i < m_ui->tabSelection->count(); ++i)
-    {
-        const QSize size(std::numeric_limits<int>::max(), static_cast<int>(maxHeight * 1.2));
-        m_ui->tabSelection->item(i)->setSizeHint(size);
-    }
 
     connect(m_ui->tabSelection, &QListWidget::currentItemChanged, this, &ThisType::changePage);
 
@@ -212,6 +319,9 @@ OptionsDialog::OptionsDialog(IGUIApplication *app, QWidget *parent)
     loadSearchTabOptions();
 #ifndef DISABLE_WEBUI
     loadWebUITabOptions();
+
+    // user accounts, roles and logins: changed at once, between the note saying so and the settings that apply with OK/Apply
+    m_ui->userAccountsPageLayout->insertWidget(1, new UserAccountsWidget(m_ui->tabUserAccountsPage), 1);
 #endif
 
     // Load Advanced settings
@@ -234,7 +344,25 @@ OptionsDialog::OptionsDialog(IGUIApplication *app, QWidget *parent)
     for (QSpinBox *widget : asConst(findChildren<QSpinBox *>()))
         widget->installEventFilter(wheelEventEater);
 
-    m_ui->tabSelection->setCurrentRow(m_storeLastViewedPage);
+    // on each page, the controls of "label: control" rows start at the same column
+    for (int i = 0; i < m_ui->tabOption->count(); ++i)
+    {
+        if (i != TAB_ADVANCED)
+            GroupBoxHeadingStyle::alignRows(m_ui->tabOption->widget(i));
+    }
+
+    // search: Ctrl+F goes to the box, Enter to the first match and Esc clears it
+    m_ui->labelNoSearchMatch->hide();
+    connect(m_ui->searchEdit, &QLineEdit::textChanged, this, &ThisType::searchSettings);
+    m_ui->searchEdit->installEventFilter(this);
+    connect(new QShortcut(QKeySequence::Find, this), &QShortcut::activated, this, [this]
+    {
+        m_ui->searchEdit->setFocus(Qt::ShortcutFocusReason);
+        m_ui->searchEdit->selectAll();
+    });
+
+    m_ui->tabSelection->setCurrentRow(std::clamp<int>(m_storeLastViewedPage, 0, (m_ui->tabSelection->count() - 1)));
+    m_ui->labelPageTitle->setText(m_ui->tabSelection->currentItem()->text());
 
     if (const QSize dialogSize = m_storeDialogSize; dialogSize.isValid())
         resize(dialogSize);
@@ -1458,6 +1586,12 @@ void OptionsDialog::loadWebUITabOptions()
     m_ui->spinBanDuration->setValue(pref->getWebUIBanDuration().count());
     m_ui->spinSessionTimeout->setValue(pref->getWebUISessionTimeout());
     m_ui->spinBoxWebUISessionsCountLimit->setValue(pref->getWebUISessionsCountLimit());
+    // User accounts
+    m_ui->checkWebUISharedLogin->setChecked(pref->isWebUISharedLoginAllowed());
+    m_ui->spinWebUIUserSignInDays->setValue(pref->getWebUIUserSignInDays());
+    m_ui->spinWebUIUserLockCounter->setValue(pref->getWebUIUserMaxAuthFailCount());
+    m_ui->spinWebUIUserLockDuration->setValue(pref->getWebUIUserLockDuration().count());
+    m_ui->spinWebUIActivityLogDays->setValue(pref->getWebUIActivityLogDays());
     // Alternative UI
     m_ui->groupAltWebUI->setChecked(pref->isAltWebUIEnabled());
     m_ui->textWebUIRootFolder->setSelectedPath(pref->getWebUIRootFolder());
@@ -1504,6 +1638,12 @@ void OptionsDialog::loadWebUITabOptions()
     connect(m_ui->spinSessionTimeout, qSpinBoxValueChanged, this, &ThisType::enableApplyButton);
     connect(m_ui->spinBoxWebUISessionsCountLimit, qSpinBoxValueChanged, this, &ThisType::enableApplyButton);
 
+    connect(m_ui->checkWebUISharedLogin, &QAbstractButton::toggled, this, &ThisType::enableApplyButton);
+    connect(m_ui->spinWebUIUserSignInDays, qSpinBoxValueChanged, this, &ThisType::enableApplyButton);
+    connect(m_ui->spinWebUIUserLockCounter, qSpinBoxValueChanged, this, &ThisType::enableApplyButton);
+    connect(m_ui->spinWebUIUserLockDuration, qSpinBoxValueChanged, this, &ThisType::enableApplyButton);
+    connect(m_ui->spinWebUIActivityLogDays, qSpinBoxValueChanged, this, &ThisType::enableApplyButton);
+
     connect(m_ui->groupAltWebUI, &QGroupBox::toggled, this, &ThisType::enableApplyButton);
     connect(m_ui->textWebUIRootFolder, &FileSystemPathLineEdit::selectedPathChanged, this, &ThisType::enableApplyButton);
 
@@ -1543,6 +1683,12 @@ void OptionsDialog::saveWebUITabOptions() const
     pref->setWebUIBanDuration(std::chrono::seconds {m_ui->spinBanDuration->value()});
     pref->setWebUISessionTimeout(m_ui->spinSessionTimeout->value());
     pref->setWebUISessionsCountLimit(m_ui->spinBoxWebUISessionsCountLimit->value());
+    // User accounts
+    pref->setWebUISharedLoginAllowed(m_ui->checkWebUISharedLogin->isChecked());
+    pref->setWebUIUserSignInDays(m_ui->spinWebUIUserSignInDays->value());
+    pref->setWebUIUserMaxAuthFailCount(m_ui->spinWebUIUserLockCounter->value());
+    pref->setWebUIUserLockDuration(std::chrono::seconds {m_ui->spinWebUIUserLockDuration->value()});
+    pref->setWebUIActivityLogDays(m_ui->spinWebUIActivityLogDays->value());
     // Authentication
     if (const QString username = webUIUsername(); isValidWebUIUsernameLength(username) && isValidWebUIUsernameCharacterSet(username))
         pref->setWebUIUsername(username);
@@ -1657,12 +1803,199 @@ void OptionsDialog::changePage(QListWidgetItem *current, QListWidgetItem *previo
     if (!current)
         current = previous;
     m_ui->tabOption->setCurrentIndex(m_ui->tabSelection->row(current));
+    m_ui->labelPageTitle->setText(current ? current->text() : QString());
+    showFirstSearchMatch(false);
+}
+
+bool OptionsDialog::eventFilter(QObject *watched, QEvent *event)
+{
+    if ((watched == m_ui->searchEdit) && (event->type() == QEvent::KeyPress))
+    {
+        const auto *keyEvent = static_cast<QKeyEvent *>(event);
+        // Enter goes to the first match instead of pressing OK
+        if ((keyEvent->key() == Qt::Key_Return) || (keyEvent->key() == Qt::Key_Enter))
+        {
+            showFirstSearchMatch(true);
+            return true;
+        }
+        // Esc clears the search first, and only then closes the dialog
+        if ((keyEvent->key() == Qt::Key_Escape) && !m_ui->searchEdit->text().isEmpty())
+        {
+            m_ui->searchEdit->clear();
+            return true;
+        }
+    }
+    return QDialog::eventFilter(watched, event);
+}
+
+// The texts people search for on every page but Advanced (which filters its own rows): labels, check boxes,
+// buttons, section titles, the choices of drop-down boxes and the names of tabs
+void OptionsDialog::buildSearchIndex()
+{
+    for (int page = 0; page < m_ui->tabOption->count(); ++page)
+    {
+        if (page == TAB_ADVANCED)
+            continue;
+
+        QWidget *pageWidget = m_ui->tabOption->widget(page);
+        const auto add = [this, page, pageWidget](QWidget *widget, const QString &text, QTabBar *tabBar = nullptr, int tab = -1)
+        {
+            if (text.isEmpty())
+                return;
+            // a widget on a tab of a tab widget is found through that tab while another tab is open
+            for (QWidget *child = widget; !tabBar && child && (child != pageWidget); child = child->parentWidget())
+            {
+                const auto *stack = qobject_cast<QStackedWidget *>(child->parentWidget());
+                if (auto *tabWidget = (stack ? qobject_cast<QTabWidget *>(stack->parentWidget()) : nullptr))
+                {
+                    tabBar = tabWidget->tabBar();
+                    tab = tabWidget->indexOf(child);
+                }
+            }
+            m_searchIndex.append({.page = page, .widget = widget, .tabBar = tabBar, .tab = tab, .text = searchText(text)});
+        };
+
+        for (QWidget *widget : asConst(pageWidget->findChildren<QWidget *>()))
+        {
+            if (const auto *label = qobject_cast<QLabel *>(widget))
+            {
+                add(widget, label->text());
+            }
+            else if (const auto *button = qobject_cast<QAbstractButton *>(widget))
+            {
+                add(widget, button->text());
+            }
+            else if (const auto *groupBox = qobject_cast<QGroupBox *>(widget))
+            {
+                add(widget, groupBox->title());
+            }
+            else if (const auto *comboBox = qobject_cast<QComboBox *>(widget))
+            {
+                QStringList items;
+                for (int i = 0; i < comboBox->count(); ++i)
+                    items.append(comboBox->itemText(i));
+                add(widget, items.join(u'\n'));
+            }
+            else if (auto *tabBar = qobject_cast<QTabBar *>(widget))
+            {
+                for (int i = 0; i < tabBar->count(); ++i)
+                    add(tabBar, tabBar->tabText(i), tabBar, i);
+                // the marks follow the open tab
+                connect(tabBar, &QTabBar::currentChanged, this, [this] { searchSettings(m_ui->searchEdit->text()); });
+            }
+        }
+    }
+}
+
+bool OptionsDialog::isSearchMatch(const SearchEntry &entry) const
+{
+    return !m_searchWords.isEmpty() && containsAll(entry.text, m_searchWords)
+        && isShownOnPage(entry.widget, m_ui->tabOption->widget(entry.page));
+}
+
+// Hides the pages with nothing that contains every word of the text, and marks what matches
+void OptionsDialog::searchSettings(const QString &text)
+{
+    qDeleteAll(m_searchMarks);
+    m_searchMarks.clear();
+    m_searchWords = text.split(u' ', Qt::SkipEmptyParts);
+    if (!m_searchWords.isEmpty() && m_searchIndex.isEmpty())
+        buildSearchIndex();
+
+    // a page whose name matches is shown whole
+    QList<bool> pageMatches;
+    for (int page = 0; page < m_ui->tabSelection->count(); ++page)
+        pageMatches.append(containsAll(searchText(m_ui->tabSelection->item(page)->text()), m_searchWords));
+
+    const bool advancedRowsMatch = m_advancedSettings->setFilterText(pageMatches[TAB_ADVANCED] ? QString() : text);
+    pageMatches[TAB_ADVANCED] = pageMatches[TAB_ADVANCED] || advancedRowsMatch;
+
+    QSet<std::pair<QTabBar *, int>> markedTabs;
+    for (const SearchEntry &entry : asConst(m_searchIndex))
+    {
+        if (!isSearchMatch(entry))
+            continue;
+
+        pageMatches[entry.page] = true;
+        const bool onTab = (entry.widget == entry.tabBar) || (entry.tabBar && (entry.tabBar->currentIndex() != entry.tab));
+        if (!onTab)
+        {
+            m_searchMarks.append(new SearchMark(entry.widget, -1));
+        }
+        else if (!markedTabs.contains({entry.tabBar, entry.tab}))
+        {
+            markedTabs.insert({entry.tabBar, entry.tab});
+            m_searchMarks.append(new SearchMark(entry.tabBar, entry.tab));
+        }
+    }
+
+    for (int page = 0; page < m_ui->tabSelection->count(); ++page)
+    {
+#ifdef DISABLE_WEBUI
+        if ((page == TAB_WEBUI) || (page == TAB_USERACCOUNTS))
+            continue;
+#endif
+        m_ui->tabSelection->item(page)->setHidden(!pageMatches[page]);
+    }
+    m_ui->labelNoSearchMatch->setVisible(!m_searchWords.isEmpty() && !pageMatches.contains(true));
+
+    if (const QListWidgetItem *current = m_ui->tabSelection->currentItem(); current && current->isHidden())
+    {
+        for (int page = 0; page < m_ui->tabSelection->count(); ++page)
+        {
+            if (!m_ui->tabSelection->item(page)->isHidden())
+            {
+                m_ui->tabSelection->setCurrentRow(page);  // which shows its first match
+                return;
+            }
+        }
+    }
+    showFirstSearchMatch(false);
+}
+
+// Scrolls the first match on the shown page into view; with giveFocus the keyboard goes there too
+void OptionsDialog::showFirstSearchMatch(const bool giveFocus)
+{
+    if (m_searchWords.isEmpty())
+        return;
+
+    const int page = m_ui->tabOption->currentIndex();
+    if (page == TAB_ADVANCED)
+    {
+        if (giveFocus)
+            m_advancedSettings->focusFirstRow();
+        return;
+    }
+
+    for (const SearchEntry &entry : asConst(m_searchIndex))
+    {
+        if ((entry.page != page) || !isSearchMatch(entry))
+            continue;
+
+        const bool onTab = (entry.widget == entry.tabBar) || (entry.tabBar && (entry.tabBar->currentIndex() != entry.tab));
+        QWidget *target = onTab ? entry.tabBar : entry.widget;
+        if (auto *scrollArea = m_ui->tabOption->widget(page)->findChild<QScrollArea *>())
+            scrollArea->ensureWidgetVisible(target);
+        if (giveFocus)
+        {
+            if (onTab)
+            {
+                entry.tabBar->setCurrentIndex(entry.tab);
+                entry.tabBar->setFocus(Qt::ShortcutFocusReason);
+            }
+            else if (QWidget *focusTarget = focusTargetFor(target))
+            {
+                focusTarget->setFocus(Qt::ShortcutFocusReason);
+            }
+        }
+        return;
+    }
 }
 
 void OptionsDialog::loadSplitterState()
 {
-    // width has been modified, use height as width reference instead
-    const int width = m_ui->tabSelection->item(TAB_UI)->sizeHint().height() * 2;
+    // room for the longest page name with its icon
+    const int width = m_ui->tabSelection->sizeHintForColumn(0) + (2 * m_ui->tabSelection->frameWidth()) + (4 * fontMetrics().averageCharWidth());
     const QStringList defaultSizes = {QString::number(width), QString::number(m_ui->hsplitter->width() - width)};
 
     QList<int> splitterSizes;
@@ -1849,6 +2182,11 @@ bool OptionsDialog::applySettings()
         m_ui->tabSelection->setCurrentRow(TAB_WEBUI);
         return false;
     }
+    if (isWebUIEnabled() && !webUIAddressOk())
+    {
+        m_ui->tabSelection->setCurrentRow(TAB_WEBUI);
+        return false;
+    }
 #endif
 
     saveOptions();
@@ -1956,8 +2294,8 @@ bool OptionsDialog::isSplashScreenDisabled() const
 void OptionsDialog::initializeStyleCombo()
 {
 #ifdef Q_OS_WIN
-    m_ui->labelStyleHint->setText(tr("%1 is recommended for best compatibility with Windows dark mode"
-            , "Fusion is recommended for best compatibility with Windows dark mode").arg(u"Fusion"_s));
+    m_ui->labelStyleHint->setText(tr("%1 works best with Windows dark mode"
+            , "Fusion works best with Windows dark mode").arg(u"Fusion"_s));
 #else
     m_ui->labelStyleHint->hide();
     m_ui->layoutStyle->removeWidget(m_ui->labelStyleHint);
@@ -2242,6 +2580,21 @@ bool OptionsDialog::isAlternativeWebUIPathValid()
         return false;
     }
     return true;
+}
+
+bool OptionsDialog::webUIAddressOk()
+{
+    // a loopback address shuts out every other device, including a reverse proxy on another machine
+    const QString address = m_ui->textWebUIAddress->text().trimmed();
+    if (address == Preferences::instance()->getWebUIAddress().trimmed())
+        return true;
+    if ((address.compare(u"localhost"_s, Qt::CaseInsensitive) != 0) && !QHostAddress(address).isLoopback())
+        return true;
+
+    const QMessageBox::StandardButton answer = QMessageBox::warning(this, tr("WebUI address")
+        , tr("With the WebUI address set to %1, only this PC can reach the WebUI. Remote access, including through a reverse proxy on another machine, will stop working.\n\nSave anyway?").arg(address)
+        , (QMessageBox::Yes | QMessageBox::No), QMessageBox::No);
+    return (answer == QMessageBox::Yes);
 }
 #endif
 

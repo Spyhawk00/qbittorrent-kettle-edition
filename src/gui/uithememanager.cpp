@@ -36,6 +36,7 @@
 #include <QResource>
 #include <QStyle>
 #include <QStyleHints>
+#include <QTimer>
 
 #include "base/logger.h"
 #include "base/path.h"
@@ -44,6 +45,16 @@
 #include "uithemecommon.h"
 
 #ifdef Q_OS_WIN
+#include <QEvent>
+#include <QMenu>
+#include <QMenuBar>
+#include <QProxyStyle>
+#include <QPushButton>
+#include <QWidget>
+
+#include <windows.h>
+#include <dwmapi.h>
+
 #include "base/utils/reg.h"
 #endif
 
@@ -57,6 +68,45 @@ namespace
         const QColor &color = palette.color(QPalette::Active, QPalette::Base);
         return (color.lightness() < 127);
     }
+
+#ifdef Q_OS_WIN
+    // DWMWA_CAPTION_COLOR and DWMWA_TEXT_COLOR (Windows 11 and later)
+    // DWMWA_USE_IMMERSIVE_DARK_MODE
+    const DWORD DWM_DARK_MODE = 20;
+    const DWORD DWM_CAPTION_COLOR = 35;
+    const DWORD DWM_TEXT_COLOR = 36;
+
+    QColor mixColors(const QColor &base, const QColor &top, const int topPercent)
+    {
+        return QColor(((base.red() * (100 - topPercent)) + (top.red() * topPercent)) / 100
+            , ((base.green() * (100 - topPercent)) + (top.green() * topPercent)) / 100
+            , ((base.blue() * (100 - topPercent)) + (top.blue() * topPercent)) / 100);
+    }
+
+    COLORREF toColorRef(const QColor &color)
+    {
+        return RGB(color.red(), color.green(), color.blue());
+    }
+
+    // square push buttons, a little larger than the Windows 11 style makes them
+    class ButtonStyle final : public QProxyStyle
+    {
+    public:
+        ButtonStyle()
+            : QProxyStyle(u"fusion"_s)
+        {
+        }
+
+        QSize sizeFromContents(const ContentsType type, const QStyleOption *option
+            , const QSize &size, const QWidget *widget) const override
+        {
+            const QSize result = QProxyStyle::sizeFromContents(type, option, size, widget);
+            if (type == CT_PushButton)
+                return (result + QSize(6, 2));
+            return result;
+        }
+    };
+#endif
 
     Path resolveThemePath(const Path &themePath)
     {
@@ -104,6 +154,13 @@ UIThemeManager::UIThemeManager()
 
     connect(QApplication::styleHints(), &QStyleHints::colorSchemeChanged, this, &UIThemeManager::onColorSchemeChanged);
 
+#ifdef Q_OS_WIN
+    // give every window a title bar that stands out from the window body
+    qApp->installEventFilter(this);
+
+    applyNeutralAccent();
+#endif
+
     if (m_useCustomTheme)
     {
         const Path themePath = resolveThemePath(Preferences::instance()->customUIThemePath());
@@ -144,10 +201,12 @@ ColorScheme UIThemeManager::colorScheme() const
 
 void UIThemeManager::setColorScheme(const ColorScheme value)
 {
-    if (value == colorScheme())
-        return;
+    // Always apply, even when the saved value is unchanged: the window may still show the
+    // scheme from startup (for example when an older build saved the value without applying it)
+    if (value != colorScheme())
+        m_colorSchemeSetting = value;
 
-    m_colorSchemeSetting = value;
+    applyColorScheme();
 }
 
 void UIThemeManager::applyColorScheme() const
@@ -188,11 +247,127 @@ void UIThemeManager::applyStyleSheet() const
 
 void UIThemeManager::onColorSchemeChanged()
 {
+#ifdef Q_OS_WIN
+    applyNeutralAccent();
+#endif
+
     emit themeChanged();
 
     // workaround to refresh styled controls once color scheme is changed
     QApplication::setStyle(QApplication::style()->name());
+
+#ifdef Q_OS_WIN
+    // the palette of the windows may follow the new scheme a moment later, so color them again then
+    const auto refreshTitleBars = [this]()
+    {
+        for (QWidget *widget : QApplication::topLevelWidgets())
+            applyTitleBarColor(widget);
+    };
+    refreshTitleBars();
+    QTimer::singleShot(0, this, refreshTitleBars);
+    QTimer::singleShot(300, this, refreshTitleBars);
+#endif
 }
+
+#ifdef Q_OS_WIN
+bool UIThemeManager::eventFilter(QObject *watched, QEvent *event)
+{
+    if (event->type() == QEvent::Show)
+    {
+        if (auto *widget = qobject_cast<QWidget *>(watched))
+            applyTitleBarColor(widget);
+    }
+    else if (event->type() == QEvent::Polish)
+    {
+        // the Windows 11 style draws menus and their selected item with rounded corners, the rest of the app is square
+        if (auto *menu = qobject_cast<QMenu *>(watched))
+        {
+            static auto *squareStyle = new QProxyStyle(u"fusion"_s);
+            if ((qApp->style()->name() == u"windows11"_s) && (menu->style() != squareStyle))
+                menu->setStyle(squareStyle);
+        }
+        // the Windows 11 style also pads every menu bar entry so wide that File, Edit, View... look spread out
+        else if (auto *menuBar = qobject_cast<QMenuBar *>(watched))
+        {
+            static auto *compactStyle = new QProxyStyle(u"fusion"_s);
+            if ((qApp->style()->name() == u"windows11"_s) && (menuBar->style() != compactStyle))
+                menuBar->setStyle(compactStyle);
+        }
+        // push buttons are square too
+        else if (auto *button = qobject_cast<QPushButton *>(watched))
+        {
+            static auto *buttonStyle = new ButtonStyle;
+            if ((qApp->style()->name() == u"windows11"_s) && (button->style() != buttonStyle))
+                button->setStyle(buttonStyle);
+        }
+    }
+
+    return QObject::eventFilter(watched, event);
+}
+
+void UIThemeManager::applyNeutralAccent()
+{
+    // A custom theme sets the whole palette itself
+    if (m_useCustomTheme)
+        return;
+
+    if (isDarkTheme())
+    {
+        // The Windows accent color (a strong red, for example) would fill every check box, color the
+        // selection and tint every other row of a list. The dark scheme uses Windows blue and a faint
+        // stripe instead. Only these roles are overridden, the others keep following the system.
+        const QPalette systemPalette = qApp->palette();
+        const QColor accent {0x00, 0x78, 0xd4};
+        QPalette palette;
+        palette.setColor(QPalette::Highlight, accent);
+        palette.setColor(QPalette::Accent, accent);
+        palette.setColor(QPalette::AlternateBase
+            , mixColors(systemPalette.color(QPalette::Base), systemPalette.color(QPalette::Text), 6));
+        qApp->setPalette(palette);
+        m_neutralAccentApplied = true;
+    }
+    else if (m_neutralAccentApplied)
+    {
+        // back to the system colors
+        qApp->setPalette(QPalette());
+        m_neutralAccentApplied = false;
+    }
+}
+
+void UIThemeManager::applyTitleBarColor(QWidget *window) const
+{
+    if (!window->isWindow() || window->testAttribute(Qt::WA_DontShowOnScreen))
+        return;
+
+    // only windows with a regular title bar, not menus, tooltips, splash screens or frameless windows
+    switch (window->windowType())
+    {
+    case Qt::Window:
+    case Qt::Dialog:
+    case Qt::Tool:
+        break;
+    default:
+        return;
+    }
+    if (window->windowFlags().testFlag(Qt::FramelessWindowHint))
+        return;
+
+    // a shade away from the window color: lighter on a dark window, darker on a light one
+    const QPalette palette = window->palette();
+    const QColor captionColor = mixColors(palette.color(QPalette::Window), palette.color(QPalette::WindowText), 10);
+    const QColor textColor = palette.color(QPalette::WindowText);
+
+    // unsupported before Windows 11, then the title bar just keeps the system color
+    const HWND hwnd = reinterpret_cast<HWND>(window->winId());
+    // the title buttons and frame follow the scheme, not only the caption color
+    const BOOL darkMode = (palette.color(QPalette::Window).lightness() < 127);
+    ::DwmSetWindowAttribute(hwnd, DWM_DARK_MODE, &darkMode, sizeof(darkMode));
+    const COLORREF caption = toColorRef(captionColor);
+    const COLORREF text = toColorRef(textColor);
+    ::DwmSetWindowAttribute(hwnd, DWM_CAPTION_COLOR, &caption, sizeof(caption));
+    ::DwmSetWindowAttribute(hwnd, DWM_TEXT_COLOR, &text, sizeof(text));
+}
+#endif
 
 QIcon UIThemeManager::getIcon(const QString &iconId, [[maybe_unused]] const QString &fallback, const ColorMode colorMode) const
 {

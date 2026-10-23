@@ -31,9 +31,13 @@
 
 #include "base/pathfwd.h"
 
+class QAbstractScrollArea;
+class QColor;
+class QPalette;
 class QPixmap;
 class QPoint;
 class QSize;
+class QSplitter;
 class QString;
 class QWidget;
 
@@ -50,6 +54,13 @@ namespace Utils::Gui
     QSize largeIconSize(const QWidget *widget = nullptr);
 
     QPoint screenCenter(const QWidget *w);
+
+    // Replaces the vertical scroll bar of the area, which takes a column of its own, with one in the divider
+    // of the splitter to the right of the area
+    void dividerVerticalScrollBar(QAbstractScrollArea *area, QSplitter *splitter);
+
+    // Grey of the section header bands (Transfers sidebar, list of searches): a bit darker than the window
+    QColor sectionHeaderColor(const QPalette &palette);
 
     void openPath(const Path &path);
     void openFolderSelect(const Path &path);

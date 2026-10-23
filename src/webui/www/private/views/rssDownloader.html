@@ -99,21 +99,20 @@
         width: 24px;
         margin: 1px 2px 1px 2px;
         border: 1px solid;
-        border-radius: 2px;
-        background-color: #efefef;
-        border-color: #767676;
+        background-color: var(--color-background-control);
+        border-color: var(--color-border-default);
         background-position: center center;
         vertical-align: middle;
     }
 
     .imageButton:hover {
-        background-color: #e5e5e5;
-        border-color: #4f4f4f;
+        background-color: var(--color-background-hover);
+        border-color: var(--color-border-default);
     }
 
     .imageButton:active {
-        background-color: #f5f5f5;
-        border-color: #8d8d8d;
+        background-color: var(--color-background-default);
+        border-color: var(--color-border-default);
     }
 
     #newRuleButton {
@@ -423,8 +422,14 @@ Supports the formats: S01E01, 1x1, 2017.12.31 and 31.12.2017 (Date formats also 
             document.getElementById("rulesTable").style.height = `calc(100% - ${rulesTableHeaderHeight}px)`;
             document.getElementById("rssDownloaderArticlesTable").style.height = `calc(100% - ${document.getElementById("articleTableDesc").getBoundingClientRect().height}px)`;
 
+            // the space around the box, which the percentage doesn't count
+            const marginsHeight = (id) => {
+                const style = getComputedStyle(document.getElementById(id));
+                return parseFloat(style.marginTop) + parseFloat(style.marginBottom);
+            };
             const centerRowNotTableHeight = document.getElementById("saveButton").getBoundingClientRect().height
-                + document.getElementById("ruleSettings").getBoundingClientRect().height + 15;
+                + document.getElementById("ruleSettings").getBoundingClientRect().height
+                + marginsHeight("saveButton") + marginsHeight("ruleSettings") + marginsHeight("rssDownloaderFeeds");
 
             document.getElementById("rssDownloaderFeeds").style.height = `calc(100% - ${centerRowNotTableHeight}px)`;
 
@@ -581,7 +586,7 @@ Supports the formats: S01E01, 1x1, 2017.12.31 and 31.12.2017 (Date formats also 
                 resizable: false,
                 maximizable: false,
                 width: window.qBittorrent.Dialog.limitWidthToViewport(350),
-                height: 100
+                height: 120
             });
         };
 
@@ -596,7 +601,7 @@ Supports the formats: S01E01, 1x1, 2017.12.31 and 31.12.2017 (Date formats also 
                 resizable: false,
                 maximizable: false,
                 width: window.qBittorrent.Dialog.limitWidthToViewport(350),
-                height: 100
+                height: 120
             });
         };
 
@@ -637,7 +642,7 @@ Supports the formats: S01E01, 1x1, 2017.12.31 and 31.12.2017 (Date formats also 
                 resizable: false,
                 maximizable: false,
                 width: window.qBittorrent.Dialog.limitWidthToViewport(360),
-                height: 90
+                height: 110
             });
         };
 
@@ -653,7 +658,7 @@ Supports the formats: S01E01, 1x1, 2017.12.31 and 31.12.2017 (Date formats also 
                 resizable: false,
                 maximizable: false,
                 width: window.qBittorrent.Dialog.limitWidthToViewport(350),
-                height: 85
+                height: 110
             });
         };
 

@@ -137,7 +137,7 @@ window.qBittorrent.PropFiles ??= (() => {
             paddingVertical: 0,
             paddingHorizontal: 0,
             width: window.qBittorrent.Dialog.limitWidthToViewport(400),
-            height: 100,
+            height: 120,
             onCloseComplete: () => {
                 updateData();
             }

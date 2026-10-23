@@ -33,6 +33,11 @@
 #include "base/3rdparty/expected.hpp"
 #include "base/path.h"
 
+namespace Access
+{
+    class AccessStore;
+}
+
 class ClientDataStorage final : public QObject
 {
     Q_OBJECT
@@ -40,12 +45,19 @@ class ClientDataStorage final : public QObject
 
 public:
     ClientDataStorage(QObject *parent = nullptr);
+    // One user account's own copy, kept in the user database. Until they save some, it is `initialData`.
+    ClientDataStorage(Access::AccessStore *accessStore, qint64 userId, const QJsonObject &initialData
+            , QObject *parent = nullptr);
 
     nonstd::expected<void, QString> storeData(const QJsonObject &object);
     QJsonObject loadData() const;
     QJsonObject loadData(const QStringList &keys) const;
 
 private:
+    QJsonObject currentData() const;
+
     Path m_clientDataFilePath;
+    Access::AccessStore *m_accessStore = nullptr;
+    qint64 m_userId = -1;
     QJsonObject m_clientData;
 };

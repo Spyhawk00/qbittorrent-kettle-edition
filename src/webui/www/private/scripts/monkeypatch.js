@@ -125,7 +125,7 @@ window.qBittorrent.MonkeyPatch ??= (() => {
     };
 
     /**
-     * Disable canvas in MochaUI windows
+     * Disable canvas in MochaUI windows, and shape them like dialogs: a 30 px title bar and no footer
      */
     const patchMochaWindowOptions = () => {
         const options = MUI.Window.prototype.options;
@@ -133,6 +133,8 @@ window.qBittorrent.MonkeyPatch ??= (() => {
         options.shadowOffset = { x: 0, y: 0 };
         options.useCanvas = false;
         options.useCanvasControls = false;
+        options.headerHeight = 30;
+        options.footerHeight = 0;
     };
 
     return exports();

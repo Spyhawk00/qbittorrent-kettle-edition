@@ -66,4 +66,6 @@ document.addEventListener("DOMContentLoaded", (_event) => {
         event.preventDefault();
         submitLoginForm();
     });
+
+    window.qBittorrent.AppLaunch.keepForSignIn();
 });

@@ -33,7 +33,9 @@
 #include <QDebug>
 #include <QDir>
 #include <QFileInfo>
+#include <QJsonArray>
 #include <QJsonDocument>
+#include <QJsonObject>
 #include <QMetaObject>
 #include <QMimeDatabase>
 #include <QMimeType>
@@ -42,14 +44,20 @@
 #include <QThread>
 #include <QUrl>
 
+#include "base/access/accessstore.h"
+#include "base/access/activitytext.h"
+#include "base/access/permissions.h"
 #include "base/algorithm.h"
+#include "base/bittorrent/infohash.h"
 #include "base/bittorrent/session.h"
+#include "base/bittorrent/torrent.h"
 #include "base/bittorrent/torrentcreationmanager.h"
 #include "base/http/httperror.h"
 #include "base/http/response.h"
 #include "base/http/responsewriter.h"
 #include "base/logger.h"
 #include "base/preferences.h"
+#include "base/profile.h"
 #include "base/types.h"
 #include "base/utils/apikey.h"
 #include "base/utils/fs.h"
@@ -58,6 +66,7 @@
 #include "base/utils/password.h"
 #include "base/utils/random.h"
 #include "base/utils/string.h"
+#include "api/accesscontroller.h"
 #include "api/apierror.h"
 #include "api/appcontroller.h"
 #include "api/authcontroller.h"
@@ -177,7 +186,10 @@ WebApplication::WebApplication(IApplication *app, QObject *parent)
     , m_torrentCreationManager {new BitTorrent::TorrentCreationManager(app, this)}
     , m_searchJobManager {new SearchJobManager(this)}
     , m_clientDataStorage {new ClientDataStorage(this)}
+    , m_accessStore {Access::AccessStore::instance()}
 {
+    Q_ASSERT(m_accessStore);
+
     declarePublicAPI(u"auth/login"_s);
 
     configure();
@@ -373,8 +385,20 @@ void WebApplication::processAPIRequest(const QString &endpoint, const Http::Head
     }
 
     DataMap data;
+    QStringList fileNames;
     for (const Http::UploadedFile &torrent : request().files)
+    {
         data[torrent.filename] = torrent.data;
+        fileNames.append(torrent.filename);
+    }
+
+    // Multi-user access control. "auth" (login/logout) and "access" (user management, which checks
+    // its own permissions) are handled separately.
+    const bool isAccessControlled = session() && (scope != u"auth") && (scope != u"access");
+    if (isAccessControlled)
+        checkAccess(endpoint, params, fileNames);
+    const bool isLogged = isAccessControlled && Access::ruleFor(endpoint).logged;
+    const QHash<QString, QString> namesBefore = isLogged ? torrentNames(params) : QHash<QString, QString>();
 
     try
     {
@@ -382,6 +406,8 @@ void WebApplication::processAPIRequest(const QString &endpoint, const Http::Head
         if (std::holds_alternative<StreamFileAPIResult>(apiResult))
         {
             const auto result = std::get<StreamFileAPIResult>(apiResult);
+            if (isLogged)
+                logRequest(endpoint, params, fileNames, namesBefore, u"ok"_s, {});
             responseWriter.streamFile(result.filePath, commonHeaders);
             return;
         }
@@ -400,7 +426,22 @@ void WebApplication::processAPIRequest(const QString &endpoint, const Http::Head
             response.headers.insert(Http::HEADER_SET_COOKIE, QString::fromLatin1(cookie.toRawForm()));
         }
 
-        const auto result = std::get<RegularAPIResult>(apiResult);
+        auto result = std::get<RegularAPIResult>(apiResult);
+
+        if (isAccessControlled && (endpoint == u"app/preferences") && !m_currentSession->identity().can(u"settings"_s)
+            && (result.data.userType() == QMetaType::QJsonDocument))
+        {
+            QJsonObject preferences = result.data.toJsonDocument().object();
+            for (const QString &key : Access::redactedPreferences())
+            {
+                if (preferences.contains(key))
+                    preferences[key] = QString();
+            }
+            result.data = QJsonDocument(preferences);
+        }
+
+        if (isLogged)
+            logRequest(endpoint, params, fileNames, namesBefore, u"ok"_s, {});
         if (result.data.isNull())
         {
             response.status = {.code = 204};
@@ -441,6 +482,9 @@ void WebApplication::processAPIRequest(const QString &endpoint, const Http::Head
     }
     catch (const APIError &error)
     {
+        if (isLogged)
+            logRequest(endpoint, params, fileNames, namesBefore, u"failed"_s, error.message());
+
         // re-throw as HTTPError
         switch (error.type())
         {
@@ -682,6 +726,8 @@ void WebApplication::sendFile(const Path &path, const Http::HeaderMap &commonHea
 void WebApplication::processRequest(const Http::Request &request, const Http::Environment &env, Http::ResponseWriter &responseWriter)
 {
     m_currentSession = nullptr;
+    m_isRequestOnlySession = false;
+    m_accessDeniedPermissions.clear();
     m_request = request;
     m_env = env;
     m_cookieBasedSessionStateChange = SessionStateChange::None;
@@ -714,7 +760,7 @@ void WebApplication::processRequest(const Http::Request &request, const Http::En
         else
         {
             cookieSessionInitialize(authScheme, authData);
-            if (m_currentSession)
+            if (m_currentSession && !m_isRequestOnlySession)
                 setSessionCookie(commonHeaders);
         }
 
@@ -739,9 +785,26 @@ void WebApplication::processRequest(const Http::Request &request, const Http::En
     {
         const Http::ResponseStatus &errorStatus = error.status();
         Http::Response response {.status = errorStatus, .headers = commonHeaders};
+        if (!m_accessDeniedPermissions.isEmpty())
+            response.headers.insert(u"x-access-denied"_s, m_accessDeniedPermissions);
         response.headers.insert(Http::HEADER_CONTENT_TYPE, Http::CONTENT_TYPE_TXT);
         response.content = (!error.message().isEmpty() ? error.message() : errorStatus.text).toUtf8();
         responseWriter.setResponse(response);
+    }
+    catch (const RuntimeError &error)
+    {
+        // e.g. a user database error: answer with an error instead of bringing qBittorrent down
+        LogMsg(tr("WebUI: request failed. %1").arg(error.message()), Log::WARNING);
+        Http::Response response {.status = {.code = 500, .text = u"Internal Server Error"_s}, .headers = commonHeaders};
+        response.headers.insert(Http::HEADER_CONTENT_TYPE, Http::CONTENT_TYPE_TXT);
+        response.content = error.message().toUtf8();
+        responseWriter.setResponse(response);
+    }
+
+    if (m_isRequestOnlySession && m_currentSession)
+    {
+        delete m_sessions.take(m_currentSession->id());
+        m_currentSession = nullptr;
     }
 }
 
@@ -758,7 +821,16 @@ void WebApplication::setSessionCookie(Http::HeaderMap &headers)
     if (currentSession->shouldRefreshCookie())
     {
         // 'Permanent Cookie' still require an expiration date so set it to a date in the distant future
-        const std::chrono::seconds cookieExpireDuration = (m_sessionTimeout > 0s) ? m_sessionTimeout : std::chrono::years(1);
+        std::chrono::seconds cookieExpireDuration = (m_sessionTimeout > 0s) ? m_sessionTimeout : std::chrono::years(1);
+
+        // Personal accounts can stay signed in for a fixed time after signing in ("Keep users signed in for").
+        if (const Access::Identity &identity = currentSession->identity()
+            ; (identity.kind == Access::IdentityKind::User) && (Preferences::instance()->getWebUIUserSignInDays() > 0))
+        {
+            const double expiresAt = Access::AccessStore::sessionExpiry(identity.sessionCreatedAt, Access::now());
+            cookieExpireDuration = std::chrono::seconds(std::max<qint64>(60, static_cast<qint64>(expiresAt - Access::now())));
+        }
+
         QNetworkCookie cookie {m_sessionCookieName.toLatin1(), currentSession->id().toLatin1()};
         cookie.setExpirationDate(QDateTime::currentDateTime().addDuration(cookieExpireDuration));
         cookie.setHttpOnly(true);
@@ -797,12 +869,18 @@ void WebApplication::cookieSessionInitialize(const QString &authScheme, const QS
                 delete m_sessions.take(sessionId);
             }
         }
+
+        // Personal sessions live in the user database: check them on every request, so revoked sessions and
+        // disabled accounts lose access at once, and bring them back after a restart.
+        if (!m_currentSession || (m_currentSession->identity().kind == Access::IdentityKind::User))
+            restoreStoredSession(sessionId);
     }
 
     if (!m_currentSession)
     {
         if (!isAuthNeeded())
         {
+            m_pendingIdentity = Access::fullAccessIdentity(Access::IdentityKind::Localhost);
             sessionStart();
         }
         else if (authScheme.compare(BASIC_AUTH, Qt::CaseInsensitive) == 0)
@@ -810,6 +888,15 @@ void WebApplication::cookieSessionInitialize(const QString &authScheme, const QS
             if (!validateBasicAuth(authData))
                 throw UnauthorizedHTTPError();
 
+            // The password comes with every request, so a personal account's session lasts for this request only
+            // instead of piling up stored sessions for clients that ignore the cookie.
+            if (m_pendingIdentity && (m_pendingIdentity->kind == Access::IdentityKind::User))
+            {
+                m_pendingIdentity->sessionCreatedAt = Access::now();
+                sessionStartImpl(generateSid(), WebSessionType::CookieBased, false);
+                m_isRequestOnlySession = true;
+                return;
+            }
             sessionStart();
         }
     }
@@ -835,6 +922,7 @@ void WebApplication::apiKeySessionInitialize(const QString &apiKey)
         }
         else
         {
+            m_pendingIdentity = Access::fullAccessIdentity(Access::IdentityKind::ApiKey);
             sessionStartImpl(apiKey, WebSessionType::APIKeyBased);
         }
     }
@@ -874,7 +962,7 @@ void WebApplication::sessionStart()
     sessionStartImpl(generateSid(), WebSessionType::CookieBased);
 }
 
-void WebApplication::sessionStartImpl(const QString &sessionId, const WebSessionType sessionType)
+void WebApplication::sessionStartImpl(const QString &sessionId, const WebSessionType sessionType, const bool setCookie)
 {
     Q_ASSERT(!m_currentSession);
 
@@ -904,20 +992,32 @@ void WebApplication::sessionStartImpl(const QString &sessionId, const WebSession
         }
     }
 
+    Access::Identity identity = m_pendingIdentity.value_or(Access::Identity {});
+    m_pendingIdentity.reset();
+    if ((identity.kind == Access::IdentityKind::User) && setCookie)
+    {
+        // a new sign-in
+        identity.sessionCreatedAt = Access::now();
+        m_accessStore->createSession(sessionId, identity.userId, clientId()
+            , m_request.headers.value(u"user-agent"_s));
+    }
+
     m_currentSession = WebSession::create(sessionType, sessionId);
+    m_currentSession->setIdentity(identity);
     m_sessions[m_currentSession->id()] = m_currentSession;
-    if (sessionType == WebSessionType::CookieBased)
+    if ((sessionType == WebSessionType::CookieBased) && setCookie)
         m_cookieBasedSessionStateChange = SessionStateChange::Start;
 
+    m_currentSession->registerAPIController(u"access"_s, [this, app = app(), parent = m_currentSession] { return new AccessController(this, app, parent); });
     m_currentSession->registerAPIController(u"app"_s, [app = app(), parent = m_currentSession] { return new AppController(app, parent); });
     m_currentSession->registerAPIController(u"log"_s, [app = app(), parent = m_currentSession] { return new LogController(app, parent); });
     m_currentSession->registerAPIController(u"rss"_s, [app = app(), parent = m_currentSession] { return new RSSController(app, parent); });
     m_currentSession->registerAPIController(u"torrents"_s, [app = app(), parent = m_currentSession] { return new TorrentsController(app, parent); });
     m_currentSession->registerAPIController(u"transfer"_s, [app = app(), parent = m_currentSession] { return new TransferController(app, parent); });
     m_currentSession->registerAPIController(u"clientdata"_s
-            , [app = app(), parent = m_currentSession, clientDataStorage = m_clientDataStorage]
+            , [this, app = app(), parent = m_currentSession, identity]
     {
-        return new ClientDataController(clientDataStorage, app, parent);
+        return new ClientDataController(clientDataStorage(identity, parent), app, parent);
     });
     m_currentSession->registerAPIController(u"torrentcreator"_s
             , [app = app(), parent = m_currentSession, torrentCreationManager = m_torrentCreationManager]
@@ -945,6 +1045,15 @@ void WebApplication::sessionEnd()
 
     if (m_currentSession->type() == WebSessionType::CookieBased)
         m_cookieBasedSessionStateChange = SessionStateChange::End;
+
+    if (const Access::Identity identity = m_currentSession->identity()
+        ; (identity.kind == Access::IdentityKind::User) || (identity.kind == Access::IdentityKind::Legacy))
+    {
+        if (identity.kind == Access::IdentityKind::User)
+            m_accessStore->deleteSession(m_currentSession->id());
+        logEvent(identity, u"login"_s, u"auth/logout"_s, u"Logged out"_s, u"ok"_s);
+    }
+
     delete m_sessions.take(m_currentSession->id());
     m_currentSession = nullptr;
 }
@@ -1072,13 +1181,42 @@ QHostAddress WebApplication::resolveClientAddress() const
     if (!m_isReverseProxySupportEnabled)
         return m_env.clientAddress;
 
+    // Only reverse proxy can overwrite client address
+    if (!Utils::Net::isIPInSubnets(m_env.clientAddress, m_trustedReverseProxyList))
+        return m_env.clientAddress;
+
+    // Cloudflare puts the real visitor address in CF-Connecting-IP; visitors can't set it themselves.
+    QHostAddress clientAddress;
+    if (const QString connectingIP = m_request.headers.value(u"cf-connecting-ip"_s).trimmed(); !connectingIP.isEmpty()
+        && clientAddress.setAddress(connectingIP))
+    {
+        return clientAddress.isLoopback() ? m_env.clientAddress : clientAddress;
+    }
+
     const QString forwardedFor = m_request.headers.value(Http::HEADER_X_FORWARDED_FOR);
-    return Utils::Net::resolveForwardedClientAddress(m_env.clientAddress, forwardedFor, m_trustedReverseProxyList);
+    clientAddress = Utils::Net::resolveForwardedClientAddress(m_env.clientAddress, forwardedFor, m_trustedReverseProxyList);
+
+    // A forwarded address never counts as this PC itself, so it can't get "Bypass authentication for clients
+    // on localhost".
+    return clientAddress.isLoopback() ? m_env.clientAddress : clientAddress;
 }
 
 bool WebApplication::validateCredentials(const QStringView username, const QStringView password) const
 {
     const QString clientAddr = clientId();
+    const QString name = username.toString().trimmed().left(64);
+    const auto logLogin = [this, &clientAddr](const QString &user, const QString &role, const QString &summary
+            , const QString &outcome)
+    {
+        m_accessStore->logActivity(user, role, clientAddr, u"login"_s, u"auth/login"_s, summary, outcome);
+    };
+
+    if (const int remaining = m_accessStore->lockoutRemaining(name, clientAddr); remaining > 0)
+    {
+        logLogin(name, {}, u"Login refused for '%1': account locked after too many failed attempts from this address"_s.arg(name), u"denied"_s);
+        throw ForbiddenHTTPError(tr("This account is locked after too many failed login attempts. Try again in %1 minute(s).")
+            .arg(std::max(1, (remaining + 59) / 60)));
+    }
 
     if (isBanned())
     {
@@ -1088,19 +1226,52 @@ bool WebApplication::validateCredentials(const QStringView username, const QStri
         throw ForbiddenHTTPError(tr("Your IP address has been banned after too many failed authentication attempts."));
     }
 
+    // personal accounts
+    if (const std::optional<Access::User> account = m_accessStore->checkCredentials(name, password.toString()))
+    {
+        m_accessStore->clearLoginFailures(name);
+        m_clientFailedLogins.remove(clientAddr);
+        m_pendingIdentity = Access::Identity {.kind = Access::IdentityKind::User, .userId = account->id
+            , .username = account->username, .roleName = account->roleName
+            , .permissions = m_accessStore->userPermissions(account->id), .sessionCreatedAt = 0};
+        // HTTP Basic authentication signs in on every request: note it once every 10 minutes
+        const auto [authScheme, authData] = parseAuthorizationHeader(m_request.headers.value(Http::HEADER_AUTHORIZATION));
+        const bool isBasicAuth = (authScheme.compare(BASIC_AUTH, Qt::CaseInsensitive) == 0) && !authData.isEmpty();
+        if (!isBasicAuth)
+        {
+            logLogin(account->username, account->roleName, u"Logged in"_s, u"ok"_s);
+            LogMsg(tr("WebAPI login success. IP: %1, user: %2").arg(clientAddr, account->username));
+        }
+        else if (!m_accessStore->recentActivityExists(account->username, u"auth/login"_s, u"ok"_s, 600))
+        {
+            logLogin(account->username, account->roleName, u"Logged in with HTTP Basic authentication"_s, u"ok"_s);
+            LogMsg(tr("WebAPI login success. IP: %1, user: %2").arg(clientAddr, account->username));
+        }
+        return true;
+    }
+
+    // the shared login from qBittorrent's own settings: always allowed until the first account exists
+    const bool isSharedLoginAllowed = !m_accessStore->isOpen() || !m_accessStore->hasUsers()
+        || Preferences::instance()->isWebUISharedLoginAllowed();
     const bool usernameEqual = Utils::Password::slowEquals(username.toUtf8(), m_username.toUtf8());
     const bool passwordEqual = Utils::Password::PBKDF2::verify(m_passwordHash, password);
 
-    if (usernameEqual && passwordEqual)
+    if (isSharedLoginAllowed && usernameEqual && passwordEqual)
     {
         m_clientFailedLogins.remove(clientAddr);
+        m_pendingIdentity = Access::fullAccessIdentity(Access::IdentityKind::Legacy, m_username);
+        logLogin(m_pendingIdentity->logName(), {}, u"Logged in with the shared WebUI login"_s, u"ok"_s);
         LogMsg(tr("WebAPI login success. IP: %1").arg(clientAddr));
         return true;
     }
 
+    // count the address ban first, so a user database error can't skip it
     const auto *pref = Preferences::instance();
     if (pref->getWebUIMaxAuthFailCount() > 0)
         increaseFailedAttempts();
+
+    m_accessStore->recordLoginFailure(clientAddr, name);
+    logLogin(name, {}, u"Failed login as '%1'"_s.arg(name), u"failed"_s);
 
     LogMsg(tr("WebAPI login failure. Reason: invalid credentials, attempt count: %1, IP: %2, username: %3")
             .arg(QString::number(failedAttemptsCount()), clientAddr, username)
@@ -1156,4 +1327,181 @@ void WebApplication::increaseFailedAttempts() const
         // Start ban period
         failedLogin.banTimer.setRemainingTime(Preferences::instance()->getWebUIBanDuration());
     }
+}
+
+// Multi-user access control
+
+Access::AccessStore *WebApplication::accessStore() const
+{
+    return m_accessStore;
+}
+
+Access::Identity WebApplication::currentIdentity() const
+{
+    return m_currentSession ? m_currentSession->identity() : Access::Identity {};
+}
+
+QString WebApplication::currentSessionId() const
+{
+    return m_currentSession ? m_currentSession->id() : QString();
+}
+
+QString WebApplication::currentClientAddress() const
+{
+    return clientId();
+}
+
+ClientDataStorage *WebApplication::clientDataStorage(const Access::Identity &identity, QObject *parent)
+{
+    // localhost, the API key and the shared login use qBittorrent's own shared copy
+    if (identity.kind != Access::IdentityKind::User)
+        return m_clientDataStorage;
+
+    // until they save their own, people start from the shared copy
+    return new ClientDataStorage(m_accessStore, identity.userId, m_clientDataStorage->loadData(), parent);
+}
+
+void WebApplication::logAccessEvent(const QString &category, const QString &endpoint, const QString &summary
+        , const QString &outcome, const QJsonObject &details)
+{
+    logEvent(currentIdentity(), category, endpoint, summary, outcome, details);
+}
+
+void WebApplication::restoreStoredSession(const QString &sessionId)
+{
+    const std::optional<Access::StoredSession> stored = m_accessStore->session(sessionId);
+    if (!stored)
+    {
+        // signed out elsewhere, expired, or the account was disabled or deleted
+        if (m_currentSession)
+        {
+            delete m_sessions.take(sessionId);
+            m_currentSession = nullptr;
+        }
+        return;
+    }
+
+    const Access::Identity identity {.kind = Access::IdentityKind::User, .userId = stored->userId
+        , .username = stored->username, .roleName = stored->roleName, .permissions = stored->permissions
+        , .sessionCreatedAt = stored->createdAt};
+    if (m_currentSession)
+    {
+        // permissions are re-read every time, so role changes apply immediately
+        m_currentSession->setIdentity(identity);
+        return;
+    }
+
+    m_pendingIdentity = identity;
+    sessionStartImpl(sessionId, WebSessionType::CookieBased, false);
+}
+
+void WebApplication::checkAccess(const QString &endpoint, QHash<QString, QString> &params, const QStringList &fileNames)
+{
+    const Access::Identity &identity = m_currentSession->identity();
+
+    QStringList missing;
+    for (const QString &permission : Access::requiredPermissions(endpoint, params))
+    {
+        if (!identity.can(permission))
+            missing.append(permission);
+    }
+
+    if (!missing.isEmpty())
+    {
+        missing.sort();
+        const Access::EndpointRule rule = Access::ruleFor(endpoint);
+        QJsonObject details = Access::safeDetails(endpoint, params);
+        details[u"missing"_s] = QJsonArray::fromStringList(missing);
+        // read-only actions are polled often, so only note a blocked one every 10 minutes
+        if (rule.logged || !m_accessStore->recentActivityExists(identity.logName(), endpoint, u"denied"_s, 600))
+        {
+            logEvent(identity, rule.category, endpoint, Access::describe(endpoint, params, torrentNames(params), fileNames)
+                , u"denied"_s, details);
+        }
+
+        QStringList labels;
+        for (const QString &permission : missing)
+            labels.append(Access::permissionLabel(permission));
+        m_accessDeniedPermissions = missing.join(u',');
+        throw ForbiddenHTTPError(tr("Your role (%1) doesn't allow this: %2.").arg(identity.roleName, labels.join(u", "_s)));
+    }
+
+    // Without "Choose save locations", torrents and new categories use qBittorrent's default folders.
+    if (!identity.can(u"save_location"_s))
+    {
+        for (const QString &key : Access::saveLocationParams(endpoint))
+            params.remove(key);
+    }
+
+    // "added-by:" tags say who added a torrent, so only an admin may write one by hand.
+    static const QStringList tagEndpoints {u"torrents/add"_s, u"search/downloadTorrent"_s, u"torrents/addTags"_s
+        , u"torrents/setTags"_s, u"torrents/createTags"_s};
+    if (tagEndpoints.contains(endpoint) && params.contains(u"tags"_s) && !identity.can(Access::ADMIN_PERMISSION))
+    {
+        QStringList tags;
+        for (const QString &tag : params.value(u"tags"_s).split(u',', Qt::SkipEmptyParts))
+        {
+            if (!tag.trimmed().startsWith(u"added-by:"_s, Qt::CaseInsensitive))
+                tags.append(tag);
+        }
+        params[u"tags"_s] = tags.join(u',');
+    }
+
+    // Tag new torrents with the person who added them.
+    if (((endpoint == u"torrents/add") || (endpoint == u"search/downloadTorrent"))
+        && (identity.kind == Access::IdentityKind::User))
+    {
+        QStringList tags;
+        for (const QString &tag : params.value(u"tags"_s).split(u',', Qt::SkipEmptyParts))
+        {
+            if (!tag.trimmed().isEmpty())
+                tags.append(tag.trimmed());
+        }
+        const QString ownTag = u"added-by:"_s + identity.username;
+        if (!tags.contains(ownTag))
+            tags.append(ownTag);
+        params[u"tags"_s] = tags.join(u',');
+    }
+}
+
+void WebApplication::logRequest(const QString &endpoint, const QHash<QString, QString> &params
+        , const QStringList &fileNames, const QHash<QString, QString> &names, const QString &outcome
+        , const QString &error) const
+{
+    QJsonObject details = Access::safeDetails(endpoint, params);
+    if (!error.isEmpty())
+        details[u"response"_s] = error.left(300);
+    logEvent(m_currentSession->identity(), Access::ruleFor(endpoint).category, endpoint
+        , Access::describe(endpoint, params, names, fileNames), outcome, details);
+}
+
+void WebApplication::logEvent(const Access::Identity &identity, const QString &category, const QString &endpoint
+        , const QString &summary, const QString &outcome, const QJsonObject &details) const
+{
+    try
+    {
+        m_accessStore->logActivity(identity.logName(), identity.logRole(), clientId(), category, endpoint, summary
+            , outcome, details);
+    }
+    catch (const RuntimeError &error)
+    {
+        // never fail a request because the activity log couldn't be written
+        LogMsg(tr("WebUI access: couldn't write the activity log. %1").arg(error.message()), Log::WARNING);
+    }
+}
+
+QHash<QString, QString> WebApplication::torrentNames(const QHash<QString, QString> &params) const
+{
+    QHash<QString, QString> names;
+    const QStringList hashes = Access::torrentHashes(params);
+    if (hashes == QStringList {u"all"_s})
+        return names;
+
+    const auto *btSession = BitTorrent::Session::instance();
+    for (const QString &hash : hashes.first(std::min<qsizetype>(hashes.size(), 200)))
+    {
+        if (const BitTorrent::Torrent *torrent = btSession->getTorrent(BitTorrent::TorrentID::fromString(hash)))
+            names.insert(hash, torrent->name());
+    }
+    return names;
 }

@@ -30,6 +30,7 @@
 #include "searchpluginselectdialog.h"
 
 #include <QClipboard>
+#include <QDesktopServices>
 #include <QDropEvent>
 #include <QFileDialog>
 #include <QHeaderView>
@@ -143,6 +144,11 @@ void SearchPluginSelectDialog::dragEnterEvent(QDragEnterEvent *event)
     {
         event->acceptProposedAction();
     }
+}
+
+void SearchPluginSelectDialog::on_kettlePluginsButton_clicked()
+{
+    QDesktopServices::openUrl(QUrl(u"https://github.com/Spyhawk00/qbt-plugin-installer/releases/latest"_s));
 }
 
 void SearchPluginSelectDialog::on_updateButton_clicked()

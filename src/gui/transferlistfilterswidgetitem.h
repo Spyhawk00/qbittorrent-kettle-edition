@@ -43,6 +43,7 @@ public:
 
     bool isChecked() const;
     void setChecked(bool value);
+    void setCaptionHeight(int height);
 
 signals:
     void toggled(bool checked);

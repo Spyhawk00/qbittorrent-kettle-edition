@@ -1,6 +1,6 @@
 <style>
     #createTorrentForm {
-        text-align: center;
+        text-align: left;
     }
 
     #createTorrentForm table input[type="text"],
@@ -9,8 +9,14 @@
         width: 100%;
     }
 
-    #createTorrentForm fieldset {
-        text-align: left;
+    #optimizeAlignmentBox {
+        border: 0;
+        margin: 4px 0 0;
+        padding: 0;
+    }
+
+    #optimizeAlignmentBox legend {
+        padding: 0;
     }
 
     #sourcePathBox {
@@ -23,8 +29,8 @@
     }
 
     #createTorrentButton {
-        margin-top: 12px;
-        margin-bottom: 12px;
+        display: block;
+        margin: 12px 0 12px auto;
     }
 
 </style>
@@ -82,7 +88,7 @@
                         <label for="trackerURLs">QBT_TR(Tracker URLs:)QBT_TR[CONTEXT=TorrentCreator]</label>
                     </td>
                     <td>
-                        <textarea rows="7" type="text" id="trackerURLs" name="trackers"></textarea>
+                        <textarea rows="4" type="text" id="trackerURLs" name="trackers"></textarea>
                     </td>
                 </tr>
                 <tr>
@@ -90,7 +96,7 @@
                         <label for="webSeedURLs">QBT_TR(Web seed URLs:)QBT_TR[CONTEXT=TorrentCreator]</label>
                     </td>
                     <td>
-                        <textarea rows="7" type="text" id="webSeedURLs" name="urlSeeds"></textarea>
+                        <textarea rows="4" type="text" id="webSeedURLs" name="urlSeeds"></textarea>
                     </td>
                 </tr>
                 <tr>
@@ -98,7 +104,7 @@
                         <label for="comments">QBT_TR(Comments:)QBT_TR[CONTEXT=TorrentCreator]</label>
                     </td>
                     <td>
-                        <textarea rows="7" type="text" id="comments" name="comment"></textarea>
+                        <textarea rows="3" type="text" id="comments" name="comment"></textarea>
                     </td>
                 </tr>
 

@@ -43,6 +43,8 @@
 #include <QMimeDatabase>
 #include <QRegularExpression>
 #include <QSet>
+#include <QSqlDatabase>
+#include <QSqlQuery>
 #include <QString>
 #include <QStringView>
 #include <QSysInfo>
@@ -459,5 +461,28 @@ QString Utils::Misc::zlibVersionString()
 {
     // static initialization for usage in signal handler
     static const auto version {QString::fromLatin1(zlibVersion())};
+    return version;
+}
+
+QString Utils::Misc::sqliteVersionString()
+{
+    // empty if the SQLite driver is not available
+    static const QString version = []
+    {
+        const QString connectionName = u"SqliteVersion"_s;
+        QString result;
+        {
+            auto db = QSqlDatabase::addDatabase(u"QSQLITE"_s, connectionName);
+            db.setDatabaseName(u":memory:"_s);
+            if (db.open())
+            {
+                QSqlQuery query {db};
+                if (query.exec(u"SELECT sqlite_version()"_s) && query.next())
+                    result = query.value(0).toString();
+            }
+        }
+        QSqlDatabase::removeDatabase(connectionName);
+        return result;
+    }();
     return version;
 }

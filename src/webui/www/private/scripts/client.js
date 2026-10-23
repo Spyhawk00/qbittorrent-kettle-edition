@@ -30,6 +30,8 @@ window.qBittorrent.Client ??= (() => {
     const exports = () => {
         return {
             setup: setup,
+            applyAccountPermissions: applyAccountPermissions,
+            initializeAccount: initializeAccount,
             initializeCaches: initializeCaches,
             initializeClientData: initializeClientData,
             closeWindow: closeWindow,
@@ -38,6 +40,7 @@ window.qBittorrent.Client ??= (() => {
             isStopped: isStopped,
             stop: stop,
             mainTitle: mainTitle,
+            isAppWindow: isAppWindow,
             showSearchEngine: showSearchEngine,
             showRssReader: showRssReader,
             showLogViewer: showLogViewer,
@@ -59,6 +62,7 @@ window.qBittorrent.Client ??= (() => {
 
     let cacheAllSettled;
     let clientDataPromise;
+    let accountPromise;
     const setup = () => {
         // fetch various data and store it in memory
         clientDataPromise = window.qBittorrent.ClientData.fetch([
@@ -72,7 +76,6 @@ window.qBittorrent.Client ??= (() => {
             "dblclick_filter",
             "display_density",
             "full_url_tracker_column",
-            "hide_zero_status_filters",
             "qbt_selected_log_levels",
             "search_in_filter",
             "show_filters_sidebar",
@@ -87,7 +90,10 @@ window.qBittorrent.Client ??= (() => {
             "use_virtual_list",
         ]);
 
+        accountPromise = window.qBittorrent.Cache.account.init();
+
         cacheAllSettled = Promise.allSettled([
+            accountPromise,
             window.qBittorrent.Cache.buildInfo.init(),
             window.qBittorrent.Cache.preferences.init(),
             window.qBittorrent.Cache.qbtVersion.init(),
@@ -101,6 +107,15 @@ window.qBittorrent.Client ??= (() => {
         }
         catch (error) {
             console.error(`Failed to initialize client data. Reason: "${error}".`);
+        }
+    };
+
+    const initializeAccount = async () => {
+        try {
+            await accountPromise;
+        }
+        catch (error) {
+            console.error(`Failed to initialize account. Reason: "${error}".`);
         }
     };
 
@@ -142,8 +157,16 @@ window.qBittorrent.Client ??= (() => {
         let suffix = window.qBittorrent.Cache.preferences.get()["app_instance_name"] || "";
         if (suffix.length > 0)
             suffix = ` ${emDash} ${suffix}`;
-        const title = `qBittorrent ${qbtVersion} QBT_TR(WebUI)QBT_TR[CONTEXT=OptionsDialog]${suffix}`;
+        // the installed app's window title has to start with the app name (manifest.json),
+        // otherwise Edge and Chrome put the name in front of it a second time
+        const title = isAppWindow()
+            ? `qBittorrent WebUI ${qbtVersion} - Kettle Edition${suffix}`
+            : `qBittorrent ${qbtVersion} QBT_TR(WebUI)QBT_TR[CONTEXT=OptionsDialog] - Kettle Edition${suffix}`;
         return title;
+    };
+
+    const isAppWindow = () => {
+        return window.matchMedia("(display-mode: standalone)").matches;
     };
 
     let showingSearchEngine = false;
@@ -151,13 +174,98 @@ window.qBittorrent.Client ??= (() => {
     let showingLogViewer = false;
 
     const showSearchEngine = (bool) => {
-        showingSearchEngine = bool;
+        showingSearchEngine = bool && window.qBittorrent.Cache.account.can("search");
     };
     const showRssReader = (bool) => {
-        showingRssReader = bool;
+        showingRssReader = bool && window.qBittorrent.Cache.account.can("rss_read");
     };
     const showLogViewer = (bool) => {
-        showingLogViewer = bool;
+        const account = window.qBittorrent.Cache.account;
+        showingLogViewer = bool && (account.can("qbt_log") || account.can("activity_log"));
+    };
+
+    // Elements to hide when the signed-in person's role lacks a permission. The server refuses these
+    // actions anyway; hiding them keeps the interface to what the person can actually do.
+    const permissionElements = {
+        add: [
+            "#uploadLink", "#downloadLink", "#registerMagnetHandlerLink", "#uploadButton", "#downloadButton"
+        ],
+        control: [
+            "#startLink", "#stopLink", "#startAllLink", "#stopAllLink",
+            "#topPrioLink", "#increasePrioLink", "#decreasePrioLink", "#bottomPrioLink",
+            "#startButton", "#stopButton", "#queueingButtons",
+            "#torrentsTableMenu a[href='#start']", "#torrentsTableMenu a[href='#stop']",
+            "#torrentsTableMenu a[href='#forceStart']", "#torrentsTableMenu a[href='#forceRecheck']",
+            "#torrentsTableMenu a[href='#forceReannounce']", "#torrentsTableMenu a[href='#queue']",
+            ".contextMenu a[href='#startTorrents']", ".contextMenu a[href='#stopTorrents']",
+            "#torrentTrackersMenu a[href='#ReannounceTrackers']", "#torrentTrackersMenu a[href='#ReannounceAllTrackers']"
+        ],
+        edit: [
+            "#torrentsTableMenu a[href='#rename']", "#torrentsTableMenu a[href='#renameFiles']",
+            "#torrentsTableMenu a[href='#Category']", "#torrentsTableMenu a[href='#Tags']",
+            "#torrentsTableMenu a[href='#autoTorrentManagement']", "#torrentsTableMenu a[href='#downloadLimit']",
+            "#torrentsTableMenu a[href='#uploadLimit']", "#torrentsTableMenu a[href='#shareRatio']",
+            "#torrentsTableMenu a[href='#superSeeding']", "#torrentsTableMenu a[href='#sequentialDownload']",
+            "#torrentsTableMenu a[href='#firstLastPiecePrio']",
+            "#categoriesFilterMenu a[href='#createCategory']", "#categoriesFilterMenu a[href='#createSubcategory']",
+            "#categoriesFilterMenu a[href='#deleteCategory']", "#categoriesFilterMenu a[href='#deleteUnusedCategories']",
+            "#tagsFilterMenu a[href='#createTag']", "#tagsFilterMenu a[href='#deleteTag']",
+            "#tagsFilterMenu a[href='#deleteUnusedTags']", "#trackersFilterMenu a[href='#deleteTracker']",
+            "#torrentTrackersMenu a[href='#AddTracker']", "#torrentTrackersMenu a[href='#EditTracker']",
+            "#torrentTrackersMenu a[href='#RemoveTracker']", "#torrentPeersMenu a[href='#addPeer']",
+            "#torrentWebseedsMenu a[href='#AddWebSeeds']", "#torrentWebseedsMenu a[href='#RemoveWebSeed']",
+            "#torrentWebseedsMenu a[href='#EditWebSeed']", "#torrentFilesMenu a[href='#Rename']",
+            "#torrentFilesMenu a[href='#FilePrio']"
+        ],
+        save_location: [
+            "#torrentsTableMenu a[href='#setLocation']", "#categoriesFilterMenu a[href='#editCategory']"
+        ],
+        delete: [
+            "#deleteLink", "#deleteButton", "#torrentsTableMenu a[href='#delete']", ".contextMenu a[href='#deleteTorrents']"
+        ],
+        settings: [
+            "#shutdownLink", "#manageCookiesLink",
+            "#torrentPeersMenu a[href='#banPeer']"
+        ],
+        torrent_creator: ["#torrentCreatorLink", "#torrentCreatorButton"],
+        search: ["#showSearchEngineLink", "#searchTabLink"],
+        rss_read: ["#showRssReaderLink", "#rssTabLink"]
+    };
+
+    const applyAccountPermissions = () => {
+        const account = window.qBittorrent.Cache.account;
+        const hide = (selector) => {
+            for (const element of document.querySelectorAll(selector))
+                (element.closest("li") ?? element).classList.add("roleHidden");
+        };
+
+        for (const [permission, selectors] of Object.entries(permissionElements)) {
+            if (!account.can(permission))
+                selectors.forEach(hide);
+        }
+        if (!account.can("qbt_log") && !account.can("activity_log"))
+            ["#showLogViewerLink", "#logTabLink"].forEach(hide);
+        // Options also holds the User Accounts page
+        if (!account.can("settings") && !account.can("manage_users"))
+            ["#preferencesLink", "#preferencesButton"].forEach(hide);
+        if (account.get().kind !== "user")
+            hide("#changePasswordLink");
+
+        // global speed limits are changed from the status bar
+        if (!account.can("speed_limits")) {
+            for (const element of document.querySelectorAll("#alternativeSpeedLimits, #desktopFooter .speedLabel")) {
+                const cell = element.closest("td");
+                cell.style.cursor = "default";
+                cell.addEventListener("click", (e) => { e.stopImmediatePropagation(); }, true);
+            }
+        }
+
+        if (account.get().kind === "user") {
+            document.getElementById("signedInUserName").textContent = `${account.get().username} (${account.get().role})`;
+            document.getElementById("signedInUser").title = "QBT_TR(Signed in as)QBT_TR[CONTEXT=HttpServer]";
+            document.getElementById("signedInUser").classList.remove("invisible");
+            document.getElementById("signedInUser").nextElementSibling.classList.remove("invisible");
+        }
     };
     const isShowSearchEngine = () => {
         return showingSearchEngine;
@@ -173,7 +281,7 @@ window.qBittorrent.Client ??= (() => {
         const { shared = false, engines, totalSize } = options;
         const isFirefox = navigator.userAgent.includes("Firefox");
         const isSafari = navigator.userAgent.includes("AppleWebKit") && !navigator.userAgent.includes("Chrome");
-        let height = shared ? 625 : 855;
+        let height = shared ? 605 : 760;
         if (isSafari)
             height -= 40;
         else if (isFirefox)
@@ -251,7 +359,7 @@ window.qBittorrent.Client ??= (() => {
                 paddingVertical: 0,
                 paddingHorizontal: 0,
                 width: 440,
-                height: 170,
+                height: 190,
                 onClose: () => {
                     // closing dialog without confirming counts as cancel
                     if (resolveAddTorrentsPrompt) {
@@ -400,10 +508,14 @@ window.addEventListener("DOMContentLoaded", async (event) => {
     window.qBittorrent.LocalPreferences.upgrade();
 
     await window.qBittorrent.Client.initializeClientData();
+    await window.qBittorrent.Client.initializeAccount();
+    window.qBittorrent.Client.applyAccountPermissions();
     window.qBittorrent.ColorScheme.update();
     document.documentElement.classList.toggle("compact", clientData.get("display_density") === "compact");
 
-    useAutoHideZeroStatusFilters = clientData.get("hide_zero_status_filters") === true;
+    // the same setting as the desktop application
+    await window.qBittorrent.Client.initializeCaches();
+    useAutoHideZeroStatusFilters = window.qBittorrent.Cache.preferences.get().hide_zero_status_filters === true;
     displayFullURLTrackerColumn = clientData.get("full_url_tracker_column") === true;
 
     let isSearchPanelLoaded = false;
@@ -411,6 +523,10 @@ window.addEventListener("DOMContentLoaded", async (event) => {
     let isRssPanelLoaded = false;
 
     const saveColumnSizes = () => {
+        // the phone layout has no sidebar column or properties panel of its own to measure
+        if (window.qBittorrent.Misc.isPhoneLayout())
+            return;
+
         const filters_width = document.getElementById("Filters").getSize().x;
         localPreferences.set("filters_width", filters_width);
         const properties_height_rel = document.getElementById("propertiesPanel").getSize().y / Window.getSize().y;
@@ -1231,29 +1347,42 @@ window.addEventListener("DOMContentLoaded", async (event) => {
         syncMainDataTimeoutID = syncMainData.delay(delay);
     };
 
+    // the limit and the session total are spans of their own, so a narrow status bar can leave them out (css/Phone.css)
+    const showTransferInfo = (id, speed, limit, total) => {
+        const element = document.getElementById(id);
+        element.textContent = window.qBittorrent.Misc.friendlyUnit(speed, true);
+        if (limit > 0) {
+            const limitElement = document.createElement("span");
+            limitElement.className = "speedLimit";
+            limitElement.textContent = ` [${window.qBittorrent.Misc.friendlyUnit(limit, true)}]`;
+            element.append(limitElement);
+        }
+        const totalElement = document.createElement("span");
+        totalElement.className = "speedTotal";
+        totalElement.textContent = ` (${window.qBittorrent.Misc.friendlyUnit(total, false)})`;
+        element.append(totalElement);
+    };
+
     const processServerState = () => {
-        let transfer_info = window.qBittorrent.Misc.friendlyUnit(serverState.dl_info_speed, true);
-        if (serverState.dl_rate_limit > 0)
-            transfer_info += ` [${window.qBittorrent.Misc.friendlyUnit(serverState.dl_rate_limit, true)}]`;
-        transfer_info += ` (${window.qBittorrent.Misc.friendlyUnit(serverState.dl_info_data, false)})`;
-        document.getElementById("DlInfos").textContent = transfer_info;
-        transfer_info = window.qBittorrent.Misc.friendlyUnit(serverState.up_info_speed, true);
-        if (serverState.up_rate_limit > 0)
-            transfer_info += ` [${window.qBittorrent.Misc.friendlyUnit(serverState.up_rate_limit, true)}]`;
-        transfer_info += ` (${window.qBittorrent.Misc.friendlyUnit(serverState.up_info_data, false)})`;
-        document.getElementById("UpInfos").textContent = transfer_info;
+        showTransferInfo("DlInfos", serverState.dl_info_speed, serverState.dl_rate_limit, serverState.dl_info_data);
+        showTransferInfo("UpInfos", serverState.up_info_speed, serverState.up_rate_limit, serverState.up_info_data);
 
         let titlePrefix = "";
         if (serverState.session_state) {
-            titlePrefix = "QBT_TR([PAUSED])QBT_TR[CONTEXT=MainWindow] ";
+            titlePrefix = "QBT_TR([PAUSED])QBT_TR[CONTEXT=MainWindow]";
         }
         else if (speedInTitle) {
-            titlePrefix = "QBT_TR([D: %1, U: %2])QBT_TR[CONTEXT=MainWindow] "
+            titlePrefix = "QBT_TR([D: %1, U: %2])QBT_TR[CONTEXT=MainWindow]"
                 .replace("%1", window.qBittorrent.Misc.friendlyUnit(serverState.dl_info_speed, true))
                 .replace("%2", window.qBittorrent.Misc.friendlyUnit(serverState.up_info_speed, true));
         }
 
-        document.title = titlePrefix + window.qBittorrent.Client.mainTitle();
+        if (titlePrefix.length === 0)
+            document.title = window.qBittorrent.Client.mainTitle();
+        else if (window.qBittorrent.Client.isAppWindow()) // keep the app name first, see mainTitle()
+            document.title = `${window.qBittorrent.Client.mainTitle()} ${titlePrefix}`;
+        else
+            document.title = `${titlePrefix} ${window.qBittorrent.Client.mainTitle()}`;
 
         document.getElementById("freeSpaceOnDisk").textContent = "QBT_TR(Free space: %1)QBT_TR[CONTEXT=HttpServer]".replace("%1", window.qBittorrent.Misc.friendlyUnit(serverState.free_space_on_disk));
 
@@ -1738,6 +1867,22 @@ window.addEventListener("DOMContentLoaded", async (event) => {
                 document.getElementById("logPeerLink").addEventListener("click", (e) => {
                     window.qBittorrent.Log.setCurrentTab("peer");
                 });
+
+                document.getElementById("logActivityLink").addEventListener("click", (e) => {
+                    window.qBittorrent.Log.setCurrentTab("activity");
+                });
+
+                // only the tabs the signed-in person's role allows
+                const account = window.qBittorrent.Cache.account;
+                if (!account.can("activity_log"))
+                    document.getElementById("logActivityLink").classList.add("roleHidden");
+                if (!account.can("qbt_log")) {
+                    // the log view then starts on the activity tab
+                    document.getElementById("logMessageLink").classList.add("roleHidden");
+                    document.getElementById("logPeerLink").classList.add("roleHidden");
+                    document.getElementById("logMessageLink").classList.remove("selected");
+                    document.getElementById("logActivityLink").classList.add("selected");
+                }
             },
             collapsible: false,
             content: "",
@@ -1758,6 +1903,51 @@ window.addEventListener("DOMContentLoaded", async (event) => {
         showDownloadPage([url]);
     };
 
+    const handleAppLaunch = async () => {
+        // files and magnet links the installed app was opened with
+        await window.qBittorrent.Client.initializeAccount();
+        await window.qBittorrent.Client.initializeClientData();
+
+        const canAdd = () => {
+            if (window.qBittorrent.Cache.account.can("add"))
+                return true;
+            alert("QBT_TR(Your account can't add torrents.)QBT_TR[CONTEXT=MainWindow]");
+            return false;
+        };
+
+        window.qBittorrent.AppLaunch.receive({
+            onFiles: (files) => {
+                if (canAdd())
+                    window.qBittorrent.Client.uploadTorrentFiles(files);
+            },
+            onLink: (url) => {
+                if (!canAdd())
+                    return;
+
+                // same as a single link in the "Download from URLs" window
+                const addTorrentWindowEnabled = window.qBittorrent.ClientData.get("add_new_torrent_dialog_enabled") ?? true;
+                if (addTorrentWindowEnabled) {
+                    window.qBittorrent.Client.createAddTorrentWindow("QBT_TR(Magnet link)QBT_TR[CONTEXT=DownloadFromURLDialog]", url);
+                    return;
+                }
+
+                fetch("api/v2/torrents/add", {
+                        method: "POST",
+                        body: new URLSearchParams({
+                            urls: url
+                        })
+                    })
+                    .then((response) => {
+                        if (!response.ok)
+                            alert("QBT_TR(Unable to add torrents.)QBT_TR[CONTEXT=HttpServer]");
+                    })
+                    .catch((error) => {
+                        alert("QBT_TR(Unable to add torrents.)QBT_TR[CONTEXT=HttpServer]");
+                    });
+            }
+        });
+    };
+
     new MochaUI.Panel({
         id: "transferList",
         title: "Panel",
@@ -1772,6 +1962,7 @@ window.addEventListener("DOMContentLoaded", async (event) => {
         contentURL: "views/transferlist.html?v=${CACHEID}",
         onContentLoaded: () => {
             handleDownloadParam();
+            handleAppLaunch();
             updateMainData();
         },
         column: "mainColumn",
@@ -1891,6 +2082,8 @@ window.addEventListener("DOMContentLoaded", async (event) => {
         column: "mainColumn",
         height: prop_h
     });
+
+    window.qBittorrent.Phone.setup();
 
     // listen for changes to torrentsFilterInput
     let torrentsFilterInputTimer = -1;

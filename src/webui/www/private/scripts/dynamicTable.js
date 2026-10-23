@@ -47,6 +47,10 @@ window.qBittorrent.DynamicTable ??= (() => {
             AddTorrentFilesTable: AddTorrentFilesTable,
             LogMessageTable: LogMessageTable,
             LogPeerTable: LogPeerTable,
+            WebUIActivityTable: WebUIActivityTable,
+            UserAccountsTable: UserAccountsTable,
+            UserRolesTable: UserRolesTable,
+            UserSessionsTable: UserSessionsTable,
             RssFeedTable: RssFeedTable,
             RssArticleTable: RssArticleTable,
             RssDownloaderRulesTable: RssDownloaderRulesTable,
@@ -68,12 +72,17 @@ window.qBittorrent.DynamicTable ??= (() => {
     const toDateString = (value) => {
         return (value > 0) ? window.qBittorrent.Misc.formatDate(new Date(value * 1000)) : "";
     };
+    // the side padding of the cells of a table that fits its columns, over the 2px of the others
+    const FIT_EXTRA_PADDING = 8;
 
     const localPreferences = new window.qBittorrent.LocalPreferences.LocalPreferences();
     const clientData = window.qBittorrent.ClientData ?? window.parent.qBittorrent.ClientData;
 
     class DynamicTable {
         #DynamicTableHeaderContextMenuClass = null;
+
+        // fits the columns to their contents, and gives the rows and cells a little more room
+        autoFitColumns = false;
 
         setup(dynamicTableDivId, dynamicTableFixedHeaderDivId, contextMenu) {
             this.dynamicTableDivId = dynamicTableDivId;
@@ -99,6 +108,11 @@ window.qBittorrent.DynamicTable ??= (() => {
             this.reverseSort = localPreferences.get(`reverse_sort_${this.dynamicTableDivId}`, "0");
             this.secondarySortedColumn = localPreferences.get(`secondary_sorted_column_${this.dynamicTableDivId}`) || null;
             this.secondaryReverseSort = localPreferences.get(`secondary_reverse_sort_${this.dynamicTableDivId}`, "0");
+            // a table with its own phone columns shows them, and saves its column changes apart from the desktop's
+            this.phoneLayout = (this.phoneColumns !== undefined) && window.qBittorrent.Misc.isPhoneLayout();
+            this.autoFit = this.autoFitColumns && !this.phoneLayout;
+            if (this.autoFit && (clientData.get("display_density") !== "compact"))
+                this.rowHeight = 25;
             this.initColumns();
             this.loadColumnsOrder();
             this.updateTableHeaders();
@@ -107,6 +121,14 @@ window.qBittorrent.DynamicTable ??= (() => {
             this.setupHeaderMenu();
             this.setupAltRow();
             this.setupVirtualList();
+
+            if (this.autoFit) {
+                this.table.classList.add("fitColumns");
+                this.table.style.setProperty("--row-height", `${this.rowHeight}px`);
+                document.getElementById(dynamicTableFixedHeaderDivId).querySelector("table").classList.add("fitColumns");
+                // the stretch column follows the size of the table
+                new ResizeObserver(window.qBittorrent.Misc.createDebounceHandler(100, () => this.scheduleColumnFit(300))).observe(this.dynamicTableDiv);
+            }
         }
 
         setupVirtualList() {
@@ -134,6 +156,7 @@ window.qBittorrent.DynamicTable ??= (() => {
                     if (scrollTop !== this.renderedOffset) {
                         this.renderedOffset = scrollTop;
                         this.rerender();
+                        this.scheduleColumnFit(300);
                     }
                 }
             });
@@ -316,8 +339,11 @@ window.qBittorrent.DynamicTable ??= (() => {
             const onComplete = function(el, event) {
                 resetElementBorderStyle(this.lastHoverTh);
                 el.style.backgroundColor = "";
-                if (this.currentHeaderAction === "resize")
+                if (this.currentHeaderAction === "resize") {
+                    // a column that was resized by hand keeps its width
+                    this.columns[this.resizeTh.columnName].userSized = true;
                     this.saveColumnWidth(this.resizeTh.columnName);
+                }
                 if ((this.currentHeaderAction === "drag") && (el !== this.lastHoverTh)) {
                     this.saveColumnsOrder();
                     const val = localPreferences.get(`columns_order_${this.dynamicTableDivId}`).split(",");
@@ -412,7 +438,7 @@ window.qBittorrent.DynamicTable ??= (() => {
 
         showColumn(columnName, show) {
             this.columns[columnName].visible = show ? "1" : "0";
-            localPreferences.set(`column_${columnName}_visible_${this.dynamicTableDivId}`, show ? "1" : "0");
+            localPreferences.set(this.columnPreferenceKey("visible", columnName), show ? "1" : "0");
             this.updateColumn(columnName);
             this.columns[columnName].onVisibilityChange?.(columnName);
         }
@@ -438,7 +464,7 @@ window.qBittorrent.DynamicTable ??= (() => {
             }
 
             // slight buffer to prevent clipping
-            return longestTd.width + 10;
+            return longestTd.width + 6;
         }
 
         #setColumnWidth(columnName, width) {
@@ -457,33 +483,115 @@ window.qBittorrent.DynamicTable ??= (() => {
             column.onResize?.(column.name);
         }
 
+        #calculateColumnWidth(column) {
+            if (column.staticWidth !== null)
+                return column.staticWidth + (this.autoFit ? FIT_EXTRA_PADDING : 0);
+
+            // check required min body width
+            const bodyTextWidth = this.#calculateColumnBodyWidth(column);
+
+            // check required min header width
+            const columnIndex = this.getColumnPos(column.name);
+            const headColumn = document.getElementById(this.dynamicTableFixedHeaderDivId).querySelectorAll("tr>th")[columnIndex];
+            const canvas = document.createElement("canvas");
+            const context = canvas.getContext("2d");
+            const headStyle = window.getComputedStyle(headColumn, null);
+            context.font = headStyle.getPropertyValue("font");
+            const columnTitle = column.caption;
+            const sortedIconWidth = 20;
+            const headTextWidth = context.measureText(columnTitle).width + sortedIconWidth;
+
+            const padding = Number.parseFloat(headStyle.paddingLeft) + Number.parseFloat(headStyle.paddingRight);
+            return Math.max(headTextWidth, bodyTextWidth) + padding;
+        }
+
         autoResizeColumn(columnName) {
             const column = this.columns[columnName];
+            column.userSized = false;
 
-            let width = column.staticWidth ?? 0;
-            if (column.staticWidth === null) {
-                // check required min body width
-                const bodyTextWidth = this.#calculateColumnBodyWidth(column);
-
-                // check required min header width
-                const columnIndex = this.getColumnPos(column.name);
-                const headColumn = document.getElementById(this.dynamicTableFixedHeaderDivId).querySelectorAll("tr>th")[columnIndex];
-                const canvas = document.createElement("canvas");
-                const context = canvas.getContext("2d");
-                context.font = window.getComputedStyle(headColumn, null).getPropertyValue("font");
-                const columnTitle = column.caption;
-                const sortedIconWidth = 20;
-                const headTextWidth = context.measureText(columnTitle).width + sortedIconWidth;
-
-                width = Math.max(headTextWidth, bodyTextWidth);
-            }
-
-            this.#setColumnWidth(column.name, width);
+            this.#setColumnWidth(column.name, this.#calculateColumnWidth(column));
             this.saveColumnWidth(column.name);
         }
 
+        scheduleColumnFit(delay = 2000) {
+            if (!this.autoFit)
+                return;
+
+            // the first fit is not delayed for long, and a fit that is already waiting and comes sooner is kept
+            const due = Date.now() + (this.columnsFitted ? delay : 300);
+            if (this.columnFitTimer !== undefined) {
+                if (due >= this.columnFitDue)
+                    return;
+                clearTimeout(this.columnFitTimer);
+            }
+            this.columnFitDue = due;
+            this.columnFitTimer = setTimeout(() => {
+                this.columnFitTimer = undefined;
+                this.fitColumnsToContent();
+            }, due - Date.now());
+        }
+
+        fitColumnsToContent() {
+            // nothing to measure while the table is hidden
+            if (this.dynamicTableDiv.offsetParent === null)
+                return;
+
+            // the first fit with rows sets every width, later ones grow a column, or shrink one that is far too wide (after a
+            // long text is gone). Without rows only the headers are fitted
+            const hasRows = this.getTrs().length > 0;
+            const shrink = hasRows && !this.columnsFitted;
+            if (hasRows)
+                this.columnsFitted = true;
+
+            // a very long text is cut off at half the width of the table
+            const maxWidth = Math.max(300, Math.round(this.dynamicTableDiv.clientWidth / 2));
+            let stretchColumn = null;
+            let stretchWidth = 0;
+            for (const column of this.columns) {
+                if (!column.isVisible() || column.userSized)
+                    continue;
+
+                const width = Math.ceil(Math.min(this.#calculateColumnWidth(column), maxWidth));
+                if (column.stretch) {
+                    stretchColumn = column;
+                    stretchWidth = width;
+                    continue;
+                }
+
+                if (shrink ? (width !== column.width) : ((width > column.width) || ((width * 10) < (column.width * 7))))
+                    this.#setColumnWidth(column.name, width);
+            }
+
+            // the stretch column takes what the other columns leave, but is never narrower than its text (up to the limit)
+            if (stretchColumn !== null) {
+                let othersWidth = 0;
+                for (const column of this.columns) {
+                    if (column.isVisible() && (column !== stretchColumn))
+                        othersWidth += column.width;
+                }
+
+                const width = Math.max(stretchWidth, Math.floor(this.dynamicTableDiv.clientWidth - othersWidth));
+                if (width !== stretchColumn.width)
+                    this.#setColumnWidth(stretchColumn.name, width);
+            }
+        }
+
+        // back to the automatic widths: forgets the widths that were set by hand
+        resetColumnWidths() {
+            for (const column of this.columns) {
+                column.userSized = false;
+                localPreferences.remove(this.columnPreferenceKey("width", column.name));
+            }
+            this.columnsFitted = false;
+            this.fitColumnsToContent();
+        }
+
         saveColumnWidth(columnName) {
-            localPreferences.set(`column_${columnName}_width_${this.dynamicTableDivId}`, this.columns[columnName].width);
+            localPreferences.set(this.columnPreferenceKey("width", columnName), this.columns[columnName].width);
+        }
+
+        columnPreferenceKey(kind, columnName) {
+            return `column_${columnName}_${kind}_${this.dynamicTableDivId}${this.phoneLayout ? "_phone" : ""}`;
         }
 
         setupHeaderMenu() {
@@ -517,6 +625,10 @@ window.qBittorrent.DynamicTable ??= (() => {
             const actions = {
                 autoResizeAction: function(element, ref, action) {
                     this.autoResizeColumn(element.columnName);
+                }.bind(this),
+
+                resetColumnWidthsAction: function(element, ref, action) {
+                    this.resetColumnWidths();
                 }.bind(this),
 
                 autoResizeAllAction: function(element, ref, action) {
@@ -558,6 +670,8 @@ window.qBittorrent.DynamicTable ??= (() => {
             const autoResizeElement = createResizeElement("QBT_TR(Resize)QBT_TR[CONTEXT=ListWidget]", "#autoResizeAction");
 
             ul.firstElementChild.classList.add("separator");
+            if (this.autoFit)
+                ul.insertBefore(createResizeElement("QBT_TR(Reset Auto Width)QBT_TR[CONTEXT=ListWidget]", "#resetColumnWidthsAction"), ul.firstElementChild);
             ul.insertBefore(autoResizeAllElement, ul.firstElementChild);
             ul.insertBefore(autoResizeElement, ul.firstElementChild);
             document.body.append(ul);
@@ -577,16 +691,36 @@ window.qBittorrent.DynamicTable ??= (() => {
 
         initColumns() {}
 
+        // Text (names, paths, hashes) is aligned to the left, everything else is centered.
+        // A table names its text columns, so that all of its columns are covered, also those that are hidden by default.
+        alignColumns(textColumns) {
+            // the phone layout has columns of its own
+            if (this.phoneLayout)
+                return;
+
+            for (const column of this.columns) {
+                if (textColumns.includes(column.name))
+                    continue;
+                column.align = "center";
+                column.style += "text-align: center;";
+            }
+        }
+
         newColumn(name, style, caption, defaultWidth, defaultVisible) {
+            if (this.phoneLayout) {
+                defaultVisible = (name in this.phoneColumns);
+                defaultWidth = this.phoneColumns[name] ?? defaultWidth;
+            }
+
             const column = {};
             column["name"] = name;
             column["title"] = name;
-            column["visible"] = localPreferences.get(`column_${name}_visible_${this.dynamicTableDivId}`, (defaultVisible ? "1" : "0"));
+            column["visible"] = localPreferences.get(this.columnPreferenceKey("visible", name), (defaultVisible ? "1" : "0"));
             column["force_hide"] = false;
             column["caption"] = caption;
             column["style"] = style;
             if (defaultWidth !== -1)
-                column["width"] = Number(localPreferences.get(`column_${name}_width_${this.dynamicTableDivId}`, defaultWidth));
+                column["width"] = Number(localPreferences.get(this.columnPreferenceKey("width", name), defaultWidth));
             column["dataProperties"] = [name];
             column["getRowValue"] = function(row, pos) {
                 if (pos === undefined)
@@ -611,6 +745,7 @@ window.qBittorrent.DynamicTable ??= (() => {
             column["onResize"] = null;
             column["onVisibilityChange"] = null;
             column["staticWidth"] = null;
+            column["stretch"] = false;
             column["calculateBuffer"] = () => 0;
             this.columns.push(column);
             this.columns[name] = column;
@@ -1006,6 +1141,8 @@ window.qBittorrent.DynamicTable ??= (() => {
                 for (const tr of trMap.values())
                     tr.remove();
             }
+
+            this.scheduleColumnFit();
         }
 
         rerender(rows = this.getFilteredAndSortedRows()) {
@@ -1069,6 +1206,8 @@ window.qBittorrent.DynamicTable ??= (() => {
                 const td = document.createElement("td");
                 if ((this.columns[k].visible === "0") || this.columns[k].force_hide)
                     td.classList.add("invisible");
+                if (this.columns[k].align !== undefined)
+                    td.style.textAlign = this.columns[k].align;
                 tr.append(td);
             }
 
@@ -1128,6 +1267,8 @@ window.qBittorrent.DynamicTable ??= (() => {
         clear() {
             this.deselectAll();
             this.rows.clear();
+            // the next rows are fitted from scratch
+            this.columnsFitted = false;
             if (this.useVirtualList) {
                 this.rerender();
             }
@@ -1189,9 +1330,14 @@ window.qBittorrent.DynamicTable ??= (() => {
     }
 
     class TorrentsTable extends DynamicTable {
+        autoFitColumns = true;
+
+        // the columns (and their widths) a phone starts with: name, progress, status and speed; the name takes what is left
+        phoneColumns = { name: Math.max(90, window.innerWidth - 270), progress: 56, status: 66, dlspeed: 74, upspeed: 74 };
+
         setupVirtualList() {
             super.setupVirtualList();
-            this.rowHeight = (clientData.get("display_density") === "compact") ? 18 : 22;
+            this.rowHeight = this.phoneLayout ? 40 : ((clientData.get("display_density") === "compact") ? 18 : 25);
         }
 
         initColumns() {
@@ -1234,6 +1380,9 @@ window.qBittorrent.DynamicTable ??= (() => {
             this.newColumn("infohash_v2", "", "QBT_TR(Info Hash v2)QBT_TR[CONTEXT=TransferListModel]", 100, false);
             this.newColumn("reannounce", "", "QBT_TR(Reannounce In)QBT_TR[CONTEXT=TransferListModel]", 100, false);
             this.newColumn("private", "", "QBT_TR(Private)QBT_TR[CONTEXT=TransferListModel]", 100, false);
+
+            this.alignColumns(["name", "category", "tags", "tracker", "save_path", "download_path", "infohash_v1", "infohash_v2"]);
+            this.columns["name"].stretch = true;
 
             this.columns["state_icon"].dataProperties[0] = "state";
             this.columns["name"].dataProperties.push("state");
@@ -1392,6 +1541,8 @@ window.qBittorrent.DynamicTable ??= (() => {
             };
 
             this.columns["name"].isStateIconShown = () => !this.columns["state_icon"].isVisible();
+            // room for the state icon in front of the name
+            this.columns["name"].calculateBuffer = () => (this.columns["name"].isStateIconShown() ? 28 : 0);
 
             // status
             this.columns["status"].updateTd = function(td, row) {
@@ -1894,6 +2045,8 @@ window.qBittorrent.DynamicTable ??= (() => {
     }
 
     class TorrentPeersTable extends DynamicTable {
+        autoFitColumns = true;
+
         initColumns() {
             this.newColumn("country", "", "QBT_TR(Country/Region)QBT_TR[CONTEXT=PeerListWidget]", 22, true);
             this.newColumn("ip", "", "QBT_TR(IP/Address)QBT_TR[CONTEXT=PeerListWidget]", 80, true);
@@ -1910,6 +2063,8 @@ window.qBittorrent.DynamicTable ??= (() => {
             this.newColumn("relevance", "", "QBT_TR(Relevance)QBT_TR[CONTEXT=PeerListWidget]", 30, true);
             this.newColumn("contribution", "", "QBT_TR(Contribution)QBT_TR[CONTEXT=PeerListWidget]", 30, true);
             this.newColumn("files", "", "QBT_TR(Files)QBT_TR[CONTEXT=PeerListWidget]", 100, true);
+
+            this.alignColumns(["country", "ip", "client", "peer_id_client", "files"]);
 
             this.columns["country"].dataProperties.push("country_code");
             this.columns["ip"].dataProperties.push("host_name");
@@ -2006,6 +2161,9 @@ window.qBittorrent.DynamicTable ??= (() => {
     }
 
     class SearchResultsTable extends DynamicTable {
+        autoFitColumns = true;
+        phoneColumns = { fileName: Math.max(90, window.innerWidth - 210), fileSize: 90, nbSeeders: 70 };
+
         initColumns() {
             this.newColumn("fileName", "", "QBT_TR(Name)QBT_TR[CONTEXT=SearchResultsTable]", 500, true);
             this.newColumn("fileSize", "", "QBT_TR(Size)QBT_TR[CONTEXT=SearchResultsTable]", 100, true);
@@ -2014,6 +2172,9 @@ window.qBittorrent.DynamicTable ??= (() => {
             this.newColumn("engineName", "", "QBT_TR(Engine)QBT_TR[CONTEXT=SearchResultsTable]", 100, true);
             this.newColumn("siteUrl", "", "QBT_TR(Engine URL)QBT_TR[CONTEXT=SearchResultsTable]", 250, true);
             this.newColumn("pubDate", "", "QBT_TR(Published On)QBT_TR[CONTEXT=SearchResultsTable]", 200, true);
+
+            this.alignColumns(["fileName", "engineName", "siteUrl"]);
+            this.columns["fileName"].stretch = true;
 
             this.initColumnsFunctions();
         }
@@ -2027,15 +2188,23 @@ window.qBittorrent.DynamicTable ??= (() => {
 
             const displayNum = function(td, row) {
                 const value = this.getRowValue(row);
-                const formattedValue = (value === "-1") ? "Unknown" : value;
+                const formattedValue = (Number(value) < 0) ? "QBT_TR(Unknown)QBT_TR[CONTEXT=SearchJobWidget]" : value;
                 td.textContent = formattedValue;
                 td.title = formattedValue;
             };
 
             const displayDate = function(td, row) {
-                const date = toDateString(this.getRowValue(row));
-                td.textContent = date;
-                td.title = date;
+                const value = this.getRowValue(row) * 1000;
+                let formattedValue = "";
+                if (!Number.isNaN(value) && (value > 0)) {
+                    // without a chosen format, there are no seconds, as on the desktop
+                    const dateFormat = clientData.get("date_format");
+                    formattedValue = (!dateFormat || (dateFormat === "default"))
+                        ? new Date(value).toLocaleString(undefined, { dateStyle: "short", timeStyle: "short" })
+                        : window.qBittorrent.Misc.formatDate(new Date(value));
+                }
+                td.textContent = formattedValue;
+                td.title = formattedValue;
             };
 
             this.columns["fileSize"].updateTd = displaySize;
@@ -2143,6 +2312,7 @@ window.qBittorrent.DynamicTable ??= (() => {
     }
 
     class TorrentTrackersTable extends DynamicTable {
+        autoFitColumns = true;
         collapseState = new Map(); // { rowId: String, isCollapsed: bool }
 
         isTrackerCollapsed(id) {
@@ -2206,6 +2376,9 @@ window.qBittorrent.DynamicTable ??= (() => {
             this.newColumn("nextAnnounce", "", "QBT_TR(Next Announce)QBT_TR[CONTEXT=TrackerListWidget]", 150, true);
             this.newColumn("minAnnounce", "", "QBT_TR(Min Announce)QBT_TR[CONTEXT=TrackerListWidget]", 150, true);
 
+            this.alignColumns(["url", "message"]);
+            this.columns["url"].stretch = true;
+
             this.initColumnsFunctions();
         }
 
@@ -2255,6 +2428,9 @@ window.qBittorrent.DynamicTable ??= (() => {
                 span.textContent = data.url;
                 span.style.marginLeft = data._isTracker ? "0" : "20px";
             };
+
+            // room for the collapse icon, and for the indent of an endpoint
+            this.columns["url"].calculateBuffer = (rowId) => (this.rows.get(rowId)?.full_data._isTracker ? 20 : 40);
 
             this.columns["url"].compareRows = naturalSort;
             this.columns["status"].compareRows = naturalSort;
@@ -2393,6 +2569,7 @@ window.qBittorrent.DynamicTable ??= (() => {
     }
 
     class TorrentFilesTable extends DynamicTable {
+        autoFitColumns = true;
         filterTerms = [];
         prevFilterTerms = [];
         prevRowsString = null;
@@ -2659,6 +2836,9 @@ window.qBittorrent.DynamicTable ??= (() => {
             this.newColumn("remaining", "", "QBT_TR(Remaining)QBT_TR[CONTEXT=TrackerListWidget]", 75, true);
             this.newColumn("availability", "", "QBT_TR(Availability)QBT_TR[CONTEXT=TrackerListWidget]", 75, true);
 
+            this.alignColumns(["name"]);
+            this.columns["name"].stretch = true;
+
             this.initColumnsFunctions();
         }
 
@@ -2758,8 +2938,8 @@ window.qBittorrent.DynamicTable ??= (() => {
             };
             this.columns["name"].calculateBuffer = (rowId) => {
                 const node = that.getNode(rowId);
-                // folders add 20px for folder icon and 15px for collapse icon
-                const folderBuffer = node.isFolder ? 35 : 0;
+                // folders add 20px for folder icon and 15px for collapse icon, files the 20px indent of their name
+                const folderBuffer = node.isFolder ? 35 : 20;
                 return (node.depth * 20) + folderBuffer;
             };
 
@@ -2962,6 +3142,7 @@ window.qBittorrent.DynamicTable ??= (() => {
     }
 
     class BulkRenameTorrentFilesTable extends TorrentFilesTable {
+        autoFitColumns = false;
         prevCheckboxNum = null;
         supportCollapsing = false;
         fileNameColumn = "original";
@@ -3191,6 +3372,8 @@ window.qBittorrent.DynamicTable ??= (() => {
     }
 
     class AddTorrentFilesTable extends TorrentFilesTable {
+        autoFitColumns = false;
+
         initColumns() {
             this.newColumn("checked", "", "", 50, true);
             this.newColumn("name", "", "QBT_TR(Name)QBT_TR[CONTEXT=TrackerListWidget]", 190, true);
@@ -3582,6 +3765,127 @@ window.qBittorrent.DynamicTable ??= (() => {
             filteredRows.sort(this.rowComparator());
 
             return filteredRows;
+        }
+    }
+
+    const updateTimestampTd = function(td, row) {
+        const value = this.getRowValue(row);
+        const date = (value > 0) ? window.qBittorrent.Misc.formatDate(new Date(value * 1000)) : "";
+        td.textContent = date;
+        td.title = date;
+    };
+
+    // Tables whose row ids are plain numbers: the default sort also stores rows by id on the array, which
+    // would overwrite rows at those indexes.
+    class NumericIdTable extends DynamicTable {
+        getFilteredAndSortedRows() {
+            const filteredRows = [...this.getRowValues()];
+            const column = this.columns[this.sortedColumn];
+            const isReverseSort = (this.reverseSort === "0");
+            filteredRows.sort((row1, row2) => {
+                const result = column.compareRows(row1, row2);
+                return isReverseSort ? result : -result;
+            });
+            return filteredRows;
+        }
+    }
+
+    class WebUIActivityTable extends NumericIdTable {
+        phoneColumns = { ts: 135, username: 60, summary: Math.max(60, window.innerWidth - 285), outcome: 50 };
+
+        initColumns() {
+            this.newColumn("ts", "", "QBT_TR(Time)QBT_TR[CONTEXT=WebUIActivity]", 175, true);
+            this.newColumn("username", "", "QBT_TR(User)QBT_TR[CONTEXT=WebUIActivity]", 110, true);
+            this.newColumn("role", "", "QBT_TR(Role)QBT_TR[CONTEXT=WebUIActivity]", 80, true);
+            this.newColumn("ip", "", "QBT_TR(IP)QBT_TR[CONTEXT=WebUIActivity]", 120, true);
+            this.newColumn("category", "", "QBT_TR(Category)QBT_TR[CONTEXT=WebUIActivity]", 110, true);
+            this.newColumn("summary", "", "QBT_TR(Action)QBT_TR[CONTEXT=WebUIActivity]", 380, true);
+            this.newColumn("outcome", "", "QBT_TR(Result)QBT_TR[CONTEXT=WebUIActivity]", 80, true);
+
+            this.columns["ts"].updateTd = updateTimestampTd;
+
+            this.columns["category"].updateTd = function(td, row) {
+                const value = window.qBittorrent.Log.activityCategoryName(this.getRowValue(row));
+                td.textContent = value;
+                td.title = value;
+            };
+
+            this.columns["outcome"].updateTd = function(td, row) {
+                const outcome = this.getRowValue(row);
+                const value = window.qBittorrent.Log.activityOutcomeName(outcome);
+                td.textContent = value;
+                td.title = value;
+                const tr = td.closest("tr");
+                tr.classList.toggle("logTableRowactivityFailed", (outcome === "failed"));
+                tr.classList.toggle("logTableRowactivityDenied", (outcome === "denied"));
+            };
+        }
+    }
+
+    class UserAccountsTable extends NumericIdTable {
+        initColumns() {
+            this.newColumn("username", "", "QBT_TR(Username)QBT_TR[CONTEXT=UserAccounts]", 110, true);
+            this.newColumn("role_name", "", "QBT_TR(Role)QBT_TR[CONTEXT=UserAccounts]", 90, true);
+            this.newColumn("disabled", "", "QBT_TR(Status)QBT_TR[CONTEXT=UserAccounts]", 80, true);
+            this.newColumn("last_login_at", "", "QBT_TR(Last login)QBT_TR[CONTEXT=UserAccounts]", 175, true);
+            this.newColumn("created_at", "", "QBT_TR(Created)QBT_TR[CONTEXT=UserAccounts]", 175, true);
+
+            this.columns["last_login_at"].updateTd = function(td, row) {
+                const value = this.getRowValue(row);
+                const text = (value > 0) ? window.qBittorrent.Misc.formatDate(new Date(value * 1000)) : "QBT_TR(Never)QBT_TR[CONTEXT=UserAccounts]";
+                td.textContent = text;
+                td.title = text;
+            };
+            this.columns["created_at"].updateTd = updateTimestampTd;
+
+            this.columns["disabled"].updateTd = function(td, row) {
+                const disabled = this.getRowValue(row);
+                const value = disabled ? "QBT_TR(Disabled)QBT_TR[CONTEXT=UserAccounts]" : "QBT_TR(Enabled)QBT_TR[CONTEXT=UserAccounts]";
+                td.textContent = value;
+                td.title = value;
+                td.closest("tr").classList.toggle("red", disabled);
+            };
+        }
+    }
+
+    class UserRolesTable extends NumericIdTable {
+        initColumns() {
+            this.newColumn("name", "", "QBT_TR(Name)QBT_TR[CONTEXT=UserAccounts]", 120, true);
+            this.newColumn("description", "", "QBT_TR(Description)QBT_TR[CONTEXT=UserAccounts]", 330, true);
+            this.newColumn("user_count", "", "QBT_TR(Users)QBT_TR[CONTEXT=UserAccounts]", 60, true);
+            this.newColumn("permissions", "", "QBT_TR(Permissions)QBT_TR[CONTEXT=UserAccounts]", 80, true);
+
+            this.columns["permissions"].compareRows = function(row1, row2) {
+                return compareNumbers(this.getRowValue(row1).length, this.getRowValue(row2).length);
+            };
+            this.columns["permissions"].updateTd = function(td, row) {
+                const permissions = this.getRowValue(row);
+                td.textContent = permissions.length;
+                td.title = permissions.map(id => window.qBittorrent.UserAccounts.permissionLabel(id)).join("\n");
+            };
+        }
+    }
+
+    class UserSessionsTable extends NumericIdTable {
+        initColumns() {
+            this.newColumn("username", "", "QBT_TR(User)QBT_TR[CONTEXT=UserAccounts]", 110, true);
+            this.newColumn("ip", "", "QBT_TR(IP)QBT_TR[CONTEXT=UserAccounts]", 110, true);
+            this.newColumn("user_agent", "", "QBT_TR(Browser)QBT_TR[CONTEXT=UserAccounts]", 110, true);
+            this.newColumn("created_at", "", "QBT_TR(Logged in)QBT_TR[CONTEXT=UserAccounts]", 175, true);
+            this.newColumn("last_seen_at", "", "QBT_TR(Last active)QBT_TR[CONTEXT=UserAccounts]", 175, true);
+            this.newColumn("expires_at", "", "QBT_TR(Expires)QBT_TR[CONTEXT=UserAccounts]", 175, false);
+
+            this.columns["created_at"].updateTd = updateTimestampTd;
+            this.columns["last_seen_at"].updateTd = updateTimestampTd;
+            this.columns["expires_at"].updateTd = updateTimestampTd;
+
+            this.columns["username"].updateTd = function(td, row) {
+                const value = row.full_data.current
+                    ? `${this.getRowValue(row)} QBT_TR((this browser))QBT_TR[CONTEXT=UserAccounts]`
+                    : this.getRowValue(row);
+                td.textContent = value;
+                td.title = value;
+            };
         }
     }
 

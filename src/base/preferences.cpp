@@ -981,6 +981,71 @@ void Preferences::setWebUISessionsCountLimit(const int limit)
     setValue(u"WebUI/SessionsCountLimit"_s, limit);
 }
 
+bool Preferences::isWebUISharedLoginAllowed() const
+{
+    return value(u"Preferences/WebUI/AllowSharedLogin"_s, false);
+}
+
+void Preferences::setWebUISharedLoginAllowed(const bool allowed)
+{
+    if (allowed == isWebUISharedLoginAllowed())
+        return;
+
+    setValue(u"Preferences/WebUI/AllowSharedLogin"_s, allowed);
+}
+
+int Preferences::getWebUIUserSignInDays() const
+{
+    return std::clamp(value<int>(u"Preferences/WebUI/UserSignInDays"_s, 30), 0, 365);
+}
+
+void Preferences::setWebUIUserSignInDays(const int days)
+{
+    if (days == getWebUIUserSignInDays())
+        return;
+
+    setValue(u"Preferences/WebUI/UserSignInDays"_s, std::clamp(days, 0, 365));
+}
+
+int Preferences::getWebUIUserMaxAuthFailCount() const
+{
+    return std::max(0, value<int>(u"Preferences/WebUI/UserMaxAuthenticationFailCount"_s, 10));
+}
+
+void Preferences::setWebUIUserMaxAuthFailCount(const int count)
+{
+    if (count == getWebUIUserMaxAuthFailCount())
+        return;
+
+    setValue(u"Preferences/WebUI/UserMaxAuthenticationFailCount"_s, std::max(0, count));
+}
+
+std::chrono::seconds Preferences::getWebUIUserLockDuration() const
+{
+    return std::chrono::seconds(std::max(1, value<int>(u"Preferences/WebUI/UserLockDuration"_s, 900)));
+}
+
+void Preferences::setWebUIUserLockDuration(const std::chrono::seconds duration)
+{
+    if (duration == getWebUIUserLockDuration())
+        return;
+
+    setValue(u"Preferences/WebUI/UserLockDuration"_s, std::max(1, static_cast<int>(duration.count())));
+}
+
+int Preferences::getWebUIActivityLogDays() const
+{
+    return std::clamp(value<int>(u"Preferences/WebUI/ActivityLogDays"_s, 365), 1, 3650);
+}
+
+void Preferences::setWebUIActivityLogDays(const int days)
+{
+    if (days == getWebUIActivityLogDays())
+        return;
+
+    setValue(u"Preferences/WebUI/ActivityLogDays"_s, std::clamp(days, 1, 3650));
+}
+
 bool Preferences::isWebUIClickjackingProtectionEnabled() const
 {
     return value(u"WebUI/ClickjackingProtection"_s, true);

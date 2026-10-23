@@ -216,18 +216,20 @@ void SearchController::downloadTorrentAction()
 
     const QString torrentUrl = params()[u"torrentUrl"_s];
     const QString pluginName = params()[u"pluginName"_s];
+    const QStringList tags = params()[u"tags"_s].split(u',', Qt::SkipEmptyParts);
+    const BitTorrent::AddTorrentParams addTorrentParams {.tags = {tags.cbegin(), tags.cend()}};
 
     if (torrentUrl.startsWith(u"magnet:", Qt::CaseInsensitive))
     {
-        app()->addTorrentManager()->addTorrent(torrentUrl);
+        app()->addTorrentManager()->addTorrent(torrentUrl, addTorrentParams);
     }
     else
     {
         SearchDownloadHandler *downloadHandler = SearchPluginManager::instance()->downloadTorrent(pluginName, torrentUrl);
         connect(downloadHandler, &SearchDownloadHandler::downloadFinished, this
-            , [this, downloadHandler](const QString &source, [[maybe_unused]] const QString &errorMessage)
+            , [this, downloadHandler, addTorrentParams](const QString &source, [[maybe_unused]] const QString &errorMessage)
         {
-            app()->addTorrentManager()->addTorrent(source);
+            app()->addTorrentManager()->addTorrent(source, addTorrentParams);
             downloadHandler->deleteLater();
         });
     }

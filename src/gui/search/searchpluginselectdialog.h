@@ -68,6 +68,7 @@ private slots:
     void on_actionUninstall_triggered();
     void on_updateButton_clicked();
     void on_installButton_clicked();
+    void on_kettlePluginsButton_clicked();
     void on_closeButton_clicked();
     void togglePluginState(QTreeWidgetItem*, int);
     void setRowColor(int row, const QString &color);

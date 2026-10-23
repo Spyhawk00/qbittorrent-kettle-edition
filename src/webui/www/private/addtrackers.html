@@ -43,11 +43,14 @@
     </script>
 </head>
 
-<body>
-    <div style="text-align: center; margin-top: 10px;">
+<body class="dialogPage">
+    <div class="dialogPageContent dialogPageGrow">
         <label for="trackersUrls">QBT_TR(List of trackers to add (one per line):)QBT_TR[CONTEXT=TrackersAdditionDialog]</label>
-        <textarea name="list" id="trackersUrls" rows="10" cols="1"></textarea>
-        <input type="button" value="QBT_TR(Add)QBT_TR[CONTEXT=HttpServer]" id="addTrackersButton">
+        <textarea name="list" id="trackersUrls"></textarea>
+    </div>
+    <div class="dialogButtons">
+        <button type="button" id="addTrackersButton">QBT_TR(Add)QBT_TR[CONTEXT=HttpServer]</button>
+        <button type="button" onclick="parent.qBittorrent.Client.closeFrameWindow(window);">QBT_TR(Cancel)QBT_TR[CONTEXT=MainWindow]</button>
     </div>
 </body>
 

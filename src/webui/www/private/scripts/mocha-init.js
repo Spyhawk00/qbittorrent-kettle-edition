@@ -80,9 +80,9 @@ window.qBittorrent.Dialog ??= (() => {
     const baseModalOptions = Object.assign(Object.create(null), {
         addClass: "modalDialog",
         collapsible: false,
-        cornerRadius: 5,
+        cornerRadius: 4,
         draggable: true,
-        footerHeight: 20,
+        footerHeight: 0,
         icon: "images/qbittorrent-tray.svg",
         loadMethod: "xhr",
         maximizable: false,
@@ -261,21 +261,44 @@ const initializeWindows = () => {
             icon: "images/qbittorrent-tray.svg",
             title: "QBT_TR(Options)QBT_TR[CONTEXT=OptionsDialog]",
             loadMethod: "xhr",
-            toolbar: true,
             contentURL: "views/preferences.html?v=${CACHEID}",
             require: {
                 css: ["css/Tabs.css?v=${CACHEID}"]
             },
-            toolbarURL: "views/preferencesToolbar.html?v=${CACHEID}",
+            scrollbars: false,  // the pages scroll inside, between the sidebar and the buttons
             maximizable: false,
             closable: true,
+            padding: { top: 0, right: 0, bottom: 0, left: 0 },  // the layout keeps its own margins, on the window color
             paddingVertical: 0,
             paddingHorizontal: 0,
-            width: loadWindowWidth(id, 730),
+            width: loadWindowWidth(id, 830),  // wide enough for all the tabs, with User Accounts
             height: loadWindowHeight(id, 600),
             onResize: window.qBittorrent.Misc.createDebounceHandler(500, (e) => {
                 saveWindowSize(id);
-            })
+            }),
+            onClose: () => {
+                window.qBittorrent.UserAccounts?.hide();
+            }
+        });
+    });
+
+    addClickEvent("changePassword", (e) => {
+        e.preventDefault();
+        e.stopPropagation();
+
+        new MochaUI.Window({
+            id: "changePasswordPage",
+            icon: "images/object-locked.svg",
+            title: "QBT_TR(Change Password)QBT_TR[CONTEXT=UserAccounts]",
+            loadMethod: "iframe",
+            contentURL: "userpassword.html?v=${CACHEID}",
+            scrollbars: false,
+            resizable: false,
+            maximizable: false,
+            paddingVertical: 0,
+            paddingHorizontal: 0,
+            width: window.qBittorrent.Dialog.limitWidthToViewport(400),
+            height: 170
         });
     });
 
@@ -367,7 +390,7 @@ const initializeWindows = () => {
             paddingVertical: 0,
             paddingHorizontal: 0,
             width: window.qBittorrent.Dialog.limitWidthToViewport(424),
-            height: 100
+            height: 125
         });
     };
 
@@ -413,7 +436,7 @@ const initializeWindows = () => {
             paddingVertical: 0,
             paddingHorizontal: 0,
             width: window.qBittorrent.Dialog.limitWidthToViewport(500),
-            height: 250
+            height: 275
         });
     };
 
@@ -515,7 +538,7 @@ const initializeWindows = () => {
             paddingVertical: 0,
             paddingHorizontal: 0,
             width: window.qBittorrent.Dialog.limitWidthToViewport(424),
-            height: 100
+            height: 125
         });
     };
 
@@ -723,7 +746,7 @@ const initializeWindows = () => {
             paddingVertical: 0,
             paddingHorizontal: 0,
             width: window.qBittorrent.Dialog.limitWidthToViewport(400),
-            height: 130
+            height: 140
         });
     };
 
@@ -754,7 +777,7 @@ const initializeWindows = () => {
             paddingVertical: 0,
             paddingHorizontal: 0,
             width: window.qBittorrent.Dialog.limitWidthToViewport(400),
-            height: 100
+            height: 120
         });
     };
 
@@ -912,7 +935,7 @@ const initializeWindows = () => {
             paddingVertical: 0,
             paddingHorizontal: 0,
             width: window.qBittorrent.Dialog.limitWidthToViewport(500),
-            height: 400
+            height: 450
         });
     };
 
@@ -954,7 +977,7 @@ const initializeWindows = () => {
             paddingVertical: 0,
             paddingHorizontal: 0,
             width: window.qBittorrent.Dialog.limitWidthToViewport(500),
-            height: 400
+            height: 450
         });
     };
 
@@ -977,7 +1000,7 @@ const initializeWindows = () => {
             paddingVertical: 0,
             paddingHorizontal: 0,
             width: window.qBittorrent.Dialog.limitWidthToViewport(500),
-            height: 400
+            height: 450
         });
     };
 
@@ -1000,7 +1023,7 @@ const initializeWindows = () => {
             paddingVertical: 0,
             paddingHorizontal: 0,
             width: window.qBittorrent.Dialog.limitWidthToViewport(500),
-            height: 400
+            height: 450
         });
     };
 
@@ -1064,7 +1087,7 @@ const initializeWindows = () => {
             paddingVertical: 0,
             paddingHorizontal: 0,
             width: window.qBittorrent.Dialog.limitWidthToViewport(250),
-            height: 100
+            height: 120
         });
     };
 
@@ -1116,7 +1139,7 @@ const initializeWindows = () => {
             paddingVertical: 0,
             paddingHorizontal: 0,
             width: window.qBittorrent.Dialog.limitWidthToViewport(250),
-            height: 100
+            height: 120
         });
         updateMainData();
     };
@@ -1192,7 +1215,7 @@ const initializeWindows = () => {
             maximizable: false,
             padding: 10,
             width: window.qBittorrent.Dialog.limitWidthToViewport(424),
-            height: 100,
+            height: 120,
             onCloseComplete: trackerRemoved
         });
     };
@@ -1413,8 +1436,8 @@ const initializeWindows = () => {
             toolbar: true,
             toolbarURL: "views/aboutToolbar.html?v=${CACHEID}",
             padding: 10,
-            width: loadWindowWidth(id, 570),
-            height: loadWindowHeight(id, 360),
+            width: loadWindowWidth(id, 640),
+            height: loadWindowHeight(id, 420),
             onResize: window.qBittorrent.Misc.createDebounceHandler(500, (e) => {
                 saveWindowSize(id);
             })
@@ -1449,7 +1472,7 @@ const initializeWindows = () => {
                         return;
 
                     const shutdownMessage = "QBT_TR(%1 has been shutdown)QBT_TR[CONTEXT=HttpServer]".replace("%1", window.qBittorrent.Client.mainTitle());
-                    document.write(`<!doctype html><html lang="${LANG}"><head> <meta charset="UTF-8"> <meta name="color-scheme" content="light dark"> <title>${shutdownMessage}</title> <style>* {font-family: Arial, Helvetica, sans-serif;}</style></head><body> <h1 style="text-align: center;">${shutdownMessage}</h1></body></html>`);
+                    document.write(`<!doctype html><html lang="${LANG}"><head> <meta charset="UTF-8"> <meta name="color-scheme" content="light dark"> <title>${shutdownMessage}</title> <style>* {font-family: system-ui, "Segoe UI", sans-serif;}</style></head><body> <h1 style="text-align: center;">${shutdownMessage}</h1></body></html>`);
                     document.close();
                     window.stop();
                     window.qBittorrent.Client.stop();

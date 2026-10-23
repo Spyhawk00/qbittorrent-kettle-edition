@@ -36,6 +36,7 @@
 #include "base/utils/io.h"
 #include "base/utils/misc.h"
 #include "base/version.h"
+#include "groupboxheadingstyle.h"
 #include "ui_aboutdialog.h"
 #include "uithememanager.h"
 #include "utils.h"
@@ -54,9 +55,12 @@ AboutDialog::AboutDialog(QWidget *parent)
     , m_storeDialogSize {SETTINGS_KEY(u"Size"_s)}
 {
     m_ui->setupUi(this);
+    // sections are headings with a line under them, as in Options
+    GroupBoxHeadingStyle::apply(this);
+    GroupBoxHeadingStyle::alignRows(m_ui->authorTab);
 
     // Title
-    m_ui->labelName->setText(QStringLiteral("<b><h2>qBittorrent " QBT_VERSION " (%1-bit)</h2></b>").arg(QT_POINTER_SIZE * 8));
+    m_ui->labelName->setText(QStringLiteral("<b><h2 style=\"margin-bottom: 0;\">qBittorrent " QBT_VERSION " (%1-bit)</h2></b>Kettle Edition " QBT_EDITION_VERSION).arg(QT_POINTER_SIZE * 8));
 
     m_ui->logo->setPixmap(UIThemeManager::instance()->getScaledPixmap(u"qbittorrent-tray"_s, 32));
 
@@ -64,20 +68,29 @@ AboutDialog::AboutDialog(QWidget *parent)
     const QString aboutText =
         u"<p style=\"white-space: pre-wrap;\">"
         u"%1\n\n"
+        u"%6\n\n"
         u"%2\n\n"
         u"<table>"
-        u"<tr><td>%3</td><td><a href=\"https://www.qbittorrent.org\">https://www.qbittorrent.org</a></td></tr>"
-        u"<tr><td>%4</td><td><a href=\"https://forum.qbittorrent.org\">https://forum.qbittorrent.org</a></td></tr>"
-        u"<tr><td>%5</td><td><a href=\"https://bugs.qbittorrent.org\">https://bugs.qbittorrent.org</a></td></tr>"
+        u"<tr><td>%3</td><td><a href=\"https://github.com/Spyhawk00/qbittorrent-kettle-edition\">https://github.com/Spyhawk00/qbittorrent-kettle-edition</a></td></tr>"
+        u"<tr><td>%4</td><td><a href=\"https://www.qbittorrent.org\">https://www.qbittorrent.org</a></td></tr>"
+        u"<tr><td>%5</td><td><a href=\"https://github.com/Spyhawk00/qbittorrent-kettle-edition/issues\">https://github.com/Spyhawk00/qbittorrent-kettle-edition/issues</a></td></tr>"
         u"</table>"
         u"</p>"_s
         .arg(tr("An advanced BitTorrent client programmed in C++, based on Qt toolkit and libtorrent-rasterbar.")
                 .replace(u"C++"_s, u"C\u2060+\u2060+"_s) // make C++ non-breaking
             , tr("Copyright %1 2006-2026 The qBittorrent project").arg(C_COPYRIGHT)
             , tr("Home Page:")
-            , tr("Forum:")
-            , tr("Bug Tracker:"));
+            , tr("qBittorrent project:")
+            , tr("Bug Tracker:")
+            , tr("Kettle Edition is a personal build of qBittorrent that adds user accounts with roles for the WebUI "
+                 "and the desktop app, an activity log, and an installable WebUI with a phone layout. "
+                 "A kettle is a group of hawks soaring together. "
+                 "This is an unofficial build, not affiliated with the qBittorrent project."));
     m_ui->labelAbout->setText(aboutText);
+
+    // Authors
+    m_ui->labelEditionVersionValue->setText(QStringLiteral(QBT_EDITION_VERSION));
+    m_ui->labelEditionBaseValue->setText(QStringLiteral("qBittorrent " QBT_VERSION));
 
     m_ui->labelMascot->setPixmap(Utils::Gui::scaledPixmap(Path(u":/icons/mascot.png"_s)));
 
@@ -105,6 +118,8 @@ AboutDialog::AboutDialog(QWidget *parent)
     m_ui->labelBoostVer->setText(Utils::Misc::boostVersionString());
     m_ui->labelOpensslVer->setText(Utils::Misc::opensslVersionString());
     m_ui->labelZlibVer->setText(Utils::Misc::zlibVersionString());
+    const QString sqliteVersion = Utils::Misc::sqliteVersionString();
+    m_ui->labelSqliteVer->setText(sqliteVersion.isEmpty() ? tr("N/A") : sqliteVersion);
 
 #ifdef ENABLE_PLUGINS
     const Qt::Alignment alignment = m_ui->labelZlib->alignment();
@@ -159,15 +174,16 @@ AboutDialog::~AboutDialog()
 void AboutDialog::copyVersionsToClipboard() const
 {
 #ifdef ENABLE_PLUGINS
-    const QString versions = u"%1 %2\n%3 %4\n%5 %6\n%7 %8\n%9 %10\n%11 %12\n%13 %14\n"_s
+    const QString versions = u"%1 %2\n%3 %4\n%5 %6\n%7 %8\n%9 %10\n%11 %12\n%13 %14\n%15 %16\n"_s
 #else
-    const QString versions = u"%1 %2\n%3 %4\n%5 %6\n%7 %8\n%9 %10\n"_s
+    const QString versions = u"%1 %2\n%3 %4\n%5 %6\n%7 %8\n%9 %10\n%11 %12\n"_s
 #endif
         .arg(m_ui->labelQt->text(), m_ui->labelQtVer->text()
             , m_ui->labelLibt->text(), m_ui->labelLibtVer->text()
             , m_ui->labelBoost->text(), m_ui->labelBoostVer->text()
             , m_ui->labelOpenssl->text(), m_ui->labelOpensslVer->text()
             , m_ui->labelZlib->text(), m_ui->labelZlibVer->text()
+            , m_ui->labelSqlite->text(), m_ui->labelSqliteVer->text()
 #ifdef ENABLE_PLUGINS
             , tr("Lua:"), PluginsEngine::luaVersion().toString()
             , tr("LuaBridge:"), PluginsEngine::luaBridgeVersion().toString()

@@ -30,9 +30,7 @@
 
 #include <QTabWidget>
 
-#ifdef Q_OS_MACOS
 class QPaintEvent;
-#endif
 
 class HidableTabWidget final : public QTabWidget
 {
@@ -44,7 +42,5 @@ private:
     void tabRemoved(int index) override;
     void tabsCountChanged();
 
-#ifdef Q_OS_MACOS
     void paintEvent(QPaintEvent *event) override;
-#endif
 };

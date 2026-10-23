@@ -5,7 +5,7 @@
 
 **************************************************************/
 .altRowColors tbody tr:nth-child(odd of :not(.invisible)) {
-    background-color: var(--color-background-default);
+    background-color: var(--color-background-alt-row);
 }
 
 #transferList .dynamicTable td {
@@ -23,14 +23,21 @@
     padding-top: 2px;
 }
 
+/* a selected row is shaded, with an accent bar on its left, as in the desktop list */
 .dynamicTableDiv table.dynamicTable tbody tr.selected {
-    background-color: var(--color-background-blue);
-    color: var(--color-text-white);
+    background-color: var(--color-background-selected);
+}
+
+.dynamicTableDiv table.dynamicTable tbody tr.selected > td:first-child {
+    box-shadow: inset 3px 0 0 var(--color-accent-blue);
 }
 
 .dynamicTableDiv table.dynamicTable tbody tr:hover {
     background-color: var(--color-background-hover);
-    color: var(--color-text-white);
+}
+
+.dynamicTableDiv table.dynamicTable tbody tr.selected:hover {
+    background-color: color-mix(in srgb, var(--color-background-selected) 85%, var(--color-text-default));
 }
 
 #transferList .stateIcon,
@@ -109,16 +116,13 @@
 
 .dynamicTable th {
     border-right: 1px solid var(--color-border-default);
+    font-weight: normal;
     padding: 4px 2px;
     white-space: nowrap;
 }
 
 .dynamicTable tr:hover {
     cursor: pointer;
-}
-
-.dynamicTable tr:is(:hover, .selected) img:not(.flags) {
-    filter: var(--color-icon-hover);
 }
 
 .dynamicTable td {
@@ -131,6 +135,18 @@
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
+}
+
+/* tables that fit their columns to the contents have roomier cells */
+.dynamicTable.fitColumns th,
+.dynamicTable.fitColumns td,
+#transferList .dynamicTable.fitColumns td {
+    padding-left: 6px;
+    padding-right: 6px;
+}
+
+.dynamicTable.fitColumns td {
+    height: var(--row-height);
 }
 
 .dynamicTable th.sorted {

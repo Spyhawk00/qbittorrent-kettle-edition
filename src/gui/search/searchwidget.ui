@@ -15,12 +15,104 @@
   </property>
   <layout class="QVBoxLayout" name="verticalLayout_3">
    <item>
+    <widget class="QSplitter" name="splitter">
+     <property name="orientation">
+      <enum>Qt::Orientation::Horizontal</enum>
+     </property>
+     <property name="childrenCollapsible">
+      <bool>false</bool>
+     </property>
+         <widget class="QWidget" name="listPane">
+          <layout class="QVBoxLayout" name="listPaneLayout">
+           <property name="leftMargin">
+            <number>0</number>
+           </property>
+           <property name="topMargin">
+            <number>0</number>
+           </property>
+           <property name="rightMargin">
+            <number>0</number>
+           </property>
+           <property name="bottomMargin">
+            <number>0</number>
+           </property>
+           <item>
+            <widget class="QWidget" name="listHeader" native="true">
+             <layout class="QHBoxLayout" name="listHeaderLayout">
+             <item>
+              <widget class="QLabel" name="searchesLabel">
+               <property name="text">
+                <string>Searches</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <spacer name="listHeaderSpacer">
+               <property name="orientation">
+                <enum>Qt::Orientation::Horizontal</enum>
+               </property>
+               <property name="sizeHint" stdset="0">
+                <size>
+                 <width>0</width>
+                 <height>0</height>
+                </size>
+               </property>
+              </spacer>
+             </item>
+             <item>
+              <widget class="QToolButton" name="closeSearchButton">
+               <property name="enabled">
+                <bool>false</bool>
+               </property>
+               <property name="toolTip">
+                <string>Close the selected search</string>
+               </property>
+               <property name="text">
+                <string>×</string>
+               </property>
+               <property name="autoRaise">
+                <bool>true</bool>
+               </property>
+              </widget>
+             </item>
+            </layout>
+            </widget>
+           </item>
+           <item>
+            <widget class="QFrame" name="listHeaderLine">
+             <property name="frameShadow">
+              <enum>QFrame::Shadow::Plain</enum>
+             </property>
+             <property name="frameShape">
+              <enum>QFrame::Shape::HLine</enum>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QListWidget" name="searchList"/>
+           </item>
+          </layout>
+         </widget>
+     <widget class="QWidget" name="resultsPane">
+      <layout class="QVBoxLayout" name="resultsPaneLayout">
+       <property name="leftMargin"><number>0</number></property>
+       <property name="topMargin"><number>0</number></property>
+       <property name="rightMargin"><number>0</number></property>
+       <property name="bottomMargin"><number>0</number></property>
+   <item>
     <layout class="QHBoxLayout" name="searchBarLayout">
      <item>
-      <widget class="LineEdit" name="lineEditSearchPattern"/>
+      <widget class="LineEdit" name="lineEditSearchPattern">
+       <property name="placeholderText">
+        <string>Search for torrents...</string>
+       </property>
+      </widget>
      </item>
      <item>
       <widget class="QComboBox" name="comboCategory">
+       <property name="toolTip">
+        <string>Category to search in</string>
+       </property>
        <property name="sizePolicy">
         <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
          <horstretch>0</horstretch>
@@ -31,6 +123,9 @@
      </item>
      <item>
       <widget class="QComboBox" name="selectPlugin">
+       <property name="toolTip">
+        <string>Search engines to use</string>
+       </property>
        <property name="sizePolicy">
         <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
          <horstretch>0</horstretch>
@@ -59,13 +154,20 @@
        </property>
       </widget>
      </item>
+     <item>
+      <widget class="QPushButton" name="pluginsButton">
+       <property name="text">
+        <string>Search plugins...</string>
+       </property>
+      </widget>
+     </item>
     </layout>
    </item>
-   <item>
-    <widget class="QStackedWidget" name="stackedPages">
-     <property name="currentIndex">
-      <number>1</number>
-     </property>
+       <item>
+        <widget class="QStackedWidget" name="stackedPages">
+         <property name="currentIndex">
+          <number>1</number>
+         </property>
      <widget class="QWidget" name="emptyPage">
       <layout class="QVBoxLayout" name="verticalLayout">
        <property name="leftMargin">
@@ -84,7 +186,7 @@
         <widget class="QLabel" name="label">
          <property name="text">
           <string>There aren't any search plugins installed.
-Click the &quot;Search plugins...&quot; button at the bottom right of the window to install some.</string>
+Click the &quot;Search plugins...&quot; button at the top right of the window to install some.</string>
          </property>
          <property name="alignment">
           <set>Qt::AlignmentFlag::AlignCenter</set>
@@ -93,57 +195,40 @@ Click the &quot;Search plugins...&quot; button at the bottom right of the window
        </item>
       </layout>
      </widget>
-     <widget class="QWidget" name="searchPage">
-      <layout class="QVBoxLayout" name="verticalLayout_2">
-       <property name="leftMargin">
-        <number>0</number>
-       </property>
-       <property name="topMargin">
-        <number>0</number>
-       </property>
-       <property name="rightMargin">
-        <number>0</number>
-       </property>
-       <property name="bottomMargin">
-        <number>0</number>
-       </property>
-       <item>
-        <widget class="QTabWidget" name="tabWidget">
-         <property name="tabsClosable">
-          <bool>true</bool>
-         </property>
-         <property name="movable">
-          <bool>true</bool>
-         </property>
+         <widget class="QWidget" name="searchPage">
+          <layout class="QVBoxLayout" name="verticalLayout_2">
+       <property name="leftMargin"><number>0</number></property>
+       <property name="topMargin"><number>0</number></property>
+       <property name="rightMargin"><number>0</number></property>
+       <property name="bottomMargin"><number>0</number></property>
+           <item>
+         <widget class="QStackedWidget" name="resultsStack">
+         <widget class="QWidget" name="hintPage">
+          <layout class="QVBoxLayout" name="verticalLayout_4">
+           <item>
+            <widget class="QLabel" name="hintLabel">
+             <property name="enabled">
+              <bool>false</bool>
+             </property>
+             <property name="text">
+              <string>Type a search above and press Enter.</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignmentFlag::AlignCenter</set>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+         </widget>
+           </item>
+          </layout>
+         </widget>
         </widget>
        </item>
       </layout>
      </widget>
     </widget>
-   </item>
-   <item>
-    <layout class="QHBoxLayout" name="layout2">
-     <item>
-      <spacer name="spacer2">
-       <property name="orientation">
-        <enum>Qt::Orientation::Horizontal</enum>
-       </property>
-       <property name="sizeHint" stdset="0">
-        <size>
-         <width>0</width>
-         <height>0</height>
-        </size>
-       </property>
-      </spacer>
-     </item>
-     <item>
-      <widget class="QPushButton" name="pluginsButton">
-       <property name="text">
-        <string>Search plugins...</string>
-       </property>
-      </widget>
-     </item>
-    </layout>
    </item>
   </layout>
  </widget>

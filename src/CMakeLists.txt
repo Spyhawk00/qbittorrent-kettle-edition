@@ -5,6 +5,9 @@ add_subdirectory(base)
 
 if (GUI)
     add_subdirectory(gui)
+    if (WIN32)
+        add_subdirectory(updatehelper)
+    endif()
 endif()
 
 if (WEBUI)

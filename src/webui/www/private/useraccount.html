@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="${LANG}" class="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <title>QBT_TR(User)QBT_TR[CONTEXT=UserAccounts]</title>
+    <link rel="stylesheet" href="css/style.css?v=${CACHEID}" type="text/css">
+    <script defer src="scripts/localpreferences.js?v=${CACHEID}"></script>
+    <script defer src="scripts/color-scheme.js?v=${CACHEID}"></script>
+    <script defer src="scripts/misc.js?locale=${LANG}&v=${CACHEID}"></script>
+    <script>
+        "use strict";
+
+        window.addEventListener("DOMContentLoaded", (event) => {
+            window.addEventListener("keydown", (event) => {
+                switch (event.key) {
+                    case "Enter":
+                        if (event.target.tagName === "BUTTON")
+                            break;
+                        event.preventDefault();
+                        document.getElementById("userAccountButton").click();
+                        break;
+                    case "Escape":
+                        event.preventDefault();
+                        window.parent.qBittorrent.Client.closeFrameWindow(window);
+                        break;
+                }
+            });
+
+            const userAccounts = window.parent.qBittorrent.UserAccounts;
+            const searchParams = new URLSearchParams(window.location.search);
+            const userId = window.qBittorrent.Misc.safeTrim(searchParams.get("id"));
+            const user = (userId !== "") ? userAccounts.getUser(userId) : undefined;
+            const minLength = userAccounts.getCatalog().password_min_length;
+
+            const usernameElem = document.getElementById("username");
+            const roleElem = document.getElementById("role");
+            const passwordElem = document.getElementById("password");
+            const passwordConfirmElem = document.getElementById("passwordConfirm");
+            const disabledElem = document.getElementById("accountDisabled");
+
+            for (const role of userAccounts.getRoles()) {
+                const option = document.createElement("option");
+                option.value = role.id;
+                option.textContent = role.name;
+                option.title = role.description;
+                roleElem.append(option);
+            }
+
+            if (user !== undefined) {
+                usernameElem.value = user.username;
+                usernameElem.disabled = true;
+                roleElem.value = user.role_id;
+                disabledElem.checked = user.disabled;
+                passwordElem.placeholder = "QBT_TR(Leave empty to keep the current password)QBT_TR[CONTEXT=UserAccounts]";
+                roleElem.focus();
+            }
+            else {
+                passwordElem.placeholder = "QBT_TR(At least %1 characters)QBT_TR[CONTEXT=UserAccounts]".replace("%1", minLength);
+                // The first account has to be able to manage users. After that, new people get the least access by default.
+                const roles = userAccounts.getRoles();
+                const hasUsers = roles.some(role => role.user_count > 0);
+                const defaultRole = hasUsers
+                    ? roles.find(role => role.name === "Viewer")
+                    : roles.find(role => role.permissions.includes("manage_users"));
+                if (defaultRole !== undefined)
+                    roleElem.value = defaultRole.id;
+                document.getElementById("accountDisabledRow").classList.add("invisible");
+                usernameElem.focus();
+            }
+
+            document.getElementById("userAccountCancelButton").addEventListener("click", (e) => {
+                window.parent.qBittorrent.Client.closeFrameWindow(window);
+            });
+
+            document.getElementById("userAccountButton").addEventListener("click", async (e) => {
+                e.preventDefault();
+                e.stopPropagation();
+
+                const username = usernameElem.value.trim();
+                const password = passwordElem.value;
+                if (username === "") {
+                    alert("QBT_TR(Enter a username.)QBT_TR[CONTEXT=UserAccounts]");
+                    return;
+                }
+                if (((user === undefined) || (password !== "")) && (password.length < minLength)) {
+                    alert("QBT_TR(The password must be at least %1 characters long.)QBT_TR[CONTEXT=UserAccounts]".replace("%1", minLength));
+                    return;
+                }
+                if (password !== passwordConfirmElem.value) {
+                    alert("QBT_TR(The passwords don't match.)QBT_TR[CONTEXT=UserAccounts]");
+                    return;
+                }
+
+                const params = { role_id: roleElem.value };
+                if (password !== "")
+                    params.password = password;
+                if (user === undefined) {
+                    params.username = username;
+                }
+                else {
+                    params.id = user.id;
+                    params.disabled = disabledElem.checked;
+                }
+
+                const response = await fetch(`api/v2/access/${(user === undefined) ? "createUser" : "updateUser"}`, {
+                    method: "POST",
+                    body: new URLSearchParams(params)
+                });
+                if (!response.ok) {
+                    alert(await response.text());
+                    return;
+                }
+
+                userAccounts.refresh();
+                window.parent.qBittorrent.Client.closeFrameWindow(window);
+            });
+        });
+    </script>
+</head>
+
+<body class="dialogPage">
+    <div class="dialogPageContent">
+        <div class="dialogForm">
+            <label for="username">QBT_TR(Username:)QBT_TR[CONTEXT=UserAccounts]</label>
+            <input type="text" id="username" maxlength="32" autocomplete="off" autocorrect="off" autocapitalize="none">
+            <label for="role">QBT_TR(Role:)QBT_TR[CONTEXT=UserAccounts]</label>
+            <select id="role"></select>
+            <label for="password">QBT_TR(Password:)QBT_TR[CONTEXT=UserAccounts]</label>
+            <input type="password" id="password" autocomplete="new-password">
+            <label for="passwordConfirm">QBT_TR(Confirm password:)QBT_TR[CONTEXT=UserAccounts]</label>
+            <input type="password" id="passwordConfirm" autocomplete="new-password">
+            <div id="accountDisabledRow" class="dialogFormControl">
+                <input type="checkbox" id="accountDisabled">
+                <label for="accountDisabled">QBT_TR(Disable this account)QBT_TR[CONTEXT=UserAccounts]</label>
+            </div>
+        </div>
+    </div>
+
+    <div class="dialogButtons">
+        <button type="button" id="userAccountButton">QBT_TR(OK)QBT_TR[CONTEXT=UserAccounts]</button>
+        <button type="button" id="userAccountCancelButton">QBT_TR(Cancel)QBT_TR[CONTEXT=MainWindow]</button>
+    </div>
+</body>
+
+</html>

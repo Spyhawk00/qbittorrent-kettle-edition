@@ -30,6 +30,7 @@
 #include "deletionconfirmationdialog.h"
 
 #include <QPushButton>
+#include <QStyle>
 
 #include "base/bittorrent/session.h"
 #include "base/preferences.h"
@@ -53,25 +54,20 @@ DeletionConfirmationDialog::DeletionConfirmationDialog(QWidget *parent, const in
     const QSize iconSize = Utils::Gui::largeIconSize();
     m_ui->labelWarning->setPixmap(UIThemeManager::instance()->getIcon(u"dialog-warning"_s).pixmap(iconSize));
     m_ui->labelWarning->setFixedWidth(iconSize.width());
-    m_ui->rememberBtn->setIcon(UIThemeManager::instance()->getIcon(u"object-locked"_s));
-    m_ui->rememberBtn->setIconSize(Utils::Gui::mediumIconSize());
-    connect(m_ui->rememberBtn, &QCheckBox::clicked, this, [this]
-    {
-        Preferences::instance()->setRemoveTorrentContent(m_ui->checkRemoveContent->isChecked());
-        m_ui->rememberBtn->setEnabled(false);
-    });
+    // line the checkbox up with the message text, which starts after the warning icon
+    const int spacing = m_ui->horizontalLayout->spacing();
+    m_ui->horizontalLayout_2->setContentsMargins((iconSize.width() + ((spacing >= 0) ? spacing : style()->pixelMetric(QStyle::PM_LayoutHorizontalSpacing))), 0, 0, 0);
 
-    const bool removeTorrentContent = defaultDeleteFiles || Preferences::instance()->removeTorrentContent();
-    m_ui->checkRemoveContent->setChecked(removeTorrentContent);
-    connect(m_ui->checkRemoveContent, &QCheckBox::clicked, this, [this]
-    {
-        const bool removeTorrentContent = m_ui->checkRemoveContent->isChecked();
-        m_ui->rememberBtn->setEnabled(removeTorrentContent != Preferences::instance()->removeTorrentContent());
-        m_ui->buttonBox->button(QDialogButtonBox::Ok)->setText(removeTorrentContent ? tr("Remove torrent and content") : tr("Remove torrent"));
-    });
-    m_ui->buttonBox->button(QDialogButtonBox::Ok)->setText(removeTorrentContent ? tr("Remove torrent and content") : tr("Remove torrent"));
+    m_ui->checkRemoveContent->setChecked(defaultDeleteFiles || Preferences::instance()->removeTorrentContent());
+    m_ui->buttonBox->button(QDialogButtonBox::Ok)->setText(tr("Remove"));
     m_ui->buttonBox->button(QDialogButtonBox::Cancel)->setFocus();
 
+    // The last choice becomes the default for the next removal
+    connect(m_ui->buttonBox, &QDialogButtonBox::accepted, this, [this, defaultDeleteFiles]
+    {
+        if (!defaultDeleteFiles)
+            Preferences::instance()->setRemoveTorrentContent(m_ui->checkRemoveContent->isChecked());
+    });
     connect(m_ui->buttonBox, &QDialogButtonBox::accepted, this, &QDialog::accept);
     connect(m_ui->buttonBox, &QDialogButtonBox::rejected, this, &QDialog::reject);
 }

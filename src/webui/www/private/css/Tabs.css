@@ -36,20 +36,14 @@ Required by:
     float: left;
 }
 
-.tab-menu .selected img,
-.tab-menu li:hover img {
-    filter: var(--color-icon-hover);
-}
-
 .tab-menu li a {
     align-items: center;
-    background-color: var(--color-background-default);
-    border-radius: 3px 3px 0 0;
     color: var(--color-text-default);
     display: flex;
-    gap: 5px;
-    margin-left: 6px;
-    padding: 5px 7px 3px;
+    gap: 6px;
+    margin: 2px 0 2px 2px;
+    padding: 3px 8px;
+    position: relative;
     text-align: center;
 }
 
@@ -59,10 +53,20 @@ Required by:
 
 .tab-menu li:hover a {
     background-color: var(--color-background-hover);
-    color: var(--color-text-white);
 }
 
-.tab-menu li.selected a {
-    background-color: var(--color-background-blue);
-    color: var(--color-text-white);
+/* the selected tab is shaded, with a short accent bar under it */
+.tab-menu li.selected a,
+.tab-menu li.selected:hover a {
+    background-color: var(--color-background-selected);
+}
+
+.tab-menu li.selected a::after {
+    background-color: var(--color-accent-blue);
+    bottom: 0;
+    content: "";
+    height: 2px;
+    left: 25%;
+    position: absolute;
+    right: 25%;
 }

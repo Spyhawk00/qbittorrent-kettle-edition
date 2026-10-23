@@ -51,6 +51,9 @@
 #include "colorscheme.h"
 #endif
 
+class QEvent;
+class QWidget;
+
 class UIThemeManager final : public QObject
 {
     Q_OBJECT
@@ -89,6 +92,12 @@ private:
     void applyStyleSheet() const;
     void onColorSchemeChanged();
 
+#ifdef Q_OS_WIN
+    bool eventFilter(QObject *watched, QEvent *event) override;
+    void applyTitleBarColor(QWidget *window) const;
+    void applyNeutralAccent();
+#endif
+
 #ifdef QBT_HAS_COLORSCHEME_OPTION
     void applyColorScheme() const;
 #endif
@@ -97,6 +106,9 @@ private:
 
     static UIThemeManager *m_instance;
     const bool m_useCustomTheme;
+#ifdef Q_OS_WIN
+    bool m_neutralAccentApplied = false;
+#endif
 #ifdef QBT_HAS_COLORSCHEME_OPTION
     SettingValue<ColorScheme> m_colorSchemeSetting;
 #endif

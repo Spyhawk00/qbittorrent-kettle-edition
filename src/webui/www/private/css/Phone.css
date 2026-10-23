@@ -1,0 +1,647 @@
+/*
+
+Phone.css: the main window on a narrow screen (under 640 px). Wider windows are not changed.
+
+scripts/phone.js does the rest: it moves the properties panel out of the column, makes popups fill the screen
+and opens the sidebar, the sheet and the "More" menu.
+
+Colors come only from the --color-* tokens in style.css.
+
+*/
+
+/* what only the phone layout shows */
+.phoneOnly,
+#sidebarScrim,
+#propertiesSheetBar {
+    display: none;
+}
+
+@media (max-width: 639px) {
+    #desktop {
+        min-width: 0;
+    }
+
+    /* touch targets are 40 px high */
+
+    /* menu bar */
+    #desktopNavbar ul li a {
+        line-height: 20px;
+        padding: 10px 12px;
+    }
+
+    #desktopNavbar li ul li a,
+    #desktopNavbar li ul li div.anchor {
+        padding: 10px 10px 10px 23px;
+    }
+
+    /* toolbar: one row of buttons, then the tabs, then the filter box */
+    #mochaToolbar {
+        align-items: center;
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 0;
+        padding: 0 4px 4px;
+    }
+
+    #mochaToolbar > a,
+    #mochaToolbar > #uploadButton {
+        align-items: center;
+        display: flex;
+        height: 40px;
+        justify-content: center;
+        padding: 0;
+        width: 42px;
+    }
+
+    #mochaToolbar > #uploadButton {
+        display: flex !important; /* it has an inline display */
+    }
+
+    #uploadButton label {
+        align-items: center;
+        display: flex;
+        height: 100%;
+        justify-content: center;
+        width: 100%;
+    }
+
+    #mochaToolbar > a:hover,
+    #uploadButton:hover {
+        background-color: var(--color-background-hover);
+    }
+
+    #mochaToolbar .mochaToolButton {
+        margin: 0;
+    }
+
+    #mochaToolbar .divider {
+        padding: 0;
+    }
+
+    #mochaToolbar .divider::before {
+        display: none;
+    }
+
+    /* the rest of the toolbar is in the More menu */
+    #queueingButtons,
+    #mochaToolbar > #torrentCreatorButton,
+    #mochaToolbar > #preferencesButton {
+        display: none;
+    }
+
+    #sidebarToggleButton,
+    #moreButton {
+        display: flex;
+    }
+
+    #moreButton {
+        margin-left: auto;
+    }
+
+    /* the three bars and the three dots are drawn, as the window buttons are */
+    .menuGlyph,
+    .moreGlyph {
+        background-color: var(--color-text-default);
+        display: block;
+    }
+
+    .menuGlyph {
+        box-shadow: 0 -6px var(--color-text-default), 0 6px var(--color-text-default);
+        height: 2px;
+        width: 18px;
+    }
+
+    .moreGlyph {
+        border-radius: 50%;
+        box-shadow: -7px 0 var(--color-text-default), 7px 0 var(--color-text-default);
+        height: 4px;
+        width: 4px;
+    }
+
+    #mainWindowTabs {
+        flex: 1 0 100%;
+        float: none;
+        margin: 0;
+    }
+
+    #mainWindowTabsList li {
+        flex: 1 1 0;
+        min-width: 0;
+    }
+
+    /* the Log tab's short name, so the four tabs fit on one line */
+    #logTabFullName {
+        display: none;
+    }
+
+    #logTabShortName {
+        display: inline;
+    }
+
+    .tab-menu li a {
+        justify-content: center;
+        min-height: 36px;
+    }
+
+    #torrentsFilterToolbar {
+        align-items: center;
+        display: flex;
+        flex: 1 0 100%;
+        gap: 6px;
+        margin: 0;
+    }
+
+    #torrentsFilterToolbar > label[for="torrentsFilterSelect"] {
+        display: none;
+    }
+
+    #torrentsFilterInput {
+        box-sizing: border-box;
+        flex: 1 1 auto;
+        min-height: 40px;
+        min-width: 0;
+    }
+
+    #torrentsFilterRegexBox + label,
+    #torrentsFilterRegexBox:checked + label {
+        box-sizing: border-box;
+        flex: none;
+        height: 40px;
+        margin-bottom: 0;
+        width: 40px;
+    }
+
+    #torrentsFilterSelect {
+        min-height: 40px;
+    }
+
+    /* the filter sidebar slides in over the list; its column takes no width */
+    #filtersColumn,
+    #filtersColumn_handle {
+        width: 0 !important;
+    }
+
+    #filtersColumn_handle {
+        display: none;
+    }
+
+    #filtersColumn.invisible {
+        display: block; /* hidden from the View menu on a wide window only */
+    }
+
+    #Filters {
+        border-right: 1px solid var(--color-border-default);
+        bottom: 0;
+        box-shadow: 2px 0 8px var(--color-shadow);
+        box-sizing: border-box;
+        height: auto !important;
+        left: 0;
+        position: fixed;
+        top: 0;
+        transform: translateX(-100%);
+        transition:
+            transform 0.15s ease-out,
+            visibility 0s linear 0.15s;
+        visibility: hidden;
+        width: min(300px, 85vw) !important;
+        z-index: 90; /* under the popups, over everything else */
+    }
+
+    body.sidebarOpen #Filters {
+        transform: none;
+        transition: transform 0.15s ease-out;
+        visibility: visible;
+    }
+
+    body.sidebarOpen #sidebarScrim {
+        background-color: var(--color-overlay);
+        display: block;
+        inset: 0;
+        position: fixed;
+        z-index: 80;
+    }
+
+    .filterTitle {
+        align-items: center;
+        box-sizing: border-box;
+        min-height: 40px;
+    }
+
+    ul.filterList span.link {
+        box-sizing: border-box;
+        margin-bottom: 0;
+        min-height: 40px;
+        padding: 0 6px;
+    }
+
+    .categoryToggle {
+        height: 40px;
+        width: 32px;
+    }
+
+    /* the transfer list: taller rows */
+    #transferList .dynamicTable td {
+        height: 40px;
+        padding: 0 2px;
+    }
+
+    #transferList .dynamicTable th {
+        height: 40px;
+        padding: 0 2px;
+    }
+
+    /* the properties panel is a sheet over the whole window, opened by tapping a torrent */
+    #propertiesPanel_wrapper {
+        background-color: var(--color-background-default);
+        display: none;
+        inset: 0;
+        position: fixed;
+        z-index: 90;
+    }
+
+    body.propertiesOpen #propertiesPanel_wrapper {
+        display: flex;
+    }
+
+    #propertiesSheetBar {
+        align-items: center;
+        border-bottom: 1px solid var(--color-border-default);
+        display: flex;
+        flex: none;
+        height: 40px;
+        order: -1;
+    }
+
+    #propertiesSheetTitle {
+        flex: 1 1 auto;
+        min-width: 0;
+        overflow: hidden;
+        padding: 0 12px;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+
+    #propertiesSheetClose {
+        background-color: transparent;
+        border: 0;
+        border-radius: 0;
+        flex: none;
+        height: 40px;
+        padding: 0;
+        position: relative;
+        width: 52px;
+    }
+
+    #propertiesSheetClose:hover {
+        background-color: var(--color-background-hover);
+    }
+
+    #propertiesSheetClose::before,
+    #propertiesSheetClose::after {
+        background-color: var(--color-text-default);
+        content: "";
+        height: 1px;
+        left: 50%;
+        position: absolute;
+        top: 50%;
+        width: 14px;
+    }
+
+    #propertiesSheetClose::before {
+        transform: translate(-50%, -50%) rotate(45deg);
+    }
+
+    #propertiesSheetClose::after {
+        transform: translate(-50%, -50%) rotate(-45deg);
+    }
+
+    #propertiesPanel {
+        display: block !important; /* also when the panel was collapsed on a wide window */
+        flex: 1 1 auto;
+        height: auto !important;
+        min-height: 0;
+    }
+
+    #propertiesPanel_header {
+        height: 40px;
+    }
+
+    /* the Files tab's filter box leaves the tabs most of the bar */
+    #torrentFilesFilterInput {
+        width: 110px;
+    }
+
+    #propertiesPanel_headerCollapseBox,
+    #propertiesPanel_handle {
+        display: none !important;
+    }
+
+    /* the General tab: one pair per line, the labels in a column of one width so that the values line up */
+    #propGeneral tr {
+        display: grid;
+        gap: 0 8px;
+        grid-template-columns: 9em minmax(0, 1fr);
+    }
+
+    #propGeneral table,
+    #propGeneral tbody {
+        display: block;
+    }
+
+    #propGeneral td {
+        overflow-wrap: anywhere;
+        padding: 2px;
+    }
+
+    #propGeneral td.generalLabel {
+        text-align: left;
+        width: auto;
+    }
+
+    /* menus: taller items, and a submenu opens under its item, so the menu scrolls as one */
+    .contextMenu {
+        max-height: calc(100% - 8px);
+        overflow-y: auto;
+    }
+
+    .contextMenu li a {
+        min-height: 40px;
+        padding-bottom: 0;
+        padding-top: 0;
+    }
+
+    .contextMenu li ul {
+        border: 0;
+        box-shadow: none;
+        display: none;
+        left: auto;
+        margin: 0 !important; /* the menu script places a submenu with margins */
+        padding: 0 0 0 16px;
+        position: static;
+        width: auto;
+    }
+
+    .contextMenu li:not(.disabled):hover > ul {
+        display: block;
+    }
+
+    /* status bar: two rows, the user, free space and DHT on the first and the connection and speeds on the second;
+       the table has an inline width and the break is the fourth separator. Neither row may wrap again, or the speeds
+       would drop out of view: the user name shortens instead, and the external IPs, limits and session totals are left out */
+    #desktopFooterWrapper {
+        height: 57px; /* two 28 px rows and the top border */
+    }
+
+    #desktopFooter {
+        height: 56px;
+        padding-block: 0;
+    }
+
+    #desktopFooter table {
+        display: block;
+        margin: 0 !important;
+        width: 100% !important;
+    }
+
+    #desktopFooter tbody {
+        display: block;
+    }
+
+    #desktopFooter tr {
+        align-items: center;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    #desktopFooter td {
+        height: 28px;
+        vertical-align: middle;
+    }
+
+    #desktopFooter td:nth-child(-n + 7) {
+        flex: none;
+        min-width: 0;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+
+    #desktopFooter td#signedInUser {
+        flex: 1 1 0;
+        max-width: max-content; /* shrinks when the row is full, but never grows past its name */
+        min-width: 4em;
+    }
+
+    /* the external IPs and the separator before them */
+    #desktopFooter td:nth-child(4),
+    #desktopFooter td#externalIPs {
+        display: none;
+    }
+
+    #desktopFooter td:nth-child(8) {
+        flex: 1 0 100%;
+        height: 0;
+        padding: 0;
+        visibility: hidden;
+    }
+
+    /* the alternative speed limits switch */
+    #desktopFooter td:nth-child(11) {
+        min-width: 40px;
+        text-align: center;
+    }
+
+    /* the speeds share the rest of the row */
+    #desktopFooter td.speedLabel {
+        flex: 1 1 0;
+        min-width: 0;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+
+    #desktopFooter :is(.speedLimit, .speedTotal) {
+        display: none;
+    }
+
+    /* the Search, RSS and Log tabs: their bars wrap, and the RSS panes stack */
+    /* under body, so the views' own style sheets, which come later in the page, don't win */
+    body {
+        #searchResultsHeader,
+        #searchResultsHeaderContainer {
+            height: auto;
+        }
+
+        #searchPattern {
+            box-sizing: border-box;
+            flex: 1 1 100%;
+            width: auto;
+        }
+
+        #categorySelect,
+        #pluginsSelect {
+            flex: 1 1 40%;
+            min-width: 0;
+            width: auto;
+        }
+
+        #startSearchButton,
+        #manageSearchPlugins {
+            flex: 1 1 auto;
+        }
+
+        /* the searches list goes above the results, with a few rows showing */
+        #searchBody {
+            flex-direction: column;
+        }
+
+        #searchListPane {
+            flex: none;
+            border-bottom: 1px solid var(--color-border-default);
+            max-height: 160px;
+            width: auto !important;
+        }
+
+        #searchListHandle {
+            display: none;
+        }
+
+        #searchTabs span.link {
+            box-sizing: border-box;
+            margin-bottom: 0;
+            min-height: 40px;
+            padding: 0 6px;
+        }
+
+        #closeSearchButton {
+            min-height: 0;
+        }
+
+
+        #searchResultsFilters {
+            align-items: stretch;
+            flex-direction: column;
+        }
+
+        #searchInNameFilter {
+            flex: none;
+        }
+
+        #searchResultsFilters .searchFilterGroup {
+            flex-wrap: wrap;
+            white-space: normal;
+        }
+
+        #searchResultsFooter {
+            flex-wrap: wrap;
+        }
+
+        #searchStatusText {
+            flex: 1 0 100%;
+            margin-left: 0;
+        }
+
+        #logView,
+        #rssView {
+            padding-left: 8px;
+            padding-right: 8px;
+        }
+
+        #logFilterBar,
+        #activityFilterBar {
+            height: auto;
+            row-gap: 6px;
+        }
+
+        #filterTextInput,
+        #activityFilterInput {
+            box-sizing: border-box;
+            flex: 1 1 160px;
+            min-width: 0;
+            width: auto;
+        }
+
+        #rssButtonBar {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 6px;
+            height: auto;
+        }
+
+        #rssFilterToolbar {
+            display: flex;
+            flex: 1 1 100%;
+            float: none;
+            gap: 6px;
+            margin: 0;
+        }
+
+        #rssButtonBar input {
+            box-sizing: border-box;
+            flex: 1 1 auto;
+            min-width: 0;
+        }
+
+        #rssContentView {
+            overflow-y: auto;
+        }
+
+        #leftRssColumn,
+        #centerRssColumn,
+        #rightRssColumn {
+            float: none;
+            margin: 0 0 12px;
+            width: 100%;
+        }
+
+        #rssFeedTableDiv,
+        #rssArticleTableDiv {
+            height: 35vh;
+        }
+
+        #rightRssColumn {
+            height: 50vh;
+        }
+    }
+
+    /* popups fill the screen (scripts/phone.js sizes them) */
+    .mocha,
+    .mochaOverlay,
+    .mochaTitlebar {
+        border-radius: 0;
+    }
+
+    .mocha {
+        box-shadow: none;
+    }
+
+    .mochaTitlebar h3 {
+        line-height: 40px;
+        padding-right: 60px;
+    }
+
+    .mochaTitlebar h3[style*="url("] {
+        background-position: 12px 12px !important;
+    }
+
+    .mochaControls,
+    .mochaCloseButton {
+        height: 40px;
+    }
+
+    /* the window is the screen already */
+    .mochaMinimizeButton,
+    .mochaMaximizeButton {
+        display: none;
+    }
+
+    .mochaCloseButton {
+        width: 52px;
+    }
+
+    .mochaSpinner,
+    .mochaErrorIcon {
+        right: 60px;
+        top: 12px;
+    }
+}

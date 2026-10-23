@@ -1,7 +1,10 @@
 <style>
+    /* as the RSS tab of the desktop: white panes on the grey page */
     #rssView {
-        padding: 20px 20px 0 20px;
-        height: calc(100% - 20px);
+        background-color: var(--color-background-default);
+        box-sizing: border-box;
+        padding: 10px;
+        height: 100%;
         display: flex;
         flex-direction: column;
     }
@@ -25,14 +28,35 @@
         float: right;
     }
 
+    /* the link color of the desktop, which shows unread articles */
     .unreadArticle {
-        color: var(--color-text-blue);
+        color: rgb(154 18 13);
     }
 
+    :root.dark .unreadArticle {
+        color: rgb(250 166 131);
+    }
+
+    /* the dot in front of each article, blue while it is unread, as on the desktop */
+    #rssArticleTableDiv td:first-child {
+        background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='32' height='32'%3E%3Ccircle cx='16' cy='16' r='8' fill='%239aa0a6'/%3E%3C/svg%3E") 4px center / 16px no-repeat;
+        padding-left: 26px;
+    }
+
+    #rssArticleTableDiv tr.unreadArticle td:first-child {
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='32' height='32'%3E%3Ccircle cx='16' cy='16' r='8' fill='%231e90ff'/%3E%3C/svg%3E");
+    }
+
+    /* in the button bar, between the buttons and the filter box */
     #rssFetchingDisabled {
         color: var(--color-text-red);
         font-style: italic;
-        margin-bottom: 10px;
+        line-height: 26px;
+        margin-left: 12px;
+    }
+
+    #rssFetchingDisabled.invisible {
+        display: none;
     }
 
     #centerRssColumn {
@@ -49,34 +73,93 @@
     }
 
     #rightRssColumn {
-        overflow: auto;
+        background-color: var(--color-background-primary);
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
         height: 100%;
+    }
+
+    #rssFeedFixedHeaderDiv .dynamicTableHeader th,
+    #rssArticleFixedHeaderDiv .dynamicTableHeader th,
+    #rssDetailsFixedHeaderDiv .dynamicTableHeader th {
+        border-right: 0;
+        padding-left: 6px;
+        text-align: left;
+    }
+
+    #leftRssColumn,
+    #rssFeedTableDiv,
+    #rssArticleTableDiv {
+        background-color: var(--color-background-primary);
+    }
+
+    /* a line around each pane, so they stand out from the page, and under the title band of the feed list */
+    #leftRssColumn,
+    #rssArticleTableDiv,
+    #rightRssColumn {
+        border: 1px solid var(--color-border-default);
+        box-sizing: border-box;
+    }
+
+    /* the three title bars (feeds, articles, details) look the same, as on the desktop */
+    #rssFeedFixedHeaderDiv,
+    #rssFeedFixedHeaderDiv .dynamicTableHeader th,
+    #rssArticleFixedHeaderDiv,
+    #rssArticleFixedHeaderDiv .dynamicTableHeader th,
+    #rssDetailsFixedHeaderDiv,
+    #rssDetailsFixedHeaderDiv .dynamicTableHeader th {
+        background-color: var(--color-background-control);
+    }
+
+    #rssFeedFixedHeaderDiv,
+    #rssArticleFixedHeaderDiv,
+    #rssDetailsFixedHeaderDiv {
+        border-bottom: 1px solid var(--color-border-default);
+    }
+
+    #rssDetailsFixedHeaderDiv {
+        flex-shrink: 0;
+    }
+
+    #rssDetailsFixedHeaderDiv .dynamicTableHeader {
+        cursor: default;
+    }
+
+    /* the lists have no alternating row colors there */
+    #rssFeedTableDiv table.dynamicTable tbody tr:not(.selected):not(:hover),
+    #rssArticleTableDiv table.dynamicTable tbody tr:not(.selected):not(:hover) {
+        background-color: transparent;
     }
 
     #rssFeedTableDiv,
     #rssArticleTableDiv {
-        height: calc(100vh - 180px);
+        height: auto;
     }
 
     #rssTorrentDetailsName {
         flex-shrink: 0;
+        font-size: 1.15em;
         font-weight: bold;
-        background-color: var(--color-background-blue);
+        margin: 0 0 6px;
         padding: 0;
-        color: var(--color-text-white);
     }
 
     #rssTorrentDetailsAuthor,
     #rssTorrentDetailsDate,
     #rssTorrentDetailsLink {
         flex-shrink: 1;
-        background-color: var(--color-background-default);
+        line-height: 1.6;
     }
 
     #rssDetailsView {
+        box-sizing: border-box;
+        padding: 8px 10px;
         display: flex;
         flex-direction: column;
-        height: 100%;
+        flex-grow: 1;
+        min-height: 0;
         overflow: auto;
     }
 
@@ -90,13 +173,14 @@
     }
 
     #rssButtonBar input {
+        box-sizing: border-box;
+        height: 26px;
         background-color: var(--color-background-default);
         background-image: url("../images/edit-find.svg");
         background-position: 2px;
         background-repeat: no-repeat;
         background-size: 1.5em;
         border: 1px solid var(--color-border-default);
-        border-radius: 3px;
         min-width: 170px;
         padding: 2px 2px 2px 25px;
     }
@@ -123,15 +207,13 @@
         flex-grow: 2;
         width: 100%;
         border: none;
+        margin-top: 8px;
     }
 
 </style>
 
 <div id="rssView">
     <div id="rssTopBar">
-        <div id="rssFetchingDisabled" class="invisible">
-            QBT_TR(Fetching of RSS feeds is disabled now! You can enable it in application settings.)QBT_TR[CONTEXT=RSSWidget]
-        </div>
         <div id="rssButtonBar">
             <button type="button" id="newSubscriptionButton" onclick="qBittorrent.Rss.addRSSFeed()">
                 <img alt="QBT_TR(New subscription)QBT_TR[CONTEXT=RSSWidget]" src="images/list-add.svg" width="16" height="16">QBT_TR(New subscription)QBT_TR[CONTEXT=RSSWidget]
@@ -142,6 +224,9 @@
             <button type="button" id="updateAllButton" onclick="qBittorrent.Rss.refreshAllFeeds()">
                 <img alt="QBT_TR(Update all)QBT_TR[CONTEXT=RSSWidget]" src="images/view-refresh.svg" width="16" height="16">QBT_TR(Update all)QBT_TR[CONTEXT=RSSWidget]
             </button>
+            <div id="rssFetchingDisabled" class="invisible">
+                QBT_TR(Fetching of RSS feeds is disabled now! You can enable it in application settings.)QBT_TR[CONTEXT=RSSWidget]
+            </div>
             <div id="rssFilterToolbar" class="alignRight">
                 <input type="search" id="rssFilterInput" placeholder="QBT_TR(Filter feed items...)QBT_TR[CONTEXT=MainWindow]" aria-label="QBT_TR(Filter feed items...)QBT_TR[CONTEXT=MainWindow]" autocorrect="off" autocapitalize="none">
                 <button type="button" id="rssDownloaderButton" onclick="qBittorrent.Rss.openRssDownloader()">
@@ -180,6 +265,13 @@
             </div>
         </div>
         <div id="rightRssColumn">
+            <div id="rssDetailsFixedHeaderDiv" class="dynamicTableFixedHeaderDiv">
+                <table class="dynamicTable unselectable">
+                    <thead>
+                        <tr class="dynamicTableHeader"><th>QBT_TR(Details)QBT_TR[CONTEXT=RSSWidget]</th></tr>
+                    </thead>
+                </table>
+            </div>
             <div id="rssDetailsView"></div>
         </div>
     </div>
@@ -417,7 +509,7 @@
                 resizable: false,
                 maximizable: false,
                 width: window.qBittorrent.Dialog.limitWidthToViewport(350),
-                height: 100
+                height: 120
             });
         };
 
@@ -445,7 +537,7 @@
                 resizable: false,
                 maximizable: false,
                 width: window.qBittorrent.Dialog.limitWidthToViewport(350),
-                height: 100
+                height: 120
             });
         };
 
@@ -578,7 +670,7 @@
                 const iframeElement = document.createElement("iframe");
                 iframeElement.id = "rssDescription";
                 iframeElement.sandbox = "allow-same-origin"; // allowed to get parent css
-                iframeElement.srcdoc = `<html ${rootColor}><head><meta charset="utf-8"><meta name="referrer" content="same-origin"><link rel="stylesheet" type="text/css" href="css/style.css?v=${CACHEID}"></head><body>${articleDescription}</body></html>`;
+                iframeElement.srcdoc = `<html ${rootColor}><head><meta charset="utf-8"><meta name="referrer" content="same-origin"><link rel="stylesheet" type="text/css" href="css/style.css?v=${CACHEID}"><style>body { background-color: transparent !important; margin: 0; }</style></head><body>${articleDescription}</body></html>`;
 
                 detailsView.append(iframeElement);
             }
@@ -886,7 +978,7 @@
                 resizable: false,
                 maximizable: false,
                 width: window.qBittorrent.Dialog.limitWidthToViewport(350),
-                height: 100
+                height: 120
             });
         };
 
@@ -907,7 +999,7 @@
                 resizable: false,
                 maximizable: false,
                 width: window.qBittorrent.Dialog.limitWidthToViewport(350),
-                height: 100
+                height: 120
             });
         };
 
@@ -923,7 +1015,7 @@
                 resizable: false,
                 maximizable: false,
                 width: window.qBittorrent.Dialog.limitWidthToViewport(350),
-                height: 70
+                height: 110
             });
         };
 

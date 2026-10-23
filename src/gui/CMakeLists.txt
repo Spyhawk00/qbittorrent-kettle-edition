@@ -36,6 +36,9 @@ qt_wrap_ui(UI_HEADERS
     trackerentriesdialog.ui
     trackersadditiondialog.ui
     uithemedialog.ui
+    useraccountdialog.ui
+    useraccountswidget.ui
+    userroledialog.ui
     watchedfolderoptionsdialog.ui
 )
 
@@ -60,15 +63,18 @@ add_library(qbt_gui STATIC
     flowlayout.h
     fspathedit.h
     fspathedit_p.h
+    groupboxheadingstyle.h
     guiaddtorrentmanager.h
     guiapplicationcomponent.h
     hidabletabwidget.h
     interfaces/iguiapplication.h
     ipsubnetwhitelistoptionsdialog.h
     lineedit.h
+    listviewlayout.h
     log/logfiltermodel.h
     log/loglistview.h
     log/logmodel.h
+    log/webuiactivitywidget.h
     mainwindow.h
     optionsdialog.h
     powermanagement/inhibitor.h
@@ -145,6 +151,9 @@ add_library(qbt_gui STATIC
     uithemedialog.h
     uithememanager.h
     uithemesource.h
+    useraccountdialog.h
+    useraccountswidget.h
+    userroledialog.h
     utils.h
     utils/keysequence.h
     watchedfolderoptionsdialog.h
@@ -168,13 +177,16 @@ add_library(qbt_gui STATIC
     flowlayout.cpp
     fspathedit.cpp
     fspathedit_p.cpp
+    groupboxheadingstyle.cpp
     guiaddtorrentmanager.cpp
     hidabletabwidget.cpp
     ipsubnetwhitelistoptionsdialog.cpp
     lineedit.cpp
+    listviewlayout.cpp
     log/logfiltermodel.cpp
     log/loglistview.cpp
     log/logmodel.cpp
+    log/webuiactivitywidget.cpp
     mainwindow.cpp
     optionsdialog.cpp
     powermanagement/inhibitor.cpp
@@ -249,6 +261,9 @@ add_library(qbt_gui STATIC
     uithemedialog.cpp
     uithememanager.cpp
     uithemesource.cpp
+    useraccountdialog.cpp
+    useraccountswidget.cpp
+    userroledialog.cpp
     utils.cpp
     utils/keysequence.cpp
     watchedfolderoptionsdialog.cpp
@@ -320,6 +335,8 @@ if (CMAKE_SYSTEM_NAME STREQUAL "Darwin")
         powermanagement/inhibitormacos.h
         programupdater.cpp
         programupdater.h
+        updateinstaller.cpp
+        updateinstaller.h
     )
     target_link_libraries(qbt_gui PRIVATE
         objc
@@ -333,5 +350,8 @@ if (CMAKE_SYSTEM_NAME STREQUAL "Windows")
         powermanagement/inhibitorwindows.cpp
         programupdater.h
         programupdater.cpp
+        updateinstaller.h
+        updateinstaller.cpp
     )
+    target_link_libraries(qbt_gui PRIVATE dwmapi)
 endif()

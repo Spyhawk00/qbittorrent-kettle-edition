@@ -28,10 +28,15 @@
 
 #include "statusbar.h"
 
+#include <QApplication>
+#include <QColor>
+#include <QDebug>
+#include <QEvent>
 #include <QFrame>
+#include <QHBoxLayout>
 #include <QLabel>
-#include <QPushButton>
 #include <QStyle>
+#include <QToolButton>
 
 #include "base/bittorrent/session.h"
 #include "base/bittorrent/sessionstatus.h"
@@ -45,110 +50,154 @@ namespace
 {
     QWidget *createSeparator(QWidget *parent)
     {
-        auto *separator = new QFrame(parent);
+        QFrame *separator = new QFrame(parent);
         separator->setFrameStyle(QFrame::VLine);
-#ifndef Q_OS_MACOS
+    #ifndef Q_OS_MACOS
         separator->setFrameShadow(QFrame::Raised);
-#endif
+    #endif
         return separator;
-    }
-
-    QPushButton *createSpeedButton(const QIcon &icon, QWidget *parent)
-    {
-        auto *button = new QPushButton(icon, {}, parent);
-        button->setCursor(Qt::PointingHandCursor);
-        button->setFlat(true);
-        button->setFocusPolicy(Qt::NoFocus);
-        button->setMinimumWidth(200);
-        button->setStyleSheet(u"text-align: left;"_s);
-        return button;
     }
 }
 
 StatusBar::StatusBar(QWidget *parent)
     : QStatusBar(parent)
 {
-    QString styleSheet = u"QWidget { margin: 0; }"_s;
-#ifndef Q_OS_MACOS
-    // Redefining global stylesheet breaks certain elements on mac like tabs.
-    // Qt checks whether the stylesheet class inherits("QMacStyle") and this becomes false.
-    styleSheet += u"QStatusBar::item { border-width: 0; }";
-#endif
-    setStyleSheet(styleSheet);
+    updateTopLine();
 
-    const auto *session = BitTorrent::Session::instance();
+    BitTorrent::Session *const session = BitTorrent::Session::instance();
     connect(session, &BitTorrent::Session::speedLimitModeChanged, this, &StatusBar::updateAltSpeedsBtn);
+    QWidget *container = new QWidget(this);
+    auto *layout = new QHBoxLayout(container);
+    layout->setContentsMargins(0,0,0,0);
 
-    m_connecStatusLblIcon = new QPushButton(UIThemeManager::instance()->getIcon(u"firewalled"_s), {}, this);
-    m_connecStatusLblIcon->setCursor(Qt::PointingHandCursor);
-    m_connecStatusLblIcon->setFlat(true);
+    container->setLayout(layout);
+    m_connecStatusLblIcon = new QToolButton(this);
+    m_connecStatusLblIcon->setAutoRaise(true);
     m_connecStatusLblIcon->setFocusPolicy(Qt::NoFocus);
+    m_connecStatusLblIcon->setCursor(Qt::PointingHandCursor);
+    m_connecStatusLblIcon->setIcon(UIThemeManager::instance()->getIcon(u"firewalled"_s));
     m_connecStatusLblIcon->setToolTip(u"<b>%1</b><br><i>%2</i>"_s.arg(tr("Connection status:")
         , tr("No direct connections. This may indicate network configuration problems.")));
     connect(m_connecStatusLblIcon, &QAbstractButton::clicked, this, &StatusBar::connectionButtonClicked);
 
-    m_dlSpeedLbl = createSpeedButton(UIThemeManager::instance()->getIcon(u"downloading"_s, u"downloading_small"_s), this);
+    m_dlSpeedLbl = new QToolButton(this);
+    m_dlSpeedLbl->setIcon(UIThemeManager::instance()->getIcon(u"downloading"_s, u"downloading_small"_s));
     connect(m_dlSpeedLbl, &QAbstractButton::clicked, this, &StatusBar::capSpeed);
+    m_dlSpeedLbl->setAutoRaise(true);
+    m_dlSpeedLbl->setFocusPolicy(Qt::NoFocus);
+    m_dlSpeedLbl->setCursor(Qt::PointingHandCursor);
+    m_dlSpeedLbl->setToolButtonStyle(Qt::ToolButtonTextBesideIcon);
+    m_dlSpeedLbl->setMinimumWidth(200);
 
-    m_upSpeedLbl = createSpeedButton(UIThemeManager::instance()->getIcon(u"upload"_s, u"seeding"_s), this);
+    m_upSpeedLbl = new QToolButton(this);
+    m_upSpeedLbl->setIcon(UIThemeManager::instance()->getIcon(u"upload"_s, u"seeding"_s));
     connect(m_upSpeedLbl, &QAbstractButton::clicked, this, &StatusBar::capSpeed);
+    m_upSpeedLbl->setAutoRaise(true);
+    m_upSpeedLbl->setFocusPolicy(Qt::NoFocus);
+    m_upSpeedLbl->setCursor(Qt::PointingHandCursor);
+    m_upSpeedLbl->setToolButtonStyle(Qt::ToolButtonTextBesideIcon);
+    m_upSpeedLbl->setMinimumWidth(200);
 
     m_freeDiskSpaceLbl = new QLabel(tr("Free space: N/A"));
     m_freeDiskSpaceLbl->setSizePolicy(QSizePolicy::Maximum, QSizePolicy::Preferred);
-    m_freeDiskSpaceSeparator = createSeparator(this);
+    m_freeDiskSpaceSeparator = createSeparator(m_freeDiskSpaceLbl);
 
     m_lastExternalIPsLbl = new QLabel(tr("External IP: N/A"));
     m_lastExternalIPsLbl->setSizePolicy(QSizePolicy::Maximum, QSizePolicy::Preferred);
-    m_lastExternalIPsSeparator = createSeparator(this);
+    m_lastExternalIPsSeparator = createSeparator(m_lastExternalIPsLbl);
 
-    const bool isDHTVisible = session->isDHTEnabled();
     m_DHTLbl = new QLabel(tr("DHT: %1 nodes").arg(0), this);
     m_DHTLbl->setSizePolicy(QSizePolicy::Maximum, QSizePolicy::Preferred);
-    m_DHTLbl->setVisible(isDHTVisible);
-    m_DHTSeparator = createSeparator(this);
-    m_DHTSeparator->setVisible(isDHTVisible);
+    m_DHTSeparator = createSeparator(m_DHTLbl);
 
-    m_altSpeedsBtn = new QPushButton(this);
-    m_altSpeedsBtn->setCursor(Qt::PointingHandCursor);
-    m_altSpeedsBtn->setFlat(true);
+    m_altSpeedsBtn = new QToolButton(this);
+    m_altSpeedsBtn->setAutoRaise(true);
     m_altSpeedsBtn->setFocusPolicy(Qt::NoFocus);
+    m_altSpeedsBtn->setCursor(Qt::PointingHandCursor);
     updateAltSpeedsBtn(session->isAltGlobalSpeedLimitEnabled());
     connect(m_altSpeedsBtn, &QAbstractButton::clicked, this, &StatusBar::alternativeSpeedsButtonClicked);
 
     // Because on some platforms the default icon size is bigger
     // and it will result in taller/fatter statusbar, even if the
     // icons are actually 16x16
-    const QSize smallIconSize = Utils::Gui::smallIconSize();
-    const QSize midIconSize = Utils::Gui::mediumIconSize();
-    m_connecStatusLblIcon->setIconSize(smallIconSize);
-    m_dlSpeedLbl->setIconSize(smallIconSize);
-    m_upSpeedLbl->setIconSize(smallIconSize);
-    m_altSpeedsBtn->setIconSize({midIconSize.width(), smallIconSize.height()});
+    m_connecStatusLblIcon->setIconSize(Utils::Gui::smallIconSize());
+    m_dlSpeedLbl->setIconSize(Utils::Gui::smallIconSize());
+    m_upSpeedLbl->setIconSize(Utils::Gui::smallIconSize());
+    m_altSpeedsBtn->setIconSize(QSize(Utils::Gui::mediumIconSize().width(), Utils::Gui::smallIconSize().height()));
 
-    addPermanentWidget(m_freeDiskSpaceLbl);
-    addPermanentWidget(m_freeDiskSpaceSeparator);
-    addPermanentWidget(m_lastExternalIPsLbl);
-    addPermanentWidget(m_lastExternalIPsSeparator);
-    addPermanentWidget(m_DHTLbl);
-    addPermanentWidget(m_DHTSeparator);
-    addPermanentWidget(m_connecStatusLblIcon);
-    addPermanentWidget(createSeparator(this));
-    addPermanentWidget(m_altSpeedsBtn);
-    addPermanentWidget(createSeparator(this));
-    addPermanentWidget(m_dlSpeedLbl);
-    addPermanentWidget(createSeparator(this));
-    addPermanentWidget(m_upSpeedLbl);
+    // Set to the known maximum width(plus some padding)
+    // so the speed widgets will take the rest of the space
+    m_connecStatusLblIcon->setMaximumWidth(Utils::Gui::largeIconSize().width());
+    m_altSpeedsBtn->setMaximumWidth(Utils::Gui::largeIconSize().width());
 
+    layout->addWidget(m_freeDiskSpaceLbl);
+    layout->addWidget(m_freeDiskSpaceSeparator);
+
+    layout->addWidget(m_lastExternalIPsLbl);
+    layout->addWidget(m_lastExternalIPsSeparator);
+
+    layout->addWidget(m_DHTLbl);
+    layout->addWidget(m_DHTSeparator);
+
+    layout->addWidget(m_connecStatusLblIcon);
+    layout->addWidget(createSeparator(m_connecStatusLblIcon));
+
+    layout->addWidget(m_altSpeedsBtn);
+    layout->addWidget(createSeparator(m_altSpeedsBtn));
+
+    layout->addWidget(m_dlSpeedLbl);
+    layout->addWidget(createSeparator(m_dlSpeedLbl));
+
+    layout->addWidget(m_upSpeedLbl);
+
+    addPermanentWidget(container);
+    container->adjustSize();
+    adjustSize();
+    updateFreeDiskSpaceVisibility();
     updateExternalAddressesVisibility();
-
+    // Is DHT enabled
+    const bool isDHTVisible = session->isDHTEnabled();
+    m_DHTLbl->setVisible(isDHTVisible);
+    m_DHTSeparator->setVisible(isDHTVisible);
     refresh();
     connect(session, &BitTorrent::Session::statsUpdated, this, &StatusBar::refresh);
 
-    updateFreeDiskSpaceVisibility();
     updateFreeDiskSpaceLabel(session->freeDiskSpace());
     connect(session, &BitTorrent::Session::freeDiskSpaceChecked, this, &StatusBar::updateFreeDiskSpaceLabel);
 
     connect(Preferences::instance(), &Preferences::changed, this, &StatusBar::optionsSaved);
+}
+
+StatusBar::~StatusBar()
+{
+    qDebug() << Q_FUNC_INFO;
+}
+
+// A line above the bar that shows on a light and on a dark window: the text color mixed into the window color
+void StatusBar::updateTopLine()
+{
+#ifndef Q_OS_MACOS
+    // Redefining global stylesheet breaks certain elements on mac like tabs.
+    // Qt checks whether the stylesheet class inherits("QMacStyle") and this becomes false.
+    const QColor window = palette().color(QPalette::Window);
+    const QColor text = palette().color(QPalette::WindowText);
+    const auto mix = [](const int from, const int to) { return ((from * 65) + (to * 35)) / 100; };
+    const QColor line {mix(window.red(), text.red()), mix(window.green(), text.green()), mix(window.blue(), text.blue())};
+
+    const QString styleSheet = u"QStatusBar { border-top: 1px solid %1; } QStatusBar::item { border-width: 0; }"_s.arg(line.name());
+    if (styleSheet != m_styleSheet)
+    {
+        m_styleSheet = styleSheet;
+        setStyleSheet(styleSheet);
+    }
+#endif
+}
+
+void StatusBar::changeEvent(QEvent *event)
+{
+    QStatusBar::changeEvent(event);
+    if ((event->type() == QEvent::PaletteChange) || (event->type() == QEvent::ApplicationPaletteChange))
+        updateTopLine();
 }
 
 void StatusBar::showRestartRequired()
@@ -273,7 +322,7 @@ void StatusBar::refresh()
     updateSpeedLabels();
 }
 
-void StatusBar::updateAltSpeedsBtn(const bool alternative)
+void StatusBar::updateAltSpeedsBtn(bool alternative)
 {
     if (alternative)
     {

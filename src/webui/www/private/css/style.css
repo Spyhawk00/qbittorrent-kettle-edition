@@ -2,30 +2,38 @@
 
 /* Default rules */
 :root {
-    --color-accent-blue: hsl(210deg 65% 55%);
-    --color-text-blue: hsl(210deg 100% 55%);
-    --color-text-orange: hsl(26deg 100% 45%);
-    --color-text-red: hsl(0deg 100% 65%);
-    --color-text-green: hsl(110deg 94% 27%);
+    /* the Windows 11 palette of the desktop app: window, pane, text, one blue accent */
+    --color-accent-blue: hsl(209deg 100% 38%);
+    --color-text-blue: hsl(209deg 100% 38%);
+    --color-text-orange: hsl(26deg 100% 35%);
+    --color-text-red: hsl(5deg 74% 44%);
+    --color-text-green: hsl(120deg 80% 26%);
     --color-text-white: hsl(0deg 0% 100%);
-    --color-text-disabled: hsl(0deg 0% 60%);
-    --color-text-default: hsl(0deg 0% 33%);
-    --color-background-primary: hsl(0deg 0% 100%);
-    --color-background-blue: hsl(210deg 65% 55%);
-    --color-background-popup: hsl(0deg 0% 100%);
-    --color-background-default: hsl(0deg 0% 94%);
-    --color-background-hover: hsl(26deg 80% 60%);
-    --color-border-blue: hsl(210deg 42% 48%);
-    --color-border-default: hsl(0deg 0% 85%);
-    --color-icon-hover: brightness(0) invert(100%) sepia(100%) saturate(0%)
-        hue-rotate(108deg) brightness(104%) contrast(104%);
+    --color-text-disabled: hsl(0deg 0% 55%);
+    --color-text-default: hsl(0deg 0% 11%);
+    --color-background-primary: hsl(0deg 0% 98%);
+    --color-background-blue: hsl(209deg 100% 38%);
+    --color-background-popup: hsl(0deg 0% 98%);
+    --color-background-default: hsl(0deg 0% 95%);
+    --color-background-control: hsl(0deg 0% 100%);
+    --color-background-alt-row: hsl(0deg 0% 96%);
+    --color-background-hover: hsl(0deg 0% 92%);
+    --color-background-selected: hsl(209deg 100% 91%);
+    --color-background-titlebar: hsl(0deg 0% 85%);
+    --color-background-titlebar-hover: hsl(0deg 0% 0% / 8%);
+    --color-border-blue: hsl(209deg 100% 38%);
+    --color-border-default: hsl(0deg 0% 82%);
+    --color-border-status: hsl(0deg 0% 60%); /* the line above the status bar: it has to show on the window, not just be there */
+    --toolbar-line: 2px solid hsl(0deg 0% 86%); /* as the lines of the desktop: soft and two rows thick on a light window */
+    --color-shadow: hsl(0deg 0% 0% / 25%);
+    --color-overlay: hsl(0deg 0% 0% / 30%);
 
     & #torrentTrackersTableDiv tr {
-        --color-tracker-disabled: hsl(240deg 4% 46%);
-        --color-tracker-not-contacted: hsl(32deg 95% 44%);
-        --color-tracker-working: hsl(142deg 76% 36%);
-        --color-tracker-updating: hsl(210deg 100% 55%);
-        --color-tracker-not-working: hsl(0deg 100% 65%);
+        --color-tracker-disabled: hsl(240deg 4% 40%);
+        --color-tracker-not-contacted: hsl(30deg 100% 33%);
+        --color-tracker-working: hsl(135deg 80% 25%);
+        --color-tracker-updating: hsl(209deg 100% 38%);
+        --color-tracker-not-working: hsl(5deg 74% 44%);
     }
 
     &:not(.dark) {
@@ -33,23 +41,35 @@
     }
 
     &.dark {
-        --color-accent-blue: hsl(210deg 42% 48%);
-        --color-text-blue: hsl(210deg 88.1% 73.5%);
-        --color-text-orange: hsl(26deg 65% 70%);
-        --color-text-default: hsl(0deg 0% 90%);
-        --color-background-primary: hsl(0deg 0% 7%);
-        --color-background-blue: hsl(210deg 42% 48%);
-        --color-background-popup: hsl(0deg 0% 20%);
-        --color-background-default: hsl(0deg 0% 25%);
-        --color-background-hover: hsl(26deg 50% 55%);
-        --color-border-default: hsl(0deg 0% 33%);
+        --color-accent-blue: hsl(199deg 100% 65%);
+        --color-text-blue: hsl(199deg 100% 70%);
+        --color-text-orange: hsl(30deg 100% 70%);
+        --color-text-red: hsl(354deg 100% 80%);
+        --color-text-green: hsl(112deg 52% 62%);
+        --color-text-disabled: hsl(0deg 0% 55%);
+        --color-text-default: hsl(0deg 0% 100%);
+        --color-background-primary: hsl(0deg 0% 18%);
+        --color-background-popup: hsl(0deg 0% 18%);
+        --color-background-default: hsl(0deg 0% 13%);
+        --color-background-control: hsl(0deg 0% 24%);
+        --color-background-alt-row: hsl(0deg 0% 21%);
+        --color-background-hover: hsl(0deg 0% 24%);
+        --color-background-selected: hsl(205deg 55% 27%);
+        --color-background-titlebar: hsl(0deg 0% 21%);
+        --color-background-titlebar-hover: hsl(0deg 0% 100% / 8%);
+        --color-border-blue: hsl(199deg 100% 65%);
+        --color-border-default: hsl(0deg 0% 30%);
+        --color-border-status: hsl(0deg 0% 50%);
+        --toolbar-line: 1px solid var(--color-border-default); /* one row, a lot brighter than the window, on a dark one */
+        --color-shadow: hsl(0deg 0% 0% / 50%);
+        --color-overlay: hsl(0deg 0% 0% / 50%);
 
         & #torrentTrackersTableDiv tr {
-            --color-tracker-disabled: hsl(240deg 6% 83%);
+            --color-tracker-disabled: hsl(240deg 6% 80%);
             --color-tracker-not-contacted: hsl(39deg 100% 72%);
-            --color-tracker-working: hsl(142deg 69% 58%);
-            --color-tracker-updating: hsl(210deg 88.1% 73.5%);
-            --color-tracker-not-working: hsl(0deg 100% 71%);
+            --color-tracker-working: hsl(112deg 52% 62%);
+            --color-tracker-updating: hsl(199deg 100% 70%);
+            --color-tracker-not-working: hsl(354deg 100% 80%);
         }
 
         color-scheme: dark;
@@ -113,23 +133,26 @@ input[type="text"],
 input[type="number"],
 input[type="password"],
 input[type="button"],
+input[type="submit"],
 button,
 textarea,
 select {
+    background-color: var(--color-background-control);
     border: 1px solid var(--color-border-default);
-    border-radius: 3px;
     color: var(--color-text-default);
-    padding: 3px;
+    padding: 3px 6px;
 }
 
 select {
-    padding: 4px;
+    padding: 4px 6px;
 }
 
 input[type="checkbox"],
 input[type="radio"] {
     accent-color: var(--color-accent-blue);
+    height: 16px;
     margin: 3px 3px 3px 4px;
+    width: 16px;
 }
 
 input[type="range"] {
@@ -140,16 +163,80 @@ input[type="button"],
 input[type="submit"],
 button {
     cursor: pointer;
-    padding-left: 10px;
-    padding-right: 10px;
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
+input[type="button"]:hover,
+input[type="submit"]:hover,
+button:hover {
+    background-color: var(--color-background-hover);
+}
+
+input[type="button"]:active,
+input[type="submit"]:active,
+button:active {
+    background-color: var(--color-background-default);
+}
+
+/* a text box shows the focus as an accent line along its bottom edge, as the desktop does */
+input[type="search"]:focus,
+input[type="text"]:focus,
+input[type="number"]:focus,
+input[type="password"]:focus,
+textarea:focus,
+select:focus {
+    border-bottom-color: var(--color-accent-blue);
+    box-shadow: 0 1px 0 var(--color-accent-blue);
+    outline: none;
+}
+
+input:disabled,
+button:disabled,
+textarea:disabled,
+select:disabled {
+    background-color: transparent;
+    color: var(--color-text-disabled);
 }
 
 button:disabled {
     cursor: initial;
 }
 
-:focus {
+/* a touch screen in the phone layout (css/Phone.css): buttons, text boxes and drop-down lists are 40 px high, and boxes to tick are larger;
+   a wider window keeps the desktop sizes, because its bars are only as high as those */
+@media (pointer: coarse) and (max-width: 639px) {
+    input[type="search"],
+    input[type="text"],
+    input[type="number"],
+    input[type="password"],
+    input[type="button"],
+    input[type="submit"],
+    button,
+    select {
+        min-height: 40px;
+    }
+
+    input[type="checkbox"],
+    input[type="radio"] {
+        height: 22px;
+        width: 22px;
+    }
+
+    /* the frame around a drop-down list with a text box over it grows with them (div. outranks its 22 px rule further down) */
+    div.select-watched-folder-editable {
+        height: 40px;
+    }
+}
+
+/* one focus ring: keyboard focus only, 2px in the accent color */
+:focus:not(:focus-visible) {
     outline: none;
+}
+
+:focus-visible {
+    outline: 2px solid var(--color-accent-blue);
+    outline-offset: 1px;
 }
 
 /* Structure */
@@ -157,7 +244,7 @@ button:disabled {
 body {
     background-color: var(--color-background-primary);
     color: var(--color-text-default);
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: system-ui, "Segoe UI", sans-serif;
     font-size: 12px;
     line-height: 1.5;
     text-align: left;
@@ -171,7 +258,11 @@ body {
 
 /* targets dialog windows loaded via iframes */
 body:not(:has(#desktop)) {
-    background-color: var(--color-background-popup);
+    background-color: var(--color-background-default);
+}
+
+#desktop {
+    background-color: var(--color-background-default);
 }
 
 .aside {
@@ -180,6 +271,11 @@ body:not(:has(#desktop)) {
 
 .invisible {
     display: none;
+}
+
+/* not allowed by the signed-in person's role */
+.roleHidden {
+    display: none !important;
 }
 
 /* Typography */
@@ -219,7 +315,7 @@ h4 {
 }
 
 a {
-    color: var(--color-text-orange);
+    color: var(--color-text-blue);
     cursor: pointer;
     text-decoration: none;
 }
@@ -246,7 +342,6 @@ dd {
 
 fieldset {
     border: 1px solid var(--color-border-default);
-    border-radius: 1px;
     margin: 0 2px;
 }
 
@@ -257,7 +352,7 @@ pre {
     border: 1px solid var(--color-border-default);
     color: var(--color-text-green);
     display: block;
-    font-family: "Courier New", Courier, monospace;
+    font-family: ui-monospace, Consolas, monospace;
     font-size: 11px;
     margin: 0 0 10px;
     max-height: 250px;
@@ -280,15 +375,17 @@ hr {
 }
 
 #urls {
+    box-sizing: border-box;
     height: 100%;
-    width: 90%;
+    width: 100%;
 }
 
 #trackersUrls {
+    box-sizing: border-box;
     display: block;
     height: 100%;
     margin: 0 auto 10px;
-    width: 90%;
+    width: 100%;
 }
 
 #Filters {
@@ -305,7 +402,7 @@ hr {
 }
 
 a.propButton {
-    border: 1px solid rgb(85 81 91);
+    border: 1px solid var(--color-border-default);
     margin-left: 3px;
     margin-right: 3px;
     padding: 2px;
@@ -330,11 +427,12 @@ a.propButton img {
 /* context menu specific */
 
 .contextMenu {
-    background-color: var(--color-background-default);
+    background-color: var(--color-background-popup);
     border: 1px solid var(--color-border-default);
+    box-shadow: 0 2px 6px var(--color-shadow);
     display: none;
     opacity: 0;
-    padding: 0;
+    padding: 4px;
     transition:
         opacity 0.2s ease-in-out,
         visibility 0.2s ease-in-out;
@@ -348,10 +446,14 @@ a.propButton img {
 
 .contextMenu .separator {
     border-top: 1px solid var(--color-border-default);
+    margin-top: 4px;
+    padding-top: 4px;
 }
 
 .contextMenu .separatorBottom {
     border-bottom: 1px solid var(--color-border-default);
+    margin-bottom: 4px;
+    padding-bottom: 4px;
 }
 
 .contextMenu li {
@@ -374,7 +476,7 @@ a.propButton img {
     color: var(--color-text-default);
     display: flex;
     gap: 2px;
-    padding: 5px 20px 5px 5px;
+    padding: 5px 24px 5px 6px;
     position: relative;
     text-decoration: none;
     white-space: nowrap;
@@ -382,19 +484,15 @@ a.propButton img {
 
 .contextMenu li a:hover {
     background-color: var(--color-background-hover);
-    color: var(--color-text-white);
-}
-
-.contextMenu li a:hover img:not(.highlightedCategoryIcon) {
-    filter: var(--color-icon-hover);
 }
 
 .contextMenu li ul {
-    background: var(--color-background-default);
+    background: var(--color-background-popup);
     border: 1px solid var(--color-border-default);
+    box-shadow: 0 2px 6px var(--color-shadow);
     left: -999em;
-    margin: -29px 0 0 100%;
-    padding: 0;
+    margin: -33px 0 0 100%;
+    padding: 4px;
     position: absolute;
     width: max-content;
     z-index: 8000;
@@ -423,7 +521,7 @@ a.propButton img {
 
 .contextMenu li img {
     height: 16px;
-    margin-right: 0.5em;
+    margin-right: 8px;
     width: 16px;
 }
 
@@ -439,54 +537,101 @@ a.propButton img {
 }
 
 #contextCategoryList img.highlightedCategoryIcon {
-    background-color: hsl(213deg 94% 86%);
+    background-color: color-mix(in srgb, var(--color-accent-blue) 25%, transparent);
 }
 
 /* Sliders */
 
 .slider {
-    font-size: 12px;
-    font-weight: bold;
-    margin: 4px;
     position: relative;
 }
 
 .update {
-    padding-bottom: 5px;
+    padding-bottom: 8px;
 }
 
 .mochaToolButton {
-    margin-right: 10px;
+    margin-right: 6px;
+    padding: 2px;
+}
+
+#mochaToolbar a:hover .mochaToolButton,
+#mochaToolbar label:hover .mochaToolButton {
+    background-color: var(--color-background-hover);
 }
 
 /* Mocha Customization */
 
 #mochaToolbar {
+    border-bottom: var(--toolbar-line);
+    border-top: var(--toolbar-line);
     height: auto !important;
-    margin-top: 5px;
+    margin-top: 0;
     overflow-y: hidden;
+    padding-top: 5px;
     position: relative;
 }
 
 #mochaToolbar .divider {
-    background-image: url("../images/toolbox-divider.svg");
-    background-position: left center;
-    background-repeat: no-repeat;
     padding-left: 14px;
     padding-top: 15px;
+    position: relative;
+}
+
+#mochaToolbar .divider::before {
+    background-color: var(--color-border-default);
+    content: "";
+    height: 20px;
+    left: 0;
+    position: absolute;
+    top: 5px;
+    width: 1px;
 }
 
 .MyMenuIcon {
     margin: 0 6px -3px -18px;
 }
 
+/* the tabs sit under the toolbar, at the left, as on the desktop */
 #mainWindowTabs {
-    float: right;
-    margin: 4px 5px 0 0;
+    border-bottom: 1px solid var(--color-border-default);
+    margin: 0;
+    padding: 6px 4px 0;
+}
+
+#mainWindowTabs .tab-menu {
+    font-size: 1em;
+    gap: 2px;
+}
+
+/* boxed tabs: the selected one is joined to the page below, the others are dimmed */
+#mainWindowTabs .tab-menu li a,
+#mainWindowTabs .tab-menu li:first-child a {
+    background-color: var(--color-background-hover);
+    border: 1px solid var(--color-border-default);
+    gap: 8px;
+    margin: 0;
+    padding: 6px 14px;
+}
+
+#mainWindowTabs .tab-menu li.selected a,
+#mainWindowTabs .tab-menu li.selected:hover a {
+    background-color: var(--color-background-primary);
+    border-bottom-color: var(--color-background-primary);
+    margin-bottom: -1px;
+}
+
+#mainWindowTabs .tab-menu li.selected a::after {
+    content: none;
 }
 
 #torrentsFilterToolbar {
-    display: inline-block;
+    align-items: center;
+    display: inline-flex;
+    gap: 4px;
+    margin: 0 0 0 4px; /* no gap below, so the toolbar is as tall as on the Search and RSS tabs */
+    position: relative;
+    top: -2px; /* centered between the two lines of the toolbar, level with the buttons */
     vertical-align: top;
 }
 
@@ -495,13 +640,14 @@ a.propButton img {
 }
 
 #torrentsFilterInput {
-    background-color: var(--color-background-default);
+    background-color: var(--color-background-control);
     background-image: url("../images/edit-find.svg");
     background-position: 2px;
     background-repeat: no-repeat;
     background-size: 1.5em;
     border: 1px solid var(--color-border-default);
-    border-radius: 3px;
+    box-sizing: border-box;
+    height: 28px; /* as tall as the bar of the Search tab */
     min-width: 170px;
     padding: 2px 2px 2px 25px;
 }
@@ -516,12 +662,11 @@ a.propButton img {
     background-repeat: no-repeat;
     background-size: 1.5em;
     border: 1px solid var(--color-border-default);
-    border-radius: 4px;
     cursor: pointer;
+    box-sizing: border-box;
     display: inline-block;
-    height: 26px;
-    margin-bottom: -9px;
-    width: 26px;
+    height: 28px;
+    width: 28px;
 }
 
 #torrentsFilterRegexBox:checked + label {
@@ -531,14 +676,15 @@ a.propButton img {
     background-repeat: no-repeat;
     background-size: 1.5em;
     border: 1px solid var(--color-accent-blue);
-    border-radius: 4px;
+    box-sizing: border-box;
     display: inline-block;
-    height: 26px;
-    margin-bottom: -9px;
-    width: 26px;
+    height: 28px;
+    width: 28px;
 }
 
 #torrentsFilterSelect {
+    box-sizing: border-box;
+    height: 28px;
     padding: 2px 4px;
 }
 
@@ -559,15 +705,20 @@ a.propButton img {
     width: 190px;
 }
 
+/* a section: a bold title with a line under it, as on the desktop */
 fieldset.settings {
-    border: 1px solid var(--color-border-default);
-    padding: 4px 4px 6px 6px;
+    border: 0;
+    margin: 0 0 12px;
+    min-width: 0;
+    padding: 0;
 }
 
 fieldset.settings legend {
+    border-bottom: 1px solid var(--color-border-default);
     font-weight: bold;
-    margin-left: 8px;
-    padding: 4px;
+    margin: 0 0 6px;
+    padding: 0 0 4px;
+    width: 100%;
 }
 
 fieldset.settings label {
@@ -584,12 +735,17 @@ div.formRow {
 }
 
 .filterTitle {
+    /* a darker grey than the list below it, the same blend of window and line colour as on the desktop */
+    background-color: color-mix(in srgb, var(--color-background-default) 75%, var(--color-border-default));
+    border-bottom: 1px solid var(--color-border-default);
     cursor: pointer;
     display: flex;
+    font-size: 1.1em;
     font-weight: bold;
     gap: 4px;
+    margin-bottom: 2px;
     overflow: hidden;
-    padding: 4px 0 4px 6px;
+    padding: 6px 0 6px 6px;
     text-overflow: ellipsis;
     text-transform: uppercase;
     user-select: none;
@@ -616,24 +772,20 @@ ul.filterList {
     padding-left: 0;
 }
 
-ul.filterList span.link:hover :is(img, button),
-ul.filterList .selectedFilter > .link :is(img, button) {
-    filter: var(--color-icon-hover);
-}
-
 ul.filterList span.link {
     align-items: center;
     cursor: pointer;
     display: flex;
     gap: 5px;
+    margin: 0 4px 1px;
     overflow: hidden;
     padding: 4px 6px;
+    position: relative;
     white-space: nowrap;
 }
 
 ul.filterList span.link:hover {
     background-color: var(--color-background-hover);
-    color: var(--color-text-white);
 }
 
 span.link :last-child {
@@ -647,9 +799,20 @@ span.link :is(img, button) {
     flex-shrink: 0;
 }
 
-.selectedFilter > span.link {
-    background-color: var(--color-background-blue);
-    color: var(--color-text-white);
+/* the selected filter is shaded, with a short accent bar on its left, as in the desktop list */
+.selectedFilter > span.link,
+ul.filterList .selectedFilter > span.link:hover {
+    background-color: var(--color-background-selected);
+}
+
+.selectedFilter > span.link::before {
+    background-color: var(--color-accent-blue);
+    bottom: 25%;
+    content: "";
+    left: 0;
+    position: absolute;
+    top: 25%;
+    width: 3px;
 }
 
 .subcategories,
@@ -670,6 +833,7 @@ span.link :is(img, button) {
     display: none;
     height: 16px;
     margin-right: -2px;
+    min-height: 0; /* not the touch size of other buttons */
     padding: 2px;
     transition: transform 0.3s;
     width: 16px;
@@ -719,6 +883,24 @@ td.noWrap {
     padding: 2px;
 }
 
+#propGeneral hr {
+    display: none;
+}
+
+/* a section: a bold title with a line under it, as on the desktop */
+#propGeneral fieldset {
+    border: 0;
+    margin: 0 0 10px;
+    padding: 0 4px;
+}
+
+#propGeneral fieldset > legend {
+    border-bottom: 1px solid var(--color-border-default);
+    margin-bottom: 4px;
+    padding: 0 0 3px;
+    width: 100%;
+}
+
 #propBarsWrapper {
     align-items: center;
     display: grid;
@@ -742,7 +924,7 @@ td.noWrap {
 
 #watched_folders_tab td,
 #watched_folders_tab th {
-    border: 1px solid black;
+    border: 1px solid var(--color-border-default);
     padding: 2px 4px;
 }
 
@@ -785,6 +967,15 @@ td.noWrap {
     margin-left: -1px;
 }
 
+/* a thin line on each side of the handles between the panes, as on the desktop */
+#filtersColumn_handle,
+#searchListHandle {
+    background-color: var(--color-background-default);
+    border-left: 1px solid var(--color-border-default);
+    border-right: 1px solid var(--color-border-default);
+    box-sizing: border-box;
+}
+
 .combo_priority {
     font-size: 1em;
     height: 1.5em;
@@ -793,18 +984,24 @@ td.noWrap {
 }
 
 td.statusBarSeparator {
-    background-image: url("../images/toolbox-divider.svg");
-    background-position: center 1px;
-    background-repeat: no-repeat;
-    background-size: 2px 18px;
+    position: relative;
     width: 24px;
+}
+
+td.statusBarSeparator::before {
+    background-color: var(--color-border-default);
+    content: "";
+    height: 18px;
+    left: 50%;
+    position: absolute;
+    top: 1px;
+    width: 1px;
 }
 
 /* Statistics window */
 #statisticsContent {
     & table {
         background-color: var(--color-background-default);
-        border-radius: 6px;
         margin-bottom: 6px;
         padding: 6px 10px;
 
@@ -828,18 +1025,22 @@ td.statusBarSeparator {
     height: inherit;
 }
 
+/* the header, then the searches list beside the results; the filter line can wrap, so no fixed heights */
 #searchResults {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
     height: 100%;
-    padding: 0 20px;
 }
 
-#searchResultsTableContainer {
-    height: calc(100% - 177px);
-    overflow: auto;
+#searchResults .invisible {
+    display: none;
 }
 
-#searchResults .numSearchResults {
-    font-style: italic;
+#searchBody {
+    display: flex;
+    flex: 1;
+    min-height: 0;
 }
 
 .red {
@@ -853,7 +1054,6 @@ td.statusBarSeparator {
 #torrentFilesTableDiv .dynamicTable tr.nonAlt:hover,
 #addTorrentFilesTableDiv .dynamicTable tr.nonAlt:hover {
     background-color: var(--color-background-hover);
-    color: var(--color-text-white);
 }
 
 /* Modals */
@@ -871,16 +1071,18 @@ td.statusBarSeparator {
     margin: auto 0;
 }
 
-#rememberBtn {
-    background: url("../images/object-locked.svg") center center / 24px
-        no-repeat var(--color-background-popup);
-    height: 38px;
-    padding: 4px 6px;
-    width: 38px;
+/* "Also remove the content files" and the Remove / Cancel buttons share one line */
+.modalDialog .mochaContent.pad > .deletionActions {
+    align-items: center;
+    align-self: stretch;
+    display: flex;
+    gap: 8px;
+    justify-content: space-between;
+    padding-left: 42px; /* lines the checkbox up with the message text, after the warning icon */
 }
 
-#rememberBtn.disabled {
-    filter: grayscale(100%);
+.modalDialog .deletionActions .dialogButtons {
+    padding: 0;
 }
 
 #deleteFromDiskCB {
@@ -888,8 +1090,190 @@ td.statusBarSeparator {
     vertical-align: -1px;
 }
 
+/* Add/Edit User, Add/Edit Role and Change Password: "label: control" rows in two columns, OK and Cancel at the bottom right */
+body.dialogPage:not(:has(#desktop)) {
+    background-color: var(--color-background-default);
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.dialogPageContent {
+    flex: 1 1 auto;
+    min-height: 0;
+    overflow: auto;
+    padding: 10px 12px;
+}
+
+.dialogForm {
+    align-items: center;
+    display: grid;
+    gap: 6px 8px;
+    grid-template-columns: max-content minmax(0, 1fr);
+}
+
+.dialogForm > input,
+.dialogForm > select {
+    width: 100%;
+}
+
+.dialogForm > .dialogFormControl {
+    grid-column: 2;
+}
+
+.dialogPage fieldset.settings {
+    border: 0;
+    margin-top: 12px;
+    min-width: 0;
+    padding: 0;
+}
+
+.dialogPage fieldset.settings > legend {
+    border-bottom: 1px solid var(--color-border-default);
+    font-weight: bold;
+    margin: 0 0 4px;
+    padding: 0 0 4px;
+    width: 100%;
+}
+
+.dialogButtons {
+    display: flex;
+    gap: 8px;
+    justify-content: flex-end;
+    padding: 10px 12px;
+}
+
+.dialogButtons button {
+    min-width: 80px;
+    padding-bottom: 4px;
+    padding-top: 4px;
+}
+
+.dialogButtons button:first-child,
+.dialogButtons button[type="submit"],
+.dialogButtons button:focus {
+    border-color: var(--color-accent-blue);
+}
+
+/* a row of equal commands, none of them the default */
+.dialogButtons.dialogButtonsPlain button:first-child:not(:focus) {
+    border-color: var(--color-border-default);
+}
+
+/* a confirmation that focuses its safe button (No, Cancel) marks that one as the default */
+.dialogButtons:has(button:focus) :is(button:first-child, button[type="submit"]):not(:focus) {
+    border-color: var(--color-border-default);
+}
+
 .dialogMessage {
+    margin: 0;
     overflow-wrap: anywhere;
+}
+
+/* "Label:" with its field under it, the field as wide as the window */
+.dialogPageContent > label {
+    display: block;
+    margin-bottom: 4px;
+}
+
+.dialogPageContent > :is(input[type="text"], textarea) {
+    box-sizing: border-box;
+    display: block;
+    width: 100%;
+}
+
+.dialogPageContent > .dialogError {
+    min-height: 1.3em;
+    padding-top: 4px;
+}
+
+/* a text list that takes the room the window has */
+.dialogPageGrow {
+    display: flex;
+    flex-direction: column;
+}
+
+.dialogPageGrow > textarea {
+    flex: 1 1 auto;
+    min-height: 60px;
+    resize: none;
+}
+
+.dialogForm > .dialogNumber,
+.update > .dialogNumber {
+    width: 80px;
+}
+
+.dialogForm > select.dialogShort {
+    justify-self: start;
+    width: auto;
+}
+
+/* radio buttons or check boxes with their text */
+.dialogChecks,
+.dialogIndent {
+    align-items: center;
+    display: grid;
+    gap: 6px;
+}
+
+.dialogChecks {
+    grid-template-columns: max-content 1fr;
+}
+
+.dialogChecks input,
+.dialogCheck input {
+    margin: 0;
+}
+
+/* options under a radio button: a check box with its text, then the value; the last row is a text and a drop-down list */
+.dialogIndent {
+    grid-template-columns: max-content 1fr;
+    margin: 8px 0 0 22px;
+}
+
+.dialogCheck {
+    align-items: center;
+    display: flex;
+    gap: 6px;
+}
+
+.dialogIndent > input[type="number"] {
+    width: 80px;
+}
+
+.dialogIndent > select {
+    justify-self: start;
+}
+
+/* a narrow window (a phone): the drop-down list gets a row of its own, under its text */
+@media (max-width: 460px) {
+    .dialogIndent > label[for="limitReachedActions"],
+    .dialogIndent > select {
+        grid-column: 1 / -1;
+    }
+
+    .dialogIndent > select {
+        justify-self: stretch;
+    }
+}
+
+.dialogHeading {
+    font-weight: bold;
+    margin: 0 0 6px;
+}
+
+/* the buttons of a confirmation shown inside the main page keep the window's own padding */
+.modalDialog .dialogButtons {
+    padding: 10px 0 0;
+}
+
+.dialogNote {
+    margin: 6px 0 10px;
+}
+
+.slider input[type="range"] {
+    width: 100%;
 }
 
 .genericConfirmGrid,

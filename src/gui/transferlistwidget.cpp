@@ -59,6 +59,7 @@
 #include "autoexpandabledialog.h"
 #include "deletionconfirmationdialog.h"
 #include "interfaces/iguiapplication.h"
+#include "listviewlayout.h"
 #include "mainwindow.h"
 #include "optionsdialog.h"
 #include "previewselectdialog.h"
@@ -133,6 +134,7 @@ TransferListWidget::TransferListWidget(IGUIApplication *app, QWidget *parent)
     m_sortFilterModel->setSortCaseSensitivity(Qt::CaseInsensitive);
     m_sortFilterModel->setSortRole(TransferListModel::UnderlyingDataRole);
     setModel(m_sortFilterModel);
+    new ListViewLayout(this, TransferListModel::TR_NAME);
 
     // Visual settings
     setUniformRowHeights(true);
@@ -732,6 +734,12 @@ void TransferListWidget::displayColumnHeaderMenu()
         saveSettings();
     });
     resizeAction->setToolTip(tr("Resize all non-hidden columns to the size of their contents"));
+    QAction *resetAction = menu->addAction(tr("Reset auto width"), this, [this]()
+    {
+        findChild<ListViewLayout *>()->reset();
+        saveSettings();
+    });
+    resetAction->setToolTip(tr("Fit all non-hidden columns to their contents again, and forget the widths that were set by hand"));
 
     menu->popup(QCursor::pos());
 }

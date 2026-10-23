@@ -42,16 +42,35 @@ window.qBittorrent.Search ??= (() => {
             searchSeedsFilterChanged: searchSeedsFilterChanged,
             searchSizeFilterChanged: searchSizeFilterChanged,
             searchSizeFilterPrefixChanged: searchSizeFilterPrefixChanged,
+            closeSearchTab: closeSearchTab,
+            closeSelectedSearch: closeSelectedSearch,
+            downloadSelected: downloadSearchTorrent,
+            openSelectedDescriptionPages: openSearchTorrentDescriptionUrl,
         };
     };
+
+    const localPreferences = new window.qBittorrent.LocalPreferences.LocalPreferences();
 
     const searchTabIdPrefix = "Search-";
     let loadSearchPluginsTimer = -1;
     const searchPlugins = [];
     let prevSearchPluginsResponse;
-    let selectedCategory = "QBT_TR(All categories)QBT_TR[CONTEXT=SearchEngineWidget]";
-    let selectedPlugin = "enabled";
+    // the storage can be unavailable (private windows, blocked site data)
+    const loadPref = (key, defaultValue) => {
+        try {
+            return localPreferences.get(key, defaultValue);
+        }
+        catch (err) {
+            return defaultValue;
+        }
+    };
+
+    let selectedCategory = loadPref("search_category", "QBT_TR(All categories)QBT_TR[CONTEXT=SearchEngineWidget]");
+    let selectedPlugin = loadPref("search_plugin", "enabled");
     let prevSelectedPlugin;
+    let pluginsAvailable = false;
+    let patternEdited = false;
+    let noticeKind = "";
 
     let searchResultsTable;
     /** @type Map<number, {
@@ -66,6 +85,8 @@ window.qBittorrent.Search ??= (() => {
      * rowId: number,
      * selectedRowIds: number[],
      * running: boolean,
+     * status: string,
+     * errorMessage: string,
      * loadResultsTimer: Timer,
      * sort: {column: string, reverse: string},
      * }> **/
@@ -126,7 +147,7 @@ window.qBittorrent.Search ??= (() => {
     });
 
     const init = () => {
-        document.getElementById("searchInTorrentName").value = (window.qBittorrent.ClientData.get("search_in_filter") === "names") ? "names" : "everywhere";
+        document.getElementById("searchInTorrentName").value = (window.qBittorrent.ClientData.get("search_in_filter") === "everywhere") ? "everywhere" : "names";
         const searchResultsTableContextMenu = new window.qBittorrent.ContextMenu.ContextMenu({
             targets: "#searchResultsTableDiv tbody tr",
             menu: "searchResultsTableMenu",
@@ -158,9 +179,21 @@ window.qBittorrent.Search ??= (() => {
         });
         searchResultsTable = new window.qBittorrent.DynamicTable.SearchResultsTable();
         searchResultsTable.setup("searchResultsTableDiv", "searchResultsTableFixedHeaderDiv", searchResultsTableContextMenu);
+
+        // without a saved sort, the most seeded results come first, as on the desktop
+        if (loadPref(`sorted_column_${searchResultsTable.dynamicTableDivId}`) === null) {
+            searchResultsTable.sortedColumn = "nbSeeders";
+            searchResultsTable.reverseSort = "1";
+            searchResultsTable.setSortedColumnIcon("nbSeeders", null, true);
+        }
+
         getPlugins();
+        setupListHandle();
 
         searchResultsTable.dynamicTableDiv.addEventListener("dblclick", (e) => { openDownloadWindow(); });
+        // the table doesn't tell when the selection changes, so look again after the events that change it
+        for (const type of ["click", "keydown", "contextmenu", "touchstart"])
+            searchResultsTable.dynamicTableDiv.addEventListener(type, () => { setTimeout(updateActionButtons, 0); });
 
         // listen for changes to searchInNameFilter
         let searchInNameFilterTimer = -1;
@@ -186,7 +219,13 @@ window.qBittorrent.Search ??= (() => {
                             manageSearchPlugins();
                             break;
                         case "searchPattern":
-                            document.getElementById("startSearchButton").click();
+                            startSearchFromBox();
+                            break;
+                        case "startSearchButton":
+                        case "searchDownloadButton":
+                        case "searchOpenPageButton":
+                        case "closeSearchButton":
+                            event.target.click();
                             break;
                     }
 
@@ -223,7 +262,101 @@ window.qBittorrent.Search ??= (() => {
         return Number(tab.id.substring(searchTabIdPrefix.length));
     };
 
-    const updateTabTitle = (searchId) => {
+    const setupListHandle = () => {
+        const pane = document.getElementById("searchListPane");
+        const handle = document.getElementById("searchListHandle");
+        const minWidth = 150;
+        const clampWidth = (width) => {
+            const maxWidth = Math.max(minWidth, document.getElementById("searchBody").clientWidth - 300);
+            return Math.min(Math.max(width, minWidth), maxWidth);
+        };
+
+        // the page is hidden until the plugins are known, so only the lower limit can be applied here
+        const savedWidth = Number(loadPref("search_list_width", document.getElementById("Filters")?.offsetWidth || 270));
+        if (Number.isFinite(savedWidth))
+            pane.style.width = `${Math.max(savedWidth, minWidth)}px`;
+
+        let startX = 0;
+        let startWidth = 0;
+        let dragging = false;
+        handle.addEventListener("pointerdown", (e) => {
+            dragging = true;
+            startX = e.clientX;
+            startWidth = pane.offsetWidth;
+            handle.setPointerCapture(e.pointerId);
+            e.preventDefault();
+        });
+        handle.addEventListener("pointermove", (e) => {
+            if (dragging)
+                pane.style.width = `${clampWidth(startWidth + e.clientX - startX)}px`;
+        });
+        handle.addEventListener("pointerup", () => {
+            if (!dragging)
+                return;
+            dragging = false;
+            localPreferences.set("search_list_width", pane.offsetWidth);
+        });
+    };
+
+    const showNotice = (text, kind = "") => {
+        const notice = document.getElementById("searchNotice");
+        notice.textContent = text;
+        notice.classList.toggle("invisible", text === "");
+        noticeKind = (text === "") ? "" : kind;
+    };
+
+    // a notice goes away when what caused it works again
+    const clearNotice = (kind) => {
+        if ((kind === undefined) || (kind === noticeKind))
+            showNotice("");
+    };
+
+    const statusInfo = (status) => {
+        switch (status) {
+            case "finished":
+                return { icon: "images/task-complete.svg", text: "QBT_TR(Search has finished)QBT_TR[CONTEXT=SearchJobWidget]" };
+            case "noResults":
+                return { icon: "images/dialog-warning.svg", text: "QBT_TR(Search returned no results)QBT_TR[CONTEXT=SearchJobWidget]" };
+            case "aborted":
+                return { icon: "images/task-reject.svg", text: "QBT_TR(Search aborted)QBT_TR[CONTEXT=SearchJobWidget]" };
+            case "error":
+                return { icon: "images/error.svg", text: "QBT_TR(An error occurred during search...)QBT_TR[CONTEXT=SearchJobWidget]" };
+            default:
+                return { icon: "images/queued.svg", text: "QBT_TR(Searching...)QBT_TR[CONTEXT=SearchJobWidget]" };
+        }
+    };
+
+    // number of rows that pass the filters saved for a search
+    const countVisibleRows = (state) => {
+        const toBytes = (value, unit) => ((value > 0) ? (value * Math.pow(1024, unit)) : 0);
+        let minSize = toBytes(state.sizeFilter.min, state.sizeFilter.minUnit);
+        let maxSize = toBytes(state.sizeFilter.max, state.sizeFilter.maxUnit);
+        if ((minSize > maxSize) && (maxSize > 0))
+            [minSize, maxSize] = [maxSize, minSize];
+
+        let minSeeds = (state.seedsFilter.min > 0) ? Number(state.seedsFilter.min) : 0;
+        let maxSeeds = (state.seedsFilter.max > 0) ? Number(state.seedsFilter.max) : 0;
+        if ((minSeeds > maxSeeds) && (maxSeeds > 0))
+            [minSeeds, maxSeeds] = [maxSeeds, minSeeds];
+
+        const searchTerms = state.searchPattern.toLowerCase().split(" ");
+        const filterTerms = state.filterPattern.toLowerCase().split(" ");
+        let count = 0;
+        for (const row of state.rows) {
+            if ((state.searchIn === "names") && !window.qBittorrent.Misc.containsAllTerms(row.fileName, searchTerms))
+                continue;
+            if (!window.qBittorrent.Misc.containsAllTerms(row.fileName, filterTerms))
+                continue;
+            if (((minSize > 0) && (row.fileSize < minSize)) || ((maxSize > 0) && (row.fileSize > maxSize)))
+                continue;
+            if (((minSeeds > 0) && (row.nbSeeders < minSeeds)) || ((maxSeeds > 0) && (row.nbSeeders > maxSeeds)))
+                continue;
+            ++count;
+        }
+        return count;
+    };
+
+    const updateTabTitle = (searchId, shownCount) => {
         const state = searchState.get(searchId);
         if (!state)
             return;
@@ -232,39 +365,122 @@ window.qBittorrent.Search ??= (() => {
         if (!tab)
             return;
 
-        const unreadCount = state.rows.length - state.lastSeenCount;
-        const tabTitle = tab.querySelector(".tabTitle");
-        tabTitle.textContent = state.searchPattern + ((unreadCount > 0) ? ` (+${unreadCount})` : "");
+        const shown = shownCount ?? ((searchId === getSelectedSearchId())
+            ? searchResultsTable.getFilteredAndSortedRows().length
+            : countVisibleRows(state));
+        tab.querySelector(".tabTitle").textContent = `${state.searchPattern} (${shown})`;
+        tab.title = `${state.searchPattern}\n${statusText(state, shown)}`;
+    };
+
+    const statusText = (state, shown = state.rows.length) => {
+        const total = state.rows.length;
+        const hidden = total - shown;
+        const shownText = (hidden > 0)
+            ? "QBT_TR(%1 of %2 shown (%3 hidden))QBT_TR[CONTEXT=SearchJobWidget]".replace("%1", shown).replace("%2", total).replace("%3", hidden)
+            : "QBT_TR(%1 of %2 shown)QBT_TR[CONTEXT=SearchJobWidget]".replace("%1", shown).replace("%2", total);
+
+        switch (state.status) {
+            case "ongoing":
+                return "QBT_TR(Searching: %1)QBT_TR[CONTEXT=SearchJobWidget]".replace("%1", shownText);
+            case "finished":
+                return "QBT_TR(Finished: %1)QBT_TR[CONTEXT=SearchJobWidget]".replace("%1", shownText);
+            case "aborted":
+                return (total > 0)
+                    ? "QBT_TR(Search aborted: %1)QBT_TR[CONTEXT=SearchJobWidget]".replace("%1", shownText)
+                    : statusInfo("aborted").text;
+            case "error":
+                return state.errorMessage || statusInfo("error").text;
+            default:
+                return statusInfo(state.status).text;
+        }
+    };
+
+    // the status line under the results, and the same text in the empty table
+    const updateStatusLine = (searchId, shownCount) => {
+        const state = searchState.get(searchId);
+        const statusLine = document.getElementById("searchStatusText");
+        const emptyText = document.getElementById("searchResultsEmptyText");
+        if (!state) {
+            statusLine.textContent = "";
+            emptyText.classList.add("invisible");
+            return;
+        }
+
+        const text = statusText(state, shownCount ?? searchResultsTable.getFilteredAndSortedRows().length);
+        statusLine.textContent = text;
+        emptyText.textContent = text;
+        emptyText.classList.toggle("invisible", (state.rows.length > 0) || !["noResults", "aborted", "error"].includes(state.status));
+    };
+
+    const updateActionButtons = () => {
+        const hasSelection = (searchResultsTable.selectedRowsIds().length > 0);
+        document.getElementById("searchDownloadButton").disabled = !hasSelection;
+        document.getElementById("searchOpenPageButton").disabled = !hasSelection;
+    };
+
+    // after the table, the filters or the selected search changed
+    const updateResultsInfo = () => {
+        const searchId = getSelectedSearchId();
+        const shown = (searchId === null) ? 0 : searchResultsTable.getFilteredAndSortedRows().length;
+        updateStatusLine(searchId, shown);
+        updateTabTitle(searchId, shown);
+        updateActionButtons();
+    };
+
+    const setSearchStatus = (searchId, status, errorMessage = "") => {
+        const state = searchState.get(searchId);
+        if (!state)
+            return;
+
+        state.status = status;
+        state.errorMessage = errorMessage;
+
+        const tab = document.getElementById(`${searchTabIdPrefix}${searchId}`);
+        if (tab) {
+            const info = statusInfo(status);
+            const statusIcon = tab.querySelector(".statusIcon");
+            statusIcon.alt = info.text;
+            statusIcon.src = info.icon;
+        }
+
+        if (searchId === getSelectedSearchId())
+            updateResultsInfo();
+        else
+            updateTabTitle(searchId);
     };
 
     const createSearchTab = (searchId, pattern, category, plugins) => {
         const newTabId = `${searchTabIdPrefix}${searchId}`;
-        const tabElem = document.createElement("a");
 
-        const closeTabElem = document.createElement("img");
-        closeTabElem.alt = "QBT_TR(Close tab)QBT_TR[CONTEXT=SearchWidget]";
-        closeTabElem.title = "QBT_TR(Close tab)QBT_TR[CONTEXT=SearchWidget]";
-        closeTabElem.src = "images/application-exit.svg";
-        closeTabElem.width = "10";
-        closeTabElem.height = "10";
-        closeTabElem.addEventListener("click", function(e) {
-            e.stopPropagation();
-            closeSearchTab(this);
-        });
-        tabElem.appendChild(closeTabElem);
+        const tabElem = document.createElement("span");
+        tabElem.className = "link";
+
+        const statusIcon = getStatusIconElement("QBT_TR(Searching...)QBT_TR[CONTEXT=SearchJobWidget]", "images/queued.svg");
+        tabElem.appendChild(statusIcon);
 
         const tabTitleElem = document.createElement("span");
         tabTitleElem.className = "tabTitle";
         tabTitleElem.textContent = pattern;
-
         tabElem.appendChild(tabTitleElem);
-        tabElem.appendChild(getStatusIconElement("QBT_TR(Searching...)QBT_TR[CONTEXT=SearchJobWidget]", "images/queued.svg"));
 
         const listItem = document.createElement("li");
         listItem.id = newTabId;
-        listItem.classList.add("selected", "searchTab");
+        listItem.classList.add("searchTab");
         listItem.addEventListener("click", (e) => {
             setActiveTab(listItem);
+        });
+        listItem.addEventListener("auxclick", (e) => {
+            // middle click closes it
+            if (e.button === 1) {
+                e.preventDefault();
+                closeSearchTab(listItem);
+            }
+        });
+        listItem.addEventListener("dblclick", (e) => {
+            // the pattern goes back into the search box
+            document.getElementById("searchPattern").value = pattern;
+            patternEdited = true;
+            updateSearchButtonState();
         });
         listItem.appendChild(tabElem);
         document.getElementById("searchTabs").appendChild(listItem);
@@ -275,32 +491,30 @@ window.qBittorrent.Search ??= (() => {
             document.getElementById("searchResultsNoSearches").classList.add("invisible");
             document.getElementById("searchResultsFilters").classList.remove("invisible");
             document.getElementById("searchResultsTableContainer").classList.remove("invisible");
-            document.getElementById("searchTabsToolbar").classList.remove("invisible");
+            document.getElementById("searchResultsFooter").classList.remove("invisible");
         }
-
-        // select new tab
-        setActiveTab(listItem);
-
-        searchResultsTable.clear();
-        resetFilters();
+        document.getElementById("closeSearchButton").disabled = false;
 
         searchState.set(searchId, {
             searchPattern: pattern,
             category: category,
             plugins: Array.isArray(plugins) ? plugins.join("|") : plugins,
-            filterPattern: searchText.filterPattern,
-            seedsFilter: { min: searchSeedsFilter.min, max: searchSeedsFilter.max },
-            sizeFilter: { min: searchSizeFilter.min, minUnit: searchSizeFilter.minUnit, max: searchSizeFilter.max, maxUnit: searchSizeFilter.maxUnit },
+            filterPattern: "",
+            seedsFilter: { min: 0, max: 0 },
+            sizeFilter: { min: 0, minUnit: 2, max: 0, maxUnit: 3 },
             searchIn: getSearchInTorrentName(),
             rows: [],
             rowId: 0,
             selectedRowIds: [],
             running: true,
+            status: "ongoing",
+            errorMessage: "",
             loadResultsTimer: -1,
             sort: { column: searchResultsTable.sortedColumn, reverse: searchResultsTable.reverseSort },
-            lastSeenCount: 0,
         });
-        searchText.pattern = pattern;
+
+        // select new tab: this empties the table and sets the filters back to their defaults
+        setActiveTab(listItem);
         updateSearchResultsData(searchId);
     };
 
@@ -316,8 +530,6 @@ window.qBittorrent.Search ??= (() => {
         const tab = document.getElementById(`${searchTabIdPrefix}${oldSearchId}`);
         tab.id = `${searchTabIdPrefix}${searchId}`;
 
-        updateStatusIconElement(searchId, "QBT_TR(Searching...)QBT_TR[CONTEXT=SearchJobWidget]", "images/queued.svg");
-
         // copy over relevant state
         const state = searchState.get(oldSearchId);
         state.rows = [];
@@ -325,12 +537,12 @@ window.qBittorrent.Search ??= (() => {
         state.selectedRowIds = [];
         state.running = true;
         state.loadResultsTimer = -1;
-        state.lastSeenCount = 0;
         searchState.set(searchId, state);
         searchState.delete(oldSearchId);
 
-        updateTabTitle(searchId);
         searchResultsTable.clear();
+        setSearchStatus(searchId, "ongoing");
+        updateSearchButtonState();
         updateSearchResultsData(searchId);
     };
 
@@ -363,17 +575,25 @@ window.qBittorrent.Search ??= (() => {
 
         if (numSearchTabs() === 0) {
             resetFilters();
+            searchResultsTable.clear();
 
-            document.getElementById("numSearchResultsVisible").textContent = 0;
-            document.getElementById("numSearchResultsTotal").textContent = 0;
+            updateStatusLine(null);
+            updateActionButtons();
+            document.getElementById("closeSearchButton").disabled = true;
             document.getElementById("searchResultsNoSearches").classList.remove("invisible");
             document.getElementById("searchResultsFilters").classList.add("invisible");
             document.getElementById("searchResultsTableContainer").classList.add("invisible");
-            document.getElementById("searchTabsToolbar").classList.add("invisible");
+            document.getElementById("searchResultsFooter").classList.add("invisible");
         }
         else if (isTabSelected && newTabToSelect) {
             setActiveTab(newTabToSelect);
         }
+    };
+
+    const closeSelectedSearch = () => {
+        const tab = document.querySelector("#searchTabs li.selected");
+        if (tab)
+            closeSearchTab(tab);
     };
 
     const saveCurrentTabState = () => {
@@ -414,7 +634,11 @@ window.qBittorrent.Search ??= (() => {
 
         saveCurrentTabState();
 
-        MochaUI.selected(tab, "searchTabs");
+        for (const item of document.querySelectorAll("#searchTabs li")) {
+            item.classList.toggle("selected", item === tab);
+            item.classList.toggle("selectedFilter", item === tab);
+        }
+        patternEdited = false;
 
         const state = searchState.get(searchId);
         let rowsToSelect = [];
@@ -435,7 +659,7 @@ window.qBittorrent.Search ??= (() => {
             searchSeedsFilter.min = state.seedsFilter.min;
             searchSeedsFilter.max = state.seedsFilter.max;
             document.getElementById("searchMinSeedsFilter").value = state.seedsFilter.min;
-            document.getElementById("searchMaxSeedsFilter").value = state.seedsFilter.max;
+            document.getElementById("searchMaxSeedsFilter").value = limitText(state.seedsFilter.max);
 
             searchSizeFilter.min = state.sizeFilter.min;
             searchSizeFilter.minUnit = state.sizeFilter.minUnit;
@@ -443,16 +667,12 @@ window.qBittorrent.Search ??= (() => {
             searchSizeFilter.maxUnit = state.sizeFilter.maxUnit;
             document.getElementById("searchMinSizeFilter").value = state.sizeFilter.min;
             document.getElementById("searchMinSizePrefix").value = state.sizeFilter.minUnit;
-            document.getElementById("searchMaxSizeFilter").value = state.sizeFilter.max;
+            document.getElementById("searchMaxSizeFilter").value = limitText(state.sizeFilter.max);
             document.getElementById("searchMaxSizePrefix").value = state.sizeFilter.maxUnit;
 
             searchResultsTable.setSortedColumn(state.sort.column, state.sort.reverse);
 
             document.getElementById("searchInTorrentName").value = state.searchIn;
-
-            // mark all results as seen
-            state.lastSeenCount = state.rows.length;
-            updateTabTitle(searchId);
         }
 
         // must restore all filters before calling updateTable
@@ -462,32 +682,22 @@ window.qBittorrent.Search ??= (() => {
         if (rowsToSelect.length > 0)
             searchResultsTable.reselectRows(rowsToSelect);
 
-        document.getElementById("numSearchResultsVisible").textContent = searchResultsTable.getFilteredAndSortedRows().length;
-        document.getElementById("numSearchResultsTotal").textContent = searchResultsTable.getRowSize();
-
+        updateResultsInfo();
         updateSearchButtonState();
     };
 
     const getStatusIconElement = (text, image) => {
         const statusIcon = document.createElement("img");
         statusIcon.alt = text;
-        statusIcon.title = text;
         statusIcon.src = image;
         statusIcon.className = "statusIcon";
-        statusIcon.width = "12";
-        statusIcon.height = "12";
+        statusIcon.width = "16";
+        statusIcon.height = "16";
         return statusIcon;
     };
 
-    const updateStatusIconElement = (searchId, text, image) => {
-        const searchTab = document.getElementById(`${searchTabIdPrefix}${searchId}`);
-        if (searchTab) {
-            const statusIcon = searchTab.querySelector(".statusIcon");
-            statusIcon.alt = text;
-            statusIcon.title = text;
-            statusIcon.src = image;
-        }
-    };
+    // a 0 limit means "no limit", which the fields show as an empty box with the infinity sign
+    const limitText = (value) => ((Number(value) > 0) ? value : "");
 
     const startSearch = (pattern, category, plugins) => {
         fetch("api/v2/search/start", {
@@ -499,13 +709,22 @@ window.qBittorrent.Search ??= (() => {
                 })
             })
             .then(async (response) => {
-                if (!response.ok)
+                if (!response.ok) {
+                    // the server says why, e.g. Python is missing or too many searches are running
+                    const message = (response.status === 409) ? (await response.text()) : "";
+                    showNotice(message || "QBT_TR(Unable to start the search.)QBT_TR[CONTEXT=SearchEngineWidget]", "start");
                     return;
+                }
 
+                showNotice("");
                 const responseJSON = await response.json();
                 const searchId = responseJSON.id;
                 createSearchTab(searchId, pattern, category, plugins);
                 updateSearchButtonState();
+            })
+            .catch((error) => {
+                console.error(error);
+                showNotice("QBT_TR(qBittorrent client is not reachable)QBT_TR[CONTEXT=HttpServer]", "start");
             });
     };
 
@@ -527,13 +746,20 @@ window.qBittorrent.Search ??= (() => {
                 })
             })
             .then(async (response) => {
-                if (!response.ok)
+                if (!response.ok) {
+                    const message = (response.status === 409) ? (await response.text()) : "";
+                    showNotice(message || "QBT_TR(Unable to start the search.)QBT_TR[CONTEXT=SearchEngineWidget]", "start");
                     return;
+                }
 
+                showNotice("");
                 const responseJSON = await response.json();
                 const searchId = responseJSON.id;
                 refreshSearchTab(oldSearchId, searchId, pattern);
-                updateSearchButtonState();
+            })
+            .catch((error) => {
+                console.error(error);
+                showNotice("QBT_TR(qBittorrent client is not reachable)QBT_TR[CONTEXT=HttpServer]", "start");
             });
     };
 
@@ -550,7 +776,7 @@ window.qBittorrent.Search ??= (() => {
 
                 resetSearchState(searchId);
                 // not strictly necessary to do this when the tab is being closed, but there's no harm in it
-                updateStatusIconElement(searchId, "QBT_TR(Search aborted)QBT_TR[CONTEXT=SearchJobWidget]", "images/task-reject.svg");
+                setSearchStatus(searchId, "aborted");
             });
     };
 
@@ -559,38 +785,43 @@ window.qBittorrent.Search ??= (() => {
         return selectedTab ? getSearchIdFromTab(selectedTab) : null;
     };
 
-    const canStopSearch = (searchId, searchPattern) => {
-        const state = searchState.get(searchId);
-        // search must be running and have input matching the current pattern
-        return state && state.running && (state.searchPattern === searchPattern);
-    };
-
     const updateSearchButtonState = () => {
-        const currentSearchId = getSelectedSearchId();
-        const currentSearchPattern = document.getElementById("searchPattern").value.trim();
+        const state = searchState.get(getSelectedSearchId());
+        // the selected search is running, and the box wasn't changed to start another one
+        const canStop = (state !== undefined) && state.running && !patternEdited;
+        const hasPattern = (document.getElementById("searchPattern").value.trim() !== "");
 
-        document.getElementById("startSearchButton").lastChild.textContent = canStopSearch(currentSearchId, currentSearchPattern)
+        const button = document.getElementById("startSearchButton");
+        button.querySelector("span").textContent = canStop
             ? "QBT_TR(Stop)QBT_TR[CONTEXT=SearchEngineWidget]"
             : "QBT_TR(Search)QBT_TR[CONTEXT=SearchEngineWidget]";
+        button.disabled = !pluginsAvailable || (!canStop && !hasPattern);
+    };
+
+    const startSearchFromBox = () => {
+        const pattern = document.getElementById("searchPattern").value.trim();
+        const category = document.getElementById("categorySelect").value;
+        const plugins = document.getElementById("pluginsSelect").value;
+
+        if (!pattern) {
+            showNotice("QBT_TR(Empty search pattern)QBT_TR[CONTEXT=SearchEngineWidget]", "start");
+            return;
+        }
+        if (!category || !plugins)
+            return;
+
+        searchText.pattern = pattern;
+        startSearch(pattern, category, plugins);
     };
 
     const startStopSearch = () => {
         const currentSearchId = getSelectedSearchId();
-        const pattern = document.getElementById("searchPattern").value.trim();
+        const state = searchState.get(currentSearchId);
 
-        if (!canStopSearch(currentSearchId, pattern)) {
-            const category = document.getElementById("categorySelect").value;
-            const plugins = document.getElementById("pluginsSelect").value;
-
-            if (!pattern || !category || !plugins)
-                return;
-
-            searchText.pattern = pattern;
-            startSearch(pattern, category, plugins);
-        }
-        else {
+        if (state && state.running && !patternEdited)
             stopSearch(currentSearchId);
-        }
+        else
+            startSearchFromBox();
     };
 
     const openSearchTorrentDescriptionUrl = () => {
@@ -672,11 +903,13 @@ window.qBittorrent.Search ??= (() => {
             })
             .then((response) => {
                 if (!response.ok)
-                    alert("QBT_TR(Unable to add torrents.)QBT_TR[CONTEXT=HttpServer]");
+                    showNotice("QBT_TR(Unable to add torrents.)QBT_TR[CONTEXT=HttpServer]", "download");
+                else
+                    clearNotice("download");
             })
             .catch((error) => {
                 console.error("Failed to add torrents:", error);
-                alert("QBT_TR(Unable to add torrents.)QBT_TR[CONTEXT=HttpServer]");
+                showNotice("QBT_TR(Unable to add torrents.)QBT_TR[CONTEXT=HttpServer]", "download");
             });
     };
 
@@ -694,7 +927,7 @@ window.qBittorrent.Search ??= (() => {
                 paddingVertical: 0,
                 paddingHorizontal: 0,
                 width: loadWindowWidth(id, 600),
-                height: loadWindowHeight(id, 360),
+                height: loadWindowHeight(id, 400),
                 onResize: window.qBittorrent.Misc.createDebounceHandler(500, (e) => {
                     saveWindowSize(id);
                 }),
@@ -715,15 +948,22 @@ window.qBittorrent.Search ??= (() => {
     };
 
     const onSearchPatternChanged = () => {
+        patternEdited = true;
+        if (noticeKind === "start")
+            showNotice("");
         updateSearchButtonState();
     };
 
     const categorySelected = () => {
         selectedCategory = document.getElementById("categorySelect").value;
+        if (selectedCategory !== "")
+            localPreferences.set("search_category", selectedCategory);
     };
 
     const pluginSelected = () => {
         selectedPlugin = document.getElementById("pluginsSelect").value;
+        if (selectedPlugin !== "")
+            localPreferences.set("search_plugin", selectedPlugin);
 
         if (selectedPlugin !== prevSelectedPlugin) {
             prevSelectedPlugin = selectedPlugin;
@@ -836,6 +1076,9 @@ window.qBittorrent.Search ??= (() => {
                     const pluginOptions = [createOption("QBT_TR(Only enabled)QBT_TR[CONTEXT=SearchEngineWidget]", "enabled"), createOption("QBT_TR(All plugins)QBT_TR[CONTEXT=SearchEngineWidget]", "all")];
 
                     const searchPluginsEmpty = (searchPlugins.length === 0);
+                    pluginsAvailable = !searchPluginsEmpty;
+                    document.getElementById("searchListPane").classList.toggle("invisible", searchPluginsEmpty);
+                    document.getElementById("searchListHandle").classList.toggle("invisible", searchPluginsEmpty);
                     if (!searchPluginsEmpty) {
                         document.getElementById("searchResultsNoPlugins").classList.add("invisible");
                         if (numSearchTabs() === 0)
@@ -862,7 +1105,7 @@ window.qBittorrent.Search ??= (() => {
                     document.getElementById("searchPattern").disabled = searchPluginsEmpty;
                     document.getElementById("categorySelect").disabled = searchPluginsEmpty;
                     document.getElementById("pluginsSelect").disabled = searchPluginsEmpty;
-                    document.getElementById("startSearchButton").disabled = searchPluginsEmpty;
+                    updateSearchButtonState();
 
                     if (window.qBittorrent.SearchPlugins !== undefined)
                         window.qBittorrent.SearchPlugins.updateTable();
@@ -888,7 +1131,7 @@ window.qBittorrent.Search ??= (() => {
         searchSeedsFilter.min = 0;
         searchSeedsFilter.max = 0;
         document.getElementById("searchMinSeedsFilter").value = searchSeedsFilter.min;
-        document.getElementById("searchMaxSeedsFilter").value = searchSeedsFilter.max;
+        document.getElementById("searchMaxSeedsFilter").value = limitText(searchSeedsFilter.max);
 
         searchSizeFilter.min = 0;
         searchSizeFilter.minUnit = 2; // B = 0, KiB = 1, MiB = 2, GiB = 3, TiB = 4, PiB = 5, EiB = 6
@@ -896,7 +1139,7 @@ window.qBittorrent.Search ??= (() => {
         searchSizeFilter.maxUnit = 3;
         document.getElementById("searchMinSizeFilter").value = searchSizeFilter.min;
         document.getElementById("searchMinSizePrefix").value = searchSizeFilter.minUnit;
-        document.getElementById("searchMaxSizeFilter").value = searchSizeFilter.max;
+        document.getElementById("searchMaxSizeFilter").value = limitText(searchSizeFilter.max);
         document.getElementById("searchMaxSizePrefix").value = searchSizeFilter.maxUnit;
     };
 
@@ -933,7 +1176,7 @@ window.qBittorrent.Search ??= (() => {
 
     const searchFilterChanged = () => {
         searchResultsTable.updateTable();
-        document.getElementById("numSearchResultsVisible").textContent = searchResultsTable.getFilteredAndSortedRows().length;
+        updateResultsInfo();
     };
 
     const loadSearchResultsData = (searchId) => {
@@ -960,7 +1203,7 @@ window.qBittorrent.Search ??= (() => {
                     if ((response.status === 400) || (response.status === 404)) {
                         // bad params. search id is invalid
                         resetSearchState(searchId);
-                        updateStatusIconElement(searchId, "QBT_TR(An error occurred during search...)QBT_TR[CONTEXT=SearchJobWidget]", "images/error.svg");
+                        setSearchStatus(searchId, "error");
                     }
                     else if (response.status === 409) {
                         // offset out of range, the server no longer has the results
@@ -968,19 +1211,20 @@ window.qBittorrent.Search ??= (() => {
                         resetSearchState(searchId);
                     }
                     else if (state) {
+                        showNotice("QBT_TR(Unable to get the search results.)QBT_TR[CONTEXT=SearchEngineWidget]", "poll");
                         clearTimeout(state.loadResultsTimer);
                         state.loadResultsTimer = loadSearchResultsData.delay(3000, this, searchId);
                     }
                     return;
                 }
 
-                document.getElementById("error_div").textContent = "";
+                clearNotice("poll");
 
                 // check if user stopped the search prior to receiving the response
                 if (!state || !state.running) {
                     if (state)
                         clearTimeout(state.loadResultsTimer);
-                    updateStatusIconElement(searchId, "QBT_TR(Search aborted)QBT_TR[CONTEXT=SearchJobWidget]", "images/task-reject.svg");
+                    setSearchStatus(searchId, "aborted");
                     return;
                 }
 
@@ -1015,19 +1259,17 @@ window.qBittorrent.Search ??= (() => {
                         for (const row of newRows)
                             searchResultsTable.updateRowData(row);
 
-                        document.getElementById("numSearchResultsVisible").textContent = searchResultsTable.getFilteredAndSortedRows().length;
-                        document.getElementById("numSearchResultsTotal").textContent = searchResultsTable.getRowSize();
-
                         searchResultsTable.updateTable();
+                        updateResultsInfo();
                     }
                     else if (newRows.length > 0) {
-                        // update unread count for background tabs
+                        // update the count of a search in the background
                         updateTabTitle(searchId);
                     }
 
                     if ((responseJSON.status === "Stopped") && (state.rowId >= responseJSON.total)) {
                         resetSearchState(searchId);
-                        updateStatusIconElement(searchId, "QBT_TR(Search has finished)QBT_TR[CONTEXT=SearchJobWidget]", "images/task-complete.svg");
+                        setSearchStatus(searchId, (state.rows.length > 0) ? "finished" : "noResults");
                         return;
                     }
 
@@ -1044,6 +1286,7 @@ window.qBittorrent.Search ??= (() => {
             }, (error) => {
                 console.error(error);
 
+                showNotice("QBT_TR(qBittorrent client is not reachable)QBT_TR[CONTEXT=HttpServer]", "poll");
                 clearTimeout(state.loadResultsTimer);
                 state.loadResultsTimer = loadSearchResultsData.delay(3000, this, searchId);
             });

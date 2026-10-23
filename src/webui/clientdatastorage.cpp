@@ -31,6 +31,8 @@
 #include <QJsonDocument>
 #include <QJsonObject>
 
+#include "base/access/accessstore.h"
+#include "base/exceptions.h"
 #include "base/global.h"
 #include "base/logger.h"
 #include "base/path.h"
@@ -73,9 +75,18 @@ ClientDataStorage::ClientDataStorage(QObject *parent)
     m_clientData = jsonDoc.object();
 }
 
+ClientDataStorage::ClientDataStorage(Access::AccessStore *accessStore, const qint64 userId
+        , const QJsonObject &initialData, QObject *parent)
+    : QObject(parent)
+    , m_accessStore {accessStore}
+    , m_userId {userId}
+    , m_clientData {initialData}
+{
+}
+
 nonstd::expected<void, QString> ClientDataStorage::storeData(const QJsonObject &object)
 {
-    QJsonObject clientData = m_clientData;
+    QJsonObject clientData = currentData();
     bool dataModified = false;
     for (auto it = object.constBegin(), end = object.constEnd(); it != end; ++it)
     {
@@ -111,9 +122,23 @@ nonstd::expected<void, QString> ClientDataStorage::storeData(const QJsonObject &
         const QByteArray json = QJsonDocument(clientData).toJson(QJsonDocument::Compact);
         if (json.size() > CLIENT_DATA_FILE_MAX_SIZE)
             return nonstd::make_unexpected(tr("Total web client data must not be larger than %1 bytes").arg(CLIENT_DATA_FILE_MAX_SIZE));
-        const nonstd::expected<void, QString> result = Utils::IO::saveToFile(m_clientDataFilePath, json);
-        if (!result)
-            return nonstd::make_unexpected(tr("Failed to save web client data. Error: \"%1\"").arg(result.error()));
+        if (m_accessStore)
+        {
+            try
+            {
+                m_accessStore->storeClientData(m_userId, clientData);
+            }
+            catch (const RuntimeError &error)
+            {
+                return nonstd::make_unexpected(tr("Failed to save web client data. Error: \"%1\"").arg(error.message()));
+            }
+        }
+        else
+        {
+            const nonstd::expected<void, QString> result = Utils::IO::saveToFile(m_clientDataFilePath, json);
+            if (!result)
+                return nonstd::make_unexpected(tr("Failed to save web client data. Error: \"%1\"").arg(result.error()));
+        }
 
         m_clientData = clientData;
     }
@@ -123,16 +148,25 @@ nonstd::expected<void, QString> ClientDataStorage::storeData(const QJsonObject &
 
 QJsonObject ClientDataStorage::loadData() const
 {
-    return m_clientData;
+    return currentData();
 }
 
 QJsonObject ClientDataStorage::loadData(const QStringList &keys) const
 {
+    const QJsonObject data = currentData();
     QJsonObject clientData;
     for (const QString &key : keys)
     {
-        if (const auto iter = m_clientData.constFind(key); iter != m_clientData.constEnd())
+        if (const auto iter = data.constFind(key); iter != data.constEnd())
             clientData.insert(key, iter.value());
     }
     return clientData;
+}
+
+QJsonObject ClientDataStorage::currentData() const
+{
+    // a user account's copy is read every time, so all of their browsers see the same data
+    if (m_accessStore)
+        return m_accessStore->clientData(m_userId).value_or(m_clientData);
+    return m_clientData;
 }

@@ -117,8 +117,10 @@ void AppController::buildInfoAction()
         {u"boost"_s, Utils::Misc::boostVersionString()},
         {u"openssl"_s, Utils::Misc::opensslVersionString()},
         {u"zlib"_s, Utils::Misc::zlibVersionString()},
+        {u"sqlite"_s, Utils::Misc::sqliteVersionString()},
         {u"bitness"_s, (QT_POINTER_SIZE * 8)},
-        {u"platform"_s, platformName}
+        {u"platform"_s, platformName},
+        {u"edition_version"_s, QStringLiteral(QBT_EDITION_VERSION)}
     };
     setResult(versions);
 }
@@ -161,6 +163,7 @@ void AppController::preferencesAction()
     // Search
     data[u"store_search_jobs"_s] = pref->storeSearchJobs();
     data[u"store_search_job_results"_s] = pref->storeSearchJobResults();
+    data[u"hide_zero_status_filters"_s] = pref->getHideZeroStatusFilters();
     // Log file
     data[u"file_log_enabled"_s] = app()->isFileLoggerEnabled();
     data[u"file_log_path"_s] = app()->fileLoggerPath().toString();
@@ -237,6 +240,10 @@ void AppController::preferencesAction()
     // Run an external program on torrent finished
     data[u"autorun_enabled"_s] = pref->isAutoRunOnTorrentFinishedEnabled();
     data[u"autorun_program"_s] = pref->getAutoRunOnTorrentFinishedProgram();
+#ifdef Q_OS_WIN
+    // Show console window for the external program
+    data[u"autorun_console"_s] = pref->isAutoRunConsoleEnabled();
+#endif
 
     // Connection
     // Listening Port
@@ -362,6 +369,12 @@ void AppController::preferencesAction()
     data[u"web_ui_ban_duration"_s] = static_cast<int>(pref->getWebUIBanDuration().count());
     data[u"web_ui_session_timeout"_s] = pref->getWebUISessionTimeout();
     data[u"web_ui_sessions_count_limit"_s] = pref->getWebUISessionsCountLimit();
+    // User accounts
+    data[u"web_ui_shared_login_allowed"_s] = pref->isWebUISharedLoginAllowed();
+    data[u"web_ui_user_sign_in_days"_s] = pref->getWebUIUserSignInDays();
+    data[u"web_ui_user_max_auth_fail_count"_s] = pref->getWebUIUserMaxAuthFailCount();
+    data[u"web_ui_user_lock_duration"_s] = static_cast<int>(pref->getWebUIUserLockDuration().count());
+    data[u"web_ui_activity_log_days"_s] = pref->getWebUIActivityLogDays();
     // API key
     data[u"web_ui_api_key"_s] = pref->getWebUIApiKey();
     // Use alternative WebUI
@@ -402,6 +415,10 @@ void AppController::preferencesAction()
     data[u"torrent_content_remove_option"_s] = Utils::String::fromEnum(session->torrentContentRemoveOption());
     // Physical memory (RAM) usage limit
     data[u"memory_working_set_limit"_s] = app()->memoryWorkingSetLimit();
+#ifdef Q_OS_WIN
+    // Process memory priority
+    data[u"memory_priority"_s] = Utils::String::fromEnum(app()->processMemoryPriority());
+#endif
     // Current network interface
     data[u"current_network_interface"_s] = session->networkInterface();
     // Current network interface name
@@ -578,6 +595,8 @@ void AppController::setPreferencesAction()
         pref->setStoreSearchJobs(it.value().toBool());
     if (hasKey(u"store_search_job_results"_s))
         pref->setStoreSearchJobResults(it.value().toBool());
+    if (hasKey(u"hide_zero_status_filters"_s))
+        pref->setHideZeroStatusFilters(it.value().toBool());
     // Log file
     if (hasKey(u"file_log_enabled"_s))
         app()->setFileLoggerEnabled(it.value().toBool());
@@ -732,6 +751,11 @@ void AppController::setPreferencesAction()
         pref->setAutoRunOnTorrentFinishedEnabled(it.value().toBool());
     if (hasKey(u"autorun_program"_s))
         pref->setAutoRunOnTorrentFinishedProgram(it.value().toString().trimmed());
+#ifdef Q_OS_WIN
+    // Show console window for the external program
+    if (hasKey(u"autorun_console"_s))
+        pref->setAutoRunConsoleEnabled(it.value().toBool());
+#endif
 
     // Connection
     // Listening Port
@@ -980,6 +1004,17 @@ void AppController::setPreferencesAction()
         pref->setWebUISessionTimeout(it.value().toInt());
     if (hasKey(u"web_ui_sessions_count_limit"_s))
         pref->setWebUISessionsCountLimit(it.value().toInt());
+    // User accounts
+    if (hasKey(u"web_ui_shared_login_allowed"_s))
+        pref->setWebUISharedLoginAllowed(it.value().toBool());
+    if (hasKey(u"web_ui_user_sign_in_days"_s))
+        pref->setWebUIUserSignInDays(it.value().toInt());
+    if (hasKey(u"web_ui_user_max_auth_fail_count"_s))
+        pref->setWebUIUserMaxAuthFailCount(it.value().toInt());
+    if (hasKey(u"web_ui_user_lock_duration"_s))
+        pref->setWebUIUserLockDuration(std::chrono::seconds {it.value().toInt()});
+    if (hasKey(u"web_ui_activity_log_days"_s))
+        pref->setWebUIActivityLogDays(it.value().toInt());
     // Use alternative WebUI
     if (hasKey(u"alternative_webui_enabled"_s))
         pref->setAltWebUIEnabled(it.value().toBool());
@@ -1042,6 +1077,11 @@ void AppController::setPreferencesAction()
     // Physical memory (RAM) usage limit
     if (hasKey(u"memory_working_set_limit"_s))
         app()->setMemoryWorkingSetLimit(it.value().toInt());
+#ifdef Q_OS_WIN
+    // Process memory priority
+    if (hasKey(u"memory_priority"_s))
+        app()->setProcessMemoryPriority(Utils::String::toEnum(it.value().toString(), MemoryPriority::Normal));
+#endif
     // Current network interface
     if (hasKey(u"current_network_interface"_s))
     {

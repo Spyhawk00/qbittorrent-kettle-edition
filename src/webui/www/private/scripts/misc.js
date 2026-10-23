@@ -52,10 +52,25 @@ window.qBittorrent.Misc ??= (() => {
             downloadFile: downloadFile,
             downloadFileStream: downloadFileStream,
             formatDate: formatDate,
+            isPhoneLayout: isPhoneLayout,
             // variables
             FILTER_INPUT_DELAY: 400,
             MAX_ETA: 8640000
         };
+    };
+
+    // The phone layout is for a main window narrower than 640 px (css/Phone.css uses the same width).
+    // Popups inside the main window ask the main window, not their own frame.
+    const phoneQuery = (() => {
+        try {
+            return window.top.matchMedia("(max-width: 639px)");
+        }
+        catch (error) {
+            return window.matchMedia("(max-width: 639px)");
+        }
+    })();
+    const isPhoneLayout = () => {
+        return phoneQuery.matches;
     };
 
     // getHost emulate the GUI version `QString getHost(const QString &url)`

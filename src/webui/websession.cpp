@@ -56,6 +56,16 @@ QString WebSession::id() const
     return m_sid;
 }
 
+const Access::Identity &WebSession::identity() const
+{
+    return m_identity;
+}
+
+void WebSession::setIdentity(const Access::Identity &identity)
+{
+    m_identity = identity;
+}
+
 QElapsedTimer WebSession::timestamp() const
 {
     return m_timestamp;

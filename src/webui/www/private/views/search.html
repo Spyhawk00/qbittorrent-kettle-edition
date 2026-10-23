@@ -1,12 +1,12 @@
 <style>
     #searchPattern {
-        width: 180px;
         background-image: url("images/edit-find.svg");
         background-repeat: no-repeat;
         background-size: 1.5em;
         background-position: 3px;
         border: 1px solid var(--color-border-default);
-        border-radius: 3px;
+        flex: 1 1 200px;
+        min-width: 120px;
         padding: 0 4px 0 25px;
     }
 
@@ -20,7 +20,8 @@
 
     #searchResultsNoPlugins,
     #searchResultsNoSearches {
-        height: calc(100% - 110px);
+        flex: 1;
+        min-height: 0;
 
         table {
             height: 100%;
@@ -30,14 +31,39 @@
     }
 
     #searchResultsFilters {
-        height: 40px;
-        padding-top: 10px;
-        overflow: auto;
+        align-items: center;
+        border: 0;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 6px 15px;
+        margin: 8px 10px;
+        min-width: 0;
+        padding: 0;
     }
 
     #searchInNameFilter {
-        width: 160px;
-        margin-right: 20px;
+        flex: 1 1 120px;
+        min-width: 120px;
+    }
+
+    /* Seeds and Size move to a second line together, only when the first one is full */
+    #searchResultsGranularFilters {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 6px 15px;
+    }
+
+    .searchFilterGroup {
+        align-items: center;
+        display: flex;
+        gap: 5px;
+        white-space: nowrap;
+    }
+
+    #searchMaxSeedsFilter::placeholder,
+    #searchMaxSizeFilter::placeholder {
+        color: inherit;
+        opacity: 1;
     }
 
     #searchMinSeedsFilter,
@@ -47,178 +73,265 @@
         width: 5em;
     }
 
+    /* the box, the lists and the buttons of the bar are all as tall as the lists */
+    #searchPattern,
+    #categorySelect,
+    #pluginsSelect,
+    #startSearchButton,
     #manageSearchPlugins {
-        float: right;
+        box-sizing: border-box;
+        height: 28px;
     }
 
-    #searchResultsGranularFilters {
-        display: none;
-    }
-
-    #searchResultsGranularFiltersWarning {
-        vertical-align: bottom;
-        margin-left: 10px;
+    #searchResultsHeaderContainer {
+        align-items: center;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 6px;
+        margin: 10px;
+        min-height: 24px; /* the bar grows with its controls, which are 28 px or more */
     }
 
     #manageSearchPlugins,
-    #startSearchButton {
+    #startSearchButton,
+    #searchDownloadButton,
+    #searchOpenPageButton {
         padding: 3px 6px;
     }
 
     #startSearchButton img,
-    #manageSearchPlugins img {
+    #manageSearchPlugins img,
+    #searchDownloadButton img,
+    #searchOpenPageButton img {
         margin: 0 5px -3px 0;
     }
 
-    #searchResultsHeader {
-        height: 60px;
-        overflow: hidden;
+    #searchNotice {
+        color: var(--color-text-red);
+        margin: -4px 10px 8px;
     }
 
-    #searchResultsHeaderContainer {
+    #searchListPane {
         display: flex;
-        flex-wrap: wrap;
-        gap: 5px;
-        margin-top: 4px;
-        height: 24px;
+        flex: none;
+        background-color: var(--color-background-default);
+        flex-direction: column;
+        min-height: 0;
+        width: 270px;
     }
 
-    @media (min-width: 760px) {
-        #searchPattern {
-            width: 300px;
-        }
+    /* the title looks like the ones of the Transfers sidebar (.filterTitle) */
+    #searchListHeader {
+        align-items: center;
+        cursor: default;
+        justify-content: space-between;
+        margin-bottom: 2px;
+        padding-right: 4px;
     }
 
-    @media (min-width: 1060px) {
-        #searchResultsGranularFilters {
-            display: inline-block;
-        }
-
-        #searchResultsGranularFiltersWarning {
-            display: none;
-        }
-
-        #searchPattern {
-            width: 500px;
-        }
-
-        #searchResultsHeaderContainer {
-            margin: 20px 0 10px 0;
-        }
+    #closeSearchButton {
+        background: none;
+        border: 0;
+        font-size: 1.3em;
+        line-height: 1;
+        min-height: 0;
+        padding: 0 6px 2px;
     }
 
+    #closeSearchButton:disabled {
+        color: var(--color-text-disabled);
+    }
+
+    #closeSearchButton:not(:disabled):hover {
+        background-color: var(--color-background-hover);
+    }
+
+    #searchTabs {
+        flex: 1;
+        list-style: none;
+        margin: 0;
+        overflow: auto;
+        padding: 0;
+    }
+
+    #searchTabs .tabTitle {
+        flex: 1;
+    }
+
+    /* the same handle as between the sidebar and the torrent list of the Transfers tab */
+    #searchListHandle {
+        background-image: url("images/handle-icon.svg");
+        background-position: center center;
+        background-repeat: no-repeat;
+        cursor: col-resize;
+        flex: none;
+        margin-left: -1px;
+        width: 8px;
+    }
+
+    #searchMain {
+        display: flex;
+        flex: 1;
+        flex-direction: column;
+        min-height: 0;
+        min-width: 0;
+    }
+
+    #searchResultsTableContainer {
+        flex: 1;
+        min-height: 0;
+        overflow: auto;
+        position: relative;
+    }
+
+    #searchResultsEmptyText {
+        align-items: center;
+        color: var(--color-text-disabled);
+        display: flex;
+        inset: 30px 0 0;
+        justify-content: center;
+        pointer-events: none;
+        position: absolute;
+    }
+
+    #searchResultsFooter {
+        align-items: center;
+        display: flex;
+        gap: 6px;
+        padding: 8px 10px;
+    }
+
+    #searchStatusText {
+        margin-left: auto;
+    }
 </style>
 
 <div id="searchResults">
-    <div id="searchResultsHeader">
-        <div id="searchResultsHeaderContainer">
-            <input type="search" id="searchPattern" class="searchInputField" placeholder="QBT_TR(Search)QBT_TR[CONTEXT=SearchEngineWidget]" aria-label="QBT_TR(Search)QBT_TR[CONTEXT=SearchEngineWidget]" autocorrect="off" autocomplete="off" autocapitalize="none" oninput="qBittorrent.Search.onSearchPatternChanged()">
-            <select id="categorySelect" class="searchInputField" aria-label="QBT_TR(Select category)QBT_TR[CONTEXT=SearchEngineWidget]" onchange="qBittorrent.Search.categorySelected()"></select>
-            <select id="pluginsSelect" class="searchInputField" aria-label="QBT_TR(Select plugins)QBT_TR[CONTEXT=SearchEngineWidget]" onchange="qBittorrent.Search.pluginSelected()"></select>
-            <button type="button" id="startSearchButton" class="searchInputField" onclick="qBittorrent.Search.startStopSearch()">
-                <img src="images/edit-find.svg" alt="QBT_TR(Search)QBT_TR[CONTEXT=SearchEngineWidget]" width="16" height="16">QBT_TR(Search)QBT_TR[CONTEXT=SearchEngineWidget]
-            </button>
-        </div>
-    </div>
-
-    <div id="searchResultsNoPlugins">
-        <table>
-            <tbody>
-                <tr>
-                    <td>
-                        QBT_TR(There aren't any search plugins installed.)QBT_TR[CONTEXT=SearchEngineWidget]
-                        <br>
-                        QBT_TR(Click the "Search plugins..." button at the bottom right of the window to install some.)QBT_TR[CONTEXT=SearchEngineWidget]
-                    </td>
-                </tr>
-            </tbody>
-        </table>
-        <span></span>
-    </div>
-
-    <div id="searchResultsNoSearches" class="invisible">
-        <table>
-            <tbody>
-                <tr>
-                    <td>
-                        QBT_TR(Start a search above.)QBT_TR[CONTEXT=SearchEngineWidget]
-                    </td>
-                </tr>
-            </tbody>
-        </table>
-        <span></span>
-    </div>
-
-    <div id="searchTabsToolbar" class="toolbarTabs invisible" style="border-bottom: 1px solid var(--color-border-default);">
-        <ul id="searchTabs" class="tab-menu"></ul>
-        <div class="clear"></div>
-    </div>
-
-    <div id="searchResultsFilters" class="invisible">
-        <input type="search" id="searchInNameFilter" placeholder="QBT_TR(Filter)QBT_TR[CONTEXT=SearchEngineWidget]" aria-label="QBT_TR(Filter)QBT_TR[CONTEXT=SearchEngineWidget]" autocorrect="off" autocapitalize="none">
-
-        <span>QBT_TR(Results)QBT_TR[CONTEXT=SearchEngineWidget] (QBT_TR(showing)QBT_TR[CONTEXT=SearchEngineWidget] <span id="numSearchResultsVisible" class="numSearchResults">0</span> QBT_TR(out of)QBT_TR[CONTEXT=SearchEngineWidget] <span id="numSearchResultsTotal" class="numSearchResults">0</span>):</span>
-
-        <div style="display: inline-block; float: right;">
-            <label for="searchInTorrentName" style="margin-left: 15px;">QBT_TR(Search in:)QBT_TR[CONTEXT=SearchEngineWidget]</label>
-            <select id="searchInTorrentName" onchange="qBittorrent.Search.searchInTorrentName()">
-                <option value="names">QBT_TR(Torrent names only)QBT_TR[CONTEXT=SearchEngineWidget]</option>
-                <option value="everywhere">QBT_TR(Everywhere)QBT_TR[CONTEXT=SearchEngineWidget]</option>
-            </select>
-
-            <img id="searchResultsGranularFiltersWarning" src="images/dialog-warning.svg" title="QBT_TR(Increase window width to display additional filters)QBT_TR[CONTEXT=SearchEngineWidget]" alt="QBT_TR(Warning)QBT_TR[CONTEXT=SearchEngineWidget]" width="24" height="24">
-
-            <div id="searchResultsGranularFilters">
-                <label for="searchMinSeedsFilter" style="margin-left: 15px;">QBT_TR(Seeds:)QBT_TR[CONTEXT=SearchEngineWidget]</label>
-                <input type="number" min="0" max="1000" id="searchMinSeedsFilter" value="0" onchange="qBittorrent.Search.searchSeedsFilterChanged()">
-                <label for="searchMaxSeedsFilter">QBT_TR(to)QBT_TR[CONTEXT=SearchEngineWidget]</label>
-                <input type="number" min="0" max="1000" id="searchMaxSeedsFilter" value="0" onchange="qBittorrent.Search.searchSeedsFilterChanged()">
-
-                <label for="searchMinSizeFilter" style="margin-left: 15px;">QBT_TR(Size:)QBT_TR[CONTEXT=SearchEngineWidget]</label>
-                <input type="number" min="0" max="1000" step=".01" value="0.00" id="searchMinSizeFilter" onchange="qBittorrent.Search.searchSizeFilterChanged()">
-                <select id="searchMinSizePrefix" onchange="qBittorrent.Search.searchSizeFilterPrefixChanged()" aria-label="QBT_TR(Min size prefix)QBT_TR[CONTEXT=SearchEngineWidget]">
-                    <option value="0">QBT_TR(B)QBT_TR[CONTEXT=misc]</option>
-                    <option value="1">QBT_TR(KiB)QBT_TR[CONTEXT=misc]</option>
-                    <option value="2" selected>QBT_TR(MiB)QBT_TR[CONTEXT=misc]</option>
-                    <option value="3">QBT_TR(GiB)QBT_TR[CONTEXT=misc]</option>
-                    <option value="4">QBT_TR(TiB)QBT_TR[CONTEXT=misc]</option>
-                    <option value="5">QBT_TR(PiB)QBT_TR[CONTEXT=misc]</option>
-                    <option value="6">QBT_TR(EiB)QBT_TR[CONTEXT=misc]</option>
-                </select>
-                <label for="searchMaxSizeFilter">QBT_TR(to)QBT_TR[CONTEXT=SearchEngineWidget]</label>
-                <input type="number" min="0" max="1000" step=".01" value="0.00" id="searchMaxSizeFilter" onchange="qBittorrent.Search.searchSizeFilterChanged()">
-                <select id="searchMaxSizePrefix" onchange="qBittorrent.Search.searchSizeFilterPrefixChanged()" aria-label="QBT_TR(Max size prefix)QBT_TR[CONTEXT=SearchEngineWidget]">
-                    <option value="0">QBT_TR(B)QBT_TR[CONTEXT=misc]</option>
-                    <option value="1">QBT_TR(KiB)QBT_TR[CONTEXT=misc]</option>
-                    <option value="2">QBT_TR(MiB)QBT_TR[CONTEXT=misc]</option>
-                    <option value="3" selected>QBT_TR(GiB)QBT_TR[CONTEXT=misc]</option>
-                    <option value="4">QBT_TR(TiB)QBT_TR[CONTEXT=misc]</option>
-                    <option value="5">QBT_TR(PiB)QBT_TR[CONTEXT=misc]</option>
-                    <option value="6">QBT_TR(EiB)QBT_TR[CONTEXT=misc]</option>
-                </select>
+    <div id="searchBody">
+        <div id="searchListPane" class="invisible">
+            <div id="searchListHeader" class="filterTitle">
+                <span>QBT_TR(Searches)QBT_TR[CONTEXT=SearchEngineWidget]</span>
+                <button type="button" id="closeSearchButton" disabled title="QBT_TR(Close the selected search)QBT_TR[CONTEXT=SearchEngineWidget]" aria-label="QBT_TR(Close the selected search)QBT_TR[CONTEXT=SearchEngineWidget]" onclick="qBittorrent.Search.closeSelectedSearch()">&times;</button>
             </div>
+            <ul id="searchTabs" class="filterList"></ul>
         </div>
-    </div>
+        <div id="searchListHandle" class="invisible"></div>
 
-    <div id="searchResultsTableContainer" class="invisible">
-        <div id="searchResultsTableDiv" class="dynamicTableDiv">
-            <div id="searchResultsTableFixedHeaderDiv" class="dynamicTableFixedHeaderDiv">
-                <table class="dynamicTable unselectable" style="position:relative;">
-                    <thead>
-                        <tr class="dynamicTableHeader"></tr>
-                    </thead>
+        <div id="searchMain">
+            <div id="searchResultsHeader">
+                <div id="searchResultsHeaderContainer">
+                    <input type="search" id="searchPattern" class="searchInputField" placeholder="QBT_TR(Search for torrents...)QBT_TR[CONTEXT=SearchEngineWidget]" aria-label="QBT_TR(Search)QBT_TR[CONTEXT=SearchEngineWidget]" autocorrect="off" autocomplete="off" autocapitalize="none" oninput="qBittorrent.Search.onSearchPatternChanged()">
+                    <select id="categorySelect" class="searchInputField" title="QBT_TR(Category to search in)QBT_TR[CONTEXT=SearchEngineWidget]" aria-label="QBT_TR(Select category)QBT_TR[CONTEXT=SearchEngineWidget]" onchange="qBittorrent.Search.categorySelected()"></select>
+                    <select id="pluginsSelect" class="searchInputField" title="QBT_TR(Search engines to use)QBT_TR[CONTEXT=SearchEngineWidget]" aria-label="QBT_TR(Select plugins)QBT_TR[CONTEXT=SearchEngineWidget]" onchange="qBittorrent.Search.pluginSelected()"></select>
+                    <button type="button" id="startSearchButton" class="searchInputField" onclick="qBittorrent.Search.startStopSearch()">
+                        <img src="images/edit-find.svg" alt="" width="16" height="16"><span>QBT_TR(Search)QBT_TR[CONTEXT=SearchEngineWidget]</span>
+                    </button>
+                    <button type="button" id="manageSearchPlugins" onclick="qBittorrent.Search.manageSearchPlugins()">
+                        <img alt="" src="images/plugins.svg" width="16" height="16">QBT_TR(Search plugins...)QBT_TR[CONTEXT=SearchEngineWidget]
+                    </button>
+                </div>
+                <div id="searchNotice" class="invisible" role="alert"></div>
+            </div>
+            <div id="searchResultsNoPlugins">
+                <table>
+                    <tbody>
+                        <tr>
+                            <td>
+                                QBT_TR(There aren't any search plugins installed.)QBT_TR[CONTEXT=SearchEngineWidget]
+                                <br>
+                                QBT_TR(Click the "Search plugins..." button at the top right of the window to install some.)QBT_TR[CONTEXT=SearchEngineWidget]
+                            </td>
+                        </tr>
+                    </tbody>
                 </table>
+                <span></span>
             </div>
-            <table class="dynamicTable unselectable">
-                <tbody></tbody>
-            </table>
-        </div>
-    </div>
 
-    <div style="height: 30px; padding-top: 10px;">
-        <button type="button" id="manageSearchPlugins" onclick="qBittorrent.Search.manageSearchPlugins()">
-            <img alt="QBT_TR(Search plugins...)QBT_TR[CONTEXT=SearchEngineWidget]" src="images/plugins.svg" width="16" height="16">QBT_TR(Search plugins...)QBT_TR[CONTEXT=SearchEngineWidget]
-        </button>
+            <div id="searchResultsNoSearches" class="invisible">
+                <table>
+                    <tbody>
+                        <tr>
+                            <td>
+                                QBT_TR(Type a search above and press Enter.)QBT_TR[CONTEXT=SearchEngineWidget]
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <span></span>
+            </div>
+
+            <fieldset id="searchResultsFilters" class="invisible">
+                <input type="search" id="searchInNameFilter" placeholder="QBT_TR(Filter search results...)QBT_TR[CONTEXT=SearchJobWidget]" aria-label="QBT_TR(Filter search results...)QBT_TR[CONTEXT=SearchJobWidget]" autocorrect="off" autocapitalize="none">
+
+                <div class="searchFilterGroup">
+                    <label for="searchInTorrentName">QBT_TR(Search in:)QBT_TR[CONTEXT=SearchEngineWidget]</label>
+                    <select id="searchInTorrentName" onchange="qBittorrent.Search.searchInTorrentName()">
+                        <option value="names">QBT_TR(Torrent names only)QBT_TR[CONTEXT=SearchEngineWidget]</option>
+                        <option value="everywhere">QBT_TR(Everywhere)QBT_TR[CONTEXT=SearchEngineWidget]</option>
+                    </select>
+                </div>
+
+                <div id="searchResultsGranularFilters">
+                    <div class="searchFilterGroup">
+                        <label for="searchMinSeedsFilter">QBT_TR(Seeds:)QBT_TR[CONTEXT=SearchEngineWidget]</label>
+                        <input type="number" min="0" max="1000" id="searchMinSeedsFilter" value="0" onchange="qBittorrent.Search.searchSeedsFilterChanged()">
+                        <label for="searchMaxSeedsFilter">QBT_TR(to)QBT_TR[CONTEXT=SearchEngineWidget]</label>
+                        <input type="number" min="0" max="1000" id="searchMaxSeedsFilter" placeholder="&infin;" onchange="qBittorrent.Search.searchSeedsFilterChanged()">
+                    </div>
+
+                    <div class="searchFilterGroup">
+                        <label for="searchMinSizeFilter">QBT_TR(Size:)QBT_TR[CONTEXT=SearchEngineWidget]</label>
+                        <input type="number" min="0" max="1000" step=".01" value="0.00" id="searchMinSizeFilter" onchange="qBittorrent.Search.searchSizeFilterChanged()">
+                        <select id="searchMinSizePrefix" onchange="qBittorrent.Search.searchSizeFilterPrefixChanged()" aria-label="QBT_TR(Min size prefix)QBT_TR[CONTEXT=SearchEngineWidget]">
+                            <option value="0">QBT_TR(B)QBT_TR[CONTEXT=misc]</option>
+                            <option value="1">QBT_TR(KiB)QBT_TR[CONTEXT=misc]</option>
+                            <option value="2" selected>QBT_TR(MiB)QBT_TR[CONTEXT=misc]</option>
+                            <option value="3">QBT_TR(GiB)QBT_TR[CONTEXT=misc]</option>
+                            <option value="4">QBT_TR(TiB)QBT_TR[CONTEXT=misc]</option>
+                            <option value="5">QBT_TR(PiB)QBT_TR[CONTEXT=misc]</option>
+                            <option value="6">QBT_TR(EiB)QBT_TR[CONTEXT=misc]</option>
+                        </select>
+                        <label for="searchMaxSizeFilter">QBT_TR(to)QBT_TR[CONTEXT=SearchEngineWidget]</label>
+                        <input type="number" min="0" max="1000" step=".01" placeholder="&infin;" id="searchMaxSizeFilter" onchange="qBittorrent.Search.searchSizeFilterChanged()">
+                        <select id="searchMaxSizePrefix" onchange="qBittorrent.Search.searchSizeFilterPrefixChanged()" aria-label="QBT_TR(Max size prefix)QBT_TR[CONTEXT=SearchEngineWidget]">
+                            <option value="0">QBT_TR(B)QBT_TR[CONTEXT=misc]</option>
+                            <option value="1">QBT_TR(KiB)QBT_TR[CONTEXT=misc]</option>
+                            <option value="2">QBT_TR(MiB)QBT_TR[CONTEXT=misc]</option>
+                            <option value="3" selected>QBT_TR(GiB)QBT_TR[CONTEXT=misc]</option>
+                            <option value="4">QBT_TR(TiB)QBT_TR[CONTEXT=misc]</option>
+                            <option value="5">QBT_TR(PiB)QBT_TR[CONTEXT=misc]</option>
+                            <option value="6">QBT_TR(EiB)QBT_TR[CONTEXT=misc]</option>
+                        </select>
+                    </div>
+                </div>
+            </fieldset>
+
+            <div id="searchResultsTableContainer" class="invisible">
+                <div id="searchResultsTableDiv" class="dynamicTableDiv">
+                    <div id="searchResultsTableFixedHeaderDiv" class="dynamicTableFixedHeaderDiv">
+                        <table class="dynamicTable unselectable" style="position:relative;">
+                            <thead>
+                                <tr class="dynamicTableHeader"></tr>
+                            </thead>
+                        </table>
+                    </div>
+                    <table class="dynamicTable unselectable">
+                        <tbody></tbody>
+                    </table>
+                </div>
+                <div id="searchResultsEmptyText" class="invisible"></div>
+            </div>
+
+            <div id="searchResultsFooter" class="invisible">
+                <button type="button" id="searchDownloadButton" disabled onclick="qBittorrent.Search.downloadSelected()">
+                    <img src="images/downloading.svg" alt="" width="16" height="16">QBT_TR(Download)QBT_TR[CONTEXT=SearchJobWidget]
+                </button>
+                <button type="button" id="searchOpenPageButton" disabled onclick="qBittorrent.Search.openSelectedDescriptionPages()">
+                    <img src="images/application-url.svg" alt="" width="16" height="16">QBT_TR(Open description page)QBT_TR[CONTEXT=SearchJobWidget]
+                </button>
+                <span id="searchStatusText"></span>
+            </div>
+        </div>
     </div>
 </div>
 
@@ -238,8 +351,8 @@
 </ul>
 <ul id="searchResultsTabsMenu" class="contextMenu">
     <li><a href="#stopSearch"><img src="images/torrent-stop.svg" alt="QBT_TR(Stop search)QBT_TR[CONTEXT=SearchJobWidget]">QBT_TR(Stop search)QBT_TR[CONTEXT=SearchJobWidget]</a></li>
-    <li><a href="#refreshTab"><img src="images/view-refresh.svg" alt="QBT_TR(Refresh tab)QBT_TR[CONTEXT=SearchJobWidget]">QBT_TR(Refresh tab)QBT_TR[CONTEXT=SearchJobWidget]</a></li>
+    <li><a href="#refreshTab"><img src="images/view-refresh.svg" alt="QBT_TR(Refresh search)QBT_TR[CONTEXT=SearchJobWidget]">QBT_TR(Refresh search)QBT_TR[CONTEXT=SearchJobWidget]</a></li>
     <li><a href="#useSearchText"><img src="images/edit-copy.svg" alt="QBT_TR(Use as search text)QBT_TR[CONTEXT=SearchJobWidget]">QBT_TR(Use as search text)QBT_TR[CONTEXT=SearchJobWidget]</a></li>
-    <li class="separator"><a href="#closeTab"><img src="images/list-remove.svg" alt="QBT_TR(Close tab)QBT_TR[CONTEXT=SearchJobWidget]">QBT_TR(Close tab)QBT_TR[CONTEXT=SearchJobWidget]</a></li>
-    <li><a href="#closeAllTabs"><img src="images/list-remove.svg" alt="QBT_TR(Close all tabs)QBT_TR[CONTEXT=SearchJobWidget]">QBT_TR(Close all tabs)QBT_TR[CONTEXT=SearchJobWidget]</a></li>
+    <li class="separator"><a href="#closeTab"><img src="images/list-remove.svg" alt="QBT_TR(Close search)QBT_TR[CONTEXT=SearchJobWidget]">QBT_TR(Close search)QBT_TR[CONTEXT=SearchJobWidget]</a></li>
+    <li><a href="#closeAllTabs"><img src="images/list-remove.svg" alt="QBT_TR(Close all searches)QBT_TR[CONTEXT=SearchJobWidget]">QBT_TR(Close all searches)QBT_TR[CONTEXT=SearchJobWidget]</a></li>
 </ul>

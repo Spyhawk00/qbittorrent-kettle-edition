@@ -33,6 +33,7 @@
 
 #include "base/bittorrent/session.h"
 #include "base/bittorrent/torrent.h"
+#include "groupboxheadingstyle.h"
 #include "torrentsharelimitswidget.h"
 #include "ui_torrentcategorydialog.h"
 
@@ -41,6 +42,8 @@ TorrentCategoryDialog::TorrentCategoryDialog(QWidget *parent)
     , m_ui {new Ui::TorrentCategoryDialog}
 {
     m_ui->setupUi(this);
+    // sections are headings with a line under them, as in Options
+    GroupBoxHeadingStyle::apply(this);
 
     m_ui->comboSavePath->setMode(FileSystemPathEdit::Mode::DirectorySave);
     m_ui->comboSavePath->setDialogCaption(tr("Choose save path"));
@@ -59,6 +62,9 @@ TorrentCategoryDialog::TorrentCategoryDialog(QWidget *parent)
     connect(m_ui->comboUseDownloadPath, &QComboBox::currentIndexChanged, this, &TorrentCategoryDialog::useDownloadPathChanged);
 
     resetShareLimitsWidgetDefaults();
+
+    // the controls of "label: control" rows start at the same column
+    GroupBoxHeadingStyle::alignRows(this);
 }
 
 TorrentCategoryDialog::TorrentCategoryDialog(QWidget *parent, const QString &categoryName, const BitTorrent::CategoryOptions &categoryOptions)

@@ -38,6 +38,8 @@
 #include <QObject>
 #include <QString>
 
+#include "base/access/identity.h"
+
 #include "api/isessionmanager.h"
 
 using namespace std::chrono_literals;
@@ -63,6 +65,9 @@ public:
 
     QString id() const override;
 
+    const Access::Identity &identity() const;
+    void setIdentity(const Access::Identity &identity);
+
     virtual WebSessionType type() const = 0;
     virtual bool hasExpired(std::chrono::milliseconds duration) const = 0;
 
@@ -82,6 +87,7 @@ private:
     const QString m_sid;
     QElapsedTimer m_timestamp;
     mutable QMap<QString, APIControllerEntry> m_apiControllers;
+    Access::Identity m_identity;
 };
 
 class CookieBasedWebSession final : public WebSession

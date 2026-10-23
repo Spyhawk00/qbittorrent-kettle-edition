@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="${LANG}" class="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <title>QBT_TR(Role)QBT_TR[CONTEXT=UserAccounts]</title>
+    <link rel="stylesheet" href="css/style.css?v=${CACHEID}" type="text/css">
+    <script defer src="scripts/localpreferences.js?v=${CACHEID}"></script>
+    <script defer src="scripts/color-scheme.js?v=${CACHEID}"></script>
+    <script defer src="scripts/misc.js?locale=${LANG}&v=${CACHEID}"></script>
+    <style>
+        .permissionRow {
+            display: flex;
+            align-items: flex-start;
+            padding: 2px 0;
+        }
+
+        .permissionRow input[type="checkbox"] {
+            flex: none; /* a long description must not squeeze the box */
+        }
+
+        .permissionRow label {
+            display: block;
+        }
+
+        .permissionDescription {
+            display: block;
+            font-size: 0.9em;
+            opacity: 0.75;
+        }
+
+        .permissionWarning {
+            height: 14px;
+            margin-right: 4px;
+            vertical-align: middle;
+        }
+
+        #roleFields {
+            padding: 10px 12px 0;
+        }
+
+        /* the permissions scroll in a framed box, as in the desktop window */
+        #rolePermissions {
+            background-color: var(--color-background-popup);
+            border: 1px solid var(--color-border-default);
+            margin: 10px 12px 0;
+            padding: 0 10px 10px;
+        }
+    </style>
+    <script>
+        "use strict";
+
+        window.addEventListener("DOMContentLoaded", (event) => {
+            window.addEventListener("keydown", (event) => {
+                switch (event.key) {
+                    case "Enter":
+                        if ((event.target.tagName === "TEXTAREA") || (event.target.tagName === "BUTTON"))
+                            break;
+                        event.preventDefault();
+                        document.getElementById("userRoleButton").click();
+                        break;
+                    case "Escape":
+                        event.preventDefault();
+                        window.parent.qBittorrent.Client.closeFrameWindow(window);
+                        break;
+                }
+            });
+
+            const userAccounts = window.parent.qBittorrent.UserAccounts;
+            const searchParams = new URLSearchParams(window.location.search);
+            const roleId = window.qBittorrent.Misc.safeTrim(searchParams.get("id"));
+            const role = (roleId !== "") ? userAccounts.getRole(roleId) : undefined;
+
+            const nameElem = document.getElementById("roleName");
+            const descriptionElem = document.getElementById("roleDescription");
+            const permissionsElem = document.getElementById("rolePermissions");
+
+            // one fieldset per group, in catalogue order
+            const groups = new Map();
+            for (const permission of userAccounts.getCatalog().permissions) {
+                if (!groups.has(permission.group)) {
+                    const fieldset = document.createElement("fieldset");
+                    fieldset.className = "settings";
+                    const legend = document.createElement("legend");
+                    legend.textContent = permission.group;
+                    fieldset.append(legend);
+                    permissionsElem.append(fieldset);
+                    groups.set(permission.group, fieldset);
+                }
+
+                const row = document.createElement("div");
+                row.className = "permissionRow";
+                const checkbox = document.createElement("input");
+                checkbox.type = "checkbox";
+                checkbox.id = `permission_${permission.id}`;
+                checkbox.value = permission.id;
+                checkbox.checked = (role !== undefined) && role.permissions.includes(permission.id);
+                const label = document.createElement("label");
+                label.htmlFor = checkbox.id;
+                // the warning goes before the text, where the desktop puts the check box icon
+                if (permission.dangerous) {
+                    const warning = document.createElement("img");
+                    warning.src = "images/dialog-warning.svg";
+                    warning.className = "permissionWarning";
+                    warning.alt = "QBT_TR(Gives control over the PC or qBittorrent itself)QBT_TR[CONTEXT=UserAccounts]";
+                    warning.title = warning.alt;
+                    label.append(warning);
+                }
+                label.append(permission.label);
+                const description = document.createElement("span");
+                description.className = "permissionDescription";
+                description.textContent = permission.description;
+                label.append(description);
+                row.append(checkbox, label);
+                groups.get(permission.group).append(row);
+            }
+
+            if (role !== undefined) {
+                nameElem.value = role.name;
+                descriptionElem.value = role.description;
+            }
+            nameElem.focus();
+
+            document.getElementById("userRoleCancelButton").addEventListener("click", (e) => {
+                window.parent.qBittorrent.Client.closeFrameWindow(window);
+            });
+
+            document.getElementById("userRoleButton").addEventListener("click", async (e) => {
+                e.preventDefault();
+                e.stopPropagation();
+
+                const name = nameElem.value.trim();
+                if (name === "") {
+                    alert("QBT_TR(Enter a role name.)QBT_TR[CONTEXT=UserAccounts]");
+                    return;
+                }
+
+                const params = {
+                    name: name,
+                    description: descriptionElem.value.trim(),
+                    permissions: [...permissionsElem.querySelectorAll("input:checked")].map(checkbox => checkbox.value).join(",")
+                };
+                if (role !== undefined)
+                    params.id = role.id;
+
+                const response = await fetch(`api/v2/access/${(role === undefined) ? "createRole" : "updateRole"}`, {
+                    method: "POST",
+                    body: new URLSearchParams(params)
+                });
+                if (!response.ok) {
+                    alert(await response.text());
+                    return;
+                }
+
+                userAccounts.refresh();
+                window.parent.qBittorrent.Client.closeFrameWindow(window);
+            });
+        });
+    </script>
+</head>
+
+<body class="dialogPage">
+    <div id="roleFields" class="dialogForm">
+        <label for="roleName">QBT_TR(Name:)QBT_TR[CONTEXT=UserAccounts]</label>
+        <input type="text" id="roleName" maxlength="40" autocomplete="off">
+        <label for="roleDescription">QBT_TR(Description:)QBT_TR[CONTEXT=UserAccounts]</label>
+        <input type="text" id="roleDescription" maxlength="200" autocomplete="off">
+    </div>
+
+    <div id="rolePermissions" class="dialogPageContent"></div>
+
+    <div class="dialogButtons">
+        <button type="button" id="userRoleButton">QBT_TR(OK)QBT_TR[CONTEXT=UserAccounts]</button>
+        <button type="button" id="userRoleCancelButton">QBT_TR(Cancel)QBT_TR[CONTEXT=MainWindow]</button>
+    </div>
+</body>
+
+</html>

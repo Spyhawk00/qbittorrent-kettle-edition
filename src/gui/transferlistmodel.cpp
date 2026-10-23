@@ -48,6 +48,26 @@ using namespace Qt::Literals::StringLiterals;
 
 namespace
 {
+    // Text (names, paths, hashes) is aligned to the left, everything else is centered.
+    // This covers every column, also those that are hidden by default.
+    QVariant columnAlignment(const int column)
+    {
+        switch (column)
+        {
+        case TransferListModel::TR_NAME:
+        case TransferListModel::TR_CATEGORY:
+        case TransferListModel::TR_TAGS:
+        case TransferListModel::TR_TRACKER:
+        case TransferListModel::TR_SAVE_PATH:
+        case TransferListModel::TR_DOWNLOAD_PATH:
+        case TransferListModel::TR_INFOHASH_V1:
+        case TransferListModel::TR_INFOHASH_V2:
+            return {};
+        default:
+            return QVariant(Qt::AlignHCenter | Qt::AlignVCenter);
+        }
+    }
+
     QHash<BitTorrent::TorrentState, QColor> torrentStateColorsFromUITheme()
     {
         struct TorrentStateColorDescriptor
@@ -210,34 +230,8 @@ QVariant TransferListModel::headerData(const int section, const Qt::Orientation 
         }
         else if (role == Qt::TextAlignmentRole)
         {
-            switch (section)
-            {
-            case TR_AMOUNT_DOWNLOADED:
-            case TR_AMOUNT_UPLOADED:
-            case TR_AMOUNT_DOWNLOADED_SESSION:
-            case TR_AMOUNT_UPLOADED_SESSION:
-            case TR_AMOUNT_LEFT:
-            case TR_COMPLETED:
-            case TR_SIZE:
-            case TR_TOTAL_SIZE:
-            case TR_ETA:
-            case TR_SEEDS:
-            case TR_PEERS:
-            case TR_UPSPEED:
-            case TR_DLSPEED:
-            case TR_UPLIMIT:
-            case TR_DLLIMIT:
-            case TR_RATIO_LIMIT:
-            case TR_RATIO:
-            case TR_POPULARITY:
-            case TR_QUEUE_POSITION:
-            case TR_LAST_ACTIVITY:
-            case TR_AVAILABILITY:
-            case TR_REANNOUNCE:
-                return QVariant(Qt::AlignRight | Qt::AlignVCenter);
-            default:
-                return QAbstractListModel::headerData(section, orientation, role);
-            }
+            const QVariant alignment = columnAlignment(section);
+            return alignment.isValid() ? alignment : QAbstractListModel::headerData(section, orientation, role);
         }
     }
 
@@ -579,33 +573,7 @@ QVariant TransferListModel::data(const QModelIndex &index, const int role) const
         }
         break;
     case Qt::TextAlignmentRole:
-        switch (index.column())
-        {
-        case TR_AMOUNT_DOWNLOADED:
-        case TR_AMOUNT_UPLOADED:
-        case TR_AMOUNT_DOWNLOADED_SESSION:
-        case TR_AMOUNT_UPLOADED_SESSION:
-        case TR_AMOUNT_LEFT:
-        case TR_COMPLETED:
-        case TR_SIZE:
-        case TR_TOTAL_SIZE:
-        case TR_ETA:
-        case TR_SEEDS:
-        case TR_PEERS:
-        case TR_UPSPEED:
-        case TR_DLSPEED:
-        case TR_UPLIMIT:
-        case TR_DLLIMIT:
-        case TR_RATIO_LIMIT:
-        case TR_RATIO:
-        case TR_POPULARITY:
-        case TR_QUEUE_POSITION:
-        case TR_LAST_ACTIVITY:
-        case TR_AVAILABILITY:
-        case TR_REANNOUNCE:
-            return QVariant(Qt::AlignRight | Qt::AlignVCenter);
-        }
-        break;
+        return columnAlignment(index.column());
     default:
         break;
     }

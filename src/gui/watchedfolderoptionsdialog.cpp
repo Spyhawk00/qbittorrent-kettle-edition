@@ -30,6 +30,7 @@
 
 #include "base/global.h"
 #include "addtorrentparamswidget.h"
+#include "groupboxheadingstyle.h"
 #include "ui_watchedfolderoptionsdialog.h"
 
 #define SETTINGS_KEY(name) u"WatchedFolderOptionsDialog/" name
@@ -43,6 +44,9 @@ WatchedFolderOptionsDialog::WatchedFolderOptionsDialog(
 {
     m_ui->setupUi(this);
     m_ui->groupBoxParameters->layout()->addWidget(m_addTorrentParamsWidget);
+    // the rows line up with the section heading, as in Options
+    m_addTorrentParamsWidget->layout()->setContentsMargins(0, 0, 0, 0);
+    GroupBoxHeadingStyle::apply(this);
 
     connect(m_ui->buttonBox, &QDialogButtonBox::accepted, this, &QDialog::accept);
     connect(m_ui->buttonBox, &QDialogButtonBox::rejected, this, &QDialog::reject);

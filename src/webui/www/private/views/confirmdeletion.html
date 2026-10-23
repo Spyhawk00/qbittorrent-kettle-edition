@@ -2,20 +2,17 @@
     <div class="confirmDeletionGrid">
         <span class="deletionGridItem confirmDialogWarning"></span>
         <span class="deletionGridItem dialogMessage" id="deleteTorrentMessage"></span>
-        <span class="deletionGridItem">
-            <button class="disabled" type="button" id="rememberBtn" title="QBT_TR(Remember choice)QBT_TR[CONTEXT=HttpServer]" aria-label="QBT_TR(Remember choice)QBT_TR[CONTEXT=HttpServer]" disabled></button>
-        </span>
-        <span class="deletionGridItem">
-            <input type="checkbox" id="deleteFromDiskCB">
-            <label for="deleteFromDiskCB">
-                <em>QBT_TR(Also remove the content files)QBT_TR[CONTEXT=confirmDeletionDlg]</em>
-            </label>
-        </span>
     </div>
 </div>
-<div>
-    <input type="button" value="QBT_TR(Remove torrent)QBT_TR[CONTEXT=MainWindow]" id="confirmDeletionButton">
-    <input type="button" value="QBT_TR(Cancel)QBT_TR[CONTEXT=MainWindow]" id="cancelDeletionButton">
+<div class="deletionActions">
+    <span class="deletionGridItem" id="deleteFromDiskItem">
+        <input type="checkbox" id="deleteFromDiskCB">
+        <label for="deleteFromDiskCB">QBT_TR(Also remove the content files)QBT_TR[CONTEXT=confirmDeletionDlg]</label>
+    </span>
+    <div class="dialogButtons">
+        <button type="button" id="confirmDeletionButton">QBT_TR(Remove)QBT_TR[CONTEXT=MainWindow]</button>
+        <button type="button" id="cancelDeletionButton">QBT_TR(Cancel)QBT_TR[CONTEXT=MainWindow]</button>
+    </div>
 </div>
 
 <script>
@@ -24,7 +21,6 @@
     (() => {
         const confirmButton = document.getElementById("confirmDeletionButton");
         const cancelButton = document.getElementById("cancelDeletionButton");
-        const rememberButton = document.getElementById("rememberBtn");
         const deleteCB = document.getElementById("deleteFromDiskCB");
         const deletionText = document.getElementById("deleteTorrentMessage");
 
@@ -33,8 +29,17 @@
             isDeletingVisibleTorrents = false,
             forceDeleteFiles = false,
         } = window.MUI.Windows.instances["confirmDeletionPage"].options.data;
-        let prefDeleteContentFiles = window.qBittorrent.Cache.preferences.get().delete_torrent_content_files;
+        const prefDeleteContentFiles = window.qBittorrent.Cache.preferences.get().delete_torrent_content_files;
         deleteCB.checked = forceDeleteFiles || prefDeleteContentFiles;
+
+        // the signed-in person's role may only remove torrents from the list
+        if (!window.qBittorrent.Cache.account.can("delete_files")) {
+            deleteCB.checked = false;
+            document.getElementById("deleteFromDiskItem").classList.add("roleHidden");
+        }
+        // remembering the choice changes a setting
+        const canRemember = !forceDeleteFiles && window.qBittorrent.Cache.account.can("delete_files")
+            && window.qBittorrent.Cache.account.can("settings");
 
         let deleteMessage;
         if (hashes.length === 1) {
@@ -47,35 +52,14 @@
 
         deletionText.textContent = deleteMessage;
 
-        confirmButton.value = (deleteCB.checked ? "QBT_TR(Remove torrent and content)QBT_TR[CONTEXT=MainWindow]" : "QBT_TR(Remove torrent)QBT_TR[CONTEXT=MainWindow]");
-
-        // Enable "Remember" button if the current choice is different from the saved preference
-        deleteCB.addEventListener("click", (e) => {
-            const removeTorrentContent = deleteCB.checked;
-            const rememberButtonDisabled = (removeTorrentContent === prefDeleteContentFiles);
-            rememberButton.disabled = rememberButtonDisabled;
-            rememberButton.classList.toggle("disabled", rememberButtonDisabled);
-
-            const confirmButtonText = (removeTorrentContent ? "QBT_TR(Remove torrent and content)QBT_TR[CONTEXT=MainWindow]" : "QBT_TR(Remove torrent)QBT_TR[CONTEXT=MainWindow]");
-            confirmButton.value = confirmButtonText;
-            confirmButton.classList.toggle("value", confirmButtonText);
-        });
-
-        // Set current "Delete files" choice as the default
-        rememberButton.addEventListener("click", (e) => {
-            window.qBittorrent.Cache.preferences.set({
-                delete_torrent_content_files: deleteCB.checked
-            }).then(() => {
-                prefDeleteContentFiles = deleteCB.checked;
-                rememberButton.disabled = true;
-                rememberButton.classList.toggle("disabled", true);
-            });
-        });
-
         cancelButton.focus();
         cancelButton.addEventListener("click", (e) => { window.qBittorrent.Client.closeWindow(document.getElementById("confirmDeletionPage")); });
 
         confirmButton.addEventListener("click", (e) => {
+            // The last choice becomes the default for the next removal
+            if (canRemember && (deleteCB.checked !== prefDeleteContentFiles))
+                window.qBittorrent.Cache.preferences.set({ delete_torrent_content_files: deleteCB.checked });
+
             // Some torrents might be removed when waiting for user input, so refetch the torrent list
             const hashes = isDeletingVisibleTorrents
                 ? torrentsTable.getFilteredTorrentsHashes(selectedStatus, selectedCategory, selectedTag, selectedTracker)

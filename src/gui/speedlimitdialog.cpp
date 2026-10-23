@@ -33,6 +33,7 @@
 #include <QStyle>
 
 #include "base/bittorrent/session.h"
+#include "groupboxheadingstyle.h"
 #include "ui_speedlimitdialog.h"
 #include "uithememanager.h"
 #include "utils.h"
@@ -55,6 +56,8 @@ SpeedLimitDialog::SpeedLimitDialog(QWidget *parent)
     , m_storeDialogSize {SETTINGS_KEY(u"Size"_s)}
 {
     m_ui->setupUi(this);
+    // sections are headings with a line under them, as in Options
+    GroupBoxHeadingStyle::apply(this);
 
     connect(m_ui->buttonBox, &QDialogButtonBox::accepted, this, &QDialog::accept);
     connect(m_ui->buttonBox, &QDialogButtonBox::rejected, this, &QDialog::reject);
@@ -113,6 +116,9 @@ SpeedLimitDialog::SpeedLimitDialog(QWidget *parent)
 
     if (const QSize dialogSize = m_storeDialogSize; dialogSize.isValid())
         resize(dialogSize);
+
+    // the controls of "label: control" rows start at the same column
+    GroupBoxHeadingStyle::alignRows(this);
 }
 
 SpeedLimitDialog::~SpeedLimitDialog()

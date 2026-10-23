@@ -42,7 +42,7 @@ window.qBittorrent.ProgressBar ??= (() => {
             height: 12,
             darkbg: "var(--color-background-blue)",
             darkfg: "var(--color-text-white)",
-            lightbg: "var(--color-background-default)",
+            lightbg: "var(--color-background-control)",
             lightfg: "var(--color-text-default)",
         };
 

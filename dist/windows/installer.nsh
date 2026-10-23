@@ -25,26 +25,28 @@ Section $(inst_qbt_req) ;"qBittorrent (required)"
   ; Set output path to the installation directory.
   SetOutPath $INSTDIR
   ; Put files there
-  File "${QBT_DIST_DIR}\qbittorrent.exe"
+  File "${QBT_DIST_DIR}\qbittorrent-ke.exe"
   File "qt.conf"
-  File /nonfatal /r /x "${QBT_DIST_DIR}\qbittorrent.exe" "${QBT_DIST_DIR}\*.*"
+  File /nonfatal /r /x "${QBT_DIST_DIR}\qbittorrent-ke.exe" "${QBT_DIST_DIR}\*.*"
 
   ; Write the installation path into the registry
   WriteRegStr HKLM "Software\qBittorrent" "InstallLocation" "$INSTDIR"
+  ; Kettle Edition's own key, so a reinstall never lands in the folder of an official install
+  WriteRegStr HKLM "Software\qBittorrent-ke" "InstallLocation" "$INSTDIR"
 
   ; Register qBittorrent as possible default program for .torrent files and magnet links
   WriteRegStr HKLM "Software\qBittorrent\Capabilities" "ApplicationDescription" "A BitTorrent client in Qt"
-  WriteRegStr HKLM "Software\qBittorrent\Capabilities" "ApplicationName" "qBittorrent"
+  WriteRegStr HKLM "Software\qBittorrent\Capabilities" "ApplicationName" "qBittorrent Kettle Edition"
   WriteRegStr HKLM "Software\qBittorrent\Capabilities\FileAssociations" ".torrent" "qBittorrent.File.Torrent"
   WriteRegStr HKLM "Software\qBittorrent\Capabilities\UrlAssociations" "magnet" "qBittorrent.Url.Magnet"
   WriteRegStr HKLM "Software\RegisteredApplications" "qBittorrent" "Software\qBittorrent\Capabilities"
   ; Register qBittorrent ProgIDs
   WriteRegStr HKLM "Software\Classes\qBittorrent.File.Torrent" "" "Torrent File"
-  WriteRegStr HKLM "Software\Classes\qBittorrent.File.Torrent\DefaultIcon" "" '"$INSTDIR\qbittorrent.exe",1'
-  WriteRegStr HKLM "Software\Classes\qBittorrent.File.Torrent\shell\open\command" "" '"$INSTDIR\qbittorrent.exe" "%1"'
+  WriteRegStr HKLM "Software\Classes\qBittorrent.File.Torrent\DefaultIcon" "" '"$INSTDIR\qbittorrent-ke.exe",1'
+  WriteRegStr HKLM "Software\Classes\qBittorrent.File.Torrent\shell\open\command" "" '"$INSTDIR\qbittorrent-ke.exe" "%1"'
   WriteRegStr HKLM "Software\Classes\qBittorrent.Url.Magnet" "" "Magnet URI"
-  WriteRegStr HKLM "Software\Classes\qBittorrent.Url.Magnet\DefaultIcon" "" '"$INSTDIR\qbittorrent.exe",1'
-  WriteRegStr HKLM "Software\Classes\qBittorrent.Url.Magnet\shell\open\command" "" '"$INSTDIR\qbittorrent.exe" "%1"'
+  WriteRegStr HKLM "Software\Classes\qBittorrent.Url.Magnet\DefaultIcon" "" '"$INSTDIR\qbittorrent-ke.exe",1'
+  WriteRegStr HKLM "Software\Classes\qBittorrent.Url.Magnet\shell\open\command" "" '"$INSTDIR\qbittorrent-ke.exe" "%1"'
 
   WriteRegStr HKLM "Software\Classes\.torrent" "Content Type" "application/x-bittorrent"
   WriteRegStr HKLM "Software\Classes\magnet" "" "URL:Magnet URI"
@@ -54,12 +56,12 @@ Section $(inst_qbt_req) ;"qBittorrent (required)"
   System::Call 'shell32::SHChangeNotify(i ${SHCNE_ASSOCCHANGED}, i ${SHCNF_IDLIST}, p 0, p 0)'
 
   ; Write the uninstall keys for Windows
-  WriteRegStr HKLM "Software\Microsoft\Windows\CurrentVersion\Uninstall\qBittorrent" "DisplayName" "qBittorrent"
+  WriteRegStr HKLM "Software\Microsoft\Windows\CurrentVersion\Uninstall\qBittorrent" "DisplayName" "qBittorrent Kettle Edition"
   WriteRegStr HKLM "Software\Microsoft\Windows\CurrentVersion\Uninstall\qBittorrent" "UninstallString" '"$INSTDIR\uninst.exe"'
-  WriteRegStr HKLM "Software\Microsoft\Windows\CurrentVersion\Uninstall\qBittorrent" "DisplayIcon" '"$INSTDIR\qbittorrent.exe",0'
-  WriteRegStr HKLM "Software\Microsoft\Windows\CurrentVersion\Uninstall\qBittorrent" "Publisher" "The qBittorrent project"
-  WriteRegStr HKLM "Software\Microsoft\Windows\CurrentVersion\Uninstall\qBittorrent" "URLInfoAbout" "https://www.qbittorrent.org"
-  WriteRegStr HKLM "Software\Microsoft\Windows\CurrentVersion\Uninstall\qBittorrent" "DisplayVersion" "${QBT_VERSION}"
+  WriteRegStr HKLM "Software\Microsoft\Windows\CurrentVersion\Uninstall\qBittorrent" "DisplayIcon" '"$INSTDIR\qbittorrent-ke.exe",0'
+  WriteRegStr HKLM "Software\Microsoft\Windows\CurrentVersion\Uninstall\qBittorrent" "Publisher" "Spyhawk"
+  WriteRegStr HKLM "Software\Microsoft\Windows\CurrentVersion\Uninstall\qBittorrent" "URLInfoAbout" "https://github.com/Spyhawk00/qbittorrent-kettle-edition"
+  WriteRegStr HKLM "Software\Microsoft\Windows\CurrentVersion\Uninstall\qBittorrent" "DisplayVersion" "${KETTLE_EDITION}"
   WriteRegDWORD HKLM "Software\Microsoft\Windows\CurrentVersion\Uninstall\qBittorrent" "NoModify" 1
   WriteRegDWORD HKLM "Software\Microsoft\Windows\CurrentVersion\Uninstall\qBittorrent" "NoRepair" 1
   WriteUninstaller "uninst.exe"
@@ -69,18 +71,43 @@ Section $(inst_qbt_req) ;"qBittorrent (required)"
 
 SectionEnd
 
+; Lets the Windows user who started this installer change the program folder, so that Kettle Edition can update itself
+; without an administrator prompt. The installer itself runs as an administrator (possibly a different account than the
+; user, when a standard user typed an administrator's password), so the user is looked up in the user's own session.
+; Shown on the components page, ticked by default, so nobody gets the folder permission without seeing it.
+Section "Allow updates without admin prompts" kettle_update_permission
+
+  !insertmacro UAC_AsUser_Call Function kettle_get_user ${UAC_SYNCREGISTERS}
+  ; $0 = user name, $1 = domain (for a local account: the computer name)
+  nsExec::ExecToStack 'icacls "$INSTDIR" /grant "$1\$0:(OI)(CI)M"'
+  Pop $2
+  Pop $3
+  ${If} $2 != 0
+    DetailPrint "Could not give $1\$0 access to $INSTDIR (icacls: $2): $3"
+    MessageBox MB_OK|MB_ICONEXCLAMATION "qBittorrent Kettle Edition was installed, but automatic updates will ask for administrator rights because the program folder could not be opened for your account." /SD IDOK
+  ${EndIf}
+
+SectionEnd
+
+Function kettle_get_user
+
+  System::Call 'advapi32::GetUserNameW(w .r0, *i ${NSIS_MAX_STRLEN})'
+  ReadEnvStr $1 USERDOMAIN
+
+FunctionEnd
+
 ; Optional section (can be disabled by the user)
 Section /o $(inst_desktop) ;"Create Desktop Shortcut"
 
-  CreateShortCut "$DESKTOP\qBittorrent.lnk" "$INSTDIR\qbittorrent.exe"
+  CreateShortCut "$DESKTOP\qBittorrent Kettle Edition.lnk" "$INSTDIR\qbittorrent-ke.exe"
 
 SectionEnd
 
 Section $(inst_startmenu) ;"Create Start Menu Shortcut"
 
-  CreateDirectory "$SMPROGRAMS\qBittorrent"
-  CreateShortCut "$SMPROGRAMS\qBittorrent\qBittorrent.lnk" "$INSTDIR\qbittorrent.exe"
-  CreateShortCut "$SMPROGRAMS\qBittorrent\$(inst_uninstall_link_description).lnk" "$INSTDIR\uninst.exe"
+  CreateDirectory "$SMPROGRAMS\qBittorrent Kettle Edition"
+  CreateShortCut "$SMPROGRAMS\qBittorrent Kettle Edition\qBittorrent Kettle Edition.lnk" "$INSTDIR\qbittorrent-ke.exe"
+  CreateShortCut "$SMPROGRAMS\qBittorrent Kettle Edition\$(inst_uninstall_link_description).lnk" "$INSTDIR\uninst.exe"
 
 SectionEnd
 
@@ -92,14 +119,14 @@ SectionEnd
 
 Function inst_startup_user
 
-  WriteRegStr HKCU "Software\Microsoft\Windows\CurrentVersion\Run" "qBittorrent" "$INSTDIR\qbittorrent.exe"
+  WriteRegStr HKCU "Software\Microsoft\Windows\CurrentVersion\Run" "qBittorrent" "$INSTDIR\qbittorrent-ke.exe"
 
 FunctionEnd
 
 Section $(inst_firewall)
 
   DetailPrint $(inst_firewallinfo)
-  nsisFirewallW::AddAuthorizedApplication "$INSTDIR\qbittorrent.exe" "qBittorrent"
+  nsisFirewallW::AddAuthorizedApplication "$INSTDIR\qbittorrent-ke.exe" "qBittorrent"
 
 SectionEnd
 
@@ -155,8 +182,13 @@ FunctionEnd
 Function check_instance
 
   check:
+  FindProcDLL::FindProc "qbittorrent-ke.exe"
+  StrCmp $R0 "1" running
+  ; the official program file, which this installer replaces
   FindProcDLL::FindProc "qbittorrent.exe"
-  StrCmp $R0 "1" 0 notfound
+  StrCmp $R0 "1" running notfound
+
+  running:
   MessageBox MB_RETRYCANCEL|MB_ICONEXCLAMATION $(inst_warning) /SD IDCANCEL IDRETRY check IDCANCEL canceled
 
   canceled:
@@ -169,7 +201,7 @@ FunctionEnd
 
 Function PageFinishRun
 
-  !insertmacro UAC_AsUser_ExecShell "" "$INSTDIR\qbittorrent.exe" "" "" ""
+  !insertmacro UAC_AsUser_ExecShell "" "$INSTDIR\qbittorrent-ke.exe" "" "" ""
 
 FunctionEnd
 

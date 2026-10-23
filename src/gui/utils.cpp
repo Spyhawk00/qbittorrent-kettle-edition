@@ -37,15 +37,22 @@
 #include <shellapi.h>
 #endif
 
+#include <QAbstractScrollArea>
 #include <QApplication>
 #include <QDesktopServices>
+#include <QEvent>
+#include <QColor>
+#include <QPalette>
 #include <QPixmap>
 #include <QPixmapCache>
+#include <QPointer>
 #include <QPoint>
 #include <QProcess>
 #include <QRegularExpression>
 #include <QScreen>
+#include <QScrollBar>
 #include <QSize>
+#include <QSplitter>
 #include <QStyle>
 #include <QThread>
 #include <QUrl>
@@ -68,6 +75,89 @@
 
 namespace
 {
+    // Keeps a scroll bar in the divider to the right of a scroll area, in step with the scroll bar of the area
+    class DividerScrollBar final : public QObject
+    {
+    public:
+        DividerScrollBar(QAbstractScrollArea *area, QSplitter *splitter)
+            : QObject(area)
+            , m_area {area}
+            , m_splitter {splitter}
+            , m_bar {new QScrollBar(Qt::Vertical)}
+        {
+            QScrollBar *areaBar = area->verticalScrollBar();
+            area->setVerticalScrollBarPolicy(Qt::ScrollBarAlwaysOff);
+            area->installEventFilter(this);
+            splitter->installEventFilter(this);
+            connect(splitter, &QSplitter::splitterMoved, this, [this] { update(); });
+            connect(areaBar, &QScrollBar::rangeChanged, this, [this] { update(); });
+            connect(areaBar, &QScrollBar::valueChanged, m_bar, &QScrollBar::setValue);
+            connect(m_bar, &QScrollBar::valueChanged, areaBar, &QScrollBar::setValue);
+            update();
+        }
+
+        ~DividerScrollBar() override
+        {
+            delete m_bar;
+        }
+
+    private:
+        bool eventFilter(QObject *object, QEvent *event) override
+        {
+            switch (event->type())
+            {
+            case QEvent::Resize:
+            case QEvent::Move:
+            case QEvent::Show:
+            case QEvent::Hide:
+            case QEvent::LayoutRequest:
+                if ((object == m_area) || (object == m_splitter))
+                    update();
+                break;
+            default:
+                break;
+            }
+            return QObject::eventFilter(object, event);
+        }
+
+        void update()
+        {
+            const QScrollBar *areaBar = m_area->verticalScrollBar();
+            m_bar->setRange(areaBar->minimum(), areaBar->maximum());
+            m_bar->setPageStep(areaBar->pageStep());
+            m_bar->setSingleStep(areaBar->singleStep());
+            m_bar->setValue(areaBar->value());
+
+            // the divider after the part of the splitter that holds the area
+            QWidget *pane = m_area;
+            while (pane && (pane->parentWidget() != m_splitter))
+                pane = pane->parentWidget();
+            const int index = pane ? m_splitter->indexOf(pane) : -1;
+            const bool hasDivider = (index >= 0) && ((index + 1) < m_splitter->count());
+            const bool show = hasDivider && m_area->isVisible() && (areaBar->maximum() > areaBar->minimum());
+            if (!show)
+            {
+                m_bar->hide();
+                return;
+            }
+
+            // The bar is a child of the divider itself (a child of the splitter would become one of its parts).
+            // The style draws the thumb at the right edge of the bar, so the bar covers the left half of the divider
+            // and the thumb is in the middle of it; the other half still drags the divider.
+            QWidget *handle = m_splitter->handle(index + 1);
+            if (m_bar->parentWidget() != handle)
+                m_bar->setParent(handle);
+            const int width = std::max(((handle->width() / 2) + 1), 3);
+            m_bar->setGeometry(0, handle->mapFromGlobal(m_area->mapToGlobal(QPoint(0, 0))).y(), width, m_area->height());
+            m_bar->show();
+            m_bar->raise();
+        }
+
+        QAbstractScrollArea *m_area = nullptr;
+        QSplitter *m_splitter = nullptr;
+        QPointer<QScrollBar> m_bar;
+    };
+
     QUrl toURL(const Path &path)
     {
         // Hack to access samba shares with QDesktopServices::openUrl
@@ -178,6 +268,19 @@ QSize Utils::Gui::largeIconSize(const QWidget *widget)
     // under a 1080p screen is usually 32x32
     const int s = QApplication::style()->pixelMetric(QStyle::PM_LargeIconSize, nullptr, widget);
     return {s, s};
+}
+
+void Utils::Gui::dividerVerticalScrollBar(QAbstractScrollArea *area, QSplitter *splitter)
+{
+    new DividerScrollBar(area, splitter);
+}
+
+QColor Utils::Gui::sectionHeaderColor(const QPalette &palette)
+{
+    const QColor window = palette.color(QPalette::Window);
+    const QColor mid = palette.color(QPalette::Mid);
+    return QColor::fromRgb(((window.red() * 3) + mid.red()) / 4, ((window.green() * 3) + mid.green()) / 4
+        , ((window.blue() * 3) + mid.blue()) / 4);
 }
 
 QPoint Utils::Gui::screenCenter(const QWidget *w)

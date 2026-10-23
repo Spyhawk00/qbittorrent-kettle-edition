@@ -276,7 +276,7 @@ window.qBittorrent.PropTrackers ??= (() => {
             paddingVertical: 0,
             paddingHorizontal: 0,
             width: window.qBittorrent.Dialog.limitWidthToViewport(500),
-            height: 200,
+            height: 150,
             onCloseComplete: () => {
                 updateData();
             }

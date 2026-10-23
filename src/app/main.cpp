@@ -47,7 +47,6 @@
 
 #include <QCoreApplication>
 #include <QString>
-#include <QThread>
 
 #ifndef DISABLE_GUI
 // GUI-only includes
@@ -246,7 +245,6 @@ int main(int argc, char *argv[])
             }
 #endif
 
-            QThread::msleep(300);
             app->callMainInstance();
 
             return EXIT_SUCCESS;

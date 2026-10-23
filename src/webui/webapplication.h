@@ -30,6 +30,7 @@
 #pragma once
 
 #include <chrono>
+#include <optional>
 #include <utility>
 
 #include <QDateTime>
@@ -44,6 +45,7 @@
 #include <QSet>
 #include <QTranslator>
 
+#include "base/access/identity.h"
 #include "base/applicationcomponent.h"
 #include "base/http/constants.h"
 #include "base/http/environment.h"
@@ -53,6 +55,7 @@
 #include "base/path.h"
 #include "base/utils/net.h"
 #include "base/utils/version.h"
+#include "api/accesscontroller.h"
 #include "api/isessionmanager.h"
 
 using namespace std::chrono_literals;
@@ -68,6 +71,11 @@ class ClientDataStorage;
 class SearchJobManager;
 class WebSession;
 
+namespace Access
+{
+    class AccessStore;
+}
+
 enum class WebSessionType : qint8;
 
 namespace BitTorrent
@@ -76,7 +84,7 @@ namespace BitTorrent
 }
 
 class WebApplication final : public ApplicationComponent<QObject>
-        , public Http::IRequestHandler, public ISessionManager
+        , public Http::IRequestHandler, public ISessionManager, public IAccessContext
 {
     Q_OBJECT
     Q_DISABLE_COPY_MOVE(WebApplication)
@@ -97,7 +105,7 @@ private:
     QString clientId() const;
     ISession *session() override;
     void sessionStart() override;
-    void sessionStartImpl(const QString &sessionId, WebSessionType sessionType);
+    void sessionStartImpl(const QString &sessionId, WebSessionType sessionType, bool setCookie = true);
     void sessionEnd() override;
 
     void processAPIRequest(const QString &endpoint, const Http::HeaderMap &commonHeaders, Http::ResponseWriter &responseWriter);
@@ -109,6 +117,24 @@ private:
     void sendWebUIFile(const Http::HeaderMap &commonHeaders, Http::ResponseWriter &responseWriter);
 
     void translateDocument(QString &data) const;
+
+    // IAccessContext
+    Access::AccessStore *accessStore() const override;
+    Access::Identity currentIdentity() const override;
+    QString currentSessionId() const override;
+    QString currentClientAddress() const override;
+    void logAccessEvent(const QString &category, const QString &endpoint, const QString &summary
+            , const QString &outcome, const QJsonObject &details = {}) override;
+
+    // multi-user access control
+    void restoreStoredSession(const QString &sessionId);
+    void checkAccess(const QString &endpoint, QHash<QString, QString> &params, const QStringList &fileNames);
+    void logRequest(const QString &endpoint, const QHash<QString, QString> &params, const QStringList &fileNames
+            , const QHash<QString, QString> &names, const QString &outcome, const QString &error) const;
+    void logEvent(const Access::Identity &identity, const QString &category, const QString &endpoint
+            , const QString &summary, const QString &outcome, const QJsonObject &details = {}) const;
+    QHash<QString, QString> torrentNames(const QHash<QString, QString> &params) const;
+    ClientDataStorage *clientDataStorage(const Access::Identity &identity, QObject *parent);
 
     // Session management
     QString generateSid() const;
@@ -159,6 +185,15 @@ private:
         {{u"app"_s, u"setCookies"_s}, Http::HEADER_REQUEST_METHOD_POST},
         {{u"app"_s, u"setPreferences"_s}, Http::HEADER_REQUEST_METHOD_POST},
         {{u"app"_s, u"shutdown"_s}, Http::HEADER_REQUEST_METHOD_POST},
+        {{u"access"_s, u"changePassword"_s}, Http::HEADER_REQUEST_METHOD_POST},
+        {{u"access"_s, u"createRole"_s}, Http::HEADER_REQUEST_METHOD_POST},
+        {{u"access"_s, u"createUser"_s}, Http::HEADER_REQUEST_METHOD_POST},
+        {{u"access"_s, u"deleteRole"_s}, Http::HEADER_REQUEST_METHOD_POST},
+        {{u"access"_s, u"deleteUser"_s}, Http::HEADER_REQUEST_METHOD_POST},
+        {{u"access"_s, u"revokeSession"_s}, Http::HEADER_REQUEST_METHOD_POST},
+        {{u"access"_s, u"signOutUser"_s}, Http::HEADER_REQUEST_METHOD_POST},
+        {{u"access"_s, u"updateRole"_s}, Http::HEADER_REQUEST_METHOD_POST},
+        {{u"access"_s, u"updateUser"_s}, Http::HEADER_REQUEST_METHOD_POST},
         {{u"auth"_s, u"login"_s}, Http::HEADER_REQUEST_METHOD_POST},
         {{u"auth"_s, u"logout"_s}, Http::HEADER_REQUEST_METHOD_POST},
         {{u"clientdata"_s, u"store"_s}, Http::HEADER_REQUEST_METHOD_POST},
@@ -282,6 +317,14 @@ private:
     BitTorrent::TorrentCreationManager *m_torrentCreationManager = nullptr;
     SearchJobManager *m_searchJobManager = nullptr;
     ClientDataStorage *m_clientDataStorage = nullptr;
+    Access::AccessStore *m_accessStore = nullptr;
+
+    // Who the next session started by sessionStart() belongs to (set right before starting it).
+    mutable std::optional<Access::Identity> m_pendingIdentity;
+    // The current session ends with this request (a user account signed in with HTTP Basic authentication).
+    bool m_isRequestOnlySession = false;
+    // The permissions a role was missing for the request that was just refused (sent as the "x-access-denied" header).
+    QString m_accessDeniedPermissions;
 
     struct FailedLogin
     {

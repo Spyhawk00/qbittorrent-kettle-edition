@@ -212,6 +212,18 @@ public:
     int getWebUISessionsCountLimit() const;
     void setWebUISessionsCountLimit(int limit);
 
+    // WebUI user accounts
+    bool isWebUISharedLoginAllowed() const;
+    void setWebUISharedLoginAllowed(bool allowed);
+    int getWebUIUserSignInDays() const;
+    void setWebUIUserSignInDays(int days);
+    int getWebUIUserMaxAuthFailCount() const;
+    void setWebUIUserMaxAuthFailCount(int count);
+    std::chrono::seconds getWebUIUserLockDuration() const;
+    void setWebUIUserLockDuration(std::chrono::seconds duration);
+    int getWebUIActivityLogDays() const;
+    void setWebUIActivityLogDays(int days);
+
     // WebUI security
     bool isWebUIClickjackingProtectionEnabled() const;
     void setWebUIClickjackingProtectionEnabled(bool enabled);

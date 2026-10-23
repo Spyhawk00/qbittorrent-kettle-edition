@@ -34,11 +34,14 @@
 #include <QSet>
 #include <QWidget>
 
+#include "base/settingvalue.h"
 #include "base/utils/thread.h"
 #include "gui/guiapplicationcomponent.h"
 
 class QEvent;
+class QListWidgetItem;
 class QObject;
+class QPoint;
 class QStringListModel;
 
 class SearchJobWidget;
@@ -74,11 +77,15 @@ private:
     void currentTabChanged(int index);
 
     void tabStatusChanged(SearchJobWidget *tab);
+    void updateTabItem(SearchJobWidget *tab);
+    SearchJobWidget *tabAt(int index) const;
+    QListWidgetItem *itemOf(const SearchJobWidget *tab) const;
+    void setCurrentTab(SearchJobWidget *tab);
 
     void closeTab(int index);
     void closeAllTabs();
     void refreshTab(SearchJobWidget *searchJobWidget);
-    void showTabMenu(int index);
+    void showTabMenu(const QPoint &pos);
 
     void selectMultipleBox(int index);
     void toggleFocusBetweenLineEdits();
@@ -87,12 +94,14 @@ private:
     void fillCatCombobox();
     void fillPluginComboBox();
     void selectActivePage();
+    void updateSearchButtonEnabled();
+    void saveLastSelection();
 
     QString selectedCategory() const;
     QStringList selectedPlugins() const;
 
     QString generateTabID() const;
-    int addTab(const QString &tabID, SearchJobWidget *searchJobWdget);
+    void addTab(const QString &tabID, SearchJobWidget *searchJobWdget);
 
     void loadHistory();
     void restoreSession();
@@ -100,6 +109,10 @@ private:
     void saveSession() const;
 
     void createSearchPatternCompleter();
+
+    SettingValue<QString> m_lastCategory;
+    SettingValue<QString> m_lastPlugin;
+    SettingValue<int> m_listWidth;
 
     Ui::SearchWidget *m_ui = nullptr;
     QPointer<SearchJobWidget> m_currentSearchTab; // Selected tab

@@ -4,7 +4,8 @@
         margin-top: 1em;
     }
 
-    #logFilterBar {
+    #logFilterBar,
+    #activityFilterBar {
         align-items: center;
         display: flex;
         flex-wrap: wrap;
@@ -12,12 +13,23 @@
         height: 24px;
     }
 
-    #logFilterBar>label {
+    #logFilterBar.invisible,
+    #activityFilterBar.invisible {
+        display: none;
+    }
+
+    #logFilterBar>label,
+    #activityFilterBar>label {
         font-weight: bold;
         margin-right: .3em;
     }
 
-    #logFilterBar>button {
+    #activityFilterBar>label:not(:first-child) {
+        margin-left: .6em;
+    }
+
+    #logFilterBar>button,
+    #activityFilterBar>button {
         display: inline-block;
         padding: 2px 12px;
     }
@@ -36,11 +48,13 @@
     }
 
     #logMessageTableFixedHeaderDiv .dynamicTableHeader,
-    #logPeerTableFixedHeaderDiv .dynamicTableHeader {
+    #logPeerTableFixedHeaderDiv .dynamicTableHeader,
+    #logActivityTableFixedHeaderDiv .dynamicTableHeader {
         cursor: default;
     }
 
-    #filterTextInput {
+    #filterTextInput,
+    #activityFilterInput {
         background-image: url("../images/edit-find.svg");
         background-repeat: no-repeat;
         background-position: 2px;
@@ -49,7 +63,6 @@
         margin-left: .3em;
         width: 237px;
         border: 1px solid var(--color-border-default);
-        border-radius: 3px;
     }
 
     #logFilterSummary {
@@ -75,8 +88,13 @@
     }
 
     .logTableRowlogCritical,
-    .logTableRowpeerBlocked {
+    .logTableRowpeerBlocked,
+    .logTableRowactivityDenied {
         color: var(--color-text-red);
+    }
+
+    .logTableRowactivityFailed {
+        color: var(--color-text-orange);
     }
 
     .vsb-main>button {
@@ -98,6 +116,25 @@
 
             <input type="search" id="filterTextInput" oninput="window.qBittorrent.Log.filterTextChanged()" placeholder="QBT_TR(Filter logs)QBT_TR[CONTEXT=ExecutionLogWidget]" aria-label="QBT_TR(Filter logs)QBT_TR[CONTEXT=ExecutionLogWidget]" autocomplete="off" autocorrect="off" autocapitalize="none">
             <button type="button" title="Clear input" onclick="javascript:document.getElementById('filterTextInput').value='';window.qBittorrent.Log.filterTextChanged();">QBT_TR(Clear)QBT_TR[CONTEXT=ExecutionLogWidget]</button>
+        </div>
+
+        <div id="activityFilterBar" class="invisible">
+            <label for="activityUserSelect">QBT_TR(User:)QBT_TR[CONTEXT=ExecutionLogWidget]</label>
+            <select id="activityUserSelect" onchange="window.qBittorrent.Log.activityFilterChanged()">
+                <option value="">QBT_TR(All)QBT_TR[CONTEXT=ExecutionLogWidget]</option>
+            </select>
+            <label for="activityCategorySelect">QBT_TR(Category:)QBT_TR[CONTEXT=ExecutionLogWidget]</label>
+            <select id="activityCategorySelect" onchange="window.qBittorrent.Log.activityFilterChanged()">
+                <option value="">QBT_TR(All)QBT_TR[CONTEXT=ExecutionLogWidget]</option>
+            </select>
+            <label for="activityOutcomeSelect">QBT_TR(Result:)QBT_TR[CONTEXT=ExecutionLogWidget]</label>
+            <select id="activityOutcomeSelect" onchange="window.qBittorrent.Log.activityFilterChanged()">
+                <option value="">QBT_TR(All)QBT_TR[CONTEXT=ExecutionLogWidget]</option>
+            </select>
+
+            <input type="search" id="activityFilterInput" oninput="window.qBittorrent.Log.activityFilterChanged()" placeholder="QBT_TR(Filter activity)QBT_TR[CONTEXT=ExecutionLogWidget]" aria-label="QBT_TR(Filter activity)QBT_TR[CONTEXT=ExecutionLogWidget]" autocomplete="off" autocorrect="off" autocapitalize="none">
+            <button type="button" onclick="javascript:document.getElementById('activityFilterInput').value='';window.qBittorrent.Log.activityFilterChanged();">QBT_TR(Clear)QBT_TR[CONTEXT=ExecutionLogWidget]</button>
+            <button type="button" onclick="window.qBittorrent.Log.exportActivity()">QBT_TR(Export...)QBT_TR[CONTEXT=ExecutionLogWidget]</button>
         </div>
 
         <div id="logFilterSummary">
@@ -134,6 +171,20 @@
                 </table>
             </div>
         </div>
+        <div id="logActivityView" class="invisible">
+            <div id="logActivityTableFixedHeaderDiv" class="dynamicTableFixedHeaderDiv">
+                <table class="dynamicTable unselectable" style="position:relative;">
+                    <thead>
+                        <tr class="dynamicTableHeader"></tr>
+                    </thead>
+                </table>
+            </div>
+            <div id="logActivityTableDiv" class="dynamicTableDiv">
+                <table class="dynamicTable unselectable">
+                    <tbody></tbody>
+                </table>
+            </div>
+        </div>
     </div>
 </div>
 
@@ -156,11 +207,15 @@
                 getFilterText: getFilterText,
                 getSelectedLevels: getSelectedLevels,
                 logLevelChanged: logLevelChanged,
-                filterTextChanged: filterTextChanged
+                filterTextChanged: filterTextChanged,
+                activityFilterChanged: activityFilterChanged,
+                activityCategoryName: activityCategoryName,
+                activityOutcomeName: activityOutcomeName,
+                exportActivity: exportActivity
             };
         };
 
-        let currentSelectedTab = "main";
+        let currentSelectedTab = window.qBittorrent.Cache.account.can("qbt_log") ? "main" : "activity";
         const tableInfo = {
             main: {
                 instance: new window.qBittorrent.DynamicTable.LogMessageTable(),
@@ -173,8 +228,20 @@
                 progress: false,
                 timer: null,
                 last_id: -1
+            },
+            activity: {
+                instance: new window.qBittorrent.DynamicTable.WebUIActivityTable(),
+                progress: false,
+                timer: null,
+                last_id: -1
             }
         };
+
+        // WebUI activity is filtered and limited by the server
+        const ACTIVITY_LIMIT = 500;
+        let activityTotal = 0;
+        let activityCatalog = null;
+        let activityFilterTimer = -1;
 
         let logFilterTimer = -1;
         let inputtedFilterText = "";
@@ -200,7 +267,7 @@
             });
 
             const logTableContextMenu = new window.qBittorrent.ContextMenu.ContextMenu({
-                targets: ":is(#logMessageTableDiv, #logPeerTableDiv) tbody tr",
+                targets: ":is(#logMessageTableDiv, #logPeerTableDiv, #logActivityTableDiv) tbody tr",
                 menu: "logTableMenu",
                 actions: {
                     Clear: () => {
@@ -218,10 +285,102 @@
 
             tableInfo["main"].instance.setup("logMessageTableDiv", "logMessageTableFixedHeaderDiv", logTableContextMenu);
             tableInfo["peer"].instance.setup("logPeerTableDiv", "logPeerTableFixedHeaderDiv", logTableContextMenu);
+            tableInfo["activity"].instance.setup("logActivityTableDiv", "logActivityTableFixedHeaderDiv", logTableContextMenu);
+
+            // without a saved sort, the newest activity comes first, as on the desktop
+            const activityTable = tableInfo["activity"].instance;
+            if (activityTable.getSortedColumn() === null) {
+                activityTable.sortedColumn = "ts";
+                activityTable.reverseSort = "1";
+                activityTable.setSortedColumnIcon("ts", null, true);
+            }
 
             MUI.Panels.instances.LogPanel.contentEl.style.height = "100%";
 
+            showView(currentSelectedTab);
             load();
+        };
+
+        const showView = (tab) => {
+            document.getElementById("logMessageView").classList.toggle("invisible", (tab !== "main"));
+            document.getElementById("logPeerView").classList.toggle("invisible", (tab !== "peer"));
+            document.getElementById("logActivityView").classList.toggle("invisible", (tab !== "activity"));
+            document.getElementById("logFilterBar").classList.toggle("invisible", (tab === "activity"));
+            document.getElementById("activityFilterBar").classList.toggle("invisible", (tab !== "activity"));
+            if (tab === "main")
+                selectBox.enable();
+            else
+                selectBox.disable();
+        };
+
+        const activityCategoryName = (category) => {
+            return activityCatalog?.categories[category] ?? category;
+        };
+
+        const activityOutcomeName = (outcome) => {
+            return activityCatalog?.outcomes[outcome] ?? outcome;
+        };
+
+        const loadActivityCatalog = async () => {
+            if (activityCatalog !== null)
+                return;
+
+            const response = await fetch("api/v2/access/catalog", {
+                method: "GET",
+                cache: "no-store"
+            });
+            if (!response.ok)
+                return;
+
+            activityCatalog = await response.json();
+            const fillSelect = (id, names) => {
+                const select = document.getElementById(id);
+                for (const [value, name] of Object.entries(names)) {
+                    const option = document.createElement("option");
+                    option.value = value;
+                    option.textContent = name;
+                    select.append(option);
+                }
+            };
+            fillSelect("activityCategorySelect", activityCatalog.categories);
+            fillSelect("activityOutcomeSelect", activityCatalog.outcomes);
+        };
+
+        const activityFilterParams = () => {
+            return {
+                user: document.getElementById("activityUserSelect").value,
+                category: document.getElementById("activityCategorySelect").value,
+                outcome: document.getElementById("activityOutcomeSelect").value,
+                q: document.getElementById("activityFilterInput").value.trim()
+            };
+        };
+
+        const activityFilterChanged = () => {
+            clearTimeout(activityFilterTimer);
+            activityFilterTimer = setTimeout(() => {
+                activityFilterTimer = -1;
+                tableInfo["activity"].last_id = -1;
+                syncLogWithInterval(0);
+            }, window.qBittorrent.Misc.FILTER_INPUT_DELAY);
+        };
+
+        const exportActivity = () => {
+            const url = new URL("api/v2/access/exportActivity", window.location);
+            url.search = new URLSearchParams(activityFilterParams());
+            window.location.href = url.toString();
+        };
+
+        const updateActivityUsers = (users) => {
+            const select = document.getElementById("activityUserSelect");
+            const known = new Set([...select.options].map(option => option.value));
+            for (const user of users) {
+                if (known.has(user))
+                    continue;
+                const option = document.createElement("option");
+                option.value = user;
+                option.textContent = user;
+                select.append(option);
+            }
         };
 
         const unload = () => {
@@ -298,17 +457,10 @@
                 return;
 
             currentSelectedTab = tab;
-            if (currentSelectedTab === "main") {
-                selectBox.enable();
-                document.getElementById("logMessageView").classList.remove("invisible");
-                document.getElementById("logPeerView").classList.add("invisible");
-                resetTableTimer("peer");
-            }
-            else {
-                selectBox.disable();
-                document.getElementById("logMessageView").classList.add("invisible");
-                document.getElementById("logPeerView").classList.remove("invisible");
-                resetTableTimer("main");
+            showView(currentSelectedTab);
+            for (const table of Object.keys(tableInfo)) {
+                if (table !== currentSelectedTab)
+                    resetTableTimer(table);
             }
 
             clearTimeout(logFilterTimer);
@@ -325,8 +477,62 @@
             if (curTab === undefined)
                 curTab = currentSelectedTab;
 
+            if (curTab === "activity") {
+                document.getElementById("numFilteredLogs").textContent = tableInfo[curTab].instance.getRowSize();
+                document.getElementById("numTotalLogs").textContent = activityTotal;
+                return;
+            }
+
             document.getElementById("numFilteredLogs").textContent = tableInfo[curTab].instance.filteredLength;
             document.getElementById("numTotalLogs").textContent = tableInfo[curTab].instance.getRowSize();
+        };
+
+        const syncActivityData = async () => {
+            const curTab = "activity";
+            tableInfo[curTab].progress = true;
+            try {
+                await loadActivityCatalog();
+
+                const url = new URL("api/v2/access/activity", window.location);
+                url.search = new URLSearchParams({ ...activityFilterParams(), limit: ACTIVITY_LIMIT });
+                const response = await fetch(url, {
+                    method: "GET",
+                    cache: "no-store"
+                });
+                if (!response.ok)
+                    throw new Error(await response.text());
+
+                document.getElementById("error_div").textContent = "";
+                if (document.getElementById("logTabColumn").classList.contains("invisible")) {
+                    tableInfo[curTab].progress = false;
+                    return;
+                }
+
+                const responseJSON = await response.json();
+                updateActivityUsers(responseJSON.users);
+                activityTotal = responseJSON.total;
+
+                const newestId = (responseJSON.items.length > 0) ? responseJSON.items[0].id : 0;
+                if (newestId !== tableInfo[curTab].last_id) {
+                    const instance = tableInfo[curTab].instance;
+                    const selected = instance.selectedRowsIds();
+                    instance.clear();
+                    for (const item of responseJSON.items)
+                        instance.updateRowData({ ...item, rowId: item.id });
+                    instance.reselectRows(selected.filter(id => instance.getRow(id) !== undefined));
+                    instance.updateTable();
+                    tableInfo[curTab].last_id = newestId;
+                }
+                updateLabelCount(curTab);
+
+                tableInfo[curTab].progress = false;
+                syncLogWithInterval(getSyncLogDataInterval());
+            }
+            catch (error) {
+                console.error(error);
+                tableInfo[curTab].progress = false;
+                syncLogWithInterval(10000);
+            }
         };
 
         const syncLogData = (curTab) => {
@@ -335,6 +541,11 @@
 
             if (curTab === undefined)
                 curTab = currentSelectedTab;
+
+            if (curTab === "activity") {
+                syncActivityData();
+                return;
+            }
 
             let url;
             switch (curTab) {
@@ -420,7 +631,7 @@
 
         document.getElementById("copyLogDataToClipboard").addEventListener("click", async (event) => {
             const instance = tableInfo[currentSelectedTab].instance;
-            const type = (currentSelectedTab === "main") ? "message" : "ip";
+            const type = { main: "message", peer: "ip", activity: "summary" }[currentSelectedTab];
             const msg = instance.selectedRowsIds().map((rowId) => instance.getRow(rowId).full_data[type]);
             await clipboardCopy(msg.join("\n"));
         });

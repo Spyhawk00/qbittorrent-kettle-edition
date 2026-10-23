@@ -29,10 +29,12 @@
 
 #include "transferlistfilterswidget.h"
 
+#include <QHeaderView>
 #include <QIcon>
 #include <QListWidgetItem>
 #include <QMenu>
 #include <QScrollArea>
+#include <QSplitter>
 #include <QUrl>
 #include <QVBoxLayout>
 
@@ -57,16 +59,20 @@ TransferListFiltersWidget::TransferListFiltersWidget(QWidget *parent, TransferLi
 
     Preferences *const pref = Preferences::instance();
 
+    // The section titles are as tall as the column headers of the transfer list and start at the same height
+    const int titleHeight = transferList->header()->sizeHint().height();
+
     // Construct lists
     auto *mainWidget = new QWidget;
     auto *mainWidgetLayout = new QVBoxLayout(mainWidget);
-    mainWidgetLayout->setContentsMargins(0, 2, 0, 0);
+    mainWidgetLayout->setContentsMargins(0, 0, 0, 0);
     mainWidgetLayout->setSpacing(2);
     mainWidgetLayout->setAlignment(Qt::AlignLeft | Qt::AlignTop);
 
     {
         auto *statusFilterWidget = new StatusFilterWidget(this, transferList);
         auto *item = new TransferListFiltersWidgetItem(tr("Status"), statusFilterWidget, this);
+        item->setCaptionHeight(titleHeight);
         item->setChecked(pref->getStatusFilterState());
         connect(item, &TransferListFiltersWidgetItem::toggled, statusFilterWidget, &StatusFilterWidget::toggleFilter);
         connect(item, &TransferListFiltersWidgetItem::toggled, pref, &Preferences::setStatusFilterState);
@@ -88,6 +94,7 @@ TransferListFiltersWidget::TransferListFiltersWidget(QWidget *parent, TransferLi
                 , transferList, &TransferListWidget::applyCategoryFilter);
 
         auto *item = new TransferListFiltersWidgetItem(tr("Categories"), categoryFilterWidget, this);
+        item->setCaptionHeight(titleHeight);
         item->setChecked(pref->getCategoryFilterState());
         connect(item, &TransferListFiltersWidgetItem::toggled, this, [this, categoryFilterWidget](const bool enabled)
         {
@@ -111,6 +118,7 @@ TransferListFiltersWidget::TransferListFiltersWidget(QWidget *parent, TransferLi
                 , transferList, &TransferListWidget::applyTagFilter);
 
         auto *item = new TransferListFiltersWidgetItem(tr("Tags"), tagFilterWidget, this);
+        item->setCaptionHeight(titleHeight);
         item->setChecked(pref->getTagFilterState());
         connect(item, &TransferListFiltersWidgetItem::toggled, this, [this, tagFilterWidget](const bool enabled)
         {
@@ -126,6 +134,7 @@ TransferListFiltersWidget::TransferListFiltersWidget(QWidget *parent, TransferLi
         m_trackersFilterWidget = new TrackersFilterWidget(this, transferList, downloadFavicon);
 
         auto *item = new TransferListFiltersWidgetItem(tr("Trackers"), m_trackersFilterWidget, this);
+        item->setCaptionHeight(titleHeight);
         item->setChecked(pref->getTrackerFilterState());
         connect(item, &TransferListFiltersWidgetItem::toggled, m_trackersFilterWidget, &TrackersFilterWidget::toggleFilter);
         connect(item, &TransferListFiltersWidgetItem::toggled, pref, &Preferences::setTrackerFilterState);
@@ -138,15 +147,23 @@ TransferListFiltersWidget::TransferListFiltersWidget(QWidget *parent, TransferLi
     scroll->setHorizontalScrollBarPolicy(Qt::ScrollBarAlwaysOff);
     scroll->setFrameShape(QFrame::NoFrame);
     scroll->setWidget(mainWidget);
+    if (auto *splitter = qobject_cast<QSplitter *>(parent))
+        Utils::Gui::dividerVerticalScrollBar(scroll, splitter);
+    // white like the list of the Search tab
+    mainWidget->setBackgroundRole(QPalette::Base);
+    mainWidget->setAutoFillBackground(true);
+    // the Windows 11 style leaves the lists on the window color
+    mainWidget->setStyleSheet(u"QAbstractScrollArea { background: palette(base); }"_s);
 
     auto *vLayout = new QVBoxLayout(this);
-    vLayout->setContentsMargins(0, 0, 0, 0);
+    vLayout->setContentsMargins(0, 5, 0, 0); // as far from the top as the column headers of the transfer list
     vLayout->addWidget(scroll);
 
-    const auto createTrackerStatusItem = [this, mainWidgetLayout, trackerStatusItemPos, pref]
+    const auto createTrackerStatusItem = [this, mainWidgetLayout, trackerStatusItemPos, pref, titleHeight]
     {
         auto *trackerStatusFilterWidget = new TrackerStatusFilterWidget(this, m_transferList);
         auto *item = new TransferListFiltersWidgetItem(tr("Tracker status"), trackerStatusFilterWidget, this);
+        item->setCaptionHeight(titleHeight);
         item->setChecked(pref->getTrackerStatusFilterState());
         connect(item, &TransferListFiltersWidgetItem::toggled, trackerStatusFilterWidget, &TrackerStatusFilterWidget::toggleFilter);
         connect(item, &TransferListFiltersWidgetItem::toggled, pref, &Preferences::setTrackerStatusFilterState);

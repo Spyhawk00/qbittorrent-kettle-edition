@@ -524,16 +524,11 @@ QVariant TrackerListModel::headerData(const int section, const Qt::Orientation o
     case Qt::TextAlignmentRole:
         switch (section)
         {
-        case COL_TIER:
-        case COL_PEERS:
-        case COL_SEEDS:
-        case COL_LEECHES:
-        case COL_TIMES_DOWNLOADED:
-        case COL_NEXT_ANNOUNCE:
-        case COL_MIN_ANNOUNCE:
-            return QVariant {Qt::AlignRight | Qt::AlignVCenter};
-        default:
+        case COL_URL:
+        case COL_MSG:
             return {};
+        default:
+            return QVariant {Qt::AlignHCenter | Qt::AlignVCenter};
         }
 
     default:
@@ -569,17 +564,11 @@ QVariant TrackerListModel::data(const QModelIndex &index, const int role) const
     case Qt::TextAlignmentRole:
         switch (index.column())
         {
-        case COL_TIER:
-        case COL_PROTOCOL:
-        case COL_PEERS:
-        case COL_SEEDS:
-        case COL_LEECHES:
-        case COL_TIMES_DOWNLOADED:
-        case COL_NEXT_ANNOUNCE:
-        case COL_MIN_ANNOUNCE:
-            return QVariant {Qt::AlignRight | Qt::AlignVCenter};
-        default:
+        case COL_URL:
+        case COL_MSG:
             return {};
+        default:
+            return QVariant {Qt::AlignHCenter | Qt::AlignVCenter};
         }
 
     case Qt::ForegroundRole:

@@ -28,7 +28,6 @@ Required by:
 }
 
 #topNav {
-    font-family: Verdana, Arial, Helvetica, sans-serif;
     font-size: 10px;
     padding: 13px 10px 0 0;
     position: absolute;
@@ -75,11 +74,6 @@ Required by:
 
 #desktopNavbar ul li a:hover {
     background-color: var(--color-background-hover);
-    color: var(--color-text-white);
-}
-
-#desktopNavbar a:hover img {
-    filter: var(--color-icon-hover);
 }
 
 #desktopNavbar ul li a.arrow-right::after,
@@ -96,9 +90,11 @@ Required by:
 }
 
 #desktopNavbar li ul {
-    background-color: var(--color-background-default);
+    background-color: var(--color-background-popup);
     border: 1px solid var(--color-border-default);
+    box-shadow: 0 2px 6px var(--color-shadow);
     left: -999em;
+    padding: 4px 0;
     position: absolute;
     z-index: 8000;
 }
@@ -138,7 +134,6 @@ Required by:
 #desktopNavbar li ul li a:hover,
 #desktopNavbar li ul li div.anchor:hover {
     background-color: var(--color-background-hover);
-    color: var(--color-text-white);
 }
 
 /* lists nested under hovered list items */
@@ -163,19 +158,32 @@ li.divider {
 }
 
 #pageWrapper {
-    border-bottom: 1px solid var(--color-border-default);
-    border-top: 1px solid var(--color-border-default);
     overflow: hidden; /* This can be set to hidden or auto */
     position: relative;
 }
 
+/* the properties tabs sit under their panel, as on the desktop */
+#propertiesPanel_wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
 #propertiesPanel_header {
+    border-bottom: 0;
+    border-top: 1px solid var(--color-border-default);
     height: 28px;
+    order: 1;
+}
+
+#propertiesPanel_handle {
+    order: 2;
 }
 
 /* Footer */
 
 #desktopFooterWrapper {
+    background-color: var(--color-background-default);
+    border-top: 1px solid var(--color-border-status);
     bottom: 0;
     height: 28px;
     left: 0;
@@ -185,7 +193,6 @@ li.divider {
 }
 
 #desktopFooter {
-    font-family: Verdana, Arial, Helvetica, sans-serif;
     font-size: 11px;
     height: 28px;
     padding: 2px;
@@ -205,6 +212,7 @@ li.divider {
 /* Panels */
 
 .panel {
+    background-color: var(--color-background-primary);
     border-bottom: 1px solid var(--color-border-default);
     overflow: auto;
     position: relative;
@@ -278,9 +286,6 @@ li.divider {
 
 .columnHandle {
     background: url("../images/handle-icon.svg") center center no-repeat;
-    border: 1px solid var(--color-border-default);
-    border-bottom: 0;
-    border-top: 0;
     float: left;
     min-height: 10px;
     overflow: hidden;
@@ -300,7 +305,7 @@ li.divider {
 
 /* Have to specify div here for IE6's sake */
 div.toolbox.divider {
-    background: url("../images/toolbox-divider.svg") repeat-y;
+    border-left: 1px solid var(--color-border-default);
     padding-left: 8px;
 }
 
@@ -328,8 +333,7 @@ div.toolbox.divider {
 }
 
 .iconWrapper:hover {
-    border: 1px solid #a0a0a0;
-    border-radius: 3px;
+    border: 1px solid var(--color-border-default);
 }
 
 #spinner {
@@ -355,4 +359,44 @@ td.speedLabel {
 
 #DHTNodes {
     white-space: nowrap;
+}
+
+/* a narrow window (a phone held sideways): the status bar stays one row that never scrolls sideways;
+   the user name and the external IPs give up their room first, then the speeds; a phone held upright is in css/Phone.css */
+@media (min-width: 640px) and (max-width: 1023px) {
+    #desktopFooter table {
+        display: block;
+        margin: 0 !important;
+        width: 100% !important;
+    }
+
+    #desktopFooter tbody {
+        display: block;
+    }
+
+    #desktopFooter tr {
+        align-items: center;
+        display: flex;
+    }
+
+    #desktopFooter td {
+        flex: none;
+        white-space: nowrap;
+    }
+
+    #desktopFooter td#signedInUser,
+    #desktopFooter td#externalIPs {
+        flex: 1 1 0;
+        max-width: max-content; /* shrink when the row is full, but never grow past their text */
+        min-width: 4em;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    #desktopFooter td.speedLabel {
+        flex: 0 1 auto;
+        min-width: 0;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
 }
