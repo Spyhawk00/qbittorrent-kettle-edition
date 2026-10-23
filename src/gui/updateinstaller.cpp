@@ -74,9 +74,9 @@ namespace
     bool isSafeRelativePath(const QString &path)
     {
         // "platforms/qwindows.dll": plain names only, so a path can't point outside the program folder
-        const QRegularExpression segmentPattern {u"^[A-Za-z0-9_][A-Za-z0-9._-]*$"_s};
+        static const QRegularExpression segmentPattern {u"^[A-Za-z0-9_][A-Za-z0-9._-]*\\z"_s};
         const QStringList segments = path.split(u'/');
-        return !segments.isEmpty() && std::ranges::all_of(segments, [&segmentPattern](const QString &segment)
+        return !segments.isEmpty() && std::ranges::all_of(segments, [](const QString &segment)
         {
             return segmentPattern.match(segment).hasMatch();
         });
@@ -84,12 +84,14 @@ namespace
 
     bool isSafeFileName(const QString &name)
     {
-        return QRegularExpression(u"^[A-Za-z0-9_][A-Za-z0-9._-]*$"_s).match(name).hasMatch();
+        static const QRegularExpression pattern {u"^[A-Za-z0-9_][A-Za-z0-9._-]*\\z"_s};
+        return pattern.match(name).hasMatch();
     }
 
     bool isSha256(const QString &value)
     {
-        return QRegularExpression(u"^[0-9a-f]{64}$"_s).match(value).hasMatch();
+        static const QRegularExpression pattern {u"^[0-9a-f]{64}\\z"_s};
+        return pattern.match(value).hasMatch();
     }
 
     // SHA-256 of a file as lowercase hex, empty if the file can't be read

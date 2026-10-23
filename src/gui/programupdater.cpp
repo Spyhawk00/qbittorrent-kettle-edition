@@ -29,15 +29,11 @@
 
 #include "programupdater.h"
 
-#include <algorithm>
-
-#include <QtSystemDetection>
 #include <QCoreApplication>
 #include <QDir>
 #include <QJsonDocument>
 #include <QJsonObject>
 #include <QJsonValue>
-#include <QRegularExpression>
 
 #include "base/global.h"
 #include "base/logger.h"
@@ -48,30 +44,10 @@
 
 namespace
 {
-    bool isVersionMoreRecent(const ProgramUpdater::Version &remoteVersion)
-    {
-        if (!remoteVersion.isValid())
-            return false;
-
-        const ProgramUpdater::Version currentVersion {QBT_VERSION_MAJOR, QBT_VERSION_MINOR, QBT_VERSION_BUGFIX, QBT_VERSION_BUILD};
-        if (remoteVersion == currentVersion)
-        {
-            const bool isDevVersion = QStringLiteral(QBT_VERSION_STATUS).contains(
-                QRegularExpression(u"(alpha|beta|rc)"_s));
-            if (isDevVersion)
-                return true;
-        }
-        return (remoteVersion > currentVersion);
-    }
-
     ProgramUpdater::EditionVersion currentEditionVersion()
     {
         return {QBT_EDITION_VERSION_MAJOR, QBT_EDITION_VERSION_MINOR, QBT_EDITION_VERSION_PATCH};
     }
-
-    // Turned off on purpose: this edition follows its own releases, and the official version is looked at by hand.
-    // Set to true to ask qbittorrent.org again and log when a newer official release exists.
-    const bool CHECK_OFFICIAL_RELEASES = false;
 
     // The test suite points the updater at a local server and at its own key with environment variables.
     // They are ignored in the Program Files folders, so they cannot redirect an installed copy.
@@ -123,13 +99,12 @@ void ProgramUpdater::checkForUpdates()
 {
     const auto EDITION_MANIFEST_URL = editionBaseUrl() + u"kettle-update.json"_s;
     const auto EDITION_SIGNATURE_URL = editionBaseUrl() + u"kettle-update.json.sig"_s;
-    const auto QBT_MAIN_URL = areTestSettingsUsed() ? (editionBaseUrl() + u"versions.json"_s) : u"https://www.qbittorrent.org/versions.json"_s;
-    const auto QBT_BACKUP_URL = areTestSettingsUsed() ? (editionBaseUrl() + u"versions.json"_s) : u"https://qbittorrent.github.io/qBittorrent-website/versions.json"_s;
 
     Net::DownloadManager *netManager = Net::DownloadManager::instance();
     const bool useProxy = Preferences::instance()->useProxyForGeneralPurposes();
 
-    m_pendingRequestCount = CHECK_OFFICIAL_RELEASES ? 4 : 2;
+    // this edition follows its own releases; the official version is looked at by hand
+    m_pendingRequestCount = 2;
     netManager->download(Net::DownloadRequest(EDITION_MANIFEST_URL), useProxy, this, [this](const Net::DownloadResult &result)
     {
         editionDownloadFinished(result, m_manifestData);
@@ -138,30 +113,6 @@ void ProgramUpdater::checkForUpdates()
     {
         editionDownloadFinished(result, m_manifestSignature);
     });
-    if (!CHECK_OFFICIAL_RELEASES)
-        return;
-
-    // don't use the custom user agent for the following requests, disguise as a normal browser instead
-    netManager->download(Net::DownloadRequest(QBT_MAIN_URL), useProxy, this, [this](const Net::DownloadResult &result)
-    {
-        fallbackDownloadFinished(result, m_qbtMainVersion);
-    });
-    netManager->download(Net::DownloadRequest(QBT_BACKUP_URL), useProxy, this, [this](const Net::DownloadResult &result)
-    {
-        fallbackDownloadFinished(result, m_qbtBackupVersion);
-    });
-}
-
-ProgramUpdater::Version ProgramUpdater::getNewVersion() const
-{
-    switch (getLatestRemoteSource())
-    {
-    case RemoteSource::QbtMain:
-        return m_qbtMainVersion;
-    case RemoteSource::QbtBackup:
-        return m_qbtBackupVersion;
-    }
-    Q_UNREACHABLE();
 }
 
 bool ProgramUpdater::isEditionCheckVerified() const
@@ -215,35 +166,6 @@ void ProgramUpdater::editionDownloadFinished(const Net::DownloadResult &result, 
     handleFinishedRequest();
 }
 
-void ProgramUpdater::fallbackDownloadFinished(const Net::DownloadResult &result, Version &version)
-{
-    version = {};
-
-    if (result.status != Net::DownloadStatus::Success)
-    {
-        LogMsg(tr("Failed to download the program update info. URL: \"%1\". Error: \"%2\"").arg(result.url, result.errorString) , Log::WARNING);
-        handleFinishedRequest();
-        return;
-    }
-
-    const auto json = QJsonDocument::fromJson(result.data);
-
-#if defined(Q_OS_MACOS)
-    const QString platformKey = u"macos"_s;
-#elif defined(Q_OS_WIN)
-    const QString platformKey = u"win"_s;
-#endif
-
-    if (const QJsonValue verJSON = json[platformKey][u"version"_s]; verJSON.isString())
-    {
-        const Version tmpVer {verJSON.toString()};
-        if (isVersionMoreRecent(tmpVer))
-            version = tmpVer;
-    }
-
-    handleFinishedRequest();
-}
-
 void ProgramUpdater::handleFinishedRequest()
 {
     --m_pendingRequestCount;
@@ -281,14 +203,4 @@ void ProgramUpdater::processEditionManifest()
         m_newEditionLevel = json[u"level"_s].toString();
         m_newEditionNotes = json[u"notes"_s].toString();
     }
-}
-
-ProgramUpdater::RemoteSource ProgramUpdater::getLatestRemoteSource() const
-{
-    const Version max = std::max({m_qbtMainVersion, m_qbtBackupVersion});
-    if (max == m_qbtMainVersion)
-        return RemoteSource::QbtMain;
-    if (max == m_qbtBackupVersion)
-        return RemoteSource::QbtBackup;
-    Q_UNREACHABLE();
 }

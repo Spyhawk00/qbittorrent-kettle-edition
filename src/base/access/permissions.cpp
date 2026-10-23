@@ -81,7 +81,7 @@ namespace
         addRules(map, u"add"_s, {u"torrents/fetchMetadata"_s, u"torrents/parseMetadata"_s, u"torrents/saveMetadata"_s});
         addRules(map, u"add"_s, {u"torrents/add"_s}, true);
         addRules(map, u"control"_s, {
-            u"torrents/start"_s, u"torrents/stop"_s, u"torrents/pause"_s, u"torrents/resume"_s,
+            u"torrents/start"_s, u"torrents/stop"_s,
             u"torrents/recheck"_s, u"torrents/reannounce"_s, u"torrents/setForceStart"_s,
             u"torrents/increasePrio"_s, u"torrents/decreasePrio"_s, u"torrents/topPrio"_s, u"torrents/bottomPrio"_s,
             u"transfer/pauseSession"_s, u"transfer/resumeSession"_s}, true);

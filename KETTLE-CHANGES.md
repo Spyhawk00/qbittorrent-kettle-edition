@@ -14,14 +14,16 @@ Official qBittorrent has one WebUI login that everyone shares. Kettle Edition ha
   Viewer (read-only). You can make your own.
 - **Safe by default.** Anything the access list doesn't know about needs its own permission. People without
   "Choose save locations" can't send files outside the default folder, not even by renaming or with an RSS rule.
-  Only the admin sees settings that hold passwords and keys.
+  Only the admin sees settings that hold passwords and keys. The "settings" permission leaves out the sign-in,
+  security, WebUI address and run-program options and the API key; only an admin can change those.
+  A request that a proxy passed on (it carries a forwarded address) never counts as this PC, so it always signs in.
 - **Activity log.** A record of who signed in, from which address, what they added, started, stopped, changed or
   deleted, and what was refused. It is in the WebUI and in the desktop program, can be filtered and exported,
   and clears itself after the number of days you choose. Addresses are logged by site only, so keys in tracker
   and feed links (passkeys, tokens) never reach the log or an export.
 - **Sign-in protection.** Wrong passwords ban the address and lock the account for the address that kept failing,
   so a stranger can't lock the owner out. New passwords need at least 12 characters. Sessions can be listed and ended, and changing your password signs your
-  other devices out. Torrents added by a person are tagged `added-by:<name>`, and only an admin can write such a tag by hand.
+  other devices out. Torrents added by a person are tagged `added-by:<name>`, and only an admin can write or remove such a tag by hand.
 - **Per-person WebUI layout.** Columns, filters and display choices are saved for each account.
 - **Still works the old way.** Localhost access without a login (for Sonarr and Radarr), the API key and the old
   shared login keep working until you turn them off. The shared login is switched off once the first account exists.

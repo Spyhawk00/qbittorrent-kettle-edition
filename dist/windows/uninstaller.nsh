@@ -14,11 +14,23 @@ Section "un.$(remove_files)" ;"un.Remove files"
   ; The files of this version (list made by make-installer.ps1), for a folder that is shared with other programs
   !include "${KETTLE_UNINSTALL_LIST}"
 
-  ; Updates add and replace files, so the list can be out of date. Everything in a folder of its own goes.
+  ; Updates add and replace files, so the list can be out of date. In a folder of its own, program files that were
+  ; left over go too. Anything else (downloads, notes) is never touched, and a folder that is not empty stays.
   ${un.GetFileName} "$INSTDIR" $0
   StrCmp $0 "qBittorrent-ke" +2 0
-  StrCmp $0 "qBittorrent" 0 +2
-    RMDir /r "$INSTDIR"
+  StrCmp $0 "qBittorrent" 0 leftovers_done
+    Delete "$INSTDIR\*.dll"
+    Delete "$INSTDIR\*.exe"
+    Delete "$INSTDIR\*.old"
+    RMDir /r "$INSTDIR\generic"
+    RMDir /r "$INSTDIR\iconengines"
+    RMDir /r "$INSTDIR\imageformats"
+    RMDir /r "$INSTDIR\networkinformation"
+    RMDir /r "$INSTDIR\platforms"
+    RMDir /r "$INSTDIR\sqldrivers"
+    RMDir /r "$INSTDIR\styles"
+    RMDir /r "$INSTDIR\tls"
+  leftovers_done:
   RMDir "$INSTDIR"
 SectionEnd
 

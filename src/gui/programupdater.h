@@ -46,15 +46,12 @@ class ProgramUpdater final : public QObject
     Q_DISABLE_COPY_MOVE(ProgramUpdater)
 
 public:
-    using Version = Utils::Version<4, 3>;
     // Kettle Edition has its own number: major.minor.patch
     using EditionVersion = Utils::Version<3>;
 
     using QObject::QObject;
 
     void checkForUpdates();
-    // newest official qBittorrent release, if it is newer than the one this edition is based on
-    Version getNewVersion() const;
     // true when the Kettle Edition release info was downloaded and its signature is valid (even if nothing newer was found)
     bool isEditionCheckVerified() const;
     // newest Kettle Edition release with a valid signature, if it is newer than this one
@@ -73,22 +70,12 @@ signals:
 
 private slots:
     void editionDownloadFinished(const Net::DownloadResult &result, QByteArray &data);
-    void fallbackDownloadFinished(const Net::DownloadResult &result, Version &version);
 
 private:
-    enum class RemoteSource
-    {
-        QbtMain,
-        QbtBackup
-    };
-
     void handleFinishedRequest();
     void processEditionManifest();
-    RemoteSource getLatestRemoteSource() const;
 
     int m_pendingRequestCount = 0;
-    Version m_qbtMainVersion;
-    Version m_qbtBackupVersion;
     QByteArray m_manifestData;
     QByteArray m_manifestSignature;
     bool m_isEditionCheckVerified = false;

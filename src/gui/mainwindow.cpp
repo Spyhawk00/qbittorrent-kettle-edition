@@ -1788,14 +1788,6 @@ void MainWindow::handleUpdateCheckFinished(ProgramUpdater *updater, const bool i
         updater->deleteLater();
     };
 
-    // Official releases are only reported: this edition is updated from its own releases, not from the official ones
-    const ProgramUpdater::Version newVersion = updater->getNewVersion();
-    if (newVersion.isValid())
-    {
-        LogMsg(tr("Official qBittorrent %1 is available. This edition is based on %2.")
-            .arg(newVersion.toString(), QStringLiteral(QBT_VERSION_2)), Log::INFO);
-    }
-
     const ProgramUpdater::EditionVersion newEdition = updater->getNewEditionVersion();
     if (newEdition.isValid())
     {

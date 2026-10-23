@@ -45,9 +45,7 @@ namespace
     const QHash<QString, QString> TORRENT_VERBS
     {
         {u"torrents/start"_s, u"Started"_s},
-        {u"torrents/resume"_s, u"Started"_s},
         {u"torrents/stop"_s, u"Stopped"_s},
-        {u"torrents/pause"_s, u"Stopped"_s},
         {u"torrents/recheck"_s, u"Rechecked"_s},
         {u"torrents/reannounce"_s, u"Reannounced"_s},
         {u"torrents/increasePrio"_s, u"Moved up in queue:"_s},

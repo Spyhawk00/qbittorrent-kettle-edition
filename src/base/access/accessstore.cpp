@@ -354,8 +354,9 @@ namespace
         "r.name AS role_name FROM users u JOIN roles r ON r.id = u.role_id"_s;
     const QString ROLE_SELECT = u"SELECT r.*, (SELECT COUNT(*) FROM users u WHERE u.role_id = r.id) AS user_count "
         "FROM roles r"_s;
-    const QRegularExpression USERNAME_PATTERN {u"^[A-Za-z0-9][A-Za-z0-9._-]{0,31}$"_s};
-    const QRegularExpression ROLE_NAME_PATTERN {u"^[^\\x00-\\x1f\\x7f]{1,40}$"_s};
+    // \z and not $: "$" would also accept a name that ends with a line break
+    const QRegularExpression USERNAME_PATTERN {u"^[A-Za-z0-9][A-Za-z0-9._-]{0,31}\\z"_s};
+    const QRegularExpression ROLE_NAME_PATTERN {u"^[^\\x00-\\x1f\\x7f]{1,40}\\z"_s};
 }
 
 void AccessStore::transaction(const std::function<void ()> &change)
@@ -849,9 +850,9 @@ namespace
         return {clauses.isEmpty() ? QString() : (u" WHERE "_s + clauses.join(u" AND "_s)), binds};
     }
 
-    QJsonObject activityObject(const QSqlQuery &query)
+    QJsonObject activityObject(const QSqlQuery &query, const bool withDetails = true)
     {
-        return {
+        QJsonObject entry {
             {u"id"_s, query.value(u"id"_s).toLongLong()},
             {u"ts"_s, query.value(u"ts"_s).toDouble()},
             {u"username"_s, query.value(u"username"_s).toString()},
@@ -861,8 +862,10 @@ namespace
             {u"endpoint"_s, query.value(u"endpoint"_s).toString()},
             {u"summary"_s, query.value(u"summary"_s).toString()},
             {u"outcome"_s, query.value(u"outcome"_s).toString()},
-            {u"details"_s, QJsonDocument::fromJson(query.value(u"details"_s).toString().toUtf8()).object()},
         };
+        if (withDetails)
+            entry[u"details"_s] = QJsonDocument::fromJson(query.value(u"details"_s).toString().toUtf8()).object();
+        return entry;
     }
 }
 
@@ -891,10 +894,12 @@ void AccessStore::forEachActivity(const ActivityFilter &filter, const std::funct
         , const int limit) const
 {
     const auto [where, binds] = activityWhere(filter);
-    QSqlQuery query = run(m_connectionName, u"SELECT * FROM activity"_s + where + u" ORDER BY ts DESC, id DESC LIMIT ?"_s
+    // the rows come without "details": the exports don't use them, and a long log has a lot of them
+    QSqlQuery query = run(m_connectionName, u"SELECT id, ts, username, role, ip, category, endpoint, summary, outcome "
+        "FROM activity"_s + where + u" ORDER BY ts DESC, id DESC LIMIT ?"_s
         , binds + QVariantList {limit});  // a negative limit means all rows
     while (query.next())
-        callback(activityObject(query));
+        callback(activityObject(query, false));
 }
 
 void AccessStore::purge()
