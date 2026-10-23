@@ -157,6 +157,33 @@ namespace
         return u"no-store"_s;
     }
 
+    bool isAddedByTag(const QString &tag)
+    {
+        return tag.trimmed().startsWith(u"added-by:"_s, Qt::CaseInsensitive);
+    }
+
+    // Whether any torrent an API call is aimed at says who added it.
+    bool anyTorrentHasAddedByTag(const QHash<QString, QString> &params)
+    {
+        const auto hasAddedByTag = [](const BitTorrent::Torrent *torrent)
+        {
+            return std::ranges::any_of(torrent->tags(), [](const Tag &tag) { return isAddedByTag(tag.toString()); });
+        };
+
+        const auto *btSession = BitTorrent::Session::instance();
+        const QStringList hashes = Access::torrentHashes(params);
+        if (hashes == QStringList {u"all"_s})
+            return std::ranges::any_of(btSession->torrents(), hasAddedByTag);
+
+        for (const QString &hash : hashes)
+        {
+            const BitTorrent::Torrent *torrent = btSession->getTorrent(BitTorrent::TorrentID::fromString(hash));
+            if (torrent && hasAddedByTag(torrent))
+                return true;
+        }
+        return false;
+    }
+
     QString createLanguagesOptionsHtml()
     {
         // List language files
@@ -428,16 +455,24 @@ void WebApplication::processAPIRequest(const QString &endpoint, const Http::Head
 
         auto result = std::get<RegularAPIResult>(apiResult);
 
-        if (isAccessControlled && (endpoint == u"app/preferences") && !m_currentSession->identity().can(u"settings"_s)
-            && (result.data.userType() == QMetaType::QJsonDocument))
+        // Without "settings" the private values are blanked; without "manage_users" the API key is, because
+        // it opens everything.
+        if (isAccessControlled && (endpoint == u"app/preferences") && (result.data.userType() == QMetaType::QJsonDocument))
         {
-            QJsonObject preferences = result.data.toJsonDocument().object();
-            for (const QString &key : Access::redactedPreferences())
+            const Access::Identity &viewer = m_currentSession->identity();
+            const bool canSeeSettings = viewer.can(u"settings"_s);
+            if (!canSeeSettings || !viewer.can(Access::ADMIN_PERMISSION))
             {
-                if (preferences.contains(key))
-                    preferences[key] = QString();
+                QJsonObject preferences = result.data.toJsonDocument().object();
+                const QSet<QString> blankedKeys = canSeeSettings ? QSet<QString> {u"web_ui_api_key"_s}
+                    : Access::redactedPreferences();
+                for (const QString &key : blankedKeys)
+                {
+                    if (preferences.contains(key))
+                        preferences[key] = QString();
+                }
+                result.data = QJsonDocument(preferences);
             }
-            result.data = QJsonDocument(preferences);
         }
 
         if (isLogged)
@@ -797,7 +832,8 @@ void WebApplication::processRequest(const Http::Request &request, const Http::En
         LogMsg(tr("WebUI: request failed. %1").arg(error.message()), Log::WARNING);
         Http::Response response {.status = {.code = 500, .text = u"Internal Server Error"_s}, .headers = commonHeaders};
         response.headers.insert(Http::HEADER_CONTENT_TYPE, Http::CONTENT_TYPE_TXT);
-        response.content = error.message().toUtf8();
+        // the details are in qBittorrent's log; they can name files and database errors
+        response.content = tr("Something went wrong on the server. Details are in qBittorrent's log.").toUtf8();
         responseWriter.setResponse(response);
     }
 
@@ -945,7 +981,10 @@ QString WebApplication::generateSid() const
 
 bool WebApplication::isAuthNeeded()
 {
-    if (!m_isLocalAuthEnabled && m_clientAddress.isLoopback())
+    // A request a proxy passed on isn't from this PC, even when the proxy runs on it.
+    const bool isForwarded = m_request.headers.contains(Http::HEADER_X_FORWARDED_FOR)
+        || m_request.headers.contains(u"cf-connecting-ip"_s) || m_request.headers.contains(u"forwarded"_s);
+    if (!m_isLocalAuthEnabled && m_clientAddress.isLoopback() && !isForwarded)
         return false;
     if (m_isAuthSubnetWhitelistEnabled && Utils::Net::isIPInSubnets(m_clientAddress, m_authSubnetWhitelist))
         return false;
@@ -1208,7 +1247,15 @@ bool WebApplication::validateCredentials(const QStringView username, const QStri
     const auto logLogin = [this, &clientAddr](const QString &user, const QString &role, const QString &summary
             , const QString &outcome)
     {
-        m_accessStore->logActivity(user, role, clientAddr, u"login"_s, u"auth/login"_s, summary, outcome);
+        try
+        {
+            m_accessStore->logActivity(user, role, clientAddr, u"login"_s, u"auth/login"_s, summary, outcome);
+        }
+        catch (const RuntimeError &error)
+        {
+            // never fail a login because the activity log couldn't be written
+            LogMsg(tr("WebUI access: couldn't write the activity log. %1").arg(error.message()), Log::WARNING);
+        }
     };
 
     if (const int remaining = m_accessStore->lockoutRemaining(name, clientAddr); remaining > 0)
@@ -1258,6 +1305,11 @@ bool WebApplication::validateCredentials(const QStringView username, const QStri
 
     if (isSharedLoginAllowed && usernameEqual && passwordEqual)
     {
+        if (!m_accessStore->isOpen())
+        {
+            LogMsg(tr("WebUI access: the user database isn't open, so the shared WebUI login was accepted without roles or limits. IP: %1")
+                .arg(clientAddr), Log::WARNING);
+        }
         m_clientFailedLogins.remove(clientAddr);
         m_pendingIdentity = Access::fullAccessIdentity(Access::IdentityKind::Legacy, m_username);
         logLogin(m_pendingIdentity->logName(), {}, u"Logged in with the shared WebUI login"_s, u"ok"_s);
@@ -1445,6 +1497,50 @@ void WebApplication::checkAccess(const QString &endpoint, QHash<QString, QString
                 tags.append(tag);
         }
         params[u"tags"_s] = tags.join(u',');
+    }
+
+    // ... and only an admin may take one off. Tags that would clear or replace the "added-by:" tag of a torrent
+    // are refused, because those calls can't leave a single tag alone.
+    if (!identity.can(Access::ADMIN_PERMISSION))
+    {
+        if ((endpoint == u"torrents/removeTags") || (endpoint == u"torrents/deleteTags"))
+        {
+            const QStringList requested = params.value(u"tags"_s).split(u',', Qt::SkipEmptyParts);
+            QStringList tags;
+            for (const QString &tag : requested)
+            {
+                if (!isAddedByTag(tag))
+                    tags.append(tag);
+            }
+            if (tags.isEmpty() && !requested.isEmpty())
+                throw ForbiddenHTTPError(tr("Only an admin can remove the tag that says who added a torrent."));
+            params[u"tags"_s] = tags.join(u',');
+        }
+
+        // removeTags without tags clears every tag; setTags replaces them all
+        if ((endpoint == u"torrents/setTags")
+            || ((endpoint == u"torrents/removeTags") && params.value(u"tags"_s).trimmed().isEmpty()))
+        {
+            if (anyTorrentHasAddedByTag(params))
+                throw ForbiddenHTTPError(tr("Only an admin can clear or replace all tags of a torrent that has a tag saying who added it."));
+        }
+    }
+
+    // Sign-in, security and run-program options belong to admins: "settings" alone leaves them out.
+    if ((endpoint == u"app/setPreferences") && !identity.can(Access::ADMIN_PERMISSION))
+    {
+        QJsonObject preferences = QJsonDocument::fromJson(params.value(u"json"_s).toUtf8()).object();
+        bool isChanged = false;
+        for (const QString &key : Access::adminOnlyPreferences())
+        {
+            if (preferences.contains(key))
+            {
+                preferences.remove(key);
+                isChanged = true;
+            }
+        }
+        if (isChanged)
+            params[u"json"_s] = QString::fromUtf8(QJsonDocument(preferences).toJson(QJsonDocument::Compact));
     }
 
     // Tag new torrents with the person who added them.

@@ -59,6 +59,7 @@ namespace
     // Stored in the file (PRAGMA user_version). Raise it with every change to the tables, and migrate in the constructor.
     const int SCHEMA_VERSION = 1;
     const int MAX_PASSWORD_LENGTH = 1024;
+    const int MAX_ACTIVITY_ROWS = 200000;
 
     const QStringList SCHEMA
     {
@@ -919,6 +920,9 @@ void AccessStore::purge()
 
         run(m_connectionName, u"DELETE FROM activity WHERE ts < ?"_s
             , {timestamp - (pref->getWebUIActivityLogDays() * 86400.0)});
+        // a flood of requests can't grow the log without limit between two clean-ups of old entries
+        run(m_connectionName, u"DELETE FROM activity WHERE id <= (SELECT id FROM activity ORDER BY id DESC LIMIT 1 OFFSET ?)"_s
+            , {MAX_ACTIVITY_ROWS});
         run(m_connectionName, u"DELETE FROM login_failures WHERE ts < ?"_s
             , {timestamp - std::max(86400.0, static_cast<double>(pref->getWebUIUserLockDuration().count()))});
     }

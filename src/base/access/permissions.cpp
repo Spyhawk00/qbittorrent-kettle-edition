@@ -151,7 +151,7 @@ const QList<Access::Permission> &Access::permissions()
         {u"delete_files"_s, u"Delete files from disk"_s, u"Remove torrents together with their downloaded files."_s, u"Torrents"_s, true},
         {u"download_files"_s, u"Download files"_s, u"Download the files of a torrent from the PC through the WebUI."_s, u"Torrents"_s, true},
         {u"speed_limits"_s, u"Global speed limits"_s, u"Change global speed limits and switch alternative speed mode."_s, u"qBittorrent"_s},
-        {u"settings"_s, u"Change qBittorrent settings"_s, u"Change any qBittorrent option, ban peers, manage the API key and shut qBittorrent down. Settings include running programs on the PC."_s, u"qBittorrent"_s, true},
+        {u"settings"_s, u"Change qBittorrent settings"_s, u"Change qBittorrent options, ban peers and shut qBittorrent down. Sign-in, security, WebUI address and run-program options, and the API key, also need \"Manage users and roles\"."_s, u"qBittorrent"_s, true},
         {u"qbt_log"_s, u"View qBittorrent log"_s, u"Read qBittorrent's own execution and peer logs."_s, u"qBittorrent"_s},
         {u"torrent_creator"_s, u"Torrent creator"_s, u"Create new torrents from files and folders on the PC."_s, u"qBittorrent"_s, true},
         {u"rss_read"_s, u"Read RSS"_s, u"Read RSS feeds and articles."_s, u"RSS"_s},
@@ -213,6 +213,9 @@ QSet<QString> Access::requiredPermissions(const QString &endpoint, const QHash<Q
     QSet<QString> required {ruleFor(endpoint).permission};
     if (endpoint == u"search/downloadTorrent")
         required.insert(u"add"_s);
+    // The API key opens everything, so only an admin may replace or remove it.
+    if ((endpoint == u"app/rotateAPIKey") || (endpoint == u"app/deleteAPIKey"))
+        required.insert(ADMIN_PERMISSION);
     if ((endpoint == u"torrents/delete") && isTrue(params.value(u"deleteFiles"_s)))
         required.insert(u"delete_files"_s);
     // Renaming can move files out of the torrent's folder, and RSS rules can pick their own folders.
@@ -251,6 +254,27 @@ const QSet<QString> &Access::redactedPreferences()
         u"web_ui_api_key"_s, u"web_ui_custom_http_headers"_s, u"web_ui_domain_list"_s,
         u"web_ui_https_cert_path"_s, u"web_ui_https_key_path"_s, u"web_ui_reverse_proxies_list"_s,
         u"web_ui_username"_s
+    };
+    return keys;
+}
+
+const QSet<QString> &Access::adminOnlyPreferences()
+{
+    static const QSet<QString> keys
+    {
+        u"autorun_enabled"_s, u"autorun_program"_s,
+        u"autorun_on_torrent_added_enabled"_s, u"autorun_on_torrent_added_program"_s,
+        u"alternative_webui_enabled"_s, u"alternative_webui_path"_s,
+        u"bypass_auth_subnet_whitelist"_s, u"bypass_auth_subnet_whitelist_enabled"_s, u"bypass_local_auth"_s,
+        u"use_https"_s, u"web_ui_activity_log_days"_s, u"web_ui_address"_s, u"web_ui_ban_duration"_s,
+        u"web_ui_clickjacking_protection_enabled"_s, u"web_ui_csrf_protection_enabled"_s,
+        u"web_ui_custom_http_headers"_s, u"web_ui_domain_list"_s, u"web_ui_host_header_validation_enabled"_s,
+        u"web_ui_https_cert_path"_s, u"web_ui_https_key_path"_s, u"web_ui_max_auth_fail_count"_s,
+        u"web_ui_password"_s, u"web_ui_port"_s, u"web_ui_reverse_proxies_list"_s,
+        u"web_ui_reverse_proxy_enabled"_s, u"web_ui_secure_cookie_enabled"_s,
+        u"web_ui_session_timeout"_s, u"web_ui_sessions_count_limit"_s, u"web_ui_shared_login_allowed"_s,
+        u"web_ui_upnp"_s, u"web_ui_use_custom_http_headers_enabled"_s, u"web_ui_user_lock_duration"_s,
+        u"web_ui_user_max_auth_fail_count"_s, u"web_ui_user_sign_in_days"_s, u"web_ui_username"_s
     };
     return keys;
 }

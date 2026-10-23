@@ -80,6 +80,10 @@ namespace Access
     // app/preferences values blanked for anyone without the "settings" permission.
     const QSet<QString> &redactedPreferences();
 
+    // app/setPreferences keys that only an admin may change: they decide who can sign in, open the WebUI to
+    // others or run programs, so "settings" alone must not reach them.
+    const QSet<QString> &adminOnlyPreferences();
+
     // Anything that isn't clearly false counts as true, to stay on the safe side.
     bool isTrue(const QString &value);
 }

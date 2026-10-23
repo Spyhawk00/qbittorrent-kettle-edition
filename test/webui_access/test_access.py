@@ -1211,6 +1211,14 @@ class LocalhostTests(AccessTestCase):
         self.assertRegex(edition, r"^\d+\.\d+\.\d+$")
         self.assertNotEqual(edition, "5.3.0")
 
+    def test_a_request_a_proxy_passed_on_is_not_this_pc(self):
+        # a proxy on this PC connects from 127.0.0.1; whoever is behind it must sign in, even when it names a loopback address
+        for header in ({"X-Forwarded-For": "127.0.0.1"}, {"CF-Connecting-IP": "127.0.0.1"},
+                       {"Forwarded": "for=127.0.0.1"}, {"X-Forwarded-For": "::1"}):
+            status, _, _ = Client(self.qbt).request("GET", "/api/v2/app/version", headers=header)
+            self.assertEqual(status, 403, header)
+        self.assertEqual(Client(self.qbt).request("GET", "/api/v2/app/version")[0], 200)
+
     def test_signing_in_on_localhost_uses_the_account(self):
         local = Client(self.qbt)
         local.request("GET", "/api/v2/app/version")
@@ -1362,6 +1370,96 @@ class HardeningTests(AccessTestCase):
         admin = self.client("morgan")
         admin.request("POST", "/api/v2/torrents/addTags", form={"hashes": info_hash, "tags": "added-by:morgan"})
         self.assertIn("added-by:morgan", alice.torrent(info_hash)["tags"])
+
+    def test_only_an_admin_can_take_an_added_by_tag_off(self):
+        alice = self.client("alice")
+        status, info_hash, _ = alice.add_torrent("Keep-My-Name", tags="fun")
+        self.assertEqual(status // 100, 2)
+        self.assertEqual(set(alice.torrent(info_hash)["tags"].split(", ")), {"fun", "added-by:alice"})
+
+        def tags():
+            return set(alice.torrent(info_hash)["tags"].split(", "))
+
+        # taking off just the added-by tag, clearing every tag and replacing all of them are all refused
+        for endpoint, form in (("removeTags", {"hashes": info_hash, "tags": "added-by:alice"}),
+                               ("removeTags", {"hashes": info_hash, "tags": ""}),
+                               ("removeTags", {"hashes": "all", "tags": ""}),
+                               ("setTags", {"hashes": info_hash, "tags": "other"}),
+                               ("setTags", {"hashes": "all", "tags": "other"}),
+                               ("deleteTags", {"tags": "added-by:alice"})):
+            status, _, body = alice.request("POST", f"/api/v2/torrents/{endpoint}", form=form)
+            self.assertEqual(status, 403, (endpoint, form, body))
+            self.assertEqual(tags(), {"fun", "added-by:alice"}, (endpoint, form))
+        # other tags can still be removed, also in the same call
+        status, _, _ = alice.request("POST", "/api/v2/torrents/removeTags",
+                                     form={"hashes": info_hash, "tags": "fun,added-by:alice"})
+        self.assertEqual(status // 100, 2)
+        self.assertEqual(tags(), {"added-by:alice"})
+        # an admin may
+        admin = self.client("morgan")
+        status, _, _ = admin.request("POST", "/api/v2/torrents/removeTags", form={"hashes": info_hash, "tags": "added-by:alice"})
+        self.assertEqual(status // 100, 2)
+        self.assertEqual(alice.torrent(info_hash)["tags"], "")
+
+    def with_role_permissions(self, role, permissions):
+        with self.qbt.db() as con:
+            original = con.execute("SELECT permissions FROM roles WHERE name = ?", (role,)).fetchone()[0]
+            con.execute("UPDATE roles SET permissions = ? WHERE name = ?", (json.dumps(permissions), role))
+        self.addCleanup(self.restore_role_permissions, role, original)
+
+    def restore_role_permissions(self, role, original):
+        with self.qbt.db() as con:
+            con.execute("UPDATE roles SET permissions = ? WHERE name = ?", (original, role))
+
+    def test_settings_alone_cannot_reach_sign_in_or_run_program_options(self):
+        self.with_role_permissions("User", ["view", "settings"])
+        alice = self.client("alice")
+        admin = self.client("morgan")
+        form = {"json": json.dumps({"max_connec": 321, "web_ui_username": "hacked", "autorun_enabled": True,
+                                    "autorun_program": "calc.exe", "bypass_local_auth": True,
+                                    "web_ui_reverse_proxies_list": "0.0.0.0/0"})}
+        status, _, body = alice.request("POST", "/api/v2/app/setPreferences", form=form)
+        self.assertEqual(status // 100, 2, body)
+        prefs = json.loads(admin.request("GET", "/api/v2/app/preferences")[2])
+        self.assertEqual(prefs["max_connec"], 321)  # ordinary options still apply
+        self.assertEqual(prefs["web_ui_username"], SHARED_USER)
+        self.assertFalse(prefs["autorun_enabled"])
+        self.assertEqual(prefs["autorun_program"], "")
+        self.assertFalse(prefs["bypass_local_auth"])
+        self.assertNotEqual(prefs["web_ui_reverse_proxies_list"], "0.0.0.0/0")
+        # an admin can
+        status, _, _ = admin.request("POST", "/api/v2/app/setPreferences", form={"json": json.dumps({"web_ui_max_auth_fail_count": 7})})
+        self.assertEqual(status // 100, 2)
+        self.assertEqual(json.loads(admin.request("GET", "/api/v2/app/preferences")[2])["web_ui_max_auth_fail_count"], 7)
+
+    def test_only_an_admin_can_see_or_replace_the_api_key(self):
+        self.with_role_permissions("User", ["view", "settings"])
+        alice = self.client("alice")
+        admin = self.client("morgan")
+        for endpoint in ("rotateAPIKey", "deleteAPIKey"):
+            status, headers, _ = alice.request("POST", f"/api/v2/app/{endpoint}", form={})
+            self.assertEqual((status, headers.get("x-access-denied")), (403, "manage_users"), endpoint)
+        self.assertEqual(admin.request("POST", "/api/v2/app/rotateAPIKey", form={})[0] // 100, 2)
+        self.assertNotEqual(json.loads(admin.request("GET", "/api/v2/app/preferences")[2])["web_ui_api_key"], "")
+        prefs = json.loads(alice.request("GET", "/api/v2/app/preferences")[2])
+        self.assertEqual(prefs["web_ui_api_key"], "")
+        self.assertEqual(prefs["web_ui_username"], SHARED_USER)  # the rest is still visible with "settings"
+
+
+class ActivityLogLimitTests(AccessTestCase):
+    def test_the_log_keeps_at_most_the_newest_rows(self):
+        limit = 200000
+        self.qbt.stop()
+        with self.qbt.db() as con:
+            con.executemany("INSERT INTO activity (ts, category, summary, outcome) VALUES (?, 'other', 'filler', 'ok')",
+                            [(time.time(),)] * (limit + 50))
+            newest = con.execute("SELECT MAX(id) FROM activity").fetchone()[0]
+        self.qbt.start()  # the clean-up runs when the user database opens
+        with self.qbt.db() as con:
+            count, oldest, latest = con.execute("SELECT COUNT(*), MIN(id), MAX(id) FROM activity").fetchone()
+        self.assertEqual(count, limit)
+        self.assertEqual(latest, newest)
+        self.assertEqual(oldest, newest - limit + 1)
 
 
 class DatabaseVersionTests(AccessTestCase):
