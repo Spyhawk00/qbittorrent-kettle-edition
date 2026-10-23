@@ -39,7 +39,7 @@ jobs:
 
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v6
+        uses: actions/checkout@v7
         with:
           persist-credentials: false
 
@@ -59,7 +59,7 @@ jobs:
 
       # https://learn.microsoft.com/en-us/vcpkg/users/binarycaching#gha
       - name: Set variables for vcpkg
-        uses: actions/github-script@v8
+        uses: actions/github-script@v9
         with:
           script: |
             core.exportVariable('ACTIONS_CACHE_URL', (process.env.ACTIONS_CACHE_URL || ''));
@@ -213,13 +213,13 @@ jobs:
           copy ${{ env.libtorrent_path }}/build/compile_commands.json upload/cmake/libtorrent
 
       - name: Upload build artifacts
-        uses: actions/upload-artifact@v6
+        uses: actions/upload-artifact@v7
         with:
           name: qBittorrent-CI_Windows-${{ matrix.config.arch }}_libtorrent-${{ matrix.libtorrent.version }}
           path: upload
 
       - name: Install NSIS
-        uses: repolevedavaj/install-nsis@1ab2f7ba2fe9408db612029be0bb3c0088b0d3e9 # v1.2.1
+        uses: repolevedavaj/install-nsis@65a75ea79c3d1ddde868e98b7f9447e2e623401c # v1.3.0
         with:
           nsis-version: '3.12'
 
@@ -229,7 +229,7 @@ jobs:
           makensis /DQBT_CPU_ARCH="${{ matrix.config.arch }}" /DQBT_DIST_DIR="../../upload/qBittorrent" /WX dist/windows/qbittorrent.nsi
 
       - name: Upload installer
-        uses: actions/upload-artifact@v6
+        uses: actions/upload-artifact@v7
         with:
           name: qBittorrent-CI_Windows-${{ matrix.config.arch }}_libtorrent-${{ matrix.libtorrent.version }}-setup
           path: dist/windows/qbittorrent_*_setup.exe
