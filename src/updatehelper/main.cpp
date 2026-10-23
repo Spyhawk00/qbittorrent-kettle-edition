@@ -27,7 +27,7 @@
 //
 //   pid, old, new, level, notes     process id of the exiting qBittorrent, editions, release level and notes
 //   program, exe, update            program folder, exe name, folder with the downloaded files
-//   root                            folder for healthy, clean-exit, result.txt and skipped.txt
+//   root                            folder for healthy, clean-exit, result.txt, failures.txt and skipped.txt
 //   window, healthy_timeout         how the old window looked, seconds to wait for "healthy"
 //   previous, backup, log           kettle-previous folder, profile backup folder, update.log
 //   profile, exclude                profile folders to back up; top-level names inside them that are not backed up or restored
@@ -40,6 +40,7 @@
 
 #include <algorithm>
 #include <cstdio>
+#include <cstdlib>
 #include <cwctype>
 #include <functional>
 #include <string>
@@ -334,6 +335,126 @@ namespace
             writeFile(join(state.root, L"skipped.txt"), narrow(state.newEdition + L"\r\n"), true);
     }
 
+    // A failure that may pass (a locked file, a busy disk) skips the version only when it has failed this many times
+    // in a row; failures.txt keeps "<edition> <count>"
+    const int TEMPORARY_FAILURES_BEFORE_SKIP = 3;
+
+    // Counts one more failure of the new version; true when it has failed often enough to be skipped
+    bool countTemporaryFailure()
+    {
+        const Text path = join(state.root, L"failures.txt");
+        long count = 0;
+        std::string content;
+        if (readFile(path, content))
+        {
+            const Text text = widen(content);
+            const size_t space = text.find(L' ');
+            if ((space != Text::npos) && (text.substr(0, space) == state.newEdition))
+                count = std::wcstol(text.c_str() + space + 1, nullptr, 10);
+        }
+        ++count;
+        writeFile(path, narrow(state.newEdition + L" " + std::to_wstring(count) + L"\r\n"));
+        return count >= TEMPORARY_FAILURES_BEFORE_SKIP;
+    }
+
+    // ---- state file checks ----
+
+    // The full path in lower case without a closing backslash, to compare folders; empty if it can't be made
+    Text fullPath(const Text &path)
+    {
+        std::vector<wchar_t> buffer(32768);
+        const DWORD length = ::GetFullPathNameW(path.c_str(), static_cast<DWORD>(buffer.size()), buffer.data(), nullptr);
+        if ((length == 0) || (length >= buffer.size()))
+            return {};
+        Text result = lower(Text(buffer.data(), length));
+        while ((result.size() > 3) && (result.back() == L'\\'))
+            result.pop_back();
+        return result;
+    }
+
+    // true if `path` is `folder` itself or something inside it
+    bool isSameOrInside(const Text &folder, const Text &path)
+    {
+        Text parent = fullPath(folder);
+        const Text child = fullPath(path);
+        if (parent.empty() || child.empty())
+            return false;
+        if (child == parent)
+            return true;
+        if (parent.back() != L'\\')
+            parent += L'\\';
+        return child.compare(0, parent.size(), parent) == 0;
+    }
+
+    Text lastName(const Text &path)
+    {
+        const Text full = fullPath(path);
+        const size_t cut = full.find_last_of(L'\\');
+        return (cut == Text::npos) ? full : full.substr(cut + 1);
+    }
+
+    // a path below the program folder: no drive, no leading backslash, no ".."
+    bool isSafeRelativePath(const Text &path)
+    {
+        if (path.empty() || (path.find(L':') != Text::npos) || (path.front() == L'\\') || (path.front() == L'/'))
+            return false;
+        size_t start = 0;
+        while (start <= path.size())
+        {
+            size_t end = path.find_first_of(L"\\/", start);
+            if (end == Text::npos)
+                end = path.size();
+            const Text part = path.substr(start, end - start);
+            if ((part == L"..") || (part == L"."))
+                return false;
+            start = end + 1;
+        }
+        return true;
+    }
+
+    // The state file is written by qBittorrent, but the helper deletes whole folders it names, so it only accepts
+    // the folders it expects: none of them may be, or contain, the program or a profile.
+    bool isStateSafe()
+    {
+        if (!isDirectory(state.program) || (state.exe.find_first_of(L"\\/:") != Text::npos)
+                || !exists(join(state.program, state.exe)))
+            return false;
+        for (const FileEntry &entry : state.files)
+        {
+            if (!isSafeRelativePath(entry.path))
+                return false;
+        }
+
+        // the downloaded files are in a folder of their own below the folder of the update checks
+        if (!isSameOrInside(state.root, state.update) || (fullPath(state.update) == fullPath(state.root)))
+            return false;
+        const Text backupSuffix = L"-update-backup";
+        const Text backupName = lastName(state.backup);
+        if ((lastName(state.previous) != L"kettle-previous")
+                || (backupName.size() <= backupSuffix.size()) || (backupName.compare(backupName.size() - backupSuffix.size(), backupSuffix.size(), backupSuffix) != 0)
+                || (!state.log.empty() && (lastName(state.log) != L"update.log")))
+            return false;
+
+        // these three are emptied and removed
+        for (const Text *folder : {&state.update, &state.previous, &state.backup})
+        {
+            if (isSameOrInside(*folder, state.program))
+                return false;
+            for (const Text &profile : state.profiles)
+            {
+                if (isSameOrInside(*folder, profile))
+                    return false;
+            }
+        }
+        // a profile is emptied when the update is undone
+        for (const Text &profile : state.profiles)
+        {
+            if ((fullPath(profile).size() <= 3) || isSameOrInside(profile, state.program))
+                return false;
+        }
+        return true;
+    }
+
     // ---- state file ----
 
     bool readState(const Text &path)
@@ -391,7 +512,8 @@ namespace
         }
         while (!state.program.empty() && ((state.program.back() == L'\\') || (state.program.back() == L'/')))
             state.program.pop_back();
-        return !state.program.empty() && !state.exe.empty() && !state.update.empty() && !state.root.empty() && !state.files.empty();
+        return !state.program.empty() && !state.exe.empty() && !state.update.empty() && !state.root.empty() && !state.files.empty()
+            && isStateSafe();
     }
 
     // ---- program ----
@@ -595,7 +717,7 @@ namespace
             return abandon(L"discarded", L"a downloaded file was damaged", false);
 
         if (!backupProfile())
-            return abandon(L"failed", L"your settings could not be backed up first", true);
+            return abandon(L"failed", L"your settings could not be backed up first", countTemporaryFailure());
         log(L"Profile backed up.");
 
         removeFile(join(state.root, L"healthy"));
@@ -603,7 +725,7 @@ namespace
         if (!swapFiles())
         {
             const bool undone = undoSwap();
-            return abandon(L"failed", L"program files could not be replaced" + Text(undone ? L"" : L" and not all of them could be put back"), true);
+            return abandon(L"failed", L"program files could not be replaced" + Text(undone ? L"" : L" and not all of them could be put back"), countTemporaryFailure());
         }
         log(L"Program files replaced. Starting the new version.");
 
@@ -611,7 +733,7 @@ namespace
         if (!process)
         {
             const bool undone = undoSwap();
-            return abandon(L"failed", L"the new version could not be started" + Text(undone ? L"" : L" and not all files could be put back"), true);
+            return abandon(L"failed", L"the new version could not be started" + Text(undone ? L"" : L" and not all files could be put back"), countTemporaryFailure());
         }
 
         DWORD exitCode = 0;
@@ -620,6 +742,7 @@ namespace
         {
             ::CloseHandle(process);
             finishInstall();
+            removeFile(join(state.root, L"failures.txt"));
             removeFile(state.statePath);
             log(L"The new version is healthy. Update installed.");
             return 0;

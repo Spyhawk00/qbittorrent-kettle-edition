@@ -328,21 +328,6 @@ class DownloadTests(UpdateCheckTestCase):
         self.assertEqual([r for r in self.server.requests if r.startswith("/download/")], [])
 
 
-@unittest.skip("the check of the official releases is turned off (CHECK_OFFICIAL_RELEASES in programupdater.cpp)")
-class OfficialReleaseTests(UpdateCheckTestCase):
-    def test_newer_official_release_is_only_a_log_line(self):
-        self.server.files["/versions.json"] = json.dumps({"win": {"version": "99.0.0"}, "macos": {"version": "99.0.0"}}).encode()
-        admin = self.start()
-        self.wait_for_check(("kettle-update.json.sig", "versions.json"))
-        self.assert_logged(admin, "Official qBittorrent 99.0.0 is available. This edition is based on 5.3.0.")
-
-    def test_same_official_release_is_not_reported(self):
-        self.server.files["/versions.json"] = json.dumps({"win": {"version": "5.3.0"}, "macos": {"version": "5.3.0"}}).encode()
-        admin = self.start()
-        self.wait_for_check(("kettle-update.json.sig", "versions.json"))
-        self.assert_not_logged(admin, "Official qBittorrent")
-
-
 class InstalledCopyTests(UpdateCheckTestCase):
     def test_test_settings_do_nothing_in_a_program_files_folder(self):
         # a copy that sits in a Program Files folder must ignore both settings, so it can't be pointed at another server
@@ -508,13 +493,17 @@ class InstallTests(UpdateCheckTestCase):
     def publish(self, files, **kwargs):
         self.server.publish(self.signer, "99.1.0", files=files, **kwargs)
 
-    def assert_old_version_is_back(self):
+    def skipped_editions(self):
+        path = self.update_root / "skipped.txt"
+        return path.read_text(encoding="utf-8").split() if path.exists() else []
+
+    def assert_old_version_is_back(self, *, skipped=True):
         self.assertEqual((self.program / "qbittorrent-ke.exe").read_bytes(), self.old_exe)
         self.assertEqual(sorted(self.program.rglob("*.old")), [])
         self.assertEqual((self.data / "marker.txt").read_text(encoding="utf-8"), "original")
         self.assertFalse((self.data / "changed.txt").exists(), "a file the new version made in the profile was kept")
         self.assertFalse((self.qbt.root / "qBittorrent" / "data-update-backup").exists())
-        self.assertIn("99.1.0", (self.update_root / "skipped.txt").read_text(encoding="utf-8").split())
+        self.assertEqual("99.1.0" in self.skipped_editions(), skipped)
 
     # ---- an update that works ----
 
@@ -658,9 +647,90 @@ class InstallTests(UpdateCheckTestCase):
             self.qbt.wait_ready()
             self.wait_for_update_log("program files could not be replaced", timeout=150)
         self.assertIn("Could not move aside locked.bin", self.update_log())
-        self.assert_old_version_is_back()
+        # a locked file may pass: the version is tried again, and only skipped when it keeps failing
+        self.assert_old_version_is_back(skipped=False)
+        self.assertEqual((self.update_root / "failures.txt").read_text(encoding="utf-8").split(), ["99.1.0", "1"])
         self.assertEqual((self.program / "locked.bin").read_bytes(), b"old locked file")
         self.assertEqual(self.wait_for_api(), "v5.3.0")
+
+    def test_version_that_keeps_failing_to_install_is_skipped_the_third_time(self):
+        (self.program / "locked.bin").write_bytes(b"old locked file")
+        self.publish({"qbittorrent-ke.exe": self.real_exe, "locked.bin": b"new locked file"})
+        self.create_instance()
+        self.update_root.mkdir(parents=True)
+        (self.update_root / "failures.txt").write_text("99.1.0 2\r\n", encoding="utf-8")
+        with open(self.program / "locked.bin", "rb"):
+            self.launch(install_in=6, KETTLE_FAKE_DATA=str(self.data))
+            self.qbt.wait_ready()
+            self.wait_for_update_log("program files could not be replaced", timeout=150)
+        self.assert_old_version_is_back(skipped=True)
+        self.assertEqual(self.wait_for_api(), "v5.3.0")
+
+
+class HelperStateTests(unittest.TestCase):
+    """kettle-update-helper.exe deletes the folders its state file names, so it must refuse a state file that names
+    the wrong ones. A good state file gets as far as trying to start the (fake) program, which fails and is undone."""
+
+    def setUp(self):
+        self.helper = Path(test_access.NOX).parent / "kettle-update-helper.exe"
+        if not self.helper.exists():
+            self.skipTest("kettle-update-helper.exe not built")
+        self.work = Path(tempfile.mkdtemp(prefix="kettle helper state "))
+        self.addCleanup(shutil.rmtree, self.work, True)
+        self.addCleanup(self.stop_programs_of_the_test)  # runs before the folder is removed
+        (self.work / "program").mkdir()
+        (self.work / "program" / "app.exe").write_bytes(b"app")
+        (self.work / "cache" / "99.1.0").mkdir(parents=True)
+        (self.work / "cache" / "99.1.0" / "app.exe").write_bytes(b"new")
+        (self.work / "data").mkdir()
+        (self.work / "victim").mkdir()
+        (self.work / "victim" / "keep.txt").write_text("keep", encoding="utf-8")
+
+    def stop_programs_of_the_test(self):
+        """Ends every process that runs from the throw-away folder (never any other program)."""
+        subprocess.run(["powershell.exe", "-NoProfile", "-Command",
+                        f"Get-Process | Where-Object {{ $_.Path -and $_.Path.StartsWith('{self.work}', 'OrdinalIgnoreCase') }}"
+                        " | Stop-Process -Force"], capture_output=True)
+
+    def run_helper(self, **override):
+        w = self.work
+        values = {"pid": "4000000", "old": "1.0.0", "new": "99.1.0", "level": "tweak", "notes": "", "healthy_timeout": "5",
+                  "program": str(w / "program"), "exe": "app.exe", "update": str(w / "cache" / "99.1.0"),
+                  "root": str(w / "cache"), "previous": str(w / "data" / "kettle-previous"),
+                  "backup": str(w / "data-update-backup"), "log": str(w / "data" / "update.log"),
+                  "profile": str(w / "data"), "file": f"app.exe|3|{hashlib.sha256(b'new').hexdigest()}"}
+        values.update(override)
+        state = w / "cache" / "state.txt"
+        state.write_bytes("".join(f"{key}={value}\r\n" for key, value in values.items()).encode("utf-8"))
+        return subprocess.run([str(self.helper), str(state)], timeout=90).returncode
+
+    def assert_nothing_touched(self):
+        self.assertEqual((self.work / "program" / "app.exe").read_bytes(), b"app")
+        self.assertEqual((self.work / "victim" / "keep.txt").read_text(encoding="utf-8"), "keep")
+        self.assertTrue((self.work / "cache" / "99.1.0" / "app.exe").exists())
+
+    def test_a_good_state_file_is_accepted(self):
+        # the fake program is no working version, so the helper undoes the swap: exit code 1, the old file is back
+        self.assertEqual(self.run_helper(), 1)
+        self.assertEqual((self.work / "program" / "app.exe").read_bytes(), b"app")
+        self.assertTrue((self.work / "cache" / "result.txt").exists())
+
+    def test_state_files_that_name_the_wrong_places_are_refused(self):
+        w = self.work
+        for what, override in (
+                ("a file that leaves the program folder", {"file": f"..\\escape.txt|3|{hashlib.sha256(b'new').hexdigest()}"}),
+                ("a file with a drive", {"file": f"C:\\escape.txt|3|{hashlib.sha256(b'new').hexdigest()}"}),
+                ("downloads outside the update folder", {"update": str(w / "victim")}),
+                ("the update folder itself", {"update": str(w / "cache")}),
+                ("another folder as the old files", {"previous": str(w / "victim")}),
+                ("another folder as the backup", {"backup": str(w / "victim")}),
+                ("another file as the log", {"log": str(w / "victim" / "keep.txt")}),
+                ("a profile that holds the program", {"profile": str(w)}),
+                ("a drive as the profile", {"profile": "Z:\\"}),  # a drive that is not there, in case the check fails
+                ("an exe with a path", {"exe": "..\\app.exe"})):
+            self.assertEqual(self.run_helper(**override), 2, what)
+            self.assert_nothing_touched()
+            self.assertFalse((w / "escape.txt").exists(), what)
 
 
 if __name__ == "__main__":
