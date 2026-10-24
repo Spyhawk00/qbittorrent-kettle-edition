@@ -32,11 +32,14 @@
 #include <limits>
 
 #include <QtVersionChecks>
-#include <QHeaderView>
+#include <QGridLayout>
+#include <QGroupBox>
+#include <QHBoxLayout>
 #include <QHostAddress>
 #include <QLabel>
 #include <QNetworkInterface>
-#include <QTextDocumentFragment>
+#include <QScrollArea>
+#include <QVBoxLayout>
 
 #include <libtorrent/version.hpp>
 
@@ -45,6 +48,8 @@
 #include "base/preferences.h"
 #include "base/unicodestrings.h"
 #include "gui/desktopintegration.h"
+#include "gui/groupboxheadingstyle.h"
+#include "gui/hidabletabwidget.h"
 #include "gui/mainwindow.h"
 #include "interfaces/iguiapplication.h"
 
@@ -55,17 +60,10 @@ namespace
          return u"<a href=\"%1\">%2</a>"_s.arg(url, linkLabel);
     }
 
-    enum AdvSettingsCols
-    {
-        PROPERTY,
-        VALUE,
-        COL_COUNT
-    };
-
+    // the settings; layOutSections() decides where each one is shown
     enum AdvSettingsRows
     {
         // qBittorrent section
-        QBITTORRENT_HEADER,
         RESUME_DATA_STORAGE,
         TORRENT_CONTENT_REMOVE_OPTION,
 #if defined(QBT_USES_LIBTORRENT2) && !defined(Q_OS_LINUX) && !defined(Q_OS_MACOS)
@@ -117,7 +115,6 @@ namespace
         SESSION_SHUTDOWN_TIMEOUT,
 
         // libtorrent section
-        LIBTORRENT_HEADER,
         BDECODE_DEPTH_LIMIT,
         BDECODE_TOKEN_LIMIT,
         ASYNC_IO_THREADS,
@@ -194,37 +191,45 @@ namespace
         I2P_OUTBOUND_LENGTH_VARIANCE,
 #endif // LIBTORRENT_VERSION_NUM >= 20012
 #endif
-
-        ROW_COUNT
     };
 }
 
 AdvancedSettings::AdvancedSettings(IGUIApplication *app, QWidget *parent)
     : GUIApplicationComponent(app, parent)
+    , m_tabs {new HidableTabWidget(this)}
 {
-    // column
-    setColumnCount(COL_COUNT);
-    const QStringList header = {tr("Setting"), tr("Value", "Value set for this setting")};
-    setHorizontalHeaderLabels(header);
-    // row
-    setRowCount(ROW_COUNT);
-    verticalHeader()->setVisible(false);
-    // etc.
-    setAlternatingRowColors(true);
-    setSelectionMode(QAbstractItemView::NoSelection);
-    setEditTriggers(QAbstractItemView::NoEditTriggers);
+    m_tabs->setProperty("flatPage", true);
+    auto *layout = new QVBoxLayout(this);
+    layout->setContentsMargins(0, 0, 0, 0);
+    layout->addWidget(m_tabs);
+
     // Load settings
     loadAdvancedSettings();
-    resizeColumnToContents(0);
-    horizontalHeader()->setStretchLastSection(true);
+    layOutSections();
+
+    // sections are headings with a line under them, as on the other pages
+    GroupBoxHeadingStyle::apply(this);
+}
+
+void AdvancedSettings::alignRows()
+{
+    for (int i = 0; i < m_tabs->count(); ++i)
+        GroupBoxHeadingStyle::alignRows(m_tabs->widget(i));
 }
 
 void AdvancedSettings::showSpeedWidgetSetting()
 {
-    scrollTo(model()->index(ENABLE_SPEED_WIDGET, PROPERTY), QAbstractItemView::PositionAtCenter);
+    QWidget *widget = &m_checkBoxSpeedWidgetEnabled;
+    for (int i = 0; i < m_tabs->count(); ++i)
+    {
+        auto *scrollArea = static_cast<QScrollArea *>(m_tabs->widget(i));
+        if (!scrollArea->isAncestorOf(widget))
+            continue;
 
-    if (QWidget *widget = cellWidget(ENABLE_SPEED_WIDGET, VALUE))
-        widget->setFocus();
+        m_tabs->setCurrentIndex(i);
+        scrollArea->ensureWidgetVisible(widget);
+    }
+    widget->setFocus();
 }
 
 void AdvancedSettings::saveAdvancedSettings() const
@@ -507,22 +512,12 @@ void AdvancedSettings::loadAdvancedSettings()
     const Preferences *const pref = Preferences::instance();
     const BitTorrent::Session *const session = BitTorrent::Session::instance();
 
-    // add section headers
-    auto *labelQbtLink = new QLabel(
-        makeLink(u"https://github.com/qbittorrent/qBittorrent/wiki/Explanation-of-Options-in-qBittorrent#Advanced"
-                 , tr("Open documentation"))
-        , this);
-    labelQbtLink->setOpenExternalLinks(true);
-    addRow(QBITTORRENT_HEADER, u"<b>%1</b>"_s.arg(tr("qBittorrent Section")), labelQbtLink);
-    static_cast<QLabel *>(cellWidget(QBITTORRENT_HEADER, PROPERTY))->setAlignment(Qt::AlignCenter | Qt::AlignVCenter);
-
-    auto *labelLibtorrentLink = new QLabel(
-        makeLink(u"https://www.libtorrent.org/reference-Settings.html"
-                 , tr("Open documentation"))
-        , this);
-    labelLibtorrentLink->setOpenExternalLinks(true);
-    addRow(LIBTORRENT_HEADER, u"<b>%1</b>"_s.arg(tr("libtorrent Section")), labelLibtorrentLink);
-    static_cast<QLabel *>(cellWidget(LIBTORRENT_HEADER, PROPERTY))->setAlignment(Qt::AlignCenter | Qt::AlignVCenter);
+    // the documentation of both, beside the tabs
+    auto *labelDocumentation = new QLabel((tr("Open documentation") + u": "
+        + makeLink(u"https://github.com/qbittorrent/qBittorrent/wiki/Explanation-of-Options-in-qBittorrent#Advanced", u"qBittorrent")
+        + u", " + makeLink(u"https://www.libtorrent.org/reference-Settings.html", u"libtorrent")), m_tabs);
+    labelDocumentation->setOpenExternalLinks(true);
+    m_tabs->setCornerWidget(labelDocumentation, Qt::TopRightCorner);
 
     m_comboBoxResumeDataStorage.addItem(tr("Fastresume files"), QVariant::fromValue(BitTorrent::ResumeDataStorageType::Legacy));
     m_comboBoxResumeDataStorage.addItem(tr("SQLite database (experimental)"), QVariant::fromValue(BitTorrent::ResumeDataStorageType::SQLite));
@@ -1083,60 +1078,184 @@ void AdvancedSettings::loadAdvancedSettings()
 #endif
 }
 
-bool AdvancedSettings::setFilterText(const QString &text)
+// The settings on tabs and in sections, laid out like the other pages: a check box with its text, or "label: control"
+void AdvancedSettings::layOutSections()
 {
-    const QStringList words = text.split(u' ', Qt::SkipEmptyParts);
-    bool anyShown = false;
-    int headerRow = -1;  // a section header stays while any of its rows is shown
-    bool sectionShown = false;
-    for (int row = 0; row < rowCount(); ++row)
+    struct Section
     {
-        if ((row == QBITTORRENT_HEADER) || (row == LIBTORRENT_HEADER))
+        QString title;
+        QList<int> rows;
+    };
+    struct Tab
+    {
+        QString name;
+        QList<Section> sections;
+    };
+
+    const QList<Tab> tabs =
+    {
+        {tr("General"),
         {
-            if (headerRow >= 0)
-                setRowHidden(headerRow, !sectionShown);
-            headerRow = row;
-            sectionShown = false;
-            continue;
+            {tr("Program behavior"), {START_SESSION_PAUSED, RECHECK_COMPLETED, CONFIRM_RECHECK_TORRENT, CONFIRM_REMOVE_ALL_TAGS
+                , CONFIRM_REMOVE_TRACKER_FROM_ALL_TORRENTS, SESSION_SHUTDOWN_TIMEOUT, TORRENT_CONTENT_REMOVE_OPTION, SAVE_PATH_HISTORY_LENGTH
+                , PYTHON_EXECUTABLE_PATH}},
+            {tr("Display and notifications"), {ENABLE_SPEED_WIDGET
+#ifndef Q_OS_MACOS
+                , ENABLE_ICONS_IN_MENUS, USE_ATTACHED_ADD_NEW_TORRENT_DIALOG
+#endif
+                , PROGRAM_NOTIFICATIONS, TORRENT_ADDED_NOTIFICATIONS
+#ifdef QBT_USES_DBUS
+                , NOTIFICATION_TIMEOUT
+#endif
+                , DOWNLOAD_TRACKER_FAVICON, RESOLVE_COUNTRIES, RESOLVE_HOSTS, LIST_REFRESH, APP_INSTANCE_NAME}}
+        }},
+        {tr("Network"),
+        {
+            {tr("Network connection"), {NETWORK_IFACE, NETWORK_IFACE_ADDRESS, ANNOUNCE_IP, ANNOUNCE_PORT, REANNOUNCE_WHEN_ADDRESS_CHANGED
+                , OUTGOING_PORT_MIN, OUTGOING_PORT_MAX, UPNP_LEASE_DURATION
+#if LIBTORRENT_VERSION_NUM >= 20100
+                , WEBTORRENT_STUN_SERVER
+#endif
+                }},
+            {tr("Security and privacy"), {VALIDATE_HTTPS_TRACKER_CERTIFICATE, SSRF_MITIGATION, BLOCK_PEERS_ON_PRIVILEGED_PORTS, IGNORE_SSL_ERRORS
+#if defined(Q_OS_MACOS) || defined(Q_OS_WIN)
+                , ENABLE_MARK_OF_THE_WEB
+#endif
+                , MULTI_CONNECTIONS_PER_IP
+#if LIBTORRENT_VERSION_NUM >= 20013
+                , MULTI_CONNECTIONS_PER_PEER_ID
+#endif
+                }},
+            {tr("Connection tuning"), {CONNECTION_SPEED, UTP_MIX_MODE, PEER_DSCP, HOSTNAME_CACHE_TTL, IDN_SUPPORT, SEND_BUF_WATERMARK
+                , SEND_BUF_LOW_WATERMARK, SEND_BUF_WATERMARK_FACTOR, SOCKET_SEND_BUFFER_SIZE, SOCKET_RECEIVE_BUFFER_SIZE, SOCKET_BACKLOG_SIZE}}
+        }},
+        {tr("Storage"),
+        {
+            {tr("Saving and torrent files"), {RESUME_DATA_STORAGE, SAVE_RESUME_DATA_INTERVAL, SAVE_STATISTICS_INTERVAL, TORRENT_FILE_SIZE_LIMIT
+                , BDECODE_DEPTH_LIMIT, BDECODE_TOKEN_LIMIT}},
+            {tr("Disk and memory"), {
+#if defined(QBT_USES_LIBTORRENT2) && !defined(Q_OS_LINUX) && !defined(Q_OS_MACOS)
+                MEMORY_WORKING_SET_LIMIT,
+#endif
+#ifdef Q_OS_WIN
+                OS_MEMORY_PRIORITY,
+#endif
+                ASYNC_IO_THREADS
+#ifdef QBT_USES_LIBTORRENT2
+                , HASHING_THREADS
+#endif
+                , FILE_POOL_SIZE, CHECKING_MEM_USAGE
+#ifndef QBT_USES_LIBTORRENT2
+                , DISK_CACHE, DISK_CACHE_TTL
+#endif
+                , DISK_QUEUE_SIZE
+#ifdef QBT_USES_LIBTORRENT2
+                , DISK_IO_TYPE
+#endif
+                , DISK_IO_READ_MODE, DISK_IO_WRITE_MODE
+#ifndef QBT_USES_LIBTORRENT2
+                , COALESCE_RW
+#endif
+                }}
+        }},
+        {tr("Peers and trackers"),
+        {
+            {tr("Trackers"), {ANNOUNCE_ALL_TRACKERS, ANNOUNCE_ALL_TIERS, MAX_CONCURRENT_HTTP_ANNOUNCES, STOP_TRACKER_TIMEOUT, TRACKER_STATUS
+                , TRACKER_PORT, TRACKER_PORT_FORWARDING}},
+            {tr("Peers and seeding"), {SEEDING_OUTGOING_CONNECTIONS, SUGGEST_MODE, PIECE_EXTENT_AFFINITY, CHOKING_ALGORITHM, SEED_CHOKING_ALGORITHM
+                , PEER_TURNOVER, PEER_TURNOVER_CUTOFF, PEER_TURNOVER_INTERVAL, REQUEST_QUEUE_SIZE, MAX_OUTSTANDING_BLOCK_REQUESTS}},
+            {tr("DHT and I2P"), {DHT_BOOTSTRAP_NODES
+#if defined(QBT_USES_LIBTORRENT2) && TORRENT_USE_I2P
+                , I2P_INBOUND_QUANTITY, I2P_OUTBOUND_QUANTITY, I2P_INBOUND_LENGTH, I2P_OUTBOUND_LENGTH
+#if LIBTORRENT_VERSION_NUM >= 20012
+                , I2P_INBOUND_LENGTH_VARIANCE, I2P_OUTBOUND_LENGTH_VARIANCE
+#endif // LIBTORRENT_VERSION_NUM >= 20012
+#endif
+                }}
+        }}
+    };
+
+    [[maybe_unused]] qsizetype rowsShown = 0;
+    for (const Tab &tab : tabs)
+    {
+        auto *page = new QWidget;
+        auto *pageLayout = new QVBoxLayout(page);
+        // the same space between sections as on the other pages; the scroll bar keeps its distance from the fields
+        pageLayout->setContentsMargins(0, 0, fontMetrics().averageCharWidth(), 0);
+        pageLayout->setSpacing(fontMetrics().height());
+
+        for (const Section &section : tab.sections)
+        {
+            auto *box = new QGroupBox(section.title, page);
+            auto *grid = new QGridLayout(box);
+            grid->setColumnStretch(1, 1);
+            int gridRow = 0;
+            for (const int row : section.rows)
+            {
+                const Row setting = m_rows.value(row);
+                if (!setting.widget)
+                    continue;
+                ++rowsShown;
+
+                // a link to the libtorrent documentation stays after the text of a check box, or after the control
+                const qsizetype linkStart = setting.text.indexOf(u"<a ");
+                const QString name = setting.text.left(linkStart).trimmed();
+                QLabel *link = nullptr;
+                if (linkStart >= 0)
+                {
+                    link = new QLabel(setting.text.mid(linkStart), box);
+                    link->setOpenExternalLinks(true);
+                }
+
+                auto *line = new QHBoxLayout;
+                if (auto *checkBox = qobject_cast<QCheckBox *>(setting.widget))
+                {
+                    checkBox->setText(QString(name).replace(u"&"_s, u"&&"_s));
+                    line->addWidget(checkBox);
+                    if (link)
+                        line->addWidget(link);
+                    line->addStretch();
+                    grid->addLayout(line, gridRow, 0, 1, 2);
+                }
+                else
+                {
+                    auto *label = new QLabel((QString(name).replace(u"&"_s, u"&&"_s) + u":"_s), box);
+                    label->setToolTip(setting.widget->toolTip());
+                    label->setBuddy(setting.widget);
+                    grid->addWidget(label, gridRow, 0);
+
+                    // text boxes take the width there is, the other controls keep their own
+                    const bool textBox = qobject_cast<QLineEdit *>(setting.widget) || qobject_cast<FileSystemPathEdit *>(setting.widget);
+                    line->addWidget(setting.widget, (textBox ? 1 : 0));
+                    if (link)
+                        line->addWidget(link);
+                    if (!textBox)
+                        line->addStretch();
+                    grid->addLayout(line, gridRow, 1);
+                }
+                ++gridRow;
+            }
+            pageLayout->addWidget(box);
         }
+        pageLayout->addStretch();
 
-        const auto *label = qobject_cast<QLabel *>(cellWidget(row, PROPERTY));
-        const QString name = label ? QTextDocumentFragment::fromHtml(label->text()).toPlainText() : QString();
-        const bool shown = std::all_of(words.cbegin(), words.cend(), [&name](const QString &word)
-        {
-            return name.contains(word, Qt::CaseInsensitive);
-        });
-        setRowHidden(row, !shown);
-        sectionShown = sectionShown || shown;
-        anyShown = anyShown || shown;
+        auto *scrollArea = new QScrollArea(m_tabs);
+        scrollArea->setFrameShape(QFrame::NoFrame);
+        scrollArea->setWidgetResizable(true);
+        scrollArea->setHorizontalScrollBarPolicy(Qt::ScrollBarAlwaysOff);
+        scrollArea->setWidget(page);
+        // the page of the tabs is painted by the tab widget, so no band of another color shows between its line and the settings
+        scrollArea->viewport()->setAutoFillBackground(false);
+        page->setAutoFillBackground(false);
+        m_tabs->addTab(scrollArea, tab.name);
     }
-    if (headerRow >= 0)
-        setRowHidden(headerRow, !sectionShown);
-    return anyShown;
-}
-
-void AdvancedSettings::focusFirstRow()
-{
-    for (int row = 0; row < rowCount(); ++row)
-    {
-        QWidget *widget = cellWidget(row, VALUE);
-        if (isRowHidden(row) || !widget || qobject_cast<QLabel *>(widget))
-            continue;
-        scrollTo(model()->index(row, VALUE));
-        widget->setFocus(Qt::ShortcutFocusReason);
-        return;
-    }
+    Q_ASSERT(rowsShown == m_rows.size());
 }
 
 template <typename T>
 void AdvancedSettings::addRow(const int row, const QString &text, T *widget)
 {
-    auto *label = new QLabel(text);
-    label->setOpenExternalLinks(true);
-    label->setToolTip(widget->toolTip());
-
-    setCellWidget(row, PROPERTY, label);
-    setCellWidget(row, VALUE, widget);
+    m_rows.insert(row, {.text = text, .widget = widget});
 
     if constexpr (std::is_same_v<T, FileSystemPathLineEdit>)
         connect(widget, &FileSystemPathEdit::selectedPathChanged, this, &AdvancedSettings::settingsChanged);

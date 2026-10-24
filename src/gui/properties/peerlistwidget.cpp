@@ -127,17 +127,17 @@ PeerListWidget::PeerListWidget(PropertiesWidget *parent)
     m_listModel->setHeaderData(PeerListColumns::RELEVANCE, Qt::Horizontal, tr("Relevance", "i.e: How relevant this peer is to us. How many pieces it has that we don't."));
     m_listModel->setHeaderData(PeerListColumns::CONTRIBUTION, Qt::Horizontal, tr("Contribution", "i.e: How much of this peer's current progress was provided by us"));
     m_listModel->setHeaderData(PeerListColumns::DOWNLOADING_PIECE, Qt::Horizontal, tr("Files", "i.e. files that are being downloaded right now"));
-    // Set header text alignment: everything but text is centered
-    m_listModel->setHeaderData(PeerListColumns::PORT, Qt::Horizontal, QVariant(Qt::AlignHCenter | Qt::AlignVCenter), Qt::TextAlignmentRole);
-    m_listModel->setHeaderData(PeerListColumns::CONNECTION, Qt::Horizontal, QVariant(Qt::AlignHCenter | Qt::AlignVCenter), Qt::TextAlignmentRole);
-    m_listModel->setHeaderData(PeerListColumns::FLAGS, Qt::Horizontal, QVariant(Qt::AlignHCenter | Qt::AlignVCenter), Qt::TextAlignmentRole);
+    // Set header text alignment like the data: numbers on the right, the bar centered, text on the left
+    m_listModel->setHeaderData(PeerListColumns::PORT, Qt::Horizontal, QVariant(Qt::AlignRight | Qt::AlignVCenter), Qt::TextAlignmentRole);
+    m_listModel->setHeaderData(PeerListColumns::CONNECTION, Qt::Horizontal, QVariant(Qt::AlignLeft | Qt::AlignVCenter), Qt::TextAlignmentRole);
+    m_listModel->setHeaderData(PeerListColumns::FLAGS, Qt::Horizontal, QVariant(Qt::AlignLeft | Qt::AlignVCenter), Qt::TextAlignmentRole);
     m_listModel->setHeaderData(PeerListColumns::PROGRESS, Qt::Horizontal, QVariant(Qt::AlignHCenter | Qt::AlignVCenter), Qt::TextAlignmentRole);
-    m_listModel->setHeaderData(PeerListColumns::DOWN_SPEED, Qt::Horizontal, QVariant(Qt::AlignHCenter | Qt::AlignVCenter), Qt::TextAlignmentRole);
-    m_listModel->setHeaderData(PeerListColumns::UP_SPEED, Qt::Horizontal, QVariant(Qt::AlignHCenter | Qt::AlignVCenter), Qt::TextAlignmentRole);
-    m_listModel->setHeaderData(PeerListColumns::TOT_DOWN, Qt::Horizontal, QVariant(Qt::AlignHCenter | Qt::AlignVCenter), Qt::TextAlignmentRole);
-    m_listModel->setHeaderData(PeerListColumns::TOT_UP, Qt::Horizontal, QVariant(Qt::AlignHCenter | Qt::AlignVCenter), Qt::TextAlignmentRole);
-    m_listModel->setHeaderData(PeerListColumns::RELEVANCE, Qt::Horizontal, QVariant(Qt::AlignHCenter | Qt::AlignVCenter), Qt::TextAlignmentRole);
-    m_listModel->setHeaderData(PeerListColumns::CONTRIBUTION, Qt::Horizontal, QVariant(Qt::AlignHCenter | Qt::AlignVCenter), Qt::TextAlignmentRole);
+    m_listModel->setHeaderData(PeerListColumns::DOWN_SPEED, Qt::Horizontal, QVariant(Qt::AlignRight | Qt::AlignVCenter), Qt::TextAlignmentRole);
+    m_listModel->setHeaderData(PeerListColumns::UP_SPEED, Qt::Horizontal, QVariant(Qt::AlignRight | Qt::AlignVCenter), Qt::TextAlignmentRole);
+    m_listModel->setHeaderData(PeerListColumns::TOT_DOWN, Qt::Horizontal, QVariant(Qt::AlignRight | Qt::AlignVCenter), Qt::TextAlignmentRole);
+    m_listModel->setHeaderData(PeerListColumns::TOT_UP, Qt::Horizontal, QVariant(Qt::AlignRight | Qt::AlignVCenter), Qt::TextAlignmentRole);
+    m_listModel->setHeaderData(PeerListColumns::RELEVANCE, Qt::Horizontal, QVariant(Qt::AlignRight | Qt::AlignVCenter), Qt::TextAlignmentRole);
+    m_listModel->setHeaderData(PeerListColumns::CONTRIBUTION, Qt::Horizontal, QVariant(Qt::AlignRight | Qt::AlignVCenter), Qt::TextAlignmentRole);
     // Proxy model to support sorting without actually altering the underlying model
     m_proxyModel = new PeerListSortModel(this);
     m_proxyModel->setDynamicSortFilter(true);
@@ -461,7 +461,7 @@ void PeerListWidget::loadPeers(const BitTorrent::Torrent *torrent)
                 setModelData(m_listModel, row, PeerListColumns::IP_HIDDEN, peerIPHiddenString, peerIPHiddenString);
 
                 const QString peerPortString = useI2PSocket ? tr("N/A") : QString::number(peer.address().port);
-                setModelData(m_listModel, row, PeerListColumns::PORT, peerPortString, peer.address().port, (Qt::AlignHCenter | Qt::AlignVCenter));
+                setModelData(m_listModel, row, PeerListColumns::PORT, peerPortString, peer.address().port, (Qt::AlignRight | Qt::AlignVCenter));
 
                 if (useI2PSocket)
                 {
@@ -502,7 +502,7 @@ void PeerListWidget::loadPeers(const BitTorrent::Torrent *torrent)
 
 void PeerListWidget::updatePeer(const int row, const BitTorrent::Torrent *torrent, const BitTorrent::PeerInfo &peer, const bool hideZeroValues)
 {
-    const Qt::Alignment centerTextAlignment = Qt::AlignHCenter | Qt::AlignVCenter;
+    const Qt::Alignment numberAlignment = Qt::AlignRight | Qt::AlignVCenter;
 
     const QString client = peer.client().toHtmlEscaped();
     setModelData(m_listModel, row, PeerListColumns::CLIENT, client, client, {}, client);
@@ -512,26 +512,26 @@ void PeerListWidget::updatePeer(const int row, const BitTorrent::Torrent *torren
 
     const QString downSpeed = (hideZeroValues && (peer.payloadDownSpeed() <= 0))
             ? QString() : Utils::Misc::friendlyUnit(peer.payloadDownSpeed(), true);
-    setModelData(m_listModel, row, PeerListColumns::DOWN_SPEED, downSpeed, peer.payloadDownSpeed(), centerTextAlignment);
+    setModelData(m_listModel, row, PeerListColumns::DOWN_SPEED, downSpeed, peer.payloadDownSpeed(), numberAlignment);
 
     const QString upSpeed = (hideZeroValues && (peer.payloadUpSpeed() <= 0))
             ? QString() : Utils::Misc::friendlyUnit(peer.payloadUpSpeed(), true);
-    setModelData(m_listModel, row, PeerListColumns::UP_SPEED, upSpeed, peer.payloadUpSpeed(), centerTextAlignment);
+    setModelData(m_listModel, row, PeerListColumns::UP_SPEED, upSpeed, peer.payloadUpSpeed(), numberAlignment);
 
     const QString totalDown = (hideZeroValues && (peer.totalDownload() <= 0))
             ? QString() : Utils::Misc::friendlyUnit(peer.totalDownload());
-    setModelData(m_listModel, row, PeerListColumns::TOT_DOWN, totalDown, peer.totalDownload(), centerTextAlignment);
+    setModelData(m_listModel, row, PeerListColumns::TOT_DOWN, totalDown, peer.totalDownload(), numberAlignment);
 
     const QString totalUp = (hideZeroValues && (peer.totalUpload() <= 0))
             ? QString() : Utils::Misc::friendlyUnit(peer.totalUpload());
-    setModelData(m_listModel, row, PeerListColumns::TOT_UP, totalUp, peer.totalUpload(), centerTextAlignment);
+    setModelData(m_listModel, row, PeerListColumns::TOT_UP, totalUp, peer.totalUpload(), numberAlignment);
 
-    setModelData(m_listModel, row, PeerListColumns::CONNECTION, peer.connectionType(), peer.connectionType(), centerTextAlignment);
-    setModelData(m_listModel, row, PeerListColumns::FLAGS, peer.flags(), peer.flags(), centerTextAlignment, peer.flagsDescription());
+    setModelData(m_listModel, row, PeerListColumns::CONNECTION, peer.connectionType(), peer.connectionType());
+    setModelData(m_listModel, row, PeerListColumns::FLAGS, peer.flags(), peer.flags(), {}, peer.flagsDescription());
     setModelData(m_listModel, row, PeerListColumns::PROGRESS, (Utils::String::fromDouble(peer.progress() * 100, 1) + u'%')
-            , peer.progress(), centerTextAlignment);
+            , peer.progress(), (Qt::AlignHCenter | Qt::AlignVCenter));
     setModelData(m_listModel, row, PeerListColumns::RELEVANCE, (Utils::String::fromDouble(peer.relevance() * 100, 1) + u'%')
-            , peer.relevance(), centerTextAlignment);
+            , peer.relevance(), numberAlignment);
 
     const qlonglong totalUpload = peer.totalUpload();
     qreal contribution = 0;
@@ -543,7 +543,7 @@ void PeerListWidget::updatePeer(const int row, const BitTorrent::Torrent *torren
         contribution = static_cast<qreal>(totalUpload) / ((progressBytes <= 0) ? totalSize : progressBytes);
     }
     setModelData(m_listModel, row, PeerListColumns::CONTRIBUTION, (Utils::String::fromDouble((contribution * 100), 1) + u'%')
-            , contribution, centerTextAlignment);
+            , contribution, numberAlignment);
 
     const PathList filePaths = torrent->info().filesForPiece(peer.downloadingPieceIndex());
     QStringList downloadingFiles;

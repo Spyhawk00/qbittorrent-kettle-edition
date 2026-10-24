@@ -16,16 +16,16 @@
   <widget class="QWidget" name="centralWidget">
    <layout class="QVBoxLayout" name="centralWidgetLayout">
     <property name="leftMargin">
-     <number>7</number>
+     <number>8</number>
     </property>
     <property name="topMargin">
      <number>3</number>
     </property>
     <property name="rightMargin">
-     <number>7</number>
+     <number>8</number>
     </property>
     <property name="bottomMargin">
-     <number>7</number>
+     <number>8</number>
     </property>
    </layout>
   </widget>

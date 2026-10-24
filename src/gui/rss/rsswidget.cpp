@@ -30,6 +30,7 @@
 
 #include "rsswidget.h"
 
+#include <QAbstractScrollArea>
 #include <QClipboard>
 #include <QDesktopServices>
 #include <QDragMoveEvent>
@@ -40,7 +41,6 @@
 #include <QShortcut>
 #include <QStandardItemModel>
 #include <QString>
-#include <QVBoxLayout>
 
 #include "base/global.h"
 #include "base/logger.h"
@@ -53,6 +53,7 @@
 #include "gui/autoexpandabledialog.h"
 #include "gui/interfaces/iguiapplication.h"
 #include "gui/lineedit.h"
+#include "gui/listviewlayout.h"
 #include "gui/uithememanager.h"
 #include "gui/utils/keysequence.h"
 #include "articlelistwidget.h"
@@ -116,33 +117,34 @@ RSSWidget::RSSWidget(IGUIApplication *app, QWidget *parent)
 {
     m_ui->setupUi(this);
 
-    // the two right columns get a header bar like the feed list has, so the tops line up
-    const auto addHeader = [this](const int index, const QString &title)
+    // the two right columns get a header bar like the feed list has, inside the frame of the view, so the tops line up
+    const auto addHeader = [this](QAbstractScrollArea *view, const QString &title)
     {
-        auto *column = new QWidget(this);
-        auto *layout = new QVBoxLayout(column);
-        layout->setContentsMargins(0, 0, 0, 0);
-        layout->setSpacing(0);
-
-        auto *model = new QStandardItemModel(0, 1, column);
+        auto *model = new QStandardItemModel(0, 1, view);
         model->setHeaderData(0, Qt::Horizontal, title);
-        auto *header = new QHeaderView(Qt::Horizontal, column);
+        auto *header = new QHeaderView(Qt::Horizontal, view);
         header->setModel(model);
         header->setDefaultAlignment(Qt::AlignLeft | Qt::AlignVCenter);
         header->setSectionsClickable(false);
         header->setStretchLastSection(true);
         header->setSectionResizeMode(QHeaderView::Stretch);
-        header->setFixedHeight(header->sizeHint().height());
-
-        QWidget *oldView = m_ui->splitterMain->replaceWidget(index, column);
-        layout->addWidget(header);
-        layout->addWidget(oldView);
-        oldView->show();
+        // the arrow of the feed list's header, so the three look the same
+        QHeaderView *feedHeader = m_ui->feedListWidget->header();
+        header->setSortIndicatorShown(true);
+        header->setSortIndicator(0, feedHeader->sortIndicatorOrder());
+        connect(feedHeader, &QHeaderView::sortIndicatorChanged, header, [header](const int, const Qt::SortOrder order)
+        {
+            header->setSortIndicator(0, order);
+        });
+        connect(UIThemeManager::instance(), &UIThemeManager::styleChanged, header, [this, view]
+        {
+            placeHeader(view);
+        });
+        view->installEventFilter(this);
+        placeHeader(view);
     };
-    addHeader(0, tr("Torrents: (double-click to download)"));
-    addHeader(1, tr("Details"));
-    // the Windows 11 style draws the frame of a text box as a dark line along its lower edge; the lists have no frame
-    m_ui->textBrowser->setFrameShape(QFrame::NoFrame);
+    addHeader(m_ui->articleListWidget, tr("Torrents: (double-click to download)"));
+    addHeader(m_ui->textBrowser, tr("Details"));
 
     // Icons
     m_ui->actionCopyFeedURL->setIcon(UIThemeManager::instance()->getIcon(u"edit-copy"_s));
@@ -173,6 +175,12 @@ RSSWidget::RSSWidget(IGUIApplication *app, QWidget *parent)
     m_ui->labelWarn->setSizePolicy(QSizePolicy::Ignored, QSizePolicy::Preferred);
     m_ui->labelWarn->setToolTip(m_ui->labelWarn->text());
     m_ui->labelWarn->setContentsMargins(6, 0, 6, 0);
+    // 8 px between every pane and control, and none around the page (the tab adds its own)
+    m_ui->verticalLayout_2->setContentsMargins(0, 0, 0, 0);
+    m_ui->verticalLayout_2->setSpacing(8);
+    m_ui->horizontalLayout->setSpacing(8);
+    m_ui->splitterSide->setHandleWidth(8);
+    m_ui->splitterMain->setHandleWidth(8);
     m_ui->horizontalLayout->setStretchFactor(m_ui->labelWarn, 1);
 
     connect(m_rssFilter, &QLineEdit::textChanged, this, &RSSWidget::handleRSSFilterTextChanged);
@@ -755,6 +763,12 @@ void RSSWidget::handleRSSFilterTextChanged(const QString &newFilter)
 
 bool RSSWidget::eventFilter(QObject *obj, QEvent *event)
 {
+    if (event->type() == QEvent::Resize)
+    {
+        if ((obj == m_ui->articleListWidget) || (obj == m_ui->textBrowser))
+            placeHeader(static_cast<QAbstractScrollArea *>(obj));
+    }
+
     if ((obj == m_ui->textBrowser) && (event->type() == QEvent::PaletteChange))
     {
         QListWidgetItem *currentItem = m_ui->articleListWidget->currentItem();
@@ -766,6 +780,24 @@ bool RSSWidget::eventFilter(QObject *obj, QEvent *event)
     }
 
     return false;
+}
+
+void RSSWidget::placeHeader(QAbstractScrollArea *view) const
+{
+    // setViewportMargins() is protected, and the views are not subclassed just for this
+    struct ViewAccess : QAbstractScrollArea
+    {
+        using QAbstractScrollArea::setViewportMargins;
+    };
+
+    auto *header = view->findChild<QHeaderView *>(QString(), Qt::FindDirectChildrenOnly);
+    // as tall as the headers of the lists, the feed list's too
+    header->setFixedHeight(ListViewLayout::headerHeight(view));
+    m_ui->feedListWidget->header()->setFixedHeight(header->height());
+    static_cast<ViewAccess *>(view)->setViewportMargins(0, header->height(), 0, 0);
+    const int frame = view->frameWidth();
+    header->setGeometry(frame, frame, (view->width() - (2 * frame)), header->height());
+    header->show();
 }
 
 void RSSWidget::renderArticle(const RSS::Article *article) const

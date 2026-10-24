@@ -51,6 +51,9 @@ namespace
 
             // Header band so the section title stands out from the rows below it
             painter.fillRect(rect(), Utils::Gui::sectionHeaderColor(palette()));
+            // a line above the band too, except for the first one that has the outline of the sidebar above it
+            if (parentWidget()->y() > 0)
+                painter.fillRect(QRectF(0, 0, width(), 1), palette().color(QPalette::Mid));
             // the last row, as the lower edge of the column headers of the transfer list
             painter.fillRect(QRectF(0, (height() - 1), width(), 1), palette().color(QPalette::Mid));
 
@@ -85,7 +88,7 @@ TransferListFiltersWidgetItem::TransferListFiltersWidgetItem(const QString &capt
 
     auto *layout = new QVBoxLayout(this);
     layout->setContentsMargins(0, 0, 0, 0);
-    layout->setSpacing(2);
+    layout->setSpacing(0);
     layout->setAlignment(Qt::AlignLeft | Qt::AlignTop);
     layout->addWidget(m_caption);
     layout->addWidget(m_filterWidget);

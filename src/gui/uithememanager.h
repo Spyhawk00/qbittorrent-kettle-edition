@@ -71,6 +71,9 @@ public:
     TrayIconStyle trayIconStyle() const;
     void setTrayIconStyle(TrayIconStyle value);
 
+    // switches the application to the style of the preferences, when it is another one
+    void updateStyle();
+
     QIcon getIcon(const QString &iconId, const QString &fallback = {}) const;
     QIcon getSystrayIcon() const;
     QIcon getFlagIcon(const QString &countryIsoCode) const;
@@ -84,18 +87,23 @@ public:
 
 signals:
     void themeChanged();
+    // the application style was switched: whatever was sized with the old one needs to be sized again
+    void styleChanged();
 
 private:
     UIThemeManager(); // singleton class
 
     void applyPalette() const;
     void applyStyleSheet() const;
+    QString styleName() const;
+    bool applyStyle();
     void onColorSchemeChanged();
 
 #ifdef Q_OS_WIN
     bool eventFilter(QObject *watched, QEvent *event) override;
     void applyTitleBarColor(QWidget *window) const;
     void applyNeutralAccent();
+    void updateNeutralAccent();
 #endif
 
 #ifdef QBT_HAS_COLORSCHEME_OPTION
@@ -106,6 +114,7 @@ private:
 
     static UIThemeManager *m_instance;
     const bool m_useCustomTheme;
+    const QString m_systemStyleName;
 #ifdef Q_OS_WIN
     bool m_neutralAccentApplied = false;
 #endif

@@ -137,17 +137,22 @@ namespace
 #endif
 
 #ifndef DISABLE_GUI
-    void showSplashScreen()
+    void showSplashScreen(Application *app)
     {
-        QPixmap splashImg(u":/icons/splash.png"_s);
-        QPainter painter(&splashImg);
-        const auto version = QStringLiteral(QBT_VERSION);
-        painter.setPen(QPen(Qt::white));
-        painter.setFont(QFont(u"Arial"_s, 22, QFont::Black));
-        painter.drawText(224 - painter.fontMetrics().horizontalAdvance(version), 270, version);
+        const QPixmap splashImg(u":/icons/splash.png"_s);
         QSplashScreen *splash = new QSplashScreen(splashImg);
         splash->show();
-        QTimer::singleShot(1500ms, Qt::CoarseTimer, splash, &QObject::deleteLater);
+        // Stay up for at least 4 seconds, and until the main window exists so it doesn't just flash by
+        auto *timer = new QTimer(splash);
+        timer->setInterval(4s);
+        QObject::connect(timer, &QTimer::timeout, splash, [app, splash, timer]
+        {
+            if (app->mainWindow())
+                splash->deleteLater();
+            else
+                timer->setInterval(100ms);
+        });
+        timer->start();
         qApp->processEvents();
     }
 #endif  // DISABLE_GUI
@@ -313,7 +318,7 @@ int main(int argc, char *argv[])
         }
 #elif !defined(DISABLE_GUI)
         if (!(params.noSplash || Preferences::instance()->isSplashScreenDisabled()))
-            showSplashScreen();
+            showSplashScreen(app.get());
 #endif
 
         registerSignalHandlers();

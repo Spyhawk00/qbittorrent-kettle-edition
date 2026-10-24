@@ -28,14 +28,13 @@
 
 #pragma once
 
-#include <QProxyStyle>
+#include "appstyleproxy.h"
 
-// Draws group boxes as plain section headings: a bold title (with its check box when checkable) and a thin
-// line under it, instead of a frame. A group box inside another one is drawn as a sub-heading, or as a plain
-// check box when checkable, with its contents indented. Set the dynamic property "heading" on a nested
-// group box to draw it as a section heading anyway.
+// Draws group boxes as plain section headings: a bold title (with its check box when checkable) and a thin line
+// under it, instead of a frame. A nested group box is drawn as a sub-heading, or a plain check box when
+// checkable, with its contents indented. Set the dynamic property "heading" on it to draw a section heading.
 // Everything else is left to the application's style, so check boxes, text and colors stay native.
-class GroupBoxHeadingStyle final : public QProxyStyle
+class GroupBoxHeadingStyle final : public AppStyleProxy
 {
     Q_OBJECT
     Q_DISABLE_COPY_MOVE(GroupBoxHeadingStyle)

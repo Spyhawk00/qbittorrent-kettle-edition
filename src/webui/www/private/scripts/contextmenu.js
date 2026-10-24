@@ -133,6 +133,13 @@ window.qBittorrent.ContextMenu ??= (() => {
                 this.triggerMenu(e, elem);
             });
             elem.addEventListener("click", (e) => {
+                // some browsers click when a long press ends; that click must not close the menu the long press opened
+                if ((this.touchMenuAt !== undefined) && ((performance.now() - this.touchMenuAt) < 500)) {
+                    this.touchMenuAt = undefined;
+                    e.preventDefault();
+                    e.stopPropagation();
+                    return;
+                }
                 this.hide();
             });
 
@@ -148,10 +155,15 @@ window.qBittorrent.ContextMenu ??= (() => {
 
                 this.touchStartAt = null;
                 this.touchStartEvent = null;
+                // a row and the list around it both listen, and the row's listener has taken the touch
+                if (touchStartEvent === null)
+                    return;
 
                 const isTargetUnchanged = (Math.abs(e.changedTouches[0].pageX - touchStartEvent.changedTouches[0].pageX) <= 10) && (Math.abs(e.changedTouches[0].pageY - touchStartEvent.changedTouches[0].pageY) <= 10);
-                if (((now - touchStartAt) >= this.options.touchTimer) && isTargetUnchanged)
+                if (((now - touchStartAt) >= this.options.touchTimer) && isTargetUnchanged) {
+                    this.touchMenuAt = now;
                     this.triggerMenu(touchStartEvent, elem);
+                }
             }, { passive: true });
         }
 

@@ -34,11 +34,12 @@
 class QEvent;
 class QTimer;
 class QTreeView;
+class QWidget;
 
 // Keeps the columns of a list as wide as their contents and gives its rows a little more room.
-// The columns are fitted when the list first gets rows. After that they grow when needed, and shrink only when
-// far too wide, so nothing is cut off and the columns do not jump around. A column that was resized by hand is left alone, and a very long
-// text is cut off at half the width of the list.
+// Columns are fitted when the list first gets rows, then grow when needed and shrink only when far too wide,
+// so nothing is cut off and they don't jump around. Hand-resized columns are left alone, and very long
+// text is cut off at half the list width.
 class ListViewLayout final : public QObject
 {
     Q_OBJECT
@@ -47,6 +48,10 @@ class ListViewLayout final : public QObject
 public:
     // call it after the view got its model; the stretch column, if any, takes the width the other columns leave
     explicit ListViewLayout(QTreeView *view, int stretchColumn = -1);
+
+    // the height of the column headers of every list; the section titles of the sidebar, the header of the searches and the
+    // headers of the RSS columns take it so they are as tall as the headers of the lists
+    static int headerHeight(QWidget *parent);
 
     // back to the automatic widths: forgets the widths that were set by hand and fits all columns again
     void reset();

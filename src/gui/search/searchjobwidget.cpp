@@ -100,6 +100,12 @@ SearchJobWidget::SearchJobWidget(const QString &id, IGUIApplication *app, QWidge
 {
     m_ui->setupUi(this);
 
+    // the results line up with the search bar above them: no margin of their own, 8 px between the parts
+    m_ui->verticalLayout->setContentsMargins(0, 0, 0, 0);
+    m_ui->verticalLayout->setSpacing(8);
+    m_ui->filterLayout->setContentsMargins(0, 0, 0, 0);
+    m_ui->filterLayout->setSpacing(8);
+
     // The empty table explains itself instead of staying blank
     m_emptyResultsLabel = new QLabel(m_ui->resultsBrowser->viewport());
     m_emptyResultsLabel->setEnabled(false);
@@ -134,10 +140,10 @@ SearchJobWidget::SearchJobWidget(const QString &id, IGUIApplication *app, QWidge
     m_searchListModel->setHeaderData(SearchSortModel::ENGINE_URL, Qt::Horizontal, tr("Engine URL"));
     m_searchListModel->setHeaderData(SearchSortModel::PUB_DATE, Qt::Horizontal, tr("Published On"));
     // Set columns text alignment
-    m_searchListModel->setHeaderData(SearchSortModel::SIZE, Qt::Horizontal, QVariant(Qt::AlignHCenter | Qt::AlignVCenter), Qt::TextAlignmentRole);
-    m_searchListModel->setHeaderData(SearchSortModel::SEEDS, Qt::Horizontal, QVariant(Qt::AlignHCenter | Qt::AlignVCenter), Qt::TextAlignmentRole);
-    m_searchListModel->setHeaderData(SearchSortModel::LEECHES, Qt::Horizontal, QVariant(Qt::AlignHCenter | Qt::AlignVCenter), Qt::TextAlignmentRole);
-    m_searchListModel->setHeaderData(SearchSortModel::PUB_DATE, Qt::Horizontal, QVariant(Qt::AlignHCenter | Qt::AlignVCenter), Qt::TextAlignmentRole);
+    m_searchListModel->setHeaderData(SearchSortModel::SIZE, Qt::Horizontal, QVariant(Qt::AlignRight | Qt::AlignVCenter), Qt::TextAlignmentRole);
+    m_searchListModel->setHeaderData(SearchSortModel::SEEDS, Qt::Horizontal, QVariant(Qt::AlignRight | Qt::AlignVCenter), Qt::TextAlignmentRole);
+    m_searchListModel->setHeaderData(SearchSortModel::LEECHES, Qt::Horizontal, QVariant(Qt::AlignRight | Qt::AlignVCenter), Qt::TextAlignmentRole);
+    m_searchListModel->setHeaderData(SearchSortModel::PUB_DATE, Qt::Horizontal, QVariant(Qt::AlignRight | Qt::AlignVCenter), Qt::TextAlignmentRole);
 
     m_proxyModel = new SearchSortModel(this);
     m_proxyModel->setDynamicSortFilter(true);
@@ -791,10 +797,10 @@ void SearchJobWidget::appendSearchResults(const QList<SearchResult> &results)
         setModelData(SearchSortModel::ENGINE_NAME, result.engineName, result.engineName);
         setModelData(SearchSortModel::ENGINE_URL, result.siteUrl, result.siteUrl);
         setModelData(SearchSortModel::DESC_LINK, result.descrLink, result.descrLink);
-        setModelData(SearchSortModel::SIZE, Utils::Misc::friendlyUnit(result.fileSize), result.fileSize, (Qt::AlignHCenter | Qt::AlignVCenter));
-        setModelData(SearchSortModel::SEEDS, (result.nbSeeders < 0) ? tr("Unknown") : QString::number(result.nbSeeders), result.nbSeeders, (Qt::AlignHCenter | Qt::AlignVCenter));
-        setModelData(SearchSortModel::LEECHES, (result.nbLeechers < 0) ? tr("Unknown") : QString::number(result.nbLeechers), result.nbLeechers, (Qt::AlignHCenter | Qt::AlignVCenter));
-        setModelData(SearchSortModel::PUB_DATE, QLocale().toString(result.pubDate.toLocalTime(), QLocale::ShortFormat), result.pubDate, (Qt::AlignHCenter | Qt::AlignVCenter));
+        setModelData(SearchSortModel::SIZE, Utils::Misc::friendlyUnit(result.fileSize), result.fileSize, (Qt::AlignRight | Qt::AlignVCenter));
+        setModelData(SearchSortModel::SEEDS, (result.nbSeeders < 0) ? tr("Unknown") : QString::number(result.nbSeeders), result.nbSeeders, (Qt::AlignRight | Qt::AlignVCenter));
+        setModelData(SearchSortModel::LEECHES, (result.nbLeechers < 0) ? tr("Unknown") : QString::number(result.nbLeechers), result.nbLeechers, (Qt::AlignRight | Qt::AlignVCenter));
+        setModelData(SearchSortModel::PUB_DATE, QLocale().toString(result.pubDate.toLocalTime(), QLocale::ShortFormat), result.pubDate, (Qt::AlignRight | Qt::AlignVCenter));
     }
 
     m_searchResults.append(results);

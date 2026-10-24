@@ -48,6 +48,7 @@ add_library(qbt_gui STATIC
     addnewtorrentdialog.h
     addtorrentparamswidget.h
     advancedsettings.h
+    appstyleproxy.h
     autoexpandabledialog.h
     banlistoptionsdialog.h
     color.h

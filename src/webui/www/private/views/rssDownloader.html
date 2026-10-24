@@ -134,11 +134,20 @@
         flex: 1;
     }
 
+    /* the bar of the phone layout, which css/Phone.css shows */
+    #rssDownloaderPhoneBar {
+        display: none;
+    }
+
 </style>
 
 <div id="RssDownloader" class="RssDownloader">
     <div id="rssDownloaderDisabled" class="invisible">
         QBT_TR(Auto downloading of RSS torrents is disabled now! You can enable it in application settings.)QBT_TR[CONTEXT=AutomatedRssDownloader]
+    </div>
+    <div id="rssDownloaderPhoneBar">
+        <button type="button" id="rssDownloaderBackButton">QBT_TR(Download Rules)QBT_TR[CONTEXT=AutomatedRssDownloader]</button>
+        <span id="rssDownloaderPhoneTitle"></span>
     </div>
     <div id="leftRssDownloaderColumn">
         <div id="topMenuBar">

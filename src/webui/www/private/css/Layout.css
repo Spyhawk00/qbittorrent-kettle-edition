@@ -170,8 +170,9 @@ li.divider {
 
 #propertiesPanel_header {
     border-bottom: 0;
-    border-top: 1px solid var(--color-border-default);
+    border-top: 1px solid var(--color-border-outline); /* the bottom line of the box above */
     height: 28px;
+    margin: 0 4px;
     order: 1;
 }
 
@@ -212,10 +213,32 @@ li.divider {
 /* Panels */
 
 .panel {
-    background-color: var(--color-background-primary);
-    border-bottom: 1px solid var(--color-border-default);
+    /* a box with the outline of the desktop lists, 4 px from its neighbours: the window colour, the line (both drawn in
+       the transparent border, so nothing in the box covers the line) and the page inside */
+    background:
+        linear-gradient(var(--color-background-primary), var(--color-background-primary)) padding-box,
+        linear-gradient(var(--color-border-outline), var(--color-border-outline)) 4px 4px / calc(100% - 8px) calc(100% - 8px) no-repeat border-box,
+        var(--color-background-default);
+    border: 5px solid transparent;
     overflow: auto;
     position: relative;
+}
+
+/* the sidebar ends where the row of buttons under the details ends: its line is the last pixel of the column */
+#filtersColumn .panel {
+    background:
+        linear-gradient(var(--color-background-primary), var(--color-background-primary)) padding-box,
+        linear-gradient(var(--color-border-outline), var(--color-border-outline)) 4px 4px / calc(100% - 8px) calc(100% - 4px) no-repeat border-box,
+        var(--color-background-default);
+    border-bottom-width: 1px;
+}
+
+/* the Search, RSS and Log tabs sit on the window: their lists are the boxes */
+#searchTabColumn .panel,
+#rssTabColumn .panel,
+#logTabColumn .panel {
+    background: var(--color-background-default);
+    border: 0;
 }
 
 .panelWrapper.collapsed .panel-header {
@@ -265,11 +288,12 @@ li.divider {
 
 /* Column and Panel Handles */
 
+/* the boxes are 8 px apart (4 px of each), so a handle takes no room of its own: it is grabbed over the gap */
 .horizontalHandle {
     font-size: 1px;
-    height: 4px;
+    height: 0;
     line-height: 1px;
-    overflow: hidden;
+    position: relative;
 }
 
 .horizontalHandle.detached .handleIcon {
@@ -279,17 +303,31 @@ li.divider {
 .horizontalHandle .handleIcon {
     background: url("../images/handle-icon-horizontal.svg") center center
         no-repeat;
-    height: 6px;
+    height: 8px;
+    left: 0;
     margin: 0 auto;
-    overflow: hidden;
+    position: absolute;
+    right: 0;
+    top: -4px;
+    z-index: 5;
 }
 
 .columnHandle {
-    background: url("../images/handle-icon.svg") center center no-repeat;
     float: left;
     min-height: 10px;
-    overflow: hidden;
+    position: relative;
+    width: 0;
+}
+
+.columnHandle::before {
+    background: url("../images/handle-icon.svg") center center no-repeat;
+    bottom: 0;
+    content: "";
+    left: -4px;
+    position: absolute;
+    top: 0;
     width: 8px;
+    z-index: 5;
 }
 
 /* Toolboxes */

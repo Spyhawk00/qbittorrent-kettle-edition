@@ -46,6 +46,9 @@ using namespace Qt::Literals::StringLiterals;
 HtmlBrowser::HtmlBrowser(QWidget *parent)
     : QTextBrowser(parent)
 {
+    // it sits next to lists, so it gets their outline (see UIThemeManager)
+    setProperty("outlined", true);
+
     m_netManager = new QNetworkAccessManager(this);
     m_diskCache = new QNetworkDiskCache(this);
     m_diskCache->setCacheDirectory((specialFolderLocation(SpecialFolder::Cache) / Path(u"rss"_s)).data());

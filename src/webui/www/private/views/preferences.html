@@ -25,7 +25,7 @@
 
     #preferencesTabs {
         background-color: var(--color-background-popup);
-        border: 1px solid var(--color-border-default);
+        border: 1px solid var(--color-border-outline);
         flex: 1 1 auto;
         margin: 0;
         overflow-y: auto;
@@ -55,10 +55,6 @@
         height: 0;
         overflow: hidden;
         visibility: hidden;
-    }
-
-    #preferencesPages #AdvancedTab .prefsNoMatch {
-        display: none;
     }
 
     /* a setting that matches the search */
@@ -256,90 +252,119 @@
         border-left: 1px solid var(--color-border-default);
     }
 
-    #AdvancedTab:not(.invisible) {
-        background-color: var(--color-background-popup);
-        border: 1px solid var(--color-border-default);
-        overflow: hidden;
-    }
-
-    #preferencesPages #AdvancedTab > :not(style) + * {
-        margin-top: 0;
-    }
-
-    #advancedHeader {
+    /* Advanced: tabs of sections, each with its rows as "label: control" like the other pages; the tab is the grid, so
+       the controls of all its sections start at the same column */
+    #advancedTabBar {
+        align-items: flex-end;
         display: flex;
-        font-weight: bold;
+        flex-wrap: wrap;
+        gap: 4px 16px;
+        justify-content: space-between;
     }
 
-    #advancedHeader::before,
-    #advancedHeader::after {
-        border-bottom: 1px solid var(--color-border-default);
-        flex: 1 1 50%;
-        padding: 4px 6px;
-        text-align: center;
-    }
-
-    #advancedHeader::before {
-        border-right: 1px solid var(--color-border-default);
-        content: attr(data-setting);
-    }
-
-    #advancedHeader::after {
-        content: attr(data-value);
-    }
-
-    #preferencesPages #AdvancedTab fieldset.settings:not(.prefsNoMatch) {
-        display: block;
-    }
-
-    #preferencesPages #AdvancedTab fieldset.settings > legend {
-        border-bottom: 1px solid var(--color-border-default);
-        display: flex;
-        font-weight: normal;
+    #advancedTabs {
+        font-size: inherit;
+        gap: 2px;
         margin: 0;
+        overflow: visible;
+    }
+
+    #advancedTabs li a,
+    #advancedTabs li:first-child a {
+        background-color: var(--color-background-default);
+        border: 1px solid var(--color-border-outline);
+        border-bottom: 0;
+        color: var(--color-text-default);
+        margin: 0;
+        padding: 4px 12px;
+    }
+
+    #advancedTabs li.selected a::after {
+        content: none;
+    }
+
+    #advancedTabs li:hover a {
+        background-color: color-mix(in srgb, var(--color-text-default) 9%, var(--color-background-default));
+        color: var(--color-text-default);
+    }
+
+    #advancedTabs li.selected a {
+        background-color: var(--color-background-popup);
+        position: relative;
+        top: 1px;
+        z-index: 1;
+    }
+
+    .advancedPane {
+        background-color: var(--color-background-popup);
+        border: 1px solid var(--color-border-outline);
+        display: grid;
+        gap: 20px 8px;
+        grid-template-columns: max-content minmax(0, 1fr);
+        padding: 8px;
+    }
+
+    .advancedPane.invisible {
+        display: none;
+    }
+
+    /* a div, not a fieldset: a fieldset doesn't pass the columns of the tab on to its rows */
+    .advancedSection {
+        display: grid;
+        gap: 4px 8px;
+        grid-column: 1 / -1;
+        grid-template-columns: subgrid;
+    }
+
+    .advancedTitle {
+        border-bottom: 1px solid var(--color-border-outline);
+        font-weight: bold;
+        grid-column: 1 / -1;
+        margin-bottom: 6px;
+        padding-bottom: 4px;
+    }
+
+    .advancedPane :is(table, tbody) {
+        display: contents;
+    }
+
+    .advancedPane tr {
+        align-items: center;
+        display: grid;
+        gap: 4px 8px;
+        grid-column: 1 / -1;
+        grid-template-columns: subgrid;
+    }
+
+    .advancedPane tr.prefsCheckRow {
+        display: flex;
+        gap: 4px;
+    }
+
+    .advancedPane td {
         padding: 0;
     }
 
-    #AdvancedTab legend > * {
-        flex: 1 1 50%;
-        padding: 4px 6px;
+    .advancedPane td label {
+        padding: 2px;
     }
 
-    #AdvancedTab legend > span {
-        border-right: 1px solid var(--color-border-default);
-        font-weight: bold;
-        text-align: center;
+    .advancedPane td + td {
+        align-items: center;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 4px;
     }
 
-    #AdvancedTab table {
-        border-collapse: collapse;
-        table-layout: fixed;
-        width: 100%;
+    .advancedPane td > :is(input:not([type="checkbox"]), select) {
+        width: 15em !important;
     }
 
-    #AdvancedTab td {
-        padding: 3px 6px;
-        width: 50%;
-    }
-
-    #AdvancedTab td:first-child {
-        border-right: 1px solid var(--color-border-default);
-    }
-
-    #AdvancedTab td + td {
-        white-space: nowrap;
-    }
-
-    #AdvancedTab tr + tr td {
-        border-top: 1px solid var(--color-border-default);
-    }
-
-    #AdvancedTab tr:nth-child(even) td {
-        background-color: color-mix(in srgb, var(--color-text-default) 5%, transparent);
-    }
-
-    #AdvancedTab td + td > :is(input:not([type="checkbox"]), select) {
-        width: calc(100% - 3.5em) !important;
+    /* text boxes take the width there is */
+    .advancedPane td > .advancedText {
+        box-sizing: border-box;
+        flex: 1 1 15em;
+        width: auto !important;
     }
 
     #preferencesSaveRow {
@@ -394,7 +419,8 @@
             padding-top: 8px;
         }
 
-        #preferencesPages fieldset.settings {
+        #preferencesPages fieldset.settings,
+        .advancedPane {
             grid-template-columns: minmax(0, 1fr);
         }
 
@@ -748,7 +774,7 @@
     <fieldset class="settings">
         <legend>QBT_TR(Automatically add torrents from:)QBT_TR[CONTEXT=OptionsDialog]</legend>
         <div>
-            <table id="watched_folders_tab" style="border: 1px solid var(--color-border-default);">
+            <table id="watched_folders_tab" style="border: 1px solid var(--color-border-outline);">
                 <thead>
                     <tr>
                         <th scope="col">QBT_TR(Monitored Folder)QBT_TR[CONTEXT=ScanFoldersModel]</th>
@@ -1397,7 +1423,7 @@ Use ';' to split multiple entries. Can use wildcard '*'.)QBT_TR[CONTEXT=OptionsD
         #userAccountsTabs li a,
         #userAccountsTabs li:first-child a {
             background-color: var(--color-background-default);
-            border: 1px solid var(--color-border-default);
+            border: 1px solid var(--color-border-outline);
             border-bottom: 0;
             color: var(--color-text-default);
             margin: 0;
@@ -1422,13 +1448,13 @@ Use ';' to split multiple entries. Can use wildcard '*'.)QBT_TR[CONTEXT=OptionsD
 
         .userAccountsTab {
             background-color: var(--color-background-popup);
-            border: 1px solid var(--color-border-default);
+            border: 1px solid var(--color-border-outline);
             padding: 8px;
         }
 
         /* more specific than the dynamic tables' own "height: 100%" */
         #UserAccountsTab .userAccountsTable {
-            border: 1px solid var(--color-border-default);
+            border: 1px solid var(--color-border-outline);
             height: 320px;
         }
 
@@ -1571,7 +1597,6 @@ Use ';' to split multiple entries. Can use wildcard '*'.)QBT_TR[CONTEXT=OptionsD
 </div>
 
 <div id="AdvancedTab" class="PrefTab invisible">
-    <div id="advancedHeader" data-setting="QBT_TR(Setting)QBT_TR[CONTEXT=AdvancedSettings]" data-value="QBT_TR(Value)QBT_TR[CONTEXT=AdvancedSettings]"></div>
     <fieldset class="settings">
         <legend><span>QBT_TR(qBittorrent Section)QBT_TR[CONTEXT=OptionsDialog]</span><a href="https://github.com/qbittorrent/qBittorrent/wiki/Explanation-of-Options-in-qBittorrent#Advanced" target="_blank">QBT_TR(Open documentation)QBT_TR[CONTEXT=HttpServer]</a></legend>
         <table>
@@ -3156,7 +3181,7 @@ Use ';' to split multiple entries. Can use wildcard '*'.)QBT_TR[CONTEXT=OptionsD
         };
 
         // Search, as in the desktop app: every word typed must be in a setting's text. Pages without a match leave
-        // the sidebar, and the matches are tinted; Advanced shows only its matching rows instead.
+        // the sidebar, and the matches are tinted; a match on a closed tab tints that tab's name.
         let searchWords = [];
         let searchMatches = [];
         const FOCUSABLE = "input:not([type=hidden]), select, textarea, button, a[href]";
@@ -3180,28 +3205,11 @@ Use ';' to split multiple entries. Can use wildcard '*'.)QBT_TR[CONTEXT=OptionsD
             for (let node = target; (node !== null) && (node !== page); node = node.parentElement) {
                 if (getComputedStyle(node).display !== "none")
                     continue;
-                if (!node.classList.contains("userAccountsTab"))
+                if (!node.classList.contains("userAccountsTab") && !node.classList.contains("advancedPane"))
                     return null;
                 target = document.getElementById(node.id.replace(/Tab$/, "Link")).querySelector("a");
             }
             return target;
-        };
-
-        // a section of Advanced stays while any of its rows is shown; returns whether any row is shown
-        const filterAdvancedRows = (words) => {
-            let anyShown = false;
-            for (const section of document.querySelectorAll("#AdvancedTab fieldset")) {
-                let sectionShown = false;
-                for (const row of section.querySelectorAll("tr")) {
-                    const shown = containsAll(row.cells[0].textContent, words);
-                    row.classList.toggle("prefsNoMatch", !shown);
-                    // rows hidden on this system don't count
-                    sectionShown = sectionShown || (shown && (row.style.display !== "none"));
-                }
-                section.classList.toggle("prefsNoMatch", !sectionShown);
-                anyShown = anyShown || sectionShown;
-            }
-            return anyShown;
         };
 
         const searchSettings = () => {
@@ -3220,21 +3228,16 @@ Use ';' to split multiple entries. Can use wildcard '*'.)QBT_TR[CONTEXT=OptionsD
                 // a page whose name matches is shown whole
                 const nameMatches = containsAll(link.textContent, searchWords);
                 let pageMatches = nameMatches;
-                if (page.id === "AdvancedTab") {
-                    pageMatches = filterAdvancedRows(nameMatches ? [] : searchWords) || nameMatches;
-                }
-                else {
-                    const matches = searchCandidates(page)
-                        .filter((element) => containsAll(element.textContent, searchWords) && (searchTarget(element, page) !== null));
-                    // the innermost match, so that a row isn't tinted around the label that matched
-                    const innermost = matches.filter((element) => !matches.some((other) => (other !== element) && element.contains(other)));
-                    const targets = [...new Set(innermost.map((element) => searchTarget(element, page)))]
-                        .sort((a, b) => ((a.compareDocumentPosition(b) & Node.DOCUMENT_POSITION_FOLLOWING) ? -1 : 1));
-                    for (const target of targets)
-                        target.classList.add("prefsSearchMatch");
-                    searchMatches.push(...targets);
-                    pageMatches = pageMatches || (targets.length > 0);
-                }
+                const matches = searchCandidates(page)
+                    .filter((element) => containsAll(element.textContent, searchWords) && (searchTarget(element, page) !== null));
+                // the innermost match, so that a row isn't tinted around the label that matched
+                const innermost = matches.filter((element) => !matches.some((other) => (other !== element) && element.contains(other)));
+                const targets = [...new Set(innermost.map((element) => searchTarget(element, page)))]
+                    .sort((a, b) => ((a.compareDocumentPosition(b) & Node.DOCUMENT_POSITION_FOLLOWING) ? -1 : 1));
+                for (const target of targets)
+                    target.classList.add("prefsSearchMatch");
+                searchMatches.push(...targets);
+                pageMatches = pageMatches || (targets.length > 0);
                 link.classList.toggle("prefsNoMatch", !pageMatches);
                 anyPageMatches = anyPageMatches || pageMatches;
             }
@@ -3276,21 +3279,11 @@ Use ';' to split multiple entries. Can use wildcard '*'.)QBT_TR[CONTEXT=OptionsD
                 return;
 
             const page = document.querySelector(".PrefTab:not(.invisible)");
-            if (page.id === "AdvancedTab") {
-                const row = [...page.querySelectorAll("tr:not(.prefsNoMatch)")].find((tr) => (tr.offsetParent !== null));
-                const control = (row !== undefined) ? focusTargetFor(row.cells[1], page) : undefined;
-                if (giveFocus && (control !== undefined)) {
-                    scrollToSearchMatch(row);
-                    control.focus({ preventScroll: true });
-                }
-                return;
-            }
-
             const match = searchMatches.find((element) => page.contains(element));
             if (match === undefined)
                 return;
             // a match on a closed tab opens that tab
-            if (giveFocus && match.closest("#userAccountsTabs") && !match.closest("li").classList.contains("selected"))
+            if (giveFocus && match.closest("#userAccountsTabs, #advancedTabs") && !match.closest("li").classList.contains("selected"))
                 match.closest("li").click();
             scrollToSearchMatch(match);
             if (giveFocus)
@@ -4406,15 +4399,133 @@ Use ';' to split multiple entries. Can use wildcard '*'.)QBT_TR[CONTEXT=OptionsD
             });
         };
 
+        // Advanced: the rows of the two tables, regrouped as on the desktop into tabs of sections (the rows keep their ids)
+        const buildAdvancedPage = () => {
+            const layout = [
+                ["General", [
+                    ["Program behavior", ["startPaused", "recheckTorrentsOnCompletion", "confirmTorrentRecheck", "confirmRemoveAllTags",
+                        "confirmRemoveTrackerFromAllTorrents", "sessionShutdownTimeout", "torrentContentRemoveOption", "pythonExecutablePath"]],
+                    ["Display and notifications", ["resolvePeerCountries", "resolvePeerHostNames", "refreshInterval", "appInstanceName"]]
+                ]],
+                ["Network", [
+                    ["Network connection", ["networkInterface", "optionalIPAddressToBind", "announceIP", "announcePort", "reannounceWhenAddressChanged",
+                        "outgoingPortsMin", "outgoingPortsMax", "UPnPLeaseDuration", "webTorrentSTUNServer"]],
+                    ["Security and privacy", ["validateHTTPSTrackerCertificate", "mitigateSSRF", "blockPeersOnPrivilegedPorts", "ignoreSSLErrors",
+                        "markOfTheWeb", "allowMultipleConnectionsFromTheSameIPAddress", "allowMultipleConnectionsFromTheSamePeerID"]],
+                    ["Connection tuning", ["connectionSpeed", "utpTCPMixedModeAlgorithm", "peerDSCP", "hostnameCacheTTL", "IDNSupportCheckbox",
+                        "sendBufferWatermark", "sendBufferLowWatermark", "sendBufferWatermarkFactor", "socketSendBufferSize",
+                        "socketReceiveBufferSize", "socketBacklogSize"]]
+                ]],
+                ["Storage", [
+                    ["Saving and torrent files", ["resumeDataStorageType", "saveResumeDataInterval", "saveStatisticsInterval", "torrentFileSizeLimit",
+                        "bdecodeDepthLimit", "bdecodeTokenLimit"]],
+                    ["Disk and memory", ["memoryWorkingSetLimit", "memoryPriority", "asyncIOThreads", "hashingThreads", "filePoolSize",
+                        "outstandMemoryWhenCheckingTorrents", "diskCache", "diskCacheExpiryInterval", "diskQueueSize", "diskIOType",
+                        "diskIOReadMode", "diskIOWriteMode", "coalesceReadsAndWrites"]]
+                ]],
+                ["Peers and trackers", [
+                    ["Trackers", ["announceAllTrackers", "announceAllTiers", "maxConcurrentHTTPAnnounces", "stopTrackerTimeout",
+                        "enableEmbeddedTracker", "embeddedTrackerPort", "embeddedTrackerPortForwarding"]],
+                    ["Peers and seeding", ["seedingOutgoingConnections", "sendUploadPieceSuggestions", "pieceExtentAffinity", "uploadSlotsBehavior",
+                        "uploadChokingAlgorithm", "peerTurnover", "peerTurnoverCutoff", "peerTurnoverInterval", "requestQueueSize",
+                        "maxOutstandingBlockRequests"]],
+                    ["DHT and I2P", ["dhtBootstrapNodes", "i2pInboundQuantity", "i2pOutboundQuantity", "i2pInboundLength", "i2pOutboundLength",
+                        "i2pInboundLengthVariance", "i2pOutboundLengthVariance"]]
+                ]]
+            ];
+            const textBoxes = new Set(["appInstanceName", "announceIP", "pythonExecutablePath", "dhtBootstrapNodes", "webTorrentSTUNServer"]);
+
+            const page = document.getElementById("AdvancedTab");
+            const docLinks = [...page.querySelectorAll("legend a")];
+            const rows = new Map();
+            for (const row of page.querySelectorAll("tr")) {
+                const control = row.cells[1].querySelector("input, select, textarea");
+                rows.set(control.id, row);
+                if (textBoxes.has(control.id))
+                    control.classList.add("advancedText");
+                // a check box comes first, with its text, as on the desktop
+                if ((control.type === "checkbox") && (row.cells[1].querySelectorAll("input, select, textarea").length === 1)) {
+                    row.classList.add("prefsCheckRow");
+                    row.prepend(row.cells[1]);
+                    const text = row.cells[1].querySelector("label")?.firstChild;
+                    if (text?.nodeType === Node.TEXT_NODE)
+                        text.textContent = text.textContent.replace(/:(\s*)$/, "$1");
+                }
+            }
+
+            const bar = document.createElement("div");
+            bar.id = "advancedTabBar";
+            const menu = document.createElement("menu");
+            menu.id = "advancedTabs";
+            menu.className = "tab-menu";
+            bar.append(menu);
+            const panes = [];
+            layout.forEach(([tabName, sections], index) => {
+                const id = tabName.replace(/\W/g, "");
+                const link = document.createElement("li");
+                link.id = `advanced${id}Link`;
+                link.classList.toggle("selected", (index === 0));
+                const anchor = document.createElement("a");
+                anchor.textContent = tabName;
+                link.append(anchor);
+                menu.append(link);
+
+                const pane = document.createElement("div");
+                pane.id = `advanced${id}Tab`;
+                pane.className = "advancedPane";
+                pane.classList.toggle("invisible", (index !== 0));
+                for (const [title, ids] of sections) {
+                    const section = document.createElement("div");
+                    section.className = "advancedSection";
+                    const heading = document.createElement("div");
+                    heading.className = "advancedTitle";
+                    heading.textContent = title;
+                    const tbody = document.createElement("tbody");
+                    for (const rowId of ids) {
+                        tbody.append(rows.get(rowId));
+                        rows.delete(rowId);
+                    }
+                    const table = document.createElement("table");
+                    table.append(tbody);
+                    section.append(heading, table);
+                    pane.append(section);
+                }
+                panes.push(pane);
+            });
+            // a setting without a place on a tab is never lost
+            for (const row of rows.values())
+                panes.at(-1).querySelector(".advancedSection:last-child tbody").append(row);
+
+            // the documentation of both, beside the tabs
+            if (docLinks.length === 2) {
+                const docs = document.createElement("span");
+                docs.append(`${docLinks[0].textContent}: `);
+                for (const [i, name] of ["qBittorrent", "libtorrent"].entries()) {
+                    const link = docLinks[i].cloneNode(false);
+                    link.textContent = name;
+                    docs.append(link, ((i === 0) ? ", " : ""));
+                }
+                bar.append(docs);
+            }
+            page.replaceChildren(bar, ...panes);
+
+            MochaUI.initializeTabs("advancedTabs");
+            menu.addEventListener("click", (event) => {
+                const link = event.target.closest("li");
+                if (link === null)
+                    return;
+                for (const pane of panes)
+                    pane.classList.toggle("invisible", (pane.id !== link.id.replace(/Link$/, "Tab")));
+                // the tint moves from a tab's name to its rows once the tab is opened
+                if (searchWords.length > 0)
+                    searchSettings();
+            });
+        };
+
         const setup = () => {
             watchedFoldersTable = new HtmlTable(document.getElementById("watched_folders_tab"));
 
-            // the desktop's Advanced rows have no colon; the text stays the translated one
-            for (const label of document.querySelectorAll("#AdvancedTab td:first-child > label")) {
-                const text = label.firstChild;
-                if (text?.nodeType === Node.TEXT_NODE)
-                    text.textContent = text.textContent.replace(/:(\s*)$/, "$1");
-            }
+            buildAdvancedPage();
 
             const buildInfo = window.qBittorrent.Cache.buildInfo.get();
 

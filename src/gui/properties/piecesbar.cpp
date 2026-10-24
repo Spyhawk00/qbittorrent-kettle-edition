@@ -224,7 +224,12 @@ QColor PiecesBar::backgroundColor() const
 QColor PiecesBar::borderColor() const
 {
     const QColor color = UIThemeManager::instance()->getColor(u"PiecesBar.Border"_s);
-    return color.isValid() ? color : palette().color(QPalette::Active, QPalette::Dark);
+    if (color.isValid())
+        return color;
+    // in a dark scheme the palette's dark color is about as dark as the window: the same outline as the other boxes (see UIThemeManager)
+    return (palette().color(QPalette::Active, QPalette::Base).lightness() < 127)
+        ? palette().color(QPalette::Active, QPalette::Button).lighter(130)
+        : palette().color(QPalette::Active, QPalette::Dark);
 }
 
 QColor PiecesBar::pieceColor() const

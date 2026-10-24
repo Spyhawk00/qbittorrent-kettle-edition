@@ -34,14 +34,17 @@
 #include <QtSystemDetection>
 #include <QCheckBox>
 #include <QComboBox>
+#include <QHash>
 #include <QLineEdit>
 #include <QSpinBox>
-#include <QTableWidget>
+#include <QWidget>
 
 #include "fspathedit.h"
 #include "guiapplicationcomponent.h"
 
-class AdvancedSettings final : public GUIApplicationComponent<QTableWidget>
+class HidableTabWidget;
+
+class AdvancedSettings final : public GUIApplicationComponent<QWidget>
 {
     Q_OBJECT
     Q_DISABLE_COPY_MOVE(AdvancedSettings)
@@ -49,9 +52,8 @@ class AdvancedSettings final : public GUIApplicationComponent<QTableWidget>
 public:
     explicit AdvancedSettings(IGUIApplication *app, QWidget *parent = nullptr);
 
-    // shows only the rows whose setting contains every word of text; returns whether any row is shown
-    bool setFilterText(const QString &text);
-    void focusFirstRow();
+    // on each tab, the controls of "label: control" rows start at the same column
+    void alignRows();
 
 public slots:
     void showSpeedWidgetSetting();
@@ -72,8 +74,18 @@ private slots:
 #endif
 
 private:
+    struct Row
+    {
+        QString text;
+        QWidget *widget = nullptr;
+    };
+
     void loadAdvancedSettings();
+    void layOutSections();
     template <typename T> void addRow(int row, const QString &text, T *widget);
+
+    HidableTabWidget *m_tabs = nullptr;
+    QHash<int, Row> m_rows;
 
     QSpinBox m_spinBoxSaveResumeDataInterval, m_spinBoxSaveStatisticsInterval, m_spinBoxTorrentFileSizeLimit, m_spinBoxBdecodeDepthLimit, m_spinBoxBdecodeTokenLimit,
              m_spinBoxAsyncIOThreads, m_spinBoxFilePoolSize, m_spinBoxCheckingMemUsage, m_spinBoxDiskQueueSize,

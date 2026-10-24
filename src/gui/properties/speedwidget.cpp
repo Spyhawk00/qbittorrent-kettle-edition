@@ -37,6 +37,7 @@
 #include "base/bittorrent/session.h"
 #include "base/bittorrent/sessionstatus.h"
 #include "base/preferences.h"
+#include "gui/uithememanager.h"
 #include "propertieswidget.h"
 #include "speedplotview.h"
 
@@ -106,12 +107,17 @@ SpeedWidget::SpeedWidget(PropertiesWidget *parent)
     m_graphsButton->addItem(tr("Select Graphs"));
 
     // Some styles size these boxes to their text with no room to spare, which clips the text, so they get a little more
-    for (QComboBox *comboBox : {m_periodCombobox, static_cast<QComboBox *>(m_graphsButton)})
+    const auto fitComboBoxes = [this]
     {
-        comboBox->ensurePolished();
-        comboBox->setSizeAdjustPolicy(QComboBox::AdjustToContents);
-        comboBox->setMinimumWidth(comboBox->sizeHint().width() + (2 * comboBox->fontMetrics().averageCharWidth()));
-    }
+        for (QComboBox *comboBox : {m_periodCombobox, static_cast<QComboBox *>(m_graphsButton)})
+        {
+            comboBox->ensurePolished();
+            comboBox->setSizeAdjustPolicy(QComboBox::AdjustToContents);
+            comboBox->setMinimumWidth(comboBox->sizeHint().width() + (2 * comboBox->fontMetrics().averageCharWidth()));
+        }
+    };
+    fitComboBoxes();
+    connect(UIThemeManager::instance(), &UIThemeManager::styleChanged, this, fitComboBoxes);
 
     m_hlayout->addWidget(m_periodLabel);
     m_hlayout->addWidget(m_periodCombobox);

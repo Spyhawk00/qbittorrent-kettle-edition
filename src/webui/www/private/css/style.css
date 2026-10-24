@@ -5,24 +5,30 @@
     /* the Windows 11 palette of the desktop app: window, pane, text, one blue accent */
     --color-accent-blue: hsl(209deg 100% 38%);
     --color-text-blue: hsl(209deg 100% 38%);
-    --color-text-orange: hsl(26deg 100% 35%);
+    --color-text-orange: hsl(26deg 100% 31%);
     --color-text-red: hsl(5deg 74% 44%);
     --color-text-green: hsl(120deg 80% 26%);
     --color-text-white: hsl(0deg 0% 100%);
     --color-text-disabled: hsl(0deg 0% 55%);
     --color-text-default: hsl(0deg 0% 11%);
-    --color-background-primary: hsl(0deg 0% 98%);
+    --color-background-primary: hsl(0deg 0% 100%);
     --color-background-blue: hsl(209deg 100% 38%);
-    --color-background-popup: hsl(0deg 0% 98%);
-    --color-background-default: hsl(0deg 0% 95%);
+    --color-background-popup: hsl(0deg 0% 100%);
+    --color-background-default: hsl(0deg 0% 94%);
+    --color-background-section: hsl(0deg 0% 86%); /* the title of a section of the filter list */
     --color-background-control: hsl(0deg 0% 100%);
-    --color-background-alt-row: hsl(0deg 0% 96%);
+    --color-background-alt-row: hsl(40deg 11% 90%);
     --color-background-hover: hsl(0deg 0% 92%);
     --color-background-selected: hsl(209deg 100% 91%);
     --color-background-titlebar: hsl(0deg 0% 85%);
     --color-background-titlebar-hover: hsl(0deg 0% 0% / 8%);
     --color-border-blue: hsl(209deg 100% 38%);
     --color-border-default: hsl(0deg 0% 82%);
+    --color-border-outline: hsl(0deg 0% 67%); /* the outline of every list and box, the one of the desktop */
+    --scrollbar-track: hsl(0deg 0% 91%);
+    --scrollbar-thumb: hsl(0deg 0% 63%);
+    --scrollbar-thumb-hover: hsl(0deg 0% 54%);
+    --scrollbar-thumb-active: hsl(0deg 0% 45%);
     --color-border-status: hsl(0deg 0% 60%); /* the line above the status bar: it has to show on the window, not just be there */
     --toolbar-line: 2px solid hsl(0deg 0% 86%); /* as the lines of the desktop: soft and two rows thick on a light window */
     --color-shadow: hsl(0deg 0% 0% / 25%);
@@ -30,7 +36,7 @@
 
     & #torrentTrackersTableDiv tr {
         --color-tracker-disabled: hsl(240deg 4% 40%);
-        --color-tracker-not-contacted: hsl(30deg 100% 33%);
+        --color-tracker-not-contacted: hsl(30deg 100% 28%);
         --color-tracker-working: hsl(135deg 80% 25%);
         --color-tracker-updating: hsl(209deg 100% 38%);
         --color-tracker-not-working: hsl(5deg 74% 44%);
@@ -48,17 +54,23 @@
         --color-text-green: hsl(112deg 52% 62%);
         --color-text-disabled: hsl(0deg 0% 55%);
         --color-text-default: hsl(0deg 0% 100%);
-        --color-background-primary: hsl(0deg 0% 18%);
-        --color-background-popup: hsl(0deg 0% 18%);
-        --color-background-default: hsl(0deg 0% 13%);
+        --color-background-primary: hsl(0deg 0% 17.6%);
+        --color-background-popup: hsl(0deg 0% 17.6%);
+        --color-background-default: hsl(0deg 0% 11.8%);
+        --color-background-section: hsl(0deg 0% 12.5%);
         --color-background-control: hsl(0deg 0% 24%);
-        --color-background-alt-row: hsl(0deg 0% 21%);
+        --color-background-alt-row: hsl(0deg 0% 22.4%);
         --color-background-hover: hsl(0deg 0% 24%);
-        --color-background-selected: hsl(205deg 55% 27%);
+        --color-background-selected: hsl(206deg 100% 34%); /* the blue of the selection on the desktop, as bright as the accent bar on it allows */
         --color-background-titlebar: hsl(0deg 0% 21%);
         --color-background-titlebar-hover: hsl(0deg 0% 100% / 8%);
         --color-border-blue: hsl(199deg 100% 65%);
         --color-border-default: hsl(0deg 0% 30%);
+        --color-border-outline: hsl(0deg 0% 32%);
+        --scrollbar-track: hsl(0deg 0% 15%);
+        --scrollbar-thumb: hsl(0deg 0% 32%);
+        --scrollbar-thumb-hover: hsl(0deg 0% 39%);
+        --scrollbar-thumb-active: hsl(0deg 0% 46%);
         --color-border-status: hsl(0deg 0% 50%);
         --toolbar-line: 1px solid var(--color-border-default); /* one row, a lot brighter than the window, on a dark one */
         --color-shadow: hsl(0deg 0% 0% / 50%);
@@ -115,13 +127,52 @@ ol {
 
 /* Scrollbars */
 
-@supports (scrollbar-width: auto) and (selector(::-webkit-scrollbar)) {
-    :root[slick-uniqueid], /* targets iframe mocha dialogs */
-    .dynamicTableDiv,
-    .mochaContentWrapper,
-    .panel,
-    .scrollableMenu,
-    #rssDetailsView {
+/* every scroll bar is the one of the desktop: flat and 8 px, a track with a line next to the content, a thumb with
+   rounded ends, no arrow buttons */
+::-webkit-scrollbar {
+    height: 8px;
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: var(--scrollbar-track);
+}
+
+::-webkit-scrollbar-track:vertical {
+    border-left: 1px solid var(--color-border-outline);
+}
+
+::-webkit-scrollbar-track:horizontal {
+    border-top: 1px solid var(--color-border-outline);
+}
+
+::-webkit-scrollbar-thumb {
+    background-clip: padding-box;
+    background-color: var(--scrollbar-thumb);
+    border: 1px solid transparent;
+    border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: var(--scrollbar-thumb-hover);
+}
+
+::-webkit-scrollbar-thumb:active {
+    background-color: var(--scrollbar-thumb-active);
+}
+
+::-webkit-scrollbar-button {
+    display: none;
+}
+
+::-webkit-scrollbar-corner {
+    background-color: var(--scrollbar-track);
+}
+
+/* a browser without these (Firefox) draws a thin bar in the same colours */
+@supports not selector(::-webkit-scrollbar) {
+    * {
+        scrollbar-color: var(--scrollbar-thumb) var(--scrollbar-track);
         scrollbar-width: thin;
     }
 }
@@ -138,7 +189,7 @@ button,
 textarea,
 select {
     background-color: var(--color-background-control);
-    border: 1px solid var(--color-border-default);
+    border: 1px solid var(--color-border-outline);
     color: var(--color-text-default);
     padding: 3px 6px;
 }
@@ -341,7 +392,7 @@ dd {
 /* Forms */
 
 fieldset {
-    border: 1px solid var(--color-border-default);
+    border: 1px solid var(--color-border-outline);
     margin: 0 2px;
 }
 
@@ -349,7 +400,7 @@ fieldset {
 
 pre {
     background-color: var(--color-background-default);
-    border: 1px solid var(--color-border-default);
+    border: 1px solid var(--color-border-outline);
     color: var(--color-text-green);
     display: block;
     font-family: ui-monospace, Consolas, monospace;
@@ -402,7 +453,7 @@ hr {
 }
 
 a.propButton {
-    border: 1px solid var(--color-border-default);
+    border: 1px solid var(--color-border-outline);
     margin-left: 3px;
     margin-right: 3px;
     padding: 2px;
@@ -428,7 +479,7 @@ a.propButton img {
 
 .contextMenu {
     background-color: var(--color-background-popup);
-    border: 1px solid var(--color-border-default);
+    border: 1px solid var(--color-border-outline);
     box-shadow: 0 2px 6px var(--color-shadow);
     display: none;
     opacity: 0;
@@ -488,7 +539,7 @@ a.propButton img {
 
 .contextMenu li ul {
     background: var(--color-background-popup);
-    border: 1px solid var(--color-border-default);
+    border: 1px solid var(--color-border-outline);
     box-shadow: 0 2px 6px var(--color-shadow);
     left: -999em;
     margin: -33px 0 0 100%;
@@ -608,10 +659,10 @@ a.propButton img {
 #mainWindowTabs .tab-menu li a,
 #mainWindowTabs .tab-menu li:first-child a {
     background-color: var(--color-background-hover);
-    border: 1px solid var(--color-border-default);
+    border: 1px solid var(--color-border-outline);
     gap: 8px;
     margin: 0;
-    padding: 6px 14px;
+    padding: 2px 8px;
 }
 
 #mainWindowTabs .tab-menu li.selected a,
@@ -645,7 +696,7 @@ a.propButton img {
     background-position: 2px;
     background-repeat: no-repeat;
     background-size: 1.5em;
-    border: 1px solid var(--color-border-default);
+    border: 1px solid var(--color-border-outline);
     box-sizing: border-box;
     height: 28px; /* as tall as the bar of the Search tab */
     min-width: 170px;
@@ -661,7 +712,7 @@ a.propButton img {
     background-position: center;
     background-repeat: no-repeat;
     background-size: 1.5em;
-    border: 1px solid var(--color-border-default);
+    border: 1px solid var(--color-border-outline);
     cursor: pointer;
     box-sizing: border-box;
     display: inline-block;
@@ -698,7 +749,9 @@ a.propButton img {
     background-position: 1px;
     background-repeat: no-repeat;
     background-size: 1.5em;
-    margin-top: -1px;
+    box-sizing: border-box;
+    height: 24px;
+    margin-top: 0;
     padding-bottom: 1px;
     padding-left: 2em;
     padding-top: 1px;
@@ -714,7 +767,7 @@ fieldset.settings {
 }
 
 fieldset.settings legend {
-    border-bottom: 1px solid var(--color-border-default);
+    border-bottom: 1px solid var(--color-border-outline);
     font-weight: bold;
     margin: 0 0 6px;
     padding: 0 0 4px;
@@ -735,17 +788,17 @@ div.formRow {
 }
 
 .filterTitle {
-    /* a darker grey than the list below it, the same blend of window and line colour as on the desktop */
-    background-color: color-mix(in srgb, var(--color-background-default) 75%, var(--color-border-default));
+    /* a darker grey than the list below it, as on the desktop */
+    background-color: var(--color-background-section);
     border-bottom: 1px solid var(--color-border-default);
     cursor: pointer;
     display: flex;
     font-size: 1.1em;
     font-weight: bold;
     gap: 4px;
-    margin-bottom: 2px;
+    margin-bottom: 0;
     overflow: hidden;
-    padding: 6px 0 6px 6px;
+    padding: 3px 0 3px 8px;
     text-overflow: ellipsis;
     text-transform: uppercase;
     user-select: none;
@@ -753,9 +806,15 @@ div.formRow {
 }
 
 .filterTitle img {
+    /* the small grey triangle of the desktop, not the blue arrow */
+    content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath d='M3 5h10l-5 6z' fill='%23505050'/%3E%3C/svg%3E");
     height: 16px;
     padding: 2px;
     width: 16px;
+}
+
+:root.dark .filterTitle img {
+    content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath d='M3 5h10l-5 6z' fill='%23c8c8c8'/%3E%3C/svg%3E");
 }
 
 .collapsedCategory > ul {
@@ -776,10 +835,10 @@ ul.filterList span.link {
     align-items: center;
     cursor: pointer;
     display: flex;
-    gap: 5px;
-    margin: 0 4px 1px;
+    gap: 8px;
+    margin: 0;
     overflow: hidden;
-    padding: 4px 6px;
+    padding: 2px 8px;
     position: relative;
     white-space: nowrap;
 }
@@ -895,7 +954,7 @@ td.noWrap {
 }
 
 #propGeneral fieldset > legend {
-    border-bottom: 1px solid var(--color-border-default);
+    border-bottom: 1px solid var(--color-border-outline);
     margin-bottom: 4px;
     padding: 0 0 3px;
     width: 100%;
@@ -924,12 +983,12 @@ td.noWrap {
 
 #watched_folders_tab td,
 #watched_folders_tab th {
-    border: 1px solid var(--color-border-default);
+    border: 1px solid var(--color-border-outline);
     padding: 2px 4px;
 }
 
 .select-watched-folder-editable {
-    border: 1px solid var(--color-border-default);
+    border: 1px solid var(--color-border-outline);
     height: 22px;
     position: relative;
     width: 160px;
@@ -965,15 +1024,6 @@ td.noWrap {
  */
 #filtersColumn_handle {
     margin-left: -1px;
-}
-
-/* a thin line on each side of the handles between the panes, as on the desktop */
-#filtersColumn_handle,
-#searchListHandle {
-    background-color: var(--color-background-default);
-    border-left: 1px solid var(--color-border-default);
-    border-right: 1px solid var(--color-border-default);
-    box-sizing: border-box;
 }
 
 .combo_priority {
@@ -1041,6 +1091,7 @@ td.statusBarSeparator::before {
     display: flex;
     flex: 1;
     min-height: 0;
+    padding: 8px;
 }
 
 .red {
@@ -1129,7 +1180,7 @@ body.dialogPage:not(:has(#desktop)) {
 }
 
 .dialogPage fieldset.settings > legend {
-    border-bottom: 1px solid var(--color-border-default);
+    border-bottom: 1px solid var(--color-border-outline);
     font-weight: bold;
     margin: 0 0 4px;
     padding: 0 0 4px;
@@ -1303,4 +1354,42 @@ body.dialogPage:not(:has(#desktop)) {
 
 .confirmWarning {
     background-image: url("../images/help-about.svg");
+}
+
+/* the tabs under the details are buttons, as on the desktop: an outline all round, 8 px apart */
+#propertiesTabs {
+    gap: 8px;
+}
+
+#propertiesTabs li a,
+#propertiesTabs li:first-child a {
+    background-color: var(--color-background-control);
+    border: 1px solid var(--color-border-outline);
+    box-sizing: border-box;
+    gap: 8px;
+    height: 24px;
+    margin: 0;
+    padding: 2px 8px;
+}
+
+#propertiesTabs li:first-child a {
+    margin-left: 4px;
+}
+
+#propertiesTabs li:hover a {
+    background-color: var(--color-background-hover);
+}
+
+#propertiesTabs li.selected a,
+#propertiesTabs li.selected:hover a {
+    background-color: var(--color-background-selected);
+}
+
+#propertiesTabs li.selected a::after {
+    content: none;
+}
+
+/* the collapse arrow at the right of the tab strip is centered with the buttons */
+#propertiesPanel_headerCollapseBox {
+    margin-top: 2px;
 }

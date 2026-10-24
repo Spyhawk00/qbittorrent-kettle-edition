@@ -175,7 +175,7 @@ namespace
             makeFolder(path.substr(0, cut));
     }
 
-    // Defender and the search indexer often hold a new file for a moment, so most file operations are tried again for a while
+    // Defender and the search indexer often lock a new file briefly, so most file operations are retried for a while
     bool retry(const unsigned int seconds, const std::function<bool()> &action)
     {
         const ULONGLONG deadline = ::GetTickCount64() + (seconds * 1000ULL);
@@ -335,8 +335,8 @@ namespace
             writeFile(join(state.root, L"skipped.txt"), narrow(state.newEdition + L"\r\n"), true);
     }
 
-    // A failure that may pass (a locked file, a busy disk) skips the version only when it has failed this many times
-    // in a row; failures.txt keeps "<edition> <count>"
+    // A failure that may pass (locked file, busy disk) skips the version only after this many failures in a row;
+    // failures.txt keeps "<edition> <count>"
     const int TEMPORARY_FAILURES_BEFORE_SKIP = 3;
 
     // Counts one more failure of the new version; true when it has failed often enough to be skipped
@@ -412,8 +412,8 @@ namespace
         return true;
     }
 
-    // The state file is written by qBittorrent, but the helper deletes whole folders it names, so it only accepts
-    // the folders it expects: none of them may be, or contain, the program or a profile.
+    // qBittorrent writes the state file, but the helper deletes whole folders it names, so it accepts only expected
+    // folders: none may be, or contain, the program or a profile.
     bool isStateSafe()
     {
         if (!isDirectory(state.program) || (state.exe.find_first_of(L"\\/:") != Text::npos)

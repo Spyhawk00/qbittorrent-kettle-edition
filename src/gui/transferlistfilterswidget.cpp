@@ -34,7 +34,6 @@
 #include <QListWidgetItem>
 #include <QMenu>
 #include <QScrollArea>
-#include <QSplitter>
 #include <QUrl>
 #include <QVBoxLayout>
 
@@ -42,6 +41,7 @@
 #include "base/global.h"
 #include "base/preferences.h"
 #include "base/utils/compare.h"
+#include "listviewlayout.h"
 #include "transferlistfilters/categoryfilterwidget.h"
 #include "transferlistfilters/statusfilterwidget.h"
 #include "transferlistfilters/tagfilterwidget.h"
@@ -49,6 +49,7 @@
 #include "transferlistfilters/trackerstatusfilterwidget.h"
 #include "transferlistfilterswidgetitem.h"
 #include "transferlistwidget.h"
+#include "uithememanager.h"
 #include "utils.h"
 
 TransferListFiltersWidget::TransferListFiltersWidget(QWidget *parent, TransferListWidget *transferList, const bool downloadFavicon)
@@ -60,13 +61,18 @@ TransferListFiltersWidget::TransferListFiltersWidget(QWidget *parent, TransferLi
     Preferences *const pref = Preferences::instance();
 
     // The section titles are as tall as the column headers of the transfer list and start at the same height
-    const int titleHeight = transferList->header()->sizeHint().height();
+    const int titleHeight = ListViewLayout::headerHeight(this);
+    connect(UIThemeManager::instance(), &UIThemeManager::styleChanged, this, [this]
+    {
+        for (auto *item : asConst(findChildren<TransferListFiltersWidgetItem *>()))
+            item->setCaptionHeight(ListViewLayout::headerHeight(this));
+    });
 
     // Construct lists
     auto *mainWidget = new QWidget;
     auto *mainWidgetLayout = new QVBoxLayout(mainWidget);
     mainWidgetLayout->setContentsMargins(0, 0, 0, 0);
-    mainWidgetLayout->setSpacing(2);
+    mainWidgetLayout->setSpacing(8);
     mainWidgetLayout->setAlignment(Qt::AlignLeft | Qt::AlignTop);
 
     {
@@ -145,18 +151,18 @@ TransferListFiltersWidget::TransferListFiltersWidget(QWidget *parent, TransferLi
     auto *scroll = new QScrollArea(this);
     scroll->setWidgetResizable(true);
     scroll->setHorizontalScrollBarPolicy(Qt::ScrollBarAlwaysOff);
-    scroll->setFrameShape(QFrame::NoFrame);
+    // the outline of the lists next to it
+    scroll->setProperty("outlined", true);
     scroll->setWidget(mainWidget);
-    if (auto *splitter = qobject_cast<QSplitter *>(parent))
-        Utils::Gui::dividerVerticalScrollBar(scroll, splitter);
     // white like the list of the Search tab
     mainWidget->setBackgroundRole(QPalette::Base);
     mainWidget->setAutoFillBackground(true);
     // the Windows 11 style leaves the lists on the window color
     mainWidget->setStyleSheet(u"QAbstractScrollArea { background: palette(base); }"_s);
+    m_mainWidget = mainWidget;
 
     auto *vLayout = new QVBoxLayout(this);
-    vLayout->setContentsMargins(0, 5, 0, 0); // as far from the top as the column headers of the transfer list
+    vLayout->setContentsMargins(0, 0, 0, 0);
     vLayout->addWidget(scroll);
 
     const auto createTrackerStatusItem = [this, mainWidgetLayout, trackerStatusItemPos, pref, titleHeight]
@@ -193,6 +199,14 @@ TransferListFiltersWidget::TransferListFiltersWidget(QWidget *parent, TransferLi
         else
             removeTrackerStatusItem();
     });
+}
+
+void TransferListFiltersWidget::changeEvent(QEvent *event)
+{
+    QWidget::changeEvent(event);
+    // the style sheet keeps the colors of the palette it was last applied with, as the selection of the lists
+    if ((event->type() == QEvent::PaletteChange) && m_mainWidget)
+        m_mainWidget->setStyleSheet(m_mainWidget->styleSheet());
 }
 
 void TransferListFiltersWidget::setDownloadTrackerFavicon(bool value)

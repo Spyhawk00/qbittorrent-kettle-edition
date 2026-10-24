@@ -32,6 +32,22 @@ means anything running as that user can replace the program.
 
 Python is needed only for the search plugins.
 
+### Going back to official qBittorrent
+
+1. Close qBittorrent.
+2. Uninstall "qBittorrent Kettle Edition" in Windows Settings, Apps (Programs and Features).
+3. Install the current official qBittorrent from [qbittorrent.org](https://www.qbittorrent.org).
+
+Your torrents, categories and settings are kept, and the official program reads them. What changes:
+
+* **WebUI accounts stop working.** The extra accounts and roles are in `webui_access.db` in the data folder, which
+  the official program ignores (it is not deleted). The WebUI goes back to the single administrator login from
+  Options, Web UI. If no password was ever set there, the official program shows a temporary one in its log
+  at each start.
+* **Go back to 5.3.0 or newer, not to 5.2.x.** Kettle Edition is based on 5.3.0, which stores the WebUI settings under
+  new names in `qBittorrent.ini`. An older official version can't read them and starts the WebUI with default settings.
+* Settings that only Kettle Edition has are ignored by the official program.
+
 ### Building
 
 See [INSTALL](INSTALL). The Kettle Edition code is in `src/base/access`, `src/webui/api/accesscontroller.*`,

@@ -62,9 +62,15 @@ namespace
         case TransferListModel::TR_DOWNLOAD_PATH:
         case TransferListModel::TR_INFOHASH_V1:
         case TransferListModel::TR_INFOHASH_V2:
+        case TransferListModel::TR_STATUS:
+        case TransferListModel::TR_PRIVATE:
             return {};
-        default:
+        // the bar fills the cell
+        case TransferListModel::TR_PROGRESS:
             return QVariant(Qt::AlignHCenter | Qt::AlignVCenter);
+        // numbers, sizes, speeds and dates line up on their right edge
+        default:
+            return QVariant(Qt::AlignRight | Qt::AlignVCenter);
         }
     }
 

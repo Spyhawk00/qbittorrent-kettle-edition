@@ -31,6 +31,8 @@
 
 #include <cmath>
 
+#include <QApplication>
+#include <QEvent>
 #include <QLocale>
 #include <QPainter>
 #include <QPen>
@@ -162,6 +164,9 @@ const SpeedPlotView::DataCircularBuffer &SpeedPlotView::Averager::data() const
 SpeedPlotView::SpeedPlotView(QWidget *parent)
     : QGraphicsView {parent}
 {
+    // the graph sits in the same outlined box as the lists (see UIThemeManager)
+    setProperty("outlined", true);
+
     QPen greenPen;
     greenPen.setWidthF(1.5);
     greenPen.setColor(QColor(134, 196, 63));
@@ -279,9 +284,22 @@ quint64 SpeedPlotView::maxYValue() const
     return maxYValue;
 }
 
+void SpeedPlotView::changeEvent(QEvent *event)
+{
+    QGraphicsView::changeEvent(event);
+    // the graph is drawn with the colors of the palette, so it is redrawn when they change
+    if ((event->type() == QEvent::PaletteChange) || (event->type() == QEvent::ApplicationPaletteChange))
+        viewport()->update();
+}
+
 void SpeedPlotView::paintEvent(QPaintEvent *)
 {
     QPainter painter(viewport());
+    // the colors of the application: the palette of the graph (and of its window) stays on the old scheme after a switch
+    QColor background = window()->palette().color(QPalette::Active, QPalette::Base);
+    background.setAlpha(255); // the color is translucent with some styles, it would show the old one below
+    painter.fillRect(viewport()->rect(), background);
+    painter.setPen(window()->palette().color(QPalette::Active, QPalette::Text));
 
     QRect fullRect = viewport()->rect();
     QRect rect = viewport()->rect();
@@ -393,7 +411,7 @@ void SpeedPlotView::paintEvent(QPaintEvent *)
     }
 
     QRectF legendBackgroundRect(QPoint(legendTopLeft.x() - 4, legendTopLeft.y() - 4), QSizeF(legendWidth + 8, legendHeight + 8));
-    QColor legendBackgroundColor = QWidget::palette().color(QWidget::backgroundRole());
+    QColor legendBackgroundColor = window()->palette().color(QPalette::Window);
     legendBackgroundColor.setAlpha(128);  // 50% transparent
     painter.fillRect(legendBackgroundRect, legendBackgroundColor);
 

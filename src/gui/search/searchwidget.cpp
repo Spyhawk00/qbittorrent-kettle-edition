@@ -40,7 +40,6 @@
 #include <QEvent>
 #include <QFrame>
 #include <QHBoxLayout>
-#include <QHeaderView>
 #include <QJsonArray>
 #include <QJsonDocument>
 #include <QJsonObject>
@@ -53,7 +52,6 @@
 #include <QMouseEvent>
 #include <QObject>
 #include <QPainter>
-#include <QProxyStyle>
 #include <QRegularExpression>
 #include <QShortcut>
 #include <QSplitter>
@@ -62,6 +60,7 @@
 #include <QStringListModel>
 #include <QThread>
 #include <QToolButton>
+#include <QVBoxLayout>
 
 #include "base/global.h"
 #include "base/logger.h"
@@ -77,6 +76,7 @@
 #include "base/utils/io.h"
 #include "gui/desktopintegration.h"
 #include "gui/interfaces/iguiapplication.h"
+#include "gui/listviewlayout.h"
 #include "gui/uithememanager.h"
 #include "gui/utils.h"
 #include "searchjobwidget.h"
@@ -376,22 +376,28 @@ SearchWidget::SearchWidget(IGUIApplication *app, QWidget *parent)
     m_ui->searchesLabel->setFont(headerFont);
     m_ui->listHeader->setAutoFillBackground(true);
     m_ui->listHeader->layout()->setContentsMargins(6, 0, 4, 0);
-    m_ui->listHeader->setMinimumHeight(m_ui->listHeader->sizeHint().height() + 4);
     // the list reaches the edges of the page, as the sidebar of the Transfers tab does; the search bar is above the results
-    const int pageMargin = style()->pixelMetric(QStyle::PM_LayoutLeftMargin, nullptr, this);
     m_ui->verticalLayout_3->setContentsMargins(0, 0, 0, 0);
     m_ui->listHeaderLine->setForegroundRole(QPalette::Mid);
-    m_ui->listPaneLayout->setContentsMargins(0, 5, 0, 0); // SEARCHES starts at the height of the box of the search bar
+    // the header, the rule and the list are in one box with the outline of the lists of the other tabs
+    auto *listFrame = new QFrame(m_ui->listPane);
+    listFrame->setProperty("outlined", true);
+    auto *listFrameLayout = new QVBoxLayout(listFrame);
+    listFrameLayout->setContentsMargins(0, 0, 0, 0);
+    listFrameLayout->setSpacing(0);
+    listFrameLayout->addWidget(m_ui->listHeader);
+    listFrameLayout->addWidget(m_ui->listHeaderLine);
+    listFrameLayout->addWidget(m_ui->searchList);
+    m_ui->listPaneLayout->addWidget(listFrame);
+    m_ui->listPaneLayout->setContentsMargins(0, 0, 0, 0); // SEARCHES starts at the height of the box of the search bar
     m_ui->listPaneLayout->setSpacing(0);
     // white like the sidebar and the list of the Transfers tab, except for the strip above the header
-    QPalette headerPalette = m_ui->listHeader->palette();
-    headerPalette.setColor(QPalette::Window, Utils::Gui::sectionHeaderColor(headerPalette));
-    m_ui->listHeader->setPalette(headerPalette);
     m_ui->listHeader->setBackgroundRole(QPalette::Window);
+    // the hint shown before a search has the outline of the results list that replaces it
+    m_ui->hintPage->setProperty("outlined", true);
     m_ui->resultsStack->setBackgroundRole(QPalette::Base);
     m_ui->resultsStack->setAutoFillBackground(true);
     m_ui->searchList->setFrameShape(QFrame::NoFrame);
-    Utils::Gui::dividerVerticalScrollBar(m_ui->searchList, m_ui->splitter);
     m_ui->searchList->viewport()->setBackgroundRole(QPalette::Base); // as the rows of the Transfers sidebar
     m_ui->searchList->viewport()->setAutoFillBackground(true);
     // the Windows 11 style leaves the lists on the window color
@@ -405,29 +411,21 @@ SearchWidget::SearchWidget(IGUIApplication *app, QWidget *parent)
     // with a thin edge on each side
     m_ui->splitter->setHandleWidth(8);
     // the search bar reaches the list on the left and the edge of the page on the right
-    m_ui->searchBarLayout->setContentsMargins(0, 3, 0, (pageMargin * 3) / 4);
+    m_ui->searchBarLayout->setContentsMargins(0, 0, 0, 8);
     auto *handleLayout = new QHBoxLayout(m_ui->splitter->handle(1));
     handleLayout->setContentsMargins(0, 0, 0, 0);
     handleLayout->setSpacing(0);
-    const QColor windowColor = palette().color(QPalette::Window);
-    const QColor textColor = palette().color(QPalette::WindowText);
-    const int textPercent = (windowColor.lightness() < 127) ? 14 : 3;
-    const auto addHandleEdge = [this, handleLayout, windowColor, textColor, textPercent]()
+    const auto addHandleEdge = [this, handleLayout]()
     {
         auto *edge = new QFrame(m_ui->splitter->handle(1));
         edge->setFixedWidth(1);
         edge->setAutoFillBackground(true);
-        QPalette edgePalette = edge->palette();
-        edgePalette.setColor(QPalette::Window, QColor::fromRgbF(
-                (windowColor.redF() * (100 - textPercent) + textColor.redF() * textPercent) / 100
-                , (windowColor.greenF() * (100 - textPercent) + textColor.greenF() * textPercent) / 100
-                , (windowColor.blueF() * (100 - textPercent) + textColor.blueF() * textPercent) / 100));
-        edge->setPalette(edgePalette);
         handleLayout->addWidget(edge);
     };
     addHandleEdge();
     handleLayout->addStretch();
     addHandleEdge();
+    updateThemeColors();
     m_ui->splitter->setStretchFactor(0, 0);
     m_ui->splitter->setStretchFactor(1, 1);
     // until it is dragged, as wide as the sidebar of the Transfers tab
@@ -464,35 +462,29 @@ SearchWidget::SearchWidget(IGUIApplication *app, QWidget *parent)
     // The search bar: one height and the same gap between all controls
     const QList<QWidget *> barWidgets {m_ui->lineEditSearchPattern, m_ui->comboCategory, m_ui->selectPlugin
             , m_ui->searchButton, m_ui->stopButton, m_ui->pluginsButton};
-#ifdef Q_OS_WIN
-    // the Windows 11 style draws a combo box about 2 px smaller than its box; the square Fusion look fills it like the buttons
-    if (qApp->style()->name() == u"windows11"_s)
-    {
-        static auto *squareStyle = new QProxyStyle(u"fusion"_s);
-        m_ui->comboCategory->setStyle(squareStyle);
-        m_ui->selectPlugin->setStyle(squareStyle);
-    }
-#endif
-    // polish first: the push buttons only get their (taller) square style while being polished
-    for (QWidget *widget : barWidgets)
-        widget->ensurePolished();
-    int barHeight = 0;
-    for (const QWidget *widget : barWidgets)
-        barHeight = std::max(barHeight, widget->sizeHint().height());
-    for (QWidget *widget : barWidgets)
-        widget->setMinimumHeight(barHeight);
     // the SEARCHES header, with the rule under it, is as tall as the STATUS header of the Transfers sidebar (the
     // column headers of the transfer list); the rule is painted in eventFilter()
     constexpr int ruleHeight = 2;
     m_ui->listHeaderLine->setFixedHeight(ruleHeight);
     m_ui->listHeaderLine->installEventFilter(this);
-    // a header without columns measures 0, so it gets one
-    QStringListModel columnModel;
-    QHeaderView columnHeader {Qt::Horizontal, this};
-    columnHeader.setModel(&columnModel);
-    columnHeader.ensurePolished();
-    m_ui->listHeader->setFixedHeight(columnHeader.sizeHint().height() - ruleHeight);
-    m_ui->searchBarLayout->setSpacing(pageMargin);
+    const auto fitHeights = [this, barWidgets]
+    {
+        // polish first: the push buttons and the fields only get their square styles (UIThemeManager) while being polished
+        for (QWidget *widget : barWidgets)
+        {
+            widget->ensurePolished();
+            widget->setMinimumHeight(0);
+        }
+        int barHeight = 0;
+        for (const QWidget *widget : barWidgets)
+            barHeight = std::max(barHeight, widget->sizeHint().height());
+        for (QWidget *widget : barWidgets)
+            widget->setMinimumHeight(barHeight);
+        m_ui->listHeader->setFixedHeight(ListViewLayout::headerHeight(this) - ruleHeight);
+    };
+    fitHeights();
+    connect(UIThemeManager::instance(), &UIThemeManager::styleChanged, this, fitHeights);
+    m_ui->searchBarLayout->setSpacing(8);
     m_ui->resultsPaneLayout->setSpacing(0);
     connect(m_ui->closeSearchButton, &QToolButton::clicked, this, [this]() { closeTab(m_ui->searchList->currentRow()); });
     connect(m_ui->searchList, &QListWidget::currentRowChanged, this, &SearchWidget::currentTabChanged);
@@ -576,6 +568,37 @@ SearchWidget::SearchWidget(IGUIApplication *app, QWidget *parent)
 
     loadHistory();
     restoreSession();
+}
+
+// the colors that are taken from the palette once (the palette changes with the color scheme)
+void SearchWidget::updateThemeColors()
+{
+    QPalette headerPalette = m_ui->listHeader->palette();
+    headerPalette.setColor(QPalette::Window, Utils::Gui::sectionHeaderColor(palette()));
+    m_ui->listHeader->setPalette(headerPalette);
+    // the style sheet keeps the colors of the palette it was last applied with, as the selection of the list
+    m_ui->searchList->setStyleSheet(m_ui->searchList->styleSheet());
+
+    const QColor windowColor = palette().color(QPalette::Window);
+    const QColor textColor = palette().color(QPalette::WindowText);
+    const int textPercent = (windowColor.lightness() < 127) ? 14 : 3;
+    const QColor edgeColor = QColor::fromRgbF(
+            (windowColor.redF() * (100 - textPercent) + textColor.redF() * textPercent) / 100
+            , (windowColor.greenF() * (100 - textPercent) + textColor.greenF() * textPercent) / 100
+            , (windowColor.blueF() * (100 - textPercent) + textColor.blueF() * textPercent) / 100);
+    for (QFrame *edge : m_ui->splitter->handle(1)->findChildren<QFrame *>())
+    {
+        QPalette edgePalette = edge->palette();
+        edgePalette.setColor(QPalette::Window, edgeColor);
+        edge->setPalette(edgePalette);
+    }
+}
+
+void SearchWidget::changeEvent(QEvent *event)
+{
+    GUIApplicationComponent<QWidget>::changeEvent(event);
+    if ((event->type() == QEvent::PaletteChange) || (event->type() == QEvent::ApplicationPaletteChange))
+        updateThemeColors();
 }
 
 bool SearchWidget::eventFilter(QObject *object, QEvent *event)

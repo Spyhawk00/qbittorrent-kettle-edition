@@ -67,6 +67,8 @@ signals:
 
 private:
     bool eventFilter(QObject *object, QEvent *event) override;
+    void changeEvent(QEvent *event) override;
+    void updateThemeColors();
 
     void onPreferencesChanged();
 

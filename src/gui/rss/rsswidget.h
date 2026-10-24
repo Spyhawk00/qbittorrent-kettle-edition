@@ -35,6 +35,7 @@
 #include "gui/guiapplicationcomponent.h"
 
 class LineEdit;
+class QAbstractScrollArea;
 class QListWidgetItem;
 class QTreeWidgetItem;
 
@@ -93,6 +94,7 @@ private slots:
 private:
     bool eventFilter(QObject *obj, QEvent *event) override;
     void renderArticle(const RSS::Article *article) const;
+    void placeHeader(QAbstractScrollArea *view) const;
 
     Ui::RSSWidget *m_ui = nullptr;
     LineEdit *m_rssFilter = nullptr;

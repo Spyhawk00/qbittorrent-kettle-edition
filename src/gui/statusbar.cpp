@@ -69,6 +69,7 @@ StatusBar::StatusBar(QWidget *parent)
     QWidget *container = new QWidget(this);
     auto *layout = new QHBoxLayout(container);
     layout->setContentsMargins(0,0,0,0);
+    layout->setSpacing(8); // the same room on both sides of every separator
 
     container->setLayout(layout);
     m_connecStatusLblIcon = new QToolButton(this);

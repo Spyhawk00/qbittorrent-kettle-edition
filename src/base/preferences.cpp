@@ -2061,7 +2061,7 @@ void Preferences::setTransSelFilter(const int index)
 
 bool Preferences::getHideZeroStatusFilters() const
 {
-    return value<bool>(u"TransferListFilters/HideZeroStatusFilters"_s, false);
+    return value<bool>(u"TransferListFilters/HideZeroStatusFilters"_s, true);
 }
 
 void Preferences::setHideZeroStatusFilters(const bool hide)

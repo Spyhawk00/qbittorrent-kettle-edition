@@ -36,9 +36,8 @@
 
 #include "base/global.h"
 
-// Multi-user WebUI access control: the permission catalogue and the map from every
-// WebAPI action ("scope/action") to the permission it needs.
-// Anything not in the map needs "unlisted_api", so new API actions are never open by default.
+// Multi-user WebUI access control: the permission each WebAPI action ("scope/action") needs.
+// Actions not in the map need "unlisted_api", so new ones are never open by default.
 namespace Access
 {
     struct Permission
@@ -80,8 +79,7 @@ namespace Access
     // app/preferences values blanked for anyone without the "settings" permission.
     const QSet<QString> &redactedPreferences();
 
-    // app/setPreferences keys that only an admin may change: they decide who can sign in, open the WebUI to
-    // others or run programs, so "settings" alone must not reach them.
+    // app/setPreferences keys only an admin may change: they control sign-in, WebUI exposure or running programs.
     const QSet<QString> &adminOnlyPreferences();
 
     // Anything that isn't clearly false counts as true, to stay on the safe side.

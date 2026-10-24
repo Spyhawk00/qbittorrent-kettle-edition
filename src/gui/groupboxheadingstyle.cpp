@@ -34,6 +34,7 @@
 #include <QApplication>
 #include <QCheckBox>
 #include <QComboBox>
+#include <QEvent>
 #include <QFormLayout>
 #include <QGridLayout>
 #include <QGroupBox>
@@ -44,6 +45,8 @@
 #include <QPushButton>
 #include <QRadioButton>
 #include <QStyleOption>
+
+#include "appstyleproxy.h"
 
 namespace
 {
@@ -136,9 +139,8 @@ namespace
 }
 
 GroupBoxHeadingStyle::GroupBoxHeadingStyle(QObject *parent)
-    : QProxyStyle(QApplication::style()->name())
+    : AppStyleProxy(parent)
 {
-    setParent(parent);
 }
 
 void GroupBoxHeadingStyle::apply(QWidget *widget)
@@ -177,14 +179,26 @@ void GroupBoxHeadingStyle::alignRows(QWidget *widget)
         }
     }
 
+    // measured again from scratch when the style of the application changed
+    for (QWidget *label : labels)
+    {
+        label->setMinimumWidth(0);
+        // a label measures its text again only when its font changes
+        QEvent fontChange {QEvent::FontChange};
+        QApplication::sendEvent(label, &fontChange);
+    }
+    for (QAbstractSpinBox *spinBox : widget->findChildren<QAbstractSpinBox *>())
+        spinBox->setMinimumWidth(0);
+    for (QComboBox *comboBox : widget->findChildren<QComboBox *>())
+        comboBox->setMinimumWidth(0);
+
     int controlColumn = 0;
     for (const QWidget *label : labels)
         controlColumn = std::max(controlColumn, (indentOf(label) + label->sizeHint().width()));
     for (QWidget *label : labels)
         label->setMinimumWidth(controlColumn - indentOf(label));
 
-    // Some styles (classic Windows) size these boxes to their text with no room to spare, which clips the text
-    // at some display scales, so they get a little more
+    // Some styles (classic Windows) size these boxes with no spare room, which clips the text at some display scales
     const int textRoom = 2 * widget->fontMetrics().averageCharWidth();
     for (QAbstractSpinBox *spinBox : widget->findChildren<QAbstractSpinBox *>())
     {
@@ -248,9 +262,8 @@ void GroupBoxHeadingStyle::drawComplexControl(const ComplexControl control, cons
 
     if (isHeading(widget))
     {
-        QColor lineColor = box->palette.color(QPalette::WindowText);
-        lineColor.setAlphaF(0.2);
-        painter->fillRect(QRect(box->rect.left(), (labelRect.bottom() + 1 + HEADING_GAP), box->rect.width(), 1), lineColor);
+        // the same line as the outline of every field and list
+        painter->fillRect(QRect(box->rect.left(), (labelRect.bottom() + 1 + HEADING_GAP), box->rect.width(), 1), OutlineColor::get(box->palette));
     }
 }
 

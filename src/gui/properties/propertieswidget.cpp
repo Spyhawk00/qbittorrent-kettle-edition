@@ -74,9 +74,7 @@ PropertiesWidget::PropertiesWidget(QWidget *parent)
     m_ui->setupUi(this);
     // sections are headings with a line under them, as in Options
     GroupBoxHeadingStyle::apply(this);
-#ifndef Q_OS_MACOS
-    setAutoFillBackground(true);
-#endif
+    // (no fill of its own: filled with the window color it was a grey band around the buttons, on the lighter page of the tab)
 
     m_state = VISIBLE;
 
@@ -132,7 +130,7 @@ PropertiesWidget::PropertiesWidget(QWidget *parent)
     m_ui->vBoxLayoutPeerPage->addWidget(m_peerList);
     // Tab bar
     m_tabBar = new PropTabBar(nullptr);
-    m_tabBar->setContentsMargins(0, 5, 0, 5);
+    m_tabBar->setContentsMargins(0, 8, 0, 0);
     m_ui->verticalLayout->addLayout(m_tabBar);
     connect(m_tabBar, &PropTabBar::tabChanged, m_ui->stackedProperties, &QStackedWidget::setCurrentIndex);
     connect(m_tabBar, &PropTabBar::tabChanged, this, &PropertiesWidget::saveSettings);

@@ -51,7 +51,10 @@ public:
     void setDownloadTrackerFavicon(bool value);
 
 private:
+    void changeEvent(QEvent *event) override;
+
     TransferListWidget *m_transferList = nullptr;
+    QWidget *m_mainWidget = nullptr;
     TrackersFilterWidget *m_trackersFilterWidget = nullptr;
     bool m_useSeparateTrackerStatusFilter = false;
 };

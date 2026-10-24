@@ -34,36 +34,19 @@
 #include <QApplication>
 #include <QEvent>
 #include <QHeaderView>
-#include <QProxyStyle>
 #include <QScrollBar>
 #include <QSignalBlocker>
+#include <QStandardItemModel>
 #include <QTimer>
 #include <QTreeView>
+
+#include "appstyleproxy.h"
 
 namespace
 {
     // delay before fitting after rows were added or the list was scrolled, and after only their data changed
     const int FIT_DELAY = 300;
     const int REFIT_DELAY = 2000;
-
-    // The style of the application, with every item of a list a bit taller
-    class RoomyRowStyle final : public QProxyStyle
-    {
-    public:
-        explicit RoomyRowStyle(QObject *parent)
-            : QProxyStyle(QApplication::style()->name())
-        {
-            setParent(parent);
-        }
-
-        QSize sizeFromContents(const ContentsType type, const QStyleOption *option, const QSize &size, const QWidget *widget) const override
-        {
-            QSize result = QProxyStyle::sizeFromContents(type, option, size, widget);
-            if ((type == CT_ItemViewItem) && widget)
-                result.rheight() += qRound(widget->fontMetrics().height() * 0.2);
-            return result;
-        }
-    };
 }
 
 ListViewLayout::ListViewLayout(QTreeView *view, const int stretchColumn)
@@ -75,7 +58,8 @@ ListViewLayout::ListViewLayout(QTreeView *view, const int stretchColumn)
     Q_ASSERT(m_view);
     Q_ASSERT(m_view->model());
 
-    m_view->setStyle(new RoomyRowStyle(m_view));
+    m_view->setStyle(new ItemViewSpacingStyle(m_view));
+    m_view->header()->setStyle(new ItemViewSpacingStyle(m_view->header()));
 
     m_timer->setSingleShot(true);
     connect(m_timer, &QTimer::timeout, this, &ListViewLayout::fitColumns);
@@ -104,6 +88,17 @@ ListViewLayout::ListViewLayout(QTreeView *view, const int stretchColumn)
     // a list on a tab that was not shown cannot be measured yet, and the stretch column follows the size of the list
     m_view->installEventFilter(this);
     m_view->viewport()->installEventFilter(this);
+}
+
+int ListViewLayout::headerHeight(QWidget *parent)
+{
+    // measured like the header of a list that has this layout
+    const QStandardItemModel model {0, 1};
+    QHeaderView header {Qt::Horizontal, parent};
+    header.setModel(const_cast<QStandardItemModel *>(&model));
+    header.setStyle(new ItemViewSpacingStyle(&header));
+    header.ensurePolished();
+    return header.sizeHint().height();
 }
 
 bool ListViewLayout::eventFilter(QObject *watched, QEvent *event)
@@ -136,8 +131,7 @@ void ListViewLayout::fitColumns()
     if (!m_view->isVisible())
         return;
 
-    // the first fit with rows sets every width, later ones grow a column, or shrink one that is far too wide (after a long
-    // text is gone). Without rows only the headers are fitted
+    // The first fit with rows sets every width; later ones grow a column or shrink one far too wide. Without rows only headers are fitted
     const bool hasRows = m_view->model()->rowCount() > 0;
     const bool shrink = hasRows && !m_fitted;
     if (hasRows)

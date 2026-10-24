@@ -52,7 +52,6 @@
 #include <QPainter>
 #include <QPen>
 #include <QProcess>
-#include <QProxyStyle>
 #include <QPushButton>
 #include <QShortcut>
 #include <QSplitter>
@@ -282,11 +281,13 @@ MainWindow::MainWindow(IGUIApplication *app, const WindowState initialState, con
     connect(m_tabs.data(), &QTabWidget::currentChanged, this, &MainWindow::tabChanged);
 
     m_splitter = new QSplitter(Qt::Horizontal, this);
+    // 8 px between the panes, as inside the frame of the tab
+    m_splitter->setHandleWidth(8);
 
     auto *hSplitter = new QSplitter(Qt::Vertical, this);
     hSplitter->setChildrenCollapsible(false);
     hSplitter->setFrameShape(QFrame::NoFrame);
-    hSplitter->setContentsMargins(0, 4, 0, 0); // space above the column headers, as on the Search tab
+    hSplitter->setHandleWidth(8);
 
     // Torrent filter
     auto *columnFilterSpacer = new QWidget;
@@ -301,20 +302,20 @@ MainWindow::MainWindow(IGUIApplication *app, const WindowState initialState, con
 
     m_columnFilterComboBox = new QComboBox;
 #ifdef Q_OS_WIN
-    // same square look and height as the controls on the Search tab
-    if (qApp->style()->name() == u"windows11"_s)
+    // same height as the controls on the Search tab (UIThemeManager gives them the square look while they are polished)
+    const auto fitFilterHeight = [this]
     {
-        static auto *squareStyle = new QProxyStyle(u"fusion"_s);
-        m_columnFilterComboBox->setStyle(squareStyle);
-    }
-    QPushButton heightReference(tr("Search"));
-    heightReference.ensurePolished();
-    m_columnFilterComboBox->ensurePolished();
-    m_columnFilterEdit->ensurePolished();
-    const int filterHeight = std::max({heightReference.sizeHint().height(), m_columnFilterComboBox->sizeHint().height()
-            , m_columnFilterEdit->sizeHint().height()});
-    m_columnFilterEdit->setFixedHeight(filterHeight);
-    m_columnFilterComboBox->setFixedHeight(filterHeight);
+        QPushButton heightReference(tr("Search"));
+        heightReference.ensurePolished();
+        m_columnFilterComboBox->ensurePolished();
+        m_columnFilterEdit->ensurePolished();
+        const int filterHeight = std::max({heightReference.sizeHint().height(), m_columnFilterComboBox->sizeHint().height()
+                , m_columnFilterEdit->sizeHint().height()});
+        m_columnFilterEdit->setFixedHeight(filterHeight);
+        m_columnFilterComboBox->setFixedHeight(filterHeight);
+    };
+    fitFilterHeight();
+    connect(UIThemeManager::instance(), &UIThemeManager::styleChanged, this, fitFilterHeight);
 #endif
     QHBoxLayout *columnFilterLayout = new QHBoxLayout;
     columnFilterLayout->setContentsMargins(0, 0, 0, 0);

@@ -90,8 +90,7 @@ namespace Access
 
     double now();
 
-    // WebUI user accounts, roles, their sessions and the activity log (webui_access.db in the profile's data
-    // folder). Settings live in Preferences, like the rest of the WebUI's.
+    // WebUI user accounts, roles, sessions and the activity log (webui_access.db in the data folder).
     class AccessStore final : public QObject
     {
         Q_OBJECT
@@ -106,8 +105,7 @@ namespace Access
         Path databasePath() const;
         bool hasUsers() const;
 
-        // When a personal session stops being valid: a fixed time after sign-in, or after the WebUI session
-        // timeout without use when "keep signed in" is off.
+        // A session ends a fixed time after sign-in, or after the WebUI timeout without use if "keep signed in" is off.
         static double sessionExpiry(double createdAt, double lastSeenAt);
 
         // roles
@@ -138,10 +136,10 @@ namespace Access
         void deleteUserSessions(qint64 userId, const QString &exceptSessionId = {});
         QJsonArray listSessions(const QString &currentSessionId) const;
 
-        // failed logins (per account and address, so a stranger can't lock the owner out; the WebUI also bans addresses)
+        // failed logins (per account and address, so a stranger can't lock the owner out)
         void recordLoginFailure(const QString &ip, const QString &username);
         void clearLoginFailures(const QString &username);
-        // with an address, only failures from that address count; without one, all failures of the account
+        // with an address, only that address's failures count; without one, all of the account's
         int lockoutRemaining(const QString &username, const QString &ip = {}) const;
 
         // WebUI display preferences of one user (see ClientDataStorage); none until they save some

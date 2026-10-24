@@ -42,11 +42,10 @@ namespace Net
     struct DownloadResult;
 }
 
-// Downloads the files of a Kettle Edition release that differ from the installed ones and checks each one
-// against the SHA-256 in the (already signature-checked) release info. Once they are all there, the update is
-// installed by kettle-update-helper.exe: at 4:00 AM, or when qBittorrent starts and an update is already waiting.
-// Never when the user quits. The helper replaces the files after qBittorrent has exited, and puts the old version
-// back if the new one does not run properly.
+// Downloads the files of a Kettle Edition release that differ from the installed ones, checking each against the
+// SHA-256 in the signature-checked release info. When all are there, kettle-update-helper.exe installs them
+// at 4:00 AM, or at start if an update is waiting, never when the user quits. It replaces the files after
+// qBittorrent exits and restores the old version if the new one doesn't run properly.
 class UpdateInstaller final : public QObject
 {
     Q_OBJECT

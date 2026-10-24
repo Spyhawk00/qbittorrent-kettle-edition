@@ -130,9 +130,8 @@ namespace
         return value;
     }
 
-    // Private trackers and feeds put a personal key in the address ("announce?passkey=...", "/rss/<token>"), and the
-    // log can be read by other people and exported. Only the site of an address is kept; a magnet link keeps just
-    // its info hash and name.
+    // Private trackers and feeds put a personal key in the address, and others can read and export the log.
+    // Keep only the site; for magnet links keep just the info hash and name.
     QString redactUrl(const QString &address)
     {
         if (address.startsWith(u"magnet:", Qt::CaseInsensitive))

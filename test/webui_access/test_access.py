@@ -14,6 +14,7 @@ Environment:
 import base64
 import contextlib
 import hashlib
+import html
 import http.client
 import json
 import os
@@ -875,21 +876,64 @@ class OptionsParityTests(unittest.TestCase):
         for name, titles in self.WEBUI_ONLY.items():
             self.assertLessEqual(titles, set(webui[name]), name)
 
-    def test_same_advanced_rows_in_the_same_order(self):
-        source = (SOURCE / "gui/advancedsettings.cpp").read_text(encoding="utf-8")
-        enum = source[source.index("enum AdvSettingsRows"):source.index("ROW_COUNT")]
-        rows = [line.strip().rstrip(",") for line in enum.splitlines()[2:]]
-        rows = [row for row in rows if row and not row.startswith(("#", "//")) and not row.endswith("_HEADER")]
+    @staticmethod
+    def normal_advanced_label(text):
+        text = text.replace("%1", "μTP").replace("µ", "μ").replace("(?)", "")
+        text = text.replace(" (require macOS or Windows)", "")  # the WebUI doesn't know the server's system
+        return " ".join(text.split()).rstrip(":").strip().lower()
+
+    def desktop_advanced_labels(self, source):
         labels = dict(re.findall(r'addRow\((\w+),\s*\(?tr\("((?:[^"\\]|\\.)*)"', source))
         labels["ENABLE_MARK_OF_THE_WEB"] = re.search(r'motwLabel = tr\("(Enable Mark-of-the-Web[^"]*)"', source)[1]
+        return {row: self.normal_advanced_label(label) for (row, label) in labels.items()}
 
-        def normal(text):
-            text = text.replace("%1", "μTP").replace("µ", "μ").replace("(?)", "")
-            text = text.replace(" (require macOS or Windows)", "")  # the WebUI doesn't know the server's system
-            return " ".join(text.split()).rstrip(":").strip().lower()
+    def test_same_advanced_rows(self):
+        source = (SOURCE / "gui/advancedsettings.cpp").read_text(encoding="utf-8")
+        enum = source[source.index("enum AdvSettingsRows"):]
+        enum = enum[:enum.index("};")]
+        rows = [line.strip().rstrip(",") for line in enum.splitlines()[2:]]
+        rows = [row for row in rows if row and not row.startswith(("#", "//"))]
+        labels = self.desktop_advanced_labels(source)
 
-        desktop = [normal(labels[row]) for row in rows if row not in self.DESKTOP_ONLY_ADVANCED_ROWS]
-        self.assertEqual(desktop, [normal(row) for row in self.webui.advanced_rows])
+        # the rows are shown in sections, so the order is compared there (see below)
+        desktop = sorted(labels[row] for row in rows if row not in self.DESKTOP_ONLY_ADVANCED_ROWS)
+        self.assertEqual(desktop, sorted(self.normal_advanced_label(row) for row in self.webui.advanced_rows))
+
+    def test_same_advanced_tabs_and_sections(self):
+        """Advanced is tabs of sections on both sides, with the same rows in the same order."""
+        source = (SOURCE / "gui/advancedsettings.cpp").read_text(encoding="utf-8")
+        labels = self.desktop_advanced_labels(source)
+        body = source[source.index("const QList<Tab> tabs ="):source.index("[[maybe_unused]]")]
+        body = "\n".join(line for line in body.splitlines() if not line.strip().startswith("#"))
+        desktop, depth = [], 0
+        for (brace, title, row) in re.findall(r'(\{|\})|tr\("([^"]*)"\)|\b([A-Z][A-Z0-9_]{3,})\b', body):
+            if brace:
+                depth += 1 if (brace == "{") else -1
+            elif title and (depth == 2):
+                desktop.append((title, []))
+            elif title and (depth == 4):
+                desktop[-1][1].append((title, []))
+            elif row and (row not in self.DESKTOP_ONLY_ADVANCED_ROWS):
+                desktop[-1][1][-1][1].append(labels[row])
+
+        # the WebUI builds the tabs from the rows of the page, by the ids of their controls
+        ids = {}
+        advanced = self.html[self.html.index('<div id="AdvancedTab"'):]
+        for (control, label) in re.findall(r'<label for="(\w+)">(.*?)</label>', webui_text(advanced), flags=re.DOTALL):
+            ids[control] = self.normal_advanced_label(html.unescape(re.sub(r"<[^>]+>", " ", label)))
+        script = self.html[self.html.index("const layout = ["):self.html.index("const textBoxes")]
+        webui, depth = [], 0
+        for (bracket, name) in re.findall(r'(\[|\])|"([^"]+)"', script):
+            if bracket:
+                depth += 1 if (bracket == "[") else -1
+            elif depth == 2:
+                webui.append((name, []))
+            elif depth == 4:
+                webui[-1][1].append((name, []))
+            else:
+                webui[-1][1][-1][1].append(ids[name])
+
+        self.assertEqual(desktop, webui)
 
     def test_both_have_the_same_search_box(self):
         texts = {w.get("name"): [p[0].text for p in w.findall("property") if (p.get("name") in ("placeholderText", "text")) and len(p)]
@@ -1110,10 +1154,14 @@ class WebUIPhoneTests(unittest.TestCase):
     def test_the_elements_the_script_looks_up_exist(self):
         index = self.read("index.html")
         present = set(re.findall(r'[ "]id="([\w-]+)"', index))
+        # the RSS tab and the RSS Downloader are views the main window loads
+        for view in ("views/rss.html", "views/rssDownloader.html"):
+            present |= set(re.findall(r'[ "]id="([\w-]+)"', self.read(view)))
         script = self.read("scripts/phone.js")
         # elements the main window builds itself, or the script creates
         built = {"Filters", "transferList", "propertiesPanel", "propertiesPanel_wrapper", "propertiesPanel_header",
-                 "transferList_handle", "pageWrapper", "propertiesSheetBar", "propertiesSheetTitle", "propertiesSheetClose"}
+                 "transferList_handle", "pageWrapper", "propertiesSheetBar", "propertiesSheetTitle", "propertiesSheetClose",
+                 "rssTabColumn"}
         wanted = set(re.findall(r'getElementById\("([\w-]+)"\)', script))
         self.assertEqual(sorted(wanted - present - built), [])
         # every item of the More menu stands for a menu item that exists
@@ -1128,15 +1176,39 @@ class WebUIPhoneTests(unittest.TestCase):
         for name in names:
             self.assertIn(f'this.newColumn("{name}"', table)
 
+    def test_the_phone_log_tables_have_the_columns_they_show(self):
+        table = self.read("scripts/dynamicTable.js")
+        for table_class, column in (("LogMessageTable", "message"), ("LogPeerTable", "ip"), ("WebUIActivityTable", "summary")):
+            body = table[table.index(f"class {table_class} "):]
+            self.assertRegex(body[:body.index("initColumns")], rf"phoneColumns = \{{ {column}: ")
+            self.assertIn(f'this.newColumn("{column}"', body)
+            self.assertIn(f'this.columns["{column}"].updateTd', body)
+
+    def test_the_menu_sheets_use_the_names_the_style_sheet_has(self):
+        script = self.read("scripts/phone.js")
+        css = self.read("css/Phone.css")
+        for name in ("drilled", "navMenuOpen", "data-title"):
+            self.assertIn(name, css, name)
+        self.assertIn('classList.add("drilled")', script)
+        self.assertIn('classList.toggle("navMenuOpen"', script)
+        self.assertIn("dataset.title", script)
+        self.assertIn('li.open', css)
+        self.assertIn('classList.add("open")', script)
+        # the dimmed window is in the page, hidden until a menu opens
+        self.assertIn('id="menuScrim"', self.read("index.html"))
+        self.assertIn("#menuScrim,", css[:css.index("@media")])
+
     def test_the_back_button_closes_what_is_on_top(self):
         script = self.read("scripts/phone.js")
         self.assertIn("history.pushState", script)
         self.assertIn('addEventListener("popstate"', script)
-        # popups, the sheet and the sidebar each take part
-        self.assertEqual(script.count("openLayer("), 3)
+        # popups, the sheet, the sidebar, the screens of the RSS tab and the RSS Downloader, the menus and their
+        # submenus, and the menu bar each take part
+        self.assertEqual(script.count("openLayer("), 7)
         # Download from URLs opens Add Torrent before it closes; its entry is taken away with the next one,
-        # so adding a torrent from a link doesn't leave a Back press that does nothing
-        self.assertEqual(script.count("dropClosedLayers();"), 2)
+        # so adding a torrent from a link doesn't leave a Back press that does nothing. Layers that close together
+        # (a submenu with its menu, the screens of a view) are taken away with one step back, not one step each
+        self.assertEqual(script.count("dropClosedLayers();"), 3)
         # a reload closes the layers but not their history entries: each entry says how many are under it,
         # and the reloaded page goes back past them
         self.assertIn("{ qbtLayer: layers.length }", script)

@@ -203,7 +203,7 @@ Click the &quot;Search plugins...&quot; button at the top right of the window to
        <property name="bottomMargin"><number>0</number></property>
            <item>
          <widget class="QStackedWidget" name="resultsStack">
-         <widget class="QWidget" name="hintPage">
+         <widget class="QFrame" name="hintPage">
           <layout class="QVBoxLayout" name="verticalLayout_4">
            <item>
             <widget class="QLabel" name="hintLabel">

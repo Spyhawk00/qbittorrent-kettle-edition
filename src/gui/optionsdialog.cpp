@@ -35,6 +35,7 @@
 #include <limits>
 
 #include <QAbstractButton>
+#include <QAbstractSpinBox>
 #include <QApplication>
 #include <QClipboard>
 #include <QDebug>
@@ -49,7 +50,9 @@
 #include <QMessageBox>
 #include <QPainter>
 #include <QScrollArea>
+#include <QScrollBar>
 #include <QShortcut>
+#include <QSlider>
 #include <QStackedWidget>
 #include <QStyleFactory>
 #include <QSystemTrayIcon>
@@ -136,9 +139,22 @@ namespace
         using QObject::QObject;
 
     private:
-        bool eventFilter(QObject *, QEvent *event) override
+        // the wheel does not change the field, it scrolls the page the field is on
+        bool eventFilter(QObject *watched, QEvent *event) override
         {
-            return (event->type() == QEvent::Wheel);
+            if (event->type() != QEvent::Wheel)
+                return false;
+
+            const auto *widget = qobject_cast<QWidget *>(watched);
+            for (QWidget *parent = (widget ? widget->parentWidget() : nullptr); parent; parent = parent->parentWidget())
+            {
+                if (auto *page = qobject_cast<QScrollArea *>(parent))
+                {
+                    QCoreApplication::sendEvent(page->viewport(), event);
+                    break;
+                }
+            }
+            return true;
         }
     };
 
@@ -147,7 +163,8 @@ namespace
     {
     public:
         SearchMark(QWidget *target, const int tab)
-            : QWidget(target)
+            : QWidget(coversBeyond(target) ? target->parentWidget() : target)
+            , m_target {target}
             , m_tab {tab}
         {
             setAttribute(Qt::WA_TransparentForMouseEvents);
@@ -157,9 +174,15 @@ namespace
         }
 
     private:
+        // a plain widget is marked a little wider than itself, so its text does not touch the edge of the tint
+        static bool coversBeyond(const QWidget *target)
+        {
+            return target->parentWidget() && !qobject_cast<const QTabBar *>(target) && !qobject_cast<const QGroupBox *>(target);
+        }
+
         bool eventFilter(QObject *, QEvent *event) override
         {
-            if ((event->type() == QEvent::Resize) || (event->type() == QEvent::LayoutRequest))
+            if ((event->type() == QEvent::Resize) || (event->type() == QEvent::Move) || (event->type() == QEvent::LayoutRequest))
                 place();
             return false;
         }
@@ -174,16 +197,19 @@ namespace
 
         void place()
         {
-            const QWidget *target = parentWidget();
+            const QWidget *target = m_target;
             if (const auto *tabBar = qobject_cast<const QTabBar *>(target); tabBar && (m_tab >= 0))
                 setGeometry(tabBar->tabRect(m_tab));
             else if (const auto *groupBox = qobject_cast<const QGroupBox *>(target))
                 setGeometry(0, 0, groupBox->width(), groupBox->contentsRect().top());
+            else if (coversBeyond(target))
+                setGeometry(target->geometry().adjusted(-4, 0, 4, 0));
             else
                 setGeometry(target->rect());
             raise();
         }
 
+        QWidget *m_target = nullptr;
         int m_tab = -1;
     };
 
@@ -274,7 +300,15 @@ OptionsDialog::OptionsDialog(IGUIApplication *app, QWidget *parent)
     GroupBoxHeadingStyle::apply(this);
     for (QScrollArea *page : asConst(m_ui->tabOption->findChildren<QScrollArea *>()))
     {
+        // every page sits in a thin box, with 8 px between its line and the settings, like the pages of Advanced
+        page->setProperty("outlined", u"window"_s);
+        page->widget()->layout()->setContentsMargins(8, 8, 8, 8);
         page->widget()->layout()->setSpacing(fontMetrics().height());
+
+        // the spring at the end of a page takes up no room of its own, so nothing is left blank under the last section
+        QLayout *pageLayout = page->widget()->layout();
+        if (QSpacerItem *spring = pageLayout->itemAt(pageLayout->count() - 1)->spacerItem())
+            spring->changeSize(0, 0, QSizePolicy::Minimum, QSizePolicy::Expanding);
         page->setHorizontalScrollBarPolicy(Qt::ScrollBarAlwaysOff);
     }
 
@@ -337,19 +371,32 @@ OptionsDialog::OptionsDialog(IGUIApplication *app, QWidget *parent)
             m_applyButton->setEnabled(false);
     });
 
-    // disable mouse wheel event on widgets to avoid misselection
+    // the wheel scrolls the page: it does not change a field, and it does not give the field the focus either
     auto *wheelEventEater = new WheelEventEater(this);
+    const auto keepWheelOff = [wheelEventEater](QWidget *widget)
+    {
+        widget->installEventFilter(wheelEventEater);
+        widget->setFocusPolicy(Qt::StrongFocus);
+    };
     for (QComboBox *widget : asConst(findChildren<QComboBox *>()))
-        widget->installEventFilter(wheelEventEater);
-    for (QSpinBox *widget : asConst(findChildren<QSpinBox *>()))
-        widget->installEventFilter(wheelEventEater);
+        keepWheelOff(widget);
+    for (QAbstractSpinBox *widget : asConst(findChildren<QAbstractSpinBox *>()))
+        keepWheelOff(widget);
+    for (QSlider *widget : asConst(findChildren<QSlider *>()))
+        keepWheelOff(widget);
 
     // on each page, the controls of "label: control" rows start at the same column
-    for (int i = 0; i < m_ui->tabOption->count(); ++i)
+    const auto alignPages = [this]
     {
-        if (i != TAB_ADVANCED)
-            GroupBoxHeadingStyle::alignRows(m_ui->tabOption->widget(i));
-    }
+        for (int i = 0; i < m_ui->tabOption->count(); ++i)
+        {
+            if (i != TAB_ADVANCED)
+                GroupBoxHeadingStyle::alignRows(m_ui->tabOption->widget(i));
+        }
+        m_advancedSettings->alignRows();
+    };
+    alignPages();
+    connect(UIThemeManager::instance(), &UIThemeManager::styleChanged, this, alignPages);
 
     // search: Ctrl+F goes to the box, Enter to the first match and Esc clears it
     m_ui->labelNoSearchMatch->hide();
@@ -360,6 +407,8 @@ OptionsDialog::OptionsDialog(IGUIApplication *app, QWidget *parent)
         m_ui->searchEdit->setFocus(Qt::ShortcutFocusReason);
         m_ui->searchEdit->selectAll();
     });
+    // the page list has the focus when the dialog opens, so the box shows its idle look until it is used
+    m_ui->tabSelection->setFocus();
 
     m_ui->tabSelection->setCurrentRow(std::clamp<int>(m_storeLastViewedPage, 0, (m_ui->tabSelection->count() - 1)));
     m_ui->labelPageTitle->setText(m_ui->tabSelection->currentItem()->text());
@@ -620,6 +669,7 @@ void OptionsDialog::saveBehaviorTabOptions() const
     }
 
     pref->setStyle(m_ui->comboStyle->currentData().toString());
+    UIThemeManager::instance()->updateStyle();
 
 #ifdef QBT_HAS_COLORSCHEME_OPTION
     UIThemeManager::instance()->setColorScheme(m_ui->comboColorScheme->currentData().value<ColorScheme>());
@@ -1828,15 +1878,12 @@ bool OptionsDialog::eventFilter(QObject *watched, QEvent *event)
     return QDialog::eventFilter(watched, event);
 }
 
-// The texts people search for on every page but Advanced (which filters its own rows): labels, check boxes,
+// The texts people search for on every page: labels, check boxes,
 // buttons, section titles, the choices of drop-down boxes and the names of tabs
 void OptionsDialog::buildSearchIndex()
 {
     for (int page = 0; page < m_ui->tabOption->count(); ++page)
     {
-        if (page == TAB_ADVANCED)
-            continue;
-
         QWidget *pageWidget = m_ui->tabOption->widget(page);
         const auto add = [this, page, pageWidget](QWidget *widget, const QString &text, QTabBar *tabBar = nullptr, int tab = -1)
         {
@@ -1907,9 +1954,6 @@ void OptionsDialog::searchSettings(const QString &text)
     for (int page = 0; page < m_ui->tabSelection->count(); ++page)
         pageMatches.append(containsAll(searchText(m_ui->tabSelection->item(page)->text()), m_searchWords));
 
-    const bool advancedRowsMatch = m_advancedSettings->setFilterText(pageMatches[TAB_ADVANCED] ? QString() : text);
-    pageMatches[TAB_ADVANCED] = pageMatches[TAB_ADVANCED] || advancedRowsMatch;
-
     QSet<std::pair<QTabBar *, int>> markedTabs;
     for (const SearchEntry &entry : asConst(m_searchIndex))
     {
@@ -1920,7 +1964,9 @@ void OptionsDialog::searchSettings(const QString &text)
         const bool onTab = (entry.widget == entry.tabBar) || (entry.tabBar && (entry.tabBar->currentIndex() != entry.tab));
         if (!onTab)
         {
-            m_searchMarks.append(new SearchMark(entry.widget, -1));
+            // a section title still counts as a match, but is not tinted
+            if (!qobject_cast<QGroupBox *>(entry.widget))
+                m_searchMarks.append(new SearchMark(entry.widget, -1));
         }
         else if (!markedTabs.contains({entry.tabBar, entry.tab}))
         {
@@ -1960,13 +2006,6 @@ void OptionsDialog::showFirstSearchMatch(const bool giveFocus)
         return;
 
     const int page = m_ui->tabOption->currentIndex();
-    if (page == TAB_ADVANCED)
-    {
-        if (giveFocus)
-            m_advancedSettings->focusFirstRow();
-        return;
-    }
-
     for (const SearchEntry &entry : asConst(m_searchIndex))
     {
         if ((entry.page != page) || !isSearchMatch(entry))
@@ -1974,8 +2013,17 @@ void OptionsDialog::showFirstSearchMatch(const bool giveFocus)
 
         const bool onTab = (entry.widget == entry.tabBar) || (entry.tabBar && (entry.tabBar->currentIndex() != entry.tab));
         QWidget *target = onTab ? entry.tabBar : entry.widget;
-        if (auto *scrollArea = m_ui->tabOption->widget(page)->findChild<QScrollArea *>())
-            scrollArea->ensureWidgetVisible(target);
+        // the page, or the tab of the page, that holds the match scrolls
+        for (QScrollArea *scrollArea : asConst(m_ui->tabOption->widget(page)->findChildren<QScrollArea *>()))
+        {
+            if (scrollArea->isAncestorOf(target))
+            {
+                scrollArea->ensureWidgetVisible(target);
+                // pages only scroll up and down, the left edge of the settings stays in view
+                scrollArea->horizontalScrollBar()->setValue(0);
+                break;
+            }
+        }
         if (giveFocus)
         {
             if (onTab)
@@ -2307,8 +2355,18 @@ void OptionsDialog::initializeStyleCombo()
 
     QStringList styleNames = QStyleFactory::keys();
     std::ranges::sort(styleNames, Utils::Compare::NaturalLessThan<Qt::CaseInsensitive>());
+    const auto displayName = [](const QString &styleName) -> QString
+    {
+        if (styleName.compare(u"windows11", Qt::CaseInsensitive) == 0)
+            return tr("Windows 11");
+        if (styleName.compare(u"windowsvista", Qt::CaseInsensitive) == 0)
+            return tr("Windows Vista");
+        if (styleName.compare(u"windows", Qt::CaseInsensitive) == 0)
+            return tr("Windows Classic");
+        return styleName;
+    };
     for (const QString &styleName : asConst(styleNames))
-        m_ui->comboStyle->addItem(styleName, styleName);
+        m_ui->comboStyle->addItem(displayName(styleName), styleName);
 
     const QString prefStyleName = Preferences::instance()->getStyle();
     const QString selectedStyleName = prefStyleName.isEmpty() ? QApplication::style()->name() : prefStyleName;

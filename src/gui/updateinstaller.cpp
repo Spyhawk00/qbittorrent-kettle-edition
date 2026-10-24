@@ -183,7 +183,7 @@ namespace
                 && (file.write(content) == content.size()) && file.commit();
     }
 
-    // versions that failed to install: they are not offered again, which also stops a failing update from being tried every night
+    // versions that failed to install are not offered again, so a failing update isn't retried every night
     bool isSkipped(const QString &edition)
     {
         return readTextLines(updateRootFolder() / Path(u"skipped.txt"_s)).contains(edition);
@@ -412,9 +412,8 @@ void UpdateInstaller::startHealthyCheck(const QString &statePath)
     m_level = state.value(u"level"_s);
     m_notes = state.value(u"notes"_s);
 
-    // Quitting on purpose before the check is over is no failure; the helper is told so. By the time aboutToQuit
-    // reaches this, the cleanup of the application has already removed this object and the profile, so only the
-    // application and a path worked out now are used.
+    // Quitting before the check ends is no failure; tell the helper. By aboutToQuit this object and the profile are
+    // already gone, so use only the application and a freshly computed path.
     const QString cleanExitPath = (updateRootFolder() / Path(u"clean-exit"_s)).data();
     connect(qApp, &QCoreApplication::aboutToQuit, qApp, [cleanExitPath]()
     {
@@ -425,8 +424,7 @@ void UpdateInstaller::startHealthyCheck(const QString &statePath)
     QTimer::singleShot(secondsSetting("KETTLE_UPDATE_HEALTHY_SECONDS", HEALTHY_SECONDS) * 1000, this, &UpdateInstaller::confirmHealthy);
 }
 
-// Running for a while is not enough: if the WebUI is on, it has to answer too. Otherwise "healthy" is not reported, and
-// the helper undoes the update when its time is up.
+// The WebUI, if on, must answer too. Otherwise "healthy" is not reported and the helper undoes the update.
 void UpdateInstaller::confirmHealthy()
 {
     const auto *pref = Preferences::instance();
@@ -492,8 +490,8 @@ QString UpdateInstaller::currentWindowState() const
     return window->isMinimized() ? u"minimized"_s : u"normal"_s;
 }
 
-// The next 4:00 AM, worked out from the clock each time, so that sleep and clock changes don't matter.
-// Inside the two hours after 4:00 the install follows in a few seconds.
+// The next 4:00 AM, computed from the clock each time so sleep and clock changes don't matter.
+// Within two hours after 4:00, the install follows in seconds.
 void UpdateInstaller::scheduleInstall()
 {
     if (!m_installTimer)
@@ -650,7 +648,7 @@ void UpdateInstaller::handleFileDownloaded(const Net::DownloadResult &result)
         return;
     }
 
-    // Everything is checked in memory first, so a file that is not what the signed release info lists never reaches the disk
+    // Check everything in memory first, so a file that doesn't match the signed release info never reaches the disk
     if (result.data.size() != file.size)
     {
         fail(tr("\"%1\" does not have the expected size.").arg(file.name));

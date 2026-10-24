@@ -84,6 +84,10 @@ window.qBittorrent.DynamicTable ??= (() => {
         // fits the columns to their contents, and gives the rows and cells a little more room
         autoFitColumns = false;
 
+        // a touch selects the row at once; a table whose rows must not be selected by a finger that scrolls the list
+        // selects them on a tap, or on a long press for the menu
+        selectOnTouchStart = true;
+
         setup(dynamicTableDivId, dynamicTableFixedHeaderDivId, contextMenu) {
             this.dynamicTableDivId = dynamicTableDivId;
             this.dynamicTableFixedHeaderDivId = dynamicTableFixedHeaderDivId;
@@ -98,7 +102,7 @@ window.qBittorrent.DynamicTable ??= (() => {
             this.fixedTableHeaderColgroup = document.createElement("colgroup");
             this.fixedTableHeader.closest("table").prepend(this.fixedTableHeaderColgroup);
             this.tableBody = this.table.querySelector("tbody");
-            this.rowHeight = (clientData.get("display_density") === "compact") ? 22 : 26;
+            this.rowHeight = (clientData.get("display_density") === "compact") ? 22 : 22;
             this.rows = new Map();
             this.cachedElements = [];
             this.selectedRows = [];
@@ -112,7 +116,7 @@ window.qBittorrent.DynamicTable ??= (() => {
             this.phoneLayout = (this.phoneColumns !== undefined) && window.qBittorrent.Misc.isPhoneLayout();
             this.autoFit = this.autoFitColumns && !this.phoneLayout;
             if (this.autoFit && (clientData.get("display_density") !== "compact"))
-                this.rowHeight = 25;
+                this.rowHeight = 22;
             this.initColumns();
             this.loadColumnsOrder();
             this.updateTableHeaders();
@@ -201,14 +205,36 @@ window.qBittorrent.DynamicTable ??= (() => {
 
             this.dynamicTableDiv.addEventListener("touchstart", (e) => {
                 const tr = e.target.closest("tr");
-                if (!tr)
+                if (!tr || (tr.rowId === undefined)) // not the header
                     return;
 
-                if (!this.isRowSelected(tr.rowId)) {
-                    this.deselectAll();
-                    this.selectRow(tr.rowId);
+                const selectTouchedRow = () => {
+                    if (!this.isRowSelected(tr.rowId)) {
+                        this.deselectAll();
+                        this.selectRow(tr.rowId);
+                    }
+                };
+                if (this.selectOnTouchStart) {
+                    selectTouchedRow();
+                    return;
                 }
+
+                // the menu opens when the touch ends after 600 ms (contextmenu.js), so the row is selected before that
+                clearTimeout(this.touchSelectTimer);
+                const touch = e.changedTouches[0];
+                this.touchSelectStart = { x: touch.pageX, y: touch.pageY };
+                this.touchSelectTimer = setTimeout(selectTouchedRow, 500);
             }, { passive: true });
+
+            // a finger that moves is scrolling, and one that lifts has tapped (the click selects) or has ended the long press
+            this.dynamicTableDiv.addEventListener("touchmove", (e) => {
+                const start = this.touchSelectStart;
+                const touch = e.changedTouches[0];
+                if ((start !== undefined) && ((Math.abs(touch.pageX - start.x) > 10) || (Math.abs(touch.pageY - start.y) > 10)))
+                    clearTimeout(this.touchSelectTimer);
+            }, { passive: true });
+            for (const type of ["touchend", "touchcancel"])
+                this.dynamicTableDiv.addEventListener(type, (e) => { clearTimeout(this.touchSelectTimer); }, { passive: true });
 
             this.dynamicTableDiv.addEventListener("keydown", (e) => {
                 const tr = e.target.closest("tr");
@@ -337,14 +363,16 @@ window.qBittorrent.DynamicTable ??= (() => {
             }.bind(this);
 
             const onComplete = function(el, event) {
-                resetElementBorderStyle(this.lastHoverTh);
+                // there is no hovered header after a drag that began on a touch screen
+                if (this.lastHoverTh !== undefined)
+                    resetElementBorderStyle(this.lastHoverTh);
                 el.style.backgroundColor = "";
                 if (this.currentHeaderAction === "resize") {
                     // a column that was resized by hand keeps its width
                     this.columns[this.resizeTh.columnName].userSized = true;
                     this.saveColumnWidth(this.resizeTh.columnName);
                 }
-                if ((this.currentHeaderAction === "drag") && (el !== this.lastHoverTh)) {
+                if ((this.currentHeaderAction === "drag") && (this.lastHoverTh !== undefined) && (el !== this.lastHoverTh)) {
                     this.saveColumnsOrder();
                     const val = localPreferences.get(`columns_order_${this.dynamicTableDivId}`).split(",");
                     val.erase(el.columnName);
@@ -384,12 +412,6 @@ window.qBittorrent.DynamicTable ??= (() => {
                     this.setSortedColumn(el.columnName);
             }.bind(this);
 
-            const onTouch = function(e) {
-                const column = e.target.columnName;
-                this.currentHeaderAction = "";
-                this.setSortedColumn(column);
-            }.bind(this);
-
             const onDoubleClick = function(e) {
                 e.preventDefault();
                 this.currentHeaderAction = "";
@@ -405,7 +427,8 @@ window.qBittorrent.DynamicTable ??= (() => {
             for (const th of this.getRowCells(this.fixedTableHeader)) {
                 th.addEventListener("mousemove", (event) => mouseMoveFn(event));
                 th.addEventListener("mouseout", (event) => mouseOutFn(event));
-                th.addEventListener("touchend", ((event) => onTouch(event)), { passive: true });
+                // a tap sorts when the drag handler below is cancelled; this stops the browser's mouse events after it from sorting again
+                th.addEventListener("touchend", (event) => { event.preventDefault(); }, { passive: false });
                 th.addEventListener("dblclick", (event) => onDoubleClick(event));
                 th.makeResizable({
                     modifiers: {
@@ -691,9 +714,10 @@ window.qBittorrent.DynamicTable ??= (() => {
 
         initColumns() {}
 
-        // Text (names, paths, hashes) is aligned to the left, everything else is centered.
-        // A table names its text columns, so that all of its columns are covered, also those that are hidden by default.
-        alignColumns(textColumns) {
+        // Text (names, paths, hashes) is aligned to the left, bars and check boxes are centered, numbers, sizes, speeds and
+        // dates are aligned to the right, as in the desktop application.
+        // A table names its text and centered columns, so that all of its columns are covered, also those that are hidden by default.
+        alignColumns(textColumns, centerColumns = []) {
             // the phone layout has columns of its own
             if (this.phoneLayout)
                 return;
@@ -701,8 +725,9 @@ window.qBittorrent.DynamicTable ??= (() => {
             for (const column of this.columns) {
                 if (textColumns.includes(column.name))
                     continue;
-                column.align = "center";
-                column.style += "text-align: center;";
+                const align = centerColumns.includes(column.name) ? "center" : "right";
+                column.align = align;
+                column.style += `text-align: ${align};`;
             }
         }
 
@@ -1337,7 +1362,7 @@ window.qBittorrent.DynamicTable ??= (() => {
 
         setupVirtualList() {
             super.setupVirtualList();
-            this.rowHeight = this.phoneLayout ? 40 : ((clientData.get("display_density") === "compact") ? 18 : 25);
+            this.rowHeight = this.phoneLayout ? 40 : ((clientData.get("display_density") === "compact") ? 18 : 22);
         }
 
         initColumns() {
@@ -1381,7 +1406,7 @@ window.qBittorrent.DynamicTable ??= (() => {
             this.newColumn("reannounce", "", "QBT_TR(Reannounce In)QBT_TR[CONTEXT=TransferListModel]", 100, false);
             this.newColumn("private", "", "QBT_TR(Private)QBT_TR[CONTEXT=TransferListModel]", 100, false);
 
-            this.alignColumns(["name", "category", "tags", "tracker", "save_path", "download_path", "infohash_v1", "infohash_v2"]);
+            this.alignColumns(["name", "category", "tags", "tracker", "save_path", "download_path", "infohash_v1", "infohash_v2", "status", "private"], ["progress", "state_icon"]);
             this.columns["name"].stretch = true;
 
             this.columns["state_icon"].dataProperties[0] = "state";
@@ -2064,7 +2089,7 @@ window.qBittorrent.DynamicTable ??= (() => {
             this.newColumn("contribution", "", "QBT_TR(Contribution)QBT_TR[CONTEXT=PeerListWidget]", 30, true);
             this.newColumn("files", "", "QBT_TR(Files)QBT_TR[CONTEXT=PeerListWidget]", 100, true);
 
-            this.alignColumns(["country", "ip", "client", "peer_id_client", "files"]);
+            this.alignColumns(["country", "ip", "connection", "flags", "client", "peer_id_client", "files"], ["progress"]);
 
             this.columns["country"].dataProperties.push("country_code");
             this.columns["ip"].dataProperties.push("host_name");
@@ -2163,6 +2188,9 @@ window.qBittorrent.DynamicTable ??= (() => {
     class SearchResultsTable extends DynamicTable {
         autoFitColumns = true;
         phoneColumns = { fileName: Math.max(90, window.innerWidth - 210), fileSize: 90, nbSeeders: 70 };
+
+        // the search results of the desktop application have no alternating row colors
+        setupAltRow() {}
 
         initColumns() {
             this.newColumn("fileName", "", "QBT_TR(Name)QBT_TR[CONTEXT=SearchResultsTable]", 500, true);
@@ -2376,7 +2404,7 @@ window.qBittorrent.DynamicTable ??= (() => {
             this.newColumn("nextAnnounce", "", "QBT_TR(Next Announce)QBT_TR[CONTEXT=TrackerListWidget]", 150, true);
             this.newColumn("minAnnounce", "", "QBT_TR(Min Announce)QBT_TR[CONTEXT=TrackerListWidget]", 150, true);
 
-            this.alignColumns(["url", "message"]);
+            this.alignColumns(["url", "btVersion", "status", "message"]);
             this.columns["url"].stretch = true;
 
             this.initColumnsFunctions();
@@ -2836,7 +2864,7 @@ window.qBittorrent.DynamicTable ??= (() => {
             this.newColumn("remaining", "", "QBT_TR(Remaining)QBT_TR[CONTEXT=TrackerListWidget]", 75, true);
             this.newColumn("availability", "", "QBT_TR(Availability)QBT_TR[CONTEXT=TrackerListWidget]", 75, true);
 
-            this.alignColumns(["name"]);
+            this.alignColumns(["name", "priority"], ["checked", "progress"]);
             this.columns["name"].stretch = true;
 
             this.initColumnsFunctions();
@@ -3464,6 +3492,9 @@ window.qBittorrent.DynamicTable ??= (() => {
     }
 
     class RssArticleTable extends DynamicTable {
+        // selecting an article marks it read, so scrolling the list must not select what the finger lands on
+        selectOnTouchStart = false;
+
         initColumns() {
             this.newColumn("name", "", "QBT_TR(Torrents: (double-click to download))QBT_TR[CONTEXT=RSSWidget]", -1, true);
 
@@ -3639,7 +3670,23 @@ window.qBittorrent.DynamicTable ??= (() => {
         }
     }
 
+    // On a phone the log tables have one column: each row is its details in small type over its text, two lines at most
+    const PHONE_LOG_ROW_HEIGHT = 56;
+    const phoneLogColumnWidth = () => Math.max(100, window.innerWidth - 16);
+
+    const updatePhoneLogTd = (td, details, text) => {
+        const detailsDiv = document.createElement("div");
+        detailsDiv.className = "logCardDetails";
+        detailsDiv.textContent = details;
+        const textDiv = document.createElement("div");
+        textDiv.className = "logCardText";
+        textDiv.textContent = text;
+        td.replaceChildren(detailsDiv, textDiv);
+        td.title = text;
+    };
+
     class LogMessageTable extends DynamicTable {
+        phoneColumns = { message: phoneLogColumnWidth() };
         filterText = "";
 
         initColumns() {
@@ -3648,6 +3695,14 @@ window.qBittorrent.DynamicTable ??= (() => {
             this.newColumn("timestamp", "", "QBT_TR(Timestamp)QBT_TR[CONTEXT=ExecutionLogWidget]", 150, true);
             this.newColumn("type", "", "QBT_TR(Log Type)QBT_TR[CONTEXT=ExecutionLogWidget]", 100, true);
             this.initColumnsFunctions();
+
+            if (this.phoneLayout) {
+                this.rowHeight = PHONE_LOG_ROW_HEIGHT;
+                this.columns["message"].dataProperties = ["message", "timestamp"];
+                this.columns["message"].updateTd = function(td, row) {
+                    updatePhoneLogTd(td, toDateString(row.full_data.timestamp), row.full_data.message);
+                };
+            }
         }
 
         initColumnsFunctions() {
@@ -3717,6 +3772,8 @@ window.qBittorrent.DynamicTable ??= (() => {
     }
 
     class LogPeerTable extends LogMessageTable {
+        phoneColumns = { ip: phoneLogColumnWidth() };
+
         initColumns() {
             this.newColumn("rowId", "", "QBT_TR(ID)QBT_TR[CONTEXT=ExecutionLogWidget]", 50, true);
             this.newColumn("ip", "", "QBT_TR(IP)QBT_TR[CONTEXT=ExecutionLogWidget]", 150, true);
@@ -3744,6 +3801,16 @@ window.qBittorrent.DynamicTable ??= (() => {
                 td.title = status;
                 td.closest("tr").classList.add(`logTableRow${addClass}`);
             };
+
+            if (this.phoneLayout) {
+                this.rowHeight = PHONE_LOG_ROW_HEIGHT;
+                this.columns["ip"].dataProperties = ["ip", "timestamp", "blocked", "reason"];
+                this.columns["ip"].updateTd = function(td, row) {
+                    const data = row.full_data;
+                    const status = data.blocked ? "QBT_TR(Blocked)QBT_TR[CONTEXT=ExecutionLogWidget]" : "QBT_TR(Banned)QBT_TR[CONTEXT=ExecutionLogWidget]";
+                    updatePhoneLogTd(td, `${status} - ${toDateString(data.timestamp)}`, (data.reason ? `${data.ip} - ${data.reason}` : data.ip));
+                };
+            }
         }
 
         getFilteredAndSortedRows() {
@@ -3763,6 +3830,8 @@ window.qBittorrent.DynamicTable ??= (() => {
             }
 
             filteredRows.sort(this.rowComparator());
+
+            this.filteredLength = filteredRows.length;
 
             return filteredRows;
         }
@@ -3791,7 +3860,7 @@ window.qBittorrent.DynamicTable ??= (() => {
     }
 
     class WebUIActivityTable extends NumericIdTable {
-        phoneColumns = { ts: 135, username: 60, summary: Math.max(60, window.innerWidth - 285), outcome: 50 };
+        phoneColumns = { summary: phoneLogColumnWidth() };
 
         initColumns() {
             this.newColumn("ts", "", "QBT_TR(Time)QBT_TR[CONTEXT=WebUIActivity]", 175, true);
@@ -3819,6 +3888,17 @@ window.qBittorrent.DynamicTable ??= (() => {
                 tr.classList.toggle("logTableRowactivityFailed", (outcome === "failed"));
                 tr.classList.toggle("logTableRowactivityDenied", (outcome === "denied"));
             };
+
+            if (this.phoneLayout) {
+                this.rowHeight = PHONE_LOG_ROW_HEIGHT;
+                this.columns["summary"].dataProperties = ["summary", "ts", "username", "outcome"];
+                this.columns["summary"].updateTd = function(td, row) {
+                    const data = row.full_data;
+                    const outcome = window.qBittorrent.Log.activityOutcomeName(data.outcome);
+                    const date = (data.ts > 0) ? window.qBittorrent.Misc.formatDate(new Date(data.ts * 1000)) : "";
+                    updatePhoneLogTd(td, [date, data.username, outcome].filter(part => part).join(" - "), data.summary);
+                };
+            }
         }
     }
 

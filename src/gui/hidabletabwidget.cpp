@@ -32,22 +32,34 @@
 #include <QImage>
 #include <QPaintEvent>
 #include <QPainter>
-#include <QProxyStyle>
 #include <QStyle>
 #include <QStyleOption>
 #include <QTabBar>
 
+#include "appstyleproxy.h"
+
 namespace
 {
-    // The style of the application, with a thin outline around every tab
-    class RoomyTabStyle final : public QProxyStyle
+    // The style of the application, with 8 px between the line around the page and what is on it, the same on every side
+    class RoomyPageStyle final : public AppStyleProxy
     {
     public:
-        explicit RoomyTabStyle(QObject *parent)
-            : QProxyStyle(QApplication::style()->name())
+        using AppStyleProxy::AppStyleProxy;
+
+        QRect subElementRect(const SubElement element, const QStyleOption *option, const QWidget *widget) const override
         {
-            setParent(parent);
+            const QRect rect = QProxyStyle::subElementRect(element, option, widget);
+            if (element != SE_TabWidgetTabContents)
+                return rect;
+            return QProxyStyle::subElementRect(SE_TabWidgetTabPane, option, widget).adjusted(9, 10, -9, -9);
         }
+    };
+
+    // The style of the application, with a thin outline around every tab
+    class RoomyTabStyle final : public AppStyleProxy
+    {
+    public:
+        using AppStyleProxy::AppStyleProxy;
 
         // the page as the style paints it when empty
         QImage paintedPage(const QPalette &palette, const QTabBar::Shape shape, const QWidget *widget) const
@@ -72,6 +84,10 @@ namespace
         // the color the style paints the page with
         QColor pageFillColor(const QPalette &palette, const QTabBar::Shape shape, const QWidget *widget) const
         {
+            // a tab widget can ask for the color of the window, like the pages beside it
+            if (widget && ((widget->property("flatPage").toBool()) || (widget->parentWidget() && widget->parentWidget()->property("flatPage").toBool())))
+                return palette.color(QPalette::Window);
+
             const QColor color = paintedPage(palette, shape, widget).pixelColor(32, 32);
             return ((color.alpha() == 255) ? color : palette.color(QPalette::Window));
         }
@@ -81,6 +97,15 @@ namespace
         {
             const QColor textColor = palette.color(QPalette::WindowText);
             return {((pageColor.red() * 78 + textColor.red() * 22) / 100), ((pageColor.green() * 78 + textColor.green() * 22) / 100), ((pageColor.blue() * 78 + textColor.blue() * 22) / 100)};
+        }
+
+        // as tall as the column headers of the lists
+        QSize sizeFromContents(const ContentsType type, const QStyleOption *option, const QSize &size, const QWidget *widget) const override
+        {
+            QSize result = QProxyStyle::sizeFromContents(type, option, size, widget);
+            if ((type == CT_TabBarTab) && widget)
+                result.setHeight(ItemViewSpacing::headerHeight(widget));
+            return result;
         }
 
         void drawControl(const ControlElement element, const QStyleOption *option, QPainter *painter, const QWidget *widget) const override
@@ -165,6 +190,7 @@ HidableTabWidget::HidableTabWidget(QWidget *parent)
 {
     // Make the tabs easier to see with a thin outline
     tabBar()->setStyle(new RoomyTabStyle(tabBar()));
+    setStyle(new RoomyPageStyle(this));
 
     // Skip single tab in keyboard navigation (no point navigating to it)
     tabBar()->setFocusPolicy(Qt::NoFocus);

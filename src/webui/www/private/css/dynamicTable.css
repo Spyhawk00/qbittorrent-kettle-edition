@@ -4,12 +4,12 @@
     v 0.4
 
 **************************************************************/
-.altRowColors tbody tr:nth-child(odd of :not(.invisible)) {
+.altRowColors tbody tr:nth-child(even of :not(.invisible)) {
     background-color: var(--color-background-alt-row);
 }
 
 #transferList .dynamicTable td {
-    padding: 2px;
+    padding: 2px 8px;
 }
 
 :root.compact .dynamicTable td {
@@ -117,7 +117,7 @@
 .dynamicTable th {
     border-right: 1px solid var(--color-border-default);
     font-weight: normal;
-    padding: 4px 2px;
+    padding: 3px 8px;
     white-space: nowrap;
 }
 
@@ -126,7 +126,7 @@
 }
 
 .dynamicTable td {
-    padding: 4px 2px;
+    padding: 2px 8px;
     white-space: nowrap;
 }
 
@@ -141,8 +141,8 @@
 .dynamicTable.fitColumns th,
 .dynamicTable.fitColumns td,
 #transferList .dynamicTable.fitColumns td {
-    padding-left: 6px;
-    padding-right: 6px;
+    padding-left: 8px;
+    padding-right: 8px;
 }
 
 .dynamicTable.fitColumns td {
@@ -185,7 +185,7 @@ div:has(> div.dynamicTableDiv):not(.invisible) {
 
 #propertiesPanel .dynamicTableFixedHeaderDiv,
 #torrentsTableFixedHeaderDiv {
-    border-bottom: 1px solid var(--color-border-default);
+    border-bottom: 1px solid var(--color-border-outline);
 }
 
 .dynamicTableDiv {

@@ -1103,7 +1103,7 @@
      <widget class="QWidget" name="pageContents">
       <layout class="QVBoxLayout" name="verticalLayout_3">
        <property name="spacing">
-        <number>3</number>
+        <number>8</number>
        </property>
        <property name="leftMargin">
         <number>0</number>

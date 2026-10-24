@@ -3,7 +3,7 @@
     #rssView {
         background-color: var(--color-background-default);
         box-sizing: border-box;
-        padding: 10px;
+        padding: 8px;
         height: 100%;
         display: flex;
         flex-direction: column;
@@ -11,6 +11,11 @@
 
     #rssTopBar {
         flex-shrink: 0;
+    }
+
+    /* the bar of the phone layout, which css/Phone.css shows */
+    #rssPhoneBar {
+        display: none;
     }
 
     #rssContentView {
@@ -60,15 +65,15 @@
     }
 
     #centerRssColumn {
-        margin: 0 10px 0 10px;
+        margin: 0 8px;
     }
 
     #leftRssColumn,
     #centerRssColumn,
     #rightRssColumn {
         float: left;
-        /* should be 20 px but due to rounding differences some browsers don't render that properly */
-        width: calc((100% - 21px) / 3);
+        /* should be 16 px but due to rounding differences some browsers don't render that properly */
+        width: calc((100% - 17px) / 3);
         border: none;
     }
 
@@ -99,7 +104,7 @@
     #leftRssColumn,
     #rssArticleTableDiv,
     #rightRssColumn {
-        border: 1px solid var(--color-border-default);
+        border: 1px solid var(--color-border-outline);
         box-sizing: border-box;
     }
 
@@ -180,7 +185,7 @@
         background-position: 2px;
         background-repeat: no-repeat;
         background-size: 1.5em;
-        border: 1px solid var(--color-border-default);
+        border: 1px solid var(--color-border-outline);
         min-width: 170px;
         padding: 2px 2px 2px 25px;
     }
@@ -215,13 +220,13 @@
 <div id="rssView">
     <div id="rssTopBar">
         <div id="rssButtonBar">
-            <button type="button" id="newSubscriptionButton" onclick="qBittorrent.Rss.addRSSFeed()">
+            <button type="button" id="newSubscriptionButton" title="QBT_TR(New subscription)QBT_TR[CONTEXT=RSSWidget]" onclick="qBittorrent.Rss.addRSSFeed()">
                 <img alt="QBT_TR(New subscription)QBT_TR[CONTEXT=RSSWidget]" src="images/list-add.svg" width="16" height="16">QBT_TR(New subscription)QBT_TR[CONTEXT=RSSWidget]
             </button>
-            <button type="button" id="markReadButton" onclick="qBittorrent.Rss.markSelectedAsRead()">
+            <button type="button" id="markReadButton" title="QBT_TR(Mark items read)QBT_TR[CONTEXT=RSSWidget]" onclick="qBittorrent.Rss.markSelectedAsRead()">
                 <img alt="QBT_TR(Mark items read)QBT_TR[CONTEXT=RSSWidget]" src="images/task-complete.svg" width="16" height="16">QBT_TR(Mark items read)QBT_TR[CONTEXT=RSSWidget]
             </button>
-            <button type="button" id="updateAllButton" onclick="qBittorrent.Rss.refreshAllFeeds()">
+            <button type="button" id="updateAllButton" title="QBT_TR(Update all)QBT_TR[CONTEXT=RSSWidget]" onclick="qBittorrent.Rss.refreshAllFeeds()">
                 <img alt="QBT_TR(Update all)QBT_TR[CONTEXT=RSSWidget]" src="images/view-refresh.svg" width="16" height="16">QBT_TR(Update all)QBT_TR[CONTEXT=RSSWidget]
             </button>
             <div id="rssFetchingDisabled" class="invisible">
@@ -229,11 +234,20 @@
             </div>
             <div id="rssFilterToolbar" class="alignRight">
                 <input type="search" id="rssFilterInput" placeholder="QBT_TR(Filter feed items...)QBT_TR[CONTEXT=MainWindow]" aria-label="QBT_TR(Filter feed items...)QBT_TR[CONTEXT=MainWindow]" autocorrect="off" autocapitalize="none">
-                <button type="button" id="rssDownloaderButton" onclick="qBittorrent.Rss.openRssDownloader()">
+                <button type="button" id="rssDownloaderButton" title="QBT_TR(RSS Downloader...)QBT_TR[CONTEXT=RSSWidget]" onclick="qBittorrent.Rss.openRssDownloader()">
                     <img alt="QBT_TR(RSS Downloader...)QBT_TR[CONTEXT=RSSWidget]" src="images/downloading.svg" width="16" height="16">QBT_TR(RSS Downloader...)QBT_TR[CONTEXT=RSSWidget]
                 </button>
             </div>
         </div>
+    </div>
+    <div id="rssPhoneBar">
+        <button type="button" id="rssBackButton">
+            <span id="rssBackToFeeds">QBT_TR(RSS feeds)QBT_TR[CONTEXT=FeedListWidget]</span>
+            <span id="rssBackToFeed"></span>
+        </button>
+        <button type="button" id="rssPhoneDownload">
+            <img alt="" src="images/downloading.svg" width="16" height="16">QBT_TR(Download torrent)QBT_TR[CONTEXT=RSSWidget]
+        </button>
     </div>
     <div id="rssContentView">
         <div id="leftRssColumn">

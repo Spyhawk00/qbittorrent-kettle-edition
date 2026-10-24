@@ -66,6 +66,21 @@
 
 namespace
 {
+    // text on the left, the bar in the middle, numbers on the right
+    QVariant contentColumnAlignment(const int column)
+    {
+        switch (column)
+        {
+        case TorrentContentModelItem::COL_NAME:
+        case TorrentContentModelItem::COL_PRIO:
+            return {};
+        case TorrentContentModelItem::COL_PROGRESS:
+            return QVariant {Qt::AlignHCenter | Qt::AlignVCenter};
+        default:
+            return QVariant {Qt::AlignRight | Qt::AlignVCenter};
+        }
+    }
+
     class UnifiedFileIconProvider : public QFileIconProvider
     {
     public:
@@ -433,10 +448,7 @@ QVariant TorrentContentModel::data(const QModelIndex &index, const int role) con
         return Qt::Checked;
 
     case Qt::TextAlignmentRole:
-        if (index.column() != TorrentContentModelItem::COL_NAME)
-            return QVariant {Qt::AlignHCenter | Qt::AlignVCenter};
-
-        return {};
+        return contentColumnAlignment(index.column());
 
     case Qt::DisplayRole:
     case Qt::ToolTipRole:
@@ -477,10 +489,7 @@ QVariant TorrentContentModel::headerData(int section, Qt::Orientation orientatio
         return m_rootItem->displayData(section);
 
     case Qt::TextAlignmentRole:
-        if (section != TorrentContentModelItem::COL_NAME)
-            return QVariant {Qt::AlignHCenter | Qt::AlignVCenter};
-
-        return {};
+        return contentColumnAlignment(section);
 
     default:
         return {};
