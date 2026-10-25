@@ -227,6 +227,85 @@ The piece hash will be checked when it is requested for the first time by a peer
         <source>%1 needed · %2 free</source>
         <translation type="unfinished" />
     </message>
+    <message>
+        <source>Don&apos;t create subfolder</source>
+        <translation>Não criar sub-pasta</translation>
+    </message>
+    <message>
+        <source>Never show again</source>
+        <translation>Nunca mostrar de novo</translation>
+    </message>
+    <message>
+        <source>Select None</source>
+        <translation>Não selecionar nenhum</translation>
+    </message>
+    <message>
+        <source>Torrent options</source>
+        <translation>Opções do torrent</translation>
+    </message>
+    <message>
+        <source>Your role saves torrents in the default folders.</source>
+        <translation>Seu papel salva os torrents nas pastas padrão.</translation>
+    </message>
+</context>
+<context>
+    <name>AdvancedSettings</name>
+    <message>
+        <source>General</source>
+        <translation>Geral</translation>
+    </message>
+    <message>
+        <source>Network</source>
+        <translation>Rede</translation>
+    </message>
+    <message>
+        <source>Storage</source>
+        <translation>Armazenamento</translation>
+    </message>
+    <message>
+        <source>Peers and trackers</source>
+        <translation>Pares e rastreadores</translation>
+    </message>
+    <message>
+        <source>Program behavior</source>
+        <translation>Comportamento do programa</translation>
+    </message>
+    <message>
+        <source>Display and notifications</source>
+        <translation>Exibição e notificações</translation>
+    </message>
+    <message>
+        <source>Network connection</source>
+        <translation>Conexão de rede</translation>
+    </message>
+    <message>
+        <source>Security and privacy</source>
+        <translation>Segurança e privacidade</translation>
+    </message>
+    <message>
+        <source>Connection tuning</source>
+        <translation>Ajuste da conexão</translation>
+    </message>
+    <message>
+        <source>Saving and torrent files</source>
+        <translation>Salvamento e arquivos torrent</translation>
+    </message>
+    <message>
+        <source>Disk and memory</source>
+        <translation>Disco e memória</translation>
+    </message>
+    <message>
+        <source>Trackers</source>
+        <translation>Rastreadores</translation>
+    </message>
+    <message>
+        <source>Peers and seeding</source>
+        <translation>Pares e semeadura</translation>
+    </message>
+    <message>
+        <source>DHT and I2P</source>
+        <translation>DHT e I2P</translation>
+    </message>
 </context>
 <context>
     <name>CategoryFilterModel</name>
@@ -631,6 +710,14 @@ The piece hash will be checked when it is requested for the first time by a peer
         <source>More</source>
         <translation>Mais</translation>
     </message>
+    <message>
+        <source>Change Password...</source>
+        <translation>Alterar senha...</translation>
+    </message>
+    <message>
+        <source>Signed in as</source>
+        <translation>Conectado como</translation>
+    </message>
 </context>
 <context>
     <name>MainWindow</name>
@@ -937,6 +1024,34 @@ The piece hash will be checked when it is requested for the first time by a peer
     <message>
         <source>Resume Session</source>
         <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Global Speed Limits</source>
+        <translation>Limites globais de velocidade</translation>
+    </message>
+    <message>
+        <source>Pause Session</source>
+        <translation>Pausar sessão</translation>
+    </message>
+    <message>
+        <source>Pause session</source>
+        <translation>Pausar sessão</translation>
+    </message>
+    <message>
+        <source>Resume Session</source>
+        <translation>Retomar sessão</translation>
+    </message>
+    <message>
+        <source>Resume session</source>
+        <translation>Retomar sessão</translation>
+    </message>
+    <message>
+        <source>Your account can&apos;t add torrents.</source>
+        <translation>Sua conta não pode adicionar torrents.</translation>
+    </message>
+    <message>
+        <source>[PAUSED]</source>
+        <translation>[PAUSADO]</translation>
     </message>
 </context>
 <context>
@@ -2535,6 +2650,190 @@ Use ';' pra dividir múltiplas entradas. Pode usar o wildcard '*'.</translation>
         <source>a@x.com;b@y.com,c@z.com - send two emails: the first to just a@x.com, the second to both b@y.com and c@z.com</source>
         <translation type="unfinished" />
     </message>
+    <message>
+        <source>0 means users are logged out after the session timeout.</source>
+        <translation>0 significa que os usuários saem após o tempo limite da sessão.</translation>
+    </message>
+    <message>
+        <source>Access</source>
+        <translation>Acesso</translation>
+    </message>
+    <message>
+        <source>All the above</source>
+        <translation>Todos os acima</translation>
+    </message>
+    <message>
+        <source>Allow this login when user accounts exist</source>
+        <translation>Permitir este login quando houver contas de usuário</translation>
+    </message>
+    <message>
+        <source>Also save search results</source>
+        <translation>Salvar também os resultados da pesquisa</translation>
+    </message>
+    <message>
+        <source>Also when addition is cancelled</source>
+        <translation>Também quando a adição for cancelada</translation>
+    </message>
+    <message>
+        <source>Any of the above</source>
+        <translation>Qualquer um dos acima</translation>
+    </message>
+    <message>
+        <source>Below normal</source>
+        <translation>Abaixo do normal</translation>
+    </message>
+    <message>
+        <source>Changes to users, roles and logins apply at once.</source>
+        <translation>As alterações em usuários, papéis e logins valem na hora.</translation>
+    </message>
+    <message>
+        <source>Don&apos;t create subfolder</source>
+        <translation>Não criar sub-pasta</translation>
+    </message>
+    <message>
+        <source>Example:</source>
+        <translation>Exemplo:</translation>
+    </message>
+    <message>
+        <source>I2P (experimental)</source>
+        <translation>I2P (experimental)</translation>
+    </message>
+    <message>
+        <source>Keep WebUI activity log for:</source>
+        <translation>Manter o registro de atividades da WebUI por:</translation>
+    </message>
+    <message>
+        <source>Keep unselected files in &quot;.unwanted&quot; folder</source>
+        <translation>Manter arquivos não selecionados na pasta &quot;.unwanted&quot;</translation>
+    </message>
+    <message>
+        <source>Keep users logged in for:</source>
+        <translation>Manter usuários conectados por:</translation>
+    </message>
+    <message>
+        <source>Language:</source>
+        <translation>Idioma:</translation>
+    </message>
+    <message>
+        <source>Lock account after consecutive failures:</source>
+        <translation>Bloquear a conta após falhas consecutivas:</translation>
+    </message>
+    <message>
+        <source>Logins and Activity Log</source>
+        <translation>Logins e registro de atividades</translation>
+    </message>
+    <message>
+        <source>Low</source>
+        <translation>Baixa</translation>
+    </message>
+    <message>
+        <source>Maximum active checking torrents:</source>
+        <translation>Máximo de torrents ativos em verificação:</translation>
+    </message>
+    <message>
+        <source>Medium</source>
+        <translation>Média</translation>
+    </message>
+    <message>
+        <source>No settings match</source>
+        <translation>Nenhuma configuração corresponde</translation>
+    </message>
+    <message>
+        <source>Process memory priority:</source>
+        <translation>Prioridade de memória do processo:</translation>
+    </message>
+    <message>
+        <source>Save search tabs</source>
+        <translation>Salvar abas de pesquisa</translation>
+    </message>
+    <message>
+        <source>Search UI</source>
+        <translation>Interface de busca</translation>
+    </message>
+    <message>
+        <source>Search settings</source>
+        <translation>Pesquisar configurações</translation>
+    </message>
+    <message>
+        <source>Service:</source>
+        <translation>Serviço:</translation>
+    </message>
+    <message>
+        <source>Show console window</source>
+        <translation>Mostrar janela do console</translation>
+    </message>
+    <message>
+        <source>Show the window when adding a torrent</source>
+        <translation>Mostrar a janela ao adicionar um torrent</translation>
+    </message>
+    <message>
+        <source>Specify reverse proxy IPs (or subnets, e.g. 0.0.0.0/24) in order to use forwarded client address (X-Forwarded-For header). Use &apos;;&apos; to split multiple entries.</source>
+        <translation>Especifique IPs de proxies reversos (ou sub-máscaras, ex.: 0.0.0.0/24) para usar no endereço do cliente encaminhado (atributo X-Forwarded-For). Use &apos;;&apos; pra dividir múltiplas entradas.</translation>
+    </message>
+    <message>
+        <source>Status bar and log</source>
+        <translation>Barra de status e registro</translation>
+    </message>
+    <message>
+        <source>The WebUI activity log can be kept for 1 to 3650 days.</source>
+        <translation>O registro de atividades da WebUI pode ser mantido de 1 a 3650 dias.</translation>
+    </message>
+    <message>
+        <source>The settings below apply with OK or Apply.</source>
+        <translation>As configurações abaixo valem com OK ou Aplicar.</translation>
+    </message>
+    <message>
+        <source>Tip: Encapsulate parameter with quotation marks to avoid text being cut off at whitespace (e.g., &quot;%N&quot;)</source>
+        <translation>Dica: Encapsule o parâmetro entre aspas pra evitar que o texto seja cortado nos espaços em branco (ex: &quot;%N&quot;)</translation>
+    </message>
+    <message>
+        <source>Transfer List</source>
+        <translation>Lista de Transferência</translation>
+    </message>
+    <message>
+        <source>Until the first user account is created, this login always works.</source>
+        <translation>Até que a primeira conta de usuário seja criada, este login sempre funciona.</translation>
+    </message>
+    <message>
+        <source>User Accounts</source>
+        <translation>Contas de usuário</translation>
+    </message>
+    <message>
+        <source>Users can be kept logged in for 0 to 365 days.</source>
+        <translation>Os usuários podem ficar conectados de 0 a 365 dias.</translation>
+    </message>
+    <message>
+        <source>Very low</source>
+        <translation>Muito baixa</translation>
+    </message>
+    <message>
+        <source>Warning! Data loss possible!</source>
+        <translation>Aviso! Perda de dados possível!</translation>
+    </message>
+    <message>
+        <source>When Default Save/Incomplete Path changed:</source>
+        <translation>Quando o caminho padrão pra Salvar/Incompleto mudar:</translation>
+    </message>
+    <message>
+        <source>Whitelist for filtering HTTP Host header values.
+In order to defend against DNS rebinding attack,
+you should put in domain names used by WebUI server.
+
+Use &apos;;&apos; to split multiple entries. Can use wildcard &apos;*&apos;.</source>
+        <translation>A lista branca pra filtrar valores do cabeçalho do hospedeiro HTTP.
+De modo que pra se defender contra o ataque de re-vinculação do DNS,
+você deve colocar nomes de domínio usados pelo servidor WebUI.
+
+Use &apos;;&apos; pra dividir múltiplas entradas. Pode usar o wildcard &apos;*&apos;.</translation>
+    </message>
+    <message>
+        <source>You changed the address, port or HTTPS setting of the WebUI. Saving moves the WebUI, so Options will save, close and reload the page, the same as OK. If the page doesn&apos;t come back, open the WebUI at its new address.\n\nSave anyway?</source>
+        <translation>Você alterou o endereço, a porta ou a configuração de HTTPS da WebUI. Salvar move a WebUI, então as Opções vão salvar, fechar e recarregar a página, como com OK. Se a página não voltar, abra a WebUI no novo endereço.\n\nSalvar mesmo assim?</translation>
+    </message>
+    <message>
+        <source>lock for:</source>
+        <translation>bloquear por:</translation>
+    </message>
 </context>
 <context>
     <name>PeerListWidget</name>
@@ -2963,6 +3262,10 @@ Use ';' pra dividir múltiplas entradas. Pode usar o wildcard '*'.</translation>
         <source>Copy download URL</source>
         <translation type="unfinished" />
     </message>
+    <message>
+        <source>Copy path</source>
+        <translation>Copiar caminho</translation>
+    </message>
 </context>
 <context>
     <name>ScanFoldersModel</name>
@@ -3075,6 +3378,142 @@ Use ';' pra dividir múltiplas entradas. Pode usar o wildcard '*'.</translation>
     <message>
         <source>The time it takes from receiving a request from a peer until we're sending the response back on the socket</source>
         <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Activity</source>
+        <translation>Atividade</translation>
+    </message>
+    <message>
+        <source>All time</source>
+        <translation>Todo o período</translation>
+    </message>
+    <message>
+        <source>Before tracking began</source>
+        <translation>Antes do início do monitoramento</translation>
+    </message>
+    <message>
+        <source>By month</source>
+        <translation>Por mês</translation>
+    </message>
+    <message>
+        <source>Counts the requests that added a download. Apps without a login, such as Sonarr and Radarr, are shown as (localhost). Downloads added in the desktop window are not counted.</source>
+        <translation>Conta as solicitações que adicionaram um download. Aplicativos sem login, como Sonarr e Radarr, aparecem como (localhost). Downloads adicionados na janela do desktop não são contados.</translation>
+    </message>
+    <message>
+        <source>Current speed:</source>
+        <translation>Velocidade atual:</translation>
+    </message>
+    <message>
+        <source>DHT nodes:</source>
+        <translation>Nós DHT:</translation>
+    </message>
+    <message>
+        <source>Data discarded this session:</source>
+        <translation>Dados descartados nesta sessão:</translation>
+    </message>
+    <message>
+        <source>Disk</source>
+        <translation>Disco</translation>
+    </message>
+    <message>
+        <source>History</source>
+        <translation>Histórico</translation>
+    </message>
+    <message>
+        <source>Last 12 months</source>
+        <translation>Últimos 12 meses</translation>
+    </message>
+    <message>
+        <source>Last 7 days</source>
+        <translation>Últimos 7 dias</translation>
+    </message>
+    <message>
+        <source>Last month</source>
+        <translation>Mês passado</translation>
+    </message>
+    <message>
+        <source>Month</source>
+        <translation>Mês</translation>
+    </message>
+    <message>
+        <source>Nothing added yet</source>
+        <translation>Nada adicionado ainda</translation>
+    </message>
+    <message>
+        <source>Off</source>
+        <translation>Desligado</translation>
+    </message>
+    <message>
+        <source>Overview</source>
+        <translation>Visão geral</translation>
+    </message>
+    <message>
+        <source>Peers waiting on disk reads:</source>
+        <translation>Pares aguardando leitura do disco:</translation>
+    </message>
+    <message>
+        <source>Peers waiting on disk writes:</source>
+        <translation>Pares aguardando gravação em disco:</translation>
+    </message>
+    <message>
+        <source>Period</source>
+        <translation>Período</translation>
+    </message>
+    <message>
+        <source>Request latency:</source>
+        <translation>Latência da solicitação:</translation>
+    </message>
+    <message>
+        <source>Running for:</source>
+        <translation>Em execução há:</translation>
+    </message>
+    <message>
+        <source>Share ratio</source>
+        <translation>Taxa de compartilhamento</translation>
+    </message>
+    <message>
+        <source>Share ratio:</source>
+        <translation>Taxa de compartilhamento:</translation>
+    </message>
+    <message>
+        <source>Technical</source>
+        <translation>Técnico</translation>
+    </message>
+    <message>
+        <source>This month</source>
+        <translation>Este mês</translation>
+    </message>
+    <message>
+        <source>This session</source>
+        <translation>Esta sessão</translation>
+    </message>
+    <message>
+        <source>Today</source>
+        <translation>Hoje</translation>
+    </message>
+    <message>
+        <source>Torrents downloading:</source>
+        <translation>Torrents baixando:</translation>
+    </message>
+    <message>
+        <source>Torrents seeding:</source>
+        <translation>Torrents semeando:</translation>
+    </message>
+    <message>
+        <source>Torrents stopped:</source>
+        <translation>Torrents parados:</translation>
+    </message>
+    <message>
+        <source>Torrents with errors:</source>
+        <translation>Torrents com erros:</translation>
+    </message>
+    <message>
+        <source>Tracking since:</source>
+        <translation>Monitorando desde:</translation>
+    </message>
+    <message>
+        <source>WebUI downloads added, this month</source>
+        <translation>Downloads adicionados pela WebUI, neste mês</translation>
     </message>
 </context>
 <context>
@@ -3862,6 +4301,10 @@ Use ';' pra dividir múltiplas entradas. Pode usar o wildcard '*'.</translation>
         <source>Content Path</source>
         <translation>Caminho do conteúdo</translation>
     </message>
+    <message>
+        <source>Remove all tags from selected torrents?</source>
+        <translation>Remover todas as etiquetas dos torrents selecionados?</translation>
+    </message>
 </context>
 <context>
     <name>UpDownRatioDialog</name>
@@ -3917,6 +4360,14 @@ Use ';' pra dividir múltiplas entradas. Pode usar o wildcard '*'.</translation>
         <source>Action when the limit is reached</source>
         <translation>Ação quando o limite é atingido</translation>
     </message>
+    <message>
+        <source>Match all the limits</source>
+        <translation>Corresponder todos os limites</translation>
+    </message>
+    <message>
+        <source>Match any limit</source>
+        <translation>Corresponder qualquer limite</translation>
+    </message>
 </context>
 <context>
     <name>about</name>
@@ -3934,6 +4385,10 @@ Use ';' pra dividir múltiplas entradas. Pode usar o wildcard '*'.</translation>
     <message>
         <source>Remove tracker</source>
         <translation>Remover rastreador</translation>
+    </message>
+    <message>
+        <source>This choice is remembered for the next removal.</source>
+        <translation>Esta escolha será lembrada na próxima remoção.</translation>
     </message>
 </context>
 <context>
@@ -4147,6 +4602,34 @@ Use ';' pra dividir múltiplas entradas. Pode usar o wildcard '*'.</translation>
         <source>Select plugins</source>
         <translation>Selecionar plugins</translation>
     </message>
+    <message>
+        <source>Category to search in</source>
+        <translation>Categoria onde pesquisar</translation>
+    </message>
+    <message>
+        <source>Close the selected search</source>
+        <translation>Fechar a pesquisa selecionada</translation>
+    </message>
+    <message>
+        <source>Empty search pattern</source>
+        <translation>Modelo de busca vazio</translation>
+    </message>
+    <message>
+        <source>Search engines to use</source>
+        <translation>Mecanismos de pesquisa a usar</translation>
+    </message>
+    <message>
+        <source>Search for torrents...</source>
+        <translation>Pesquisar torrents...</translation>
+    </message>
+    <message>
+        <source>Searches</source>
+        <translation>Pesquisas</translation>
+    </message>
+    <message>
+        <source>Type a search above and press Enter.</source>
+        <translation>Digite uma pesquisa acima e pressione Enter.</translation>
+    </message>
 </context>
 <context>
     <name>PluginSelectDlg</name>
@@ -4185,6 +4668,10 @@ Use ';' pra dividir múltiplas entradas. Pode usar o wildcard '*'.</translation>
     <message>
         <source>Search plugins</source>
         <translation>Plugins de busca</translation>
+    </message>
+    <message>
+        <source>Warning: Be sure to comply with your country&apos;s copyright laws when downloading torrents from any of these search engines.</source>
+        <translation>Aviso: Certifique-se de obedecer as leis de copyright do seu país quando baixar torrents de quaisquer destes motores de busca.</translation>
     </message>
 </context>
 <context>
@@ -4408,6 +4895,30 @@ Use ';' pra dividir múltiplas entradas. Pode usar o wildcard '*'.</translation>
         <source>qBittorrent icon</source>
         <translation>Ícone do qBittorrent</translation>
     </message>
+    <message>
+        <source>Based on:</source>
+        <translation>Baseada em:</translation>
+    </message>
+    <message>
+        <source>Edition version:</source>
+        <translation>Versão da edição:</translation>
+    </message>
+    <message>
+        <source>Kettle Edition is a personal build of qBittorrent that adds user accounts with roles for the WebUI and the desktop app, an activity log, and an installable WebUI with a phone layout. A kettle is a group of hawks soaring together. This is an unofficial build, not affiliated with the qBittorrent project.</source>
+        <translation>O Kettle Edition é uma versão pessoal do qBittorrent que adiciona contas de usuário com papéis para a WebUI e o aplicativo de desktop, um registro de atividades e uma WebUI instalável com layout para celular. Um kettle é um grupo de gaviões planando juntos. Esta é uma versão não oficial, sem vínculo com o projeto qBittorrent.</translation>
+    </message>
+    <message>
+        <source>Maintainer:</source>
+        <translation>Mantenedor:</translation>
+    </message>
+    <message>
+        <source>This edition</source>
+        <translation>Esta edição</translation>
+    </message>
+    <message>
+        <source>qBittorrent project:</source>
+        <translation>Projeto qBittorrent:</translation>
+    </message>
 </context>
 <context>
     <name>OptionDialog</name>
@@ -4509,6 +5020,46 @@ Use ';' pra dividir múltiplas entradas. Pode usar o wildcard '*'.</translation>
     <message>
         <source>Open shared download window</source>
         <translation type="unfinished" />
+    </message>
+    <message>
+        <source>%1 of %2 shown</source>
+        <translation>%1 de %2 exibidos</translation>
+    </message>
+    <message>
+        <source>%1 of %2 shown (%3 hidden)</source>
+        <translation>%1 de %2 exibidos (%3 ocultos)</translation>
+    </message>
+    <message>
+        <source>Close all searches</source>
+        <translation>Fechar todas as pesquisas</translation>
+    </message>
+    <message>
+        <source>Close search</source>
+        <translation>Fechar pesquisa</translation>
+    </message>
+    <message>
+        <source>Filter search results...</source>
+        <translation>Filtrar resultados da busca...</translation>
+    </message>
+    <message>
+        <source>Finished: %1</source>
+        <translation>Concluído: %1</translation>
+    </message>
+    <message>
+        <source>Refresh search</source>
+        <translation>Atualizar pesquisa</translation>
+    </message>
+    <message>
+        <source>Search aborted: %1</source>
+        <translation>Pesquisa interrompida: %1</translation>
+    </message>
+    <message>
+        <source>Search returned no results</source>
+        <translation>A busca não retornou resultados</translation>
+    </message>
+    <message>
+        <source>Searching: %1</source>
+        <translation>Pesquisando: %1</translation>
     </message>
 </context>
 <context>
@@ -4647,6 +5198,10 @@ Use ';' pra dividir múltiplas entradas. Pode usar o wildcard '*'.</translation>
     <message>
         <source>Blocked opening RSS article URL. Only http:// and https:// links can be opened.</source>
         <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Details</source>
+        <translation>Detalhes</translation>
     </message>
 </context>
 <context>
@@ -4925,6 +5480,10 @@ Suporta os formatos: S01E01, 1x1, 2017.12.31 e 31.12.2017 (Os formatos de data t
         <source>Import</source>
         <translation type="unfinished" />
     </message>
+    <message>
+        <source>Don&apos;t create subfolder</source>
+        <translation>Não criar sub-pasta</translation>
+    </message>
 </context>
 <context>
     <name>TrackerFiltersList</name>
@@ -5114,6 +5673,26 @@ Suporta os formatos: S01E01, 1x1, 2017.12.31 e 31.12.2017 (Os formatos de data t
         <source>Choose a log level...</source>
         <translation>Escolha um nível de registro...</translation>
     </message>
+    <message>
+        <source>Export...</source>
+        <translation>Exportar...</translation>
+    </message>
+    <message>
+        <source>Filter activity</source>
+        <translation>Filtrar atividade</translation>
+    </message>
+    <message>
+        <source>Result:</source>
+        <translation>Resultado:</translation>
+    </message>
+    <message>
+        <source>User:</source>
+        <translation>Usuário:</translation>
+    </message>
+    <message>
+        <source>WebUI Activity</source>
+        <translation>Atividade da WebUI</translation>
+    </message>
 </context>
 <context>
     <name>TrackersFilterWidget</name>
@@ -5183,6 +5762,14 @@ Suporta os formatos: S01E01, 1x1, 2017.12.31 e 31.12.2017 (Os formatos de data t
     <message>
         <source>Torrent share limits</source>
         <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Torrent share limits</source>
+        <translation>Limites de compartilhamento do torrent</translation>
+    </message>
+    <message>
+        <source>Your role saves torrents in the default folders.</source>
+        <translation>Seu papel salva os torrents nas pastas padrão.</translation>
     </message>
 </context>
 <context>
@@ -5282,6 +5869,14 @@ Suporta os formatos: S01E01, 1x1, 2017.12.31 e 31.12.2017 (Os formatos de data t
     <message>
         <source>Invalid Username or Password.</source>
         <translation>Nome de usuário ou senha inválidos.</translation>
+    </message>
+    <message>
+        <source>A kettle is a group of hawks soaring together.</source>
+        <translation>Um kettle é um grupo de gaviões planando juntos.</translation>
+    </message>
+    <message>
+        <source>Sign in</source>
+        <translation>Entrar</translation>
     </message>
 </context>
 <context>
@@ -5515,6 +6110,22 @@ imediatamente</translation>
         <source>If checked, filenames starting with a period punctuation mark `.` will not be added to the created torrent.</source>
         <translation type="unfinished" />
     </message>
+    <message>
+        <source>Align to piece boundary for files larger than:</source>
+        <translation>Alinhar ao limite dos pedaços pra arquivos maiores do que:</translation>
+    </message>
+    <message>
+        <source>Optimize alignment</source>
+        <translation>Otimizar alinhamento</translation>
+    </message>
+    <message>
+        <source>Private torrent (Won&apos;t distribute on DHT network)</source>
+        <translation>Torrent privado (não distribuirá na rede DHT)</translation>
+    </message>
+    <message>
+        <source>Start seeding immediately</source>
+        <translation>Iniciar a semeadura imediatamente</translation>
+    </message>
 </context>
 <context>
     <name>DownloadFromURLDialog</name>
@@ -5625,6 +6236,10 @@ imediatamente</translation>
         <source>Failed to set speed limits</source>
         <translation type="unfinished" />
     </message>
+    <message>
+        <source>Speed limits</source>
+        <translation>Limites de velocidade</translation>
+    </message>
 </context>
 <context>
     <name>ListWidget</name>
@@ -5635,6 +6250,10 @@ imediatamente</translation>
     <message>
         <source>Resize</source>
         <translation>Redimensionar</translation>
+    </message>
+    <message>
+        <source>Reset Auto Width</source>
+        <translation>Redefinir largura automática</translation>
     </message>
 </context>
 <context>
@@ -5650,6 +6269,10 @@ imediatamente</translation>
     <message>
         <source>Rotate this API key? The current key will immediately stop working and a new key will be generated.</source>
         <translation>Rotacionar chave API? A chave atual irá parar de funcionar imediatamente e uma nova chave será gerada.</translation>
+    </message>
+    <message>
+        <source>Generate an API key? This key can be used to interact with qBittorrent&apos;s API.</source>
+        <translation>Gerar uma chave API? Esra chave pode ser usada para interagir com a API do qBittorrent.</translation>
     </message>
 </context>
 <context>
@@ -5765,6 +6388,54 @@ imediatamente</translation>
         <source>Remove torrent</source>
         <translation type="unfinished" />
     </message>
+    <message>
+        <source>Action when the limit is reached:</source>
+        <translation>Ação ao atingir o limite:</translation>
+    </message>
+    <message>
+        <source>Default (%1)</source>
+        <translation>Padrão (%1)</translation>
+    </message>
+    <message>
+        <source>From category</source>
+        <translation>Da categoria</translation>
+    </message>
+    <message>
+        <source>From category (%1)</source>
+        <translation>Da categoria (%1)</translation>
+    </message>
+    <message>
+        <source>Inactive seeding time:</source>
+        <translation>Tempo de semear inativo:</translation>
+    </message>
+    <message>
+        <source>Match all the limits</source>
+        <translation>Corresponder todos os limites</translation>
+    </message>
+    <message>
+        <source>Match any limit</source>
+        <translation>Corresponder qualquer limite</translation>
+    </message>
+    <message>
+        <source>Mode:</source>
+        <translation>Modo:</translation>
+    </message>
+    <message>
+        <source>Ratio:</source>
+        <translation>Taxa:</translation>
+    </message>
+    <message>
+        <source>Seeding time:</source>
+        <translation>Tempo para semear:</translation>
+    </message>
+    <message>
+        <source>Set to</source>
+        <translation>Definir para</translation>
+    </message>
+    <message>
+        <source>Unlimited</source>
+        <translation>Ilimitado</translation>
+    </message>
 </context>
 <context>
     <name>TorrentContent</name>
@@ -5775,6 +6446,208 @@ imediatamente</translation>
     <message>
         <source>Not available for folders</source>
         <translation type="unfinished" />
+    </message>
+</context>
+<context>
+    <name>UserAccounts</name>
+    <message>
+        <source>(this browser)</source>
+        <translation>(este navegador)</translation>
+    </message>
+    <message>
+        <source>A role decides what its users are allowed to do.</source>
+        <translation>Um papel decide o que seus usuários podem fazer.</translation>
+    </message>
+    <message>
+        <source>Add Role</source>
+        <translation>Adicionar papel</translation>
+    </message>
+    <message>
+        <source>Add Role...</source>
+        <translation>Adicionar papel...</translation>
+    </message>
+    <message>
+        <source>Add User</source>
+        <translation>Adicionar usuário</translation>
+    </message>
+    <message>
+        <source>Add User...</source>
+        <translation>Adicionar usuário...</translation>
+    </message>
+    <message>
+        <source>Are you sure you want to remove the role &apos;%1&apos;?</source>
+        <translation>Tem certeza de que deseja remover o papel &apos;%1&apos;?</translation>
+    </message>
+    <message>
+        <source>Are you sure you want to remove the user &apos;%1&apos;?</source>
+        <translation>Tem certeza de que deseja remover o usuário &apos;%1&apos;?</translation>
+    </message>
+    <message>
+        <source>At least %1 characters</source>
+        <translation>Pelo menos %1 caracteres</translation>
+    </message>
+    <message>
+        <source>Browser</source>
+        <translation>Navegador</translation>
+    </message>
+    <message>
+        <source>Browsers and devices where someone is logged in with a user account.</source>
+        <translation>Navegadores e dispositivos em que alguém está conectado com uma conta de usuário.</translation>
+    </message>
+    <message>
+        <source>Change Password</source>
+        <translation>Alterar senha</translation>
+    </message>
+    <message>
+        <source>Confirm password:</source>
+        <translation>Confirmar senha:</translation>
+    </message>
+    <message>
+        <source>Created</source>
+        <translation>Criado</translation>
+    </message>
+    <message>
+        <source>Current password:</source>
+        <translation>Senha atual:</translation>
+    </message>
+    <message>
+        <source>Description</source>
+        <translation>Descrição</translation>
+    </message>
+    <message>
+        <source>Description:</source>
+        <translation>Descrição:</translation>
+    </message>
+    <message>
+        <source>Disable</source>
+        <translation>Desativar</translation>
+    </message>
+    <message>
+        <source>Disable this account</source>
+        <translation>Desativar esta conta</translation>
+    </message>
+    <message>
+        <source>Edit Role</source>
+        <translation>Editar papel</translation>
+    </message>
+    <message>
+        <source>Edit User</source>
+        <translation>Editar usuário</translation>
+    </message>
+    <message>
+        <source>Edit...</source>
+        <translation>Editar...</translation>
+    </message>
+    <message>
+        <source>Enable</source>
+        <translation>Ativar</translation>
+    </message>
+    <message>
+        <source>Enter a role name.</source>
+        <translation>Digite um nome de papel.</translation>
+    </message>
+    <message>
+        <source>Enter a username.</source>
+        <translation>Digite um nome de usuário.</translation>
+    </message>
+    <message>
+        <source>Expires</source>
+        <translation>Expira</translation>
+    </message>
+    <message>
+        <source>Gives control over the PC or qBittorrent itself</source>
+        <translation>Dá controle sobre o PC ou sobre o próprio qBittorrent</translation>
+    </message>
+    <message>
+        <source>Last active</source>
+        <translation>Última atividade</translation>
+    </message>
+    <message>
+        <source>Last login</source>
+        <translation>Último login</translation>
+    </message>
+    <message>
+        <source>Leave empty to keep the current password</source>
+        <translation>Deixe em branco para manter a senha atual</translation>
+    </message>
+    <message>
+        <source>Log Out</source>
+        <translation>Sair</translation>
+    </message>
+    <message>
+        <source>Log Out Everywhere</source>
+        <translation>Sair em todos os lugares</translation>
+    </message>
+    <message>
+        <source>Logged In</source>
+        <translation>Conectados</translation>
+    </message>
+    <message>
+        <source>Logged in</source>
+        <translation>Conectou em</translation>
+    </message>
+    <message>
+        <source>New password:</source>
+        <translation>Nova senha:</translation>
+    </message>
+    <message>
+        <source>No accounts yet, so everyone still uses the shared WebUI login. Add an Admin account first.</source>
+        <translation>Ainda não há contas, então todos continuam usando o login compartilhado da WebUI. Adicione primeiro uma conta Admin.</translation>
+    </message>
+    <message>
+        <source>People who can log in to the WebUI with their own username and password.</source>
+        <translation>Pessoas que podem entrar na WebUI com nome de usuário e senha próprios.</translation>
+    </message>
+    <message>
+        <source>Permissions</source>
+        <translation>Permissões</translation>
+    </message>
+    <message>
+        <source>Role</source>
+        <translation>Papel</translation>
+    </message>
+    <message>
+        <source>Role:</source>
+        <translation>Papel:</translation>
+    </message>
+    <message>
+        <source>Roles</source>
+        <translation>Papéis</translation>
+    </message>
+    <message>
+        <source>The password must be at least %1 characters long.</source>
+        <translation>A senha deve ter pelo menos %1 caracteres.</translation>
+    </message>
+    <message>
+        <source>The passwords don&apos;t match.</source>
+        <translation>As senhas não coincidem.</translation>
+    </message>
+    <message>
+        <source>Users</source>
+        <translation>Usuários</translation>
+    </message>
+    <message>
+        <source>Your password was changed. Other browsers and devices where you were logged in have been logged out.</source>
+        <translation>Sua senha foi alterada. Os outros navegadores e dispositivos em que você estava conectado foram desconectados.</translation>
+    </message>
+</context>
+<context>
+    <name>WebUIActivity</name>
+    <message>
+        <source>Action</source>
+        <translation>Ação</translation>
+    </message>
+    <message>
+        <source>Result</source>
+        <translation>Resultado</translation>
+    </message>
+    <message>
+        <source>Role</source>
+        <translation>Papel</translation>
+    </message>
+    <message>
+        <source>Time</source>
+        <translation>Hora</translation>
     </message>
 </context>
 </TS>

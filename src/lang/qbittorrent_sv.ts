@@ -141,6 +141,62 @@
         <source>The free IP to Country Lite database by DB-IP is used for resolving the countries of peers. The database is licensed under the Creative Commons Attribution 4.0 International License</source>
         <translation>Den kostnadsfria databasen IP to Country Lite från DB-IP används för att fastställa vilka länder jämlikarna finns i. Databasen är licensierad enligt Creative Commons Erkännande 4.0 Internationell.</translation>
     </message>
+    <message>
+        <source>This edition</source>
+        <translation>Den här utgåvan</translation>
+    </message>
+    <message>
+        <source>Edition version:</source>
+        <translation>Utgåvans version:</translation>
+    </message>
+    <message>
+        <source>Based on:</source>
+        <translation>Baserad på:</translation>
+    </message>
+    <message>
+        <source>Maintainer:</source>
+        <translation>Underhållare:</translation>
+    </message>
+    <message>
+        <source>qBittorrent project:</source>
+        <translation>qBittorrent-projektet:</translation>
+    </message>
+    <message>
+        <source>Kettle Edition is a personal build of qBittorrent that adds user accounts with roles for the WebUI and the desktop app, an activity log, and an installable WebUI with a phone layout. A kettle is a group of hawks soaring together. This is an unofficial build, not affiliated with the qBittorrent project.</source>
+        <translation>Kettle Edition är ett personligt bygge av qBittorrent som lägger till användarkonton med roller för WebUI och skrivbordsappen, en aktivitetslogg och ett installerbart WebUI med telefonlayout. En kettle är en grupp hökar som svävar tillsammans. Det här är ett inofficiellt bygge utan koppling till qBittorrent-projektet.</translation>
+    </message>
+    <message>
+        <source>N/A</source>
+        <translation>Saknas</translation>
+    </message>
+    <message>
+        <source>This edition</source>
+        <translation>Den här utgåvan</translation>
+    </message>
+    <message>
+        <source>Edition version:</source>
+        <translation>Utgåvans version:</translation>
+    </message>
+    <message>
+        <source>Based on:</source>
+        <translation>Baserad på:</translation>
+    </message>
+    <message>
+        <source>Maintainer:</source>
+        <translation>Underhållare:</translation>
+    </message>
+    <message>
+        <source>qBittorrent project:</source>
+        <translation>qBittorrent-projektet:</translation>
+    </message>
+    <message>
+        <source>Kettle Edition is a personal build of qBittorrent that adds user accounts with roles for the WebUI and the desktop app, an activity log, and an installable WebUI with a phone layout. A kettle is a group of hawks soaring together. This is an unofficial build, not affiliated with the qBittorrent project.</source>
+        <translation>Kettle Edition är ett personligt bygge av qBittorrent som lägger till användarkonton med roller för WebUI och skrivbordsappen, en aktivitetslogg och ett installerbart WebUI med telefonlayout. En kettle är en grupp hökar som svävar tillsammans. Det här är ett inofficiellt bygge utan koppling till qBittorrent-projektet.</translation>
+    </message>
+    <message>
+        <source>N/A</source>
+        <translation>Saknas</translation>
+    </message>
 </context>
 <context>
     <name>AbstractFileStorage</name>
@@ -1459,6 +1515,62 @@
         <location filename="../gui/advancedsettings.cpp" line="925"/>
         <source>Embedded tracker port</source>
         <translation>Port för inbäddad spårare</translation>
+    </message>
+    <message>
+        <source>Network</source>
+        <translation>Nätverk</translation>
+    </message>
+    <message>
+        <source>Storage</source>
+        <translation>Lagring</translation>
+    </message>
+    <message>
+        <source>Peers and trackers</source>
+        <translation>Jämlikar och spårare</translation>
+    </message>
+    <message>
+        <source>Program behavior</source>
+        <translation>Programbeteende</translation>
+    </message>
+    <message>
+        <source>Display and notifications</source>
+        <translation>Visning och aviseringar</translation>
+    </message>
+    <message>
+        <source>Network connection</source>
+        <translation>Nätverksanslutning</translation>
+    </message>
+    <message>
+        <source>Security and privacy</source>
+        <translation>Säkerhet och integritet</translation>
+    </message>
+    <message>
+        <source>Connection tuning</source>
+        <translation>Anslutningsjustering</translation>
+    </message>
+    <message>
+        <source>Saving and torrent files</source>
+        <translation>Sparande och torrentfiler</translation>
+    </message>
+    <message>
+        <source>Disk and memory</source>
+        <translation>Disk och minne</translation>
+    </message>
+    <message>
+        <source>Peers and seeding</source>
+        <translation>Jämlikar och distribution</translation>
+    </message>
+    <message>
+        <source>DHT and I2P</source>
+        <translation>DHT och I2P</translation>
+    </message>
+    <message>
+        <source>General</source>
+        <translation>Allmänt</translation>
+    </message>
+    <message>
+        <source>Trackers</source>
+        <translation>Spårare</translation>
     </message>
 </context>
 <context>
@@ -3480,6 +3592,22 @@ Stöder formaten: S01E01, 1x1, 2017.12.31 och 31.12.2017 (datumformatet stöder 
         <source>Remove torrent</source>
         <translation>Ta bort torrent</translation>
     </message>
+    <message>
+        <source>This choice is remembered for the next removal.</source>
+        <translation>Det här valet kommer ihåg till nästa borttagning.</translation>
+    </message>
+    <message>
+        <source>Remove</source>
+        <translation>Ta bort</translation>
+    </message>
+    <message>
+        <source>This choice is remembered for the next removal.</source>
+        <translation>Det här valet kommer ihåg till nästa borttagning.</translation>
+    </message>
+    <message>
+        <source>Remove</source>
+        <translation>Ta bort</translation>
+    </message>
 </context>
 <context>
     <name>DownloadFromURLDialog</name>
@@ -3553,6 +3681,14 @@ Stöder formaten: S01E01, 1x1, 2017.12.31 och 31.12.2017 (datumformatet stöder 
         <location filename="../gui/executionlogwidget.cpp" line="99"/>
         <source>Clear</source>
         <translation>Rensa</translation>
+    </message>
+    <message>
+        <source>WebUI Activity</source>
+        <translation>WebUI-aktivitet</translation>
+    </message>
+    <message>
+        <source>WebUI Activity</source>
+        <translation>WebUI-aktivitet</translation>
     </message>
 </context>
 <context>
@@ -4726,6 +4862,46 @@ Minimikrav: %2.</translation>
         <location filename="../gui/mainwindow.cpp" line="1346"/>
         <source>Torrent Files</source>
         <translation>Torrentfiler</translation>
+    </message>
+    <message>
+        <source>Kettle Edition %1 is available.</source>
+        <translation>Kettle Edition %1 är tillgänglig.</translation>
+    </message>
+    <message>
+        <source>qBittorrent Kettle Edition %1 is available. It is downloaded now and installed at 4:00 AM, or when qBittorrent starts next.</source>
+        <translation>qBittorrent Kettle Edition %1 är tillgänglig. Den hämtas nu och installeras klockan 4:00 eller nästa gång qBittorrent startar.</translation>
+    </message>
+    <message>
+        <source>qBittorrent Kettle Edition %1 is available. It is downloaded now. Turn on &quot;Automatically install Kettle Edition updates&quot; in Options to install it.</source>
+        <translation>qBittorrent Kettle Edition %1 är tillgänglig. Den hämtas nu. Aktivera &quot;Installera Kettle Edition-uppdateringar automatiskt&quot; i Alternativ för att installera den.</translation>
+    </message>
+    <message>
+        <source>You have the latest qBittorrent Kettle Edition (%1).</source>
+        <translation>Du har den senaste qBittorrent Kettle Edition (%1).</translation>
+    </message>
+    <message>
+        <source>Could not check for qBittorrent Kettle Edition updates. See the Execution Log for details.</source>
+        <translation>Det gick inte att söka efter uppdateringar för qBittorrent Kettle Edition. Se körloggen för detaljer.</translation>
+    </message>
+    <message>
+        <source>Kettle Edition %1 is available.</source>
+        <translation>Kettle Edition %1 är tillgänglig.</translation>
+    </message>
+    <message>
+        <source>qBittorrent Kettle Edition %1 is available. It is downloaded now and installed at 4:00 AM, or when qBittorrent starts next.</source>
+        <translation>qBittorrent Kettle Edition %1 är tillgänglig. Den hämtas nu och installeras klockan 4:00 eller nästa gång qBittorrent startar.</translation>
+    </message>
+    <message>
+        <source>qBittorrent Kettle Edition %1 is available. It is downloaded now. Turn on &quot;Automatically install Kettle Edition updates&quot; in Options to install it.</source>
+        <translation>qBittorrent Kettle Edition %1 är tillgänglig. Den hämtas nu. Aktivera &quot;Installera Kettle Edition-uppdateringar automatiskt&quot; i Alternativ för att installera den.</translation>
+    </message>
+    <message>
+        <source>You have the latest qBittorrent Kettle Edition (%1).</source>
+        <translation>Du har den senaste qBittorrent Kettle Edition (%1).</translation>
+    </message>
+    <message>
+        <source>Could not check for qBittorrent Kettle Edition updates. See the Execution Log for details.</source>
+        <translation>Det gick inte att söka efter uppdateringar för qBittorrent Kettle Edition. Se körloggen för detaljer.</translation>
     </message>
 </context>
 <context>
@@ -8515,6 +8691,190 @@ Kontrollera körningsloggen för fel.</translation>
         <source>Length Error</source>
         <translation>Längdfel</translation>
     </message>
+    <message>
+        <source>Search settings</source>
+        <translation>Sök i inställningar</translation>
+    </message>
+    <message>
+        <source>No settings match</source>
+        <translation>Inga inställningar matchar</translation>
+    </message>
+    <message>
+        <source>User Accounts</source>
+        <translation>Användarkonton</translation>
+    </message>
+    <message>
+        <source>Automatically install Kettle Edition updates</source>
+        <translation>Installera Kettle Edition-uppdateringar automatiskt</translation>
+    </message>
+    <message>
+        <source>Status bar and log</source>
+        <translation>Statusfält och logg</translation>
+    </message>
+    <message>
+        <source>Files</source>
+        <translation>Filer</translation>
+    </message>
+    <message>
+        <source>Checking</source>
+        <translation>Kontroll</translation>
+    </message>
+    <message>
+        <source>Until the first user account is created, this login always works.</source>
+        <translation>Tills det första användarkontot har skapats fungerar den här inloggningen alltid.</translation>
+    </message>
+    <message>
+        <source>Allow this login when user accounts exist</source>
+        <translation>Tillåt den här inloggningen när användarkonton finns</translation>
+    </message>
+    <message>
+        <source>Access</source>
+        <translation>Åtkomst</translation>
+    </message>
+    <message>
+        <source>Changes to users, roles and logins apply at once. The settings below apply with OK or Apply.</source>
+        <translation>Ändringar av användare, roller och inloggningar gäller direkt. Inställningarna nedan gäller med OK eller Verkställ.</translation>
+    </message>
+    <message>
+        <source>Logins and Activity Log</source>
+        <translation>Inloggningar och aktivitetslogg</translation>
+    </message>
+    <message>
+        <source>0 means users are logged out after the session timeout.</source>
+        <translation>0 betyder att användare loggas ut efter sessionens timeout.</translation>
+    </message>
+    <message>
+        <source>Keep users logged in for:</source>
+        <translation>Håll användare inloggade i:</translation>
+    </message>
+    <message>
+        <source>Until session timeout</source>
+        <translation>Till sessionens timeout</translation>
+    </message>
+    <message>
+        <source> days</source>
+        <translation> dagar</translation>
+    </message>
+    <message>
+        <source>Lock account after consecutive failures:</source>
+        <translation>Lås kontot efter flera misslyckanden i rad:</translation>
+    </message>
+    <message>
+        <source>Keep WebUI activity log for:</source>
+        <translation>Behåll WebUI-aktivitetsloggen i:</translation>
+    </message>
+    <message>
+        <source>lock for:</source>
+        <translation>lås i:</translation>
+    </message>
+    <message>
+        <source>%1 works best with Windows dark mode</source>
+        <translation>%1 fungerar bäst med Windows mörka läge</translation>
+    </message>
+    <message>
+        <source>WebUI address</source>
+        <translation>WebUI-adress</translation>
+    </message>
+    <message>
+        <source>With the WebUI address set to %1, only this PC can reach the WebUI. Remote access, including through a reverse proxy on another machine, will stop working.
+
+Save anyway?</source>
+        <translation>När WebUI-adressen är satt till %1 kan bara den här datorn nå WebUI. Fjärråtkomst, även via en omvänd proxy på en annan maskin, slutar fungera.
+
+Spara ändå?</translation>
+    </message>
+    <message>
+        <source>Search settings</source>
+        <translation>Sök i inställningar</translation>
+    </message>
+    <message>
+        <source>No settings match</source>
+        <translation>Inga inställningar matchar</translation>
+    </message>
+    <message>
+        <source>User Accounts</source>
+        <translation>Användarkonton</translation>
+    </message>
+    <message>
+        <source>Automatically install Kettle Edition updates</source>
+        <translation>Installera Kettle Edition-uppdateringar automatiskt</translation>
+    </message>
+    <message>
+        <source>Status bar and log</source>
+        <translation>Statusfält och logg</translation>
+    </message>
+    <message>
+        <source>Files</source>
+        <translation>Filer</translation>
+    </message>
+    <message>
+        <source>Checking</source>
+        <translation>Kontroll</translation>
+    </message>
+    <message>
+        <source>Until the first user account is created, this login always works.</source>
+        <translation>Tills det första användarkontot har skapats fungerar den här inloggningen alltid.</translation>
+    </message>
+    <message>
+        <source>Allow this login when user accounts exist</source>
+        <translation>Tillåt den här inloggningen när användarkonton finns</translation>
+    </message>
+    <message>
+        <source>Access</source>
+        <translation>Åtkomst</translation>
+    </message>
+    <message>
+        <source>Changes to users, roles and logins apply at once. The settings below apply with OK or Apply.</source>
+        <translation>Ändringar av användare, roller och inloggningar gäller direkt. Inställningarna nedan gäller med OK eller Verkställ.</translation>
+    </message>
+    <message>
+        <source>Logins and Activity Log</source>
+        <translation>Inloggningar och aktivitetslogg</translation>
+    </message>
+    <message>
+        <source>0 means users are logged out after the session timeout.</source>
+        <translation>0 betyder att användare loggas ut efter sessionens timeout.</translation>
+    </message>
+    <message>
+        <source>Keep users logged in for:</source>
+        <translation>Håll användare inloggade i:</translation>
+    </message>
+    <message>
+        <source>Until session timeout</source>
+        <translation>Till sessionens timeout</translation>
+    </message>
+    <message>
+        <source> days</source>
+        <translation> dagar</translation>
+    </message>
+    <message>
+        <source>Lock account after consecutive failures:</source>
+        <translation>Lås kontot efter flera misslyckanden i rad:</translation>
+    </message>
+    <message>
+        <source>Keep WebUI activity log for:</source>
+        <translation>Behåll WebUI-aktivitetsloggen i:</translation>
+    </message>
+    <message>
+        <source>lock for:</source>
+        <translation>lås i:</translation>
+    </message>
+    <message>
+        <source>%1 works best with Windows dark mode</source>
+        <translation>%1 fungerar bäst med Windows mörka läge</translation>
+    </message>
+    <message>
+        <source>WebUI address</source>
+        <translation>WebUI-adress</translation>
+    </message>
+    <message>
+        <source>With the WebUI address set to %1, only this PC can reach the WebUI. Remote access, including through a reverse proxy on another machine, will stop working.
+
+Save anyway?</source>
+        <translation>När WebUI-adressen är satt till %1 kan bara den här datorn nå WebUI. Fjärråtkomst, även via en omvänd proxy på en annan maskin, slutar fungera.
+
+Spara ändå?</translation>
+    </message>
 </context>
 <context>
     <name>PeerInfo</name>
@@ -8767,6 +9127,22 @@ Kontrollera körningsloggen för fel.</translation>
         <location filename="../gui/properties/peerlistwidget.cpp" line="309"/>
         <source>Copy IP:port</source>
         <translation>Kopiera IP:port</translation>
+    </message>
+    <message>
+        <source>Reset auto width</source>
+        <translation>Återställ automatisk bredd</translation>
+    </message>
+    <message>
+        <source>Fit all non-hidden columns to their contents again, and forget the widths that were set by hand</source>
+        <translation>Anpassa alla synliga kolumner efter sitt innehåll igen och glöm bredder som satts för hand</translation>
+    </message>
+    <message>
+        <source>Reset auto width</source>
+        <translation>Återställ automatisk bredd</translation>
+    </message>
+    <message>
+        <source>Fit all non-hidden columns to their contents again, and forget the widths that were set by hand</source>
+        <translation>Anpassa alla synliga kolumner efter sitt innehåll igen och glöm bredder som satts för hand</translation>
     </message>
 </context>
 <context>
@@ -10157,6 +10533,14 @@ De här insticksmodulerna inaktiverades.</translation>
         <source>Open link</source>
         <translation>Öppna länk</translation>
     </message>
+    <message>
+        <source>Details</source>
+        <translation>Detaljer</translation>
+    </message>
+    <message>
+        <source>Details</source>
+        <translation>Detaljer</translation>
+    </message>
 </context>
 <context>
     <name>SearchController</name>
@@ -10511,6 +10895,70 @@ De här insticksmodulerna inaktiverades.</translation>
         <source>Resize all non-hidden columns to the size of their contents</source>
         <translation>Ändra storlek på alla icke-dolda kolumner till storleken på deras innehåll</translation>
     </message>
+    <message>
+        <source>%1 of %2 shown (%3 hidden)</source>
+        <translation>%1 av %2 visas (%3 dolda)</translation>
+    </message>
+    <message>
+        <source>%1 of %2 shown</source>
+        <translation>%1 av %2 visas</translation>
+    </message>
+    <message>
+        <source>Searching: %1</source>
+        <translation>Söker: %1</translation>
+    </message>
+    <message>
+        <source>Finished: %1</source>
+        <translation>Klar: %1</translation>
+    </message>
+    <message>
+        <source>Search aborted: %1</source>
+        <translation>Sökningen avbröts: %1</translation>
+    </message>
+    <message>
+        <source>Reset auto width</source>
+        <translation>Återställ automatisk bredd</translation>
+    </message>
+    <message>
+        <source>Fit all non-hidden columns to their contents again, and forget the widths that were set by hand</source>
+        <translation>Anpassa alla synliga kolumner efter sitt innehåll igen och glöm bredder som satts för hand</translation>
+    </message>
+    <message>
+        <source>Unknown</source>
+        <translation>Okänd</translation>
+    </message>
+    <message>
+        <source>%1 of %2 shown (%3 hidden)</source>
+        <translation>%1 av %2 visas (%3 dolda)</translation>
+    </message>
+    <message>
+        <source>%1 of %2 shown</source>
+        <translation>%1 av %2 visas</translation>
+    </message>
+    <message>
+        <source>Searching: %1</source>
+        <translation>Söker: %1</translation>
+    </message>
+    <message>
+        <source>Finished: %1</source>
+        <translation>Klar: %1</translation>
+    </message>
+    <message>
+        <source>Search aborted: %1</source>
+        <translation>Sökningen avbröts: %1</translation>
+    </message>
+    <message>
+        <source>Reset auto width</source>
+        <translation>Återställ automatisk bredd</translation>
+    </message>
+    <message>
+        <source>Fit all non-hidden columns to their contents again, and forget the widths that were set by hand</source>
+        <translation>Anpassa alla synliga kolumner efter sitt innehåll igen och glöm bredder som satts för hand</translation>
+    </message>
+    <message>
+        <source>Unknown</source>
+        <translation>Okänd</translation>
+    </message>
 </context>
 <context>
     <name>SearchPluginManager</name>
@@ -10808,6 +11256,14 @@ De här insticksmodulerna inaktiverades.</translation>
         <source>Couldn&apos;t update &quot;%1&quot; search engine plugin. %2</source>
         <translation type="unfinished">Det gick inte att uppdatera sökinsticksmodulen &quot;%1&quot;. %2</translation>
     </message>
+    <message>
+        <source>Install Kettle Plugins</source>
+        <translation>Installera Kettle-insticksmoduler</translation>
+    </message>
+    <message>
+        <source>Install Kettle Plugins</source>
+        <translation>Installera Kettle-insticksmoduler</translation>
+    </message>
 </context>
 <context>
     <name>SearchPluginSourceDialog</name>
@@ -10947,6 +11403,90 @@ Klicka på knappen &quot;Sökinsticksmoduler...&quot; längst ner till höger av
         <location filename="../gui/search/searchwidget.ui" line="58"/>
         <source>Stop</source>
         <translation>Stoppa</translation>
+    </message>
+    <message>
+        <source>Searches</source>
+        <translation>Sökningar</translation>
+    </message>
+    <message>
+        <source>Close the selected search</source>
+        <translation>Stäng den valda sökningen</translation>
+    </message>
+    <message>
+        <source>Search for torrents...</source>
+        <translation>Sök efter torrenter...</translation>
+    </message>
+    <message>
+        <source>Category to search in</source>
+        <translation>Kategori att söka i</translation>
+    </message>
+    <message>
+        <source>Search engines to use</source>
+        <translation>Sökmotorer att använda</translation>
+    </message>
+    <message>
+        <source>There aren&apos;t any search plugins installed.
+Click the &quot;Search plugins...&quot; button at the top right of the window to install some.</source>
+        <translation>Inga sökinsticksmoduler är installerade.
+Klicka på knappen &quot;Sökinsticksmoduler...&quot; uppe till höger i fönstret för att installera några.</translation>
+    </message>
+    <message>
+        <source>Type a search above and press Enter.</source>
+        <translation>Skriv en sökning ovan och tryck på Retur.</translation>
+    </message>
+    <message>
+        <source>Refresh search</source>
+        <translation>Uppdatera sökning</translation>
+    </message>
+    <message>
+        <source>Close search</source>
+        <translation>Stäng sökning</translation>
+    </message>
+    <message>
+        <source>Close all searches</source>
+        <translation>Stäng alla sökningar</translation>
+    </message>
+    <message>
+        <source>Searches</source>
+        <translation>Sökningar</translation>
+    </message>
+    <message>
+        <source>Close the selected search</source>
+        <translation>Stäng den valda sökningen</translation>
+    </message>
+    <message>
+        <source>Search for torrents...</source>
+        <translation>Sök efter torrenter...</translation>
+    </message>
+    <message>
+        <source>Category to search in</source>
+        <translation>Kategori att söka i</translation>
+    </message>
+    <message>
+        <source>Search engines to use</source>
+        <translation>Sökmotorer att använda</translation>
+    </message>
+    <message>
+        <source>There aren&apos;t any search plugins installed.
+Click the &quot;Search plugins...&quot; button at the top right of the window to install some.</source>
+        <translation>Inga sökinsticksmoduler är installerade.
+Klicka på knappen &quot;Sökinsticksmoduler...&quot; uppe till höger i fönstret för att installera några.</translation>
+    </message>
+    <message>
+        <source>Type a search above and press Enter.</source>
+        <translation>Skriv en sökning ovan och tryck på Retur.</translation>
+    </message>
+    <message>
+        <source>Refresh search</source>
+        <translation>Uppdatera sökning</translation>
+    </message>
+    <message>
+        <source>Close search</source>
+        <translation>Stäng sökning</translation>
+    </message>
+    <message>
+        <source>Close all searches</source>
+        <translation>Stäng alla sökningar</translation>
     </message>
 </context>
 <context>
@@ -11413,6 +11953,326 @@ Klicka på knappen &quot;Sökinsticksmoduler...&quot; längst ner till höger av
         <location filename="../gui/statsdialog.cpp" line="111"/>
         <source>%1 ms</source>
         <translation type="unfinished">%1 ms</translation>
+    </message>
+    <message>
+        <source>Copy</source>
+        <translation>Kopiera</translation>
+    </message>
+    <message>
+        <source>Overview</source>
+        <translation>Översikt</translation>
+    </message>
+    <message>
+        <source>Transfer</source>
+        <translation>Överföring</translation>
+    </message>
+    <message>
+        <source>This session</source>
+        <translation>Den här sessionen</translation>
+    </message>
+    <message>
+        <source>All time</source>
+        <translation>Någonsin</translation>
+    </message>
+    <message>
+        <source>Downloaded:</source>
+        <translation>Hämtat:</translation>
+    </message>
+    <message>
+        <source>Uploaded:</source>
+        <translation>Skickat:</translation>
+    </message>
+    <message>
+        <source>Share ratio:</source>
+        <translation>Delningsförhållande:</translation>
+    </message>
+    <message>
+        <source>Current speed:</source>
+        <translation>Aktuell hastighet:</translation>
+    </message>
+    <message>
+        <source>Activity</source>
+        <translation>Aktivitet</translation>
+    </message>
+    <message>
+        <source>Torrents downloading:</source>
+        <translation>Torrenter som hämtas:</translation>
+    </message>
+    <message>
+        <source>Torrents seeding:</source>
+        <translation>Torrenter som distribueras:</translation>
+    </message>
+    <message>
+        <source>Torrents stopped:</source>
+        <translation>Stoppade torrenter:</translation>
+    </message>
+    <message>
+        <source>Torrents with errors:</source>
+        <translation>Torrenter med fel:</translation>
+    </message>
+    <message>
+        <source>Running for:</source>
+        <translation>Har körts i:</translation>
+    </message>
+    <message>
+        <source>History</source>
+        <translation>Historik</translation>
+    </message>
+    <message>
+        <source>Period</source>
+        <translation>Period</translation>
+    </message>
+    <message>
+        <source>Today</source>
+        <translation>Idag</translation>
+    </message>
+    <message>
+        <source>Last 7 days</source>
+        <translation>Senaste 7 dagarna</translation>
+    </message>
+    <message>
+        <source>This month</source>
+        <translation>Den här månaden</translation>
+    </message>
+    <message>
+        <source>Last month</source>
+        <translation>Förra månaden</translation>
+    </message>
+    <message>
+        <source>Last 12 months</source>
+        <translation>Senaste 12 månaderna</translation>
+    </message>
+    <message>
+        <source>Tracking since:</source>
+        <translation>Spårning sedan:</translation>
+    </message>
+    <message>
+        <source>By month</source>
+        <translation>Per månad</translation>
+    </message>
+    <message>
+        <source>Month</source>
+        <translation>Månad</translation>
+    </message>
+    <message>
+        <source>Downloaded</source>
+        <translation>Hämtat</translation>
+    </message>
+    <message>
+        <source>Uploaded</source>
+        <translation>Skickat</translation>
+    </message>
+    <message>
+        <source>Share ratio</source>
+        <translation>Delningsförhållande</translation>
+    </message>
+    <message>
+        <source>WebUI downloads added, this month</source>
+        <translation>Hämtningar tillagda via WebUI, den här månaden</translation>
+    </message>
+    <message>
+        <source>Counts the requests that added a download. Apps without a login, such as Sonarr and Radarr, are shown as (localhost). Downloads added in the desktop window are not counted.</source>
+        <translation>Räknar de begäranden som lade till en hämtning. Appar utan inloggning, som Sonarr och Radarr, visas som (localhost). Hämtningar som lagts till i skrivbordsfönstret räknas inte.</translation>
+    </message>
+    <message>
+        <source>Technical</source>
+        <translation>Tekniskt</translation>
+    </message>
+    <message>
+        <source>Disk</source>
+        <translation>Disk</translation>
+    </message>
+    <message>
+        <source>Peers waiting on disk writes:</source>
+        <translation>Jämlikar som väntar på skrivning till disk:</translation>
+    </message>
+    <message>
+        <source>Peers waiting on disk reads:</source>
+        <translation>Jämlikar som väntar på läsning från disk:</translation>
+    </message>
+    <message>
+        <source>Network</source>
+        <translation>Nätverk</translation>
+    </message>
+    <message>
+        <source>DHT nodes:</source>
+        <translation>DHT-noder:</translation>
+    </message>
+    <message>
+        <source>Data discarded this session:</source>
+        <translation>Kasserade data i den här sessionen:</translation>
+    </message>
+    <message>
+        <source>Before tracking began</source>
+        <translation>Innan spårningen började</translation>
+    </message>
+    <message>
+        <source>Nothing added yet</source>
+        <translation>Inget tillagt än</translation>
+    </message>
+    <message>
+        <source>Off</source>
+        <translation>Av</translation>
+    </message>
+    <message>
+        <source>Copy</source>
+        <translation>Kopiera</translation>
+    </message>
+    <message>
+        <source>Overview</source>
+        <translation>Översikt</translation>
+    </message>
+    <message>
+        <source>Transfer</source>
+        <translation>Överföring</translation>
+    </message>
+    <message>
+        <source>This session</source>
+        <translation>Den här sessionen</translation>
+    </message>
+    <message>
+        <source>All time</source>
+        <translation>Någonsin</translation>
+    </message>
+    <message>
+        <source>Downloaded:</source>
+        <translation>Hämtat:</translation>
+    </message>
+    <message>
+        <source>Uploaded:</source>
+        <translation>Skickat:</translation>
+    </message>
+    <message>
+        <source>Share ratio:</source>
+        <translation>Delningsförhållande:</translation>
+    </message>
+    <message>
+        <source>Current speed:</source>
+        <translation>Aktuell hastighet:</translation>
+    </message>
+    <message>
+        <source>Activity</source>
+        <translation>Aktivitet</translation>
+    </message>
+    <message>
+        <source>Torrents downloading:</source>
+        <translation>Torrenter som hämtas:</translation>
+    </message>
+    <message>
+        <source>Torrents seeding:</source>
+        <translation>Torrenter som distribueras:</translation>
+    </message>
+    <message>
+        <source>Torrents stopped:</source>
+        <translation>Stoppade torrenter:</translation>
+    </message>
+    <message>
+        <source>Torrents with errors:</source>
+        <translation>Torrenter med fel:</translation>
+    </message>
+    <message>
+        <source>Running for:</source>
+        <translation>Har körts i:</translation>
+    </message>
+    <message>
+        <source>History</source>
+        <translation>Historik</translation>
+    </message>
+    <message>
+        <source>Period</source>
+        <translation>Period</translation>
+    </message>
+    <message>
+        <source>Today</source>
+        <translation>Idag</translation>
+    </message>
+    <message>
+        <source>Last 7 days</source>
+        <translation>Senaste 7 dagarna</translation>
+    </message>
+    <message>
+        <source>This month</source>
+        <translation>Den här månaden</translation>
+    </message>
+    <message>
+        <source>Last month</source>
+        <translation>Förra månaden</translation>
+    </message>
+    <message>
+        <source>Last 12 months</source>
+        <translation>Senaste 12 månaderna</translation>
+    </message>
+    <message>
+        <source>Tracking since:</source>
+        <translation>Spårning sedan:</translation>
+    </message>
+    <message>
+        <source>By month</source>
+        <translation>Per månad</translation>
+    </message>
+    <message>
+        <source>Month</source>
+        <translation>Månad</translation>
+    </message>
+    <message>
+        <source>Downloaded</source>
+        <translation>Hämtat</translation>
+    </message>
+    <message>
+        <source>Uploaded</source>
+        <translation>Skickat</translation>
+    </message>
+    <message>
+        <source>Share ratio</source>
+        <translation>Delningsförhållande</translation>
+    </message>
+    <message>
+        <source>WebUI downloads added, this month</source>
+        <translation>Hämtningar tillagda via WebUI, den här månaden</translation>
+    </message>
+    <message>
+        <source>Counts the requests that added a download. Apps without a login, such as Sonarr and Radarr, are shown as (localhost). Downloads added in the desktop window are not counted.</source>
+        <translation>Räknar de begäranden som lade till en hämtning. Appar utan inloggning, som Sonarr och Radarr, visas som (localhost). Hämtningar som lagts till i skrivbordsfönstret räknas inte.</translation>
+    </message>
+    <message>
+        <source>Technical</source>
+        <translation>Tekniskt</translation>
+    </message>
+    <message>
+        <source>Disk</source>
+        <translation>Disk</translation>
+    </message>
+    <message>
+        <source>Peers waiting on disk writes:</source>
+        <translation>Jämlikar som väntar på skrivning till disk:</translation>
+    </message>
+    <message>
+        <source>Peers waiting on disk reads:</source>
+        <translation>Jämlikar som väntar på läsning från disk:</translation>
+    </message>
+    <message>
+        <source>Network</source>
+        <translation>Nätverk</translation>
+    </message>
+    <message>
+        <source>DHT nodes:</source>
+        <translation>DHT-noder:</translation>
+    </message>
+    <message>
+        <source>Data discarded this session:</source>
+        <translation>Kasserade data i den här sessionen:</translation>
+    </message>
+    <message>
+        <source>Before tracking began</source>
+        <translation>Innan spårningen började</translation>
+    </message>
+    <message>
+        <source>Nothing added yet</source>
+        <translation>Inget tillagt än</translation>
+    </message>
+    <message>
+        <source>Off</source>
+        <translation>Av</translation>
     </message>
 </context>
 <context>
@@ -12106,6 +12966,22 @@ Välj ett annat namn och försök igen.</translation>
     <message>
         <source>Priority by shown file order</source>
         <translation type="vanished">Prioritet efter visad filordning</translation>
+    </message>
+    <message>
+        <source>Reset auto width</source>
+        <translation>Återställ automatisk bredd</translation>
+    </message>
+    <message>
+        <source>Fit all non-hidden columns to their contents again, and forget the widths that were set by hand</source>
+        <translation>Anpassa alla synliga kolumner efter sitt innehåll igen och glöm bredder som satts för hand</translation>
+    </message>
+    <message>
+        <source>Reset auto width</source>
+        <translation>Återställ automatisk bredd</translation>
+    </message>
+    <message>
+        <source>Fit all non-hidden columns to their contents again, and forget the widths that were set by hand</source>
+        <translation>Anpassa alla synliga kolumner efter sitt innehåll igen och glöm bredder som satts för hand</translation>
     </message>
 </context>
 <context>
@@ -13190,6 +14066,22 @@ Välj ett annat namn och försök igen.</translation>
         <source>Column visibility</source>
         <translation>Kolumnens synlighet</translation>
     </message>
+    <message>
+        <source>Reset auto width</source>
+        <translation>Återställ automatisk bredd</translation>
+    </message>
+    <message>
+        <source>Fit all non-hidden columns to their contents again, and forget the widths that were set by hand</source>
+        <translation>Anpassa alla synliga kolumner efter sitt innehåll igen och glöm bredder som satts för hand</translation>
+    </message>
+    <message>
+        <source>Reset auto width</source>
+        <translation>Återställ automatisk bredd</translation>
+    </message>
+    <message>
+        <source>Fit all non-hidden columns to their contents again, and forget the widths that were set by hand</source>
+        <translation>Anpassa alla synliga kolumner efter sitt innehåll igen och glöm bredder som satts för hand</translation>
+    </message>
 </context>
 <context>
     <name>TrackerStatusFilterWidget</name>
@@ -14056,6 +14948,22 @@ Välj ett annat namn och försök igen.</translation>
         <source>Super seeding mode</source>
         <translation>Superdistributionsläge</translation>
     </message>
+    <message>
+        <source>Reset auto width</source>
+        <translation>Återställ automatisk bredd</translation>
+    </message>
+    <message>
+        <source>Fit all non-hidden columns to their contents again, and forget the widths that were set by hand</source>
+        <translation>Anpassa alla synliga kolumner efter sitt innehåll igen och glöm bredder som satts för hand</translation>
+    </message>
+    <message>
+        <source>Reset auto width</source>
+        <translation>Återställ automatisk bredd</translation>
+    </message>
+    <message>
+        <source>Fit all non-hidden columns to their contents again, and forget the widths that were set by hand</source>
+        <translation>Anpassa alla synliga kolumner efter sitt innehåll igen och glöm bredder som satts för hand</translation>
+    </message>
 </context>
 <context>
     <name>UIThemeDialog</name>
@@ -14390,6 +15298,46 @@ Välj ett annat namn och försök igen.</translation>
         <source>WebAPI login failure. Reason: invalid credentials, attempt count: %1, IP: %2, username: %3</source>
         <translation>WebAPI-inloggningsfel. Orsak: ogiltiga inloggningsuppgifter, antal försök: %1, IP: %2, användarnamn: %3</translation>
     </message>
+    <message>
+        <source>Something went wrong on the server. Details are in qBittorrent&apos;s log.</source>
+        <translation>Något gick fel på servern. Detaljer finns i qBittorrents logg.</translation>
+    </message>
+    <message>
+        <source>This account is locked after too many failed login attempts. Try again in %1 minute(s).</source>
+        <translation>Det här kontot är låst efter för många misslyckade inloggningsförsök. Försök igen om %1 minut(er).</translation>
+    </message>
+    <message>
+        <source>Your role (%1) doesn&apos;t allow this: %2.</source>
+        <translation>Din roll (%1) tillåter inte detta: %2.</translation>
+    </message>
+    <message>
+        <source>Only an admin can remove the tag that says who added a torrent.</source>
+        <translation>Bara en admin kan ta bort taggen som visar vem som lade till en torrent.</translation>
+    </message>
+    <message>
+        <source>Only an admin can clear or replace all tags of a torrent that has a tag saying who added it.</source>
+        <translation>Bara en admin kan rensa eller ersätta alla taggar på en torrent som har en tagg som visar vem som lade till den.</translation>
+    </message>
+    <message>
+        <source>Something went wrong on the server. Details are in qBittorrent&apos;s log.</source>
+        <translation>Något gick fel på servern. Detaljer finns i qBittorrents logg.</translation>
+    </message>
+    <message>
+        <source>This account is locked after too many failed login attempts. Try again in %1 minute(s).</source>
+        <translation>Det här kontot är låst efter för många misslyckade inloggningsförsök. Försök igen om %1 minut(er).</translation>
+    </message>
+    <message>
+        <source>Your role (%1) doesn&apos;t allow this: %2.</source>
+        <translation>Din roll (%1) tillåter inte detta: %2.</translation>
+    </message>
+    <message>
+        <source>Only an admin can remove the tag that says who added a torrent.</source>
+        <translation>Bara en admin kan ta bort taggen som visar vem som lade till en torrent.</translation>
+    </message>
+    <message>
+        <source>Only an admin can clear or replace all tags of a torrent that has a tag saying who added it.</source>
+        <translation>Bara en admin kan rensa eller ersätta alla taggar på en torrent som har en tagg som visar vem som lade till den.</translation>
+    </message>
 </context>
 <context>
     <name>WebUI</name>
@@ -14529,6 +15477,669 @@ Välj ett annat namn och försök igen.</translation>
         <source>&lt; 1m</source>
         <comment>&lt; 1 minute</comment>
         <translation>&lt; 1 min</translation>
+    </message>
+</context>
+<context>
+    <name>UpdateInstaller</name>
+    <message>
+        <source>Kettle Edition update</source>
+        <translation>Kettle Edition-uppdatering</translation>
+    </message>
+    <message>
+        <source>Kettle Edition was updated to %1.</source>
+        <translation>Kettle Edition uppdaterades till %1.</translation>
+    </message>
+    <message>
+        <source>Kettle Edition updated</source>
+        <translation>Kettle Edition uppdaterad</translation>
+    </message>
+    <message>
+        <source>Downloading Kettle Edition %1 (%2 changed files).</source>
+        <translation>Hämtar Kettle Edition %1 (%2 ändrade filer).</translation>
+    </message>
+    <message>
+        <source>Kettle Edition %1 is downloaded and ready to install.</source>
+        <translation>Kettle Edition %1 är hämtad och redo att installeras.</translation>
+    </message>
+    <message>
+        <source>Kettle Edition update</source>
+        <translation>Kettle Edition-uppdatering</translation>
+    </message>
+    <message>
+        <source>Kettle Edition was updated to %1.</source>
+        <translation>Kettle Edition uppdaterades till %1.</translation>
+    </message>
+    <message>
+        <source>Kettle Edition updated</source>
+        <translation>Kettle Edition uppdaterad</translation>
+    </message>
+    <message>
+        <source>Downloading Kettle Edition %1 (%2 changed files).</source>
+        <translation>Hämtar Kettle Edition %1 (%2 ändrade filer).</translation>
+    </message>
+    <message>
+        <source>Kettle Edition %1 is downloaded and ready to install.</source>
+        <translation>Kettle Edition %1 är hämtad och redo att installeras.</translation>
+    </message>
+</context>
+<context>
+    <name>UserAccountDialog</name>
+    <message>
+        <source>User</source>
+        <translation>Användare</translation>
+    </message>
+    <message>
+        <source>Username:</source>
+        <translation>Användarnamn:</translation>
+    </message>
+    <message>
+        <source>Role:</source>
+        <translation>Roll:</translation>
+    </message>
+    <message>
+        <source>Password:</source>
+        <translation>Lösenord:</translation>
+    </message>
+    <message>
+        <source>Confirm password:</source>
+        <translation>Bekräfta lösenord:</translation>
+    </message>
+    <message>
+        <source>Disable this account</source>
+        <translation>Inaktivera det här kontot</translation>
+    </message>
+    <message>
+        <source>Edit User</source>
+        <translation>Redigera användare</translation>
+    </message>
+    <message>
+        <source>Leave empty to keep the current password</source>
+        <translation>Lämna tomt för att behålla det nuvarande lösenordet</translation>
+    </message>
+    <message>
+        <source>Add User</source>
+        <translation>Lägg till användare</translation>
+    </message>
+    <message>
+        <source>At least %1 characters</source>
+        <translation>Minst %1 tecken</translation>
+    </message>
+    <message>
+        <source>Enter a username.</source>
+        <translation>Ange ett användarnamn.</translation>
+    </message>
+    <message>
+        <source>The password must be at least %1 characters long.</source>
+        <translation>Lösenordet måste vara minst %1 tecken långt.</translation>
+    </message>
+    <message>
+        <source>The passwords don&apos;t match.</source>
+        <translation>Lösenorden matchar inte.</translation>
+    </message>
+    <message>
+        <source>User</source>
+        <translation>Användare</translation>
+    </message>
+    <message>
+        <source>Username:</source>
+        <translation>Användarnamn:</translation>
+    </message>
+    <message>
+        <source>Role:</source>
+        <translation>Roll:</translation>
+    </message>
+    <message>
+        <source>Password:</source>
+        <translation>Lösenord:</translation>
+    </message>
+    <message>
+        <source>Confirm password:</source>
+        <translation>Bekräfta lösenord:</translation>
+    </message>
+    <message>
+        <source>Disable this account</source>
+        <translation>Inaktivera det här kontot</translation>
+    </message>
+    <message>
+        <source>Edit User</source>
+        <translation>Redigera användare</translation>
+    </message>
+    <message>
+        <source>Leave empty to keep the current password</source>
+        <translation>Lämna tomt för att behålla det nuvarande lösenordet</translation>
+    </message>
+    <message>
+        <source>Add User</source>
+        <translation>Lägg till användare</translation>
+    </message>
+    <message>
+        <source>At least %1 characters</source>
+        <translation>Minst %1 tecken</translation>
+    </message>
+    <message>
+        <source>Enter a username.</source>
+        <translation>Ange ett användarnamn.</translation>
+    </message>
+    <message>
+        <source>The password must be at least %1 characters long.</source>
+        <translation>Lösenordet måste vara minst %1 tecken långt.</translation>
+    </message>
+    <message>
+        <source>The passwords don&apos;t match.</source>
+        <translation>Lösenorden matchar inte.</translation>
+    </message>
+</context>
+<context>
+    <name>UserAccountsWidget</name>
+    <message>
+        <source>User Accounts</source>
+        <translation>Användarkonton</translation>
+    </message>
+    <message>
+        <source>Users</source>
+        <translation>Användare</translation>
+    </message>
+    <message>
+        <source>People who can log in to the WebUI with their own username and password.</source>
+        <translation>Personer som kan logga in i WebUI med eget användarnamn och lösenord.</translation>
+    </message>
+    <message>
+        <source>Add User...</source>
+        <translation>Lägg till användare...</translation>
+    </message>
+    <message>
+        <source>Edit...</source>
+        <translation>Redigera...</translation>
+    </message>
+    <message>
+        <source>Remove</source>
+        <translation>Ta bort</translation>
+    </message>
+    <message>
+        <source>Roles</source>
+        <translation>Roller</translation>
+    </message>
+    <message>
+        <source>A role decides what its users are allowed to do.</source>
+        <translation>En roll avgör vad dess användare får göra.</translation>
+    </message>
+    <message>
+        <source>Add Role...</source>
+        <translation>Lägg till roll...</translation>
+    </message>
+    <message>
+        <source>Logged In</source>
+        <translation>Inloggade</translation>
+    </message>
+    <message>
+        <source>Browsers and devices where someone is logged in with a user account.</source>
+        <translation>Webbläsare och enheter där någon är inloggad med ett användarkonto.</translation>
+    </message>
+    <message>
+        <source>Log Out</source>
+        <translation>Logga ut</translation>
+    </message>
+    <message>
+        <source>Username</source>
+        <translation>Användarnamn</translation>
+    </message>
+    <message>
+        <source>Role</source>
+        <translation>Roll</translation>
+    </message>
+    <message>
+        <source>Status</source>
+        <translation>Status</translation>
+    </message>
+    <message>
+        <source>Last login</source>
+        <translation>Senaste inloggning</translation>
+    </message>
+    <message>
+        <source>Created</source>
+        <translation>Skapad</translation>
+    </message>
+    <message>
+        <source>Name</source>
+        <translation>Namn</translation>
+    </message>
+    <message>
+        <source>Description</source>
+        <translation>Beskrivning</translation>
+    </message>
+    <message>
+        <source>Permissions</source>
+        <translation>Behörigheter</translation>
+    </message>
+    <message>
+        <source>User</source>
+        <translation>Användare</translation>
+    </message>
+    <message>
+        <source>Browser</source>
+        <translation>Webbläsare</translation>
+    </message>
+    <message>
+        <source>Logged in</source>
+        <translation>Inloggad</translation>
+    </message>
+    <message>
+        <source>Last active</source>
+        <translation>Senast aktiv</translation>
+    </message>
+    <message>
+        <source>Expires</source>
+        <translation>Går ut</translation>
+    </message>
+    <message>
+        <source>The user database could not be opened. See the Execution Log for details.</source>
+        <translation>Användardatabasen kunde inte öppnas. Se körloggen för detaljer.</translation>
+    </message>
+    <message>
+        <source>Disabled</source>
+        <translation>Inaktiverad</translation>
+    </message>
+    <message>
+        <source>Enabled</source>
+        <translation>Aktiverad</translation>
+    </message>
+    <message>
+        <source>Never</source>
+        <translation>Aldrig</translation>
+    </message>
+    <message>
+        <source>No accounts yet, so everyone still uses the shared WebUI login. Add an Admin account first.</source>
+        <translation>Det finns inga konton än, så alla använder fortfarande den delade WebUI-inloggningen. Lägg först till ett Admin-konto.</translation>
+    </message>
+    <message>
+        <source>Couldn&apos;t read the user database. %1</source>
+        <translation>Användardatabasen kunde inte läsas. %1</translation>
+    </message>
+    <message>
+        <source>Remove user</source>
+        <translation>Ta bort användare</translation>
+    </message>
+    <message>
+        <source>Are you sure you want to remove the user &apos;%1&apos;?</source>
+        <translation>Är du säker på att du vill ta bort användaren &quot;%1&quot;?</translation>
+    </message>
+    <message>
+        <source>Remove role</source>
+        <translation>Ta bort roll</translation>
+    </message>
+    <message>
+        <source>Are you sure you want to remove the role &apos;%1&apos;?</source>
+        <translation>Är du säker på att du vill ta bort rollen &quot;%1&quot;?</translation>
+    </message>
+    <message>
+        <source>Enable</source>
+        <translation>Aktivera</translation>
+    </message>
+    <message>
+        <source>Disable</source>
+        <translation>Inaktivera</translation>
+    </message>
+    <message>
+        <source>Log Out Everywhere</source>
+        <translation>Logga ut överallt</translation>
+    </message>
+    <message>
+        <source>User Accounts</source>
+        <translation>Användarkonton</translation>
+    </message>
+    <message>
+        <source>Users</source>
+        <translation>Användare</translation>
+    </message>
+    <message>
+        <source>People who can log in to the WebUI with their own username and password.</source>
+        <translation>Personer som kan logga in i WebUI med eget användarnamn och lösenord.</translation>
+    </message>
+    <message>
+        <source>Add User...</source>
+        <translation>Lägg till användare...</translation>
+    </message>
+    <message>
+        <source>Edit...</source>
+        <translation>Redigera...</translation>
+    </message>
+    <message>
+        <source>Remove</source>
+        <translation>Ta bort</translation>
+    </message>
+    <message>
+        <source>Roles</source>
+        <translation>Roller</translation>
+    </message>
+    <message>
+        <source>A role decides what its users are allowed to do.</source>
+        <translation>En roll avgör vad dess användare får göra.</translation>
+    </message>
+    <message>
+        <source>Add Role...</source>
+        <translation>Lägg till roll...</translation>
+    </message>
+    <message>
+        <source>Logged In</source>
+        <translation>Inloggade</translation>
+    </message>
+    <message>
+        <source>Browsers and devices where someone is logged in with a user account.</source>
+        <translation>Webbläsare och enheter där någon är inloggad med ett användarkonto.</translation>
+    </message>
+    <message>
+        <source>Log Out</source>
+        <translation>Logga ut</translation>
+    </message>
+    <message>
+        <source>Username</source>
+        <translation>Användarnamn</translation>
+    </message>
+    <message>
+        <source>Role</source>
+        <translation>Roll</translation>
+    </message>
+    <message>
+        <source>Status</source>
+        <translation>Status</translation>
+    </message>
+    <message>
+        <source>Last login</source>
+        <translation>Senaste inloggning</translation>
+    </message>
+    <message>
+        <source>Created</source>
+        <translation>Skapad</translation>
+    </message>
+    <message>
+        <source>Name</source>
+        <translation>Namn</translation>
+    </message>
+    <message>
+        <source>Description</source>
+        <translation>Beskrivning</translation>
+    </message>
+    <message>
+        <source>Permissions</source>
+        <translation>Behörigheter</translation>
+    </message>
+    <message>
+        <source>User</source>
+        <translation>Användare</translation>
+    </message>
+    <message>
+        <source>Browser</source>
+        <translation>Webbläsare</translation>
+    </message>
+    <message>
+        <source>Logged in</source>
+        <translation>Inloggad</translation>
+    </message>
+    <message>
+        <source>Last active</source>
+        <translation>Senast aktiv</translation>
+    </message>
+    <message>
+        <source>Expires</source>
+        <translation>Går ut</translation>
+    </message>
+    <message>
+        <source>The user database could not be opened. See the Execution Log for details.</source>
+        <translation>Användardatabasen kunde inte öppnas. Se körloggen för detaljer.</translation>
+    </message>
+    <message>
+        <source>Disabled</source>
+        <translation>Inaktiverad</translation>
+    </message>
+    <message>
+        <source>Enabled</source>
+        <translation>Aktiverad</translation>
+    </message>
+    <message>
+        <source>Never</source>
+        <translation>Aldrig</translation>
+    </message>
+    <message>
+        <source>No accounts yet, so everyone still uses the shared WebUI login. Add an Admin account first.</source>
+        <translation>Det finns inga konton än, så alla använder fortfarande den delade WebUI-inloggningen. Lägg först till ett Admin-konto.</translation>
+    </message>
+    <message>
+        <source>Couldn&apos;t read the user database. %1</source>
+        <translation>Användardatabasen kunde inte läsas. %1</translation>
+    </message>
+    <message>
+        <source>Remove user</source>
+        <translation>Ta bort användare</translation>
+    </message>
+    <message>
+        <source>Are you sure you want to remove the user &apos;%1&apos;?</source>
+        <translation>Är du säker på att du vill ta bort användaren &quot;%1&quot;?</translation>
+    </message>
+    <message>
+        <source>Remove role</source>
+        <translation>Ta bort roll</translation>
+    </message>
+    <message>
+        <source>Are you sure you want to remove the role &apos;%1&apos;?</source>
+        <translation>Är du säker på att du vill ta bort rollen &quot;%1&quot;?</translation>
+    </message>
+    <message>
+        <source>Enable</source>
+        <translation>Aktivera</translation>
+    </message>
+    <message>
+        <source>Disable</source>
+        <translation>Inaktivera</translation>
+    </message>
+    <message>
+        <source>Log Out Everywhere</source>
+        <translation>Logga ut överallt</translation>
+    </message>
+</context>
+<context>
+    <name>UserRoleDialog</name>
+    <message>
+        <source>Role</source>
+        <translation>Roll</translation>
+    </message>
+    <message>
+        <source>Name:</source>
+        <translation>Namn:</translation>
+    </message>
+    <message>
+        <source>Description:</source>
+        <translation>Beskrivning:</translation>
+    </message>
+    <message>
+        <source>Gives control over the PC or qBittorrent itself.</source>
+        <translation>Ger kontroll över datorn eller över själva qBittorrent.</translation>
+    </message>
+    <message>
+        <source>Add Role</source>
+        <translation>Lägg till roll</translation>
+    </message>
+    <message>
+        <source>Edit Role</source>
+        <translation>Redigera roll</translation>
+    </message>
+    <message>
+        <source>Enter a role name.</source>
+        <translation>Ange ett rollnamn.</translation>
+    </message>
+    <message>
+        <source>Role</source>
+        <translation>Roll</translation>
+    </message>
+    <message>
+        <source>Name:</source>
+        <translation>Namn:</translation>
+    </message>
+    <message>
+        <source>Description:</source>
+        <translation>Beskrivning:</translation>
+    </message>
+    <message>
+        <source>Gives control over the PC or qBittorrent itself.</source>
+        <translation>Ger kontroll över datorn eller över själva qBittorrent.</translation>
+    </message>
+    <message>
+        <source>Add Role</source>
+        <translation>Lägg till roll</translation>
+    </message>
+    <message>
+        <source>Edit Role</source>
+        <translation>Redigera roll</translation>
+    </message>
+    <message>
+        <source>Enter a role name.</source>
+        <translation>Ange ett rollnamn.</translation>
+    </message>
+</context>
+<context>
+    <name>WebUIActivityWidget</name>
+    <message>
+        <source>All</source>
+        <translation>Alla</translation>
+    </message>
+    <message>
+        <source>Filter activity</source>
+        <translation>Filtrera aktivitet</translation>
+    </message>
+    <message>
+        <source>Export...</source>
+        <translation>Exportera...</translation>
+    </message>
+    <message>
+        <source>User:</source>
+        <translation>Användare:</translation>
+    </message>
+    <message>
+        <source>Category:</source>
+        <translation>Kategori:</translation>
+    </message>
+    <message>
+        <source>Result:</source>
+        <translation>Resultat:</translation>
+    </message>
+    <message>
+        <source>Time</source>
+        <translation>Tid</translation>
+    </message>
+    <message>
+        <source>User</source>
+        <translation>Användare</translation>
+    </message>
+    <message>
+        <source>Role</source>
+        <translation>Roll</translation>
+    </message>
+    <message>
+        <source>Category</source>
+        <translation>Kategori</translation>
+    </message>
+    <message>
+        <source>Action</source>
+        <translation>Åtgärd</translation>
+    </message>
+    <message>
+        <source>Result</source>
+        <translation>Resultat</translation>
+    </message>
+    <message>
+        <source>The user database could not be opened. See the General tab for details.</source>
+        <translation>Användardatabasen kunde inte öppnas. Se fliken Allmänt för detaljer.</translation>
+    </message>
+    <message>
+        <source>Results (showing %1 out of %2)</source>
+        <translation>Resultat (visar %1 av %2)</translation>
+    </message>
+    <message>
+        <source>Copy</source>
+        <translation>Kopiera</translation>
+    </message>
+    <message>
+        <source>Export WebUI activity</source>
+        <translation>Exportera WebUI-aktivitet</translation>
+    </message>
+    <message>
+        <source>CSV files</source>
+        <translation>CSV-filer</translation>
+    </message>
+    <message>
+        <source>Couldn&apos;t save the file. Reason: %1</source>
+        <translation>Filen kunde inte sparas. Orsak: %1</translation>
+    </message>
+    <message>
+        <source>All</source>
+        <translation>Alla</translation>
+    </message>
+    <message>
+        <source>Filter activity</source>
+        <translation>Filtrera aktivitet</translation>
+    </message>
+    <message>
+        <source>Export...</source>
+        <translation>Exportera...</translation>
+    </message>
+    <message>
+        <source>User:</source>
+        <translation>Användare:</translation>
+    </message>
+    <message>
+        <source>Category:</source>
+        <translation>Kategori:</translation>
+    </message>
+    <message>
+        <source>Result:</source>
+        <translation>Resultat:</translation>
+    </message>
+    <message>
+        <source>Time</source>
+        <translation>Tid</translation>
+    </message>
+    <message>
+        <source>User</source>
+        <translation>Användare</translation>
+    </message>
+    <message>
+        <source>Role</source>
+        <translation>Roll</translation>
+    </message>
+    <message>
+        <source>Category</source>
+        <translation>Kategori</translation>
+    </message>
+    <message>
+        <source>Action</source>
+        <translation>Åtgärd</translation>
+    </message>
+    <message>
+        <source>Result</source>
+        <translation>Resultat</translation>
+    </message>
+    <message>
+        <source>The user database could not be opened. See the General tab for details.</source>
+        <translation>Användardatabasen kunde inte öppnas. Se fliken Allmänt för detaljer.</translation>
+    </message>
+    <message>
+        <source>Results (showing %1 out of %2)</source>
+        <translation>Resultat (visar %1 av %2)</translation>
+    </message>
+    <message>
+        <source>Copy</source>
+        <translation>Kopiera</translation>
+    </message>
+    <message>
+        <source>Export WebUI activity</source>
+        <translation>Exportera WebUI-aktivitet</translation>
+    </message>
+    <message>
+        <source>CSV files</source>
+        <translation>CSV-filer</translation>
+    </message>
+    <message>
+        <source>Couldn&apos;t save the file. Reason: %1</source>
+        <translation>Filen kunde inte sparas. Orsak: %1</translation>
     </message>
 </context>
 </TS>

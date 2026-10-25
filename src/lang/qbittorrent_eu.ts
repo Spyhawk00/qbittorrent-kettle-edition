@@ -141,6 +141,62 @@
         <source>The free IP to Country Lite database by DB-IP is used for resolving the countries of peers. The database is licensed under the Creative Commons Attribution 4.0 International License</source>
         <translation>DB-IP-ren dohaineko IP Country Lite datubaserako hartzaileen herrialdea erabakitzeko erabiltzen da. Datubasea Creative Commons Attribution 4.0 Nazioarteko Baimena itunaren arabera dago baimendua</translation>
     </message>
+    <message>
+        <source>This edition</source>
+        <translation>Argitalpen hau</translation>
+    </message>
+    <message>
+        <source>Edition version:</source>
+        <translation>Argitalpenaren bertsioa:</translation>
+    </message>
+    <message>
+        <source>Based on:</source>
+        <translation>Oinarria:</translation>
+    </message>
+    <message>
+        <source>Maintainer:</source>
+        <translation>Mantentzailea:</translation>
+    </message>
+    <message>
+        <source>qBittorrent project:</source>
+        <translation>qBittorrent proiektua:</translation>
+    </message>
+    <message>
+        <source>Kettle Edition is a personal build of qBittorrent that adds user accounts with roles for the WebUI and the desktop app, an activity log, and an installable WebUI with a phone layout. A kettle is a group of hawks soaring together. This is an unofficial build, not affiliated with the qBittorrent project.</source>
+        <translation>Kettle Edition qBittorrent-en eraikuntza pertsonal bat da, WebUI eta mahaigaineko aplikaziorako rolak dituzten erabiltzaile-kontuak, jarduera-erregistroa eta telefonorako diseinua duen WebUI instalagarria gehitzen dituena. Kettle elkarrekin hegan egiten duten zakur-hegaztien taldea da. Eraikuntza ez-ofiziala da, qBittorrent proiektuarekin loturarik gabea.</translation>
+    </message>
+    <message>
+        <source>N/A</source>
+        <translation>E/E</translation>
+    </message>
+    <message>
+        <source>This edition</source>
+        <translation>Argitalpen hau</translation>
+    </message>
+    <message>
+        <source>Edition version:</source>
+        <translation>Argitalpenaren bertsioa:</translation>
+    </message>
+    <message>
+        <source>Based on:</source>
+        <translation>Oinarria:</translation>
+    </message>
+    <message>
+        <source>Maintainer:</source>
+        <translation>Mantentzailea:</translation>
+    </message>
+    <message>
+        <source>qBittorrent project:</source>
+        <translation>qBittorrent proiektua:</translation>
+    </message>
+    <message>
+        <source>Kettle Edition is a personal build of qBittorrent that adds user accounts with roles for the WebUI and the desktop app, an activity log, and an installable WebUI with a phone layout. A kettle is a group of hawks soaring together. This is an unofficial build, not affiliated with the qBittorrent project.</source>
+        <translation>Kettle Edition qBittorrent-en eraikuntza pertsonal bat da, WebUI eta mahaigaineko aplikaziorako rolak dituzten erabiltzaile-kontuak, jarduera-erregistroa eta telefonorako diseinua duen WebUI instalagarria gehitzen dituena. Kettle elkarrekin hegan egiten duten zakur-hegaztien taldea da. Eraikuntza ez-ofiziala da, qBittorrent proiektuarekin loturarik gabea.</translation>
+    </message>
+    <message>
+        <source>N/A</source>
+        <translation>E/E</translation>
+    </message>
 </context>
 <context>
     <name>AbstractFileStorage</name>
@@ -1459,6 +1515,62 @@
         <location filename="../gui/advancedsettings.cpp" line="925"/>
         <source>Embedded tracker port</source>
         <translation>Barneratutako aztarnari ataka</translation>
+    </message>
+    <message>
+        <source>Network</source>
+        <translation>Sarea</translation>
+    </message>
+    <message>
+        <source>Storage</source>
+        <translation>Biltegiratzea</translation>
+    </message>
+    <message>
+        <source>Peers and trackers</source>
+        <translation>Hartzaileak eta aztarnariak</translation>
+    </message>
+    <message>
+        <source>Program behavior</source>
+        <translation>Programaren portaera</translation>
+    </message>
+    <message>
+        <source>Display and notifications</source>
+        <translation>Pantaila eta jakinarazpenak</translation>
+    </message>
+    <message>
+        <source>Network connection</source>
+        <translation>Sareko elkarketa</translation>
+    </message>
+    <message>
+        <source>Security and privacy</source>
+        <translation>Segurtasuna eta pribatutasuna</translation>
+    </message>
+    <message>
+        <source>Connection tuning</source>
+        <translation>Elkarketaren doikuntza</translation>
+    </message>
+    <message>
+        <source>Saving and torrent files</source>
+        <translation>Gordetzea eta torrent fitxategiak</translation>
+    </message>
+    <message>
+        <source>Disk and memory</source>
+        <translation>Diskoa eta memoria</translation>
+    </message>
+    <message>
+        <source>Peers and seeding</source>
+        <translation>Hartzaileak eta emaritza</translation>
+    </message>
+    <message>
+        <source>DHT and I2P</source>
+        <translation>DHT eta I2P</translation>
+    </message>
+    <message>
+        <source>General</source>
+        <translation>Orokorra</translation>
+    </message>
+    <message>
+        <source>Trackers</source>
+        <translation>Aztarnariak</translation>
     </message>
 </context>
 <context>
@@ -3480,6 +3592,22 @@ Sostengatutako heuskarriak: S01E01, 1x1, 2017.12.31 eta 31.12.2017 (Data heuskar
         <source>Remove torrent</source>
         <translation>Kendu torrenta</translation>
     </message>
+    <message>
+        <source>This choice is remembered for the next removal.</source>
+        <translation>Aukera hau hurrengo kentzeko gogoratuko da.</translation>
+    </message>
+    <message>
+        <source>Remove</source>
+        <translation>Kendu</translation>
+    </message>
+    <message>
+        <source>This choice is remembered for the next removal.</source>
+        <translation>Aukera hau hurrengo kentzeko gogoratuko da.</translation>
+    </message>
+    <message>
+        <source>Remove</source>
+        <translation>Kendu</translation>
+    </message>
 </context>
 <context>
     <name>DownloadFromURLDialog</name>
@@ -3553,6 +3681,14 @@ Sostengatutako heuskarriak: S01E01, 1x1, 2017.12.31 eta 31.12.2017 (Data heuskar
         <location filename="../gui/executionlogwidget.cpp" line="99"/>
         <source>Clear</source>
         <translation>Garbitu</translation>
+    </message>
+    <message>
+        <source>WebUI Activity</source>
+        <translation>WebUI jarduera</translation>
+    </message>
+    <message>
+        <source>WebUI Activity</source>
+        <translation>WebUI jarduera</translation>
     </message>
 </context>
 <context>
@@ -4717,6 +4853,46 @@ Beharrezko gutxiena: %2.</translation>
         <location filename="../gui/mainwindow.cpp" line="1346"/>
         <source>Torrent Files</source>
         <translation>Torrent Agiriak</translation>
+    </message>
+    <message>
+        <source>Kettle Edition %1 is available.</source>
+        <translation>Kettle Edition %1 eskuragarri dago.</translation>
+    </message>
+    <message>
+        <source>qBittorrent Kettle Edition %1 is available. It is downloaded now and installed at 4:00 AM, or when qBittorrent starts next.</source>
+        <translation>qBittorrent Kettle Edition %1 eskuragarri dago. Orain deskargatzen da eta 4:00etan edo qBittorrent hurrengoan hasten denean instalatuko da.</translation>
+    </message>
+    <message>
+        <source>qBittorrent Kettle Edition %1 is available. It is downloaded now. Turn on &quot;Automatically install Kettle Edition updates&quot; in Options to install it.</source>
+        <translation>qBittorrent Kettle Edition %1 eskuragarri dago. Orain deskargatzen da. Instalatzeko, aktibatu Aukeretan «Instalatu automatikoki Kettle Edition eguneraketak».</translation>
+    </message>
+    <message>
+        <source>You have the latest qBittorrent Kettle Edition (%1).</source>
+        <translation>qBittorrent Kettle Edition-en azken bertsioa duzu (%1).</translation>
+    </message>
+    <message>
+        <source>Could not check for qBittorrent Kettle Edition updates. See the Execution Log for details.</source>
+        <translation>Ezin izan dira qBittorrent Kettle Edition eguneraketak egiaztatu. Xehetasunetarako ikusi exekuzio-erregistroa.</translation>
+    </message>
+    <message>
+        <source>Kettle Edition %1 is available.</source>
+        <translation>Kettle Edition %1 eskuragarri dago.</translation>
+    </message>
+    <message>
+        <source>qBittorrent Kettle Edition %1 is available. It is downloaded now and installed at 4:00 AM, or when qBittorrent starts next.</source>
+        <translation>qBittorrent Kettle Edition %1 eskuragarri dago. Orain deskargatzen da eta 4:00etan edo qBittorrent hurrengoan hasten denean instalatuko da.</translation>
+    </message>
+    <message>
+        <source>qBittorrent Kettle Edition %1 is available. It is downloaded now. Turn on &quot;Automatically install Kettle Edition updates&quot; in Options to install it.</source>
+        <translation>qBittorrent Kettle Edition %1 eskuragarri dago. Orain deskargatzen da. Instalatzeko, aktibatu Aukeretan «Instalatu automatikoki Kettle Edition eguneraketak».</translation>
+    </message>
+    <message>
+        <source>You have the latest qBittorrent Kettle Edition (%1).</source>
+        <translation>qBittorrent Kettle Edition-en azken bertsioa duzu (%1).</translation>
+    </message>
+    <message>
+        <source>Could not check for qBittorrent Kettle Edition updates. See the Execution Log for details.</source>
+        <translation>Ezin izan dira qBittorrent Kettle Edition eguneraketak egiaztatu. Xehetasunetarako ikusi exekuzio-erregistroa.</translation>
     </message>
 </context>
 <context>
@@ -8484,6 +8660,190 @@ Check the Execution Log for errors.</source>
         <source>Length Error</source>
         <translation>Luzera Akatsa</translation>
     </message>
+    <message>
+        <source>Search settings</source>
+        <translation>Bilatu ezarpenetan</translation>
+    </message>
+    <message>
+        <source>No settings match</source>
+        <translation>Ez dago ezarpen egokirik</translation>
+    </message>
+    <message>
+        <source>User Accounts</source>
+        <translation>Erabiltzaile-kontuak</translation>
+    </message>
+    <message>
+        <source>Automatically install Kettle Edition updates</source>
+        <translation>Instalatu automatikoki Kettle Edition eguneraketak</translation>
+    </message>
+    <message>
+        <source>Status bar and log</source>
+        <translation>Egoera-barra eta erregistroa</translation>
+    </message>
+    <message>
+        <source>Files</source>
+        <translation>Fitxategiak</translation>
+    </message>
+    <message>
+        <source>Checking</source>
+        <translation>Egiaztatzea</translation>
+    </message>
+    <message>
+        <source>Until the first user account is created, this login always works.</source>
+        <translation>Lehen erabiltzaile-kontua sortu arte, saio-hasiera honek beti funtzionatzen du.</translation>
+    </message>
+    <message>
+        <source>Allow this login when user accounts exist</source>
+        <translation>Baimendu saio-hasiera hau erabiltzaile-kontuak daudenean</translation>
+    </message>
+    <message>
+        <source>Access</source>
+        <translation>Sarbidea</translation>
+    </message>
+    <message>
+        <source>Changes to users, roles and logins apply at once. The settings below apply with OK or Apply.</source>
+        <translation>Erabiltzaile, rol eta saio-hasieretako aldaketak berehala aplikatzen dira. Beheko ezarpenak Ados edo Aplikatu botoiarekin aplikatzen dira.</translation>
+    </message>
+    <message>
+        <source>Logins and Activity Log</source>
+        <translation>Saio-hasierak eta jarduera-erregistroa</translation>
+    </message>
+    <message>
+        <source>0 means users are logged out after the session timeout.</source>
+        <translation>0 esan nahi du erabiltzaileak saioaren denbora-muga amaitzean saiotik ateratzen direla.</translation>
+    </message>
+    <message>
+        <source>Keep users logged in for:</source>
+        <translation>Mantendu erabiltzaileak saioan:</translation>
+    </message>
+    <message>
+        <source>Until session timeout</source>
+        <translation>Saioaren denbora-muga arte</translation>
+    </message>
+    <message>
+        <source> days</source>
+        <translation> egun</translation>
+    </message>
+    <message>
+        <source>Lock account after consecutive failures:</source>
+        <translation>Blokeatu kontua jarraian huts egin ondoren:</translation>
+    </message>
+    <message>
+        <source>Keep WebUI activity log for:</source>
+        <translation>Mantendu WebUI jarduera-erregistroa:</translation>
+    </message>
+    <message>
+        <source>lock for:</source>
+        <translation>blokeatu:</translation>
+    </message>
+    <message>
+        <source>%1 works best with Windows dark mode</source>
+        <translation>%1 hobeto dabil Windows-en modu ilunarekin</translation>
+    </message>
+    <message>
+        <source>WebUI address</source>
+        <translation>WebUI helbidea</translation>
+    </message>
+    <message>
+        <source>With the WebUI address set to %1, only this PC can reach the WebUI. Remote access, including through a reverse proxy on another machine, will stop working.
+
+Save anyway?</source>
+        <translation>WebUI helbidea %1 denean, PC hau bakarrik iritsi daiteke WebUI-ra. Urruneko sarbidea, beste makina bateko alderantzizko proxy baten bidez ere, geldituko da.
+
+Gorde hala ere?</translation>
+    </message>
+    <message>
+        <source>Search settings</source>
+        <translation>Bilatu ezarpenetan</translation>
+    </message>
+    <message>
+        <source>No settings match</source>
+        <translation>Ez dago ezarpen egokirik</translation>
+    </message>
+    <message>
+        <source>User Accounts</source>
+        <translation>Erabiltzaile-kontuak</translation>
+    </message>
+    <message>
+        <source>Automatically install Kettle Edition updates</source>
+        <translation>Instalatu automatikoki Kettle Edition eguneraketak</translation>
+    </message>
+    <message>
+        <source>Status bar and log</source>
+        <translation>Egoera-barra eta erregistroa</translation>
+    </message>
+    <message>
+        <source>Files</source>
+        <translation>Fitxategiak</translation>
+    </message>
+    <message>
+        <source>Checking</source>
+        <translation>Egiaztatzea</translation>
+    </message>
+    <message>
+        <source>Until the first user account is created, this login always works.</source>
+        <translation>Lehen erabiltzaile-kontua sortu arte, saio-hasiera honek beti funtzionatzen du.</translation>
+    </message>
+    <message>
+        <source>Allow this login when user accounts exist</source>
+        <translation>Baimendu saio-hasiera hau erabiltzaile-kontuak daudenean</translation>
+    </message>
+    <message>
+        <source>Access</source>
+        <translation>Sarbidea</translation>
+    </message>
+    <message>
+        <source>Changes to users, roles and logins apply at once. The settings below apply with OK or Apply.</source>
+        <translation>Erabiltzaile, rol eta saio-hasieretako aldaketak berehala aplikatzen dira. Beheko ezarpenak Ados edo Aplikatu botoiarekin aplikatzen dira.</translation>
+    </message>
+    <message>
+        <source>Logins and Activity Log</source>
+        <translation>Saio-hasierak eta jarduera-erregistroa</translation>
+    </message>
+    <message>
+        <source>0 means users are logged out after the session timeout.</source>
+        <translation>0 esan nahi du erabiltzaileak saioaren denbora-muga amaitzean saiotik ateratzen direla.</translation>
+    </message>
+    <message>
+        <source>Keep users logged in for:</source>
+        <translation>Mantendu erabiltzaileak saioan:</translation>
+    </message>
+    <message>
+        <source>Until session timeout</source>
+        <translation>Saioaren denbora-muga arte</translation>
+    </message>
+    <message>
+        <source> days</source>
+        <translation> egun</translation>
+    </message>
+    <message>
+        <source>Lock account after consecutive failures:</source>
+        <translation>Blokeatu kontua jarraian huts egin ondoren:</translation>
+    </message>
+    <message>
+        <source>Keep WebUI activity log for:</source>
+        <translation>Mantendu WebUI jarduera-erregistroa:</translation>
+    </message>
+    <message>
+        <source>lock for:</source>
+        <translation>blokeatu:</translation>
+    </message>
+    <message>
+        <source>%1 works best with Windows dark mode</source>
+        <translation>%1 hobeto dabil Windows-en modu ilunarekin</translation>
+    </message>
+    <message>
+        <source>WebUI address</source>
+        <translation>WebUI helbidea</translation>
+    </message>
+    <message>
+        <source>With the WebUI address set to %1, only this PC can reach the WebUI. Remote access, including through a reverse proxy on another machine, will stop working.
+
+Save anyway?</source>
+        <translation>WebUI helbidea %1 denean, PC hau bakarrik iritsi daiteke WebUI-ra. Urruneko sarbidea, beste makina bateko alderantzizko proxy baten bidez ere, geldituko da.
+
+Gorde hala ere?</translation>
+    </message>
 </context>
 <context>
     <name>PeerInfo</name>
@@ -8736,6 +9096,22 @@ Check the Execution Log for errors.</source>
         <location filename="../gui/properties/peerlistwidget.cpp" line="309"/>
         <source>Copy IP:port</source>
         <translation>Kopiatu IP:ataka</translation>
+    </message>
+    <message>
+        <source>Reset auto width</source>
+        <translation>Berrezarri zabalera automatikoa</translation>
+    </message>
+    <message>
+        <source>Fit all non-hidden columns to their contents again, and forget the widths that were set by hand</source>
+        <translation>Egokitu berriro ikusgai dauden zutabe guztiak edukira eta ahaztu eskuz ezarritako zabalerak</translation>
+    </message>
+    <message>
+        <source>Reset auto width</source>
+        <translation>Berrezarri zabalera automatikoa</translation>
+    </message>
+    <message>
+        <source>Fit all non-hidden columns to their contents again, and forget the widths that were set by hand</source>
+        <translation>Egokitu berriro ikusgai dauden zutabe guztiak edukira eta ahaztu eskuz ezarritako zabalerak</translation>
     </message>
 </context>
 <context>
@@ -10124,6 +10500,14 @@ Plugin hauek ezgaituta daude.</translation>
         <source>Open link</source>
         <translation type="unfinished"></translation>
     </message>
+    <message>
+        <source>Details</source>
+        <translation>Xehetasunak</translation>
+    </message>
+    <message>
+        <source>Details</source>
+        <translation>Xehetasunak</translation>
+    </message>
 </context>
 <context>
     <name>SearchController</name>
@@ -10477,6 +10861,70 @@ Plugin hauek ezgaituta daude.</translation>
         <source>Resize all non-hidden columns to the size of their contents</source>
         <translation>Ezkutatu gabeko zutabeen tamaina haien edukien tamainara aldatu</translation>
     </message>
+    <message>
+        <source>%1 of %2 shown (%3 hidden)</source>
+        <translation>%1 / %2 erakusten (%3 ezkutuan)</translation>
+    </message>
+    <message>
+        <source>%1 of %2 shown</source>
+        <translation>%1 / %2 erakusten</translation>
+    </message>
+    <message>
+        <source>Searching: %1</source>
+        <translation>Bilatzen: %1</translation>
+    </message>
+    <message>
+        <source>Finished: %1</source>
+        <translation>Amaituta: %1</translation>
+    </message>
+    <message>
+        <source>Search aborted: %1</source>
+        <translation>Bilaketa eten da: %1</translation>
+    </message>
+    <message>
+        <source>Reset auto width</source>
+        <translation>Berrezarri zabalera automatikoa</translation>
+    </message>
+    <message>
+        <source>Fit all non-hidden columns to their contents again, and forget the widths that were set by hand</source>
+        <translation>Egokitu berriro ikusgai dauden zutabe guztiak edukira eta ahaztu eskuz ezarritako zabalerak</translation>
+    </message>
+    <message>
+        <source>Unknown</source>
+        <translation>Ezezaguna</translation>
+    </message>
+    <message>
+        <source>%1 of %2 shown (%3 hidden)</source>
+        <translation>%1 / %2 erakusten (%3 ezkutuan)</translation>
+    </message>
+    <message>
+        <source>%1 of %2 shown</source>
+        <translation>%1 / %2 erakusten</translation>
+    </message>
+    <message>
+        <source>Searching: %1</source>
+        <translation>Bilatzen: %1</translation>
+    </message>
+    <message>
+        <source>Finished: %1</source>
+        <translation>Amaituta: %1</translation>
+    </message>
+    <message>
+        <source>Search aborted: %1</source>
+        <translation>Bilaketa eten da: %1</translation>
+    </message>
+    <message>
+        <source>Reset auto width</source>
+        <translation>Berrezarri zabalera automatikoa</translation>
+    </message>
+    <message>
+        <source>Fit all non-hidden columns to their contents again, and forget the widths that were set by hand</source>
+        <translation>Egokitu berriro ikusgai dauden zutabe guztiak edukira eta ahaztu eskuz ezarritako zabalerak</translation>
+    </message>
+    <message>
+        <source>Unknown</source>
+        <translation>Ezezaguna</translation>
+    </message>
 </context>
 <context>
     <name>SearchPluginManager</name>
@@ -10774,6 +11222,14 @@ Plugin hauek ezgaituta daude.</translation>
         <source>Couldn&apos;t update &quot;%1&quot; search engine plugin. %2</source>
         <translation type="unfinished">Ezinezkoa &quot;%1&quot; bilaketa gailu plugina eguneratzea. %2</translation>
     </message>
+    <message>
+        <source>Install Kettle Plugins</source>
+        <translation>Instalatu Kettle pluginak</translation>
+    </message>
+    <message>
+        <source>Install Kettle Plugins</source>
+        <translation>Instalatu Kettle pluginak</translation>
+    </message>
 </context>
 <context>
     <name>SearchPluginSourceDialog</name>
@@ -10913,6 +11369,90 @@ Klikatu &quot;Bilatu pluginak...&quot; botoia leihoaren behe eskuinean zenbait e
         <location filename="../gui/search/searchwidget.ui" line="58"/>
         <source>Stop</source>
         <translation>Gelditu</translation>
+    </message>
+    <message>
+        <source>Searches</source>
+        <translation>Bilaketak</translation>
+    </message>
+    <message>
+        <source>Close the selected search</source>
+        <translation>Itxi hautatutako bilaketa</translation>
+    </message>
+    <message>
+        <source>Search for torrents...</source>
+        <translation>Bilatu torrentak...</translation>
+    </message>
+    <message>
+        <source>Category to search in</source>
+        <translation>Bilatzeko kategoria</translation>
+    </message>
+    <message>
+        <source>Search engines to use</source>
+        <translation>Erabiltzeko bilaketa-motorrak</translation>
+    </message>
+    <message>
+        <source>There aren&apos;t any search plugins installed.
+Click the &quot;Search plugins...&quot; button at the top right of the window to install some.</source>
+        <translation>Ez dago bilaketa-pluginik instalatuta.
+Instalatzeko, egin klik leihoaren goiko eskuineko «Bilaketa-pluginak...» botoian.</translation>
+    </message>
+    <message>
+        <source>Type a search above and press Enter.</source>
+        <translation>Idatzi bilaketa bat goian eta sakatu Sartu.</translation>
+    </message>
+    <message>
+        <source>Refresh search</source>
+        <translation>Eguneratu bilaketa</translation>
+    </message>
+    <message>
+        <source>Close search</source>
+        <translation>Itxi bilaketa</translation>
+    </message>
+    <message>
+        <source>Close all searches</source>
+        <translation>Itxi bilaketa guztiak</translation>
+    </message>
+    <message>
+        <source>Searches</source>
+        <translation>Bilaketak</translation>
+    </message>
+    <message>
+        <source>Close the selected search</source>
+        <translation>Itxi hautatutako bilaketa</translation>
+    </message>
+    <message>
+        <source>Search for torrents...</source>
+        <translation>Bilatu torrentak...</translation>
+    </message>
+    <message>
+        <source>Category to search in</source>
+        <translation>Bilatzeko kategoria</translation>
+    </message>
+    <message>
+        <source>Search engines to use</source>
+        <translation>Erabiltzeko bilaketa-motorrak</translation>
+    </message>
+    <message>
+        <source>There aren&apos;t any search plugins installed.
+Click the &quot;Search plugins...&quot; button at the top right of the window to install some.</source>
+        <translation>Ez dago bilaketa-pluginik instalatuta.
+Instalatzeko, egin klik leihoaren goiko eskuineko «Bilaketa-pluginak...» botoian.</translation>
+    </message>
+    <message>
+        <source>Type a search above and press Enter.</source>
+        <translation>Idatzi bilaketa bat goian eta sakatu Sartu.</translation>
+    </message>
+    <message>
+        <source>Refresh search</source>
+        <translation>Eguneratu bilaketa</translation>
+    </message>
+    <message>
+        <source>Close search</source>
+        <translation>Itxi bilaketa</translation>
+    </message>
+    <message>
+        <source>Close all searches</source>
+        <translation>Itxi bilaketa guztiak</translation>
     </message>
 </context>
 <context>
@@ -11375,6 +11915,326 @@ Klikatu &quot;Bilatu pluginak...&quot; botoia leihoaren behe eskuinean zenbait e
         <location filename="../gui/statsdialog.cpp" line="111"/>
         <source>%1 ms</source>
         <translation type="unfinished">%1 sm</translation>
+    </message>
+    <message>
+        <source>Copy</source>
+        <translation>Kopiatu</translation>
+    </message>
+    <message>
+        <source>Overview</source>
+        <translation>Ikuspegi orokorra</translation>
+    </message>
+    <message>
+        <source>Transfer</source>
+        <translation>Transferentzia</translation>
+    </message>
+    <message>
+        <source>This session</source>
+        <translation>Saio hau</translation>
+    </message>
+    <message>
+        <source>All time</source>
+        <translation>Denbora osoa</translation>
+    </message>
+    <message>
+        <source>Downloaded:</source>
+        <translation>Deskargatuta:</translation>
+    </message>
+    <message>
+        <source>Uploaded:</source>
+        <translation>Igota:</translation>
+    </message>
+    <message>
+        <source>Share ratio:</source>
+        <translation>Partekatze-erlazioa:</translation>
+    </message>
+    <message>
+        <source>Current speed:</source>
+        <translation>Uneko abiadura:</translation>
+    </message>
+    <message>
+        <source>Activity</source>
+        <translation>Jarduera</translation>
+    </message>
+    <message>
+        <source>Torrents downloading:</source>
+        <translation>Deskargatzen ari diren torrentak:</translation>
+    </message>
+    <message>
+        <source>Torrents seeding:</source>
+        <translation>Emaritzan ari diren torrentak:</translation>
+    </message>
+    <message>
+        <source>Torrents stopped:</source>
+        <translation>Geldituta dauden torrentak:</translation>
+    </message>
+    <message>
+        <source>Torrents with errors:</source>
+        <translation>Erroreak dituzten torrentak:</translation>
+    </message>
+    <message>
+        <source>Running for:</source>
+        <translation>Martxan:</translation>
+    </message>
+    <message>
+        <source>History</source>
+        <translation>Historia</translation>
+    </message>
+    <message>
+        <source>Period</source>
+        <translation>Aldia</translation>
+    </message>
+    <message>
+        <source>Today</source>
+        <translation>Gaur</translation>
+    </message>
+    <message>
+        <source>Last 7 days</source>
+        <translation>Azken 7 egunak</translation>
+    </message>
+    <message>
+        <source>This month</source>
+        <translation>Hilabete hau</translation>
+    </message>
+    <message>
+        <source>Last month</source>
+        <translation>Joan den hilabetea</translation>
+    </message>
+    <message>
+        <source>Last 12 months</source>
+        <translation>Azken 12 hilabeteak</translation>
+    </message>
+    <message>
+        <source>Tracking since:</source>
+        <translation>Jarraipena hasi zenetik:</translation>
+    </message>
+    <message>
+        <source>By month</source>
+        <translation>Hilabeteka</translation>
+    </message>
+    <message>
+        <source>Month</source>
+        <translation>Hilabetea</translation>
+    </message>
+    <message>
+        <source>Downloaded</source>
+        <translation>Deskargatuta</translation>
+    </message>
+    <message>
+        <source>Uploaded</source>
+        <translation>Igota</translation>
+    </message>
+    <message>
+        <source>Share ratio</source>
+        <translation>Partekatze-erlazioa</translation>
+    </message>
+    <message>
+        <source>WebUI downloads added, this month</source>
+        <translation>WebUI bidez gehitutako deskargak, hilabete honetan</translation>
+    </message>
+    <message>
+        <source>Counts the requests that added a download. Apps without a login, such as Sonarr and Radarr, are shown as (localhost). Downloads added in the desktop window are not counted.</source>
+        <translation>Deskarga bat gehitu duten eskaerak zenbatzen ditu. Saio-hasierarik gabeko aplikazioak, Sonarr eta Radarr bezala, (localhost) gisa agertzen dira. Mahaigaineko leihoan gehitutako deskargak ez dira zenbatzen.</translation>
+    </message>
+    <message>
+        <source>Technical</source>
+        <translation>Teknikoa</translation>
+    </message>
+    <message>
+        <source>Disk</source>
+        <translation>Diskoa</translation>
+    </message>
+    <message>
+        <source>Peers waiting on disk writes:</source>
+        <translation>Diskoan idazteko zain dauden hartzaileak:</translation>
+    </message>
+    <message>
+        <source>Peers waiting on disk reads:</source>
+        <translation>Diskotik irakurtzeko zain dauden hartzaileak:</translation>
+    </message>
+    <message>
+        <source>Network</source>
+        <translation>Sarea</translation>
+    </message>
+    <message>
+        <source>DHT nodes:</source>
+        <translation>DHT nodoak:</translation>
+    </message>
+    <message>
+        <source>Data discarded this session:</source>
+        <translation>Saio honetan baztertutako datuak:</translation>
+    </message>
+    <message>
+        <source>Before tracking began</source>
+        <translation>Jarraipena hasi aurretik</translation>
+    </message>
+    <message>
+        <source>Nothing added yet</source>
+        <translation>Oraindik ez da ezer gehitu</translation>
+    </message>
+    <message>
+        <source>Off</source>
+        <translation>Desaktibatuta</translation>
+    </message>
+    <message>
+        <source>Copy</source>
+        <translation>Kopiatu</translation>
+    </message>
+    <message>
+        <source>Overview</source>
+        <translation>Ikuspegi orokorra</translation>
+    </message>
+    <message>
+        <source>Transfer</source>
+        <translation>Transferentzia</translation>
+    </message>
+    <message>
+        <source>This session</source>
+        <translation>Saio hau</translation>
+    </message>
+    <message>
+        <source>All time</source>
+        <translation>Denbora osoa</translation>
+    </message>
+    <message>
+        <source>Downloaded:</source>
+        <translation>Deskargatuta:</translation>
+    </message>
+    <message>
+        <source>Uploaded:</source>
+        <translation>Igota:</translation>
+    </message>
+    <message>
+        <source>Share ratio:</source>
+        <translation>Partekatze-erlazioa:</translation>
+    </message>
+    <message>
+        <source>Current speed:</source>
+        <translation>Uneko abiadura:</translation>
+    </message>
+    <message>
+        <source>Activity</source>
+        <translation>Jarduera</translation>
+    </message>
+    <message>
+        <source>Torrents downloading:</source>
+        <translation>Deskargatzen ari diren torrentak:</translation>
+    </message>
+    <message>
+        <source>Torrents seeding:</source>
+        <translation>Emaritzan ari diren torrentak:</translation>
+    </message>
+    <message>
+        <source>Torrents stopped:</source>
+        <translation>Geldituta dauden torrentak:</translation>
+    </message>
+    <message>
+        <source>Torrents with errors:</source>
+        <translation>Erroreak dituzten torrentak:</translation>
+    </message>
+    <message>
+        <source>Running for:</source>
+        <translation>Martxan:</translation>
+    </message>
+    <message>
+        <source>History</source>
+        <translation>Historia</translation>
+    </message>
+    <message>
+        <source>Period</source>
+        <translation>Aldia</translation>
+    </message>
+    <message>
+        <source>Today</source>
+        <translation>Gaur</translation>
+    </message>
+    <message>
+        <source>Last 7 days</source>
+        <translation>Azken 7 egunak</translation>
+    </message>
+    <message>
+        <source>This month</source>
+        <translation>Hilabete hau</translation>
+    </message>
+    <message>
+        <source>Last month</source>
+        <translation>Joan den hilabetea</translation>
+    </message>
+    <message>
+        <source>Last 12 months</source>
+        <translation>Azken 12 hilabeteak</translation>
+    </message>
+    <message>
+        <source>Tracking since:</source>
+        <translation>Jarraipena hasi zenetik:</translation>
+    </message>
+    <message>
+        <source>By month</source>
+        <translation>Hilabeteka</translation>
+    </message>
+    <message>
+        <source>Month</source>
+        <translation>Hilabetea</translation>
+    </message>
+    <message>
+        <source>Downloaded</source>
+        <translation>Deskargatuta</translation>
+    </message>
+    <message>
+        <source>Uploaded</source>
+        <translation>Igota</translation>
+    </message>
+    <message>
+        <source>Share ratio</source>
+        <translation>Partekatze-erlazioa</translation>
+    </message>
+    <message>
+        <source>WebUI downloads added, this month</source>
+        <translation>WebUI bidez gehitutako deskargak, hilabete honetan</translation>
+    </message>
+    <message>
+        <source>Counts the requests that added a download. Apps without a login, such as Sonarr and Radarr, are shown as (localhost). Downloads added in the desktop window are not counted.</source>
+        <translation>Deskarga bat gehitu duten eskaerak zenbatzen ditu. Saio-hasierarik gabeko aplikazioak, Sonarr eta Radarr bezala, (localhost) gisa agertzen dira. Mahaigaineko leihoan gehitutako deskargak ez dira zenbatzen.</translation>
+    </message>
+    <message>
+        <source>Technical</source>
+        <translation>Teknikoa</translation>
+    </message>
+    <message>
+        <source>Disk</source>
+        <translation>Diskoa</translation>
+    </message>
+    <message>
+        <source>Peers waiting on disk writes:</source>
+        <translation>Diskoan idazteko zain dauden hartzaileak:</translation>
+    </message>
+    <message>
+        <source>Peers waiting on disk reads:</source>
+        <translation>Diskotik irakurtzeko zain dauden hartzaileak:</translation>
+    </message>
+    <message>
+        <source>Network</source>
+        <translation>Sarea</translation>
+    </message>
+    <message>
+        <source>DHT nodes:</source>
+        <translation>DHT nodoak:</translation>
+    </message>
+    <message>
+        <source>Data discarded this session:</source>
+        <translation>Saio honetan baztertutako datuak:</translation>
+    </message>
+    <message>
+        <source>Before tracking began</source>
+        <translation>Jarraipena hasi aurretik</translation>
+    </message>
+    <message>
+        <source>Nothing added yet</source>
+        <translation>Oraindik ez da ezer gehitu</translation>
+    </message>
+    <message>
+        <source>Off</source>
+        <translation>Desaktibatuta</translation>
     </message>
 </context>
 <context>
@@ -12068,6 +12928,22 @@ Mesedez hautatu beste izen bat eta saiatu berriro.</translation>
     <message>
         <source>Priority by shown file order</source>
         <translation type="vanished">Lehentasuna erakutsitako fitxategi ordenaz</translation>
+    </message>
+    <message>
+        <source>Reset auto width</source>
+        <translation>Berrezarri zabalera automatikoa</translation>
+    </message>
+    <message>
+        <source>Fit all non-hidden columns to their contents again, and forget the widths that were set by hand</source>
+        <translation>Egokitu berriro ikusgai dauden zutabe guztiak edukira eta ahaztu eskuz ezarritako zabalerak</translation>
+    </message>
+    <message>
+        <source>Reset auto width</source>
+        <translation>Berrezarri zabalera automatikoa</translation>
+    </message>
+    <message>
+        <source>Fit all non-hidden columns to their contents again, and forget the widths that were set by hand</source>
+        <translation>Egokitu berriro ikusgai dauden zutabe guztiak edukira eta ahaztu eskuz ezarritako zabalerak</translation>
     </message>
 </context>
 <context>
@@ -13152,6 +14028,22 @@ Mesedez hautatu beste izen bat eta saiatu berriro.</translation>
         <source>Column visibility</source>
         <translation>Zutabe ikusgarritasuna</translation>
     </message>
+    <message>
+        <source>Reset auto width</source>
+        <translation>Berrezarri zabalera automatikoa</translation>
+    </message>
+    <message>
+        <source>Fit all non-hidden columns to their contents again, and forget the widths that were set by hand</source>
+        <translation>Egokitu berriro ikusgai dauden zutabe guztiak edukira eta ahaztu eskuz ezarritako zabalerak</translation>
+    </message>
+    <message>
+        <source>Reset auto width</source>
+        <translation>Berrezarri zabalera automatikoa</translation>
+    </message>
+    <message>
+        <source>Fit all non-hidden columns to their contents again, and forget the widths that were set by hand</source>
+        <translation>Egokitu berriro ikusgai dauden zutabe guztiak edukira eta ahaztu eskuz ezarritako zabalerak</translation>
+    </message>
 </context>
 <context>
     <name>TrackerStatusFilterWidget</name>
@@ -14018,6 +14910,22 @@ Mesedez hautatu beste izen bat eta saiatu berriro.</translation>
         <source>Super seeding mode</source>
         <translation>Gain emaritza modua</translation>
     </message>
+    <message>
+        <source>Reset auto width</source>
+        <translation>Berrezarri zabalera automatikoa</translation>
+    </message>
+    <message>
+        <source>Fit all non-hidden columns to their contents again, and forget the widths that were set by hand</source>
+        <translation>Egokitu berriro ikusgai dauden zutabe guztiak edukira eta ahaztu eskuz ezarritako zabalerak</translation>
+    </message>
+    <message>
+        <source>Reset auto width</source>
+        <translation>Berrezarri zabalera automatikoa</translation>
+    </message>
+    <message>
+        <source>Fit all non-hidden columns to their contents again, and forget the widths that were set by hand</source>
+        <translation>Egokitu berriro ikusgai dauden zutabe guztiak edukira eta ahaztu eskuz ezarritako zabalerak</translation>
+    </message>
 </context>
 <context>
     <name>UIThemeDialog</name>
@@ -14352,6 +15260,46 @@ Mesedez hautatu beste izen bat eta saiatu berriro.</translation>
         <source>WebAPI login failure. Reason: invalid credentials, attempt count: %1, IP: %2, username: %3</source>
         <translation>WebAPI saio hasiera hutsegitea: Zergaitia: egiaztagiri baliogabea, saiakera zenbatekoa: %1, IP: %2, erabiltzaile-izena: %3</translation>
     </message>
+    <message>
+        <source>Something went wrong on the server. Details are in qBittorrent&apos;s log.</source>
+        <translation>Zerbait gaizki joan da zerbitzarian. Xehetasunak qBittorrent-en erregistroan daude.</translation>
+    </message>
+    <message>
+        <source>This account is locked after too many failed login attempts. Try again in %1 minute(s).</source>
+        <translation>Kontu hau blokeatuta dago saio-hasiera saiakera huts gehiegi egin direlako. Saiatu berriro %1 minutu barru.</translation>
+    </message>
+    <message>
+        <source>Your role (%1) doesn&apos;t allow this: %2.</source>
+        <translation>Zure rolak (%1) ez du hau onartzen: %2.</translation>
+    </message>
+    <message>
+        <source>Only an admin can remove the tag that says who added a torrent.</source>
+        <translation>Admin batek bakarrik kendu dezake torrent bat nork gehitu duen adierazten duen etiketa.</translation>
+    </message>
+    <message>
+        <source>Only an admin can clear or replace all tags of a torrent that has a tag saying who added it.</source>
+        <translation>Admin batek bakarrik garbitu edo ordezka ditzake torrent baten etiketa guztiak, nork gehitu duen adierazten duen etiketa badu.</translation>
+    </message>
+    <message>
+        <source>Something went wrong on the server. Details are in qBittorrent&apos;s log.</source>
+        <translation>Zerbait gaizki joan da zerbitzarian. Xehetasunak qBittorrent-en erregistroan daude.</translation>
+    </message>
+    <message>
+        <source>This account is locked after too many failed login attempts. Try again in %1 minute(s).</source>
+        <translation>Kontu hau blokeatuta dago saio-hasiera saiakera huts gehiegi egin direlako. Saiatu berriro %1 minutu barru.</translation>
+    </message>
+    <message>
+        <source>Your role (%1) doesn&apos;t allow this: %2.</source>
+        <translation>Zure rolak (%1) ez du hau onartzen: %2.</translation>
+    </message>
+    <message>
+        <source>Only an admin can remove the tag that says who added a torrent.</source>
+        <translation>Admin batek bakarrik kendu dezake torrent bat nork gehitu duen adierazten duen etiketa.</translation>
+    </message>
+    <message>
+        <source>Only an admin can clear or replace all tags of a torrent that has a tag saying who added it.</source>
+        <translation>Admin batek bakarrik garbitu edo ordezka ditzake torrent baten etiketa guztiak, nork gehitu duen adierazten duen etiketa badu.</translation>
+    </message>
 </context>
 <context>
     <name>WebUI</name>
@@ -14491,6 +15439,669 @@ Mesedez hautatu beste izen bat eta saiatu berriro.</translation>
         <source>&lt; 1m</source>
         <comment>&lt; 1 minute</comment>
         <translation>&lt; 1m</translation>
+    </message>
+</context>
+<context>
+    <name>UpdateInstaller</name>
+    <message>
+        <source>Kettle Edition update</source>
+        <translation>Kettle Edition eguneraketa</translation>
+    </message>
+    <message>
+        <source>Kettle Edition was updated to %1.</source>
+        <translation>Kettle Edition %1 bertsiora eguneratu da.</translation>
+    </message>
+    <message>
+        <source>Kettle Edition updated</source>
+        <translation>Kettle Edition eguneratuta</translation>
+    </message>
+    <message>
+        <source>Downloading Kettle Edition %1 (%2 changed files).</source>
+        <translation>Kettle Edition %1 deskargatzen (%2 fitxategi aldatu).</translation>
+    </message>
+    <message>
+        <source>Kettle Edition %1 is downloaded and ready to install.</source>
+        <translation>Kettle Edition %1 deskargatuta dago eta instalatzeko prest.</translation>
+    </message>
+    <message>
+        <source>Kettle Edition update</source>
+        <translation>Kettle Edition eguneraketa</translation>
+    </message>
+    <message>
+        <source>Kettle Edition was updated to %1.</source>
+        <translation>Kettle Edition %1 bertsiora eguneratu da.</translation>
+    </message>
+    <message>
+        <source>Kettle Edition updated</source>
+        <translation>Kettle Edition eguneratuta</translation>
+    </message>
+    <message>
+        <source>Downloading Kettle Edition %1 (%2 changed files).</source>
+        <translation>Kettle Edition %1 deskargatzen (%2 fitxategi aldatu).</translation>
+    </message>
+    <message>
+        <source>Kettle Edition %1 is downloaded and ready to install.</source>
+        <translation>Kettle Edition %1 deskargatuta dago eta instalatzeko prest.</translation>
+    </message>
+</context>
+<context>
+    <name>UserAccountDialog</name>
+    <message>
+        <source>User</source>
+        <translation>Erabiltzailea</translation>
+    </message>
+    <message>
+        <source>Username:</source>
+        <translation>Erabiltzaile-izena:</translation>
+    </message>
+    <message>
+        <source>Role:</source>
+        <translation>Rola:</translation>
+    </message>
+    <message>
+        <source>Password:</source>
+        <translation>Pasahitza:</translation>
+    </message>
+    <message>
+        <source>Confirm password:</source>
+        <translation>Berretsi pasahitza:</translation>
+    </message>
+    <message>
+        <source>Disable this account</source>
+        <translation>Desgaitu kontu hau</translation>
+    </message>
+    <message>
+        <source>Edit User</source>
+        <translation>Editatu erabiltzailea</translation>
+    </message>
+    <message>
+        <source>Leave empty to keep the current password</source>
+        <translation>Utzi hutsik uneko pasahitza mantentzeko</translation>
+    </message>
+    <message>
+        <source>Add User</source>
+        <translation>Gehitu erabiltzailea</translation>
+    </message>
+    <message>
+        <source>At least %1 characters</source>
+        <translation>Gutxienez %1 karaktere</translation>
+    </message>
+    <message>
+        <source>Enter a username.</source>
+        <translation>Sartu erabiltzaile-izen bat.</translation>
+    </message>
+    <message>
+        <source>The password must be at least %1 characters long.</source>
+        <translation>Pasahitzak gutxienez %1 karaktere izan behar ditu.</translation>
+    </message>
+    <message>
+        <source>The passwords don&apos;t match.</source>
+        <translation>Pasahitzak ez datoz bat.</translation>
+    </message>
+    <message>
+        <source>User</source>
+        <translation>Erabiltzailea</translation>
+    </message>
+    <message>
+        <source>Username:</source>
+        <translation>Erabiltzaile-izena:</translation>
+    </message>
+    <message>
+        <source>Role:</source>
+        <translation>Rola:</translation>
+    </message>
+    <message>
+        <source>Password:</source>
+        <translation>Pasahitza:</translation>
+    </message>
+    <message>
+        <source>Confirm password:</source>
+        <translation>Berretsi pasahitza:</translation>
+    </message>
+    <message>
+        <source>Disable this account</source>
+        <translation>Desgaitu kontu hau</translation>
+    </message>
+    <message>
+        <source>Edit User</source>
+        <translation>Editatu erabiltzailea</translation>
+    </message>
+    <message>
+        <source>Leave empty to keep the current password</source>
+        <translation>Utzi hutsik uneko pasahitza mantentzeko</translation>
+    </message>
+    <message>
+        <source>Add User</source>
+        <translation>Gehitu erabiltzailea</translation>
+    </message>
+    <message>
+        <source>At least %1 characters</source>
+        <translation>Gutxienez %1 karaktere</translation>
+    </message>
+    <message>
+        <source>Enter a username.</source>
+        <translation>Sartu erabiltzaile-izen bat.</translation>
+    </message>
+    <message>
+        <source>The password must be at least %1 characters long.</source>
+        <translation>Pasahitzak gutxienez %1 karaktere izan behar ditu.</translation>
+    </message>
+    <message>
+        <source>The passwords don&apos;t match.</source>
+        <translation>Pasahitzak ez datoz bat.</translation>
+    </message>
+</context>
+<context>
+    <name>UserAccountsWidget</name>
+    <message>
+        <source>User Accounts</source>
+        <translation>Erabiltzaile-kontuak</translation>
+    </message>
+    <message>
+        <source>Users</source>
+        <translation>Erabiltzaileak</translation>
+    </message>
+    <message>
+        <source>People who can log in to the WebUI with their own username and password.</source>
+        <translation>Beren erabiltzaile-izen eta pasahitzarekin WebUI-ra sar daitezkeen pertsonak.</translation>
+    </message>
+    <message>
+        <source>Add User...</source>
+        <translation>Gehitu erabiltzailea...</translation>
+    </message>
+    <message>
+        <source>Edit...</source>
+        <translation>Editatu...</translation>
+    </message>
+    <message>
+        <source>Remove</source>
+        <translation>Kendu</translation>
+    </message>
+    <message>
+        <source>Roles</source>
+        <translation>Rolak</translation>
+    </message>
+    <message>
+        <source>A role decides what its users are allowed to do.</source>
+        <translation>Rol batek bere erabiltzaileek zer egin dezaketen erabakitzen du.</translation>
+    </message>
+    <message>
+        <source>Add Role...</source>
+        <translation>Gehitu rola...</translation>
+    </message>
+    <message>
+        <source>Logged In</source>
+        <translation>Saioan daudenak</translation>
+    </message>
+    <message>
+        <source>Browsers and devices where someone is logged in with a user account.</source>
+        <translation>Erabiltzaile-kontu batekin norbait saioan dagoen nabigatzaileak eta gailuak.</translation>
+    </message>
+    <message>
+        <source>Log Out</source>
+        <translation>Itxi saioa</translation>
+    </message>
+    <message>
+        <source>Username</source>
+        <translation>Erabiltzaile-izena</translation>
+    </message>
+    <message>
+        <source>Role</source>
+        <translation>Rola</translation>
+    </message>
+    <message>
+        <source>Status</source>
+        <translation>Egoera</translation>
+    </message>
+    <message>
+        <source>Last login</source>
+        <translation>Azken saio-hasiera</translation>
+    </message>
+    <message>
+        <source>Created</source>
+        <translation>Sortuta</translation>
+    </message>
+    <message>
+        <source>Name</source>
+        <translation>Izena</translation>
+    </message>
+    <message>
+        <source>Description</source>
+        <translation>Deskribapena</translation>
+    </message>
+    <message>
+        <source>Permissions</source>
+        <translation>Baimenak</translation>
+    </message>
+    <message>
+        <source>User</source>
+        <translation>Erabiltzailea</translation>
+    </message>
+    <message>
+        <source>Browser</source>
+        <translation>Nabigatzailea</translation>
+    </message>
+    <message>
+        <source>Logged in</source>
+        <translation>Saioa hasita</translation>
+    </message>
+    <message>
+        <source>Last active</source>
+        <translation>Azken jarduera</translation>
+    </message>
+    <message>
+        <source>Expires</source>
+        <translation>Iraungitzen da</translation>
+    </message>
+    <message>
+        <source>The user database could not be opened. See the Execution Log for details.</source>
+        <translation>Ezin izan da erabiltzaile-datu-basea ireki. Xehetasunetarako ikusi exekuzio-erregistroa.</translation>
+    </message>
+    <message>
+        <source>Disabled</source>
+        <translation>Desgaituta</translation>
+    </message>
+    <message>
+        <source>Enabled</source>
+        <translation>Gaituta</translation>
+    </message>
+    <message>
+        <source>Never</source>
+        <translation>Inoiz ez</translation>
+    </message>
+    <message>
+        <source>No accounts yet, so everyone still uses the shared WebUI login. Add an Admin account first.</source>
+        <translation>Oraindik ez dago konturik, beraz denek WebUI-ko partekatutako saio-hasiera erabiltzen dute oraindik. Gehitu lehenik Admin kontu bat.</translation>
+    </message>
+    <message>
+        <source>Couldn&apos;t read the user database. %1</source>
+        <translation>Ezin izan da erabiltzaile-datu-basea irakurri. %1</translation>
+    </message>
+    <message>
+        <source>Remove user</source>
+        <translation>Kendu erabiltzailea</translation>
+    </message>
+    <message>
+        <source>Are you sure you want to remove the user &apos;%1&apos;?</source>
+        <translation>Ziur zaude &apos;%1&apos; erabiltzailea kendu nahi duzula?</translation>
+    </message>
+    <message>
+        <source>Remove role</source>
+        <translation>Kendu rola</translation>
+    </message>
+    <message>
+        <source>Are you sure you want to remove the role &apos;%1&apos;?</source>
+        <translation>Ziur zaude &apos;%1&apos; rola kendu nahi duzula?</translation>
+    </message>
+    <message>
+        <source>Enable</source>
+        <translation>Gaitu</translation>
+    </message>
+    <message>
+        <source>Disable</source>
+        <translation>Desgaitu</translation>
+    </message>
+    <message>
+        <source>Log Out Everywhere</source>
+        <translation>Itxi saioa nonahi</translation>
+    </message>
+    <message>
+        <source>User Accounts</source>
+        <translation>Erabiltzaile-kontuak</translation>
+    </message>
+    <message>
+        <source>Users</source>
+        <translation>Erabiltzaileak</translation>
+    </message>
+    <message>
+        <source>People who can log in to the WebUI with their own username and password.</source>
+        <translation>Beren erabiltzaile-izen eta pasahitzarekin WebUI-ra sar daitezkeen pertsonak.</translation>
+    </message>
+    <message>
+        <source>Add User...</source>
+        <translation>Gehitu erabiltzailea...</translation>
+    </message>
+    <message>
+        <source>Edit...</source>
+        <translation>Editatu...</translation>
+    </message>
+    <message>
+        <source>Remove</source>
+        <translation>Kendu</translation>
+    </message>
+    <message>
+        <source>Roles</source>
+        <translation>Rolak</translation>
+    </message>
+    <message>
+        <source>A role decides what its users are allowed to do.</source>
+        <translation>Rol batek bere erabiltzaileek zer egin dezaketen erabakitzen du.</translation>
+    </message>
+    <message>
+        <source>Add Role...</source>
+        <translation>Gehitu rola...</translation>
+    </message>
+    <message>
+        <source>Logged In</source>
+        <translation>Saioan daudenak</translation>
+    </message>
+    <message>
+        <source>Browsers and devices where someone is logged in with a user account.</source>
+        <translation>Erabiltzaile-kontu batekin norbait saioan dagoen nabigatzaileak eta gailuak.</translation>
+    </message>
+    <message>
+        <source>Log Out</source>
+        <translation>Itxi saioa</translation>
+    </message>
+    <message>
+        <source>Username</source>
+        <translation>Erabiltzaile-izena</translation>
+    </message>
+    <message>
+        <source>Role</source>
+        <translation>Rola</translation>
+    </message>
+    <message>
+        <source>Status</source>
+        <translation>Egoera</translation>
+    </message>
+    <message>
+        <source>Last login</source>
+        <translation>Azken saio-hasiera</translation>
+    </message>
+    <message>
+        <source>Created</source>
+        <translation>Sortuta</translation>
+    </message>
+    <message>
+        <source>Name</source>
+        <translation>Izena</translation>
+    </message>
+    <message>
+        <source>Description</source>
+        <translation>Deskribapena</translation>
+    </message>
+    <message>
+        <source>Permissions</source>
+        <translation>Baimenak</translation>
+    </message>
+    <message>
+        <source>User</source>
+        <translation>Erabiltzailea</translation>
+    </message>
+    <message>
+        <source>Browser</source>
+        <translation>Nabigatzailea</translation>
+    </message>
+    <message>
+        <source>Logged in</source>
+        <translation>Saioa hasita</translation>
+    </message>
+    <message>
+        <source>Last active</source>
+        <translation>Azken jarduera</translation>
+    </message>
+    <message>
+        <source>Expires</source>
+        <translation>Iraungitzen da</translation>
+    </message>
+    <message>
+        <source>The user database could not be opened. See the Execution Log for details.</source>
+        <translation>Ezin izan da erabiltzaile-datu-basea ireki. Xehetasunetarako ikusi exekuzio-erregistroa.</translation>
+    </message>
+    <message>
+        <source>Disabled</source>
+        <translation>Desgaituta</translation>
+    </message>
+    <message>
+        <source>Enabled</source>
+        <translation>Gaituta</translation>
+    </message>
+    <message>
+        <source>Never</source>
+        <translation>Inoiz ez</translation>
+    </message>
+    <message>
+        <source>No accounts yet, so everyone still uses the shared WebUI login. Add an Admin account first.</source>
+        <translation>Oraindik ez dago konturik, beraz denek WebUI-ko partekatutako saio-hasiera erabiltzen dute oraindik. Gehitu lehenik Admin kontu bat.</translation>
+    </message>
+    <message>
+        <source>Couldn&apos;t read the user database. %1</source>
+        <translation>Ezin izan da erabiltzaile-datu-basea irakurri. %1</translation>
+    </message>
+    <message>
+        <source>Remove user</source>
+        <translation>Kendu erabiltzailea</translation>
+    </message>
+    <message>
+        <source>Are you sure you want to remove the user &apos;%1&apos;?</source>
+        <translation>Ziur zaude &apos;%1&apos; erabiltzailea kendu nahi duzula?</translation>
+    </message>
+    <message>
+        <source>Remove role</source>
+        <translation>Kendu rola</translation>
+    </message>
+    <message>
+        <source>Are you sure you want to remove the role &apos;%1&apos;?</source>
+        <translation>Ziur zaude &apos;%1&apos; rola kendu nahi duzula?</translation>
+    </message>
+    <message>
+        <source>Enable</source>
+        <translation>Gaitu</translation>
+    </message>
+    <message>
+        <source>Disable</source>
+        <translation>Desgaitu</translation>
+    </message>
+    <message>
+        <source>Log Out Everywhere</source>
+        <translation>Itxi saioa nonahi</translation>
+    </message>
+</context>
+<context>
+    <name>UserRoleDialog</name>
+    <message>
+        <source>Role</source>
+        <translation>Rola</translation>
+    </message>
+    <message>
+        <source>Name:</source>
+        <translation>Izena:</translation>
+    </message>
+    <message>
+        <source>Description:</source>
+        <translation>Deskribapena:</translation>
+    </message>
+    <message>
+        <source>Gives control over the PC or qBittorrent itself.</source>
+        <translation>PCaren edo qBittorrent-en beraren kontrola ematen du.</translation>
+    </message>
+    <message>
+        <source>Add Role</source>
+        <translation>Gehitu rola</translation>
+    </message>
+    <message>
+        <source>Edit Role</source>
+        <translation>Editatu rola</translation>
+    </message>
+    <message>
+        <source>Enter a role name.</source>
+        <translation>Sartu rol-izen bat.</translation>
+    </message>
+    <message>
+        <source>Role</source>
+        <translation>Rola</translation>
+    </message>
+    <message>
+        <source>Name:</source>
+        <translation>Izena:</translation>
+    </message>
+    <message>
+        <source>Description:</source>
+        <translation>Deskribapena:</translation>
+    </message>
+    <message>
+        <source>Gives control over the PC or qBittorrent itself.</source>
+        <translation>PCaren edo qBittorrent-en beraren kontrola ematen du.</translation>
+    </message>
+    <message>
+        <source>Add Role</source>
+        <translation>Gehitu rola</translation>
+    </message>
+    <message>
+        <source>Edit Role</source>
+        <translation>Editatu rola</translation>
+    </message>
+    <message>
+        <source>Enter a role name.</source>
+        <translation>Sartu rol-izen bat.</translation>
+    </message>
+</context>
+<context>
+    <name>WebUIActivityWidget</name>
+    <message>
+        <source>All</source>
+        <translation>Guztiak</translation>
+    </message>
+    <message>
+        <source>Filter activity</source>
+        <translation>Iragazi jarduera</translation>
+    </message>
+    <message>
+        <source>Export...</source>
+        <translation>Esportatu...</translation>
+    </message>
+    <message>
+        <source>User:</source>
+        <translation>Erabiltzailea:</translation>
+    </message>
+    <message>
+        <source>Category:</source>
+        <translation>Kategoria:</translation>
+    </message>
+    <message>
+        <source>Result:</source>
+        <translation>Emaitza:</translation>
+    </message>
+    <message>
+        <source>Time</source>
+        <translation>Ordua</translation>
+    </message>
+    <message>
+        <source>User</source>
+        <translation>Erabiltzailea</translation>
+    </message>
+    <message>
+        <source>Role</source>
+        <translation>Rola</translation>
+    </message>
+    <message>
+        <source>Category</source>
+        <translation>Kategoria</translation>
+    </message>
+    <message>
+        <source>Action</source>
+        <translation>Ekintza</translation>
+    </message>
+    <message>
+        <source>Result</source>
+        <translation>Emaitza</translation>
+    </message>
+    <message>
+        <source>The user database could not be opened. See the General tab for details.</source>
+        <translation>Ezin izan da erabiltzaile-datu-basea ireki. Xehetasunetarako ikusi Orokorra fitxa.</translation>
+    </message>
+    <message>
+        <source>Results (showing %1 out of %2)</source>
+        <translation>Emaitzak (%1 / %2 erakusten)</translation>
+    </message>
+    <message>
+        <source>Copy</source>
+        <translation>Kopiatu</translation>
+    </message>
+    <message>
+        <source>Export WebUI activity</source>
+        <translation>Esportatu WebUI jarduera</translation>
+    </message>
+    <message>
+        <source>CSV files</source>
+        <translation>CSV fitxategiak</translation>
+    </message>
+    <message>
+        <source>Couldn&apos;t save the file. Reason: %1</source>
+        <translation>Ezin izan da fitxategia gorde. Arrazoia: %1</translation>
+    </message>
+    <message>
+        <source>All</source>
+        <translation>Guztiak</translation>
+    </message>
+    <message>
+        <source>Filter activity</source>
+        <translation>Iragazi jarduera</translation>
+    </message>
+    <message>
+        <source>Export...</source>
+        <translation>Esportatu...</translation>
+    </message>
+    <message>
+        <source>User:</source>
+        <translation>Erabiltzailea:</translation>
+    </message>
+    <message>
+        <source>Category:</source>
+        <translation>Kategoria:</translation>
+    </message>
+    <message>
+        <source>Result:</source>
+        <translation>Emaitza:</translation>
+    </message>
+    <message>
+        <source>Time</source>
+        <translation>Ordua</translation>
+    </message>
+    <message>
+        <source>User</source>
+        <translation>Erabiltzailea</translation>
+    </message>
+    <message>
+        <source>Role</source>
+        <translation>Rola</translation>
+    </message>
+    <message>
+        <source>Category</source>
+        <translation>Kategoria</translation>
+    </message>
+    <message>
+        <source>Action</source>
+        <translation>Ekintza</translation>
+    </message>
+    <message>
+        <source>Result</source>
+        <translation>Emaitza</translation>
+    </message>
+    <message>
+        <source>The user database could not be opened. See the General tab for details.</source>
+        <translation>Ezin izan da erabiltzaile-datu-basea ireki. Xehetasunetarako ikusi Orokorra fitxa.</translation>
+    </message>
+    <message>
+        <source>Results (showing %1 out of %2)</source>
+        <translation>Emaitzak (%1 / %2 erakusten)</translation>
+    </message>
+    <message>
+        <source>Copy</source>
+        <translation>Kopiatu</translation>
+    </message>
+    <message>
+        <source>Export WebUI activity</source>
+        <translation>Esportatu WebUI jarduera</translation>
+    </message>
+    <message>
+        <source>CSV files</source>
+        <translation>CSV fitxategiak</translation>
+    </message>
+    <message>
+        <source>Couldn&apos;t save the file. Reason: %1</source>
+        <translation>Ezin izan da fitxategia gorde. Arrazoia: %1</translation>
     </message>
 </context>
 </TS>

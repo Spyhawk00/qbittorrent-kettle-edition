@@ -223,6 +223,81 @@ The piece hash will be checked when it is requested for the first time by a peer
         <source>%1 needed · %2 free</source>
         <translation type="unfinished" />
     </message>
+    <message>
+        <source>Don&apos;t create subfolder</source>
+        <translation>Дэд хавтас үүсгэхгүй</translation>
+    </message>
+    <message>
+        <source>N/A</source>
+        <translation>Байхгүй</translation>
+    </message>
+    <message>
+        <source>Never show again</source>
+        <translation>Дахиж бүү харуул</translation>
+    </message>
+    <message>
+        <source>Your role saves torrents in the default folders.</source>
+        <translation>Таны үүрэг торрентуудыг анхдагч хавтсанд хадгална.</translation>
+    </message>
+</context>
+<context>
+    <name>AdvancedSettings</name>
+    <message>
+        <source>General</source>
+        <translation>Үндсэн</translation>
+    </message>
+    <message>
+        <source>Network</source>
+        <translation>Сүлжээ</translation>
+    </message>
+    <message>
+        <source>Storage</source>
+        <translation>Хадгалалт</translation>
+    </message>
+    <message>
+        <source>Peers and trackers</source>
+        <translation>Пирүүд ба трекерүүд</translation>
+    </message>
+    <message>
+        <source>Program behavior</source>
+        <translation>Програмын үйлдэл</translation>
+    </message>
+    <message>
+        <source>Display and notifications</source>
+        <translation>Харуулалт ба мэдэгдэл</translation>
+    </message>
+    <message>
+        <source>Network connection</source>
+        <translation>Сүлжээний холболт</translation>
+    </message>
+    <message>
+        <source>Security and privacy</source>
+        <translation>Аюулгүй байдал ба нууцлал</translation>
+    </message>
+    <message>
+        <source>Connection tuning</source>
+        <translation>Холболтын тохируулга</translation>
+    </message>
+    <message>
+        <source>Saving and torrent files</source>
+        <translation>Хадгалах ба торрент файлууд</translation>
+    </message>
+    <message>
+        <source>Disk and memory</source>
+        <translation>Диск ба санах ой</translation>
+    </message>
+    <message>
+        <source>Trackers</source>
+        <translation>Трекерүүд</translation>
+    </message>
+    <message>
+        <source>Peers and seeding</source>
+        <translation>Пирүүд ба түгээлт</translation>
+    </message>
+    <message>
+        <source>DHT and I2P</source>
+        <translation>DHT ба I2P</translation>
+    </message>
 </context>
 <context>
     <name>CategoryFilterModel</name>
@@ -623,6 +698,14 @@ The piece hash will be checked when it is requested for the first time by a peer
         <source>More</source>
         <translation>Бусад</translation>
     </message>
+    <message>
+        <source>Change Password...</source>
+        <translation>Нууц үг солих...</translation>
+    </message>
+    <message>
+        <source>Signed in as</source>
+        <translation>Нэвтэрсэн хэрэглэгч</translation>
+    </message>
 </context>
 <context>
     <name>MainWindow</name>
@@ -929,6 +1012,38 @@ The piece hash will be checked when it is requested for the first time by a peer
     <message>
         <source>Resume Session</source>
         <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Name</source>
+        <translation>Нэр</translation>
+    </message>
+    <message>
+        <source>Pause Session</source>
+        <translation>Сешийг түр зогсоох</translation>
+    </message>
+    <message>
+        <source>Pause session</source>
+        <translation>Сешийг түр зогсоох</translation>
+    </message>
+    <message>
+        <source>Remove</source>
+        <translation>Хасах</translation>
+    </message>
+    <message>
+        <source>Resume Session</source>
+        <translation>Сешийг үргэлжлүүлэх</translation>
+    </message>
+    <message>
+        <source>Resume session</source>
+        <translation>Сешийг үргэлжлүүлэх</translation>
+    </message>
+    <message>
+        <source>Your account can&apos;t add torrents.</source>
+        <translation>Таны бүртгэл торрент нэмж чадахгүй.</translation>
+    </message>
+    <message>
+        <source>[PAUSED]</source>
+        <translation>[ТҮР ЗОГСООСОН]</translation>
     </message>
 </context>
 <context>
@@ -2511,6 +2626,126 @@ Use ';' to split multiple entries. Can use wildcard '*'.</source>
         <source>a@x.com;b@y.com,c@z.com - send two emails: the first to just a@x.com, the second to both b@y.com and c@z.com</source>
         <translation type="unfinished" />
     </message>
+    <message>
+        <source>0 means users are logged out after the session timeout.</source>
+        <translation>0 гэдэг нь сешний хугацаа дууссаны дараа хэрэглэгчид гарна гэсэн утгатай.</translation>
+    </message>
+    <message>
+        <source>Access</source>
+        <translation>Хандалт</translation>
+    </message>
+    <message>
+        <source>Allow this login when user accounts exist</source>
+        <translation>Хэрэглэгчийн бүртгэл байхад энэ нэвтрэлтийг зөвшөөрөх</translation>
+    </message>
+    <message>
+        <source>Also save search results</source>
+        <translation>Хайлтын үр дүнг мөн хадгалах</translation>
+    </message>
+    <message>
+        <source>Below normal</source>
+        <translation>Хэвийнээс бага</translation>
+    </message>
+    <message>
+        <source>Changes to users, roles and logins apply at once.</source>
+        <translation>Хэрэглэгч, үүрэг, нэвтрэлтийн өөрчлөлт шууд хэрэгжинэ.</translation>
+    </message>
+    <message>
+        <source>Checking</source>
+        <translation>Шалгалт</translation>
+    </message>
+    <message>
+        <source>Don&apos;t create subfolder</source>
+        <translation>Дэд хавтас үүсгэхгүй</translation>
+    </message>
+    <message>
+        <source>Files</source>
+        <translation>Файлууд</translation>
+    </message>
+    <message>
+        <source>Keep WebUI activity log for:</source>
+        <translation>WebUI үйл ажиллагааны бүртгэлийг хадгалах хугацаа:</translation>
+    </message>
+    <message>
+        <source>Keep users logged in for:</source>
+        <translation>Хэрэглэгчийг нэвтэрсэн хэвээр байлгах хугацаа:</translation>
+    </message>
+    <message>
+        <source>Lock account after consecutive failures:</source>
+        <translation>Дараалсан алдааны дараа бүртгэлийг түгжих:</translation>
+    </message>
+    <message>
+        <source>Logins and Activity Log</source>
+        <translation>Нэвтрэлт ба үйл ажиллагааны бүртгэл</translation>
+    </message>
+    <message>
+        <source>Low</source>
+        <translation>Бага</translation>
+    </message>
+    <message>
+        <source>Medium</source>
+        <translation>Дундаж</translation>
+    </message>
+    <message>
+        <source>No settings match</source>
+        <translation>Тохирох тохиргоо алга</translation>
+    </message>
+    <message>
+        <source>Process memory priority:</source>
+        <translation>Процессын санах ойн ач холбогдол:</translation>
+    </message>
+    <message>
+        <source>Save search tabs</source>
+        <translation>Хайлтын табуудыг хадгалах</translation>
+    </message>
+    <message>
+        <source>Search settings</source>
+        <translation>Тохиргоо хайх</translation>
+    </message>
+    <message>
+        <source>Show the window when adding a torrent</source>
+        <translation>Торрент нэмэх үед цонхыг харуулах</translation>
+    </message>
+    <message>
+        <source>Status bar and log</source>
+        <translation>Төлөвийн мөр ба бүртгэл</translation>
+    </message>
+    <message>
+        <source>The WebUI activity log can be kept for 1 to 3650 days.</source>
+        <translation>WebUI үйл ажиллагааны бүртгэлийг 1-ээс 3650 хоногоор хадгалж болно.</translation>
+    </message>
+    <message>
+        <source>The settings below apply with OK or Apply.</source>
+        <translation>Доорх тохиргоо OK эсвэл Хэрэглэх товчоор хэрэгжинэ.</translation>
+    </message>
+    <message>
+        <source>Until the first user account is created, this login always works.</source>
+        <translation>Эхний хэрэглэгчийн бүртгэл үүсгэх хүртэл энэ нэвтрэлт үргэлж ажиллана.</translation>
+    </message>
+    <message>
+        <source>User</source>
+        <translation>Хэрэглэгч</translation>
+    </message>
+    <message>
+        <source>User Accounts</source>
+        <translation>Хэрэглэгчийн бүртгэл</translation>
+    </message>
+    <message>
+        <source>Users can be kept logged in for 0 to 365 days.</source>
+        <translation>Хэрэглэгчийг 0-ээс 365 хоног нэвтэрсэн хэвээр байлгаж болно.</translation>
+    </message>
+    <message>
+        <source>Very low</source>
+        <translation>Маш бага</translation>
+    </message>
+    <message>
+        <source>You changed the address, port or HTTPS setting of the WebUI. Saving moves the WebUI, so Options will save, close and reload the page, the same as OK. If the page doesn&apos;t come back, open the WebUI at its new address.\n\nSave anyway?</source>
+        <translation>Та WebUI-ийн хаяг, порт эсвэл HTTPS тохиргоог өөрчиллөө. Хадгалах нь WebUI-г зөөдөг тул Сонголт нь OK-той адил хадгалж, хаагаад хуудсыг дахин ачаална. Хуудас буцаж ирэхгүй бол WebUI-г шинэ хаягаар нь нээнэ үү.\n\nТэгсэн ч хадгалах уу?</translation>
+    </message>
+    <message>
+        <source>lock for:</source>
+        <translation>түгжих хугацаа:</translation>
+    </message>
 </context>
 <context>
     <name>PeerListWidget</name>
@@ -2597,6 +2832,10 @@ Use ';' to split multiple entries. Can use wildcard '*'.</source>
     <message>
         <source>Contribution</source>
         <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Files</source>
+        <translation>Файлууд</translation>
     </message>
 </context>
 <context>
@@ -2939,6 +3178,22 @@ Use ';' to split multiple entries. Can use wildcard '*'.</source>
         <source>Copy download URL</source>
         <translation type="unfinished" />
     </message>
+    <message>
+        <source>Downloaded:</source>
+        <translation>Татсан:</translation>
+    </message>
+    <message>
+        <source>N/A</source>
+        <translation>Байхгүй</translation>
+    </message>
+    <message>
+        <source>Transfer</source>
+        <translation>Дамжуулалт</translation>
+    </message>
+    <message>
+        <source>Uploaded:</source>
+        <translation>Илгээсэн:</translation>
+    </message>
 </context>
 <context>
     <name>ScanFoldersModel</name>
@@ -3051,6 +3306,154 @@ Use ';' to split multiple entries. Can use wildcard '*'.</source>
     <message>
         <source>The time it takes from receiving a request from a peer until we're sending the response back on the socket</source>
         <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Activity</source>
+        <translation>Үйл ажиллагаа</translation>
+    </message>
+    <message>
+        <source>All time</source>
+        <translation>Бүх хугацаа</translation>
+    </message>
+    <message>
+        <source>Before tracking began</source>
+        <translation>Хяналт эхлэхээс өмнө</translation>
+    </message>
+    <message>
+        <source>By month</source>
+        <translation>Сараар</translation>
+    </message>
+    <message>
+        <source>Counts the requests that added a download. Apps without a login, such as Sonarr and Radarr, are shown as (localhost). Downloads added in the desktop window are not counted.</source>
+        <translation>Татаалт нэмсэн хүсэлтийг тоолно. Sonarr, Radarr зэрэг нэвтрэлтгүй програмууд (localhost) гэж харагдана. Ширээний цонхонд нэмсэн татаалтыг тоолохгүй.</translation>
+    </message>
+    <message>
+        <source>Current speed:</source>
+        <translation>Одоогийн хурд:</translation>
+    </message>
+    <message>
+        <source>DHT nodes:</source>
+        <translation>DHT зангилаа:</translation>
+    </message>
+    <message>
+        <source>Data discarded this session:</source>
+        <translation>Энэ сешнд хаясан өгөгдөл:</translation>
+    </message>
+    <message>
+        <source>Disk</source>
+        <translation>Диск</translation>
+    </message>
+    <message>
+        <source>Downloaded:</source>
+        <translation>Татсан:</translation>
+    </message>
+    <message>
+        <source>History</source>
+        <translation>Түүх</translation>
+    </message>
+    <message>
+        <source>Last 12 months</source>
+        <translation>Сүүлийн 12 сар</translation>
+    </message>
+    <message>
+        <source>Last 7 days</source>
+        <translation>Сүүлийн 7 хоног</translation>
+    </message>
+    <message>
+        <source>Last month</source>
+        <translation>Өнгөрсөн сар</translation>
+    </message>
+    <message>
+        <source>Month</source>
+        <translation>Сар</translation>
+    </message>
+    <message>
+        <source>Nothing added yet</source>
+        <translation>Одоогоор юу ч нэмээгүй</translation>
+    </message>
+    <message>
+        <source>Off</source>
+        <translation>Унтраасан</translation>
+    </message>
+    <message>
+        <source>Overview</source>
+        <translation>Тойм</translation>
+    </message>
+    <message>
+        <source>Peers waiting on disk reads:</source>
+        <translation>Дискээс унших хүлээж буй пирүүд:</translation>
+    </message>
+    <message>
+        <source>Peers waiting on disk writes:</source>
+        <translation>Диск рүү бичихийг хүлээж буй пирүүд:</translation>
+    </message>
+    <message>
+        <source>Period</source>
+        <translation>Хугацаа</translation>
+    </message>
+    <message>
+        <source>Request latency:</source>
+        <translation>Хүсэлтийн саатал:</translation>
+    </message>
+    <message>
+        <source>Running for:</source>
+        <translation>Ажилласан хугацаа:</translation>
+    </message>
+    <message>
+        <source>Share ratio</source>
+        <translation>Хуваалцах харьцаа</translation>
+    </message>
+    <message>
+        <source>Share ratio:</source>
+        <translation>Хуваалцах харьцаа:</translation>
+    </message>
+    <message>
+        <source>Technical</source>
+        <translation>Техникийн</translation>
+    </message>
+    <message>
+        <source>This month</source>
+        <translation>Энэ сар</translation>
+    </message>
+    <message>
+        <source>This session</source>
+        <translation>Энэ сеш</translation>
+    </message>
+    <message>
+        <source>Today</source>
+        <translation>Өнөөдөр</translation>
+    </message>
+    <message>
+        <source>Torrents downloading:</source>
+        <translation>Татаж буй торрентууд:</translation>
+    </message>
+    <message>
+        <source>Torrents seeding:</source>
+        <translation>Тарааж буй торрентууд:</translation>
+    </message>
+    <message>
+        <source>Torrents stopped:</source>
+        <translation>Зогссон торрентууд:</translation>
+    </message>
+    <message>
+        <source>Torrents with errors:</source>
+        <translation>Алдаатай торрентууд:</translation>
+    </message>
+    <message>
+        <source>Tracking since:</source>
+        <translation>Хяналт эхэлсэн:</translation>
+    </message>
+    <message>
+        <source>Transfer</source>
+        <translation>Дамжуулалт</translation>
+    </message>
+    <message>
+        <source>Uploaded:</source>
+        <translation>Илгээсэн:</translation>
+    </message>
+    <message>
+        <source>WebUI downloads added, this month</source>
+        <translation>WebUI-аар нэмсэн татаалт, энэ сар</translation>
     </message>
 </context>
 <context>
@@ -3372,6 +3775,18 @@ Use ';' to split multiple entries. Can use wildcard '*'.</source>
         <source>Created On</source>
         <translation type="unfinished" />
     </message>
+    <message>
+        <source>Category</source>
+        <translation>Ангилал</translation>
+    </message>
+    <message>
+        <source>Name</source>
+        <translation>Нэр</translation>
+    </message>
+    <message>
+        <source>Status</source>
+        <translation>Төлөв</translation>
+    </message>
 </context>
 <context>
     <name>TrackerListWidget</name>
@@ -3519,6 +3934,18 @@ Use ';' to split multiple entries. Can use wildcard '*'.</source>
         <source>Force reannounce to all trackers</source>
         <translation type="unfinished" />
     </message>
+    <message>
+        <source>N/A</source>
+        <translation>Байхгүй</translation>
+    </message>
+    <message>
+        <source>Name</source>
+        <translation>Нэр</translation>
+    </message>
+    <message>
+        <source>Status</source>
+        <translation>Төлөв</translation>
+    </message>
 </context>
 <context>
     <name>TrackersAdditionDialog</name>
@@ -3610,6 +4037,14 @@ Use ';' to split multiple entries. Can use wildcard '*'.</source>
         <source>N/A</source>
         <translation type="unfinished" />
     </message>
+    <message>
+        <source>Checking</source>
+        <translation>Шалгалт</translation>
+    </message>
+    <message>
+        <source>N/A</source>
+        <translation>Байхгүй</translation>
+    </message>
 </context>
 <context>
     <name>TransferListFiltersWidget</name>
@@ -3636,6 +4071,10 @@ Use ';' to split multiple entries. Can use wildcard '*'.</source>
     <message>
         <source>Collapse/expand category</source>
         <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Status</source>
+        <translation>Төлөв</translation>
     </message>
 </context>
 <context>
@@ -3838,6 +4277,18 @@ Use ';' to split multiple entries. Can use wildcard '*'.</source>
         <source>Content Path</source>
         <translation type="unfinished" />
     </message>
+    <message>
+        <source>Category</source>
+        <translation>Ангилал</translation>
+    </message>
+    <message>
+        <source>Name</source>
+        <translation>Нэр</translation>
+    </message>
+    <message>
+        <source>Remove</source>
+        <translation>Хасах</translation>
+    </message>
 </context>
 <context>
     <name>UpDownRatioDialog</name>
@@ -3910,6 +4361,10 @@ Use ';' to split multiple entries. Can use wildcard '*'.</source>
     <message>
         <source>Remove tracker</source>
         <translation type="unfinished" />
+    </message>
+    <message>
+        <source>This choice is remembered for the next removal.</source>
+        <translation>Энэ сонголтыг дараагийн устгалд санаж үлдэнэ.</translation>
     </message>
 </context>
 <context>
@@ -4123,6 +4578,30 @@ Use ';' to split multiple entries. Can use wildcard '*'.</source>
         <source>Select plugins</source>
         <translation type="unfinished" />
     </message>
+    <message>
+        <source>Category to search in</source>
+        <translation>Хайх ангилал</translation>
+    </message>
+    <message>
+        <source>Close the selected search</source>
+        <translation>Сонгосон хайлтыг хаах</translation>
+    </message>
+    <message>
+        <source>Search engines to use</source>
+        <translation>Ашиглах хайлтын систем</translation>
+    </message>
+    <message>
+        <source>Search for torrents...</source>
+        <translation>Торрент хайх...</translation>
+    </message>
+    <message>
+        <source>Searches</source>
+        <translation>Хайлтууд</translation>
+    </message>
+    <message>
+        <source>Type a search above and press Enter.</source>
+        <translation>Дээр хайлт бичээд Enter дарна уу.</translation>
+    </message>
 </context>
 <context>
     <name>PluginSelectDlg</name>
@@ -4162,6 +4641,10 @@ Use ';' to split multiple entries. Can use wildcard '*'.</source>
         <source>Search plugins</source>
         <translation type="unfinished" />
     </message>
+    <message>
+        <source>Enabled</source>
+        <translation>Идэвхтэй</translation>
+    </message>
 </context>
 <context>
     <name>SearchResultsTable</name>
@@ -4193,6 +4676,10 @@ Use ';' to split multiple entries. Can use wildcard '*'.</source>
         <source>Engine</source>
         <translation type="unfinished" />
     </message>
+    <message>
+        <source>Name</source>
+        <translation>Нэр</translation>
+    </message>
 </context>
 <context>
     <name>SearchPluginsTable</name>
@@ -4219,6 +4706,14 @@ Use ';' to split multiple entries. Can use wildcard '*'.</source>
     <message>
         <source>No</source>
         <translation>Үгүй</translation>
+    </message>
+    <message>
+        <source>Enabled</source>
+        <translation>Идэвхтэй</translation>
+    </message>
+    <message>
+        <source>Name</source>
+        <translation>Нэр</translation>
     </message>
 </context>
 <context>
@@ -4384,6 +4879,34 @@ Use ';' to split multiple entries. Can use wildcard '*'.</source>
         <source>qBittorrent icon</source>
         <translation type="unfinished" />
     </message>
+    <message>
+        <source>Based on:</source>
+        <translation>Үндэс:</translation>
+    </message>
+    <message>
+        <source>Edition version:</source>
+        <translation>Хувилбарын хувилбар:</translation>
+    </message>
+    <message>
+        <source>Kettle Edition is a personal build of qBittorrent that adds user accounts with roles for the WebUI and the desktop app, an activity log, and an installable WebUI with a phone layout. A kettle is a group of hawks soaring together. This is an unofficial build, not affiliated with the qBittorrent project.</source>
+        <translation>Kettle Edition бол qBittorrent-ийн хувийн хөрвүүлэлт бөгөөд WebUI болон ширээний програмд зориулсан үүрэгтэй хэрэглэгчийн бүртгэл, үйл ажиллагааны бүртгэл, утасны байрлалтай суулгах боломжтой WebUI нэмдэг. Kettle гэдэг нь хамт эргэлдэх шонхорын сүрэг юм. Энэ бол албан бус хөрвүүлэлт бөгөөд qBittorrent төсөлтэй холбоогүй.</translation>
+    </message>
+    <message>
+        <source>Maintainer:</source>
+        <translation>Засварлагч:</translation>
+    </message>
+    <message>
+        <source>N/A</source>
+        <translation>Байхгүй</translation>
+    </message>
+    <message>
+        <source>This edition</source>
+        <translation>Энэ хувилбар</translation>
+    </message>
+    <message>
+        <source>qBittorrent project:</source>
+        <translation>qBittorrent төсөл:</translation>
+    </message>
 </context>
 <context>
     <name>OptionDialog</name>
@@ -4485,6 +5008,42 @@ Use ';' to split multiple entries. Can use wildcard '*'.</source>
     <message>
         <source>Open shared download window</source>
         <translation type="unfinished" />
+    </message>
+    <message>
+        <source>%1 of %2 shown</source>
+        <translation>%2-аас %1 харуулж байна</translation>
+    </message>
+    <message>
+        <source>%1 of %2 shown (%3 hidden)</source>
+        <translation>%2-аас %1 харуулж байна (%3 нуусан)</translation>
+    </message>
+    <message>
+        <source>Close all searches</source>
+        <translation>Бүх хайлтыг хаах</translation>
+    </message>
+    <message>
+        <source>Close search</source>
+        <translation>Хайлтыг хаах</translation>
+    </message>
+    <message>
+        <source>Finished: %1</source>
+        <translation>Дууссан: %1</translation>
+    </message>
+    <message>
+        <source>Name</source>
+        <translation>Нэр</translation>
+    </message>
+    <message>
+        <source>Refresh search</source>
+        <translation>Хайлтыг шинэчлэх</translation>
+    </message>
+    <message>
+        <source>Search aborted: %1</source>
+        <translation>Хайлт зогссон: %1</translation>
+    </message>
+    <message>
+        <source>Searching: %1</source>
+        <translation>Хайж байна: %1</translation>
     </message>
 </context>
 <context>
@@ -4623,6 +5182,10 @@ Use ';' to split multiple entries. Can use wildcard '*'.</source>
     <message>
         <source>Blocked opening RSS article URL. Only http:// and https:// links can be opened.</source>
         <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Details</source>
+        <translation>Дэлгэрэнгүй</translation>
     </message>
 </context>
 <context>
@@ -4901,6 +5464,10 @@ Supports the formats: S01E01, 1x1, 2017.12.31 and 31.12.2017 (Date formats also 
         <source>Import</source>
         <translation type="unfinished" />
     </message>
+    <message>
+        <source>Don&apos;t create subfolder</source>
+        <translation>Дэд хавтас үүсгэхгүй</translation>
+    </message>
 </context>
 <context>
     <name>TrackerFiltersList</name>
@@ -5090,6 +5657,30 @@ Supports the formats: S01E01, 1x1, 2017.12.31 and 31.12.2017 (Date formats also 
         <source>Choose a log level...</source>
         <translation type="unfinished" />
     </message>
+    <message>
+        <source>Export...</source>
+        <translation>Экспортлох...</translation>
+    </message>
+    <message>
+        <source>Filter activity</source>
+        <translation>Үйл ажиллагааг шүүх</translation>
+    </message>
+    <message>
+        <source>Result:</source>
+        <translation>Үр дүн:</translation>
+    </message>
+    <message>
+        <source>Status</source>
+        <translation>Төлөв</translation>
+    </message>
+    <message>
+        <source>User:</source>
+        <translation>Хэрэглэгч:</translation>
+    </message>
+    <message>
+        <source>WebUI Activity</source>
+        <translation>WebUI үйл ажиллагаа</translation>
+    </message>
 </context>
 <context>
     <name>TrackersFilterWidget</name>
@@ -5160,6 +5751,10 @@ Supports the formats: S01E01, 1x1, 2017.12.31 and 31.12.2017 (Date formats also 
         <source>Torrent share limits</source>
         <translation type="unfinished" />
     </message>
+    <message>
+        <source>Your role saves torrents in the default folders.</source>
+        <translation>Таны үүрэг торрентуудыг анхдагч хавтсанд хадгална.</translation>
+    </message>
 </context>
 <context>
     <name>CookiesDialog</name>
@@ -5194,6 +5789,14 @@ Supports the formats: S01E01, 1x1, 2017.12.31 and 31.12.2017 (Date formats also 
     <message>
         <source>Path</source>
         <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Name</source>
+        <translation>Нэр</translation>
+    </message>
+    <message>
+        <source>Remove</source>
+        <translation>Хасах</translation>
     </message>
 </context>
 <context>
@@ -5258,6 +5861,14 @@ Supports the formats: S01E01, 1x1, 2017.12.31 and 31.12.2017 (Date formats also 
     <message>
         <source>Invalid Username or Password.</source>
         <translation>Хэрэглэгчийн нэр эсвэл нууц үг тохирохгүй байна.</translation>
+    </message>
+    <message>
+        <source>A kettle is a group of hawks soaring together.</source>
+        <translation>Kettle гэдэг нь хамт эргэлдэх шонхорын сүрэг юм.</translation>
+    </message>
+    <message>
+        <source>Sign in</source>
+        <translation>Нэвтрэх</translation>
     </message>
 </context>
 <context>
@@ -5466,6 +6077,14 @@ Supports the formats: S01E01, 1x1, 2017.12.31 and 31.12.2017 (Date formats also 
         <source>If checked, filenames starting with a period punctuation mark `.` will not be added to the created torrent.</source>
         <translation type="unfinished" />
     </message>
+    <message>
+        <source>N/A</source>
+        <translation>Байхгүй</translation>
+    </message>
+    <message>
+        <source>Status</source>
+        <translation>Төлөв</translation>
+    </message>
 </context>
 <context>
     <name>DownloadFromURLDialog</name>
@@ -5586,6 +6205,10 @@ Supports the formats: S01E01, 1x1, 2017.12.31 and 31.12.2017 (Date formats also 
     <message>
         <source>Resize</source>
         <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Reset Auto Width</source>
+        <translation>Автомат өргөнийг дахин тохируулах</translation>
     </message>
 </context>
 <context>
@@ -5726,6 +6349,236 @@ Supports the formats: S01E01, 1x1, 2017.12.31 and 31.12.2017 (Date formats also 
     <message>
         <source>Not available for folders</source>
         <translation type="unfinished" />
+    </message>
+</context>
+<context>
+    <name>UserAccounts</name>
+    <message>
+        <source>(this browser)</source>
+        <translation>(энэ хөтөч)</translation>
+    </message>
+    <message>
+        <source>A role decides what its users are allowed to do.</source>
+        <translation>Үүрэг нь түүний хэрэглэгчид юу хийхийг зөвшөөрөхийг тодорхойлно.</translation>
+    </message>
+    <message>
+        <source>Add Role</source>
+        <translation>Үүрэг нэмэх</translation>
+    </message>
+    <message>
+        <source>Add Role...</source>
+        <translation>Үүрэг нэмэх...</translation>
+    </message>
+    <message>
+        <source>Add User</source>
+        <translation>Хэрэглэгч нэмэх</translation>
+    </message>
+    <message>
+        <source>Add User...</source>
+        <translation>Хэрэглэгч нэмэх...</translation>
+    </message>
+    <message>
+        <source>Are you sure you want to remove the role &apos;%1&apos;?</source>
+        <translation>&apos;%1&apos; үүргийг хасахдаа итгэлтэй байна уу?</translation>
+    </message>
+    <message>
+        <source>Are you sure you want to remove the user &apos;%1&apos;?</source>
+        <translation>&apos;%1&apos; хэрэглэгчийг хасахдаа итгэлтэй байна уу?</translation>
+    </message>
+    <message>
+        <source>At least %1 characters</source>
+        <translation>Дор хаяж %1 тэмдэгт</translation>
+    </message>
+    <message>
+        <source>Browser</source>
+        <translation>Хөтөч</translation>
+    </message>
+    <message>
+        <source>Browsers and devices where someone is logged in with a user account.</source>
+        <translation>Хэн нэгэн хэрэглэгчийн бүртгэлээр нэвтэрсэн хөтөч болон төхөөрөмжүүд.</translation>
+    </message>
+    <message>
+        <source>Change Password</source>
+        <translation>Нууц үг солих</translation>
+    </message>
+    <message>
+        <source>Confirm password:</source>
+        <translation>Нууц үгийг баталгаажуулах:</translation>
+    </message>
+    <message>
+        <source>Created</source>
+        <translation>Үүсгэсэн</translation>
+    </message>
+    <message>
+        <source>Current password:</source>
+        <translation>Одоогийн нууц үг:</translation>
+    </message>
+    <message>
+        <source>Description</source>
+        <translation>Тайлбар</translation>
+    </message>
+    <message>
+        <source>Description:</source>
+        <translation>Тайлбар:</translation>
+    </message>
+    <message>
+        <source>Disable</source>
+        <translation>Идэвхгүй болгох</translation>
+    </message>
+    <message>
+        <source>Disable this account</source>
+        <translation>Энэ бүртгэлийг идэвхгүй болгох</translation>
+    </message>
+    <message>
+        <source>Edit Role</source>
+        <translation>Үүрэг засах</translation>
+    </message>
+    <message>
+        <source>Edit User</source>
+        <translation>Хэрэглэгч засах</translation>
+    </message>
+    <message>
+        <source>Edit...</source>
+        <translation>Засах...</translation>
+    </message>
+    <message>
+        <source>Enable</source>
+        <translation>Идэвхжүүлэх</translation>
+    </message>
+    <message>
+        <source>Enabled</source>
+        <translation>Идэвхтэй</translation>
+    </message>
+    <message>
+        <source>Enter a role name.</source>
+        <translation>Үүргийн нэр оруулна уу.</translation>
+    </message>
+    <message>
+        <source>Enter a username.</source>
+        <translation>Хэрэглэгчийн нэр оруулна уу.</translation>
+    </message>
+    <message>
+        <source>Expires</source>
+        <translation>Дуусах</translation>
+    </message>
+    <message>
+        <source>Gives control over the PC or qBittorrent itself</source>
+        <translation>Компьютер эсвэл qBittorrent-ийг өөрийг нь удирдах эрх олгоно</translation>
+    </message>
+    <message>
+        <source>Last active</source>
+        <translation>Сүүлд идэвхтэй</translation>
+    </message>
+    <message>
+        <source>Last login</source>
+        <translation>Сүүлд нэвтэрсэн</translation>
+    </message>
+    <message>
+        <source>Leave empty to keep the current password</source>
+        <translation>Одоогийн нууц үгийг хадгалахын тулд хоосон орхино уу</translation>
+    </message>
+    <message>
+        <source>Log Out</source>
+        <translation>Гарах</translation>
+    </message>
+    <message>
+        <source>Log Out Everywhere</source>
+        <translation>Хаанаас ч гарах</translation>
+    </message>
+    <message>
+        <source>Logged In</source>
+        <translation>Нэвтэрсэн</translation>
+    </message>
+    <message>
+        <source>Logged in</source>
+        <translation>Нэвтэрсэн</translation>
+    </message>
+    <message>
+        <source>Name</source>
+        <translation>Нэр</translation>
+    </message>
+    <message>
+        <source>New password:</source>
+        <translation>Шинэ нууц үг:</translation>
+    </message>
+    <message>
+        <source>No accounts yet, so everyone still uses the shared WebUI login. Add an Admin account first.</source>
+        <translation>Одоогоор бүртгэл байхгүй тул бүгд WebUI-ийн нийтийн нэвтрэлтийг ашигласаар байна. Эхлээд Admin бүртгэл нэмнэ үү.</translation>
+    </message>
+    <message>
+        <source>People who can log in to the WebUI with their own username and password.</source>
+        <translation>Өөрийн хэрэглэгчийн нэр, нууц үгээр WebUI-д нэвтэрч чадах хүмүүс.</translation>
+    </message>
+    <message>
+        <source>Permissions</source>
+        <translation>Зөвшөөрөл</translation>
+    </message>
+    <message>
+        <source>Remove</source>
+        <translation>Хасах</translation>
+    </message>
+    <message>
+        <source>Role</source>
+        <translation>Үүрэг</translation>
+    </message>
+    <message>
+        <source>Role:</source>
+        <translation>Үүрэг:</translation>
+    </message>
+    <message>
+        <source>Roles</source>
+        <translation>Үүрэг</translation>
+    </message>
+    <message>
+        <source>Status</source>
+        <translation>Төлөв</translation>
+    </message>
+    <message>
+        <source>The password must be at least %1 characters long.</source>
+        <translation>Нууц үг дор хаяж %1 тэмдэгттэй байх ёстой.</translation>
+    </message>
+    <message>
+        <source>The passwords don&apos;t match.</source>
+        <translation>Нууц үг таарахгүй байна.</translation>
+    </message>
+    <message>
+        <source>User</source>
+        <translation>Хэрэглэгч</translation>
+    </message>
+    <message>
+        <source>Users</source>
+        <translation>Хэрэглэгчид</translation>
+    </message>
+    <message>
+        <source>Your password was changed. Other browsers and devices where you were logged in have been logged out.</source>
+        <translation>Таны нууц үг солигдлоо. Таны нэвтэрсэн бусад хөтөч болон төхөөрөмжүүдээс гаргалаа.</translation>
+    </message>
+</context>
+<context>
+    <name>WebUIActivity</name>
+    <message>
+        <source>Action</source>
+        <translation>Үйлдэл</translation>
+    </message>
+    <message>
+        <source>Category</source>
+        <translation>Ангилал</translation>
+    </message>
+    <message>
+        <source>Result</source>
+        <translation>Үр дүн</translation>
+    </message>
+    <message>
+        <source>Role</source>
+        <translation>Үүрэг</translation>
+    </message>
+    <message>
+        <source>Time</source>
+        <translation>Цаг</translation>
+    </message>
+    <message>
+        <source>User</source>
+        <translation>Хэрэглэгч</translation>
     </message>
 </context>
 </TS>

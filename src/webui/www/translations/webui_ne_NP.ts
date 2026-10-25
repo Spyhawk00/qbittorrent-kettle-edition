@@ -227,6 +227,85 @@ The piece hash will be checked when it is requested for the first time by a peer
         <source>%1 needed · %2 free</source>
         <translation type="unfinished" />
     </message>
+    <message>
+        <source>Don&apos;t create subfolder</source>
+        <translation>सबफोल्डर सिर्जना नगर्नुहोस्</translation>
+    </message>
+    <message>
+        <source>Never show again</source>
+        <translation>फेरि नदेखाउनुहोस्</translation>
+    </message>
+    <message>
+        <source>Select None</source>
+        <translation>कुनै पनि चयन नगर्नुहोस्</translation>
+    </message>
+    <message>
+        <source>Torrent options</source>
+        <translation>टोरेन्ट विकल्पहरू</translation>
+    </message>
+    <message>
+        <source>Your role saves torrents in the default folders.</source>
+        <translation>तपाईंको भूमिकाले टोरेन्टहरू पूर्वनिर्धारित फोल्डरमा सेभ गर्छ।</translation>
+    </message>
+</context>
+<context>
+    <name>AdvancedSettings</name>
+    <message>
+        <source>General</source>
+        <translation>साधारण</translation>
+    </message>
+    <message>
+        <source>Network</source>
+        <translation>नेटवर्क</translation>
+    </message>
+    <message>
+        <source>Storage</source>
+        <translation>भण्डारण</translation>
+    </message>
+    <message>
+        <source>Peers and trackers</source>
+        <translation>पियर र ट्र्याकर</translation>
+    </message>
+    <message>
+        <source>Program behavior</source>
+        <translation>प्रोग्रामको व्यवहार</translation>
+    </message>
+    <message>
+        <source>Display and notifications</source>
+        <translation>प्रदर्शन र सूचनाहरू</translation>
+    </message>
+    <message>
+        <source>Network connection</source>
+        <translation>नेटवर्क जडान</translation>
+    </message>
+    <message>
+        <source>Security and privacy</source>
+        <translation>सुरक्षा र गोपनीयता</translation>
+    </message>
+    <message>
+        <source>Connection tuning</source>
+        <translation>जडान समायोजन</translation>
+    </message>
+    <message>
+        <source>Saving and torrent files</source>
+        <translation>बचत र टोरेन्ट फाइलहरू</translation>
+    </message>
+    <message>
+        <source>Disk and memory</source>
+        <translation>डिस्क र मेमोरी</translation>
+    </message>
+    <message>
+        <source>Trackers</source>
+        <translation>ट्र्याकरहरू</translation>
+    </message>
+    <message>
+        <source>Peers and seeding</source>
+        <translation>पियर र सिडिङ</translation>
+    </message>
+    <message>
+        <source>DHT and I2P</source>
+        <translation>DHT र I2P</translation>
+    </message>
 </context>
 <context>
     <name>CategoryFilterModel</name>
@@ -627,6 +706,14 @@ The piece hash will be checked when it is requested for the first time by a peer
         <source>More</source>
         <translation>थप</translation>
     </message>
+    <message>
+        <source>Change Password...</source>
+        <translation>पासवर्ड परिवर्तन गर्नुहोस्...</translation>
+    </message>
+    <message>
+        <source>Signed in as</source>
+        <translation>लगइन गरेको प्रयोगकर्ता</translation>
+    </message>
 </context>
 <context>
     <name>MainWindow</name>
@@ -925,6 +1012,30 @@ The piece hash will be checked when it is requested for the first time by a peer
     <message>
         <source>Resume Session</source>
         <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Pause Session</source>
+        <translation>सत्र रोक्नुहोस्</translation>
+    </message>
+    <message>
+        <source>Pause session</source>
+        <translation>सत्र रोक्नुहोस्</translation>
+    </message>
+    <message>
+        <source>Resume Session</source>
+        <translation>सत्र फेरि सुरु गर्नुहोस्</translation>
+    </message>
+    <message>
+        <source>Resume session</source>
+        <translation>सत्र फेरि सुरु गर्नुहोस्</translation>
+    </message>
+    <message>
+        <source>Your account can&apos;t add torrents.</source>
+        <translation>तपाईंको खाताले टोरेन्ट थप्न सक्दैन।</translation>
+    </message>
+    <message>
+        <source>[PAUSED]</source>
+        <translation>[रोकिएको]</translation>
     </message>
 </context>
 <context>
@@ -2515,6 +2626,186 @@ DNS रिबाइन्डिङ आक्रमणबाट बचाउन�
         <source>a@x.com;b@y.com,c@z.com - send two emails: the first to just a@x.com, the second to both b@y.com and c@z.com</source>
         <translation type="unfinished" />
     </message>
+    <message>
+        <source>0 means users are logged out after the session timeout.</source>
+        <translation>० को अर्थ सत्रको समय सकिएपछि प्रयोगकर्ता लग आउट हुन्छन्।</translation>
+    </message>
+    <message>
+        <source>Access</source>
+        <translation>पहुँच</translation>
+    </message>
+    <message>
+        <source>All the above</source>
+        <translation>माथिका सबै</translation>
+    </message>
+    <message>
+        <source>Allow this login when user accounts exist</source>
+        <translation>प्रयोगकर्ता खाताहरू हुँदा पनि यो लगइनलाई अनुमति दिनुहोस्</translation>
+    </message>
+    <message>
+        <source>Also save search results</source>
+        <translation>खोज नतिजा पनि सेभ गर्नुहोस्</translation>
+    </message>
+    <message>
+        <source>Also when addition is cancelled</source>
+        <translation>जब थप्ने काम रद्द गरिन्छ</translation>
+    </message>
+    <message>
+        <source>Any of the above</source>
+        <translation>माथिका मध्ये कुनै</translation>
+    </message>
+    <message>
+        <source>Below normal</source>
+        <translation>सामान्य भन्दा मुनि</translation>
+    </message>
+    <message>
+        <source>Changes to users, roles and logins apply at once.</source>
+        <translation>प्रयोगकर्ता, भूमिका र लगइनमा परिवर्तन तुरुन्तै लागू हुन्छ।</translation>
+    </message>
+    <message>
+        <source>Don&apos;t create subfolder</source>
+        <translation>सबफोल्डर सिर्जना नगर्नुहोस्</translation>
+    </message>
+    <message>
+        <source>I2P (experimental)</source>
+        <translation>I2P (प्रयोगात्मक)</translation>
+    </message>
+    <message>
+        <source>Keep WebUI activity log for:</source>
+        <translation>WebUI गतिविधि लग राख्नुहोस्:</translation>
+    </message>
+    <message>
+        <source>Keep unselected files in &quot;.unwanted&quot; folder</source>
+        <translation>चयन नगरिएका फाइलहरूलाई &quot;.unwanted&quot; फोल्डरमा राख्नुहोस्</translation>
+    </message>
+    <message>
+        <source>Keep users logged in for:</source>
+        <translation>प्रयोगकर्तालाई लगइन राख्नुहोस्:</translation>
+    </message>
+    <message>
+        <source>Language:</source>
+        <translation>भाषा:</translation>
+    </message>
+    <message>
+        <source>Lock account after consecutive failures:</source>
+        <translation>लगातार असफलता पछि खाता लक गर्नुहोस्:</translation>
+    </message>
+    <message>
+        <source>Logins and Activity Log</source>
+        <translation>लगइन र गतिविधि लग</translation>
+    </message>
+    <message>
+        <source>Low</source>
+        <translation>निम्न</translation>
+    </message>
+    <message>
+        <source>Maximum active checking torrents:</source>
+        <translation>अधिकतम सक्रिय जाँच टोरेन्टहरू:</translation>
+    </message>
+    <message>
+        <source>Medium</source>
+        <translation>मध्यम</translation>
+    </message>
+    <message>
+        <source>No settings match</source>
+        <translation>मिल्ने सेटिङ छैन</translation>
+    </message>
+    <message>
+        <source>Process memory priority:</source>
+        <translation>प्रक्रिया मेमोरी प्राथमिकता:</translation>
+    </message>
+    <message>
+        <source>Save search tabs</source>
+        <translation>खोज ट्याब सेभ गर्नुहोस्</translation>
+    </message>
+    <message>
+        <source>Search UI</source>
+        <translation>खोज UI</translation>
+    </message>
+    <message>
+        <source>Search settings</source>
+        <translation>सेटिङ खोज्नुहोस्</translation>
+    </message>
+    <message>
+        <source>Service:</source>
+        <translation>सेवा:</translation>
+    </message>
+    <message>
+        <source>Show console window</source>
+        <translation>कन्सोल विन्डो देखाउनुहोस्</translation>
+    </message>
+    <message>
+        <source>Show the window when adding a torrent</source>
+        <translation>टोरेन्ट थप्दा विन्डो देखाउनुहोस्</translation>
+    </message>
+    <message>
+        <source>Specify reverse proxy IPs (or subnets, e.g. 0.0.0.0/24) in order to use forwarded client address (X-Forwarded-For header). Use &apos;;&apos; to split multiple entries.</source>
+        <translation>फर्वार्ड गरिएको क्लाइन्ट ठेगाना (X-Forwarded-For हेडर) प्रयोग गर्न रिभर्स प्रोक्सी IP हरू (वा सबनेटहरू, जस्तै 0.0.0.0/24) निर्दिष्ट गर्नुहोस्। धेरै प्रविष्टिहरू विभाजित गर्न &apos;;&apos; प्रयोग गर्नुहोस्।</translation>
+    </message>
+    <message>
+        <source>Status bar and log</source>
+        <translation>स्थिति पट्टी र लग</translation>
+    </message>
+    <message>
+        <source>The WebUI activity log can be kept for 1 to 3650 days.</source>
+        <translation>WebUI गतिविधि लग १ देखि ३६५० दिनसम्म राख्न सकिन्छ।</translation>
+    </message>
+    <message>
+        <source>The settings below apply with OK or Apply.</source>
+        <translation>तलका सेटिङ ठिक छ वा लागू गर्नुहोस् थिचेपछि लागू हुन्छन्।</translation>
+    </message>
+    <message>
+        <source>Tip: Encapsulate parameter with quotation marks to avoid text being cut off at whitespace (e.g., &quot;%N&quot;)</source>
+        <translation>सुझाव: ह्वाइटस्पेसमा पाठ काट्नबाट बच्नको लागि उद्धरण चिन्हहरू सहित प्यारामिटरलाई समेट्नुहोस् (जस्तै, &quot;%N&quot;)</translation>
+    </message>
+    <message>
+        <source>Transfer List</source>
+        <translation>स्थानान्तरण सूची</translation>
+    </message>
+    <message>
+        <source>Until the first user account is created, this login always works.</source>
+        <translation>पहिलो प्रयोगकर्ता खाता नबनेसम्म यो लगइन सधैँ काम गर्छ।</translation>
+    </message>
+    <message>
+        <source>User Accounts</source>
+        <translation>प्रयोगकर्ता खाताहरू</translation>
+    </message>
+    <message>
+        <source>Users can be kept logged in for 0 to 365 days.</source>
+        <translation>प्रयोगकर्तालाई ० देखि ३६५ दिनसम्म लगइन राख्न सकिन्छ।</translation>
+    </message>
+    <message>
+        <source>Very low</source>
+        <translation>धेरै निम्न</translation>
+    </message>
+    <message>
+        <source>Warning! Data loss possible!</source>
+        <translation>चेतावनी! डेटा हराउन सक्छ!</translation>
+    </message>
+    <message>
+        <source>When Default Save/Incomplete Path changed:</source>
+        <translation>पूर्वनिर्धारित सञ्चय/अपूर्ण मार्ग परिवर्तन हुँदा:</translation>
+    </message>
+    <message>
+        <source>Whitelist for filtering HTTP Host header values.
+In order to defend against DNS rebinding attack,
+you should put in domain names used by WebUI server.
+
+Use &apos;;&apos; to split multiple entries. Can use wildcard &apos;*&apos;.</source>
+        <translation>HTTP होस्ट हेडर मानहरू फिल्टर गर्नको लागि श्वेतसूची।
+DNS रिबाइन्डिङ आक्रमणबाट बचाउनको लागि,
+तपाईंले WebUI सर्भरद्वारा प्रयोग गरिएको डोमेन नामहरू राख्नु पर्छ।
+
+धेरै प्रविष्टिहरू विभाजन गर्न &apos;;&apos; प्रयोग गर्नुहोस्। वाइल्डकार्ड &apos;*&apos; प्रयोग गर्न सकिन्छ।</translation>
+    </message>
+    <message>
+        <source>You changed the address, port or HTTPS setting of the WebUI. Saving moves the WebUI, so Options will save, close and reload the page, the same as OK. If the page doesn&apos;t come back, open the WebUI at its new address.\n\nSave anyway?</source>
+        <translation>तपाईंले WebUI को ठेगाना, पोर्ट वा HTTPS सेटिङ परिवर्तन गर्नुभयो। सेभ गर्दा WebUI सर्छ, त्यसैले विकल्पले ठिक छ जस्तै सेभ गरी, बन्द गरी पेज फेरि लोड गर्नेछ। पेज फर्किएन भने WebUI लाई नयाँ ठेगानामा खोल्नुहोस्।\n\nतैपनि सेभ गर्ने?</translation>
+    </message>
+    <message>
+        <source>lock for:</source>
+        <translation>लक गर्नुहोस्:</translation>
+    </message>
 </context>
 <context>
     <name>PeerListWidget</name>
@@ -2943,6 +3234,18 @@ DNS रिबाइन्डिङ आक्रमणबाट बचाउन�
         <source>Copy download URL</source>
         <translation type="unfinished" />
     </message>
+    <message>
+        <source>Downloaded:</source>
+        <translation>डाउनलोड:</translation>
+    </message>
+    <message>
+        <source>Transfer</source>
+        <translation>स्थानान्तरण</translation>
+    </message>
+    <message>
+        <source>Uploaded:</source>
+        <translation>अपलोड:</translation>
+    </message>
 </context>
 <context>
     <name>ScanFoldersModel</name>
@@ -3055,6 +3358,154 @@ DNS रिबाइन्डिङ आक्रमणबाट बचाउन�
     <message>
         <source>The time it takes from receiving a request from a peer until we're sending the response back on the socket</source>
         <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Activity</source>
+        <translation>गतिविधि</translation>
+    </message>
+    <message>
+        <source>All time</source>
+        <translation>सधैँभरि</translation>
+    </message>
+    <message>
+        <source>Before tracking began</source>
+        <translation>ट्र्याकिङ सुरु हुनुअघि</translation>
+    </message>
+    <message>
+        <source>By month</source>
+        <translation>महिनाअनुसार</translation>
+    </message>
+    <message>
+        <source>Counts the requests that added a download. Apps without a login, such as Sonarr and Radarr, are shown as (localhost). Downloads added in the desktop window are not counted.</source>
+        <translation>डाउनलोड थपेका अनुरोधहरू गनिन्छ। Sonarr र Radarr जस्ता लगइन नगर्ने एपहरू (localhost) देखिन्छन्। डेस्कटप विन्डोमा थपिएका डाउनलोड गनिँदैन।</translation>
+    </message>
+    <message>
+        <source>Current speed:</source>
+        <translation>हालको गति:</translation>
+    </message>
+    <message>
+        <source>DHT nodes:</source>
+        <translation>DHT नोड:</translation>
+    </message>
+    <message>
+        <source>Data discarded this session:</source>
+        <translation>यो सत्रमा त्यागिएको डाटा:</translation>
+    </message>
+    <message>
+        <source>Disk</source>
+        <translation>डिस्क</translation>
+    </message>
+    <message>
+        <source>Downloaded:</source>
+        <translation>डाउनलोड:</translation>
+    </message>
+    <message>
+        <source>History</source>
+        <translation>इतिहास</translation>
+    </message>
+    <message>
+        <source>Last 12 months</source>
+        <translation>पछिल्ला १२ महिना</translation>
+    </message>
+    <message>
+        <source>Last 7 days</source>
+        <translation>पछिल्ला ७ दिन</translation>
+    </message>
+    <message>
+        <source>Last month</source>
+        <translation>गएको महिना</translation>
+    </message>
+    <message>
+        <source>Month</source>
+        <translation>महिना</translation>
+    </message>
+    <message>
+        <source>Nothing added yet</source>
+        <translation>अहिलेसम्म केही थपिएको छैन</translation>
+    </message>
+    <message>
+        <source>Off</source>
+        <translation>बन्द</translation>
+    </message>
+    <message>
+        <source>Overview</source>
+        <translation>सिंहावलोकन</translation>
+    </message>
+    <message>
+        <source>Peers waiting on disk reads:</source>
+        <translation>डिस्कबाट पढ्न पर्खिरहेका पियर:</translation>
+    </message>
+    <message>
+        <source>Peers waiting on disk writes:</source>
+        <translation>डिस्कमा लेख्न पर्खिरहेका पियर:</translation>
+    </message>
+    <message>
+        <source>Period</source>
+        <translation>अवधि</translation>
+    </message>
+    <message>
+        <source>Request latency:</source>
+        <translation>अनुरोध ढिलाइ:</translation>
+    </message>
+    <message>
+        <source>Running for:</source>
+        <translation>चलेको समय:</translation>
+    </message>
+    <message>
+        <source>Share ratio</source>
+        <translation>साझेदारी अनुपात</translation>
+    </message>
+    <message>
+        <source>Share ratio:</source>
+        <translation>साझेदारी अनुपात:</translation>
+    </message>
+    <message>
+        <source>Technical</source>
+        <translation>प्राविधिक</translation>
+    </message>
+    <message>
+        <source>This month</source>
+        <translation>यो महिना</translation>
+    </message>
+    <message>
+        <source>This session</source>
+        <translation>यो सत्र</translation>
+    </message>
+    <message>
+        <source>Today</source>
+        <translation>आज</translation>
+    </message>
+    <message>
+        <source>Torrents downloading:</source>
+        <translation>डाउनलोड हुँदै गरेका टोरेन्ट:</translation>
+    </message>
+    <message>
+        <source>Torrents seeding:</source>
+        <translation>सिड गर्दै गरेका टोरेन्ट:</translation>
+    </message>
+    <message>
+        <source>Torrents stopped:</source>
+        <translation>रोकिएका टोरेन्ट:</translation>
+    </message>
+    <message>
+        <source>Torrents with errors:</source>
+        <translation>त्रुटि भएका टोरेन्ट:</translation>
+    </message>
+    <message>
+        <source>Tracking since:</source>
+        <translation>ट्र्याकिङ सुरु भएदेखि:</translation>
+    </message>
+    <message>
+        <source>Transfer</source>
+        <translation>स्थानान्तरण</translation>
+    </message>
+    <message>
+        <source>Uploaded:</source>
+        <translation>अपलोड:</translation>
+    </message>
+    <message>
+        <source>WebUI downloads added, this month</source>
+        <translation>WebUI बाट थपिएका डाउनलोड, यो महिना</translation>
     </message>
 </context>
 <context>
@@ -3842,6 +4293,10 @@ DNS रिबाइन्डिङ आक्रमणबाट बचाउन�
         <source>Content Path</source>
         <translation type="unfinished" />
     </message>
+    <message>
+        <source>Remove all tags from selected torrents?</source>
+        <translation>चयन गरिएका टोरेन्टहरूबाट सबै ट्यागहरू हटाउने हो?</translation>
+    </message>
 </context>
 <context>
     <name>UpDownRatioDialog</name>
@@ -3914,6 +4369,10 @@ DNS रिबाइन्डिङ आक्रमणबाट बचाउन�
     <message>
         <source>Remove tracker</source>
         <translation type="unfinished" />
+    </message>
+    <message>
+        <source>This choice is remembered for the next removal.</source>
+        <translation>यो छनोट अर्को हटाउँदा सम्झिइनेछ।</translation>
     </message>
 </context>
 <context>
@@ -4127,6 +4586,30 @@ DNS रिबाइन्डिङ आक्रमणबाट बचाउन�
         <source>Select plugins</source>
         <translation type="unfinished" />
     </message>
+    <message>
+        <source>Category to search in</source>
+        <translation>खोज्ने वर्ग</translation>
+    </message>
+    <message>
+        <source>Close the selected search</source>
+        <translation>चयन गरिएको खोजी बन्द गर्नुहोस्</translation>
+    </message>
+    <message>
+        <source>Search engines to use</source>
+        <translation>प्रयोग गर्ने खोज इन्जिन</translation>
+    </message>
+    <message>
+        <source>Search for torrents...</source>
+        <translation>टोरेन्ट खोज्नुहोस्...</translation>
+    </message>
+    <message>
+        <source>Searches</source>
+        <translation>खोजीहरू</translation>
+    </message>
+    <message>
+        <source>Type a search above and press Enter.</source>
+        <translation>माथि खोज लेखेर Enter थिच्नुहोस्।</translation>
+    </message>
 </context>
 <context>
     <name>PluginSelectDlg</name>
@@ -4165,6 +4648,10 @@ DNS रिबाइन्डिङ आक्रमणबाट बचाउन�
     <message>
         <source>Search plugins</source>
         <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Enabled</source>
+        <translation>सक्रिय</translation>
     </message>
 </context>
 <context>
@@ -4223,6 +4710,10 @@ DNS रिबाइन्डिङ आक्रमणबाट बचाउन�
     <message>
         <source>No</source>
         <translation>होइन</translation>
+    </message>
+    <message>
+        <source>Enabled</source>
+        <translation>सक्रिय</translation>
     </message>
 </context>
 <context>
@@ -4388,6 +4879,30 @@ DNS रिबाइन्डिङ आक्रमणबाट बचाउन�
         <source>qBittorrent icon</source>
         <translation type="unfinished" />
     </message>
+    <message>
+        <source>Based on:</source>
+        <translation>आधारित:</translation>
+    </message>
+    <message>
+        <source>Edition version:</source>
+        <translation>संस्करणको भर्सन:</translation>
+    </message>
+    <message>
+        <source>Kettle Edition is a personal build of qBittorrent that adds user accounts with roles for the WebUI and the desktop app, an activity log, and an installable WebUI with a phone layout. A kettle is a group of hawks soaring together. This is an unofficial build, not affiliated with the qBittorrent project.</source>
+        <translation>Kettle Edition qBittorrent को व्यक्तिगत बिल्ड हो जसले WebUI र डेस्कटप एपका लागि भूमिका भएका प्रयोगकर्ता खाताहरू, गतिविधि लग, र फोन लेआउट भएको स्थापना गर्न मिल्ने WebUI थप्छ। Kettle भनेको सँगै उड्ने बाजहरूको झुण्ड हो। यो अनौपचारिक बिल्ड हो र qBittorrent परियोजनासँग सम्बन्धित छैन।</translation>
+    </message>
+    <message>
+        <source>Maintainer:</source>
+        <translation>मर्मतकर्ता:</translation>
+    </message>
+    <message>
+        <source>This edition</source>
+        <translation>यो संस्करण</translation>
+    </message>
+    <message>
+        <source>qBittorrent project:</source>
+        <translation>qBittorrent परियोजना:</translation>
+    </message>
 </context>
 <context>
     <name>OptionDialog</name>
@@ -4489,6 +5004,38 @@ DNS रिबाइन्डिङ आक्रमणबाट बचाउन�
     <message>
         <source>Open shared download window</source>
         <translation type="unfinished" />
+    </message>
+    <message>
+        <source>%1 of %2 shown</source>
+        <translation>%2 मध्ये %1 देखाइयो</translation>
+    </message>
+    <message>
+        <source>%1 of %2 shown (%3 hidden)</source>
+        <translation>%2 मध्ये %1 देखाइयो (%3 लुकाइयो)</translation>
+    </message>
+    <message>
+        <source>Close all searches</source>
+        <translation>सबै खोजी बन्द गर्नुहोस्</translation>
+    </message>
+    <message>
+        <source>Close search</source>
+        <translation>खोजी बन्द गर्नुहोस्</translation>
+    </message>
+    <message>
+        <source>Finished: %1</source>
+        <translation>सकियो: %1</translation>
+    </message>
+    <message>
+        <source>Refresh search</source>
+        <translation>खोजी ताजा गर्नुहोस्</translation>
+    </message>
+    <message>
+        <source>Search aborted: %1</source>
+        <translation>खोजी रोकियो: %1</translation>
+    </message>
+    <message>
+        <source>Searching: %1</source>
+        <translation>खोजिँदै: %1</translation>
     </message>
 </context>
 <context>
@@ -4627,6 +5174,10 @@ DNS रिबाइन्डिङ आक्रमणबाट बचाउन�
     <message>
         <source>Blocked opening RSS article URL. Only http:// and https:// links can be opened.</source>
         <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Details</source>
+        <translation>विवरण</translation>
     </message>
 </context>
 <context>
@@ -4905,6 +5456,10 @@ Supports the formats: S01E01, 1x1, 2017.12.31 and 31.12.2017 (Date formats also 
         <source>Import</source>
         <translation type="unfinished" />
     </message>
+    <message>
+        <source>Don&apos;t create subfolder</source>
+        <translation>सबफोल्डर सिर्जना नगर्नुहोस्</translation>
+    </message>
 </context>
 <context>
     <name>TrackerFiltersList</name>
@@ -5094,6 +5649,26 @@ Supports the formats: S01E01, 1x1, 2017.12.31 and 31.12.2017 (Date formats also 
         <source>Choose a log level...</source>
         <translation>लगको स्तर छान्नुहोस्...</translation>
     </message>
+    <message>
+        <source>Export...</source>
+        <translation>निर्यात गर्नुहोस्...</translation>
+    </message>
+    <message>
+        <source>Filter activity</source>
+        <translation>गतिविधि फिल्टर गर्नुहोस्</translation>
+    </message>
+    <message>
+        <source>Result:</source>
+        <translation>नतिजा:</translation>
+    </message>
+    <message>
+        <source>User:</source>
+        <translation>प्रयोगकर्ता:</translation>
+    </message>
+    <message>
+        <source>WebUI Activity</source>
+        <translation>WebUI गतिविधि</translation>
+    </message>
 </context>
 <context>
     <name>TrackersFilterWidget</name>
@@ -5163,6 +5738,14 @@ Supports the formats: S01E01, 1x1, 2017.12.31 and 31.12.2017 (Date formats also 
     <message>
         <source>Torrent share limits</source>
         <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Torrent share limits</source>
+        <translation>टोरेन्ट साझा गर्ने सीमाहरू</translation>
+    </message>
+    <message>
+        <source>Your role saves torrents in the default folders.</source>
+        <translation>तपाईंको भूमिकाले टोरेन्टहरू पूर्वनिर्धारित फोल्डरमा सेभ गर्छ।</translation>
     </message>
 </context>
 <context>
@@ -5262,6 +5845,18 @@ Supports the formats: S01E01, 1x1, 2017.12.31 and 31.12.2017 (Date formats also 
     <message>
         <source>Invalid Username or Password.</source>
         <translation type="unfinished" />
+    </message>
+    <message>
+        <source>A kettle is a group of hawks soaring together.</source>
+        <translation>Kettle भनेको सँगै उड्ने बाजहरूको झुण्ड हो।</translation>
+    </message>
+    <message>
+        <source>Sign in</source>
+        <translation>साइन इन गर्नुहोस्</translation>
+    </message>
+    <message>
+        <source>Username</source>
+        <translation>प्रयोगकर्ता नाम</translation>
     </message>
 </context>
 <context>
@@ -5591,6 +6186,10 @@ Supports the formats: S01E01, 1x1, 2017.12.31 and 31.12.2017 (Date formats also 
         <source>Resize</source>
         <translation type="unfinished" />
     </message>
+    <message>
+        <source>Reset Auto Width</source>
+        <translation>स्वचालित चौडाइ रिसेट गर्नुहोस्</translation>
+    </message>
 </context>
 <context>
     <name>confirmRotateAPIKeyDialog</name>
@@ -5605,6 +6204,10 @@ Supports the formats: S01E01, 1x1, 2017.12.31 and 31.12.2017 (Date formats also 
     <message>
         <source>Rotate this API key? The current key will immediately stop working and a new key will be generated.</source>
         <translation>यो API कुञ्जी घुमाउने हो? हालको कुञ्जीले तुरुन्तै काम गर्न छोड्नेछ र नयाँ कुञ्जी उत्पन्न हुनेछ।</translation>
+    </message>
+    <message>
+        <source>Generate an API key? This key can be used to interact with qBittorrent&apos;s API.</source>
+        <translation>API कुञ्जी उत्पन्न गर्ने हो? यो कुञ्जी qBittorrent को API सँग अन्तर्क्रिया गर्न प्रयोग गर्न सकिन्छ।</translation>
     </message>
 </context>
 <context>
@@ -5730,6 +6333,216 @@ Supports the formats: S01E01, 1x1, 2017.12.31 and 31.12.2017 (Date formats also 
     <message>
         <source>Not available for folders</source>
         <translation type="unfinished" />
+    </message>
+</context>
+<context>
+    <name>UserAccounts</name>
+    <message>
+        <source>(this browser)</source>
+        <translation>(यो ब्राउजर)</translation>
+    </message>
+    <message>
+        <source>A role decides what its users are allowed to do.</source>
+        <translation>भूमिकाले यसका प्रयोगकर्ताले के गर्न पाउँछन् भन्ने तय गर्छ।</translation>
+    </message>
+    <message>
+        <source>Add Role</source>
+        <translation>भूमिका थप्नुहोस्</translation>
+    </message>
+    <message>
+        <source>Add Role...</source>
+        <translation>भूमिका थप्नुहोस्...</translation>
+    </message>
+    <message>
+        <source>Add User</source>
+        <translation>प्रयोगकर्ता थप्नुहोस्</translation>
+    </message>
+    <message>
+        <source>Add User...</source>
+        <translation>प्रयोगकर्ता थप्नुहोस्...</translation>
+    </message>
+    <message>
+        <source>Are you sure you want to remove the role &apos;%1&apos;?</source>
+        <translation>के तपाईं भूमिका &apos;%1&apos; लाई हटाउन चाहनुहुन्छ?</translation>
+    </message>
+    <message>
+        <source>Are you sure you want to remove the user &apos;%1&apos;?</source>
+        <translation>के तपाईं प्रयोगकर्ता &apos;%1&apos; लाई हटाउन चाहनुहुन्छ?</translation>
+    </message>
+    <message>
+        <source>At least %1 characters</source>
+        <translation>कम्तीमा %1 वर्ण</translation>
+    </message>
+    <message>
+        <source>Browser</source>
+        <translation>ब्राउजर</translation>
+    </message>
+    <message>
+        <source>Browsers and devices where someone is logged in with a user account.</source>
+        <translation>प्रयोगकर्ता खाताबाट कसैले लगइन गरेका ब्राउजर र उपकरणहरू।</translation>
+    </message>
+    <message>
+        <source>Change Password</source>
+        <translation>पासवर्ड परिवर्तन गर्नुहोस्</translation>
+    </message>
+    <message>
+        <source>Confirm password:</source>
+        <translation>पासवर्ड पुष्टि गर्नुहोस्:</translation>
+    </message>
+    <message>
+        <source>Created</source>
+        <translation>बनाइएको</translation>
+    </message>
+    <message>
+        <source>Current password:</source>
+        <translation>हालको पासवर्ड:</translation>
+    </message>
+    <message>
+        <source>Description</source>
+        <translation>विवरण</translation>
+    </message>
+    <message>
+        <source>Description:</source>
+        <translation>विवरण:</translation>
+    </message>
+    <message>
+        <source>Disable</source>
+        <translation>निष्क्रिय गर्नुहोस्</translation>
+    </message>
+    <message>
+        <source>Disable this account</source>
+        <translation>यो खाता निष्क्रिय गर्नुहोस्</translation>
+    </message>
+    <message>
+        <source>Edit Role</source>
+        <translation>भूमिका सम्पादन गर्नुहोस्</translation>
+    </message>
+    <message>
+        <source>Edit User</source>
+        <translation>प्रयोगकर्ता सम्पादन गर्नुहोस्</translation>
+    </message>
+    <message>
+        <source>Edit...</source>
+        <translation>सम्पादन गर्नुहोस्...</translation>
+    </message>
+    <message>
+        <source>Enable</source>
+        <translation>सक्रिय गर्नुहोस्</translation>
+    </message>
+    <message>
+        <source>Enabled</source>
+        <translation>सक्रिय</translation>
+    </message>
+    <message>
+        <source>Enter a role name.</source>
+        <translation>भूमिकाको नाम राख्नुहोस्।</translation>
+    </message>
+    <message>
+        <source>Enter a username.</source>
+        <translation>प्रयोगकर्ता नाम राख्नुहोस्।</translation>
+    </message>
+    <message>
+        <source>Expires</source>
+        <translation>म्याद सकिन्छ</translation>
+    </message>
+    <message>
+        <source>Gives control over the PC or qBittorrent itself</source>
+        <translation>PC वा qBittorrent आफैँमाथि नियन्त्रण दिन्छ।</translation>
+    </message>
+    <message>
+        <source>Last active</source>
+        <translation>पछिल्लो सक्रियता</translation>
+    </message>
+    <message>
+        <source>Last login</source>
+        <translation>पछिल्लो लगइन</translation>
+    </message>
+    <message>
+        <source>Leave empty to keep the current password</source>
+        <translation>हालको पासवर्ड राख्न खाली छोड्नुहोस्</translation>
+    </message>
+    <message>
+        <source>Log Out</source>
+        <translation>लग आउट</translation>
+    </message>
+    <message>
+        <source>Log Out Everywhere</source>
+        <translation>सबै ठाउँबाट लग आउट</translation>
+    </message>
+    <message>
+        <source>Logged In</source>
+        <translation>लगइन भएका</translation>
+    </message>
+    <message>
+        <source>Logged in</source>
+        <translation>लगइन गरेको</translation>
+    </message>
+    <message>
+        <source>New password:</source>
+        <translation>नयाँ पासवर्ड:</translation>
+    </message>
+    <message>
+        <source>No accounts yet, so everyone still uses the shared WebUI login. Add an Admin account first.</source>
+        <translation>अहिलेसम्म कुनै खाता छैन, त्यसैले सबैले अझै साझा WebUI लगइन प्रयोग गर्छन्। पहिले Admin खाता थप्नुहोस्।</translation>
+    </message>
+    <message>
+        <source>People who can log in to the WebUI with their own username and password.</source>
+        <translation>आफ्नै प्रयोगकर्ता नाम र पासवर्डले WebUI मा लगइन गर्न सक्ने मानिसहरू।</translation>
+    </message>
+    <message>
+        <source>Permissions</source>
+        <translation>अनुमति</translation>
+    </message>
+    <message>
+        <source>Role</source>
+        <translation>भूमिका</translation>
+    </message>
+    <message>
+        <source>Role:</source>
+        <translation>भूमिका:</translation>
+    </message>
+    <message>
+        <source>Roles</source>
+        <translation>भूमिकाहरू</translation>
+    </message>
+    <message>
+        <source>The password must be at least %1 characters long.</source>
+        <translation>पासवर्ड कम्तीमा %1 वर्णको हुनुपर्छ।</translation>
+    </message>
+    <message>
+        <source>The passwords don&apos;t match.</source>
+        <translation>पासवर्ड मिलेन।</translation>
+    </message>
+    <message>
+        <source>Username</source>
+        <translation>प्रयोगकर्ता नाम</translation>
+    </message>
+    <message>
+        <source>Users</source>
+        <translation>प्रयोगकर्ताहरू</translation>
+    </message>
+    <message>
+        <source>Your password was changed. Other browsers and devices where you were logged in have been logged out.</source>
+        <translation>तपाईंको पासवर्ड परिवर्तन गरियो। तपाईं लगइन भएका अन्य ब्राउजर र उपकरणबाट लग आउट गरियो।</translation>
+    </message>
+</context>
+<context>
+    <name>WebUIActivity</name>
+    <message>
+        <source>Action</source>
+        <translation>कार्य</translation>
+    </message>
+    <message>
+        <source>Result</source>
+        <translation>नतिजा</translation>
+    </message>
+    <message>
+        <source>Role</source>
+        <translation>भूमिका</translation>
+    </message>
+    <message>
+        <source>Time</source>
+        <translation>समय</translation>
     </message>
 </context>
 </TS>

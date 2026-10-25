@@ -141,6 +141,62 @@
         <source>The free IP to Country Lite database by DB-IP is used for resolving the countries of peers. The database is licensed under the Creative Commons Attribution 4.0 International License</source>
         <translation>Vapaata ja ilmaista &quot;IP to Country Lite&quot; DB-IP:n ylläpitämää tietokantaa käytetään erottelemaan ja näyttämään vertaiskäyttäjien maat. Tämän tietokannan käyttölupa toimii Creative Commons Attributions 4.0 License:n alaisuudessa</translation>
     </message>
+    <message>
+        <source>This edition</source>
+        <translation>Tämä versio</translation>
+    </message>
+    <message>
+        <source>Edition version:</source>
+        <translation>Julkaisun versio:</translation>
+    </message>
+    <message>
+        <source>Based on:</source>
+        <translation>Pohjana:</translation>
+    </message>
+    <message>
+        <source>Maintainer:</source>
+        <translation>Ylläpitäjä:</translation>
+    </message>
+    <message>
+        <source>qBittorrent project:</source>
+        <translation>qBittorrent-projekti:</translation>
+    </message>
+    <message>
+        <source>Kettle Edition is a personal build of qBittorrent that adds user accounts with roles for the WebUI and the desktop app, an activity log, and an installable WebUI with a phone layout. A kettle is a group of hawks soaring together. This is an unofficial build, not affiliated with the qBittorrent project.</source>
+        <translation>Kettle Edition on qBittorrentin henkilökohtainen koonti, joka lisää rooleilla varustetut käyttäjätilit WebUI:lle ja työpöytäsovellukselle, toimintalokin sekä asennettavan WebUI:n puhelinasettelulla. Kettle on yhdessä leijuvien haukkojen parvi. Tämä on epävirallinen koonti, joka ei liity qBittorrent-projektiin.</translation>
+    </message>
+    <message>
+        <source>N/A</source>
+        <translation>Ei saatavilla</translation>
+    </message>
+    <message>
+        <source>This edition</source>
+        <translation>Tämä versio</translation>
+    </message>
+    <message>
+        <source>Edition version:</source>
+        <translation>Julkaisun versio:</translation>
+    </message>
+    <message>
+        <source>Based on:</source>
+        <translation>Pohjana:</translation>
+    </message>
+    <message>
+        <source>Maintainer:</source>
+        <translation>Ylläpitäjä:</translation>
+    </message>
+    <message>
+        <source>qBittorrent project:</source>
+        <translation>qBittorrent-projekti:</translation>
+    </message>
+    <message>
+        <source>Kettle Edition is a personal build of qBittorrent that adds user accounts with roles for the WebUI and the desktop app, an activity log, and an installable WebUI with a phone layout. A kettle is a group of hawks soaring together. This is an unofficial build, not affiliated with the qBittorrent project.</source>
+        <translation>Kettle Edition on qBittorrentin henkilökohtainen koonti, joka lisää rooleilla varustetut käyttäjätilit WebUI:lle ja työpöytäsovellukselle, toimintalokin sekä asennettavan WebUI:n puhelinasettelulla. Kettle on yhdessä leijuvien haukkojen parvi. Tämä on epävirallinen koonti, joka ei liity qBittorrent-projektiin.</translation>
+    </message>
+    <message>
+        <source>N/A</source>
+        <translation>Ei saatavilla</translation>
+    </message>
 </context>
 <context>
     <name>AbstractFileStorage</name>
@@ -1459,6 +1515,62 @@
         <location filename="../gui/advancedsettings.cpp" line="925"/>
         <source>Embedded tracker port</source>
         <translation>Upotetun seurantapalvelimen portti</translation>
+    </message>
+    <message>
+        <source>Network</source>
+        <translation>Verkko</translation>
+    </message>
+    <message>
+        <source>Storage</source>
+        <translation>Tallennus</translation>
+    </message>
+    <message>
+        <source>Peers and trackers</source>
+        <translation>Vertaiset ja seurantapalvelimet</translation>
+    </message>
+    <message>
+        <source>Program behavior</source>
+        <translation>Ohjelman toiminta</translation>
+    </message>
+    <message>
+        <source>Display and notifications</source>
+        <translation>Näyttö ja ilmoitukset</translation>
+    </message>
+    <message>
+        <source>Network connection</source>
+        <translation>Verkkoyhteys</translation>
+    </message>
+    <message>
+        <source>Security and privacy</source>
+        <translation>Turvallisuus ja yksityisyys</translation>
+    </message>
+    <message>
+        <source>Connection tuning</source>
+        <translation>Yhteyden hienosäätö</translation>
+    </message>
+    <message>
+        <source>Saving and torrent files</source>
+        <translation>Tallennus ja torrent-tiedostot</translation>
+    </message>
+    <message>
+        <source>Disk and memory</source>
+        <translation>Levy ja muisti</translation>
+    </message>
+    <message>
+        <source>Peers and seeding</source>
+        <translation>Vertaiset ja jakaminen</translation>
+    </message>
+    <message>
+        <source>DHT and I2P</source>
+        <translation>DHT ja I2P</translation>
+    </message>
+    <message>
+        <source>General</source>
+        <translation>Yleiset</translation>
+    </message>
+    <message>
+        <source>Trackers</source>
+        <translation>Seurantapalvelimet</translation>
     </message>
 </context>
 <context>
@@ -3476,6 +3588,22 @@ Nämä muodot ovat tuetut: S01E01, 1x1, 2017.12.31 ja 31.12.2017 (päiväysmuodo
         <source>Remove torrent</source>
         <translation>Poista torrentti</translation>
     </message>
+    <message>
+        <source>This choice is remembered for the next removal.</source>
+        <translation>Tämä valinta muistetaan seuraavaa poistoa varten.</translation>
+    </message>
+    <message>
+        <source>Remove</source>
+        <translation>Poista</translation>
+    </message>
+    <message>
+        <source>This choice is remembered for the next removal.</source>
+        <translation>Tämä valinta muistetaan seuraavaa poistoa varten.</translation>
+    </message>
+    <message>
+        <source>Remove</source>
+        <translation>Poista</translation>
+    </message>
 </context>
 <context>
     <name>DownloadFromURLDialog</name>
@@ -3549,6 +3677,14 @@ Nämä muodot ovat tuetut: S01E01, 1x1, 2017.12.31 ja 31.12.2017 (päiväysmuodo
         <location filename="../gui/executionlogwidget.cpp" line="99"/>
         <source>Clear</source>
         <translation>Tyhjennä</translation>
+    </message>
+    <message>
+        <source>WebUI Activity</source>
+        <translation>WebUI-toiminta</translation>
+    </message>
+    <message>
+        <source>WebUI Activity</source>
+        <translation>WebUI-toiminta</translation>
     </message>
 </context>
 <context>
@@ -4711,6 +4847,46 @@ Minimum requirement: %2.</source>
         <location filename="../gui/mainwindow.cpp" line="1346"/>
         <source>Torrent Files</source>
         <translation>Torrent-tiedostot</translation>
+    </message>
+    <message>
+        <source>Kettle Edition %1 is available.</source>
+        <translation>Kettle Edition %1 on saatavilla.</translation>
+    </message>
+    <message>
+        <source>qBittorrent Kettle Edition %1 is available. It is downloaded now and installed at 4:00 AM, or when qBittorrent starts next.</source>
+        <translation>qBittorrent Kettle Edition %1 on saatavilla. Se ladataan nyt ja asennetaan klo 4:00 tai seuraavalla qBittorrentin käynnistyksellä.</translation>
+    </message>
+    <message>
+        <source>qBittorrent Kettle Edition %1 is available. It is downloaded now. Turn on &quot;Automatically install Kettle Edition updates&quot; in Options to install it.</source>
+        <translation>qBittorrent Kettle Edition %1 on saatavilla. Se ladataan nyt. Asenna se ottamalla Asetuksissa käyttöön ”Asenna Kettle Edition -päivitykset automaattisesti”.</translation>
+    </message>
+    <message>
+        <source>You have the latest qBittorrent Kettle Edition (%1).</source>
+        <translation>Sinulla on uusin qBittorrent Kettle Edition (%1).</translation>
+    </message>
+    <message>
+        <source>Could not check for qBittorrent Kettle Edition updates. See the Execution Log for details.</source>
+        <translation>qBittorrent Kettle Editionin päivityksiä ei voitu tarkistaa. Katso lisätiedot suoritusloki-ikkunasta.</translation>
+    </message>
+    <message>
+        <source>Kettle Edition %1 is available.</source>
+        <translation>Kettle Edition %1 on saatavilla.</translation>
+    </message>
+    <message>
+        <source>qBittorrent Kettle Edition %1 is available. It is downloaded now and installed at 4:00 AM, or when qBittorrent starts next.</source>
+        <translation>qBittorrent Kettle Edition %1 on saatavilla. Se ladataan nyt ja asennetaan klo 4:00 tai seuraavalla qBittorrentin käynnistyksellä.</translation>
+    </message>
+    <message>
+        <source>qBittorrent Kettle Edition %1 is available. It is downloaded now. Turn on &quot;Automatically install Kettle Edition updates&quot; in Options to install it.</source>
+        <translation>qBittorrent Kettle Edition %1 on saatavilla. Se ladataan nyt. Asenna se ottamalla Asetuksissa käyttöön ”Asenna Kettle Edition -päivitykset automaattisesti”.</translation>
+    </message>
+    <message>
+        <source>You have the latest qBittorrent Kettle Edition (%1).</source>
+        <translation>Sinulla on uusin qBittorrent Kettle Edition (%1).</translation>
+    </message>
+    <message>
+        <source>Could not check for qBittorrent Kettle Edition updates. See the Execution Log for details.</source>
+        <translation>qBittorrent Kettle Editionin päivityksiä ei voitu tarkistaa. Katso lisätiedot suoritusloki-ikkunasta.</translation>
     </message>
 </context>
 <context>
@@ -8457,6 +8633,190 @@ Check the Execution Log for errors.</source>
         <source>Length Error</source>
         <translation>Pituusvirhe</translation>
     </message>
+    <message>
+        <source>Search settings</source>
+        <translation>Etsi asetuksista</translation>
+    </message>
+    <message>
+        <source>No settings match</source>
+        <translation>Ei vastaavia asetuksia</translation>
+    </message>
+    <message>
+        <source>User Accounts</source>
+        <translation>Käyttäjätilit</translation>
+    </message>
+    <message>
+        <source>Automatically install Kettle Edition updates</source>
+        <translation>Asenna Kettle Edition -päivitykset automaattisesti</translation>
+    </message>
+    <message>
+        <source>Status bar and log</source>
+        <translation>Tilapalkki ja loki</translation>
+    </message>
+    <message>
+        <source>Files</source>
+        <translation>Tiedostot</translation>
+    </message>
+    <message>
+        <source>Checking</source>
+        <translation>Tarkistus</translation>
+    </message>
+    <message>
+        <source>Until the first user account is created, this login always works.</source>
+        <translation>Kunnes ensimmäinen käyttäjätili on luotu, tämä kirjautuminen toimii aina.</translation>
+    </message>
+    <message>
+        <source>Allow this login when user accounts exist</source>
+        <translation>Salli tämä kirjautuminen, kun käyttäjätilejä on</translation>
+    </message>
+    <message>
+        <source>Access</source>
+        <translation>Käyttöoikeus</translation>
+    </message>
+    <message>
+        <source>Changes to users, roles and logins apply at once. The settings below apply with OK or Apply.</source>
+        <translation>Käyttäjien, roolien ja kirjautumisten muutokset tulevat voimaan heti. Alla olevat asetukset tulevat voimaan OK- tai Käytä-painikkeella.</translation>
+    </message>
+    <message>
+        <source>Logins and Activity Log</source>
+        <translation>Kirjautumiset ja toimintaloki</translation>
+    </message>
+    <message>
+        <source>0 means users are logged out after the session timeout.</source>
+        <translation>0 tarkoittaa, että käyttäjät kirjataan ulos istunnon aikakatkaisun jälkeen.</translation>
+    </message>
+    <message>
+        <source>Keep users logged in for:</source>
+        <translation>Pidä käyttäjät kirjautuneina:</translation>
+    </message>
+    <message>
+        <source>Until session timeout</source>
+        <translation>Istunnon aikakatkaisuun asti</translation>
+    </message>
+    <message>
+        <source> days</source>
+        <translation> päivää</translation>
+    </message>
+    <message>
+        <source>Lock account after consecutive failures:</source>
+        <translation>Lukitse tili peräkkäisten epäonnistumisten jälkeen:</translation>
+    </message>
+    <message>
+        <source>Keep WebUI activity log for:</source>
+        <translation>Säilytä WebUI-toimintaloki:</translation>
+    </message>
+    <message>
+        <source>lock for:</source>
+        <translation>lukitse:</translation>
+    </message>
+    <message>
+        <source>%1 works best with Windows dark mode</source>
+        <translation>%1 toimii parhaiten Windowsin tumman tilan kanssa</translation>
+    </message>
+    <message>
+        <source>WebUI address</source>
+        <translation>WebUI-osoite</translation>
+    </message>
+    <message>
+        <source>With the WebUI address set to %1, only this PC can reach the WebUI. Remote access, including through a reverse proxy on another machine, will stop working.
+
+Save anyway?</source>
+        <translation>Kun WebUI-osoitteeksi on asetettu %1, vain tämä tietokone pääsee WebUI:hin. Etäyhteys, myös toisella koneella olevan käänteisen välityspalvelimen kautta, lakkaa toimimasta.
+
+Tallennetaanko silti?</translation>
+    </message>
+    <message>
+        <source>Search settings</source>
+        <translation>Etsi asetuksista</translation>
+    </message>
+    <message>
+        <source>No settings match</source>
+        <translation>Ei vastaavia asetuksia</translation>
+    </message>
+    <message>
+        <source>User Accounts</source>
+        <translation>Käyttäjätilit</translation>
+    </message>
+    <message>
+        <source>Automatically install Kettle Edition updates</source>
+        <translation>Asenna Kettle Edition -päivitykset automaattisesti</translation>
+    </message>
+    <message>
+        <source>Status bar and log</source>
+        <translation>Tilapalkki ja loki</translation>
+    </message>
+    <message>
+        <source>Files</source>
+        <translation>Tiedostot</translation>
+    </message>
+    <message>
+        <source>Checking</source>
+        <translation>Tarkistus</translation>
+    </message>
+    <message>
+        <source>Until the first user account is created, this login always works.</source>
+        <translation>Kunnes ensimmäinen käyttäjätili on luotu, tämä kirjautuminen toimii aina.</translation>
+    </message>
+    <message>
+        <source>Allow this login when user accounts exist</source>
+        <translation>Salli tämä kirjautuminen, kun käyttäjätilejä on</translation>
+    </message>
+    <message>
+        <source>Access</source>
+        <translation>Käyttöoikeus</translation>
+    </message>
+    <message>
+        <source>Changes to users, roles and logins apply at once. The settings below apply with OK or Apply.</source>
+        <translation>Käyttäjien, roolien ja kirjautumisten muutokset tulevat voimaan heti. Alla olevat asetukset tulevat voimaan OK- tai Käytä-painikkeella.</translation>
+    </message>
+    <message>
+        <source>Logins and Activity Log</source>
+        <translation>Kirjautumiset ja toimintaloki</translation>
+    </message>
+    <message>
+        <source>0 means users are logged out after the session timeout.</source>
+        <translation>0 tarkoittaa, että käyttäjät kirjataan ulos istunnon aikakatkaisun jälkeen.</translation>
+    </message>
+    <message>
+        <source>Keep users logged in for:</source>
+        <translation>Pidä käyttäjät kirjautuneina:</translation>
+    </message>
+    <message>
+        <source>Until session timeout</source>
+        <translation>Istunnon aikakatkaisuun asti</translation>
+    </message>
+    <message>
+        <source> days</source>
+        <translation> päivää</translation>
+    </message>
+    <message>
+        <source>Lock account after consecutive failures:</source>
+        <translation>Lukitse tili peräkkäisten epäonnistumisten jälkeen:</translation>
+    </message>
+    <message>
+        <source>Keep WebUI activity log for:</source>
+        <translation>Säilytä WebUI-toimintaloki:</translation>
+    </message>
+    <message>
+        <source>lock for:</source>
+        <translation>lukitse:</translation>
+    </message>
+    <message>
+        <source>%1 works best with Windows dark mode</source>
+        <translation>%1 toimii parhaiten Windowsin tumman tilan kanssa</translation>
+    </message>
+    <message>
+        <source>WebUI address</source>
+        <translation>WebUI-osoite</translation>
+    </message>
+    <message>
+        <source>With the WebUI address set to %1, only this PC can reach the WebUI. Remote access, including through a reverse proxy on another machine, will stop working.
+
+Save anyway?</source>
+        <translation>Kun WebUI-osoitteeksi on asetettu %1, vain tämä tietokone pääsee WebUI:hin. Etäyhteys, myös toisella koneella olevan käänteisen välityspalvelimen kautta, lakkaa toimimasta.
+
+Tallennetaanko silti?</translation>
+    </message>
 </context>
 <context>
     <name>PeerInfo</name>
@@ -8709,6 +9069,22 @@ Check the Execution Log for errors.</source>
         <location filename="../gui/properties/peerlistwidget.cpp" line="309"/>
         <source>Copy IP:port</source>
         <translation>Kopioi IP:portti</translation>
+    </message>
+    <message>
+        <source>Reset auto width</source>
+        <translation>Nollaa automaattinen leveys</translation>
+    </message>
+    <message>
+        <source>Fit all non-hidden columns to their contents again, and forget the widths that were set by hand</source>
+        <translation>Sovita kaikki näkyvät sarakkeet uudelleen sisältöönsä ja unohda käsin asetetut leveydet</translation>
+    </message>
+    <message>
+        <source>Reset auto width</source>
+        <translation>Nollaa automaattinen leveys</translation>
+    </message>
+    <message>
+        <source>Fit all non-hidden columns to their contents again, and forget the widths that were set by hand</source>
+        <translation>Sovita kaikki näkyvät sarakkeet uudelleen sisältöönsä ja unohda käsin asetetut leveydet</translation>
     </message>
 </context>
 <context>
@@ -10085,6 +10461,14 @@ Valitut alkuperäisliitännäiset ovat poistettu käytöstä.</translation>
         <source>Open link</source>
         <translation>Avaa linkki</translation>
     </message>
+    <message>
+        <source>Details</source>
+        <translation>Tiedot</translation>
+    </message>
+    <message>
+        <source>Details</source>
+        <translation>Tiedot</translation>
+    </message>
 </context>
 <context>
     <name>SearchController</name>
@@ -10438,6 +10822,70 @@ Valitut alkuperäisliitännäiset ovat poistettu käytöstä.</translation>
         <source>Resize all non-hidden columns to the size of their contents</source>
         <translation>Sovita kaikkien piilottamattomien sarakkeiden koko niiden sisältöön</translation>
     </message>
+    <message>
+        <source>%1 of %2 shown (%3 hidden)</source>
+        <translation>Näytetään %1 / %2 (%3 piilotettu)</translation>
+    </message>
+    <message>
+        <source>%1 of %2 shown</source>
+        <translation>Näytetään %1 / %2</translation>
+    </message>
+    <message>
+        <source>Searching: %1</source>
+        <translation>Haetaan: %1</translation>
+    </message>
+    <message>
+        <source>Finished: %1</source>
+        <translation>Valmis: %1</translation>
+    </message>
+    <message>
+        <source>Search aborted: %1</source>
+        <translation>Haku keskeytettiin: %1</translation>
+    </message>
+    <message>
+        <source>Reset auto width</source>
+        <translation>Nollaa automaattinen leveys</translation>
+    </message>
+    <message>
+        <source>Fit all non-hidden columns to their contents again, and forget the widths that were set by hand</source>
+        <translation>Sovita kaikki näkyvät sarakkeet uudelleen sisältöönsä ja unohda käsin asetetut leveydet</translation>
+    </message>
+    <message>
+        <source>Unknown</source>
+        <translation>Tuntematon</translation>
+    </message>
+    <message>
+        <source>%1 of %2 shown (%3 hidden)</source>
+        <translation>Näytetään %1 / %2 (%3 piilotettu)</translation>
+    </message>
+    <message>
+        <source>%1 of %2 shown</source>
+        <translation>Näytetään %1 / %2</translation>
+    </message>
+    <message>
+        <source>Searching: %1</source>
+        <translation>Haetaan: %1</translation>
+    </message>
+    <message>
+        <source>Finished: %1</source>
+        <translation>Valmis: %1</translation>
+    </message>
+    <message>
+        <source>Search aborted: %1</source>
+        <translation>Haku keskeytettiin: %1</translation>
+    </message>
+    <message>
+        <source>Reset auto width</source>
+        <translation>Nollaa automaattinen leveys</translation>
+    </message>
+    <message>
+        <source>Fit all non-hidden columns to their contents again, and forget the widths that were set by hand</source>
+        <translation>Sovita kaikki näkyvät sarakkeet uudelleen sisältöönsä ja unohda käsin asetetut leveydet</translation>
+    </message>
+    <message>
+        <source>Unknown</source>
+        <translation>Tuntematon</translation>
+    </message>
 </context>
 <context>
     <name>SearchPluginManager</name>
@@ -10735,6 +11183,14 @@ Valitut alkuperäisliitännäiset ovat poistettu käytöstä.</translation>
         <source>Couldn&apos;t update &quot;%1&quot; search engine plugin. %2</source>
         <translation type="unfinished"></translation>
     </message>
+    <message>
+        <source>Install Kettle Plugins</source>
+        <translation>Asenna Kettle-lisäosat</translation>
+    </message>
+    <message>
+        <source>Install Kettle Plugins</source>
+        <translation>Asenna Kettle-lisäosat</translation>
+    </message>
 </context>
 <context>
     <name>SearchPluginSourceDialog</name>
@@ -10874,6 +11330,90 @@ Napsauta &quot;Hakuliitännäiset&quot;-painiketta ikkunan oikeasta alakulmasta 
         <location filename="../gui/search/searchwidget.ui" line="58"/>
         <source>Stop</source>
         <translation>Pysäytä</translation>
+    </message>
+    <message>
+        <source>Searches</source>
+        <translation>Haut</translation>
+    </message>
+    <message>
+        <source>Close the selected search</source>
+        <translation>Sulje valittu haku</translation>
+    </message>
+    <message>
+        <source>Search for torrents...</source>
+        <translation>Hae torrentteja...</translation>
+    </message>
+    <message>
+        <source>Category to search in</source>
+        <translation>Haettava luokka</translation>
+    </message>
+    <message>
+        <source>Search engines to use</source>
+        <translation>Käytettävät hakukoneet</translation>
+    </message>
+    <message>
+        <source>There aren&apos;t any search plugins installed.
+Click the &quot;Search plugins...&quot; button at the top right of the window to install some.</source>
+        <translation>Hakulisäosia ei ole asennettu.
+Asenna niitä napsauttamalla ikkunan oikeassa yläkulmassa olevaa ”Hakulisäosat...”-painiketta.</translation>
+    </message>
+    <message>
+        <source>Type a search above and press Enter.</source>
+        <translation>Kirjoita haku yläpuolelle ja paina Enter.</translation>
+    </message>
+    <message>
+        <source>Refresh search</source>
+        <translation>Päivitä haku</translation>
+    </message>
+    <message>
+        <source>Close search</source>
+        <translation>Sulje haku</translation>
+    </message>
+    <message>
+        <source>Close all searches</source>
+        <translation>Sulje kaikki haut</translation>
+    </message>
+    <message>
+        <source>Searches</source>
+        <translation>Haut</translation>
+    </message>
+    <message>
+        <source>Close the selected search</source>
+        <translation>Sulje valittu haku</translation>
+    </message>
+    <message>
+        <source>Search for torrents...</source>
+        <translation>Hae torrentteja...</translation>
+    </message>
+    <message>
+        <source>Category to search in</source>
+        <translation>Haettava luokka</translation>
+    </message>
+    <message>
+        <source>Search engines to use</source>
+        <translation>Käytettävät hakukoneet</translation>
+    </message>
+    <message>
+        <source>There aren&apos;t any search plugins installed.
+Click the &quot;Search plugins...&quot; button at the top right of the window to install some.</source>
+        <translation>Hakulisäosia ei ole asennettu.
+Asenna niitä napsauttamalla ikkunan oikeassa yläkulmassa olevaa ”Hakulisäosat...”-painiketta.</translation>
+    </message>
+    <message>
+        <source>Type a search above and press Enter.</source>
+        <translation>Kirjoita haku yläpuolelle ja paina Enter.</translation>
+    </message>
+    <message>
+        <source>Refresh search</source>
+        <translation>Päivitä haku</translation>
+    </message>
+    <message>
+        <source>Close search</source>
+        <translation>Sulje haku</translation>
+    </message>
+    <message>
+        <source>Close all searches</source>
+        <translation>Sulje kaikki haut</translation>
     </message>
 </context>
 <context>
@@ -11336,6 +11876,326 @@ Napsauta &quot;Hakuliitännäiset&quot;-painiketta ikkunan oikeasta alakulmasta 
         <location filename="../gui/statsdialog.cpp" line="111"/>
         <source>%1 ms</source>
         <translation type="unfinished">%1 ms</translation>
+    </message>
+    <message>
+        <source>Copy</source>
+        <translation>Kopioi</translation>
+    </message>
+    <message>
+        <source>Overview</source>
+        <translation>Yleiskatsaus</translation>
+    </message>
+    <message>
+        <source>Transfer</source>
+        <translation>Siirto</translation>
+    </message>
+    <message>
+        <source>This session</source>
+        <translation>Tämä istunto</translation>
+    </message>
+    <message>
+        <source>All time</source>
+        <translation>Kaikkiaan</translation>
+    </message>
+    <message>
+        <source>Downloaded:</source>
+        <translation>Ladattu:</translation>
+    </message>
+    <message>
+        <source>Uploaded:</source>
+        <translation>Lähetetty:</translation>
+    </message>
+    <message>
+        <source>Share ratio:</source>
+        <translation>Jakosuhde:</translation>
+    </message>
+    <message>
+        <source>Current speed:</source>
+        <translation>Nykyinen nopeus:</translation>
+    </message>
+    <message>
+        <source>Activity</source>
+        <translation>Toiminta</translation>
+    </message>
+    <message>
+        <source>Torrents downloading:</source>
+        <translation>Latautuvat torrentit:</translation>
+    </message>
+    <message>
+        <source>Torrents seeding:</source>
+        <translation>Jakavat torrentit:</translation>
+    </message>
+    <message>
+        <source>Torrents stopped:</source>
+        <translation>Pysäytetyt torrentit:</translation>
+    </message>
+    <message>
+        <source>Torrents with errors:</source>
+        <translation>Virheelliset torrentit:</translation>
+    </message>
+    <message>
+        <source>Running for:</source>
+        <translation>Käynnissä:</translation>
+    </message>
+    <message>
+        <source>History</source>
+        <translation>Historia</translation>
+    </message>
+    <message>
+        <source>Period</source>
+        <translation>Ajanjakso</translation>
+    </message>
+    <message>
+        <source>Today</source>
+        <translation>Tänään</translation>
+    </message>
+    <message>
+        <source>Last 7 days</source>
+        <translation>Viimeiset 7 päivää</translation>
+    </message>
+    <message>
+        <source>This month</source>
+        <translation>Tämä kuukausi</translation>
+    </message>
+    <message>
+        <source>Last month</source>
+        <translation>Viime kuukausi</translation>
+    </message>
+    <message>
+        <source>Last 12 months</source>
+        <translation>Viimeiset 12 kuukautta</translation>
+    </message>
+    <message>
+        <source>Tracking since:</source>
+        <translation>Seuranta alkoi:</translation>
+    </message>
+    <message>
+        <source>By month</source>
+        <translation>Kuukausittain</translation>
+    </message>
+    <message>
+        <source>Month</source>
+        <translation>Kuukausi</translation>
+    </message>
+    <message>
+        <source>Downloaded</source>
+        <translation>Ladattu</translation>
+    </message>
+    <message>
+        <source>Uploaded</source>
+        <translation>Lähetetty</translation>
+    </message>
+    <message>
+        <source>Share ratio</source>
+        <translation>Jakosuhde</translation>
+    </message>
+    <message>
+        <source>WebUI downloads added, this month</source>
+        <translation>WebUI:n kautta lisätyt lataukset, tässä kuussa</translation>
+    </message>
+    <message>
+        <source>Counts the requests that added a download. Apps without a login, such as Sonarr and Radarr, are shown as (localhost). Downloads added in the desktop window are not counted.</source>
+        <translation>Laskee pyynnöt, jotka lisäsivät latauksen. Ilman kirjautumista toimivat sovellukset, kuten Sonarr ja Radarr, näkyvät muodossa (localhost). Työpöytäikkunassa lisättyjä latauksia ei lasketa.</translation>
+    </message>
+    <message>
+        <source>Technical</source>
+        <translation>Tekninen</translation>
+    </message>
+    <message>
+        <source>Disk</source>
+        <translation>Levy</translation>
+    </message>
+    <message>
+        <source>Peers waiting on disk writes:</source>
+        <translation>Levykirjoitusta odottavat vertaiset:</translation>
+    </message>
+    <message>
+        <source>Peers waiting on disk reads:</source>
+        <translation>Levyltä lukua odottavat vertaiset:</translation>
+    </message>
+    <message>
+        <source>Network</source>
+        <translation>Verkko</translation>
+    </message>
+    <message>
+        <source>DHT nodes:</source>
+        <translation>DHT-solmut:</translation>
+    </message>
+    <message>
+        <source>Data discarded this session:</source>
+        <translation>Tässä istunnossa hylätty data:</translation>
+    </message>
+    <message>
+        <source>Before tracking began</source>
+        <translation>Ennen seurannan alkua</translation>
+    </message>
+    <message>
+        <source>Nothing added yet</source>
+        <translation>Mitään ei ole vielä lisätty</translation>
+    </message>
+    <message>
+        <source>Off</source>
+        <translation>Pois</translation>
+    </message>
+    <message>
+        <source>Copy</source>
+        <translation>Kopioi</translation>
+    </message>
+    <message>
+        <source>Overview</source>
+        <translation>Yleiskatsaus</translation>
+    </message>
+    <message>
+        <source>Transfer</source>
+        <translation>Siirto</translation>
+    </message>
+    <message>
+        <source>This session</source>
+        <translation>Tämä istunto</translation>
+    </message>
+    <message>
+        <source>All time</source>
+        <translation>Kaikkiaan</translation>
+    </message>
+    <message>
+        <source>Downloaded:</source>
+        <translation>Ladattu:</translation>
+    </message>
+    <message>
+        <source>Uploaded:</source>
+        <translation>Lähetetty:</translation>
+    </message>
+    <message>
+        <source>Share ratio:</source>
+        <translation>Jakosuhde:</translation>
+    </message>
+    <message>
+        <source>Current speed:</source>
+        <translation>Nykyinen nopeus:</translation>
+    </message>
+    <message>
+        <source>Activity</source>
+        <translation>Toiminta</translation>
+    </message>
+    <message>
+        <source>Torrents downloading:</source>
+        <translation>Latautuvat torrentit:</translation>
+    </message>
+    <message>
+        <source>Torrents seeding:</source>
+        <translation>Jakavat torrentit:</translation>
+    </message>
+    <message>
+        <source>Torrents stopped:</source>
+        <translation>Pysäytetyt torrentit:</translation>
+    </message>
+    <message>
+        <source>Torrents with errors:</source>
+        <translation>Virheelliset torrentit:</translation>
+    </message>
+    <message>
+        <source>Running for:</source>
+        <translation>Käynnissä:</translation>
+    </message>
+    <message>
+        <source>History</source>
+        <translation>Historia</translation>
+    </message>
+    <message>
+        <source>Period</source>
+        <translation>Ajanjakso</translation>
+    </message>
+    <message>
+        <source>Today</source>
+        <translation>Tänään</translation>
+    </message>
+    <message>
+        <source>Last 7 days</source>
+        <translation>Viimeiset 7 päivää</translation>
+    </message>
+    <message>
+        <source>This month</source>
+        <translation>Tämä kuukausi</translation>
+    </message>
+    <message>
+        <source>Last month</source>
+        <translation>Viime kuukausi</translation>
+    </message>
+    <message>
+        <source>Last 12 months</source>
+        <translation>Viimeiset 12 kuukautta</translation>
+    </message>
+    <message>
+        <source>Tracking since:</source>
+        <translation>Seuranta alkoi:</translation>
+    </message>
+    <message>
+        <source>By month</source>
+        <translation>Kuukausittain</translation>
+    </message>
+    <message>
+        <source>Month</source>
+        <translation>Kuukausi</translation>
+    </message>
+    <message>
+        <source>Downloaded</source>
+        <translation>Ladattu</translation>
+    </message>
+    <message>
+        <source>Uploaded</source>
+        <translation>Lähetetty</translation>
+    </message>
+    <message>
+        <source>Share ratio</source>
+        <translation>Jakosuhde</translation>
+    </message>
+    <message>
+        <source>WebUI downloads added, this month</source>
+        <translation>WebUI:n kautta lisätyt lataukset, tässä kuussa</translation>
+    </message>
+    <message>
+        <source>Counts the requests that added a download. Apps without a login, such as Sonarr and Radarr, are shown as (localhost). Downloads added in the desktop window are not counted.</source>
+        <translation>Laskee pyynnöt, jotka lisäsivät latauksen. Ilman kirjautumista toimivat sovellukset, kuten Sonarr ja Radarr, näkyvät muodossa (localhost). Työpöytäikkunassa lisättyjä latauksia ei lasketa.</translation>
+    </message>
+    <message>
+        <source>Technical</source>
+        <translation>Tekninen</translation>
+    </message>
+    <message>
+        <source>Disk</source>
+        <translation>Levy</translation>
+    </message>
+    <message>
+        <source>Peers waiting on disk writes:</source>
+        <translation>Levykirjoitusta odottavat vertaiset:</translation>
+    </message>
+    <message>
+        <source>Peers waiting on disk reads:</source>
+        <translation>Levyltä lukua odottavat vertaiset:</translation>
+    </message>
+    <message>
+        <source>Network</source>
+        <translation>Verkko</translation>
+    </message>
+    <message>
+        <source>DHT nodes:</source>
+        <translation>DHT-solmut:</translation>
+    </message>
+    <message>
+        <source>Data discarded this session:</source>
+        <translation>Tässä istunnossa hylätty data:</translation>
+    </message>
+    <message>
+        <source>Before tracking began</source>
+        <translation>Ennen seurannan alkua</translation>
+    </message>
+    <message>
+        <source>Nothing added yet</source>
+        <translation>Mitään ei ole vielä lisätty</translation>
+    </message>
+    <message>
+        <source>Off</source>
+        <translation>Pois</translation>
     </message>
 </context>
 <context>
@@ -12027,6 +12887,22 @@ Valitse toinen nimi ja yritä uudelleen.</translation>
     <message>
         <source>Priority by shown file order</source>
         <translation type="vanished">Ensisijaisuus näkyvän tiedoston järjestyksessä</translation>
+    </message>
+    <message>
+        <source>Reset auto width</source>
+        <translation>Nollaa automaattinen leveys</translation>
+    </message>
+    <message>
+        <source>Fit all non-hidden columns to their contents again, and forget the widths that were set by hand</source>
+        <translation>Sovita kaikki näkyvät sarakkeet uudelleen sisältöönsä ja unohda käsin asetetut leveydet</translation>
+    </message>
+    <message>
+        <source>Reset auto width</source>
+        <translation>Nollaa automaattinen leveys</translation>
+    </message>
+    <message>
+        <source>Fit all non-hidden columns to their contents again, and forget the widths that were set by hand</source>
+        <translation>Sovita kaikki näkyvät sarakkeet uudelleen sisältöönsä ja unohda käsin asetetut leveydet</translation>
     </message>
 </context>
 <context>
@@ -13106,6 +13982,22 @@ Valitse toinen nimi ja yritä uudelleen.</translation>
         <source>Column visibility</source>
         <translation>Sarakkeen näkyvyys</translation>
     </message>
+    <message>
+        <source>Reset auto width</source>
+        <translation>Nollaa automaattinen leveys</translation>
+    </message>
+    <message>
+        <source>Fit all non-hidden columns to their contents again, and forget the widths that were set by hand</source>
+        <translation>Sovita kaikki näkyvät sarakkeet uudelleen sisältöönsä ja unohda käsin asetetut leveydet</translation>
+    </message>
+    <message>
+        <source>Reset auto width</source>
+        <translation>Nollaa automaattinen leveys</translation>
+    </message>
+    <message>
+        <source>Fit all non-hidden columns to their contents again, and forget the widths that were set by hand</source>
+        <translation>Sovita kaikki näkyvät sarakkeet uudelleen sisältöönsä ja unohda käsin asetetut leveydet</translation>
+    </message>
 </context>
 <context>
     <name>TrackerStatusFilterWidget</name>
@@ -13972,6 +14864,22 @@ Valitse toinen nimi ja yritä uudelleen.</translation>
         <source>Super seeding mode</source>
         <translation>Superjako-tila</translation>
     </message>
+    <message>
+        <source>Reset auto width</source>
+        <translation>Nollaa automaattinen leveys</translation>
+    </message>
+    <message>
+        <source>Fit all non-hidden columns to their contents again, and forget the widths that were set by hand</source>
+        <translation>Sovita kaikki näkyvät sarakkeet uudelleen sisältöönsä ja unohda käsin asetetut leveydet</translation>
+    </message>
+    <message>
+        <source>Reset auto width</source>
+        <translation>Nollaa automaattinen leveys</translation>
+    </message>
+    <message>
+        <source>Fit all non-hidden columns to their contents again, and forget the widths that were set by hand</source>
+        <translation>Sovita kaikki näkyvät sarakkeet uudelleen sisältöönsä ja unohda käsin asetetut leveydet</translation>
+    </message>
 </context>
 <context>
     <name>UIThemeDialog</name>
@@ -14306,6 +15214,46 @@ Valitse toinen nimi ja yritä uudelleen.</translation>
         <source>WebAPI login failure. Reason: invalid credentials, attempt count: %1, IP: %2, username: %3</source>
         <translation>WebAPI-kirjautumisvirhe. Syy: virheelliset kirjautumistiedot, yrityskerta: %1, IP: %2, käyttäjätunnus: %3</translation>
     </message>
+    <message>
+        <source>Something went wrong on the server. Details are in qBittorrent&apos;s log.</source>
+        <translation>Palvelimella meni jotain pieleen. Lisätiedot ovat qBittorrentin lokissa.</translation>
+    </message>
+    <message>
+        <source>This account is locked after too many failed login attempts. Try again in %1 minute(s).</source>
+        <translation>Tili on lukittu liian monen epäonnistuneen kirjautumisyrityksen vuoksi. Yritä uudelleen %1 minuutin kuluttua.</translation>
+    </message>
+    <message>
+        <source>Your role (%1) doesn&apos;t allow this: %2.</source>
+        <translation>Roolisi (%1) ei salli tätä: %2.</translation>
+    </message>
+    <message>
+        <source>Only an admin can remove the tag that says who added a torrent.</source>
+        <translation>Vain ylläpitäjä voi poistaa tunnisteen, joka kertoo, kuka torrentin lisäsi.</translation>
+    </message>
+    <message>
+        <source>Only an admin can clear or replace all tags of a torrent that has a tag saying who added it.</source>
+        <translation>Vain ylläpitäjä voi tyhjentää tai korvata kaikki sellaisen torrentin tunnisteet, jolla on lisääjän kertova tunniste.</translation>
+    </message>
+    <message>
+        <source>Something went wrong on the server. Details are in qBittorrent&apos;s log.</source>
+        <translation>Palvelimella meni jotain pieleen. Lisätiedot ovat qBittorrentin lokissa.</translation>
+    </message>
+    <message>
+        <source>This account is locked after too many failed login attempts. Try again in %1 minute(s).</source>
+        <translation>Tili on lukittu liian monen epäonnistuneen kirjautumisyrityksen vuoksi. Yritä uudelleen %1 minuutin kuluttua.</translation>
+    </message>
+    <message>
+        <source>Your role (%1) doesn&apos;t allow this: %2.</source>
+        <translation>Roolisi (%1) ei salli tätä: %2.</translation>
+    </message>
+    <message>
+        <source>Only an admin can remove the tag that says who added a torrent.</source>
+        <translation>Vain ylläpitäjä voi poistaa tunnisteen, joka kertoo, kuka torrentin lisäsi.</translation>
+    </message>
+    <message>
+        <source>Only an admin can clear or replace all tags of a torrent that has a tag saying who added it.</source>
+        <translation>Vain ylläpitäjä voi tyhjentää tai korvata kaikki sellaisen torrentin tunnisteet, jolla on lisääjän kertova tunniste.</translation>
+    </message>
 </context>
 <context>
     <name>WebUI</name>
@@ -14445,6 +15393,669 @@ Valitse toinen nimi ja yritä uudelleen.</translation>
         <source>&lt; 1m</source>
         <comment>&lt; 1 minute</comment>
         <translation>alle minuutti</translation>
+    </message>
+</context>
+<context>
+    <name>UpdateInstaller</name>
+    <message>
+        <source>Kettle Edition update</source>
+        <translation>Kettle Edition -päivitys</translation>
+    </message>
+    <message>
+        <source>Kettle Edition was updated to %1.</source>
+        <translation>Kettle Edition päivitettiin versioon %1.</translation>
+    </message>
+    <message>
+        <source>Kettle Edition updated</source>
+        <translation>Kettle Edition päivitetty</translation>
+    </message>
+    <message>
+        <source>Downloading Kettle Edition %1 (%2 changed files).</source>
+        <translation>Ladataan Kettle Edition %1 (%2 muuttunutta tiedostoa).</translation>
+    </message>
+    <message>
+        <source>Kettle Edition %1 is downloaded and ready to install.</source>
+        <translation>Kettle Edition %1 on ladattu ja valmis asennettavaksi.</translation>
+    </message>
+    <message>
+        <source>Kettle Edition update</source>
+        <translation>Kettle Edition -päivitys</translation>
+    </message>
+    <message>
+        <source>Kettle Edition was updated to %1.</source>
+        <translation>Kettle Edition päivitettiin versioon %1.</translation>
+    </message>
+    <message>
+        <source>Kettle Edition updated</source>
+        <translation>Kettle Edition päivitetty</translation>
+    </message>
+    <message>
+        <source>Downloading Kettle Edition %1 (%2 changed files).</source>
+        <translation>Ladataan Kettle Edition %1 (%2 muuttunutta tiedostoa).</translation>
+    </message>
+    <message>
+        <source>Kettle Edition %1 is downloaded and ready to install.</source>
+        <translation>Kettle Edition %1 on ladattu ja valmis asennettavaksi.</translation>
+    </message>
+</context>
+<context>
+    <name>UserAccountDialog</name>
+    <message>
+        <source>User</source>
+        <translation>Käyttäjä</translation>
+    </message>
+    <message>
+        <source>Username:</source>
+        <translation>Käyttäjänimi:</translation>
+    </message>
+    <message>
+        <source>Role:</source>
+        <translation>Rooli:</translation>
+    </message>
+    <message>
+        <source>Password:</source>
+        <translation>Salasana:</translation>
+    </message>
+    <message>
+        <source>Confirm password:</source>
+        <translation>Vahvista salasana:</translation>
+    </message>
+    <message>
+        <source>Disable this account</source>
+        <translation>Poista tämä tili käytöstä</translation>
+    </message>
+    <message>
+        <source>Edit User</source>
+        <translation>Muokkaa käyttäjää</translation>
+    </message>
+    <message>
+        <source>Leave empty to keep the current password</source>
+        <translation>Jätä tyhjäksi pitääksesi nykyisen salasanan</translation>
+    </message>
+    <message>
+        <source>Add User</source>
+        <translation>Lisää käyttäjä</translation>
+    </message>
+    <message>
+        <source>At least %1 characters</source>
+        <translation>Vähintään %1 merkkiä</translation>
+    </message>
+    <message>
+        <source>Enter a username.</source>
+        <translation>Anna käyttäjänimi.</translation>
+    </message>
+    <message>
+        <source>The password must be at least %1 characters long.</source>
+        <translation>Salasanan on oltava vähintään %1 merkkiä pitkä.</translation>
+    </message>
+    <message>
+        <source>The passwords don&apos;t match.</source>
+        <translation>Salasanat eivät täsmää.</translation>
+    </message>
+    <message>
+        <source>User</source>
+        <translation>Käyttäjä</translation>
+    </message>
+    <message>
+        <source>Username:</source>
+        <translation>Käyttäjänimi:</translation>
+    </message>
+    <message>
+        <source>Role:</source>
+        <translation>Rooli:</translation>
+    </message>
+    <message>
+        <source>Password:</source>
+        <translation>Salasana:</translation>
+    </message>
+    <message>
+        <source>Confirm password:</source>
+        <translation>Vahvista salasana:</translation>
+    </message>
+    <message>
+        <source>Disable this account</source>
+        <translation>Poista tämä tili käytöstä</translation>
+    </message>
+    <message>
+        <source>Edit User</source>
+        <translation>Muokkaa käyttäjää</translation>
+    </message>
+    <message>
+        <source>Leave empty to keep the current password</source>
+        <translation>Jätä tyhjäksi pitääksesi nykyisen salasanan</translation>
+    </message>
+    <message>
+        <source>Add User</source>
+        <translation>Lisää käyttäjä</translation>
+    </message>
+    <message>
+        <source>At least %1 characters</source>
+        <translation>Vähintään %1 merkkiä</translation>
+    </message>
+    <message>
+        <source>Enter a username.</source>
+        <translation>Anna käyttäjänimi.</translation>
+    </message>
+    <message>
+        <source>The password must be at least %1 characters long.</source>
+        <translation>Salasanan on oltava vähintään %1 merkkiä pitkä.</translation>
+    </message>
+    <message>
+        <source>The passwords don&apos;t match.</source>
+        <translation>Salasanat eivät täsmää.</translation>
+    </message>
+</context>
+<context>
+    <name>UserAccountsWidget</name>
+    <message>
+        <source>User Accounts</source>
+        <translation>Käyttäjätilit</translation>
+    </message>
+    <message>
+        <source>Users</source>
+        <translation>Käyttäjät</translation>
+    </message>
+    <message>
+        <source>People who can log in to the WebUI with their own username and password.</source>
+        <translation>Henkilöt, jotka voivat kirjautua WebUI:hin omalla käyttäjänimellään ja salasanallaan.</translation>
+    </message>
+    <message>
+        <source>Add User...</source>
+        <translation>Lisää käyttäjä...</translation>
+    </message>
+    <message>
+        <source>Edit...</source>
+        <translation>Muokkaa...</translation>
+    </message>
+    <message>
+        <source>Remove</source>
+        <translation>Poista</translation>
+    </message>
+    <message>
+        <source>Roles</source>
+        <translation>Roolit</translation>
+    </message>
+    <message>
+        <source>A role decides what its users are allowed to do.</source>
+        <translation>Rooli määrää, mitä sen käyttäjät saavat tehdä.</translation>
+    </message>
+    <message>
+        <source>Add Role...</source>
+        <translation>Lisää rooli...</translation>
+    </message>
+    <message>
+        <source>Logged In</source>
+        <translation>Kirjautuneet</translation>
+    </message>
+    <message>
+        <source>Browsers and devices where someone is logged in with a user account.</source>
+        <translation>Selaimet ja laitteet, joissa joku on kirjautunut käyttäjätilillä.</translation>
+    </message>
+    <message>
+        <source>Log Out</source>
+        <translation>Kirjaa ulos</translation>
+    </message>
+    <message>
+        <source>Username</source>
+        <translation>Käyttäjänimi</translation>
+    </message>
+    <message>
+        <source>Role</source>
+        <translation>Rooli</translation>
+    </message>
+    <message>
+        <source>Status</source>
+        <translation>Tila</translation>
+    </message>
+    <message>
+        <source>Last login</source>
+        <translation>Viimeisin kirjautuminen</translation>
+    </message>
+    <message>
+        <source>Created</source>
+        <translation>Luotu</translation>
+    </message>
+    <message>
+        <source>Name</source>
+        <translation>Nimi</translation>
+    </message>
+    <message>
+        <source>Description</source>
+        <translation>Kuvaus</translation>
+    </message>
+    <message>
+        <source>Permissions</source>
+        <translation>Oikeudet</translation>
+    </message>
+    <message>
+        <source>User</source>
+        <translation>Käyttäjä</translation>
+    </message>
+    <message>
+        <source>Browser</source>
+        <translation>Selain</translation>
+    </message>
+    <message>
+        <source>Logged in</source>
+        <translation>Kirjautui</translation>
+    </message>
+    <message>
+        <source>Last active</source>
+        <translation>Viimeksi aktiivinen</translation>
+    </message>
+    <message>
+        <source>Expires</source>
+        <translation>Vanhenee</translation>
+    </message>
+    <message>
+        <source>The user database could not be opened. See the Execution Log for details.</source>
+        <translation>Käyttäjätietokantaa ei voitu avata. Katso lisätiedot suoritusloki-ikkunasta.</translation>
+    </message>
+    <message>
+        <source>Disabled</source>
+        <translation>Ei käytössä</translation>
+    </message>
+    <message>
+        <source>Enabled</source>
+        <translation>Käytössä</translation>
+    </message>
+    <message>
+        <source>Never</source>
+        <translation>Ei koskaan</translation>
+    </message>
+    <message>
+        <source>No accounts yet, so everyone still uses the shared WebUI login. Add an Admin account first.</source>
+        <translation>Tilejä ei ole vielä, joten kaikki käyttävät yhä yhteistä WebUI-kirjautumista. Lisää ensin ylläpitäjän tili.</translation>
+    </message>
+    <message>
+        <source>Couldn&apos;t read the user database. %1</source>
+        <translation>Käyttäjätietokantaa ei voitu lukea. %1</translation>
+    </message>
+    <message>
+        <source>Remove user</source>
+        <translation>Poista käyttäjä</translation>
+    </message>
+    <message>
+        <source>Are you sure you want to remove the user &apos;%1&apos;?</source>
+        <translation>Haluatko varmasti poistaa käyttäjän ”%1”?</translation>
+    </message>
+    <message>
+        <source>Remove role</source>
+        <translation>Poista rooli</translation>
+    </message>
+    <message>
+        <source>Are you sure you want to remove the role &apos;%1&apos;?</source>
+        <translation>Haluatko varmasti poistaa roolin ”%1”?</translation>
+    </message>
+    <message>
+        <source>Enable</source>
+        <translation>Ota käyttöön</translation>
+    </message>
+    <message>
+        <source>Disable</source>
+        <translation>Poista käytöstä</translation>
+    </message>
+    <message>
+        <source>Log Out Everywhere</source>
+        <translation>Kirjaa ulos kaikkialta</translation>
+    </message>
+    <message>
+        <source>User Accounts</source>
+        <translation>Käyttäjätilit</translation>
+    </message>
+    <message>
+        <source>Users</source>
+        <translation>Käyttäjät</translation>
+    </message>
+    <message>
+        <source>People who can log in to the WebUI with their own username and password.</source>
+        <translation>Henkilöt, jotka voivat kirjautua WebUI:hin omalla käyttäjänimellään ja salasanallaan.</translation>
+    </message>
+    <message>
+        <source>Add User...</source>
+        <translation>Lisää käyttäjä...</translation>
+    </message>
+    <message>
+        <source>Edit...</source>
+        <translation>Muokkaa...</translation>
+    </message>
+    <message>
+        <source>Remove</source>
+        <translation>Poista</translation>
+    </message>
+    <message>
+        <source>Roles</source>
+        <translation>Roolit</translation>
+    </message>
+    <message>
+        <source>A role decides what its users are allowed to do.</source>
+        <translation>Rooli määrää, mitä sen käyttäjät saavat tehdä.</translation>
+    </message>
+    <message>
+        <source>Add Role...</source>
+        <translation>Lisää rooli...</translation>
+    </message>
+    <message>
+        <source>Logged In</source>
+        <translation>Kirjautuneet</translation>
+    </message>
+    <message>
+        <source>Browsers and devices where someone is logged in with a user account.</source>
+        <translation>Selaimet ja laitteet, joissa joku on kirjautunut käyttäjätilillä.</translation>
+    </message>
+    <message>
+        <source>Log Out</source>
+        <translation>Kirjaa ulos</translation>
+    </message>
+    <message>
+        <source>Username</source>
+        <translation>Käyttäjänimi</translation>
+    </message>
+    <message>
+        <source>Role</source>
+        <translation>Rooli</translation>
+    </message>
+    <message>
+        <source>Status</source>
+        <translation>Tila</translation>
+    </message>
+    <message>
+        <source>Last login</source>
+        <translation>Viimeisin kirjautuminen</translation>
+    </message>
+    <message>
+        <source>Created</source>
+        <translation>Luotu</translation>
+    </message>
+    <message>
+        <source>Name</source>
+        <translation>Nimi</translation>
+    </message>
+    <message>
+        <source>Description</source>
+        <translation>Kuvaus</translation>
+    </message>
+    <message>
+        <source>Permissions</source>
+        <translation>Oikeudet</translation>
+    </message>
+    <message>
+        <source>User</source>
+        <translation>Käyttäjä</translation>
+    </message>
+    <message>
+        <source>Browser</source>
+        <translation>Selain</translation>
+    </message>
+    <message>
+        <source>Logged in</source>
+        <translation>Kirjautui</translation>
+    </message>
+    <message>
+        <source>Last active</source>
+        <translation>Viimeksi aktiivinen</translation>
+    </message>
+    <message>
+        <source>Expires</source>
+        <translation>Vanhenee</translation>
+    </message>
+    <message>
+        <source>The user database could not be opened. See the Execution Log for details.</source>
+        <translation>Käyttäjätietokantaa ei voitu avata. Katso lisätiedot suoritusloki-ikkunasta.</translation>
+    </message>
+    <message>
+        <source>Disabled</source>
+        <translation>Ei käytössä</translation>
+    </message>
+    <message>
+        <source>Enabled</source>
+        <translation>Käytössä</translation>
+    </message>
+    <message>
+        <source>Never</source>
+        <translation>Ei koskaan</translation>
+    </message>
+    <message>
+        <source>No accounts yet, so everyone still uses the shared WebUI login. Add an Admin account first.</source>
+        <translation>Tilejä ei ole vielä, joten kaikki käyttävät yhä yhteistä WebUI-kirjautumista. Lisää ensin ylläpitäjän tili.</translation>
+    </message>
+    <message>
+        <source>Couldn&apos;t read the user database. %1</source>
+        <translation>Käyttäjätietokantaa ei voitu lukea. %1</translation>
+    </message>
+    <message>
+        <source>Remove user</source>
+        <translation>Poista käyttäjä</translation>
+    </message>
+    <message>
+        <source>Are you sure you want to remove the user &apos;%1&apos;?</source>
+        <translation>Haluatko varmasti poistaa käyttäjän ”%1”?</translation>
+    </message>
+    <message>
+        <source>Remove role</source>
+        <translation>Poista rooli</translation>
+    </message>
+    <message>
+        <source>Are you sure you want to remove the role &apos;%1&apos;?</source>
+        <translation>Haluatko varmasti poistaa roolin ”%1”?</translation>
+    </message>
+    <message>
+        <source>Enable</source>
+        <translation>Ota käyttöön</translation>
+    </message>
+    <message>
+        <source>Disable</source>
+        <translation>Poista käytöstä</translation>
+    </message>
+    <message>
+        <source>Log Out Everywhere</source>
+        <translation>Kirjaa ulos kaikkialta</translation>
+    </message>
+</context>
+<context>
+    <name>UserRoleDialog</name>
+    <message>
+        <source>Role</source>
+        <translation>Rooli</translation>
+    </message>
+    <message>
+        <source>Name:</source>
+        <translation>Nimi:</translation>
+    </message>
+    <message>
+        <source>Description:</source>
+        <translation>Kuvaus:</translation>
+    </message>
+    <message>
+        <source>Gives control over the PC or qBittorrent itself.</source>
+        <translation>Antaa hallinnan tietokoneeseen tai itse qBittorrentiin.</translation>
+    </message>
+    <message>
+        <source>Add Role</source>
+        <translation>Lisää rooli</translation>
+    </message>
+    <message>
+        <source>Edit Role</source>
+        <translation>Muokkaa roolia</translation>
+    </message>
+    <message>
+        <source>Enter a role name.</source>
+        <translation>Anna roolin nimi.</translation>
+    </message>
+    <message>
+        <source>Role</source>
+        <translation>Rooli</translation>
+    </message>
+    <message>
+        <source>Name:</source>
+        <translation>Nimi:</translation>
+    </message>
+    <message>
+        <source>Description:</source>
+        <translation>Kuvaus:</translation>
+    </message>
+    <message>
+        <source>Gives control over the PC or qBittorrent itself.</source>
+        <translation>Antaa hallinnan tietokoneeseen tai itse qBittorrentiin.</translation>
+    </message>
+    <message>
+        <source>Add Role</source>
+        <translation>Lisää rooli</translation>
+    </message>
+    <message>
+        <source>Edit Role</source>
+        <translation>Muokkaa roolia</translation>
+    </message>
+    <message>
+        <source>Enter a role name.</source>
+        <translation>Anna roolin nimi.</translation>
+    </message>
+</context>
+<context>
+    <name>WebUIActivityWidget</name>
+    <message>
+        <source>All</source>
+        <translation>Kaikki</translation>
+    </message>
+    <message>
+        <source>Filter activity</source>
+        <translation>Suodata toimintaa</translation>
+    </message>
+    <message>
+        <source>Export...</source>
+        <translation>Vie...</translation>
+    </message>
+    <message>
+        <source>User:</source>
+        <translation>Käyttäjä:</translation>
+    </message>
+    <message>
+        <source>Category:</source>
+        <translation>Luokka:</translation>
+    </message>
+    <message>
+        <source>Result:</source>
+        <translation>Tulos:</translation>
+    </message>
+    <message>
+        <source>Time</source>
+        <translation>Aika</translation>
+    </message>
+    <message>
+        <source>User</source>
+        <translation>Käyttäjä</translation>
+    </message>
+    <message>
+        <source>Role</source>
+        <translation>Rooli</translation>
+    </message>
+    <message>
+        <source>Category</source>
+        <translation>Luokka</translation>
+    </message>
+    <message>
+        <source>Action</source>
+        <translation>Toiminto</translation>
+    </message>
+    <message>
+        <source>Result</source>
+        <translation>Tulos</translation>
+    </message>
+    <message>
+        <source>The user database could not be opened. See the General tab for details.</source>
+        <translation>Käyttäjätietokantaa ei voitu avata. Katso lisätiedot Yleiset-välilehdeltä.</translation>
+    </message>
+    <message>
+        <source>Results (showing %1 out of %2)</source>
+        <translation>Tulokset (näytetään %1 / %2)</translation>
+    </message>
+    <message>
+        <source>Copy</source>
+        <translation>Kopioi</translation>
+    </message>
+    <message>
+        <source>Export WebUI activity</source>
+        <translation>Vie WebUI-toiminta</translation>
+    </message>
+    <message>
+        <source>CSV files</source>
+        <translation>CSV-tiedostot</translation>
+    </message>
+    <message>
+        <source>Couldn&apos;t save the file. Reason: %1</source>
+        <translation>Tiedostoa ei voitu tallentaa. Syy: %1</translation>
+    </message>
+    <message>
+        <source>All</source>
+        <translation>Kaikki</translation>
+    </message>
+    <message>
+        <source>Filter activity</source>
+        <translation>Suodata toimintaa</translation>
+    </message>
+    <message>
+        <source>Export...</source>
+        <translation>Vie...</translation>
+    </message>
+    <message>
+        <source>User:</source>
+        <translation>Käyttäjä:</translation>
+    </message>
+    <message>
+        <source>Category:</source>
+        <translation>Luokka:</translation>
+    </message>
+    <message>
+        <source>Result:</source>
+        <translation>Tulos:</translation>
+    </message>
+    <message>
+        <source>Time</source>
+        <translation>Aika</translation>
+    </message>
+    <message>
+        <source>User</source>
+        <translation>Käyttäjä</translation>
+    </message>
+    <message>
+        <source>Role</source>
+        <translation>Rooli</translation>
+    </message>
+    <message>
+        <source>Category</source>
+        <translation>Luokka</translation>
+    </message>
+    <message>
+        <source>Action</source>
+        <translation>Toiminto</translation>
+    </message>
+    <message>
+        <source>Result</source>
+        <translation>Tulos</translation>
+    </message>
+    <message>
+        <source>The user database could not be opened. See the General tab for details.</source>
+        <translation>Käyttäjätietokantaa ei voitu avata. Katso lisätiedot Yleiset-välilehdeltä.</translation>
+    </message>
+    <message>
+        <source>Results (showing %1 out of %2)</source>
+        <translation>Tulokset (näytetään %1 / %2)</translation>
+    </message>
+    <message>
+        <source>Copy</source>
+        <translation>Kopioi</translation>
+    </message>
+    <message>
+        <source>Export WebUI activity</source>
+        <translation>Vie WebUI-toiminta</translation>
+    </message>
+    <message>
+        <source>CSV files</source>
+        <translation>CSV-tiedostot</translation>
+    </message>
+    <message>
+        <source>Couldn&apos;t save the file. Reason: %1</source>
+        <translation>Tiedostoa ei voitu tallentaa. Syy: %1</translation>
     </message>
 </context>
 </TS>

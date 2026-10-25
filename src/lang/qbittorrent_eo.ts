@@ -141,6 +141,62 @@
         <source>The free IP to Country Lite database by DB-IP is used for resolving the countries of peers. The database is licensed under the Creative Commons Attribution 4.0 International License</source>
         <translation>La libera IP al la datumbazo de Country Light per DB-IP estas uzis por trovas la landon de samtavolanoj. La datumbazon permesas sub la Creative Commons Atribution 4.0 International License</translation>
     </message>
+    <message>
+        <source>This edition</source>
+        <translation>Ĉi tiu eldono</translation>
+    </message>
+    <message>
+        <source>Edition version:</source>
+        <translation>Eldona versio:</translation>
+    </message>
+    <message>
+        <source>Based on:</source>
+        <translation>Bazita sur:</translation>
+    </message>
+    <message>
+        <source>Maintainer:</source>
+        <translation>Prizorganto:</translation>
+    </message>
+    <message>
+        <source>qBittorrent project:</source>
+        <translation>Projekto qBittorrent:</translation>
+    </message>
+    <message>
+        <source>Kettle Edition is a personal build of qBittorrent that adds user accounts with roles for the WebUI and the desktop app, an activity log, and an installable WebUI with a phone layout. A kettle is a group of hawks soaring together. This is an unofficial build, not affiliated with the qBittorrent project.</source>
+        <translation>Kettle Edition estas persona kompilaĵo de qBittorrent, kiu aldonas uzantkontojn kun roloj por la WebUI kaj la labortabla aplikaĵo, agadan protokolon kaj instaleblan WebUI kun telefona aranĝo. Kettle estas grupo de akcipitroj, kiuj kune flugas. Ĉi tio estas neoficiala kompilaĵo, senrilata al la projekto qBittorrent.</translation>
+    </message>
+    <message>
+        <source>N/A</source>
+        <translation>N/A</translation>
+    </message>
+    <message>
+        <source>This edition</source>
+        <translation>Ĉi tiu eldono</translation>
+    </message>
+    <message>
+        <source>Edition version:</source>
+        <translation>Eldona versio:</translation>
+    </message>
+    <message>
+        <source>Based on:</source>
+        <translation>Bazita sur:</translation>
+    </message>
+    <message>
+        <source>Maintainer:</source>
+        <translation>Prizorganto:</translation>
+    </message>
+    <message>
+        <source>qBittorrent project:</source>
+        <translation>Projekto qBittorrent:</translation>
+    </message>
+    <message>
+        <source>Kettle Edition is a personal build of qBittorrent that adds user accounts with roles for the WebUI and the desktop app, an activity log, and an installable WebUI with a phone layout. A kettle is a group of hawks soaring together. This is an unofficial build, not affiliated with the qBittorrent project.</source>
+        <translation>Kettle Edition estas persona kompilaĵo de qBittorrent, kiu aldonas uzantkontojn kun roloj por la WebUI kaj la labortabla aplikaĵo, agadan protokolon kaj instaleblan WebUI kun telefona aranĝo. Kettle estas grupo de akcipitroj, kiuj kune flugas. Ĉi tio estas neoficiala kompilaĵo, senrilata al la projekto qBittorrent.</translation>
+    </message>
+    <message>
+        <source>N/A</source>
+        <translation>N/A</translation>
+    </message>
 </context>
 <context>
     <name>AbstractFileStorage</name>
@@ -1459,6 +1515,62 @@
         <location filename="../gui/advancedsettings.cpp" line="925"/>
         <source>Embedded tracker port</source>
         <translation>Enigita spurila pordo</translation>
+    </message>
+    <message>
+        <source>Network</source>
+        <translation>Reto</translation>
+    </message>
+    <message>
+        <source>Storage</source>
+        <translation>Konservado</translation>
+    </message>
+    <message>
+        <source>Peers and trackers</source>
+        <translation>Samtavolanoj kaj spuriloj</translation>
+    </message>
+    <message>
+        <source>Program behavior</source>
+        <translation>Konduto de la programo</translation>
+    </message>
+    <message>
+        <source>Display and notifications</source>
+        <translation>Montrado kaj sciigoj</translation>
+    </message>
+    <message>
+        <source>Network connection</source>
+        <translation>Reta konekto</translation>
+    </message>
+    <message>
+        <source>Security and privacy</source>
+        <translation>Sekureco kaj privateco</translation>
+    </message>
+    <message>
+        <source>Connection tuning</source>
+        <translation>Agordo de la konekto</translation>
+    </message>
+    <message>
+        <source>Saving and torrent files</source>
+        <translation>Konservado kaj torentdosieroj</translation>
+    </message>
+    <message>
+        <source>Disk and memory</source>
+        <translation>Disko kaj memoro</translation>
+    </message>
+    <message>
+        <source>Peers and seeding</source>
+        <translation>Samtavolanoj kaj semado</translation>
+    </message>
+    <message>
+        <source>DHT and I2P</source>
+        <translation>DHT kaj I2P</translation>
+    </message>
+    <message>
+        <source>General</source>
+        <translation>Ĝenerala</translation>
+    </message>
+    <message>
+        <source>Trackers</source>
+        <translation>Spuriloj</translation>
     </message>
 </context>
 <context>
@@ -3463,6 +3575,22 @@ Supports the formats: S01E01, 1x1, 2017.12.31 and 31.12.2017 (Date formats also 
         <source>Remove torrent</source>
         <translation>Forigi torenton</translation>
     </message>
+    <message>
+        <source>This choice is remembered for the next removal.</source>
+        <translation>Ĉi tiu elekto estos memorata por la sekva forigo.</translation>
+    </message>
+    <message>
+        <source>Remove</source>
+        <translation>Forigi</translation>
+    </message>
+    <message>
+        <source>This choice is remembered for the next removal.</source>
+        <translation>Ĉi tiu elekto estos memorata por la sekva forigo.</translation>
+    </message>
+    <message>
+        <source>Remove</source>
+        <translation>Forigi</translation>
+    </message>
 </context>
 <context>
     <name>DownloadFromURLDialog</name>
@@ -3536,6 +3664,14 @@ Supports the formats: S01E01, 1x1, 2017.12.31 and 31.12.2017 (Date formats also 
         <location filename="../gui/executionlogwidget.cpp" line="99"/>
         <source>Clear</source>
         <translation>Viŝi</translation>
+    </message>
+    <message>
+        <source>WebUI Activity</source>
+        <translation>WebUI-agado</translation>
+    </message>
+    <message>
+        <source>WebUI Activity</source>
+        <translation>WebUI-agado</translation>
     </message>
 </context>
 <context>
@@ -4698,6 +4834,46 @@ Minimum requirement: %2.</source>
         <location filename="../gui/mainwindow.cpp" line="1346"/>
         <source>Torrent Files</source>
         <translation>Torentodosieroj</translation>
+    </message>
+    <message>
+        <source>Kettle Edition %1 is available.</source>
+        <translation>Kettle Edition %1 disponeblas.</translation>
+    </message>
+    <message>
+        <source>qBittorrent Kettle Edition %1 is available. It is downloaded now and installed at 4:00 AM, or when qBittorrent starts next.</source>
+        <translation>qBittorrent Kettle Edition %1 disponeblas. Ĝi nun elŝutiĝas kaj instaliĝos je la 4:00 aŭ je la sekva starto de qBittorrent.</translation>
+    </message>
+    <message>
+        <source>qBittorrent Kettle Edition %1 is available. It is downloaded now. Turn on &quot;Automatically install Kettle Edition updates&quot; in Options to install it.</source>
+        <translation>qBittorrent Kettle Edition %1 disponeblas. Ĝi nun elŝutiĝas. Ŝaltu «Aŭtomate instali ĝisdatigojn de Kettle Edition» en Agordoj por instali ĝin.</translation>
+    </message>
+    <message>
+        <source>You have the latest qBittorrent Kettle Edition (%1).</source>
+        <translation>Vi havas la plej novan qBittorrent Kettle Edition (%1).</translation>
+    </message>
+    <message>
+        <source>Could not check for qBittorrent Kettle Edition updates. See the Execution Log for details.</source>
+        <translation>Ne eblis kontroli ĝisdatigojn de qBittorrent Kettle Edition. Vidu la ruldosieron por detaloj.</translation>
+    </message>
+    <message>
+        <source>Kettle Edition %1 is available.</source>
+        <translation>Kettle Edition %1 disponeblas.</translation>
+    </message>
+    <message>
+        <source>qBittorrent Kettle Edition %1 is available. It is downloaded now and installed at 4:00 AM, or when qBittorrent starts next.</source>
+        <translation>qBittorrent Kettle Edition %1 disponeblas. Ĝi nun elŝutiĝas kaj instaliĝos je la 4:00 aŭ je la sekva starto de qBittorrent.</translation>
+    </message>
+    <message>
+        <source>qBittorrent Kettle Edition %1 is available. It is downloaded now. Turn on &quot;Automatically install Kettle Edition updates&quot; in Options to install it.</source>
+        <translation>qBittorrent Kettle Edition %1 disponeblas. Ĝi nun elŝutiĝas. Ŝaltu «Aŭtomate instali ĝisdatigojn de Kettle Edition» en Agordoj por instali ĝin.</translation>
+    </message>
+    <message>
+        <source>You have the latest qBittorrent Kettle Edition (%1).</source>
+        <translation>Vi havas la plej novan qBittorrent Kettle Edition (%1).</translation>
+    </message>
+    <message>
+        <source>Could not check for qBittorrent Kettle Edition updates. See the Execution Log for details.</source>
+        <translation>Ne eblis kontroli ĝisdatigojn de qBittorrent Kettle Edition. Vidu la ruldosieron por detaloj.</translation>
     </message>
 </context>
 <context>
@@ -8393,6 +8569,190 @@ Check the Execution Log for errors.</source>
         <source>Length Error</source>
         <translation type="unfinished"></translation>
     </message>
+    <message>
+        <source>Search settings</source>
+        <translation>Serĉi agordojn</translation>
+    </message>
+    <message>
+        <source>No settings match</source>
+        <translation>Neniu agordo kongruas</translation>
+    </message>
+    <message>
+        <source>User Accounts</source>
+        <translation>Uzantkontoj</translation>
+    </message>
+    <message>
+        <source>Automatically install Kettle Edition updates</source>
+        <translation>Aŭtomate instali ĝisdatigojn de Kettle Edition</translation>
+    </message>
+    <message>
+        <source>Status bar and log</source>
+        <translation>Statusa breto kaj protokolo</translation>
+    </message>
+    <message>
+        <source>Files</source>
+        <translation>Dosieroj</translation>
+    </message>
+    <message>
+        <source>Checking</source>
+        <translation>Kontrolado</translation>
+    </message>
+    <message>
+        <source>Until the first user account is created, this login always works.</source>
+        <translation>Ĝis la unua uzantkonto estas kreita, ĉi tiu ensaluto ĉiam funkcias.</translation>
+    </message>
+    <message>
+        <source>Allow this login when user accounts exist</source>
+        <translation>Permesi ĉi tiun ensaluton kiam uzantkontoj ekzistas</translation>
+    </message>
+    <message>
+        <source>Access</source>
+        <translation>Aliro</translation>
+    </message>
+    <message>
+        <source>Changes to users, roles and logins apply at once. The settings below apply with OK or Apply.</source>
+        <translation>Ŝanĝoj de uzantoj, roloj kaj ensalutoj aplikiĝas tuj. La agordoj sube aplikiĝas per Bone aŭ Apliki.</translation>
+    </message>
+    <message>
+        <source>Logins and Activity Log</source>
+        <translation>Ensalutoj kaj agada protokolo</translation>
+    </message>
+    <message>
+        <source>0 means users are logged out after the session timeout.</source>
+        <translation>0 signifas, ke uzantoj elsalutas post la tempolimo de la seanco.</translation>
+    </message>
+    <message>
+        <source>Keep users logged in for:</source>
+        <translation>Teni uzantojn ensalutintaj dum:</translation>
+    </message>
+    <message>
+        <source>Until session timeout</source>
+        <translation>Ĝis la tempolimo de la seanco</translation>
+    </message>
+    <message>
+        <source> days</source>
+        <translation> tagoj</translation>
+    </message>
+    <message>
+        <source>Lock account after consecutive failures:</source>
+        <translation>Ŝlosi konton post sinsekvaj malsukcesoj:</translation>
+    </message>
+    <message>
+        <source>Keep WebUI activity log for:</source>
+        <translation>Konservi WebUI-agadan protokolon dum:</translation>
+    </message>
+    <message>
+        <source>lock for:</source>
+        <translation>ŝlosi dum:</translation>
+    </message>
+    <message>
+        <source>%1 works best with Windows dark mode</source>
+        <translation>%1 funkcias plej bone kun la malluma reĝimo de Windows</translation>
+    </message>
+    <message>
+        <source>WebUI address</source>
+        <translation>WebUI-adreso</translation>
+    </message>
+    <message>
+        <source>With the WebUI address set to %1, only this PC can reach the WebUI. Remote access, including through a reverse proxy on another machine, will stop working.
+
+Save anyway?</source>
+        <translation>Kun la WebUI-adreso agordita al %1, nur ĉi tiu komputilo povas atingi la WebUI. Fora aliro, ankaŭ tra inversa prokurilo en alia maŝino, ĉesos funkcii.
+
+Tamen konservi?</translation>
+    </message>
+    <message>
+        <source>Search settings</source>
+        <translation>Serĉi agordojn</translation>
+    </message>
+    <message>
+        <source>No settings match</source>
+        <translation>Neniu agordo kongruas</translation>
+    </message>
+    <message>
+        <source>User Accounts</source>
+        <translation>Uzantkontoj</translation>
+    </message>
+    <message>
+        <source>Automatically install Kettle Edition updates</source>
+        <translation>Aŭtomate instali ĝisdatigojn de Kettle Edition</translation>
+    </message>
+    <message>
+        <source>Status bar and log</source>
+        <translation>Statusa breto kaj protokolo</translation>
+    </message>
+    <message>
+        <source>Files</source>
+        <translation>Dosieroj</translation>
+    </message>
+    <message>
+        <source>Checking</source>
+        <translation>Kontrolado</translation>
+    </message>
+    <message>
+        <source>Until the first user account is created, this login always works.</source>
+        <translation>Ĝis la unua uzantkonto estas kreita, ĉi tiu ensaluto ĉiam funkcias.</translation>
+    </message>
+    <message>
+        <source>Allow this login when user accounts exist</source>
+        <translation>Permesi ĉi tiun ensaluton kiam uzantkontoj ekzistas</translation>
+    </message>
+    <message>
+        <source>Access</source>
+        <translation>Aliro</translation>
+    </message>
+    <message>
+        <source>Changes to users, roles and logins apply at once. The settings below apply with OK or Apply.</source>
+        <translation>Ŝanĝoj de uzantoj, roloj kaj ensalutoj aplikiĝas tuj. La agordoj sube aplikiĝas per Bone aŭ Apliki.</translation>
+    </message>
+    <message>
+        <source>Logins and Activity Log</source>
+        <translation>Ensalutoj kaj agada protokolo</translation>
+    </message>
+    <message>
+        <source>0 means users are logged out after the session timeout.</source>
+        <translation>0 signifas, ke uzantoj elsalutas post la tempolimo de la seanco.</translation>
+    </message>
+    <message>
+        <source>Keep users logged in for:</source>
+        <translation>Teni uzantojn ensalutintaj dum:</translation>
+    </message>
+    <message>
+        <source>Until session timeout</source>
+        <translation>Ĝis la tempolimo de la seanco</translation>
+    </message>
+    <message>
+        <source> days</source>
+        <translation> tagoj</translation>
+    </message>
+    <message>
+        <source>Lock account after consecutive failures:</source>
+        <translation>Ŝlosi konton post sinsekvaj malsukcesoj:</translation>
+    </message>
+    <message>
+        <source>Keep WebUI activity log for:</source>
+        <translation>Konservi WebUI-agadan protokolon dum:</translation>
+    </message>
+    <message>
+        <source>lock for:</source>
+        <translation>ŝlosi dum:</translation>
+    </message>
+    <message>
+        <source>%1 works best with Windows dark mode</source>
+        <translation>%1 funkcias plej bone kun la malluma reĝimo de Windows</translation>
+    </message>
+    <message>
+        <source>WebUI address</source>
+        <translation>WebUI-adreso</translation>
+    </message>
+    <message>
+        <source>With the WebUI address set to %1, only this PC can reach the WebUI. Remote access, including through a reverse proxy on another machine, will stop working.
+
+Save anyway?</source>
+        <translation>Kun la WebUI-adreso agordita al %1, nur ĉi tiu komputilo povas atingi la WebUI. Fora aliro, ankaŭ tra inversa prokurilo en alia maŝino, ĉesos funkcii.
+
+Tamen konservi?</translation>
+    </message>
 </context>
 <context>
     <name>PeerInfo</name>
@@ -8645,6 +9005,22 @@ Check the Execution Log for errors.</source>
         <location filename="../gui/properties/peerlistwidget.cpp" line="309"/>
         <source>Copy IP:port</source>
         <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Reset auto width</source>
+        <translation>Restarigi aŭtomatan larĝon</translation>
+    </message>
+    <message>
+        <source>Fit all non-hidden columns to their contents again, and forget the widths that were set by hand</source>
+        <translation>Denove adapti ĉiujn videblajn kolumnojn al ilia enhavo kaj forgesi la mane agordatajn larĝojn</translation>
+    </message>
+    <message>
+        <source>Reset auto width</source>
+        <translation>Restarigi aŭtomatan larĝon</translation>
+    </message>
+    <message>
+        <source>Fit all non-hidden columns to their contents again, and forget the widths that were set by hand</source>
+        <translation>Denove adapti ĉiujn videblajn kolumnojn al ilia enhavo kaj forgesi la mane agordatajn larĝojn</translation>
     </message>
 </context>
 <context>
@@ -9989,6 +10365,14 @@ Tiuj kromprogramoj malebliĝis.</translation>
         <source>Open link</source>
         <translation type="unfinished"></translation>
     </message>
+    <message>
+        <source>Details</source>
+        <translation>Detaloj</translation>
+    </message>
+    <message>
+        <source>Details</source>
+        <translation>Detaloj</translation>
+    </message>
 </context>
 <context>
     <name>SearchController</name>
@@ -10338,6 +10722,70 @@ Tiuj kromprogramoj malebliĝis.</translation>
         <source>Resize all non-hidden columns to the size of their contents</source>
         <translation type="unfinished"></translation>
     </message>
+    <message>
+        <source>%1 of %2 shown (%3 hidden)</source>
+        <translation>Montrataj %1 el %2 (%3 kaŝitaj)</translation>
+    </message>
+    <message>
+        <source>%1 of %2 shown</source>
+        <translation>Montrataj %1 el %2</translation>
+    </message>
+    <message>
+        <source>Searching: %1</source>
+        <translation>Serĉado: %1</translation>
+    </message>
+    <message>
+        <source>Finished: %1</source>
+        <translation>Finita: %1</translation>
+    </message>
+    <message>
+        <source>Search aborted: %1</source>
+        <translation>Serĉo ĉesigita: %1</translation>
+    </message>
+    <message>
+        <source>Reset auto width</source>
+        <translation>Restarigi aŭtomatan larĝon</translation>
+    </message>
+    <message>
+        <source>Fit all non-hidden columns to their contents again, and forget the widths that were set by hand</source>
+        <translation>Denove adapti ĉiujn videblajn kolumnojn al ilia enhavo kaj forgesi la mane agordatajn larĝojn</translation>
+    </message>
+    <message>
+        <source>Unknown</source>
+        <translation>Nekonata</translation>
+    </message>
+    <message>
+        <source>%1 of %2 shown (%3 hidden)</source>
+        <translation>Montrataj %1 el %2 (%3 kaŝitaj)</translation>
+    </message>
+    <message>
+        <source>%1 of %2 shown</source>
+        <translation>Montrataj %1 el %2</translation>
+    </message>
+    <message>
+        <source>Searching: %1</source>
+        <translation>Serĉado: %1</translation>
+    </message>
+    <message>
+        <source>Finished: %1</source>
+        <translation>Finita: %1</translation>
+    </message>
+    <message>
+        <source>Search aborted: %1</source>
+        <translation>Serĉo ĉesigita: %1</translation>
+    </message>
+    <message>
+        <source>Reset auto width</source>
+        <translation>Restarigi aŭtomatan larĝon</translation>
+    </message>
+    <message>
+        <source>Fit all non-hidden columns to their contents again, and forget the widths that were set by hand</source>
+        <translation>Denove adapti ĉiujn videblajn kolumnojn al ilia enhavo kaj forgesi la mane agordatajn larĝojn</translation>
+    </message>
+    <message>
+        <source>Unknown</source>
+        <translation>Nekonata</translation>
+    </message>
 </context>
 <context>
     <name>SearchPluginManager</name>
@@ -10623,6 +11071,14 @@ Tiuj kromprogramoj malebliĝis.</translation>
         <source>Couldn&apos;t update &quot;%1&quot; search engine plugin. %2</source>
         <translation type="unfinished"></translation>
     </message>
+    <message>
+        <source>Install Kettle Plugins</source>
+        <translation>Instali kromprogramojn de Kettle</translation>
+    </message>
+    <message>
+        <source>Install Kettle Plugins</source>
+        <translation>Instali kromprogramojn de Kettle</translation>
+    </message>
 </context>
 <context>
     <name>SearchPluginSourceDialog</name>
@@ -10761,6 +11217,90 @@ Click the &quot;Search plugins...&quot; button at the bottom right of the window
         <location filename="../gui/search/searchwidget.ui" line="58"/>
         <source>Stop</source>
         <translation>Halti</translation>
+    </message>
+    <message>
+        <source>Searches</source>
+        <translation>Serĉoj</translation>
+    </message>
+    <message>
+        <source>Close the selected search</source>
+        <translation>Fermi la elektitan serĉon</translation>
+    </message>
+    <message>
+        <source>Search for torrents...</source>
+        <translation>Serĉi torentojn...</translation>
+    </message>
+    <message>
+        <source>Category to search in</source>
+        <translation>Kategorio por serĉi</translation>
+    </message>
+    <message>
+        <source>Search engines to use</source>
+        <translation>Uzotaj serĉiloj</translation>
+    </message>
+    <message>
+        <source>There aren&apos;t any search plugins installed.
+Click the &quot;Search plugins...&quot; button at the top right of the window to install some.</source>
+        <translation>Neniu serĉa kromprogramo estas instalita.
+Klaku la butonon «Serĉaj kromprogramoj...» supre dekstre en la fenestro por instali kelkajn.</translation>
+    </message>
+    <message>
+        <source>Type a search above and press Enter.</source>
+        <translation>Tajpu serĉon supre kaj premu Enter.</translation>
+    </message>
+    <message>
+        <source>Refresh search</source>
+        <translation>Aktualigi serĉon</translation>
+    </message>
+    <message>
+        <source>Close search</source>
+        <translation>Fermi serĉon</translation>
+    </message>
+    <message>
+        <source>Close all searches</source>
+        <translation>Fermi ĉiujn serĉojn</translation>
+    </message>
+    <message>
+        <source>Searches</source>
+        <translation>Serĉoj</translation>
+    </message>
+    <message>
+        <source>Close the selected search</source>
+        <translation>Fermi la elektitan serĉon</translation>
+    </message>
+    <message>
+        <source>Search for torrents...</source>
+        <translation>Serĉi torentojn...</translation>
+    </message>
+    <message>
+        <source>Category to search in</source>
+        <translation>Kategorio por serĉi</translation>
+    </message>
+    <message>
+        <source>Search engines to use</source>
+        <translation>Uzotaj serĉiloj</translation>
+    </message>
+    <message>
+        <source>There aren&apos;t any search plugins installed.
+Click the &quot;Search plugins...&quot; button at the top right of the window to install some.</source>
+        <translation>Neniu serĉa kromprogramo estas instalita.
+Klaku la butonon «Serĉaj kromprogramoj...» supre dekstre en la fenestro por instali kelkajn.</translation>
+    </message>
+    <message>
+        <source>Type a search above and press Enter.</source>
+        <translation>Tajpu serĉon supre kaj premu Enter.</translation>
+    </message>
+    <message>
+        <source>Refresh search</source>
+        <translation>Aktualigi serĉon</translation>
+    </message>
+    <message>
+        <source>Close search</source>
+        <translation>Fermi serĉon</translation>
+    </message>
+    <message>
+        <source>Close all searches</source>
+        <translation>Fermi ĉiujn serĉojn</translation>
     </message>
 </context>
 <context>
@@ -11218,6 +11758,326 @@ Click the &quot;Search plugins...&quot; button at the bottom right of the window
         <location filename="../gui/statsdialog.cpp" line="111"/>
         <source>%1 ms</source>
         <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Copy</source>
+        <translation>Kopii</translation>
+    </message>
+    <message>
+        <source>Overview</source>
+        <translation>Superrigardo</translation>
+    </message>
+    <message>
+        <source>Transfer</source>
+        <translation>Transigo</translation>
+    </message>
+    <message>
+        <source>This session</source>
+        <translation>Ĉi tiu seanco</translation>
+    </message>
+    <message>
+        <source>All time</source>
+        <translation>Ĉiam</translation>
+    </message>
+    <message>
+        <source>Downloaded:</source>
+        <translation>Elŝutita:</translation>
+    </message>
+    <message>
+        <source>Uploaded:</source>
+        <translation>Alŝutita:</translation>
+    </message>
+    <message>
+        <source>Share ratio:</source>
+        <translation>Kvanto de kunhavigo:</translation>
+    </message>
+    <message>
+        <source>Current speed:</source>
+        <translation>Nuna rapido:</translation>
+    </message>
+    <message>
+        <source>Activity</source>
+        <translation>Agado</translation>
+    </message>
+    <message>
+        <source>Torrents downloading:</source>
+        <translation>Torentoj elŝutantaj:</translation>
+    </message>
+    <message>
+        <source>Torrents seeding:</source>
+        <translation>Torentoj fontantaj:</translation>
+    </message>
+    <message>
+        <source>Torrents stopped:</source>
+        <translation>Haltigitaj torentoj:</translation>
+    </message>
+    <message>
+        <source>Torrents with errors:</source>
+        <translation>Torentoj kun eraroj:</translation>
+    </message>
+    <message>
+        <source>Running for:</source>
+        <translation>Funkcias dum:</translation>
+    </message>
+    <message>
+        <source>History</source>
+        <translation>Historio</translation>
+    </message>
+    <message>
+        <source>Period</source>
+        <translation>Periodo</translation>
+    </message>
+    <message>
+        <source>Today</source>
+        <translation>Hodiaŭ</translation>
+    </message>
+    <message>
+        <source>Last 7 days</source>
+        <translation>Lastaj 7 tagoj</translation>
+    </message>
+    <message>
+        <source>This month</source>
+        <translation>Ĉi tiu monato</translation>
+    </message>
+    <message>
+        <source>Last month</source>
+        <translation>Pasinta monato</translation>
+    </message>
+    <message>
+        <source>Last 12 months</source>
+        <translation>Lastaj 12 monatoj</translation>
+    </message>
+    <message>
+        <source>Tracking since:</source>
+        <translation>Sekvado ekde:</translation>
+    </message>
+    <message>
+        <source>By month</source>
+        <translation>Laŭ monato</translation>
+    </message>
+    <message>
+        <source>Month</source>
+        <translation>Monato</translation>
+    </message>
+    <message>
+        <source>Downloaded</source>
+        <translation>Elŝutita</translation>
+    </message>
+    <message>
+        <source>Uploaded</source>
+        <translation>Alŝutita</translation>
+    </message>
+    <message>
+        <source>Share ratio</source>
+        <translation>Kvanto de kunhavigo</translation>
+    </message>
+    <message>
+        <source>WebUI downloads added, this month</source>
+        <translation>WebUI-elŝutoj aldonitaj, ĉi tiu monato</translation>
+    </message>
+    <message>
+        <source>Counts the requests that added a download. Apps without a login, such as Sonarr and Radarr, are shown as (localhost). Downloads added in the desktop window are not counted.</source>
+        <translation>Kalkulas la petojn, kiuj aldonis elŝuton. Aplikaĵoj sen ensaluto, kiel Sonarr kaj Radarr, montriĝas kiel (localhost). Elŝutoj aldonitaj en la labortabla fenestro ne kalkuliĝas.</translation>
+    </message>
+    <message>
+        <source>Technical</source>
+        <translation>Teknika</translation>
+    </message>
+    <message>
+        <source>Disk</source>
+        <translation>Disko</translation>
+    </message>
+    <message>
+        <source>Peers waiting on disk writes:</source>
+        <translation>Kunuloj atendantaj skribon al disko:</translation>
+    </message>
+    <message>
+        <source>Peers waiting on disk reads:</source>
+        <translation>Kunuloj atendantaj legon de disko:</translation>
+    </message>
+    <message>
+        <source>Network</source>
+        <translation>Reto</translation>
+    </message>
+    <message>
+        <source>DHT nodes:</source>
+        <translation>DHT-nodoj:</translation>
+    </message>
+    <message>
+        <source>Data discarded this session:</source>
+        <translation>Forĵetitaj datumoj en ĉi tiu seanco:</translation>
+    </message>
+    <message>
+        <source>Before tracking began</source>
+        <translation>Antaŭ ol la sekvado komenciĝis</translation>
+    </message>
+    <message>
+        <source>Nothing added yet</source>
+        <translation>Ankoraŭ nenio aldonita</translation>
+    </message>
+    <message>
+        <source>Off</source>
+        <translation>For</translation>
+    </message>
+    <message>
+        <source>Copy</source>
+        <translation>Kopii</translation>
+    </message>
+    <message>
+        <source>Overview</source>
+        <translation>Superrigardo</translation>
+    </message>
+    <message>
+        <source>Transfer</source>
+        <translation>Transigo</translation>
+    </message>
+    <message>
+        <source>This session</source>
+        <translation>Ĉi tiu seanco</translation>
+    </message>
+    <message>
+        <source>All time</source>
+        <translation>Ĉiam</translation>
+    </message>
+    <message>
+        <source>Downloaded:</source>
+        <translation>Elŝutita:</translation>
+    </message>
+    <message>
+        <source>Uploaded:</source>
+        <translation>Alŝutita:</translation>
+    </message>
+    <message>
+        <source>Share ratio:</source>
+        <translation>Kvanto de kunhavigo:</translation>
+    </message>
+    <message>
+        <source>Current speed:</source>
+        <translation>Nuna rapido:</translation>
+    </message>
+    <message>
+        <source>Activity</source>
+        <translation>Agado</translation>
+    </message>
+    <message>
+        <source>Torrents downloading:</source>
+        <translation>Torentoj elŝutantaj:</translation>
+    </message>
+    <message>
+        <source>Torrents seeding:</source>
+        <translation>Torentoj fontantaj:</translation>
+    </message>
+    <message>
+        <source>Torrents stopped:</source>
+        <translation>Haltigitaj torentoj:</translation>
+    </message>
+    <message>
+        <source>Torrents with errors:</source>
+        <translation>Torentoj kun eraroj:</translation>
+    </message>
+    <message>
+        <source>Running for:</source>
+        <translation>Funkcias dum:</translation>
+    </message>
+    <message>
+        <source>History</source>
+        <translation>Historio</translation>
+    </message>
+    <message>
+        <source>Period</source>
+        <translation>Periodo</translation>
+    </message>
+    <message>
+        <source>Today</source>
+        <translation>Hodiaŭ</translation>
+    </message>
+    <message>
+        <source>Last 7 days</source>
+        <translation>Lastaj 7 tagoj</translation>
+    </message>
+    <message>
+        <source>This month</source>
+        <translation>Ĉi tiu monato</translation>
+    </message>
+    <message>
+        <source>Last month</source>
+        <translation>Pasinta monato</translation>
+    </message>
+    <message>
+        <source>Last 12 months</source>
+        <translation>Lastaj 12 monatoj</translation>
+    </message>
+    <message>
+        <source>Tracking since:</source>
+        <translation>Sekvado ekde:</translation>
+    </message>
+    <message>
+        <source>By month</source>
+        <translation>Laŭ monato</translation>
+    </message>
+    <message>
+        <source>Month</source>
+        <translation>Monato</translation>
+    </message>
+    <message>
+        <source>Downloaded</source>
+        <translation>Elŝutita</translation>
+    </message>
+    <message>
+        <source>Uploaded</source>
+        <translation>Alŝutita</translation>
+    </message>
+    <message>
+        <source>Share ratio</source>
+        <translation>Kvanto de kunhavigo</translation>
+    </message>
+    <message>
+        <source>WebUI downloads added, this month</source>
+        <translation>WebUI-elŝutoj aldonitaj, ĉi tiu monato</translation>
+    </message>
+    <message>
+        <source>Counts the requests that added a download. Apps without a login, such as Sonarr and Radarr, are shown as (localhost). Downloads added in the desktop window are not counted.</source>
+        <translation>Kalkulas la petojn, kiuj aldonis elŝuton. Aplikaĵoj sen ensaluto, kiel Sonarr kaj Radarr, montriĝas kiel (localhost). Elŝutoj aldonitaj en la labortabla fenestro ne kalkuliĝas.</translation>
+    </message>
+    <message>
+        <source>Technical</source>
+        <translation>Teknika</translation>
+    </message>
+    <message>
+        <source>Disk</source>
+        <translation>Disko</translation>
+    </message>
+    <message>
+        <source>Peers waiting on disk writes:</source>
+        <translation>Kunuloj atendantaj skribon al disko:</translation>
+    </message>
+    <message>
+        <source>Peers waiting on disk reads:</source>
+        <translation>Kunuloj atendantaj legon de disko:</translation>
+    </message>
+    <message>
+        <source>Network</source>
+        <translation>Reto</translation>
+    </message>
+    <message>
+        <source>DHT nodes:</source>
+        <translation>DHT-nodoj:</translation>
+    </message>
+    <message>
+        <source>Data discarded this session:</source>
+        <translation>Forĵetitaj datumoj en ĉi tiu seanco:</translation>
+    </message>
+    <message>
+        <source>Before tracking began</source>
+        <translation>Antaŭ ol la sekvado komenciĝis</translation>
+    </message>
+    <message>
+        <source>Nothing added yet</source>
+        <translation>Ankoraŭ nenio aldonita</translation>
+    </message>
+    <message>
+        <source>Off</source>
+        <translation>For</translation>
     </message>
 </context>
 <context>
@@ -11892,6 +12752,22 @@ Please choose a different name and try again.</source>
         <location filename="../gui/torrentcontentwidget.cpp" line="471"/>
         <source>By shown file order</source>
         <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Reset auto width</source>
+        <translation>Restarigi aŭtomatan larĝon</translation>
+    </message>
+    <message>
+        <source>Fit all non-hidden columns to their contents again, and forget the widths that were set by hand</source>
+        <translation>Denove adapti ĉiujn videblajn kolumnojn al ilia enhavo kaj forgesi la mane agordatajn larĝojn</translation>
+    </message>
+    <message>
+        <source>Reset auto width</source>
+        <translation>Restarigi aŭtomatan larĝon</translation>
+    </message>
+    <message>
+        <source>Fit all non-hidden columns to their contents again, and forget the widths that were set by hand</source>
+        <translation>Denove adapti ĉiujn videblajn kolumnojn al ilia enhavo kaj forgesi la mane agordatajn larĝojn</translation>
     </message>
 </context>
 <context>
@@ -12971,6 +13847,22 @@ Please choose a different name and try again.</source>
         <source>Column visibility</source>
         <translation type="unfinished"></translation>
     </message>
+    <message>
+        <source>Reset auto width</source>
+        <translation>Restarigi aŭtomatan larĝon</translation>
+    </message>
+    <message>
+        <source>Fit all non-hidden columns to their contents again, and forget the widths that were set by hand</source>
+        <translation>Denove adapti ĉiujn videblajn kolumnojn al ilia enhavo kaj forgesi la mane agordatajn larĝojn</translation>
+    </message>
+    <message>
+        <source>Reset auto width</source>
+        <translation>Restarigi aŭtomatan larĝon</translation>
+    </message>
+    <message>
+        <source>Fit all non-hidden columns to their contents again, and forget the widths that were set by hand</source>
+        <translation>Denove adapti ĉiujn videblajn kolumnojn al ilia enhavo kaj forgesi la mane agordatajn larĝojn</translation>
+    </message>
 </context>
 <context>
     <name>TrackerStatusFilterWidget</name>
@@ -13837,6 +14729,22 @@ Please choose a different name and try again.</source>
         <source>Super seeding mode</source>
         <translation>Superfontsendanta reĝimo</translation>
     </message>
+    <message>
+        <source>Reset auto width</source>
+        <translation>Restarigi aŭtomatan larĝon</translation>
+    </message>
+    <message>
+        <source>Fit all non-hidden columns to their contents again, and forget the widths that were set by hand</source>
+        <translation>Denove adapti ĉiujn videblajn kolumnojn al ilia enhavo kaj forgesi la mane agordatajn larĝojn</translation>
+    </message>
+    <message>
+        <source>Reset auto width</source>
+        <translation>Restarigi aŭtomatan larĝon</translation>
+    </message>
+    <message>
+        <source>Fit all non-hidden columns to their contents again, and forget the widths that were set by hand</source>
+        <translation>Denove adapti ĉiujn videblajn kolumnojn al ilia enhavo kaj forgesi la mane agordatajn larĝojn</translation>
+    </message>
 </context>
 <context>
     <name>UIThemeDialog</name>
@@ -14171,6 +15079,46 @@ Please choose a different name and try again.</source>
         <source>WebAPI login failure. Reason: invalid credentials, attempt count: %1, IP: %2, username: %3</source>
         <translation type="unfinished"></translation>
     </message>
+    <message>
+        <source>Something went wrong on the server. Details are in qBittorrent&apos;s log.</source>
+        <translation>Io misfunkciis en la servilo. Detaloj troviĝas en la protokolo de qBittorrent.</translation>
+    </message>
+    <message>
+        <source>This account is locked after too many failed login attempts. Try again in %1 minute(s).</source>
+        <translation>Ĉi tiu konto estas ŝlosita post tro multaj malsukcesaj ensalutprovoj. Reprovu post %1 minuto(j).</translation>
+    </message>
+    <message>
+        <source>Your role (%1) doesn&apos;t allow this: %2.</source>
+        <translation>Via rolo (%1) ne permesas ĉi tion: %2.</translation>
+    </message>
+    <message>
+        <source>Only an admin can remove the tag that says who added a torrent.</source>
+        <translation>Nur administranto povas forigi la etikedon, kiu diras kiu aldonis torenton.</translation>
+    </message>
+    <message>
+        <source>Only an admin can clear or replace all tags of a torrent that has a tag saying who added it.</source>
+        <translation>Nur administranto povas forviŝi aŭ anstataŭigi ĉiujn etikedojn de torento, kiu havas etikedon pri tio, kiu ĝin aldonis.</translation>
+    </message>
+    <message>
+        <source>Something went wrong on the server. Details are in qBittorrent&apos;s log.</source>
+        <translation>Io misfunkciis en la servilo. Detaloj troviĝas en la protokolo de qBittorrent.</translation>
+    </message>
+    <message>
+        <source>This account is locked after too many failed login attempts. Try again in %1 minute(s).</source>
+        <translation>Ĉi tiu konto estas ŝlosita post tro multaj malsukcesaj ensalutprovoj. Reprovu post %1 minuto(j).</translation>
+    </message>
+    <message>
+        <source>Your role (%1) doesn&apos;t allow this: %2.</source>
+        <translation>Via rolo (%1) ne permesas ĉi tion: %2.</translation>
+    </message>
+    <message>
+        <source>Only an admin can remove the tag that says who added a torrent.</source>
+        <translation>Nur administranto povas forigi la etikedon, kiu diras kiu aldonis torenton.</translation>
+    </message>
+    <message>
+        <source>Only an admin can clear or replace all tags of a torrent that has a tag saying who added it.</source>
+        <translation>Nur administranto povas forviŝi aŭ anstataŭigi ĉiujn etikedojn de torento, kiu havas etikedon pri tio, kiu ĝin aldonis.</translation>
+    </message>
 </context>
 <context>
     <name>WebUI</name>
@@ -14310,6 +15258,669 @@ Please choose a different name and try again.</source>
         <source>&lt; 1m</source>
         <comment>&lt; 1 minute</comment>
         <translation>&lt; 1m</translation>
+    </message>
+</context>
+<context>
+    <name>UpdateInstaller</name>
+    <message>
+        <source>Kettle Edition update</source>
+        <translation>Ĝisdatigo de Kettle Edition</translation>
+    </message>
+    <message>
+        <source>Kettle Edition was updated to %1.</source>
+        <translation>Kettle Edition ĝisdatiĝis al %1.</translation>
+    </message>
+    <message>
+        <source>Kettle Edition updated</source>
+        <translation>Kettle Edition ĝisdatiĝis</translation>
+    </message>
+    <message>
+        <source>Downloading Kettle Edition %1 (%2 changed files).</source>
+        <translation>Elŝutado de Kettle Edition %1 (%2 ŝanĝitaj dosieroj).</translation>
+    </message>
+    <message>
+        <source>Kettle Edition %1 is downloaded and ready to install.</source>
+        <translation>Kettle Edition %1 estas elŝutita kaj preta por instalo.</translation>
+    </message>
+    <message>
+        <source>Kettle Edition update</source>
+        <translation>Ĝisdatigo de Kettle Edition</translation>
+    </message>
+    <message>
+        <source>Kettle Edition was updated to %1.</source>
+        <translation>Kettle Edition ĝisdatiĝis al %1.</translation>
+    </message>
+    <message>
+        <source>Kettle Edition updated</source>
+        <translation>Kettle Edition ĝisdatiĝis</translation>
+    </message>
+    <message>
+        <source>Downloading Kettle Edition %1 (%2 changed files).</source>
+        <translation>Elŝutado de Kettle Edition %1 (%2 ŝanĝitaj dosieroj).</translation>
+    </message>
+    <message>
+        <source>Kettle Edition %1 is downloaded and ready to install.</source>
+        <translation>Kettle Edition %1 estas elŝutita kaj preta por instalo.</translation>
+    </message>
+</context>
+<context>
+    <name>UserAccountDialog</name>
+    <message>
+        <source>User</source>
+        <translation>Uzanto</translation>
+    </message>
+    <message>
+        <source>Username:</source>
+        <translation>Uzantnomo:</translation>
+    </message>
+    <message>
+        <source>Role:</source>
+        <translation>Rolo:</translation>
+    </message>
+    <message>
+        <source>Password:</source>
+        <translation>Pasvorto:</translation>
+    </message>
+    <message>
+        <source>Confirm password:</source>
+        <translation>Konfirmi pasvorton:</translation>
+    </message>
+    <message>
+        <source>Disable this account</source>
+        <translation>Malŝalti ĉi tiun konton</translation>
+    </message>
+    <message>
+        <source>Edit User</source>
+        <translation>Redakti uzanton</translation>
+    </message>
+    <message>
+        <source>Leave empty to keep the current password</source>
+        <translation>Lasu malplena por konservi la nunan pasvorton</translation>
+    </message>
+    <message>
+        <source>Add User</source>
+        <translation>Aldoni uzanton</translation>
+    </message>
+    <message>
+        <source>At least %1 characters</source>
+        <translation>Almenaŭ %1 signoj</translation>
+    </message>
+    <message>
+        <source>Enter a username.</source>
+        <translation>Enigu uzantnomon.</translation>
+    </message>
+    <message>
+        <source>The password must be at least %1 characters long.</source>
+        <translation>La pasvorto devas havi almenaŭ %1 signojn.</translation>
+    </message>
+    <message>
+        <source>The passwords don&apos;t match.</source>
+        <translation>La pasvortoj ne kongruas.</translation>
+    </message>
+    <message>
+        <source>User</source>
+        <translation>Uzanto</translation>
+    </message>
+    <message>
+        <source>Username:</source>
+        <translation>Uzantnomo:</translation>
+    </message>
+    <message>
+        <source>Role:</source>
+        <translation>Rolo:</translation>
+    </message>
+    <message>
+        <source>Password:</source>
+        <translation>Pasvorto:</translation>
+    </message>
+    <message>
+        <source>Confirm password:</source>
+        <translation>Konfirmi pasvorton:</translation>
+    </message>
+    <message>
+        <source>Disable this account</source>
+        <translation>Malŝalti ĉi tiun konton</translation>
+    </message>
+    <message>
+        <source>Edit User</source>
+        <translation>Redakti uzanton</translation>
+    </message>
+    <message>
+        <source>Leave empty to keep the current password</source>
+        <translation>Lasu malplena por konservi la nunan pasvorton</translation>
+    </message>
+    <message>
+        <source>Add User</source>
+        <translation>Aldoni uzanton</translation>
+    </message>
+    <message>
+        <source>At least %1 characters</source>
+        <translation>Almenaŭ %1 signoj</translation>
+    </message>
+    <message>
+        <source>Enter a username.</source>
+        <translation>Enigu uzantnomon.</translation>
+    </message>
+    <message>
+        <source>The password must be at least %1 characters long.</source>
+        <translation>La pasvorto devas havi almenaŭ %1 signojn.</translation>
+    </message>
+    <message>
+        <source>The passwords don&apos;t match.</source>
+        <translation>La pasvortoj ne kongruas.</translation>
+    </message>
+</context>
+<context>
+    <name>UserAccountsWidget</name>
+    <message>
+        <source>User Accounts</source>
+        <translation>Uzantkontoj</translation>
+    </message>
+    <message>
+        <source>Users</source>
+        <translation>Uzantoj</translation>
+    </message>
+    <message>
+        <source>People who can log in to the WebUI with their own username and password.</source>
+        <translation>Homoj, kiuj povas ensaluti en la WebUI per propra uzantnomo kaj pasvorto.</translation>
+    </message>
+    <message>
+        <source>Add User...</source>
+        <translation>Aldoni uzanton...</translation>
+    </message>
+    <message>
+        <source>Edit...</source>
+        <translation>Redakti...</translation>
+    </message>
+    <message>
+        <source>Remove</source>
+        <translation>Forigi</translation>
+    </message>
+    <message>
+        <source>Roles</source>
+        <translation>Roloj</translation>
+    </message>
+    <message>
+        <source>A role decides what its users are allowed to do.</source>
+        <translation>Rolo decidas, kion ĝiaj uzantoj rajtas fari.</translation>
+    </message>
+    <message>
+        <source>Add Role...</source>
+        <translation>Aldoni rolon...</translation>
+    </message>
+    <message>
+        <source>Logged In</source>
+        <translation>Ensalutintaj</translation>
+    </message>
+    <message>
+        <source>Browsers and devices where someone is logged in with a user account.</source>
+        <translation>Retumiloj kaj aparatoj, kie iu ensalutis per uzantkonto.</translation>
+    </message>
+    <message>
+        <source>Log Out</source>
+        <translation>Elsaluti</translation>
+    </message>
+    <message>
+        <source>Username</source>
+        <translation>Uzantnomo</translation>
+    </message>
+    <message>
+        <source>Role</source>
+        <translation>Rolo</translation>
+    </message>
+    <message>
+        <source>Status</source>
+        <translation>Stato</translation>
+    </message>
+    <message>
+        <source>Last login</source>
+        <translation>Lasta ensaluto</translation>
+    </message>
+    <message>
+        <source>Created</source>
+        <translation>Kreita</translation>
+    </message>
+    <message>
+        <source>Name</source>
+        <translation>Nomo</translation>
+    </message>
+    <message>
+        <source>Description</source>
+        <translation>Priskribo</translation>
+    </message>
+    <message>
+        <source>Permissions</source>
+        <translation>Permesoj</translation>
+    </message>
+    <message>
+        <source>User</source>
+        <translation>Uzanto</translation>
+    </message>
+    <message>
+        <source>Browser</source>
+        <translation>Retumilo</translation>
+    </message>
+    <message>
+        <source>Logged in</source>
+        <translation>Ensalutis</translation>
+    </message>
+    <message>
+        <source>Last active</source>
+        <translation>Lasta agado</translation>
+    </message>
+    <message>
+        <source>Expires</source>
+        <translation>Eksvalidiĝas</translation>
+    </message>
+    <message>
+        <source>The user database could not be opened. See the Execution Log for details.</source>
+        <translation>La uzantdatumbazo ne malfermiĝis. Vidu la ruldosieron por detaloj.</translation>
+    </message>
+    <message>
+        <source>Disabled</source>
+        <translation>Malŝaltita</translation>
+    </message>
+    <message>
+        <source>Enabled</source>
+        <translation>Ŝaltita</translation>
+    </message>
+    <message>
+        <source>Never</source>
+        <translation>Neniam</translation>
+    </message>
+    <message>
+        <source>No accounts yet, so everyone still uses the shared WebUI login. Add an Admin account first.</source>
+        <translation>Ankoraŭ ne ekzistas kontoj, do ĉiuj ankoraŭ uzas la komunan WebUI-ensaluton. Unue aldonu administran konton.</translation>
+    </message>
+    <message>
+        <source>Couldn&apos;t read the user database. %1</source>
+        <translation>La uzantdatumbazo ne legiĝis. %1</translation>
+    </message>
+    <message>
+        <source>Remove user</source>
+        <translation>Forigi uzanton</translation>
+    </message>
+    <message>
+        <source>Are you sure you want to remove the user &apos;%1&apos;?</source>
+        <translation>Ĉu vi certas, ke vi volas forigi la uzanton &apos;%1&apos;?</translation>
+    </message>
+    <message>
+        <source>Remove role</source>
+        <translation>Forigi rolon</translation>
+    </message>
+    <message>
+        <source>Are you sure you want to remove the role &apos;%1&apos;?</source>
+        <translation>Ĉu vi certas, ke vi volas forigi la rolon &apos;%1&apos;?</translation>
+    </message>
+    <message>
+        <source>Enable</source>
+        <translation>Ŝalti</translation>
+    </message>
+    <message>
+        <source>Disable</source>
+        <translation>Malŝalti</translation>
+    </message>
+    <message>
+        <source>Log Out Everywhere</source>
+        <translation>Elsaluti ĉie</translation>
+    </message>
+    <message>
+        <source>User Accounts</source>
+        <translation>Uzantkontoj</translation>
+    </message>
+    <message>
+        <source>Users</source>
+        <translation>Uzantoj</translation>
+    </message>
+    <message>
+        <source>People who can log in to the WebUI with their own username and password.</source>
+        <translation>Homoj, kiuj povas ensaluti en la WebUI per propra uzantnomo kaj pasvorto.</translation>
+    </message>
+    <message>
+        <source>Add User...</source>
+        <translation>Aldoni uzanton...</translation>
+    </message>
+    <message>
+        <source>Edit...</source>
+        <translation>Redakti...</translation>
+    </message>
+    <message>
+        <source>Remove</source>
+        <translation>Forigi</translation>
+    </message>
+    <message>
+        <source>Roles</source>
+        <translation>Roloj</translation>
+    </message>
+    <message>
+        <source>A role decides what its users are allowed to do.</source>
+        <translation>Rolo decidas, kion ĝiaj uzantoj rajtas fari.</translation>
+    </message>
+    <message>
+        <source>Add Role...</source>
+        <translation>Aldoni rolon...</translation>
+    </message>
+    <message>
+        <source>Logged In</source>
+        <translation>Ensalutintaj</translation>
+    </message>
+    <message>
+        <source>Browsers and devices where someone is logged in with a user account.</source>
+        <translation>Retumiloj kaj aparatoj, kie iu ensalutis per uzantkonto.</translation>
+    </message>
+    <message>
+        <source>Log Out</source>
+        <translation>Elsaluti</translation>
+    </message>
+    <message>
+        <source>Username</source>
+        <translation>Uzantnomo</translation>
+    </message>
+    <message>
+        <source>Role</source>
+        <translation>Rolo</translation>
+    </message>
+    <message>
+        <source>Status</source>
+        <translation>Stato</translation>
+    </message>
+    <message>
+        <source>Last login</source>
+        <translation>Lasta ensaluto</translation>
+    </message>
+    <message>
+        <source>Created</source>
+        <translation>Kreita</translation>
+    </message>
+    <message>
+        <source>Name</source>
+        <translation>Nomo</translation>
+    </message>
+    <message>
+        <source>Description</source>
+        <translation>Priskribo</translation>
+    </message>
+    <message>
+        <source>Permissions</source>
+        <translation>Permesoj</translation>
+    </message>
+    <message>
+        <source>User</source>
+        <translation>Uzanto</translation>
+    </message>
+    <message>
+        <source>Browser</source>
+        <translation>Retumilo</translation>
+    </message>
+    <message>
+        <source>Logged in</source>
+        <translation>Ensalutis</translation>
+    </message>
+    <message>
+        <source>Last active</source>
+        <translation>Lasta agado</translation>
+    </message>
+    <message>
+        <source>Expires</source>
+        <translation>Eksvalidiĝas</translation>
+    </message>
+    <message>
+        <source>The user database could not be opened. See the Execution Log for details.</source>
+        <translation>La uzantdatumbazo ne malfermiĝis. Vidu la ruldosieron por detaloj.</translation>
+    </message>
+    <message>
+        <source>Disabled</source>
+        <translation>Malŝaltita</translation>
+    </message>
+    <message>
+        <source>Enabled</source>
+        <translation>Ŝaltita</translation>
+    </message>
+    <message>
+        <source>Never</source>
+        <translation>Neniam</translation>
+    </message>
+    <message>
+        <source>No accounts yet, so everyone still uses the shared WebUI login. Add an Admin account first.</source>
+        <translation>Ankoraŭ ne ekzistas kontoj, do ĉiuj ankoraŭ uzas la komunan WebUI-ensaluton. Unue aldonu administran konton.</translation>
+    </message>
+    <message>
+        <source>Couldn&apos;t read the user database. %1</source>
+        <translation>La uzantdatumbazo ne legiĝis. %1</translation>
+    </message>
+    <message>
+        <source>Remove user</source>
+        <translation>Forigi uzanton</translation>
+    </message>
+    <message>
+        <source>Are you sure you want to remove the user &apos;%1&apos;?</source>
+        <translation>Ĉu vi certas, ke vi volas forigi la uzanton &apos;%1&apos;?</translation>
+    </message>
+    <message>
+        <source>Remove role</source>
+        <translation>Forigi rolon</translation>
+    </message>
+    <message>
+        <source>Are you sure you want to remove the role &apos;%1&apos;?</source>
+        <translation>Ĉu vi certas, ke vi volas forigi la rolon &apos;%1&apos;?</translation>
+    </message>
+    <message>
+        <source>Enable</source>
+        <translation>Ŝalti</translation>
+    </message>
+    <message>
+        <source>Disable</source>
+        <translation>Malŝalti</translation>
+    </message>
+    <message>
+        <source>Log Out Everywhere</source>
+        <translation>Elsaluti ĉie</translation>
+    </message>
+</context>
+<context>
+    <name>UserRoleDialog</name>
+    <message>
+        <source>Role</source>
+        <translation>Rolo</translation>
+    </message>
+    <message>
+        <source>Name:</source>
+        <translation>Nomo:</translation>
+    </message>
+    <message>
+        <source>Description:</source>
+        <translation>Priskribo:</translation>
+    </message>
+    <message>
+        <source>Gives control over the PC or qBittorrent itself.</source>
+        <translation>Donas kontrolon super la komputilo aŭ super qBittorrent mem.</translation>
+    </message>
+    <message>
+        <source>Add Role</source>
+        <translation>Aldoni rolon</translation>
+    </message>
+    <message>
+        <source>Edit Role</source>
+        <translation>Redakti rolon</translation>
+    </message>
+    <message>
+        <source>Enter a role name.</source>
+        <translation>Enigu rolnomon.</translation>
+    </message>
+    <message>
+        <source>Role</source>
+        <translation>Rolo</translation>
+    </message>
+    <message>
+        <source>Name:</source>
+        <translation>Nomo:</translation>
+    </message>
+    <message>
+        <source>Description:</source>
+        <translation>Priskribo:</translation>
+    </message>
+    <message>
+        <source>Gives control over the PC or qBittorrent itself.</source>
+        <translation>Donas kontrolon super la komputilo aŭ super qBittorrent mem.</translation>
+    </message>
+    <message>
+        <source>Add Role</source>
+        <translation>Aldoni rolon</translation>
+    </message>
+    <message>
+        <source>Edit Role</source>
+        <translation>Redakti rolon</translation>
+    </message>
+    <message>
+        <source>Enter a role name.</source>
+        <translation>Enigu rolnomon.</translation>
+    </message>
+</context>
+<context>
+    <name>WebUIActivityWidget</name>
+    <message>
+        <source>All</source>
+        <translation>Ĉiuj</translation>
+    </message>
+    <message>
+        <source>Filter activity</source>
+        <translation>Filtri agadon</translation>
+    </message>
+    <message>
+        <source>Export...</source>
+        <translation>Eksporti...</translation>
+    </message>
+    <message>
+        <source>User:</source>
+        <translation>Uzanto:</translation>
+    </message>
+    <message>
+        <source>Category:</source>
+        <translation>Kategorio:</translation>
+    </message>
+    <message>
+        <source>Result:</source>
+        <translation>Rezulto:</translation>
+    </message>
+    <message>
+        <source>Time</source>
+        <translation>Tempo</translation>
+    </message>
+    <message>
+        <source>User</source>
+        <translation>Uzanto</translation>
+    </message>
+    <message>
+        <source>Role</source>
+        <translation>Rolo</translation>
+    </message>
+    <message>
+        <source>Category</source>
+        <translation>Kategorio</translation>
+    </message>
+    <message>
+        <source>Action</source>
+        <translation>Ago</translation>
+    </message>
+    <message>
+        <source>Result</source>
+        <translation>Rezulto</translation>
+    </message>
+    <message>
+        <source>The user database could not be opened. See the General tab for details.</source>
+        <translation>La uzantdatumbazo ne malfermiĝis. Vidu la langeton Ĝenerale por detaloj.</translation>
+    </message>
+    <message>
+        <source>Results (showing %1 out of %2)</source>
+        <translation>Rezultoj (montrataj %1 el %2)</translation>
+    </message>
+    <message>
+        <source>Copy</source>
+        <translation>Kopii</translation>
+    </message>
+    <message>
+        <source>Export WebUI activity</source>
+        <translation>Eksporti WebUI-agadon</translation>
+    </message>
+    <message>
+        <source>CSV files</source>
+        <translation>CSV-dosieroj</translation>
+    </message>
+    <message>
+        <source>Couldn&apos;t save the file. Reason: %1</source>
+        <translation>Ne eblis konservi la dosieron. Kialo: %1</translation>
+    </message>
+    <message>
+        <source>All</source>
+        <translation>Ĉiuj</translation>
+    </message>
+    <message>
+        <source>Filter activity</source>
+        <translation>Filtri agadon</translation>
+    </message>
+    <message>
+        <source>Export...</source>
+        <translation>Eksporti...</translation>
+    </message>
+    <message>
+        <source>User:</source>
+        <translation>Uzanto:</translation>
+    </message>
+    <message>
+        <source>Category:</source>
+        <translation>Kategorio:</translation>
+    </message>
+    <message>
+        <source>Result:</source>
+        <translation>Rezulto:</translation>
+    </message>
+    <message>
+        <source>Time</source>
+        <translation>Tempo</translation>
+    </message>
+    <message>
+        <source>User</source>
+        <translation>Uzanto</translation>
+    </message>
+    <message>
+        <source>Role</source>
+        <translation>Rolo</translation>
+    </message>
+    <message>
+        <source>Category</source>
+        <translation>Kategorio</translation>
+    </message>
+    <message>
+        <source>Action</source>
+        <translation>Ago</translation>
+    </message>
+    <message>
+        <source>Result</source>
+        <translation>Rezulto</translation>
+    </message>
+    <message>
+        <source>The user database could not be opened. See the General tab for details.</source>
+        <translation>La uzantdatumbazo ne malfermiĝis. Vidu la langeton Ĝenerale por detaloj.</translation>
+    </message>
+    <message>
+        <source>Results (showing %1 out of %2)</source>
+        <translation>Rezultoj (montrataj %1 el %2)</translation>
+    </message>
+    <message>
+        <source>Copy</source>
+        <translation>Kopii</translation>
+    </message>
+    <message>
+        <source>Export WebUI activity</source>
+        <translation>Eksporti WebUI-agadon</translation>
+    </message>
+    <message>
+        <source>CSV files</source>
+        <translation>CSV-dosieroj</translation>
+    </message>
+    <message>
+        <source>Couldn&apos;t save the file. Reason: %1</source>
+        <translation>Ne eblis konservi la dosieron. Kialo: %1</translation>
     </message>
 </context>
 </TS>

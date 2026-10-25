@@ -223,6 +223,85 @@ The piece hash will be checked when it is requested for the first time by a peer
         <source>%1 needed · %2 free</source>
         <translation type="unfinished" />
     </message>
+    <message>
+        <source>Don&apos;t create subfolder</source>
+        <translation>Neizveidot apakšmapi</translation>
+    </message>
+    <message>
+        <source>Never show again</source>
+        <translation>Vairs nerādīt</translation>
+    </message>
+    <message>
+        <source>Select None</source>
+        <translation>Neizvēlēties nevienu</translation>
+    </message>
+    <message>
+        <source>Torrent options</source>
+        <translation>Torrenta iestatījumi</translation>
+    </message>
+    <message>
+        <source>Your role saves torrents in the default folders.</source>
+        <translation>Jūsu loma saglabā torrentus noklusējuma mapēs.</translation>
+    </message>
+</context>
+<context>
+    <name>AdvancedSettings</name>
+    <message>
+        <source>General</source>
+        <translation>Vispārīgi</translation>
+    </message>
+    <message>
+        <source>Network</source>
+        <translation>Tīkls</translation>
+    </message>
+    <message>
+        <source>Storage</source>
+        <translation>Krātuve</translation>
+    </message>
+    <message>
+        <source>Peers and trackers</source>
+        <translation>Koplietotāji un trakeri</translation>
+    </message>
+    <message>
+        <source>Program behavior</source>
+        <translation>Programmas darbība</translation>
+    </message>
+    <message>
+        <source>Display and notifications</source>
+        <translation>Attēlojums un paziņojumi</translation>
+    </message>
+    <message>
+        <source>Network connection</source>
+        <translation>Tīkla savienojums</translation>
+    </message>
+    <message>
+        <source>Security and privacy</source>
+        <translation>Drošība un privātums</translation>
+    </message>
+    <message>
+        <source>Connection tuning</source>
+        <translation>Savienojuma pielāgošana</translation>
+    </message>
+    <message>
+        <source>Saving and torrent files</source>
+        <translation>Saglabāšana un torenta faili</translation>
+    </message>
+    <message>
+        <source>Disk and memory</source>
+        <translation>Disks un atmiņa</translation>
+    </message>
+    <message>
+        <source>Trackers</source>
+        <translation>Trakeri</translation>
+    </message>
+    <message>
+        <source>Peers and seeding</source>
+        <translation>Koplietotāji un augšupielāde</translation>
+    </message>
+    <message>
+        <source>DHT and I2P</source>
+        <translation>DHT un I2P</translation>
+    </message>
 </context>
 <context>
     <name>CategoryFilterModel</name>
@@ -623,6 +702,14 @@ The piece hash will be checked when it is requested for the first time by a peer
         <source>More</source>
         <translation>Vairāk</translation>
     </message>
+    <message>
+        <source>Change Password...</source>
+        <translation>Mainīt paroli...</translation>
+    </message>
+    <message>
+        <source>Signed in as</source>
+        <translation>Pieteicies kā</translation>
+    </message>
 </context>
 <context>
     <name>MainWindow</name>
@@ -929,6 +1016,34 @@ The piece hash will be checked when it is requested for the first time by a peer
     <message>
         <source>Resume Session</source>
         <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Global Speed Limits</source>
+        <translation>Atļautie Kopējie ātrumi</translation>
+    </message>
+    <message>
+        <source>Pause Session</source>
+        <translation>Apturēt sesiju</translation>
+    </message>
+    <message>
+        <source>Pause session</source>
+        <translation>Apturēt sesiju</translation>
+    </message>
+    <message>
+        <source>Resume Session</source>
+        <translation>Atsākt sesiju</translation>
+    </message>
+    <message>
+        <source>Resume session</source>
+        <translation>Atsākt sesiju</translation>
+    </message>
+    <message>
+        <source>Your account can&apos;t add torrents.</source>
+        <translation>Jūsu konts nevar pievienot torrentus.</translation>
+    </message>
+    <message>
+        <source>[PAUSED]</source>
+        <translation>[APTURĒTS]</translation>
     </message>
 </context>
 <context>
@@ -2519,6 +2634,186 @@ Izmantojiet ';' lai atdalītu vairākus vārdus. Varat izmantot vietturi '*'.</t
         <source>a@x.com;b@y.com,c@z.com - send two emails: the first to just a@x.com, the second to both b@y.com and c@z.com</source>
         <translation type="unfinished" />
     </message>
+    <message>
+        <source>0 means users are logged out after the session timeout.</source>
+        <translation>0 nozīmē, ka lietotāji tiek izrakstīti pēc sesijas noildzes.</translation>
+    </message>
+    <message>
+        <source>Access</source>
+        <translation>Piekļuve</translation>
+    </message>
+    <message>
+        <source>Allow this login when user accounts exist</source>
+        <translation>Atļaut šo pieteikšanos, kad ir lietotāju konti</translation>
+    </message>
+    <message>
+        <source>Also save search results</source>
+        <translation>Saglabāt arī meklēšanas rezultātus</translation>
+    </message>
+    <message>
+        <source>Also when addition is cancelled</source>
+        <translation>Arī atceļot pievienošanu</translation>
+    </message>
+    <message>
+        <source>Below normal</source>
+        <translation>Zem normāla</translation>
+    </message>
+    <message>
+        <source>Changes to users, roles and logins apply at once.</source>
+        <translation>Lietotāju, lomu un pieteikšanās izmaiņas stājas spēkā uzreiz.</translation>
+    </message>
+    <message>
+        <source>Don&apos;t create subfolder</source>
+        <translation>Neizveidot apakšmapi</translation>
+    </message>
+    <message>
+        <source>Example:</source>
+        <translation>Piemērs:</translation>
+    </message>
+    <message>
+        <source>I2P (experimental)</source>
+        <translation>l2P (eksperimentāls)</translation>
+    </message>
+    <message>
+        <source>Keep WebUI activity log for:</source>
+        <translation>Glabāt WebUI darbību žurnālu:</translation>
+    </message>
+    <message>
+        <source>Keep unselected files in &quot;.unwanted&quot; folder</source>
+        <translation>Uzglabāt neizvēlētos failus &quot;.unwanted&quot; mapē</translation>
+    </message>
+    <message>
+        <source>Keep users logged in for:</source>
+        <translation>Turēt lietotājus pieteiktus:</translation>
+    </message>
+    <message>
+        <source>Language:</source>
+        <translation>Valoda</translation>
+    </message>
+    <message>
+        <source>Lock account after consecutive failures:</source>
+        <translation>Bloķēt kontu pēc secīgām neveiksmēm:</translation>
+    </message>
+    <message>
+        <source>Logins and Activity Log</source>
+        <translation>Pieteikšanās un darbību žurnāls</translation>
+    </message>
+    <message>
+        <source>Low</source>
+        <translation>Zems</translation>
+    </message>
+    <message>
+        <source>Maximum active checking torrents:</source>
+        <translation>Atļautais vienlaicīgi pārbaudāmo torrentu skaits:</translation>
+    </message>
+    <message>
+        <source>Medium</source>
+        <translation>Vidējs</translation>
+    </message>
+    <message>
+        <source>No settings match</source>
+        <translation>Nav atbilstošu iestatījumu</translation>
+    </message>
+    <message>
+        <source>Process memory priority:</source>
+        <translation>Procesa atmiņas prioritāte:</translation>
+    </message>
+    <message>
+        <source>Save search tabs</source>
+        <translation>Saglabāt meklēšanas cilnes</translation>
+    </message>
+    <message>
+        <source>Search UI</source>
+        <translation>Meklētāja saskarne</translation>
+    </message>
+    <message>
+        <source>Search settings</source>
+        <translation>Meklēt iestatījumos</translation>
+    </message>
+    <message>
+        <source>Service:</source>
+        <translation>Serviss:</translation>
+    </message>
+    <message>
+        <source>Show console window</source>
+        <translation>Parādīt konsoles logu</translation>
+    </message>
+    <message>
+        <source>Show the window when adding a torrent</source>
+        <translation>Rādīt logu, pievienojot torrentu</translation>
+    </message>
+    <message>
+        <source>Specify reverse proxy IPs (or subnets, e.g. 0.0.0.0/24) in order to use forwarded client address (X-Forwarded-For header). Use &apos;;&apos; to split multiple entries.</source>
+        <translation>Norādiet apgriezto starpniekserveru IP adreses (vai apakštīklus, piem. 0.0.0.0/24), lai izmantotu klienta pārsūtīto adresi (X-Forwarded-For atribūts), izmantojiet &quot;;&quot;, lai atdalītu ierakstus. </translation>
+    </message>
+    <message>
+        <source>Status bar and log</source>
+        <translation>Statusa josla un žurnāls</translation>
+    </message>
+    <message>
+        <source>The WebUI activity log can be kept for 1 to 3650 days.</source>
+        <translation>WebUI darbību žurnālu var glabāt no 1 līdz 3650 dienām.</translation>
+    </message>
+    <message>
+        <source>The settings below apply with OK or Apply.</source>
+        <translation>Tālāk esošie iestatījumi stājas spēkā ar Labi vai Lietot.</translation>
+    </message>
+    <message>
+        <source>Tip: Encapsulate parameter with quotation marks to avoid text being cut off at whitespace (e.g., &quot;%N&quot;)</source>
+        <translation>Padoms: Lai izvairītos no teksta sadalīšanās, ja lietojat atstarpes, ievietojiet parametru pēdiņās (piemēram, &quot;%N&quot;)</translation>
+    </message>
+    <message>
+        <source>Transfer List</source>
+        <translation>Torrentu saraksts</translation>
+    </message>
+    <message>
+        <source>Until the first user account is created, this login always works.</source>
+        <translation>Kamēr nav izveidots pirmais lietotāja konts, šī pieteikšanās vienmēr darbojas.</translation>
+    </message>
+    <message>
+        <source>User</source>
+        <translation>Lietotājs</translation>
+    </message>
+    <message>
+        <source>User Accounts</source>
+        <translation>Lietotāju konti</translation>
+    </message>
+    <message>
+        <source>Users can be kept logged in for 0 to 365 days.</source>
+        <translation>Lietotājus var turēt pieteiktus no 0 līdz 365 dienām.</translation>
+    </message>
+    <message>
+        <source>Very low</source>
+        <translation>Ļoti zems</translation>
+    </message>
+    <message>
+        <source>Warning! Data loss possible!</source>
+        <translation>Brīdinājums! Iespējams datu zudums!</translation>
+    </message>
+    <message>
+        <source>When Default Save/Incomplete Path changed:</source>
+        <translation>Mainot noklusēto Saglabāšanas/Nepabeigto vietu:</translation>
+    </message>
+    <message>
+        <source>Whitelist for filtering HTTP Host header values.
+In order to defend against DNS rebinding attack,
+you should put in domain names used by WebUI server.
+
+Use &apos;;&apos; to split multiple entries. Can use wildcard &apos;*&apos;.</source>
+        <translation>HTTP hostu galvenes filtra baltais saraksts.
+Lai aizsargātu pret DNS atkārtotas atsaukšanas uzbrukumiem,
+šeit jāievada domēnu vārdi, kurus izmanto WebUI serveris.
+
+Izmantojiet &apos;;&apos; lai atdalītu vairākus vārdus. Varat izmantot vietturi &apos;*&apos;.</translation>
+    </message>
+    <message>
+        <source>You changed the address, port or HTTPS setting of the WebUI. Saving moves the WebUI, so Options will save, close and reload the page, the same as OK. If the page doesn&apos;t come back, open the WebUI at its new address.\n\nSave anyway?</source>
+        <translation>Jūs mainījāt WebUI adresi, portu vai HTTPS iestatījumu. Saglabājot WebUI pārvietojas, tāpēc Opcijas saglabās, aizvērs un pārlādēs lapu, kā ar Labi. Ja lapa neatgriežas, atveriet WebUI jaunajā adresē.\n\nTomēr saglabāt?</translation>
+    </message>
+    <message>
+        <source>lock for:</source>
+        <translation>bloķēt uz:</translation>
+    </message>
 </context>
 <context>
     <name>PeerListWidget</name>
@@ -3059,6 +3354,142 @@ Izmantojiet ';' lai atdalītu vairākus vārdus. Varat izmantot vietturi '*'.</t
     <message>
         <source>The time it takes from receiving a request from a peer until we're sending the response back on the socket</source>
         <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Activity</source>
+        <translation>Darbība</translation>
+    </message>
+    <message>
+        <source>All time</source>
+        <translation>Visu laiku</translation>
+    </message>
+    <message>
+        <source>Before tracking began</source>
+        <translation>Pirms izsekošanas sākuma</translation>
+    </message>
+    <message>
+        <source>By month</source>
+        <translation>Pa mēnešiem</translation>
+    </message>
+    <message>
+        <source>Counts the requests that added a download. Apps without a login, such as Sonarr and Radarr, are shown as (localhost). Downloads added in the desktop window are not counted.</source>
+        <translation>Skaita pieprasījumus, kas pievienoja lejupielādi. Lietotnes bez pieteikšanās, piemēram, Sonarr un Radarr, tiek rādītas kā (localhost). Galddatora logā pievienotās lejupielādes netiek skaitītas.</translation>
+    </message>
+    <message>
+        <source>Current speed:</source>
+        <translation>Pašreizējais ātrums:</translation>
+    </message>
+    <message>
+        <source>DHT nodes:</source>
+        <translation>DHT mezgli:</translation>
+    </message>
+    <message>
+        <source>Data discarded this session:</source>
+        <translation>Šajā sesijā izmesti dati:</translation>
+    </message>
+    <message>
+        <source>Disk</source>
+        <translation>Disks</translation>
+    </message>
+    <message>
+        <source>History</source>
+        <translation>Vēsture</translation>
+    </message>
+    <message>
+        <source>Last 12 months</source>
+        <translation>Pēdējie 12 mēneši</translation>
+    </message>
+    <message>
+        <source>Last 7 days</source>
+        <translation>Pēdējās 7 dienas</translation>
+    </message>
+    <message>
+        <source>Last month</source>
+        <translation>Pagājušais mēnesis</translation>
+    </message>
+    <message>
+        <source>Month</source>
+        <translation>Mēnesis</translation>
+    </message>
+    <message>
+        <source>Nothing added yet</source>
+        <translation>Vēl nekas nav pievienots</translation>
+    </message>
+    <message>
+        <source>Off</source>
+        <translation>Izslēgts</translation>
+    </message>
+    <message>
+        <source>Overview</source>
+        <translation>Pārskats</translation>
+    </message>
+    <message>
+        <source>Peers waiting on disk reads:</source>
+        <translation>Koplietotāji, kas gaida lasīšanu no diska:</translation>
+    </message>
+    <message>
+        <source>Peers waiting on disk writes:</source>
+        <translation>Koplietotāji, kas gaida ierakstu diskā:</translation>
+    </message>
+    <message>
+        <source>Period</source>
+        <translation>Periods</translation>
+    </message>
+    <message>
+        <source>Request latency:</source>
+        <translation>Pieprasījuma aizture:</translation>
+    </message>
+    <message>
+        <source>Running for:</source>
+        <translation>Darbojas:</translation>
+    </message>
+    <message>
+        <source>Share ratio</source>
+        <translation>Kopīgošanas attiecība</translation>
+    </message>
+    <message>
+        <source>Share ratio:</source>
+        <translation>Kopīgošanas attiecība:</translation>
+    </message>
+    <message>
+        <source>Technical</source>
+        <translation>Tehniskā informācija</translation>
+    </message>
+    <message>
+        <source>This month</source>
+        <translation>Šis mēnesis</translation>
+    </message>
+    <message>
+        <source>This session</source>
+        <translation>Šī sesija</translation>
+    </message>
+    <message>
+        <source>Today</source>
+        <translation>Šodien</translation>
+    </message>
+    <message>
+        <source>Torrents downloading:</source>
+        <translation>Lejupielādējamie torrenti:</translation>
+    </message>
+    <message>
+        <source>Torrents seeding:</source>
+        <translation>Augšupielādējamie torrenti:</translation>
+    </message>
+    <message>
+        <source>Torrents stopped:</source>
+        <translation>Apturētie torrenti:</translation>
+    </message>
+    <message>
+        <source>Torrents with errors:</source>
+        <translation>Torrenti ar kļūdām:</translation>
+    </message>
+    <message>
+        <source>Tracking since:</source>
+        <translation>Izsekošana kopš:</translation>
+    </message>
+    <message>
+        <source>WebUI downloads added, this month</source>
+        <translation>Ar WebUI pievienotās lejupielādes šomēnes</translation>
     </message>
 </context>
 <context>
@@ -3846,6 +4277,10 @@ Izmantojiet ';' lai atdalītu vairākus vārdus. Varat izmantot vietturi '*'.</t
         <source>Content Path</source>
         <translation type="unfinished" />
     </message>
+    <message>
+        <source>Remove all tags from selected torrents?</source>
+        <translation>Noņemt visas atzīmes no atlasītajiem torrentiem?</translation>
+    </message>
 </context>
 <context>
     <name>UpDownRatioDialog</name>
@@ -3918,6 +4353,10 @@ Izmantojiet ';' lai atdalītu vairākus vārdus. Varat izmantot vietturi '*'.</t
     <message>
         <source>Remove tracker</source>
         <translation>Noņemt trakeri</translation>
+    </message>
+    <message>
+        <source>This choice is remembered for the next removal.</source>
+        <translation>Šī izvēle tiks atcerēta nākamajai noņemšanai.</translation>
     </message>
 </context>
 <context>
@@ -4131,6 +4570,34 @@ Izmantojiet ';' lai atdalītu vairākus vārdus. Varat izmantot vietturi '*'.</t
         <source>Select plugins</source>
         <translation type="unfinished" />
     </message>
+    <message>
+        <source>Category to search in</source>
+        <translation>Kategorija, kurā meklēt</translation>
+    </message>
+    <message>
+        <source>Close the selected search</source>
+        <translation>Aizvērt atlasīto meklēšanu</translation>
+    </message>
+    <message>
+        <source>Empty search pattern</source>
+        <translation>Ievadiet atslēgas vārdus</translation>
+    </message>
+    <message>
+        <source>Search engines to use</source>
+        <translation>Izmantojamās meklētājprogrammas</translation>
+    </message>
+    <message>
+        <source>Search for torrents...</source>
+        <translation>Meklēt torrentus...</translation>
+    </message>
+    <message>
+        <source>Searches</source>
+        <translation>Meklēšanas</translation>
+    </message>
+    <message>
+        <source>Type a search above and press Enter.</source>
+        <translation>Augstāk ievadiet meklēšanu un nospiediet Enter.</translation>
+    </message>
 </context>
 <context>
     <name>PluginSelectDlg</name>
@@ -4169,6 +4636,10 @@ Izmantojiet ';' lai atdalītu vairākus vārdus. Varat izmantot vietturi '*'.</t
     <message>
         <source>Search plugins</source>
         <translation>Meklētāju spraudņi</translation>
+    </message>
+    <message>
+        <source>Warning: Be sure to comply with your country&apos;s copyright laws when downloading torrents from any of these search engines.</source>
+        <translation>Uzmanību: Pārliecinieties, ka ievērojat jūsu valsts autortiesību likumus, pirms lejupielādējat šajos meklētājos atrastos torrentus.</translation>
     </message>
 </context>
 <context>
@@ -4392,6 +4863,30 @@ Izmantojiet ';' lai atdalītu vairākus vārdus. Varat izmantot vietturi '*'.</t
         <source>qBittorrent icon</source>
         <translation>qBittorrent ikona</translation>
     </message>
+    <message>
+        <source>Based on:</source>
+        <translation>Balstīts uz:</translation>
+    </message>
+    <message>
+        <source>Edition version:</source>
+        <translation>Izdevuma versija:</translation>
+    </message>
+    <message>
+        <source>Kettle Edition is a personal build of qBittorrent that adds user accounts with roles for the WebUI and the desktop app, an activity log, and an installable WebUI with a phone layout. A kettle is a group of hawks soaring together. This is an unofficial build, not affiliated with the qBittorrent project.</source>
+        <translation>Kettle Edition ir personiska qBittorrent būve, kas pievieno lietotāju kontus ar lomām WebUI un galddatora lietotnei, darbību žurnālu un instalējamu WebUI ar tālruņa izkārtojumu. Kettle ir kopā planējošu vanagu bars. Šī ir neoficiāla būve, kas nav saistīta ar qBittorrent projektu.</translation>
+    </message>
+    <message>
+        <source>Maintainer:</source>
+        <translation>Uzturētājs:</translation>
+    </message>
+    <message>
+        <source>This edition</source>
+        <translation>Šis izdevums</translation>
+    </message>
+    <message>
+        <source>qBittorrent project:</source>
+        <translation>qBittorrent projekts:</translation>
+    </message>
 </context>
 <context>
     <name>OptionDialog</name>
@@ -4493,6 +4988,46 @@ Izmantojiet ';' lai atdalītu vairākus vārdus. Varat izmantot vietturi '*'.</t
     <message>
         <source>Open shared download window</source>
         <translation type="unfinished" />
+    </message>
+    <message>
+        <source>%1 of %2 shown</source>
+        <translation>Rāda %1 no %2</translation>
+    </message>
+    <message>
+        <source>%1 of %2 shown (%3 hidden)</source>
+        <translation>Rāda %1 no %2 (%3 paslēpti)</translation>
+    </message>
+    <message>
+        <source>Close all searches</source>
+        <translation>Aizvērt visas meklēšanas</translation>
+    </message>
+    <message>
+        <source>Close search</source>
+        <translation>Aizvērt meklēšanu</translation>
+    </message>
+    <message>
+        <source>Filter search results...</source>
+        <translation>Meklēt rezultātos...</translation>
+    </message>
+    <message>
+        <source>Finished: %1</source>
+        <translation>Pabeigts: %1</translation>
+    </message>
+    <message>
+        <source>Refresh search</source>
+        <translation>Atsvaidzināt meklēšanu</translation>
+    </message>
+    <message>
+        <source>Search aborted: %1</source>
+        <translation>Meklēšana pārtraukta: %1</translation>
+    </message>
+    <message>
+        <source>Search returned no results</source>
+        <translation>Meklēšana nedeva rezultātus</translation>
+    </message>
+    <message>
+        <source>Searching: %1</source>
+        <translation>Meklē: %1</translation>
     </message>
 </context>
 <context>
@@ -4631,6 +5166,10 @@ Izmantojiet ';' lai atdalītu vairākus vārdus. Varat izmantot vietturi '*'.</t
     <message>
         <source>Blocked opening RSS article URL. Only http:// and https:// links can be opened.</source>
         <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Details</source>
+        <translation>Detaļas</translation>
     </message>
 </context>
 <context>
@@ -4909,6 +5448,10 @@ Atbalsta formātus: S01E01, 1x1, 2017.12.31 un 31.12.2017 (Datumu formātos kā 
         <source>Import</source>
         <translation type="unfinished" />
     </message>
+    <message>
+        <source>Don&apos;t create subfolder</source>
+        <translation>Neizveidot apakšmapi</translation>
+    </message>
 </context>
 <context>
     <name>TrackerFiltersList</name>
@@ -5098,6 +5641,26 @@ Atbalsta formātus: S01E01, 1x1, 2017.12.31 un 31.12.2017 (Datumu formātos kā 
         <source>Choose a log level...</source>
         <translation>Atlasiet žurnāla uzskaites detalizētību…</translation>
     </message>
+    <message>
+        <source>Export...</source>
+        <translation>Eksportēt...</translation>
+    </message>
+    <message>
+        <source>Filter activity</source>
+        <translation>Filtrēt darbības</translation>
+    </message>
+    <message>
+        <source>Result:</source>
+        <translation>Rezultāts:</translation>
+    </message>
+    <message>
+        <source>User:</source>
+        <translation>Lietotājs:</translation>
+    </message>
+    <message>
+        <source>WebUI Activity</source>
+        <translation>WebUI darbība</translation>
+    </message>
 </context>
 <context>
     <name>TrackersFilterWidget</name>
@@ -5167,6 +5730,14 @@ Atbalsta formātus: S01E01, 1x1, 2017.12.31 un 31.12.2017 (Datumu formātos kā 
     <message>
         <source>Torrent share limits</source>
         <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Torrent share limits</source>
+        <translation>Torrenta dalīšanas ierobežojumi</translation>
+    </message>
+    <message>
+        <source>Your role saves torrents in the default folders.</source>
+        <translation>Jūsu loma saglabā torrentus noklusējuma mapēs.</translation>
     </message>
 </context>
 <context>
@@ -5266,6 +5837,14 @@ Atbalsta formātus: S01E01, 1x1, 2017.12.31 un 31.12.2017 (Datumu formātos kā 
     <message>
         <source>Invalid Username or Password.</source>
         <translation>Nederīgs lietotājvārds vai parole.</translation>
+    </message>
+    <message>
+        <source>A kettle is a group of hawks soaring together.</source>
+        <translation>Kettle ir kopā planējošu vanagu bars.</translation>
+    </message>
+    <message>
+        <source>Sign in</source>
+        <translation>Pieteikties</translation>
     </message>
 </context>
 <context>
@@ -5474,6 +6053,22 @@ Atbalsta formātus: S01E01, 1x1, 2017.12.31 un 31.12.2017 (Datumu formātos kā 
         <source>If checked, filenames starting with a period punctuation mark `.` will not be added to the created torrent.</source>
         <translation type="unfinished" />
     </message>
+    <message>
+        <source>Align to piece boundary for files larger than:</source>
+        <translation>Pielāgot daļiņu robežas failiem, kuri lielāki par:</translation>
+    </message>
+    <message>
+        <source>Optimize alignment</source>
+        <translation>Optimizēt izvietojumu</translation>
+    </message>
+    <message>
+        <source>Private torrent (Won&apos;t distribute on DHT network)</source>
+        <translation>Privāts torrents (netiks koplietots DHT tīklā)</translation>
+    </message>
+    <message>
+        <source>Start seeding immediately</source>
+        <translation>Sākt koplietošanu uzreiz pēc torrenta izveides</translation>
+    </message>
 </context>
 <context>
     <name>DownloadFromURLDialog</name>
@@ -5584,6 +6179,10 @@ Atbalsta formātus: S01E01, 1x1, 2017.12.31 un 31.12.2017 (Datumu formātos kā 
         <source>Failed to set speed limits</source>
         <translation type="unfinished" />
     </message>
+    <message>
+        <source>Speed limits</source>
+        <translation>Ātrumu ierobežojumi</translation>
+    </message>
 </context>
 <context>
     <name>ListWidget</name>
@@ -5594,6 +6193,10 @@ Atbalsta formātus: S01E01, 1x1, 2017.12.31 un 31.12.2017 (Datumu formātos kā 
     <message>
         <source>Resize</source>
         <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Reset Auto Width</source>
+        <translation>Atiestatīt automātisko platumu</translation>
     </message>
 </context>
 <context>
@@ -5724,6 +6327,30 @@ Atbalsta formātus: S01E01, 1x1, 2017.12.31 un 31.12.2017 (Datumu formātos kā 
         <source>Remove torrent</source>
         <translation type="unfinished" />
     </message>
+    <message>
+        <source>Action when the limit is reached:</source>
+        <translation>Darbība, kad limits ir sasniegts:</translation>
+    </message>
+    <message>
+        <source>Inactive seeding time:</source>
+        <translation>Neaktīvais augšupielādes laiks:</translation>
+    </message>
+    <message>
+        <source>Ratio:</source>
+        <translation>L/A Attiecība: </translation>
+    </message>
+    <message>
+        <source>Seeding time:</source>
+        <translation>Augšupielādes laiks:</translation>
+    </message>
+    <message>
+        <source>Set to</source>
+        <translation>Uzstādīt</translation>
+    </message>
+    <message>
+        <source>Unlimited</source>
+        <translation>Neierobežots</translation>
+    </message>
 </context>
 <context>
     <name>TorrentContent</name>
@@ -5734,6 +6361,216 @@ Atbalsta formātus: S01E01, 1x1, 2017.12.31 un 31.12.2017 (Datumu formātos kā 
     <message>
         <source>Not available for folders</source>
         <translation type="unfinished" />
+    </message>
+</context>
+<context>
+    <name>UserAccounts</name>
+    <message>
+        <source>(this browser)</source>
+        <translation>(šis pārlūks)</translation>
+    </message>
+    <message>
+        <source>A role decides what its users are allowed to do.</source>
+        <translation>Loma nosaka, ko drīkst darīt tās lietotāji.</translation>
+    </message>
+    <message>
+        <source>Add Role</source>
+        <translation>Pievienot lomu</translation>
+    </message>
+    <message>
+        <source>Add Role...</source>
+        <translation>Pievienot lomu...</translation>
+    </message>
+    <message>
+        <source>Add User</source>
+        <translation>Pievienot lietotāju</translation>
+    </message>
+    <message>
+        <source>Add User...</source>
+        <translation>Pievienot lietotāju...</translation>
+    </message>
+    <message>
+        <source>Are you sure you want to remove the role &apos;%1&apos;?</source>
+        <translation>Vai tiešām vēlaties noņemt lomu „%1”?</translation>
+    </message>
+    <message>
+        <source>Are you sure you want to remove the user &apos;%1&apos;?</source>
+        <translation>Vai tiešām vēlaties noņemt lietotāju „%1”?</translation>
+    </message>
+    <message>
+        <source>At least %1 characters</source>
+        <translation>Vismaz %1 rakstzīmes</translation>
+    </message>
+    <message>
+        <source>Browser</source>
+        <translation>Pārlūks</translation>
+    </message>
+    <message>
+        <source>Browsers and devices where someone is logged in with a user account.</source>
+        <translation>Pārlūki un ierīces, kur kāds ir pieteicies ar lietotāja kontu.</translation>
+    </message>
+    <message>
+        <source>Change Password</source>
+        <translation>Mainīt paroli</translation>
+    </message>
+    <message>
+        <source>Confirm password:</source>
+        <translation>Apstiprināt paroli:</translation>
+    </message>
+    <message>
+        <source>Created</source>
+        <translation>Izveidots</translation>
+    </message>
+    <message>
+        <source>Current password:</source>
+        <translation>Pašreizējā parole:</translation>
+    </message>
+    <message>
+        <source>Description</source>
+        <translation>Apraksts</translation>
+    </message>
+    <message>
+        <source>Description:</source>
+        <translation>Apraksts:</translation>
+    </message>
+    <message>
+        <source>Disable</source>
+        <translation>Atspējot</translation>
+    </message>
+    <message>
+        <source>Disable this account</source>
+        <translation>Atspējot šo kontu</translation>
+    </message>
+    <message>
+        <source>Edit Role</source>
+        <translation>Rediģēt lomu</translation>
+    </message>
+    <message>
+        <source>Edit User</source>
+        <translation>Rediģēt lietotāju</translation>
+    </message>
+    <message>
+        <source>Edit...</source>
+        <translation>Rediģēt...</translation>
+    </message>
+    <message>
+        <source>Enable</source>
+        <translation>Iespējot</translation>
+    </message>
+    <message>
+        <source>Enter a role name.</source>
+        <translation>Ievadiet lomas nosaukumu.</translation>
+    </message>
+    <message>
+        <source>Enter a username.</source>
+        <translation>Ievadiet lietotājvārdu.</translation>
+    </message>
+    <message>
+        <source>Expires</source>
+        <translation>Beidzas</translation>
+    </message>
+    <message>
+        <source>Gives control over the PC or qBittorrent itself</source>
+        <translation>Dod kontroli pār datoru vai pašu qBittorrent</translation>
+    </message>
+    <message>
+        <source>Last active</source>
+        <translation>Pēdējā darbība</translation>
+    </message>
+    <message>
+        <source>Last login</source>
+        <translation>Pēdējā pieteikšanās</translation>
+    </message>
+    <message>
+        <source>Leave empty to keep the current password</source>
+        <translation>Atstājiet tukšu, lai paturētu pašreizējo paroli</translation>
+    </message>
+    <message>
+        <source>Log Out</source>
+        <translation>Izrakstīties</translation>
+    </message>
+    <message>
+        <source>Log Out Everywhere</source>
+        <translation>Izrakstīties visur</translation>
+    </message>
+    <message>
+        <source>Logged In</source>
+        <translation>Pieteikušies</translation>
+    </message>
+    <message>
+        <source>Logged in</source>
+        <translation>Pieteicies</translation>
+    </message>
+    <message>
+        <source>New password:</source>
+        <translation>Jaunā parole:</translation>
+    </message>
+    <message>
+        <source>No accounts yet, so everyone still uses the shared WebUI login. Add an Admin account first.</source>
+        <translation>Kontu vēl nav, tāpēc visi joprojām izmanto kopīgo WebUI pieteikšanos. Vispirms pievienojiet Admin kontu.</translation>
+    </message>
+    <message>
+        <source>People who can log in to the WebUI with their own username and password.</source>
+        <translation>Cilvēki, kas var pieteikties WebUI ar savu lietotājvārdu un paroli.</translation>
+    </message>
+    <message>
+        <source>Permissions</source>
+        <translation>Atļaujas</translation>
+    </message>
+    <message>
+        <source>Role</source>
+        <translation>Loma</translation>
+    </message>
+    <message>
+        <source>Role:</source>
+        <translation>Loma:</translation>
+    </message>
+    <message>
+        <source>Roles</source>
+        <translation>Lomas</translation>
+    </message>
+    <message>
+        <source>The password must be at least %1 characters long.</source>
+        <translation>Parolei jābūt vismaz %1 rakstzīmes garai.</translation>
+    </message>
+    <message>
+        <source>The passwords don&apos;t match.</source>
+        <translation>Paroles nesakrīt.</translation>
+    </message>
+    <message>
+        <source>User</source>
+        <translation>Lietotājs</translation>
+    </message>
+    <message>
+        <source>Users</source>
+        <translation>Lietotāji</translation>
+    </message>
+    <message>
+        <source>Your password was changed. Other browsers and devices where you were logged in have been logged out.</source>
+        <translation>Jūsu parole tika nomainīta. Citi pārlūki un ierīces, kur bijāt pieteicies, tika izrakstīti.</translation>
+    </message>
+</context>
+<context>
+    <name>WebUIActivity</name>
+    <message>
+        <source>Action</source>
+        <translation>Darbība</translation>
+    </message>
+    <message>
+        <source>Result</source>
+        <translation>Rezultāts</translation>
+    </message>
+    <message>
+        <source>Role</source>
+        <translation>Loma</translation>
+    </message>
+    <message>
+        <source>Time</source>
+        <translation>Laiks</translation>
+    </message>
+    <message>
+        <source>User</source>
+        <translation>Lietotājs</translation>
     </message>
 </context>
 </TS>

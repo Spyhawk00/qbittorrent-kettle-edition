@@ -141,6 +141,62 @@
         <source>The free IP to Country Lite database by DB-IP is used for resolving the countries of peers. The database is licensed under the Creative Commons Attribution 4.0 International License</source>
         <translation>Laisvas Šalių Lite IP duomenų bazėje pagal DB-IP naudojamas šalių sprendimui dėl partnerių.  Duomenų bazė yra licencijuota pagal Creative Commons Attribution 4.0 tarptautinę licenciją</translation>
     </message>
+    <message>
+        <source>This edition</source>
+        <translation>Šis leidimas</translation>
+    </message>
+    <message>
+        <source>Edition version:</source>
+        <translation>Leidimo versija:</translation>
+    </message>
+    <message>
+        <source>Based on:</source>
+        <translation>Pagrįsta:</translation>
+    </message>
+    <message>
+        <source>Maintainer:</source>
+        <translation>Prižiūrėtojas:</translation>
+    </message>
+    <message>
+        <source>qBittorrent project:</source>
+        <translation>qBittorrent projektas:</translation>
+    </message>
+    <message>
+        <source>Kettle Edition is a personal build of qBittorrent that adds user accounts with roles for the WebUI and the desktop app, an activity log, and an installable WebUI with a phone layout. A kettle is a group of hawks soaring together. This is an unofficial build, not affiliated with the qBittorrent project.</source>
+        <translation>Kettle Edition yra asmeninė qBittorrent versija, pridedanti naudotojų paskyras su vaidmenimis WebUI ir darbalaukio programai, veiklos žurnalą ir įdiegiamą WebUI su telefono išdėstymu. Kettle yra kartu sklandančių vanagų būrys. Tai neoficiali versija, nesusijusi su qBittorrent projektu.</translation>
+    </message>
+    <message>
+        <source>N/A</source>
+        <translation>Nėra</translation>
+    </message>
+    <message>
+        <source>This edition</source>
+        <translation>Šis leidimas</translation>
+    </message>
+    <message>
+        <source>Edition version:</source>
+        <translation>Leidimo versija:</translation>
+    </message>
+    <message>
+        <source>Based on:</source>
+        <translation>Pagrįsta:</translation>
+    </message>
+    <message>
+        <source>Maintainer:</source>
+        <translation>Prižiūrėtojas:</translation>
+    </message>
+    <message>
+        <source>qBittorrent project:</source>
+        <translation>qBittorrent projektas:</translation>
+    </message>
+    <message>
+        <source>Kettle Edition is a personal build of qBittorrent that adds user accounts with roles for the WebUI and the desktop app, an activity log, and an installable WebUI with a phone layout. A kettle is a group of hawks soaring together. This is an unofficial build, not affiliated with the qBittorrent project.</source>
+        <translation>Kettle Edition yra asmeninė qBittorrent versija, pridedanti naudotojų paskyras su vaidmenimis WebUI ir darbalaukio programai, veiklos žurnalą ir įdiegiamą WebUI su telefono išdėstymu. Kettle yra kartu sklandančių vanagų būrys. Tai neoficiali versija, nesusijusi su qBittorrent projektu.</translation>
+    </message>
+    <message>
+        <source>N/A</source>
+        <translation>Nėra</translation>
+    </message>
 </context>
 <context>
     <name>AbstractFileStorage</name>
@@ -1459,6 +1515,62 @@
         <location filename="../gui/advancedsettings.cpp" line="925"/>
         <source>Embedded tracker port</source>
         <translation>Įtaisytojo seklio prievadas</translation>
+    </message>
+    <message>
+        <source>Network</source>
+        <translation>Tinklas</translation>
+    </message>
+    <message>
+        <source>Storage</source>
+        <translation>Saugykla</translation>
+    </message>
+    <message>
+        <source>Peers and trackers</source>
+        <translation>Siuntėjai ir sekliai</translation>
+    </message>
+    <message>
+        <source>Program behavior</source>
+        <translation>Programos elgsena</translation>
+    </message>
+    <message>
+        <source>Display and notifications</source>
+        <translation>Vaizdas ir pranešimai</translation>
+    </message>
+    <message>
+        <source>Network connection</source>
+        <translation>Tinklo jungiamumas</translation>
+    </message>
+    <message>
+        <source>Security and privacy</source>
+        <translation>Saugumas ir privatumas</translation>
+    </message>
+    <message>
+        <source>Connection tuning</source>
+        <translation>Jungiamumo derinimas</translation>
+    </message>
+    <message>
+        <source>Saving and torrent files</source>
+        <translation>Įrašymas ir torrent failai</translation>
+    </message>
+    <message>
+        <source>Disk and memory</source>
+        <translation>Diskas ir atmintis</translation>
+    </message>
+    <message>
+        <source>Peers and seeding</source>
+        <translation>Siuntėjai ir skleidimas</translation>
+    </message>
+    <message>
+        <source>DHT and I2P</source>
+        <translation>DHT ir I2P</translation>
+    </message>
+    <message>
+        <source>General</source>
+        <translation>Bendra</translation>
+    </message>
+    <message>
+        <source>Trackers</source>
+        <translation>Sekliai</translation>
     </message>
 </context>
 <context>
@@ -3464,6 +3576,22 @@ Palaiko formatus: S01E01, 1x1, 2017.12.31 ir 31.12.2017 (Datos formatai taip pat
         <source>Remove torrent</source>
         <translation>Šalinti torentą</translation>
     </message>
+    <message>
+        <source>This choice is remembered for the next removal.</source>
+        <translation>Šis pasirinkimas bus prisimintas kitam pašalinimui.</translation>
+    </message>
+    <message>
+        <source>Remove</source>
+        <translation>Pašalinti</translation>
+    </message>
+    <message>
+        <source>This choice is remembered for the next removal.</source>
+        <translation>Šis pasirinkimas bus prisimintas kitam pašalinimui.</translation>
+    </message>
+    <message>
+        <source>Remove</source>
+        <translation>Pašalinti</translation>
+    </message>
 </context>
 <context>
     <name>DownloadFromURLDialog</name>
@@ -3537,6 +3665,14 @@ Palaiko formatus: S01E01, 1x1, 2017.12.31 ir 31.12.2017 (Datos formatai taip pat
         <location filename="../gui/executionlogwidget.cpp" line="99"/>
         <source>Clear</source>
         <translation>Išvalyti</translation>
+    </message>
+    <message>
+        <source>WebUI Activity</source>
+        <translation>WebUI veikla</translation>
+    </message>
+    <message>
+        <source>WebUI Activity</source>
+        <translation>WebUI veikla</translation>
     </message>
 </context>
 <context>
@@ -4701,6 +4837,46 @@ Minimali versija yra: %2.</translation>
         <location filename="../gui/mainwindow.cpp" line="1346"/>
         <source>Torrent Files</source>
         <translation>Torentų failai</translation>
+    </message>
+    <message>
+        <source>Kettle Edition %1 is available.</source>
+        <translation>Kettle Edition %1 yra prieinama.</translation>
+    </message>
+    <message>
+        <source>qBittorrent Kettle Edition %1 is available. It is downloaded now and installed at 4:00 AM, or when qBittorrent starts next.</source>
+        <translation>qBittorrent Kettle Edition %1 yra prieinama. Ji dabar atsisiunčiama ir bus įdiegta 4:00 val. arba kitą kartą paleidus qBittorrent.</translation>
+    </message>
+    <message>
+        <source>qBittorrent Kettle Edition %1 is available. It is downloaded now. Turn on &quot;Automatically install Kettle Edition updates&quot; in Options to install it.</source>
+        <translation>qBittorrent Kettle Edition %1 yra prieinama. Ji dabar atsisiunčiama. Norėdami ją įdiegti, Parinktyse įjunkite „Automatiškai diegti Kettle Edition naujinimus“.</translation>
+    </message>
+    <message>
+        <source>You have the latest qBittorrent Kettle Edition (%1).</source>
+        <translation>Turite naujausią qBittorrent Kettle Edition (%1).</translation>
+    </message>
+    <message>
+        <source>Could not check for qBittorrent Kettle Edition updates. See the Execution Log for details.</source>
+        <translation>Nepavyko patikrinti qBittorrent Kettle Edition naujinimų. Išsamią informaciją rasite vykdymo žurnale.</translation>
+    </message>
+    <message>
+        <source>Kettle Edition %1 is available.</source>
+        <translation>Kettle Edition %1 yra prieinama.</translation>
+    </message>
+    <message>
+        <source>qBittorrent Kettle Edition %1 is available. It is downloaded now and installed at 4:00 AM, or when qBittorrent starts next.</source>
+        <translation>qBittorrent Kettle Edition %1 yra prieinama. Ji dabar atsisiunčiama ir bus įdiegta 4:00 val. arba kitą kartą paleidus qBittorrent.</translation>
+    </message>
+    <message>
+        <source>qBittorrent Kettle Edition %1 is available. It is downloaded now. Turn on &quot;Automatically install Kettle Edition updates&quot; in Options to install it.</source>
+        <translation>qBittorrent Kettle Edition %1 yra prieinama. Ji dabar atsisiunčiama. Norėdami ją įdiegti, Parinktyse įjunkite „Automatiškai diegti Kettle Edition naujinimus“.</translation>
+    </message>
+    <message>
+        <source>You have the latest qBittorrent Kettle Edition (%1).</source>
+        <translation>Turite naujausią qBittorrent Kettle Edition (%1).</translation>
+    </message>
+    <message>
+        <source>Could not check for qBittorrent Kettle Edition updates. See the Execution Log for details.</source>
+        <translation>Nepavyko patikrinti qBittorrent Kettle Edition naujinimų. Išsamią informaciją rasite vykdymo žurnale.</translation>
     </message>
 </context>
 <context>
@@ -8413,6 +8589,190 @@ Check the Execution Log for errors.</source>
         <source>Length Error</source>
         <translation>Ilgio klaida</translation>
     </message>
+    <message>
+        <source>Search settings</source>
+        <translation>Ieškoti nustatymuose</translation>
+    </message>
+    <message>
+        <source>No settings match</source>
+        <translation>Nėra atitinkančių nustatymų</translation>
+    </message>
+    <message>
+        <source>User Accounts</source>
+        <translation>Naudotojų paskyros</translation>
+    </message>
+    <message>
+        <source>Automatically install Kettle Edition updates</source>
+        <translation>Automatiškai diegti Kettle Edition naujinimus</translation>
+    </message>
+    <message>
+        <source>Status bar and log</source>
+        <translation>Būsenos juosta ir žurnalas</translation>
+    </message>
+    <message>
+        <source>Files</source>
+        <translation>Failai</translation>
+    </message>
+    <message>
+        <source>Checking</source>
+        <translation>Tikrinimas</translation>
+    </message>
+    <message>
+        <source>Until the first user account is created, this login always works.</source>
+        <translation>Kol nesukurta pirmoji naudotojo paskyra, šis prisijungimas visada veikia.</translation>
+    </message>
+    <message>
+        <source>Allow this login when user accounts exist</source>
+        <translation>Leisti šį prisijungimą, kai yra naudotojų paskyrų</translation>
+    </message>
+    <message>
+        <source>Access</source>
+        <translation>Prieiga</translation>
+    </message>
+    <message>
+        <source>Changes to users, roles and logins apply at once. The settings below apply with OK or Apply.</source>
+        <translation>Naudotojų, vaidmenų ir prisijungimų pakeitimai pritaikomi iškart. Toliau pateikti nustatymai pritaikomi su Gerai arba Taikyti.</translation>
+    </message>
+    <message>
+        <source>Logins and Activity Log</source>
+        <translation>Prisijungimai ir veiklos žurnalas</translation>
+    </message>
+    <message>
+        <source>0 means users are logged out after the session timeout.</source>
+        <translation>0 reiškia, kad naudotojai atjungiami pasibaigus seanso laiko limitui.</translation>
+    </message>
+    <message>
+        <source>Keep users logged in for:</source>
+        <translation>Laikyti naudotojus prisijungusius:</translation>
+    </message>
+    <message>
+        <source>Until session timeout</source>
+        <translation>Iki seanso laiko limito</translation>
+    </message>
+    <message>
+        <source> days</source>
+        <translation> d.</translation>
+    </message>
+    <message>
+        <source>Lock account after consecutive failures:</source>
+        <translation>Užrakinti paskyrą po iš eilės nesėkmių:</translation>
+    </message>
+    <message>
+        <source>Keep WebUI activity log for:</source>
+        <translation>Laikyti WebUI veiklos žurnalą:</translation>
+    </message>
+    <message>
+        <source>lock for:</source>
+        <translation>užrakinti:</translation>
+    </message>
+    <message>
+        <source>%1 works best with Windows dark mode</source>
+        <translation>%1 geriausiai veikia su tamsiuoju Windows režimu</translation>
+    </message>
+    <message>
+        <source>WebUI address</source>
+        <translation>WebUI adresas</translation>
+    </message>
+    <message>
+        <source>With the WebUI address set to %1, only this PC can reach the WebUI. Remote access, including through a reverse proxy on another machine, will stop working.
+
+Save anyway?</source>
+        <translation>Kai WebUI adresas yra %1, WebUI pasiekti gali tik šis kompiuteris. Nuotolinė prieiga, taip pat per atvirkštinį tarpinį serverį kitame kompiuteryje, nustos veikti.
+
+Vis tiek išsaugoti?</translation>
+    </message>
+    <message>
+        <source>Search settings</source>
+        <translation>Ieškoti nustatymuose</translation>
+    </message>
+    <message>
+        <source>No settings match</source>
+        <translation>Nėra atitinkančių nustatymų</translation>
+    </message>
+    <message>
+        <source>User Accounts</source>
+        <translation>Naudotojų paskyros</translation>
+    </message>
+    <message>
+        <source>Automatically install Kettle Edition updates</source>
+        <translation>Automatiškai diegti Kettle Edition naujinimus</translation>
+    </message>
+    <message>
+        <source>Status bar and log</source>
+        <translation>Būsenos juosta ir žurnalas</translation>
+    </message>
+    <message>
+        <source>Files</source>
+        <translation>Failai</translation>
+    </message>
+    <message>
+        <source>Checking</source>
+        <translation>Tikrinimas</translation>
+    </message>
+    <message>
+        <source>Until the first user account is created, this login always works.</source>
+        <translation>Kol nesukurta pirmoji naudotojo paskyra, šis prisijungimas visada veikia.</translation>
+    </message>
+    <message>
+        <source>Allow this login when user accounts exist</source>
+        <translation>Leisti šį prisijungimą, kai yra naudotojų paskyrų</translation>
+    </message>
+    <message>
+        <source>Access</source>
+        <translation>Prieiga</translation>
+    </message>
+    <message>
+        <source>Changes to users, roles and logins apply at once. The settings below apply with OK or Apply.</source>
+        <translation>Naudotojų, vaidmenų ir prisijungimų pakeitimai pritaikomi iškart. Toliau pateikti nustatymai pritaikomi su Gerai arba Taikyti.</translation>
+    </message>
+    <message>
+        <source>Logins and Activity Log</source>
+        <translation>Prisijungimai ir veiklos žurnalas</translation>
+    </message>
+    <message>
+        <source>0 means users are logged out after the session timeout.</source>
+        <translation>0 reiškia, kad naudotojai atjungiami pasibaigus seanso laiko limitui.</translation>
+    </message>
+    <message>
+        <source>Keep users logged in for:</source>
+        <translation>Laikyti naudotojus prisijungusius:</translation>
+    </message>
+    <message>
+        <source>Until session timeout</source>
+        <translation>Iki seanso laiko limito</translation>
+    </message>
+    <message>
+        <source> days</source>
+        <translation> d.</translation>
+    </message>
+    <message>
+        <source>Lock account after consecutive failures:</source>
+        <translation>Užrakinti paskyrą po iš eilės nesėkmių:</translation>
+    </message>
+    <message>
+        <source>Keep WebUI activity log for:</source>
+        <translation>Laikyti WebUI veiklos žurnalą:</translation>
+    </message>
+    <message>
+        <source>lock for:</source>
+        <translation>užrakinti:</translation>
+    </message>
+    <message>
+        <source>%1 works best with Windows dark mode</source>
+        <translation>%1 geriausiai veikia su tamsiuoju Windows režimu</translation>
+    </message>
+    <message>
+        <source>WebUI address</source>
+        <translation>WebUI adresas</translation>
+    </message>
+    <message>
+        <source>With the WebUI address set to %1, only this PC can reach the WebUI. Remote access, including through a reverse proxy on another machine, will stop working.
+
+Save anyway?</source>
+        <translation>Kai WebUI adresas yra %1, WebUI pasiekti gali tik šis kompiuteris. Nuotolinė prieiga, taip pat per atvirkštinį tarpinį serverį kitame kompiuteryje, nustos veikti.
+
+Vis tiek išsaugoti?</translation>
+    </message>
 </context>
 <context>
     <name>PeerInfo</name>
@@ -8665,6 +9025,22 @@ Check the Execution Log for errors.</source>
         <location filename="../gui/properties/peerlistwidget.cpp" line="309"/>
         <source>Copy IP:port</source>
         <translation>Kopijuoti IP:prievadą</translation>
+    </message>
+    <message>
+        <source>Reset auto width</source>
+        <translation>Atkurti automatinį plotį</translation>
+    </message>
+    <message>
+        <source>Fit all non-hidden columns to their contents again, and forget the widths that were set by hand</source>
+        <translation>Iš naujo priderinti visus matomus stulpelius prie jų turinio ir pamiršti rankiniu būdu nustatytus plotus</translation>
+    </message>
+    <message>
+        <source>Reset auto width</source>
+        <translation>Atkurti automatinį plotį</translation>
+    </message>
+    <message>
+        <source>Fit all non-hidden columns to their contents again, and forget the widths that were set by hand</source>
+        <translation>Iš naujo priderinti visus matomus stulpelius prie jų turinio ir pamiršti rankiniu būdu nustatytus plotus</translation>
     </message>
 </context>
 <context>
@@ -10050,6 +10426,14 @@ Atsiprašome, tačiau negalime parodyti šio failo: &quot;%1&quot;.</translation
         <source>Open link</source>
         <translation>Atverti nuorodą</translation>
     </message>
+    <message>
+        <source>Details</source>
+        <translation>Išsamiau</translation>
+    </message>
+    <message>
+        <source>Details</source>
+        <translation>Išsamiau</translation>
+    </message>
 </context>
 <context>
     <name>SearchController</name>
@@ -10399,6 +10783,70 @@ Atsiprašome, tačiau negalime parodyti šio failo: &quot;%1&quot;.</translation
         <source>Resize all non-hidden columns to the size of their contents</source>
         <translation>Pakeiskite visų nepaslėptų stulpelių dydį iki jų turinio dydžio</translation>
     </message>
+    <message>
+        <source>%1 of %2 shown (%3 hidden)</source>
+        <translation>Rodoma %1 iš %2 (%3 paslėpta)</translation>
+    </message>
+    <message>
+        <source>%1 of %2 shown</source>
+        <translation>Rodoma %1 iš %2</translation>
+    </message>
+    <message>
+        <source>Searching: %1</source>
+        <translation>Ieškoma: %1</translation>
+    </message>
+    <message>
+        <source>Finished: %1</source>
+        <translation>Baigta: %1</translation>
+    </message>
+    <message>
+        <source>Search aborted: %1</source>
+        <translation>Paieška nutraukta: %1</translation>
+    </message>
+    <message>
+        <source>Reset auto width</source>
+        <translation>Atkurti automatinį plotį</translation>
+    </message>
+    <message>
+        <source>Fit all non-hidden columns to their contents again, and forget the widths that were set by hand</source>
+        <translation>Iš naujo priderinti visus matomus stulpelius prie jų turinio ir pamiršti rankiniu būdu nustatytus plotus</translation>
+    </message>
+    <message>
+        <source>Unknown</source>
+        <translation>Nežinoma</translation>
+    </message>
+    <message>
+        <source>%1 of %2 shown (%3 hidden)</source>
+        <translation>Rodoma %1 iš %2 (%3 paslėpta)</translation>
+    </message>
+    <message>
+        <source>%1 of %2 shown</source>
+        <translation>Rodoma %1 iš %2</translation>
+    </message>
+    <message>
+        <source>Searching: %1</source>
+        <translation>Ieškoma: %1</translation>
+    </message>
+    <message>
+        <source>Finished: %1</source>
+        <translation>Baigta: %1</translation>
+    </message>
+    <message>
+        <source>Search aborted: %1</source>
+        <translation>Paieška nutraukta: %1</translation>
+    </message>
+    <message>
+        <source>Reset auto width</source>
+        <translation>Atkurti automatinį plotį</translation>
+    </message>
+    <message>
+        <source>Fit all non-hidden columns to their contents again, and forget the widths that were set by hand</source>
+        <translation>Iš naujo priderinti visus matomus stulpelius prie jų turinio ir pamiršti rankiniu būdu nustatytus plotus</translation>
+    </message>
+    <message>
+        <source>Unknown</source>
+        <translation>Nežinoma</translation>
+    </message>
 </context>
 <context>
     <name>SearchPluginManager</name>
@@ -10696,6 +11144,14 @@ Tie papildiniai buvo išjungti.</translation>
         <source>Couldn&apos;t update &quot;%1&quot; search engine plugin. %2</source>
         <translation type="unfinished">Nepavyko atnaujinti &quot;%1&quot; paieškos sistemos papildinio. %2</translation>
     </message>
+    <message>
+        <source>Install Kettle Plugins</source>
+        <translation>Įdiegti Kettle papildinius</translation>
+    </message>
+    <message>
+        <source>Install Kettle Plugins</source>
+        <translation>Įdiegti Kettle papildinius</translation>
+    </message>
 </context>
 <context>
     <name>SearchPluginSourceDialog</name>
@@ -10835,6 +11291,90 @@ Norėdami juos įdiegti, spustelėkite lango apatinėje dešinėje mygtuką &quo
         <location filename="../gui/search/searchwidget.ui" line="58"/>
         <source>Stop</source>
         <translation>Stabdyti</translation>
+    </message>
+    <message>
+        <source>Searches</source>
+        <translation>Paieškos</translation>
+    </message>
+    <message>
+        <source>Close the selected search</source>
+        <translation>Uždaryti pasirinktą paiešką</translation>
+    </message>
+    <message>
+        <source>Search for torrents...</source>
+        <translation>Ieškoti torrentų...</translation>
+    </message>
+    <message>
+        <source>Category to search in</source>
+        <translation>Kategorija, kurioje ieškoma</translation>
+    </message>
+    <message>
+        <source>Search engines to use</source>
+        <translation>Naudojamos paieškos sistemos</translation>
+    </message>
+    <message>
+        <source>There aren&apos;t any search plugins installed.
+Click the &quot;Search plugins...&quot; button at the top right of the window to install some.</source>
+        <translation>Neįdiegta jokių paieškos papildinių.
+Norėdami juos įdiegti, spustelėkite mygtuką „Paieškos papildiniai...“ lango viršuje dešinėje.</translation>
+    </message>
+    <message>
+        <source>Type a search above and press Enter.</source>
+        <translation>Įveskite paiešką aukščiau ir paspauskite Enter.</translation>
+    </message>
+    <message>
+        <source>Refresh search</source>
+        <translation>Atnaujinti paiešką</translation>
+    </message>
+    <message>
+        <source>Close search</source>
+        <translation>Uždaryti paiešką</translation>
+    </message>
+    <message>
+        <source>Close all searches</source>
+        <translation>Uždaryti visas paieškas</translation>
+    </message>
+    <message>
+        <source>Searches</source>
+        <translation>Paieškos</translation>
+    </message>
+    <message>
+        <source>Close the selected search</source>
+        <translation>Uždaryti pasirinktą paiešką</translation>
+    </message>
+    <message>
+        <source>Search for torrents...</source>
+        <translation>Ieškoti torrentų...</translation>
+    </message>
+    <message>
+        <source>Category to search in</source>
+        <translation>Kategorija, kurioje ieškoma</translation>
+    </message>
+    <message>
+        <source>Search engines to use</source>
+        <translation>Naudojamos paieškos sistemos</translation>
+    </message>
+    <message>
+        <source>There aren&apos;t any search plugins installed.
+Click the &quot;Search plugins...&quot; button at the top right of the window to install some.</source>
+        <translation>Neįdiegta jokių paieškos papildinių.
+Norėdami juos įdiegti, spustelėkite mygtuką „Paieškos papildiniai...“ lango viršuje dešinėje.</translation>
+    </message>
+    <message>
+        <source>Type a search above and press Enter.</source>
+        <translation>Įveskite paiešką aukščiau ir paspauskite Enter.</translation>
+    </message>
+    <message>
+        <source>Refresh search</source>
+        <translation>Atnaujinti paiešką</translation>
+    </message>
+    <message>
+        <source>Close search</source>
+        <translation>Uždaryti paiešką</translation>
+    </message>
+    <message>
+        <source>Close all searches</source>
+        <translation>Uždaryti visas paieškas</translation>
     </message>
 </context>
 <context>
@@ -11297,6 +11837,326 @@ Norėdami juos įdiegti, spustelėkite lango apatinėje dešinėje mygtuką &quo
         <location filename="../gui/statsdialog.cpp" line="111"/>
         <source>%1 ms</source>
         <translation type="unfinished">%1 ms</translation>
+    </message>
+    <message>
+        <source>Copy</source>
+        <translation>Kopijuoti</translation>
+    </message>
+    <message>
+        <source>Overview</source>
+        <translation>Apžvalga</translation>
+    </message>
+    <message>
+        <source>Transfer</source>
+        <translation>Perdavimas</translation>
+    </message>
+    <message>
+        <source>This session</source>
+        <translation>Šis seansas</translation>
+    </message>
+    <message>
+        <source>All time</source>
+        <translation>Visą laiką</translation>
+    </message>
+    <message>
+        <source>Downloaded:</source>
+        <translation>Atsisiųsta:</translation>
+    </message>
+    <message>
+        <source>Uploaded:</source>
+        <translation>Išsiųsta:</translation>
+    </message>
+    <message>
+        <source>Share ratio:</source>
+        <translation>Dalijimosi santykis:</translation>
+    </message>
+    <message>
+        <source>Current speed:</source>
+        <translation>Dabartinis greitis:</translation>
+    </message>
+    <message>
+        <source>Activity</source>
+        <translation>Veikla</translation>
+    </message>
+    <message>
+        <source>Torrents downloading:</source>
+        <translation>Atsisiunčiami torrentai:</translation>
+    </message>
+    <message>
+        <source>Torrents seeding:</source>
+        <translation>Skleidžiami torrentai:</translation>
+    </message>
+    <message>
+        <source>Torrents stopped:</source>
+        <translation>Sustabdyti torrentai:</translation>
+    </message>
+    <message>
+        <source>Torrents with errors:</source>
+        <translation>Torrentai su klaidomis:</translation>
+    </message>
+    <message>
+        <source>Running for:</source>
+        <translation>Veikia:</translation>
+    </message>
+    <message>
+        <source>History</source>
+        <translation>Istorija</translation>
+    </message>
+    <message>
+        <source>Period</source>
+        <translation>Laikotarpis</translation>
+    </message>
+    <message>
+        <source>Today</source>
+        <translation>Šiandien</translation>
+    </message>
+    <message>
+        <source>Last 7 days</source>
+        <translation>Paskutinės 7 dienos</translation>
+    </message>
+    <message>
+        <source>This month</source>
+        <translation>Šis mėnuo</translation>
+    </message>
+    <message>
+        <source>Last month</source>
+        <translation>Praėjęs mėnuo</translation>
+    </message>
+    <message>
+        <source>Last 12 months</source>
+        <translation>Paskutiniai 12 mėnesių</translation>
+    </message>
+    <message>
+        <source>Tracking since:</source>
+        <translation>Stebima nuo:</translation>
+    </message>
+    <message>
+        <source>By month</source>
+        <translation>Pagal mėnesį</translation>
+    </message>
+    <message>
+        <source>Month</source>
+        <translation>Mėnuo</translation>
+    </message>
+    <message>
+        <source>Downloaded</source>
+        <translation>Atsisiųsta</translation>
+    </message>
+    <message>
+        <source>Uploaded</source>
+        <translation>Išsiųsta</translation>
+    </message>
+    <message>
+        <source>Share ratio</source>
+        <translation>Dalijimosi santykis</translation>
+    </message>
+    <message>
+        <source>WebUI downloads added, this month</source>
+        <translation>Per WebUI pridėti atsisiuntimai, šį mėnesį</translation>
+    </message>
+    <message>
+        <source>Counts the requests that added a download. Apps without a login, such as Sonarr and Radarr, are shown as (localhost). Downloads added in the desktop window are not counted.</source>
+        <translation>Skaičiuoja užklausas, kurios pridėjo atsisiuntimą. Programos be prisijungimo, tokios kaip Sonarr ir Radarr, rodomos kaip (localhost). Darbalaukio lange pridėti atsisiuntimai neskaičiuojami.</translation>
+    </message>
+    <message>
+        <source>Technical</source>
+        <translation>Techninė informacija</translation>
+    </message>
+    <message>
+        <source>Disk</source>
+        <translation>Diskas</translation>
+    </message>
+    <message>
+        <source>Peers waiting on disk writes:</source>
+        <translation>Siuntėjai, laukiantys įrašymo į diską:</translation>
+    </message>
+    <message>
+        <source>Peers waiting on disk reads:</source>
+        <translation>Siuntėjai, laukiantys skaitymo iš disko:</translation>
+    </message>
+    <message>
+        <source>Network</source>
+        <translation>Tinklas</translation>
+    </message>
+    <message>
+        <source>DHT nodes:</source>
+        <translation>DHT mazgai:</translation>
+    </message>
+    <message>
+        <source>Data discarded this session:</source>
+        <translation>Šiame seanse atmesti duomenys:</translation>
+    </message>
+    <message>
+        <source>Before tracking began</source>
+        <translation>Prieš pradedant stebėjimą</translation>
+    </message>
+    <message>
+        <source>Nothing added yet</source>
+        <translation>Dar nieko nepridėta</translation>
+    </message>
+    <message>
+        <source>Off</source>
+        <translation>Išjungta</translation>
+    </message>
+    <message>
+        <source>Copy</source>
+        <translation>Kopijuoti</translation>
+    </message>
+    <message>
+        <source>Overview</source>
+        <translation>Apžvalga</translation>
+    </message>
+    <message>
+        <source>Transfer</source>
+        <translation>Perdavimas</translation>
+    </message>
+    <message>
+        <source>This session</source>
+        <translation>Šis seansas</translation>
+    </message>
+    <message>
+        <source>All time</source>
+        <translation>Visą laiką</translation>
+    </message>
+    <message>
+        <source>Downloaded:</source>
+        <translation>Atsisiųsta:</translation>
+    </message>
+    <message>
+        <source>Uploaded:</source>
+        <translation>Išsiųsta:</translation>
+    </message>
+    <message>
+        <source>Share ratio:</source>
+        <translation>Dalijimosi santykis:</translation>
+    </message>
+    <message>
+        <source>Current speed:</source>
+        <translation>Dabartinis greitis:</translation>
+    </message>
+    <message>
+        <source>Activity</source>
+        <translation>Veikla</translation>
+    </message>
+    <message>
+        <source>Torrents downloading:</source>
+        <translation>Atsisiunčiami torrentai:</translation>
+    </message>
+    <message>
+        <source>Torrents seeding:</source>
+        <translation>Skleidžiami torrentai:</translation>
+    </message>
+    <message>
+        <source>Torrents stopped:</source>
+        <translation>Sustabdyti torrentai:</translation>
+    </message>
+    <message>
+        <source>Torrents with errors:</source>
+        <translation>Torrentai su klaidomis:</translation>
+    </message>
+    <message>
+        <source>Running for:</source>
+        <translation>Veikia:</translation>
+    </message>
+    <message>
+        <source>History</source>
+        <translation>Istorija</translation>
+    </message>
+    <message>
+        <source>Period</source>
+        <translation>Laikotarpis</translation>
+    </message>
+    <message>
+        <source>Today</source>
+        <translation>Šiandien</translation>
+    </message>
+    <message>
+        <source>Last 7 days</source>
+        <translation>Paskutinės 7 dienos</translation>
+    </message>
+    <message>
+        <source>This month</source>
+        <translation>Šis mėnuo</translation>
+    </message>
+    <message>
+        <source>Last month</source>
+        <translation>Praėjęs mėnuo</translation>
+    </message>
+    <message>
+        <source>Last 12 months</source>
+        <translation>Paskutiniai 12 mėnesių</translation>
+    </message>
+    <message>
+        <source>Tracking since:</source>
+        <translation>Stebima nuo:</translation>
+    </message>
+    <message>
+        <source>By month</source>
+        <translation>Pagal mėnesį</translation>
+    </message>
+    <message>
+        <source>Month</source>
+        <translation>Mėnuo</translation>
+    </message>
+    <message>
+        <source>Downloaded</source>
+        <translation>Atsisiųsta</translation>
+    </message>
+    <message>
+        <source>Uploaded</source>
+        <translation>Išsiųsta</translation>
+    </message>
+    <message>
+        <source>Share ratio</source>
+        <translation>Dalijimosi santykis</translation>
+    </message>
+    <message>
+        <source>WebUI downloads added, this month</source>
+        <translation>Per WebUI pridėti atsisiuntimai, šį mėnesį</translation>
+    </message>
+    <message>
+        <source>Counts the requests that added a download. Apps without a login, such as Sonarr and Radarr, are shown as (localhost). Downloads added in the desktop window are not counted.</source>
+        <translation>Skaičiuoja užklausas, kurios pridėjo atsisiuntimą. Programos be prisijungimo, tokios kaip Sonarr ir Radarr, rodomos kaip (localhost). Darbalaukio lange pridėti atsisiuntimai neskaičiuojami.</translation>
+    </message>
+    <message>
+        <source>Technical</source>
+        <translation>Techninė informacija</translation>
+    </message>
+    <message>
+        <source>Disk</source>
+        <translation>Diskas</translation>
+    </message>
+    <message>
+        <source>Peers waiting on disk writes:</source>
+        <translation>Siuntėjai, laukiantys įrašymo į diską:</translation>
+    </message>
+    <message>
+        <source>Peers waiting on disk reads:</source>
+        <translation>Siuntėjai, laukiantys skaitymo iš disko:</translation>
+    </message>
+    <message>
+        <source>Network</source>
+        <translation>Tinklas</translation>
+    </message>
+    <message>
+        <source>DHT nodes:</source>
+        <translation>DHT mazgai:</translation>
+    </message>
+    <message>
+        <source>Data discarded this session:</source>
+        <translation>Šiame seanse atmesti duomenys:</translation>
+    </message>
+    <message>
+        <source>Before tracking began</source>
+        <translation>Prieš pradedant stebėjimą</translation>
+    </message>
+    <message>
+        <source>Nothing added yet</source>
+        <translation>Dar nieko nepridėta</translation>
+    </message>
+    <message>
+        <source>Off</source>
+        <translation>Išjungta</translation>
     </message>
 </context>
 <context>
@@ -11992,6 +12852,22 @@ Pasirinkite kitokį pavadinimą ir bandykite dar kartą.</translation>
     <message>
         <source>Priority by shown file order</source>
         <translation type="vanished">Svarbumas pagal rodomą failų tvarką</translation>
+    </message>
+    <message>
+        <source>Reset auto width</source>
+        <translation>Atkurti automatinį plotį</translation>
+    </message>
+    <message>
+        <source>Fit all non-hidden columns to their contents again, and forget the widths that were set by hand</source>
+        <translation>Iš naujo priderinti visus matomus stulpelius prie jų turinio ir pamiršti rankiniu būdu nustatytus plotus</translation>
+    </message>
+    <message>
+        <source>Reset auto width</source>
+        <translation>Atkurti automatinį plotį</translation>
+    </message>
+    <message>
+        <source>Fit all non-hidden columns to their contents again, and forget the widths that were set by hand</source>
+        <translation>Iš naujo priderinti visus matomus stulpelius prie jų turinio ir pamiršti rankiniu būdu nustatytus plotus</translation>
     </message>
 </context>
 <context>
@@ -13071,6 +13947,22 @@ Pasirinkite kitokį pavadinimą ir bandykite dar kartą.</translation>
         <source>Column visibility</source>
         <translation>Stulpelio matomumas</translation>
     </message>
+    <message>
+        <source>Reset auto width</source>
+        <translation>Atkurti automatinį plotį</translation>
+    </message>
+    <message>
+        <source>Fit all non-hidden columns to their contents again, and forget the widths that were set by hand</source>
+        <translation>Iš naujo priderinti visus matomus stulpelius prie jų turinio ir pamiršti rankiniu būdu nustatytus plotus</translation>
+    </message>
+    <message>
+        <source>Reset auto width</source>
+        <translation>Atkurti automatinį plotį</translation>
+    </message>
+    <message>
+        <source>Fit all non-hidden columns to their contents again, and forget the widths that were set by hand</source>
+        <translation>Iš naujo priderinti visus matomus stulpelius prie jų turinio ir pamiršti rankiniu būdu nustatytus plotus</translation>
+    </message>
 </context>
 <context>
     <name>TrackerStatusFilterWidget</name>
@@ -13937,6 +14829,22 @@ Pasirinkite kitokį pavadinimą ir bandykite dar kartą.</translation>
         <source>Super seeding mode</source>
         <translation>Super skleidimo režimas</translation>
     </message>
+    <message>
+        <source>Reset auto width</source>
+        <translation>Atkurti automatinį plotį</translation>
+    </message>
+    <message>
+        <source>Fit all non-hidden columns to their contents again, and forget the widths that were set by hand</source>
+        <translation>Iš naujo priderinti visus matomus stulpelius prie jų turinio ir pamiršti rankiniu būdu nustatytus plotus</translation>
+    </message>
+    <message>
+        <source>Reset auto width</source>
+        <translation>Atkurti automatinį plotį</translation>
+    </message>
+    <message>
+        <source>Fit all non-hidden columns to their contents again, and forget the widths that were set by hand</source>
+        <translation>Iš naujo priderinti visus matomus stulpelius prie jų turinio ir pamiršti rankiniu būdu nustatytus plotus</translation>
+    </message>
 </context>
 <context>
     <name>UIThemeDialog</name>
@@ -14271,6 +15179,46 @@ Pasirinkite kitokį pavadinimą ir bandykite dar kartą.</translation>
         <source>WebAPI login failure. Reason: invalid credentials, attempt count: %1, IP: %2, username: %3</source>
         <translation>Tinklo API prisijungimo nesėkmė. Priežastis: neteisingi prisijungimo duomenys, bandymas nr.: %1, IP: %2, naudotojo vardas: %3</translation>
     </message>
+    <message>
+        <source>Something went wrong on the server. Details are in qBittorrent&apos;s log.</source>
+        <translation>Serveryje kažkas nutiko ne taip. Išsamią informaciją rasite qBittorrent žurnale.</translation>
+    </message>
+    <message>
+        <source>This account is locked after too many failed login attempts. Try again in %1 minute(s).</source>
+        <translation>Ši paskyra užrakinta dėl per daug nesėkmingų prisijungimo bandymų. Bandykite dar kartą po %1 min.</translation>
+    </message>
+    <message>
+        <source>Your role (%1) doesn&apos;t allow this: %2.</source>
+        <translation>Jūsų vaidmuo (%1) to neleidžia: %2.</translation>
+    </message>
+    <message>
+        <source>Only an admin can remove the tag that says who added a torrent.</source>
+        <translation>Tik administratorius gali pašalinti žymą, nurodančią, kas pridėjo torrentą.</translation>
+    </message>
+    <message>
+        <source>Only an admin can clear or replace all tags of a torrent that has a tag saying who added it.</source>
+        <translation>Tik administratorius gali išvalyti arba pakeisti visas torrento žymas, jei jis turi žymą, nurodančią, kas jį pridėjo.</translation>
+    </message>
+    <message>
+        <source>Something went wrong on the server. Details are in qBittorrent&apos;s log.</source>
+        <translation>Serveryje kažkas nutiko ne taip. Išsamią informaciją rasite qBittorrent žurnale.</translation>
+    </message>
+    <message>
+        <source>This account is locked after too many failed login attempts. Try again in %1 minute(s).</source>
+        <translation>Ši paskyra užrakinta dėl per daug nesėkmingų prisijungimo bandymų. Bandykite dar kartą po %1 min.</translation>
+    </message>
+    <message>
+        <source>Your role (%1) doesn&apos;t allow this: %2.</source>
+        <translation>Jūsų vaidmuo (%1) to neleidžia: %2.</translation>
+    </message>
+    <message>
+        <source>Only an admin can remove the tag that says who added a torrent.</source>
+        <translation>Tik administratorius gali pašalinti žymą, nurodančią, kas pridėjo torrentą.</translation>
+    </message>
+    <message>
+        <source>Only an admin can clear or replace all tags of a torrent that has a tag saying who added it.</source>
+        <translation>Tik administratorius gali išvalyti arba pakeisti visas torrento žymas, jei jis turi žymą, nurodančią, kas jį pridėjo.</translation>
+    </message>
 </context>
 <context>
     <name>WebUI</name>
@@ -14410,6 +15358,669 @@ Pasirinkite kitokį pavadinimą ir bandykite dar kartą.</translation>
         <source>&lt; 1m</source>
         <comment>&lt; 1 minute</comment>
         <translation>&lt; 1 min.</translation>
+    </message>
+</context>
+<context>
+    <name>UpdateInstaller</name>
+    <message>
+        <source>Kettle Edition update</source>
+        <translation>Kettle Edition naujinimas</translation>
+    </message>
+    <message>
+        <source>Kettle Edition was updated to %1.</source>
+        <translation>Kettle Edition atnaujinta iki %1.</translation>
+    </message>
+    <message>
+        <source>Kettle Edition updated</source>
+        <translation>Kettle Edition atnaujinta</translation>
+    </message>
+    <message>
+        <source>Downloading Kettle Edition %1 (%2 changed files).</source>
+        <translation>Atsisiunčiama Kettle Edition %1 (pakeistų failų: %2).</translation>
+    </message>
+    <message>
+        <source>Kettle Edition %1 is downloaded and ready to install.</source>
+        <translation>Kettle Edition %1 atsisiųsta ir paruošta diegti.</translation>
+    </message>
+    <message>
+        <source>Kettle Edition update</source>
+        <translation>Kettle Edition naujinimas</translation>
+    </message>
+    <message>
+        <source>Kettle Edition was updated to %1.</source>
+        <translation>Kettle Edition atnaujinta iki %1.</translation>
+    </message>
+    <message>
+        <source>Kettle Edition updated</source>
+        <translation>Kettle Edition atnaujinta</translation>
+    </message>
+    <message>
+        <source>Downloading Kettle Edition %1 (%2 changed files).</source>
+        <translation>Atsisiunčiama Kettle Edition %1 (pakeistų failų: %2).</translation>
+    </message>
+    <message>
+        <source>Kettle Edition %1 is downloaded and ready to install.</source>
+        <translation>Kettle Edition %1 atsisiųsta ir paruošta diegti.</translation>
+    </message>
+</context>
+<context>
+    <name>UserAccountDialog</name>
+    <message>
+        <source>User</source>
+        <translation>Naudotojas</translation>
+    </message>
+    <message>
+        <source>Username:</source>
+        <translation>Naudotojo vardas:</translation>
+    </message>
+    <message>
+        <source>Role:</source>
+        <translation>Vaidmuo:</translation>
+    </message>
+    <message>
+        <source>Password:</source>
+        <translation>Slaptažodis:</translation>
+    </message>
+    <message>
+        <source>Confirm password:</source>
+        <translation>Patvirtinti slaptažodį:</translation>
+    </message>
+    <message>
+        <source>Disable this account</source>
+        <translation>Išjungti šią paskyrą</translation>
+    </message>
+    <message>
+        <source>Edit User</source>
+        <translation>Redaguoti naudotoją</translation>
+    </message>
+    <message>
+        <source>Leave empty to keep the current password</source>
+        <translation>Palikite tuščią, kad išliktų dabartinis slaptažodis</translation>
+    </message>
+    <message>
+        <source>Add User</source>
+        <translation>Pridėti naudotoją</translation>
+    </message>
+    <message>
+        <source>At least %1 characters</source>
+        <translation>Bent %1 simboliai</translation>
+    </message>
+    <message>
+        <source>Enter a username.</source>
+        <translation>Įveskite naudotojo vardą.</translation>
+    </message>
+    <message>
+        <source>The password must be at least %1 characters long.</source>
+        <translation>Slaptažodį turi sudaryti bent %1 simboliai.</translation>
+    </message>
+    <message>
+        <source>The passwords don&apos;t match.</source>
+        <translation>Slaptažodžiai nesutampa.</translation>
+    </message>
+    <message>
+        <source>User</source>
+        <translation>Naudotojas</translation>
+    </message>
+    <message>
+        <source>Username:</source>
+        <translation>Naudotojo vardas:</translation>
+    </message>
+    <message>
+        <source>Role:</source>
+        <translation>Vaidmuo:</translation>
+    </message>
+    <message>
+        <source>Password:</source>
+        <translation>Slaptažodis:</translation>
+    </message>
+    <message>
+        <source>Confirm password:</source>
+        <translation>Patvirtinti slaptažodį:</translation>
+    </message>
+    <message>
+        <source>Disable this account</source>
+        <translation>Išjungti šią paskyrą</translation>
+    </message>
+    <message>
+        <source>Edit User</source>
+        <translation>Redaguoti naudotoją</translation>
+    </message>
+    <message>
+        <source>Leave empty to keep the current password</source>
+        <translation>Palikite tuščią, kad išliktų dabartinis slaptažodis</translation>
+    </message>
+    <message>
+        <source>Add User</source>
+        <translation>Pridėti naudotoją</translation>
+    </message>
+    <message>
+        <source>At least %1 characters</source>
+        <translation>Bent %1 simboliai</translation>
+    </message>
+    <message>
+        <source>Enter a username.</source>
+        <translation>Įveskite naudotojo vardą.</translation>
+    </message>
+    <message>
+        <source>The password must be at least %1 characters long.</source>
+        <translation>Slaptažodį turi sudaryti bent %1 simboliai.</translation>
+    </message>
+    <message>
+        <source>The passwords don&apos;t match.</source>
+        <translation>Slaptažodžiai nesutampa.</translation>
+    </message>
+</context>
+<context>
+    <name>UserAccountsWidget</name>
+    <message>
+        <source>User Accounts</source>
+        <translation>Naudotojų paskyros</translation>
+    </message>
+    <message>
+        <source>Users</source>
+        <translation>Naudotojai</translation>
+    </message>
+    <message>
+        <source>People who can log in to the WebUI with their own username and password.</source>
+        <translation>Žmonės, kurie gali prisijungti prie WebUI savo naudotojo vardu ir slaptažodžiu.</translation>
+    </message>
+    <message>
+        <source>Add User...</source>
+        <translation>Pridėti naudotoją...</translation>
+    </message>
+    <message>
+        <source>Edit...</source>
+        <translation>Redaguoti...</translation>
+    </message>
+    <message>
+        <source>Remove</source>
+        <translation>Pašalinti</translation>
+    </message>
+    <message>
+        <source>Roles</source>
+        <translation>Vaidmenys</translation>
+    </message>
+    <message>
+        <source>A role decides what its users are allowed to do.</source>
+        <translation>Vaidmuo nusprendžia, ką gali daryti jo naudotojai.</translation>
+    </message>
+    <message>
+        <source>Add Role...</source>
+        <translation>Pridėti vaidmenį...</translation>
+    </message>
+    <message>
+        <source>Logged In</source>
+        <translation>Prisijungę</translation>
+    </message>
+    <message>
+        <source>Browsers and devices where someone is logged in with a user account.</source>
+        <translation>Naršyklės ir įrenginiai, kuriuose kažkas prisijungęs naudotojo paskyra.</translation>
+    </message>
+    <message>
+        <source>Log Out</source>
+        <translation>Atsijungti</translation>
+    </message>
+    <message>
+        <source>Username</source>
+        <translation>Naudotojo vardas</translation>
+    </message>
+    <message>
+        <source>Role</source>
+        <translation>Vaidmuo</translation>
+    </message>
+    <message>
+        <source>Status</source>
+        <translation>Būsena</translation>
+    </message>
+    <message>
+        <source>Last login</source>
+        <translation>Paskutinis prisijungimas</translation>
+    </message>
+    <message>
+        <source>Created</source>
+        <translation>Sukurta</translation>
+    </message>
+    <message>
+        <source>Name</source>
+        <translation>Pavadinimas</translation>
+    </message>
+    <message>
+        <source>Description</source>
+        <translation>Aprašymas</translation>
+    </message>
+    <message>
+        <source>Permissions</source>
+        <translation>Leidimai</translation>
+    </message>
+    <message>
+        <source>User</source>
+        <translation>Naudotojas</translation>
+    </message>
+    <message>
+        <source>Browser</source>
+        <translation>Naršyklė</translation>
+    </message>
+    <message>
+        <source>Logged in</source>
+        <translation>Prisijungė</translation>
+    </message>
+    <message>
+        <source>Last active</source>
+        <translation>Paskutinė veikla</translation>
+    </message>
+    <message>
+        <source>Expires</source>
+        <translation>Baigia galioti</translation>
+    </message>
+    <message>
+        <source>The user database could not be opened. See the Execution Log for details.</source>
+        <translation>Nepavyko atidaryti naudotojų duomenų bazės. Išsamią informaciją rasite vykdymo žurnale.</translation>
+    </message>
+    <message>
+        <source>Disabled</source>
+        <translation>Išjungta</translation>
+    </message>
+    <message>
+        <source>Enabled</source>
+        <translation>Įjungta</translation>
+    </message>
+    <message>
+        <source>Never</source>
+        <translation>Niekada</translation>
+    </message>
+    <message>
+        <source>No accounts yet, so everyone still uses the shared WebUI login. Add an Admin account first.</source>
+        <translation>Paskyrų dar nėra, todėl visi tebenaudoja bendrą WebUI prisijungimą. Pirmiausia pridėkite administratoriaus paskyrą.</translation>
+    </message>
+    <message>
+        <source>Couldn&apos;t read the user database. %1</source>
+        <translation>Nepavyko nuskaityti naudotojų duomenų bazės. %1</translation>
+    </message>
+    <message>
+        <source>Remove user</source>
+        <translation>Pašalinti naudotoją</translation>
+    </message>
+    <message>
+        <source>Are you sure you want to remove the user &apos;%1&apos;?</source>
+        <translation>Ar tikrai norite pašalinti naudotoją „%1“?</translation>
+    </message>
+    <message>
+        <source>Remove role</source>
+        <translation>Pašalinti vaidmenį</translation>
+    </message>
+    <message>
+        <source>Are you sure you want to remove the role &apos;%1&apos;?</source>
+        <translation>Ar tikrai norite pašalinti vaidmenį „%1“?</translation>
+    </message>
+    <message>
+        <source>Enable</source>
+        <translation>Įjungti</translation>
+    </message>
+    <message>
+        <source>Disable</source>
+        <translation>Išjungti</translation>
+    </message>
+    <message>
+        <source>Log Out Everywhere</source>
+        <translation>Atsijungti visur</translation>
+    </message>
+    <message>
+        <source>User Accounts</source>
+        <translation>Naudotojų paskyros</translation>
+    </message>
+    <message>
+        <source>Users</source>
+        <translation>Naudotojai</translation>
+    </message>
+    <message>
+        <source>People who can log in to the WebUI with their own username and password.</source>
+        <translation>Žmonės, kurie gali prisijungti prie WebUI savo naudotojo vardu ir slaptažodžiu.</translation>
+    </message>
+    <message>
+        <source>Add User...</source>
+        <translation>Pridėti naudotoją...</translation>
+    </message>
+    <message>
+        <source>Edit...</source>
+        <translation>Redaguoti...</translation>
+    </message>
+    <message>
+        <source>Remove</source>
+        <translation>Pašalinti</translation>
+    </message>
+    <message>
+        <source>Roles</source>
+        <translation>Vaidmenys</translation>
+    </message>
+    <message>
+        <source>A role decides what its users are allowed to do.</source>
+        <translation>Vaidmuo nusprendžia, ką gali daryti jo naudotojai.</translation>
+    </message>
+    <message>
+        <source>Add Role...</source>
+        <translation>Pridėti vaidmenį...</translation>
+    </message>
+    <message>
+        <source>Logged In</source>
+        <translation>Prisijungę</translation>
+    </message>
+    <message>
+        <source>Browsers and devices where someone is logged in with a user account.</source>
+        <translation>Naršyklės ir įrenginiai, kuriuose kažkas prisijungęs naudotojo paskyra.</translation>
+    </message>
+    <message>
+        <source>Log Out</source>
+        <translation>Atsijungti</translation>
+    </message>
+    <message>
+        <source>Username</source>
+        <translation>Naudotojo vardas</translation>
+    </message>
+    <message>
+        <source>Role</source>
+        <translation>Vaidmuo</translation>
+    </message>
+    <message>
+        <source>Status</source>
+        <translation>Būsena</translation>
+    </message>
+    <message>
+        <source>Last login</source>
+        <translation>Paskutinis prisijungimas</translation>
+    </message>
+    <message>
+        <source>Created</source>
+        <translation>Sukurta</translation>
+    </message>
+    <message>
+        <source>Name</source>
+        <translation>Pavadinimas</translation>
+    </message>
+    <message>
+        <source>Description</source>
+        <translation>Aprašymas</translation>
+    </message>
+    <message>
+        <source>Permissions</source>
+        <translation>Leidimai</translation>
+    </message>
+    <message>
+        <source>User</source>
+        <translation>Naudotojas</translation>
+    </message>
+    <message>
+        <source>Browser</source>
+        <translation>Naršyklė</translation>
+    </message>
+    <message>
+        <source>Logged in</source>
+        <translation>Prisijungė</translation>
+    </message>
+    <message>
+        <source>Last active</source>
+        <translation>Paskutinė veikla</translation>
+    </message>
+    <message>
+        <source>Expires</source>
+        <translation>Baigia galioti</translation>
+    </message>
+    <message>
+        <source>The user database could not be opened. See the Execution Log for details.</source>
+        <translation>Nepavyko atidaryti naudotojų duomenų bazės. Išsamią informaciją rasite vykdymo žurnale.</translation>
+    </message>
+    <message>
+        <source>Disabled</source>
+        <translation>Išjungta</translation>
+    </message>
+    <message>
+        <source>Enabled</source>
+        <translation>Įjungta</translation>
+    </message>
+    <message>
+        <source>Never</source>
+        <translation>Niekada</translation>
+    </message>
+    <message>
+        <source>No accounts yet, so everyone still uses the shared WebUI login. Add an Admin account first.</source>
+        <translation>Paskyrų dar nėra, todėl visi tebenaudoja bendrą WebUI prisijungimą. Pirmiausia pridėkite administratoriaus paskyrą.</translation>
+    </message>
+    <message>
+        <source>Couldn&apos;t read the user database. %1</source>
+        <translation>Nepavyko nuskaityti naudotojų duomenų bazės. %1</translation>
+    </message>
+    <message>
+        <source>Remove user</source>
+        <translation>Pašalinti naudotoją</translation>
+    </message>
+    <message>
+        <source>Are you sure you want to remove the user &apos;%1&apos;?</source>
+        <translation>Ar tikrai norite pašalinti naudotoją „%1“?</translation>
+    </message>
+    <message>
+        <source>Remove role</source>
+        <translation>Pašalinti vaidmenį</translation>
+    </message>
+    <message>
+        <source>Are you sure you want to remove the role &apos;%1&apos;?</source>
+        <translation>Ar tikrai norite pašalinti vaidmenį „%1“?</translation>
+    </message>
+    <message>
+        <source>Enable</source>
+        <translation>Įjungti</translation>
+    </message>
+    <message>
+        <source>Disable</source>
+        <translation>Išjungti</translation>
+    </message>
+    <message>
+        <source>Log Out Everywhere</source>
+        <translation>Atsijungti visur</translation>
+    </message>
+</context>
+<context>
+    <name>UserRoleDialog</name>
+    <message>
+        <source>Role</source>
+        <translation>Vaidmuo</translation>
+    </message>
+    <message>
+        <source>Name:</source>
+        <translation>Pavadinimas:</translation>
+    </message>
+    <message>
+        <source>Description:</source>
+        <translation>Aprašymas:</translation>
+    </message>
+    <message>
+        <source>Gives control over the PC or qBittorrent itself.</source>
+        <translation>Suteikia valdymą kompiuteriu arba pačiu qBittorrent.</translation>
+    </message>
+    <message>
+        <source>Add Role</source>
+        <translation>Pridėti vaidmenį</translation>
+    </message>
+    <message>
+        <source>Edit Role</source>
+        <translation>Redaguoti vaidmenį</translation>
+    </message>
+    <message>
+        <source>Enter a role name.</source>
+        <translation>Įveskite vaidmens pavadinimą.</translation>
+    </message>
+    <message>
+        <source>Role</source>
+        <translation>Vaidmuo</translation>
+    </message>
+    <message>
+        <source>Name:</source>
+        <translation>Pavadinimas:</translation>
+    </message>
+    <message>
+        <source>Description:</source>
+        <translation>Aprašymas:</translation>
+    </message>
+    <message>
+        <source>Gives control over the PC or qBittorrent itself.</source>
+        <translation>Suteikia valdymą kompiuteriu arba pačiu qBittorrent.</translation>
+    </message>
+    <message>
+        <source>Add Role</source>
+        <translation>Pridėti vaidmenį</translation>
+    </message>
+    <message>
+        <source>Edit Role</source>
+        <translation>Redaguoti vaidmenį</translation>
+    </message>
+    <message>
+        <source>Enter a role name.</source>
+        <translation>Įveskite vaidmens pavadinimą.</translation>
+    </message>
+</context>
+<context>
+    <name>WebUIActivityWidget</name>
+    <message>
+        <source>All</source>
+        <translation>Visi</translation>
+    </message>
+    <message>
+        <source>Filter activity</source>
+        <translation>Filtruoti veiklą</translation>
+    </message>
+    <message>
+        <source>Export...</source>
+        <translation>Eksportuoti...</translation>
+    </message>
+    <message>
+        <source>User:</source>
+        <translation>Naudotojas:</translation>
+    </message>
+    <message>
+        <source>Category:</source>
+        <translation>Kategorija:</translation>
+    </message>
+    <message>
+        <source>Result:</source>
+        <translation>Rezultatas:</translation>
+    </message>
+    <message>
+        <source>Time</source>
+        <translation>Laikas</translation>
+    </message>
+    <message>
+        <source>User</source>
+        <translation>Naudotojas</translation>
+    </message>
+    <message>
+        <source>Role</source>
+        <translation>Vaidmuo</translation>
+    </message>
+    <message>
+        <source>Category</source>
+        <translation>Kategorija</translation>
+    </message>
+    <message>
+        <source>Action</source>
+        <translation>Veiksmas</translation>
+    </message>
+    <message>
+        <source>Result</source>
+        <translation>Rezultatas</translation>
+    </message>
+    <message>
+        <source>The user database could not be opened. See the General tab for details.</source>
+        <translation>Nepavyko atidaryti naudotojų duomenų bazės. Išsamią informaciją rasite skirtuke Bendra.</translation>
+    </message>
+    <message>
+        <source>Results (showing %1 out of %2)</source>
+        <translation>Rezultatai (rodoma %1 iš %2)</translation>
+    </message>
+    <message>
+        <source>Copy</source>
+        <translation>Kopijuoti</translation>
+    </message>
+    <message>
+        <source>Export WebUI activity</source>
+        <translation>Eksportuoti WebUI veiklą</translation>
+    </message>
+    <message>
+        <source>CSV files</source>
+        <translation>CSV failai</translation>
+    </message>
+    <message>
+        <source>Couldn&apos;t save the file. Reason: %1</source>
+        <translation>Nepavyko išsaugoti failo. Priežastis: %1</translation>
+    </message>
+    <message>
+        <source>All</source>
+        <translation>Visi</translation>
+    </message>
+    <message>
+        <source>Filter activity</source>
+        <translation>Filtruoti veiklą</translation>
+    </message>
+    <message>
+        <source>Export...</source>
+        <translation>Eksportuoti...</translation>
+    </message>
+    <message>
+        <source>User:</source>
+        <translation>Naudotojas:</translation>
+    </message>
+    <message>
+        <source>Category:</source>
+        <translation>Kategorija:</translation>
+    </message>
+    <message>
+        <source>Result:</source>
+        <translation>Rezultatas:</translation>
+    </message>
+    <message>
+        <source>Time</source>
+        <translation>Laikas</translation>
+    </message>
+    <message>
+        <source>User</source>
+        <translation>Naudotojas</translation>
+    </message>
+    <message>
+        <source>Role</source>
+        <translation>Vaidmuo</translation>
+    </message>
+    <message>
+        <source>Category</source>
+        <translation>Kategorija</translation>
+    </message>
+    <message>
+        <source>Action</source>
+        <translation>Veiksmas</translation>
+    </message>
+    <message>
+        <source>Result</source>
+        <translation>Rezultatas</translation>
+    </message>
+    <message>
+        <source>The user database could not be opened. See the General tab for details.</source>
+        <translation>Nepavyko atidaryti naudotojų duomenų bazės. Išsamią informaciją rasite skirtuke Bendra.</translation>
+    </message>
+    <message>
+        <source>Results (showing %1 out of %2)</source>
+        <translation>Rezultatai (rodoma %1 iš %2)</translation>
+    </message>
+    <message>
+        <source>Copy</source>
+        <translation>Kopijuoti</translation>
+    </message>
+    <message>
+        <source>Export WebUI activity</source>
+        <translation>Eksportuoti WebUI veiklą</translation>
+    </message>
+    <message>
+        <source>CSV files</source>
+        <translation>CSV failai</translation>
+    </message>
+    <message>
+        <source>Couldn&apos;t save the file. Reason: %1</source>
+        <translation>Nepavyko išsaugoti failo. Priežastis: %1</translation>
     </message>
 </context>
 </TS>

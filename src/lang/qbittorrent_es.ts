@@ -141,6 +141,62 @@
         <source>The free IP to Country Lite database by DB-IP is used for resolving the countries of peers. The database is licensed under the Creative Commons Attribution 4.0 International License</source>
         <translation>La base de datos gratuita IP to Country Lite de DB-IP se usa para resolver los países de los pares. La licencia de la base de datos es Creative Commons Attribution 4.0 International License</translation>
     </message>
+    <message>
+        <source>This edition</source>
+        <translation>Esta edición</translation>
+    </message>
+    <message>
+        <source>Edition version:</source>
+        <translation>Versión de la edición:</translation>
+    </message>
+    <message>
+        <source>Based on:</source>
+        <translation>Basada en:</translation>
+    </message>
+    <message>
+        <source>Maintainer:</source>
+        <translation>Mantenedor:</translation>
+    </message>
+    <message>
+        <source>qBittorrent project:</source>
+        <translation>Proyecto qBittorrent:</translation>
+    </message>
+    <message>
+        <source>Kettle Edition is a personal build of qBittorrent that adds user accounts with roles for the WebUI and the desktop app, an activity log, and an installable WebUI with a phone layout. A kettle is a group of hawks soaring together. This is an unofficial build, not affiliated with the qBittorrent project.</source>
+        <translation>Kettle Edition es una compilación personal de qBittorrent que añade cuentas de usuario con roles para la WebUI y la aplicación de escritorio, un registro de actividad y una WebUI instalable con diseño para teléfono. Un kettle es un grupo de halcones planeando juntos. Es una compilación no oficial, sin relación con el proyecto qBittorrent.</translation>
+    </message>
+    <message>
+        <source>N/A</source>
+        <translation>N/D</translation>
+    </message>
+    <message>
+        <source>This edition</source>
+        <translation>Esta edición</translation>
+    </message>
+    <message>
+        <source>Edition version:</source>
+        <translation>Versión de la edición:</translation>
+    </message>
+    <message>
+        <source>Based on:</source>
+        <translation>Basada en:</translation>
+    </message>
+    <message>
+        <source>Maintainer:</source>
+        <translation>Mantenedor:</translation>
+    </message>
+    <message>
+        <source>qBittorrent project:</source>
+        <translation>Proyecto qBittorrent:</translation>
+    </message>
+    <message>
+        <source>Kettle Edition is a personal build of qBittorrent that adds user accounts with roles for the WebUI and the desktop app, an activity log, and an installable WebUI with a phone layout. A kettle is a group of hawks soaring together. This is an unofficial build, not affiliated with the qBittorrent project.</source>
+        <translation>Kettle Edition es una compilación personal de qBittorrent que añade cuentas de usuario con roles para la WebUI y la aplicación de escritorio, un registro de actividad y una WebUI instalable con diseño para teléfono. Un kettle es un grupo de halcones planeando juntos. Es una compilación no oficial, sin relación con el proyecto qBittorrent.</translation>
+    </message>
+    <message>
+        <source>N/A</source>
+        <translation>N/D</translation>
+    </message>
 </context>
 <context>
     <name>AbstractFileStorage</name>
@@ -1459,6 +1515,62 @@
         <location filename="../gui/advancedsettings.cpp" line="925"/>
         <source>Embedded tracker port</source>
         <translation>Puerto del tracker integrado</translation>
+    </message>
+    <message>
+        <source>Network</source>
+        <translation>Red</translation>
+    </message>
+    <message>
+        <source>Storage</source>
+        <translation>Almacenamiento</translation>
+    </message>
+    <message>
+        <source>Peers and trackers</source>
+        <translation>Pares y trackers</translation>
+    </message>
+    <message>
+        <source>Program behavior</source>
+        <translation>Comportamiento del programa</translation>
+    </message>
+    <message>
+        <source>Display and notifications</source>
+        <translation>Pantalla y notificaciones</translation>
+    </message>
+    <message>
+        <source>Network connection</source>
+        <translation>Conexión de red</translation>
+    </message>
+    <message>
+        <source>Security and privacy</source>
+        <translation>Seguridad y privacidad</translation>
+    </message>
+    <message>
+        <source>Connection tuning</source>
+        <translation>Ajuste de la conexión</translation>
+    </message>
+    <message>
+        <source>Saving and torrent files</source>
+        <translation>Guardado y archivos torrent</translation>
+    </message>
+    <message>
+        <source>Disk and memory</source>
+        <translation>Disco y memoria</translation>
+    </message>
+    <message>
+        <source>Peers and seeding</source>
+        <translation>Pares y siembra</translation>
+    </message>
+    <message>
+        <source>DHT and I2P</source>
+        <translation>DHT e I2P</translation>
+    </message>
+    <message>
+        <source>General</source>
+        <translation>General</translation>
+    </message>
+    <message>
+        <source>Trackers</source>
+        <translation>Trackers</translation>
     </message>
 </context>
 <context>
@@ -3480,6 +3592,22 @@ Admite los formatos: S01E01, 1x1, 2017.12.31 y 31.12.2017 (los formatos de fecha
         <source>Remove torrent</source>
         <translation>Eliminar torrent</translation>
     </message>
+    <message>
+        <source>This choice is remembered for the next removal.</source>
+        <translation>Esta elección se recordará para la próxima eliminación.</translation>
+    </message>
+    <message>
+        <source>Remove</source>
+        <translation>Quitar</translation>
+    </message>
+    <message>
+        <source>This choice is remembered for the next removal.</source>
+        <translation>Esta elección se recordará para la próxima eliminación.</translation>
+    </message>
+    <message>
+        <source>Remove</source>
+        <translation>Quitar</translation>
+    </message>
 </context>
 <context>
     <name>DownloadFromURLDialog</name>
@@ -3553,6 +3681,14 @@ Admite los formatos: S01E01, 1x1, 2017.12.31 y 31.12.2017 (los formatos de fecha
         <location filename="../gui/executionlogwidget.cpp" line="99"/>
         <source>Clear</source>
         <translation>Limpiar</translation>
+    </message>
+    <message>
+        <source>WebUI Activity</source>
+        <translation>Actividad de la WebUI</translation>
+    </message>
+    <message>
+        <source>WebUI Activity</source>
+        <translation>Actividad de la WebUI</translation>
     </message>
 </context>
 <context>
@@ -4727,6 +4863,46 @@ Requisito mínimo: %2.</translation>
         <location filename="../gui/mainwindow.cpp" line="1346"/>
         <source>Torrent Files</source>
         <translation>Archivos torrent</translation>
+    </message>
+    <message>
+        <source>Kettle Edition %1 is available.</source>
+        <translation>Kettle Edition %1 está disponible.</translation>
+    </message>
+    <message>
+        <source>qBittorrent Kettle Edition %1 is available. It is downloaded now and installed at 4:00 AM, or when qBittorrent starts next.</source>
+        <translation>qBittorrent Kettle Edition %1 está disponible. Se descarga ahora y se instalará a las 4:00 o la próxima vez que se inicie qBittorrent.</translation>
+    </message>
+    <message>
+        <source>qBittorrent Kettle Edition %1 is available. It is downloaded now. Turn on &quot;Automatically install Kettle Edition updates&quot; in Options to install it.</source>
+        <translation>qBittorrent Kettle Edition %1 está disponible. Se descarga ahora. Active «Instalar automáticamente las actualizaciones de Kettle Edition» en Opciones para instalarla.</translation>
+    </message>
+    <message>
+        <source>You have the latest qBittorrent Kettle Edition (%1).</source>
+        <translation>Tiene la última versión de qBittorrent Kettle Edition (%1).</translation>
+    </message>
+    <message>
+        <source>Could not check for qBittorrent Kettle Edition updates. See the Execution Log for details.</source>
+        <translation>No se pudieron buscar actualizaciones de qBittorrent Kettle Edition. Consulte el registro de ejecución para ver los detalles.</translation>
+    </message>
+    <message>
+        <source>Kettle Edition %1 is available.</source>
+        <translation>Kettle Edition %1 está disponible.</translation>
+    </message>
+    <message>
+        <source>qBittorrent Kettle Edition %1 is available. It is downloaded now and installed at 4:00 AM, or when qBittorrent starts next.</source>
+        <translation>qBittorrent Kettle Edition %1 está disponible. Se descarga ahora y se instalará a las 4:00 o la próxima vez que se inicie qBittorrent.</translation>
+    </message>
+    <message>
+        <source>qBittorrent Kettle Edition %1 is available. It is downloaded now. Turn on &quot;Automatically install Kettle Edition updates&quot; in Options to install it.</source>
+        <translation>qBittorrent Kettle Edition %1 está disponible. Se descarga ahora. Active «Instalar automáticamente las actualizaciones de Kettle Edition» en Opciones para instalarla.</translation>
+    </message>
+    <message>
+        <source>You have the latest qBittorrent Kettle Edition (%1).</source>
+        <translation>Tiene la última versión de qBittorrent Kettle Edition (%1).</translation>
+    </message>
+    <message>
+        <source>Could not check for qBittorrent Kettle Edition updates. See the Execution Log for details.</source>
+        <translation>No se pudieron buscar actualizaciones de qBittorrent Kettle Edition. Consulte el registro de ejecución para ver los detalles.</translation>
     </message>
 </context>
 <context>
@@ -8518,6 +8694,190 @@ Consulta el registro de ejecución para ver si hay errores.</translation>
         <source>Length Error</source>
         <translation>Error de longitud</translation>
     </message>
+    <message>
+        <source>Search settings</source>
+        <translation>Buscar en la configuración</translation>
+    </message>
+    <message>
+        <source>No settings match</source>
+        <translation>Ningún ajuste coincide</translation>
+    </message>
+    <message>
+        <source>User Accounts</source>
+        <translation>Cuentas de usuario</translation>
+    </message>
+    <message>
+        <source>Automatically install Kettle Edition updates</source>
+        <translation>Instalar automáticamente las actualizaciones de Kettle Edition</translation>
+    </message>
+    <message>
+        <source>Status bar and log</source>
+        <translation>Barra de estado y registro</translation>
+    </message>
+    <message>
+        <source>Files</source>
+        <translation>Archivos</translation>
+    </message>
+    <message>
+        <source>Checking</source>
+        <translation>Comprobación</translation>
+    </message>
+    <message>
+        <source>Until the first user account is created, this login always works.</source>
+        <translation>Hasta que se cree la primera cuenta de usuario, este inicio de sesión siempre funciona.</translation>
+    </message>
+    <message>
+        <source>Allow this login when user accounts exist</source>
+        <translation>Permitir este inicio de sesión cuando existan cuentas de usuario</translation>
+    </message>
+    <message>
+        <source>Access</source>
+        <translation>Acceso</translation>
+    </message>
+    <message>
+        <source>Changes to users, roles and logins apply at once. The settings below apply with OK or Apply.</source>
+        <translation>Los cambios en usuarios, roles e inicios de sesión se aplican al instante. Los ajustes de abajo se aplican con Aceptar o Aplicar.</translation>
+    </message>
+    <message>
+        <source>Logins and Activity Log</source>
+        <translation>Inicios de sesión y registro de actividad</translation>
+    </message>
+    <message>
+        <source>0 means users are logged out after the session timeout.</source>
+        <translation>0 significa que los usuarios cierran sesión al agotarse el tiempo de la sesión.</translation>
+    </message>
+    <message>
+        <source>Keep users logged in for:</source>
+        <translation>Mantener a los usuarios con la sesión iniciada durante:</translation>
+    </message>
+    <message>
+        <source>Until session timeout</source>
+        <translation>Hasta el tiempo de espera de la sesión</translation>
+    </message>
+    <message>
+        <source> days</source>
+        <translation> días</translation>
+    </message>
+    <message>
+        <source>Lock account after consecutive failures:</source>
+        <translation>Bloquear la cuenta tras fallos consecutivos:</translation>
+    </message>
+    <message>
+        <source>Keep WebUI activity log for:</source>
+        <translation>Conservar el registro de actividad de la WebUI durante:</translation>
+    </message>
+    <message>
+        <source>lock for:</source>
+        <translation>bloquear durante:</translation>
+    </message>
+    <message>
+        <source>%1 works best with Windows dark mode</source>
+        <translation>%1 funciona mejor con el modo oscuro de Windows</translation>
+    </message>
+    <message>
+        <source>WebUI address</source>
+        <translation>Dirección de la WebUI</translation>
+    </message>
+    <message>
+        <source>With the WebUI address set to %1, only this PC can reach the WebUI. Remote access, including through a reverse proxy on another machine, will stop working.
+
+Save anyway?</source>
+        <translation>Con la dirección de la WebUI establecida en %1, solo este equipo puede acceder a la WebUI. El acceso remoto, incluso mediante un proxy inverso en otra máquina, dejará de funcionar.
+
+¿Guardar de todos modos?</translation>
+    </message>
+    <message>
+        <source>Search settings</source>
+        <translation>Buscar en la configuración</translation>
+    </message>
+    <message>
+        <source>No settings match</source>
+        <translation>Ningún ajuste coincide</translation>
+    </message>
+    <message>
+        <source>User Accounts</source>
+        <translation>Cuentas de usuario</translation>
+    </message>
+    <message>
+        <source>Automatically install Kettle Edition updates</source>
+        <translation>Instalar automáticamente las actualizaciones de Kettle Edition</translation>
+    </message>
+    <message>
+        <source>Status bar and log</source>
+        <translation>Barra de estado y registro</translation>
+    </message>
+    <message>
+        <source>Files</source>
+        <translation>Archivos</translation>
+    </message>
+    <message>
+        <source>Checking</source>
+        <translation>Comprobación</translation>
+    </message>
+    <message>
+        <source>Until the first user account is created, this login always works.</source>
+        <translation>Hasta que se cree la primera cuenta de usuario, este inicio de sesión siempre funciona.</translation>
+    </message>
+    <message>
+        <source>Allow this login when user accounts exist</source>
+        <translation>Permitir este inicio de sesión cuando existan cuentas de usuario</translation>
+    </message>
+    <message>
+        <source>Access</source>
+        <translation>Acceso</translation>
+    </message>
+    <message>
+        <source>Changes to users, roles and logins apply at once. The settings below apply with OK or Apply.</source>
+        <translation>Los cambios en usuarios, roles e inicios de sesión se aplican al instante. Los ajustes de abajo se aplican con Aceptar o Aplicar.</translation>
+    </message>
+    <message>
+        <source>Logins and Activity Log</source>
+        <translation>Inicios de sesión y registro de actividad</translation>
+    </message>
+    <message>
+        <source>0 means users are logged out after the session timeout.</source>
+        <translation>0 significa que los usuarios cierran sesión al agotarse el tiempo de la sesión.</translation>
+    </message>
+    <message>
+        <source>Keep users logged in for:</source>
+        <translation>Mantener a los usuarios con la sesión iniciada durante:</translation>
+    </message>
+    <message>
+        <source>Until session timeout</source>
+        <translation>Hasta el tiempo de espera de la sesión</translation>
+    </message>
+    <message>
+        <source> days</source>
+        <translation> días</translation>
+    </message>
+    <message>
+        <source>Lock account after consecutive failures:</source>
+        <translation>Bloquear la cuenta tras fallos consecutivos:</translation>
+    </message>
+    <message>
+        <source>Keep WebUI activity log for:</source>
+        <translation>Conservar el registro de actividad de la WebUI durante:</translation>
+    </message>
+    <message>
+        <source>lock for:</source>
+        <translation>bloquear durante:</translation>
+    </message>
+    <message>
+        <source>%1 works best with Windows dark mode</source>
+        <translation>%1 funciona mejor con el modo oscuro de Windows</translation>
+    </message>
+    <message>
+        <source>WebUI address</source>
+        <translation>Dirección de la WebUI</translation>
+    </message>
+    <message>
+        <source>With the WebUI address set to %1, only this PC can reach the WebUI. Remote access, including through a reverse proxy on another machine, will stop working.
+
+Save anyway?</source>
+        <translation>Con la dirección de la WebUI establecida en %1, solo este equipo puede acceder a la WebUI. El acceso remoto, incluso mediante un proxy inverso en otra máquina, dejará de funcionar.
+
+¿Guardar de todos modos?</translation>
+    </message>
 </context>
 <context>
     <name>PeerInfo</name>
@@ -8770,6 +9130,22 @@ Consulta el registro de ejecución para ver si hay errores.</translation>
         <location filename="../gui/properties/peerlistwidget.cpp" line="309"/>
         <source>Copy IP:port</source>
         <translation>Copiar IP:puerto</translation>
+    </message>
+    <message>
+        <source>Reset auto width</source>
+        <translation>Restablecer ancho automático</translation>
+    </message>
+    <message>
+        <source>Fit all non-hidden columns to their contents again, and forget the widths that were set by hand</source>
+        <translation>Volver a ajustar todas las columnas visibles a su contenido y olvidar los anchos fijados a mano</translation>
+    </message>
+    <message>
+        <source>Reset auto width</source>
+        <translation>Restablecer ancho automático</translation>
+    </message>
+    <message>
+        <source>Fit all non-hidden columns to their contents again, and forget the widths that were set by hand</source>
+        <translation>Volver a ajustar todas las columnas visibles a su contenido y olvidar los anchos fijados a mano</translation>
     </message>
 </context>
 <context>
@@ -10159,6 +10535,14 @@ Those plugins were disabled.</source>
         <source>Open link</source>
         <translation>Abrir enlace</translation>
     </message>
+    <message>
+        <source>Details</source>
+        <translation>Detalles</translation>
+    </message>
+    <message>
+        <source>Details</source>
+        <translation>Detalles</translation>
+    </message>
 </context>
 <context>
     <name>SearchController</name>
@@ -10513,6 +10897,70 @@ Those plugins were disabled.</source>
         <source>Resize all non-hidden columns to the size of their contents</source>
         <translation>Reajustar el tamaño de todas las columnas no ocultas al tamaño de sus contenidos.</translation>
     </message>
+    <message>
+        <source>%1 of %2 shown (%3 hidden)</source>
+        <translation>Se muestran %1 de %2 (%3 ocultos)</translation>
+    </message>
+    <message>
+        <source>%1 of %2 shown</source>
+        <translation>Se muestran %1 de %2</translation>
+    </message>
+    <message>
+        <source>Searching: %1</source>
+        <translation>Buscando: %1</translation>
+    </message>
+    <message>
+        <source>Finished: %1</source>
+        <translation>Terminado: %1</translation>
+    </message>
+    <message>
+        <source>Search aborted: %1</source>
+        <translation>Búsqueda interrumpida: %1</translation>
+    </message>
+    <message>
+        <source>Reset auto width</source>
+        <translation>Restablecer ancho automático</translation>
+    </message>
+    <message>
+        <source>Fit all non-hidden columns to their contents again, and forget the widths that were set by hand</source>
+        <translation>Volver a ajustar todas las columnas visibles a su contenido y olvidar los anchos fijados a mano</translation>
+    </message>
+    <message>
+        <source>Unknown</source>
+        <translation>Desconocido</translation>
+    </message>
+    <message>
+        <source>%1 of %2 shown (%3 hidden)</source>
+        <translation>Se muestran %1 de %2 (%3 ocultos)</translation>
+    </message>
+    <message>
+        <source>%1 of %2 shown</source>
+        <translation>Se muestran %1 de %2</translation>
+    </message>
+    <message>
+        <source>Searching: %1</source>
+        <translation>Buscando: %1</translation>
+    </message>
+    <message>
+        <source>Finished: %1</source>
+        <translation>Terminado: %1</translation>
+    </message>
+    <message>
+        <source>Search aborted: %1</source>
+        <translation>Búsqueda interrumpida: %1</translation>
+    </message>
+    <message>
+        <source>Reset auto width</source>
+        <translation>Restablecer ancho automático</translation>
+    </message>
+    <message>
+        <source>Fit all non-hidden columns to their contents again, and forget the widths that were set by hand</source>
+        <translation>Volver a ajustar todas las columnas visibles a su contenido y olvidar los anchos fijados a mano</translation>
+    </message>
+    <message>
+        <source>Unknown</source>
+        <translation>Desconocido</translation>
+    </message>
 </context>
 <context>
     <name>SearchPluginManager</name>
@@ -10809,6 +11257,14 @@ Those plugins were disabled.</source>
         <source>Couldn&apos;t update &quot;%1&quot; search engine plugin. %2</source>
         <translation type="unfinished">No se pudo actualizar el plugin de motor de búsqueda &quot;%1&quot;. %2</translation>
     </message>
+    <message>
+        <source>Install Kettle Plugins</source>
+        <translation>Instalar complementos de Kettle</translation>
+    </message>
+    <message>
+        <source>Install Kettle Plugins</source>
+        <translation>Instalar complementos de Kettle</translation>
+    </message>
 </context>
 <context>
     <name>SearchPluginSourceDialog</name>
@@ -10948,6 +11404,90 @@ Presione el boton &quot;Plugins de búsqueda...&quot; ubicado abajo a la derecha
         <location filename="../gui/search/searchwidget.ui" line="58"/>
         <source>Stop</source>
         <translation>Detener</translation>
+    </message>
+    <message>
+        <source>Searches</source>
+        <translation>Búsquedas</translation>
+    </message>
+    <message>
+        <source>Close the selected search</source>
+        <translation>Cerrar la búsqueda seleccionada</translation>
+    </message>
+    <message>
+        <source>Search for torrents...</source>
+        <translation>Buscar torrents...</translation>
+    </message>
+    <message>
+        <source>Category to search in</source>
+        <translation>Categoría en la que buscar</translation>
+    </message>
+    <message>
+        <source>Search engines to use</source>
+        <translation>Motores de búsqueda a usar</translation>
+    </message>
+    <message>
+        <source>There aren&apos;t any search plugins installed.
+Click the &quot;Search plugins...&quot; button at the top right of the window to install some.</source>
+        <translation>No hay ningún complemento de búsqueda instalado.
+Pulse el botón «Complementos de búsqueda...» arriba a la derecha de la ventana para instalar alguno.</translation>
+    </message>
+    <message>
+        <source>Type a search above and press Enter.</source>
+        <translation>Escriba una búsqueda arriba y pulse Intro.</translation>
+    </message>
+    <message>
+        <source>Refresh search</source>
+        <translation>Actualizar búsqueda</translation>
+    </message>
+    <message>
+        <source>Close search</source>
+        <translation>Cerrar búsqueda</translation>
+    </message>
+    <message>
+        <source>Close all searches</source>
+        <translation>Cerrar todas las búsquedas</translation>
+    </message>
+    <message>
+        <source>Searches</source>
+        <translation>Búsquedas</translation>
+    </message>
+    <message>
+        <source>Close the selected search</source>
+        <translation>Cerrar la búsqueda seleccionada</translation>
+    </message>
+    <message>
+        <source>Search for torrents...</source>
+        <translation>Buscar torrents...</translation>
+    </message>
+    <message>
+        <source>Category to search in</source>
+        <translation>Categoría en la que buscar</translation>
+    </message>
+    <message>
+        <source>Search engines to use</source>
+        <translation>Motores de búsqueda a usar</translation>
+    </message>
+    <message>
+        <source>There aren&apos;t any search plugins installed.
+Click the &quot;Search plugins...&quot; button at the top right of the window to install some.</source>
+        <translation>No hay ningún complemento de búsqueda instalado.
+Pulse el botón «Complementos de búsqueda...» arriba a la derecha de la ventana para instalar alguno.</translation>
+    </message>
+    <message>
+        <source>Type a search above and press Enter.</source>
+        <translation>Escriba una búsqueda arriba y pulse Intro.</translation>
+    </message>
+    <message>
+        <source>Refresh search</source>
+        <translation>Actualizar búsqueda</translation>
+    </message>
+    <message>
+        <source>Close search</source>
+        <translation>Cerrar búsqueda</translation>
+    </message>
+    <message>
+        <source>Close all searches</source>
+        <translation>Cerrar todas las búsquedas</translation>
     </message>
 </context>
 <context>
@@ -11414,6 +11954,326 @@ Presione el boton &quot;Plugins de búsqueda...&quot; ubicado abajo a la derecha
         <location filename="../gui/statsdialog.cpp" line="111"/>
         <source>%1 ms</source>
         <translation type="unfinished">%1 ms</translation>
+    </message>
+    <message>
+        <source>Copy</source>
+        <translation>Copiar</translation>
+    </message>
+    <message>
+        <source>Overview</source>
+        <translation>Resumen</translation>
+    </message>
+    <message>
+        <source>Transfer</source>
+        <translation>Transferencia</translation>
+    </message>
+    <message>
+        <source>This session</source>
+        <translation>Esta sesión</translation>
+    </message>
+    <message>
+        <source>All time</source>
+        <translation>Total</translation>
+    </message>
+    <message>
+        <source>Downloaded:</source>
+        <translation>Descargado:</translation>
+    </message>
+    <message>
+        <source>Uploaded:</source>
+        <translation>Subido:</translation>
+    </message>
+    <message>
+        <source>Share ratio:</source>
+        <translation>Ratio de compartición:</translation>
+    </message>
+    <message>
+        <source>Current speed:</source>
+        <translation>Velocidad actual:</translation>
+    </message>
+    <message>
+        <source>Activity</source>
+        <translation>Actividad</translation>
+    </message>
+    <message>
+        <source>Torrents downloading:</source>
+        <translation>Torrents descargando:</translation>
+    </message>
+    <message>
+        <source>Torrents seeding:</source>
+        <translation>Torrents sembrando:</translation>
+    </message>
+    <message>
+        <source>Torrents stopped:</source>
+        <translation>Torrents detenidos:</translation>
+    </message>
+    <message>
+        <source>Torrents with errors:</source>
+        <translation>Torrents con errores:</translation>
+    </message>
+    <message>
+        <source>Running for:</source>
+        <translation>En ejecución desde hace:</translation>
+    </message>
+    <message>
+        <source>History</source>
+        <translation>Historial</translation>
+    </message>
+    <message>
+        <source>Period</source>
+        <translation>Periodo</translation>
+    </message>
+    <message>
+        <source>Today</source>
+        <translation>Hoy</translation>
+    </message>
+    <message>
+        <source>Last 7 days</source>
+        <translation>Últimos 7 días</translation>
+    </message>
+    <message>
+        <source>This month</source>
+        <translation>Este mes</translation>
+    </message>
+    <message>
+        <source>Last month</source>
+        <translation>Mes pasado</translation>
+    </message>
+    <message>
+        <source>Last 12 months</source>
+        <translation>Últimos 12 meses</translation>
+    </message>
+    <message>
+        <source>Tracking since:</source>
+        <translation>Registro desde:</translation>
+    </message>
+    <message>
+        <source>By month</source>
+        <translation>Por mes</translation>
+    </message>
+    <message>
+        <source>Month</source>
+        <translation>Mes</translation>
+    </message>
+    <message>
+        <source>Downloaded</source>
+        <translation>Descargado</translation>
+    </message>
+    <message>
+        <source>Uploaded</source>
+        <translation>Subido</translation>
+    </message>
+    <message>
+        <source>Share ratio</source>
+        <translation>Ratio de compartición</translation>
+    </message>
+    <message>
+        <source>WebUI downloads added, this month</source>
+        <translation>Descargas añadidas por la WebUI, este mes</translation>
+    </message>
+    <message>
+        <source>Counts the requests that added a download. Apps without a login, such as Sonarr and Radarr, are shown as (localhost). Downloads added in the desktop window are not counted.</source>
+        <translation>Cuenta las peticiones que añadieron una descarga. Las aplicaciones sin inicio de sesión, como Sonarr y Radarr, aparecen como (localhost). Las descargas añadidas en la ventana de escritorio no se cuentan.</translation>
+    </message>
+    <message>
+        <source>Technical</source>
+        <translation>Técnico</translation>
+    </message>
+    <message>
+        <source>Disk</source>
+        <translation>Disco</translation>
+    </message>
+    <message>
+        <source>Peers waiting on disk writes:</source>
+        <translation>Pares esperando escrituras en disco:</translation>
+    </message>
+    <message>
+        <source>Peers waiting on disk reads:</source>
+        <translation>Pares esperando lecturas del disco:</translation>
+    </message>
+    <message>
+        <source>Network</source>
+        <translation>Red</translation>
+    </message>
+    <message>
+        <source>DHT nodes:</source>
+        <translation>Nodos DHT:</translation>
+    </message>
+    <message>
+        <source>Data discarded this session:</source>
+        <translation>Datos descartados en esta sesión:</translation>
+    </message>
+    <message>
+        <source>Before tracking began</source>
+        <translation>Antes de que empezara el registro</translation>
+    </message>
+    <message>
+        <source>Nothing added yet</source>
+        <translation>Aún no se ha añadido nada</translation>
+    </message>
+    <message>
+        <source>Off</source>
+        <translation>Desactivado</translation>
+    </message>
+    <message>
+        <source>Copy</source>
+        <translation>Copiar</translation>
+    </message>
+    <message>
+        <source>Overview</source>
+        <translation>Resumen</translation>
+    </message>
+    <message>
+        <source>Transfer</source>
+        <translation>Transferencia</translation>
+    </message>
+    <message>
+        <source>This session</source>
+        <translation>Esta sesión</translation>
+    </message>
+    <message>
+        <source>All time</source>
+        <translation>Total</translation>
+    </message>
+    <message>
+        <source>Downloaded:</source>
+        <translation>Descargado:</translation>
+    </message>
+    <message>
+        <source>Uploaded:</source>
+        <translation>Subido:</translation>
+    </message>
+    <message>
+        <source>Share ratio:</source>
+        <translation>Ratio de compartición:</translation>
+    </message>
+    <message>
+        <source>Current speed:</source>
+        <translation>Velocidad actual:</translation>
+    </message>
+    <message>
+        <source>Activity</source>
+        <translation>Actividad</translation>
+    </message>
+    <message>
+        <source>Torrents downloading:</source>
+        <translation>Torrents descargando:</translation>
+    </message>
+    <message>
+        <source>Torrents seeding:</source>
+        <translation>Torrents sembrando:</translation>
+    </message>
+    <message>
+        <source>Torrents stopped:</source>
+        <translation>Torrents detenidos:</translation>
+    </message>
+    <message>
+        <source>Torrents with errors:</source>
+        <translation>Torrents con errores:</translation>
+    </message>
+    <message>
+        <source>Running for:</source>
+        <translation>En ejecución desde hace:</translation>
+    </message>
+    <message>
+        <source>History</source>
+        <translation>Historial</translation>
+    </message>
+    <message>
+        <source>Period</source>
+        <translation>Periodo</translation>
+    </message>
+    <message>
+        <source>Today</source>
+        <translation>Hoy</translation>
+    </message>
+    <message>
+        <source>Last 7 days</source>
+        <translation>Últimos 7 días</translation>
+    </message>
+    <message>
+        <source>This month</source>
+        <translation>Este mes</translation>
+    </message>
+    <message>
+        <source>Last month</source>
+        <translation>Mes pasado</translation>
+    </message>
+    <message>
+        <source>Last 12 months</source>
+        <translation>Últimos 12 meses</translation>
+    </message>
+    <message>
+        <source>Tracking since:</source>
+        <translation>Registro desde:</translation>
+    </message>
+    <message>
+        <source>By month</source>
+        <translation>Por mes</translation>
+    </message>
+    <message>
+        <source>Month</source>
+        <translation>Mes</translation>
+    </message>
+    <message>
+        <source>Downloaded</source>
+        <translation>Descargado</translation>
+    </message>
+    <message>
+        <source>Uploaded</source>
+        <translation>Subido</translation>
+    </message>
+    <message>
+        <source>Share ratio</source>
+        <translation>Ratio de compartición</translation>
+    </message>
+    <message>
+        <source>WebUI downloads added, this month</source>
+        <translation>Descargas añadidas por la WebUI, este mes</translation>
+    </message>
+    <message>
+        <source>Counts the requests that added a download. Apps without a login, such as Sonarr and Radarr, are shown as (localhost). Downloads added in the desktop window are not counted.</source>
+        <translation>Cuenta las peticiones que añadieron una descarga. Las aplicaciones sin inicio de sesión, como Sonarr y Radarr, aparecen como (localhost). Las descargas añadidas en la ventana de escritorio no se cuentan.</translation>
+    </message>
+    <message>
+        <source>Technical</source>
+        <translation>Técnico</translation>
+    </message>
+    <message>
+        <source>Disk</source>
+        <translation>Disco</translation>
+    </message>
+    <message>
+        <source>Peers waiting on disk writes:</source>
+        <translation>Pares esperando escrituras en disco:</translation>
+    </message>
+    <message>
+        <source>Peers waiting on disk reads:</source>
+        <translation>Pares esperando lecturas del disco:</translation>
+    </message>
+    <message>
+        <source>Network</source>
+        <translation>Red</translation>
+    </message>
+    <message>
+        <source>DHT nodes:</source>
+        <translation>Nodos DHT:</translation>
+    </message>
+    <message>
+        <source>Data discarded this session:</source>
+        <translation>Datos descartados en esta sesión:</translation>
+    </message>
+    <message>
+        <source>Before tracking began</source>
+        <translation>Antes de que empezara el registro</translation>
+    </message>
+    <message>
+        <source>Nothing added yet</source>
+        <translation>Aún no se ha añadido nada</translation>
+    </message>
+    <message>
+        <source>Off</source>
+        <translation>Desactivado</translation>
     </message>
 </context>
 <context>
@@ -12107,6 +12967,22 @@ Por favor, elija otro nombre.</translation>
     <message>
         <source>Priority by shown file order</source>
         <translation type="vanished">Prioridad por orden de archivo mostrado</translation>
+    </message>
+    <message>
+        <source>Reset auto width</source>
+        <translation>Restablecer ancho automático</translation>
+    </message>
+    <message>
+        <source>Fit all non-hidden columns to their contents again, and forget the widths that were set by hand</source>
+        <translation>Volver a ajustar todas las columnas visibles a su contenido y olvidar los anchos fijados a mano</translation>
+    </message>
+    <message>
+        <source>Reset auto width</source>
+        <translation>Restablecer ancho automático</translation>
+    </message>
+    <message>
+        <source>Fit all non-hidden columns to their contents again, and forget the widths that were set by hand</source>
+        <translation>Volver a ajustar todas las columnas visibles a su contenido y olvidar los anchos fijados a mano</translation>
     </message>
 </context>
 <context>
@@ -13191,6 +14067,22 @@ Por favor, elija otro nombre.</translation>
         <source>Column visibility</source>
         <translation>Visibilidad de columnas</translation>
     </message>
+    <message>
+        <source>Reset auto width</source>
+        <translation>Restablecer ancho automático</translation>
+    </message>
+    <message>
+        <source>Fit all non-hidden columns to their contents again, and forget the widths that were set by hand</source>
+        <translation>Volver a ajustar todas las columnas visibles a su contenido y olvidar los anchos fijados a mano</translation>
+    </message>
+    <message>
+        <source>Reset auto width</source>
+        <translation>Restablecer ancho automático</translation>
+    </message>
+    <message>
+        <source>Fit all non-hidden columns to their contents again, and forget the widths that were set by hand</source>
+        <translation>Volver a ajustar todas las columnas visibles a su contenido y olvidar los anchos fijados a mano</translation>
+    </message>
 </context>
 <context>
     <name>TrackerStatusFilterWidget</name>
@@ -14057,6 +14949,22 @@ Por favor, elija otro nombre.</translation>
         <source>Super seeding mode</source>
         <translation>Modo supersiembra</translation>
     </message>
+    <message>
+        <source>Reset auto width</source>
+        <translation>Restablecer ancho automático</translation>
+    </message>
+    <message>
+        <source>Fit all non-hidden columns to their contents again, and forget the widths that were set by hand</source>
+        <translation>Volver a ajustar todas las columnas visibles a su contenido y olvidar los anchos fijados a mano</translation>
+    </message>
+    <message>
+        <source>Reset auto width</source>
+        <translation>Restablecer ancho automático</translation>
+    </message>
+    <message>
+        <source>Fit all non-hidden columns to their contents again, and forget the widths that were set by hand</source>
+        <translation>Volver a ajustar todas las columnas visibles a su contenido y olvidar los anchos fijados a mano</translation>
+    </message>
 </context>
 <context>
     <name>UIThemeDialog</name>
@@ -14391,6 +15299,46 @@ Por favor, elija otro nombre.</translation>
         <source>WebAPI login failure. Reason: invalid credentials, attempt count: %1, IP: %2, username: %3</source>
         <translation>WebAPI: falló el inicio de sesión. Razón: credenciales invalidas, intento número: %1, IP: %2, usuario: %3</translation>
     </message>
+    <message>
+        <source>Something went wrong on the server. Details are in qBittorrent&apos;s log.</source>
+        <translation>Algo salió mal en el servidor. Los detalles están en el registro de qBittorrent.</translation>
+    </message>
+    <message>
+        <source>This account is locked after too many failed login attempts. Try again in %1 minute(s).</source>
+        <translation>Esta cuenta está bloqueada por demasiados intentos fallidos de inicio de sesión. Inténtelo de nuevo en %1 minuto(s).</translation>
+    </message>
+    <message>
+        <source>Your role (%1) doesn&apos;t allow this: %2.</source>
+        <translation>Su rol (%1) no permite esto: %2.</translation>
+    </message>
+    <message>
+        <source>Only an admin can remove the tag that says who added a torrent.</source>
+        <translation>Solo un administrador puede quitar la etiqueta que indica quién añadió un torrent.</translation>
+    </message>
+    <message>
+        <source>Only an admin can clear or replace all tags of a torrent that has a tag saying who added it.</source>
+        <translation>Solo un administrador puede borrar o reemplazar todas las etiquetas de un torrent que tenga una etiqueta que indique quién lo añadió.</translation>
+    </message>
+    <message>
+        <source>Something went wrong on the server. Details are in qBittorrent&apos;s log.</source>
+        <translation>Algo salió mal en el servidor. Los detalles están en el registro de qBittorrent.</translation>
+    </message>
+    <message>
+        <source>This account is locked after too many failed login attempts. Try again in %1 minute(s).</source>
+        <translation>Esta cuenta está bloqueada por demasiados intentos fallidos de inicio de sesión. Inténtelo de nuevo en %1 minuto(s).</translation>
+    </message>
+    <message>
+        <source>Your role (%1) doesn&apos;t allow this: %2.</source>
+        <translation>Su rol (%1) no permite esto: %2.</translation>
+    </message>
+    <message>
+        <source>Only an admin can remove the tag that says who added a torrent.</source>
+        <translation>Solo un administrador puede quitar la etiqueta que indica quién añadió un torrent.</translation>
+    </message>
+    <message>
+        <source>Only an admin can clear or replace all tags of a torrent that has a tag saying who added it.</source>
+        <translation>Solo un administrador puede borrar o reemplazar todas las etiquetas de un torrent que tenga una etiqueta que indique quién lo añadió.</translation>
+    </message>
 </context>
 <context>
     <name>WebUI</name>
@@ -14530,6 +15478,669 @@ Por favor, elija otro nombre.</translation>
         <source>&lt; 1m</source>
         <comment>&lt; 1 minute</comment>
         <translation>&lt;1m</translation>
+    </message>
+</context>
+<context>
+    <name>UpdateInstaller</name>
+    <message>
+        <source>Kettle Edition update</source>
+        <translation>Actualización de Kettle Edition</translation>
+    </message>
+    <message>
+        <source>Kettle Edition was updated to %1.</source>
+        <translation>Kettle Edition se actualizó a %1.</translation>
+    </message>
+    <message>
+        <source>Kettle Edition updated</source>
+        <translation>Kettle Edition actualizada</translation>
+    </message>
+    <message>
+        <source>Downloading Kettle Edition %1 (%2 changed files).</source>
+        <translation>Descargando Kettle Edition %1 (%2 archivos cambiados).</translation>
+    </message>
+    <message>
+        <source>Kettle Edition %1 is downloaded and ready to install.</source>
+        <translation>Kettle Edition %1 está descargada y lista para instalar.</translation>
+    </message>
+    <message>
+        <source>Kettle Edition update</source>
+        <translation>Actualización de Kettle Edition</translation>
+    </message>
+    <message>
+        <source>Kettle Edition was updated to %1.</source>
+        <translation>Kettle Edition se actualizó a %1.</translation>
+    </message>
+    <message>
+        <source>Kettle Edition updated</source>
+        <translation>Kettle Edition actualizada</translation>
+    </message>
+    <message>
+        <source>Downloading Kettle Edition %1 (%2 changed files).</source>
+        <translation>Descargando Kettle Edition %1 (%2 archivos cambiados).</translation>
+    </message>
+    <message>
+        <source>Kettle Edition %1 is downloaded and ready to install.</source>
+        <translation>Kettle Edition %1 está descargada y lista para instalar.</translation>
+    </message>
+</context>
+<context>
+    <name>UserAccountDialog</name>
+    <message>
+        <source>User</source>
+        <translation>Usuario</translation>
+    </message>
+    <message>
+        <source>Username:</source>
+        <translation>Nombre de usuario:</translation>
+    </message>
+    <message>
+        <source>Role:</source>
+        <translation>Rol:</translation>
+    </message>
+    <message>
+        <source>Password:</source>
+        <translation>Contraseña:</translation>
+    </message>
+    <message>
+        <source>Confirm password:</source>
+        <translation>Confirmar contraseña:</translation>
+    </message>
+    <message>
+        <source>Disable this account</source>
+        <translation>Desactivar esta cuenta</translation>
+    </message>
+    <message>
+        <source>Edit User</source>
+        <translation>Editar usuario</translation>
+    </message>
+    <message>
+        <source>Leave empty to keep the current password</source>
+        <translation>Déjelo vacío para mantener la contraseña actual</translation>
+    </message>
+    <message>
+        <source>Add User</source>
+        <translation>Añadir usuario</translation>
+    </message>
+    <message>
+        <source>At least %1 characters</source>
+        <translation>Al menos %1 caracteres</translation>
+    </message>
+    <message>
+        <source>Enter a username.</source>
+        <translation>Introduzca un nombre de usuario.</translation>
+    </message>
+    <message>
+        <source>The password must be at least %1 characters long.</source>
+        <translation>La contraseña debe tener al menos %1 caracteres.</translation>
+    </message>
+    <message>
+        <source>The passwords don&apos;t match.</source>
+        <translation>Las contraseñas no coinciden.</translation>
+    </message>
+    <message>
+        <source>User</source>
+        <translation>Usuario</translation>
+    </message>
+    <message>
+        <source>Username:</source>
+        <translation>Nombre de usuario:</translation>
+    </message>
+    <message>
+        <source>Role:</source>
+        <translation>Rol:</translation>
+    </message>
+    <message>
+        <source>Password:</source>
+        <translation>Contraseña:</translation>
+    </message>
+    <message>
+        <source>Confirm password:</source>
+        <translation>Confirmar contraseña:</translation>
+    </message>
+    <message>
+        <source>Disable this account</source>
+        <translation>Desactivar esta cuenta</translation>
+    </message>
+    <message>
+        <source>Edit User</source>
+        <translation>Editar usuario</translation>
+    </message>
+    <message>
+        <source>Leave empty to keep the current password</source>
+        <translation>Déjelo vacío para mantener la contraseña actual</translation>
+    </message>
+    <message>
+        <source>Add User</source>
+        <translation>Añadir usuario</translation>
+    </message>
+    <message>
+        <source>At least %1 characters</source>
+        <translation>Al menos %1 caracteres</translation>
+    </message>
+    <message>
+        <source>Enter a username.</source>
+        <translation>Introduzca un nombre de usuario.</translation>
+    </message>
+    <message>
+        <source>The password must be at least %1 characters long.</source>
+        <translation>La contraseña debe tener al menos %1 caracteres.</translation>
+    </message>
+    <message>
+        <source>The passwords don&apos;t match.</source>
+        <translation>Las contraseñas no coinciden.</translation>
+    </message>
+</context>
+<context>
+    <name>UserAccountsWidget</name>
+    <message>
+        <source>User Accounts</source>
+        <translation>Cuentas de usuario</translation>
+    </message>
+    <message>
+        <source>Users</source>
+        <translation>Usuarios</translation>
+    </message>
+    <message>
+        <source>People who can log in to the WebUI with their own username and password.</source>
+        <translation>Personas que pueden iniciar sesión en la WebUI con su propio nombre de usuario y contraseña.</translation>
+    </message>
+    <message>
+        <source>Add User...</source>
+        <translation>Añadir usuario...</translation>
+    </message>
+    <message>
+        <source>Edit...</source>
+        <translation>Editar...</translation>
+    </message>
+    <message>
+        <source>Remove</source>
+        <translation>Quitar</translation>
+    </message>
+    <message>
+        <source>Roles</source>
+        <translation>Roles</translation>
+    </message>
+    <message>
+        <source>A role decides what its users are allowed to do.</source>
+        <translation>Un rol decide lo que pueden hacer sus usuarios.</translation>
+    </message>
+    <message>
+        <source>Add Role...</source>
+        <translation>Añadir rol...</translation>
+    </message>
+    <message>
+        <source>Logged In</source>
+        <translation>Sesiones iniciadas</translation>
+    </message>
+    <message>
+        <source>Browsers and devices where someone is logged in with a user account.</source>
+        <translation>Navegadores y dispositivos donde alguien ha iniciado sesión con una cuenta de usuario.</translation>
+    </message>
+    <message>
+        <source>Log Out</source>
+        <translation>Cerrar sesión</translation>
+    </message>
+    <message>
+        <source>Username</source>
+        <translation>Nombre de usuario</translation>
+    </message>
+    <message>
+        <source>Role</source>
+        <translation>Rol</translation>
+    </message>
+    <message>
+        <source>Status</source>
+        <translation>Estado</translation>
+    </message>
+    <message>
+        <source>Last login</source>
+        <translation>Último inicio de sesión</translation>
+    </message>
+    <message>
+        <source>Created</source>
+        <translation>Creado</translation>
+    </message>
+    <message>
+        <source>Name</source>
+        <translation>Nombre</translation>
+    </message>
+    <message>
+        <source>Description</source>
+        <translation>Descripción</translation>
+    </message>
+    <message>
+        <source>Permissions</source>
+        <translation>Permisos</translation>
+    </message>
+    <message>
+        <source>User</source>
+        <translation>Usuario</translation>
+    </message>
+    <message>
+        <source>Browser</source>
+        <translation>Navegador</translation>
+    </message>
+    <message>
+        <source>Logged in</source>
+        <translation>Sesión iniciada</translation>
+    </message>
+    <message>
+        <source>Last active</source>
+        <translation>Última actividad</translation>
+    </message>
+    <message>
+        <source>Expires</source>
+        <translation>Caduca</translation>
+    </message>
+    <message>
+        <source>The user database could not be opened. See the Execution Log for details.</source>
+        <translation>No se pudo abrir la base de datos de usuarios. Consulte el registro de ejecución para ver los detalles.</translation>
+    </message>
+    <message>
+        <source>Disabled</source>
+        <translation>Desactivado</translation>
+    </message>
+    <message>
+        <source>Enabled</source>
+        <translation>Activado</translation>
+    </message>
+    <message>
+        <source>Never</source>
+        <translation>Nunca</translation>
+    </message>
+    <message>
+        <source>No accounts yet, so everyone still uses the shared WebUI login. Add an Admin account first.</source>
+        <translation>Aún no hay cuentas, así que todos siguen usando el inicio de sesión compartido de la WebUI. Añada primero una cuenta de administrador.</translation>
+    </message>
+    <message>
+        <source>Couldn&apos;t read the user database. %1</source>
+        <translation>No se pudo leer la base de datos de usuarios. %1</translation>
+    </message>
+    <message>
+        <source>Remove user</source>
+        <translation>Quitar usuario</translation>
+    </message>
+    <message>
+        <source>Are you sure you want to remove the user &apos;%1&apos;?</source>
+        <translation>¿Seguro que quiere quitar al usuario «%1»?</translation>
+    </message>
+    <message>
+        <source>Remove role</source>
+        <translation>Quitar rol</translation>
+    </message>
+    <message>
+        <source>Are you sure you want to remove the role &apos;%1&apos;?</source>
+        <translation>¿Seguro que quiere quitar el rol «%1»?</translation>
+    </message>
+    <message>
+        <source>Enable</source>
+        <translation>Activar</translation>
+    </message>
+    <message>
+        <source>Disable</source>
+        <translation>Desactivar</translation>
+    </message>
+    <message>
+        <source>Log Out Everywhere</source>
+        <translation>Cerrar sesión en todas partes</translation>
+    </message>
+    <message>
+        <source>User Accounts</source>
+        <translation>Cuentas de usuario</translation>
+    </message>
+    <message>
+        <source>Users</source>
+        <translation>Usuarios</translation>
+    </message>
+    <message>
+        <source>People who can log in to the WebUI with their own username and password.</source>
+        <translation>Personas que pueden iniciar sesión en la WebUI con su propio nombre de usuario y contraseña.</translation>
+    </message>
+    <message>
+        <source>Add User...</source>
+        <translation>Añadir usuario...</translation>
+    </message>
+    <message>
+        <source>Edit...</source>
+        <translation>Editar...</translation>
+    </message>
+    <message>
+        <source>Remove</source>
+        <translation>Quitar</translation>
+    </message>
+    <message>
+        <source>Roles</source>
+        <translation>Roles</translation>
+    </message>
+    <message>
+        <source>A role decides what its users are allowed to do.</source>
+        <translation>Un rol decide lo que pueden hacer sus usuarios.</translation>
+    </message>
+    <message>
+        <source>Add Role...</source>
+        <translation>Añadir rol...</translation>
+    </message>
+    <message>
+        <source>Logged In</source>
+        <translation>Sesiones iniciadas</translation>
+    </message>
+    <message>
+        <source>Browsers and devices where someone is logged in with a user account.</source>
+        <translation>Navegadores y dispositivos donde alguien ha iniciado sesión con una cuenta de usuario.</translation>
+    </message>
+    <message>
+        <source>Log Out</source>
+        <translation>Cerrar sesión</translation>
+    </message>
+    <message>
+        <source>Username</source>
+        <translation>Nombre de usuario</translation>
+    </message>
+    <message>
+        <source>Role</source>
+        <translation>Rol</translation>
+    </message>
+    <message>
+        <source>Status</source>
+        <translation>Estado</translation>
+    </message>
+    <message>
+        <source>Last login</source>
+        <translation>Último inicio de sesión</translation>
+    </message>
+    <message>
+        <source>Created</source>
+        <translation>Creado</translation>
+    </message>
+    <message>
+        <source>Name</source>
+        <translation>Nombre</translation>
+    </message>
+    <message>
+        <source>Description</source>
+        <translation>Descripción</translation>
+    </message>
+    <message>
+        <source>Permissions</source>
+        <translation>Permisos</translation>
+    </message>
+    <message>
+        <source>User</source>
+        <translation>Usuario</translation>
+    </message>
+    <message>
+        <source>Browser</source>
+        <translation>Navegador</translation>
+    </message>
+    <message>
+        <source>Logged in</source>
+        <translation>Sesión iniciada</translation>
+    </message>
+    <message>
+        <source>Last active</source>
+        <translation>Última actividad</translation>
+    </message>
+    <message>
+        <source>Expires</source>
+        <translation>Caduca</translation>
+    </message>
+    <message>
+        <source>The user database could not be opened. See the Execution Log for details.</source>
+        <translation>No se pudo abrir la base de datos de usuarios. Consulte el registro de ejecución para ver los detalles.</translation>
+    </message>
+    <message>
+        <source>Disabled</source>
+        <translation>Desactivado</translation>
+    </message>
+    <message>
+        <source>Enabled</source>
+        <translation>Activado</translation>
+    </message>
+    <message>
+        <source>Never</source>
+        <translation>Nunca</translation>
+    </message>
+    <message>
+        <source>No accounts yet, so everyone still uses the shared WebUI login. Add an Admin account first.</source>
+        <translation>Aún no hay cuentas, así que todos siguen usando el inicio de sesión compartido de la WebUI. Añada primero una cuenta de administrador.</translation>
+    </message>
+    <message>
+        <source>Couldn&apos;t read the user database. %1</source>
+        <translation>No se pudo leer la base de datos de usuarios. %1</translation>
+    </message>
+    <message>
+        <source>Remove user</source>
+        <translation>Quitar usuario</translation>
+    </message>
+    <message>
+        <source>Are you sure you want to remove the user &apos;%1&apos;?</source>
+        <translation>¿Seguro que quiere quitar al usuario «%1»?</translation>
+    </message>
+    <message>
+        <source>Remove role</source>
+        <translation>Quitar rol</translation>
+    </message>
+    <message>
+        <source>Are you sure you want to remove the role &apos;%1&apos;?</source>
+        <translation>¿Seguro que quiere quitar el rol «%1»?</translation>
+    </message>
+    <message>
+        <source>Enable</source>
+        <translation>Activar</translation>
+    </message>
+    <message>
+        <source>Disable</source>
+        <translation>Desactivar</translation>
+    </message>
+    <message>
+        <source>Log Out Everywhere</source>
+        <translation>Cerrar sesión en todas partes</translation>
+    </message>
+</context>
+<context>
+    <name>UserRoleDialog</name>
+    <message>
+        <source>Role</source>
+        <translation>Rol</translation>
+    </message>
+    <message>
+        <source>Name:</source>
+        <translation>Nombre:</translation>
+    </message>
+    <message>
+        <source>Description:</source>
+        <translation>Descripción:</translation>
+    </message>
+    <message>
+        <source>Gives control over the PC or qBittorrent itself.</source>
+        <translation>Da control sobre el PC o sobre el propio qBittorrent.</translation>
+    </message>
+    <message>
+        <source>Add Role</source>
+        <translation>Añadir rol</translation>
+    </message>
+    <message>
+        <source>Edit Role</source>
+        <translation>Editar rol</translation>
+    </message>
+    <message>
+        <source>Enter a role name.</source>
+        <translation>Introduzca un nombre de rol.</translation>
+    </message>
+    <message>
+        <source>Role</source>
+        <translation>Rol</translation>
+    </message>
+    <message>
+        <source>Name:</source>
+        <translation>Nombre:</translation>
+    </message>
+    <message>
+        <source>Description:</source>
+        <translation>Descripción:</translation>
+    </message>
+    <message>
+        <source>Gives control over the PC or qBittorrent itself.</source>
+        <translation>Da control sobre el PC o sobre el propio qBittorrent.</translation>
+    </message>
+    <message>
+        <source>Add Role</source>
+        <translation>Añadir rol</translation>
+    </message>
+    <message>
+        <source>Edit Role</source>
+        <translation>Editar rol</translation>
+    </message>
+    <message>
+        <source>Enter a role name.</source>
+        <translation>Introduzca un nombre de rol.</translation>
+    </message>
+</context>
+<context>
+    <name>WebUIActivityWidget</name>
+    <message>
+        <source>All</source>
+        <translation>Todo</translation>
+    </message>
+    <message>
+        <source>Filter activity</source>
+        <translation>Filtrar actividad</translation>
+    </message>
+    <message>
+        <source>Export...</source>
+        <translation>Exportar...</translation>
+    </message>
+    <message>
+        <source>User:</source>
+        <translation>Usuario:</translation>
+    </message>
+    <message>
+        <source>Category:</source>
+        <translation>Categoría:</translation>
+    </message>
+    <message>
+        <source>Result:</source>
+        <translation>Resultado:</translation>
+    </message>
+    <message>
+        <source>Time</source>
+        <translation>Hora</translation>
+    </message>
+    <message>
+        <source>User</source>
+        <translation>Usuario</translation>
+    </message>
+    <message>
+        <source>Role</source>
+        <translation>Rol</translation>
+    </message>
+    <message>
+        <source>Category</source>
+        <translation>Categoría</translation>
+    </message>
+    <message>
+        <source>Action</source>
+        <translation>Acción</translation>
+    </message>
+    <message>
+        <source>Result</source>
+        <translation>Resultado</translation>
+    </message>
+    <message>
+        <source>The user database could not be opened. See the General tab for details.</source>
+        <translation>No se pudo abrir la base de datos de usuarios. Consulte la pestaña General para ver los detalles.</translation>
+    </message>
+    <message>
+        <source>Results (showing %1 out of %2)</source>
+        <translation>Resultados (mostrando %1 de %2)</translation>
+    </message>
+    <message>
+        <source>Copy</source>
+        <translation>Copiar</translation>
+    </message>
+    <message>
+        <source>Export WebUI activity</source>
+        <translation>Exportar actividad de la WebUI</translation>
+    </message>
+    <message>
+        <source>CSV files</source>
+        <translation>Archivos CSV</translation>
+    </message>
+    <message>
+        <source>Couldn&apos;t save the file. Reason: %1</source>
+        <translation>No se pudo guardar el archivo. Motivo: %1</translation>
+    </message>
+    <message>
+        <source>All</source>
+        <translation>Todo</translation>
+    </message>
+    <message>
+        <source>Filter activity</source>
+        <translation>Filtrar actividad</translation>
+    </message>
+    <message>
+        <source>Export...</source>
+        <translation>Exportar...</translation>
+    </message>
+    <message>
+        <source>User:</source>
+        <translation>Usuario:</translation>
+    </message>
+    <message>
+        <source>Category:</source>
+        <translation>Categoría:</translation>
+    </message>
+    <message>
+        <source>Result:</source>
+        <translation>Resultado:</translation>
+    </message>
+    <message>
+        <source>Time</source>
+        <translation>Hora</translation>
+    </message>
+    <message>
+        <source>User</source>
+        <translation>Usuario</translation>
+    </message>
+    <message>
+        <source>Role</source>
+        <translation>Rol</translation>
+    </message>
+    <message>
+        <source>Category</source>
+        <translation>Categoría</translation>
+    </message>
+    <message>
+        <source>Action</source>
+        <translation>Acción</translation>
+    </message>
+    <message>
+        <source>Result</source>
+        <translation>Resultado</translation>
+    </message>
+    <message>
+        <source>The user database could not be opened. See the General tab for details.</source>
+        <translation>No se pudo abrir la base de datos de usuarios. Consulte la pestaña General para ver los detalles.</translation>
+    </message>
+    <message>
+        <source>Results (showing %1 out of %2)</source>
+        <translation>Resultados (mostrando %1 de %2)</translation>
+    </message>
+    <message>
+        <source>Copy</source>
+        <translation>Copiar</translation>
+    </message>
+    <message>
+        <source>Export WebUI activity</source>
+        <translation>Exportar actividad de la WebUI</translation>
+    </message>
+    <message>
+        <source>CSV files</source>
+        <translation>Archivos CSV</translation>
+    </message>
+    <message>
+        <source>Couldn&apos;t save the file. Reason: %1</source>
+        <translation>No se pudo guardar el archivo. Motivo: %1</translation>
     </message>
 </context>
 </TS>

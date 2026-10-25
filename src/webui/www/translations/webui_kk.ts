@@ -223,6 +223,85 @@ The piece hash will be checked when it is requested for the first time by a peer
         <source>%1 needed · %2 free</source>
         <translation type="unfinished" />
     </message>
+    <message>
+        <source>All</source>
+        <translation>Барлығы</translation>
+    </message>
+    <message>
+        <source>Don&apos;t create subfolder</source>
+        <translation>Субқалта құрмау</translation>
+    </message>
+    <message>
+        <source>Never show again</source>
+        <translation>Ешқашан қайта көрсетпеу</translation>
+    </message>
+    <message>
+        <source>Select None</source>
+        <translation>Ештеңе таңдамау</translation>
+    </message>
+    <message>
+        <source>Your role saves torrents in the default folders.</source>
+        <translation>Сіздің рөліңіз торренттерді әдепкі қалталарда сақтайды.</translation>
+    </message>
+</context>
+<context>
+    <name>AdvancedSettings</name>
+    <message>
+        <source>General</source>
+        <translation>Жалпы</translation>
+    </message>
+    <message>
+        <source>Network</source>
+        <translation>Желі</translation>
+    </message>
+    <message>
+        <source>Storage</source>
+        <translation>Сақтау</translation>
+    </message>
+    <message>
+        <source>Peers and trackers</source>
+        <translation>Пирлер және трекерлер</translation>
+    </message>
+    <message>
+        <source>Program behavior</source>
+        <translation>Бағдарлама әрекеті</translation>
+    </message>
+    <message>
+        <source>Display and notifications</source>
+        <translation>Көрсету және хабарландырулар</translation>
+    </message>
+    <message>
+        <source>Network connection</source>
+        <translation>Желі байланысы</translation>
+    </message>
+    <message>
+        <source>Security and privacy</source>
+        <translation>Қауіпсіздік және құпиялылық</translation>
+    </message>
+    <message>
+        <source>Connection tuning</source>
+        <translation>Байланысты баптау</translation>
+    </message>
+    <message>
+        <source>Saving and torrent files</source>
+        <translation>Сақтау және торрент файлдары</translation>
+    </message>
+    <message>
+        <source>Disk and memory</source>
+        <translation>Диск және жад</translation>
+    </message>
+    <message>
+        <source>Trackers</source>
+        <translation>Трекерлер</translation>
+    </message>
+    <message>
+        <source>Peers and seeding</source>
+        <translation>Пирлер және тарату</translation>
+    </message>
+    <message>
+        <source>DHT and I2P</source>
+        <translation>DHT және I2P</translation>
+    </message>
 </context>
 <context>
     <name>CategoryFilterModel</name>
@@ -233,6 +312,10 @@ The piece hash will be checked when it is requested for the first time by a peer
     <message>
         <source>Uncategorized</source>
         <translation>Санатсыз</translation>
+    </message>
+    <message>
+        <source>All</source>
+        <translation>Барлығы</translation>
     </message>
 </context>
 <context>
@@ -623,6 +706,18 @@ The piece hash will be checked when it is requested for the first time by a peer
         <source>More</source>
         <translation>Қосымша</translation>
     </message>
+    <message>
+        <source>Change Password...</source>
+        <translation>Құпиясөзді өзгерту...</translation>
+    </message>
+    <message>
+        <source>Exit qBittorrent</source>
+        <translation>qBittorrent-тен шығу</translation>
+    </message>
+    <message>
+        <source>Signed in as</source>
+        <translation>Кірген пайдаланушы</translation>
+    </message>
 </context>
 <context>
     <name>MainWindow</name>
@@ -921,6 +1016,34 @@ The piece hash will be checked when it is requested for the first time by a peer
     <message>
         <source>Resume Session</source>
         <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Pause Session</source>
+        <translation>Сессияны кідірту</translation>
+    </message>
+    <message>
+        <source>Pause session</source>
+        <translation>Сессияны кідірту</translation>
+    </message>
+    <message>
+        <source>Remove</source>
+        <translation>Жою</translation>
+    </message>
+    <message>
+        <source>Resume Session</source>
+        <translation>Сессияны жалғастыру</translation>
+    </message>
+    <message>
+        <source>Resume session</source>
+        <translation>Сессияны жалғастыру</translation>
+    </message>
+    <message>
+        <source>Your account can&apos;t add torrents.</source>
+        <translation>Сіздің тіркелгіңіз торренттерді қоса алмайды.</translation>
+    </message>
+    <message>
+        <source>[PAUSED]</source>
+        <translation>[КІДІРТІЛГЕН]</translation>
     </message>
 </context>
 <context>
@@ -2495,6 +2618,134 @@ Use ';' to split multiple entries. Can use wildcard '*'.</source>
         <source>a@x.com;b@y.com,c@z.com - send two emails: the first to just a@x.com, the second to both b@y.com and c@z.com</source>
         <translation type="unfinished" />
     </message>
+    <message>
+        <source>0 means users are logged out after the session timeout.</source>
+        <translation>0 пайдаланушылар сессия күту уақыты біткенде шығып кетеді дегенді білдіреді.</translation>
+    </message>
+    <message>
+        <source>Access</source>
+        <translation>Қолжетімділік</translation>
+    </message>
+    <message>
+        <source>Allow this login when user accounts exist</source>
+        <translation>Пайдаланушы тіркелгілері бар кезде де бұл кіруге рұқсат ету</translation>
+    </message>
+    <message>
+        <source>Also save search results</source>
+        <translation>Іздеу нәтижелерін де сақтау</translation>
+    </message>
+    <message>
+        <source>Below normal</source>
+        <translation>Қалыптыдан төмен</translation>
+    </message>
+    <message>
+        <source>Changes to users, roles and logins apply at once.</source>
+        <translation>Пайдаланушылар, рөлдер және кірулердегі өзгерістер бірден қолданылады.</translation>
+    </message>
+    <message>
+        <source>Checking</source>
+        <translation>Тексеру</translation>
+    </message>
+    <message>
+        <source>Don&apos;t create subfolder</source>
+        <translation>Субқалта құрмау</translation>
+    </message>
+    <message>
+        <source>Example:</source>
+        <translation>Мысалы:</translation>
+    </message>
+    <message>
+        <source>Keep WebUI activity log for:</source>
+        <translation>WebUI әрекет журналын сақтау:</translation>
+    </message>
+    <message>
+        <source>Keep users logged in for:</source>
+        <translation>Пайдаланушыларды кірген күйде сақтау:</translation>
+    </message>
+    <message>
+        <source>Language:</source>
+        <translation>Тіл:</translation>
+    </message>
+    <message>
+        <source>Lock account after consecutive failures:</source>
+        <translation>Қатарынан сәтсіздіктен кейін тіркелгіні құлыптау:</translation>
+    </message>
+    <message>
+        <source>Logins and Activity Log</source>
+        <translation>Кірулер және әрекет журналы</translation>
+    </message>
+    <message>
+        <source>Low</source>
+        <translation>Төмен</translation>
+    </message>
+    <message>
+        <source>Medium</source>
+        <translation>Орташа</translation>
+    </message>
+    <message>
+        <source>No settings match</source>
+        <translation>Сәйкес параметр жоқ</translation>
+    </message>
+    <message>
+        <source>Process memory priority:</source>
+        <translation>Процесс жадының басымдығы:</translation>
+    </message>
+    <message>
+        <source>Save search tabs</source>
+        <translation>Іздеу қойындыларын сақтау</translation>
+    </message>
+    <message>
+        <source>Search settings</source>
+        <translation>Параметрлерден іздеу</translation>
+    </message>
+    <message>
+        <source>Show the window when adding a torrent</source>
+        <translation>Торрент қосқанда терезені көрсету</translation>
+    </message>
+    <message>
+        <source>Status bar and log</source>
+        <translation>Күй жолағы және журнал</translation>
+    </message>
+    <message>
+        <source>The WebUI activity log can be kept for 1 to 3650 days.</source>
+        <translation>WebUI әрекет журналын 1-ден 3650 күнге дейін сақтауға болады.</translation>
+    </message>
+    <message>
+        <source>The settings below apply with OK or Apply.</source>
+        <translation>Төмендегі параметрлер OK немесе Қолдану арқылы қолданылады.</translation>
+    </message>
+    <message>
+        <source>Until the first user account is created, this login always works.</source>
+        <translation>Алғашқы пайдаланушы тіркелгісі жасалғанша бұл кіру әрқашан жұмыс істейді.</translation>
+    </message>
+    <message>
+        <source>User</source>
+        <translation>Пайдаланушы</translation>
+    </message>
+    <message>
+        <source>User Accounts</source>
+        <translation>Пайдаланушы тіркелгілері</translation>
+    </message>
+    <message>
+        <source>Users can be kept logged in for 0 to 365 days.</source>
+        <translation>Пайдаланушыларды 0-ден 365 күнге дейін кірген күйде сақтауға болады.</translation>
+    </message>
+    <message>
+        <source>Very low</source>
+        <translation>Өте төмен</translation>
+    </message>
+    <message>
+        <source>Warning! Data loss possible!</source>
+        <translation>Ескерту! Деректер жоғалуы мүмкін!</translation>
+    </message>
+    <message>
+        <source>You changed the address, port or HTTPS setting of the WebUI. Saving moves the WebUI, so Options will save, close and reload the page, the same as OK. If the page doesn&apos;t come back, open the WebUI at its new address.\n\nSave anyway?</source>
+        <translation>Сіз WebUI мекенжайын, портын немесе HTTPS параметрін өзгерттіңіз. Сақтау WebUI-ді жылжытады, сондықтан Опциялар OK сияқты сақтап, жауып, бетті қайта жүктейді. Бет қайтпаса, WebUI-ді жаңа мекенжайында ашыңыз.\n\nҚалай болғанда да сақтау керек пе?</translation>
+    </message>
+    <message>
+        <source>lock for:</source>
+        <translation>құлыптау мерзімі:</translation>
+    </message>
 </context>
 <context>
     <name>PeerListWidget</name>
@@ -2581,6 +2832,14 @@ Use ';' to split multiple entries. Can use wildcard '*'.</source>
     <message>
         <source>Contribution</source>
         <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Downloaded</source>
+        <translation>Жүктелген</translation>
+    </message>
+    <message>
+        <source>Uploaded</source>
+        <translation>Жіберілген</translation>
     </message>
 </context>
 <context>
@@ -2923,6 +3182,18 @@ Use ';' to split multiple entries. Can use wildcard '*'.</source>
         <source>Copy download URL</source>
         <translation type="unfinished" />
     </message>
+    <message>
+        <source>Downloaded:</source>
+        <translation>Жүктелген:</translation>
+    </message>
+    <message>
+        <source>Transfer</source>
+        <translation>Тасымалдау</translation>
+    </message>
+    <message>
+        <source>Uploaded:</source>
+        <translation>Жіберілген:</translation>
+    </message>
 </context>
 <context>
     <name>ScanFoldersModel</name>
@@ -3035,6 +3306,162 @@ Use ';' to split multiple entries. Can use wildcard '*'.</source>
     <message>
         <source>The time it takes from receiving a request from a peer until we're sending the response back on the socket</source>
         <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Activity</source>
+        <translation>Әрекет</translation>
+    </message>
+    <message>
+        <source>All time</source>
+        <translation>Барлық уақыт</translation>
+    </message>
+    <message>
+        <source>Before tracking began</source>
+        <translation>Бақылау басталғанға дейін</translation>
+    </message>
+    <message>
+        <source>By month</source>
+        <translation>Айлар бойынша</translation>
+    </message>
+    <message>
+        <source>Counts the requests that added a download. Apps without a login, such as Sonarr and Radarr, are shown as (localhost). Downloads added in the desktop window are not counted.</source>
+        <translation>Жүктеу қосқан сұрауларды санайды. Sonarr және Radarr сияқты кірусіз қолданбалар (localhost) ретінде көрсетіледі. Жұмыс үстелі терезесінде қосылған жүктеулер санталмайды.</translation>
+    </message>
+    <message>
+        <source>Current speed:</source>
+        <translation>Ағымдағы жылдамдық:</translation>
+    </message>
+    <message>
+        <source>DHT nodes:</source>
+        <translation>DHT түйіндері:</translation>
+    </message>
+    <message>
+        <source>Data discarded this session:</source>
+        <translation>Осы сессияда тасталған деректер:</translation>
+    </message>
+    <message>
+        <source>Disk</source>
+        <translation>Диск</translation>
+    </message>
+    <message>
+        <source>Downloaded</source>
+        <translation>Жүктелген</translation>
+    </message>
+    <message>
+        <source>Downloaded:</source>
+        <translation>Жүктелген:</translation>
+    </message>
+    <message>
+        <source>History</source>
+        <translation>Тарих</translation>
+    </message>
+    <message>
+        <source>Last 12 months</source>
+        <translation>Соңғы 12 ай</translation>
+    </message>
+    <message>
+        <source>Last 7 days</source>
+        <translation>Соңғы 7 күн</translation>
+    </message>
+    <message>
+        <source>Last month</source>
+        <translation>Өткен ай</translation>
+    </message>
+    <message>
+        <source>Month</source>
+        <translation>Ай</translation>
+    </message>
+    <message>
+        <source>Nothing added yet</source>
+        <translation>Әлі ештеңе қосылмаған</translation>
+    </message>
+    <message>
+        <source>Off</source>
+        <translation>Өшірулі</translation>
+    </message>
+    <message>
+        <source>Overview</source>
+        <translation>Шолу</translation>
+    </message>
+    <message>
+        <source>Peers waiting on disk reads:</source>
+        <translation>Дискіден оқуды күтіп тұрған пирлер:</translation>
+    </message>
+    <message>
+        <source>Peers waiting on disk writes:</source>
+        <translation>Дискіге жазуды күтіп тұрған пирлер:</translation>
+    </message>
+    <message>
+        <source>Period</source>
+        <translation>Кезең</translation>
+    </message>
+    <message>
+        <source>Request latency:</source>
+        <translation>Сұраудың кідірісі:</translation>
+    </message>
+    <message>
+        <source>Running for:</source>
+        <translation>Жұмыс уақыты:</translation>
+    </message>
+    <message>
+        <source>Share ratio</source>
+        <translation>Бөлісу қатынасы</translation>
+    </message>
+    <message>
+        <source>Share ratio:</source>
+        <translation>Бөлісу қатынасы:</translation>
+    </message>
+    <message>
+        <source>Technical</source>
+        <translation>Техникалық</translation>
+    </message>
+    <message>
+        <source>This month</source>
+        <translation>Осы ай</translation>
+    </message>
+    <message>
+        <source>This session</source>
+        <translation>Осы сессия</translation>
+    </message>
+    <message>
+        <source>Today</source>
+        <translation>Бүгін</translation>
+    </message>
+    <message>
+        <source>Torrents downloading:</source>
+        <translation>Жүктеліп жатқан торренттер:</translation>
+    </message>
+    <message>
+        <source>Torrents seeding:</source>
+        <translation>Сидтеліп жатқан торренттер:</translation>
+    </message>
+    <message>
+        <source>Torrents stopped:</source>
+        <translation>Тоқтатылған торренттер:</translation>
+    </message>
+    <message>
+        <source>Torrents with errors:</source>
+        <translation>Қате бар торренттер:</translation>
+    </message>
+    <message>
+        <source>Tracking since:</source>
+        <translation>Бақылау басталған күн:</translation>
+    </message>
+    <message>
+        <source>Transfer</source>
+        <translation>Тасымалдау</translation>
+    </message>
+    <message>
+        <source>Uploaded</source>
+        <translation>Жіберілген</translation>
+    </message>
+    <message>
+        <source>Uploaded:</source>
+        <translation>Жіберілген:</translation>
+    </message>
+    <message>
+        <source>WebUI downloads added, this month</source>
+        <translation>WebUI арқылы қосылған жүктеулер, осы ай</translation>
     </message>
 </context>
 <context>
@@ -3356,6 +3783,14 @@ Use ';' to split multiple entries. Can use wildcard '*'.</source>
         <source>Created On</source>
         <translation type="unfinished" />
     </message>
+    <message>
+        <source>Downloaded</source>
+        <translation>Жүктелген</translation>
+    </message>
+    <message>
+        <source>Uploaded</source>
+        <translation>Жіберілген</translation>
+    </message>
 </context>
 <context>
     <name>TrackerListWidget</name>
@@ -3594,6 +4029,10 @@ Use ';' to split multiple entries. Can use wildcard '*'.</source>
         <source>N/A</source>
         <translation>Қолжетімсіз</translation>
     </message>
+    <message>
+        <source>Checking</source>
+        <translation>Тексеру</translation>
+    </message>
 </context>
 <context>
     <name>TransferListFiltersWidget</name>
@@ -3822,6 +4261,14 @@ Use ';' to split multiple entries. Can use wildcard '*'.</source>
         <source>Content Path</source>
         <translation type="unfinished" />
     </message>
+    <message>
+        <source>Remove</source>
+        <translation>Жою</translation>
+    </message>
+    <message>
+        <source>Remove all tags from selected torrents?</source>
+        <translation>Таңдалған торренттердің барлық тегін жоясыз ба?</translation>
+    </message>
 </context>
 <context>
     <name>UpDownRatioDialog</name>
@@ -3894,6 +4341,10 @@ Use ';' to split multiple entries. Can use wildcard '*'.</source>
     <message>
         <source>Remove tracker</source>
         <translation type="unfinished" />
+    </message>
+    <message>
+        <source>This choice is remembered for the next removal.</source>
+        <translation>Бұл таңдау келесі жоюға есте сақталады.</translation>
     </message>
 </context>
 <context>
@@ -4107,6 +4558,30 @@ Use ';' to split multiple entries. Can use wildcard '*'.</source>
         <source>Select plugins</source>
         <translation type="unfinished" />
     </message>
+    <message>
+        <source>Category to search in</source>
+        <translation>Іздеу санаты</translation>
+    </message>
+    <message>
+        <source>Close the selected search</source>
+        <translation>Таңдалған іздеуді жабу</translation>
+    </message>
+    <message>
+        <source>Search engines to use</source>
+        <translation>Қолданылатын іздеу жүйелері</translation>
+    </message>
+    <message>
+        <source>Search for torrents...</source>
+        <translation>Торренттерді іздеу...</translation>
+    </message>
+    <message>
+        <source>Searches</source>
+        <translation>Іздеулер</translation>
+    </message>
+    <message>
+        <source>Type a search above and press Enter.</source>
+        <translation>Жоғарыда іздеу сұрауын теріп, Enter басыңыз.</translation>
+    </message>
 </context>
 <context>
     <name>PluginSelectDlg</name>
@@ -4281,6 +4756,10 @@ Use ';' to split multiple entries. Can use wildcard '*'.</source>
         <source>Untagged</source>
         <translation>Тегсіз</translation>
     </message>
+    <message>
+        <source>All</source>
+        <translation>Барлығы</translation>
+    </message>
 </context>
 <context>
     <name>AboutDialog</name>
@@ -4367,6 +4846,30 @@ Use ';' to split multiple entries. Can use wildcard '*'.</source>
     <message>
         <source>qBittorrent icon</source>
         <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Based on:</source>
+        <translation>Негізі:</translation>
+    </message>
+    <message>
+        <source>Edition version:</source>
+        <translation>Шығарылым нұсқасы:</translation>
+    </message>
+    <message>
+        <source>Kettle Edition is a personal build of qBittorrent that adds user accounts with roles for the WebUI and the desktop app, an activity log, and an installable WebUI with a phone layout. A kettle is a group of hawks soaring together. This is an unofficial build, not affiliated with the qBittorrent project.</source>
+        <translation>Kettle Edition — qBittorrent-тің жеке құрастырмасы, ол WebUI және жұмыс үстелі қолданбасы үшін рөлдері бар пайдаланушы тіркелгілерін, әрекет журналын және телефон макеті бар орнатылатын WebUI қосады. Kettle — бірге қалықтайтын лашындар тобы. Бұл бейресми құрастырма, qBittorrent жобасына қатысы жоқ.</translation>
+    </message>
+    <message>
+        <source>Maintainer:</source>
+        <translation>Қолдаушы:</translation>
+    </message>
+    <message>
+        <source>This edition</source>
+        <translation>Осы шығарылым</translation>
+    </message>
+    <message>
+        <source>qBittorrent project:</source>
+        <translation>qBittorrent жобасы:</translation>
     </message>
 </context>
 <context>
@@ -4469,6 +4972,38 @@ Use ';' to split multiple entries. Can use wildcard '*'.</source>
     <message>
         <source>Open shared download window</source>
         <translation type="unfinished" />
+    </message>
+    <message>
+        <source>%1 of %2 shown</source>
+        <translation>%2 ішінен %1 көрсетілді</translation>
+    </message>
+    <message>
+        <source>%1 of %2 shown (%3 hidden)</source>
+        <translation>%2 ішінен %1 көрсетілді (%3 жасырын)</translation>
+    </message>
+    <message>
+        <source>Close all searches</source>
+        <translation>Барлық іздеулерді жабу</translation>
+    </message>
+    <message>
+        <source>Close search</source>
+        <translation>Іздеуді жабу</translation>
+    </message>
+    <message>
+        <source>Finished: %1</source>
+        <translation>Аяқталды: %1</translation>
+    </message>
+    <message>
+        <source>Refresh search</source>
+        <translation>Іздеуді жаңарту</translation>
+    </message>
+    <message>
+        <source>Search aborted: %1</source>
+        <translation>Іздеу тоқтатылды: %1</translation>
+    </message>
+    <message>
+        <source>Searching: %1</source>
+        <translation>Іздеу: %1</translation>
     </message>
 </context>
 <context>
@@ -4607,6 +5142,10 @@ Use ';' to split multiple entries. Can use wildcard '*'.</source>
     <message>
         <source>Blocked opening RSS article URL. Only http:// and https:// links can be opened.</source>
         <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Details</source>
+        <translation>Мәліметтер</translation>
     </message>
 </context>
 <context>
@@ -4884,6 +5423,10 @@ Supports the formats: S01E01, 1x1, 2017.12.31 and 31.12.2017 (Date formats also 
         <source>Import</source>
         <translation type="unfinished" />
     </message>
+    <message>
+        <source>Don&apos;t create subfolder</source>
+        <translation>Субқалта құрмау</translation>
+    </message>
 </context>
 <context>
     <name>TrackerFiltersList</name>
@@ -4926,6 +5469,10 @@ Supports the formats: S01E01, 1x1, 2017.12.31 and 31.12.2017 (Date formats also 
     <message>
         <source>Force start torrents</source>
         <translation type="unfinished" />
+    </message>
+    <message>
+        <source>All</source>
+        <translation>Барлығы</translation>
     </message>
 </context>
 <context>
@@ -5073,6 +5620,30 @@ Supports the formats: S01E01, 1x1, 2017.12.31 and 31.12.2017 (Date formats also 
         <source>Choose a log level...</source>
         <translation type="unfinished" />
     </message>
+    <message>
+        <source>All</source>
+        <translation>Барлығы</translation>
+    </message>
+    <message>
+        <source>Export...</source>
+        <translation>Экспорттау...</translation>
+    </message>
+    <message>
+        <source>Filter activity</source>
+        <translation>Әрекетті сүзу</translation>
+    </message>
+    <message>
+        <source>Result:</source>
+        <translation>Нәтиже:</translation>
+    </message>
+    <message>
+        <source>User:</source>
+        <translation>Пайдаланушы:</translation>
+    </message>
+    <message>
+        <source>WebUI Activity</source>
+        <translation>WebUI әрекеті</translation>
+    </message>
 </context>
 <context>
     <name>TrackersFilterWidget</name>
@@ -5143,6 +5714,10 @@ Supports the formats: S01E01, 1x1, 2017.12.31 and 31.12.2017 (Date formats also 
         <source>Torrent share limits</source>
         <translation type="unfinished" />
     </message>
+    <message>
+        <source>Your role saves torrents in the default folders.</source>
+        <translation>Сіздің рөліңіз торренттерді әдепкі қалталарда сақтайды.</translation>
+    </message>
 </context>
 <context>
     <name>CookiesDialog</name>
@@ -5177,6 +5752,10 @@ Supports the formats: S01E01, 1x1, 2017.12.31 and 31.12.2017 (Date formats also 
     <message>
         <source>Path</source>
         <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Remove</source>
+        <translation>Жою</translation>
     </message>
 </context>
 <context>
@@ -5241,6 +5820,18 @@ Supports the formats: S01E01, 1x1, 2017.12.31 and 31.12.2017 (Date formats also 
     <message>
         <source>Invalid Username or Password.</source>
         <translation type="unfinished" />
+    </message>
+    <message>
+        <source>A kettle is a group of hawks soaring together.</source>
+        <translation>Kettle — бірге қалықтайтын лашындар тобы.</translation>
+    </message>
+    <message>
+        <source>Sign in</source>
+        <translation>Кіру</translation>
+    </message>
+    <message>
+        <source>Username</source>
+        <translation>Пайдаланушы аты</translation>
     </message>
 </context>
 <context>
@@ -5570,6 +6161,10 @@ Supports the formats: S01E01, 1x1, 2017.12.31 and 31.12.2017 (Date formats also 
         <source>Resize</source>
         <translation type="unfinished" />
     </message>
+    <message>
+        <source>Reset Auto Width</source>
+        <translation>Автоматты енді қалпына келтіру</translation>
+    </message>
 </context>
 <context>
     <name>confirmRotateAPIKeyDialog</name>
@@ -5709,6 +6304,224 @@ Supports the formats: S01E01, 1x1, 2017.12.31 and 31.12.2017 (Date formats also 
     <message>
         <source>Not available for folders</source>
         <translation type="unfinished" />
+    </message>
+</context>
+<context>
+    <name>UserAccounts</name>
+    <message>
+        <source>(this browser)</source>
+        <translation>(осы браузер)</translation>
+    </message>
+    <message>
+        <source>A role decides what its users are allowed to do.</source>
+        <translation>Рөл оның пайдаланушылары не істей алатынын анықтайды.</translation>
+    </message>
+    <message>
+        <source>Add Role</source>
+        <translation>Рөл қосу</translation>
+    </message>
+    <message>
+        <source>Add Role...</source>
+        <translation>Рөл қосу...</translation>
+    </message>
+    <message>
+        <source>Add User</source>
+        <translation>Пайдаланушыны қосу</translation>
+    </message>
+    <message>
+        <source>Add User...</source>
+        <translation>Пайдаланушыны қосу...</translation>
+    </message>
+    <message>
+        <source>Are you sure you want to remove the role &apos;%1&apos;?</source>
+        <translation>«%1» рөлін жойғыңыз келетініне сенімдісіз бе?</translation>
+    </message>
+    <message>
+        <source>Are you sure you want to remove the user &apos;%1&apos;?</source>
+        <translation>«%1» пайдаланушысын жойғыңыз келетініне сенімдісіз бе?</translation>
+    </message>
+    <message>
+        <source>At least %1 characters</source>
+        <translation>Кемінде %1 таңба</translation>
+    </message>
+    <message>
+        <source>Browser</source>
+        <translation>Браузер</translation>
+    </message>
+    <message>
+        <source>Browsers and devices where someone is logged in with a user account.</source>
+        <translation>Пайдаланушы тіркелгісімен біреу кірген браузерлер мен құрылғылар.</translation>
+    </message>
+    <message>
+        <source>Change Password</source>
+        <translation>Құпиясөзді өзгерту</translation>
+    </message>
+    <message>
+        <source>Confirm password:</source>
+        <translation>Құпиясөзді растау:</translation>
+    </message>
+    <message>
+        <source>Created</source>
+        <translation>Жасалған</translation>
+    </message>
+    <message>
+        <source>Current password:</source>
+        <translation>Ағымдағы құпиясөз:</translation>
+    </message>
+    <message>
+        <source>Description</source>
+        <translation>Сипаттама</translation>
+    </message>
+    <message>
+        <source>Description:</source>
+        <translation>Сипаттама:</translation>
+    </message>
+    <message>
+        <source>Disable</source>
+        <translation>Өшіру</translation>
+    </message>
+    <message>
+        <source>Disable this account</source>
+        <translation>Бұл тіркелгіні өшіру</translation>
+    </message>
+    <message>
+        <source>Edit Role</source>
+        <translation>Рөлді өңдеу</translation>
+    </message>
+    <message>
+        <source>Edit User</source>
+        <translation>Пайдаланушыны өңдеу</translation>
+    </message>
+    <message>
+        <source>Edit...</source>
+        <translation>Өңдеу...</translation>
+    </message>
+    <message>
+        <source>Enable</source>
+        <translation>Қосу</translation>
+    </message>
+    <message>
+        <source>Enter a role name.</source>
+        <translation>Рөл атын енгізіңіз.</translation>
+    </message>
+    <message>
+        <source>Enter a username.</source>
+        <translation>Пайдаланушы атын енгізіңіз.</translation>
+    </message>
+    <message>
+        <source>Expires</source>
+        <translation>Мерзімі бітеді</translation>
+    </message>
+    <message>
+        <source>Gives control over the PC or qBittorrent itself</source>
+        <translation>Компьютерді немесе qBittorrent-тің өзін басқару мүмкіндігін береді</translation>
+    </message>
+    <message>
+        <source>Last active</source>
+        <translation>Соңғы белсенділік</translation>
+    </message>
+    <message>
+        <source>Last login</source>
+        <translation>Соңғы кіру</translation>
+    </message>
+    <message>
+        <source>Leave empty to keep the current password</source>
+        <translation>Ағымдағы құпиясөзді сақтау үшін бос қалдырыңыз</translation>
+    </message>
+    <message>
+        <source>Log Out</source>
+        <translation>Шығу</translation>
+    </message>
+    <message>
+        <source>Log Out Everywhere</source>
+        <translation>Барлық жерден шығу</translation>
+    </message>
+    <message>
+        <source>Logged In</source>
+        <translation>Кіргендер</translation>
+    </message>
+    <message>
+        <source>Logged in</source>
+        <translation>Кірген уақыты</translation>
+    </message>
+    <message>
+        <source>New password:</source>
+        <translation>Жаңа құпиясөз:</translation>
+    </message>
+    <message>
+        <source>No accounts yet, so everyone still uses the shared WebUI login. Add an Admin account first.</source>
+        <translation>Әзірге тіркелгілер жоқ, сондықтан бәрі әлі де WebUI-дің ортақ кіруін пайдаланады. Алдымен Admin тіркелгісін қосыңыз.</translation>
+    </message>
+    <message>
+        <source>People who can log in to the WebUI with their own username and password.</source>
+        <translation>WebUI-ге өз пайдаланушы аты мен құпиясөзімен кіре алатын адамдар.</translation>
+    </message>
+    <message>
+        <source>Permissions</source>
+        <translation>Рұқсаттар</translation>
+    </message>
+    <message>
+        <source>Remove</source>
+        <translation>Жою</translation>
+    </message>
+    <message>
+        <source>Role</source>
+        <translation>Рөл</translation>
+    </message>
+    <message>
+        <source>Role:</source>
+        <translation>Рөл:</translation>
+    </message>
+    <message>
+        <source>Roles</source>
+        <translation>Рөлдер</translation>
+    </message>
+    <message>
+        <source>The password must be at least %1 characters long.</source>
+        <translation>Құпиясөз кемінде %1 таңбадан тұруы керек.</translation>
+    </message>
+    <message>
+        <source>The passwords don&apos;t match.</source>
+        <translation>Құпиясөздер сәйкес келмейді.</translation>
+    </message>
+    <message>
+        <source>User</source>
+        <translation>Пайдаланушы</translation>
+    </message>
+    <message>
+        <source>Username</source>
+        <translation>Пайдаланушы аты</translation>
+    </message>
+    <message>
+        <source>Users</source>
+        <translation>Пайдаланушылар</translation>
+    </message>
+    <message>
+        <source>Your password was changed. Other browsers and devices where you were logged in have been logged out.</source>
+        <translation>Құпиясөзіңіз өзгертілді. Сіз кірген басқа браузерлер мен құрылғылардан шығарылдыңыз.</translation>
+    </message>
+</context>
+<context>
+    <name>WebUIActivity</name>
+    <message>
+        <source>Action</source>
+        <translation>Әрекет</translation>
+    </message>
+    <message>
+        <source>Result</source>
+        <translation>Нәтиже</translation>
+    </message>
+    <message>
+        <source>Role</source>
+        <translation>Рөл</translation>
+    </message>
+    <message>
+        <source>Time</source>
+        <translation>Уақыты</translation>
+    </message>
+    <message>
+        <source>User</source>
+        <translation>Пайдаланушы</translation>
     </message>
 </context>
 </TS>

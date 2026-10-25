@@ -215,6 +215,89 @@ The piece hash will be checked when it is requested for the first time by a peer
         <source>%1 needed · %2 free</source>
         <translation type="unfinished" />
     </message>
+    <message>
+        <source>Date:</source>
+        <translation>Dagsetning:</translation>
+    </message>
+    <message>
+        <source>N/A</source>
+        <translation>Á ekki við</translation>
+    </message>
+    <message>
+        <source>Never show again</source>
+        <translation>Aldrei sýna aftur</translation>
+    </message>
+    <message>
+        <source>Not available</source>
+        <translation>Ekki í boði</translation>
+    </message>
+    <message>
+        <source>Select None</source>
+        <translation>Velja ekkert</translation>
+    </message>
+    <message>
+        <source>Your role saves torrents in the default folders.</source>
+        <translation>Hlutverk þitt vistar torrent í sjálfgefnu möppunum.</translation>
+    </message>
+</context>
+<context>
+    <name>AdvancedSettings</name>
+    <message>
+        <source>General</source>
+        <translation>Almennt</translation>
+    </message>
+    <message>
+        <source>Network</source>
+        <translation>Net</translation>
+    </message>
+    <message>
+        <source>Storage</source>
+        <translation>Geymsla</translation>
+    </message>
+    <message>
+        <source>Peers and trackers</source>
+        <translation>Jafningjar og rekjarar</translation>
+    </message>
+    <message>
+        <source>Program behavior</source>
+        <translation>Hegðun forrits</translation>
+    </message>
+    <message>
+        <source>Display and notifications</source>
+        <translation>Birting og tilkynningar</translation>
+    </message>
+    <message>
+        <source>Network connection</source>
+        <translation>Nettenging</translation>
+    </message>
+    <message>
+        <source>Security and privacy</source>
+        <translation>Öryggi og friðhelgi</translation>
+    </message>
+    <message>
+        <source>Connection tuning</source>
+        <translation>Fínstilling tengingar</translation>
+    </message>
+    <message>
+        <source>Saving and torrent files</source>
+        <translation>Vistun og torrent-skrár</translation>
+    </message>
+    <message>
+        <source>Disk and memory</source>
+        <translation>Diskur og minni</translation>
+    </message>
+    <message>
+        <source>Trackers</source>
+        <translation>Rekjarar</translation>
+    </message>
+    <message>
+        <source>Peers and seeding</source>
+        <translation>Jafningjar og dreifing</translation>
+    </message>
+    <message>
+        <source>DHT and I2P</source>
+        <translation>DHT og I2P</translation>
+    </message>
 </context>
 <context>
     <name>CategoryFilterModel</name>
@@ -615,6 +698,14 @@ The piece hash will be checked when it is requested for the first time by a peer
         <source>More</source>
         <translation>Meira</translation>
     </message>
+    <message>
+        <source>Change Password...</source>
+        <translation>Breyta lykilorði...</translation>
+    </message>
+    <message>
+        <source>Signed in as</source>
+        <translation>Innskráð(ur) sem</translation>
+    </message>
 </context>
 <context>
     <name>MainWindow</name>
@@ -913,6 +1004,34 @@ The piece hash will be checked when it is requested for the first time by a peer
     <message>
         <source>Resume Session</source>
         <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Pause Session</source>
+        <translation>Gera hlé á setu</translation>
+    </message>
+    <message>
+        <source>Pause session</source>
+        <translation>Gera hlé á setu</translation>
+    </message>
+    <message>
+        <source>Remove</source>
+        <translation>Fjarlægja</translation>
+    </message>
+    <message>
+        <source>Resume Session</source>
+        <translation>Halda áfram með setu</translation>
+    </message>
+    <message>
+        <source>Resume session</source>
+        <translation>Halda áfram með setu</translation>
+    </message>
+    <message>
+        <source>Your account can&apos;t add torrents.</source>
+        <translation>Reikningurinn þinn getur ekki bætt við torrentum.</translation>
+    </message>
+    <message>
+        <source>[PAUSED]</source>
+        <translation>[Í HLÉI]</translation>
     </message>
 </context>
 <context>
@@ -2495,6 +2614,98 @@ Use ';' to split multiple entries. Can use wildcard '*'.</source>
         <source>a@x.com;b@y.com,c@z.com - send two emails: the first to just a@x.com, the second to both b@y.com and c@z.com</source>
         <translation type="unfinished" />
     </message>
+    <message>
+        <source>0 means users are logged out after the session timeout.</source>
+        <translation>0 þýðir að notendur eru skráðir út eftir tímamörk setunnar.</translation>
+    </message>
+    <message>
+        <source>Access</source>
+        <translation>Aðgangur</translation>
+    </message>
+    <message>
+        <source>Allow this login when user accounts exist</source>
+        <translation>Leyfa þessa innskráningu þegar notandareikningar eru til</translation>
+    </message>
+    <message>
+        <source>Also save search results</source>
+        <translation>Vista líka leitarniðurstöður</translation>
+    </message>
+    <message>
+        <source>Changes to users, roles and logins apply at once.</source>
+        <translation>Breytingar á notendum, hlutverkum og innskráningum taka gildi strax.</translation>
+    </message>
+    <message>
+        <source>Keep WebUI activity log for:</source>
+        <translation>Geyma virknisskrá WebUI í:</translation>
+    </message>
+    <message>
+        <source>Keep users logged in for:</source>
+        <translation>Halda notendum innskráðum í:</translation>
+    </message>
+    <message>
+        <source>Lock account after consecutive failures:</source>
+        <translation>Læsa reikningi eftir samfelld mistök:</translation>
+    </message>
+    <message>
+        <source>Logins and Activity Log</source>
+        <translation>Innskráningar og virknisskrá</translation>
+    </message>
+    <message>
+        <source>No settings match</source>
+        <translation>Engar stillingar passa</translation>
+    </message>
+    <message>
+        <source>Process memory priority:</source>
+        <translation>Minnisforgangur ferlis:</translation>
+    </message>
+    <message>
+        <source>Save search tabs</source>
+        <translation>Vista leitarflipa</translation>
+    </message>
+    <message>
+        <source>Search settings</source>
+        <translation>Leita í stillingum</translation>
+    </message>
+    <message>
+        <source>Show the window when adding a torrent</source>
+        <translation>Sýna gluggann þegar torrenti er bætt við</translation>
+    </message>
+    <message>
+        <source>Status bar and log</source>
+        <translation>Stöðustika og skrá</translation>
+    </message>
+    <message>
+        <source>The WebUI activity log can be kept for 1 to 3650 days.</source>
+        <translation>Hægt er að geyma virknisskrá WebUI í 1 til 3650 daga.</translation>
+    </message>
+    <message>
+        <source>The settings below apply with OK or Apply.</source>
+        <translation>Stillingarnar hér að neðan taka gildi með Í lagi eða Virkja.</translation>
+    </message>
+    <message>
+        <source>Until the first user account is created, this login always works.</source>
+        <translation>Þar til fyrsti notandareikningurinn er búinn til virkar þessi innskráning alltaf.</translation>
+    </message>
+    <message>
+        <source>User</source>
+        <translation>Notandi</translation>
+    </message>
+    <message>
+        <source>User Accounts</source>
+        <translation>Notandareikningar</translation>
+    </message>
+    <message>
+        <source>Users can be kept logged in for 0 to 365 days.</source>
+        <translation>Hægt er að halda notendum innskráðum í 0 til 365 daga.</translation>
+    </message>
+    <message>
+        <source>You changed the address, port or HTTPS setting of the WebUI. Saving moves the WebUI, so Options will save, close and reload the page, the same as OK. If the page doesn&apos;t come back, open the WebUI at its new address.\n\nSave anyway?</source>
+        <translation>Þú breyttir vistfangi, gátt eða HTTPS-stillingu WebUI. Vistun færir WebUI, svo Valkostir vista, loka og endurhlaða síðuna, eins og með Í lagi. Ef síðan kemur ekki aftur skaltu opna WebUI á nýja vistfanginu.\n\nVista samt?</translation>
+    </message>
+    <message>
+        <source>lock for:</source>
+        <translation>læsa í:</translation>
+    </message>
 </context>
 <context>
     <name>PeerListWidget</name>
@@ -2581,6 +2792,10 @@ Use ';' to split multiple entries. Can use wildcard '*'.</source>
     <message>
         <source>Contribution</source>
         <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Uploaded</source>
+        <translation>Sent</translation>
     </message>
 </context>
 <context>
@@ -2931,6 +3146,26 @@ Use ';' to split multiple entries. Can use wildcard '*'.</source>
         <source>Copy download URL</source>
         <translation type="unfinished" />
     </message>
+    <message>
+        <source>Availability:</source>
+        <translation>Fáanleiki:</translation>
+    </message>
+    <message>
+        <source>Downloaded:</source>
+        <translation>Sótt:</translation>
+    </message>
+    <message>
+        <source>N/A</source>
+        <translation>Á ekki við</translation>
+    </message>
+    <message>
+        <source>Transfer</source>
+        <translation>Flutningur</translation>
+    </message>
+    <message>
+        <source>Uploaded:</source>
+        <translation>Sent:</translation>
+    </message>
 </context>
 <context>
     <name>ScanFoldersModel</name>
@@ -3047,6 +3282,158 @@ Use ';' to split multiple entries. Can use wildcard '*'.</source>
     <message>
         <source>The time it takes from receiving a request from a peer until we're sending the response back on the socket</source>
         <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Activity</source>
+        <translation>Virkni</translation>
+    </message>
+    <message>
+        <source>All time</source>
+        <translation>Allur tími</translation>
+    </message>
+    <message>
+        <source>Before tracking began</source>
+        <translation>Áður en rakning hófst</translation>
+    </message>
+    <message>
+        <source>By month</source>
+        <translation>Eftir mánuðum</translation>
+    </message>
+    <message>
+        <source>Counts the requests that added a download. Apps without a login, such as Sonarr and Radarr, are shown as (localhost). Downloads added in the desktop window are not counted.</source>
+        <translation>Telur beiðnir sem bættu við niðurhali. Forrit án innskráningar, eins og Sonarr og Radarr, birtast sem (localhost). Niðurhal sem bætt er við í skjáborðsglugganum er ekki talið.</translation>
+    </message>
+    <message>
+        <source>Current speed:</source>
+        <translation>Núverandi hraði:</translation>
+    </message>
+    <message>
+        <source>DHT nodes:</source>
+        <translation>DHT-hnútar:</translation>
+    </message>
+    <message>
+        <source>Data discarded this session:</source>
+        <translation>Gögnum hent í þessari setu:</translation>
+    </message>
+    <message>
+        <source>Disk</source>
+        <translation>Diskur</translation>
+    </message>
+    <message>
+        <source>Downloaded:</source>
+        <translation>Sótt:</translation>
+    </message>
+    <message>
+        <source>History</source>
+        <translation>Saga</translation>
+    </message>
+    <message>
+        <source>Last 12 months</source>
+        <translation>Síðustu 12 mánuðir</translation>
+    </message>
+    <message>
+        <source>Last 7 days</source>
+        <translation>Síðustu 7 dagar</translation>
+    </message>
+    <message>
+        <source>Last month</source>
+        <translation>Síðasti mánuður</translation>
+    </message>
+    <message>
+        <source>Month</source>
+        <translation>Mánuður</translation>
+    </message>
+    <message>
+        <source>Nothing added yet</source>
+        <translation>Engu bætt við enn</translation>
+    </message>
+    <message>
+        <source>Off</source>
+        <translation>Slökkt</translation>
+    </message>
+    <message>
+        <source>Overview</source>
+        <translation>Yfirlit</translation>
+    </message>
+    <message>
+        <source>Peers waiting on disk reads:</source>
+        <translation>Jafningjar sem bíða eftir lestri af diski:</translation>
+    </message>
+    <message>
+        <source>Peers waiting on disk writes:</source>
+        <translation>Jafningjar sem bíða eftir skrifum á disk:</translation>
+    </message>
+    <message>
+        <source>Period</source>
+        <translation>Tímabil</translation>
+    </message>
+    <message>
+        <source>Request latency:</source>
+        <translation>Töf beiðni:</translation>
+    </message>
+    <message>
+        <source>Running for:</source>
+        <translation>Í gangi í:</translation>
+    </message>
+    <message>
+        <source>Share ratio</source>
+        <translation>Deilihlutfall</translation>
+    </message>
+    <message>
+        <source>Share ratio:</source>
+        <translation>Deilihlutfall:</translation>
+    </message>
+    <message>
+        <source>Technical</source>
+        <translation>Tæknilegt</translation>
+    </message>
+    <message>
+        <source>This month</source>
+        <translation>Þessi mánuður</translation>
+    </message>
+    <message>
+        <source>This session</source>
+        <translation>Þessi seta</translation>
+    </message>
+    <message>
+        <source>Today</source>
+        <translation>Í dag</translation>
+    </message>
+    <message>
+        <source>Torrents downloading:</source>
+        <translation>Torrent í niðurhali:</translation>
+    </message>
+    <message>
+        <source>Torrents seeding:</source>
+        <translation>Torrent í deilingu:</translation>
+    </message>
+    <message>
+        <source>Torrents stopped:</source>
+        <translation>Stöðvuð torrent:</translation>
+    </message>
+    <message>
+        <source>Torrents with errors:</source>
+        <translation>Torrent með villur:</translation>
+    </message>
+    <message>
+        <source>Tracking since:</source>
+        <translation>Fylgst með frá:</translation>
+    </message>
+    <message>
+        <source>Transfer</source>
+        <translation>Flutningur</translation>
+    </message>
+    <message>
+        <source>Uploaded</source>
+        <translation>Sent</translation>
+    </message>
+    <message>
+        <source>Uploaded:</source>
+        <translation>Sent:</translation>
+    </message>
+    <message>
+        <source>WebUI downloads added, this month</source>
+        <translation>Niðurhal bætt við í gegnum WebUI, þennan mánuð</translation>
     </message>
 </context>
 <context>
@@ -3368,6 +3755,10 @@ Use ';' to split multiple entries. Can use wildcard '*'.</source>
         <source>Created On</source>
         <translation type="unfinished" />
     </message>
+    <message>
+        <source>Uploaded</source>
+        <translation>Sent</translation>
+    </message>
 </context>
 <context>
     <name>TrackerListWidget</name>
@@ -3519,6 +3910,14 @@ Use ';' to split multiple entries. Can use wildcard '*'.</source>
         <source>Force reannounce to all trackers</source>
         <translation type="unfinished" />
     </message>
+    <message>
+        <source>Disabled</source>
+        <translation>Óvirkur</translation>
+    </message>
+    <message>
+        <source>N/A</source>
+        <translation>Á ekki við</translation>
+    </message>
 </context>
 <context>
     <name>TrackersAdditionDialog</name>
@@ -3609,6 +4008,10 @@ Use ';' to split multiple entries. Can use wildcard '*'.</source>
     <message>
         <source>N/A</source>
         <translation type="unfinished" />
+    </message>
+    <message>
+        <source>N/A</source>
+        <translation>Á ekki við</translation>
     </message>
 </context>
 <context>
@@ -3842,6 +4245,10 @@ Use ';' to split multiple entries. Can use wildcard '*'.</source>
         <source>Content Path</source>
         <translation type="unfinished" />
     </message>
+    <message>
+        <source>Remove</source>
+        <translation>Fjarlægja</translation>
+    </message>
 </context>
 <context>
     <name>UpDownRatioDialog</name>
@@ -3914,6 +4321,10 @@ Use ';' to split multiple entries. Can use wildcard '*'.</source>
     <message>
         <source>Remove tracker</source>
         <translation type="unfinished" />
+    </message>
+    <message>
+        <source>This choice is remembered for the next removal.</source>
+        <translation>Þetta val verður munað fyrir næstu fjarlægingu.</translation>
     </message>
 </context>
 <context>
@@ -3997,6 +4408,10 @@ Use ';' to split multiple entries. Can use wildcard '*'.</source>
     <message>
         <source>%1y %2d</source>
         <translation type="unfinished" />
+    </message>
+    <message>
+        <source>%1y %2d</source>
+        <translation>%1d %2h {1y?} {2d?}</translation>
     </message>
 </context>
 <context>
@@ -4130,6 +4545,30 @@ Use ';' to split multiple entries. Can use wildcard '*'.</source>
     <message>
         <source>Select plugins</source>
         <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Category to search in</source>
+        <translation>Flokkur til að leita í</translation>
+    </message>
+    <message>
+        <source>Close the selected search</source>
+        <translation>Loka völdu leitinni</translation>
+    </message>
+    <message>
+        <source>Search engines to use</source>
+        <translation>Leitarvélar sem á að nota</translation>
+    </message>
+    <message>
+        <source>Search for torrents...</source>
+        <translation>Leita að torrentum...</translation>
+    </message>
+    <message>
+        <source>Searches</source>
+        <translation>Leitir</translation>
+    </message>
+    <message>
+        <source>Type a search above and press Enter.</source>
+        <translation>Skrifaðu leit hér að ofan og ýttu á Enter.</translation>
     </message>
 </context>
 <context>
@@ -4392,6 +4831,34 @@ Use ';' to split multiple entries. Can use wildcard '*'.</source>
         <source>qBittorrent icon</source>
         <translation type="unfinished" />
     </message>
+    <message>
+        <source>Based on:</source>
+        <translation>Byggt á:</translation>
+    </message>
+    <message>
+        <source>Edition version:</source>
+        <translation>Útgáfunúmer:</translation>
+    </message>
+    <message>
+        <source>Kettle Edition is a personal build of qBittorrent that adds user accounts with roles for the WebUI and the desktop app, an activity log, and an installable WebUI with a phone layout. A kettle is a group of hawks soaring together. This is an unofficial build, not affiliated with the qBittorrent project.</source>
+        <translation>Kettle Edition er persónuleg smíð af qBittorrent sem bætir við notandareikningum með hlutverkum fyrir WebUI og skjáborðsforritið, virknisskrá og uppsetjanlegu WebUI með símaútliti. Kettle er hópur fálka sem svífa saman. Þetta er óopinber smíð sem tengist ekki qBittorrent-verkefninu.</translation>
+    </message>
+    <message>
+        <source>Maintainer:</source>
+        <translation>Umsjónarmaður:</translation>
+    </message>
+    <message>
+        <source>N/A</source>
+        <translation>Á ekki við</translation>
+    </message>
+    <message>
+        <source>This edition</source>
+        <translation>Þessi útgáfa</translation>
+    </message>
+    <message>
+        <source>qBittorrent project:</source>
+        <translation>qBittorrent-verkefnið:</translation>
+    </message>
 </context>
 <context>
     <name>OptionDialog</name>
@@ -4493,6 +4960,38 @@ Use ';' to split multiple entries. Can use wildcard '*'.</source>
     <message>
         <source>Open shared download window</source>
         <translation type="unfinished" />
+    </message>
+    <message>
+        <source>%1 of %2 shown</source>
+        <translation>%1 af %2 sýnt</translation>
+    </message>
+    <message>
+        <source>%1 of %2 shown (%3 hidden)</source>
+        <translation>%1 af %2 sýnt (%3 falið)</translation>
+    </message>
+    <message>
+        <source>Close all searches</source>
+        <translation>Loka öllum leitum</translation>
+    </message>
+    <message>
+        <source>Close search</source>
+        <translation>Loka leit</translation>
+    </message>
+    <message>
+        <source>Finished: %1</source>
+        <translation>Lokið: %1</translation>
+    </message>
+    <message>
+        <source>Refresh search</source>
+        <translation>Endurnýja leit</translation>
+    </message>
+    <message>
+        <source>Search aborted: %1</source>
+        <translation>Leit hætt: %1</translation>
+    </message>
+    <message>
+        <source>Searching: %1</source>
+        <translation>Leita: %1</translation>
     </message>
 </context>
 <context>
@@ -4631,6 +5130,14 @@ Use ';' to split multiple entries. Can use wildcard '*'.</source>
     <message>
         <source>Blocked opening RSS article URL. Only http:// and https:// links can be opened.</source>
         <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Author: </source>
+        <translation>Höfundur:</translation>
+    </message>
+    <message>
+        <source>Details</source>
+        <translation>Nánar</translation>
     </message>
 </context>
 <context>
@@ -5097,6 +5604,26 @@ Supports the formats: S01E01, 1x1, 2017.12.31 and 31.12.2017 (Date formats also 
         <source>Choose a log level...</source>
         <translation type="unfinished" />
     </message>
+    <message>
+        <source>Export...</source>
+        <translation>Flytja út...</translation>
+    </message>
+    <message>
+        <source>Filter activity</source>
+        <translation>Sía virkni</translation>
+    </message>
+    <message>
+        <source>Result:</source>
+        <translation>Niðurstaða:</translation>
+    </message>
+    <message>
+        <source>User:</source>
+        <translation>Notandi:</translation>
+    </message>
+    <message>
+        <source>WebUI Activity</source>
+        <translation>Virkni WebUI</translation>
+    </message>
 </context>
 <context>
     <name>TrackersFilterWidget</name>
@@ -5167,6 +5694,10 @@ Supports the formats: S01E01, 1x1, 2017.12.31 and 31.12.2017 (Date formats also 
         <source>Torrent share limits</source>
         <translation type="unfinished" />
     </message>
+    <message>
+        <source>Your role saves torrents in the default folders.</source>
+        <translation>Hlutverk þitt vistar torrent í sjálfgefnu möppunum.</translation>
+    </message>
 </context>
 <context>
     <name>CookiesDialog</name>
@@ -5201,6 +5732,10 @@ Supports the formats: S01E01, 1x1, 2017.12.31 and 31.12.2017 (Date formats also 
     <message>
         <source>Path</source>
         <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Remove</source>
+        <translation>Fjarlægja</translation>
     </message>
 </context>
 <context>
@@ -5265,6 +5800,18 @@ Supports the formats: S01E01, 1x1, 2017.12.31 and 31.12.2017 (Date formats also 
     <message>
         <source>Invalid Username or Password.</source>
         <translation>Rangt notandanafn eða lykilorð.</translation>
+    </message>
+    <message>
+        <source>A kettle is a group of hawks soaring together.</source>
+        <translation>Kettle er hópur fálka sem svífa saman.</translation>
+    </message>
+    <message>
+        <source>Sign in</source>
+        <translation>Skrá inn</translation>
+    </message>
+    <message>
+        <source>Username</source>
+        <translation>Notandanafn</translation>
     </message>
 </context>
 <context>
@@ -5473,6 +6020,10 @@ Supports the formats: S01E01, 1x1, 2017.12.31 and 31.12.2017 (Date formats also 
         <source>If checked, filenames starting with a period punctuation mark `.` will not be added to the created torrent.</source>
         <translation type="unfinished" />
     </message>
+    <message>
+        <source>N/A</source>
+        <translation>Á ekki við</translation>
+    </message>
 </context>
 <context>
     <name>DownloadFromURLDialog</name>
@@ -5589,6 +6140,10 @@ Supports the formats: S01E01, 1x1, 2017.12.31 and 31.12.2017 (Date formats also 
     <message>
         <source>Resize</source>
         <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Reset Auto Width</source>
+        <translation>Núllstilla sjálfvirka breidd</translation>
     </message>
 </context>
 <context>
@@ -5729,6 +6284,228 @@ Supports the formats: S01E01, 1x1, 2017.12.31 and 31.12.2017 (Date formats also 
     <message>
         <source>Not available for folders</source>
         <translation type="unfinished" />
+    </message>
+</context>
+<context>
+    <name>UserAccounts</name>
+    <message>
+        <source>(this browser)</source>
+        <translation>(þessi vafri)</translation>
+    </message>
+    <message>
+        <source>A role decides what its users are allowed to do.</source>
+        <translation>Hlutverk ákveður hvað notendur þess mega gera.</translation>
+    </message>
+    <message>
+        <source>Add Role</source>
+        <translation>Bæta við hlutverki</translation>
+    </message>
+    <message>
+        <source>Add Role...</source>
+        <translation>Bæta við hlutverki...</translation>
+    </message>
+    <message>
+        <source>Add User</source>
+        <translation>Bæta við notanda</translation>
+    </message>
+    <message>
+        <source>Add User...</source>
+        <translation>Bæta við notanda...</translation>
+    </message>
+    <message>
+        <source>Are you sure you want to remove the role &apos;%1&apos;?</source>
+        <translation>Ertu viss um að þú viljir fjarlægja hlutverkið „%1“?</translation>
+    </message>
+    <message>
+        <source>Are you sure you want to remove the user &apos;%1&apos;?</source>
+        <translation>Ertu viss um að þú viljir fjarlægja notandann „%1“?</translation>
+    </message>
+    <message>
+        <source>At least %1 characters</source>
+        <translation>Að minnsta kosti %1 stafir</translation>
+    </message>
+    <message>
+        <source>Browser</source>
+        <translation>Vafri</translation>
+    </message>
+    <message>
+        <source>Browsers and devices where someone is logged in with a user account.</source>
+        <translation>Vafrar og tæki þar sem einhver er innskráður með notandareikningi.</translation>
+    </message>
+    <message>
+        <source>Change Password</source>
+        <translation>Breyta lykilorði</translation>
+    </message>
+    <message>
+        <source>Confirm password:</source>
+        <translation>Staðfesta lykilorð:</translation>
+    </message>
+    <message>
+        <source>Created</source>
+        <translation>Búið til</translation>
+    </message>
+    <message>
+        <source>Current password:</source>
+        <translation>Núverandi lykilorð:</translation>
+    </message>
+    <message>
+        <source>Description</source>
+        <translation>Lýsing</translation>
+    </message>
+    <message>
+        <source>Description:</source>
+        <translation>Lýsing:</translation>
+    </message>
+    <message>
+        <source>Disable</source>
+        <translation>Gera óvirkan</translation>
+    </message>
+    <message>
+        <source>Disable this account</source>
+        <translation>Gera þennan reikning óvirkan</translation>
+    </message>
+    <message>
+        <source>Disabled</source>
+        <translation>Óvirkur</translation>
+    </message>
+    <message>
+        <source>Edit Role</source>
+        <translation>Breyta hlutverki</translation>
+    </message>
+    <message>
+        <source>Edit User</source>
+        <translation>Breyta notanda</translation>
+    </message>
+    <message>
+        <source>Edit...</source>
+        <translation>Breyta...</translation>
+    </message>
+    <message>
+        <source>Enable</source>
+        <translation>Virkja</translation>
+    </message>
+    <message>
+        <source>Enter a role name.</source>
+        <translation>Sláðu inn heiti hlutverks.</translation>
+    </message>
+    <message>
+        <source>Enter a username.</source>
+        <translation>Sláðu inn notandanafn.</translation>
+    </message>
+    <message>
+        <source>Expires</source>
+        <translation>Rennur út</translation>
+    </message>
+    <message>
+        <source>Gives control over the PC or qBittorrent itself</source>
+        <translation>Veitir stjórn á tölvunni eða qBittorrent sjálfu</translation>
+    </message>
+    <message>
+        <source>Last active</source>
+        <translation>Síðast virkur</translation>
+    </message>
+    <message>
+        <source>Last login</source>
+        <translation>Síðasta innskráning</translation>
+    </message>
+    <message>
+        <source>Leave empty to keep the current password</source>
+        <translation>Skildu eftir autt til að halda núverandi lykilorði</translation>
+    </message>
+    <message>
+        <source>Log Out</source>
+        <translation>Skrá út</translation>
+    </message>
+    <message>
+        <source>Log Out Everywhere</source>
+        <translation>Skrá út alls staðar</translation>
+    </message>
+    <message>
+        <source>Logged In</source>
+        <translation>Innskráðir</translation>
+    </message>
+    <message>
+        <source>Logged in</source>
+        <translation>Skráði sig inn</translation>
+    </message>
+    <message>
+        <source>New password:</source>
+        <translation>Nýtt lykilorð:</translation>
+    </message>
+    <message>
+        <source>No accounts yet, so everyone still uses the shared WebUI login. Add an Admin account first.</source>
+        <translation>Engir reikningar enn, svo allir nota enn sameiginlegu WebUI-innskráninguna. Bættu fyrst við stjórnandareikningi.</translation>
+    </message>
+    <message>
+        <source>People who can log in to the WebUI with their own username and password.</source>
+        <translation>Fólk sem getur skráð sig inn í WebUI með eigin notandanafni og lykilorði.</translation>
+    </message>
+    <message>
+        <source>Permissions</source>
+        <translation>Heimildir</translation>
+    </message>
+    <message>
+        <source>Remove</source>
+        <translation>Fjarlægja</translation>
+    </message>
+    <message>
+        <source>Role</source>
+        <translation>Hlutverk</translation>
+    </message>
+    <message>
+        <source>Role:</source>
+        <translation>Hlutverk:</translation>
+    </message>
+    <message>
+        <source>Roles</source>
+        <translation>Hlutverk</translation>
+    </message>
+    <message>
+        <source>The password must be at least %1 characters long.</source>
+        <translation>Lykilorðið þarf að vera að minnsta kosti %1 stafir.</translation>
+    </message>
+    <message>
+        <source>The passwords don&apos;t match.</source>
+        <translation>Lykilorðin passa ekki saman.</translation>
+    </message>
+    <message>
+        <source>User</source>
+        <translation>Notandi</translation>
+    </message>
+    <message>
+        <source>Username</source>
+        <translation>Notandanafn</translation>
+    </message>
+    <message>
+        <source>Users</source>
+        <translation>Notendur</translation>
+    </message>
+    <message>
+        <source>Your password was changed. Other browsers and devices where you were logged in have been logged out.</source>
+        <translation>Lykilorðinu þínu var breytt. Aðrir vafrar og tæki þar sem þú varst innskráð(ur) hafa verið skráð út.</translation>
+    </message>
+</context>
+<context>
+    <name>WebUIActivity</name>
+    <message>
+        <source>Action</source>
+        <translation>Aðgerð</translation>
+    </message>
+    <message>
+        <source>Result</source>
+        <translation>Niðurstaða</translation>
+    </message>
+    <message>
+        <source>Role</source>
+        <translation>Hlutverk</translation>
+    </message>
+    <message>
+        <source>Time</source>
+        <translation>Tími</translation>
+    </message>
+    <message>
+        <source>User</source>
+        <translation>Notandi</translation>
     </message>
 </context>
 </TS>

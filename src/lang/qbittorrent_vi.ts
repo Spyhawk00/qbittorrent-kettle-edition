@@ -141,6 +141,62 @@
         <source>The free IP to Country Lite database by DB-IP is used for resolving the countries of peers. The database is licensed under the Creative Commons Attribution 4.0 International License</source>
         <translation>Cơ sở dữ liệu IP to Country Lite miễn phí của DB-IP được sử dụng để xử lý các quốc gia ngang hàng. Cơ sở dữ liệu được cấp phép theo Giấy phép Quốc tế Ghi Công Sáng Tạo Công Cộng 4.0</translation>
     </message>
+    <message>
+        <source>This edition</source>
+        <translation>Bản phát hành này</translation>
+    </message>
+    <message>
+        <source>Edition version:</source>
+        <translation>Phiên bản của bản phát hành:</translation>
+    </message>
+    <message>
+        <source>Based on:</source>
+        <translation>Dựa trên:</translation>
+    </message>
+    <message>
+        <source>Maintainer:</source>
+        <translation>Người bảo trì:</translation>
+    </message>
+    <message>
+        <source>qBittorrent project:</source>
+        <translation>Dự án qBittorrent:</translation>
+    </message>
+    <message>
+        <source>Kettle Edition is a personal build of qBittorrent that adds user accounts with roles for the WebUI and the desktop app, an activity log, and an installable WebUI with a phone layout. A kettle is a group of hawks soaring together. This is an unofficial build, not affiliated with the qBittorrent project.</source>
+        <translation>Kettle Edition là bản dựng cá nhân của qBittorrent, bổ sung tài khoản người dùng có vai trò cho WebUI và ứng dụng máy tính, nhật ký hoạt động, và WebUI có thể cài đặt với bố cục cho điện thoại. Kettle là một đàn diều hâu bay lượn cùng nhau. Đây là bản dựng không chính thức, không liên kết với dự án qBittorrent.</translation>
+    </message>
+    <message>
+        <source>N/A</source>
+        <translation>Không có</translation>
+    </message>
+    <message>
+        <source>This edition</source>
+        <translation>Bản phát hành này</translation>
+    </message>
+    <message>
+        <source>Edition version:</source>
+        <translation>Phiên bản của bản phát hành:</translation>
+    </message>
+    <message>
+        <source>Based on:</source>
+        <translation>Dựa trên:</translation>
+    </message>
+    <message>
+        <source>Maintainer:</source>
+        <translation>Người bảo trì:</translation>
+    </message>
+    <message>
+        <source>qBittorrent project:</source>
+        <translation>Dự án qBittorrent:</translation>
+    </message>
+    <message>
+        <source>Kettle Edition is a personal build of qBittorrent that adds user accounts with roles for the WebUI and the desktop app, an activity log, and an installable WebUI with a phone layout. A kettle is a group of hawks soaring together. This is an unofficial build, not affiliated with the qBittorrent project.</source>
+        <translation>Kettle Edition là bản dựng cá nhân của qBittorrent, bổ sung tài khoản người dùng có vai trò cho WebUI và ứng dụng máy tính, nhật ký hoạt động, và WebUI có thể cài đặt với bố cục cho điện thoại. Kettle là một đàn diều hâu bay lượn cùng nhau. Đây là bản dựng không chính thức, không liên kết với dự án qBittorrent.</translation>
+    </message>
+    <message>
+        <source>N/A</source>
+        <translation>Không có</translation>
+    </message>
 </context>
 <context>
     <name>AbstractFileStorage</name>
@@ -1459,6 +1515,62 @@
         <location filename="../gui/advancedsettings.cpp" line="925"/>
         <source>Embedded tracker port</source>
         <translation>Cổng máy theo dõi đã nhúng</translation>
+    </message>
+    <message>
+        <source>Network</source>
+        <translation>Mạng</translation>
+    </message>
+    <message>
+        <source>Storage</source>
+        <translation>Lưu trữ</translation>
+    </message>
+    <message>
+        <source>Peers and trackers</source>
+        <translation>Máy ngang hàng và máy theo dõi</translation>
+    </message>
+    <message>
+        <source>Program behavior</source>
+        <translation>Hoạt động của chương trình</translation>
+    </message>
+    <message>
+        <source>Display and notifications</source>
+        <translation>Hiển thị và thông báo</translation>
+    </message>
+    <message>
+        <source>Network connection</source>
+        <translation>Kết nối mạng</translation>
+    </message>
+    <message>
+        <source>Security and privacy</source>
+        <translation>Bảo mật và quyền riêng tư</translation>
+    </message>
+    <message>
+        <source>Connection tuning</source>
+        <translation>Tinh chỉnh kết nối</translation>
+    </message>
+    <message>
+        <source>Saving and torrent files</source>
+        <translation>Lưu và tệp torrent</translation>
+    </message>
+    <message>
+        <source>Disk and memory</source>
+        <translation>Đĩa và bộ nhớ</translation>
+    </message>
+    <message>
+        <source>Peers and seeding</source>
+        <translation>Máy ngang hàng và chia sẻ</translation>
+    </message>
+    <message>
+        <source>DHT and I2P</source>
+        <translation>DHT và I2P</translation>
+    </message>
+    <message>
+        <source>General</source>
+        <translation>Tổng quan</translation>
+    </message>
+    <message>
+        <source>Trackers</source>
+        <translation>Máy theo dõi</translation>
     </message>
 </context>
 <context>
@@ -3480,6 +3592,22 @@ Supports the formats: S01E01, 1x1, 2017.12.31 and 31.12.2017 (Date formats also 
         <source>Remove torrent</source>
         <translation>Xóa torrent</translation>
     </message>
+    <message>
+        <source>This choice is remembered for the next removal.</source>
+        <translation>Lựa chọn này sẽ được nhớ cho lần gỡ bỏ tiếp theo.</translation>
+    </message>
+    <message>
+        <source>Remove</source>
+        <translation>Gỡ bỏ</translation>
+    </message>
+    <message>
+        <source>This choice is remembered for the next removal.</source>
+        <translation>Lựa chọn này sẽ được nhớ cho lần gỡ bỏ tiếp theo.</translation>
+    </message>
+    <message>
+        <source>Remove</source>
+        <translation>Gỡ bỏ</translation>
+    </message>
 </context>
 <context>
     <name>DownloadFromURLDialog</name>
@@ -3553,6 +3681,14 @@ Supports the formats: S01E01, 1x1, 2017.12.31 and 31.12.2017 (Date formats also 
         <location filename="../gui/executionlogwidget.cpp" line="99"/>
         <source>Clear</source>
         <translation>Xóa</translation>
+    </message>
+    <message>
+        <source>WebUI Activity</source>
+        <translation>Hoạt động WebUI</translation>
+    </message>
+    <message>
+        <source>WebUI Activity</source>
+        <translation>Hoạt động WebUI</translation>
     </message>
 </context>
 <context>
@@ -4726,6 +4862,46 @@ Yêu cầu tối thiểu: %2.</translation>
         <location filename="../gui/mainwindow.cpp" line="1346"/>
         <source>Torrent Files</source>
         <translation>Các Tệp Torrent</translation>
+    </message>
+    <message>
+        <source>Kettle Edition %1 is available.</source>
+        <translation>Kettle Edition %1 đã có.</translation>
+    </message>
+    <message>
+        <source>qBittorrent Kettle Edition %1 is available. It is downloaded now and installed at 4:00 AM, or when qBittorrent starts next.</source>
+        <translation>qBittorrent Kettle Edition %1 đã có. Bản này đang được tải về và sẽ được cài lúc 4:00 sáng hoặc khi qBittorrent khởi động lần sau.</translation>
+    </message>
+    <message>
+        <source>qBittorrent Kettle Edition %1 is available. It is downloaded now. Turn on &quot;Automatically install Kettle Edition updates&quot; in Options to install it.</source>
+        <translation>qBittorrent Kettle Edition %1 đã có. Bản này đang được tải về. Bật &quot;Tự động cài bản cập nhật Kettle Edition&quot; trong Tùy chọn để cài đặt.</translation>
+    </message>
+    <message>
+        <source>You have the latest qBittorrent Kettle Edition (%1).</source>
+        <translation>Bạn đang dùng qBittorrent Kettle Edition mới nhất (%1).</translation>
+    </message>
+    <message>
+        <source>Could not check for qBittorrent Kettle Edition updates. See the Execution Log for details.</source>
+        <translation>Không thể kiểm tra bản cập nhật qBittorrent Kettle Edition. Xem Nhật ký thực thi để biết chi tiết.</translation>
+    </message>
+    <message>
+        <source>Kettle Edition %1 is available.</source>
+        <translation>Kettle Edition %1 đã có.</translation>
+    </message>
+    <message>
+        <source>qBittorrent Kettle Edition %1 is available. It is downloaded now and installed at 4:00 AM, or when qBittorrent starts next.</source>
+        <translation>qBittorrent Kettle Edition %1 đã có. Bản này đang được tải về và sẽ được cài lúc 4:00 sáng hoặc khi qBittorrent khởi động lần sau.</translation>
+    </message>
+    <message>
+        <source>qBittorrent Kettle Edition %1 is available. It is downloaded now. Turn on &quot;Automatically install Kettle Edition updates&quot; in Options to install it.</source>
+        <translation>qBittorrent Kettle Edition %1 đã có. Bản này đang được tải về. Bật &quot;Tự động cài bản cập nhật Kettle Edition&quot; trong Tùy chọn để cài đặt.</translation>
+    </message>
+    <message>
+        <source>You have the latest qBittorrent Kettle Edition (%1).</source>
+        <translation>Bạn đang dùng qBittorrent Kettle Edition mới nhất (%1).</translation>
+    </message>
+    <message>
+        <source>Could not check for qBittorrent Kettle Edition updates. See the Execution Log for details.</source>
+        <translation>Không thể kiểm tra bản cập nhật qBittorrent Kettle Edition. Xem Nhật ký thực thi để biết chi tiết.</translation>
     </message>
 </context>
 <context>
@@ -8515,6 +8691,190 @@ Kiểm tra Nhật Ký Thực Thi để tìm lỗi.</translation>
         <source>Length Error</source>
         <translation>Lỗi độ dài</translation>
     </message>
+    <message>
+        <source>Search settings</source>
+        <translation>Tìm trong cài đặt</translation>
+    </message>
+    <message>
+        <source>No settings match</source>
+        <translation>Không có cài đặt khớp</translation>
+    </message>
+    <message>
+        <source>User Accounts</source>
+        <translation>Tài khoản người dùng</translation>
+    </message>
+    <message>
+        <source>Automatically install Kettle Edition updates</source>
+        <translation>Tự động cài bản cập nhật Kettle Edition</translation>
+    </message>
+    <message>
+        <source>Status bar and log</source>
+        <translation>Thanh trạng thái và nhật ký</translation>
+    </message>
+    <message>
+        <source>Files</source>
+        <translation>Tệp</translation>
+    </message>
+    <message>
+        <source>Checking</source>
+        <translation>Kiểm tra</translation>
+    </message>
+    <message>
+        <source>Until the first user account is created, this login always works.</source>
+        <translation>Cho đến khi tạo tài khoản người dùng đầu tiên, cách đăng nhập này luôn hoạt động.</translation>
+    </message>
+    <message>
+        <source>Allow this login when user accounts exist</source>
+        <translation>Cho phép cách đăng nhập này khi đã có tài khoản người dùng</translation>
+    </message>
+    <message>
+        <source>Access</source>
+        <translation>Truy cập</translation>
+    </message>
+    <message>
+        <source>Changes to users, roles and logins apply at once. The settings below apply with OK or Apply.</source>
+        <translation>Thay đổi về người dùng, vai trò và đăng nhập có hiệu lực ngay. Các cài đặt bên dưới có hiệu lực khi nhấn OK hoặc Áp dụng.</translation>
+    </message>
+    <message>
+        <source>Logins and Activity Log</source>
+        <translation>Đăng nhập và nhật ký hoạt động</translation>
+    </message>
+    <message>
+        <source>0 means users are logged out after the session timeout.</source>
+        <translation>0 nghĩa là người dùng bị đăng xuất sau khi hết thời gian chờ của phiên.</translation>
+    </message>
+    <message>
+        <source>Keep users logged in for:</source>
+        <translation>Giữ người dùng đăng nhập trong:</translation>
+    </message>
+    <message>
+        <source>Until session timeout</source>
+        <translation>Đến khi hết thời gian chờ của phiên</translation>
+    </message>
+    <message>
+        <source> days</source>
+        <translation> ngày</translation>
+    </message>
+    <message>
+        <source>Lock account after consecutive failures:</source>
+        <translation>Khóa tài khoản sau số lần thất bại liên tiếp:</translation>
+    </message>
+    <message>
+        <source>Keep WebUI activity log for:</source>
+        <translation>Giữ nhật ký hoạt động WebUI trong:</translation>
+    </message>
+    <message>
+        <source>lock for:</source>
+        <translation>khóa trong:</translation>
+    </message>
+    <message>
+        <source>%1 works best with Windows dark mode</source>
+        <translation>%1 hoạt động tốt nhất với chế độ tối của Windows</translation>
+    </message>
+    <message>
+        <source>WebUI address</source>
+        <translation>Địa chỉ WebUI</translation>
+    </message>
+    <message>
+        <source>With the WebUI address set to %1, only this PC can reach the WebUI. Remote access, including through a reverse proxy on another machine, will stop working.
+
+Save anyway?</source>
+        <translation>Khi địa chỉ WebUI được đặt là %1, chỉ máy tính này truy cập được WebUI. Truy cập từ xa, kể cả qua proxy ngược trên máy khác, sẽ ngừng hoạt động.
+
+Vẫn lưu?</translation>
+    </message>
+    <message>
+        <source>Search settings</source>
+        <translation>Tìm trong cài đặt</translation>
+    </message>
+    <message>
+        <source>No settings match</source>
+        <translation>Không có cài đặt khớp</translation>
+    </message>
+    <message>
+        <source>User Accounts</source>
+        <translation>Tài khoản người dùng</translation>
+    </message>
+    <message>
+        <source>Automatically install Kettle Edition updates</source>
+        <translation>Tự động cài bản cập nhật Kettle Edition</translation>
+    </message>
+    <message>
+        <source>Status bar and log</source>
+        <translation>Thanh trạng thái và nhật ký</translation>
+    </message>
+    <message>
+        <source>Files</source>
+        <translation>Tệp</translation>
+    </message>
+    <message>
+        <source>Checking</source>
+        <translation>Kiểm tra</translation>
+    </message>
+    <message>
+        <source>Until the first user account is created, this login always works.</source>
+        <translation>Cho đến khi tạo tài khoản người dùng đầu tiên, cách đăng nhập này luôn hoạt động.</translation>
+    </message>
+    <message>
+        <source>Allow this login when user accounts exist</source>
+        <translation>Cho phép cách đăng nhập này khi đã có tài khoản người dùng</translation>
+    </message>
+    <message>
+        <source>Access</source>
+        <translation>Truy cập</translation>
+    </message>
+    <message>
+        <source>Changes to users, roles and logins apply at once. The settings below apply with OK or Apply.</source>
+        <translation>Thay đổi về người dùng, vai trò và đăng nhập có hiệu lực ngay. Các cài đặt bên dưới có hiệu lực khi nhấn OK hoặc Áp dụng.</translation>
+    </message>
+    <message>
+        <source>Logins and Activity Log</source>
+        <translation>Đăng nhập và nhật ký hoạt động</translation>
+    </message>
+    <message>
+        <source>0 means users are logged out after the session timeout.</source>
+        <translation>0 nghĩa là người dùng bị đăng xuất sau khi hết thời gian chờ của phiên.</translation>
+    </message>
+    <message>
+        <source>Keep users logged in for:</source>
+        <translation>Giữ người dùng đăng nhập trong:</translation>
+    </message>
+    <message>
+        <source>Until session timeout</source>
+        <translation>Đến khi hết thời gian chờ của phiên</translation>
+    </message>
+    <message>
+        <source> days</source>
+        <translation> ngày</translation>
+    </message>
+    <message>
+        <source>Lock account after consecutive failures:</source>
+        <translation>Khóa tài khoản sau số lần thất bại liên tiếp:</translation>
+    </message>
+    <message>
+        <source>Keep WebUI activity log for:</source>
+        <translation>Giữ nhật ký hoạt động WebUI trong:</translation>
+    </message>
+    <message>
+        <source>lock for:</source>
+        <translation>khóa trong:</translation>
+    </message>
+    <message>
+        <source>%1 works best with Windows dark mode</source>
+        <translation>%1 hoạt động tốt nhất với chế độ tối của Windows</translation>
+    </message>
+    <message>
+        <source>WebUI address</source>
+        <translation>Địa chỉ WebUI</translation>
+    </message>
+    <message>
+        <source>With the WebUI address set to %1, only this PC can reach the WebUI. Remote access, including through a reverse proxy on another machine, will stop working.
+
+Save anyway?</source>
+        <translation>Khi địa chỉ WebUI được đặt là %1, chỉ máy tính này truy cập được WebUI. Truy cập từ xa, kể cả qua proxy ngược trên máy khác, sẽ ngừng hoạt động.
+
+Vẫn lưu?</translation>
+    </message>
 </context>
 <context>
     <name>PeerInfo</name>
@@ -8767,6 +9127,22 @@ Kiểm tra Nhật Ký Thực Thi để tìm lỗi.</translation>
         <location filename="../gui/properties/peerlistwidget.cpp" line="309"/>
         <source>Copy IP:port</source>
         <translation>Sao chép IP:cổng</translation>
+    </message>
+    <message>
+        <source>Reset auto width</source>
+        <translation>Đặt lại độ rộng tự động</translation>
+    </message>
+    <message>
+        <source>Fit all non-hidden columns to their contents again, and forget the widths that were set by hand</source>
+        <translation>Khớp lại tất cả cột đang hiện với nội dung của chúng và quên các độ rộng đã đặt tay</translation>
+    </message>
+    <message>
+        <source>Reset auto width</source>
+        <translation>Đặt lại độ rộng tự động</translation>
+    </message>
+    <message>
+        <source>Fit all non-hidden columns to their contents again, and forget the widths that were set by hand</source>
+        <translation>Khớp lại tất cả cột đang hiện với nội dung của chúng và quên các độ rộng đã đặt tay</translation>
     </message>
 </context>
 <context>
@@ -10157,6 +10533,14 @@ Các plugin đó đã bị vô hiệu hóa.</translation>
         <source>Open link</source>
         <translation>Mở liên kết</translation>
     </message>
+    <message>
+        <source>Details</source>
+        <translation>Chi tiết</translation>
+    </message>
+    <message>
+        <source>Details</source>
+        <translation>Chi tiết</translation>
+    </message>
 </context>
 <context>
     <name>SearchController</name>
@@ -10511,6 +10895,70 @@ Các plugin đó đã bị vô hiệu hóa.</translation>
         <source>Resize all non-hidden columns to the size of their contents</source>
         <translation>Thay đổi kích thước tất cả các cột không ẩn thành kích thước của nội dung của chúng</translation>
     </message>
+    <message>
+        <source>%1 of %2 shown (%3 hidden)</source>
+        <translation>Hiển thị %1 trên %2 (ẩn %3)</translation>
+    </message>
+    <message>
+        <source>%1 of %2 shown</source>
+        <translation>Hiển thị %1 trên %2</translation>
+    </message>
+    <message>
+        <source>Searching: %1</source>
+        <translation>Đang tìm: %1</translation>
+    </message>
+    <message>
+        <source>Finished: %1</source>
+        <translation>Đã xong: %1</translation>
+    </message>
+    <message>
+        <source>Search aborted: %1</source>
+        <translation>Đã hủy tìm kiếm: %1</translation>
+    </message>
+    <message>
+        <source>Reset auto width</source>
+        <translation>Đặt lại độ rộng tự động</translation>
+    </message>
+    <message>
+        <source>Fit all non-hidden columns to their contents again, and forget the widths that were set by hand</source>
+        <translation>Khớp lại tất cả cột đang hiện với nội dung của chúng và quên các độ rộng đã đặt tay</translation>
+    </message>
+    <message>
+        <source>Unknown</source>
+        <translation>Không rõ</translation>
+    </message>
+    <message>
+        <source>%1 of %2 shown (%3 hidden)</source>
+        <translation>Hiển thị %1 trên %2 (ẩn %3)</translation>
+    </message>
+    <message>
+        <source>%1 of %2 shown</source>
+        <translation>Hiển thị %1 trên %2</translation>
+    </message>
+    <message>
+        <source>Searching: %1</source>
+        <translation>Đang tìm: %1</translation>
+    </message>
+    <message>
+        <source>Finished: %1</source>
+        <translation>Đã xong: %1</translation>
+    </message>
+    <message>
+        <source>Search aborted: %1</source>
+        <translation>Đã hủy tìm kiếm: %1</translation>
+    </message>
+    <message>
+        <source>Reset auto width</source>
+        <translation>Đặt lại độ rộng tự động</translation>
+    </message>
+    <message>
+        <source>Fit all non-hidden columns to their contents again, and forget the widths that were set by hand</source>
+        <translation>Khớp lại tất cả cột đang hiện với nội dung của chúng và quên các độ rộng đã đặt tay</translation>
+    </message>
+    <message>
+        <source>Unknown</source>
+        <translation>Không rõ</translation>
+    </message>
 </context>
 <context>
     <name>SearchPluginManager</name>
@@ -10808,6 +11256,14 @@ Các plugin đó đã bị vô hiệu hóa.</translation>
         <source>Couldn&apos;t update &quot;%1&quot; search engine plugin. %2</source>
         <translation type="unfinished">Không thể cập nhật plugin công cụ tìm kiếm &quot;%1&quot;. %2</translation>
     </message>
+    <message>
+        <source>Install Kettle Plugins</source>
+        <translation>Cài plugin Kettle</translation>
+    </message>
+    <message>
+        <source>Install Kettle Plugins</source>
+        <translation>Cài plugin Kettle</translation>
+    </message>
 </context>
 <context>
     <name>SearchPluginSourceDialog</name>
@@ -10947,6 +11403,90 @@ Nhấp vào nút &quot;Tìm kiếm plugin ...&quot; ở dưới cùng bên phả
         <location filename="../gui/search/searchwidget.ui" line="58"/>
         <source>Stop</source>
         <translation>Dừng</translation>
+    </message>
+    <message>
+        <source>Searches</source>
+        <translation>Tìm kiếm</translation>
+    </message>
+    <message>
+        <source>Close the selected search</source>
+        <translation>Đóng tìm kiếm đã chọn</translation>
+    </message>
+    <message>
+        <source>Search for torrents...</source>
+        <translation>Tìm torrent...</translation>
+    </message>
+    <message>
+        <source>Category to search in</source>
+        <translation>Danh mục để tìm</translation>
+    </message>
+    <message>
+        <source>Search engines to use</source>
+        <translation>Công cụ tìm kiếm sẽ dùng</translation>
+    </message>
+    <message>
+        <source>There aren&apos;t any search plugins installed.
+Click the &quot;Search plugins...&quot; button at the top right of the window to install some.</source>
+        <translation>Chưa cài plugin tìm kiếm nào.
+Nhấn nút &quot;Plugin tìm kiếm...&quot; ở góc trên bên phải cửa sổ để cài.</translation>
+    </message>
+    <message>
+        <source>Type a search above and press Enter.</source>
+        <translation>Nhập từ khóa tìm kiếm ở trên rồi nhấn Enter.</translation>
+    </message>
+    <message>
+        <source>Refresh search</source>
+        <translation>Làm mới tìm kiếm</translation>
+    </message>
+    <message>
+        <source>Close search</source>
+        <translation>Đóng tìm kiếm</translation>
+    </message>
+    <message>
+        <source>Close all searches</source>
+        <translation>Đóng tất cả tìm kiếm</translation>
+    </message>
+    <message>
+        <source>Searches</source>
+        <translation>Tìm kiếm</translation>
+    </message>
+    <message>
+        <source>Close the selected search</source>
+        <translation>Đóng tìm kiếm đã chọn</translation>
+    </message>
+    <message>
+        <source>Search for torrents...</source>
+        <translation>Tìm torrent...</translation>
+    </message>
+    <message>
+        <source>Category to search in</source>
+        <translation>Danh mục để tìm</translation>
+    </message>
+    <message>
+        <source>Search engines to use</source>
+        <translation>Công cụ tìm kiếm sẽ dùng</translation>
+    </message>
+    <message>
+        <source>There aren&apos;t any search plugins installed.
+Click the &quot;Search plugins...&quot; button at the top right of the window to install some.</source>
+        <translation>Chưa cài plugin tìm kiếm nào.
+Nhấn nút &quot;Plugin tìm kiếm...&quot; ở góc trên bên phải cửa sổ để cài.</translation>
+    </message>
+    <message>
+        <source>Type a search above and press Enter.</source>
+        <translation>Nhập từ khóa tìm kiếm ở trên rồi nhấn Enter.</translation>
+    </message>
+    <message>
+        <source>Refresh search</source>
+        <translation>Làm mới tìm kiếm</translation>
+    </message>
+    <message>
+        <source>Close search</source>
+        <translation>Đóng tìm kiếm</translation>
+    </message>
+    <message>
+        <source>Close all searches</source>
+        <translation>Đóng tất cả tìm kiếm</translation>
     </message>
 </context>
 <context>
@@ -11413,6 +11953,326 @@ Nhấp vào nút &quot;Tìm kiếm plugin ...&quot; ở dưới cùng bên phả
         <location filename="../gui/statsdialog.cpp" line="111"/>
         <source>%1 ms</source>
         <translation type="unfinished">%1 ms</translation>
+    </message>
+    <message>
+        <source>Copy</source>
+        <translation>Sao chép</translation>
+    </message>
+    <message>
+        <source>Overview</source>
+        <translation>Tổng quan</translation>
+    </message>
+    <message>
+        <source>Transfer</source>
+        <translation>Truyền tải</translation>
+    </message>
+    <message>
+        <source>This session</source>
+        <translation>Phiên này</translation>
+    </message>
+    <message>
+        <source>All time</source>
+        <translation>Mọi lúc</translation>
+    </message>
+    <message>
+        <source>Downloaded:</source>
+        <translation>Đã tải xuống:</translation>
+    </message>
+    <message>
+        <source>Uploaded:</source>
+        <translation>Đã tải lên:</translation>
+    </message>
+    <message>
+        <source>Share ratio:</source>
+        <translation>Tỷ lệ chia sẻ:</translation>
+    </message>
+    <message>
+        <source>Current speed:</source>
+        <translation>Tốc độ hiện tại:</translation>
+    </message>
+    <message>
+        <source>Activity</source>
+        <translation>Hoạt động</translation>
+    </message>
+    <message>
+        <source>Torrents downloading:</source>
+        <translation>Torrent đang tải xuống:</translation>
+    </message>
+    <message>
+        <source>Torrents seeding:</source>
+        <translation>Torrent đang chia sẻ:</translation>
+    </message>
+    <message>
+        <source>Torrents stopped:</source>
+        <translation>Torrent đã dừng:</translation>
+    </message>
+    <message>
+        <source>Torrents with errors:</source>
+        <translation>Torrent có lỗi:</translation>
+    </message>
+    <message>
+        <source>Running for:</source>
+        <translation>Đã chạy:</translation>
+    </message>
+    <message>
+        <source>History</source>
+        <translation>Lịch sử</translation>
+    </message>
+    <message>
+        <source>Period</source>
+        <translation>Khoảng thời gian</translation>
+    </message>
+    <message>
+        <source>Today</source>
+        <translation>Hôm nay</translation>
+    </message>
+    <message>
+        <source>Last 7 days</source>
+        <translation>7 ngày qua</translation>
+    </message>
+    <message>
+        <source>This month</source>
+        <translation>Tháng này</translation>
+    </message>
+    <message>
+        <source>Last month</source>
+        <translation>Tháng trước</translation>
+    </message>
+    <message>
+        <source>Last 12 months</source>
+        <translation>12 tháng qua</translation>
+    </message>
+    <message>
+        <source>Tracking since:</source>
+        <translation>Theo dõi từ:</translation>
+    </message>
+    <message>
+        <source>By month</source>
+        <translation>Theo tháng</translation>
+    </message>
+    <message>
+        <source>Month</source>
+        <translation>Tháng</translation>
+    </message>
+    <message>
+        <source>Downloaded</source>
+        <translation>Đã tải xuống</translation>
+    </message>
+    <message>
+        <source>Uploaded</source>
+        <translation>Đã tải lên</translation>
+    </message>
+    <message>
+        <source>Share ratio</source>
+        <translation>Tỷ lệ chia sẻ</translation>
+    </message>
+    <message>
+        <source>WebUI downloads added, this month</source>
+        <translation>Tải xuống thêm qua WebUI, tháng này</translation>
+    </message>
+    <message>
+        <source>Counts the requests that added a download. Apps without a login, such as Sonarr and Radarr, are shown as (localhost). Downloads added in the desktop window are not counted.</source>
+        <translation>Đếm các yêu cầu đã thêm một lượt tải xuống. Ứng dụng không đăng nhập, như Sonarr và Radarr, hiện là (localhost). Lượt tải thêm trong cửa sổ máy tính không được tính.</translation>
+    </message>
+    <message>
+        <source>Technical</source>
+        <translation>Kỹ thuật</translation>
+    </message>
+    <message>
+        <source>Disk</source>
+        <translation>Đĩa</translation>
+    </message>
+    <message>
+        <source>Peers waiting on disk writes:</source>
+        <translation>Máy ngang hàng đang chờ ghi đĩa:</translation>
+    </message>
+    <message>
+        <source>Peers waiting on disk reads:</source>
+        <translation>Máy ngang hàng đang chờ đọc đĩa:</translation>
+    </message>
+    <message>
+        <source>Network</source>
+        <translation>Mạng</translation>
+    </message>
+    <message>
+        <source>DHT nodes:</source>
+        <translation>Nút DHT:</translation>
+    </message>
+    <message>
+        <source>Data discarded this session:</source>
+        <translation>Dữ liệu bị loại bỏ trong phiên này:</translation>
+    </message>
+    <message>
+        <source>Before tracking began</source>
+        <translation>Trước khi bắt đầu theo dõi</translation>
+    </message>
+    <message>
+        <source>Nothing added yet</source>
+        <translation>Chưa thêm gì</translation>
+    </message>
+    <message>
+        <source>Off</source>
+        <translation>Tắt</translation>
+    </message>
+    <message>
+        <source>Copy</source>
+        <translation>Sao chép</translation>
+    </message>
+    <message>
+        <source>Overview</source>
+        <translation>Tổng quan</translation>
+    </message>
+    <message>
+        <source>Transfer</source>
+        <translation>Truyền tải</translation>
+    </message>
+    <message>
+        <source>This session</source>
+        <translation>Phiên này</translation>
+    </message>
+    <message>
+        <source>All time</source>
+        <translation>Mọi lúc</translation>
+    </message>
+    <message>
+        <source>Downloaded:</source>
+        <translation>Đã tải xuống:</translation>
+    </message>
+    <message>
+        <source>Uploaded:</source>
+        <translation>Đã tải lên:</translation>
+    </message>
+    <message>
+        <source>Share ratio:</source>
+        <translation>Tỷ lệ chia sẻ:</translation>
+    </message>
+    <message>
+        <source>Current speed:</source>
+        <translation>Tốc độ hiện tại:</translation>
+    </message>
+    <message>
+        <source>Activity</source>
+        <translation>Hoạt động</translation>
+    </message>
+    <message>
+        <source>Torrents downloading:</source>
+        <translation>Torrent đang tải xuống:</translation>
+    </message>
+    <message>
+        <source>Torrents seeding:</source>
+        <translation>Torrent đang chia sẻ:</translation>
+    </message>
+    <message>
+        <source>Torrents stopped:</source>
+        <translation>Torrent đã dừng:</translation>
+    </message>
+    <message>
+        <source>Torrents with errors:</source>
+        <translation>Torrent có lỗi:</translation>
+    </message>
+    <message>
+        <source>Running for:</source>
+        <translation>Đã chạy:</translation>
+    </message>
+    <message>
+        <source>History</source>
+        <translation>Lịch sử</translation>
+    </message>
+    <message>
+        <source>Period</source>
+        <translation>Khoảng thời gian</translation>
+    </message>
+    <message>
+        <source>Today</source>
+        <translation>Hôm nay</translation>
+    </message>
+    <message>
+        <source>Last 7 days</source>
+        <translation>7 ngày qua</translation>
+    </message>
+    <message>
+        <source>This month</source>
+        <translation>Tháng này</translation>
+    </message>
+    <message>
+        <source>Last month</source>
+        <translation>Tháng trước</translation>
+    </message>
+    <message>
+        <source>Last 12 months</source>
+        <translation>12 tháng qua</translation>
+    </message>
+    <message>
+        <source>Tracking since:</source>
+        <translation>Theo dõi từ:</translation>
+    </message>
+    <message>
+        <source>By month</source>
+        <translation>Theo tháng</translation>
+    </message>
+    <message>
+        <source>Month</source>
+        <translation>Tháng</translation>
+    </message>
+    <message>
+        <source>Downloaded</source>
+        <translation>Đã tải xuống</translation>
+    </message>
+    <message>
+        <source>Uploaded</source>
+        <translation>Đã tải lên</translation>
+    </message>
+    <message>
+        <source>Share ratio</source>
+        <translation>Tỷ lệ chia sẻ</translation>
+    </message>
+    <message>
+        <source>WebUI downloads added, this month</source>
+        <translation>Tải xuống thêm qua WebUI, tháng này</translation>
+    </message>
+    <message>
+        <source>Counts the requests that added a download. Apps without a login, such as Sonarr and Radarr, are shown as (localhost). Downloads added in the desktop window are not counted.</source>
+        <translation>Đếm các yêu cầu đã thêm một lượt tải xuống. Ứng dụng không đăng nhập, như Sonarr và Radarr, hiện là (localhost). Lượt tải thêm trong cửa sổ máy tính không được tính.</translation>
+    </message>
+    <message>
+        <source>Technical</source>
+        <translation>Kỹ thuật</translation>
+    </message>
+    <message>
+        <source>Disk</source>
+        <translation>Đĩa</translation>
+    </message>
+    <message>
+        <source>Peers waiting on disk writes:</source>
+        <translation>Máy ngang hàng đang chờ ghi đĩa:</translation>
+    </message>
+    <message>
+        <source>Peers waiting on disk reads:</source>
+        <translation>Máy ngang hàng đang chờ đọc đĩa:</translation>
+    </message>
+    <message>
+        <source>Network</source>
+        <translation>Mạng</translation>
+    </message>
+    <message>
+        <source>DHT nodes:</source>
+        <translation>Nút DHT:</translation>
+    </message>
+    <message>
+        <source>Data discarded this session:</source>
+        <translation>Dữ liệu bị loại bỏ trong phiên này:</translation>
+    </message>
+    <message>
+        <source>Before tracking began</source>
+        <translation>Trước khi bắt đầu theo dõi</translation>
+    </message>
+    <message>
+        <source>Nothing added yet</source>
+        <translation>Chưa thêm gì</translation>
+    </message>
+    <message>
+        <source>Off</source>
+        <translation>Tắt</translation>
     </message>
 </context>
 <context>
@@ -12104,6 +12964,22 @@ Vui lòng chọn một tên khác và thử lại.</translation>
     <message>
         <source>Priority by shown file order</source>
         <translation type="vanished">Ưu tiên hiển thị tệp theo thứ tự</translation>
+    </message>
+    <message>
+        <source>Reset auto width</source>
+        <translation>Đặt lại độ rộng tự động</translation>
+    </message>
+    <message>
+        <source>Fit all non-hidden columns to their contents again, and forget the widths that were set by hand</source>
+        <translation>Khớp lại tất cả cột đang hiện với nội dung của chúng và quên các độ rộng đã đặt tay</translation>
+    </message>
+    <message>
+        <source>Reset auto width</source>
+        <translation>Đặt lại độ rộng tự động</translation>
+    </message>
+    <message>
+        <source>Fit all non-hidden columns to their contents again, and forget the widths that were set by hand</source>
+        <translation>Khớp lại tất cả cột đang hiện với nội dung của chúng và quên các độ rộng đã đặt tay</translation>
     </message>
 </context>
 <context>
@@ -13188,6 +14064,22 @@ Vui lòng chọn một tên khác và thử lại.</translation>
         <source>Column visibility</source>
         <translation>Khả năng hiển thị của cột</translation>
     </message>
+    <message>
+        <source>Reset auto width</source>
+        <translation>Đặt lại độ rộng tự động</translation>
+    </message>
+    <message>
+        <source>Fit all non-hidden columns to their contents again, and forget the widths that were set by hand</source>
+        <translation>Khớp lại tất cả cột đang hiện với nội dung của chúng và quên các độ rộng đã đặt tay</translation>
+    </message>
+    <message>
+        <source>Reset auto width</source>
+        <translation>Đặt lại độ rộng tự động</translation>
+    </message>
+    <message>
+        <source>Fit all non-hidden columns to their contents again, and forget the widths that were set by hand</source>
+        <translation>Khớp lại tất cả cột đang hiện với nội dung của chúng và quên các độ rộng đã đặt tay</translation>
+    </message>
 </context>
 <context>
     <name>TrackerStatusFilterWidget</name>
@@ -14054,6 +14946,22 @@ Vui lòng chọn một tên khác và thử lại.</translation>
         <source>Super seeding mode</source>
         <translation>Chế độ siêu chia sẻ</translation>
     </message>
+    <message>
+        <source>Reset auto width</source>
+        <translation>Đặt lại độ rộng tự động</translation>
+    </message>
+    <message>
+        <source>Fit all non-hidden columns to their contents again, and forget the widths that were set by hand</source>
+        <translation>Khớp lại tất cả cột đang hiện với nội dung của chúng và quên các độ rộng đã đặt tay</translation>
+    </message>
+    <message>
+        <source>Reset auto width</source>
+        <translation>Đặt lại độ rộng tự động</translation>
+    </message>
+    <message>
+        <source>Fit all non-hidden columns to their contents again, and forget the widths that were set by hand</source>
+        <translation>Khớp lại tất cả cột đang hiện với nội dung của chúng và quên các độ rộng đã đặt tay</translation>
+    </message>
 </context>
 <context>
     <name>UIThemeDialog</name>
@@ -14388,6 +15296,46 @@ Vui lòng chọn một tên khác và thử lại.</translation>
         <source>WebAPI login failure. Reason: invalid credentials, attempt count: %1, IP: %2, username: %3</source>
         <translation>Đăng nhập WebAPI thất bại. Lí do: thông tin xác thực sai, số lần thử: %1, IP: %2, tên người dùng: %3</translation>
     </message>
+    <message>
+        <source>Something went wrong on the server. Details are in qBittorrent&apos;s log.</source>
+        <translation>Đã có lỗi trên máy chủ. Chi tiết nằm trong nhật ký của qBittorrent.</translation>
+    </message>
+    <message>
+        <source>This account is locked after too many failed login attempts. Try again in %1 minute(s).</source>
+        <translation>Tài khoản này bị khóa do quá nhiều lần đăng nhập thất bại. Hãy thử lại sau %1 phút.</translation>
+    </message>
+    <message>
+        <source>Your role (%1) doesn&apos;t allow this: %2.</source>
+        <translation>Vai trò của bạn (%1) không cho phép việc này: %2.</translation>
+    </message>
+    <message>
+        <source>Only an admin can remove the tag that says who added a torrent.</source>
+        <translation>Chỉ quản trị viên mới gỡ được thẻ cho biết ai đã thêm torrent.</translation>
+    </message>
+    <message>
+        <source>Only an admin can clear or replace all tags of a torrent that has a tag saying who added it.</source>
+        <translation>Chỉ quản trị viên mới xóa hoặc thay được mọi thẻ của torrent có thẻ cho biết người thêm.</translation>
+    </message>
+    <message>
+        <source>Something went wrong on the server. Details are in qBittorrent&apos;s log.</source>
+        <translation>Đã có lỗi trên máy chủ. Chi tiết nằm trong nhật ký của qBittorrent.</translation>
+    </message>
+    <message>
+        <source>This account is locked after too many failed login attempts. Try again in %1 minute(s).</source>
+        <translation>Tài khoản này bị khóa do quá nhiều lần đăng nhập thất bại. Hãy thử lại sau %1 phút.</translation>
+    </message>
+    <message>
+        <source>Your role (%1) doesn&apos;t allow this: %2.</source>
+        <translation>Vai trò của bạn (%1) không cho phép việc này: %2.</translation>
+    </message>
+    <message>
+        <source>Only an admin can remove the tag that says who added a torrent.</source>
+        <translation>Chỉ quản trị viên mới gỡ được thẻ cho biết ai đã thêm torrent.</translation>
+    </message>
+    <message>
+        <source>Only an admin can clear or replace all tags of a torrent that has a tag saying who added it.</source>
+        <translation>Chỉ quản trị viên mới xóa hoặc thay được mọi thẻ của torrent có thẻ cho biết người thêm.</translation>
+    </message>
 </context>
 <context>
     <name>WebUI</name>
@@ -14527,6 +15475,669 @@ Vui lòng chọn một tên khác và thử lại.</translation>
         <source>&lt; 1m</source>
         <comment>&lt; 1 minute</comment>
         <translation>&lt; 1phút</translation>
+    </message>
+</context>
+<context>
+    <name>UpdateInstaller</name>
+    <message>
+        <source>Kettle Edition update</source>
+        <translation>Cập nhật Kettle Edition</translation>
+    </message>
+    <message>
+        <source>Kettle Edition was updated to %1.</source>
+        <translation>Kettle Edition đã được cập nhật lên %1.</translation>
+    </message>
+    <message>
+        <source>Kettle Edition updated</source>
+        <translation>Kettle Edition đã cập nhật</translation>
+    </message>
+    <message>
+        <source>Downloading Kettle Edition %1 (%2 changed files).</source>
+        <translation>Đang tải Kettle Edition %1 (%2 tệp thay đổi).</translation>
+    </message>
+    <message>
+        <source>Kettle Edition %1 is downloaded and ready to install.</source>
+        <translation>Kettle Edition %1 đã tải xong và sẵn sàng để cài đặt.</translation>
+    </message>
+    <message>
+        <source>Kettle Edition update</source>
+        <translation>Cập nhật Kettle Edition</translation>
+    </message>
+    <message>
+        <source>Kettle Edition was updated to %1.</source>
+        <translation>Kettle Edition đã được cập nhật lên %1.</translation>
+    </message>
+    <message>
+        <source>Kettle Edition updated</source>
+        <translation>Kettle Edition đã cập nhật</translation>
+    </message>
+    <message>
+        <source>Downloading Kettle Edition %1 (%2 changed files).</source>
+        <translation>Đang tải Kettle Edition %1 (%2 tệp thay đổi).</translation>
+    </message>
+    <message>
+        <source>Kettle Edition %1 is downloaded and ready to install.</source>
+        <translation>Kettle Edition %1 đã tải xong và sẵn sàng để cài đặt.</translation>
+    </message>
+</context>
+<context>
+    <name>UserAccountDialog</name>
+    <message>
+        <source>User</source>
+        <translation>Người dùng</translation>
+    </message>
+    <message>
+        <source>Username:</source>
+        <translation>Tên người dùng:</translation>
+    </message>
+    <message>
+        <source>Role:</source>
+        <translation>Vai trò:</translation>
+    </message>
+    <message>
+        <source>Password:</source>
+        <translation>Mật khẩu:</translation>
+    </message>
+    <message>
+        <source>Confirm password:</source>
+        <translation>Xác nhận mật khẩu:</translation>
+    </message>
+    <message>
+        <source>Disable this account</source>
+        <translation>Vô hiệu hóa tài khoản này</translation>
+    </message>
+    <message>
+        <source>Edit User</source>
+        <translation>Sửa người dùng</translation>
+    </message>
+    <message>
+        <source>Leave empty to keep the current password</source>
+        <translation>Để trống để giữ mật khẩu hiện tại</translation>
+    </message>
+    <message>
+        <source>Add User</source>
+        <translation>Thêm người dùng</translation>
+    </message>
+    <message>
+        <source>At least %1 characters</source>
+        <translation>Ít nhất %1 ký tự</translation>
+    </message>
+    <message>
+        <source>Enter a username.</source>
+        <translation>Nhập tên người dùng.</translation>
+    </message>
+    <message>
+        <source>The password must be at least %1 characters long.</source>
+        <translation>Mật khẩu phải dài ít nhất %1 ký tự.</translation>
+    </message>
+    <message>
+        <source>The passwords don&apos;t match.</source>
+        <translation>Mật khẩu không khớp.</translation>
+    </message>
+    <message>
+        <source>User</source>
+        <translation>Người dùng</translation>
+    </message>
+    <message>
+        <source>Username:</source>
+        <translation>Tên người dùng:</translation>
+    </message>
+    <message>
+        <source>Role:</source>
+        <translation>Vai trò:</translation>
+    </message>
+    <message>
+        <source>Password:</source>
+        <translation>Mật khẩu:</translation>
+    </message>
+    <message>
+        <source>Confirm password:</source>
+        <translation>Xác nhận mật khẩu:</translation>
+    </message>
+    <message>
+        <source>Disable this account</source>
+        <translation>Vô hiệu hóa tài khoản này</translation>
+    </message>
+    <message>
+        <source>Edit User</source>
+        <translation>Sửa người dùng</translation>
+    </message>
+    <message>
+        <source>Leave empty to keep the current password</source>
+        <translation>Để trống để giữ mật khẩu hiện tại</translation>
+    </message>
+    <message>
+        <source>Add User</source>
+        <translation>Thêm người dùng</translation>
+    </message>
+    <message>
+        <source>At least %1 characters</source>
+        <translation>Ít nhất %1 ký tự</translation>
+    </message>
+    <message>
+        <source>Enter a username.</source>
+        <translation>Nhập tên người dùng.</translation>
+    </message>
+    <message>
+        <source>The password must be at least %1 characters long.</source>
+        <translation>Mật khẩu phải dài ít nhất %1 ký tự.</translation>
+    </message>
+    <message>
+        <source>The passwords don&apos;t match.</source>
+        <translation>Mật khẩu không khớp.</translation>
+    </message>
+</context>
+<context>
+    <name>UserAccountsWidget</name>
+    <message>
+        <source>User Accounts</source>
+        <translation>Tài khoản người dùng</translation>
+    </message>
+    <message>
+        <source>Users</source>
+        <translation>Người dùng</translation>
+    </message>
+    <message>
+        <source>People who can log in to the WebUI with their own username and password.</source>
+        <translation>Những người có thể đăng nhập WebUI bằng tên người dùng và mật khẩu riêng.</translation>
+    </message>
+    <message>
+        <source>Add User...</source>
+        <translation>Thêm người dùng...</translation>
+    </message>
+    <message>
+        <source>Edit...</source>
+        <translation>Sửa...</translation>
+    </message>
+    <message>
+        <source>Remove</source>
+        <translation>Gỡ bỏ</translation>
+    </message>
+    <message>
+        <source>Roles</source>
+        <translation>Vai trò</translation>
+    </message>
+    <message>
+        <source>A role decides what its users are allowed to do.</source>
+        <translation>Vai trò quyết định người dùng của nó được làm gì.</translation>
+    </message>
+    <message>
+        <source>Add Role...</source>
+        <translation>Thêm vai trò...</translation>
+    </message>
+    <message>
+        <source>Logged In</source>
+        <translation>Đang đăng nhập</translation>
+    </message>
+    <message>
+        <source>Browsers and devices where someone is logged in with a user account.</source>
+        <translation>Trình duyệt và thiết bị nơi ai đó đã đăng nhập bằng tài khoản người dùng.</translation>
+    </message>
+    <message>
+        <source>Log Out</source>
+        <translation>Đăng xuất</translation>
+    </message>
+    <message>
+        <source>Username</source>
+        <translation>Tên người dùng</translation>
+    </message>
+    <message>
+        <source>Role</source>
+        <translation>Vai trò</translation>
+    </message>
+    <message>
+        <source>Status</source>
+        <translation>Trạng thái</translation>
+    </message>
+    <message>
+        <source>Last login</source>
+        <translation>Đăng nhập lần cuối</translation>
+    </message>
+    <message>
+        <source>Created</source>
+        <translation>Ngày tạo</translation>
+    </message>
+    <message>
+        <source>Name</source>
+        <translation>Tên</translation>
+    </message>
+    <message>
+        <source>Description</source>
+        <translation>Mô tả</translation>
+    </message>
+    <message>
+        <source>Permissions</source>
+        <translation>Quyền</translation>
+    </message>
+    <message>
+        <source>User</source>
+        <translation>Người dùng</translation>
+    </message>
+    <message>
+        <source>Browser</source>
+        <translation>Trình duyệt</translation>
+    </message>
+    <message>
+        <source>Logged in</source>
+        <translation>Đăng nhập lúc</translation>
+    </message>
+    <message>
+        <source>Last active</source>
+        <translation>Hoạt động lần cuối</translation>
+    </message>
+    <message>
+        <source>Expires</source>
+        <translation>Hết hạn</translation>
+    </message>
+    <message>
+        <source>The user database could not be opened. See the Execution Log for details.</source>
+        <translation>Không mở được cơ sở dữ liệu người dùng. Xem Nhật ký thực thi để biết chi tiết.</translation>
+    </message>
+    <message>
+        <source>Disabled</source>
+        <translation>Đã vô hiệu hóa</translation>
+    </message>
+    <message>
+        <source>Enabled</source>
+        <translation>Đã bật</translation>
+    </message>
+    <message>
+        <source>Never</source>
+        <translation>Không bao giờ</translation>
+    </message>
+    <message>
+        <source>No accounts yet, so everyone still uses the shared WebUI login. Add an Admin account first.</source>
+        <translation>Chưa có tài khoản nào nên mọi người vẫn dùng đăng nhập WebUI chung. Hãy thêm tài khoản Quản trị trước.</translation>
+    </message>
+    <message>
+        <source>Couldn&apos;t read the user database. %1</source>
+        <translation>Không đọc được cơ sở dữ liệu người dùng. %1</translation>
+    </message>
+    <message>
+        <source>Remove user</source>
+        <translation>Gỡ bỏ người dùng</translation>
+    </message>
+    <message>
+        <source>Are you sure you want to remove the user &apos;%1&apos;?</source>
+        <translation>Bạn có chắc muốn gỡ bỏ người dùng &apos;%1&apos; không?</translation>
+    </message>
+    <message>
+        <source>Remove role</source>
+        <translation>Gỡ bỏ vai trò</translation>
+    </message>
+    <message>
+        <source>Are you sure you want to remove the role &apos;%1&apos;?</source>
+        <translation>Bạn có chắc muốn gỡ bỏ vai trò &apos;%1&apos; không?</translation>
+    </message>
+    <message>
+        <source>Enable</source>
+        <translation>Bật</translation>
+    </message>
+    <message>
+        <source>Disable</source>
+        <translation>Vô hiệu hóa</translation>
+    </message>
+    <message>
+        <source>Log Out Everywhere</source>
+        <translation>Đăng xuất mọi nơi</translation>
+    </message>
+    <message>
+        <source>User Accounts</source>
+        <translation>Tài khoản người dùng</translation>
+    </message>
+    <message>
+        <source>Users</source>
+        <translation>Người dùng</translation>
+    </message>
+    <message>
+        <source>People who can log in to the WebUI with their own username and password.</source>
+        <translation>Những người có thể đăng nhập WebUI bằng tên người dùng và mật khẩu riêng.</translation>
+    </message>
+    <message>
+        <source>Add User...</source>
+        <translation>Thêm người dùng...</translation>
+    </message>
+    <message>
+        <source>Edit...</source>
+        <translation>Sửa...</translation>
+    </message>
+    <message>
+        <source>Remove</source>
+        <translation>Gỡ bỏ</translation>
+    </message>
+    <message>
+        <source>Roles</source>
+        <translation>Vai trò</translation>
+    </message>
+    <message>
+        <source>A role decides what its users are allowed to do.</source>
+        <translation>Vai trò quyết định người dùng của nó được làm gì.</translation>
+    </message>
+    <message>
+        <source>Add Role...</source>
+        <translation>Thêm vai trò...</translation>
+    </message>
+    <message>
+        <source>Logged In</source>
+        <translation>Đang đăng nhập</translation>
+    </message>
+    <message>
+        <source>Browsers and devices where someone is logged in with a user account.</source>
+        <translation>Trình duyệt và thiết bị nơi ai đó đã đăng nhập bằng tài khoản người dùng.</translation>
+    </message>
+    <message>
+        <source>Log Out</source>
+        <translation>Đăng xuất</translation>
+    </message>
+    <message>
+        <source>Username</source>
+        <translation>Tên người dùng</translation>
+    </message>
+    <message>
+        <source>Role</source>
+        <translation>Vai trò</translation>
+    </message>
+    <message>
+        <source>Status</source>
+        <translation>Trạng thái</translation>
+    </message>
+    <message>
+        <source>Last login</source>
+        <translation>Đăng nhập lần cuối</translation>
+    </message>
+    <message>
+        <source>Created</source>
+        <translation>Ngày tạo</translation>
+    </message>
+    <message>
+        <source>Name</source>
+        <translation>Tên</translation>
+    </message>
+    <message>
+        <source>Description</source>
+        <translation>Mô tả</translation>
+    </message>
+    <message>
+        <source>Permissions</source>
+        <translation>Quyền</translation>
+    </message>
+    <message>
+        <source>User</source>
+        <translation>Người dùng</translation>
+    </message>
+    <message>
+        <source>Browser</source>
+        <translation>Trình duyệt</translation>
+    </message>
+    <message>
+        <source>Logged in</source>
+        <translation>Đăng nhập lúc</translation>
+    </message>
+    <message>
+        <source>Last active</source>
+        <translation>Hoạt động lần cuối</translation>
+    </message>
+    <message>
+        <source>Expires</source>
+        <translation>Hết hạn</translation>
+    </message>
+    <message>
+        <source>The user database could not be opened. See the Execution Log for details.</source>
+        <translation>Không mở được cơ sở dữ liệu người dùng. Xem Nhật ký thực thi để biết chi tiết.</translation>
+    </message>
+    <message>
+        <source>Disabled</source>
+        <translation>Đã vô hiệu hóa</translation>
+    </message>
+    <message>
+        <source>Enabled</source>
+        <translation>Đã bật</translation>
+    </message>
+    <message>
+        <source>Never</source>
+        <translation>Không bao giờ</translation>
+    </message>
+    <message>
+        <source>No accounts yet, so everyone still uses the shared WebUI login. Add an Admin account first.</source>
+        <translation>Chưa có tài khoản nào nên mọi người vẫn dùng đăng nhập WebUI chung. Hãy thêm tài khoản Quản trị trước.</translation>
+    </message>
+    <message>
+        <source>Couldn&apos;t read the user database. %1</source>
+        <translation>Không đọc được cơ sở dữ liệu người dùng. %1</translation>
+    </message>
+    <message>
+        <source>Remove user</source>
+        <translation>Gỡ bỏ người dùng</translation>
+    </message>
+    <message>
+        <source>Are you sure you want to remove the user &apos;%1&apos;?</source>
+        <translation>Bạn có chắc muốn gỡ bỏ người dùng &apos;%1&apos; không?</translation>
+    </message>
+    <message>
+        <source>Remove role</source>
+        <translation>Gỡ bỏ vai trò</translation>
+    </message>
+    <message>
+        <source>Are you sure you want to remove the role &apos;%1&apos;?</source>
+        <translation>Bạn có chắc muốn gỡ bỏ vai trò &apos;%1&apos; không?</translation>
+    </message>
+    <message>
+        <source>Enable</source>
+        <translation>Bật</translation>
+    </message>
+    <message>
+        <source>Disable</source>
+        <translation>Vô hiệu hóa</translation>
+    </message>
+    <message>
+        <source>Log Out Everywhere</source>
+        <translation>Đăng xuất mọi nơi</translation>
+    </message>
+</context>
+<context>
+    <name>UserRoleDialog</name>
+    <message>
+        <source>Role</source>
+        <translation>Vai trò</translation>
+    </message>
+    <message>
+        <source>Name:</source>
+        <translation>Tên:</translation>
+    </message>
+    <message>
+        <source>Description:</source>
+        <translation>Mô tả:</translation>
+    </message>
+    <message>
+        <source>Gives control over the PC or qBittorrent itself.</source>
+        <translation>Cho quyền điều khiển máy tính hoặc chính qBittorrent.</translation>
+    </message>
+    <message>
+        <source>Add Role</source>
+        <translation>Thêm vai trò</translation>
+    </message>
+    <message>
+        <source>Edit Role</source>
+        <translation>Sửa vai trò</translation>
+    </message>
+    <message>
+        <source>Enter a role name.</source>
+        <translation>Nhập tên vai trò.</translation>
+    </message>
+    <message>
+        <source>Role</source>
+        <translation>Vai trò</translation>
+    </message>
+    <message>
+        <source>Name:</source>
+        <translation>Tên:</translation>
+    </message>
+    <message>
+        <source>Description:</source>
+        <translation>Mô tả:</translation>
+    </message>
+    <message>
+        <source>Gives control over the PC or qBittorrent itself.</source>
+        <translation>Cho quyền điều khiển máy tính hoặc chính qBittorrent.</translation>
+    </message>
+    <message>
+        <source>Add Role</source>
+        <translation>Thêm vai trò</translation>
+    </message>
+    <message>
+        <source>Edit Role</source>
+        <translation>Sửa vai trò</translation>
+    </message>
+    <message>
+        <source>Enter a role name.</source>
+        <translation>Nhập tên vai trò.</translation>
+    </message>
+</context>
+<context>
+    <name>WebUIActivityWidget</name>
+    <message>
+        <source>All</source>
+        <translation>Tất cả</translation>
+    </message>
+    <message>
+        <source>Filter activity</source>
+        <translation>Lọc hoạt động</translation>
+    </message>
+    <message>
+        <source>Export...</source>
+        <translation>Xuất...</translation>
+    </message>
+    <message>
+        <source>User:</source>
+        <translation>Người dùng:</translation>
+    </message>
+    <message>
+        <source>Category:</source>
+        <translation>Danh mục:</translation>
+    </message>
+    <message>
+        <source>Result:</source>
+        <translation>Kết quả:</translation>
+    </message>
+    <message>
+        <source>Time</source>
+        <translation>Thời gian</translation>
+    </message>
+    <message>
+        <source>User</source>
+        <translation>Người dùng</translation>
+    </message>
+    <message>
+        <source>Role</source>
+        <translation>Vai trò</translation>
+    </message>
+    <message>
+        <source>Category</source>
+        <translation>Danh mục</translation>
+    </message>
+    <message>
+        <source>Action</source>
+        <translation>Hành động</translation>
+    </message>
+    <message>
+        <source>Result</source>
+        <translation>Kết quả</translation>
+    </message>
+    <message>
+        <source>The user database could not be opened. See the General tab for details.</source>
+        <translation>Không mở được cơ sở dữ liệu người dùng. Xem tab Chung để biết chi tiết.</translation>
+    </message>
+    <message>
+        <source>Results (showing %1 out of %2)</source>
+        <translation>Kết quả (hiển thị %1 trên %2)</translation>
+    </message>
+    <message>
+        <source>Copy</source>
+        <translation>Sao chép</translation>
+    </message>
+    <message>
+        <source>Export WebUI activity</source>
+        <translation>Xuất hoạt động WebUI</translation>
+    </message>
+    <message>
+        <source>CSV files</source>
+        <translation>Tệp CSV</translation>
+    </message>
+    <message>
+        <source>Couldn&apos;t save the file. Reason: %1</source>
+        <translation>Không lưu được tệp. Lý do: %1</translation>
+    </message>
+    <message>
+        <source>All</source>
+        <translation>Tất cả</translation>
+    </message>
+    <message>
+        <source>Filter activity</source>
+        <translation>Lọc hoạt động</translation>
+    </message>
+    <message>
+        <source>Export...</source>
+        <translation>Xuất...</translation>
+    </message>
+    <message>
+        <source>User:</source>
+        <translation>Người dùng:</translation>
+    </message>
+    <message>
+        <source>Category:</source>
+        <translation>Danh mục:</translation>
+    </message>
+    <message>
+        <source>Result:</source>
+        <translation>Kết quả:</translation>
+    </message>
+    <message>
+        <source>Time</source>
+        <translation>Thời gian</translation>
+    </message>
+    <message>
+        <source>User</source>
+        <translation>Người dùng</translation>
+    </message>
+    <message>
+        <source>Role</source>
+        <translation>Vai trò</translation>
+    </message>
+    <message>
+        <source>Category</source>
+        <translation>Danh mục</translation>
+    </message>
+    <message>
+        <source>Action</source>
+        <translation>Hành động</translation>
+    </message>
+    <message>
+        <source>Result</source>
+        <translation>Kết quả</translation>
+    </message>
+    <message>
+        <source>The user database could not be opened. See the General tab for details.</source>
+        <translation>Không mở được cơ sở dữ liệu người dùng. Xem tab Chung để biết chi tiết.</translation>
+    </message>
+    <message>
+        <source>Results (showing %1 out of %2)</source>
+        <translation>Kết quả (hiển thị %1 trên %2)</translation>
+    </message>
+    <message>
+        <source>Copy</source>
+        <translation>Sao chép</translation>
+    </message>
+    <message>
+        <source>Export WebUI activity</source>
+        <translation>Xuất hoạt động WebUI</translation>
+    </message>
+    <message>
+        <source>CSV files</source>
+        <translation>Tệp CSV</translation>
+    </message>
+    <message>
+        <source>Couldn&apos;t save the file. Reason: %1</source>
+        <translation>Không lưu được tệp. Lý do: %1</translation>
     </message>
 </context>
 </TS>

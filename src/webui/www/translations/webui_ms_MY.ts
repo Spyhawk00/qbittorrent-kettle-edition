@@ -223,6 +223,81 @@ The piece hash will be checked when it is requested for the first time by a peer
         <source>%1 needed · %2 free</source>
         <translation type="unfinished" />
     </message>
+    <message>
+        <source>Don&apos;t create subfolder</source>
+        <translation>Jangan cipta subfolder</translation>
+    </message>
+    <message>
+        <source>Never show again</source>
+        <translation>Jangan sesekali tunjuk lagi</translation>
+    </message>
+    <message>
+        <source>Select None</source>
+        <translation>Pilih Tiada</translation>
+    </message>
+    <message>
+        <source>Your role saves torrents in the default folders.</source>
+        <translation>Peranan anda menyimpan torrent dalam folder lalai.</translation>
+    </message>
+</context>
+<context>
+    <name>AdvancedSettings</name>
+    <message>
+        <source>General</source>
+        <translation>Am</translation>
+    </message>
+    <message>
+        <source>Network</source>
+        <translation>Rangkaian</translation>
+    </message>
+    <message>
+        <source>Storage</source>
+        <translation>Storan</translation>
+    </message>
+    <message>
+        <source>Peers and trackers</source>
+        <translation>Rakan dan penjejak</translation>
+    </message>
+    <message>
+        <source>Program behavior</source>
+        <translation>Kelakuan program</translation>
+    </message>
+    <message>
+        <source>Display and notifications</source>
+        <translation>Paparan dan pemberitahuan</translation>
+    </message>
+    <message>
+        <source>Network connection</source>
+        <translation>Sambungan rangkaian</translation>
+    </message>
+    <message>
+        <source>Security and privacy</source>
+        <translation>Keselamatan dan kerahsiaan</translation>
+    </message>
+    <message>
+        <source>Connection tuning</source>
+        <translation>Penalaan sambungan</translation>
+    </message>
+    <message>
+        <source>Saving and torrent files</source>
+        <translation>Penyimpanan dan fail torrent</translation>
+    </message>
+    <message>
+        <source>Disk and memory</source>
+        <translation>Cakera dan memori</translation>
+    </message>
+    <message>
+        <source>Trackers</source>
+        <translation>Penjejak</translation>
+    </message>
+    <message>
+        <source>Peers and seeding</source>
+        <translation>Rakan dan penyemaian</translation>
+    </message>
+    <message>
+        <source>DHT and I2P</source>
+        <translation>DHT dan I2P</translation>
+    </message>
 </context>
 <context>
     <name>CategoryFilterModel</name>
@@ -623,6 +698,14 @@ The piece hash will be checked when it is requested for the first time by a peer
         <source>More</source>
         <translation>Lagi</translation>
     </message>
+    <message>
+        <source>Change Password...</source>
+        <translation>Tukar Kata Laluan...</translation>
+    </message>
+    <message>
+        <source>Signed in as</source>
+        <translation>Log masuk sebagai</translation>
+    </message>
 </context>
 <context>
     <name>MainWindow</name>
@@ -929,6 +1012,34 @@ The piece hash will be checked when it is requested for the first time by a peer
     <message>
         <source>Resume Session</source>
         <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Pause Session</source>
+        <translation>Jeda sesi</translation>
+    </message>
+    <message>
+        <source>Pause session</source>
+        <translation>Jeda sesi</translation>
+    </message>
+    <message>
+        <source>Remove</source>
+        <translation>Buang</translation>
+    </message>
+    <message>
+        <source>Resume Session</source>
+        <translation>Sambung semula sesi</translation>
+    </message>
+    <message>
+        <source>Resume session</source>
+        <translation>Sambung semula sesi</translation>
+    </message>
+    <message>
+        <source>Your account can&apos;t add torrents.</source>
+        <translation>Akaun anda tidak boleh menambah torrent.</translation>
+    </message>
+    <message>
+        <source>[PAUSED]</source>
+        <translation>[DIJEDA]</translation>
     </message>
 </context>
 <context>
@@ -2515,6 +2626,162 @@ Guna ';' untuk asingkan masukan berbilang. Boleh guna kad liar '*'.</translation
         <source>a@x.com;b@y.com,c@z.com - send two emails: the first to just a@x.com, the second to both b@y.com and c@z.com</source>
         <translation type="unfinished" />
     </message>
+    <message>
+        <source>0 means users are logged out after the session timeout.</source>
+        <translation>0 bermaksud pengguna dilog keluar selepas tamat masa sesi.</translation>
+    </message>
+    <message>
+        <source>Access</source>
+        <translation>Akses</translation>
+    </message>
+    <message>
+        <source>Allow this login when user accounts exist</source>
+        <translation>Benarkan log masuk ini apabila akaun pengguna wujud</translation>
+    </message>
+    <message>
+        <source>Also save search results</source>
+        <translation>Simpan juga hasil carian</translation>
+    </message>
+    <message>
+        <source>Also when addition is cancelled</source>
+        <translation>Juga bila penambahan dibatalkan</translation>
+    </message>
+    <message>
+        <source>Below normal</source>
+        <translation>Bawah biasa</translation>
+    </message>
+    <message>
+        <source>Changes to users, roles and logins apply at once.</source>
+        <translation>Perubahan pada pengguna, peranan dan log masuk berkuat kuasa serta-merta.</translation>
+    </message>
+    <message>
+        <source>Don&apos;t create subfolder</source>
+        <translation>Jangan cipta subfolder</translation>
+    </message>
+    <message>
+        <source>Example:</source>
+        <translation>Contoh:</translation>
+    </message>
+    <message>
+        <source>Keep WebUI activity log for:</source>
+        <translation>Simpan log aktiviti WebUI selama:</translation>
+    </message>
+    <message>
+        <source>Keep users logged in for:</source>
+        <translation>Kekalkan pengguna log masuk selama:</translation>
+    </message>
+    <message>
+        <source>Language:</source>
+        <translation>Bahasa:</translation>
+    </message>
+    <message>
+        <source>Lock account after consecutive failures:</source>
+        <translation>Kunci akaun selepas kegagalan berturut-turut:</translation>
+    </message>
+    <message>
+        <source>Logins and Activity Log</source>
+        <translation>Log Masuk dan Log Aktiviti</translation>
+    </message>
+    <message>
+        <source>Low</source>
+        <translation>Rendah</translation>
+    </message>
+    <message>
+        <source>Medium</source>
+        <translation>Sederhana</translation>
+    </message>
+    <message>
+        <source>No settings match</source>
+        <translation>Tiada tetapan sepadan</translation>
+    </message>
+    <message>
+        <source>Process memory priority:</source>
+        <translation>Keutamaan memori proses:</translation>
+    </message>
+    <message>
+        <source>Save search tabs</source>
+        <translation>Simpan tab carian</translation>
+    </message>
+    <message>
+        <source>Search settings</source>
+        <translation>Cari tetapan</translation>
+    </message>
+    <message>
+        <source>Service:</source>
+        <translation>Perkhidmatan:</translation>
+    </message>
+    <message>
+        <source>Show console window</source>
+        <translation>Tunjuk tetingkap konsol</translation>
+    </message>
+    <message>
+        <source>Show the window when adding a torrent</source>
+        <translation>Tunjukkan tetingkap semasa menambah torrent</translation>
+    </message>
+    <message>
+        <source>Status bar and log</source>
+        <translation>Bar status dan log</translation>
+    </message>
+    <message>
+        <source>The WebUI activity log can be kept for 1 to 3650 days.</source>
+        <translation>Log aktiviti WebUI boleh disimpan selama 1 hingga 3650 hari.</translation>
+    </message>
+    <message>
+        <source>The settings below apply with OK or Apply.</source>
+        <translation>Tetapan di bawah berkuat kuasa dengan OK atau Guna.</translation>
+    </message>
+    <message>
+        <source>Tip: Encapsulate parameter with quotation marks to avoid text being cut off at whitespace (e.g., &quot;%N&quot;)</source>
+        <translation>Petua: Parameter dalam kurungan dengan tanda petikan untuk menghindari teks dipotong pada ruang putih (contohnya., &quot;%N&quot;)</translation>
+    </message>
+    <message>
+        <source>Transfer List</source>
+        <translation>Senarai Pemindahan)</translation>
+    </message>
+    <message>
+        <source>Until the first user account is created, this login always works.</source>
+        <translation>Sehingga akaun pengguna pertama dibuat, log masuk ini sentiasa berfungsi.</translation>
+    </message>
+    <message>
+        <source>User</source>
+        <translation>Pengguna</translation>
+    </message>
+    <message>
+        <source>User Accounts</source>
+        <translation>Akaun Pengguna</translation>
+    </message>
+    <message>
+        <source>Users can be kept logged in for 0 to 365 days.</source>
+        <translation>Pengguna boleh dikekalkan log masuk selama 0 hingga 365 hari.</translation>
+    </message>
+    <message>
+        <source>Very low</source>
+        <translation>Sangat rendah</translation>
+    </message>
+    <message>
+        <source>Warning! Data loss possible!</source>
+        <translation>Amaran! Kehilangan data mungkin berlaku!</translation>
+    </message>
+    <message>
+        <source>Whitelist for filtering HTTP Host header values.
+In order to defend against DNS rebinding attack,
+you should put in domain names used by WebUI server.
+
+Use &apos;;&apos; to split multiple entries. Can use wildcard &apos;*&apos;.</source>
+        <translation>Senarai putih untuk menapis nilai pengepala Hos HTTP.
+Untuk menampan serangan pengikatan semula DNS,
+anda patut letak nama domain yang digunakan oleh pelayan WebUI.
+
+Guna &apos;;&apos; untuk asingkan masukan berbilang. Boleh guna kad liar &apos;*&apos;.</translation>
+    </message>
+    <message>
+        <source>You changed the address, port or HTTPS setting of the WebUI. Saving moves the WebUI, so Options will save, close and reload the page, the same as OK. If the page doesn&apos;t come back, open the WebUI at its new address.\n\nSave anyway?</source>
+        <translation>Anda menukar alamat, port atau tetapan HTTPS WebUI. Menyimpan memindahkan WebUI, jadi Pilihan akan menyimpan, menutup dan memuat semula halaman, sama seperti OK. Jika halaman tidak kembali, buka WebUI pada alamat barunya.\n\nSimpan juga?</translation>
+    </message>
+    <message>
+        <source>lock for:</source>
+        <translation>kunci selama:</translation>
+    </message>
 </context>
 <context>
     <name>PeerListWidget</name>
@@ -3055,6 +3322,142 @@ Guna ';' untuk asingkan masukan berbilang. Boleh guna kad liar '*'.</translation
     <message>
         <source>The time it takes from receiving a request from a peer until we're sending the response back on the socket</source>
         <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Activity</source>
+        <translation>Aktiviti</translation>
+    </message>
+    <message>
+        <source>All time</source>
+        <translation>Sepanjang masa</translation>
+    </message>
+    <message>
+        <source>Before tracking began</source>
+        <translation>Sebelum penjejakan bermula</translation>
+    </message>
+    <message>
+        <source>By month</source>
+        <translation>Mengikut bulan</translation>
+    </message>
+    <message>
+        <source>Counts the requests that added a download. Apps without a login, such as Sonarr and Radarr, are shown as (localhost). Downloads added in the desktop window are not counted.</source>
+        <translation>Mengira permintaan yang menambah muat turun. Aplikasi tanpa log masuk, seperti Sonarr dan Radarr, dipaparkan sebagai (localhost). Muat turun yang ditambah dalam tetingkap desktop tidak dikira.</translation>
+    </message>
+    <message>
+        <source>Current speed:</source>
+        <translation>Kelajuan semasa:</translation>
+    </message>
+    <message>
+        <source>DHT nodes:</source>
+        <translation>Nod DHT:</translation>
+    </message>
+    <message>
+        <source>Data discarded this session:</source>
+        <translation>Data dibuang dalam sesi ini:</translation>
+    </message>
+    <message>
+        <source>Disk</source>
+        <translation>Cakera</translation>
+    </message>
+    <message>
+        <source>History</source>
+        <translation>Sejarah</translation>
+    </message>
+    <message>
+        <source>Last 12 months</source>
+        <translation>12 bulan lepas</translation>
+    </message>
+    <message>
+        <source>Last 7 days</source>
+        <translation>7 hari lepas</translation>
+    </message>
+    <message>
+        <source>Last month</source>
+        <translation>Bulan lepas</translation>
+    </message>
+    <message>
+        <source>Month</source>
+        <translation>Bulan</translation>
+    </message>
+    <message>
+        <source>Nothing added yet</source>
+        <translation>Belum ada yang ditambah</translation>
+    </message>
+    <message>
+        <source>Off</source>
+        <translation>Mati</translation>
+    </message>
+    <message>
+        <source>Overview</source>
+        <translation>Gambaran keseluruhan</translation>
+    </message>
+    <message>
+        <source>Peers waiting on disk reads:</source>
+        <translation>Rakan sebaya menunggu bacaan cakera:</translation>
+    </message>
+    <message>
+        <source>Peers waiting on disk writes:</source>
+        <translation>Rakan sebaya menunggu penulisan cakera:</translation>
+    </message>
+    <message>
+        <source>Period</source>
+        <translation>Tempoh</translation>
+    </message>
+    <message>
+        <source>Request latency:</source>
+        <translation>Kependaman permintaan:</translation>
+    </message>
+    <message>
+        <source>Running for:</source>
+        <translation>Telah berjalan selama:</translation>
+    </message>
+    <message>
+        <source>Share ratio</source>
+        <translation>Nisbah perkongsian</translation>
+    </message>
+    <message>
+        <source>Share ratio:</source>
+        <translation>Nisbah perkongsian:</translation>
+    </message>
+    <message>
+        <source>Technical</source>
+        <translation>Teknikal</translation>
+    </message>
+    <message>
+        <source>This month</source>
+        <translation>Bulan ini</translation>
+    </message>
+    <message>
+        <source>This session</source>
+        <translation>Sesi ini</translation>
+    </message>
+    <message>
+        <source>Today</source>
+        <translation>Hari ini</translation>
+    </message>
+    <message>
+        <source>Torrents downloading:</source>
+        <translation>Torrent memuat turun:</translation>
+    </message>
+    <message>
+        <source>Torrents seeding:</source>
+        <translation>Torrent menyemai:</translation>
+    </message>
+    <message>
+        <source>Torrents stopped:</source>
+        <translation>Torrent dihentikan:</translation>
+    </message>
+    <message>
+        <source>Torrents with errors:</source>
+        <translation>Torrent dengan ralat:</translation>
+    </message>
+    <message>
+        <source>Tracking since:</source>
+        <translation>Penjejakan sejak:</translation>
+    </message>
+    <message>
+        <source>WebUI downloads added, this month</source>
+        <translation>Muat turun yang ditambah melalui WebUI, bulan ini</translation>
     </message>
 </context>
 <context>
@@ -3842,6 +4245,14 @@ Guna ';' untuk asingkan masukan berbilang. Boleh guna kad liar '*'.</translation
         <source>Content Path</source>
         <translation type="unfinished" />
     </message>
+    <message>
+        <source>Remove</source>
+        <translation>Buang</translation>
+    </message>
+    <message>
+        <source>Remove all tags from selected torrents?</source>
+        <translation>Buang semua tag dari torrent terpilih?</translation>
+    </message>
 </context>
 <context>
     <name>UpDownRatioDialog</name>
@@ -3914,6 +4325,10 @@ Guna ';' untuk asingkan masukan berbilang. Boleh guna kad liar '*'.</translation
     <message>
         <source>Remove tracker</source>
         <translation>Buang penjejak</translation>
+    </message>
+    <message>
+        <source>This choice is remembered for the next removal.</source>
+        <translation>Pilihan ini akan diingati untuk pembuangan seterusnya.</translation>
     </message>
 </context>
 <context>
@@ -4127,6 +4542,34 @@ Guna ';' untuk asingkan masukan berbilang. Boleh guna kad liar '*'.</translation
         <source>Select plugins</source>
         <translation type="unfinished" />
     </message>
+    <message>
+        <source>Category to search in</source>
+        <translation>Kategori untuk dicari</translation>
+    </message>
+    <message>
+        <source>Close the selected search</source>
+        <translation>Tutup carian yang dipilih</translation>
+    </message>
+    <message>
+        <source>Empty search pattern</source>
+        <translation>Kosongkan pola gelintar</translation>
+    </message>
+    <message>
+        <source>Search engines to use</source>
+        <translation>Enjin carian yang digunakan</translation>
+    </message>
+    <message>
+        <source>Search for torrents...</source>
+        <translation>Cari torrent...</translation>
+    </message>
+    <message>
+        <source>Searches</source>
+        <translation>Carian</translation>
+    </message>
+    <message>
+        <source>Type a search above and press Enter.</source>
+        <translation>Taip carian di atas dan tekan Enter.</translation>
+    </message>
 </context>
 <context>
     <name>PluginSelectDlg</name>
@@ -4165,6 +4608,10 @@ Guna ';' untuk asingkan masukan berbilang. Boleh guna kad liar '*'.</translation
     <message>
         <source>Search plugins</source>
         <translation>Pemalam gelintar</translation>
+    </message>
+    <message>
+        <source>Warning: Be sure to comply with your country&apos;s copyright laws when downloading torrents from any of these search engines.</source>
+        <translation>Amaran: Pastikan menuruti undang-undang hakcipta negara anda ketika memuat turun torrent dari mana-mana enjin gelintar.</translation>
     </message>
 </context>
 <context>
@@ -4388,6 +4835,30 @@ Guna ';' untuk asingkan masukan berbilang. Boleh guna kad liar '*'.</translation
         <source>qBittorrent icon</source>
         <translation type="unfinished" />
     </message>
+    <message>
+        <source>Based on:</source>
+        <translation>Berdasarkan:</translation>
+    </message>
+    <message>
+        <source>Edition version:</source>
+        <translation>Versi edisi:</translation>
+    </message>
+    <message>
+        <source>Kettle Edition is a personal build of qBittorrent that adds user accounts with roles for the WebUI and the desktop app, an activity log, and an installable WebUI with a phone layout. A kettle is a group of hawks soaring together. This is an unofficial build, not affiliated with the qBittorrent project.</source>
+        <translation>Kettle Edition ialah binaan peribadi qBittorrent yang menambah akaun pengguna dengan peranan untuk WebUI dan aplikasi desktop, log aktiviti, dan WebUI boleh dipasang dengan susun atur telefon. Kettle ialah sekumpulan helang yang terbang bersama. Ini ialah binaan tidak rasmi dan tidak bersekutu dengan projek qBittorrent.</translation>
+    </message>
+    <message>
+        <source>Maintainer:</source>
+        <translation>Penyelenggara:</translation>
+    </message>
+    <message>
+        <source>This edition</source>
+        <translation>Edisi ini</translation>
+    </message>
+    <message>
+        <source>qBittorrent project:</source>
+        <translation>Projek qBittorrent:</translation>
+    </message>
 </context>
 <context>
     <name>OptionDialog</name>
@@ -4489,6 +4960,46 @@ Guna ';' untuk asingkan masukan berbilang. Boleh guna kad liar '*'.</translation
     <message>
         <source>Open shared download window</source>
         <translation type="unfinished" />
+    </message>
+    <message>
+        <source>%1 of %2 shown</source>
+        <translation>%1 daripada %2 dipaparkan</translation>
+    </message>
+    <message>
+        <source>%1 of %2 shown (%3 hidden)</source>
+        <translation>%1 daripada %2 dipaparkan (%3 disembunyikan)</translation>
+    </message>
+    <message>
+        <source>Close all searches</source>
+        <translation>Tutup semua carian</translation>
+    </message>
+    <message>
+        <source>Close search</source>
+        <translation>Tutup carian</translation>
+    </message>
+    <message>
+        <source>Filter search results...</source>
+        <translation>Tapis keputusan gelintar...</translation>
+    </message>
+    <message>
+        <source>Finished: %1</source>
+        <translation>Selesai: %1</translation>
+    </message>
+    <message>
+        <source>Refresh search</source>
+        <translation>Segarkan carian</translation>
+    </message>
+    <message>
+        <source>Search aborted: %1</source>
+        <translation>Carian dihentikan: %1</translation>
+    </message>
+    <message>
+        <source>Search returned no results</source>
+        <translation>Gelintar tidak kembalikan keputusan</translation>
+    </message>
+    <message>
+        <source>Searching: %1</source>
+        <translation>Mencari: %1</translation>
     </message>
 </context>
 <context>
@@ -4627,6 +5138,10 @@ Guna ';' untuk asingkan masukan berbilang. Boleh guna kad liar '*'.</translation
     <message>
         <source>Blocked opening RSS article URL. Only http:// and https:// links can be opened.</source>
         <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Details</source>
+        <translation>Butiran</translation>
     </message>
 </context>
 <context>
@@ -4904,6 +5419,10 @@ Supports the formats: S01E01, 1x1, 2017.12.31 and 31.12.2017 (Date formats also 
         <source>Import</source>
         <translation type="unfinished" />
     </message>
+    <message>
+        <source>Don&apos;t create subfolder</source>
+        <translation>Jangan cipta subfolder</translation>
+    </message>
 </context>
 <context>
     <name>TrackerFiltersList</name>
@@ -5093,6 +5612,26 @@ Supports the formats: S01E01, 1x1, 2017.12.31 and 31.12.2017 (Date formats also 
         <source>Choose a log level...</source>
         <translation type="unfinished" />
     </message>
+    <message>
+        <source>Export...</source>
+        <translation>Eksport...</translation>
+    </message>
+    <message>
+        <source>Filter activity</source>
+        <translation>Tapis aktiviti</translation>
+    </message>
+    <message>
+        <source>Result:</source>
+        <translation>Hasil:</translation>
+    </message>
+    <message>
+        <source>User:</source>
+        <translation>Pengguna:</translation>
+    </message>
+    <message>
+        <source>WebUI Activity</source>
+        <translation>Aktiviti WebUI</translation>
+    </message>
 </context>
 <context>
     <name>TrackersFilterWidget</name>
@@ -5163,6 +5702,10 @@ Supports the formats: S01E01, 1x1, 2017.12.31 and 31.12.2017 (Date formats also 
         <source>Torrent share limits</source>
         <translation type="unfinished" />
     </message>
+    <message>
+        <source>Your role saves torrents in the default folders.</source>
+        <translation>Peranan anda menyimpan torrent dalam folder lalai.</translation>
+    </message>
 </context>
 <context>
     <name>CookiesDialog</name>
@@ -5197,6 +5740,10 @@ Supports the formats: S01E01, 1x1, 2017.12.31 and 31.12.2017 (Date formats also 
     <message>
         <source>Path</source>
         <translation>Laluan</translation>
+    </message>
+    <message>
+        <source>Remove</source>
+        <translation>Buang</translation>
     </message>
 </context>
 <context>
@@ -5261,6 +5808,14 @@ Supports the formats: S01E01, 1x1, 2017.12.31 and 31.12.2017 (Date formats also 
     <message>
         <source>Invalid Username or Password.</source>
         <translation>Nama Pengguna atau Kata Laluan tidak sah.</translation>
+    </message>
+    <message>
+        <source>A kettle is a group of hawks soaring together.</source>
+        <translation>Kettle ialah sekumpulan helang yang terbang bersama.</translation>
+    </message>
+    <message>
+        <source>Sign in</source>
+        <translation>Log masuk</translation>
     </message>
 </context>
 <context>
@@ -5469,6 +6024,22 @@ Supports the formats: S01E01, 1x1, 2017.12.31 and 31.12.2017 (Date formats also 
         <source>If checked, filenames starting with a period punctuation mark `.` will not be added to the created torrent.</source>
         <translation type="unfinished" />
     </message>
+    <message>
+        <source>Align to piece boundary for files larger than:</source>
+        <translation>Jajar ke sempadan cebisan untuk fail lebih besar dari:</translation>
+    </message>
+    <message>
+        <source>Optimize alignment</source>
+        <translation>Optimumkan jajaran</translation>
+    </message>
+    <message>
+        <source>Private torrent (Won&apos;t distribute on DHT network)</source>
+        <translation>Torrent persendirian (Tidak diganggu pada rangkaian DHT)</translation>
+    </message>
+    <message>
+        <source>Start seeding immediately</source>
+        <translation>Mula menyemai serta-merta</translation>
+    </message>
 </context>
 <context>
     <name>DownloadFromURLDialog</name>
@@ -5589,6 +6160,10 @@ Supports the formats: S01E01, 1x1, 2017.12.31 and 31.12.2017 (Date formats also 
     <message>
         <source>Resize</source>
         <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Reset Auto Width</source>
+        <translation>Set semula lebar automatik</translation>
     </message>
 </context>
 <context>
@@ -5729,6 +6304,220 @@ Supports the formats: S01E01, 1x1, 2017.12.31 and 31.12.2017 (Date formats also 
     <message>
         <source>Not available for folders</source>
         <translation type="unfinished" />
+    </message>
+</context>
+<context>
+    <name>UserAccounts</name>
+    <message>
+        <source>(this browser)</source>
+        <translation>(pelayar ini)</translation>
+    </message>
+    <message>
+        <source>A role decides what its users are allowed to do.</source>
+        <translation>Peranan menentukan apa yang dibenarkan untuk penggunanya.</translation>
+    </message>
+    <message>
+        <source>Add Role</source>
+        <translation>Tambah Peranan</translation>
+    </message>
+    <message>
+        <source>Add Role...</source>
+        <translation>Tambah Peranan...</translation>
+    </message>
+    <message>
+        <source>Add User</source>
+        <translation>Tambah Pengguna</translation>
+    </message>
+    <message>
+        <source>Add User...</source>
+        <translation>Tambah Pengguna...</translation>
+    </message>
+    <message>
+        <source>Are you sure you want to remove the role &apos;%1&apos;?</source>
+        <translation>Adakah anda pasti mahu membuang peranan &apos;%1&apos;?</translation>
+    </message>
+    <message>
+        <source>Are you sure you want to remove the user &apos;%1&apos;?</source>
+        <translation>Adakah anda pasti mahu membuang pengguna &apos;%1&apos;?</translation>
+    </message>
+    <message>
+        <source>At least %1 characters</source>
+        <translation>Sekurang-kurangnya %1 aksara</translation>
+    </message>
+    <message>
+        <source>Browser</source>
+        <translation>Pelayar</translation>
+    </message>
+    <message>
+        <source>Browsers and devices where someone is logged in with a user account.</source>
+        <translation>Pelayar dan peranti tempat seseorang log masuk dengan akaun pengguna.</translation>
+    </message>
+    <message>
+        <source>Change Password</source>
+        <translation>Tukar Kata Laluan</translation>
+    </message>
+    <message>
+        <source>Confirm password:</source>
+        <translation>Sahkan kata laluan:</translation>
+    </message>
+    <message>
+        <source>Created</source>
+        <translation>Dicipta</translation>
+    </message>
+    <message>
+        <source>Current password:</source>
+        <translation>Kata laluan semasa:</translation>
+    </message>
+    <message>
+        <source>Description</source>
+        <translation>Penerangan</translation>
+    </message>
+    <message>
+        <source>Description:</source>
+        <translation>Penerangan:</translation>
+    </message>
+    <message>
+        <source>Disable</source>
+        <translation>Lumpuhkan</translation>
+    </message>
+    <message>
+        <source>Disable this account</source>
+        <translation>Lumpuhkan akaun ini</translation>
+    </message>
+    <message>
+        <source>Edit Role</source>
+        <translation>Sunting Peranan</translation>
+    </message>
+    <message>
+        <source>Edit User</source>
+        <translation>Sunting Pengguna</translation>
+    </message>
+    <message>
+        <source>Edit...</source>
+        <translation>Sunting...</translation>
+    </message>
+    <message>
+        <source>Enable</source>
+        <translation>Dayakan</translation>
+    </message>
+    <message>
+        <source>Enter a role name.</source>
+        <translation>Masukkan nama peranan.</translation>
+    </message>
+    <message>
+        <source>Enter a username.</source>
+        <translation>Masukkan nama pengguna.</translation>
+    </message>
+    <message>
+        <source>Expires</source>
+        <translation>Tamat tempoh</translation>
+    </message>
+    <message>
+        <source>Gives control over the PC or qBittorrent itself</source>
+        <translation>Memberi kawalan ke atas PC atau qBittorrent itu sendiri</translation>
+    </message>
+    <message>
+        <source>Last active</source>
+        <translation>Aktif terakhir</translation>
+    </message>
+    <message>
+        <source>Last login</source>
+        <translation>Log masuk terakhir</translation>
+    </message>
+    <message>
+        <source>Leave empty to keep the current password</source>
+        <translation>Biarkan kosong untuk mengekalkan kata laluan semasa</translation>
+    </message>
+    <message>
+        <source>Log Out</source>
+        <translation>Log Keluar</translation>
+    </message>
+    <message>
+        <source>Log Out Everywhere</source>
+        <translation>Log Keluar Di Mana-mana</translation>
+    </message>
+    <message>
+        <source>Logged In</source>
+        <translation>Telah Log Masuk</translation>
+    </message>
+    <message>
+        <source>Logged in</source>
+        <translation>Log masuk pada</translation>
+    </message>
+    <message>
+        <source>New password:</source>
+        <translation>Kata laluan baharu:</translation>
+    </message>
+    <message>
+        <source>No accounts yet, so everyone still uses the shared WebUI login. Add an Admin account first.</source>
+        <translation>Belum ada akaun, jadi semua orang masih menggunakan log masuk WebUI bersama. Tambah akaun Admin dahulu.</translation>
+    </message>
+    <message>
+        <source>People who can log in to the WebUI with their own username and password.</source>
+        <translation>Orang yang boleh log masuk ke WebUI dengan nama pengguna dan kata laluan sendiri.</translation>
+    </message>
+    <message>
+        <source>Permissions</source>
+        <translation>Kebenaran</translation>
+    </message>
+    <message>
+        <source>Remove</source>
+        <translation>Buang</translation>
+    </message>
+    <message>
+        <source>Role</source>
+        <translation>Peranan</translation>
+    </message>
+    <message>
+        <source>Role:</source>
+        <translation>Peranan:</translation>
+    </message>
+    <message>
+        <source>Roles</source>
+        <translation>Peranan</translation>
+    </message>
+    <message>
+        <source>The password must be at least %1 characters long.</source>
+        <translation>Kata laluan mestilah sekurang-kurangnya %1 aksara.</translation>
+    </message>
+    <message>
+        <source>The passwords don&apos;t match.</source>
+        <translation>Kata laluan tidak sepadan.</translation>
+    </message>
+    <message>
+        <source>User</source>
+        <translation>Pengguna</translation>
+    </message>
+    <message>
+        <source>Users</source>
+        <translation>Pengguna</translation>
+    </message>
+    <message>
+        <source>Your password was changed. Other browsers and devices where you were logged in have been logged out.</source>
+        <translation>Kata laluan anda telah ditukar. Pelayar dan peranti lain tempat anda log masuk telah dilog keluar.</translation>
+    </message>
+</context>
+<context>
+    <name>WebUIActivity</name>
+    <message>
+        <source>Action</source>
+        <translation>Tindakan</translation>
+    </message>
+    <message>
+        <source>Result</source>
+        <translation>Hasil</translation>
+    </message>
+    <message>
+        <source>Role</source>
+        <translation>Peranan</translation>
+    </message>
+    <message>
+        <source>Time</source>
+        <translation>Masa</translation>
+    </message>
+    <message>
+        <source>User</source>
+        <translation>Pengguna</translation>
     </message>
 </context>
 </TS>

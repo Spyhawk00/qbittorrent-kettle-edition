@@ -141,6 +141,62 @@
         <source>The free IP to Country Lite database by DB-IP is used for resolving the countries of peers. The database is licensed under the Creative Commons Attribution 4.0 International License</source>
         <translation>پایگاه داده سبک آی پی به کشور از DB-IP برای تشخیص کشور همتایان مورد استفاده قرار گرفته است. این پایگاه داده تحت مجوز بین المللی Creative Commons Attribution 4.0 منتشر شده است.</translation>
     </message>
+    <message>
+        <source>This edition</source>
+        <translation>این نسخه</translation>
+    </message>
+    <message>
+        <source>Edition version:</source>
+        <translation>نسخهٔ ویرایش:</translation>
+    </message>
+    <message>
+        <source>Based on:</source>
+        <translation>بر پایهٔ:</translation>
+    </message>
+    <message>
+        <source>Maintainer:</source>
+        <translation>نگهدارنده:</translation>
+    </message>
+    <message>
+        <source>qBittorrent project:</source>
+        <translation>پروژهٔ qBittorrent:</translation>
+    </message>
+    <message>
+        <source>Kettle Edition is a personal build of qBittorrent that adds user accounts with roles for the WebUI and the desktop app, an activity log, and an installable WebUI with a phone layout. A kettle is a group of hawks soaring together. This is an unofficial build, not affiliated with the qBittorrent project.</source>
+        <translation>Kettle Edition یک ساخت شخصی از qBittorrent است که حساب‌های کاربری با نقش برای WebUI و برنامهٔ رومیزی، گزارش فعالیت و یک WebUI قابل نصب با چیدمان گوشی اضافه می‌کند. Kettle گروهی از شاهین‌هاست که با هم اوج می‌گیرند. این ساخت غیررسمی است و به پروژهٔ qBittorrent ارتباطی ندارد.</translation>
+    </message>
+    <message>
+        <source>N/A</source>
+        <translation>ندارد</translation>
+    </message>
+    <message>
+        <source>This edition</source>
+        <translation>این نسخه</translation>
+    </message>
+    <message>
+        <source>Edition version:</source>
+        <translation>نسخهٔ ویرایش:</translation>
+    </message>
+    <message>
+        <source>Based on:</source>
+        <translation>بر پایهٔ:</translation>
+    </message>
+    <message>
+        <source>Maintainer:</source>
+        <translation>نگهدارنده:</translation>
+    </message>
+    <message>
+        <source>qBittorrent project:</source>
+        <translation>پروژهٔ qBittorrent:</translation>
+    </message>
+    <message>
+        <source>Kettle Edition is a personal build of qBittorrent that adds user accounts with roles for the WebUI and the desktop app, an activity log, and an installable WebUI with a phone layout. A kettle is a group of hawks soaring together. This is an unofficial build, not affiliated with the qBittorrent project.</source>
+        <translation>Kettle Edition یک ساخت شخصی از qBittorrent است که حساب‌های کاربری با نقش برای WebUI و برنامهٔ رومیزی، گزارش فعالیت و یک WebUI قابل نصب با چیدمان گوشی اضافه می‌کند. Kettle گروهی از شاهین‌هاست که با هم اوج می‌گیرند. این ساخت غیررسمی است و به پروژهٔ qBittorrent ارتباطی ندارد.</translation>
+    </message>
+    <message>
+        <source>N/A</source>
+        <translation>ندارد</translation>
+    </message>
 </context>
 <context>
     <name>AbstractFileStorage</name>
@@ -1459,6 +1515,62 @@
         <location filename="../gui/advancedsettings.cpp" line="925"/>
         <source>Embedded tracker port</source>
         <translation>پورت ترکر تعبیه شده</translation>
+    </message>
+    <message>
+        <source>Network</source>
+        <translation>شبکه</translation>
+    </message>
+    <message>
+        <source>Storage</source>
+        <translation>ذخیره‌سازی</translation>
+    </message>
+    <message>
+        <source>Peers and trackers</source>
+        <translation>پییرها و ترکرها</translation>
+    </message>
+    <message>
+        <source>Program behavior</source>
+        <translation>رفتار برنامه</translation>
+    </message>
+    <message>
+        <source>Display and notifications</source>
+        <translation>نمایش و اعلان‌ها</translation>
+    </message>
+    <message>
+        <source>Network connection</source>
+        <translation>اتصال شبکه</translation>
+    </message>
+    <message>
+        <source>Security and privacy</source>
+        <translation>امنیت و حریم خصوصی</translation>
+    </message>
+    <message>
+        <source>Connection tuning</source>
+        <translation>تنظیم اتصال</translation>
+    </message>
+    <message>
+        <source>Saving and torrent files</source>
+        <translation>ذخیره و فایل‌های تورنت</translation>
+    </message>
+    <message>
+        <source>Disk and memory</source>
+        <translation>دیسک و حافظه</translation>
+    </message>
+    <message>
+        <source>Peers and seeding</source>
+        <translation>پییرها و سید کردن</translation>
+    </message>
+    <message>
+        <source>DHT and I2P</source>
+        <translation>DHT و I2P</translation>
+    </message>
+    <message>
+        <source>General</source>
+        <translation>عمومی</translation>
+    </message>
+    <message>
+        <source>Trackers</source>
+        <translation>ترکرها</translation>
     </message>
 </context>
 <context>
@@ -3462,6 +3574,22 @@ Supports the formats: S01E01, 1x1, 2017.12.31 and 31.12.2017 (Date formats also 
         <source>Remove torrent</source>
         <translation>پاک کردن تورنت</translation>
     </message>
+    <message>
+        <source>This choice is remembered for the next removal.</source>
+        <translation>این انتخاب برای حذف بعدی به خاطر سپرده می‌شود.</translation>
+    </message>
+    <message>
+        <source>Remove</source>
+        <translation>حذف</translation>
+    </message>
+    <message>
+        <source>This choice is remembered for the next removal.</source>
+        <translation>این انتخاب برای حذف بعدی به خاطر سپرده می‌شود.</translation>
+    </message>
+    <message>
+        <source>Remove</source>
+        <translation>حذف</translation>
+    </message>
 </context>
 <context>
     <name>DownloadFromURLDialog</name>
@@ -3535,6 +3663,14 @@ Supports the formats: S01E01, 1x1, 2017.12.31 and 31.12.2017 (Date formats also 
         <location filename="../gui/executionlogwidget.cpp" line="99"/>
         <source>Clear</source>
         <translation>پاکسازی</translation>
+    </message>
+    <message>
+        <source>WebUI Activity</source>
+        <translation>فعالیت WebUI</translation>
+    </message>
+    <message>
+        <source>WebUI Activity</source>
+        <translation>فعالیت WebUI</translation>
     </message>
 </context>
 <context>
@@ -4696,6 +4832,46 @@ Minimum requirement: %2.</source>
         <location filename="../gui/mainwindow.cpp" line="1346"/>
         <source>Torrent Files</source>
         <translation>پرونده‌های تورنت</translation>
+    </message>
+    <message>
+        <source>Kettle Edition %1 is available.</source>
+        <translation>Kettle Edition %1 در دسترس است.</translation>
+    </message>
+    <message>
+        <source>qBittorrent Kettle Edition %1 is available. It is downloaded now and installed at 4:00 AM, or when qBittorrent starts next.</source>
+        <translation>qBittorrent Kettle Edition %1 در دسترس است. اکنون دانلود می‌شود و در ساعت ۴:۰۰ بامداد یا هنگام اجرای بعدی qBittorrent نصب می‌شود.</translation>
+    </message>
+    <message>
+        <source>qBittorrent Kettle Edition %1 is available. It is downloaded now. Turn on &quot;Automatically install Kettle Edition updates&quot; in Options to install it.</source>
+        <translation>qBittorrent Kettle Edition %1 در دسترس است. اکنون دانلود می‌شود. برای نصب آن، «نصب خودکار به‌روزرسانی‌های Kettle Edition» را در گزینه‌ها روشن کنید.</translation>
+    </message>
+    <message>
+        <source>You have the latest qBittorrent Kettle Edition (%1).</source>
+        <translation>جدیدترین qBittorrent Kettle Edition (%1) را دارید.</translation>
+    </message>
+    <message>
+        <source>Could not check for qBittorrent Kettle Edition updates. See the Execution Log for details.</source>
+        <translation>بررسی به‌روزرسانی‌های qBittorrent Kettle Edition ممکن نشد. برای جزئیات، گزارش اجرا را ببینید.</translation>
+    </message>
+    <message>
+        <source>Kettle Edition %1 is available.</source>
+        <translation>Kettle Edition %1 در دسترس است.</translation>
+    </message>
+    <message>
+        <source>qBittorrent Kettle Edition %1 is available. It is downloaded now and installed at 4:00 AM, or when qBittorrent starts next.</source>
+        <translation>qBittorrent Kettle Edition %1 در دسترس است. اکنون دانلود می‌شود و در ساعت ۴:۰۰ بامداد یا هنگام اجرای بعدی qBittorrent نصب می‌شود.</translation>
+    </message>
+    <message>
+        <source>qBittorrent Kettle Edition %1 is available. It is downloaded now. Turn on &quot;Automatically install Kettle Edition updates&quot; in Options to install it.</source>
+        <translation>qBittorrent Kettle Edition %1 در دسترس است. اکنون دانلود می‌شود. برای نصب آن، «نصب خودکار به‌روزرسانی‌های Kettle Edition» را در گزینه‌ها روشن کنید.</translation>
+    </message>
+    <message>
+        <source>You have the latest qBittorrent Kettle Edition (%1).</source>
+        <translation>جدیدترین qBittorrent Kettle Edition (%1) را دارید.</translation>
+    </message>
+    <message>
+        <source>Could not check for qBittorrent Kettle Edition updates. See the Execution Log for details.</source>
+        <translation>بررسی به‌روزرسانی‌های qBittorrent Kettle Edition ممکن نشد. برای جزئیات، گزارش اجرا را ببینید.</translation>
     </message>
 </context>
 <context>
@@ -8391,6 +8567,190 @@ Check the Execution Log for errors.</source>
         <source>Length Error</source>
         <translation>خطا در طول</translation>
     </message>
+    <message>
+        <source>Search settings</source>
+        <translation>جستجوی تنظیمات</translation>
+    </message>
+    <message>
+        <source>No settings match</source>
+        <translation>تنظیمات منطبقی نیست</translation>
+    </message>
+    <message>
+        <source>User Accounts</source>
+        <translation>حساب‌های کاربری</translation>
+    </message>
+    <message>
+        <source>Automatically install Kettle Edition updates</source>
+        <translation>نصب خودکار به‌روزرسانی‌های Kettle Edition</translation>
+    </message>
+    <message>
+        <source>Status bar and log</source>
+        <translation>نوار وضعیت و گزارش</translation>
+    </message>
+    <message>
+        <source>Files</source>
+        <translation>فایل‌ها</translation>
+    </message>
+    <message>
+        <source>Checking</source>
+        <translation>بررسی</translation>
+    </message>
+    <message>
+        <source>Until the first user account is created, this login always works.</source>
+        <translation>تا زمانی که اولین حساب کاربری ساخته نشده، این ورود همیشه کار می‌کند.</translation>
+    </message>
+    <message>
+        <source>Allow this login when user accounts exist</source>
+        <translation>اجازهٔ این ورود هنگام وجود حساب‌های کاربری</translation>
+    </message>
+    <message>
+        <source>Access</source>
+        <translation>دسترسی</translation>
+    </message>
+    <message>
+        <source>Changes to users, roles and logins apply at once. The settings below apply with OK or Apply.</source>
+        <translation>تغییرات کاربران، نقش‌ها و ورودها فوراً اعمال می‌شوند. تنظیمات زیر با تأیید یا اعمال، اعمال می‌شوند.</translation>
+    </message>
+    <message>
+        <source>Logins and Activity Log</source>
+        <translation>ورودها و گزارش فعالیت</translation>
+    </message>
+    <message>
+        <source>0 means users are logged out after the session timeout.</source>
+        <translation>۰ یعنی کاربران پس از پایان مهلت نشست از سیستم خارج می‌شوند.</translation>
+    </message>
+    <message>
+        <source>Keep users logged in for:</source>
+        <translation>نگه داشتن کاربران در سیستم به مدت:</translation>
+    </message>
+    <message>
+        <source>Until session timeout</source>
+        <translation>تا پایان مهلت نشست</translation>
+    </message>
+    <message>
+        <source> days</source>
+        <translation> روز</translation>
+    </message>
+    <message>
+        <source>Lock account after consecutive failures:</source>
+        <translation>قفل حساب پس از شکست‌های پیاپی:</translation>
+    </message>
+    <message>
+        <source>Keep WebUI activity log for:</source>
+        <translation>نگه داشتن گزارش فعالیت WebUI به مدت:</translation>
+    </message>
+    <message>
+        <source>lock for:</source>
+        <translation>قفل برای:</translation>
+    </message>
+    <message>
+        <source>%1 works best with Windows dark mode</source>
+        <translation>%1 با حالت تیرهٔ ویندوز بهتر کار می‌کند</translation>
+    </message>
+    <message>
+        <source>WebUI address</source>
+        <translation>نشانی WebUI</translation>
+    </message>
+    <message>
+        <source>With the WebUI address set to %1, only this PC can reach the WebUI. Remote access, including through a reverse proxy on another machine, will stop working.
+
+Save anyway?</source>
+        <translation>وقتی نشانی WebUI روی %1 باشد، فقط همین رایانه به WebUI دسترسی دارد. دسترسی از راه دور، از جمله از طریق پراکسی معکوس روی ماشین دیگر، متوقف می‌شود.
+
+به هر حال ذخیره شود؟</translation>
+    </message>
+    <message>
+        <source>Search settings</source>
+        <translation>جستجوی تنظیمات</translation>
+    </message>
+    <message>
+        <source>No settings match</source>
+        <translation>تنظیمات منطبقی نیست</translation>
+    </message>
+    <message>
+        <source>User Accounts</source>
+        <translation>حساب‌های کاربری</translation>
+    </message>
+    <message>
+        <source>Automatically install Kettle Edition updates</source>
+        <translation>نصب خودکار به‌روزرسانی‌های Kettle Edition</translation>
+    </message>
+    <message>
+        <source>Status bar and log</source>
+        <translation>نوار وضعیت و گزارش</translation>
+    </message>
+    <message>
+        <source>Files</source>
+        <translation>فایل‌ها</translation>
+    </message>
+    <message>
+        <source>Checking</source>
+        <translation>بررسی</translation>
+    </message>
+    <message>
+        <source>Until the first user account is created, this login always works.</source>
+        <translation>تا زمانی که اولین حساب کاربری ساخته نشده، این ورود همیشه کار می‌کند.</translation>
+    </message>
+    <message>
+        <source>Allow this login when user accounts exist</source>
+        <translation>اجازهٔ این ورود هنگام وجود حساب‌های کاربری</translation>
+    </message>
+    <message>
+        <source>Access</source>
+        <translation>دسترسی</translation>
+    </message>
+    <message>
+        <source>Changes to users, roles and logins apply at once. The settings below apply with OK or Apply.</source>
+        <translation>تغییرات کاربران، نقش‌ها و ورودها فوراً اعمال می‌شوند. تنظیمات زیر با تأیید یا اعمال، اعمال می‌شوند.</translation>
+    </message>
+    <message>
+        <source>Logins and Activity Log</source>
+        <translation>ورودها و گزارش فعالیت</translation>
+    </message>
+    <message>
+        <source>0 means users are logged out after the session timeout.</source>
+        <translation>۰ یعنی کاربران پس از پایان مهلت نشست از سیستم خارج می‌شوند.</translation>
+    </message>
+    <message>
+        <source>Keep users logged in for:</source>
+        <translation>نگه داشتن کاربران در سیستم به مدت:</translation>
+    </message>
+    <message>
+        <source>Until session timeout</source>
+        <translation>تا پایان مهلت نشست</translation>
+    </message>
+    <message>
+        <source> days</source>
+        <translation> روز</translation>
+    </message>
+    <message>
+        <source>Lock account after consecutive failures:</source>
+        <translation>قفل حساب پس از شکست‌های پیاپی:</translation>
+    </message>
+    <message>
+        <source>Keep WebUI activity log for:</source>
+        <translation>نگه داشتن گزارش فعالیت WebUI به مدت:</translation>
+    </message>
+    <message>
+        <source>lock for:</source>
+        <translation>قفل برای:</translation>
+    </message>
+    <message>
+        <source>%1 works best with Windows dark mode</source>
+        <translation>%1 با حالت تیرهٔ ویندوز بهتر کار می‌کند</translation>
+    </message>
+    <message>
+        <source>WebUI address</source>
+        <translation>نشانی WebUI</translation>
+    </message>
+    <message>
+        <source>With the WebUI address set to %1, only this PC can reach the WebUI. Remote access, including through a reverse proxy on another machine, will stop working.
+
+Save anyway?</source>
+        <translation>وقتی نشانی WebUI روی %1 باشد، فقط همین رایانه به WebUI دسترسی دارد. دسترسی از راه دور، از جمله از طریق پراکسی معکوس روی ماشین دیگر، متوقف می‌شود.
+
+به هر حال ذخیره شود؟</translation>
+    </message>
 </context>
 <context>
     <name>PeerInfo</name>
@@ -8643,6 +9003,22 @@ Check the Execution Log for errors.</source>
         <location filename="../gui/properties/peerlistwidget.cpp" line="309"/>
         <source>Copy IP:port</source>
         <translation>کپی آی‌پی:پروت</translation>
+    </message>
+    <message>
+        <source>Reset auto width</source>
+        <translation>بازنشانی پهنای خودکار</translation>
+    </message>
+    <message>
+        <source>Fit all non-hidden columns to their contents again, and forget the widths that were set by hand</source>
+        <translation>دوباره همهٔ ستون‌های نمایان را با محتوایشان تطبیق بده و پهنای تنظیم‌شده با دست را فراموش کن</translation>
+    </message>
+    <message>
+        <source>Reset auto width</source>
+        <translation>بازنشانی پهنای خودکار</translation>
+    </message>
+    <message>
+        <source>Fit all non-hidden columns to their contents again, and forget the widths that were set by hand</source>
+        <translation>دوباره همهٔ ستون‌های نمایان را با محتوایشان تطبیق بده و پهنای تنظیم‌شده با دست را فراموش کن</translation>
     </message>
 </context>
 <context>
@@ -10011,6 +10387,14 @@ Those plugins were disabled.</source>
         <source>Open link</source>
         <translation type="unfinished"></translation>
     </message>
+    <message>
+        <source>Details</source>
+        <translation>جزئیات</translation>
+    </message>
+    <message>
+        <source>Details</source>
+        <translation>جزئیات</translation>
+    </message>
 </context>
 <context>
     <name>SearchController</name>
@@ -10360,6 +10744,70 @@ Those plugins were disabled.</source>
         <source>Resize all non-hidden columns to the size of their contents</source>
         <translation>اندازه تمام ستون‌های پنهان را به اندازه محتوای آنها تغییر دهید</translation>
     </message>
+    <message>
+        <source>%1 of %2 shown (%3 hidden)</source>
+        <translation>%1 از %2 نمایش داده شد (%3 پنهان)</translation>
+    </message>
+    <message>
+        <source>%1 of %2 shown</source>
+        <translation>%1 از %2 نمایش داده شد</translation>
+    </message>
+    <message>
+        <source>Searching: %1</source>
+        <translation>در حال جستجو: %1</translation>
+    </message>
+    <message>
+        <source>Finished: %1</source>
+        <translation>پایان یافت: %1</translation>
+    </message>
+    <message>
+        <source>Search aborted: %1</source>
+        <translation>جستجو متوقف شد: %1</translation>
+    </message>
+    <message>
+        <source>Reset auto width</source>
+        <translation>بازنشانی پهنای خودکار</translation>
+    </message>
+    <message>
+        <source>Fit all non-hidden columns to their contents again, and forget the widths that were set by hand</source>
+        <translation>دوباره همهٔ ستون‌های نمایان را با محتوایشان تطبیق بده و پهنای تنظیم‌شده با دست را فراموش کن</translation>
+    </message>
+    <message>
+        <source>Unknown</source>
+        <translation>ناشناخته</translation>
+    </message>
+    <message>
+        <source>%1 of %2 shown (%3 hidden)</source>
+        <translation>%1 از %2 نمایش داده شد (%3 پنهان)</translation>
+    </message>
+    <message>
+        <source>%1 of %2 shown</source>
+        <translation>%1 از %2 نمایش داده شد</translation>
+    </message>
+    <message>
+        <source>Searching: %1</source>
+        <translation>در حال جستجو: %1</translation>
+    </message>
+    <message>
+        <source>Finished: %1</source>
+        <translation>پایان یافت: %1</translation>
+    </message>
+    <message>
+        <source>Search aborted: %1</source>
+        <translation>جستجو متوقف شد: %1</translation>
+    </message>
+    <message>
+        <source>Reset auto width</source>
+        <translation>بازنشانی پهنای خودکار</translation>
+    </message>
+    <message>
+        <source>Fit all non-hidden columns to their contents again, and forget the widths that were set by hand</source>
+        <translation>دوباره همهٔ ستون‌های نمایان را با محتوایشان تطبیق بده و پهنای تنظیم‌شده با دست را فراموش کن</translation>
+    </message>
+    <message>
+        <source>Unknown</source>
+        <translation>ناشناخته</translation>
+    </message>
 </context>
 <context>
     <name>SearchPluginManager</name>
@@ -10653,6 +11101,14 @@ Those plugins were disabled.</source>
         <source>Couldn&apos;t update &quot;%1&quot; search engine plugin. %2</source>
         <translation type="unfinished"></translation>
     </message>
+    <message>
+        <source>Install Kettle Plugins</source>
+        <translation>نصب افزونه‌های Kettle</translation>
+    </message>
+    <message>
+        <source>Install Kettle Plugins</source>
+        <translation>نصب افزونه‌های Kettle</translation>
+    </message>
 </context>
 <context>
     <name>SearchPluginSourceDialog</name>
@@ -10791,6 +11247,90 @@ Click the &quot;Search plugins...&quot; button at the bottom right of the window
         <location filename="../gui/search/searchwidget.ui" line="58"/>
         <source>Stop</source>
         <translation>توقف</translation>
+    </message>
+    <message>
+        <source>Searches</source>
+        <translation>جستجوها</translation>
+    </message>
+    <message>
+        <source>Close the selected search</source>
+        <translation>بستن جستجوی انتخاب‌شده</translation>
+    </message>
+    <message>
+        <source>Search for torrents...</source>
+        <translation>جستجوی تورنت...</translation>
+    </message>
+    <message>
+        <source>Category to search in</source>
+        <translation>دستهٔ جستجو</translation>
+    </message>
+    <message>
+        <source>Search engines to use</source>
+        <translation>موتورهای جستجوی مورد استفاده</translation>
+    </message>
+    <message>
+        <source>There aren&apos;t any search plugins installed.
+Click the &quot;Search plugins...&quot; button at the top right of the window to install some.</source>
+        <translation>هیچ افزونهٔ جستجویی نصب نیست.
+برای نصب چند افزونه، دکمهٔ «افزونه‌های جستجو...» را در بالا سمت راست پنجره بزنید.</translation>
+    </message>
+    <message>
+        <source>Type a search above and press Enter.</source>
+        <translation>در بالا یک جستجو بنویسید و Enter بزنید.</translation>
+    </message>
+    <message>
+        <source>Refresh search</source>
+        <translation>تازه‌سازی جستجو</translation>
+    </message>
+    <message>
+        <source>Close search</source>
+        <translation>بستن جستجو</translation>
+    </message>
+    <message>
+        <source>Close all searches</source>
+        <translation>بستن همهٔ جستجوها</translation>
+    </message>
+    <message>
+        <source>Searches</source>
+        <translation>جستجوها</translation>
+    </message>
+    <message>
+        <source>Close the selected search</source>
+        <translation>بستن جستجوی انتخاب‌شده</translation>
+    </message>
+    <message>
+        <source>Search for torrents...</source>
+        <translation>جستجوی تورنت...</translation>
+    </message>
+    <message>
+        <source>Category to search in</source>
+        <translation>دستهٔ جستجو</translation>
+    </message>
+    <message>
+        <source>Search engines to use</source>
+        <translation>موتورهای جستجوی مورد استفاده</translation>
+    </message>
+    <message>
+        <source>There aren&apos;t any search plugins installed.
+Click the &quot;Search plugins...&quot; button at the top right of the window to install some.</source>
+        <translation>هیچ افزونهٔ جستجویی نصب نیست.
+برای نصب چند افزونه، دکمهٔ «افزونه‌های جستجو...» را در بالا سمت راست پنجره بزنید.</translation>
+    </message>
+    <message>
+        <source>Type a search above and press Enter.</source>
+        <translation>در بالا یک جستجو بنویسید و Enter بزنید.</translation>
+    </message>
+    <message>
+        <source>Refresh search</source>
+        <translation>تازه‌سازی جستجو</translation>
+    </message>
+    <message>
+        <source>Close search</source>
+        <translation>بستن جستجو</translation>
+    </message>
+    <message>
+        <source>Close all searches</source>
+        <translation>بستن همهٔ جستجوها</translation>
     </message>
 </context>
 <context>
@@ -11253,6 +11793,326 @@ Click the &quot;Search plugins...&quot; button at the bottom right of the window
         <location filename="../gui/statsdialog.cpp" line="111"/>
         <source>%1 ms</source>
         <translation type="unfinished">%1 ms</translation>
+    </message>
+    <message>
+        <source>Copy</source>
+        <translation>رونوشت</translation>
+    </message>
+    <message>
+        <source>Overview</source>
+        <translation>نمای کلی</translation>
+    </message>
+    <message>
+        <source>Transfer</source>
+        <translation>انتقال</translation>
+    </message>
+    <message>
+        <source>This session</source>
+        <translation>این نشست</translation>
+    </message>
+    <message>
+        <source>All time</source>
+        <translation>کل زمان</translation>
+    </message>
+    <message>
+        <source>Downloaded:</source>
+        <translation>دانلودشده:</translation>
+    </message>
+    <message>
+        <source>Uploaded:</source>
+        <translation>آپلودشده:</translation>
+    </message>
+    <message>
+        <source>Share ratio:</source>
+        <translation>نسبت اشتراک:</translation>
+    </message>
+    <message>
+        <source>Current speed:</source>
+        <translation>سرعت کنونی:</translation>
+    </message>
+    <message>
+        <source>Activity</source>
+        <translation>فعالیت</translation>
+    </message>
+    <message>
+        <source>Torrents downloading:</source>
+        <translation>تورنت‌های در حال دانلود:</translation>
+    </message>
+    <message>
+        <source>Torrents seeding:</source>
+        <translation>تورنت‌های در حال سید:</translation>
+    </message>
+    <message>
+        <source>Torrents stopped:</source>
+        <translation>تورنت‌های متوقف:</translation>
+    </message>
+    <message>
+        <source>Torrents with errors:</source>
+        <translation>تورنت‌های دارای خطا:</translation>
+    </message>
+    <message>
+        <source>Running for:</source>
+        <translation>مدت اجرا:</translation>
+    </message>
+    <message>
+        <source>History</source>
+        <translation>تاریخچه</translation>
+    </message>
+    <message>
+        <source>Period</source>
+        <translation>دوره</translation>
+    </message>
+    <message>
+        <source>Today</source>
+        <translation>امروز</translation>
+    </message>
+    <message>
+        <source>Last 7 days</source>
+        <translation>۷ روز گذشته</translation>
+    </message>
+    <message>
+        <source>This month</source>
+        <translation>این ماه</translation>
+    </message>
+    <message>
+        <source>Last month</source>
+        <translation>ماه گذشته</translation>
+    </message>
+    <message>
+        <source>Last 12 months</source>
+        <translation>۱۲ ماه گذشته</translation>
+    </message>
+    <message>
+        <source>Tracking since:</source>
+        <translation>ردیابی از:</translation>
+    </message>
+    <message>
+        <source>By month</source>
+        <translation>بر اساس ماه</translation>
+    </message>
+    <message>
+        <source>Month</source>
+        <translation>ماه</translation>
+    </message>
+    <message>
+        <source>Downloaded</source>
+        <translation>دانلودشده</translation>
+    </message>
+    <message>
+        <source>Uploaded</source>
+        <translation>آپلودشده</translation>
+    </message>
+    <message>
+        <source>Share ratio</source>
+        <translation>نسبت اشتراک</translation>
+    </message>
+    <message>
+        <source>WebUI downloads added, this month</source>
+        <translation>دانلودهای افزوده‌شده با WebUI، این ماه</translation>
+    </message>
+    <message>
+        <source>Counts the requests that added a download. Apps without a login, such as Sonarr and Radarr, are shown as (localhost). Downloads added in the desktop window are not counted.</source>
+        <translation>درخواست‌هایی را که دانلود افزوده‌اند می‌شمارد. برنامه‌های بدون ورود، مانند Sonarr و Radarr، با (localhost) نشان داده می‌شوند. دانلودهای افزوده‌شده در پنجرهٔ رومیزی شمرده نمی‌شوند.</translation>
+    </message>
+    <message>
+        <source>Technical</source>
+        <translation>فنی</translation>
+    </message>
+    <message>
+        <source>Disk</source>
+        <translation>دیسک</translation>
+    </message>
+    <message>
+        <source>Peers waiting on disk writes:</source>
+        <translation>پییرهای منتظر نوشتن روی دیسک:</translation>
+    </message>
+    <message>
+        <source>Peers waiting on disk reads:</source>
+        <translation>پییرهای منتظر خواندن از دیسک:</translation>
+    </message>
+    <message>
+        <source>Network</source>
+        <translation>شبکه</translation>
+    </message>
+    <message>
+        <source>DHT nodes:</source>
+        <translation>گره‌های DHT:</translation>
+    </message>
+    <message>
+        <source>Data discarded this session:</source>
+        <translation>داده‌های دورریخته در این نشست:</translation>
+    </message>
+    <message>
+        <source>Before tracking began</source>
+        <translation>پیش از آغاز ردیابی</translation>
+    </message>
+    <message>
+        <source>Nothing added yet</source>
+        <translation>هنوز چیزی افزوده نشده</translation>
+    </message>
+    <message>
+        <source>Off</source>
+        <translation>خاموش</translation>
+    </message>
+    <message>
+        <source>Copy</source>
+        <translation>رونوشت</translation>
+    </message>
+    <message>
+        <source>Overview</source>
+        <translation>نمای کلی</translation>
+    </message>
+    <message>
+        <source>Transfer</source>
+        <translation>انتقال</translation>
+    </message>
+    <message>
+        <source>This session</source>
+        <translation>این نشست</translation>
+    </message>
+    <message>
+        <source>All time</source>
+        <translation>کل زمان</translation>
+    </message>
+    <message>
+        <source>Downloaded:</source>
+        <translation>دانلودشده:</translation>
+    </message>
+    <message>
+        <source>Uploaded:</source>
+        <translation>آپلودشده:</translation>
+    </message>
+    <message>
+        <source>Share ratio:</source>
+        <translation>نسبت اشتراک:</translation>
+    </message>
+    <message>
+        <source>Current speed:</source>
+        <translation>سرعت کنونی:</translation>
+    </message>
+    <message>
+        <source>Activity</source>
+        <translation>فعالیت</translation>
+    </message>
+    <message>
+        <source>Torrents downloading:</source>
+        <translation>تورنت‌های در حال دانلود:</translation>
+    </message>
+    <message>
+        <source>Torrents seeding:</source>
+        <translation>تورنت‌های در حال سید:</translation>
+    </message>
+    <message>
+        <source>Torrents stopped:</source>
+        <translation>تورنت‌های متوقف:</translation>
+    </message>
+    <message>
+        <source>Torrents with errors:</source>
+        <translation>تورنت‌های دارای خطا:</translation>
+    </message>
+    <message>
+        <source>Running for:</source>
+        <translation>مدت اجرا:</translation>
+    </message>
+    <message>
+        <source>History</source>
+        <translation>تاریخچه</translation>
+    </message>
+    <message>
+        <source>Period</source>
+        <translation>دوره</translation>
+    </message>
+    <message>
+        <source>Today</source>
+        <translation>امروز</translation>
+    </message>
+    <message>
+        <source>Last 7 days</source>
+        <translation>۷ روز گذشته</translation>
+    </message>
+    <message>
+        <source>This month</source>
+        <translation>این ماه</translation>
+    </message>
+    <message>
+        <source>Last month</source>
+        <translation>ماه گذشته</translation>
+    </message>
+    <message>
+        <source>Last 12 months</source>
+        <translation>۱۲ ماه گذشته</translation>
+    </message>
+    <message>
+        <source>Tracking since:</source>
+        <translation>ردیابی از:</translation>
+    </message>
+    <message>
+        <source>By month</source>
+        <translation>بر اساس ماه</translation>
+    </message>
+    <message>
+        <source>Month</source>
+        <translation>ماه</translation>
+    </message>
+    <message>
+        <source>Downloaded</source>
+        <translation>دانلودشده</translation>
+    </message>
+    <message>
+        <source>Uploaded</source>
+        <translation>آپلودشده</translation>
+    </message>
+    <message>
+        <source>Share ratio</source>
+        <translation>نسبت اشتراک</translation>
+    </message>
+    <message>
+        <source>WebUI downloads added, this month</source>
+        <translation>دانلودهای افزوده‌شده با WebUI، این ماه</translation>
+    </message>
+    <message>
+        <source>Counts the requests that added a download. Apps without a login, such as Sonarr and Radarr, are shown as (localhost). Downloads added in the desktop window are not counted.</source>
+        <translation>درخواست‌هایی را که دانلود افزوده‌اند می‌شمارد. برنامه‌های بدون ورود، مانند Sonarr و Radarr، با (localhost) نشان داده می‌شوند. دانلودهای افزوده‌شده در پنجرهٔ رومیزی شمرده نمی‌شوند.</translation>
+    </message>
+    <message>
+        <source>Technical</source>
+        <translation>فنی</translation>
+    </message>
+    <message>
+        <source>Disk</source>
+        <translation>دیسک</translation>
+    </message>
+    <message>
+        <source>Peers waiting on disk writes:</source>
+        <translation>پییرهای منتظر نوشتن روی دیسک:</translation>
+    </message>
+    <message>
+        <source>Peers waiting on disk reads:</source>
+        <translation>پییرهای منتظر خواندن از دیسک:</translation>
+    </message>
+    <message>
+        <source>Network</source>
+        <translation>شبکه</translation>
+    </message>
+    <message>
+        <source>DHT nodes:</source>
+        <translation>گره‌های DHT:</translation>
+    </message>
+    <message>
+        <source>Data discarded this session:</source>
+        <translation>داده‌های دورریخته در این نشست:</translation>
+    </message>
+    <message>
+        <source>Before tracking began</source>
+        <translation>پیش از آغاز ردیابی</translation>
+    </message>
+    <message>
+        <source>Nothing added yet</source>
+        <translation>هنوز چیزی افزوده نشده</translation>
+    </message>
+    <message>
+        <source>Off</source>
+        <translation>خاموش</translation>
     </message>
 </context>
 <context>
@@ -11944,6 +12804,22 @@ Please choose a different name and try again.</source>
     <message>
         <source>Priority by shown file order</source>
         <translation type="vanished">اولویت با ترتیب فایل نشان داده شده</translation>
+    </message>
+    <message>
+        <source>Reset auto width</source>
+        <translation>بازنشانی پهنای خودکار</translation>
+    </message>
+    <message>
+        <source>Fit all non-hidden columns to their contents again, and forget the widths that were set by hand</source>
+        <translation>دوباره همهٔ ستون‌های نمایان را با محتوایشان تطبیق بده و پهنای تنظیم‌شده با دست را فراموش کن</translation>
+    </message>
+    <message>
+        <source>Reset auto width</source>
+        <translation>بازنشانی پهنای خودکار</translation>
+    </message>
+    <message>
+        <source>Fit all non-hidden columns to their contents again, and forget the widths that were set by hand</source>
+        <translation>دوباره همهٔ ستون‌های نمایان را با محتوایشان تطبیق بده و پهنای تنظیم‌شده با دست را فراموش کن</translation>
     </message>
 </context>
 <context>
@@ -13023,6 +13899,22 @@ Please choose a different name and try again.</source>
         <source>Column visibility</source>
         <translation>نمایش ستون</translation>
     </message>
+    <message>
+        <source>Reset auto width</source>
+        <translation>بازنشانی پهنای خودکار</translation>
+    </message>
+    <message>
+        <source>Fit all non-hidden columns to their contents again, and forget the widths that were set by hand</source>
+        <translation>دوباره همهٔ ستون‌های نمایان را با محتوایشان تطبیق بده و پهنای تنظیم‌شده با دست را فراموش کن</translation>
+    </message>
+    <message>
+        <source>Reset auto width</source>
+        <translation>بازنشانی پهنای خودکار</translation>
+    </message>
+    <message>
+        <source>Fit all non-hidden columns to their contents again, and forget the widths that were set by hand</source>
+        <translation>دوباره همهٔ ستون‌های نمایان را با محتوایشان تطبیق بده و پهنای تنظیم‌شده با دست را فراموش کن</translation>
+    </message>
 </context>
 <context>
     <name>TrackerStatusFilterWidget</name>
@@ -13889,6 +14781,22 @@ Please choose a different name and try again.</source>
         <source>Super seeding mode</source>
         <translation>حالت به اشتراک‌گذاری فوق‌العاده</translation>
     </message>
+    <message>
+        <source>Reset auto width</source>
+        <translation>بازنشانی پهنای خودکار</translation>
+    </message>
+    <message>
+        <source>Fit all non-hidden columns to their contents again, and forget the widths that were set by hand</source>
+        <translation>دوباره همهٔ ستون‌های نمایان را با محتوایشان تطبیق بده و پهنای تنظیم‌شده با دست را فراموش کن</translation>
+    </message>
+    <message>
+        <source>Reset auto width</source>
+        <translation>بازنشانی پهنای خودکار</translation>
+    </message>
+    <message>
+        <source>Fit all non-hidden columns to their contents again, and forget the widths that were set by hand</source>
+        <translation>دوباره همهٔ ستون‌های نمایان را با محتوایشان تطبیق بده و پهنای تنظیم‌شده با دست را فراموش کن</translation>
+    </message>
 </context>
 <context>
     <name>UIThemeDialog</name>
@@ -14223,6 +15131,46 @@ Please choose a different name and try again.</source>
         <source>WebAPI login failure. Reason: invalid credentials, attempt count: %1, IP: %2, username: %3</source>
         <translation>ورود ناموفق به رابط کاربری وب. دلیل: مشخصات نامعتبر، تعداد تلاش ها؛ %1، آی پی: %2، نام کاربری: %3</translation>
     </message>
+    <message>
+        <source>Something went wrong on the server. Details are in qBittorrent&apos;s log.</source>
+        <translation>در سرور مشکلی پیش آمد. جزئیات در گزارش qBittorrent است.</translation>
+    </message>
+    <message>
+        <source>This account is locked after too many failed login attempts. Try again in %1 minute(s).</source>
+        <translation>این حساب به‌دلیل تلاش‌های ناموفق زیاد برای ورود قفل شده است. %1 دقیقهٔ دیگر دوباره تلاش کنید.</translation>
+    </message>
+    <message>
+        <source>Your role (%1) doesn&apos;t allow this: %2.</source>
+        <translation>نقش شما (%1) این را مجاز نمی‌کند: %2.</translation>
+    </message>
+    <message>
+        <source>Only an admin can remove the tag that says who added a torrent.</source>
+        <translation>فقط مدیر می‌تواند برچسبی را که نشان می‌دهد چه کسی تورنت را افزوده است حذف کند.</translation>
+    </message>
+    <message>
+        <source>Only an admin can clear or replace all tags of a torrent that has a tag saying who added it.</source>
+        <translation>فقط مدیر می‌تواند همهٔ برچسب‌های تورنتی را که برچسب افزوده‌کننده دارد پاک یا جایگزین کند.</translation>
+    </message>
+    <message>
+        <source>Something went wrong on the server. Details are in qBittorrent&apos;s log.</source>
+        <translation>در سرور مشکلی پیش آمد. جزئیات در گزارش qBittorrent است.</translation>
+    </message>
+    <message>
+        <source>This account is locked after too many failed login attempts. Try again in %1 minute(s).</source>
+        <translation>این حساب به‌دلیل تلاش‌های ناموفق زیاد برای ورود قفل شده است. %1 دقیقهٔ دیگر دوباره تلاش کنید.</translation>
+    </message>
+    <message>
+        <source>Your role (%1) doesn&apos;t allow this: %2.</source>
+        <translation>نقش شما (%1) این را مجاز نمی‌کند: %2.</translation>
+    </message>
+    <message>
+        <source>Only an admin can remove the tag that says who added a torrent.</source>
+        <translation>فقط مدیر می‌تواند برچسبی را که نشان می‌دهد چه کسی تورنت را افزوده است حذف کند.</translation>
+    </message>
+    <message>
+        <source>Only an admin can clear or replace all tags of a torrent that has a tag saying who added it.</source>
+        <translation>فقط مدیر می‌تواند همهٔ برچسب‌های تورنتی را که برچسب افزوده‌کننده دارد پاک یا جایگزین کند.</translation>
+    </message>
 </context>
 <context>
     <name>WebUI</name>
@@ -14362,6 +15310,669 @@ Please choose a different name and try again.</source>
         <source>&lt; 1m</source>
         <comment>&lt; 1 minute</comment>
         <translation>&lt; 1د</translation>
+    </message>
+</context>
+<context>
+    <name>UpdateInstaller</name>
+    <message>
+        <source>Kettle Edition update</source>
+        <translation>به‌روزرسانی Kettle Edition</translation>
+    </message>
+    <message>
+        <source>Kettle Edition was updated to %1.</source>
+        <translation>Kettle Edition به %1 به‌روز شد.</translation>
+    </message>
+    <message>
+        <source>Kettle Edition updated</source>
+        <translation>Kettle Edition به‌روز شد</translation>
+    </message>
+    <message>
+        <source>Downloading Kettle Edition %1 (%2 changed files).</source>
+        <translation>در حال دانلود Kettle Edition %1 (%2 فایل تغییر‌یافته).</translation>
+    </message>
+    <message>
+        <source>Kettle Edition %1 is downloaded and ready to install.</source>
+        <translation>Kettle Edition %1 دانلود شد و آمادهٔ نصب است.</translation>
+    </message>
+    <message>
+        <source>Kettle Edition update</source>
+        <translation>به‌روزرسانی Kettle Edition</translation>
+    </message>
+    <message>
+        <source>Kettle Edition was updated to %1.</source>
+        <translation>Kettle Edition به %1 به‌روز شد.</translation>
+    </message>
+    <message>
+        <source>Kettle Edition updated</source>
+        <translation>Kettle Edition به‌روز شد</translation>
+    </message>
+    <message>
+        <source>Downloading Kettle Edition %1 (%2 changed files).</source>
+        <translation>در حال دانلود Kettle Edition %1 (%2 فایل تغییر‌یافته).</translation>
+    </message>
+    <message>
+        <source>Kettle Edition %1 is downloaded and ready to install.</source>
+        <translation>Kettle Edition %1 دانلود شد و آمادهٔ نصب است.</translation>
+    </message>
+</context>
+<context>
+    <name>UserAccountDialog</name>
+    <message>
+        <source>User</source>
+        <translation>کاربر</translation>
+    </message>
+    <message>
+        <source>Username:</source>
+        <translation>نام کاربری:</translation>
+    </message>
+    <message>
+        <source>Role:</source>
+        <translation>نقش:</translation>
+    </message>
+    <message>
+        <source>Password:</source>
+        <translation>گذرواژه:</translation>
+    </message>
+    <message>
+        <source>Confirm password:</source>
+        <translation>تأیید گذرواژه:</translation>
+    </message>
+    <message>
+        <source>Disable this account</source>
+        <translation>غیرفعال کردن این حساب</translation>
+    </message>
+    <message>
+        <source>Edit User</source>
+        <translation>ویرایش کاربر</translation>
+    </message>
+    <message>
+        <source>Leave empty to keep the current password</source>
+        <translation>برای نگه داشتن گذرواژهٔ کنونی خالی بگذارید</translation>
+    </message>
+    <message>
+        <source>Add User</source>
+        <translation>افزودن کاربر</translation>
+    </message>
+    <message>
+        <source>At least %1 characters</source>
+        <translation>دست‌کم %1 نویسه</translation>
+    </message>
+    <message>
+        <source>Enter a username.</source>
+        <translation>یک نام کاربری وارد کنید.</translation>
+    </message>
+    <message>
+        <source>The password must be at least %1 characters long.</source>
+        <translation>گذرواژه باید دست‌کم %1 نویسه باشد.</translation>
+    </message>
+    <message>
+        <source>The passwords don&apos;t match.</source>
+        <translation>گذرواژه‌ها مطابقت ندارند.</translation>
+    </message>
+    <message>
+        <source>User</source>
+        <translation>کاربر</translation>
+    </message>
+    <message>
+        <source>Username:</source>
+        <translation>نام کاربری:</translation>
+    </message>
+    <message>
+        <source>Role:</source>
+        <translation>نقش:</translation>
+    </message>
+    <message>
+        <source>Password:</source>
+        <translation>گذرواژه:</translation>
+    </message>
+    <message>
+        <source>Confirm password:</source>
+        <translation>تأیید گذرواژه:</translation>
+    </message>
+    <message>
+        <source>Disable this account</source>
+        <translation>غیرفعال کردن این حساب</translation>
+    </message>
+    <message>
+        <source>Edit User</source>
+        <translation>ویرایش کاربر</translation>
+    </message>
+    <message>
+        <source>Leave empty to keep the current password</source>
+        <translation>برای نگه داشتن گذرواژهٔ کنونی خالی بگذارید</translation>
+    </message>
+    <message>
+        <source>Add User</source>
+        <translation>افزودن کاربر</translation>
+    </message>
+    <message>
+        <source>At least %1 characters</source>
+        <translation>دست‌کم %1 نویسه</translation>
+    </message>
+    <message>
+        <source>Enter a username.</source>
+        <translation>یک نام کاربری وارد کنید.</translation>
+    </message>
+    <message>
+        <source>The password must be at least %1 characters long.</source>
+        <translation>گذرواژه باید دست‌کم %1 نویسه باشد.</translation>
+    </message>
+    <message>
+        <source>The passwords don&apos;t match.</source>
+        <translation>گذرواژه‌ها مطابقت ندارند.</translation>
+    </message>
+</context>
+<context>
+    <name>UserAccountsWidget</name>
+    <message>
+        <source>User Accounts</source>
+        <translation>حساب‌های کاربری</translation>
+    </message>
+    <message>
+        <source>Users</source>
+        <translation>کاربران</translation>
+    </message>
+    <message>
+        <source>People who can log in to the WebUI with their own username and password.</source>
+        <translation>افرادی که می‌توانند با نام کاربری و گذرواژهٔ خودشان وارد WebUI شوند.</translation>
+    </message>
+    <message>
+        <source>Add User...</source>
+        <translation>افزودن کاربر...</translation>
+    </message>
+    <message>
+        <source>Edit...</source>
+        <translation>ویرایش...</translation>
+    </message>
+    <message>
+        <source>Remove</source>
+        <translation>حذف</translation>
+    </message>
+    <message>
+        <source>Roles</source>
+        <translation>نقش‌ها</translation>
+    </message>
+    <message>
+        <source>A role decides what its users are allowed to do.</source>
+        <translation>نقش تعیین می‌کند کاربرانش مجاز به چه کاری هستند.</translation>
+    </message>
+    <message>
+        <source>Add Role...</source>
+        <translation>افزودن نقش...</translation>
+    </message>
+    <message>
+        <source>Logged In</source>
+        <translation>واردشده‌ها</translation>
+    </message>
+    <message>
+        <source>Browsers and devices where someone is logged in with a user account.</source>
+        <translation>مرورگرها و دستگاه‌هایی که کسی با حساب کاربری در آن‌ها وارد شده است.</translation>
+    </message>
+    <message>
+        <source>Log Out</source>
+        <translation>خروج</translation>
+    </message>
+    <message>
+        <source>Username</source>
+        <translation>نام کاربری</translation>
+    </message>
+    <message>
+        <source>Role</source>
+        <translation>نقش</translation>
+    </message>
+    <message>
+        <source>Status</source>
+        <translation>وضعیت</translation>
+    </message>
+    <message>
+        <source>Last login</source>
+        <translation>آخرین ورود</translation>
+    </message>
+    <message>
+        <source>Created</source>
+        <translation>ساخته‌شده</translation>
+    </message>
+    <message>
+        <source>Name</source>
+        <translation>نام</translation>
+    </message>
+    <message>
+        <source>Description</source>
+        <translation>توضیح</translation>
+    </message>
+    <message>
+        <source>Permissions</source>
+        <translation>مجوزها</translation>
+    </message>
+    <message>
+        <source>User</source>
+        <translation>کاربر</translation>
+    </message>
+    <message>
+        <source>Browser</source>
+        <translation>مرورگر</translation>
+    </message>
+    <message>
+        <source>Logged in</source>
+        <translation>زمان ورود</translation>
+    </message>
+    <message>
+        <source>Last active</source>
+        <translation>آخرین فعالیت</translation>
+    </message>
+    <message>
+        <source>Expires</source>
+        <translation>انقضا</translation>
+    </message>
+    <message>
+        <source>The user database could not be opened. See the Execution Log for details.</source>
+        <translation>پایگاه دادهٔ کاربران باز نشد. برای جزئیات، گزارش اجرا را ببینید.</translation>
+    </message>
+    <message>
+        <source>Disabled</source>
+        <translation>غیرفعال</translation>
+    </message>
+    <message>
+        <source>Enabled</source>
+        <translation>فعال</translation>
+    </message>
+    <message>
+        <source>Never</source>
+        <translation>هرگز</translation>
+    </message>
+    <message>
+        <source>No accounts yet, so everyone still uses the shared WebUI login. Add an Admin account first.</source>
+        <translation>هنوز حسابی نیست، پس همه هنوز از ورود مشترک WebUI استفاده می‌کنند. ابتدا یک حساب مدیر اضافه کنید.</translation>
+    </message>
+    <message>
+        <source>Couldn&apos;t read the user database. %1</source>
+        <translation>پایگاه دادهٔ کاربران خوانده نشد. %1</translation>
+    </message>
+    <message>
+        <source>Remove user</source>
+        <translation>حذف کاربر</translation>
+    </message>
+    <message>
+        <source>Are you sure you want to remove the user &apos;%1&apos;?</source>
+        <translation>آیا مطمئنید می‌خواهید کاربر «%1» را حذف کنید؟</translation>
+    </message>
+    <message>
+        <source>Remove role</source>
+        <translation>حذف نقش</translation>
+    </message>
+    <message>
+        <source>Are you sure you want to remove the role &apos;%1&apos;?</source>
+        <translation>آیا مطمئنید می‌خواهید نقش «%1» را حذف کنید؟</translation>
+    </message>
+    <message>
+        <source>Enable</source>
+        <translation>فعال کردن</translation>
+    </message>
+    <message>
+        <source>Disable</source>
+        <translation>غیرفعال کردن</translation>
+    </message>
+    <message>
+        <source>Log Out Everywhere</source>
+        <translation>خروج از همه‌جا</translation>
+    </message>
+    <message>
+        <source>User Accounts</source>
+        <translation>حساب‌های کاربری</translation>
+    </message>
+    <message>
+        <source>Users</source>
+        <translation>کاربران</translation>
+    </message>
+    <message>
+        <source>People who can log in to the WebUI with their own username and password.</source>
+        <translation>افرادی که می‌توانند با نام کاربری و گذرواژهٔ خودشان وارد WebUI شوند.</translation>
+    </message>
+    <message>
+        <source>Add User...</source>
+        <translation>افزودن کاربر...</translation>
+    </message>
+    <message>
+        <source>Edit...</source>
+        <translation>ویرایش...</translation>
+    </message>
+    <message>
+        <source>Remove</source>
+        <translation>حذف</translation>
+    </message>
+    <message>
+        <source>Roles</source>
+        <translation>نقش‌ها</translation>
+    </message>
+    <message>
+        <source>A role decides what its users are allowed to do.</source>
+        <translation>نقش تعیین می‌کند کاربرانش مجاز به چه کاری هستند.</translation>
+    </message>
+    <message>
+        <source>Add Role...</source>
+        <translation>افزودن نقش...</translation>
+    </message>
+    <message>
+        <source>Logged In</source>
+        <translation>واردشده‌ها</translation>
+    </message>
+    <message>
+        <source>Browsers and devices where someone is logged in with a user account.</source>
+        <translation>مرورگرها و دستگاه‌هایی که کسی با حساب کاربری در آن‌ها وارد شده است.</translation>
+    </message>
+    <message>
+        <source>Log Out</source>
+        <translation>خروج</translation>
+    </message>
+    <message>
+        <source>Username</source>
+        <translation>نام کاربری</translation>
+    </message>
+    <message>
+        <source>Role</source>
+        <translation>نقش</translation>
+    </message>
+    <message>
+        <source>Status</source>
+        <translation>وضعیت</translation>
+    </message>
+    <message>
+        <source>Last login</source>
+        <translation>آخرین ورود</translation>
+    </message>
+    <message>
+        <source>Created</source>
+        <translation>ساخته‌شده</translation>
+    </message>
+    <message>
+        <source>Name</source>
+        <translation>نام</translation>
+    </message>
+    <message>
+        <source>Description</source>
+        <translation>توضیح</translation>
+    </message>
+    <message>
+        <source>Permissions</source>
+        <translation>مجوزها</translation>
+    </message>
+    <message>
+        <source>User</source>
+        <translation>کاربر</translation>
+    </message>
+    <message>
+        <source>Browser</source>
+        <translation>مرورگر</translation>
+    </message>
+    <message>
+        <source>Logged in</source>
+        <translation>زمان ورود</translation>
+    </message>
+    <message>
+        <source>Last active</source>
+        <translation>آخرین فعالیت</translation>
+    </message>
+    <message>
+        <source>Expires</source>
+        <translation>انقضا</translation>
+    </message>
+    <message>
+        <source>The user database could not be opened. See the Execution Log for details.</source>
+        <translation>پایگاه دادهٔ کاربران باز نشد. برای جزئیات، گزارش اجرا را ببینید.</translation>
+    </message>
+    <message>
+        <source>Disabled</source>
+        <translation>غیرفعال</translation>
+    </message>
+    <message>
+        <source>Enabled</source>
+        <translation>فعال</translation>
+    </message>
+    <message>
+        <source>Never</source>
+        <translation>هرگز</translation>
+    </message>
+    <message>
+        <source>No accounts yet, so everyone still uses the shared WebUI login. Add an Admin account first.</source>
+        <translation>هنوز حسابی نیست، پس همه هنوز از ورود مشترک WebUI استفاده می‌کنند. ابتدا یک حساب مدیر اضافه کنید.</translation>
+    </message>
+    <message>
+        <source>Couldn&apos;t read the user database. %1</source>
+        <translation>پایگاه دادهٔ کاربران خوانده نشد. %1</translation>
+    </message>
+    <message>
+        <source>Remove user</source>
+        <translation>حذف کاربر</translation>
+    </message>
+    <message>
+        <source>Are you sure you want to remove the user &apos;%1&apos;?</source>
+        <translation>آیا مطمئنید می‌خواهید کاربر «%1» را حذف کنید؟</translation>
+    </message>
+    <message>
+        <source>Remove role</source>
+        <translation>حذف نقش</translation>
+    </message>
+    <message>
+        <source>Are you sure you want to remove the role &apos;%1&apos;?</source>
+        <translation>آیا مطمئنید می‌خواهید نقش «%1» را حذف کنید؟</translation>
+    </message>
+    <message>
+        <source>Enable</source>
+        <translation>فعال کردن</translation>
+    </message>
+    <message>
+        <source>Disable</source>
+        <translation>غیرفعال کردن</translation>
+    </message>
+    <message>
+        <source>Log Out Everywhere</source>
+        <translation>خروج از همه‌جا</translation>
+    </message>
+</context>
+<context>
+    <name>UserRoleDialog</name>
+    <message>
+        <source>Role</source>
+        <translation>نقش</translation>
+    </message>
+    <message>
+        <source>Name:</source>
+        <translation>نام:</translation>
+    </message>
+    <message>
+        <source>Description:</source>
+        <translation>توضیح:</translation>
+    </message>
+    <message>
+        <source>Gives control over the PC or qBittorrent itself.</source>
+        <translation>کنترل رایانه یا خود qBittorrent را می‌دهد.</translation>
+    </message>
+    <message>
+        <source>Add Role</source>
+        <translation>افزودن نقش</translation>
+    </message>
+    <message>
+        <source>Edit Role</source>
+        <translation>ویرایش نقش</translation>
+    </message>
+    <message>
+        <source>Enter a role name.</source>
+        <translation>یک نام نقش وارد کنید.</translation>
+    </message>
+    <message>
+        <source>Role</source>
+        <translation>نقش</translation>
+    </message>
+    <message>
+        <source>Name:</source>
+        <translation>نام:</translation>
+    </message>
+    <message>
+        <source>Description:</source>
+        <translation>توضیح:</translation>
+    </message>
+    <message>
+        <source>Gives control over the PC or qBittorrent itself.</source>
+        <translation>کنترل رایانه یا خود qBittorrent را می‌دهد.</translation>
+    </message>
+    <message>
+        <source>Add Role</source>
+        <translation>افزودن نقش</translation>
+    </message>
+    <message>
+        <source>Edit Role</source>
+        <translation>ویرایش نقش</translation>
+    </message>
+    <message>
+        <source>Enter a role name.</source>
+        <translation>یک نام نقش وارد کنید.</translation>
+    </message>
+</context>
+<context>
+    <name>WebUIActivityWidget</name>
+    <message>
+        <source>All</source>
+        <translation>همه</translation>
+    </message>
+    <message>
+        <source>Filter activity</source>
+        <translation>فیلتر فعالیت</translation>
+    </message>
+    <message>
+        <source>Export...</source>
+        <translation>برون‌ریزی...</translation>
+    </message>
+    <message>
+        <source>User:</source>
+        <translation>کاربر:</translation>
+    </message>
+    <message>
+        <source>Category:</source>
+        <translation>دسته:</translation>
+    </message>
+    <message>
+        <source>Result:</source>
+        <translation>نتیجه:</translation>
+    </message>
+    <message>
+        <source>Time</source>
+        <translation>زمان</translation>
+    </message>
+    <message>
+        <source>User</source>
+        <translation>کاربر</translation>
+    </message>
+    <message>
+        <source>Role</source>
+        <translation>نقش</translation>
+    </message>
+    <message>
+        <source>Category</source>
+        <translation>دسته</translation>
+    </message>
+    <message>
+        <source>Action</source>
+        <translation>اقدام</translation>
+    </message>
+    <message>
+        <source>Result</source>
+        <translation>نتیجه</translation>
+    </message>
+    <message>
+        <source>The user database could not be opened. See the General tab for details.</source>
+        <translation>پایگاه دادهٔ کاربران باز نشد. برای جزئیات، برگهٔ عمومی را ببینید.</translation>
+    </message>
+    <message>
+        <source>Results (showing %1 out of %2)</source>
+        <translation>نتایج (%1 از %2 نمایش داده شد)</translation>
+    </message>
+    <message>
+        <source>Copy</source>
+        <translation>رونوشت</translation>
+    </message>
+    <message>
+        <source>Export WebUI activity</source>
+        <translation>برون‌ریزی فعالیت WebUI</translation>
+    </message>
+    <message>
+        <source>CSV files</source>
+        <translation>فایل‌های CSV</translation>
+    </message>
+    <message>
+        <source>Couldn&apos;t save the file. Reason: %1</source>
+        <translation>فایل ذخیره نشد. دلیل: %1</translation>
+    </message>
+    <message>
+        <source>All</source>
+        <translation>همه</translation>
+    </message>
+    <message>
+        <source>Filter activity</source>
+        <translation>فیلتر فعالیت</translation>
+    </message>
+    <message>
+        <source>Export...</source>
+        <translation>برون‌ریزی...</translation>
+    </message>
+    <message>
+        <source>User:</source>
+        <translation>کاربر:</translation>
+    </message>
+    <message>
+        <source>Category:</source>
+        <translation>دسته:</translation>
+    </message>
+    <message>
+        <source>Result:</source>
+        <translation>نتیجه:</translation>
+    </message>
+    <message>
+        <source>Time</source>
+        <translation>زمان</translation>
+    </message>
+    <message>
+        <source>User</source>
+        <translation>کاربر</translation>
+    </message>
+    <message>
+        <source>Role</source>
+        <translation>نقش</translation>
+    </message>
+    <message>
+        <source>Category</source>
+        <translation>دسته</translation>
+    </message>
+    <message>
+        <source>Action</source>
+        <translation>اقدام</translation>
+    </message>
+    <message>
+        <source>Result</source>
+        <translation>نتیجه</translation>
+    </message>
+    <message>
+        <source>The user database could not be opened. See the General tab for details.</source>
+        <translation>پایگاه دادهٔ کاربران باز نشد. برای جزئیات، برگهٔ عمومی را ببینید.</translation>
+    </message>
+    <message>
+        <source>Results (showing %1 out of %2)</source>
+        <translation>نتایج (%1 از %2 نمایش داده شد)</translation>
+    </message>
+    <message>
+        <source>Copy</source>
+        <translation>رونوشت</translation>
+    </message>
+    <message>
+        <source>Export WebUI activity</source>
+        <translation>برون‌ریزی فعالیت WebUI</translation>
+    </message>
+    <message>
+        <source>CSV files</source>
+        <translation>فایل‌های CSV</translation>
+    </message>
+    <message>
+        <source>Couldn&apos;t save the file. Reason: %1</source>
+        <translation>فایل ذخیره نشد. دلیل: %1</translation>
     </message>
 </context>
 </TS>

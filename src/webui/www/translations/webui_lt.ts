@@ -223,6 +223,81 @@ The piece hash will be checked when it is requested for the first time by a peer
         <source>%1 needed · %2 free</source>
         <translation type="unfinished" />
     </message>
+    <message>
+        <source>Don&apos;t create subfolder</source>
+        <translation>Nesukurti poaplankio</translation>
+    </message>
+    <message>
+        <source>Never show again</source>
+        <translation>Daugiau neberodyti</translation>
+    </message>
+    <message>
+        <source>Select None</source>
+        <translation>Nežymėti nieko</translation>
+    </message>
+    <message>
+        <source>Your role saves torrents in the default folders.</source>
+        <translation>Jūsų vaidmuo išsaugo torrentus numatytuosiuose aplankuose.</translation>
+    </message>
+</context>
+<context>
+    <name>AdvancedSettings</name>
+    <message>
+        <source>General</source>
+        <translation>Bendra</translation>
+    </message>
+    <message>
+        <source>Network</source>
+        <translation>Tinklas</translation>
+    </message>
+    <message>
+        <source>Storage</source>
+        <translation>Saugykla</translation>
+    </message>
+    <message>
+        <source>Peers and trackers</source>
+        <translation>Siuntėjai ir sekliai</translation>
+    </message>
+    <message>
+        <source>Program behavior</source>
+        <translation>Programos elgsena</translation>
+    </message>
+    <message>
+        <source>Display and notifications</source>
+        <translation>Vaizdas ir pranešimai</translation>
+    </message>
+    <message>
+        <source>Network connection</source>
+        <translation>Tinklo jungiamumas</translation>
+    </message>
+    <message>
+        <source>Security and privacy</source>
+        <translation>Saugumas ir privatumas</translation>
+    </message>
+    <message>
+        <source>Connection tuning</source>
+        <translation>Jungiamumo derinimas</translation>
+    </message>
+    <message>
+        <source>Saving and torrent files</source>
+        <translation>Įrašymas ir torrent failai</translation>
+    </message>
+    <message>
+        <source>Disk and memory</source>
+        <translation>Diskas ir atmintis</translation>
+    </message>
+    <message>
+        <source>Trackers</source>
+        <translation>Sekliai</translation>
+    </message>
+    <message>
+        <source>Peers and seeding</source>
+        <translation>Siuntėjai ir skleidimas</translation>
+    </message>
+    <message>
+        <source>DHT and I2P</source>
+        <translation>DHT ir I2P</translation>
+    </message>
 </context>
 <context>
     <name>CategoryFilterModel</name>
@@ -623,6 +698,14 @@ The piece hash will be checked when it is requested for the first time by a peer
         <source>More</source>
         <translation>Daugiau</translation>
     </message>
+    <message>
+        <source>Change Password...</source>
+        <translation>Keisti slaptažodį...</translation>
+    </message>
+    <message>
+        <source>Signed in as</source>
+        <translation>Prisijungta kaip</translation>
+    </message>
 </context>
 <context>
     <name>MainWindow</name>
@@ -929,6 +1012,30 @@ The piece hash will be checked when it is requested for the first time by a peer
     <message>
         <source>Resume Session</source>
         <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Pause Session</source>
+        <translation>Pristabdyti seansą</translation>
+    </message>
+    <message>
+        <source>Pause session</source>
+        <translation>Pristabdyti seansą</translation>
+    </message>
+    <message>
+        <source>Resume Session</source>
+        <translation>Tęsti seansą</translation>
+    </message>
+    <message>
+        <source>Resume session</source>
+        <translation>Tęsti seansą</translation>
+    </message>
+    <message>
+        <source>Your account can&apos;t add torrents.</source>
+        <translation>Jūsų paskyra negali pridėti torrentų.</translation>
+    </message>
+    <message>
+        <source>[PAUSED]</source>
+        <translation>[PRISTABDYTA]</translation>
     </message>
 </context>
 <context>
@@ -2517,6 +2624,164 @@ pakaitos simbolį "*".</translation>
         <source>a@x.com;b@y.com,c@z.com - send two emails: the first to just a@x.com, the second to both b@y.com and c@z.com</source>
         <translation type="unfinished" />
     </message>
+    <message>
+        <source>0 means users are logged out after the session timeout.</source>
+        <translation>0 reiškia, kad naudotojai atjungiami pasibaigus seanso laiko limitui.</translation>
+    </message>
+    <message>
+        <source>Access</source>
+        <translation>Prieiga</translation>
+    </message>
+    <message>
+        <source>Allow this login when user accounts exist</source>
+        <translation>Leisti šį prisijungimą, kai yra naudotojų paskyrų</translation>
+    </message>
+    <message>
+        <source>Also save search results</source>
+        <translation>Taip pat išsaugoti paieškos rezultatus</translation>
+    </message>
+    <message>
+        <source>Also when addition is cancelled</source>
+        <translation>Taip pat, kai pridėjimas yra atšaukiamas</translation>
+    </message>
+    <message>
+        <source>Below normal</source>
+        <translation>Žemesnė nei normali</translation>
+    </message>
+    <message>
+        <source>Changes to users, roles and logins apply at once.</source>
+        <translation>Naudotojų, vaidmenų ir prisijungimų pakeitimai pritaikomi iškart.</translation>
+    </message>
+    <message>
+        <source>Don&apos;t create subfolder</source>
+        <translation>Nesukurti poaplankio</translation>
+    </message>
+    <message>
+        <source>Example:</source>
+        <translation>Pavyzdys:</translation>
+    </message>
+    <message>
+        <source>Keep WebUI activity log for:</source>
+        <translation>Laikyti WebUI veiklos žurnalą:</translation>
+    </message>
+    <message>
+        <source>Keep users logged in for:</source>
+        <translation>Laikyti naudotojus prisijungusius:</translation>
+    </message>
+    <message>
+        <source>Language:</source>
+        <translation>Kalba:</translation>
+    </message>
+    <message>
+        <source>Lock account after consecutive failures:</source>
+        <translation>Užrakinti paskyrą po iš eilės nesėkmių:</translation>
+    </message>
+    <message>
+        <source>Logins and Activity Log</source>
+        <translation>Prisijungimai ir veiklos žurnalas</translation>
+    </message>
+    <message>
+        <source>Low</source>
+        <translation>Žema</translation>
+    </message>
+    <message>
+        <source>Medium</source>
+        <translation>Vidutinė</translation>
+    </message>
+    <message>
+        <source>No settings match</source>
+        <translation>Nėra atitinkančių nustatymų</translation>
+    </message>
+    <message>
+        <source>Process memory priority:</source>
+        <translation>Proceso atminties prioritetas:</translation>
+    </message>
+    <message>
+        <source>Save search tabs</source>
+        <translation>Išsaugoti paieškos skirtukus</translation>
+    </message>
+    <message>
+        <source>Search settings</source>
+        <translation>Ieškoti nustatymuose</translation>
+    </message>
+    <message>
+        <source>Service:</source>
+        <translation>Paslauga:</translation>
+    </message>
+    <message>
+        <source>Show console window</source>
+        <translation>Rodyti pulto langą</translation>
+    </message>
+    <message>
+        <source>Show the window when adding a torrent</source>
+        <translation>Rodyti langą pridedant torrentą</translation>
+    </message>
+    <message>
+        <source>Status bar and log</source>
+        <translation>Būsenos juosta ir žurnalas</translation>
+    </message>
+    <message>
+        <source>The WebUI activity log can be kept for 1 to 3650 days.</source>
+        <translation>WebUI veiklos žurnalą galima laikyti nuo 1 iki 3650 dienų.</translation>
+    </message>
+    <message>
+        <source>The settings below apply with OK or Apply.</source>
+        <translation>Toliau pateikti nustatymai pritaikomi su Gerai arba Taikyti.</translation>
+    </message>
+    <message>
+        <source>Tip: Encapsulate parameter with quotation marks to avoid text being cut off at whitespace (e.g., &quot;%N&quot;)</source>
+        <translation>Patarimas: Tam, kad tekstas nebūtų apkirptas ties tarpais, rašykite parametrą kabutėse (pvz., &quot;%N&quot;)</translation>
+    </message>
+    <message>
+        <source>Transfer List</source>
+        <translation>Siuntimų sąrašas</translation>
+    </message>
+    <message>
+        <source>Until the first user account is created, this login always works.</source>
+        <translation>Kol nesukurta pirmoji naudotojo paskyra, šis prisijungimas visada veikia.</translation>
+    </message>
+    <message>
+        <source>User</source>
+        <translation>Naudotojas</translation>
+    </message>
+    <message>
+        <source>User Accounts</source>
+        <translation>Naudotojų paskyros</translation>
+    </message>
+    <message>
+        <source>Users can be kept logged in for 0 to 365 days.</source>
+        <translation>Naudotojus galima laikyti prisijungusius nuo 0 iki 365 dienų.</translation>
+    </message>
+    <message>
+        <source>Very low</source>
+        <translation>Labai žema</translation>
+    </message>
+    <message>
+        <source>Warning! Data loss possible!</source>
+        <translation>Įspėjimas! Galimas duomenų praradimas!</translation>
+    </message>
+    <message>
+        <source>Whitelist for filtering HTTP Host header values.
+In order to defend against DNS rebinding attack,
+you should put in domain names used by WebUI server.
+
+Use &apos;;&apos; to split multiple entries. Can use wildcard &apos;*&apos;.</source>
+        <translation>HTTP serverio antraščių reikšmių filtravimo baltasis sąrašas.
+Norėdami apsisaugoti nuo DNS atnaujinto susiejimo atakos,
+turėtumėte įvesti tinklo sąsajos serverio naudojamus domenų
+pavadinimus.
+
+Norėdami atskirti kelias reikšmes, naudokite &quot;;&quot;. Galima naudoti
+pakaitos simbolį &quot;*&quot;.</translation>
+    </message>
+    <message>
+        <source>You changed the address, port or HTTPS setting of the WebUI. Saving moves the WebUI, so Options will save, close and reload the page, the same as OK. If the page doesn&apos;t come back, open the WebUI at its new address.\n\nSave anyway?</source>
+        <translation>Pakeitėte WebUI adresą, prievadą arba HTTPS nustatymą. Išsaugojus WebUI perkeliamas, todėl Parinktys išsaugos, užsidarys ir iš naujo įkels puslapį, kaip su Gerai. Jei puslapis negrįžta, atidarykite WebUI naujuoju adresu.\n\nVis tiek išsaugoti?</translation>
+    </message>
+    <message>
+        <source>lock for:</source>
+        <translation>užrakinti:</translation>
+    </message>
 </context>
 <context>
     <name>PeerListWidget</name>
@@ -2945,6 +3210,10 @@ pakaitos simbolį "*".</translation>
         <source>Copy download URL</source>
         <translation type="unfinished" />
     </message>
+    <message>
+        <source>Copy path</source>
+        <translation>Kopijuoti kelią</translation>
+    </message>
 </context>
 <context>
     <name>ScanFoldersModel</name>
@@ -3057,6 +3326,142 @@ pakaitos simbolį "*".</translation>
     <message>
         <source>The time it takes from receiving a request from a peer until we're sending the response back on the socket</source>
         <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Activity</source>
+        <translation>Veikla</translation>
+    </message>
+    <message>
+        <source>All time</source>
+        <translation>Visą laiką</translation>
+    </message>
+    <message>
+        <source>Before tracking began</source>
+        <translation>Prieš pradedant stebėjimą</translation>
+    </message>
+    <message>
+        <source>By month</source>
+        <translation>Pagal mėnesį</translation>
+    </message>
+    <message>
+        <source>Counts the requests that added a download. Apps without a login, such as Sonarr and Radarr, are shown as (localhost). Downloads added in the desktop window are not counted.</source>
+        <translation>Skaičiuoja užklausas, kurios pridėjo atsisiuntimą. Programos be prisijungimo, tokios kaip Sonarr ir Radarr, rodomos kaip (localhost). Darbalaukio lange pridėti atsisiuntimai neskaičiuojami.</translation>
+    </message>
+    <message>
+        <source>Current speed:</source>
+        <translation>Dabartinis greitis:</translation>
+    </message>
+    <message>
+        <source>DHT nodes:</source>
+        <translation>DHT mazgai:</translation>
+    </message>
+    <message>
+        <source>Data discarded this session:</source>
+        <translation>Šiame seanse atmesti duomenys:</translation>
+    </message>
+    <message>
+        <source>Disk</source>
+        <translation>Diskas</translation>
+    </message>
+    <message>
+        <source>History</source>
+        <translation>Istorija</translation>
+    </message>
+    <message>
+        <source>Last 12 months</source>
+        <translation>Paskutiniai 12 mėnesių</translation>
+    </message>
+    <message>
+        <source>Last 7 days</source>
+        <translation>Paskutinės 7 dienos</translation>
+    </message>
+    <message>
+        <source>Last month</source>
+        <translation>Praėjęs mėnuo</translation>
+    </message>
+    <message>
+        <source>Month</source>
+        <translation>Mėnuo</translation>
+    </message>
+    <message>
+        <source>Nothing added yet</source>
+        <translation>Dar nieko nepridėta</translation>
+    </message>
+    <message>
+        <source>Off</source>
+        <translation>Išjungta</translation>
+    </message>
+    <message>
+        <source>Overview</source>
+        <translation>Apžvalga</translation>
+    </message>
+    <message>
+        <source>Peers waiting on disk reads:</source>
+        <translation>Siuntėjai, laukiantys skaitymo iš disko:</translation>
+    </message>
+    <message>
+        <source>Peers waiting on disk writes:</source>
+        <translation>Siuntėjai, laukiantys įrašymo į diską:</translation>
+    </message>
+    <message>
+        <source>Period</source>
+        <translation>Laikotarpis</translation>
+    </message>
+    <message>
+        <source>Request latency:</source>
+        <translation>Užklausos vėlinimas:</translation>
+    </message>
+    <message>
+        <source>Running for:</source>
+        <translation>Veikia:</translation>
+    </message>
+    <message>
+        <source>Share ratio</source>
+        <translation>Dalijimosi santykis</translation>
+    </message>
+    <message>
+        <source>Share ratio:</source>
+        <translation>Dalijimosi santykis:</translation>
+    </message>
+    <message>
+        <source>Technical</source>
+        <translation>Techninė informacija</translation>
+    </message>
+    <message>
+        <source>This month</source>
+        <translation>Šis mėnuo</translation>
+    </message>
+    <message>
+        <source>This session</source>
+        <translation>Šis seansas</translation>
+    </message>
+    <message>
+        <source>Today</source>
+        <translation>Šiandien</translation>
+    </message>
+    <message>
+        <source>Torrents downloading:</source>
+        <translation>Atsisiunčiami torrentai:</translation>
+    </message>
+    <message>
+        <source>Torrents seeding:</source>
+        <translation>Skleidžiami torrentai:</translation>
+    </message>
+    <message>
+        <source>Torrents stopped:</source>
+        <translation>Sustabdyti torrentai:</translation>
+    </message>
+    <message>
+        <source>Torrents with errors:</source>
+        <translation>Torrentai su klaidomis:</translation>
+    </message>
+    <message>
+        <source>Tracking since:</source>
+        <translation>Stebima nuo:</translation>
+    </message>
+    <message>
+        <source>WebUI downloads added, this month</source>
+        <translation>Per WebUI pridėti atsisiuntimai, šį mėnesį</translation>
     </message>
 </context>
 <context>
@@ -3844,6 +4249,10 @@ pakaitos simbolį "*".</translation>
         <source>Content Path</source>
         <translation type="unfinished" />
     </message>
+    <message>
+        <source>Remove all tags from selected torrents?</source>
+        <translation>Šalinti pasirinktiems torentams visas žymes?</translation>
+    </message>
 </context>
 <context>
     <name>UpDownRatioDialog</name>
@@ -3916,6 +4325,10 @@ pakaitos simbolį "*".</translation>
     <message>
         <source>Remove tracker</source>
         <translation>Šalinti seklį</translation>
+    </message>
+    <message>
+        <source>This choice is remembered for the next removal.</source>
+        <translation>Šis pasirinkimas bus prisimintas kitam pašalinimui.</translation>
     </message>
 </context>
 <context>
@@ -4129,6 +4542,34 @@ pakaitos simbolį "*".</translation>
         <source>Select plugins</source>
         <translation type="unfinished" />
     </message>
+    <message>
+        <source>Category to search in</source>
+        <translation>Kategorija, kurioje ieškoma</translation>
+    </message>
+    <message>
+        <source>Close the selected search</source>
+        <translation>Uždaryti pasirinktą paiešką</translation>
+    </message>
+    <message>
+        <source>Empty search pattern</source>
+        <translation>Tuščias paieškos raktažodis</translation>
+    </message>
+    <message>
+        <source>Search engines to use</source>
+        <translation>Naudojamos paieškos sistemos</translation>
+    </message>
+    <message>
+        <source>Search for torrents...</source>
+        <translation>Ieškoti torrentų...</translation>
+    </message>
+    <message>
+        <source>Searches</source>
+        <translation>Paieškos</translation>
+    </message>
+    <message>
+        <source>Type a search above and press Enter.</source>
+        <translation>Įveskite paiešką aukščiau ir paspauskite Enter.</translation>
+    </message>
 </context>
 <context>
     <name>PluginSelectDlg</name>
@@ -4167,6 +4608,10 @@ pakaitos simbolį "*".</translation>
     <message>
         <source>Search plugins</source>
         <translation>Paieškos papildiniai</translation>
+    </message>
+    <message>
+        <source>Warning: Be sure to comply with your country&apos;s copyright laws when downloading torrents from any of these search engines.</source>
+        <translation>Įspėjimas: Atsisiųsdami failus iš šių paieškos sistemų, būkite susipažinę su savo šalies autorių teisių įstatymais.</translation>
     </message>
 </context>
 <context>
@@ -4390,6 +4835,30 @@ pakaitos simbolį "*".</translation>
         <source>qBittorrent icon</source>
         <translation>qBittorrent piktograma</translation>
     </message>
+    <message>
+        <source>Based on:</source>
+        <translation>Pagrįsta:</translation>
+    </message>
+    <message>
+        <source>Edition version:</source>
+        <translation>Leidimo versija:</translation>
+    </message>
+    <message>
+        <source>Kettle Edition is a personal build of qBittorrent that adds user accounts with roles for the WebUI and the desktop app, an activity log, and an installable WebUI with a phone layout. A kettle is a group of hawks soaring together. This is an unofficial build, not affiliated with the qBittorrent project.</source>
+        <translation>Kettle Edition yra asmeninė qBittorrent versija, pridedanti naudotojų paskyras su vaidmenimis WebUI ir darbalaukio programai, veiklos žurnalą ir įdiegiamą WebUI su telefono išdėstymu. Kettle yra kartu sklandančių vanagų būrys. Tai neoficiali versija, nesusijusi su qBittorrent projektu.</translation>
+    </message>
+    <message>
+        <source>Maintainer:</source>
+        <translation>Prižiūrėtojas:</translation>
+    </message>
+    <message>
+        <source>This edition</source>
+        <translation>Šis leidimas</translation>
+    </message>
+    <message>
+        <source>qBittorrent project:</source>
+        <translation>qBittorrent projektas:</translation>
+    </message>
 </context>
 <context>
     <name>OptionDialog</name>
@@ -4491,6 +4960,46 @@ pakaitos simbolį "*".</translation>
     <message>
         <source>Open shared download window</source>
         <translation type="unfinished" />
+    </message>
+    <message>
+        <source>%1 of %2 shown</source>
+        <translation>Rodoma %1 iš %2</translation>
+    </message>
+    <message>
+        <source>%1 of %2 shown (%3 hidden)</source>
+        <translation>Rodoma %1 iš %2 (%3 paslėpta)</translation>
+    </message>
+    <message>
+        <source>Close all searches</source>
+        <translation>Uždaryti visas paieškas</translation>
+    </message>
+    <message>
+        <source>Close search</source>
+        <translation>Uždaryti paiešką</translation>
+    </message>
+    <message>
+        <source>Filter search results...</source>
+        <translation>Filtruoti paieškos rezultatus...</translation>
+    </message>
+    <message>
+        <source>Finished: %1</source>
+        <translation>Baigta: %1</translation>
+    </message>
+    <message>
+        <source>Refresh search</source>
+        <translation>Atnaujinti paiešką</translation>
+    </message>
+    <message>
+        <source>Search aborted: %1</source>
+        <translation>Paieška nutraukta: %1</translation>
+    </message>
+    <message>
+        <source>Search returned no results</source>
+        <translation>Paieška negrąžino jokių rezultatų</translation>
+    </message>
+    <message>
+        <source>Searching: %1</source>
+        <translation>Ieškoma: %1</translation>
     </message>
 </context>
 <context>
@@ -4629,6 +5138,10 @@ pakaitos simbolį "*".</translation>
     <message>
         <source>Blocked opening RSS article URL. Only http:// and https:// links can be opened.</source>
         <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Details</source>
+        <translation>Išsamiau</translation>
     </message>
 </context>
 <context>
@@ -4907,6 +5420,10 @@ Palaiko formatus: S01E01, 1x1, 2017.12.31 ir 31.12.2017 (Datos formatai taip pat
         <source>Import</source>
         <translation type="unfinished" />
     </message>
+    <message>
+        <source>Don&apos;t create subfolder</source>
+        <translation>Nesukurti poaplankio</translation>
+    </message>
 </context>
 <context>
     <name>TrackerFiltersList</name>
@@ -5096,6 +5613,26 @@ Palaiko formatus: S01E01, 1x1, 2017.12.31 ir 31.12.2017 (Datos formatai taip pat
         <source>Choose a log level...</source>
         <translation type="unfinished" />
     </message>
+    <message>
+        <source>Export...</source>
+        <translation>Eksportuoti...</translation>
+    </message>
+    <message>
+        <source>Filter activity</source>
+        <translation>Filtruoti veiklą</translation>
+    </message>
+    <message>
+        <source>Result:</source>
+        <translation>Rezultatas:</translation>
+    </message>
+    <message>
+        <source>User:</source>
+        <translation>Naudotojas:</translation>
+    </message>
+    <message>
+        <source>WebUI Activity</source>
+        <translation>WebUI veikla</translation>
+    </message>
 </context>
 <context>
     <name>TrackersFilterWidget</name>
@@ -5165,6 +5702,10 @@ Palaiko formatus: S01E01, 1x1, 2017.12.31 ir 31.12.2017 (Datos formatai taip pat
     <message>
         <source>Torrent share limits</source>
         <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Your role saves torrents in the default folders.</source>
+        <translation>Jūsų vaidmuo išsaugo torrentus numatytuosiuose aplankuose.</translation>
     </message>
 </context>
 <context>
@@ -5264,6 +5805,14 @@ Palaiko formatus: S01E01, 1x1, 2017.12.31 ir 31.12.2017 (Datos formatai taip pat
     <message>
         <source>Invalid Username or Password.</source>
         <translation>Neteisingas naudotojo vardas ar slaptažodis.</translation>
+    </message>
+    <message>
+        <source>A kettle is a group of hawks soaring together.</source>
+        <translation>Kettle yra kartu sklandančių vanagų būrys.</translation>
+    </message>
+    <message>
+        <source>Sign in</source>
+        <translation>Prisijungti</translation>
     </message>
 </context>
 <context>
@@ -5472,6 +6021,18 @@ Palaiko formatus: S01E01, 1x1, 2017.12.31 ir 31.12.2017 (Datos formatai taip pat
         <source>If checked, filenames starting with a period punctuation mark `.` will not be added to the created torrent.</source>
         <translation type="unfinished" />
     </message>
+    <message>
+        <source>Optimize alignment</source>
+        <translation>Optimizuoti failų išdėstymą</translation>
+    </message>
+    <message>
+        <source>Private torrent (Won&apos;t distribute on DHT network)</source>
+        <translation>Privatus torentas (Nebus platinamas DHT tinkle)</translation>
+    </message>
+    <message>
+        <source>Start seeding immediately</source>
+        <translation>Nedelsiant pradėti skleisti</translation>
+    </message>
 </context>
 <context>
     <name>DownloadFromURLDialog</name>
@@ -5582,6 +6143,10 @@ Palaiko formatus: S01E01, 1x1, 2017.12.31 ir 31.12.2017 (Datos formatai taip pat
         <source>Failed to set speed limits</source>
         <translation type="unfinished" />
     </message>
+    <message>
+        <source>Speed limits</source>
+        <translation>Greičio apribojimai</translation>
+    </message>
 </context>
 <context>
     <name>ListWidget</name>
@@ -5592,6 +6157,10 @@ Palaiko formatus: S01E01, 1x1, 2017.12.31 ir 31.12.2017 (Datos formatai taip pat
     <message>
         <source>Resize</source>
         <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Reset Auto Width</source>
+        <translation>Atkurti automatinį plotį</translation>
     </message>
 </context>
 <context>
@@ -5722,6 +6291,14 @@ Palaiko formatus: S01E01, 1x1, 2017.12.31 ir 31.12.2017 (Datos formatai taip pat
         <source>Remove torrent</source>
         <translation type="unfinished" />
     </message>
+    <message>
+        <source>Mode:</source>
+        <translation>Veiksena:</translation>
+    </message>
+    <message>
+        <source>Ratio:</source>
+        <translation>Santykis:</translation>
+    </message>
 </context>
 <context>
     <name>TorrentContent</name>
@@ -5732,6 +6309,216 @@ Palaiko formatus: S01E01, 1x1, 2017.12.31 ir 31.12.2017 (Datos formatai taip pat
     <message>
         <source>Not available for folders</source>
         <translation type="unfinished" />
+    </message>
+</context>
+<context>
+    <name>UserAccounts</name>
+    <message>
+        <source>(this browser)</source>
+        <translation>(ši naršyklė)</translation>
+    </message>
+    <message>
+        <source>A role decides what its users are allowed to do.</source>
+        <translation>Vaidmuo nusprendžia, ką gali daryti jo naudotojai.</translation>
+    </message>
+    <message>
+        <source>Add Role</source>
+        <translation>Pridėti vaidmenį</translation>
+    </message>
+    <message>
+        <source>Add Role...</source>
+        <translation>Pridėti vaidmenį...</translation>
+    </message>
+    <message>
+        <source>Add User</source>
+        <translation>Pridėti naudotoją</translation>
+    </message>
+    <message>
+        <source>Add User...</source>
+        <translation>Pridėti naudotoją...</translation>
+    </message>
+    <message>
+        <source>Are you sure you want to remove the role &apos;%1&apos;?</source>
+        <translation>Ar tikrai norite pašalinti vaidmenį „%1“?</translation>
+    </message>
+    <message>
+        <source>Are you sure you want to remove the user &apos;%1&apos;?</source>
+        <translation>Ar tikrai norite pašalinti naudotoją „%1“?</translation>
+    </message>
+    <message>
+        <source>At least %1 characters</source>
+        <translation>Bent %1 simboliai</translation>
+    </message>
+    <message>
+        <source>Browser</source>
+        <translation>Naršyklė</translation>
+    </message>
+    <message>
+        <source>Browsers and devices where someone is logged in with a user account.</source>
+        <translation>Naršyklės ir įrenginiai, kuriuose kažkas prisijungęs naudotojo paskyra.</translation>
+    </message>
+    <message>
+        <source>Change Password</source>
+        <translation>Keisti slaptažodį</translation>
+    </message>
+    <message>
+        <source>Confirm password:</source>
+        <translation>Patvirtinti slaptažodį:</translation>
+    </message>
+    <message>
+        <source>Created</source>
+        <translation>Sukurta</translation>
+    </message>
+    <message>
+        <source>Current password:</source>
+        <translation>Dabartinis slaptažodis:</translation>
+    </message>
+    <message>
+        <source>Description</source>
+        <translation>Aprašymas</translation>
+    </message>
+    <message>
+        <source>Description:</source>
+        <translation>Aprašymas:</translation>
+    </message>
+    <message>
+        <source>Disable</source>
+        <translation>Išjungti</translation>
+    </message>
+    <message>
+        <source>Disable this account</source>
+        <translation>Išjungti šią paskyrą</translation>
+    </message>
+    <message>
+        <source>Edit Role</source>
+        <translation>Redaguoti vaidmenį</translation>
+    </message>
+    <message>
+        <source>Edit User</source>
+        <translation>Redaguoti naudotoją</translation>
+    </message>
+    <message>
+        <source>Edit...</source>
+        <translation>Redaguoti...</translation>
+    </message>
+    <message>
+        <source>Enable</source>
+        <translation>Įjungti</translation>
+    </message>
+    <message>
+        <source>Enter a role name.</source>
+        <translation>Įveskite vaidmens pavadinimą.</translation>
+    </message>
+    <message>
+        <source>Enter a username.</source>
+        <translation>Įveskite naudotojo vardą.</translation>
+    </message>
+    <message>
+        <source>Expires</source>
+        <translation>Baigia galioti</translation>
+    </message>
+    <message>
+        <source>Gives control over the PC or qBittorrent itself</source>
+        <translation>Suteikia valdymą kompiuteriu arba pačiu qBittorrent</translation>
+    </message>
+    <message>
+        <source>Last active</source>
+        <translation>Paskutinė veikla</translation>
+    </message>
+    <message>
+        <source>Last login</source>
+        <translation>Paskutinis prisijungimas</translation>
+    </message>
+    <message>
+        <source>Leave empty to keep the current password</source>
+        <translation>Palikite tuščią, kad išliktų dabartinis slaptažodis</translation>
+    </message>
+    <message>
+        <source>Log Out</source>
+        <translation>Atsijungti</translation>
+    </message>
+    <message>
+        <source>Log Out Everywhere</source>
+        <translation>Atsijungti visur</translation>
+    </message>
+    <message>
+        <source>Logged In</source>
+        <translation>Prisijungę</translation>
+    </message>
+    <message>
+        <source>Logged in</source>
+        <translation>Prisijungė</translation>
+    </message>
+    <message>
+        <source>New password:</source>
+        <translation>Naujas slaptažodis:</translation>
+    </message>
+    <message>
+        <source>No accounts yet, so everyone still uses the shared WebUI login. Add an Admin account first.</source>
+        <translation>Paskyrų dar nėra, todėl visi tebenaudoja bendrą WebUI prisijungimą. Pirmiausia pridėkite administratoriaus paskyrą.</translation>
+    </message>
+    <message>
+        <source>People who can log in to the WebUI with their own username and password.</source>
+        <translation>Žmonės, kurie gali prisijungti prie WebUI savo naudotojo vardu ir slaptažodžiu.</translation>
+    </message>
+    <message>
+        <source>Permissions</source>
+        <translation>Leidimai</translation>
+    </message>
+    <message>
+        <source>Role</source>
+        <translation>Vaidmuo</translation>
+    </message>
+    <message>
+        <source>Role:</source>
+        <translation>Vaidmuo:</translation>
+    </message>
+    <message>
+        <source>Roles</source>
+        <translation>Vaidmenys</translation>
+    </message>
+    <message>
+        <source>The password must be at least %1 characters long.</source>
+        <translation>Slaptažodį turi sudaryti bent %1 simboliai.</translation>
+    </message>
+    <message>
+        <source>The passwords don&apos;t match.</source>
+        <translation>Slaptažodžiai nesutampa.</translation>
+    </message>
+    <message>
+        <source>User</source>
+        <translation>Naudotojas</translation>
+    </message>
+    <message>
+        <source>Users</source>
+        <translation>Naudotojai</translation>
+    </message>
+    <message>
+        <source>Your password was changed. Other browsers and devices where you were logged in have been logged out.</source>
+        <translation>Jūsų slaptažodis pakeistas. Kitos naršyklės ir įrenginiai, kuriuose buvote prisijungę, buvo atjungti.</translation>
+    </message>
+</context>
+<context>
+    <name>WebUIActivity</name>
+    <message>
+        <source>Action</source>
+        <translation>Veiksmas</translation>
+    </message>
+    <message>
+        <source>Result</source>
+        <translation>Rezultatas</translation>
+    </message>
+    <message>
+        <source>Role</source>
+        <translation>Vaidmuo</translation>
+    </message>
+    <message>
+        <source>Time</source>
+        <translation>Laikas</translation>
+    </message>
+    <message>
+        <source>User</source>
+        <translation>Naudotojas</translation>
     </message>
 </context>
 </TS>

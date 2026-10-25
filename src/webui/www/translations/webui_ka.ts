@@ -223,6 +223,85 @@ The piece hash will be checked when it is requested for the first time by a peer
         <source>%1 needed · %2 free</source>
         <translation type="unfinished" />
     </message>
+    <message>
+        <source>Don&apos;t create subfolder</source>
+        <translation>ქვესაქაღალდის არშექმნა</translation>
+    </message>
+    <message>
+        <source>Never show again</source>
+        <translation>მეტჯერ აღარ აჩვენო ეს გაფრთხილება</translation>
+    </message>
+    <message>
+        <source>Select None</source>
+        <translation>მონიშვნის მოხსნა</translation>
+    </message>
+    <message>
+        <source>Torrent options</source>
+        <translation>ტორენტის მორგება</translation>
+    </message>
+    <message>
+        <source>Your role saves torrents in the default folders.</source>
+        <translation>თქვენი როლი ტორენტებს ინახავს ნაგულისხმევ საქაღალდეებში.</translation>
+    </message>
+</context>
+<context>
+    <name>AdvancedSettings</name>
+    <message>
+        <source>General</source>
+        <translation>ზოგადი</translation>
+    </message>
+    <message>
+        <source>Network</source>
+        <translation>ქსელი</translation>
+    </message>
+    <message>
+        <source>Storage</source>
+        <translation>შენახვა</translation>
+    </message>
+    <message>
+        <source>Peers and trackers</source>
+        <translation>პარტნიორები და ტრეკერები</translation>
+    </message>
+    <message>
+        <source>Program behavior</source>
+        <translation>პროგრამის ქცევა</translation>
+    </message>
+    <message>
+        <source>Display and notifications</source>
+        <translation>ჩვენება და შეტყობინებები</translation>
+    </message>
+    <message>
+        <source>Network connection</source>
+        <translation>ქსელური კავშირი</translation>
+    </message>
+    <message>
+        <source>Security and privacy</source>
+        <translation>უსაფრთხოება და კონფიდენციალურობა</translation>
+    </message>
+    <message>
+        <source>Connection tuning</source>
+        <translation>კავშირის მორგება</translation>
+    </message>
+    <message>
+        <source>Saving and torrent files</source>
+        <translation>შენახვა და ტორენტ-ფაილები</translation>
+    </message>
+    <message>
+        <source>Disk and memory</source>
+        <translation>დისკი და მეხსიერება</translation>
+    </message>
+    <message>
+        <source>Trackers</source>
+        <translation>ტრეკერები</translation>
+    </message>
+    <message>
+        <source>Peers and seeding</source>
+        <translation>პარტნიორები და სიდინგი</translation>
+    </message>
+    <message>
+        <source>DHT and I2P</source>
+        <translation>DHT და I2P</translation>
+    </message>
 </context>
 <context>
     <name>CategoryFilterModel</name>
@@ -623,6 +702,14 @@ The piece hash will be checked when it is requested for the first time by a peer
         <source>More</source>
         <translation>მეტი</translation>
     </message>
+    <message>
+        <source>Change Password...</source>
+        <translation>პაროლის შეცვლა...</translation>
+    </message>
+    <message>
+        <source>Signed in as</source>
+        <translation>შესულია როგორც</translation>
+    </message>
 </context>
 <context>
     <name>MainWindow</name>
@@ -929,6 +1016,34 @@ The piece hash will be checked when it is requested for the first time by a peer
     <message>
         <source>Resume Session</source>
         <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Global Speed Limits</source>
+        <translation>გლობალური სიჩქარის ლიმიტები</translation>
+    </message>
+    <message>
+        <source>Pause Session</source>
+        <translation>სესიის პაუზა</translation>
+    </message>
+    <message>
+        <source>Pause session</source>
+        <translation>სესიის პაუზა</translation>
+    </message>
+    <message>
+        <source>Resume Session</source>
+        <translation>სესიის გაგრძელება</translation>
+    </message>
+    <message>
+        <source>Resume session</source>
+        <translation>სესიის გაგრძელება</translation>
+    </message>
+    <message>
+        <source>Your account can&apos;t add torrents.</source>
+        <translation>თქვენს ანგარიშს ტორენტების დამატება არ შეუძლია.</translation>
+    </message>
+    <message>
+        <source>[PAUSED]</source>
+        <translation>[პაუზაზეა]</translation>
     </message>
 </context>
 <context>
@@ -2511,6 +2626,138 @@ Use ';' to split multiple entries. Can use wildcard '*'.</source>
         <source>a@x.com;b@y.com,c@z.com - send two emails: the first to just a@x.com, the second to both b@y.com and c@z.com</source>
         <translation type="unfinished" />
     </message>
+    <message>
+        <source>0 means users are logged out after the session timeout.</source>
+        <translation>0 ნიშნავს, რომ მომხმარებლები სესიის დროის ამოწურვის შემდეგ გამოდიან.</translation>
+    </message>
+    <message>
+        <source>Access</source>
+        <translation>წვდომა</translation>
+    </message>
+    <message>
+        <source>Allow this login when user accounts exist</source>
+        <translation>ამ შესვლის დაშვება, როცა მომხმარებლის ანგარიშები არსებობს</translation>
+    </message>
+    <message>
+        <source>Also save search results</source>
+        <translation>ძიების შედეგების შენახვაც</translation>
+    </message>
+    <message>
+        <source>Below normal</source>
+        <translation>ნორმალურზე ქვემოთ</translation>
+    </message>
+    <message>
+        <source>Changes to users, roles and logins apply at once.</source>
+        <translation>მომხმარებლების, როლებისა და შესვლების ცვლილებები მაშინვე მოქმედებს.</translation>
+    </message>
+    <message>
+        <source>Don&apos;t create subfolder</source>
+        <translation>ქვესაქაღალდის არშექმნა</translation>
+    </message>
+    <message>
+        <source>Example:</source>
+        <translation>მაგალითი:</translation>
+    </message>
+    <message>
+        <source>I2P (experimental)</source>
+        <translation>I2P (ექსპერიმენტული)</translation>
+    </message>
+    <message>
+        <source>Keep WebUI activity log for:</source>
+        <translation>WebUI-ის აქტივობის ჟურნალის შენახვა:</translation>
+    </message>
+    <message>
+        <source>Keep users logged in for:</source>
+        <translation>მომხმარებლების შესულად დატოვება:</translation>
+    </message>
+    <message>
+        <source>Language:</source>
+        <translation>ენა:</translation>
+    </message>
+    <message>
+        <source>Lock account after consecutive failures:</source>
+        <translation>ანგარიშის დაბლოკვა თანმიმდევრული წარუმატებლობის შემდეგ:</translation>
+    </message>
+    <message>
+        <source>Logins and Activity Log</source>
+        <translation>შესვლები და აქტივობის ჟურნალი</translation>
+    </message>
+    <message>
+        <source>Low</source>
+        <translation>დაბალი</translation>
+    </message>
+    <message>
+        <source>Medium</source>
+        <translation>საშუალო</translation>
+    </message>
+    <message>
+        <source>No settings match</source>
+        <translation>შესაბამისი პარამეტრი არ არის</translation>
+    </message>
+    <message>
+        <source>Process memory priority:</source>
+        <translation>პროცესის მეხსიერების პრიორიტეტი:</translation>
+    </message>
+    <message>
+        <source>Save search tabs</source>
+        <translation>ძიების ჩანართების შენახვა</translation>
+    </message>
+    <message>
+        <source>Search settings</source>
+        <translation>პარამეტრებში ძებნა</translation>
+    </message>
+    <message>
+        <source>Service:</source>
+        <translation>სერვისი:</translation>
+    </message>
+    <message>
+        <source>Show the window when adding a torrent</source>
+        <translation>ფანჯრის ჩვენება ტორენტის დამატებისას</translation>
+    </message>
+    <message>
+        <source>Status bar and log</source>
+        <translation>სტატუსის ზოლი და ჟურნალი</translation>
+    </message>
+    <message>
+        <source>The WebUI activity log can be kept for 1 to 3650 days.</source>
+        <translation>WebUI-ის აქტივობის ჟურნალის შენახვა შესაძლებელია 1-დან 3650 დღემდე.</translation>
+    </message>
+    <message>
+        <source>The settings below apply with OK or Apply.</source>
+        <translation>ქვემოთ მოცემული პარამეტრები მოქმედებს OK-ით ან გამოყენებით.</translation>
+    </message>
+    <message>
+        <source>Transfer List</source>
+        <translation>ტორენტების სია</translation>
+    </message>
+    <message>
+        <source>Until the first user account is created, this login always works.</source>
+        <translation>სანამ პირველი მომხმარებლის ანგარიში შეიქმნება, ეს შესვლა ყოველთვის მუშაობს.</translation>
+    </message>
+    <message>
+        <source>User Accounts</source>
+        <translation>მომხმარებლის ანგარიშები</translation>
+    </message>
+    <message>
+        <source>Users can be kept logged in for 0 to 365 days.</source>
+        <translation>მომხმარებლების შესულად დატოვება შესაძლებელია 0-დან 365 დღემდე.</translation>
+    </message>
+    <message>
+        <source>Very low</source>
+        <translation>ძალიან დაბალი</translation>
+    </message>
+    <message>
+        <source>Warning! Data loss possible!</source>
+        <translation>ყურადღება! შესაძლოა ინფორმაციის დაკარგვა</translation>
+    </message>
+    <message>
+        <source>You changed the address, port or HTTPS setting of the WebUI. Saving moves the WebUI, so Options will save, close and reload the page, the same as OK. If the page doesn&apos;t come back, open the WebUI at its new address.\n\nSave anyway?</source>
+        <translation>თქვენ შეცვალეთ WebUI-ის მისამართი, პორტი ან HTTPS პარამეტრი. შენახვა WebUI-ს გადააქვს, ამიტომ პარამეტრები შეინახავს, დაიხურება და გვერდს თავიდან ჩატვირთავს, OK-ის მსგავსად. თუ გვერდი არ დაბრუნდა, გახსენით WebUI ახალ მისამართზე.\n\nმაინც შეინახოს?</translation>
+    </message>
+    <message>
+        <source>lock for:</source>
+        <translation>დაბლოკვა:</translation>
+    </message>
 </context>
 <context>
     <name>PeerListWidget</name>
@@ -3051,6 +3298,142 @@ Use ';' to split multiple entries. Can use wildcard '*'.</source>
     <message>
         <source>The time it takes from receiving a request from a peer until we're sending the response back on the socket</source>
         <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Activity</source>
+        <translation>აქტივობა</translation>
+    </message>
+    <message>
+        <source>All time</source>
+        <translation>მთელი დრო</translation>
+    </message>
+    <message>
+        <source>Before tracking began</source>
+        <translation>თვალყურის დევნების დაწყებამდე</translation>
+    </message>
+    <message>
+        <source>By month</source>
+        <translation>თვეების მიხედვით</translation>
+    </message>
+    <message>
+        <source>Counts the requests that added a download. Apps without a login, such as Sonarr and Radarr, are shown as (localhost). Downloads added in the desktop window are not counted.</source>
+        <translation>ითვლის მოთხოვნებს, რომლებმაც ჩამოტვირთვა დაამატეს. აპები შესვლის გარეშე, როგორიცაა Sonarr და Radarr, ჩანს როგორც (localhost). დესკტოპის ფანჯარაში დამატებული ჩამოტვირთვები არ ითვლება.</translation>
+    </message>
+    <message>
+        <source>Current speed:</source>
+        <translation>მიმდინარე სიჩქარე:</translation>
+    </message>
+    <message>
+        <source>DHT nodes:</source>
+        <translation>DHT კვანძები:</translation>
+    </message>
+    <message>
+        <source>Data discarded this session:</source>
+        <translation>ამ სესიაში გაუქმებული მონაცემები:</translation>
+    </message>
+    <message>
+        <source>Disk</source>
+        <translation>დისკი</translation>
+    </message>
+    <message>
+        <source>History</source>
+        <translation>ისტორია</translation>
+    </message>
+    <message>
+        <source>Last 12 months</source>
+        <translation>ბოლო 12 თვე</translation>
+    </message>
+    <message>
+        <source>Last 7 days</source>
+        <translation>ბოლო 7 დღე</translation>
+    </message>
+    <message>
+        <source>Last month</source>
+        <translation>გასული თვე</translation>
+    </message>
+    <message>
+        <source>Month</source>
+        <translation>თვე</translation>
+    </message>
+    <message>
+        <source>Nothing added yet</source>
+        <translation>ჯერ არაფერი დამატებულა</translation>
+    </message>
+    <message>
+        <source>Off</source>
+        <translation>გამორთულია</translation>
+    </message>
+    <message>
+        <source>Overview</source>
+        <translation>მიმოხილვა</translation>
+    </message>
+    <message>
+        <source>Peers waiting on disk reads:</source>
+        <translation>დისკიდან წაკითხვას მოლოდინში მყოფი პარტნიორები:</translation>
+    </message>
+    <message>
+        <source>Peers waiting on disk writes:</source>
+        <translation>დისკზე ჩაწერას მოლოდინში მყოფი პარტნიორები:</translation>
+    </message>
+    <message>
+        <source>Period</source>
+        <translation>პერიოდი</translation>
+    </message>
+    <message>
+        <source>Request latency:</source>
+        <translation>მოთხოვნის დაყოვნება:</translation>
+    </message>
+    <message>
+        <source>Running for:</source>
+        <translation>მუშაობს:</translation>
+    </message>
+    <message>
+        <source>Share ratio</source>
+        <translation>გაზიარების კოეფიციენტი</translation>
+    </message>
+    <message>
+        <source>Share ratio:</source>
+        <translation>გაზიარების კოეფიციენტი:</translation>
+    </message>
+    <message>
+        <source>Technical</source>
+        <translation>ტექნიკური</translation>
+    </message>
+    <message>
+        <source>This month</source>
+        <translation>ეს თვე</translation>
+    </message>
+    <message>
+        <source>This session</source>
+        <translation>ეს სესია</translation>
+    </message>
+    <message>
+        <source>Today</source>
+        <translation>დღეს</translation>
+    </message>
+    <message>
+        <source>Torrents downloading:</source>
+        <translation>მიმდინარე ჩამოტვირთვის ტორენტები:</translation>
+    </message>
+    <message>
+        <source>Torrents seeding:</source>
+        <translation>სიდინგის ტორენტები:</translation>
+    </message>
+    <message>
+        <source>Torrents stopped:</source>
+        <translation>შეჩერებული ტორენტები:</translation>
+    </message>
+    <message>
+        <source>Torrents with errors:</source>
+        <translation>შეცდომიანი ტორენტები:</translation>
+    </message>
+    <message>
+        <source>Tracking since:</source>
+        <translation>თვალყური იდევნება:</translation>
+    </message>
+    <message>
+        <source>WebUI downloads added, this month</source>
+        <translation>WebUI-ით დამატებული ჩამოტვირთვები, ამ თვეში</translation>
     </message>
 </context>
 <context>
@@ -3838,6 +4221,10 @@ Use ';' to split multiple entries. Can use wildcard '*'.</source>
         <source>Content Path</source>
         <translation type="unfinished" />
     </message>
+    <message>
+        <source>Remove all tags from selected torrents?</source>
+        <translation>ყველა ტეგის წაშლა ამორჩეული ტორენტებიდან?</translation>
+    </message>
 </context>
 <context>
     <name>UpDownRatioDialog</name>
@@ -3910,6 +4297,10 @@ Use ';' to split multiple entries. Can use wildcard '*'.</source>
     <message>
         <source>Remove tracker</source>
         <translation>ტრეკეტის წაშლა</translation>
+    </message>
+    <message>
+        <source>This choice is remembered for the next removal.</source>
+        <translation>ეს არჩევანი დამახსოვრდება შემდეგი წაშლისთვის.</translation>
     </message>
 </context>
 <context>
@@ -4122,6 +4513,34 @@ Use ';' to split multiple entries. Can use wildcard '*'.</source>
     <message>
         <source>Select plugins</source>
         <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Category to search in</source>
+        <translation>ძიების კატეგორია</translation>
+    </message>
+    <message>
+        <source>Close the selected search</source>
+        <translation>არჩეული ძიების დახურვა</translation>
+    </message>
+    <message>
+        <source>Empty search pattern</source>
+        <translation>ცარიელი საძიებო შაბლონი</translation>
+    </message>
+    <message>
+        <source>Search engines to use</source>
+        <translation>გამოსაყენებელი საძიებო სისტემები</translation>
+    </message>
+    <message>
+        <source>Search for torrents...</source>
+        <translation>ტორენტების ძებნა...</translation>
+    </message>
+    <message>
+        <source>Searches</source>
+        <translation>ძიებები</translation>
+    </message>
+    <message>
+        <source>Type a search above and press Enter.</source>
+        <translation>ზემოთ ჩაწერეთ ძიება და დააჭირეთ Enter-ს.</translation>
     </message>
 </context>
 <context>
@@ -4384,6 +4803,30 @@ Use ';' to split multiple entries. Can use wildcard '*'.</source>
         <source>qBittorrent icon</source>
         <translation type="unfinished" />
     </message>
+    <message>
+        <source>Based on:</source>
+        <translation>დაფუძნებულია:</translation>
+    </message>
+    <message>
+        <source>Edition version:</source>
+        <translation>გამოშვების ვერსია:</translation>
+    </message>
+    <message>
+        <source>Kettle Edition is a personal build of qBittorrent that adds user accounts with roles for the WebUI and the desktop app, an activity log, and an installable WebUI with a phone layout. A kettle is a group of hawks soaring together. This is an unofficial build, not affiliated with the qBittorrent project.</source>
+        <translation>Kettle Edition არის qBittorrent-ის პირადი აწყობა, რომელიც ამატებს როლებიანი მომხმარებლის ანგარიშებს WebUI-სა და დესკტოპის აპისთვის, აქტივობის ჟურნალს და დასაყენებელ WebUI-ს ტელეფონის განლაგებით. Kettle არის ერთად მოლივლივე ქორების ჯგუფი. ეს არაოფიციალური აწყობაა და qBittorrent-ის პროექტს არ უკავშირდება.</translation>
+    </message>
+    <message>
+        <source>Maintainer:</source>
+        <translation>მომსახურე:</translation>
+    </message>
+    <message>
+        <source>This edition</source>
+        <translation>ეს გამოშვება</translation>
+    </message>
+    <message>
+        <source>qBittorrent project:</source>
+        <translation>qBittorrent-ის პროექტი:</translation>
+    </message>
 </context>
 <context>
     <name>OptionDialog</name>
@@ -4485,6 +4928,42 @@ Use ';' to split multiple entries. Can use wildcard '*'.</source>
     <message>
         <source>Open shared download window</source>
         <translation type="unfinished" />
+    </message>
+    <message>
+        <source>%1 of %2 shown</source>
+        <translation>ნაჩვენებია %1 %2-დან</translation>
+    </message>
+    <message>
+        <source>%1 of %2 shown (%3 hidden)</source>
+        <translation>ნაჩვენებია %1 %2-დან (%3 დამალულია)</translation>
+    </message>
+    <message>
+        <source>Close all searches</source>
+        <translation>ყველა ძიების დახურვა</translation>
+    </message>
+    <message>
+        <source>Close search</source>
+        <translation>ძიების დახურვა</translation>
+    </message>
+    <message>
+        <source>Finished: %1</source>
+        <translation>დასრულდა: %1</translation>
+    </message>
+    <message>
+        <source>Refresh search</source>
+        <translation>ძიების განახლება</translation>
+    </message>
+    <message>
+        <source>Search aborted: %1</source>
+        <translation>ძებნა შეწყდა: %1</translation>
+    </message>
+    <message>
+        <source>Search returned no results</source>
+        <translation>ძებნა უშედეგოა</translation>
+    </message>
+    <message>
+        <source>Searching: %1</source>
+        <translation>იძებნება: %1</translation>
     </message>
 </context>
 <context>
@@ -4623,6 +5102,10 @@ Use ';' to split multiple entries. Can use wildcard '*'.</source>
     <message>
         <source>Blocked opening RSS article URL. Only http:// and https:// links can be opened.</source>
         <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Details</source>
+        <translation>დეტალები</translation>
     </message>
 </context>
 <context>
@@ -4900,6 +5383,10 @@ Supports the formats: S01E01, 1x1, 2017.12.31 and 31.12.2017 (Date formats also 
         <source>Import</source>
         <translation type="unfinished" />
     </message>
+    <message>
+        <source>Don&apos;t create subfolder</source>
+        <translation>ქვესაქაღალდის არშექმნა</translation>
+    </message>
 </context>
 <context>
     <name>TrackerFiltersList</name>
@@ -5089,6 +5576,26 @@ Supports the formats: S01E01, 1x1, 2017.12.31 and 31.12.2017 (Date formats also 
         <source>Choose a log level...</source>
         <translation type="unfinished" />
     </message>
+    <message>
+        <source>Export...</source>
+        <translation>ექსპორტი...</translation>
+    </message>
+    <message>
+        <source>Filter activity</source>
+        <translation>აქტივობის გაფილტვრა</translation>
+    </message>
+    <message>
+        <source>Result:</source>
+        <translation>შედეგი:</translation>
+    </message>
+    <message>
+        <source>User:</source>
+        <translation>მომხმარებელი:</translation>
+    </message>
+    <message>
+        <source>WebUI Activity</source>
+        <translation>WebUI-ის აქტივობა</translation>
+    </message>
 </context>
 <context>
     <name>TrackersFilterWidget</name>
@@ -5158,6 +5665,14 @@ Supports the formats: S01E01, 1x1, 2017.12.31 and 31.12.2017 (Date formats also 
     <message>
         <source>Torrent share limits</source>
         <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Torrent share limits</source>
+        <translation>ტორენტის გაზიარების შეზღუდვები</translation>
+    </message>
+    <message>
+        <source>Your role saves torrents in the default folders.</source>
+        <translation>თქვენი როლი ტორენტებს ინახავს ნაგულისხმევ საქაღალდეებში.</translation>
     </message>
 </context>
 <context>
@@ -5257,6 +5772,14 @@ Supports the formats: S01E01, 1x1, 2017.12.31 and 31.12.2017 (Date formats also 
     <message>
         <source>Invalid Username or Password.</source>
         <translation>არასწორი მომხმარებლის სახელი ან პაროლი.</translation>
+    </message>
+    <message>
+        <source>A kettle is a group of hawks soaring together.</source>
+        <translation>Kettle არის ერთად მოლივლივე ქორების ჯგუფი.</translation>
+    </message>
+    <message>
+        <source>Sign in</source>
+        <translation>შესვლა</translation>
     </message>
 </context>
 <context>
@@ -5465,6 +5988,10 @@ Supports the formats: S01E01, 1x1, 2017.12.31 and 31.12.2017 (Date formats also 
         <source>If checked, filenames starting with a period punctuation mark `.` will not be added to the created torrent.</source>
         <translation type="unfinished" />
     </message>
+    <message>
+        <source>Optimize alignment</source>
+        <translation>სწორების ოპტიმიზაცია</translation>
+    </message>
 </context>
 <context>
     <name>DownloadFromURLDialog</name>
@@ -5575,6 +6102,10 @@ Supports the formats: S01E01, 1x1, 2017.12.31 and 31.12.2017 (Date formats also 
         <source>Failed to set speed limits</source>
         <translation type="unfinished" />
     </message>
+    <message>
+        <source>Speed limits</source>
+        <translation>სიჩქარის ლიმიტები</translation>
+    </message>
 </context>
 <context>
     <name>ListWidget</name>
@@ -5585,6 +6116,10 @@ Supports the formats: S01E01, 1x1, 2017.12.31 and 31.12.2017 (Date formats also 
     <message>
         <source>Resize</source>
         <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Reset Auto Width</source>
+        <translation>ავტომატური სიგანის დაბრუნება</translation>
     </message>
 </context>
 <context>
@@ -5715,6 +6250,42 @@ Supports the formats: S01E01, 1x1, 2017.12.31 and 31.12.2017 (Date formats also 
         <source>Remove torrent</source>
         <translation type="unfinished" />
     </message>
+    <message>
+        <source>Action when the limit is reached:</source>
+        <translation>ქმედება ლიმიტის მიღწევისას:</translation>
+    </message>
+    <message>
+        <source>Default (%1)</source>
+        <translation>ნაგულისხმევი (%1)</translation>
+    </message>
+    <message>
+        <source>From category</source>
+        <translation>კატეგორიიდან</translation>
+    </message>
+    <message>
+        <source>From category (%1)</source>
+        <translation>კატეგორიიდან (%1)</translation>
+    </message>
+    <message>
+        <source>Inactive seeding time:</source>
+        <translation>არააქტიური სიდინგის დრო:</translation>
+    </message>
+    <message>
+        <source>Ratio:</source>
+        <translation>პროპორციები:</translation>
+    </message>
+    <message>
+        <source>Seeding time:</source>
+        <translation>სიდინგის დრო:</translation>
+    </message>
+    <message>
+        <source>Set to</source>
+        <translation>გაგზავნის მიმღები</translation>
+    </message>
+    <message>
+        <source>Unlimited</source>
+        <translation>შეუზღუდავი</translation>
+    </message>
 </context>
 <context>
     <name>TorrentContent</name>
@@ -5725,6 +6296,208 @@ Supports the formats: S01E01, 1x1, 2017.12.31 and 31.12.2017 (Date formats also 
     <message>
         <source>Not available for folders</source>
         <translation type="unfinished" />
+    </message>
+</context>
+<context>
+    <name>UserAccounts</name>
+    <message>
+        <source>(this browser)</source>
+        <translation>(ეს ბრაუზერი)</translation>
+    </message>
+    <message>
+        <source>A role decides what its users are allowed to do.</source>
+        <translation>როლი განსაზღვრავს, რისი გაკეთება შეუძლიათ მის მომხმარებლებს.</translation>
+    </message>
+    <message>
+        <source>Add Role</source>
+        <translation>როლის დამატება</translation>
+    </message>
+    <message>
+        <source>Add Role...</source>
+        <translation>როლის დამატება...</translation>
+    </message>
+    <message>
+        <source>Add User</source>
+        <translation>მომხმარებლის დამატება</translation>
+    </message>
+    <message>
+        <source>Add User...</source>
+        <translation>მომხმარებლის დამატება...</translation>
+    </message>
+    <message>
+        <source>Are you sure you want to remove the role &apos;%1&apos;?</source>
+        <translation>ნამდვილად გსურთ როლის „%1“ წაშლა?</translation>
+    </message>
+    <message>
+        <source>Are you sure you want to remove the user &apos;%1&apos;?</source>
+        <translation>ნამდვილად გსურთ მომხმარებლის „%1“ წაშლა?</translation>
+    </message>
+    <message>
+        <source>At least %1 characters</source>
+        <translation>მინიმუმ %1 სიმბოლო</translation>
+    </message>
+    <message>
+        <source>Browser</source>
+        <translation>ბრაუზერი</translation>
+    </message>
+    <message>
+        <source>Browsers and devices where someone is logged in with a user account.</source>
+        <translation>ბრაუზერები და მოწყობილობები, სადაც ვიღაც მომხმარებლის ანგარიშით არის შესული.</translation>
+    </message>
+    <message>
+        <source>Change Password</source>
+        <translation>პაროლის შეცვლა</translation>
+    </message>
+    <message>
+        <source>Confirm password:</source>
+        <translation>პაროლის დადასტურება:</translation>
+    </message>
+    <message>
+        <source>Created</source>
+        <translation>შეიქმნა</translation>
+    </message>
+    <message>
+        <source>Current password:</source>
+        <translation>მიმდინარე პაროლი:</translation>
+    </message>
+    <message>
+        <source>Description</source>
+        <translation>აღწერა</translation>
+    </message>
+    <message>
+        <source>Description:</source>
+        <translation>აღწერა:</translation>
+    </message>
+    <message>
+        <source>Disable</source>
+        <translation>გათიშვა</translation>
+    </message>
+    <message>
+        <source>Disable this account</source>
+        <translation>ამ ანგარიშის გათიშვა</translation>
+    </message>
+    <message>
+        <source>Edit Role</source>
+        <translation>როლის რედაქტირება</translation>
+    </message>
+    <message>
+        <source>Edit User</source>
+        <translation>მომხმარებლის რედაქტირება</translation>
+    </message>
+    <message>
+        <source>Edit...</source>
+        <translation>რედაქტირება...</translation>
+    </message>
+    <message>
+        <source>Enable</source>
+        <translation>ჩართვა</translation>
+    </message>
+    <message>
+        <source>Enter a role name.</source>
+        <translation>შეიყვანეთ როლის სახელი.</translation>
+    </message>
+    <message>
+        <source>Enter a username.</source>
+        <translation>შეიყვანეთ მომხმარებლის სახელი.</translation>
+    </message>
+    <message>
+        <source>Expires</source>
+        <translation>ვადა გასდის</translation>
+    </message>
+    <message>
+        <source>Gives control over the PC or qBittorrent itself</source>
+        <translation>იძლევა კომპიუტერის ან თვით qBittorrent-ის კონტროლს</translation>
+    </message>
+    <message>
+        <source>Last active</source>
+        <translation>ბოლო აქტივობა</translation>
+    </message>
+    <message>
+        <source>Last login</source>
+        <translation>ბოლო შესვლა</translation>
+    </message>
+    <message>
+        <source>Leave empty to keep the current password</source>
+        <translation>დატოვეთ ცარიელი მიმდინარე პაროლის შესანარჩუნებლად</translation>
+    </message>
+    <message>
+        <source>Log Out</source>
+        <translation>გასვლა</translation>
+    </message>
+    <message>
+        <source>Log Out Everywhere</source>
+        <translation>გასვლა ყველგან</translation>
+    </message>
+    <message>
+        <source>Logged In</source>
+        <translation>შესულები</translation>
+    </message>
+    <message>
+        <source>Logged in</source>
+        <translation>შესვლის დრო</translation>
+    </message>
+    <message>
+        <source>New password:</source>
+        <translation>ახალი პაროლი:</translation>
+    </message>
+    <message>
+        <source>No accounts yet, so everyone still uses the shared WebUI login. Add an Admin account first.</source>
+        <translation>ანგარიშები ჯერ არ არის, ამიტომ ყველა ჯერ კიდევ WebUI-ის საერთო შესვლას იყენებს. ჯერ დაამატეთ ადმინისტრატორის ანგარიში.</translation>
+    </message>
+    <message>
+        <source>People who can log in to the WebUI with their own username and password.</source>
+        <translation>ადამიანები, რომლებსაც შეუძლიათ WebUI-ში შესვლა საკუთარი მომხმარებლის სახელითა და პაროლით.</translation>
+    </message>
+    <message>
+        <source>Permissions</source>
+        <translation>უფლებები</translation>
+    </message>
+    <message>
+        <source>Role</source>
+        <translation>როლი</translation>
+    </message>
+    <message>
+        <source>Role:</source>
+        <translation>როლი:</translation>
+    </message>
+    <message>
+        <source>Roles</source>
+        <translation>როლები</translation>
+    </message>
+    <message>
+        <source>The password must be at least %1 characters long.</source>
+        <translation>პაროლი უნდა იყოს მინიმუმ %1 სიმბოლო.</translation>
+    </message>
+    <message>
+        <source>The passwords don&apos;t match.</source>
+        <translation>პაროლები არ ემთხვევა.</translation>
+    </message>
+    <message>
+        <source>Users</source>
+        <translation>მომხმარებლები</translation>
+    </message>
+    <message>
+        <source>Your password was changed. Other browsers and devices where you were logged in have been logged out.</source>
+        <translation>თქვენი პაროლი შეიცვალა. სხვა ბრაუზერებიდან და მოწყობილობებიდან, სადაც შესული იყავით, გამოხვედით.</translation>
+    </message>
+</context>
+<context>
+    <name>WebUIActivity</name>
+    <message>
+        <source>Action</source>
+        <translation>მოქმედება</translation>
+    </message>
+    <message>
+        <source>Result</source>
+        <translation>შედეგი</translation>
+    </message>
+    <message>
+        <source>Role</source>
+        <translation>როლი</translation>
+    </message>
+    <message>
+        <source>Time</source>
+        <translation>დრო</translation>
     </message>
 </context>
 </TS>

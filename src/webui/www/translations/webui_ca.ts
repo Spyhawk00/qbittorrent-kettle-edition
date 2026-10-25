@@ -227,6 +227,85 @@ The piece hash will be checked when it is requested for the first time by a peer
         <source>%1 needed · %2 free</source>
         <translation type="unfinished" />
     </message>
+    <message>
+        <source>Don&apos;t create subfolder</source>
+        <translation>No creïs una subcarpeta</translation>
+    </message>
+    <message>
+        <source>Never show again</source>
+        <translation>No ho tornis a mostrar.</translation>
+    </message>
+    <message>
+        <source>Select None</source>
+        <translation>No seleccionis res</translation>
+    </message>
+    <message>
+        <source>Torrent options</source>
+        <translation>Opcions del torrent</translation>
+    </message>
+    <message>
+        <source>Your role saves torrents in the default folders.</source>
+        <translation>El vostre rol desa els torrents a les carpetes per defecte.</translation>
+    </message>
+</context>
+<context>
+    <name>AdvancedSettings</name>
+    <message>
+        <source>General</source>
+        <translation>General</translation>
+    </message>
+    <message>
+        <source>Network</source>
+        <translation>Xarxa</translation>
+    </message>
+    <message>
+        <source>Storage</source>
+        <translation>Emmagatzematge</translation>
+    </message>
+    <message>
+        <source>Peers and trackers</source>
+        <translation>Clients i rastrejadors</translation>
+    </message>
+    <message>
+        <source>Program behavior</source>
+        <translation>Comportament del programa</translation>
+    </message>
+    <message>
+        <source>Display and notifications</source>
+        <translation>Pantalla i notificacions</translation>
+    </message>
+    <message>
+        <source>Network connection</source>
+        <translation>Connexió de xarxa</translation>
+    </message>
+    <message>
+        <source>Security and privacy</source>
+        <translation>Seguretat i privadesa</translation>
+    </message>
+    <message>
+        <source>Connection tuning</source>
+        <translation>Ajust de la connexió</translation>
+    </message>
+    <message>
+        <source>Saving and torrent files</source>
+        <translation>Desament i fitxers de torrents</translation>
+    </message>
+    <message>
+        <source>Disk and memory</source>
+        <translation>Disc i memòria</translation>
+    </message>
+    <message>
+        <source>Trackers</source>
+        <translation>Rastrejadors</translation>
+    </message>
+    <message>
+        <source>Peers and seeding</source>
+        <translation>Clients i sembra</translation>
+    </message>
+    <message>
+        <source>DHT and I2P</source>
+        <translation>DHT i I2P</translation>
+    </message>
 </context>
 <context>
     <name>CategoryFilterModel</name>
@@ -631,6 +710,14 @@ The piece hash will be checked when it is requested for the first time by a peer
         <source>More</source>
         <translation>Més</translation>
     </message>
+    <message>
+        <source>Change Password...</source>
+        <translation>Canvia la contrasenya...</translation>
+    </message>
+    <message>
+        <source>Signed in as</source>
+        <translation>Sessió iniciada com a</translation>
+    </message>
 </context>
 <context>
     <name>MainWindow</name>
@@ -937,6 +1024,34 @@ The piece hash will be checked when it is requested for the first time by a peer
     <message>
         <source>Resume Session</source>
         <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Global Speed Limits</source>
+        <translation>Límits de velocitat globals</translation>
+    </message>
+    <message>
+        <source>Pause Session</source>
+        <translation>Posa la sessió en pausa</translation>
+    </message>
+    <message>
+        <source>Pause session</source>
+        <translation>Posa la sessió en pausa</translation>
+    </message>
+    <message>
+        <source>Resume Session</source>
+        <translation>Reprèn la sessió</translation>
+    </message>
+    <message>
+        <source>Resume session</source>
+        <translation>Reprèn la sessió</translation>
+    </message>
+    <message>
+        <source>Your account can&apos;t add torrents.</source>
+        <translation>El vostre compte no pot afegir torrents.</translation>
+    </message>
+    <message>
+        <source>[PAUSED]</source>
+        <translation>[EN PAUSA]</translation>
     </message>
 </context>
 <context>
@@ -2535,6 +2650,190 @@ Useu ";" per separar les entrades. Podeu usar el comodí "*".</translation>
         <source>a@x.com;b@y.com,c@z.com - send two emails: the first to just a@x.com, the second to both b@y.com and c@z.com</source>
         <translation type="unfinished" />
     </message>
+    <message>
+        <source>0 means users are logged out after the session timeout.</source>
+        <translation>0 vol dir que els usuaris surten en acabar el temps de la sessió.</translation>
+    </message>
+    <message>
+        <source>Access</source>
+        <translation>Accés</translation>
+    </message>
+    <message>
+        <source>All the above</source>
+        <translation>Tots els anteriors</translation>
+    </message>
+    <message>
+        <source>Allow this login when user accounts exist</source>
+        <translation>Permet aquest inici de sessió quan hi ha comptes d&apos;usuari</translation>
+    </message>
+    <message>
+        <source>Also save search results</source>
+        <translation>Desa també els resultats de la cerca</translation>
+    </message>
+    <message>
+        <source>Also when addition is cancelled</source>
+        <translation>També quan hagi estat cancel·lada l&apos;addició.</translation>
+    </message>
+    <message>
+        <source>Any of the above</source>
+        <translation>Qualsevol de les anteriors</translation>
+    </message>
+    <message>
+        <source>Below normal</source>
+        <translation>Inferior a normal</translation>
+    </message>
+    <message>
+        <source>Changes to users, roles and logins apply at once.</source>
+        <translation>Els canvis a usuaris, rols i inicis de sessió s&apos;apliquen a l&apos;instant.</translation>
+    </message>
+    <message>
+        <source>Don&apos;t create subfolder</source>
+        <translation>No creïs una subcarpeta</translation>
+    </message>
+    <message>
+        <source>Example:</source>
+        <translation>Exemple:</translation>
+    </message>
+    <message>
+        <source>I2P (experimental)</source>
+        <translation>I2P (experimental)</translation>
+    </message>
+    <message>
+        <source>Keep WebUI activity log for:</source>
+        <translation>Conserva el registre d&apos;activitat de la WebUI durant:</translation>
+    </message>
+    <message>
+        <source>Keep unselected files in &quot;.unwanted&quot; folder</source>
+        <translation>Conserva els fitxers no seleccionats a la carpeta &quot;.unwanted&quot;.</translation>
+    </message>
+    <message>
+        <source>Keep users logged in for:</source>
+        <translation>Mantén els usuaris connectats durant:</translation>
+    </message>
+    <message>
+        <source>Language:</source>
+        <translation>Llengua:</translation>
+    </message>
+    <message>
+        <source>Lock account after consecutive failures:</source>
+        <translation>Bloqueja el compte després de fallades consecutives:</translation>
+    </message>
+    <message>
+        <source>Logins and Activity Log</source>
+        <translation>Inicis de sessió i registre d&apos;activitat</translation>
+    </message>
+    <message>
+        <source>Low</source>
+        <translation>Baix</translation>
+    </message>
+    <message>
+        <source>Maximum active checking torrents:</source>
+        <translation>Màxim de torrents de comprovació actius:</translation>
+    </message>
+    <message>
+        <source>Medium</source>
+        <translation>Mitjà</translation>
+    </message>
+    <message>
+        <source>No settings match</source>
+        <translation>Cap paràmetre coincideix</translation>
+    </message>
+    <message>
+        <source>Process memory priority:</source>
+        <translation>Prioritat de memòria del procés:</translation>
+    </message>
+    <message>
+        <source>Save search tabs</source>
+        <translation>Desa les pestanyes de cerca</translation>
+    </message>
+    <message>
+        <source>Search UI</source>
+        <translation>Cerca d&apos;IU</translation>
+    </message>
+    <message>
+        <source>Search settings</source>
+        <translation>Cerca a la configuració</translation>
+    </message>
+    <message>
+        <source>Service:</source>
+        <translation>Servei:</translation>
+    </message>
+    <message>
+        <source>Show console window</source>
+        <translation>Mostra la finestra de la consola</translation>
+    </message>
+    <message>
+        <source>Show the window when adding a torrent</source>
+        <translation>Mostra la finestra en afegir un torrent</translation>
+    </message>
+    <message>
+        <source>Specify reverse proxy IPs (or subnets, e.g. 0.0.0.0/24) in order to use forwarded client address (X-Forwarded-For header). Use &apos;;&apos; to split multiple entries.</source>
+        <translation>Especifiqueu les adreces IP del servidor invers (o subxarxes, per exemple, 0.0.0.0/24) per usar l&apos;adreça de client reenviada (capçalera X-Forwarded-For). Useu &quot;;&quot; per dividir diverses entrades.</translation>
+    </message>
+    <message>
+        <source>Status bar and log</source>
+        <translation>Barra d&apos;estat i registre</translation>
+    </message>
+    <message>
+        <source>The WebUI activity log can be kept for 1 to 3650 days.</source>
+        <translation>El registre d&apos;activitat de la WebUI es pot conservar d&apos;1 a 3650 dies.</translation>
+    </message>
+    <message>
+        <source>The settings below apply with OK or Apply.</source>
+        <translation>La configuració de sota s&apos;aplica amb D&apos;acord o Aplica.</translation>
+    </message>
+    <message>
+        <source>Tip: Encapsulate parameter with quotation marks to avoid text being cut off at whitespace (e.g., &quot;%N&quot;)</source>
+        <translation>Tip: emmarqueu el paràmetre amb cometes per evitar que el text es talli a l&apos;espai en blanc (p.e., &quot;%N&quot;)</translation>
+    </message>
+    <message>
+        <source>Transfer List</source>
+        <translation>Llista de transferència</translation>
+    </message>
+    <message>
+        <source>Until the first user account is created, this login always works.</source>
+        <translation>Fins que es creï el primer compte d&apos;usuari, aquest inici de sessió sempre funciona.</translation>
+    </message>
+    <message>
+        <source>User Accounts</source>
+        <translation>Comptes d&apos;usuari</translation>
+    </message>
+    <message>
+        <source>Users can be kept logged in for 0 to 365 days.</source>
+        <translation>Es pot mantenir els usuaris connectats de 0 a 365 dies.</translation>
+    </message>
+    <message>
+        <source>Very low</source>
+        <translation>Molt baix</translation>
+    </message>
+    <message>
+        <source>Warning! Data loss possible!</source>
+        <translation>Atenció! Es poden perdre dades!</translation>
+    </message>
+    <message>
+        <source>When Default Save/Incomplete Path changed:</source>
+        <translation>Quan s&apos;ha canviat el camí on desar-ho / incomplet per defecte:</translation>
+    </message>
+    <message>
+        <source>Whitelist for filtering HTTP Host header values.
+In order to defend against DNS rebinding attack,
+you should put in domain names used by WebUI server.
+
+Use &apos;;&apos; to split multiple entries. Can use wildcard &apos;*&apos;.</source>
+        <translation>Llista blanca per a filtrar els valors de la capçalera de l&apos;amfitrió HTTP.
+Per tal de defensar-se contra atacs de revinculació de DNS, hauríeu
+d&apos;introduir noms de domini usats pel servidor d&apos;interfície d&apos;usuari de xarxa.
+
+Useu &quot;;&quot; per separar les entrades. Podeu usar el comodí &quot;*&quot;.</translation>
+    </message>
+    <message>
+        <source>You changed the address, port or HTTPS setting of the WebUI. Saving moves the WebUI, so Options will save, close and reload the page, the same as OK. If the page doesn&apos;t come back, open the WebUI at its new address.\n\nSave anyway?</source>
+        <translation>Heu canviat l&apos;adreça, el port o l&apos;ajust HTTPS de la WebUI. En desar, la WebUI es mou, així que Opcions desarà, tancarà i recarregarà la pàgina, igual que D&apos;acord. Si la pàgina no torna, obriu la WebUI a la nova adreça.\n\nDesar igualment?</translation>
+    </message>
+    <message>
+        <source>lock for:</source>
+        <translation>bloqueja durant:</translation>
+    </message>
 </context>
 <context>
     <name>PeerListWidget</name>
@@ -2963,6 +3262,10 @@ Useu ";" per separar les entrades. Podeu usar el comodí "*".</translation>
         <source>Copy download URL</source>
         <translation type="unfinished" />
     </message>
+    <message>
+        <source>Copy path</source>
+        <translation>Copia&apos;n el camí</translation>
+    </message>
 </context>
 <context>
     <name>ScanFoldersModel</name>
@@ -3075,6 +3378,142 @@ Useu ";" per separar les entrades. Podeu usar el comodí "*".</translation>
     <message>
         <source>The time it takes from receiving a request from a peer until we're sending the response back on the socket</source>
         <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Activity</source>
+        <translation>Activitat</translation>
+    </message>
+    <message>
+        <source>All time</source>
+        <translation>Tot el temps</translation>
+    </message>
+    <message>
+        <source>Before tracking began</source>
+        <translation>Abans de començar el seguiment</translation>
+    </message>
+    <message>
+        <source>By month</source>
+        <translation>Per mes</translation>
+    </message>
+    <message>
+        <source>Counts the requests that added a download. Apps without a login, such as Sonarr and Radarr, are shown as (localhost). Downloads added in the desktop window are not counted.</source>
+        <translation>Compta les peticions que han afegit una baixada. Les aplicacions sense inici de sessió, com Sonarr i Radarr, es mostren com (localhost). Les baixades afegides a la finestra d&apos;escriptori no es compten.</translation>
+    </message>
+    <message>
+        <source>Current speed:</source>
+        <translation>Velocitat actual:</translation>
+    </message>
+    <message>
+        <source>DHT nodes:</source>
+        <translation>Nodes DHT:</translation>
+    </message>
+    <message>
+        <source>Data discarded this session:</source>
+        <translation>Dades descartades en aquesta sessió:</translation>
+    </message>
+    <message>
+        <source>Disk</source>
+        <translation>Disc</translation>
+    </message>
+    <message>
+        <source>History</source>
+        <translation>Historial</translation>
+    </message>
+    <message>
+        <source>Last 12 months</source>
+        <translation>Darrers 12 mesos</translation>
+    </message>
+    <message>
+        <source>Last 7 days</source>
+        <translation>Darrers 7 dies</translation>
+    </message>
+    <message>
+        <source>Last month</source>
+        <translation>El mes passat</translation>
+    </message>
+    <message>
+        <source>Month</source>
+        <translation>Mes</translation>
+    </message>
+    <message>
+        <source>Nothing added yet</source>
+        <translation>Encara no s&apos;ha afegit res</translation>
+    </message>
+    <message>
+        <source>Off</source>
+        <translation>Desactivat</translation>
+    </message>
+    <message>
+        <source>Overview</source>
+        <translation>Resum</translation>
+    </message>
+    <message>
+        <source>Peers waiting on disk reads:</source>
+        <translation>Clients esperant lectures del disc:</translation>
+    </message>
+    <message>
+        <source>Peers waiting on disk writes:</source>
+        <translation>Clients esperant escriptures al disc:</translation>
+    </message>
+    <message>
+        <source>Period</source>
+        <translation>Període</translation>
+    </message>
+    <message>
+        <source>Request latency:</source>
+        <translation>Latència de la petició:</translation>
+    </message>
+    <message>
+        <source>Running for:</source>
+        <translation>En marxa des de fa:</translation>
+    </message>
+    <message>
+        <source>Share ratio</source>
+        <translation>Ràtio de compartició</translation>
+    </message>
+    <message>
+        <source>Share ratio:</source>
+        <translation>Ràtio de compartició:</translation>
+    </message>
+    <message>
+        <source>Technical</source>
+        <translation>Tècnic</translation>
+    </message>
+    <message>
+        <source>This month</source>
+        <translation>Aquest mes</translation>
+    </message>
+    <message>
+        <source>This session</source>
+        <translation>Aquesta sessió</translation>
+    </message>
+    <message>
+        <source>Today</source>
+        <translation>Avui</translation>
+    </message>
+    <message>
+        <source>Torrents downloading:</source>
+        <translation>Torrents baixant:</translation>
+    </message>
+    <message>
+        <source>Torrents seeding:</source>
+        <translation>Torrents sembrant:</translation>
+    </message>
+    <message>
+        <source>Torrents stopped:</source>
+        <translation>Torrents aturats:</translation>
+    </message>
+    <message>
+        <source>Torrents with errors:</source>
+        <translation>Torrents amb errors:</translation>
+    </message>
+    <message>
+        <source>Tracking since:</source>
+        <translation>Seguiment des de:</translation>
+    </message>
+    <message>
+        <source>WebUI downloads added, this month</source>
+        <translation>Baixades afegides per la WebUI, aquest mes</translation>
     </message>
 </context>
 <context>
@@ -3862,6 +4301,10 @@ Useu ";" per separar les entrades. Podeu usar el comodí "*".</translation>
         <source>Content Path</source>
         <translation>Camí del contingut</translation>
     </message>
+    <message>
+        <source>Remove all tags from selected torrents?</source>
+        <translation>Voleu suprimir totes les etiquetes dels torrents seleccionats?</translation>
+    </message>
 </context>
 <context>
     <name>UpDownRatioDialog</name>
@@ -3917,6 +4360,14 @@ Useu ";" per separar les entrades. Podeu usar el comodí "*".</translation>
         <source>Action when the limit is reached</source>
         <translation>Acció quan s'assoleix el límit</translation>
     </message>
+    <message>
+        <source>Match all the limits</source>
+        <translation>Coincideix amb tots els límits</translation>
+    </message>
+    <message>
+        <source>Match any limit</source>
+        <translation>Coincideix amb qualsevol límit</translation>
+    </message>
 </context>
 <context>
     <name>about</name>
@@ -3934,6 +4385,10 @@ Useu ";" per separar les entrades. Podeu usar el comodí "*".</translation>
     <message>
         <source>Remove tracker</source>
         <translation>Suprimeix el rastrejador</translation>
+    </message>
+    <message>
+        <source>This choice is remembered for the next removal.</source>
+        <translation>Aquesta elecció es recordarà per a la propera eliminació.</translation>
     </message>
 </context>
 <context>
@@ -4147,6 +4602,34 @@ Useu ";" per separar les entrades. Podeu usar el comodí "*".</translation>
         <source>Select plugins</source>
         <translation>Seleccioneu els connectors</translation>
     </message>
+    <message>
+        <source>Category to search in</source>
+        <translation>Categoria on cercar</translation>
+    </message>
+    <message>
+        <source>Close the selected search</source>
+        <translation>Tanca la cerca seleccionada</translation>
+    </message>
+    <message>
+        <source>Empty search pattern</source>
+        <translation>Patró de recerca buit</translation>
+    </message>
+    <message>
+        <source>Search engines to use</source>
+        <translation>Motors de cerca a utilitzar</translation>
+    </message>
+    <message>
+        <source>Search for torrents...</source>
+        <translation>Cerca torrents...</translation>
+    </message>
+    <message>
+        <source>Searches</source>
+        <translation>Cerques</translation>
+    </message>
+    <message>
+        <source>Type a search above and press Enter.</source>
+        <translation>Escriviu una cerca a dalt i premeu Retorn.</translation>
+    </message>
 </context>
 <context>
     <name>PluginSelectDlg</name>
@@ -4185,6 +4668,10 @@ Useu ";" per separar les entrades. Podeu usar el comodí "*".</translation>
     <message>
         <source>Search plugins</source>
         <translation>Connectors de cerca</translation>
+    </message>
+    <message>
+        <source>Warning: Be sure to comply with your country&apos;s copyright laws when downloading torrents from any of these search engines.</source>
+        <translation>Avís: assegureu-vos que compliu les lleis de dret de còpia del vostre país quan baixeu torrents des de qualsevol d&apos;aquests motors de cerca.</translation>
     </message>
 </context>
 <context>
@@ -4408,6 +4895,30 @@ Useu ";" per separar les entrades. Podeu usar el comodí "*".</translation>
         <source>qBittorrent icon</source>
         <translation>Icona del qBittorrent</translation>
     </message>
+    <message>
+        <source>Based on:</source>
+        <translation>Basada en:</translation>
+    </message>
+    <message>
+        <source>Edition version:</source>
+        <translation>Versió de l&apos;edició:</translation>
+    </message>
+    <message>
+        <source>Kettle Edition is a personal build of qBittorrent that adds user accounts with roles for the WebUI and the desktop app, an activity log, and an installable WebUI with a phone layout. A kettle is a group of hawks soaring together. This is an unofficial build, not affiliated with the qBittorrent project.</source>
+        <translation>Kettle Edition és una versió personal de qBittorrent que afegeix comptes d&apos;usuari amb rols per a la WebUI i l&apos;aplicació d&apos;escriptori, un registre d&apos;activitat i una WebUI instal·lable amb disseny per a telèfon. Un kettle és un grup de falcons planejant junts. Aquesta és una versió no oficial, sense relació amb el projecte qBittorrent.</translation>
+    </message>
+    <message>
+        <source>Maintainer:</source>
+        <translation>Mantenidor:</translation>
+    </message>
+    <message>
+        <source>This edition</source>
+        <translation>Aquesta edició</translation>
+    </message>
+    <message>
+        <source>qBittorrent project:</source>
+        <translation>Projecte qBittorrent:</translation>
+    </message>
 </context>
 <context>
     <name>OptionDialog</name>
@@ -4509,6 +5020,46 @@ Useu ";" per separar les entrades. Podeu usar el comodí "*".</translation>
     <message>
         <source>Open shared download window</source>
         <translation type="unfinished" />
+    </message>
+    <message>
+        <source>%1 of %2 shown</source>
+        <translation>Es mostren %1 de %2</translation>
+    </message>
+    <message>
+        <source>%1 of %2 shown (%3 hidden)</source>
+        <translation>Es mostren %1 de %2 (%3 ocults)</translation>
+    </message>
+    <message>
+        <source>Close all searches</source>
+        <translation>Tanca totes les cerques</translation>
+    </message>
+    <message>
+        <source>Close search</source>
+        <translation>Tanca la cerca</translation>
+    </message>
+    <message>
+        <source>Filter search results...</source>
+        <translation>Filtra els resultats de la cerca...</translation>
+    </message>
+    <message>
+        <source>Finished: %1</source>
+        <translation>Acabat: %1</translation>
+    </message>
+    <message>
+        <source>Refresh search</source>
+        <translation>Actualitza la cerca</translation>
+    </message>
+    <message>
+        <source>Search aborted: %1</source>
+        <translation>Cerca interrompuda: %1</translation>
+    </message>
+    <message>
+        <source>Search returned no results</source>
+        <translation>La cerca no ha trobat cap resultat.</translation>
+    </message>
+    <message>
+        <source>Searching: %1</source>
+        <translation>Cercant: %1</translation>
     </message>
 </context>
 <context>
@@ -4647,6 +5198,10 @@ Useu ";" per separar les entrades. Podeu usar el comodí "*".</translation>
     <message>
         <source>Blocked opening RSS article URL. Only http:// and https:// links can be opened.</source>
         <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Details</source>
+        <translation>Detalls</translation>
     </message>
 </context>
 <context>
@@ -4925,6 +5480,10 @@ Admet els formats S01E01, 1x1, 2017.12.31 i 31.12.2017 (Els formats de data tamb
         <source>Import</source>
         <translation type="unfinished" />
     </message>
+    <message>
+        <source>Don&apos;t create subfolder</source>
+        <translation>No creïs una subcarpeta</translation>
+    </message>
 </context>
 <context>
     <name>TrackerFiltersList</name>
@@ -5114,6 +5673,26 @@ Admet els formats S01E01, 1x1, 2017.12.31 i 31.12.2017 (Els formats de data tamb
         <source>Choose a log level...</source>
         <translation>Trieu un nivell de registre...</translation>
     </message>
+    <message>
+        <source>Export...</source>
+        <translation>Exporta...</translation>
+    </message>
+    <message>
+        <source>Filter activity</source>
+        <translation>Filtra l&apos;activitat</translation>
+    </message>
+    <message>
+        <source>Result:</source>
+        <translation>Resultat:</translation>
+    </message>
+    <message>
+        <source>User:</source>
+        <translation>Usuari:</translation>
+    </message>
+    <message>
+        <source>WebUI Activity</source>
+        <translation>Activitat de la WebUI</translation>
+    </message>
 </context>
 <context>
     <name>TrackersFilterWidget</name>
@@ -5183,6 +5762,14 @@ Admet els formats S01E01, 1x1, 2017.12.31 i 31.12.2017 (Els formats de data tamb
     <message>
         <source>Torrent share limits</source>
         <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Torrent share limits</source>
+        <translation>Límits de compartició del torrent</translation>
+    </message>
+    <message>
+        <source>Your role saves torrents in the default folders.</source>
+        <translation>El vostre rol desa els torrents a les carpetes per defecte.</translation>
     </message>
 </context>
 <context>
@@ -5282,6 +5869,14 @@ Admet els formats S01E01, 1x1, 2017.12.31 i 31.12.2017 (Els formats de data tamb
     <message>
         <source>Invalid Username or Password.</source>
         <translation>Nom d'usuari o contrasenya incorrectes.</translation>
+    </message>
+    <message>
+        <source>A kettle is a group of hawks soaring together.</source>
+        <translation>Un kettle és un grup de falcons planejant junts.</translation>
+    </message>
+    <message>
+        <source>Sign in</source>
+        <translation>Inicia la sessió</translation>
     </message>
 </context>
 <context>
@@ -5516,6 +6111,22 @@ Admet els formats S01E01, 1x1, 2017.12.31 i 31.12.2017 (Els formats de data tamb
         <source>If checked, filenames starting with a period punctuation mark `.` will not be added to the created torrent.</source>
         <translation type="unfinished" />
     </message>
+    <message>
+        <source>Align to piece boundary for files larger than:</source>
+        <translation>Alinea al límit del tros per a fitxers superiors a:</translation>
+    </message>
+    <message>
+        <source>Optimize alignment</source>
+        <translation>Optimitza l&apos;alineació</translation>
+    </message>
+    <message>
+        <source>Private torrent (Won&apos;t distribute on DHT network)</source>
+        <translation>Torrent privat (no es distribuirà per xarxa DHT)</translation>
+    </message>
+    <message>
+        <source>Start seeding immediately</source>
+        <translation>Inicia la sembra immediatament</translation>
+    </message>
 </context>
 <context>
     <name>DownloadFromURLDialog</name>
@@ -5626,6 +6237,10 @@ Admet els formats S01E01, 1x1, 2017.12.31 i 31.12.2017 (Els formats de data tamb
         <source>Failed to set speed limits</source>
         <translation type="unfinished" />
     </message>
+    <message>
+        <source>Speed limits</source>
+        <translation>Límits de velocitat</translation>
+    </message>
 </context>
 <context>
     <name>ListWidget</name>
@@ -5636,6 +6251,10 @@ Admet els formats S01E01, 1x1, 2017.12.31 i 31.12.2017 (Els formats de data tamb
     <message>
         <source>Resize</source>
         <translation>Canvia'n la mida</translation>
+    </message>
+    <message>
+        <source>Reset Auto Width</source>
+        <translation>Restableix l&apos;amplada automàtica</translation>
     </message>
 </context>
 <context>
@@ -5651,6 +6270,10 @@ Admet els formats S01E01, 1x1, 2017.12.31 i 31.12.2017 (Els formats de data tamb
     <message>
         <source>Rotate this API key? The current key will immediately stop working and a new key will be generated.</source>
         <translation>Voleu girar aquesta clau d'API? La clau actual deixarà de funcionar immediatament i se'n generarà una de nova.</translation>
+    </message>
+    <message>
+        <source>Generate an API key? This key can be used to interact with qBittorrent&apos;s API.</source>
+        <translation>Voleu generar una clau d&apos;API? Aquesta clau es pot usar per interactuar amb l&apos;API de qBittorrent.</translation>
     </message>
 </context>
 <context>
@@ -5766,6 +6389,54 @@ Admet els formats S01E01, 1x1, 2017.12.31 i 31.12.2017 (Els formats de data tamb
         <source>Remove torrent</source>
         <translation type="unfinished" />
     </message>
+    <message>
+        <source>Action when the limit is reached:</source>
+        <translation>Acció quan s&apos;arriba al límit:</translation>
+    </message>
+    <message>
+        <source>Default (%1)</source>
+        <translation>Per defecte (%1)</translation>
+    </message>
+    <message>
+        <source>From category</source>
+        <translation>Des de la categoria</translation>
+    </message>
+    <message>
+        <source>From category (%1)</source>
+        <translation>Des de la categoria (%1)</translation>
+    </message>
+    <message>
+        <source>Inactive seeding time:</source>
+        <translation>Temps de sembra inactiu:</translation>
+    </message>
+    <message>
+        <source>Match all the limits</source>
+        <translation>Coincideix amb tots els límits</translation>
+    </message>
+    <message>
+        <source>Match any limit</source>
+        <translation>Coincideix amb qualsevol límit</translation>
+    </message>
+    <message>
+        <source>Mode:</source>
+        <translation>Mode:</translation>
+    </message>
+    <message>
+        <source>Ratio:</source>
+        <translation>Ràtio</translation>
+    </message>
+    <message>
+        <source>Seeding time:</source>
+        <translation>Temps de sembra:</translation>
+    </message>
+    <message>
+        <source>Set to</source>
+        <translation>Establert a</translation>
+    </message>
+    <message>
+        <source>Unlimited</source>
+        <translation>Sense límit</translation>
+    </message>
 </context>
 <context>
     <name>TorrentContent</name>
@@ -5776,6 +6447,208 @@ Admet els formats S01E01, 1x1, 2017.12.31 i 31.12.2017 (Els formats de data tamb
     <message>
         <source>Not available for folders</source>
         <translation type="unfinished" />
+    </message>
+</context>
+<context>
+    <name>UserAccounts</name>
+    <message>
+        <source>(this browser)</source>
+        <translation>(aquest navegador)</translation>
+    </message>
+    <message>
+        <source>A role decides what its users are allowed to do.</source>
+        <translation>Un rol decideix què poden fer els seus usuaris.</translation>
+    </message>
+    <message>
+        <source>Add Role</source>
+        <translation>Afegeix un rol</translation>
+    </message>
+    <message>
+        <source>Add Role...</source>
+        <translation>Afegeix un rol...</translation>
+    </message>
+    <message>
+        <source>Add User</source>
+        <translation>Afegeix un usuari</translation>
+    </message>
+    <message>
+        <source>Add User...</source>
+        <translation>Afegeix un usuari...</translation>
+    </message>
+    <message>
+        <source>Are you sure you want to remove the role &apos;%1&apos;?</source>
+        <translation>Segur que voleu eliminar el rol «%1»?</translation>
+    </message>
+    <message>
+        <source>Are you sure you want to remove the user &apos;%1&apos;?</source>
+        <translation>Segur que voleu eliminar l&apos;usuari «%1»?</translation>
+    </message>
+    <message>
+        <source>At least %1 characters</source>
+        <translation>Almenys %1 caràcters</translation>
+    </message>
+    <message>
+        <source>Browser</source>
+        <translation>Navegador</translation>
+    </message>
+    <message>
+        <source>Browsers and devices where someone is logged in with a user account.</source>
+        <translation>Navegadors i dispositius on algú ha iniciat sessió amb un compte d&apos;usuari.</translation>
+    </message>
+    <message>
+        <source>Change Password</source>
+        <translation>Canvia la contrasenya</translation>
+    </message>
+    <message>
+        <source>Confirm password:</source>
+        <translation>Confirma la contrasenya:</translation>
+    </message>
+    <message>
+        <source>Created</source>
+        <translation>Creat</translation>
+    </message>
+    <message>
+        <source>Current password:</source>
+        <translation>Contrasenya actual:</translation>
+    </message>
+    <message>
+        <source>Description</source>
+        <translation>Descripció</translation>
+    </message>
+    <message>
+        <source>Description:</source>
+        <translation>Descripció:</translation>
+    </message>
+    <message>
+        <source>Disable</source>
+        <translation>Desactiva</translation>
+    </message>
+    <message>
+        <source>Disable this account</source>
+        <translation>Desactiva aquest compte</translation>
+    </message>
+    <message>
+        <source>Edit Role</source>
+        <translation>Edita el rol</translation>
+    </message>
+    <message>
+        <source>Edit User</source>
+        <translation>Edita l&apos;usuari</translation>
+    </message>
+    <message>
+        <source>Edit...</source>
+        <translation>Edita...</translation>
+    </message>
+    <message>
+        <source>Enable</source>
+        <translation>Activa</translation>
+    </message>
+    <message>
+        <source>Enter a role name.</source>
+        <translation>Introduïu un nom de rol.</translation>
+    </message>
+    <message>
+        <source>Enter a username.</source>
+        <translation>Introduïu un nom d&apos;usuari.</translation>
+    </message>
+    <message>
+        <source>Expires</source>
+        <translation>Caduca</translation>
+    </message>
+    <message>
+        <source>Gives control over the PC or qBittorrent itself</source>
+        <translation>Dóna control sobre el PC o sobre el mateix qBittorrent</translation>
+    </message>
+    <message>
+        <source>Last active</source>
+        <translation>Darrera activitat</translation>
+    </message>
+    <message>
+        <source>Last login</source>
+        <translation>Darrer inici de sessió</translation>
+    </message>
+    <message>
+        <source>Leave empty to keep the current password</source>
+        <translation>Deixeu-ho buit per mantenir la contrasenya actual</translation>
+    </message>
+    <message>
+        <source>Log Out</source>
+        <translation>Tanca la sessió</translation>
+    </message>
+    <message>
+        <source>Log Out Everywhere</source>
+        <translation>Tanca la sessió a tot arreu</translation>
+    </message>
+    <message>
+        <source>Logged In</source>
+        <translation>Sessions iniciades</translation>
+    </message>
+    <message>
+        <source>Logged in</source>
+        <translation>Sessió iniciada</translation>
+    </message>
+    <message>
+        <source>New password:</source>
+        <translation>Contrasenya nova:</translation>
+    </message>
+    <message>
+        <source>No accounts yet, so everyone still uses the shared WebUI login. Add an Admin account first.</source>
+        <translation>Encara no hi ha comptes, així que tothom fa servir encara l&apos;inici de sessió compartit de la WebUI. Afegiu primer un compte d&apos;administrador.</translation>
+    </message>
+    <message>
+        <source>People who can log in to the WebUI with their own username and password.</source>
+        <translation>Persones que poden iniciar sessió a la WebUI amb el seu propi nom d&apos;usuari i contrasenya.</translation>
+    </message>
+    <message>
+        <source>Permissions</source>
+        <translation>Permisos</translation>
+    </message>
+    <message>
+        <source>Role</source>
+        <translation>Rol</translation>
+    </message>
+    <message>
+        <source>Role:</source>
+        <translation>Rol:</translation>
+    </message>
+    <message>
+        <source>Roles</source>
+        <translation>Rols</translation>
+    </message>
+    <message>
+        <source>The password must be at least %1 characters long.</source>
+        <translation>La contrasenya ha de tenir almenys %1 caràcters.</translation>
+    </message>
+    <message>
+        <source>The passwords don&apos;t match.</source>
+        <translation>Les contrasenyes no coincideixen.</translation>
+    </message>
+    <message>
+        <source>Users</source>
+        <translation>Usuaris</translation>
+    </message>
+    <message>
+        <source>Your password was changed. Other browsers and devices where you were logged in have been logged out.</source>
+        <translation>S&apos;ha canviat la contrasenya. S&apos;ha tancat la sessió als altres navegadors i dispositius on estàveu connectat.</translation>
+    </message>
+</context>
+<context>
+    <name>WebUIActivity</name>
+    <message>
+        <source>Action</source>
+        <translation>Acció</translation>
+    </message>
+    <message>
+        <source>Result</source>
+        <translation>Resultat</translation>
+    </message>
+    <message>
+        <source>Role</source>
+        <translation>Rol</translation>
+    </message>
+    <message>
+        <source>Time</source>
+        <translation>Hora</translation>
     </message>
 </context>
 </TS>

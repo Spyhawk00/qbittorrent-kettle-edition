@@ -223,6 +223,81 @@ The piece hash will be checked when it is requested for the first time by a peer
         <source>%1 needed · %2 free</source>
         <translation type="unfinished" />
     </message>
+    <message>
+        <source>Don&apos;t create subfolder</source>
+        <translation>Ne krei subdosierujon</translation>
+    </message>
+    <message>
+        <source>Never show again</source>
+        <translation>Neniam remontri</translation>
+    </message>
+    <message>
+        <source>Select None</source>
+        <translation>Elekti neniujn</translation>
+    </message>
+    <message>
+        <source>Your role saves torrents in the default folders.</source>
+        <translation>Via rolo konservas torentojn en la defaŭltaj dosierujoj.</translation>
+    </message>
+</context>
+<context>
+    <name>AdvancedSettings</name>
+    <message>
+        <source>General</source>
+        <translation>Ĝenerala</translation>
+    </message>
+    <message>
+        <source>Network</source>
+        <translation>Reto</translation>
+    </message>
+    <message>
+        <source>Storage</source>
+        <translation>Konservado</translation>
+    </message>
+    <message>
+        <source>Peers and trackers</source>
+        <translation>Samtavolanoj kaj spuriloj</translation>
+    </message>
+    <message>
+        <source>Program behavior</source>
+        <translation>Konduto de la programo</translation>
+    </message>
+    <message>
+        <source>Display and notifications</source>
+        <translation>Montrado kaj sciigoj</translation>
+    </message>
+    <message>
+        <source>Network connection</source>
+        <translation>Reta konekto</translation>
+    </message>
+    <message>
+        <source>Security and privacy</source>
+        <translation>Sekureco kaj privateco</translation>
+    </message>
+    <message>
+        <source>Connection tuning</source>
+        <translation>Agordo de la konekto</translation>
+    </message>
+    <message>
+        <source>Saving and torrent files</source>
+        <translation>Konservado kaj torentdosieroj</translation>
+    </message>
+    <message>
+        <source>Disk and memory</source>
+        <translation>Disko kaj memoro</translation>
+    </message>
+    <message>
+        <source>Trackers</source>
+        <translation>Spuriloj</translation>
+    </message>
+    <message>
+        <source>Peers and seeding</source>
+        <translation>Samtavolanoj kaj semado</translation>
+    </message>
+    <message>
+        <source>DHT and I2P</source>
+        <translation>DHT kaj I2P</translation>
+    </message>
 </context>
 <context>
     <name>CategoryFilterModel</name>
@@ -623,6 +698,14 @@ The piece hash will be checked when it is requested for the first time by a peer
         <source>More</source>
         <translation>Pli</translation>
     </message>
+    <message>
+        <source>Change Password...</source>
+        <translation>Ŝanĝi pasvorton...</translation>
+    </message>
+    <message>
+        <source>Signed in as</source>
+        <translation>Ensalutinta kiel</translation>
+    </message>
 </context>
 <context>
     <name>MainWindow</name>
@@ -929,6 +1012,30 @@ The piece hash will be checked when it is requested for the first time by a peer
     <message>
         <source>Resume Session</source>
         <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Pause Session</source>
+        <translation>Paŭzigi seancon</translation>
+    </message>
+    <message>
+        <source>Pause session</source>
+        <translation>Paŭzigi seancon</translation>
+    </message>
+    <message>
+        <source>Resume Session</source>
+        <translation>Daŭrigi seancon</translation>
+    </message>
+    <message>
+        <source>Resume session</source>
+        <translation>Daŭrigi seancon</translation>
+    </message>
+    <message>
+        <source>Your account can&apos;t add torrents.</source>
+        <translation>Via konto ne povas aldoni torentojn.</translation>
+    </message>
+    <message>
+        <source>[PAUSED]</source>
+        <translation>[PAŬZITA]</translation>
     </message>
 </context>
 <context>
@@ -2507,6 +2614,130 @@ Use ';' to split multiple entries. Can use wildcard '*'.</source>
         <source>a@x.com;b@y.com,c@z.com - send two emails: the first to just a@x.com, the second to both b@y.com and c@z.com</source>
         <translation type="unfinished" />
     </message>
+    <message>
+        <source>0 means users are logged out after the session timeout.</source>
+        <translation>0 signifas, ke uzantoj elsalutas post la tempolimo de la seanco.</translation>
+    </message>
+    <message>
+        <source>Access</source>
+        <translation>Aliro</translation>
+    </message>
+    <message>
+        <source>Allow this login when user accounts exist</source>
+        <translation>Permesi ĉi tiun ensaluton kiam uzantkontoj ekzistas</translation>
+    </message>
+    <message>
+        <source>Also save search results</source>
+        <translation>Ankaŭ konservi serĉrezultojn</translation>
+    </message>
+    <message>
+        <source>Below normal</source>
+        <translation>Sub normala</translation>
+    </message>
+    <message>
+        <source>Changes to users, roles and logins apply at once.</source>
+        <translation>Ŝanĝoj de uzantoj, roloj kaj ensalutoj aplikiĝas tuj.</translation>
+    </message>
+    <message>
+        <source>Don&apos;t create subfolder</source>
+        <translation>Ne krei subdosierujon</translation>
+    </message>
+    <message>
+        <source>Keep WebUI activity log for:</source>
+        <translation>Konservi WebUI-agadan protokolon dum:</translation>
+    </message>
+    <message>
+        <source>Keep users logged in for:</source>
+        <translation>Teni uzantojn ensalutintaj dum:</translation>
+    </message>
+    <message>
+        <source>Language:</source>
+        <translation>Lingvo:</translation>
+    </message>
+    <message>
+        <source>Lock account after consecutive failures:</source>
+        <translation>Ŝlosi konton post sinsekvaj malsukcesoj:</translation>
+    </message>
+    <message>
+        <source>Logins and Activity Log</source>
+        <translation>Ensalutoj kaj agada protokolo</translation>
+    </message>
+    <message>
+        <source>Low</source>
+        <translation>Malalta</translation>
+    </message>
+    <message>
+        <source>Medium</source>
+        <translation>Meza</translation>
+    </message>
+    <message>
+        <source>No settings match</source>
+        <translation>Neniu agordo kongruas</translation>
+    </message>
+    <message>
+        <source>Process memory priority:</source>
+        <translation>Prioritato de procezmemoro:</translation>
+    </message>
+    <message>
+        <source>Save search tabs</source>
+        <translation>Konservi serĉajn langetojn</translation>
+    </message>
+    <message>
+        <source>Search settings</source>
+        <translation>Serĉi agordojn</translation>
+    </message>
+    <message>
+        <source>Service:</source>
+        <translation>Servo:</translation>
+    </message>
+    <message>
+        <source>Show the window when adding a torrent</source>
+        <translation>Montri la fenestron kiam oni aldonas torenton</translation>
+    </message>
+    <message>
+        <source>Status bar and log</source>
+        <translation>Statusa breto kaj protokolo</translation>
+    </message>
+    <message>
+        <source>The WebUI activity log can be kept for 1 to 3650 days.</source>
+        <translation>La WebUI-agada protokolo povas esti konservata de 1 ĝis 3650 tagoj.</translation>
+    </message>
+    <message>
+        <source>The settings below apply with OK or Apply.</source>
+        <translation>La agordoj sube aplikiĝas per Bone aŭ Apliki.</translation>
+    </message>
+    <message>
+        <source>Transfer List</source>
+        <translation>Transmetlisto</translation>
+    </message>
+    <message>
+        <source>Until the first user account is created, this login always works.</source>
+        <translation>Ĝis la unua uzantkonto estas kreita, ĉi tiu ensaluto ĉiam funkcias.</translation>
+    </message>
+    <message>
+        <source>User</source>
+        <translation>Uzanto</translation>
+    </message>
+    <message>
+        <source>User Accounts</source>
+        <translation>Uzantkontoj</translation>
+    </message>
+    <message>
+        <source>Users can be kept logged in for 0 to 365 days.</source>
+        <translation>Uzantoj povas resti ensalutintaj de 0 ĝis 365 tagoj.</translation>
+    </message>
+    <message>
+        <source>Very low</source>
+        <translation>Tre Malalta</translation>
+    </message>
+    <message>
+        <source>You changed the address, port or HTTPS setting of the WebUI. Saving moves the WebUI, so Options will save, close and reload the page, the same as OK. If the page doesn&apos;t come back, open the WebUI at its new address.\n\nSave anyway?</source>
+        <translation>Vi ŝanĝis la adreson, pordon aŭ HTTPS-agordon de la WebUI. Konservado movas la WebUI, do Agordoj konservos, fermos kaj reŝargos la paĝon, kiel per Bone. Se la paĝo ne revenas, malfermu la WebUI ĉe ĝia nova adreso.\n\nTamen konservi?</translation>
+    </message>
+    <message>
+        <source>lock for:</source>
+        <translation>ŝlosi dum:</translation>
+    </message>
 </context>
 <context>
     <name>PeerListWidget</name>
@@ -3047,6 +3278,142 @@ Use ';' to split multiple entries. Can use wildcard '*'.</source>
     <message>
         <source>The time it takes from receiving a request from a peer until we're sending the response back on the socket</source>
         <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Activity</source>
+        <translation>Agado</translation>
+    </message>
+    <message>
+        <source>All time</source>
+        <translation>Ĉiam</translation>
+    </message>
+    <message>
+        <source>Before tracking began</source>
+        <translation>Antaŭ ol la sekvado komenciĝis</translation>
+    </message>
+    <message>
+        <source>By month</source>
+        <translation>Laŭ monato</translation>
+    </message>
+    <message>
+        <source>Counts the requests that added a download. Apps without a login, such as Sonarr and Radarr, are shown as (localhost). Downloads added in the desktop window are not counted.</source>
+        <translation>Kalkulas la petojn, kiuj aldonis elŝuton. Aplikaĵoj sen ensaluto, kiel Sonarr kaj Radarr, montriĝas kiel (localhost). Elŝutoj aldonitaj en la labortabla fenestro ne kalkuliĝas.</translation>
+    </message>
+    <message>
+        <source>Current speed:</source>
+        <translation>Nuna rapido:</translation>
+    </message>
+    <message>
+        <source>DHT nodes:</source>
+        <translation>DHT-nodoj:</translation>
+    </message>
+    <message>
+        <source>Data discarded this session:</source>
+        <translation>Forĵetitaj datumoj en ĉi tiu seanco:</translation>
+    </message>
+    <message>
+        <source>Disk</source>
+        <translation>Disko</translation>
+    </message>
+    <message>
+        <source>History</source>
+        <translation>Historio</translation>
+    </message>
+    <message>
+        <source>Last 12 months</source>
+        <translation>Lastaj 12 monatoj</translation>
+    </message>
+    <message>
+        <source>Last 7 days</source>
+        <translation>Lastaj 7 tagoj</translation>
+    </message>
+    <message>
+        <source>Last month</source>
+        <translation>Pasinta monato</translation>
+    </message>
+    <message>
+        <source>Month</source>
+        <translation>Monato</translation>
+    </message>
+    <message>
+        <source>Nothing added yet</source>
+        <translation>Ankoraŭ nenio aldonita</translation>
+    </message>
+    <message>
+        <source>Off</source>
+        <translation>For</translation>
+    </message>
+    <message>
+        <source>Overview</source>
+        <translation>Superrigardo</translation>
+    </message>
+    <message>
+        <source>Peers waiting on disk reads:</source>
+        <translation>Kunuloj atendantaj legon de disko:</translation>
+    </message>
+    <message>
+        <source>Peers waiting on disk writes:</source>
+        <translation>Kunuloj atendantaj skribon al disko:</translation>
+    </message>
+    <message>
+        <source>Period</source>
+        <translation>Periodo</translation>
+    </message>
+    <message>
+        <source>Request latency:</source>
+        <translation>Prokrasto de peto:</translation>
+    </message>
+    <message>
+        <source>Running for:</source>
+        <translation>Funkcias dum:</translation>
+    </message>
+    <message>
+        <source>Share ratio</source>
+        <translation>Kvanto de kunhavigo</translation>
+    </message>
+    <message>
+        <source>Share ratio:</source>
+        <translation>Kvanto de kunhavigo:</translation>
+    </message>
+    <message>
+        <source>Technical</source>
+        <translation>Teknika</translation>
+    </message>
+    <message>
+        <source>This month</source>
+        <translation>Ĉi tiu monato</translation>
+    </message>
+    <message>
+        <source>This session</source>
+        <translation>Ĉi tiu seanco</translation>
+    </message>
+    <message>
+        <source>Today</source>
+        <translation>Hodiaŭ</translation>
+    </message>
+    <message>
+        <source>Torrents downloading:</source>
+        <translation>Torentoj elŝutantaj:</translation>
+    </message>
+    <message>
+        <source>Torrents seeding:</source>
+        <translation>Torentoj fontantaj:</translation>
+    </message>
+    <message>
+        <source>Torrents stopped:</source>
+        <translation>Haltigitaj torentoj:</translation>
+    </message>
+    <message>
+        <source>Torrents with errors:</source>
+        <translation>Torentoj kun eraroj:</translation>
+    </message>
+    <message>
+        <source>Tracking since:</source>
+        <translation>Sekvado ekde:</translation>
+    </message>
+    <message>
+        <source>WebUI downloads added, this month</source>
+        <translation>WebUI-elŝutoj aldonitaj, ĉi tiu monato</translation>
     </message>
 </context>
 <context>
@@ -3834,6 +4201,10 @@ Use ';' to split multiple entries. Can use wildcard '*'.</source>
         <source>Content Path</source>
         <translation type="unfinished" />
     </message>
+    <message>
+        <source>Remove all tags from selected torrents?</source>
+        <translation>Forigi ĉiujn etikedojn per elektitaj torentoj?</translation>
+    </message>
 </context>
 <context>
     <name>UpDownRatioDialog</name>
@@ -3906,6 +4277,10 @@ Use ';' to split multiple entries. Can use wildcard '*'.</source>
     <message>
         <source>Remove tracker</source>
         <translation>Forigi la spurilon</translation>
+    </message>
+    <message>
+        <source>This choice is remembered for the next removal.</source>
+        <translation>Ĉi tiu elekto estos memorata por la sekva forigo.</translation>
     </message>
 </context>
 <context>
@@ -4118,6 +4493,34 @@ Use ';' to split multiple entries. Can use wildcard '*'.</source>
     <message>
         <source>Select plugins</source>
         <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Category to search in</source>
+        <translation>Kategorio por serĉi</translation>
+    </message>
+    <message>
+        <source>Close the selected search</source>
+        <translation>Fermi la elektitan serĉon</translation>
+    </message>
+    <message>
+        <source>Empty search pattern</source>
+        <translation>Malplena serĉa ŝablono</translation>
+    </message>
+    <message>
+        <source>Search engines to use</source>
+        <translation>Uzotaj serĉiloj</translation>
+    </message>
+    <message>
+        <source>Search for torrents...</source>
+        <translation>Serĉi torentojn...</translation>
+    </message>
+    <message>
+        <source>Searches</source>
+        <translation>Serĉoj</translation>
+    </message>
+    <message>
+        <source>Type a search above and press Enter.</source>
+        <translation>Tajpu serĉon supre kaj premu Enter.</translation>
     </message>
 </context>
 <context>
@@ -4380,6 +4783,30 @@ Use ';' to split multiple entries. Can use wildcard '*'.</source>
         <source>qBittorrent icon</source>
         <translation type="unfinished" />
     </message>
+    <message>
+        <source>Based on:</source>
+        <translation>Bazita sur:</translation>
+    </message>
+    <message>
+        <source>Edition version:</source>
+        <translation>Eldona versio:</translation>
+    </message>
+    <message>
+        <source>Kettle Edition is a personal build of qBittorrent that adds user accounts with roles for the WebUI and the desktop app, an activity log, and an installable WebUI with a phone layout. A kettle is a group of hawks soaring together. This is an unofficial build, not affiliated with the qBittorrent project.</source>
+        <translation>Kettle Edition estas persona kompilaĵo de qBittorrent, kiu aldonas uzantkontojn kun roloj por la WebUI kaj la labortabla aplikaĵo, agadan protokolon kaj instaleblan WebUI kun telefona aranĝo. Kettle estas grupo de akcipitroj, kiuj kune flugas. Ĉi tio estas neoficiala kompilaĵo, senrilata al la projekto qBittorrent.</translation>
+    </message>
+    <message>
+        <source>Maintainer:</source>
+        <translation>Prizorganto:</translation>
+    </message>
+    <message>
+        <source>This edition</source>
+        <translation>Ĉi tiu eldono</translation>
+    </message>
+    <message>
+        <source>qBittorrent project:</source>
+        <translation>Projekto qBittorrent:</translation>
+    </message>
 </context>
 <context>
     <name>OptionDialog</name>
@@ -4481,6 +4908,42 @@ Use ';' to split multiple entries. Can use wildcard '*'.</source>
     <message>
         <source>Open shared download window</source>
         <translation type="unfinished" />
+    </message>
+    <message>
+        <source>%1 of %2 shown</source>
+        <translation>Montrataj %1 el %2</translation>
+    </message>
+    <message>
+        <source>%1 of %2 shown (%3 hidden)</source>
+        <translation>Montrataj %1 el %2 (%3 kaŝitaj)</translation>
+    </message>
+    <message>
+        <source>Close all searches</source>
+        <translation>Fermi ĉiujn serĉojn</translation>
+    </message>
+    <message>
+        <source>Close search</source>
+        <translation>Fermi serĉon</translation>
+    </message>
+    <message>
+        <source>Finished: %1</source>
+        <translation>Finita: %1</translation>
+    </message>
+    <message>
+        <source>Refresh search</source>
+        <translation>Aktualigi serĉon</translation>
+    </message>
+    <message>
+        <source>Search aborted: %1</source>
+        <translation>Serĉo ĉesigita: %1</translation>
+    </message>
+    <message>
+        <source>Search returned no results</source>
+        <translation>Serĉo reportis neniun rezulton</translation>
+    </message>
+    <message>
+        <source>Searching: %1</source>
+        <translation>Serĉado: %1</translation>
     </message>
 </context>
 <context>
@@ -4619,6 +5082,10 @@ Use ';' to split multiple entries. Can use wildcard '*'.</source>
     <message>
         <source>Blocked opening RSS article URL. Only http:// and https:// links can be opened.</source>
         <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Details</source>
+        <translation>Detaloj</translation>
     </message>
 </context>
 <context>
@@ -4896,6 +5363,10 @@ Supports the formats: S01E01, 1x1, 2017.12.31 and 31.12.2017 (Date formats also 
         <source>Import</source>
         <translation type="unfinished" />
     </message>
+    <message>
+        <source>Don&apos;t create subfolder</source>
+        <translation>Ne krei subdosierujon</translation>
+    </message>
 </context>
 <context>
     <name>TrackerFiltersList</name>
@@ -5085,6 +5556,26 @@ Supports the formats: S01E01, 1x1, 2017.12.31 and 31.12.2017 (Date formats also 
         <source>Choose a log level...</source>
         <translation type="unfinished" />
     </message>
+    <message>
+        <source>Export...</source>
+        <translation>Eksporti...</translation>
+    </message>
+    <message>
+        <source>Filter activity</source>
+        <translation>Filtri agadon</translation>
+    </message>
+    <message>
+        <source>Result:</source>
+        <translation>Rezulto:</translation>
+    </message>
+    <message>
+        <source>User:</source>
+        <translation>Uzanto:</translation>
+    </message>
+    <message>
+        <source>WebUI Activity</source>
+        <translation>WebUI-agado</translation>
+    </message>
 </context>
 <context>
     <name>TrackersFilterWidget</name>
@@ -5154,6 +5645,10 @@ Supports the formats: S01E01, 1x1, 2017.12.31 and 31.12.2017 (Date formats also 
     <message>
         <source>Torrent share limits</source>
         <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Your role saves torrents in the default folders.</source>
+        <translation>Via rolo konservas torentojn en la defaŭltaj dosierujoj.</translation>
     </message>
 </context>
 <context>
@@ -5253,6 +5748,18 @@ Supports the formats: S01E01, 1x1, 2017.12.31 and 31.12.2017 (Date formats also 
     <message>
         <source>Invalid Username or Password.</source>
         <translation>Malvalida uzantnomo aŭ pasvorto.</translation>
+    </message>
+    <message>
+        <source>A kettle is a group of hawks soaring together.</source>
+        <translation>Kettle estas grupo de akcipitroj, kiuj kune flugas.</translation>
+    </message>
+    <message>
+        <source>Sign in</source>
+        <translation>Ensaluti</translation>
+    </message>
+    <message>
+        <source>Username</source>
+        <translation>Uzantnomo</translation>
     </message>
 </context>
 <context>
@@ -5582,6 +6089,10 @@ Supports the formats: S01E01, 1x1, 2017.12.31 and 31.12.2017 (Date formats also 
         <source>Resize</source>
         <translation type="unfinished" />
     </message>
+    <message>
+        <source>Reset Auto Width</source>
+        <translation>Restarigi aŭtomatan larĝon</translation>
+    </message>
 </context>
 <context>
     <name>confirmRotateAPIKeyDialog</name>
@@ -5721,6 +6232,220 @@ Supports the formats: S01E01, 1x1, 2017.12.31 and 31.12.2017 (Date formats also 
     <message>
         <source>Not available for folders</source>
         <translation type="unfinished" />
+    </message>
+</context>
+<context>
+    <name>UserAccounts</name>
+    <message>
+        <source>(this browser)</source>
+        <translation>(ĉi tiu retumilo)</translation>
+    </message>
+    <message>
+        <source>A role decides what its users are allowed to do.</source>
+        <translation>Rolo decidas, kion ĝiaj uzantoj rajtas fari.</translation>
+    </message>
+    <message>
+        <source>Add Role</source>
+        <translation>Aldoni rolon</translation>
+    </message>
+    <message>
+        <source>Add Role...</source>
+        <translation>Aldoni rolon...</translation>
+    </message>
+    <message>
+        <source>Add User</source>
+        <translation>Aldoni uzanton</translation>
+    </message>
+    <message>
+        <source>Add User...</source>
+        <translation>Aldoni uzanton...</translation>
+    </message>
+    <message>
+        <source>Are you sure you want to remove the role &apos;%1&apos;?</source>
+        <translation>Ĉu vi certas, ke vi volas forigi la rolon &apos;%1&apos;?</translation>
+    </message>
+    <message>
+        <source>Are you sure you want to remove the user &apos;%1&apos;?</source>
+        <translation>Ĉu vi certas, ke vi volas forigi la uzanton &apos;%1&apos;?</translation>
+    </message>
+    <message>
+        <source>At least %1 characters</source>
+        <translation>Almenaŭ %1 signoj</translation>
+    </message>
+    <message>
+        <source>Browser</source>
+        <translation>Retumilo</translation>
+    </message>
+    <message>
+        <source>Browsers and devices where someone is logged in with a user account.</source>
+        <translation>Retumiloj kaj aparatoj, kie iu ensalutis per uzantkonto.</translation>
+    </message>
+    <message>
+        <source>Change Password</source>
+        <translation>Ŝanĝi pasvorton</translation>
+    </message>
+    <message>
+        <source>Confirm password:</source>
+        <translation>Konfirmi pasvorton:</translation>
+    </message>
+    <message>
+        <source>Created</source>
+        <translation>Kreita</translation>
+    </message>
+    <message>
+        <source>Current password:</source>
+        <translation>Nuna pasvorto:</translation>
+    </message>
+    <message>
+        <source>Description</source>
+        <translation>Priskribo</translation>
+    </message>
+    <message>
+        <source>Description:</source>
+        <translation>Priskribo:</translation>
+    </message>
+    <message>
+        <source>Disable</source>
+        <translation>Malŝalti</translation>
+    </message>
+    <message>
+        <source>Disable this account</source>
+        <translation>Malŝalti ĉi tiun konton</translation>
+    </message>
+    <message>
+        <source>Edit Role</source>
+        <translation>Redakti rolon</translation>
+    </message>
+    <message>
+        <source>Edit User</source>
+        <translation>Redakti uzanton</translation>
+    </message>
+    <message>
+        <source>Edit...</source>
+        <translation>Redakti...</translation>
+    </message>
+    <message>
+        <source>Enable</source>
+        <translation>Ŝalti</translation>
+    </message>
+    <message>
+        <source>Enter a role name.</source>
+        <translation>Enigu rolnomon.</translation>
+    </message>
+    <message>
+        <source>Enter a username.</source>
+        <translation>Enigu uzantnomon.</translation>
+    </message>
+    <message>
+        <source>Expires</source>
+        <translation>Eksvalidiĝas</translation>
+    </message>
+    <message>
+        <source>Gives control over the PC or qBittorrent itself</source>
+        <translation>Donas kontrolon super la komputilo aŭ super qBittorrent mem</translation>
+    </message>
+    <message>
+        <source>Last active</source>
+        <translation>Lasta agado</translation>
+    </message>
+    <message>
+        <source>Last login</source>
+        <translation>Lasta ensaluto</translation>
+    </message>
+    <message>
+        <source>Leave empty to keep the current password</source>
+        <translation>Lasu malplena por konservi la nunan pasvorton</translation>
+    </message>
+    <message>
+        <source>Log Out</source>
+        <translation>Elsaluti</translation>
+    </message>
+    <message>
+        <source>Log Out Everywhere</source>
+        <translation>Elsaluti ĉie</translation>
+    </message>
+    <message>
+        <source>Logged In</source>
+        <translation>Ensalutintaj</translation>
+    </message>
+    <message>
+        <source>Logged in</source>
+        <translation>Ensalutis</translation>
+    </message>
+    <message>
+        <source>New password:</source>
+        <translation>Nova pasvorto:</translation>
+    </message>
+    <message>
+        <source>No accounts yet, so everyone still uses the shared WebUI login. Add an Admin account first.</source>
+        <translation>Ankoraŭ ne ekzistas kontoj, do ĉiuj ankoraŭ uzas la komunan WebUI-ensaluton. Unue aldonu administran konton.</translation>
+    </message>
+    <message>
+        <source>People who can log in to the WebUI with their own username and password.</source>
+        <translation>Homoj, kiuj povas ensaluti en la WebUI per propra uzantnomo kaj pasvorto.</translation>
+    </message>
+    <message>
+        <source>Permissions</source>
+        <translation>Permesoj</translation>
+    </message>
+    <message>
+        <source>Role</source>
+        <translation>Rolo</translation>
+    </message>
+    <message>
+        <source>Role:</source>
+        <translation>Rolo:</translation>
+    </message>
+    <message>
+        <source>Roles</source>
+        <translation>Roloj</translation>
+    </message>
+    <message>
+        <source>The password must be at least %1 characters long.</source>
+        <translation>La pasvorto devas havi almenaŭ %1 signojn.</translation>
+    </message>
+    <message>
+        <source>The passwords don&apos;t match.</source>
+        <translation>La pasvortoj ne kongruas.</translation>
+    </message>
+    <message>
+        <source>User</source>
+        <translation>Uzanto</translation>
+    </message>
+    <message>
+        <source>Username</source>
+        <translation>Uzantnomo</translation>
+    </message>
+    <message>
+        <source>Users</source>
+        <translation>Uzantoj</translation>
+    </message>
+    <message>
+        <source>Your password was changed. Other browsers and devices where you were logged in have been logged out.</source>
+        <translation>Via pasvorto estis ŝanĝita. Aliaj retumiloj kaj aparatoj, kie vi estis ensalutinta, estis elsalutigitaj.</translation>
+    </message>
+</context>
+<context>
+    <name>WebUIActivity</name>
+    <message>
+        <source>Action</source>
+        <translation>Ago</translation>
+    </message>
+    <message>
+        <source>Result</source>
+        <translation>Rezulto</translation>
+    </message>
+    <message>
+        <source>Role</source>
+        <translation>Rolo</translation>
+    </message>
+    <message>
+        <source>Time</source>
+        <translation>Tempo</translation>
+    </message>
+    <message>
+        <source>User</source>
+        <translation>Uzanto</translation>
     </message>
 </context>
 </TS>

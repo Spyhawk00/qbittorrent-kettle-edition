@@ -141,6 +141,62 @@
         <source>The free IP to Country Lite database by DB-IP is used for resolving the countries of peers. The database is licensed under the Creative Commons Attribution 4.0 International License</source>
         <translation>A DB-IP ingyenes IP to Country Lite adatbázisát a peerek országának meghatározására használjuk. Az adatbázis Creative Commons Nevezd meg! 4.0 nemzetközi licenc alatt érhető el.</translation>
     </message>
+    <message>
+        <source>This edition</source>
+        <translation>Ez a kiadás</translation>
+    </message>
+    <message>
+        <source>Edition version:</source>
+        <translation>Kiadás verziója:</translation>
+    </message>
+    <message>
+        <source>Based on:</source>
+        <translation>Alapja:</translation>
+    </message>
+    <message>
+        <source>Maintainer:</source>
+        <translation>Karbantartó:</translation>
+    </message>
+    <message>
+        <source>qBittorrent project:</source>
+        <translation>qBittorrent projekt:</translation>
+    </message>
+    <message>
+        <source>Kettle Edition is a personal build of qBittorrent that adds user accounts with roles for the WebUI and the desktop app, an activity log, and an installable WebUI with a phone layout. A kettle is a group of hawks soaring together. This is an unofficial build, not affiliated with the qBittorrent project.</source>
+        <translation>A Kettle Edition a qBittorrent személyes összeállítása, amely szerepkörös felhasználói fiókokat ad a WebUI-hoz és az asztali alkalmazáshoz, tevékenységnaplót, valamint telepíthető, telefonos elrendezésű WebUI-t. A kettle együtt keringő sólymok csoportja. Ez nem hivatalos összeállítás, nincs kapcsolata a qBittorrent projekttel.</translation>
+    </message>
+    <message>
+        <source>N/A</source>
+        <translation>N/A</translation>
+    </message>
+    <message>
+        <source>This edition</source>
+        <translation>Ez a kiadás</translation>
+    </message>
+    <message>
+        <source>Edition version:</source>
+        <translation>Kiadás verziója:</translation>
+    </message>
+    <message>
+        <source>Based on:</source>
+        <translation>Alapja:</translation>
+    </message>
+    <message>
+        <source>Maintainer:</source>
+        <translation>Karbantartó:</translation>
+    </message>
+    <message>
+        <source>qBittorrent project:</source>
+        <translation>qBittorrent projekt:</translation>
+    </message>
+    <message>
+        <source>Kettle Edition is a personal build of qBittorrent that adds user accounts with roles for the WebUI and the desktop app, an activity log, and an installable WebUI with a phone layout. A kettle is a group of hawks soaring together. This is an unofficial build, not affiliated with the qBittorrent project.</source>
+        <translation>A Kettle Edition a qBittorrent személyes összeállítása, amely szerepkörös felhasználói fiókokat ad a WebUI-hoz és az asztali alkalmazáshoz, tevékenységnaplót, valamint telepíthető, telefonos elrendezésű WebUI-t. A kettle együtt keringő sólymok csoportja. Ez nem hivatalos összeállítás, nincs kapcsolata a qBittorrent projekttel.</translation>
+    </message>
+    <message>
+        <source>N/A</source>
+        <translation>N/A</translation>
+    </message>
 </context>
 <context>
     <name>AbstractFileStorage</name>
@@ -1459,6 +1515,62 @@
         <location filename="../gui/advancedsettings.cpp" line="925"/>
         <source>Embedded tracker port</source>
         <translation>Beépített tracker portja</translation>
+    </message>
+    <message>
+        <source>Network</source>
+        <translation>Hálózat</translation>
+    </message>
+    <message>
+        <source>Storage</source>
+        <translation>Tárolás</translation>
+    </message>
+    <message>
+        <source>Peers and trackers</source>
+        <translation>Peerek és trackerek</translation>
+    </message>
+    <message>
+        <source>Program behavior</source>
+        <translation>A program viselkedése</translation>
+    </message>
+    <message>
+        <source>Display and notifications</source>
+        <translation>Megjelenítés és értesítések</translation>
+    </message>
+    <message>
+        <source>Network connection</source>
+        <translation>Hálózati kapcsolat</translation>
+    </message>
+    <message>
+        <source>Security and privacy</source>
+        <translation>Biztonság és adatvédelem</translation>
+    </message>
+    <message>
+        <source>Connection tuning</source>
+        <translation>Kapcsolat finomhangolása</translation>
+    </message>
+    <message>
+        <source>Saving and torrent files</source>
+        <translation>Mentés és torrentfájlok</translation>
+    </message>
+    <message>
+        <source>Disk and memory</source>
+        <translation>Lemez és memória</translation>
+    </message>
+    <message>
+        <source>Peers and seeding</source>
+        <translation>Peerek és seedelés</translation>
+    </message>
+    <message>
+        <source>DHT and I2P</source>
+        <translation>DHT és I2P</translation>
+    </message>
+    <message>
+        <source>General</source>
+        <translation>Általános</translation>
+    </message>
+    <message>
+        <source>Trackers</source>
+        <translation>Trackerek</translation>
     </message>
 </context>
 <context>
@@ -3480,6 +3592,22 @@ Támogatja a formátumokat: S01E01, 1x1, 2017.12.31 és 31.12.2017. (A dátumfor
         <source>Remove torrent</source>
         <translation>Torrent eltávolítása</translation>
     </message>
+    <message>
+        <source>This choice is remembered for the next removal.</source>
+        <translation>Ez a választás megmarad a következő eltávolításhoz.</translation>
+    </message>
+    <message>
+        <source>Remove</source>
+        <translation>Eltávolítás</translation>
+    </message>
+    <message>
+        <source>This choice is remembered for the next removal.</source>
+        <translation>Ez a választás megmarad a következő eltávolításhoz.</translation>
+    </message>
+    <message>
+        <source>Remove</source>
+        <translation>Eltávolítás</translation>
+    </message>
 </context>
 <context>
     <name>DownloadFromURLDialog</name>
@@ -3553,6 +3681,14 @@ Támogatja a formátumokat: S01E01, 1x1, 2017.12.31 és 31.12.2017. (A dátumfor
         <location filename="../gui/executionlogwidget.cpp" line="99"/>
         <source>Clear</source>
         <translation>Törlés</translation>
+    </message>
+    <message>
+        <source>WebUI Activity</source>
+        <translation>WebUI-tevékenység</translation>
+    </message>
+    <message>
+        <source>WebUI Activity</source>
+        <translation>WebUI-tevékenység</translation>
     </message>
 </context>
 <context>
@@ -4725,6 +4861,46 @@ Minimális követelmény: %2.</translation>
         <location filename="../gui/mainwindow.cpp" line="1346"/>
         <source>Torrent Files</source>
         <translation>Torrent Fájlok</translation>
+    </message>
+    <message>
+        <source>Kettle Edition %1 is available.</source>
+        <translation>A Kettle Edition %1 elérhető.</translation>
+    </message>
+    <message>
+        <source>qBittorrent Kettle Edition %1 is available. It is downloaded now and installed at 4:00 AM, or when qBittorrent starts next.</source>
+        <translation>A qBittorrent Kettle Edition %1 elérhető. Most töltődik le, és hajnali 4:00-kor vagy a qBittorrent következő indításakor települ.</translation>
+    </message>
+    <message>
+        <source>qBittorrent Kettle Edition %1 is available. It is downloaded now. Turn on &quot;Automatically install Kettle Edition updates&quot; in Options to install it.</source>
+        <translation>A qBittorrent Kettle Edition %1 elérhető. Most töltődik le. A telepítéséhez kapcsolja be a Beállításokban a „Kettle Edition frissítések automatikus telepítése” opciót.</translation>
+    </message>
+    <message>
+        <source>You have the latest qBittorrent Kettle Edition (%1).</source>
+        <translation>A qBittorrent Kettle Edition legújabb verziója van meg (%1).</translation>
+    </message>
+    <message>
+        <source>Could not check for qBittorrent Kettle Edition updates. See the Execution Log for details.</source>
+        <translation>Nem sikerült ellenőrizni a qBittorrent Kettle Edition frissítéseit. A részleteket lásd a végrehajtási naplóban.</translation>
+    </message>
+    <message>
+        <source>Kettle Edition %1 is available.</source>
+        <translation>A Kettle Edition %1 elérhető.</translation>
+    </message>
+    <message>
+        <source>qBittorrent Kettle Edition %1 is available. It is downloaded now and installed at 4:00 AM, or when qBittorrent starts next.</source>
+        <translation>A qBittorrent Kettle Edition %1 elérhető. Most töltődik le, és hajnali 4:00-kor vagy a qBittorrent következő indításakor települ.</translation>
+    </message>
+    <message>
+        <source>qBittorrent Kettle Edition %1 is available. It is downloaded now. Turn on &quot;Automatically install Kettle Edition updates&quot; in Options to install it.</source>
+        <translation>A qBittorrent Kettle Edition %1 elérhető. Most töltődik le. A telepítéséhez kapcsolja be a Beállításokban a „Kettle Edition frissítések automatikus telepítése” opciót.</translation>
+    </message>
+    <message>
+        <source>You have the latest qBittorrent Kettle Edition (%1).</source>
+        <translation>A qBittorrent Kettle Edition legújabb verziója van meg (%1).</translation>
+    </message>
+    <message>
+        <source>Could not check for qBittorrent Kettle Edition updates. See the Execution Log for details.</source>
+        <translation>Nem sikerült ellenőrizni a qBittorrent Kettle Edition frissítéseit. A részleteket lásd a végrehajtási naplóban.</translation>
     </message>
 </context>
 <context>
@@ -8514,6 +8690,190 @@ Hibák esetén ellenőrizze a Végrehajtási naplót.</translation>
         <source>Length Error</source>
         <translation>Hossz hiba</translation>
     </message>
+    <message>
+        <source>Search settings</source>
+        <translation>Keresés a beállításokban</translation>
+    </message>
+    <message>
+        <source>No settings match</source>
+        <translation>Nincs egyező beállítás</translation>
+    </message>
+    <message>
+        <source>User Accounts</source>
+        <translation>Felhasználói fiókok</translation>
+    </message>
+    <message>
+        <source>Automatically install Kettle Edition updates</source>
+        <translation>Kettle Edition frissítések automatikus telepítése</translation>
+    </message>
+    <message>
+        <source>Status bar and log</source>
+        <translation>Állapotsor és napló</translation>
+    </message>
+    <message>
+        <source>Files</source>
+        <translation>Fájlok</translation>
+    </message>
+    <message>
+        <source>Checking</source>
+        <translation>Ellenőrzés</translation>
+    </message>
+    <message>
+        <source>Until the first user account is created, this login always works.</source>
+        <translation>Amíg nincs létrehozva az első felhasználói fiók, ez a bejelentkezés mindig működik.</translation>
+    </message>
+    <message>
+        <source>Allow this login when user accounts exist</source>
+        <translation>Ennek a bejelentkezésnek az engedélyezése, ha vannak felhasználói fiókok</translation>
+    </message>
+    <message>
+        <source>Access</source>
+        <translation>Hozzáférés</translation>
+    </message>
+    <message>
+        <source>Changes to users, roles and logins apply at once. The settings below apply with OK or Apply.</source>
+        <translation>A felhasználók, szerepkörök és bejelentkezések módosításai azonnal érvénybe lépnek. Az alábbi beállítások az OK vagy az Alkalmaz gombbal lépnek érvénybe.</translation>
+    </message>
+    <message>
+        <source>Logins and Activity Log</source>
+        <translation>Bejelentkezések és tevékenységnapló</translation>
+    </message>
+    <message>
+        <source>0 means users are logged out after the session timeout.</source>
+        <translation>A 0 azt jelenti, hogy a felhasználók a munkamenet időkorlátja után kijelentkeznek.</translation>
+    </message>
+    <message>
+        <source>Keep users logged in for:</source>
+        <translation>Felhasználók bejelentkezve tartása:</translation>
+    </message>
+    <message>
+        <source>Until session timeout</source>
+        <translation>A munkamenet időkorlátjáig</translation>
+    </message>
+    <message>
+        <source> days</source>
+        <translation> nap</translation>
+    </message>
+    <message>
+        <source>Lock account after consecutive failures:</source>
+        <translation>Fiók zárolása egymás utáni sikertelen kísérletek után:</translation>
+    </message>
+    <message>
+        <source>Keep WebUI activity log for:</source>
+        <translation>WebUI-tevékenységnapló megőrzése:</translation>
+    </message>
+    <message>
+        <source>lock for:</source>
+        <translation>zárolás ennyi ideig:</translation>
+    </message>
+    <message>
+        <source>%1 works best with Windows dark mode</source>
+        <translation>A(z) %1 a Windows sötét módjával működik a legjobban</translation>
+    </message>
+    <message>
+        <source>WebUI address</source>
+        <translation>WebUI címe</translation>
+    </message>
+    <message>
+        <source>With the WebUI address set to %1, only this PC can reach the WebUI. Remote access, including through a reverse proxy on another machine, will stop working.
+
+Save anyway?</source>
+        <translation>Ha a WebUI címe %1, csak ez a számítógép éri el a WebUI-t. A távoli elérés, beleértve a másik gépen lévő fordított proxyn át történőt is, leáll.
+
+Mégis menti?</translation>
+    </message>
+    <message>
+        <source>Search settings</source>
+        <translation>Keresés a beállításokban</translation>
+    </message>
+    <message>
+        <source>No settings match</source>
+        <translation>Nincs egyező beállítás</translation>
+    </message>
+    <message>
+        <source>User Accounts</source>
+        <translation>Felhasználói fiókok</translation>
+    </message>
+    <message>
+        <source>Automatically install Kettle Edition updates</source>
+        <translation>Kettle Edition frissítések automatikus telepítése</translation>
+    </message>
+    <message>
+        <source>Status bar and log</source>
+        <translation>Állapotsor és napló</translation>
+    </message>
+    <message>
+        <source>Files</source>
+        <translation>Fájlok</translation>
+    </message>
+    <message>
+        <source>Checking</source>
+        <translation>Ellenőrzés</translation>
+    </message>
+    <message>
+        <source>Until the first user account is created, this login always works.</source>
+        <translation>Amíg nincs létrehozva az első felhasználói fiók, ez a bejelentkezés mindig működik.</translation>
+    </message>
+    <message>
+        <source>Allow this login when user accounts exist</source>
+        <translation>Ennek a bejelentkezésnek az engedélyezése, ha vannak felhasználói fiókok</translation>
+    </message>
+    <message>
+        <source>Access</source>
+        <translation>Hozzáférés</translation>
+    </message>
+    <message>
+        <source>Changes to users, roles and logins apply at once. The settings below apply with OK or Apply.</source>
+        <translation>A felhasználók, szerepkörök és bejelentkezések módosításai azonnal érvénybe lépnek. Az alábbi beállítások az OK vagy az Alkalmaz gombbal lépnek érvénybe.</translation>
+    </message>
+    <message>
+        <source>Logins and Activity Log</source>
+        <translation>Bejelentkezések és tevékenységnapló</translation>
+    </message>
+    <message>
+        <source>0 means users are logged out after the session timeout.</source>
+        <translation>A 0 azt jelenti, hogy a felhasználók a munkamenet időkorlátja után kijelentkeznek.</translation>
+    </message>
+    <message>
+        <source>Keep users logged in for:</source>
+        <translation>Felhasználók bejelentkezve tartása:</translation>
+    </message>
+    <message>
+        <source>Until session timeout</source>
+        <translation>A munkamenet időkorlátjáig</translation>
+    </message>
+    <message>
+        <source> days</source>
+        <translation> nap</translation>
+    </message>
+    <message>
+        <source>Lock account after consecutive failures:</source>
+        <translation>Fiók zárolása egymás utáni sikertelen kísérletek után:</translation>
+    </message>
+    <message>
+        <source>Keep WebUI activity log for:</source>
+        <translation>WebUI-tevékenységnapló megőrzése:</translation>
+    </message>
+    <message>
+        <source>lock for:</source>
+        <translation>zárolás ennyi ideig:</translation>
+    </message>
+    <message>
+        <source>%1 works best with Windows dark mode</source>
+        <translation>A(z) %1 a Windows sötét módjával működik a legjobban</translation>
+    </message>
+    <message>
+        <source>WebUI address</source>
+        <translation>WebUI címe</translation>
+    </message>
+    <message>
+        <source>With the WebUI address set to %1, only this PC can reach the WebUI. Remote access, including through a reverse proxy on another machine, will stop working.
+
+Save anyway?</source>
+        <translation>Ha a WebUI címe %1, csak ez a számítógép éri el a WebUI-t. A távoli elérés, beleértve a másik gépen lévő fordított proxyn át történőt is, leáll.
+
+Mégis menti?</translation>
+    </message>
 </context>
 <context>
     <name>PeerInfo</name>
@@ -8766,6 +9126,22 @@ Hibák esetén ellenőrizze a Végrehajtási naplót.</translation>
         <location filename="../gui/properties/peerlistwidget.cpp" line="309"/>
         <source>Copy IP:port</source>
         <translation>IP:port másolása</translation>
+    </message>
+    <message>
+        <source>Reset auto width</source>
+        <translation>Automatikus szélesség visszaállítása</translation>
+    </message>
+    <message>
+        <source>Fit all non-hidden columns to their contents again, and forget the widths that were set by hand</source>
+        <translation>Az összes látható oszlop újraillesztése a tartalmához, és a kézzel beállított szélességek elfelejtése</translation>
+    </message>
+    <message>
+        <source>Reset auto width</source>
+        <translation>Automatikus szélesség visszaállítása</translation>
+    </message>
+    <message>
+        <source>Fit all non-hidden columns to their contents again, and forget the widths that were set by hand</source>
+        <translation>Az összes látható oszlop újraillesztése a tartalmához, és a kézzel beállított szélességek elfelejtése</translation>
     </message>
 </context>
 <context>
@@ -10156,6 +10532,14 @@ Azok a modulok letiltásra kerültek.</translation>
         <source>Open link</source>
         <translation>Link megnyitása</translation>
     </message>
+    <message>
+        <source>Details</source>
+        <translation>Részletek</translation>
+    </message>
+    <message>
+        <source>Details</source>
+        <translation>Részletek</translation>
+    </message>
 </context>
 <context>
     <name>SearchController</name>
@@ -10510,6 +10894,70 @@ Azok a modulok letiltásra kerültek.</translation>
         <source>Resize all non-hidden columns to the size of their contents</source>
         <translation>Méretezze át az összes nem rejtett oszlopot a tartalmuk méretére</translation>
     </message>
+    <message>
+        <source>%1 of %2 shown (%3 hidden)</source>
+        <translation>%1 / %2 megjelenítve (%3 rejtve)</translation>
+    </message>
+    <message>
+        <source>%1 of %2 shown</source>
+        <translation>%1 / %2 megjelenítve</translation>
+    </message>
+    <message>
+        <source>Searching: %1</source>
+        <translation>Keresés: %1</translation>
+    </message>
+    <message>
+        <source>Finished: %1</source>
+        <translation>Befejezve: %1</translation>
+    </message>
+    <message>
+        <source>Search aborted: %1</source>
+        <translation>Keresés megszakítva: %1</translation>
+    </message>
+    <message>
+        <source>Reset auto width</source>
+        <translation>Automatikus szélesség visszaállítása</translation>
+    </message>
+    <message>
+        <source>Fit all non-hidden columns to their contents again, and forget the widths that were set by hand</source>
+        <translation>Az összes látható oszlop újraillesztése a tartalmához, és a kézzel beállított szélességek elfelejtése</translation>
+    </message>
+    <message>
+        <source>Unknown</source>
+        <translation>Ismeretlen</translation>
+    </message>
+    <message>
+        <source>%1 of %2 shown (%3 hidden)</source>
+        <translation>%1 / %2 megjelenítve (%3 rejtve)</translation>
+    </message>
+    <message>
+        <source>%1 of %2 shown</source>
+        <translation>%1 / %2 megjelenítve</translation>
+    </message>
+    <message>
+        <source>Searching: %1</source>
+        <translation>Keresés: %1</translation>
+    </message>
+    <message>
+        <source>Finished: %1</source>
+        <translation>Befejezve: %1</translation>
+    </message>
+    <message>
+        <source>Search aborted: %1</source>
+        <translation>Keresés megszakítva: %1</translation>
+    </message>
+    <message>
+        <source>Reset auto width</source>
+        <translation>Automatikus szélesség visszaállítása</translation>
+    </message>
+    <message>
+        <source>Fit all non-hidden columns to their contents again, and forget the widths that were set by hand</source>
+        <translation>Az összes látható oszlop újraillesztése a tartalmához, és a kézzel beállított szélességek elfelejtése</translation>
+    </message>
+    <message>
+        <source>Unknown</source>
+        <translation>Ismeretlen</translation>
+    </message>
 </context>
 <context>
     <name>SearchPluginManager</name>
@@ -10807,6 +11255,14 @@ Azok a modulok letiltásra kerültek.</translation>
         <source>Couldn&apos;t update &quot;%1&quot; search engine plugin. %2</source>
         <translation type="unfinished">&quot;%1&quot; keresőmotor-modul frissítése nem sikerült. %2</translation>
     </message>
+    <message>
+        <source>Install Kettle Plugins</source>
+        <translation>Kettle bővítmények telepítése</translation>
+    </message>
+    <message>
+        <source>Install Kettle Plugins</source>
+        <translation>Kettle bővítmények telepítése</translation>
+    </message>
 </context>
 <context>
     <name>SearchPluginSourceDialog</name>
@@ -10946,6 +11402,90 @@ Az ablak jobb alsó sarkában található „Modulok keresése…” gomb megnyo
         <location filename="../gui/search/searchwidget.ui" line="58"/>
         <source>Stop</source>
         <translation>Leállítás</translation>
+    </message>
+    <message>
+        <source>Searches</source>
+        <translation>Keresések</translation>
+    </message>
+    <message>
+        <source>Close the selected search</source>
+        <translation>A kijelölt keresés bezárása</translation>
+    </message>
+    <message>
+        <source>Search for torrents...</source>
+        <translation>Torrentek keresése...</translation>
+    </message>
+    <message>
+        <source>Category to search in</source>
+        <translation>Keresési kategória</translation>
+    </message>
+    <message>
+        <source>Search engines to use</source>
+        <translation>Használt keresőmotorok</translation>
+    </message>
+    <message>
+        <source>There aren&apos;t any search plugins installed.
+Click the &quot;Search plugins...&quot; button at the top right of the window to install some.</source>
+        <translation>Nincs telepítve keresőbővítmény.
+A telepítéshez kattintson az ablak jobb felső sarkában lévő „Keresőbővítmények...” gombra.</translation>
+    </message>
+    <message>
+        <source>Type a search above and press Enter.</source>
+        <translation>Írjon be egy keresést fent, és nyomja meg az Entert.</translation>
+    </message>
+    <message>
+        <source>Refresh search</source>
+        <translation>Keresés frissítése</translation>
+    </message>
+    <message>
+        <source>Close search</source>
+        <translation>Keresés bezárása</translation>
+    </message>
+    <message>
+        <source>Close all searches</source>
+        <translation>Összes keresés bezárása</translation>
+    </message>
+    <message>
+        <source>Searches</source>
+        <translation>Keresések</translation>
+    </message>
+    <message>
+        <source>Close the selected search</source>
+        <translation>A kijelölt keresés bezárása</translation>
+    </message>
+    <message>
+        <source>Search for torrents...</source>
+        <translation>Torrentek keresése...</translation>
+    </message>
+    <message>
+        <source>Category to search in</source>
+        <translation>Keresési kategória</translation>
+    </message>
+    <message>
+        <source>Search engines to use</source>
+        <translation>Használt keresőmotorok</translation>
+    </message>
+    <message>
+        <source>There aren&apos;t any search plugins installed.
+Click the &quot;Search plugins...&quot; button at the top right of the window to install some.</source>
+        <translation>Nincs telepítve keresőbővítmény.
+A telepítéshez kattintson az ablak jobb felső sarkában lévő „Keresőbővítmények...” gombra.</translation>
+    </message>
+    <message>
+        <source>Type a search above and press Enter.</source>
+        <translation>Írjon be egy keresést fent, és nyomja meg az Entert.</translation>
+    </message>
+    <message>
+        <source>Refresh search</source>
+        <translation>Keresés frissítése</translation>
+    </message>
+    <message>
+        <source>Close search</source>
+        <translation>Keresés bezárása</translation>
+    </message>
+    <message>
+        <source>Close all searches</source>
+        <translation>Összes keresés bezárása</translation>
     </message>
 </context>
 <context>
@@ -11412,6 +11952,326 @@ Az ablak jobb alsó sarkában található „Modulok keresése…” gomb megnyo
         <location filename="../gui/statsdialog.cpp" line="111"/>
         <source>%1 ms</source>
         <translation type="unfinished">%1 ms</translation>
+    </message>
+    <message>
+        <source>Copy</source>
+        <translation>Másolás</translation>
+    </message>
+    <message>
+        <source>Overview</source>
+        <translation>Áttekintés</translation>
+    </message>
+    <message>
+        <source>Transfer</source>
+        <translation>Átvitel</translation>
+    </message>
+    <message>
+        <source>This session</source>
+        <translation>Ez a munkamenet</translation>
+    </message>
+    <message>
+        <source>All time</source>
+        <translation>Összesen</translation>
+    </message>
+    <message>
+        <source>Downloaded:</source>
+        <translation>Letöltve:</translation>
+    </message>
+    <message>
+        <source>Uploaded:</source>
+        <translation>Feltöltve:</translation>
+    </message>
+    <message>
+        <source>Share ratio:</source>
+        <translation>Megosztási arány:</translation>
+    </message>
+    <message>
+        <source>Current speed:</source>
+        <translation>Jelenlegi sebesség:</translation>
+    </message>
+    <message>
+        <source>Activity</source>
+        <translation>Tevékenység</translation>
+    </message>
+    <message>
+        <source>Torrents downloading:</source>
+        <translation>Letöltő torrentek:</translation>
+    </message>
+    <message>
+        <source>Torrents seeding:</source>
+        <translation>Seedelő torrentek:</translation>
+    </message>
+    <message>
+        <source>Torrents stopped:</source>
+        <translation>Leállított torrentek:</translation>
+    </message>
+    <message>
+        <source>Torrents with errors:</source>
+        <translation>Hibás torrentek:</translation>
+    </message>
+    <message>
+        <source>Running for:</source>
+        <translation>Futásidő:</translation>
+    </message>
+    <message>
+        <source>History</source>
+        <translation>Előzmények</translation>
+    </message>
+    <message>
+        <source>Period</source>
+        <translation>Időszak</translation>
+    </message>
+    <message>
+        <source>Today</source>
+        <translation>Ma</translation>
+    </message>
+    <message>
+        <source>Last 7 days</source>
+        <translation>Utolsó 7 nap</translation>
+    </message>
+    <message>
+        <source>This month</source>
+        <translation>Ez a hónap</translation>
+    </message>
+    <message>
+        <source>Last month</source>
+        <translation>Múlt hónap</translation>
+    </message>
+    <message>
+        <source>Last 12 months</source>
+        <translation>Utolsó 12 hónap</translation>
+    </message>
+    <message>
+        <source>Tracking since:</source>
+        <translation>Követés kezdete:</translation>
+    </message>
+    <message>
+        <source>By month</source>
+        <translation>Hónaponként</translation>
+    </message>
+    <message>
+        <source>Month</source>
+        <translation>Hónap</translation>
+    </message>
+    <message>
+        <source>Downloaded</source>
+        <translation>Letöltve</translation>
+    </message>
+    <message>
+        <source>Uploaded</source>
+        <translation>Feltöltve</translation>
+    </message>
+    <message>
+        <source>Share ratio</source>
+        <translation>Megosztási arány</translation>
+    </message>
+    <message>
+        <source>WebUI downloads added, this month</source>
+        <translation>WebUI-n át hozzáadott letöltések, ebben a hónapban</translation>
+    </message>
+    <message>
+        <source>Counts the requests that added a download. Apps without a login, such as Sonarr and Radarr, are shown as (localhost). Downloads added in the desktop window are not counted.</source>
+        <translation>Azokat a kéréseket számolja, amelyek letöltést adtak hozzá. A bejelentkezés nélküli alkalmazások, például a Sonarr és a Radarr, (localhost) néven jelennek meg. Az asztali ablakban hozzáadott letöltéseket nem számolja.</translation>
+    </message>
+    <message>
+        <source>Technical</source>
+        <translation>Műszaki</translation>
+    </message>
+    <message>
+        <source>Disk</source>
+        <translation>Lemez</translation>
+    </message>
+    <message>
+        <source>Peers waiting on disk writes:</source>
+        <translation>Lemezírásra váró peerek:</translation>
+    </message>
+    <message>
+        <source>Peers waiting on disk reads:</source>
+        <translation>Lemezolvasásra váró peerek:</translation>
+    </message>
+    <message>
+        <source>Network</source>
+        <translation>Hálózat</translation>
+    </message>
+    <message>
+        <source>DHT nodes:</source>
+        <translation>DHT-csomópontok:</translation>
+    </message>
+    <message>
+        <source>Data discarded this session:</source>
+        <translation>Ebben a munkamenetben eldobott adat:</translation>
+    </message>
+    <message>
+        <source>Before tracking began</source>
+        <translation>A követés kezdete előtt</translation>
+    </message>
+    <message>
+        <source>Nothing added yet</source>
+        <translation>Még nincs hozzáadva semmi</translation>
+    </message>
+    <message>
+        <source>Off</source>
+        <translation>Ki</translation>
+    </message>
+    <message>
+        <source>Copy</source>
+        <translation>Másolás</translation>
+    </message>
+    <message>
+        <source>Overview</source>
+        <translation>Áttekintés</translation>
+    </message>
+    <message>
+        <source>Transfer</source>
+        <translation>Átvitel</translation>
+    </message>
+    <message>
+        <source>This session</source>
+        <translation>Ez a munkamenet</translation>
+    </message>
+    <message>
+        <source>All time</source>
+        <translation>Összesen</translation>
+    </message>
+    <message>
+        <source>Downloaded:</source>
+        <translation>Letöltve:</translation>
+    </message>
+    <message>
+        <source>Uploaded:</source>
+        <translation>Feltöltve:</translation>
+    </message>
+    <message>
+        <source>Share ratio:</source>
+        <translation>Megosztási arány:</translation>
+    </message>
+    <message>
+        <source>Current speed:</source>
+        <translation>Jelenlegi sebesség:</translation>
+    </message>
+    <message>
+        <source>Activity</source>
+        <translation>Tevékenység</translation>
+    </message>
+    <message>
+        <source>Torrents downloading:</source>
+        <translation>Letöltő torrentek:</translation>
+    </message>
+    <message>
+        <source>Torrents seeding:</source>
+        <translation>Seedelő torrentek:</translation>
+    </message>
+    <message>
+        <source>Torrents stopped:</source>
+        <translation>Leállított torrentek:</translation>
+    </message>
+    <message>
+        <source>Torrents with errors:</source>
+        <translation>Hibás torrentek:</translation>
+    </message>
+    <message>
+        <source>Running for:</source>
+        <translation>Futásidő:</translation>
+    </message>
+    <message>
+        <source>History</source>
+        <translation>Előzmények</translation>
+    </message>
+    <message>
+        <source>Period</source>
+        <translation>Időszak</translation>
+    </message>
+    <message>
+        <source>Today</source>
+        <translation>Ma</translation>
+    </message>
+    <message>
+        <source>Last 7 days</source>
+        <translation>Utolsó 7 nap</translation>
+    </message>
+    <message>
+        <source>This month</source>
+        <translation>Ez a hónap</translation>
+    </message>
+    <message>
+        <source>Last month</source>
+        <translation>Múlt hónap</translation>
+    </message>
+    <message>
+        <source>Last 12 months</source>
+        <translation>Utolsó 12 hónap</translation>
+    </message>
+    <message>
+        <source>Tracking since:</source>
+        <translation>Követés kezdete:</translation>
+    </message>
+    <message>
+        <source>By month</source>
+        <translation>Hónaponként</translation>
+    </message>
+    <message>
+        <source>Month</source>
+        <translation>Hónap</translation>
+    </message>
+    <message>
+        <source>Downloaded</source>
+        <translation>Letöltve</translation>
+    </message>
+    <message>
+        <source>Uploaded</source>
+        <translation>Feltöltve</translation>
+    </message>
+    <message>
+        <source>Share ratio</source>
+        <translation>Megosztási arány</translation>
+    </message>
+    <message>
+        <source>WebUI downloads added, this month</source>
+        <translation>WebUI-n át hozzáadott letöltések, ebben a hónapban</translation>
+    </message>
+    <message>
+        <source>Counts the requests that added a download. Apps without a login, such as Sonarr and Radarr, are shown as (localhost). Downloads added in the desktop window are not counted.</source>
+        <translation>Azokat a kéréseket számolja, amelyek letöltést adtak hozzá. A bejelentkezés nélküli alkalmazások, például a Sonarr és a Radarr, (localhost) néven jelennek meg. Az asztali ablakban hozzáadott letöltéseket nem számolja.</translation>
+    </message>
+    <message>
+        <source>Technical</source>
+        <translation>Műszaki</translation>
+    </message>
+    <message>
+        <source>Disk</source>
+        <translation>Lemez</translation>
+    </message>
+    <message>
+        <source>Peers waiting on disk writes:</source>
+        <translation>Lemezírásra váró peerek:</translation>
+    </message>
+    <message>
+        <source>Peers waiting on disk reads:</source>
+        <translation>Lemezolvasásra váró peerek:</translation>
+    </message>
+    <message>
+        <source>Network</source>
+        <translation>Hálózat</translation>
+    </message>
+    <message>
+        <source>DHT nodes:</source>
+        <translation>DHT-csomópontok:</translation>
+    </message>
+    <message>
+        <source>Data discarded this session:</source>
+        <translation>Ebben a munkamenetben eldobott adat:</translation>
+    </message>
+    <message>
+        <source>Before tracking began</source>
+        <translation>A követés kezdete előtt</translation>
+    </message>
+    <message>
+        <source>Nothing added yet</source>
+        <translation>Még nincs hozzáadva semmi</translation>
+    </message>
+    <message>
+        <source>Off</source>
+        <translation>Ki</translation>
     </message>
 </context>
 <context>
@@ -12103,6 +12963,22 @@ Válasszon egy másik nevet és próbálja újra. </translation>
     <message>
         <source>Priority by shown file order</source>
         <translation type="vanished">Prioritás a megjelenített fájlsorrend szerint</translation>
+    </message>
+    <message>
+        <source>Reset auto width</source>
+        <translation>Automatikus szélesség visszaállítása</translation>
+    </message>
+    <message>
+        <source>Fit all non-hidden columns to their contents again, and forget the widths that were set by hand</source>
+        <translation>Az összes látható oszlop újraillesztése a tartalmához, és a kézzel beállított szélességek elfelejtése</translation>
+    </message>
+    <message>
+        <source>Reset auto width</source>
+        <translation>Automatikus szélesség visszaállítása</translation>
+    </message>
+    <message>
+        <source>Fit all non-hidden columns to their contents again, and forget the widths that were set by hand</source>
+        <translation>Az összes látható oszlop újraillesztése a tartalmához, és a kézzel beállított szélességek elfelejtése</translation>
     </message>
 </context>
 <context>
@@ -13187,6 +14063,22 @@ Válasszon egy másik nevet és próbálja újra. </translation>
         <source>Column visibility</source>
         <translation>Oszlop láthatósága</translation>
     </message>
+    <message>
+        <source>Reset auto width</source>
+        <translation>Automatikus szélesség visszaállítása</translation>
+    </message>
+    <message>
+        <source>Fit all non-hidden columns to their contents again, and forget the widths that were set by hand</source>
+        <translation>Az összes látható oszlop újraillesztése a tartalmához, és a kézzel beállított szélességek elfelejtése</translation>
+    </message>
+    <message>
+        <source>Reset auto width</source>
+        <translation>Automatikus szélesség visszaállítása</translation>
+    </message>
+    <message>
+        <source>Fit all non-hidden columns to their contents again, and forget the widths that were set by hand</source>
+        <translation>Az összes látható oszlop újraillesztése a tartalmához, és a kézzel beállított szélességek elfelejtése</translation>
+    </message>
 </context>
 <context>
     <name>TrackerStatusFilterWidget</name>
@@ -14053,6 +14945,22 @@ Válasszon egy másik nevet és próbálja újra. </translation>
         <source>Super seeding mode</source>
         <translation>Szuper seed üzemmód</translation>
     </message>
+    <message>
+        <source>Reset auto width</source>
+        <translation>Automatikus szélesség visszaállítása</translation>
+    </message>
+    <message>
+        <source>Fit all non-hidden columns to their contents again, and forget the widths that were set by hand</source>
+        <translation>Az összes látható oszlop újraillesztése a tartalmához, és a kézzel beállított szélességek elfelejtése</translation>
+    </message>
+    <message>
+        <source>Reset auto width</source>
+        <translation>Automatikus szélesség visszaállítása</translation>
+    </message>
+    <message>
+        <source>Fit all non-hidden columns to their contents again, and forget the widths that were set by hand</source>
+        <translation>Az összes látható oszlop újraillesztése a tartalmához, és a kézzel beállított szélességek elfelejtése</translation>
+    </message>
 </context>
 <context>
     <name>UIThemeDialog</name>
@@ -14387,6 +15295,46 @@ Válasszon egy másik nevet és próbálja újra. </translation>
         <source>WebAPI login failure. Reason: invalid credentials, attempt count: %1, IP: %2, username: %3</source>
         <translation>WebAPI belépési hiba. Indok: érvénytelen hitelesítő adatok, próbálkozások száma: %1, IP: %2, felhasználónév: %3</translation>
     </message>
+    <message>
+        <source>Something went wrong on the server. Details are in qBittorrent&apos;s log.</source>
+        <translation>A kiszolgálón hiba történt. A részletek a qBittorrent naplójában vannak.</translation>
+    </message>
+    <message>
+        <source>This account is locked after too many failed login attempts. Try again in %1 minute(s).</source>
+        <translation>Ez a fiók túl sok sikertelen bejelentkezési kísérlet miatt zárolva van. Próbálja újra %1 perc múlva.</translation>
+    </message>
+    <message>
+        <source>Your role (%1) doesn&apos;t allow this: %2.</source>
+        <translation>A szerepköre (%1) ezt nem engedi: %2.</translation>
+    </message>
+    <message>
+        <source>Only an admin can remove the tag that says who added a torrent.</source>
+        <translation>Csak rendszergazda távolíthatja el azt a címkét, amely megmondja, ki adta hozzá a torrentet.</translation>
+    </message>
+    <message>
+        <source>Only an admin can clear or replace all tags of a torrent that has a tag saying who added it.</source>
+        <translation>Csak rendszergazda törölheti vagy cserélheti le egy olyan torrent összes címkéjét, amelyen van hozzáadót jelző címke.</translation>
+    </message>
+    <message>
+        <source>Something went wrong on the server. Details are in qBittorrent&apos;s log.</source>
+        <translation>A kiszolgálón hiba történt. A részletek a qBittorrent naplójában vannak.</translation>
+    </message>
+    <message>
+        <source>This account is locked after too many failed login attempts. Try again in %1 minute(s).</source>
+        <translation>Ez a fiók túl sok sikertelen bejelentkezési kísérlet miatt zárolva van. Próbálja újra %1 perc múlva.</translation>
+    </message>
+    <message>
+        <source>Your role (%1) doesn&apos;t allow this: %2.</source>
+        <translation>A szerepköre (%1) ezt nem engedi: %2.</translation>
+    </message>
+    <message>
+        <source>Only an admin can remove the tag that says who added a torrent.</source>
+        <translation>Csak rendszergazda távolíthatja el azt a címkét, amely megmondja, ki adta hozzá a torrentet.</translation>
+    </message>
+    <message>
+        <source>Only an admin can clear or replace all tags of a torrent that has a tag saying who added it.</source>
+        <translation>Csak rendszergazda törölheti vagy cserélheti le egy olyan torrent összes címkéjét, amelyen van hozzáadót jelző címke.</translation>
+    </message>
 </context>
 <context>
     <name>WebUI</name>
@@ -14526,6 +15474,669 @@ Válasszon egy másik nevet és próbálja újra. </translation>
         <source>&lt; 1m</source>
         <comment>&lt; 1 minute</comment>
         <translation>&lt; 1perc</translation>
+    </message>
+</context>
+<context>
+    <name>UpdateInstaller</name>
+    <message>
+        <source>Kettle Edition update</source>
+        <translation>Kettle Edition frissítés</translation>
+    </message>
+    <message>
+        <source>Kettle Edition was updated to %1.</source>
+        <translation>A Kettle Edition frissült a következőre: %1.</translation>
+    </message>
+    <message>
+        <source>Kettle Edition updated</source>
+        <translation>Kettle Edition frissítve</translation>
+    </message>
+    <message>
+        <source>Downloading Kettle Edition %1 (%2 changed files).</source>
+        <translation>Kettle Edition %1 letöltése (%2 módosult fájl).</translation>
+    </message>
+    <message>
+        <source>Kettle Edition %1 is downloaded and ready to install.</source>
+        <translation>A Kettle Edition %1 letöltődött, és készen áll a telepítésre.</translation>
+    </message>
+    <message>
+        <source>Kettle Edition update</source>
+        <translation>Kettle Edition frissítés</translation>
+    </message>
+    <message>
+        <source>Kettle Edition was updated to %1.</source>
+        <translation>A Kettle Edition frissült a következőre: %1.</translation>
+    </message>
+    <message>
+        <source>Kettle Edition updated</source>
+        <translation>Kettle Edition frissítve</translation>
+    </message>
+    <message>
+        <source>Downloading Kettle Edition %1 (%2 changed files).</source>
+        <translation>Kettle Edition %1 letöltése (%2 módosult fájl).</translation>
+    </message>
+    <message>
+        <source>Kettle Edition %1 is downloaded and ready to install.</source>
+        <translation>A Kettle Edition %1 letöltődött, és készen áll a telepítésre.</translation>
+    </message>
+</context>
+<context>
+    <name>UserAccountDialog</name>
+    <message>
+        <source>User</source>
+        <translation>Felhasználó</translation>
+    </message>
+    <message>
+        <source>Username:</source>
+        <translation>Felhasználónév:</translation>
+    </message>
+    <message>
+        <source>Role:</source>
+        <translation>Szerepkör:</translation>
+    </message>
+    <message>
+        <source>Password:</source>
+        <translation>Jelszó:</translation>
+    </message>
+    <message>
+        <source>Confirm password:</source>
+        <translation>Jelszó megerősítése:</translation>
+    </message>
+    <message>
+        <source>Disable this account</source>
+        <translation>Fiók letiltása</translation>
+    </message>
+    <message>
+        <source>Edit User</source>
+        <translation>Felhasználó szerkesztése</translation>
+    </message>
+    <message>
+        <source>Leave empty to keep the current password</source>
+        <translation>Hagyja üresen a jelenlegi jelszó megtartásához</translation>
+    </message>
+    <message>
+        <source>Add User</source>
+        <translation>Felhasználó hozzáadása</translation>
+    </message>
+    <message>
+        <source>At least %1 characters</source>
+        <translation>Legalább %1 karakter</translation>
+    </message>
+    <message>
+        <source>Enter a username.</source>
+        <translation>Adjon meg egy felhasználónevet.</translation>
+    </message>
+    <message>
+        <source>The password must be at least %1 characters long.</source>
+        <translation>A jelszónak legalább %1 karakter hosszúnak kell lennie.</translation>
+    </message>
+    <message>
+        <source>The passwords don&apos;t match.</source>
+        <translation>A jelszavak nem egyeznek.</translation>
+    </message>
+    <message>
+        <source>User</source>
+        <translation>Felhasználó</translation>
+    </message>
+    <message>
+        <source>Username:</source>
+        <translation>Felhasználónév:</translation>
+    </message>
+    <message>
+        <source>Role:</source>
+        <translation>Szerepkör:</translation>
+    </message>
+    <message>
+        <source>Password:</source>
+        <translation>Jelszó:</translation>
+    </message>
+    <message>
+        <source>Confirm password:</source>
+        <translation>Jelszó megerősítése:</translation>
+    </message>
+    <message>
+        <source>Disable this account</source>
+        <translation>Fiók letiltása</translation>
+    </message>
+    <message>
+        <source>Edit User</source>
+        <translation>Felhasználó szerkesztése</translation>
+    </message>
+    <message>
+        <source>Leave empty to keep the current password</source>
+        <translation>Hagyja üresen a jelenlegi jelszó megtartásához</translation>
+    </message>
+    <message>
+        <source>Add User</source>
+        <translation>Felhasználó hozzáadása</translation>
+    </message>
+    <message>
+        <source>At least %1 characters</source>
+        <translation>Legalább %1 karakter</translation>
+    </message>
+    <message>
+        <source>Enter a username.</source>
+        <translation>Adjon meg egy felhasználónevet.</translation>
+    </message>
+    <message>
+        <source>The password must be at least %1 characters long.</source>
+        <translation>A jelszónak legalább %1 karakter hosszúnak kell lennie.</translation>
+    </message>
+    <message>
+        <source>The passwords don&apos;t match.</source>
+        <translation>A jelszavak nem egyeznek.</translation>
+    </message>
+</context>
+<context>
+    <name>UserAccountsWidget</name>
+    <message>
+        <source>User Accounts</source>
+        <translation>Felhasználói fiókok</translation>
+    </message>
+    <message>
+        <source>Users</source>
+        <translation>Felhasználók</translation>
+    </message>
+    <message>
+        <source>People who can log in to the WebUI with their own username and password.</source>
+        <translation>Akik a saját felhasználónevükkel és jelszavukkal bejelentkezhetnek a WebUI-ba.</translation>
+    </message>
+    <message>
+        <source>Add User...</source>
+        <translation>Felhasználó hozzáadása...</translation>
+    </message>
+    <message>
+        <source>Edit...</source>
+        <translation>Szerkesztés...</translation>
+    </message>
+    <message>
+        <source>Remove</source>
+        <translation>Eltávolítás</translation>
+    </message>
+    <message>
+        <source>Roles</source>
+        <translation>Szerepkörök</translation>
+    </message>
+    <message>
+        <source>A role decides what its users are allowed to do.</source>
+        <translation>A szerepkör határozza meg, mit tehetnek a felhasználói.</translation>
+    </message>
+    <message>
+        <source>Add Role...</source>
+        <translation>Szerepkör hozzáadása...</translation>
+    </message>
+    <message>
+        <source>Logged In</source>
+        <translation>Bejelentkezve</translation>
+    </message>
+    <message>
+        <source>Browsers and devices where someone is logged in with a user account.</source>
+        <translation>Böngészők és eszközök, ahol valaki felhasználói fiókkal van bejelentkezve.</translation>
+    </message>
+    <message>
+        <source>Log Out</source>
+        <translation>Kijelentkezés</translation>
+    </message>
+    <message>
+        <source>Username</source>
+        <translation>Felhasználónév</translation>
+    </message>
+    <message>
+        <source>Role</source>
+        <translation>Szerepkör</translation>
+    </message>
+    <message>
+        <source>Status</source>
+        <translation>Állapot</translation>
+    </message>
+    <message>
+        <source>Last login</source>
+        <translation>Utolsó bejelentkezés</translation>
+    </message>
+    <message>
+        <source>Created</source>
+        <translation>Létrehozva</translation>
+    </message>
+    <message>
+        <source>Name</source>
+        <translation>Név</translation>
+    </message>
+    <message>
+        <source>Description</source>
+        <translation>Leírás</translation>
+    </message>
+    <message>
+        <source>Permissions</source>
+        <translation>Jogosultságok</translation>
+    </message>
+    <message>
+        <source>User</source>
+        <translation>Felhasználó</translation>
+    </message>
+    <message>
+        <source>Browser</source>
+        <translation>Böngésző</translation>
+    </message>
+    <message>
+        <source>Logged in</source>
+        <translation>Bejelentkezett</translation>
+    </message>
+    <message>
+        <source>Last active</source>
+        <translation>Utolsó aktivitás</translation>
+    </message>
+    <message>
+        <source>Expires</source>
+        <translation>Lejár</translation>
+    </message>
+    <message>
+        <source>The user database could not be opened. See the Execution Log for details.</source>
+        <translation>A felhasználói adatbázist nem sikerült megnyitni. A részleteket lásd a végrehajtási naplóban.</translation>
+    </message>
+    <message>
+        <source>Disabled</source>
+        <translation>Letiltva</translation>
+    </message>
+    <message>
+        <source>Enabled</source>
+        <translation>Engedélyezve</translation>
+    </message>
+    <message>
+        <source>Never</source>
+        <translation>Soha</translation>
+    </message>
+    <message>
+        <source>No accounts yet, so everyone still uses the shared WebUI login. Add an Admin account first.</source>
+        <translation>Még nincs fiók, ezért mindenki a közös WebUI-bejelentkezést használja. Először adjon hozzá egy rendszergazdai fiókot.</translation>
+    </message>
+    <message>
+        <source>Couldn&apos;t read the user database. %1</source>
+        <translation>A felhasználói adatbázist nem sikerült beolvasni. %1</translation>
+    </message>
+    <message>
+        <source>Remove user</source>
+        <translation>Felhasználó eltávolítása</translation>
+    </message>
+    <message>
+        <source>Are you sure you want to remove the user &apos;%1&apos;?</source>
+        <translation>Biztosan eltávolítja a(z) „%1” felhasználót?</translation>
+    </message>
+    <message>
+        <source>Remove role</source>
+        <translation>Szerepkör eltávolítása</translation>
+    </message>
+    <message>
+        <source>Are you sure you want to remove the role &apos;%1&apos;?</source>
+        <translation>Biztosan eltávolítja a(z) „%1” szerepkört?</translation>
+    </message>
+    <message>
+        <source>Enable</source>
+        <translation>Engedélyezés</translation>
+    </message>
+    <message>
+        <source>Disable</source>
+        <translation>Letiltás</translation>
+    </message>
+    <message>
+        <source>Log Out Everywhere</source>
+        <translation>Kijelentkezés mindenhol</translation>
+    </message>
+    <message>
+        <source>User Accounts</source>
+        <translation>Felhasználói fiókok</translation>
+    </message>
+    <message>
+        <source>Users</source>
+        <translation>Felhasználók</translation>
+    </message>
+    <message>
+        <source>People who can log in to the WebUI with their own username and password.</source>
+        <translation>Akik a saját felhasználónevükkel és jelszavukkal bejelentkezhetnek a WebUI-ba.</translation>
+    </message>
+    <message>
+        <source>Add User...</source>
+        <translation>Felhasználó hozzáadása...</translation>
+    </message>
+    <message>
+        <source>Edit...</source>
+        <translation>Szerkesztés...</translation>
+    </message>
+    <message>
+        <source>Remove</source>
+        <translation>Eltávolítás</translation>
+    </message>
+    <message>
+        <source>Roles</source>
+        <translation>Szerepkörök</translation>
+    </message>
+    <message>
+        <source>A role decides what its users are allowed to do.</source>
+        <translation>A szerepkör határozza meg, mit tehetnek a felhasználói.</translation>
+    </message>
+    <message>
+        <source>Add Role...</source>
+        <translation>Szerepkör hozzáadása...</translation>
+    </message>
+    <message>
+        <source>Logged In</source>
+        <translation>Bejelentkezve</translation>
+    </message>
+    <message>
+        <source>Browsers and devices where someone is logged in with a user account.</source>
+        <translation>Böngészők és eszközök, ahol valaki felhasználói fiókkal van bejelentkezve.</translation>
+    </message>
+    <message>
+        <source>Log Out</source>
+        <translation>Kijelentkezés</translation>
+    </message>
+    <message>
+        <source>Username</source>
+        <translation>Felhasználónév</translation>
+    </message>
+    <message>
+        <source>Role</source>
+        <translation>Szerepkör</translation>
+    </message>
+    <message>
+        <source>Status</source>
+        <translation>Állapot</translation>
+    </message>
+    <message>
+        <source>Last login</source>
+        <translation>Utolsó bejelentkezés</translation>
+    </message>
+    <message>
+        <source>Created</source>
+        <translation>Létrehozva</translation>
+    </message>
+    <message>
+        <source>Name</source>
+        <translation>Név</translation>
+    </message>
+    <message>
+        <source>Description</source>
+        <translation>Leírás</translation>
+    </message>
+    <message>
+        <source>Permissions</source>
+        <translation>Jogosultságok</translation>
+    </message>
+    <message>
+        <source>User</source>
+        <translation>Felhasználó</translation>
+    </message>
+    <message>
+        <source>Browser</source>
+        <translation>Böngésző</translation>
+    </message>
+    <message>
+        <source>Logged in</source>
+        <translation>Bejelentkezett</translation>
+    </message>
+    <message>
+        <source>Last active</source>
+        <translation>Utolsó aktivitás</translation>
+    </message>
+    <message>
+        <source>Expires</source>
+        <translation>Lejár</translation>
+    </message>
+    <message>
+        <source>The user database could not be opened. See the Execution Log for details.</source>
+        <translation>A felhasználói adatbázist nem sikerült megnyitni. A részleteket lásd a végrehajtási naplóban.</translation>
+    </message>
+    <message>
+        <source>Disabled</source>
+        <translation>Letiltva</translation>
+    </message>
+    <message>
+        <source>Enabled</source>
+        <translation>Engedélyezve</translation>
+    </message>
+    <message>
+        <source>Never</source>
+        <translation>Soha</translation>
+    </message>
+    <message>
+        <source>No accounts yet, so everyone still uses the shared WebUI login. Add an Admin account first.</source>
+        <translation>Még nincs fiók, ezért mindenki a közös WebUI-bejelentkezést használja. Először adjon hozzá egy rendszergazdai fiókot.</translation>
+    </message>
+    <message>
+        <source>Couldn&apos;t read the user database. %1</source>
+        <translation>A felhasználói adatbázist nem sikerült beolvasni. %1</translation>
+    </message>
+    <message>
+        <source>Remove user</source>
+        <translation>Felhasználó eltávolítása</translation>
+    </message>
+    <message>
+        <source>Are you sure you want to remove the user &apos;%1&apos;?</source>
+        <translation>Biztosan eltávolítja a(z) „%1” felhasználót?</translation>
+    </message>
+    <message>
+        <source>Remove role</source>
+        <translation>Szerepkör eltávolítása</translation>
+    </message>
+    <message>
+        <source>Are you sure you want to remove the role &apos;%1&apos;?</source>
+        <translation>Biztosan eltávolítja a(z) „%1” szerepkört?</translation>
+    </message>
+    <message>
+        <source>Enable</source>
+        <translation>Engedélyezés</translation>
+    </message>
+    <message>
+        <source>Disable</source>
+        <translation>Letiltás</translation>
+    </message>
+    <message>
+        <source>Log Out Everywhere</source>
+        <translation>Kijelentkezés mindenhol</translation>
+    </message>
+</context>
+<context>
+    <name>UserRoleDialog</name>
+    <message>
+        <source>Role</source>
+        <translation>Szerepkör</translation>
+    </message>
+    <message>
+        <source>Name:</source>
+        <translation>Név:</translation>
+    </message>
+    <message>
+        <source>Description:</source>
+        <translation>Leírás:</translation>
+    </message>
+    <message>
+        <source>Gives control over the PC or qBittorrent itself.</source>
+        <translation>Irányítást ad a számítógép vagy maga a qBittorrent felett.</translation>
+    </message>
+    <message>
+        <source>Add Role</source>
+        <translation>Szerepkör hozzáadása</translation>
+    </message>
+    <message>
+        <source>Edit Role</source>
+        <translation>Szerepkör szerkesztése</translation>
+    </message>
+    <message>
+        <source>Enter a role name.</source>
+        <translation>Adjon meg egy szerepkörnevet.</translation>
+    </message>
+    <message>
+        <source>Role</source>
+        <translation>Szerepkör</translation>
+    </message>
+    <message>
+        <source>Name:</source>
+        <translation>Név:</translation>
+    </message>
+    <message>
+        <source>Description:</source>
+        <translation>Leírás:</translation>
+    </message>
+    <message>
+        <source>Gives control over the PC or qBittorrent itself.</source>
+        <translation>Irányítást ad a számítógép vagy maga a qBittorrent felett.</translation>
+    </message>
+    <message>
+        <source>Add Role</source>
+        <translation>Szerepkör hozzáadása</translation>
+    </message>
+    <message>
+        <source>Edit Role</source>
+        <translation>Szerepkör szerkesztése</translation>
+    </message>
+    <message>
+        <source>Enter a role name.</source>
+        <translation>Adjon meg egy szerepkörnevet.</translation>
+    </message>
+</context>
+<context>
+    <name>WebUIActivityWidget</name>
+    <message>
+        <source>All</source>
+        <translation>Összes</translation>
+    </message>
+    <message>
+        <source>Filter activity</source>
+        <translation>Tevékenység szűrése</translation>
+    </message>
+    <message>
+        <source>Export...</source>
+        <translation>Exportálás...</translation>
+    </message>
+    <message>
+        <source>User:</source>
+        <translation>Felhasználó:</translation>
+    </message>
+    <message>
+        <source>Category:</source>
+        <translation>Kategória:</translation>
+    </message>
+    <message>
+        <source>Result:</source>
+        <translation>Eredmény:</translation>
+    </message>
+    <message>
+        <source>Time</source>
+        <translation>Idő</translation>
+    </message>
+    <message>
+        <source>User</source>
+        <translation>Felhasználó</translation>
+    </message>
+    <message>
+        <source>Role</source>
+        <translation>Szerepkör</translation>
+    </message>
+    <message>
+        <source>Category</source>
+        <translation>Kategória</translation>
+    </message>
+    <message>
+        <source>Action</source>
+        <translation>Művelet</translation>
+    </message>
+    <message>
+        <source>Result</source>
+        <translation>Eredmény</translation>
+    </message>
+    <message>
+        <source>The user database could not be opened. See the General tab for details.</source>
+        <translation>A felhasználói adatbázist nem sikerült megnyitni. A részleteket lásd az Általános lapon.</translation>
+    </message>
+    <message>
+        <source>Results (showing %1 out of %2)</source>
+        <translation>Eredmények (%1 / %2 megjelenítve)</translation>
+    </message>
+    <message>
+        <source>Copy</source>
+        <translation>Másolás</translation>
+    </message>
+    <message>
+        <source>Export WebUI activity</source>
+        <translation>WebUI-tevékenység exportálása</translation>
+    </message>
+    <message>
+        <source>CSV files</source>
+        <translation>CSV-fájlok</translation>
+    </message>
+    <message>
+        <source>Couldn&apos;t save the file. Reason: %1</source>
+        <translation>A fájlt nem sikerült menteni. Ok: %1</translation>
+    </message>
+    <message>
+        <source>All</source>
+        <translation>Összes</translation>
+    </message>
+    <message>
+        <source>Filter activity</source>
+        <translation>Tevékenység szűrése</translation>
+    </message>
+    <message>
+        <source>Export...</source>
+        <translation>Exportálás...</translation>
+    </message>
+    <message>
+        <source>User:</source>
+        <translation>Felhasználó:</translation>
+    </message>
+    <message>
+        <source>Category:</source>
+        <translation>Kategória:</translation>
+    </message>
+    <message>
+        <source>Result:</source>
+        <translation>Eredmény:</translation>
+    </message>
+    <message>
+        <source>Time</source>
+        <translation>Idő</translation>
+    </message>
+    <message>
+        <source>User</source>
+        <translation>Felhasználó</translation>
+    </message>
+    <message>
+        <source>Role</source>
+        <translation>Szerepkör</translation>
+    </message>
+    <message>
+        <source>Category</source>
+        <translation>Kategória</translation>
+    </message>
+    <message>
+        <source>Action</source>
+        <translation>Művelet</translation>
+    </message>
+    <message>
+        <source>Result</source>
+        <translation>Eredmény</translation>
+    </message>
+    <message>
+        <source>The user database could not be opened. See the General tab for details.</source>
+        <translation>A felhasználói adatbázist nem sikerült megnyitni. A részleteket lásd az Általános lapon.</translation>
+    </message>
+    <message>
+        <source>Results (showing %1 out of %2)</source>
+        <translation>Eredmények (%1 / %2 megjelenítve)</translation>
+    </message>
+    <message>
+        <source>Copy</source>
+        <translation>Másolás</translation>
+    </message>
+    <message>
+        <source>Export WebUI activity</source>
+        <translation>WebUI-tevékenység exportálása</translation>
+    </message>
+    <message>
+        <source>CSV files</source>
+        <translation>CSV-fájlok</translation>
+    </message>
+    <message>
+        <source>Couldn&apos;t save the file. Reason: %1</source>
+        <translation>A fájlt nem sikerült menteni. Ok: %1</translation>
     </message>
 </context>
 </TS>

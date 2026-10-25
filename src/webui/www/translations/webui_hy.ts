@@ -223,6 +223,85 @@ The piece hash will be checked when it is requested for the first time by a peer
         <source>%1 needed · %2 free</source>
         <translation type="unfinished" />
     </message>
+    <message>
+        <source>Don&apos;t create subfolder</source>
+        <translation>Չստեղծել ենթապանակ</translation>
+    </message>
+    <message>
+        <source>N/A</source>
+        <translation>Հասանելի չէ</translation>
+    </message>
+    <message>
+        <source>Never show again</source>
+        <translation>Այլևս չցուցադրել</translation>
+    </message>
+    <message>
+        <source>Select None</source>
+        <translation>Չնշել բոլորը</translation>
+    </message>
+    <message>
+        <source>Your role saves torrents in the default folders.</source>
+        <translation>Ձեր դերը պահում է տորրենտները լռելյայն թղթապանակներում։</translation>
+    </message>
+</context>
+<context>
+    <name>AdvancedSettings</name>
+    <message>
+        <source>General</source>
+        <translation>Ընդհանուր</translation>
+    </message>
+    <message>
+        <source>Network</source>
+        <translation>Ցանց</translation>
+    </message>
+    <message>
+        <source>Storage</source>
+        <translation>Պահոց</translation>
+    </message>
+    <message>
+        <source>Peers and trackers</source>
+        <translation>Ցանցորդներ և գրանցորդներ</translation>
+    </message>
+    <message>
+        <source>Program behavior</source>
+        <translation>Ծրագրի վարքագիծ</translation>
+    </message>
+    <message>
+        <source>Display and notifications</source>
+        <translation>Ցուցադրում և ծանուցումներ</translation>
+    </message>
+    <message>
+        <source>Network connection</source>
+        <translation>Ցանցային կապ</translation>
+    </message>
+    <message>
+        <source>Security and privacy</source>
+        <translation>Անվտանգություն և գաղտնիություն</translation>
+    </message>
+    <message>
+        <source>Connection tuning</source>
+        <translation>Կապի կարգավորում</translation>
+    </message>
+    <message>
+        <source>Saving and torrent files</source>
+        <translation>Պահպանում և տորրենտ ֆայլեր</translation>
+    </message>
+    <message>
+        <source>Disk and memory</source>
+        <translation>Սկավառակ և հիշողություն</translation>
+    </message>
+    <message>
+        <source>Trackers</source>
+        <translation>Գրանցորդներ</translation>
+    </message>
+    <message>
+        <source>Peers and seeding</source>
+        <translation>Ցանցորդներ և սիդինգ</translation>
+    </message>
+    <message>
+        <source>DHT and I2P</source>
+        <translation>DHT և I2P</translation>
+    </message>
 </context>
 <context>
     <name>CategoryFilterModel</name>
@@ -623,6 +702,14 @@ The piece hash will be checked when it is requested for the first time by a peer
         <source>More</source>
         <translation>Ավելին</translation>
     </message>
+    <message>
+        <source>Change Password...</source>
+        <translation>Փոխել գաղտնաբառը...</translation>
+    </message>
+    <message>
+        <source>Signed in as</source>
+        <translation>Մուտք է գործել որպես</translation>
+    </message>
 </context>
 <context>
     <name>MainWindow</name>
@@ -929,6 +1016,34 @@ The piece hash will be checked when it is requested for the first time by a peer
     <message>
         <source>Resume Session</source>
         <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Pause Session</source>
+        <translation>Դադարեցնել սեանսը</translation>
+    </message>
+    <message>
+        <source>Pause session</source>
+        <translation>Դադարեցնել սեանսը</translation>
+    </message>
+    <message>
+        <source>Remove</source>
+        <translation>Հեռացնել</translation>
+    </message>
+    <message>
+        <source>Resume Session</source>
+        <translation>Շարունակել սեանսը</translation>
+    </message>
+    <message>
+        <source>Resume session</source>
+        <translation>Շարունակել սեանսը</translation>
+    </message>
+    <message>
+        <source>Your account can&apos;t add torrents.</source>
+        <translation>Ձեր հաշիվը չի կարող տորրենտներ ավելացնել։</translation>
+    </message>
+    <message>
+        <source>[PAUSED]</source>
+        <translation>[ԴԱԴԱՐԵՑՎԱԾ]</translation>
     </message>
 </context>
 <context>
@@ -2511,6 +2626,138 @@ Use ';' to split multiple entries. Can use wildcard '*'.</source>
         <source>a@x.com;b@y.com,c@z.com - send two emails: the first to just a@x.com, the second to both b@y.com and c@z.com</source>
         <translation type="unfinished" />
     </message>
+    <message>
+        <source>0 means users are logged out after the session timeout.</source>
+        <translation>0-ն նշանակում է, որ օգտվողները դուրս են գալիս սեանսի ժամկետի ավարտից հետո։</translation>
+    </message>
+    <message>
+        <source>Access</source>
+        <translation>Մուտք</translation>
+    </message>
+    <message>
+        <source>Allow this login when user accounts exist</source>
+        <translation>Թույլատրել այս մուտքը, երբ օգտվողների հաշիվներ կան</translation>
+    </message>
+    <message>
+        <source>Also save search results</source>
+        <translation>Պահպանել նաև որոնման արդյունքները</translation>
+    </message>
+    <message>
+        <source>Below normal</source>
+        <translation>Միջինից ցածր</translation>
+    </message>
+    <message>
+        <source>Changes to users, roles and logins apply at once.</source>
+        <translation>Օգտվողների, դերերի և մուտքերի փոփոխությունները կիրառվում են անմիջապես։</translation>
+    </message>
+    <message>
+        <source>Don&apos;t create subfolder</source>
+        <translation>Չստեղծել ենթապանակ</translation>
+    </message>
+    <message>
+        <source>Example:</source>
+        <translation>Օրինակ՝</translation>
+    </message>
+    <message>
+        <source>Keep WebUI activity log for:</source>
+        <translation>Պահել WebUI գործունեության մատյանը՝</translation>
+    </message>
+    <message>
+        <source>Keep users logged in for:</source>
+        <translation>Օգտվողներին պահել մուտք գործած՝</translation>
+    </message>
+    <message>
+        <source>Language:</source>
+        <translation>Լեզու՝</translation>
+    </message>
+    <message>
+        <source>Lock account after consecutive failures:</source>
+        <translation>Արգելափակել հաշիվը հաջորդական ձախողումներից հետո՝</translation>
+    </message>
+    <message>
+        <source>Logins and Activity Log</source>
+        <translation>Մուտքեր և գործունեության մատյան</translation>
+    </message>
+    <message>
+        <source>Low</source>
+        <translation>Ցածր</translation>
+    </message>
+    <message>
+        <source>Medium</source>
+        <translation>Միջին</translation>
+    </message>
+    <message>
+        <source>No settings match</source>
+        <translation>Համապատասխան կարգավորում չկա</translation>
+    </message>
+    <message>
+        <source>Process memory priority:</source>
+        <translation>Գործընթացի հիշողության առաջնահերթություն՝</translation>
+    </message>
+    <message>
+        <source>Save search tabs</source>
+        <translation>Պահպանել որոնման ներդիրները</translation>
+    </message>
+    <message>
+        <source>Search settings</source>
+        <translation>Որոնել կարգավորումներում</translation>
+    </message>
+    <message>
+        <source>Service:</source>
+        <translation>Սպասարկիչը.</translation>
+    </message>
+    <message>
+        <source>Show the window when adding a torrent</source>
+        <translation>Ցույց տալ պատուհանը տորրենտ ավելացնելիս</translation>
+    </message>
+    <message>
+        <source>Status bar and log</source>
+        <translation>Վիճակի գոտի և մատյան</translation>
+    </message>
+    <message>
+        <source>The WebUI activity log can be kept for 1 to 3650 days.</source>
+        <translation>WebUI գործունեության մատյանը կարելի է պահել 1-ից 3650 օր։</translation>
+    </message>
+    <message>
+        <source>The settings below apply with OK or Apply.</source>
+        <translation>Ստորև կարգավորումները կիրառվում են Լավ կամ Կիրառել կոճակով։</translation>
+    </message>
+    <message>
+        <source>Transfer List</source>
+        <translation>Փոխանցման ցանկ</translation>
+    </message>
+    <message>
+        <source>Until the first user account is created, this login always works.</source>
+        <translation>Մինչև առաջին օգտվողի հաշվի ստեղծումը այս մուտքը միշտ աշխատում է։</translation>
+    </message>
+    <message>
+        <source>User</source>
+        <translation>Օգտվող</translation>
+    </message>
+    <message>
+        <source>User Accounts</source>
+        <translation>Օգտվողների հաշիվներ</translation>
+    </message>
+    <message>
+        <source>Users can be kept logged in for 0 to 365 days.</source>
+        <translation>Օգտվողներին կարելի է մուտք գործած պահել 0-ից 365 օր։</translation>
+    </message>
+    <message>
+        <source>Very low</source>
+        <translation>Շատ ցածր</translation>
+    </message>
+    <message>
+        <source>Warning! Data loss possible!</source>
+        <translation>Զգուշացո՛ւմ: Հնարավոր է տվյալների կորուստ:</translation>
+    </message>
+    <message>
+        <source>You changed the address, port or HTTPS setting of the WebUI. Saving moves the WebUI, so Options will save, close and reload the page, the same as OK. If the page doesn&apos;t come back, open the WebUI at its new address.\n\nSave anyway?</source>
+        <translation>Դուք փոխել եք WebUI-ի հասցեն, պորտը կամ HTTPS կարգավորումը։ Պահպանումը տեղափոխում է WebUI-ը, ուստի Ընտրանքները կպահպանեն, կփակվեն և կվերաբեռնեն էջը, ինչպես Լավ կոճակի դեպքում։ Եթե էջը չվերադառնա, բացեք WebUI-ը նոր հասցեով։\n\nՊահպանե՞լ ամեն դեպքում։</translation>
+    </message>
+    <message>
+        <source>lock for:</source>
+        <translation>արգելափակել՝</translation>
+    </message>
 </context>
 <context>
     <name>PeerListWidget</name>
@@ -2939,6 +3186,10 @@ Use ';' to split multiple entries. Can use wildcard '*'.</source>
         <source>Copy download URL</source>
         <translation type="unfinished" />
     </message>
+    <message>
+        <source>N/A</source>
+        <translation>Հասանելի չէ</translation>
+    </message>
 </context>
 <context>
     <name>ScanFoldersModel</name>
@@ -3051,6 +3302,142 @@ Use ';' to split multiple entries. Can use wildcard '*'.</source>
     <message>
         <source>The time it takes from receiving a request from a peer until we're sending the response back on the socket</source>
         <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Activity</source>
+        <translation>Գործունեություն</translation>
+    </message>
+    <message>
+        <source>All time</source>
+        <translation>Ամբողջ ժամանակ</translation>
+    </message>
+    <message>
+        <source>Before tracking began</source>
+        <translation>Հետևելու սկսվելուց առաջ</translation>
+    </message>
+    <message>
+        <source>By month</source>
+        <translation>Ըստ ամսվա</translation>
+    </message>
+    <message>
+        <source>Counts the requests that added a download. Apps without a login, such as Sonarr and Radarr, are shown as (localhost). Downloads added in the desktop window are not counted.</source>
+        <translation>Հաշվում է ներբեռնում ավելացրած հարցումները։ Առանց մուտքի հավելվածները, ինչպես Sonarr-ն ու Radarr-ը, ցուցադրվում են որպես (localhost)։ Աշխատասեղանի պատուհանում ավելացված ներբեռնումները չեն հաշվվում։</translation>
+    </message>
+    <message>
+        <source>Current speed:</source>
+        <translation>Ընթացիկ արագություն՝</translation>
+    </message>
+    <message>
+        <source>DHT nodes:</source>
+        <translation>DHT հանգույցներ՝</translation>
+    </message>
+    <message>
+        <source>Data discarded this session:</source>
+        <translation>Այս սեանսում դեն նետված տվյալներ՝</translation>
+    </message>
+    <message>
+        <source>Disk</source>
+        <translation>Սկավառակ</translation>
+    </message>
+    <message>
+        <source>History</source>
+        <translation>Պատմություն</translation>
+    </message>
+    <message>
+        <source>Last 12 months</source>
+        <translation>Վերջին 12 ամիսը</translation>
+    </message>
+    <message>
+        <source>Last 7 days</source>
+        <translation>Վերջին 7 օրը</translation>
+    </message>
+    <message>
+        <source>Last month</source>
+        <translation>Անցյալ ամիս</translation>
+    </message>
+    <message>
+        <source>Month</source>
+        <translation>Ամիս</translation>
+    </message>
+    <message>
+        <source>Nothing added yet</source>
+        <translation>Դեռ ոչինչ չի ավելացվել</translation>
+    </message>
+    <message>
+        <source>Off</source>
+        <translation>Անջատված</translation>
+    </message>
+    <message>
+        <source>Overview</source>
+        <translation>Ակնարկ</translation>
+    </message>
+    <message>
+        <source>Peers waiting on disk reads:</source>
+        <translation>Սկավառակից կարդալու սպասող ցանցորդներ՝</translation>
+    </message>
+    <message>
+        <source>Peers waiting on disk writes:</source>
+        <translation>Սկավառակի վրա գրելու սպասող ցանցորդներ՝</translation>
+    </message>
+    <message>
+        <source>Period</source>
+        <translation>Ժամանակահատված</translation>
+    </message>
+    <message>
+        <source>Request latency:</source>
+        <translation>Հարցման ուշացում՝</translation>
+    </message>
+    <message>
+        <source>Running for:</source>
+        <translation>Աշխատում է՝</translation>
+    </message>
+    <message>
+        <source>Share ratio</source>
+        <translation>Կիսման հարաբերակցություն</translation>
+    </message>
+    <message>
+        <source>Share ratio:</source>
+        <translation>Կիսման հարաբերակցություն՝</translation>
+    </message>
+    <message>
+        <source>Technical</source>
+        <translation>Տեխնիկական</translation>
+    </message>
+    <message>
+        <source>This month</source>
+        <translation>Այս ամիս</translation>
+    </message>
+    <message>
+        <source>This session</source>
+        <translation>Այս սեանսը</translation>
+    </message>
+    <message>
+        <source>Today</source>
+        <translation>Այսօր</translation>
+    </message>
+    <message>
+        <source>Torrents downloading:</source>
+        <translation>Ներբեռնվող տորրենտներ՝</translation>
+    </message>
+    <message>
+        <source>Torrents seeding:</source>
+        <translation>Սիդող տորրենտներ՝</translation>
+    </message>
+    <message>
+        <source>Torrents stopped:</source>
+        <translation>Կանգնեցված տորրենտներ՝</translation>
+    </message>
+    <message>
+        <source>Torrents with errors:</source>
+        <translation>Սխալներով տորրենտներ՝</translation>
+    </message>
+    <message>
+        <source>Tracking since:</source>
+        <translation>Հետևում է սկսած՝</translation>
+    </message>
+    <message>
+        <source>WebUI downloads added, this month</source>
+        <translation>WebUI-ով ավելացված ներբեռնումներ, այս ամիս</translation>
     </message>
 </context>
 <context>
@@ -3519,6 +3906,10 @@ Use ';' to split multiple entries. Can use wildcard '*'.</source>
         <source>Force reannounce to all trackers</source>
         <translation>Ստիպողաբար վերաազդարարել բոլոր գրանցորդներին</translation>
     </message>
+    <message>
+        <source>N/A</source>
+        <translation>Հասանելի չէ</translation>
+    </message>
 </context>
 <context>
     <name>TrackersAdditionDialog</name>
@@ -3609,6 +4000,10 @@ Use ';' to split multiple entries. Can use wildcard '*'.</source>
     <message>
         <source>N/A</source>
         <translation type="unfinished" />
+    </message>
+    <message>
+        <source>N/A</source>
+        <translation>Հասանելի չէ</translation>
     </message>
 </context>
 <context>
@@ -3838,6 +4233,14 @@ Use ';' to split multiple entries. Can use wildcard '*'.</source>
         <source>Content Path</source>
         <translation type="unfinished" />
     </message>
+    <message>
+        <source>Remove</source>
+        <translation>Հեռացնել</translation>
+    </message>
+    <message>
+        <source>Remove all tags from selected torrents?</source>
+        <translation>Հեռացնե՞լ բոլոր պիտակները ընտրված torrent-ներից:</translation>
+    </message>
 </context>
 <context>
     <name>UpDownRatioDialog</name>
@@ -3910,6 +4313,10 @@ Use ';' to split multiple entries. Can use wildcard '*'.</source>
     <message>
         <source>Remove tracker</source>
         <translation>Ջնջել ուղղորդիչը</translation>
+    </message>
+    <message>
+        <source>This choice is remembered for the next removal.</source>
+        <translation>Այս ընտրությունը կհիշվի հաջորդ հեռացման համար։</translation>
     </message>
 </context>
 <context>
@@ -4122,6 +4529,34 @@ Use ';' to split multiple entries. Can use wildcard '*'.</source>
     <message>
         <source>Select plugins</source>
         <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Category to search in</source>
+        <translation>Որոնման կատեգորիա</translation>
+    </message>
+    <message>
+        <source>Close the selected search</source>
+        <translation>Փակել ընտրված որոնումը</translation>
+    </message>
+    <message>
+        <source>Empty search pattern</source>
+        <translation>Դաշտը դատարկ է</translation>
+    </message>
+    <message>
+        <source>Search engines to use</source>
+        <translation>Օգտագործվող որոնիչներ</translation>
+    </message>
+    <message>
+        <source>Search for torrents...</source>
+        <translation>Որոնել տորրենտներ...</translation>
+    </message>
+    <message>
+        <source>Searches</source>
+        <translation>Որոնումներ</translation>
+    </message>
+    <message>
+        <source>Type a search above and press Enter.</source>
+        <translation>Վերևում մուտքագրեք որոնում և սեղմեք Enter։</translation>
     </message>
 </context>
 <context>
@@ -4384,6 +4819,34 @@ Use ';' to split multiple entries. Can use wildcard '*'.</source>
         <source>qBittorrent icon</source>
         <translation type="unfinished" />
     </message>
+    <message>
+        <source>Based on:</source>
+        <translation>Հիմնված է՝</translation>
+    </message>
+    <message>
+        <source>Edition version:</source>
+        <translation>Թողարկման տարբերակը՝</translation>
+    </message>
+    <message>
+        <source>Kettle Edition is a personal build of qBittorrent that adds user accounts with roles for the WebUI and the desktop app, an activity log, and an installable WebUI with a phone layout. A kettle is a group of hawks soaring together. This is an unofficial build, not affiliated with the qBittorrent project.</source>
+        <translation>Kettle Edition-ը qBittorrent-ի անձնական կառուցվածք է, որը ավելացնում է դերերով օգտվողների հաշիվներ WebUI-ի և աշխատասեղանի հավելվածի համար, գործունեության մատյան և տեղադրվող WebUI՝ հեռախոսային դասավորությամբ։ Kettle-ը միասին սավառնող բազեների խումբ է։ Սա ոչ պաշտոնական կառուցվածք է և կապ չունի qBittorrent նախագծի հետ։</translation>
+    </message>
+    <message>
+        <source>Maintainer:</source>
+        <translation>Պահպանող՝</translation>
+    </message>
+    <message>
+        <source>N/A</source>
+        <translation>Հասանելի չէ</translation>
+    </message>
+    <message>
+        <source>This edition</source>
+        <translation>Այս թողարկումը</translation>
+    </message>
+    <message>
+        <source>qBittorrent project:</source>
+        <translation>qBittorrent նախագիծ՝</translation>
+    </message>
 </context>
 <context>
     <name>OptionDialog</name>
@@ -4485,6 +4948,46 @@ Use ';' to split multiple entries. Can use wildcard '*'.</source>
     <message>
         <source>Open shared download window</source>
         <translation type="unfinished" />
+    </message>
+    <message>
+        <source>%1 of %2 shown</source>
+        <translation>Ցուցադրված է %1՝ %2-ից</translation>
+    </message>
+    <message>
+        <source>%1 of %2 shown (%3 hidden)</source>
+        <translation>Ցուցադրված է %1՝ %2-ից (%3 թաքնված)</translation>
+    </message>
+    <message>
+        <source>Close all searches</source>
+        <translation>Փակել բոլոր որոնումները</translation>
+    </message>
+    <message>
+        <source>Close search</source>
+        <translation>Փակել որոնումը</translation>
+    </message>
+    <message>
+        <source>Filter search results...</source>
+        <translation>Զտիչի որոնման արդյունքներ...</translation>
+    </message>
+    <message>
+        <source>Finished: %1</source>
+        <translation>Ավարտվեց՝ %1</translation>
+    </message>
+    <message>
+        <source>Refresh search</source>
+        <translation>Թարմացնել որոնումը</translation>
+    </message>
+    <message>
+        <source>Search aborted: %1</source>
+        <translation>Որոնումը ընդհատվեց՝ %1</translation>
+    </message>
+    <message>
+        <source>Search returned no results</source>
+        <translation>Ոչնինչ չի գտնվել</translation>
+    </message>
+    <message>
+        <source>Searching: %1</source>
+        <translation>Որոնում՝ %1</translation>
     </message>
 </context>
 <context>
@@ -4623,6 +5126,10 @@ Use ';' to split multiple entries. Can use wildcard '*'.</source>
     <message>
         <source>Blocked opening RSS article URL. Only http:// and https:// links can be opened.</source>
         <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Details</source>
+        <translation>Մանրամասներ</translation>
     </message>
 </context>
 <context>
@@ -4900,6 +5407,10 @@ Supports the formats: S01E01, 1x1, 2017.12.31 and 31.12.2017 (Date formats also 
         <source>Import</source>
         <translation type="unfinished" />
     </message>
+    <message>
+        <source>Don&apos;t create subfolder</source>
+        <translation>Չստեղծել ենթապանակ</translation>
+    </message>
 </context>
 <context>
     <name>TrackerFiltersList</name>
@@ -5089,6 +5600,26 @@ Supports the formats: S01E01, 1x1, 2017.12.31 and 31.12.2017 (Date formats also 
         <source>Choose a log level...</source>
         <translation type="unfinished" />
     </message>
+    <message>
+        <source>Export...</source>
+        <translation>Արտահանել...</translation>
+    </message>
+    <message>
+        <source>Filter activity</source>
+        <translation>Զտել գործունեությունը</translation>
+    </message>
+    <message>
+        <source>Result:</source>
+        <translation>Արդյունք՝</translation>
+    </message>
+    <message>
+        <source>User:</source>
+        <translation>Օգտվող՝</translation>
+    </message>
+    <message>
+        <source>WebUI Activity</source>
+        <translation>WebUI գործունեություն</translation>
+    </message>
 </context>
 <context>
     <name>TrackersFilterWidget</name>
@@ -5159,6 +5690,10 @@ Supports the formats: S01E01, 1x1, 2017.12.31 and 31.12.2017 (Date formats also 
         <source>Torrent share limits</source>
         <translation type="unfinished" />
     </message>
+    <message>
+        <source>Your role saves torrents in the default folders.</source>
+        <translation>Ձեր դերը պահում է տորրենտները լռելյայն թղթապանակներում։</translation>
+    </message>
 </context>
 <context>
     <name>CookiesDialog</name>
@@ -5193,6 +5728,10 @@ Supports the formats: S01E01, 1x1, 2017.12.31 and 31.12.2017 (Date formats also 
     <message>
         <source>Path</source>
         <translation>Ուղի</translation>
+    </message>
+    <message>
+        <source>Remove</source>
+        <translation>Հեռացնել</translation>
     </message>
 </context>
 <context>
@@ -5257,6 +5796,14 @@ Supports the formats: S01E01, 1x1, 2017.12.31 and 31.12.2017 (Date formats also 
     <message>
         <source>Invalid Username or Password.</source>
         <translation type="unfinished" />
+    </message>
+    <message>
+        <source>A kettle is a group of hawks soaring together.</source>
+        <translation>Kettle-ը միասին սավառնող բազեների խումբ է։</translation>
+    </message>
+    <message>
+        <source>Sign in</source>
+        <translation>Մուտք գործել</translation>
     </message>
 </context>
 <context>
@@ -5465,6 +6012,14 @@ Supports the formats: S01E01, 1x1, 2017.12.31 and 31.12.2017 (Date formats also 
         <source>If checked, filenames starting with a period punctuation mark `.` will not be added to the created torrent.</source>
         <translation type="unfinished" />
     </message>
+    <message>
+        <source>N/A</source>
+        <translation>Հասանելի չէ</translation>
+    </message>
+    <message>
+        <source>Start seeding immediately</source>
+        <translation>Անմիջապես սկսել բաժանել</translation>
+    </message>
 </context>
 <context>
     <name>DownloadFromURLDialog</name>
@@ -5585,6 +6140,10 @@ Supports the formats: S01E01, 1x1, 2017.12.31 and 31.12.2017 (Date formats also 
     <message>
         <source>Resize</source>
         <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Reset Auto Width</source>
+        <translation>Վերակայել ինքնաշխատ լայնությունը</translation>
     </message>
 </context>
 <context>
@@ -5725,6 +6284,220 @@ Supports the formats: S01E01, 1x1, 2017.12.31 and 31.12.2017 (Date formats also 
     <message>
         <source>Not available for folders</source>
         <translation type="unfinished" />
+    </message>
+</context>
+<context>
+    <name>UserAccounts</name>
+    <message>
+        <source>(this browser)</source>
+        <translation>(այս դիտարկիչը)</translation>
+    </message>
+    <message>
+        <source>A role decides what its users are allowed to do.</source>
+        <translation>Դերը որոշում է, թե ինչ կարող են անել նրա օգտվողները։</translation>
+    </message>
+    <message>
+        <source>Add Role</source>
+        <translation>Ավելացնել դեր</translation>
+    </message>
+    <message>
+        <source>Add Role...</source>
+        <translation>Ավելացնել դեր...</translation>
+    </message>
+    <message>
+        <source>Add User</source>
+        <translation>Ավելացնել օգտվող</translation>
+    </message>
+    <message>
+        <source>Add User...</source>
+        <translation>Ավելացնել օգտվող...</translation>
+    </message>
+    <message>
+        <source>Are you sure you want to remove the role &apos;%1&apos;?</source>
+        <translation>Իրո՞ք ուզում եք հեռացնել «%1» դերը։</translation>
+    </message>
+    <message>
+        <source>Are you sure you want to remove the user &apos;%1&apos;?</source>
+        <translation>Իրո՞ք ուզում եք հեռացնել «%1» օգտվողին։</translation>
+    </message>
+    <message>
+        <source>At least %1 characters</source>
+        <translation>Առնվազն %1 նիշ</translation>
+    </message>
+    <message>
+        <source>Browser</source>
+        <translation>Դիտարկիչ</translation>
+    </message>
+    <message>
+        <source>Browsers and devices where someone is logged in with a user account.</source>
+        <translation>Դիտարկիչներ և սարքեր, որտեղ ինչ-որ մեկը մուտք է գործել օգտվողի հաշվով։</translation>
+    </message>
+    <message>
+        <source>Change Password</source>
+        <translation>Փոխել գաղտնաբառը</translation>
+    </message>
+    <message>
+        <source>Confirm password:</source>
+        <translation>Հաստատել գաղտնաբառը՝</translation>
+    </message>
+    <message>
+        <source>Created</source>
+        <translation>Ստեղծված է</translation>
+    </message>
+    <message>
+        <source>Current password:</source>
+        <translation>Ընթացիկ գաղտնաբառ՝</translation>
+    </message>
+    <message>
+        <source>Description</source>
+        <translation>Նկարագրություն</translation>
+    </message>
+    <message>
+        <source>Description:</source>
+        <translation>Նկարագրություն՝</translation>
+    </message>
+    <message>
+        <source>Disable</source>
+        <translation>Անջատել</translation>
+    </message>
+    <message>
+        <source>Disable this account</source>
+        <translation>Անջատել այս հաշիվը</translation>
+    </message>
+    <message>
+        <source>Edit Role</source>
+        <translation>Խմբագրել դերը</translation>
+    </message>
+    <message>
+        <source>Edit User</source>
+        <translation>Խմբագրել օգտվողին</translation>
+    </message>
+    <message>
+        <source>Edit...</source>
+        <translation>Խմբագրել...</translation>
+    </message>
+    <message>
+        <source>Enable</source>
+        <translation>Միացնել</translation>
+    </message>
+    <message>
+        <source>Enter a role name.</source>
+        <translation>Մուտքագրեք դերի անուն։</translation>
+    </message>
+    <message>
+        <source>Enter a username.</source>
+        <translation>Մուտքագրեք օգտանուն։</translation>
+    </message>
+    <message>
+        <source>Expires</source>
+        <translation>Լրանում է</translation>
+    </message>
+    <message>
+        <source>Gives control over the PC or qBittorrent itself</source>
+        <translation>Տալիս է վերահսկում համակարգչի կամ հենց qBittorrent-ի վրա։</translation>
+    </message>
+    <message>
+        <source>Last active</source>
+        <translation>Վերջին ակտիվությունը</translation>
+    </message>
+    <message>
+        <source>Last login</source>
+        <translation>Վերջին մուտքը</translation>
+    </message>
+    <message>
+        <source>Leave empty to keep the current password</source>
+        <translation>Թողեք դատարկ՝ ընթացիկ գաղտնաբառը պահելու համար</translation>
+    </message>
+    <message>
+        <source>Log Out</source>
+        <translation>Դուրս գալ</translation>
+    </message>
+    <message>
+        <source>Log Out Everywhere</source>
+        <translation>Դուրս գալ ամենուր</translation>
+    </message>
+    <message>
+        <source>Logged In</source>
+        <translation>Մուտք գործածներ</translation>
+    </message>
+    <message>
+        <source>Logged in</source>
+        <translation>Մուտք է գործել</translation>
+    </message>
+    <message>
+        <source>New password:</source>
+        <translation>Նոր գաղտնաբառ՝</translation>
+    </message>
+    <message>
+        <source>No accounts yet, so everyone still uses the shared WebUI login. Add an Admin account first.</source>
+        <translation>Դեռ հաշիվներ չկան, ուստի բոլորը դեռ օգտագործում են WebUI-ի ընդհանուր մուտքը։ Սկզբում ավելացրեք Admin հաշիվ։</translation>
+    </message>
+    <message>
+        <source>People who can log in to the WebUI with their own username and password.</source>
+        <translation>Մարդիկ, ովքեր կարող են մտնել WebUI իրենց օգտանունով և գաղտնաբառով։</translation>
+    </message>
+    <message>
+        <source>Permissions</source>
+        <translation>Թույլտվություններ</translation>
+    </message>
+    <message>
+        <source>Remove</source>
+        <translation>Հեռացնել</translation>
+    </message>
+    <message>
+        <source>Role</source>
+        <translation>Դեր</translation>
+    </message>
+    <message>
+        <source>Role:</source>
+        <translation>Դեր՝</translation>
+    </message>
+    <message>
+        <source>Roles</source>
+        <translation>Դերեր</translation>
+    </message>
+    <message>
+        <source>The password must be at least %1 characters long.</source>
+        <translation>Գաղտնաբառը պետք է լինի առնվազն %1 նիշ։</translation>
+    </message>
+    <message>
+        <source>The passwords don&apos;t match.</source>
+        <translation>Գաղտնաբառերը չեն համընկնում։</translation>
+    </message>
+    <message>
+        <source>User</source>
+        <translation>Օգտվող</translation>
+    </message>
+    <message>
+        <source>Users</source>
+        <translation>Օգտվողներ</translation>
+    </message>
+    <message>
+        <source>Your password was changed. Other browsers and devices where you were logged in have been logged out.</source>
+        <translation>Ձեր գաղտնաբառը փոխվել է։ Մյուս դիտարկիչներից և սարքերից, որտեղ մուտք էիք գործել, դուրս եկաք։</translation>
+    </message>
+</context>
+<context>
+    <name>WebUIActivity</name>
+    <message>
+        <source>Action</source>
+        <translation>Գործողություն</translation>
+    </message>
+    <message>
+        <source>Result</source>
+        <translation>Արդյունք</translation>
+    </message>
+    <message>
+        <source>Role</source>
+        <translation>Դեր</translation>
+    </message>
+    <message>
+        <source>Time</source>
+        <translation>Ժամ</translation>
+    </message>
+    <message>
+        <source>User</source>
+        <translation>Օգտվող</translation>
     </message>
 </context>
 </TS>

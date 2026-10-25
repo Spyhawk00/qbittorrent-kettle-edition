@@ -141,6 +141,62 @@
         <source>The free IP to Country Lite database by DB-IP is used for resolving the countries of peers. The database is licensed under the Creative Commons Attribution 4.0 International License</source>
         <translation>Database IP ke Negara versi Lite gratis oleh DB-IP digunakan untuk menerjemahkan IP ke negara rekan. Database dilisensikan di bawah Creative Commons Attribution 4.0 License Internasional</translation>
     </message>
+    <message>
+        <source>This edition</source>
+        <translation>Edisi ini</translation>
+    </message>
+    <message>
+        <source>Edition version:</source>
+        <translation>Versi edisi:</translation>
+    </message>
+    <message>
+        <source>Based on:</source>
+        <translation>Berdasarkan:</translation>
+    </message>
+    <message>
+        <source>Maintainer:</source>
+        <translation>Pemelihara:</translation>
+    </message>
+    <message>
+        <source>qBittorrent project:</source>
+        <translation>Proyek qBittorrent:</translation>
+    </message>
+    <message>
+        <source>Kettle Edition is a personal build of qBittorrent that adds user accounts with roles for the WebUI and the desktop app, an activity log, and an installable WebUI with a phone layout. A kettle is a group of hawks soaring together. This is an unofficial build, not affiliated with the qBittorrent project.</source>
+        <translation>Kettle Edition adalah build pribadi qBittorrent yang menambahkan akun pengguna dengan peran untuk WebUI dan aplikasi desktop, log aktivitas, dan WebUI yang dapat dipasang dengan tata letak ponsel. Kettle adalah sekelompok elang yang melayang bersama. Ini adalah build tidak resmi dan tidak berafiliasi dengan proyek qBittorrent.</translation>
+    </message>
+    <message>
+        <source>N/A</source>
+        <translation>T/A</translation>
+    </message>
+    <message>
+        <source>This edition</source>
+        <translation>Edisi ini</translation>
+    </message>
+    <message>
+        <source>Edition version:</source>
+        <translation>Versi edisi:</translation>
+    </message>
+    <message>
+        <source>Based on:</source>
+        <translation>Berdasarkan:</translation>
+    </message>
+    <message>
+        <source>Maintainer:</source>
+        <translation>Pemelihara:</translation>
+    </message>
+    <message>
+        <source>qBittorrent project:</source>
+        <translation>Proyek qBittorrent:</translation>
+    </message>
+    <message>
+        <source>Kettle Edition is a personal build of qBittorrent that adds user accounts with roles for the WebUI and the desktop app, an activity log, and an installable WebUI with a phone layout. A kettle is a group of hawks soaring together. This is an unofficial build, not affiliated with the qBittorrent project.</source>
+        <translation>Kettle Edition adalah build pribadi qBittorrent yang menambahkan akun pengguna dengan peran untuk WebUI dan aplikasi desktop, log aktivitas, dan WebUI yang dapat dipasang dengan tata letak ponsel. Kettle adalah sekelompok elang yang melayang bersama. Ini adalah build tidak resmi dan tidak berafiliasi dengan proyek qBittorrent.</translation>
+    </message>
+    <message>
+        <source>N/A</source>
+        <translation>T/A</translation>
+    </message>
 </context>
 <context>
     <name>AbstractFileStorage</name>
@@ -1459,6 +1515,62 @@
         <location filename="../gui/advancedsettings.cpp" line="925"/>
         <source>Embedded tracker port</source>
         <translation>Port pelacak tertanam</translation>
+    </message>
+    <message>
+        <source>Network</source>
+        <translation>Jaringan</translation>
+    </message>
+    <message>
+        <source>Storage</source>
+        <translation>Penyimpanan</translation>
+    </message>
+    <message>
+        <source>Peers and trackers</source>
+        <translation>Sejawat dan pelacak</translation>
+    </message>
+    <message>
+        <source>Program behavior</source>
+        <translation>Perilaku program</translation>
+    </message>
+    <message>
+        <source>Display and notifications</source>
+        <translation>Tampilan dan pemberitahuan</translation>
+    </message>
+    <message>
+        <source>Network connection</source>
+        <translation>Koneksi jaringan</translation>
+    </message>
+    <message>
+        <source>Security and privacy</source>
+        <translation>Keamanan dan privasi</translation>
+    </message>
+    <message>
+        <source>Connection tuning</source>
+        <translation>Penyetelan koneksi</translation>
+    </message>
+    <message>
+        <source>Saving and torrent files</source>
+        <translation>Penyimpanan dan berkas torrent</translation>
+    </message>
+    <message>
+        <source>Disk and memory</source>
+        <translation>Disk dan memori</translation>
+    </message>
+    <message>
+        <source>Peers and seeding</source>
+        <translation>Sejawat dan pembibitan</translation>
+    </message>
+    <message>
+        <source>DHT and I2P</source>
+        <translation>DHT dan I2P</translation>
+    </message>
+    <message>
+        <source>General</source>
+        <translation>Umum</translation>
+    </message>
+    <message>
+        <source>Trackers</source>
+        <translation>Pelacak</translation>
     </message>
 </context>
 <context>
@@ -3463,6 +3575,22 @@ Supports the formats: S01E01, 1x1, 2017.12.31 and 31.12.2017 (Date formats also 
         <source>Remove torrent</source>
         <translation>Buang torrent</translation>
     </message>
+    <message>
+        <source>This choice is remembered for the next removal.</source>
+        <translation>Pilihan ini akan diingat untuk penghapusan berikutnya.</translation>
+    </message>
+    <message>
+        <source>Remove</source>
+        <translation>Hapus</translation>
+    </message>
+    <message>
+        <source>This choice is remembered for the next removal.</source>
+        <translation>Pilihan ini akan diingat untuk penghapusan berikutnya.</translation>
+    </message>
+    <message>
+        <source>Remove</source>
+        <translation>Hapus</translation>
+    </message>
 </context>
 <context>
     <name>DownloadFromURLDialog</name>
@@ -3536,6 +3664,14 @@ Supports the formats: S01E01, 1x1, 2017.12.31 and 31.12.2017 (Date formats also 
         <location filename="../gui/executionlogwidget.cpp" line="99"/>
         <source>Clear</source>
         <translation>Kosongkan</translation>
+    </message>
+    <message>
+        <source>WebUI Activity</source>
+        <translation>Aktivitas WebUI</translation>
+    </message>
+    <message>
+        <source>WebUI Activity</source>
+        <translation>Aktivitas WebUI</translation>
     </message>
 </context>
 <context>
@@ -4698,6 +4834,46 @@ Minimum requirement: %2.</source>
         <location filename="../gui/mainwindow.cpp" line="1346"/>
         <source>Torrent Files</source>
         <translation>Berkas Torrent</translation>
+    </message>
+    <message>
+        <source>Kettle Edition %1 is available.</source>
+        <translation>Kettle Edition %1 tersedia.</translation>
+    </message>
+    <message>
+        <source>qBittorrent Kettle Edition %1 is available. It is downloaded now and installed at 4:00 AM, or when qBittorrent starts next.</source>
+        <translation>qBittorrent Kettle Edition %1 tersedia. Sedang diunduh sekarang dan akan dipasang pukul 4:00 atau saat qBittorrent dimulai berikutnya.</translation>
+    </message>
+    <message>
+        <source>qBittorrent Kettle Edition %1 is available. It is downloaded now. Turn on &quot;Automatically install Kettle Edition updates&quot; in Options to install it.</source>
+        <translation>qBittorrent Kettle Edition %1 tersedia. Sedang diunduh sekarang. Aktifkan &quot;Pasang pembaruan Kettle Edition secara otomatis&quot; di Opsi untuk memasangnya.</translation>
+    </message>
+    <message>
+        <source>You have the latest qBittorrent Kettle Edition (%1).</source>
+        <translation>Anda memiliki qBittorrent Kettle Edition terbaru (%1).</translation>
+    </message>
+    <message>
+        <source>Could not check for qBittorrent Kettle Edition updates. See the Execution Log for details.</source>
+        <translation>Tidak dapat memeriksa pembaruan qBittorrent Kettle Edition. Lihat Log Eksekusi untuk detailnya.</translation>
+    </message>
+    <message>
+        <source>Kettle Edition %1 is available.</source>
+        <translation>Kettle Edition %1 tersedia.</translation>
+    </message>
+    <message>
+        <source>qBittorrent Kettle Edition %1 is available. It is downloaded now and installed at 4:00 AM, or when qBittorrent starts next.</source>
+        <translation>qBittorrent Kettle Edition %1 tersedia. Sedang diunduh sekarang dan akan dipasang pukul 4:00 atau saat qBittorrent dimulai berikutnya.</translation>
+    </message>
+    <message>
+        <source>qBittorrent Kettle Edition %1 is available. It is downloaded now. Turn on &quot;Automatically install Kettle Edition updates&quot; in Options to install it.</source>
+        <translation>qBittorrent Kettle Edition %1 tersedia. Sedang diunduh sekarang. Aktifkan &quot;Pasang pembaruan Kettle Edition secara otomatis&quot; di Opsi untuk memasangnya.</translation>
+    </message>
+    <message>
+        <source>You have the latest qBittorrent Kettle Edition (%1).</source>
+        <translation>Anda memiliki qBittorrent Kettle Edition terbaru (%1).</translation>
+    </message>
+    <message>
+        <source>Could not check for qBittorrent Kettle Edition updates. See the Execution Log for details.</source>
+        <translation>Tidak dapat memeriksa pembaruan qBittorrent Kettle Edition. Lihat Log Eksekusi untuk detailnya.</translation>
     </message>
 </context>
 <context>
@@ -8409,6 +8585,190 @@ Check the Execution Log for errors.</source>
         <source>Length Error</source>
         <translation>Galat Panjang</translation>
     </message>
+    <message>
+        <source>Search settings</source>
+        <translation>Cari pengaturan</translation>
+    </message>
+    <message>
+        <source>No settings match</source>
+        <translation>Tidak ada pengaturan yang cocok</translation>
+    </message>
+    <message>
+        <source>User Accounts</source>
+        <translation>Akun Pengguna</translation>
+    </message>
+    <message>
+        <source>Automatically install Kettle Edition updates</source>
+        <translation>Pasang pembaruan Kettle Edition secara otomatis</translation>
+    </message>
+    <message>
+        <source>Status bar and log</source>
+        <translation>Bilah status dan log</translation>
+    </message>
+    <message>
+        <source>Files</source>
+        <translation>Berkas</translation>
+    </message>
+    <message>
+        <source>Checking</source>
+        <translation>Pemeriksaan</translation>
+    </message>
+    <message>
+        <source>Until the first user account is created, this login always works.</source>
+        <translation>Sebelum akun pengguna pertama dibuat, login ini selalu berfungsi.</translation>
+    </message>
+    <message>
+        <source>Allow this login when user accounts exist</source>
+        <translation>Izinkan login ini saat akun pengguna sudah ada</translation>
+    </message>
+    <message>
+        <source>Access</source>
+        <translation>Akses</translation>
+    </message>
+    <message>
+        <source>Changes to users, roles and logins apply at once. The settings below apply with OK or Apply.</source>
+        <translation>Perubahan pada pengguna, peran, dan login berlaku seketika. Pengaturan di bawah berlaku dengan OK atau Terapkan.</translation>
+    </message>
+    <message>
+        <source>Logins and Activity Log</source>
+        <translation>Login dan Log Aktivitas</translation>
+    </message>
+    <message>
+        <source>0 means users are logged out after the session timeout.</source>
+        <translation>0 berarti pengguna keluar setelah batas waktu sesi.</translation>
+    </message>
+    <message>
+        <source>Keep users logged in for:</source>
+        <translation>Pertahankan pengguna tetap masuk selama:</translation>
+    </message>
+    <message>
+        <source>Until session timeout</source>
+        <translation>Sampai batas waktu sesi</translation>
+    </message>
+    <message>
+        <source> days</source>
+        <translation> hari</translation>
+    </message>
+    <message>
+        <source>Lock account after consecutive failures:</source>
+        <translation>Kunci akun setelah kegagalan berturut-turut:</translation>
+    </message>
+    <message>
+        <source>Keep WebUI activity log for:</source>
+        <translation>Simpan log aktivitas WebUI selama:</translation>
+    </message>
+    <message>
+        <source>lock for:</source>
+        <translation>kunci selama:</translation>
+    </message>
+    <message>
+        <source>%1 works best with Windows dark mode</source>
+        <translation>%1 bekerja paling baik dengan mode gelap Windows</translation>
+    </message>
+    <message>
+        <source>WebUI address</source>
+        <translation>Alamat WebUI</translation>
+    </message>
+    <message>
+        <source>With the WebUI address set to %1, only this PC can reach the WebUI. Remote access, including through a reverse proxy on another machine, will stop working.
+
+Save anyway?</source>
+        <translation>Dengan alamat WebUI diatur ke %1, hanya PC ini yang dapat mengakses WebUI. Akses jarak jauh, termasuk melalui reverse proxy di mesin lain, akan berhenti berfungsi.
+
+Tetap simpan?</translation>
+    </message>
+    <message>
+        <source>Search settings</source>
+        <translation>Cari pengaturan</translation>
+    </message>
+    <message>
+        <source>No settings match</source>
+        <translation>Tidak ada pengaturan yang cocok</translation>
+    </message>
+    <message>
+        <source>User Accounts</source>
+        <translation>Akun Pengguna</translation>
+    </message>
+    <message>
+        <source>Automatically install Kettle Edition updates</source>
+        <translation>Pasang pembaruan Kettle Edition secara otomatis</translation>
+    </message>
+    <message>
+        <source>Status bar and log</source>
+        <translation>Bilah status dan log</translation>
+    </message>
+    <message>
+        <source>Files</source>
+        <translation>Berkas</translation>
+    </message>
+    <message>
+        <source>Checking</source>
+        <translation>Pemeriksaan</translation>
+    </message>
+    <message>
+        <source>Until the first user account is created, this login always works.</source>
+        <translation>Sebelum akun pengguna pertama dibuat, login ini selalu berfungsi.</translation>
+    </message>
+    <message>
+        <source>Allow this login when user accounts exist</source>
+        <translation>Izinkan login ini saat akun pengguna sudah ada</translation>
+    </message>
+    <message>
+        <source>Access</source>
+        <translation>Akses</translation>
+    </message>
+    <message>
+        <source>Changes to users, roles and logins apply at once. The settings below apply with OK or Apply.</source>
+        <translation>Perubahan pada pengguna, peran, dan login berlaku seketika. Pengaturan di bawah berlaku dengan OK atau Terapkan.</translation>
+    </message>
+    <message>
+        <source>Logins and Activity Log</source>
+        <translation>Login dan Log Aktivitas</translation>
+    </message>
+    <message>
+        <source>0 means users are logged out after the session timeout.</source>
+        <translation>0 berarti pengguna keluar setelah batas waktu sesi.</translation>
+    </message>
+    <message>
+        <source>Keep users logged in for:</source>
+        <translation>Pertahankan pengguna tetap masuk selama:</translation>
+    </message>
+    <message>
+        <source>Until session timeout</source>
+        <translation>Sampai batas waktu sesi</translation>
+    </message>
+    <message>
+        <source> days</source>
+        <translation> hari</translation>
+    </message>
+    <message>
+        <source>Lock account after consecutive failures:</source>
+        <translation>Kunci akun setelah kegagalan berturut-turut:</translation>
+    </message>
+    <message>
+        <source>Keep WebUI activity log for:</source>
+        <translation>Simpan log aktivitas WebUI selama:</translation>
+    </message>
+    <message>
+        <source>lock for:</source>
+        <translation>kunci selama:</translation>
+    </message>
+    <message>
+        <source>%1 works best with Windows dark mode</source>
+        <translation>%1 bekerja paling baik dengan mode gelap Windows</translation>
+    </message>
+    <message>
+        <source>WebUI address</source>
+        <translation>Alamat WebUI</translation>
+    </message>
+    <message>
+        <source>With the WebUI address set to %1, only this PC can reach the WebUI. Remote access, including through a reverse proxy on another machine, will stop working.
+
+Save anyway?</source>
+        <translation>Dengan alamat WebUI diatur ke %1, hanya PC ini yang dapat mengakses WebUI. Akses jarak jauh, termasuk melalui reverse proxy di mesin lain, akan berhenti berfungsi.
+
+Tetap simpan?</translation>
+    </message>
 </context>
 <context>
     <name>PeerInfo</name>
@@ -8661,6 +9021,22 @@ Check the Execution Log for errors.</source>
         <location filename="../gui/properties/peerlistwidget.cpp" line="309"/>
         <source>Copy IP:port</source>
         <translation>Salin IP:port</translation>
+    </message>
+    <message>
+        <source>Reset auto width</source>
+        <translation>Reset lebar otomatis</translation>
+    </message>
+    <message>
+        <source>Fit all non-hidden columns to their contents again, and forget the widths that were set by hand</source>
+        <translation>Sesuaikan lagi semua kolom yang terlihat dengan isinya, dan lupakan lebar yang diatur manual</translation>
+    </message>
+    <message>
+        <source>Reset auto width</source>
+        <translation>Reset lebar otomatis</translation>
+    </message>
+    <message>
+        <source>Fit all non-hidden columns to their contents again, and forget the widths that were set by hand</source>
+        <translation>Sesuaikan lagi semua kolom yang terlihat dengan isinya, dan lupakan lebar yang diatur manual</translation>
     </message>
 </context>
 <context>
@@ -10045,6 +10421,14 @@ Plugin ini semua dinonaktifkan.</translation>
         <source>Open link</source>
         <translation type="unfinished"></translation>
     </message>
+    <message>
+        <source>Details</source>
+        <translation>Detail</translation>
+    </message>
+    <message>
+        <source>Details</source>
+        <translation>Detail</translation>
+    </message>
 </context>
 <context>
     <name>SearchController</name>
@@ -10394,6 +10778,70 @@ Plugin ini semua dinonaktifkan.</translation>
         <source>Resize all non-hidden columns to the size of their contents</source>
         <translation>Ubah ukuran semua kolom yang tidak disembunyikan sesuai ukuran konten kolom</translation>
     </message>
+    <message>
+        <source>%1 of %2 shown (%3 hidden)</source>
+        <translation>%1 dari %2 ditampilkan (%3 disembunyikan)</translation>
+    </message>
+    <message>
+        <source>%1 of %2 shown</source>
+        <translation>%1 dari %2 ditampilkan</translation>
+    </message>
+    <message>
+        <source>Searching: %1</source>
+        <translation>Mencari: %1</translation>
+    </message>
+    <message>
+        <source>Finished: %1</source>
+        <translation>Selesai: %1</translation>
+    </message>
+    <message>
+        <source>Search aborted: %1</source>
+        <translation>Pencarian dibatalkan: %1</translation>
+    </message>
+    <message>
+        <source>Reset auto width</source>
+        <translation>Reset lebar otomatis</translation>
+    </message>
+    <message>
+        <source>Fit all non-hidden columns to their contents again, and forget the widths that were set by hand</source>
+        <translation>Sesuaikan lagi semua kolom yang terlihat dengan isinya, dan lupakan lebar yang diatur manual</translation>
+    </message>
+    <message>
+        <source>Unknown</source>
+        <translation>Tidak diketahui</translation>
+    </message>
+    <message>
+        <source>%1 of %2 shown (%3 hidden)</source>
+        <translation>%1 dari %2 ditampilkan (%3 disembunyikan)</translation>
+    </message>
+    <message>
+        <source>%1 of %2 shown</source>
+        <translation>%1 dari %2 ditampilkan</translation>
+    </message>
+    <message>
+        <source>Searching: %1</source>
+        <translation>Mencari: %1</translation>
+    </message>
+    <message>
+        <source>Finished: %1</source>
+        <translation>Selesai: %1</translation>
+    </message>
+    <message>
+        <source>Search aborted: %1</source>
+        <translation>Pencarian dibatalkan: %1</translation>
+    </message>
+    <message>
+        <source>Reset auto width</source>
+        <translation>Reset lebar otomatis</translation>
+    </message>
+    <message>
+        <source>Fit all non-hidden columns to their contents again, and forget the widths that were set by hand</source>
+        <translation>Sesuaikan lagi semua kolom yang terlihat dengan isinya, dan lupakan lebar yang diatur manual</translation>
+    </message>
+    <message>
+        <source>Unknown</source>
+        <translation>Tidak diketahui</translation>
+    </message>
 </context>
 <context>
     <name>SearchPluginManager</name>
@@ -10683,6 +11131,14 @@ Plugin ini semua dinonaktifkan.</translation>
         <source>Couldn&apos;t update &quot;%1&quot; search engine plugin. %2</source>
         <translation type="unfinished">Tidak bisa membarui plugin mesin pencarian &quot;%1&quot;. %2</translation>
     </message>
+    <message>
+        <source>Install Kettle Plugins</source>
+        <translation>Pasang Plugin Kettle</translation>
+    </message>
+    <message>
+        <source>Install Kettle Plugins</source>
+        <translation>Pasang Plugin Kettle</translation>
+    </message>
 </context>
 <context>
     <name>SearchPluginSourceDialog</name>
@@ -10822,6 +11278,90 @@ Klik tombol &quot;Temukan plugin&quot; tepat dibawah bagian jendela untuk memasa
         <location filename="../gui/search/searchwidget.ui" line="58"/>
         <source>Stop</source>
         <translation>Hentikan</translation>
+    </message>
+    <message>
+        <source>Searches</source>
+        <translation>Pencarian</translation>
+    </message>
+    <message>
+        <source>Close the selected search</source>
+        <translation>Tutup pencarian yang dipilih</translation>
+    </message>
+    <message>
+        <source>Search for torrents...</source>
+        <translation>Cari torrent...</translation>
+    </message>
+    <message>
+        <source>Category to search in</source>
+        <translation>Kategori untuk dicari</translation>
+    </message>
+    <message>
+        <source>Search engines to use</source>
+        <translation>Mesin pencari yang digunakan</translation>
+    </message>
+    <message>
+        <source>There aren&apos;t any search plugins installed.
+Click the &quot;Search plugins...&quot; button at the top right of the window to install some.</source>
+        <translation>Tidak ada plugin pencarian yang terpasang.
+Klik tombol &quot;Plugin pencarian...&quot; di kanan atas jendela untuk memasangnya.</translation>
+    </message>
+    <message>
+        <source>Type a search above and press Enter.</source>
+        <translation>Ketik pencarian di atas lalu tekan Enter.</translation>
+    </message>
+    <message>
+        <source>Refresh search</source>
+        <translation>Segarkan pencarian</translation>
+    </message>
+    <message>
+        <source>Close search</source>
+        <translation>Tutup pencarian</translation>
+    </message>
+    <message>
+        <source>Close all searches</source>
+        <translation>Tutup semua pencarian</translation>
+    </message>
+    <message>
+        <source>Searches</source>
+        <translation>Pencarian</translation>
+    </message>
+    <message>
+        <source>Close the selected search</source>
+        <translation>Tutup pencarian yang dipilih</translation>
+    </message>
+    <message>
+        <source>Search for torrents...</source>
+        <translation>Cari torrent...</translation>
+    </message>
+    <message>
+        <source>Category to search in</source>
+        <translation>Kategori untuk dicari</translation>
+    </message>
+    <message>
+        <source>Search engines to use</source>
+        <translation>Mesin pencari yang digunakan</translation>
+    </message>
+    <message>
+        <source>There aren&apos;t any search plugins installed.
+Click the &quot;Search plugins...&quot; button at the top right of the window to install some.</source>
+        <translation>Tidak ada plugin pencarian yang terpasang.
+Klik tombol &quot;Plugin pencarian...&quot; di kanan atas jendela untuk memasangnya.</translation>
+    </message>
+    <message>
+        <source>Type a search above and press Enter.</source>
+        <translation>Ketik pencarian di atas lalu tekan Enter.</translation>
+    </message>
+    <message>
+        <source>Refresh search</source>
+        <translation>Segarkan pencarian</translation>
+    </message>
+    <message>
+        <source>Close search</source>
+        <translation>Tutup pencarian</translation>
+    </message>
+    <message>
+        <source>Close all searches</source>
+        <translation>Tutup semua pencarian</translation>
     </message>
 </context>
 <context>
@@ -11284,6 +11824,326 @@ Klik tombol &quot;Temukan plugin&quot; tepat dibawah bagian jendela untuk memasa
         <location filename="../gui/statsdialog.cpp" line="111"/>
         <source>%1 ms</source>
         <translation type="unfinished">%1 md</translation>
+    </message>
+    <message>
+        <source>Copy</source>
+        <translation>Salin</translation>
+    </message>
+    <message>
+        <source>Overview</source>
+        <translation>Ikhtisar</translation>
+    </message>
+    <message>
+        <source>Transfer</source>
+        <translation>Transfer</translation>
+    </message>
+    <message>
+        <source>This session</source>
+        <translation>Sesi ini</translation>
+    </message>
+    <message>
+        <source>All time</source>
+        <translation>Sepanjang waktu</translation>
+    </message>
+    <message>
+        <source>Downloaded:</source>
+        <translation>Diunduh:</translation>
+    </message>
+    <message>
+        <source>Uploaded:</source>
+        <translation>Diunggah:</translation>
+    </message>
+    <message>
+        <source>Share ratio:</source>
+        <translation>Rasio berbagi:</translation>
+    </message>
+    <message>
+        <source>Current speed:</source>
+        <translation>Kecepatan saat ini:</translation>
+    </message>
+    <message>
+        <source>Activity</source>
+        <translation>Aktivitas</translation>
+    </message>
+    <message>
+        <source>Torrents downloading:</source>
+        <translation>Torrent mengunduh:</translation>
+    </message>
+    <message>
+        <source>Torrents seeding:</source>
+        <translation>Torrent seeding:</translation>
+    </message>
+    <message>
+        <source>Torrents stopped:</source>
+        <translation>Torrent dihentikan:</translation>
+    </message>
+    <message>
+        <source>Torrents with errors:</source>
+        <translation>Torrent dengan galat:</translation>
+    </message>
+    <message>
+        <source>Running for:</source>
+        <translation>Berjalan selama:</translation>
+    </message>
+    <message>
+        <source>History</source>
+        <translation>Riwayat</translation>
+    </message>
+    <message>
+        <source>Period</source>
+        <translation>Periode</translation>
+    </message>
+    <message>
+        <source>Today</source>
+        <translation>Hari ini</translation>
+    </message>
+    <message>
+        <source>Last 7 days</source>
+        <translation>7 hari terakhir</translation>
+    </message>
+    <message>
+        <source>This month</source>
+        <translation>Bulan ini</translation>
+    </message>
+    <message>
+        <source>Last month</source>
+        <translation>Bulan lalu</translation>
+    </message>
+    <message>
+        <source>Last 12 months</source>
+        <translation>12 bulan terakhir</translation>
+    </message>
+    <message>
+        <source>Tracking since:</source>
+        <translation>Dilacak sejak:</translation>
+    </message>
+    <message>
+        <source>By month</source>
+        <translation>Per bulan</translation>
+    </message>
+    <message>
+        <source>Month</source>
+        <translation>Bulan</translation>
+    </message>
+    <message>
+        <source>Downloaded</source>
+        <translation>Diunduh</translation>
+    </message>
+    <message>
+        <source>Uploaded</source>
+        <translation>Diunggah</translation>
+    </message>
+    <message>
+        <source>Share ratio</source>
+        <translation>Rasio berbagi</translation>
+    </message>
+    <message>
+        <source>WebUI downloads added, this month</source>
+        <translation>Unduhan yang ditambahkan lewat WebUI, bulan ini</translation>
+    </message>
+    <message>
+        <source>Counts the requests that added a download. Apps without a login, such as Sonarr and Radarr, are shown as (localhost). Downloads added in the desktop window are not counted.</source>
+        <translation>Menghitung permintaan yang menambahkan unduhan. Aplikasi tanpa login, seperti Sonarr dan Radarr, ditampilkan sebagai (localhost). Unduhan yang ditambahkan di jendela desktop tidak dihitung.</translation>
+    </message>
+    <message>
+        <source>Technical</source>
+        <translation>Teknis</translation>
+    </message>
+    <message>
+        <source>Disk</source>
+        <translation>Disk</translation>
+    </message>
+    <message>
+        <source>Peers waiting on disk writes:</source>
+        <translation>Sejawat menunggu penulisan disk:</translation>
+    </message>
+    <message>
+        <source>Peers waiting on disk reads:</source>
+        <translation>Sejawat menunggu pembacaan disk:</translation>
+    </message>
+    <message>
+        <source>Network</source>
+        <translation>Jaringan</translation>
+    </message>
+    <message>
+        <source>DHT nodes:</source>
+        <translation>Simpul DHT:</translation>
+    </message>
+    <message>
+        <source>Data discarded this session:</source>
+        <translation>Data dibuang sesi ini:</translation>
+    </message>
+    <message>
+        <source>Before tracking began</source>
+        <translation>Sebelum pelacakan dimulai</translation>
+    </message>
+    <message>
+        <source>Nothing added yet</source>
+        <translation>Belum ada yang ditambahkan</translation>
+    </message>
+    <message>
+        <source>Off</source>
+        <translation>Mati</translation>
+    </message>
+    <message>
+        <source>Copy</source>
+        <translation>Salin</translation>
+    </message>
+    <message>
+        <source>Overview</source>
+        <translation>Ikhtisar</translation>
+    </message>
+    <message>
+        <source>Transfer</source>
+        <translation>Transfer</translation>
+    </message>
+    <message>
+        <source>This session</source>
+        <translation>Sesi ini</translation>
+    </message>
+    <message>
+        <source>All time</source>
+        <translation>Sepanjang waktu</translation>
+    </message>
+    <message>
+        <source>Downloaded:</source>
+        <translation>Diunduh:</translation>
+    </message>
+    <message>
+        <source>Uploaded:</source>
+        <translation>Diunggah:</translation>
+    </message>
+    <message>
+        <source>Share ratio:</source>
+        <translation>Rasio berbagi:</translation>
+    </message>
+    <message>
+        <source>Current speed:</source>
+        <translation>Kecepatan saat ini:</translation>
+    </message>
+    <message>
+        <source>Activity</source>
+        <translation>Aktivitas</translation>
+    </message>
+    <message>
+        <source>Torrents downloading:</source>
+        <translation>Torrent mengunduh:</translation>
+    </message>
+    <message>
+        <source>Torrents seeding:</source>
+        <translation>Torrent seeding:</translation>
+    </message>
+    <message>
+        <source>Torrents stopped:</source>
+        <translation>Torrent dihentikan:</translation>
+    </message>
+    <message>
+        <source>Torrents with errors:</source>
+        <translation>Torrent dengan galat:</translation>
+    </message>
+    <message>
+        <source>Running for:</source>
+        <translation>Berjalan selama:</translation>
+    </message>
+    <message>
+        <source>History</source>
+        <translation>Riwayat</translation>
+    </message>
+    <message>
+        <source>Period</source>
+        <translation>Periode</translation>
+    </message>
+    <message>
+        <source>Today</source>
+        <translation>Hari ini</translation>
+    </message>
+    <message>
+        <source>Last 7 days</source>
+        <translation>7 hari terakhir</translation>
+    </message>
+    <message>
+        <source>This month</source>
+        <translation>Bulan ini</translation>
+    </message>
+    <message>
+        <source>Last month</source>
+        <translation>Bulan lalu</translation>
+    </message>
+    <message>
+        <source>Last 12 months</source>
+        <translation>12 bulan terakhir</translation>
+    </message>
+    <message>
+        <source>Tracking since:</source>
+        <translation>Dilacak sejak:</translation>
+    </message>
+    <message>
+        <source>By month</source>
+        <translation>Per bulan</translation>
+    </message>
+    <message>
+        <source>Month</source>
+        <translation>Bulan</translation>
+    </message>
+    <message>
+        <source>Downloaded</source>
+        <translation>Diunduh</translation>
+    </message>
+    <message>
+        <source>Uploaded</source>
+        <translation>Diunggah</translation>
+    </message>
+    <message>
+        <source>Share ratio</source>
+        <translation>Rasio berbagi</translation>
+    </message>
+    <message>
+        <source>WebUI downloads added, this month</source>
+        <translation>Unduhan yang ditambahkan lewat WebUI, bulan ini</translation>
+    </message>
+    <message>
+        <source>Counts the requests that added a download. Apps without a login, such as Sonarr and Radarr, are shown as (localhost). Downloads added in the desktop window are not counted.</source>
+        <translation>Menghitung permintaan yang menambahkan unduhan. Aplikasi tanpa login, seperti Sonarr dan Radarr, ditampilkan sebagai (localhost). Unduhan yang ditambahkan di jendela desktop tidak dihitung.</translation>
+    </message>
+    <message>
+        <source>Technical</source>
+        <translation>Teknis</translation>
+    </message>
+    <message>
+        <source>Disk</source>
+        <translation>Disk</translation>
+    </message>
+    <message>
+        <source>Peers waiting on disk writes:</source>
+        <translation>Sejawat menunggu penulisan disk:</translation>
+    </message>
+    <message>
+        <source>Peers waiting on disk reads:</source>
+        <translation>Sejawat menunggu pembacaan disk:</translation>
+    </message>
+    <message>
+        <source>Network</source>
+        <translation>Jaringan</translation>
+    </message>
+    <message>
+        <source>DHT nodes:</source>
+        <translation>Simpul DHT:</translation>
+    </message>
+    <message>
+        <source>Data discarded this session:</source>
+        <translation>Data dibuang sesi ini:</translation>
+    </message>
+    <message>
+        <source>Before tracking began</source>
+        <translation>Sebelum pelacakan dimulai</translation>
+    </message>
+    <message>
+        <source>Nothing added yet</source>
+        <translation>Belum ada yang ditambahkan</translation>
+    </message>
+    <message>
+        <source>Off</source>
+        <translation>Mati</translation>
     </message>
 </context>
 <context>
@@ -11975,6 +12835,22 @@ Mohon memilih nama lain dan coba lagi.</translation>
     <message>
         <source>Priority by shown file order</source>
         <translation type="vanished">Prioritaskan tampilan urutan berkas</translation>
+    </message>
+    <message>
+        <source>Reset auto width</source>
+        <translation>Reset lebar otomatis</translation>
+    </message>
+    <message>
+        <source>Fit all non-hidden columns to their contents again, and forget the widths that were set by hand</source>
+        <translation>Sesuaikan lagi semua kolom yang terlihat dengan isinya, dan lupakan lebar yang diatur manual</translation>
+    </message>
+    <message>
+        <source>Reset auto width</source>
+        <translation>Reset lebar otomatis</translation>
+    </message>
+    <message>
+        <source>Fit all non-hidden columns to their contents again, and forget the widths that were set by hand</source>
+        <translation>Sesuaikan lagi semua kolom yang terlihat dengan isinya, dan lupakan lebar yang diatur manual</translation>
     </message>
 </context>
 <context>
@@ -13054,6 +13930,22 @@ Mohon memilih nama lain dan coba lagi.</translation>
         <source>Column visibility</source>
         <translation>Keterlihatan Kolom</translation>
     </message>
+    <message>
+        <source>Reset auto width</source>
+        <translation>Reset lebar otomatis</translation>
+    </message>
+    <message>
+        <source>Fit all non-hidden columns to their contents again, and forget the widths that were set by hand</source>
+        <translation>Sesuaikan lagi semua kolom yang terlihat dengan isinya, dan lupakan lebar yang diatur manual</translation>
+    </message>
+    <message>
+        <source>Reset auto width</source>
+        <translation>Reset lebar otomatis</translation>
+    </message>
+    <message>
+        <source>Fit all non-hidden columns to their contents again, and forget the widths that were set by hand</source>
+        <translation>Sesuaikan lagi semua kolom yang terlihat dengan isinya, dan lupakan lebar yang diatur manual</translation>
+    </message>
 </context>
 <context>
     <name>TrackerStatusFilterWidget</name>
@@ -13920,6 +14812,22 @@ Mohon memilih nama lain dan coba lagi.</translation>
         <source>Super seeding mode</source>
         <translation>Mode pembibitan super</translation>
     </message>
+    <message>
+        <source>Reset auto width</source>
+        <translation>Reset lebar otomatis</translation>
+    </message>
+    <message>
+        <source>Fit all non-hidden columns to their contents again, and forget the widths that were set by hand</source>
+        <translation>Sesuaikan lagi semua kolom yang terlihat dengan isinya, dan lupakan lebar yang diatur manual</translation>
+    </message>
+    <message>
+        <source>Reset auto width</source>
+        <translation>Reset lebar otomatis</translation>
+    </message>
+    <message>
+        <source>Fit all non-hidden columns to their contents again, and forget the widths that were set by hand</source>
+        <translation>Sesuaikan lagi semua kolom yang terlihat dengan isinya, dan lupakan lebar yang diatur manual</translation>
+    </message>
 </context>
 <context>
     <name>UIThemeDialog</name>
@@ -14254,6 +15162,46 @@ Mohon memilih nama lain dan coba lagi.</translation>
         <source>WebAPI login failure. Reason: invalid credentials, attempt count: %1, IP: %2, username: %3</source>
         <translation>Login WebAPI gagal. Penyebab: kredensial tidak sah, mencoba: %1, IP: %2, namapengguna: %3</translation>
     </message>
+    <message>
+        <source>Something went wrong on the server. Details are in qBittorrent&apos;s log.</source>
+        <translation>Terjadi masalah di server. Detailnya ada di log qBittorrent.</translation>
+    </message>
+    <message>
+        <source>This account is locked after too many failed login attempts. Try again in %1 minute(s).</source>
+        <translation>Akun ini dikunci karena terlalu banyak percobaan login yang gagal. Coba lagi dalam %1 menit.</translation>
+    </message>
+    <message>
+        <source>Your role (%1) doesn&apos;t allow this: %2.</source>
+        <translation>Peran Anda (%1) tidak mengizinkan ini: %2.</translation>
+    </message>
+    <message>
+        <source>Only an admin can remove the tag that says who added a torrent.</source>
+        <translation>Hanya admin yang dapat menghapus tag yang menunjukkan siapa yang menambahkan torrent.</translation>
+    </message>
+    <message>
+        <source>Only an admin can clear or replace all tags of a torrent that has a tag saying who added it.</source>
+        <translation>Hanya admin yang dapat mengosongkan atau mengganti semua tag torrent yang memiliki tag penambahnya.</translation>
+    </message>
+    <message>
+        <source>Something went wrong on the server. Details are in qBittorrent&apos;s log.</source>
+        <translation>Terjadi masalah di server. Detailnya ada di log qBittorrent.</translation>
+    </message>
+    <message>
+        <source>This account is locked after too many failed login attempts. Try again in %1 minute(s).</source>
+        <translation>Akun ini dikunci karena terlalu banyak percobaan login yang gagal. Coba lagi dalam %1 menit.</translation>
+    </message>
+    <message>
+        <source>Your role (%1) doesn&apos;t allow this: %2.</source>
+        <translation>Peran Anda (%1) tidak mengizinkan ini: %2.</translation>
+    </message>
+    <message>
+        <source>Only an admin can remove the tag that says who added a torrent.</source>
+        <translation>Hanya admin yang dapat menghapus tag yang menunjukkan siapa yang menambahkan torrent.</translation>
+    </message>
+    <message>
+        <source>Only an admin can clear or replace all tags of a torrent that has a tag saying who added it.</source>
+        <translation>Hanya admin yang dapat mengosongkan atau mengganti semua tag torrent yang memiliki tag penambahnya.</translation>
+    </message>
 </context>
 <context>
     <name>WebUI</name>
@@ -14393,6 +15341,669 @@ Mohon memilih nama lain dan coba lagi.</translation>
         <source>&lt; 1m</source>
         <comment>&lt; 1 minute</comment>
         <translation>&lt; 1m</translation>
+    </message>
+</context>
+<context>
+    <name>UpdateInstaller</name>
+    <message>
+        <source>Kettle Edition update</source>
+        <translation>Pembaruan Kettle Edition</translation>
+    </message>
+    <message>
+        <source>Kettle Edition was updated to %1.</source>
+        <translation>Kettle Edition diperbarui ke %1.</translation>
+    </message>
+    <message>
+        <source>Kettle Edition updated</source>
+        <translation>Kettle Edition diperbarui</translation>
+    </message>
+    <message>
+        <source>Downloading Kettle Edition %1 (%2 changed files).</source>
+        <translation>Mengunduh Kettle Edition %1 (%2 berkas berubah).</translation>
+    </message>
+    <message>
+        <source>Kettle Edition %1 is downloaded and ready to install.</source>
+        <translation>Kettle Edition %1 sudah diunduh dan siap dipasang.</translation>
+    </message>
+    <message>
+        <source>Kettle Edition update</source>
+        <translation>Pembaruan Kettle Edition</translation>
+    </message>
+    <message>
+        <source>Kettle Edition was updated to %1.</source>
+        <translation>Kettle Edition diperbarui ke %1.</translation>
+    </message>
+    <message>
+        <source>Kettle Edition updated</source>
+        <translation>Kettle Edition diperbarui</translation>
+    </message>
+    <message>
+        <source>Downloading Kettle Edition %1 (%2 changed files).</source>
+        <translation>Mengunduh Kettle Edition %1 (%2 berkas berubah).</translation>
+    </message>
+    <message>
+        <source>Kettle Edition %1 is downloaded and ready to install.</source>
+        <translation>Kettle Edition %1 sudah diunduh dan siap dipasang.</translation>
+    </message>
+</context>
+<context>
+    <name>UserAccountDialog</name>
+    <message>
+        <source>User</source>
+        <translation>Pengguna</translation>
+    </message>
+    <message>
+        <source>Username:</source>
+        <translation>Nama pengguna:</translation>
+    </message>
+    <message>
+        <source>Role:</source>
+        <translation>Peran:</translation>
+    </message>
+    <message>
+        <source>Password:</source>
+        <translation>Kata sandi:</translation>
+    </message>
+    <message>
+        <source>Confirm password:</source>
+        <translation>Konfirmasi kata sandi:</translation>
+    </message>
+    <message>
+        <source>Disable this account</source>
+        <translation>Nonaktifkan akun ini</translation>
+    </message>
+    <message>
+        <source>Edit User</source>
+        <translation>Ubah Pengguna</translation>
+    </message>
+    <message>
+        <source>Leave empty to keep the current password</source>
+        <translation>Kosongkan untuk mempertahankan kata sandi saat ini</translation>
+    </message>
+    <message>
+        <source>Add User</source>
+        <translation>Tambah Pengguna</translation>
+    </message>
+    <message>
+        <source>At least %1 characters</source>
+        <translation>Minimal %1 karakter</translation>
+    </message>
+    <message>
+        <source>Enter a username.</source>
+        <translation>Masukkan nama pengguna.</translation>
+    </message>
+    <message>
+        <source>The password must be at least %1 characters long.</source>
+        <translation>Kata sandi harus minimal %1 karakter.</translation>
+    </message>
+    <message>
+        <source>The passwords don&apos;t match.</source>
+        <translation>Kata sandi tidak cocok.</translation>
+    </message>
+    <message>
+        <source>User</source>
+        <translation>Pengguna</translation>
+    </message>
+    <message>
+        <source>Username:</source>
+        <translation>Nama pengguna:</translation>
+    </message>
+    <message>
+        <source>Role:</source>
+        <translation>Peran:</translation>
+    </message>
+    <message>
+        <source>Password:</source>
+        <translation>Kata sandi:</translation>
+    </message>
+    <message>
+        <source>Confirm password:</source>
+        <translation>Konfirmasi kata sandi:</translation>
+    </message>
+    <message>
+        <source>Disable this account</source>
+        <translation>Nonaktifkan akun ini</translation>
+    </message>
+    <message>
+        <source>Edit User</source>
+        <translation>Ubah Pengguna</translation>
+    </message>
+    <message>
+        <source>Leave empty to keep the current password</source>
+        <translation>Kosongkan untuk mempertahankan kata sandi saat ini</translation>
+    </message>
+    <message>
+        <source>Add User</source>
+        <translation>Tambah Pengguna</translation>
+    </message>
+    <message>
+        <source>At least %1 characters</source>
+        <translation>Minimal %1 karakter</translation>
+    </message>
+    <message>
+        <source>Enter a username.</source>
+        <translation>Masukkan nama pengguna.</translation>
+    </message>
+    <message>
+        <source>The password must be at least %1 characters long.</source>
+        <translation>Kata sandi harus minimal %1 karakter.</translation>
+    </message>
+    <message>
+        <source>The passwords don&apos;t match.</source>
+        <translation>Kata sandi tidak cocok.</translation>
+    </message>
+</context>
+<context>
+    <name>UserAccountsWidget</name>
+    <message>
+        <source>User Accounts</source>
+        <translation>Akun Pengguna</translation>
+    </message>
+    <message>
+        <source>Users</source>
+        <translation>Pengguna</translation>
+    </message>
+    <message>
+        <source>People who can log in to the WebUI with their own username and password.</source>
+        <translation>Orang yang dapat login ke WebUI dengan nama pengguna dan kata sandi masing-masing.</translation>
+    </message>
+    <message>
+        <source>Add User...</source>
+        <translation>Tambah Pengguna...</translation>
+    </message>
+    <message>
+        <source>Edit...</source>
+        <translation>Ubah...</translation>
+    </message>
+    <message>
+        <source>Remove</source>
+        <translation>Hapus</translation>
+    </message>
+    <message>
+        <source>Roles</source>
+        <translation>Peran</translation>
+    </message>
+    <message>
+        <source>A role decides what its users are allowed to do.</source>
+        <translation>Peran menentukan apa yang boleh dilakukan penggunanya.</translation>
+    </message>
+    <message>
+        <source>Add Role...</source>
+        <translation>Tambah Peran...</translation>
+    </message>
+    <message>
+        <source>Logged In</source>
+        <translation>Sedang Login</translation>
+    </message>
+    <message>
+        <source>Browsers and devices where someone is logged in with a user account.</source>
+        <translation>Peramban dan perangkat tempat seseorang login dengan akun pengguna.</translation>
+    </message>
+    <message>
+        <source>Log Out</source>
+        <translation>Keluar</translation>
+    </message>
+    <message>
+        <source>Username</source>
+        <translation>Nama pengguna</translation>
+    </message>
+    <message>
+        <source>Role</source>
+        <translation>Peran</translation>
+    </message>
+    <message>
+        <source>Status</source>
+        <translation>Status</translation>
+    </message>
+    <message>
+        <source>Last login</source>
+        <translation>Login terakhir</translation>
+    </message>
+    <message>
+        <source>Created</source>
+        <translation>Dibuat</translation>
+    </message>
+    <message>
+        <source>Name</source>
+        <translation>Nama</translation>
+    </message>
+    <message>
+        <source>Description</source>
+        <translation>Deskripsi</translation>
+    </message>
+    <message>
+        <source>Permissions</source>
+        <translation>Izin</translation>
+    </message>
+    <message>
+        <source>User</source>
+        <translation>Pengguna</translation>
+    </message>
+    <message>
+        <source>Browser</source>
+        <translation>Peramban</translation>
+    </message>
+    <message>
+        <source>Logged in</source>
+        <translation>Login pada</translation>
+    </message>
+    <message>
+        <source>Last active</source>
+        <translation>Aktif terakhir</translation>
+    </message>
+    <message>
+        <source>Expires</source>
+        <translation>Kedaluwarsa</translation>
+    </message>
+    <message>
+        <source>The user database could not be opened. See the Execution Log for details.</source>
+        <translation>Basis data pengguna tidak dapat dibuka. Lihat Log Eksekusi untuk detailnya.</translation>
+    </message>
+    <message>
+        <source>Disabled</source>
+        <translation>Nonaktif</translation>
+    </message>
+    <message>
+        <source>Enabled</source>
+        <translation>Aktif</translation>
+    </message>
+    <message>
+        <source>Never</source>
+        <translation>Tidak pernah</translation>
+    </message>
+    <message>
+        <source>No accounts yet, so everyone still uses the shared WebUI login. Add an Admin account first.</source>
+        <translation>Belum ada akun, jadi semua orang masih memakai login WebUI bersama. Tambahkan akun Admin lebih dulu.</translation>
+    </message>
+    <message>
+        <source>Couldn&apos;t read the user database. %1</source>
+        <translation>Basis data pengguna tidak dapat dibaca. %1</translation>
+    </message>
+    <message>
+        <source>Remove user</source>
+        <translation>Hapus pengguna</translation>
+    </message>
+    <message>
+        <source>Are you sure you want to remove the user &apos;%1&apos;?</source>
+        <translation>Yakin ingin menghapus pengguna &apos;%1&apos;?</translation>
+    </message>
+    <message>
+        <source>Remove role</source>
+        <translation>Hapus peran</translation>
+    </message>
+    <message>
+        <source>Are you sure you want to remove the role &apos;%1&apos;?</source>
+        <translation>Yakin ingin menghapus peran &apos;%1&apos;?</translation>
+    </message>
+    <message>
+        <source>Enable</source>
+        <translation>Aktifkan</translation>
+    </message>
+    <message>
+        <source>Disable</source>
+        <translation>Nonaktifkan</translation>
+    </message>
+    <message>
+        <source>Log Out Everywhere</source>
+        <translation>Keluar di Mana Saja</translation>
+    </message>
+    <message>
+        <source>User Accounts</source>
+        <translation>Akun Pengguna</translation>
+    </message>
+    <message>
+        <source>Users</source>
+        <translation>Pengguna</translation>
+    </message>
+    <message>
+        <source>People who can log in to the WebUI with their own username and password.</source>
+        <translation>Orang yang dapat login ke WebUI dengan nama pengguna dan kata sandi masing-masing.</translation>
+    </message>
+    <message>
+        <source>Add User...</source>
+        <translation>Tambah Pengguna...</translation>
+    </message>
+    <message>
+        <source>Edit...</source>
+        <translation>Ubah...</translation>
+    </message>
+    <message>
+        <source>Remove</source>
+        <translation>Hapus</translation>
+    </message>
+    <message>
+        <source>Roles</source>
+        <translation>Peran</translation>
+    </message>
+    <message>
+        <source>A role decides what its users are allowed to do.</source>
+        <translation>Peran menentukan apa yang boleh dilakukan penggunanya.</translation>
+    </message>
+    <message>
+        <source>Add Role...</source>
+        <translation>Tambah Peran...</translation>
+    </message>
+    <message>
+        <source>Logged In</source>
+        <translation>Sedang Login</translation>
+    </message>
+    <message>
+        <source>Browsers and devices where someone is logged in with a user account.</source>
+        <translation>Peramban dan perangkat tempat seseorang login dengan akun pengguna.</translation>
+    </message>
+    <message>
+        <source>Log Out</source>
+        <translation>Keluar</translation>
+    </message>
+    <message>
+        <source>Username</source>
+        <translation>Nama pengguna</translation>
+    </message>
+    <message>
+        <source>Role</source>
+        <translation>Peran</translation>
+    </message>
+    <message>
+        <source>Status</source>
+        <translation>Status</translation>
+    </message>
+    <message>
+        <source>Last login</source>
+        <translation>Login terakhir</translation>
+    </message>
+    <message>
+        <source>Created</source>
+        <translation>Dibuat</translation>
+    </message>
+    <message>
+        <source>Name</source>
+        <translation>Nama</translation>
+    </message>
+    <message>
+        <source>Description</source>
+        <translation>Deskripsi</translation>
+    </message>
+    <message>
+        <source>Permissions</source>
+        <translation>Izin</translation>
+    </message>
+    <message>
+        <source>User</source>
+        <translation>Pengguna</translation>
+    </message>
+    <message>
+        <source>Browser</source>
+        <translation>Peramban</translation>
+    </message>
+    <message>
+        <source>Logged in</source>
+        <translation>Login pada</translation>
+    </message>
+    <message>
+        <source>Last active</source>
+        <translation>Aktif terakhir</translation>
+    </message>
+    <message>
+        <source>Expires</source>
+        <translation>Kedaluwarsa</translation>
+    </message>
+    <message>
+        <source>The user database could not be opened. See the Execution Log for details.</source>
+        <translation>Basis data pengguna tidak dapat dibuka. Lihat Log Eksekusi untuk detailnya.</translation>
+    </message>
+    <message>
+        <source>Disabled</source>
+        <translation>Nonaktif</translation>
+    </message>
+    <message>
+        <source>Enabled</source>
+        <translation>Aktif</translation>
+    </message>
+    <message>
+        <source>Never</source>
+        <translation>Tidak pernah</translation>
+    </message>
+    <message>
+        <source>No accounts yet, so everyone still uses the shared WebUI login. Add an Admin account first.</source>
+        <translation>Belum ada akun, jadi semua orang masih memakai login WebUI bersama. Tambahkan akun Admin lebih dulu.</translation>
+    </message>
+    <message>
+        <source>Couldn&apos;t read the user database. %1</source>
+        <translation>Basis data pengguna tidak dapat dibaca. %1</translation>
+    </message>
+    <message>
+        <source>Remove user</source>
+        <translation>Hapus pengguna</translation>
+    </message>
+    <message>
+        <source>Are you sure you want to remove the user &apos;%1&apos;?</source>
+        <translation>Yakin ingin menghapus pengguna &apos;%1&apos;?</translation>
+    </message>
+    <message>
+        <source>Remove role</source>
+        <translation>Hapus peran</translation>
+    </message>
+    <message>
+        <source>Are you sure you want to remove the role &apos;%1&apos;?</source>
+        <translation>Yakin ingin menghapus peran &apos;%1&apos;?</translation>
+    </message>
+    <message>
+        <source>Enable</source>
+        <translation>Aktifkan</translation>
+    </message>
+    <message>
+        <source>Disable</source>
+        <translation>Nonaktifkan</translation>
+    </message>
+    <message>
+        <source>Log Out Everywhere</source>
+        <translation>Keluar di Mana Saja</translation>
+    </message>
+</context>
+<context>
+    <name>UserRoleDialog</name>
+    <message>
+        <source>Role</source>
+        <translation>Peran</translation>
+    </message>
+    <message>
+        <source>Name:</source>
+        <translation>Nama:</translation>
+    </message>
+    <message>
+        <source>Description:</source>
+        <translation>Deskripsi:</translation>
+    </message>
+    <message>
+        <source>Gives control over the PC or qBittorrent itself.</source>
+        <translation>Memberi kendali atas PC atau qBittorrent itu sendiri.</translation>
+    </message>
+    <message>
+        <source>Add Role</source>
+        <translation>Tambah Peran</translation>
+    </message>
+    <message>
+        <source>Edit Role</source>
+        <translation>Ubah Peran</translation>
+    </message>
+    <message>
+        <source>Enter a role name.</source>
+        <translation>Masukkan nama peran.</translation>
+    </message>
+    <message>
+        <source>Role</source>
+        <translation>Peran</translation>
+    </message>
+    <message>
+        <source>Name:</source>
+        <translation>Nama:</translation>
+    </message>
+    <message>
+        <source>Description:</source>
+        <translation>Deskripsi:</translation>
+    </message>
+    <message>
+        <source>Gives control over the PC or qBittorrent itself.</source>
+        <translation>Memberi kendali atas PC atau qBittorrent itu sendiri.</translation>
+    </message>
+    <message>
+        <source>Add Role</source>
+        <translation>Tambah Peran</translation>
+    </message>
+    <message>
+        <source>Edit Role</source>
+        <translation>Ubah Peran</translation>
+    </message>
+    <message>
+        <source>Enter a role name.</source>
+        <translation>Masukkan nama peran.</translation>
+    </message>
+</context>
+<context>
+    <name>WebUIActivityWidget</name>
+    <message>
+        <source>All</source>
+        <translation>Semua</translation>
+    </message>
+    <message>
+        <source>Filter activity</source>
+        <translation>Filter aktivitas</translation>
+    </message>
+    <message>
+        <source>Export...</source>
+        <translation>Ekspor...</translation>
+    </message>
+    <message>
+        <source>User:</source>
+        <translation>Pengguna:</translation>
+    </message>
+    <message>
+        <source>Category:</source>
+        <translation>Kategori:</translation>
+    </message>
+    <message>
+        <source>Result:</source>
+        <translation>Hasil:</translation>
+    </message>
+    <message>
+        <source>Time</source>
+        <translation>Waktu</translation>
+    </message>
+    <message>
+        <source>User</source>
+        <translation>Pengguna</translation>
+    </message>
+    <message>
+        <source>Role</source>
+        <translation>Peran</translation>
+    </message>
+    <message>
+        <source>Category</source>
+        <translation>Kategori</translation>
+    </message>
+    <message>
+        <source>Action</source>
+        <translation>Tindakan</translation>
+    </message>
+    <message>
+        <source>Result</source>
+        <translation>Hasil</translation>
+    </message>
+    <message>
+        <source>The user database could not be opened. See the General tab for details.</source>
+        <translation>Basis data pengguna tidak dapat dibuka. Lihat tab Umum untuk detailnya.</translation>
+    </message>
+    <message>
+        <source>Results (showing %1 out of %2)</source>
+        <translation>Hasil (menampilkan %1 dari %2)</translation>
+    </message>
+    <message>
+        <source>Copy</source>
+        <translation>Salin</translation>
+    </message>
+    <message>
+        <source>Export WebUI activity</source>
+        <translation>Ekspor aktivitas WebUI</translation>
+    </message>
+    <message>
+        <source>CSV files</source>
+        <translation>Berkas CSV</translation>
+    </message>
+    <message>
+        <source>Couldn&apos;t save the file. Reason: %1</source>
+        <translation>Tidak dapat menyimpan berkas. Alasan: %1</translation>
+    </message>
+    <message>
+        <source>All</source>
+        <translation>Semua</translation>
+    </message>
+    <message>
+        <source>Filter activity</source>
+        <translation>Filter aktivitas</translation>
+    </message>
+    <message>
+        <source>Export...</source>
+        <translation>Ekspor...</translation>
+    </message>
+    <message>
+        <source>User:</source>
+        <translation>Pengguna:</translation>
+    </message>
+    <message>
+        <source>Category:</source>
+        <translation>Kategori:</translation>
+    </message>
+    <message>
+        <source>Result:</source>
+        <translation>Hasil:</translation>
+    </message>
+    <message>
+        <source>Time</source>
+        <translation>Waktu</translation>
+    </message>
+    <message>
+        <source>User</source>
+        <translation>Pengguna</translation>
+    </message>
+    <message>
+        <source>Role</source>
+        <translation>Peran</translation>
+    </message>
+    <message>
+        <source>Category</source>
+        <translation>Kategori</translation>
+    </message>
+    <message>
+        <source>Action</source>
+        <translation>Tindakan</translation>
+    </message>
+    <message>
+        <source>Result</source>
+        <translation>Hasil</translation>
+    </message>
+    <message>
+        <source>The user database could not be opened. See the General tab for details.</source>
+        <translation>Basis data pengguna tidak dapat dibuka. Lihat tab Umum untuk detailnya.</translation>
+    </message>
+    <message>
+        <source>Results (showing %1 out of %2)</source>
+        <translation>Hasil (menampilkan %1 dari %2)</translation>
+    </message>
+    <message>
+        <source>Copy</source>
+        <translation>Salin</translation>
+    </message>
+    <message>
+        <source>Export WebUI activity</source>
+        <translation>Ekspor aktivitas WebUI</translation>
+    </message>
+    <message>
+        <source>CSV files</source>
+        <translation>Berkas CSV</translation>
+    </message>
+    <message>
+        <source>Couldn&apos;t save the file. Reason: %1</source>
+        <translation>Tidak dapat menyimpan berkas. Alasan: %1</translation>
     </message>
 </context>
 </TS>

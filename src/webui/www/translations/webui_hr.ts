@@ -227,6 +227,85 @@ The piece hash will be checked when it is requested for the first time by a peer
         <source>%1 needed · %2 free</source>
         <translation type="unfinished" />
     </message>
+    <message>
+        <source>Don&apos;t create subfolder</source>
+        <translation>Ne stvaraj podmapu</translation>
+    </message>
+    <message>
+        <source>Never show again</source>
+        <translation>Ne pokazuj više</translation>
+    </message>
+    <message>
+        <source>Select None</source>
+        <translation>Obrnuti odabir</translation>
+    </message>
+    <message>
+        <source>Torrent options</source>
+        <translation>Mogućnosti Torrenta</translation>
+    </message>
+    <message>
+        <source>Your role saves torrents in the default folders.</source>
+        <translation>Vaša uloga sprema torrente u zadane mape.</translation>
+    </message>
+</context>
+<context>
+    <name>AdvancedSettings</name>
+    <message>
+        <source>General</source>
+        <translation>Općenito</translation>
+    </message>
+    <message>
+        <source>Network</source>
+        <translation>Mreža</translation>
+    </message>
+    <message>
+        <source>Storage</source>
+        <translation>Pohrana</translation>
+    </message>
+    <message>
+        <source>Peers and trackers</source>
+        <translation>Peerovi i trackeri</translation>
+    </message>
+    <message>
+        <source>Program behavior</source>
+        <translation>Ponašanje programa</translation>
+    </message>
+    <message>
+        <source>Display and notifications</source>
+        <translation>Prikaz i obavijesti</translation>
+    </message>
+    <message>
+        <source>Network connection</source>
+        <translation>Mrežna veza</translation>
+    </message>
+    <message>
+        <source>Security and privacy</source>
+        <translation>Sigurnost i privatnost</translation>
+    </message>
+    <message>
+        <source>Connection tuning</source>
+        <translation>Podešavanje veze</translation>
+    </message>
+    <message>
+        <source>Saving and torrent files</source>
+        <translation>Spremanje i torrent datoteke</translation>
+    </message>
+    <message>
+        <source>Disk and memory</source>
+        <translation>Disk i memorija</translation>
+    </message>
+    <message>
+        <source>Trackers</source>
+        <translation>Trackeri</translation>
+    </message>
+    <message>
+        <source>Peers and seeding</source>
+        <translation>Peerovi i seedanje</translation>
+    </message>
+    <message>
+        <source>DHT and I2P</source>
+        <translation>DHT i I2P</translation>
+    </message>
 </context>
 <context>
     <name>CategoryFilterModel</name>
@@ -631,6 +710,14 @@ The piece hash will be checked when it is requested for the first time by a peer
         <source>More</source>
         <translation>Više</translation>
     </message>
+    <message>
+        <source>Change Password...</source>
+        <translation>Promijeni lozinku...</translation>
+    </message>
+    <message>
+        <source>Signed in as</source>
+        <translation>Prijavljen kao</translation>
+    </message>
 </context>
 <context>
     <name>MainWindow</name>
@@ -937,6 +1024,34 @@ The piece hash will be checked when it is requested for the first time by a peer
     <message>
         <source>Resume Session</source>
         <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Global Speed Limits</source>
+        <translation>Globalna ograničenja brzine</translation>
+    </message>
+    <message>
+        <source>Pause Session</source>
+        <translation>Pauziraj sesiju</translation>
+    </message>
+    <message>
+        <source>Pause session</source>
+        <translation>Pauziraj sesiju</translation>
+    </message>
+    <message>
+        <source>Resume Session</source>
+        <translation>Nastavi sesiju</translation>
+    </message>
+    <message>
+        <source>Resume session</source>
+        <translation>Nastavi sesiju</translation>
+    </message>
+    <message>
+        <source>Your account can&apos;t add torrents.</source>
+        <translation>Vaš račun ne može dodavati torrente.</translation>
+    </message>
+    <message>
+        <source>[PAUSED]</source>
+        <translation>[PAUZIRANO]</translation>
     </message>
 </context>
 <context>
@@ -2535,6 +2650,190 @@ Koristite ';' za razdvajanje više unosa. Može koristiti zamjenski znak '*'.</t
         <source>a@x.com;b@y.com,c@z.com - send two emails: the first to just a@x.com, the second to both b@y.com and c@z.com</source>
         <translation type="unfinished" />
     </message>
+    <message>
+        <source>0 means users are logged out after the session timeout.</source>
+        <translation>0 znači da se korisnici odjavljuju nakon isteka sesije.</translation>
+    </message>
+    <message>
+        <source>Access</source>
+        <translation>Pristup</translation>
+    </message>
+    <message>
+        <source>All the above</source>
+        <translation>Sve navedeno</translation>
+    </message>
+    <message>
+        <source>Allow this login when user accounts exist</source>
+        <translation>Dopusti ovu prijavu kada postoje korisnički računi</translation>
+    </message>
+    <message>
+        <source>Also save search results</source>
+        <translation>Spremi i rezultate pretrage</translation>
+    </message>
+    <message>
+        <source>Also when addition is cancelled</source>
+        <translation>Također kada je dodavanje poništeno</translation>
+    </message>
+    <message>
+        <source>Any of the above</source>
+        <translation>Bilo što od gore navedenog</translation>
+    </message>
+    <message>
+        <source>Below normal</source>
+        <translation>Ispod normale</translation>
+    </message>
+    <message>
+        <source>Changes to users, roles and logins apply at once.</source>
+        <translation>Promjene korisnika, uloga i prijava primjenjuju se odmah.</translation>
+    </message>
+    <message>
+        <source>Don&apos;t create subfolder</source>
+        <translation>Ne stvaraj podmapu</translation>
+    </message>
+    <message>
+        <source>Example:</source>
+        <translation>Primjer:</translation>
+    </message>
+    <message>
+        <source>I2P (experimental)</source>
+        <translation>I2P (eksperimentalno)</translation>
+    </message>
+    <message>
+        <source>Keep WebUI activity log for:</source>
+        <translation>Čuvaj WebUI zapisnik aktivnosti:</translation>
+    </message>
+    <message>
+        <source>Keep unselected files in &quot;.unwanted&quot; folder</source>
+        <translation>Držite neodabrane datoteke u mapi &quot;.neželjeno&quot;</translation>
+    </message>
+    <message>
+        <source>Keep users logged in for:</source>
+        <translation>Drži korisnike prijavljenima:</translation>
+    </message>
+    <message>
+        <source>Language:</source>
+        <translation>Jezik:</translation>
+    </message>
+    <message>
+        <source>Lock account after consecutive failures:</source>
+        <translation>Zaključaj račun nakon uzastopnih neuspjeha:</translation>
+    </message>
+    <message>
+        <source>Logins and Activity Log</source>
+        <translation>Prijave i zapisnik aktivnosti</translation>
+    </message>
+    <message>
+        <source>Low</source>
+        <translation>Nisko</translation>
+    </message>
+    <message>
+        <source>Maximum active checking torrents:</source>
+        <translation>Najviše aktivnih torrenta:</translation>
+    </message>
+    <message>
+        <source>Medium</source>
+        <translation>Srednje</translation>
+    </message>
+    <message>
+        <source>No settings match</source>
+        <translation>Nema postavki koje odgovaraju</translation>
+    </message>
+    <message>
+        <source>Process memory priority:</source>
+        <translation>Prioritet memorije procesa:</translation>
+    </message>
+    <message>
+        <source>Save search tabs</source>
+        <translation>Spremi kartice pretrage</translation>
+    </message>
+    <message>
+        <source>Search UI</source>
+        <translation>Korisničko sučelje za pretraživanje</translation>
+    </message>
+    <message>
+        <source>Search settings</source>
+        <translation>Pretraži postavke</translation>
+    </message>
+    <message>
+        <source>Service:</source>
+        <translation>Servis:</translation>
+    </message>
+    <message>
+        <source>Show console window</source>
+        <translation>Prikaži prozor konzole</translation>
+    </message>
+    <message>
+        <source>Show the window when adding a torrent</source>
+        <translation>Prikaži prozor pri dodavanju torrenta</translation>
+    </message>
+    <message>
+        <source>Specify reverse proxy IPs (or subnets, e.g. 0.0.0.0/24) in order to use forwarded client address (X-Forwarded-For header). Use &apos;;&apos; to split multiple entries.</source>
+        <translation>Navedite obrnute proxy IP adrese (ili podmreže, npr. 0.0.0.0/24) kako biste koristili prosljeđenu adresu klijenta (X-Prosljeđeno-Za zaglavlje). Koristite &apos;;&apos; za razdvajanje više unosa.</translation>
+    </message>
+    <message>
+        <source>Status bar and log</source>
+        <translation>Statusna traka i zapisnik</translation>
+    </message>
+    <message>
+        <source>The WebUI activity log can be kept for 1 to 3650 days.</source>
+        <translation>WebUI zapisnik aktivnosti može se čuvati od 1 do 3650 dana.</translation>
+    </message>
+    <message>
+        <source>The settings below apply with OK or Apply.</source>
+        <translation>Postavke u nastavku primjenjuju se s U redu ili Primijeni.</translation>
+    </message>
+    <message>
+        <source>Tip: Encapsulate parameter with quotation marks to avoid text being cut off at whitespace (e.g., &quot;%N&quot;)</source>
+        <translation>Savjet: Enkapsulirajte parametar s navodnicima kako biste izbjegli odsijecanje teksta na razmaku (npr. &quot;%N&quot;)</translation>
+    </message>
+    <message>
+        <source>Transfer List</source>
+        <translation>Popis prijenosa</translation>
+    </message>
+    <message>
+        <source>Until the first user account is created, this login always works.</source>
+        <translation>Dok se ne stvori prvi korisnički račun, ova prijava uvijek radi.</translation>
+    </message>
+    <message>
+        <source>User Accounts</source>
+        <translation>Korisnički računi</translation>
+    </message>
+    <message>
+        <source>Users can be kept logged in for 0 to 365 days.</source>
+        <translation>Korisnici mogu ostati prijavljeni od 0 do 365 dana.</translation>
+    </message>
+    <message>
+        <source>Very low</source>
+        <translation>Jako nisko</translation>
+    </message>
+    <message>
+        <source>Warning! Data loss possible!</source>
+        <translation>Upozorenje! Moguć gubitak podataka!</translation>
+    </message>
+    <message>
+        <source>When Default Save/Incomplete Path changed:</source>
+        <translation>Kada se promijeni zadana putanja spremanja/nepotpunog:</translation>
+    </message>
+    <message>
+        <source>Whitelist for filtering HTTP Host header values.
+In order to defend against DNS rebinding attack,
+you should put in domain names used by WebUI server.
+
+Use &apos;;&apos; to split multiple entries. Can use wildcard &apos;*&apos;.</source>
+        <translation>Popis dopuštenih za filtriranje vrijednosti zaglavlja HTTP hosta.
+U svrhu obrane od napada ponovnog povezivanja DNS-a,
+trebali biste unijeti nazive domena koje koristi WebUI poslužitelj.
+
+Koristite &apos;;&apos; za razdvajanje više unosa. Možete koristiti zamjenski znak &apos;*&apos;.</translation>
+    </message>
+    <message>
+        <source>You changed the address, port or HTTPS setting of the WebUI. Saving moves the WebUI, so Options will save, close and reload the page, the same as OK. If the page doesn&apos;t come back, open the WebUI at its new address.\n\nSave anyway?</source>
+        <translation>Promijenili ste adresu, port ili HTTPS postavku WebUI-ja. Spremanje premješta WebUI, pa će Opcije spremiti, zatvoriti i ponovno učitati stranicu, kao kod U redu. Ako se stranica ne vrati, otvorite WebUI na novoj adresi.\n\nSpremiti svejedno?</translation>
+    </message>
+    <message>
+        <source>lock for:</source>
+        <translation>zaključaj na:</translation>
+    </message>
 </context>
 <context>
     <name>PeerListWidget</name>
@@ -2963,6 +3262,10 @@ Koristite ';' za razdvajanje više unosa. Može koristiti zamjenski znak '*'.</t
         <source>Copy download URL</source>
         <translation type="unfinished" />
     </message>
+    <message>
+        <source>Copy path</source>
+        <translation>Putanja kopiranja </translation>
+    </message>
 </context>
 <context>
     <name>ScanFoldersModel</name>
@@ -3075,6 +3378,142 @@ Koristite ';' za razdvajanje više unosa. Može koristiti zamjenski znak '*'.</t
     <message>
         <source>The time it takes from receiving a request from a peer until we're sending the response back on the socket</source>
         <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Activity</source>
+        <translation>Aktivnost</translation>
+    </message>
+    <message>
+        <source>All time</source>
+        <translation>Cijelo vrijeme</translation>
+    </message>
+    <message>
+        <source>Before tracking began</source>
+        <translation>Prije početka praćenja</translation>
+    </message>
+    <message>
+        <source>By month</source>
+        <translation>Po mjesecima</translation>
+    </message>
+    <message>
+        <source>Counts the requests that added a download. Apps without a login, such as Sonarr and Radarr, are shown as (localhost). Downloads added in the desktop window are not counted.</source>
+        <translation>Broji zahtjeve koji su dodali preuzimanje. Aplikacije bez prijave, poput Sonarra i Radarra, prikazuju se kao (localhost). Preuzimanja dodana u prozoru desktop aplikacije ne broje se.</translation>
+    </message>
+    <message>
+        <source>Current speed:</source>
+        <translation>Trenutačna brzina:</translation>
+    </message>
+    <message>
+        <source>DHT nodes:</source>
+        <translation>DHT čvorovi:</translation>
+    </message>
+    <message>
+        <source>Data discarded this session:</source>
+        <translation>Odbačeni podaci u ovoj sesiji:</translation>
+    </message>
+    <message>
+        <source>Disk</source>
+        <translation>Disk</translation>
+    </message>
+    <message>
+        <source>History</source>
+        <translation>Povijest</translation>
+    </message>
+    <message>
+        <source>Last 12 months</source>
+        <translation>Posljednjih 12 mjeseci</translation>
+    </message>
+    <message>
+        <source>Last 7 days</source>
+        <translation>Posljednjih 7 dana</translation>
+    </message>
+    <message>
+        <source>Last month</source>
+        <translation>Prošli mjesec</translation>
+    </message>
+    <message>
+        <source>Month</source>
+        <translation>Mjesec</translation>
+    </message>
+    <message>
+        <source>Nothing added yet</source>
+        <translation>Još ništa nije dodano</translation>
+    </message>
+    <message>
+        <source>Off</source>
+        <translation>Isključeno</translation>
+    </message>
+    <message>
+        <source>Overview</source>
+        <translation>Pregled</translation>
+    </message>
+    <message>
+        <source>Peers waiting on disk reads:</source>
+        <translation>Peerovi koji čekaju čitanje s diska:</translation>
+    </message>
+    <message>
+        <source>Peers waiting on disk writes:</source>
+        <translation>Peerovi koji čekaju upis na disk:</translation>
+    </message>
+    <message>
+        <source>Period</source>
+        <translation>Razdoblje</translation>
+    </message>
+    <message>
+        <source>Request latency:</source>
+        <translation>Latencija zahtjeva:</translation>
+    </message>
+    <message>
+        <source>Running for:</source>
+        <translation>Radi već:</translation>
+    </message>
+    <message>
+        <source>Share ratio</source>
+        <translation>Omjer dijeljenja</translation>
+    </message>
+    <message>
+        <source>Share ratio:</source>
+        <translation>Omjer dijeljenja:</translation>
+    </message>
+    <message>
+        <source>Technical</source>
+        <translation>Tehničko</translation>
+    </message>
+    <message>
+        <source>This month</source>
+        <translation>Ovaj mjesec</translation>
+    </message>
+    <message>
+        <source>This session</source>
+        <translation>Ova sesija</translation>
+    </message>
+    <message>
+        <source>Today</source>
+        <translation>Danas</translation>
+    </message>
+    <message>
+        <source>Torrents downloading:</source>
+        <translation>Torrenti koji se preuzimaju:</translation>
+    </message>
+    <message>
+        <source>Torrents seeding:</source>
+        <translation>Torrenti koji se seedaju:</translation>
+    </message>
+    <message>
+        <source>Torrents stopped:</source>
+        <translation>Zaustavljeni torrenti:</translation>
+    </message>
+    <message>
+        <source>Torrents with errors:</source>
+        <translation>Torrenti s pogreškama:</translation>
+    </message>
+    <message>
+        <source>Tracking since:</source>
+        <translation>Praćenje od:</translation>
+    </message>
+    <message>
+        <source>WebUI downloads added, this month</source>
+        <translation>Preuzimanja dodana preko WebUI-ja, ovaj mjesec</translation>
     </message>
 </context>
 <context>
@@ -3862,6 +4301,10 @@ Koristite ';' za razdvajanje više unosa. Može koristiti zamjenski znak '*'.</t
         <source>Content Path</source>
         <translation>Staza sadržaja</translation>
     </message>
+    <message>
+        <source>Remove all tags from selected torrents?</source>
+        <translation>Ukloniti sve oznake s odabranih torrenta?</translation>
+    </message>
 </context>
 <context>
     <name>UpDownRatioDialog</name>
@@ -3917,6 +4360,14 @@ Koristite ';' za razdvajanje više unosa. Može koristiti zamjenski znak '*'.</t
         <source>Action when the limit is reached</source>
         <translation>Akcija kada je limit dostignut</translation>
     </message>
+    <message>
+        <source>Match all the limits</source>
+        <translation>Uskladi sve limite</translation>
+    </message>
+    <message>
+        <source>Match any limit</source>
+        <translation>Uskladi bilo koji limit</translation>
+    </message>
 </context>
 <context>
     <name>about</name>
@@ -3934,6 +4385,10 @@ Koristite ';' za razdvajanje više unosa. Može koristiti zamjenski znak '*'.</t
     <message>
         <source>Remove tracker</source>
         <translation>Ukloni trackera</translation>
+    </message>
+    <message>
+        <source>This choice is remembered for the next removal.</source>
+        <translation>Ovaj će se odabir zapamtiti za sljedeće uklanjanje.</translation>
     </message>
 </context>
 <context>
@@ -4147,6 +4602,34 @@ Koristite ';' za razdvajanje više unosa. Može koristiti zamjenski znak '*'.</t
         <source>Select plugins</source>
         <translation>Odaberite dodatke</translation>
     </message>
+    <message>
+        <source>Category to search in</source>
+        <translation>Kategorija za pretragu</translation>
+    </message>
+    <message>
+        <source>Close the selected search</source>
+        <translation>Zatvori odabranu pretragu</translation>
+    </message>
+    <message>
+        <source>Empty search pattern</source>
+        <translation>Prazan obrazac za pretraživanje</translation>
+    </message>
+    <message>
+        <source>Search engines to use</source>
+        <translation>Tražilice koje se koriste</translation>
+    </message>
+    <message>
+        <source>Search for torrents...</source>
+        <translation>Traži torrente...</translation>
+    </message>
+    <message>
+        <source>Searches</source>
+        <translation>Pretrage</translation>
+    </message>
+    <message>
+        <source>Type a search above and press Enter.</source>
+        <translation>Upišite pretragu iznad i pritisnite Enter.</translation>
+    </message>
 </context>
 <context>
     <name>PluginSelectDlg</name>
@@ -4185,6 +4668,10 @@ Koristite ';' za razdvajanje više unosa. Može koristiti zamjenski znak '*'.</t
     <message>
         <source>Search plugins</source>
         <translation>Dodaci za traženje</translation>
+    </message>
+    <message>
+        <source>Warning: Be sure to comply with your country&apos;s copyright laws when downloading torrents from any of these search engines.</source>
+        <translation>Upozorenje: Budite u skladu sa zakonima o autorskim pravima vaše zemlje kada preuzimate torrente s bilo koje od ovih tražilica.</translation>
     </message>
 </context>
 <context>
@@ -4408,6 +4895,30 @@ Koristite ';' za razdvajanje više unosa. Može koristiti zamjenski znak '*'.</t
         <source>qBittorrent icon</source>
         <translation>qBittorrent ikona</translation>
     </message>
+    <message>
+        <source>Based on:</source>
+        <translation>Temelji se na:</translation>
+    </message>
+    <message>
+        <source>Edition version:</source>
+        <translation>Verzija izdanja:</translation>
+    </message>
+    <message>
+        <source>Kettle Edition is a personal build of qBittorrent that adds user accounts with roles for the WebUI and the desktop app, an activity log, and an installable WebUI with a phone layout. A kettle is a group of hawks soaring together. This is an unofficial build, not affiliated with the qBittorrent project.</source>
+        <translation>Kettle Edition osobna je verzija qBittorrenta koja dodaje korisničke račune s ulogama za WebUI i desktop aplikaciju, zapisnik aktivnosti i WebUI koji se može instalirati s rasporedom za telefon. Kettle je skupina jastrebova koji zajedno lebde. Ovo je neslužbena verzija koja nije povezana s projektom qBittorrent.</translation>
+    </message>
+    <message>
+        <source>Maintainer:</source>
+        <translation>Održavatelj:</translation>
+    </message>
+    <message>
+        <source>This edition</source>
+        <translation>Ovo izdanje</translation>
+    </message>
+    <message>
+        <source>qBittorrent project:</source>
+        <translation>Projekt qBittorrent:</translation>
+    </message>
 </context>
 <context>
     <name>OptionDialog</name>
@@ -4509,6 +5020,46 @@ Koristite ';' za razdvajanje više unosa. Može koristiti zamjenski znak '*'.</t
     <message>
         <source>Open shared download window</source>
         <translation type="unfinished" />
+    </message>
+    <message>
+        <source>%1 of %2 shown</source>
+        <translation>Prikazano %1 od %2</translation>
+    </message>
+    <message>
+        <source>%1 of %2 shown (%3 hidden)</source>
+        <translation>Prikazano %1 od %2 (%3 skriveno)</translation>
+    </message>
+    <message>
+        <source>Close all searches</source>
+        <translation>Zatvori sve pretrage</translation>
+    </message>
+    <message>
+        <source>Close search</source>
+        <translation>Zatvori pretragu</translation>
+    </message>
+    <message>
+        <source>Filter search results...</source>
+        <translation>Filtriraj rezultate pretraživanja...</translation>
+    </message>
+    <message>
+        <source>Finished: %1</source>
+        <translation>Završeno: %1</translation>
+    </message>
+    <message>
+        <source>Refresh search</source>
+        <translation>Osvježi pretragu</translation>
+    </message>
+    <message>
+        <source>Search aborted: %1</source>
+        <translation>Pretraga prekinuta: %1</translation>
+    </message>
+    <message>
+        <source>Search returned no results</source>
+        <translation>Potraga vraćena bez rezultata</translation>
+    </message>
+    <message>
+        <source>Searching: %1</source>
+        <translation>Pretraživanje: %1</translation>
     </message>
 </context>
 <context>
@@ -4647,6 +5198,10 @@ Koristite ';' za razdvajanje više unosa. Može koristiti zamjenski znak '*'.</t
     <message>
         <source>Blocked opening RSS article URL. Only http:// and https:// links can be opened.</source>
         <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Details</source>
+        <translation>Pojedinosti</translation>
     </message>
 </context>
 <context>
@@ -4924,6 +5479,10 @@ Supports the formats: S01E01, 1x1, 2017.12.31 and 31.12.2017 (Date formats also 
         <source>Import</source>
         <translation type="unfinished" />
     </message>
+    <message>
+        <source>Don&apos;t create subfolder</source>
+        <translation>Ne stvaraj podmapu</translation>
+    </message>
 </context>
 <context>
     <name>TrackerFiltersList</name>
@@ -5113,6 +5672,26 @@ Supports the formats: S01E01, 1x1, 2017.12.31 and 31.12.2017 (Date formats also 
         <source>Choose a log level...</source>
         <translation>Odaberite razinu zapisnika...</translation>
     </message>
+    <message>
+        <source>Export...</source>
+        <translation>Izvezi...</translation>
+    </message>
+    <message>
+        <source>Filter activity</source>
+        <translation>Filtriraj aktivnost</translation>
+    </message>
+    <message>
+        <source>Result:</source>
+        <translation>Rezultat:</translation>
+    </message>
+    <message>
+        <source>User:</source>
+        <translation>Korisnik:</translation>
+    </message>
+    <message>
+        <source>WebUI Activity</source>
+        <translation>WebUI aktivnost</translation>
+    </message>
 </context>
 <context>
     <name>TrackersFilterWidget</name>
@@ -5182,6 +5761,14 @@ Supports the formats: S01E01, 1x1, 2017.12.31 and 31.12.2017 (Date formats also 
     <message>
         <source>Torrent share limits</source>
         <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Torrent share limits</source>
+        <translation>Ograničenja dijeljenja torrenta</translation>
+    </message>
+    <message>
+        <source>Your role saves torrents in the default folders.</source>
+        <translation>Vaša uloga sprema torrente u zadane mape.</translation>
     </message>
 </context>
 <context>
@@ -5281,6 +5868,14 @@ Supports the formats: S01E01, 1x1, 2017.12.31 and 31.12.2017 (Date formats also 
     <message>
         <source>Invalid Username or Password.</source>
         <translation>Nevažeće korisničko ime ili lozinka.</translation>
+    </message>
+    <message>
+        <source>A kettle is a group of hawks soaring together.</source>
+        <translation>Kettle je skupina jastrebova koji zajedno lebde.</translation>
+    </message>
+    <message>
+        <source>Sign in</source>
+        <translation>Prijava</translation>
     </message>
 </context>
 <context>
@@ -5510,6 +6105,22 @@ Supports the formats: S01E01, 1x1, 2017.12.31 and 31.12.2017 (Date formats also 
         <source>If checked, filenames starting with a period punctuation mark `.` will not be added to the created torrent.</source>
         <translation type="unfinished" />
     </message>
+    <message>
+        <source>Align to piece boundary for files larger than:</source>
+        <translation>Poravnaj s granicom komada za datoteke veće od:</translation>
+    </message>
+    <message>
+        <source>Optimize alignment</source>
+        <translation>Optimizirajte poravnanje</translation>
+    </message>
+    <message>
+        <source>Private torrent (Won&apos;t distribute on DHT network)</source>
+        <translation>Privatni torrent (neće se distribuirati na DHT mreži)</translation>
+    </message>
+    <message>
+        <source>Start seeding immediately</source>
+        <translation>Odmah počnite sa seedanjem</translation>
+    </message>
 </context>
 <context>
     <name>DownloadFromURLDialog</name>
@@ -5620,6 +6231,10 @@ Supports the formats: S01E01, 1x1, 2017.12.31 and 31.12.2017 (Date formats also 
         <source>Failed to set speed limits</source>
         <translation type="unfinished" />
     </message>
+    <message>
+        <source>Speed limits</source>
+        <translation>Ograničenja brzine</translation>
+    </message>
 </context>
 <context>
     <name>ListWidget</name>
@@ -5630,6 +6245,10 @@ Supports the formats: S01E01, 1x1, 2017.12.31 and 31.12.2017 (Date formats also 
     <message>
         <source>Resize</source>
         <translation>Promjena veličine</translation>
+    </message>
+    <message>
+        <source>Reset Auto Width</source>
+        <translation>Poništi automatsku širinu</translation>
     </message>
 </context>
 <context>
@@ -5645,6 +6264,10 @@ Supports the formats: S01E01, 1x1, 2017.12.31 and 31.12.2017 (Date formats also 
     <message>
         <source>Rotate this API key? The current key will immediately stop working and a new key will be generated.</source>
         <translation>Rotirati ovaj API ključ? Trenutni ključ odmah prestaje raditi i generirat će se novi ključ.</translation>
+    </message>
+    <message>
+        <source>Generate an API key? This key can be used to interact with qBittorrent&apos;s API.</source>
+        <translation>Generirajte API ključ? Ovaj ključ se može koristiti za interakciju s API-jem qBittorrenta.</translation>
     </message>
 </context>
 <context>
@@ -5760,6 +6383,54 @@ Supports the formats: S01E01, 1x1, 2017.12.31 and 31.12.2017 (Date formats also 
         <source>Remove torrent</source>
         <translation type="unfinished" />
     </message>
+    <message>
+        <source>Action when the limit is reached:</source>
+        <translation>Postupak kada se dosegne ograničenje:</translation>
+    </message>
+    <message>
+        <source>Default (%1)</source>
+        <translation>Zadano (%1)</translation>
+    </message>
+    <message>
+        <source>From category</source>
+        <translation>Iz kategorije</translation>
+    </message>
+    <message>
+        <source>From category (%1)</source>
+        <translation>Iz kategorije (%1)</translation>
+    </message>
+    <message>
+        <source>Inactive seeding time:</source>
+        <translation>Neaktivno vrijeme seedanja:</translation>
+    </message>
+    <message>
+        <source>Match all the limits</source>
+        <translation>Uskladi sve limite</translation>
+    </message>
+    <message>
+        <source>Match any limit</source>
+        <translation>Uskladi bilo koji limit</translation>
+    </message>
+    <message>
+        <source>Mode:</source>
+        <translation>Način:</translation>
+    </message>
+    <message>
+        <source>Ratio:</source>
+        <translation>Omjer:</translation>
+    </message>
+    <message>
+        <source>Seeding time:</source>
+        <translation>Vrijeme seedanja:</translation>
+    </message>
+    <message>
+        <source>Set to</source>
+        <translation>Postavljeno</translation>
+    </message>
+    <message>
+        <source>Unlimited</source>
+        <translation>Neograničeno</translation>
+    </message>
 </context>
 <context>
     <name>TorrentContent</name>
@@ -5770,6 +6441,208 @@ Supports the formats: S01E01, 1x1, 2017.12.31 and 31.12.2017 (Date formats also 
     <message>
         <source>Not available for folders</source>
         <translation type="unfinished" />
+    </message>
+</context>
+<context>
+    <name>UserAccounts</name>
+    <message>
+        <source>(this browser)</source>
+        <translation>(ovaj preglednik)</translation>
+    </message>
+    <message>
+        <source>A role decides what its users are allowed to do.</source>
+        <translation>Uloga određuje što njezini korisnici smiju raditi.</translation>
+    </message>
+    <message>
+        <source>Add Role</source>
+        <translation>Dodaj ulogu</translation>
+    </message>
+    <message>
+        <source>Add Role...</source>
+        <translation>Dodaj ulogu...</translation>
+    </message>
+    <message>
+        <source>Add User</source>
+        <translation>Dodaj korisnika</translation>
+    </message>
+    <message>
+        <source>Add User...</source>
+        <translation>Dodaj korisnika...</translation>
+    </message>
+    <message>
+        <source>Are you sure you want to remove the role &apos;%1&apos;?</source>
+        <translation>Jeste li sigurni da želite ukloniti ulogu &apos;%1&apos;?</translation>
+    </message>
+    <message>
+        <source>Are you sure you want to remove the user &apos;%1&apos;?</source>
+        <translation>Jeste li sigurni da želite ukloniti korisnika &apos;%1&apos;?</translation>
+    </message>
+    <message>
+        <source>At least %1 characters</source>
+        <translation>Najmanje %1 znakova</translation>
+    </message>
+    <message>
+        <source>Browser</source>
+        <translation>Preglednik</translation>
+    </message>
+    <message>
+        <source>Browsers and devices where someone is logged in with a user account.</source>
+        <translation>Preglednici i uređaji na kojima je netko prijavljen korisničkim računom.</translation>
+    </message>
+    <message>
+        <source>Change Password</source>
+        <translation>Promijeni lozinku</translation>
+    </message>
+    <message>
+        <source>Confirm password:</source>
+        <translation>Potvrdi lozinku:</translation>
+    </message>
+    <message>
+        <source>Created</source>
+        <translation>Stvoren</translation>
+    </message>
+    <message>
+        <source>Current password:</source>
+        <translation>Trenutačna lozinka:</translation>
+    </message>
+    <message>
+        <source>Description</source>
+        <translation>Opis</translation>
+    </message>
+    <message>
+        <source>Description:</source>
+        <translation>Opis:</translation>
+    </message>
+    <message>
+        <source>Disable</source>
+        <translation>Onemogući</translation>
+    </message>
+    <message>
+        <source>Disable this account</source>
+        <translation>Onemogući ovaj račun</translation>
+    </message>
+    <message>
+        <source>Edit Role</source>
+        <translation>Uredi ulogu</translation>
+    </message>
+    <message>
+        <source>Edit User</source>
+        <translation>Uredi korisnika</translation>
+    </message>
+    <message>
+        <source>Edit...</source>
+        <translation>Uredi...</translation>
+    </message>
+    <message>
+        <source>Enable</source>
+        <translation>Omogući</translation>
+    </message>
+    <message>
+        <source>Enter a role name.</source>
+        <translation>Unesite naziv uloge.</translation>
+    </message>
+    <message>
+        <source>Enter a username.</source>
+        <translation>Unesite korisničko ime.</translation>
+    </message>
+    <message>
+        <source>Expires</source>
+        <translation>Istječe</translation>
+    </message>
+    <message>
+        <source>Gives control over the PC or qBittorrent itself</source>
+        <translation>Daje kontrolu nad računalom ili samim qBittorrentom</translation>
+    </message>
+    <message>
+        <source>Last active</source>
+        <translation>Zadnja aktivnost</translation>
+    </message>
+    <message>
+        <source>Last login</source>
+        <translation>Zadnja prijava</translation>
+    </message>
+    <message>
+        <source>Leave empty to keep the current password</source>
+        <translation>Ostavite prazno da zadržite trenutnu lozinku</translation>
+    </message>
+    <message>
+        <source>Log Out</source>
+        <translation>Odjavi</translation>
+    </message>
+    <message>
+        <source>Log Out Everywhere</source>
+        <translation>Odjavi svugdje</translation>
+    </message>
+    <message>
+        <source>Logged In</source>
+        <translation>Prijavljeni</translation>
+    </message>
+    <message>
+        <source>Logged in</source>
+        <translation>Prijavljen</translation>
+    </message>
+    <message>
+        <source>New password:</source>
+        <translation>Nova lozinka:</translation>
+    </message>
+    <message>
+        <source>No accounts yet, so everyone still uses the shared WebUI login. Add an Admin account first.</source>
+        <translation>Još nema računa, pa svi i dalje koriste zajedničku WebUI prijavu. Prvo dodajte račun administratora.</translation>
+    </message>
+    <message>
+        <source>People who can log in to the WebUI with their own username and password.</source>
+        <translation>Osobe koje se mogu prijaviti u WebUI svojim korisničkim imenom i lozinkom.</translation>
+    </message>
+    <message>
+        <source>Permissions</source>
+        <translation>Dopuštenja</translation>
+    </message>
+    <message>
+        <source>Role</source>
+        <translation>Uloga</translation>
+    </message>
+    <message>
+        <source>Role:</source>
+        <translation>Uloga:</translation>
+    </message>
+    <message>
+        <source>Roles</source>
+        <translation>Uloge</translation>
+    </message>
+    <message>
+        <source>The password must be at least %1 characters long.</source>
+        <translation>Lozinka mora imati najmanje %1 znakova.</translation>
+    </message>
+    <message>
+        <source>The passwords don&apos;t match.</source>
+        <translation>Lozinke se ne podudaraju.</translation>
+    </message>
+    <message>
+        <source>Users</source>
+        <translation>Korisnici</translation>
+    </message>
+    <message>
+        <source>Your password was changed. Other browsers and devices where you were logged in have been logged out.</source>
+        <translation>Lozinka je promijenjena. Drugi preglednici i uređaji na kojima ste bili prijavljeni su odjavljeni.</translation>
+    </message>
+</context>
+<context>
+    <name>WebUIActivity</name>
+    <message>
+        <source>Action</source>
+        <translation>Radnja</translation>
+    </message>
+    <message>
+        <source>Result</source>
+        <translation>Rezultat</translation>
+    </message>
+    <message>
+        <source>Role</source>
+        <translation>Uloga</translation>
+    </message>
+    <message>
+        <source>Time</source>
+        <translation>Vrijeme</translation>
     </message>
 </context>
 </TS>

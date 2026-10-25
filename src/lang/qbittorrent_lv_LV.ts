@@ -141,6 +141,62 @@
         <source>The free IP to Country Lite database by DB-IP is used for resolving the countries of peers. The database is licensed under the Creative Commons Attribution 4.0 International License</source>
         <translation>Bezmaksas &quot;Valsts pēc IP&quot; kompaktā datubāze (IP to Country Lite) no DB-IP tiek izmantota, lai pēc IP adresēm noteiktu un parādītu jums koplietotāju valstis. Datubāze ir licencēta zem Attiecinājums 4.0 Starptautisks (CC BY 4.0)</translation>
     </message>
+    <message>
+        <source>This edition</source>
+        <translation>Šis izdevums</translation>
+    </message>
+    <message>
+        <source>Edition version:</source>
+        <translation>Izdevuma versija:</translation>
+    </message>
+    <message>
+        <source>Based on:</source>
+        <translation>Balstīts uz:</translation>
+    </message>
+    <message>
+        <source>Maintainer:</source>
+        <translation>Uzturētājs:</translation>
+    </message>
+    <message>
+        <source>qBittorrent project:</source>
+        <translation>qBittorrent projekts:</translation>
+    </message>
+    <message>
+        <source>Kettle Edition is a personal build of qBittorrent that adds user accounts with roles for the WebUI and the desktop app, an activity log, and an installable WebUI with a phone layout. A kettle is a group of hawks soaring together. This is an unofficial build, not affiliated with the qBittorrent project.</source>
+        <translation>Kettle Edition ir personiska qBittorrent būve, kas pievieno lietotāju kontus ar lomām WebUI un galddatora lietotnei, darbību žurnālu un instalējamu WebUI ar tālruņa izkārtojumu. Kettle ir kopā planējošu vanagu bars. Šī ir neoficiāla būve, kas nav saistīta ar qBittorrent projektu.</translation>
+    </message>
+    <message>
+        <source>N/A</source>
+        <translation>Nav pieejams</translation>
+    </message>
+    <message>
+        <source>This edition</source>
+        <translation>Šis izdevums</translation>
+    </message>
+    <message>
+        <source>Edition version:</source>
+        <translation>Izdevuma versija:</translation>
+    </message>
+    <message>
+        <source>Based on:</source>
+        <translation>Balstīts uz:</translation>
+    </message>
+    <message>
+        <source>Maintainer:</source>
+        <translation>Uzturētājs:</translation>
+    </message>
+    <message>
+        <source>qBittorrent project:</source>
+        <translation>qBittorrent projekts:</translation>
+    </message>
+    <message>
+        <source>Kettle Edition is a personal build of qBittorrent that adds user accounts with roles for the WebUI and the desktop app, an activity log, and an installable WebUI with a phone layout. A kettle is a group of hawks soaring together. This is an unofficial build, not affiliated with the qBittorrent project.</source>
+        <translation>Kettle Edition ir personiska qBittorrent būve, kas pievieno lietotāju kontus ar lomām WebUI un galddatora lietotnei, darbību žurnālu un instalējamu WebUI ar tālruņa izkārtojumu. Kettle ir kopā planējošu vanagu bars. Šī ir neoficiāla būve, kas nav saistīta ar qBittorrent projektu.</translation>
+    </message>
+    <message>
+        <source>N/A</source>
+        <translation>Nav pieejams</translation>
+    </message>
 </context>
 <context>
     <name>AbstractFileStorage</name>
@@ -1459,6 +1515,62 @@
         <location filename="../gui/advancedsettings.cpp" line="925"/>
         <source>Embedded tracker port</source>
         <translation>Iebūvētā trakera ports</translation>
+    </message>
+    <message>
+        <source>Network</source>
+        <translation>Tīkls</translation>
+    </message>
+    <message>
+        <source>Storage</source>
+        <translation>Krātuve</translation>
+    </message>
+    <message>
+        <source>Peers and trackers</source>
+        <translation>Koplietotāji un trakeri</translation>
+    </message>
+    <message>
+        <source>Program behavior</source>
+        <translation>Programmas darbība</translation>
+    </message>
+    <message>
+        <source>Display and notifications</source>
+        <translation>Attēlojums un paziņojumi</translation>
+    </message>
+    <message>
+        <source>Network connection</source>
+        <translation>Tīkla savienojums</translation>
+    </message>
+    <message>
+        <source>Security and privacy</source>
+        <translation>Drošība un privātums</translation>
+    </message>
+    <message>
+        <source>Connection tuning</source>
+        <translation>Savienojuma pielāgošana</translation>
+    </message>
+    <message>
+        <source>Saving and torrent files</source>
+        <translation>Saglabāšana un torenta faili</translation>
+    </message>
+    <message>
+        <source>Disk and memory</source>
+        <translation>Disks un atmiņa</translation>
+    </message>
+    <message>
+        <source>Peers and seeding</source>
+        <translation>Koplietotāji un augšupielāde</translation>
+    </message>
+    <message>
+        <source>DHT and I2P</source>
+        <translation>DHT un I2P</translation>
+    </message>
+    <message>
+        <source>General</source>
+        <translation>Vispārīgi</translation>
+    </message>
+    <message>
+        <source>Trackers</source>
+        <translation>Trakeri</translation>
     </message>
 </context>
 <context>
@@ -3480,6 +3592,22 @@ Atbalsta formātus: S01E01, 1x1, 2017.12.31 un 31.12.2017 (Datumu formātos kā 
         <source>Remove torrent</source>
         <translation>Dzēst torrentu</translation>
     </message>
+    <message>
+        <source>This choice is remembered for the next removal.</source>
+        <translation>Šī izvēle tiks atcerēta nākamajai noņemšanai.</translation>
+    </message>
+    <message>
+        <source>Remove</source>
+        <translation>Noņemt</translation>
+    </message>
+    <message>
+        <source>This choice is remembered for the next removal.</source>
+        <translation>Šī izvēle tiks atcerēta nākamajai noņemšanai.</translation>
+    </message>
+    <message>
+        <source>Remove</source>
+        <translation>Noņemt</translation>
+    </message>
 </context>
 <context>
     <name>DownloadFromURLDialog</name>
@@ -3553,6 +3681,14 @@ Atbalsta formātus: S01E01, 1x1, 2017.12.31 un 31.12.2017 (Datumu formātos kā 
         <location filename="../gui/executionlogwidget.cpp" line="99"/>
         <source>Clear</source>
         <translation>Notīrīt</translation>
+    </message>
+    <message>
+        <source>WebUI Activity</source>
+        <translation>WebUI darbība</translation>
+    </message>
+    <message>
+        <source>WebUI Activity</source>
+        <translation>WebUI darbība</translation>
     </message>
 </context>
 <context>
@@ -4726,6 +4862,46 @@ Vecākā atļautā: %2.</translation>
         <location filename="../gui/mainwindow.cpp" line="1346"/>
         <source>Torrent Files</source>
         <translation>Torrentu faili</translation>
+    </message>
+    <message>
+        <source>Kettle Edition %1 is available.</source>
+        <translation>Kettle Edition %1 ir pieejama.</translation>
+    </message>
+    <message>
+        <source>qBittorrent Kettle Edition %1 is available. It is downloaded now and installed at 4:00 AM, or when qBittorrent starts next.</source>
+        <translation>qBittorrent Kettle Edition %1 ir pieejama. Tā tiek lejupielādēta tagad un tiks instalēta plkst. 4:00 vai nākamreiz palaižot qBittorrent.</translation>
+    </message>
+    <message>
+        <source>qBittorrent Kettle Edition %1 is available. It is downloaded now. Turn on &quot;Automatically install Kettle Edition updates&quot; in Options to install it.</source>
+        <translation>qBittorrent Kettle Edition %1 ir pieejama. Tā tiek lejupielādēta tagad. Lai to instalētu, Opcijās ieslēdziet „Automātiski instalēt Kettle Edition atjauninājumus”.</translation>
+    </message>
+    <message>
+        <source>You have the latest qBittorrent Kettle Edition (%1).</source>
+        <translation>Jums ir jaunākā qBittorrent Kettle Edition (%1).</translation>
+    </message>
+    <message>
+        <source>Could not check for qBittorrent Kettle Edition updates. See the Execution Log for details.</source>
+        <translation>Neizdevās pārbaudīt qBittorrent Kettle Edition atjauninājumus. Skatiet izpildes žurnālu, lai uzzinātu sīkāk.</translation>
+    </message>
+    <message>
+        <source>Kettle Edition %1 is available.</source>
+        <translation>Kettle Edition %1 ir pieejama.</translation>
+    </message>
+    <message>
+        <source>qBittorrent Kettle Edition %1 is available. It is downloaded now and installed at 4:00 AM, or when qBittorrent starts next.</source>
+        <translation>qBittorrent Kettle Edition %1 ir pieejama. Tā tiek lejupielādēta tagad un tiks instalēta plkst. 4:00 vai nākamreiz palaižot qBittorrent.</translation>
+    </message>
+    <message>
+        <source>qBittorrent Kettle Edition %1 is available. It is downloaded now. Turn on &quot;Automatically install Kettle Edition updates&quot; in Options to install it.</source>
+        <translation>qBittorrent Kettle Edition %1 ir pieejama. Tā tiek lejupielādēta tagad. Lai to instalētu, Opcijās ieslēdziet „Automātiski instalēt Kettle Edition atjauninājumus”.</translation>
+    </message>
+    <message>
+        <source>You have the latest qBittorrent Kettle Edition (%1).</source>
+        <translation>Jums ir jaunākā qBittorrent Kettle Edition (%1).</translation>
+    </message>
+    <message>
+        <source>Could not check for qBittorrent Kettle Edition updates. See the Execution Log for details.</source>
+        <translation>Neizdevās pārbaudīt qBittorrent Kettle Edition atjauninājumus. Skatiet izpildes žurnālu, lai uzzinātu sīkāk.</translation>
     </message>
 </context>
 <context>
@@ -8497,6 +8673,190 @@ Check the Execution Log for errors.</source>
         <source>Length Error</source>
         <translation>Garuma kļūda</translation>
     </message>
+    <message>
+        <source>Search settings</source>
+        <translation>Meklēt iestatījumos</translation>
+    </message>
+    <message>
+        <source>No settings match</source>
+        <translation>Nav atbilstošu iestatījumu</translation>
+    </message>
+    <message>
+        <source>User Accounts</source>
+        <translation>Lietotāju konti</translation>
+    </message>
+    <message>
+        <source>Automatically install Kettle Edition updates</source>
+        <translation>Automātiski instalēt Kettle Edition atjauninājumus</translation>
+    </message>
+    <message>
+        <source>Status bar and log</source>
+        <translation>Statusa josla un žurnāls</translation>
+    </message>
+    <message>
+        <source>Files</source>
+        <translation>Faili</translation>
+    </message>
+    <message>
+        <source>Checking</source>
+        <translation>Pārbaude</translation>
+    </message>
+    <message>
+        <source>Until the first user account is created, this login always works.</source>
+        <translation>Kamēr nav izveidots pirmais lietotāja konts, šī pieteikšanās vienmēr darbojas.</translation>
+    </message>
+    <message>
+        <source>Allow this login when user accounts exist</source>
+        <translation>Atļaut šo pieteikšanos, kad ir lietotāju konti</translation>
+    </message>
+    <message>
+        <source>Access</source>
+        <translation>Piekļuve</translation>
+    </message>
+    <message>
+        <source>Changes to users, roles and logins apply at once. The settings below apply with OK or Apply.</source>
+        <translation>Lietotāju, lomu un pieteikšanās izmaiņas stājas spēkā uzreiz. Tālāk esošie iestatījumi stājas spēkā ar Labi vai Lietot.</translation>
+    </message>
+    <message>
+        <source>Logins and Activity Log</source>
+        <translation>Pieteikšanās un darbību žurnāls</translation>
+    </message>
+    <message>
+        <source>0 means users are logged out after the session timeout.</source>
+        <translation>0 nozīmē, ka lietotāji tiek izrakstīti pēc sesijas noildzes.</translation>
+    </message>
+    <message>
+        <source>Keep users logged in for:</source>
+        <translation>Turēt lietotājus pieteiktus:</translation>
+    </message>
+    <message>
+        <source>Until session timeout</source>
+        <translation>Līdz sesijas noildzei</translation>
+    </message>
+    <message>
+        <source> days</source>
+        <translation> dienas</translation>
+    </message>
+    <message>
+        <source>Lock account after consecutive failures:</source>
+        <translation>Bloķēt kontu pēc secīgām neveiksmēm:</translation>
+    </message>
+    <message>
+        <source>Keep WebUI activity log for:</source>
+        <translation>Glabāt WebUI darbību žurnālu:</translation>
+    </message>
+    <message>
+        <source>lock for:</source>
+        <translation>bloķēt uz:</translation>
+    </message>
+    <message>
+        <source>%1 works best with Windows dark mode</source>
+        <translation>%1 vislabāk darbojas ar Windows tumšo režīmu</translation>
+    </message>
+    <message>
+        <source>WebUI address</source>
+        <translation>WebUI adrese</translation>
+    </message>
+    <message>
+        <source>With the WebUI address set to %1, only this PC can reach the WebUI. Remote access, including through a reverse proxy on another machine, will stop working.
+
+Save anyway?</source>
+        <translation>Ja WebUI adrese ir %1, WebUI var piekļūt tikai šis dators. Attālināta piekļuve, arī caur apgriezto starpniekserveri citā datorā, pārstās darboties.
+
+Tomēr saglabāt?</translation>
+    </message>
+    <message>
+        <source>Search settings</source>
+        <translation>Meklēt iestatījumos</translation>
+    </message>
+    <message>
+        <source>No settings match</source>
+        <translation>Nav atbilstošu iestatījumu</translation>
+    </message>
+    <message>
+        <source>User Accounts</source>
+        <translation>Lietotāju konti</translation>
+    </message>
+    <message>
+        <source>Automatically install Kettle Edition updates</source>
+        <translation>Automātiski instalēt Kettle Edition atjauninājumus</translation>
+    </message>
+    <message>
+        <source>Status bar and log</source>
+        <translation>Statusa josla un žurnāls</translation>
+    </message>
+    <message>
+        <source>Files</source>
+        <translation>Faili</translation>
+    </message>
+    <message>
+        <source>Checking</source>
+        <translation>Pārbaude</translation>
+    </message>
+    <message>
+        <source>Until the first user account is created, this login always works.</source>
+        <translation>Kamēr nav izveidots pirmais lietotāja konts, šī pieteikšanās vienmēr darbojas.</translation>
+    </message>
+    <message>
+        <source>Allow this login when user accounts exist</source>
+        <translation>Atļaut šo pieteikšanos, kad ir lietotāju konti</translation>
+    </message>
+    <message>
+        <source>Access</source>
+        <translation>Piekļuve</translation>
+    </message>
+    <message>
+        <source>Changes to users, roles and logins apply at once. The settings below apply with OK or Apply.</source>
+        <translation>Lietotāju, lomu un pieteikšanās izmaiņas stājas spēkā uzreiz. Tālāk esošie iestatījumi stājas spēkā ar Labi vai Lietot.</translation>
+    </message>
+    <message>
+        <source>Logins and Activity Log</source>
+        <translation>Pieteikšanās un darbību žurnāls</translation>
+    </message>
+    <message>
+        <source>0 means users are logged out after the session timeout.</source>
+        <translation>0 nozīmē, ka lietotāji tiek izrakstīti pēc sesijas noildzes.</translation>
+    </message>
+    <message>
+        <source>Keep users logged in for:</source>
+        <translation>Turēt lietotājus pieteiktus:</translation>
+    </message>
+    <message>
+        <source>Until session timeout</source>
+        <translation>Līdz sesijas noildzei</translation>
+    </message>
+    <message>
+        <source> days</source>
+        <translation> dienas</translation>
+    </message>
+    <message>
+        <source>Lock account after consecutive failures:</source>
+        <translation>Bloķēt kontu pēc secīgām neveiksmēm:</translation>
+    </message>
+    <message>
+        <source>Keep WebUI activity log for:</source>
+        <translation>Glabāt WebUI darbību žurnālu:</translation>
+    </message>
+    <message>
+        <source>lock for:</source>
+        <translation>bloķēt uz:</translation>
+    </message>
+    <message>
+        <source>%1 works best with Windows dark mode</source>
+        <translation>%1 vislabāk darbojas ar Windows tumšo režīmu</translation>
+    </message>
+    <message>
+        <source>WebUI address</source>
+        <translation>WebUI adrese</translation>
+    </message>
+    <message>
+        <source>With the WebUI address set to %1, only this PC can reach the WebUI. Remote access, including through a reverse proxy on another machine, will stop working.
+
+Save anyway?</source>
+        <translation>Ja WebUI adrese ir %1, WebUI var piekļūt tikai šis dators. Attālināta piekļuve, arī caur apgriezto starpniekserveri citā datorā, pārstās darboties.
+
+Tomēr saglabāt?</translation>
+    </message>
 </context>
 <context>
     <name>PeerInfo</name>
@@ -8749,6 +9109,22 @@ Check the Execution Log for errors.</source>
         <location filename="../gui/properties/peerlistwidget.cpp" line="309"/>
         <source>Copy IP:port</source>
         <translation>Kopēt IP un portu</translation>
+    </message>
+    <message>
+        <source>Reset auto width</source>
+        <translation>Atiestatīt automātisko platumu</translation>
+    </message>
+    <message>
+        <source>Fit all non-hidden columns to their contents again, and forget the widths that were set by hand</source>
+        <translation>Atkal pielāgot visas redzamās kolonnas to saturam un aizmirst ar roku iestatītos platumus</translation>
+    </message>
+    <message>
+        <source>Reset auto width</source>
+        <translation>Atiestatīt automātisko platumu</translation>
+    </message>
+    <message>
+        <source>Fit all non-hidden columns to their contents again, and forget the widths that were set by hand</source>
+        <translation>Atkal pielāgot visas redzamās kolonnas to saturam un aizmirst ar roku iestatītos platumus</translation>
     </message>
 </context>
 <context>
@@ -10137,6 +10513,14 @@ Esošie spraudņi tika atslēgti. </translation>
         <source>Open link</source>
         <translation type="unfinished"></translation>
     </message>
+    <message>
+        <source>Details</source>
+        <translation>Detaļas</translation>
+    </message>
+    <message>
+        <source>Details</source>
+        <translation>Detaļas</translation>
+    </message>
 </context>
 <context>
     <name>SearchController</name>
@@ -10490,6 +10874,70 @@ Esošie spraudņi tika atslēgti. </translation>
         <source>Resize all non-hidden columns to the size of their contents</source>
         <translation>Pielāgot visu kolonnu izmērus attiecīgi to saturam</translation>
     </message>
+    <message>
+        <source>%1 of %2 shown (%3 hidden)</source>
+        <translation>Rāda %1 no %2 (%3 paslēpti)</translation>
+    </message>
+    <message>
+        <source>%1 of %2 shown</source>
+        <translation>Rāda %1 no %2</translation>
+    </message>
+    <message>
+        <source>Searching: %1</source>
+        <translation>Meklē: %1</translation>
+    </message>
+    <message>
+        <source>Finished: %1</source>
+        <translation>Pabeigts: %1</translation>
+    </message>
+    <message>
+        <source>Search aborted: %1</source>
+        <translation>Meklēšana pārtraukta: %1</translation>
+    </message>
+    <message>
+        <source>Reset auto width</source>
+        <translation>Atiestatīt automātisko platumu</translation>
+    </message>
+    <message>
+        <source>Fit all non-hidden columns to their contents again, and forget the widths that were set by hand</source>
+        <translation>Atkal pielāgot visas redzamās kolonnas to saturam un aizmirst ar roku iestatītos platumus</translation>
+    </message>
+    <message>
+        <source>Unknown</source>
+        <translation>Nezināms</translation>
+    </message>
+    <message>
+        <source>%1 of %2 shown (%3 hidden)</source>
+        <translation>Rāda %1 no %2 (%3 paslēpti)</translation>
+    </message>
+    <message>
+        <source>%1 of %2 shown</source>
+        <translation>Rāda %1 no %2</translation>
+    </message>
+    <message>
+        <source>Searching: %1</source>
+        <translation>Meklē: %1</translation>
+    </message>
+    <message>
+        <source>Finished: %1</source>
+        <translation>Pabeigts: %1</translation>
+    </message>
+    <message>
+        <source>Search aborted: %1</source>
+        <translation>Meklēšana pārtraukta: %1</translation>
+    </message>
+    <message>
+        <source>Reset auto width</source>
+        <translation>Atiestatīt automātisko platumu</translation>
+    </message>
+    <message>
+        <source>Fit all non-hidden columns to their contents again, and forget the widths that were set by hand</source>
+        <translation>Atkal pielāgot visas redzamās kolonnas to saturam un aizmirst ar roku iestatītos platumus</translation>
+    </message>
+    <message>
+        <source>Unknown</source>
+        <translation>Nezināms</translation>
+    </message>
 </context>
 <context>
     <name>SearchPluginManager</name>
@@ -10787,6 +11235,14 @@ Esošie spraudņi tika atslēgti. </translation>
         <source>Couldn&apos;t update &quot;%1&quot; search engine plugin. %2</source>
         <translation type="unfinished">Neizdevās atjaunināt &quot;%1&quot; meklētāja spraudni. %2</translation>
     </message>
+    <message>
+        <source>Install Kettle Plugins</source>
+        <translation>Instalēt Kettle spraudņus</translation>
+    </message>
+    <message>
+        <source>Install Kettle Plugins</source>
+        <translation>Instalēt Kettle spraudņus</translation>
+    </message>
 </context>
 <context>
     <name>SearchPluginSourceDialog</name>
@@ -10926,6 +11382,90 @@ Spiediet uz &quot;Meklētāju spraudņi...&quot; pogas, lai kādu uzinstalētu. 
         <location filename="../gui/search/searchwidget.ui" line="58"/>
         <source>Stop</source>
         <translation>Pārtraukt</translation>
+    </message>
+    <message>
+        <source>Searches</source>
+        <translation>Meklēšanas</translation>
+    </message>
+    <message>
+        <source>Close the selected search</source>
+        <translation>Aizvērt atlasīto meklēšanu</translation>
+    </message>
+    <message>
+        <source>Search for torrents...</source>
+        <translation>Meklēt torrentus...</translation>
+    </message>
+    <message>
+        <source>Category to search in</source>
+        <translation>Kategorija, kurā meklēt</translation>
+    </message>
+    <message>
+        <source>Search engines to use</source>
+        <translation>Izmantojamās meklētājprogrammas</translation>
+    </message>
+    <message>
+        <source>There aren&apos;t any search plugins installed.
+Click the &quot;Search plugins...&quot; button at the top right of the window to install some.</source>
+        <translation>Nav instalēts neviens meklēšanas spraudnis.
+Lai instalētu, noklikšķiniet uz pogas „Meklēšanas spraudņi...” loga augšējā labajā stūrī.</translation>
+    </message>
+    <message>
+        <source>Type a search above and press Enter.</source>
+        <translation>Augstāk ievadiet meklēšanu un nospiediet Enter.</translation>
+    </message>
+    <message>
+        <source>Refresh search</source>
+        <translation>Atsvaidzināt meklēšanu</translation>
+    </message>
+    <message>
+        <source>Close search</source>
+        <translation>Aizvērt meklēšanu</translation>
+    </message>
+    <message>
+        <source>Close all searches</source>
+        <translation>Aizvērt visas meklēšanas</translation>
+    </message>
+    <message>
+        <source>Searches</source>
+        <translation>Meklēšanas</translation>
+    </message>
+    <message>
+        <source>Close the selected search</source>
+        <translation>Aizvērt atlasīto meklēšanu</translation>
+    </message>
+    <message>
+        <source>Search for torrents...</source>
+        <translation>Meklēt torrentus...</translation>
+    </message>
+    <message>
+        <source>Category to search in</source>
+        <translation>Kategorija, kurā meklēt</translation>
+    </message>
+    <message>
+        <source>Search engines to use</source>
+        <translation>Izmantojamās meklētājprogrammas</translation>
+    </message>
+    <message>
+        <source>There aren&apos;t any search plugins installed.
+Click the &quot;Search plugins...&quot; button at the top right of the window to install some.</source>
+        <translation>Nav instalēts neviens meklēšanas spraudnis.
+Lai instalētu, noklikšķiniet uz pogas „Meklēšanas spraudņi...” loga augšējā labajā stūrī.</translation>
+    </message>
+    <message>
+        <source>Type a search above and press Enter.</source>
+        <translation>Augstāk ievadiet meklēšanu un nospiediet Enter.</translation>
+    </message>
+    <message>
+        <source>Refresh search</source>
+        <translation>Atsvaidzināt meklēšanu</translation>
+    </message>
+    <message>
+        <source>Close search</source>
+        <translation>Aizvērt meklēšanu</translation>
+    </message>
+    <message>
+        <source>Close all searches</source>
+        <translation>Aizvērt visas meklēšanas</translation>
     </message>
 </context>
 <context>
@@ -11388,6 +11928,326 @@ Spiediet uz &quot;Meklētāju spraudņi...&quot; pogas, lai kādu uzinstalētu. 
         <location filename="../gui/statsdialog.cpp" line="111"/>
         <source>%1 ms</source>
         <translation type="unfinished">%1 ms</translation>
+    </message>
+    <message>
+        <source>Copy</source>
+        <translation>Kopēt</translation>
+    </message>
+    <message>
+        <source>Overview</source>
+        <translation>Pārskats</translation>
+    </message>
+    <message>
+        <source>Transfer</source>
+        <translation>Pārsūtīšana</translation>
+    </message>
+    <message>
+        <source>This session</source>
+        <translation>Šī sesija</translation>
+    </message>
+    <message>
+        <source>All time</source>
+        <translation>Visu laiku</translation>
+    </message>
+    <message>
+        <source>Downloaded:</source>
+        <translation>Lejupielādēts:</translation>
+    </message>
+    <message>
+        <source>Uploaded:</source>
+        <translation>Augšupielādēts:</translation>
+    </message>
+    <message>
+        <source>Share ratio:</source>
+        <translation>Kopīgošanas attiecība:</translation>
+    </message>
+    <message>
+        <source>Current speed:</source>
+        <translation>Pašreizējais ātrums:</translation>
+    </message>
+    <message>
+        <source>Activity</source>
+        <translation>Darbība</translation>
+    </message>
+    <message>
+        <source>Torrents downloading:</source>
+        <translation>Lejupielādējamie torrenti:</translation>
+    </message>
+    <message>
+        <source>Torrents seeding:</source>
+        <translation>Augšupielādējamie torrenti:</translation>
+    </message>
+    <message>
+        <source>Torrents stopped:</source>
+        <translation>Apturētie torrenti:</translation>
+    </message>
+    <message>
+        <source>Torrents with errors:</source>
+        <translation>Torrenti ar kļūdām:</translation>
+    </message>
+    <message>
+        <source>Running for:</source>
+        <translation>Darbojas:</translation>
+    </message>
+    <message>
+        <source>History</source>
+        <translation>Vēsture</translation>
+    </message>
+    <message>
+        <source>Period</source>
+        <translation>Periods</translation>
+    </message>
+    <message>
+        <source>Today</source>
+        <translation>Šodien</translation>
+    </message>
+    <message>
+        <source>Last 7 days</source>
+        <translation>Pēdējās 7 dienas</translation>
+    </message>
+    <message>
+        <source>This month</source>
+        <translation>Šis mēnesis</translation>
+    </message>
+    <message>
+        <source>Last month</source>
+        <translation>Pagājušais mēnesis</translation>
+    </message>
+    <message>
+        <source>Last 12 months</source>
+        <translation>Pēdējie 12 mēneši</translation>
+    </message>
+    <message>
+        <source>Tracking since:</source>
+        <translation>Izsekošana kopš:</translation>
+    </message>
+    <message>
+        <source>By month</source>
+        <translation>Pa mēnešiem</translation>
+    </message>
+    <message>
+        <source>Month</source>
+        <translation>Mēnesis</translation>
+    </message>
+    <message>
+        <source>Downloaded</source>
+        <translation>Lejupielādēts</translation>
+    </message>
+    <message>
+        <source>Uploaded</source>
+        <translation>Augšupielādēts</translation>
+    </message>
+    <message>
+        <source>Share ratio</source>
+        <translation>Kopīgošanas attiecība</translation>
+    </message>
+    <message>
+        <source>WebUI downloads added, this month</source>
+        <translation>Ar WebUI pievienotās lejupielādes šomēnes</translation>
+    </message>
+    <message>
+        <source>Counts the requests that added a download. Apps without a login, such as Sonarr and Radarr, are shown as (localhost). Downloads added in the desktop window are not counted.</source>
+        <translation>Skaita pieprasījumus, kas pievienoja lejupielādi. Lietotnes bez pieteikšanās, piemēram, Sonarr un Radarr, tiek rādītas kā (localhost). Galddatora logā pievienotās lejupielādes netiek skaitītas.</translation>
+    </message>
+    <message>
+        <source>Technical</source>
+        <translation>Tehniskā informācija</translation>
+    </message>
+    <message>
+        <source>Disk</source>
+        <translation>Disks</translation>
+    </message>
+    <message>
+        <source>Peers waiting on disk writes:</source>
+        <translation>Koplietotāji, kas gaida ierakstu diskā:</translation>
+    </message>
+    <message>
+        <source>Peers waiting on disk reads:</source>
+        <translation>Koplietotāji, kas gaida lasīšanu no diska:</translation>
+    </message>
+    <message>
+        <source>Network</source>
+        <translation>Tīkls</translation>
+    </message>
+    <message>
+        <source>DHT nodes:</source>
+        <translation>DHT mezgli:</translation>
+    </message>
+    <message>
+        <source>Data discarded this session:</source>
+        <translation>Šajā sesijā izmesti dati:</translation>
+    </message>
+    <message>
+        <source>Before tracking began</source>
+        <translation>Pirms izsekošanas sākuma</translation>
+    </message>
+    <message>
+        <source>Nothing added yet</source>
+        <translation>Vēl nekas nav pievienots</translation>
+    </message>
+    <message>
+        <source>Off</source>
+        <translation>Izslēgts</translation>
+    </message>
+    <message>
+        <source>Copy</source>
+        <translation>Kopēt</translation>
+    </message>
+    <message>
+        <source>Overview</source>
+        <translation>Pārskats</translation>
+    </message>
+    <message>
+        <source>Transfer</source>
+        <translation>Pārsūtīšana</translation>
+    </message>
+    <message>
+        <source>This session</source>
+        <translation>Šī sesija</translation>
+    </message>
+    <message>
+        <source>All time</source>
+        <translation>Visu laiku</translation>
+    </message>
+    <message>
+        <source>Downloaded:</source>
+        <translation>Lejupielādēts:</translation>
+    </message>
+    <message>
+        <source>Uploaded:</source>
+        <translation>Augšupielādēts:</translation>
+    </message>
+    <message>
+        <source>Share ratio:</source>
+        <translation>Kopīgošanas attiecība:</translation>
+    </message>
+    <message>
+        <source>Current speed:</source>
+        <translation>Pašreizējais ātrums:</translation>
+    </message>
+    <message>
+        <source>Activity</source>
+        <translation>Darbība</translation>
+    </message>
+    <message>
+        <source>Torrents downloading:</source>
+        <translation>Lejupielādējamie torrenti:</translation>
+    </message>
+    <message>
+        <source>Torrents seeding:</source>
+        <translation>Augšupielādējamie torrenti:</translation>
+    </message>
+    <message>
+        <source>Torrents stopped:</source>
+        <translation>Apturētie torrenti:</translation>
+    </message>
+    <message>
+        <source>Torrents with errors:</source>
+        <translation>Torrenti ar kļūdām:</translation>
+    </message>
+    <message>
+        <source>Running for:</source>
+        <translation>Darbojas:</translation>
+    </message>
+    <message>
+        <source>History</source>
+        <translation>Vēsture</translation>
+    </message>
+    <message>
+        <source>Period</source>
+        <translation>Periods</translation>
+    </message>
+    <message>
+        <source>Today</source>
+        <translation>Šodien</translation>
+    </message>
+    <message>
+        <source>Last 7 days</source>
+        <translation>Pēdējās 7 dienas</translation>
+    </message>
+    <message>
+        <source>This month</source>
+        <translation>Šis mēnesis</translation>
+    </message>
+    <message>
+        <source>Last month</source>
+        <translation>Pagājušais mēnesis</translation>
+    </message>
+    <message>
+        <source>Last 12 months</source>
+        <translation>Pēdējie 12 mēneši</translation>
+    </message>
+    <message>
+        <source>Tracking since:</source>
+        <translation>Izsekošana kopš:</translation>
+    </message>
+    <message>
+        <source>By month</source>
+        <translation>Pa mēnešiem</translation>
+    </message>
+    <message>
+        <source>Month</source>
+        <translation>Mēnesis</translation>
+    </message>
+    <message>
+        <source>Downloaded</source>
+        <translation>Lejupielādēts</translation>
+    </message>
+    <message>
+        <source>Uploaded</source>
+        <translation>Augšupielādēts</translation>
+    </message>
+    <message>
+        <source>Share ratio</source>
+        <translation>Kopīgošanas attiecība</translation>
+    </message>
+    <message>
+        <source>WebUI downloads added, this month</source>
+        <translation>Ar WebUI pievienotās lejupielādes šomēnes</translation>
+    </message>
+    <message>
+        <source>Counts the requests that added a download. Apps without a login, such as Sonarr and Radarr, are shown as (localhost). Downloads added in the desktop window are not counted.</source>
+        <translation>Skaita pieprasījumus, kas pievienoja lejupielādi. Lietotnes bez pieteikšanās, piemēram, Sonarr un Radarr, tiek rādītas kā (localhost). Galddatora logā pievienotās lejupielādes netiek skaitītas.</translation>
+    </message>
+    <message>
+        <source>Technical</source>
+        <translation>Tehniskā informācija</translation>
+    </message>
+    <message>
+        <source>Disk</source>
+        <translation>Disks</translation>
+    </message>
+    <message>
+        <source>Peers waiting on disk writes:</source>
+        <translation>Koplietotāji, kas gaida ierakstu diskā:</translation>
+    </message>
+    <message>
+        <source>Peers waiting on disk reads:</source>
+        <translation>Koplietotāji, kas gaida lasīšanu no diska:</translation>
+    </message>
+    <message>
+        <source>Network</source>
+        <translation>Tīkls</translation>
+    </message>
+    <message>
+        <source>DHT nodes:</source>
+        <translation>DHT mezgli:</translation>
+    </message>
+    <message>
+        <source>Data discarded this session:</source>
+        <translation>Šajā sesijā izmesti dati:</translation>
+    </message>
+    <message>
+        <source>Before tracking began</source>
+        <translation>Pirms izsekošanas sākuma</translation>
+    </message>
+    <message>
+        <source>Nothing added yet</source>
+        <translation>Vēl nekas nav pievienots</translation>
+    </message>
+    <message>
+        <source>Off</source>
+        <translation>Izslēgts</translation>
     </message>
 </context>
 <context>
@@ -12083,6 +12943,22 @@ Lūdzu izvēlieties citu nosaukumu.</translation>
     <message>
         <source>Priority by shown file order</source>
         <translation type="vanished">Pēc redzamās failu secības</translation>
+    </message>
+    <message>
+        <source>Reset auto width</source>
+        <translation>Atiestatīt automātisko platumu</translation>
+    </message>
+    <message>
+        <source>Fit all non-hidden columns to their contents again, and forget the widths that were set by hand</source>
+        <translation>Atkal pielāgot visas redzamās kolonnas to saturam un aizmirst ar roku iestatītos platumus</translation>
+    </message>
+    <message>
+        <source>Reset auto width</source>
+        <translation>Atiestatīt automātisko platumu</translation>
+    </message>
+    <message>
+        <source>Fit all non-hidden columns to their contents again, and forget the widths that were set by hand</source>
+        <translation>Atkal pielāgot visas redzamās kolonnas to saturam un aizmirst ar roku iestatītos platumus</translation>
     </message>
 </context>
 <context>
@@ -13167,6 +14043,22 @@ Lūdzu izvēlieties citu nosaukumu.</translation>
         <source>Column visibility</source>
         <translation>Kolonnas redzamība</translation>
     </message>
+    <message>
+        <source>Reset auto width</source>
+        <translation>Atiestatīt automātisko platumu</translation>
+    </message>
+    <message>
+        <source>Fit all non-hidden columns to their contents again, and forget the widths that were set by hand</source>
+        <translation>Atkal pielāgot visas redzamās kolonnas to saturam un aizmirst ar roku iestatītos platumus</translation>
+    </message>
+    <message>
+        <source>Reset auto width</source>
+        <translation>Atiestatīt automātisko platumu</translation>
+    </message>
+    <message>
+        <source>Fit all non-hidden columns to their contents again, and forget the widths that were set by hand</source>
+        <translation>Atkal pielāgot visas redzamās kolonnas to saturam un aizmirst ar roku iestatītos platumus</translation>
+    </message>
 </context>
 <context>
     <name>TrackerStatusFilterWidget</name>
@@ -14033,6 +14925,22 @@ Lūdzu izvēlieties citu nosaukumu.</translation>
         <source>Super seeding mode</source>
         <translation>Super-augšupielādēšanas režīms</translation>
     </message>
+    <message>
+        <source>Reset auto width</source>
+        <translation>Atiestatīt automātisko platumu</translation>
+    </message>
+    <message>
+        <source>Fit all non-hidden columns to their contents again, and forget the widths that were set by hand</source>
+        <translation>Atkal pielāgot visas redzamās kolonnas to saturam un aizmirst ar roku iestatītos platumus</translation>
+    </message>
+    <message>
+        <source>Reset auto width</source>
+        <translation>Atiestatīt automātisko platumu</translation>
+    </message>
+    <message>
+        <source>Fit all non-hidden columns to their contents again, and forget the widths that were set by hand</source>
+        <translation>Atkal pielāgot visas redzamās kolonnas to saturam un aizmirst ar roku iestatītos platumus</translation>
+    </message>
 </context>
 <context>
     <name>UIThemeDialog</name>
@@ -14367,6 +15275,46 @@ Lūdzu izvēlieties citu nosaukumu.</translation>
         <source>WebAPI login failure. Reason: invalid credentials, attempt count: %1, IP: %2, username: %3</source>
         <translation>WebAPI autorizācijas kļūda. Iemesls: nederīgi autorizācijas dati, mēģinājumu skaits: %1, IP: %2, lietotājvārds: %3</translation>
     </message>
+    <message>
+        <source>Something went wrong on the server. Details are in qBittorrent&apos;s log.</source>
+        <translation>Serverī kaut kas nogāja greizi. Sīkāka informācija ir qBittorrent žurnālā.</translation>
+    </message>
+    <message>
+        <source>This account is locked after too many failed login attempts. Try again in %1 minute(s).</source>
+        <translation>Šis konts ir bloķēts pārāk daudzu neveiksmīgu pieteikšanās mēģinājumu dēļ. Mēģiniet vēlreiz pēc %1 min.</translation>
+    </message>
+    <message>
+        <source>Your role (%1) doesn&apos;t allow this: %2.</source>
+        <translation>Jūsu loma (%1) to neatļauj: %2.</translation>
+    </message>
+    <message>
+        <source>Only an admin can remove the tag that says who added a torrent.</source>
+        <translation>Tikai administrators var noņemt atzīmi, kas norāda, kas pievienoja torrentu.</translation>
+    </message>
+    <message>
+        <source>Only an admin can clear or replace all tags of a torrent that has a tag saying who added it.</source>
+        <translation>Tikai administrators var notīrīt vai aizstāt visas torrenta atzīmes, ja tam ir atzīme, kas norāda pievienotāju.</translation>
+    </message>
+    <message>
+        <source>Something went wrong on the server. Details are in qBittorrent&apos;s log.</source>
+        <translation>Serverī kaut kas nogāja greizi. Sīkāka informācija ir qBittorrent žurnālā.</translation>
+    </message>
+    <message>
+        <source>This account is locked after too many failed login attempts. Try again in %1 minute(s).</source>
+        <translation>Šis konts ir bloķēts pārāk daudzu neveiksmīgu pieteikšanās mēģinājumu dēļ. Mēģiniet vēlreiz pēc %1 min.</translation>
+    </message>
+    <message>
+        <source>Your role (%1) doesn&apos;t allow this: %2.</source>
+        <translation>Jūsu loma (%1) to neatļauj: %2.</translation>
+    </message>
+    <message>
+        <source>Only an admin can remove the tag that says who added a torrent.</source>
+        <translation>Tikai administrators var noņemt atzīmi, kas norāda, kas pievienoja torrentu.</translation>
+    </message>
+    <message>
+        <source>Only an admin can clear or replace all tags of a torrent that has a tag saying who added it.</source>
+        <translation>Tikai administrators var notīrīt vai aizstāt visas torrenta atzīmes, ja tam ir atzīme, kas norāda pievienotāju.</translation>
+    </message>
 </context>
 <context>
     <name>WebUI</name>
@@ -14506,6 +15454,669 @@ Lūdzu izvēlieties citu nosaukumu.</translation>
         <source>&lt; 1m</source>
         <comment>&lt; 1 minute</comment>
         <translation>&lt; 1m</translation>
+    </message>
+</context>
+<context>
+    <name>UpdateInstaller</name>
+    <message>
+        <source>Kettle Edition update</source>
+        <translation>Kettle Edition atjauninājums</translation>
+    </message>
+    <message>
+        <source>Kettle Edition was updated to %1.</source>
+        <translation>Kettle Edition atjaunināta uz %1.</translation>
+    </message>
+    <message>
+        <source>Kettle Edition updated</source>
+        <translation>Kettle Edition atjaunināta</translation>
+    </message>
+    <message>
+        <source>Downloading Kettle Edition %1 (%2 changed files).</source>
+        <translation>Lejupielādē Kettle Edition %1 (mainīti faili: %2).</translation>
+    </message>
+    <message>
+        <source>Kettle Edition %1 is downloaded and ready to install.</source>
+        <translation>Kettle Edition %1 ir lejupielādēta un gatava instalēšanai.</translation>
+    </message>
+    <message>
+        <source>Kettle Edition update</source>
+        <translation>Kettle Edition atjauninājums</translation>
+    </message>
+    <message>
+        <source>Kettle Edition was updated to %1.</source>
+        <translation>Kettle Edition atjaunināta uz %1.</translation>
+    </message>
+    <message>
+        <source>Kettle Edition updated</source>
+        <translation>Kettle Edition atjaunināta</translation>
+    </message>
+    <message>
+        <source>Downloading Kettle Edition %1 (%2 changed files).</source>
+        <translation>Lejupielādē Kettle Edition %1 (mainīti faili: %2).</translation>
+    </message>
+    <message>
+        <source>Kettle Edition %1 is downloaded and ready to install.</source>
+        <translation>Kettle Edition %1 ir lejupielādēta un gatava instalēšanai.</translation>
+    </message>
+</context>
+<context>
+    <name>UserAccountDialog</name>
+    <message>
+        <source>User</source>
+        <translation>Lietotājs</translation>
+    </message>
+    <message>
+        <source>Username:</source>
+        <translation>Lietotājvārds:</translation>
+    </message>
+    <message>
+        <source>Role:</source>
+        <translation>Loma:</translation>
+    </message>
+    <message>
+        <source>Password:</source>
+        <translation>Parole:</translation>
+    </message>
+    <message>
+        <source>Confirm password:</source>
+        <translation>Apstiprināt paroli:</translation>
+    </message>
+    <message>
+        <source>Disable this account</source>
+        <translation>Atspējot šo kontu</translation>
+    </message>
+    <message>
+        <source>Edit User</source>
+        <translation>Rediģēt lietotāju</translation>
+    </message>
+    <message>
+        <source>Leave empty to keep the current password</source>
+        <translation>Atstājiet tukšu, lai paturētu pašreizējo paroli</translation>
+    </message>
+    <message>
+        <source>Add User</source>
+        <translation>Pievienot lietotāju</translation>
+    </message>
+    <message>
+        <source>At least %1 characters</source>
+        <translation>Vismaz %1 rakstzīmes</translation>
+    </message>
+    <message>
+        <source>Enter a username.</source>
+        <translation>Ievadiet lietotājvārdu.</translation>
+    </message>
+    <message>
+        <source>The password must be at least %1 characters long.</source>
+        <translation>Parolei jābūt vismaz %1 rakstzīmes garai.</translation>
+    </message>
+    <message>
+        <source>The passwords don&apos;t match.</source>
+        <translation>Paroles nesakrīt.</translation>
+    </message>
+    <message>
+        <source>User</source>
+        <translation>Lietotājs</translation>
+    </message>
+    <message>
+        <source>Username:</source>
+        <translation>Lietotājvārds:</translation>
+    </message>
+    <message>
+        <source>Role:</source>
+        <translation>Loma:</translation>
+    </message>
+    <message>
+        <source>Password:</source>
+        <translation>Parole:</translation>
+    </message>
+    <message>
+        <source>Confirm password:</source>
+        <translation>Apstiprināt paroli:</translation>
+    </message>
+    <message>
+        <source>Disable this account</source>
+        <translation>Atspējot šo kontu</translation>
+    </message>
+    <message>
+        <source>Edit User</source>
+        <translation>Rediģēt lietotāju</translation>
+    </message>
+    <message>
+        <source>Leave empty to keep the current password</source>
+        <translation>Atstājiet tukšu, lai paturētu pašreizējo paroli</translation>
+    </message>
+    <message>
+        <source>Add User</source>
+        <translation>Pievienot lietotāju</translation>
+    </message>
+    <message>
+        <source>At least %1 characters</source>
+        <translation>Vismaz %1 rakstzīmes</translation>
+    </message>
+    <message>
+        <source>Enter a username.</source>
+        <translation>Ievadiet lietotājvārdu.</translation>
+    </message>
+    <message>
+        <source>The password must be at least %1 characters long.</source>
+        <translation>Parolei jābūt vismaz %1 rakstzīmes garai.</translation>
+    </message>
+    <message>
+        <source>The passwords don&apos;t match.</source>
+        <translation>Paroles nesakrīt.</translation>
+    </message>
+</context>
+<context>
+    <name>UserAccountsWidget</name>
+    <message>
+        <source>User Accounts</source>
+        <translation>Lietotāju konti</translation>
+    </message>
+    <message>
+        <source>Users</source>
+        <translation>Lietotāji</translation>
+    </message>
+    <message>
+        <source>People who can log in to the WebUI with their own username and password.</source>
+        <translation>Cilvēki, kas var pieteikties WebUI ar savu lietotājvārdu un paroli.</translation>
+    </message>
+    <message>
+        <source>Add User...</source>
+        <translation>Pievienot lietotāju...</translation>
+    </message>
+    <message>
+        <source>Edit...</source>
+        <translation>Rediģēt...</translation>
+    </message>
+    <message>
+        <source>Remove</source>
+        <translation>Noņemt</translation>
+    </message>
+    <message>
+        <source>Roles</source>
+        <translation>Lomas</translation>
+    </message>
+    <message>
+        <source>A role decides what its users are allowed to do.</source>
+        <translation>Loma nosaka, ko drīkst darīt tās lietotāji.</translation>
+    </message>
+    <message>
+        <source>Add Role...</source>
+        <translation>Pievienot lomu...</translation>
+    </message>
+    <message>
+        <source>Logged In</source>
+        <translation>Pieteikušies</translation>
+    </message>
+    <message>
+        <source>Browsers and devices where someone is logged in with a user account.</source>
+        <translation>Pārlūki un ierīces, kur kāds ir pieteicies ar lietotāja kontu.</translation>
+    </message>
+    <message>
+        <source>Log Out</source>
+        <translation>Izrakstīties</translation>
+    </message>
+    <message>
+        <source>Username</source>
+        <translation>Lietotājvārds</translation>
+    </message>
+    <message>
+        <source>Role</source>
+        <translation>Loma</translation>
+    </message>
+    <message>
+        <source>Status</source>
+        <translation>Statuss</translation>
+    </message>
+    <message>
+        <source>Last login</source>
+        <translation>Pēdējā pieteikšanās</translation>
+    </message>
+    <message>
+        <source>Created</source>
+        <translation>Izveidots</translation>
+    </message>
+    <message>
+        <source>Name</source>
+        <translation>Nosaukums</translation>
+    </message>
+    <message>
+        <source>Description</source>
+        <translation>Apraksts</translation>
+    </message>
+    <message>
+        <source>Permissions</source>
+        <translation>Atļaujas</translation>
+    </message>
+    <message>
+        <source>User</source>
+        <translation>Lietotājs</translation>
+    </message>
+    <message>
+        <source>Browser</source>
+        <translation>Pārlūks</translation>
+    </message>
+    <message>
+        <source>Logged in</source>
+        <translation>Pieteicies</translation>
+    </message>
+    <message>
+        <source>Last active</source>
+        <translation>Pēdējā darbība</translation>
+    </message>
+    <message>
+        <source>Expires</source>
+        <translation>Beidzas</translation>
+    </message>
+    <message>
+        <source>The user database could not be opened. See the Execution Log for details.</source>
+        <translation>Neizdevās atvērt lietotāju datubāzi. Skatiet izpildes žurnālu, lai uzzinātu sīkāk.</translation>
+    </message>
+    <message>
+        <source>Disabled</source>
+        <translation>Atspējots</translation>
+    </message>
+    <message>
+        <source>Enabled</source>
+        <translation>Iespējots</translation>
+    </message>
+    <message>
+        <source>Never</source>
+        <translation>Nekad</translation>
+    </message>
+    <message>
+        <source>No accounts yet, so everyone still uses the shared WebUI login. Add an Admin account first.</source>
+        <translation>Kontu vēl nav, tāpēc visi joprojām izmanto kopīgo WebUI pieteikšanos. Vispirms pievienojiet Admin kontu.</translation>
+    </message>
+    <message>
+        <source>Couldn&apos;t read the user database. %1</source>
+        <translation>Neizdevās nolasīt lietotāju datubāzi. %1</translation>
+    </message>
+    <message>
+        <source>Remove user</source>
+        <translation>Noņemt lietotāju</translation>
+    </message>
+    <message>
+        <source>Are you sure you want to remove the user &apos;%1&apos;?</source>
+        <translation>Vai tiešām vēlaties noņemt lietotāju „%1”?</translation>
+    </message>
+    <message>
+        <source>Remove role</source>
+        <translation>Noņemt lomu</translation>
+    </message>
+    <message>
+        <source>Are you sure you want to remove the role &apos;%1&apos;?</source>
+        <translation>Vai tiešām vēlaties noņemt lomu „%1”?</translation>
+    </message>
+    <message>
+        <source>Enable</source>
+        <translation>Iespējot</translation>
+    </message>
+    <message>
+        <source>Disable</source>
+        <translation>Atspējot</translation>
+    </message>
+    <message>
+        <source>Log Out Everywhere</source>
+        <translation>Izrakstīties visur</translation>
+    </message>
+    <message>
+        <source>User Accounts</source>
+        <translation>Lietotāju konti</translation>
+    </message>
+    <message>
+        <source>Users</source>
+        <translation>Lietotāji</translation>
+    </message>
+    <message>
+        <source>People who can log in to the WebUI with their own username and password.</source>
+        <translation>Cilvēki, kas var pieteikties WebUI ar savu lietotājvārdu un paroli.</translation>
+    </message>
+    <message>
+        <source>Add User...</source>
+        <translation>Pievienot lietotāju...</translation>
+    </message>
+    <message>
+        <source>Edit...</source>
+        <translation>Rediģēt...</translation>
+    </message>
+    <message>
+        <source>Remove</source>
+        <translation>Noņemt</translation>
+    </message>
+    <message>
+        <source>Roles</source>
+        <translation>Lomas</translation>
+    </message>
+    <message>
+        <source>A role decides what its users are allowed to do.</source>
+        <translation>Loma nosaka, ko drīkst darīt tās lietotāji.</translation>
+    </message>
+    <message>
+        <source>Add Role...</source>
+        <translation>Pievienot lomu...</translation>
+    </message>
+    <message>
+        <source>Logged In</source>
+        <translation>Pieteikušies</translation>
+    </message>
+    <message>
+        <source>Browsers and devices where someone is logged in with a user account.</source>
+        <translation>Pārlūki un ierīces, kur kāds ir pieteicies ar lietotāja kontu.</translation>
+    </message>
+    <message>
+        <source>Log Out</source>
+        <translation>Izrakstīties</translation>
+    </message>
+    <message>
+        <source>Username</source>
+        <translation>Lietotājvārds</translation>
+    </message>
+    <message>
+        <source>Role</source>
+        <translation>Loma</translation>
+    </message>
+    <message>
+        <source>Status</source>
+        <translation>Statuss</translation>
+    </message>
+    <message>
+        <source>Last login</source>
+        <translation>Pēdējā pieteikšanās</translation>
+    </message>
+    <message>
+        <source>Created</source>
+        <translation>Izveidots</translation>
+    </message>
+    <message>
+        <source>Name</source>
+        <translation>Nosaukums</translation>
+    </message>
+    <message>
+        <source>Description</source>
+        <translation>Apraksts</translation>
+    </message>
+    <message>
+        <source>Permissions</source>
+        <translation>Atļaujas</translation>
+    </message>
+    <message>
+        <source>User</source>
+        <translation>Lietotājs</translation>
+    </message>
+    <message>
+        <source>Browser</source>
+        <translation>Pārlūks</translation>
+    </message>
+    <message>
+        <source>Logged in</source>
+        <translation>Pieteicies</translation>
+    </message>
+    <message>
+        <source>Last active</source>
+        <translation>Pēdējā darbība</translation>
+    </message>
+    <message>
+        <source>Expires</source>
+        <translation>Beidzas</translation>
+    </message>
+    <message>
+        <source>The user database could not be opened. See the Execution Log for details.</source>
+        <translation>Neizdevās atvērt lietotāju datubāzi. Skatiet izpildes žurnālu, lai uzzinātu sīkāk.</translation>
+    </message>
+    <message>
+        <source>Disabled</source>
+        <translation>Atspējots</translation>
+    </message>
+    <message>
+        <source>Enabled</source>
+        <translation>Iespējots</translation>
+    </message>
+    <message>
+        <source>Never</source>
+        <translation>Nekad</translation>
+    </message>
+    <message>
+        <source>No accounts yet, so everyone still uses the shared WebUI login. Add an Admin account first.</source>
+        <translation>Kontu vēl nav, tāpēc visi joprojām izmanto kopīgo WebUI pieteikšanos. Vispirms pievienojiet Admin kontu.</translation>
+    </message>
+    <message>
+        <source>Couldn&apos;t read the user database. %1</source>
+        <translation>Neizdevās nolasīt lietotāju datubāzi. %1</translation>
+    </message>
+    <message>
+        <source>Remove user</source>
+        <translation>Noņemt lietotāju</translation>
+    </message>
+    <message>
+        <source>Are you sure you want to remove the user &apos;%1&apos;?</source>
+        <translation>Vai tiešām vēlaties noņemt lietotāju „%1”?</translation>
+    </message>
+    <message>
+        <source>Remove role</source>
+        <translation>Noņemt lomu</translation>
+    </message>
+    <message>
+        <source>Are you sure you want to remove the role &apos;%1&apos;?</source>
+        <translation>Vai tiešām vēlaties noņemt lomu „%1”?</translation>
+    </message>
+    <message>
+        <source>Enable</source>
+        <translation>Iespējot</translation>
+    </message>
+    <message>
+        <source>Disable</source>
+        <translation>Atspējot</translation>
+    </message>
+    <message>
+        <source>Log Out Everywhere</source>
+        <translation>Izrakstīties visur</translation>
+    </message>
+</context>
+<context>
+    <name>UserRoleDialog</name>
+    <message>
+        <source>Role</source>
+        <translation>Loma</translation>
+    </message>
+    <message>
+        <source>Name:</source>
+        <translation>Nosaukums:</translation>
+    </message>
+    <message>
+        <source>Description:</source>
+        <translation>Apraksts:</translation>
+    </message>
+    <message>
+        <source>Gives control over the PC or qBittorrent itself.</source>
+        <translation>Dod kontroli pār datoru vai pašu qBittorrent.</translation>
+    </message>
+    <message>
+        <source>Add Role</source>
+        <translation>Pievienot lomu</translation>
+    </message>
+    <message>
+        <source>Edit Role</source>
+        <translation>Rediģēt lomu</translation>
+    </message>
+    <message>
+        <source>Enter a role name.</source>
+        <translation>Ievadiet lomas nosaukumu.</translation>
+    </message>
+    <message>
+        <source>Role</source>
+        <translation>Loma</translation>
+    </message>
+    <message>
+        <source>Name:</source>
+        <translation>Nosaukums:</translation>
+    </message>
+    <message>
+        <source>Description:</source>
+        <translation>Apraksts:</translation>
+    </message>
+    <message>
+        <source>Gives control over the PC or qBittorrent itself.</source>
+        <translation>Dod kontroli pār datoru vai pašu qBittorrent.</translation>
+    </message>
+    <message>
+        <source>Add Role</source>
+        <translation>Pievienot lomu</translation>
+    </message>
+    <message>
+        <source>Edit Role</source>
+        <translation>Rediģēt lomu</translation>
+    </message>
+    <message>
+        <source>Enter a role name.</source>
+        <translation>Ievadiet lomas nosaukumu.</translation>
+    </message>
+</context>
+<context>
+    <name>WebUIActivityWidget</name>
+    <message>
+        <source>All</source>
+        <translation>Visi</translation>
+    </message>
+    <message>
+        <source>Filter activity</source>
+        <translation>Filtrēt darbības</translation>
+    </message>
+    <message>
+        <source>Export...</source>
+        <translation>Eksportēt...</translation>
+    </message>
+    <message>
+        <source>User:</source>
+        <translation>Lietotājs:</translation>
+    </message>
+    <message>
+        <source>Category:</source>
+        <translation>Kategorija:</translation>
+    </message>
+    <message>
+        <source>Result:</source>
+        <translation>Rezultāts:</translation>
+    </message>
+    <message>
+        <source>Time</source>
+        <translation>Laiks</translation>
+    </message>
+    <message>
+        <source>User</source>
+        <translation>Lietotājs</translation>
+    </message>
+    <message>
+        <source>Role</source>
+        <translation>Loma</translation>
+    </message>
+    <message>
+        <source>Category</source>
+        <translation>Kategorija</translation>
+    </message>
+    <message>
+        <source>Action</source>
+        <translation>Darbība</translation>
+    </message>
+    <message>
+        <source>Result</source>
+        <translation>Rezultāts</translation>
+    </message>
+    <message>
+        <source>The user database could not be opened. See the General tab for details.</source>
+        <translation>Neizdevās atvērt lietotāju datubāzi. Skatiet cilni Vispārīgi, lai uzzinātu sīkāk.</translation>
+    </message>
+    <message>
+        <source>Results (showing %1 out of %2)</source>
+        <translation>Rezultāti (rāda %1 no %2)</translation>
+    </message>
+    <message>
+        <source>Copy</source>
+        <translation>Kopēt</translation>
+    </message>
+    <message>
+        <source>Export WebUI activity</source>
+        <translation>Eksportēt WebUI darbības</translation>
+    </message>
+    <message>
+        <source>CSV files</source>
+        <translation>CSV faili</translation>
+    </message>
+    <message>
+        <source>Couldn&apos;t save the file. Reason: %1</source>
+        <translation>Neizdevās saglabāt failu. Iemesls: %1</translation>
+    </message>
+    <message>
+        <source>All</source>
+        <translation>Visi</translation>
+    </message>
+    <message>
+        <source>Filter activity</source>
+        <translation>Filtrēt darbības</translation>
+    </message>
+    <message>
+        <source>Export...</source>
+        <translation>Eksportēt...</translation>
+    </message>
+    <message>
+        <source>User:</source>
+        <translation>Lietotājs:</translation>
+    </message>
+    <message>
+        <source>Category:</source>
+        <translation>Kategorija:</translation>
+    </message>
+    <message>
+        <source>Result:</source>
+        <translation>Rezultāts:</translation>
+    </message>
+    <message>
+        <source>Time</source>
+        <translation>Laiks</translation>
+    </message>
+    <message>
+        <source>User</source>
+        <translation>Lietotājs</translation>
+    </message>
+    <message>
+        <source>Role</source>
+        <translation>Loma</translation>
+    </message>
+    <message>
+        <source>Category</source>
+        <translation>Kategorija</translation>
+    </message>
+    <message>
+        <source>Action</source>
+        <translation>Darbība</translation>
+    </message>
+    <message>
+        <source>Result</source>
+        <translation>Rezultāts</translation>
+    </message>
+    <message>
+        <source>The user database could not be opened. See the General tab for details.</source>
+        <translation>Neizdevās atvērt lietotāju datubāzi. Skatiet cilni Vispārīgi, lai uzzinātu sīkāk.</translation>
+    </message>
+    <message>
+        <source>Results (showing %1 out of %2)</source>
+        <translation>Rezultāti (rāda %1 no %2)</translation>
+    </message>
+    <message>
+        <source>Copy</source>
+        <translation>Kopēt</translation>
+    </message>
+    <message>
+        <source>Export WebUI activity</source>
+        <translation>Eksportēt WebUI darbības</translation>
+    </message>
+    <message>
+        <source>CSV files</source>
+        <translation>CSV faili</translation>
+    </message>
+    <message>
+        <source>Couldn&apos;t save the file. Reason: %1</source>
+        <translation>Neizdevās saglabāt failu. Iemesls: %1</translation>
     </message>
 </context>
 </TS>

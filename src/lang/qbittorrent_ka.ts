@@ -141,6 +141,62 @@
         <source>The free IP to Country Lite database by DB-IP is used for resolving the countries of peers. The database is licensed under the Creative Commons Attribution 4.0 International License</source>
         <translation type="unfinished"></translation>
     </message>
+    <message>
+        <source>This edition</source>
+        <translation>ეს გამოშვება</translation>
+    </message>
+    <message>
+        <source>Edition version:</source>
+        <translation>გამოშვების ვერსია:</translation>
+    </message>
+    <message>
+        <source>Based on:</source>
+        <translation>დაფუძნებულია:</translation>
+    </message>
+    <message>
+        <source>Maintainer:</source>
+        <translation>მომსახურე:</translation>
+    </message>
+    <message>
+        <source>qBittorrent project:</source>
+        <translation>qBittorrent-ის პროექტი:</translation>
+    </message>
+    <message>
+        <source>Kettle Edition is a personal build of qBittorrent that adds user accounts with roles for the WebUI and the desktop app, an activity log, and an installable WebUI with a phone layout. A kettle is a group of hawks soaring together. This is an unofficial build, not affiliated with the qBittorrent project.</source>
+        <translation>Kettle Edition არის qBittorrent-ის პირადი აწყობა, რომელიც ამატებს როლებიანი მომხმარებლის ანგარიშებს WebUI-სა და დესკტოპის აპისთვის, აქტივობის ჟურნალს და დასაყენებელ WebUI-ს ტელეფონის განლაგებით. Kettle არის ერთად მოლივლივე ქორების ჯგუფი. ეს არაოფიციალური აწყობაა და qBittorrent-ის პროექტს არ უკავშირდება.</translation>
+    </message>
+    <message>
+        <source>N/A</source>
+        <translation>არ არის</translation>
+    </message>
+    <message>
+        <source>This edition</source>
+        <translation>ეს გამოშვება</translation>
+    </message>
+    <message>
+        <source>Edition version:</source>
+        <translation>გამოშვების ვერსია:</translation>
+    </message>
+    <message>
+        <source>Based on:</source>
+        <translation>დაფუძნებულია:</translation>
+    </message>
+    <message>
+        <source>Maintainer:</source>
+        <translation>მომსახურე:</translation>
+    </message>
+    <message>
+        <source>qBittorrent project:</source>
+        <translation>qBittorrent-ის პროექტი:</translation>
+    </message>
+    <message>
+        <source>Kettle Edition is a personal build of qBittorrent that adds user accounts with roles for the WebUI and the desktop app, an activity log, and an installable WebUI with a phone layout. A kettle is a group of hawks soaring together. This is an unofficial build, not affiliated with the qBittorrent project.</source>
+        <translation>Kettle Edition არის qBittorrent-ის პირადი აწყობა, რომელიც ამატებს როლებიანი მომხმარებლის ანგარიშებს WebUI-სა და დესკტოპის აპისთვის, აქტივობის ჟურნალს და დასაყენებელ WebUI-ს ტელეფონის განლაგებით. Kettle არის ერთად მოლივლივე ქორების ჯგუფი. ეს არაოფიციალური აწყობაა და qBittorrent-ის პროექტს არ უკავშირდება.</translation>
+    </message>
+    <message>
+        <source>N/A</source>
+        <translation>არ არის</translation>
+    </message>
 </context>
 <context>
     <name>AbstractFileStorage</name>
@@ -1459,6 +1515,62 @@
         <location filename="../gui/advancedsettings.cpp" line="925"/>
         <source>Embedded tracker port</source>
         <translation>ჩაშენებული ტრეკერის პორტი</translation>
+    </message>
+    <message>
+        <source>Network</source>
+        <translation>ქსელი</translation>
+    </message>
+    <message>
+        <source>Storage</source>
+        <translation>შენახვა</translation>
+    </message>
+    <message>
+        <source>Peers and trackers</source>
+        <translation>პარტნიორები და ტრეკერები</translation>
+    </message>
+    <message>
+        <source>Program behavior</source>
+        <translation>პროგრამის ქცევა</translation>
+    </message>
+    <message>
+        <source>Display and notifications</source>
+        <translation>ჩვენება და შეტყობინებები</translation>
+    </message>
+    <message>
+        <source>Network connection</source>
+        <translation>ქსელური კავშირი</translation>
+    </message>
+    <message>
+        <source>Security and privacy</source>
+        <translation>უსაფრთხოება და კონფიდენციალურობა</translation>
+    </message>
+    <message>
+        <source>Connection tuning</source>
+        <translation>კავშირის მორგება</translation>
+    </message>
+    <message>
+        <source>Saving and torrent files</source>
+        <translation>შენახვა და ტორენტ-ფაილები</translation>
+    </message>
+    <message>
+        <source>Disk and memory</source>
+        <translation>დისკი და მეხსიერება</translation>
+    </message>
+    <message>
+        <source>Peers and seeding</source>
+        <translation>პარტნიორები და სიდინგი</translation>
+    </message>
+    <message>
+        <source>DHT and I2P</source>
+        <translation>DHT და I2P</translation>
+    </message>
+    <message>
+        <source>General</source>
+        <translation>ზოგადი</translation>
+    </message>
+    <message>
+        <source>Trackers</source>
+        <translation>ტრეკერები</translation>
     </message>
 </context>
 <context>
@@ -3475,6 +3587,22 @@ Supports the formats: S01E01, 1x1, 2017.12.31 and 31.12.2017 (Date formats also 
         <source>Remove torrent</source>
         <translation>ტორენტის წაშლა</translation>
     </message>
+    <message>
+        <source>This choice is remembered for the next removal.</source>
+        <translation>ეს არჩევანი დამახსოვრდება შემდეგი წაშლისთვის.</translation>
+    </message>
+    <message>
+        <source>Remove</source>
+        <translation>ამოშლა</translation>
+    </message>
+    <message>
+        <source>This choice is remembered for the next removal.</source>
+        <translation>ეს არჩევანი დამახსოვრდება შემდეგი წაშლისთვის.</translation>
+    </message>
+    <message>
+        <source>Remove</source>
+        <translation>ამოშლა</translation>
+    </message>
 </context>
 <context>
     <name>DownloadFromURLDialog</name>
@@ -3548,6 +3676,14 @@ Supports the formats: S01E01, 1x1, 2017.12.31 and 31.12.2017 (Date formats also 
         <location filename="../gui/executionlogwidget.cpp" line="99"/>
         <source>Clear</source>
         <translation>გასუფთავება</translation>
+    </message>
+    <message>
+        <source>WebUI Activity</source>
+        <translation>WebUI-ის აქტივობა</translation>
+    </message>
+    <message>
+        <source>WebUI Activity</source>
+        <translation>WebUI-ის აქტივობა</translation>
     </message>
 </context>
 <context>
@@ -4711,6 +4847,46 @@ Minimum requirement: %2.</source>
         <location filename="../gui/mainwindow.cpp" line="1346"/>
         <source>Torrent Files</source>
         <translation>ტორენტის ფაილები</translation>
+    </message>
+    <message>
+        <source>Kettle Edition %1 is available.</source>
+        <translation>Kettle Edition %1 ხელმისაწვდომია.</translation>
+    </message>
+    <message>
+        <source>qBittorrent Kettle Edition %1 is available. It is downloaded now and installed at 4:00 AM, or when qBittorrent starts next.</source>
+        <translation>qBittorrent Kettle Edition %1 ხელმისაწვდომია. ახლა იწერება და დაინსტალირდება 4:00-ზე ან qBittorrent-ის შემდეგი გაშვებისას.</translation>
+    </message>
+    <message>
+        <source>qBittorrent Kettle Edition %1 is available. It is downloaded now. Turn on &quot;Automatically install Kettle Edition updates&quot; in Options to install it.</source>
+        <translation>qBittorrent Kettle Edition %1 ხელმისაწვდომია. ახლა იწერება. დასაყენებლად ჩართეთ პარამეტრებში „Kettle Edition-ის განახლებების ავტომატური დაყენება“.</translation>
+    </message>
+    <message>
+        <source>You have the latest qBittorrent Kettle Edition (%1).</source>
+        <translation>გაქვთ qBittorrent Kettle Edition-ის უახლესი ვერსია (%1).</translation>
+    </message>
+    <message>
+        <source>Could not check for qBittorrent Kettle Edition updates. See the Execution Log for details.</source>
+        <translation>qBittorrent Kettle Edition-ის განახლებების შემოწმება ვერ მოხერხდა. დეტალებისთვის იხილეთ შესრულების ჟურნალი.</translation>
+    </message>
+    <message>
+        <source>Kettle Edition %1 is available.</source>
+        <translation>Kettle Edition %1 ხელმისაწვდომია.</translation>
+    </message>
+    <message>
+        <source>qBittorrent Kettle Edition %1 is available. It is downloaded now and installed at 4:00 AM, or when qBittorrent starts next.</source>
+        <translation>qBittorrent Kettle Edition %1 ხელმისაწვდომია. ახლა იწერება და დაინსტალირდება 4:00-ზე ან qBittorrent-ის შემდეგი გაშვებისას.</translation>
+    </message>
+    <message>
+        <source>qBittorrent Kettle Edition %1 is available. It is downloaded now. Turn on &quot;Automatically install Kettle Edition updates&quot; in Options to install it.</source>
+        <translation>qBittorrent Kettle Edition %1 ხელმისაწვდომია. ახლა იწერება. დასაყენებლად ჩართეთ პარამეტრებში „Kettle Edition-ის განახლებების ავტომატური დაყენება“.</translation>
+    </message>
+    <message>
+        <source>You have the latest qBittorrent Kettle Edition (%1).</source>
+        <translation>გაქვთ qBittorrent Kettle Edition-ის უახლესი ვერსია (%1).</translation>
+    </message>
+    <message>
+        <source>Could not check for qBittorrent Kettle Edition updates. See the Execution Log for details.</source>
+        <translation>qBittorrent Kettle Edition-ის განახლებების შემოწმება ვერ მოხერხდა. დეტალებისთვის იხილეთ შესრულების ჟურნალი.</translation>
     </message>
 </context>
 <context>
@@ -8412,6 +8588,190 @@ Check the Execution Log for errors.</source>
         <source>Length Error</source>
         <translation>სიგრძის შეცდომა</translation>
     </message>
+    <message>
+        <source>Search settings</source>
+        <translation>პარამეტრებში ძებნა</translation>
+    </message>
+    <message>
+        <source>No settings match</source>
+        <translation>შესაბამისი პარამეტრი არ არის</translation>
+    </message>
+    <message>
+        <source>User Accounts</source>
+        <translation>მომხმარებლის ანგარიშები</translation>
+    </message>
+    <message>
+        <source>Automatically install Kettle Edition updates</source>
+        <translation>Kettle Edition-ის განახლებების ავტომატური დაყენება</translation>
+    </message>
+    <message>
+        <source>Status bar and log</source>
+        <translation>სტატუსის ზოლი და ჟურნალი</translation>
+    </message>
+    <message>
+        <source>Files</source>
+        <translation>ფაილები</translation>
+    </message>
+    <message>
+        <source>Checking</source>
+        <translation>შემოწმება</translation>
+    </message>
+    <message>
+        <source>Until the first user account is created, this login always works.</source>
+        <translation>სანამ პირველი მომხმარებლის ანგარიში შეიქმნება, ეს შესვლა ყოველთვის მუშაობს.</translation>
+    </message>
+    <message>
+        <source>Allow this login when user accounts exist</source>
+        <translation>ამ შესვლის დაშვება, როცა მომხმარებლის ანგარიშები არსებობს</translation>
+    </message>
+    <message>
+        <source>Access</source>
+        <translation>წვდომა</translation>
+    </message>
+    <message>
+        <source>Changes to users, roles and logins apply at once. The settings below apply with OK or Apply.</source>
+        <translation>მომხმარებლების, როლებისა და შესვლების ცვლილებები მაშინვე მოქმედებს. ქვემოთ მოცემული პარამეტრები მოქმედებს OK-ით ან გამოყენებით.</translation>
+    </message>
+    <message>
+        <source>Logins and Activity Log</source>
+        <translation>შესვლები და აქტივობის ჟურნალი</translation>
+    </message>
+    <message>
+        <source>0 means users are logged out after the session timeout.</source>
+        <translation>0 ნიშნავს, რომ მომხმარებლები სესიის დროის ამოწურვის შემდეგ გამოდიან.</translation>
+    </message>
+    <message>
+        <source>Keep users logged in for:</source>
+        <translation>მომხმარებლების შესულად დატოვება:</translation>
+    </message>
+    <message>
+        <source>Until session timeout</source>
+        <translation>სესიის დროის ამოწურვამდე</translation>
+    </message>
+    <message>
+        <source> days</source>
+        <translation> დღე</translation>
+    </message>
+    <message>
+        <source>Lock account after consecutive failures:</source>
+        <translation>ანგარიშის დაბლოკვა თანმიმდევრული წარუმატებლობის შემდეგ:</translation>
+    </message>
+    <message>
+        <source>Keep WebUI activity log for:</source>
+        <translation>WebUI-ის აქტივობის ჟურნალის შენახვა:</translation>
+    </message>
+    <message>
+        <source>lock for:</source>
+        <translation>დაბლოკვა:</translation>
+    </message>
+    <message>
+        <source>%1 works best with Windows dark mode</source>
+        <translation>%1 საუკეთესოდ მუშაობს Windows-ის მუქ რეჟიმთან</translation>
+    </message>
+    <message>
+        <source>WebUI address</source>
+        <translation>WebUI-ის მისამართი</translation>
+    </message>
+    <message>
+        <source>With the WebUI address set to %1, only this PC can reach the WebUI. Remote access, including through a reverse proxy on another machine, will stop working.
+
+Save anyway?</source>
+        <translation>როცა WebUI-ის მისამართია %1, WebUI-ს მხოლოდ ეს კომპიუტერი წვდება. დისტანციური წვდომა, სხვა მანქანაზე არსებული უკუპროქსის გავლითაც, შეწყდება.
+
+მაინც შეინახოს?</translation>
+    </message>
+    <message>
+        <source>Search settings</source>
+        <translation>პარამეტრებში ძებნა</translation>
+    </message>
+    <message>
+        <source>No settings match</source>
+        <translation>შესაბამისი პარამეტრი არ არის</translation>
+    </message>
+    <message>
+        <source>User Accounts</source>
+        <translation>მომხმარებლის ანგარიშები</translation>
+    </message>
+    <message>
+        <source>Automatically install Kettle Edition updates</source>
+        <translation>Kettle Edition-ის განახლებების ავტომატური დაყენება</translation>
+    </message>
+    <message>
+        <source>Status bar and log</source>
+        <translation>სტატუსის ზოლი და ჟურნალი</translation>
+    </message>
+    <message>
+        <source>Files</source>
+        <translation>ფაილები</translation>
+    </message>
+    <message>
+        <source>Checking</source>
+        <translation>შემოწმება</translation>
+    </message>
+    <message>
+        <source>Until the first user account is created, this login always works.</source>
+        <translation>სანამ პირველი მომხმარებლის ანგარიში შეიქმნება, ეს შესვლა ყოველთვის მუშაობს.</translation>
+    </message>
+    <message>
+        <source>Allow this login when user accounts exist</source>
+        <translation>ამ შესვლის დაშვება, როცა მომხმარებლის ანგარიშები არსებობს</translation>
+    </message>
+    <message>
+        <source>Access</source>
+        <translation>წვდომა</translation>
+    </message>
+    <message>
+        <source>Changes to users, roles and logins apply at once. The settings below apply with OK or Apply.</source>
+        <translation>მომხმარებლების, როლებისა და შესვლების ცვლილებები მაშინვე მოქმედებს. ქვემოთ მოცემული პარამეტრები მოქმედებს OK-ით ან გამოყენებით.</translation>
+    </message>
+    <message>
+        <source>Logins and Activity Log</source>
+        <translation>შესვლები და აქტივობის ჟურნალი</translation>
+    </message>
+    <message>
+        <source>0 means users are logged out after the session timeout.</source>
+        <translation>0 ნიშნავს, რომ მომხმარებლები სესიის დროის ამოწურვის შემდეგ გამოდიან.</translation>
+    </message>
+    <message>
+        <source>Keep users logged in for:</source>
+        <translation>მომხმარებლების შესულად დატოვება:</translation>
+    </message>
+    <message>
+        <source>Until session timeout</source>
+        <translation>სესიის დროის ამოწურვამდე</translation>
+    </message>
+    <message>
+        <source> days</source>
+        <translation> დღე</translation>
+    </message>
+    <message>
+        <source>Lock account after consecutive failures:</source>
+        <translation>ანგარიშის დაბლოკვა თანმიმდევრული წარუმატებლობის შემდეგ:</translation>
+    </message>
+    <message>
+        <source>Keep WebUI activity log for:</source>
+        <translation>WebUI-ის აქტივობის ჟურნალის შენახვა:</translation>
+    </message>
+    <message>
+        <source>lock for:</source>
+        <translation>დაბლოკვა:</translation>
+    </message>
+    <message>
+        <source>%1 works best with Windows dark mode</source>
+        <translation>%1 საუკეთესოდ მუშაობს Windows-ის მუქ რეჟიმთან</translation>
+    </message>
+    <message>
+        <source>WebUI address</source>
+        <translation>WebUI-ის მისამართი</translation>
+    </message>
+    <message>
+        <source>With the WebUI address set to %1, only this PC can reach the WebUI. Remote access, including through a reverse proxy on another machine, will stop working.
+
+Save anyway?</source>
+        <translation>როცა WebUI-ის მისამართია %1, WebUI-ს მხოლოდ ეს კომპიუტერი წვდება. დისტანციური წვდომა, სხვა მანქანაზე არსებული უკუპროქსის გავლითაც, შეწყდება.
+
+მაინც შეინახოს?</translation>
+    </message>
 </context>
 <context>
     <name>PeerInfo</name>
@@ -8664,6 +9024,22 @@ Check the Execution Log for errors.</source>
         <location filename="../gui/properties/peerlistwidget.cpp" line="309"/>
         <source>Copy IP:port</source>
         <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Reset auto width</source>
+        <translation>ავტომატური სიგანის დაბრუნება</translation>
+    </message>
+    <message>
+        <source>Fit all non-hidden columns to their contents again, and forget the widths that were set by hand</source>
+        <translation>ყველა ხილული სვეტის ხელახლა მორგება შიგთავსზე და ხელით დაყენებული სიგანეების დავიწყება</translation>
+    </message>
+    <message>
+        <source>Reset auto width</source>
+        <translation>ავტომატური სიგანის დაბრუნება</translation>
+    </message>
+    <message>
+        <source>Fit all non-hidden columns to their contents again, and forget the widths that were set by hand</source>
+        <translation>ყველა ხილული სვეტის ხელახლა მორგება შიგთავსზე და ხელით დაყენებული სიგანეების დავიწყება</translation>
     </message>
 </context>
 <context>
@@ -10022,6 +10398,14 @@ Check the Execution Log for errors.</source>
         <source>Open link</source>
         <translation>ბმულის გახსნა</translation>
     </message>
+    <message>
+        <source>Details</source>
+        <translation>დეტალები</translation>
+    </message>
+    <message>
+        <source>Details</source>
+        <translation>დეტალები</translation>
+    </message>
 </context>
 <context>
     <name>SearchController</name>
@@ -10371,6 +10755,70 @@ Check the Execution Log for errors.</source>
         <source>Resize all non-hidden columns to the size of their contents</source>
         <translation>ყველა ხილული სვეტის ზომის გასწორება მათი შიგთავსის მიხედვით.</translation>
     </message>
+    <message>
+        <source>%1 of %2 shown (%3 hidden)</source>
+        <translation>ნაჩვენებია %1 %2-დან (%3 დამალულია)</translation>
+    </message>
+    <message>
+        <source>%1 of %2 shown</source>
+        <translation>ნაჩვენებია %1 %2-დან</translation>
+    </message>
+    <message>
+        <source>Searching: %1</source>
+        <translation>იძებნება: %1</translation>
+    </message>
+    <message>
+        <source>Finished: %1</source>
+        <translation>დასრულდა: %1</translation>
+    </message>
+    <message>
+        <source>Search aborted: %1</source>
+        <translation>ძებნა შეწყდა: %1</translation>
+    </message>
+    <message>
+        <source>Reset auto width</source>
+        <translation>ავტომატური სიგანის დაბრუნება</translation>
+    </message>
+    <message>
+        <source>Fit all non-hidden columns to their contents again, and forget the widths that were set by hand</source>
+        <translation>ყველა ხილული სვეტის ხელახლა მორგება შიგთავსზე და ხელით დაყენებული სიგანეების დავიწყება</translation>
+    </message>
+    <message>
+        <source>Unknown</source>
+        <translation>უცნობი</translation>
+    </message>
+    <message>
+        <source>%1 of %2 shown (%3 hidden)</source>
+        <translation>ნაჩვენებია %1 %2-დან (%3 დამალულია)</translation>
+    </message>
+    <message>
+        <source>%1 of %2 shown</source>
+        <translation>ნაჩვენებია %1 %2-დან</translation>
+    </message>
+    <message>
+        <source>Searching: %1</source>
+        <translation>იძებნება: %1</translation>
+    </message>
+    <message>
+        <source>Finished: %1</source>
+        <translation>დასრულდა: %1</translation>
+    </message>
+    <message>
+        <source>Search aborted: %1</source>
+        <translation>ძებნა შეწყდა: %1</translation>
+    </message>
+    <message>
+        <source>Reset auto width</source>
+        <translation>ავტომატური სიგანის დაბრუნება</translation>
+    </message>
+    <message>
+        <source>Fit all non-hidden columns to their contents again, and forget the widths that were set by hand</source>
+        <translation>ყველა ხილული სვეტის ხელახლა მორგება შიგთავსზე და ხელით დაყენებული სიგანეების დავიწყება</translation>
+    </message>
+    <message>
+        <source>Unknown</source>
+        <translation>უცნობი</translation>
+    </message>
 </context>
 <context>
     <name>SearchPluginManager</name>
@@ -10655,6 +11103,14 @@ Those plugins were disabled.</source>
         <source>Couldn&apos;t update &quot;%1&quot; search engine plugin. %2</source>
         <translation type="unfinished"></translation>
     </message>
+    <message>
+        <source>Install Kettle Plugins</source>
+        <translation>Kettle-ის პლაგინების დაყენება</translation>
+    </message>
+    <message>
+        <source>Install Kettle Plugins</source>
+        <translation>Kettle-ის პლაგინების დაყენება</translation>
+    </message>
 </context>
 <context>
     <name>SearchPluginSourceDialog</name>
@@ -10793,6 +11249,90 @@ Click the &quot;Search plugins...&quot; button at the bottom right of the window
         <location filename="../gui/search/searchwidget.ui" line="58"/>
         <source>Stop</source>
         <translation>გაჩერება</translation>
+    </message>
+    <message>
+        <source>Searches</source>
+        <translation>ძიებები</translation>
+    </message>
+    <message>
+        <source>Close the selected search</source>
+        <translation>არჩეული ძიების დახურვა</translation>
+    </message>
+    <message>
+        <source>Search for torrents...</source>
+        <translation>ტორენტების ძებნა...</translation>
+    </message>
+    <message>
+        <source>Category to search in</source>
+        <translation>ძიების კატეგორია</translation>
+    </message>
+    <message>
+        <source>Search engines to use</source>
+        <translation>გამოსაყენებელი საძიებო სისტემები</translation>
+    </message>
+    <message>
+        <source>There aren&apos;t any search plugins installed.
+Click the &quot;Search plugins...&quot; button at the top right of the window to install some.</source>
+        <translation>საძიებო პლაგინები დაყენებული არ არის.
+დასაყენებლად დააჭირეთ ფანჯრის ზედა მარჯვენა კუთხეში ღილაკს „საძიებო პლაგინები...“.</translation>
+    </message>
+    <message>
+        <source>Type a search above and press Enter.</source>
+        <translation>ზემოთ ჩაწერეთ ძიება და დააჭირეთ Enter-ს.</translation>
+    </message>
+    <message>
+        <source>Refresh search</source>
+        <translation>ძიების განახლება</translation>
+    </message>
+    <message>
+        <source>Close search</source>
+        <translation>ძიების დახურვა</translation>
+    </message>
+    <message>
+        <source>Close all searches</source>
+        <translation>ყველა ძიების დახურვა</translation>
+    </message>
+    <message>
+        <source>Searches</source>
+        <translation>ძიებები</translation>
+    </message>
+    <message>
+        <source>Close the selected search</source>
+        <translation>არჩეული ძიების დახურვა</translation>
+    </message>
+    <message>
+        <source>Search for torrents...</source>
+        <translation>ტორენტების ძებნა...</translation>
+    </message>
+    <message>
+        <source>Category to search in</source>
+        <translation>ძიების კატეგორია</translation>
+    </message>
+    <message>
+        <source>Search engines to use</source>
+        <translation>გამოსაყენებელი საძიებო სისტემები</translation>
+    </message>
+    <message>
+        <source>There aren&apos;t any search plugins installed.
+Click the &quot;Search plugins...&quot; button at the top right of the window to install some.</source>
+        <translation>საძიებო პლაგინები დაყენებული არ არის.
+დასაყენებლად დააჭირეთ ფანჯრის ზედა მარჯვენა კუთხეში ღილაკს „საძიებო პლაგინები...“.</translation>
+    </message>
+    <message>
+        <source>Type a search above and press Enter.</source>
+        <translation>ზემოთ ჩაწერეთ ძიება და დააჭირეთ Enter-ს.</translation>
+    </message>
+    <message>
+        <source>Refresh search</source>
+        <translation>ძიების განახლება</translation>
+    </message>
+    <message>
+        <source>Close search</source>
+        <translation>ძიების დახურვა</translation>
+    </message>
+    <message>
+        <source>Close all searches</source>
+        <translation>ყველა ძიების დახურვა</translation>
     </message>
 </context>
 <context>
@@ -11255,6 +11795,326 @@ Click the &quot;Search plugins...&quot; button at the bottom right of the window
         <location filename="../gui/statsdialog.cpp" line="111"/>
         <source>%1 ms</source>
         <translation type="unfinished">%1 მწმ</translation>
+    </message>
+    <message>
+        <source>Copy</source>
+        <translation>კოპირება</translation>
+    </message>
+    <message>
+        <source>Overview</source>
+        <translation>მიმოხილვა</translation>
+    </message>
+    <message>
+        <source>Transfer</source>
+        <translation>გადაცემა</translation>
+    </message>
+    <message>
+        <source>This session</source>
+        <translation>ეს სესია</translation>
+    </message>
+    <message>
+        <source>All time</source>
+        <translation>მთელი დრო</translation>
+    </message>
+    <message>
+        <source>Downloaded:</source>
+        <translation>ჩამოტვირთული:</translation>
+    </message>
+    <message>
+        <source>Uploaded:</source>
+        <translation>ატვირთული:</translation>
+    </message>
+    <message>
+        <source>Share ratio:</source>
+        <translation>გაზიარების კოეფიციენტი:</translation>
+    </message>
+    <message>
+        <source>Current speed:</source>
+        <translation>მიმდინარე სიჩქარე:</translation>
+    </message>
+    <message>
+        <source>Activity</source>
+        <translation>აქტივობა</translation>
+    </message>
+    <message>
+        <source>Torrents downloading:</source>
+        <translation>მიმდინარე ჩამოტვირთვის ტორენტები:</translation>
+    </message>
+    <message>
+        <source>Torrents seeding:</source>
+        <translation>სიდინგის ტორენტები:</translation>
+    </message>
+    <message>
+        <source>Torrents stopped:</source>
+        <translation>შეჩერებული ტორენტები:</translation>
+    </message>
+    <message>
+        <source>Torrents with errors:</source>
+        <translation>შეცდომიანი ტორენტები:</translation>
+    </message>
+    <message>
+        <source>Running for:</source>
+        <translation>მუშაობს:</translation>
+    </message>
+    <message>
+        <source>History</source>
+        <translation>ისტორია</translation>
+    </message>
+    <message>
+        <source>Period</source>
+        <translation>პერიოდი</translation>
+    </message>
+    <message>
+        <source>Today</source>
+        <translation>დღეს</translation>
+    </message>
+    <message>
+        <source>Last 7 days</source>
+        <translation>ბოლო 7 დღე</translation>
+    </message>
+    <message>
+        <source>This month</source>
+        <translation>ეს თვე</translation>
+    </message>
+    <message>
+        <source>Last month</source>
+        <translation>გასული თვე</translation>
+    </message>
+    <message>
+        <source>Last 12 months</source>
+        <translation>ბოლო 12 თვე</translation>
+    </message>
+    <message>
+        <source>Tracking since:</source>
+        <translation>თვალყური იდევნება:</translation>
+    </message>
+    <message>
+        <source>By month</source>
+        <translation>თვეების მიხედვით</translation>
+    </message>
+    <message>
+        <source>Month</source>
+        <translation>თვე</translation>
+    </message>
+    <message>
+        <source>Downloaded</source>
+        <translation>ჩამოტვირთული</translation>
+    </message>
+    <message>
+        <source>Uploaded</source>
+        <translation>ატვირთული</translation>
+    </message>
+    <message>
+        <source>Share ratio</source>
+        <translation>გაზიარების კოეფიციენტი</translation>
+    </message>
+    <message>
+        <source>WebUI downloads added, this month</source>
+        <translation>WebUI-ით დამატებული ჩამოტვირთვები, ამ თვეში</translation>
+    </message>
+    <message>
+        <source>Counts the requests that added a download. Apps without a login, such as Sonarr and Radarr, are shown as (localhost). Downloads added in the desktop window are not counted.</source>
+        <translation>ითვლის მოთხოვნებს, რომლებმაც ჩამოტვირთვა დაამატეს. აპები შესვლის გარეშე, როგორიცაა Sonarr და Radarr, ჩანს როგორც (localhost). დესკტოპის ფანჯარაში დამატებული ჩამოტვირთვები არ ითვლება.</translation>
+    </message>
+    <message>
+        <source>Technical</source>
+        <translation>ტექნიკური</translation>
+    </message>
+    <message>
+        <source>Disk</source>
+        <translation>დისკი</translation>
+    </message>
+    <message>
+        <source>Peers waiting on disk writes:</source>
+        <translation>დისკზე ჩაწერას მოლოდინში მყოფი პარტნიორები:</translation>
+    </message>
+    <message>
+        <source>Peers waiting on disk reads:</source>
+        <translation>დისკიდან წაკითხვას მოლოდინში მყოფი პარტნიორები:</translation>
+    </message>
+    <message>
+        <source>Network</source>
+        <translation>ქსელი</translation>
+    </message>
+    <message>
+        <source>DHT nodes:</source>
+        <translation>DHT კვანძები:</translation>
+    </message>
+    <message>
+        <source>Data discarded this session:</source>
+        <translation>ამ სესიაში გაუქმებული მონაცემები:</translation>
+    </message>
+    <message>
+        <source>Before tracking began</source>
+        <translation>თვალყურის დევნების დაწყებამდე</translation>
+    </message>
+    <message>
+        <source>Nothing added yet</source>
+        <translation>ჯერ არაფერი დამატებულა</translation>
+    </message>
+    <message>
+        <source>Off</source>
+        <translation>გამორთულია</translation>
+    </message>
+    <message>
+        <source>Copy</source>
+        <translation>კოპირება</translation>
+    </message>
+    <message>
+        <source>Overview</source>
+        <translation>მიმოხილვა</translation>
+    </message>
+    <message>
+        <source>Transfer</source>
+        <translation>გადაცემა</translation>
+    </message>
+    <message>
+        <source>This session</source>
+        <translation>ეს სესია</translation>
+    </message>
+    <message>
+        <source>All time</source>
+        <translation>მთელი დრო</translation>
+    </message>
+    <message>
+        <source>Downloaded:</source>
+        <translation>ჩამოტვირთული:</translation>
+    </message>
+    <message>
+        <source>Uploaded:</source>
+        <translation>ატვირთული:</translation>
+    </message>
+    <message>
+        <source>Share ratio:</source>
+        <translation>გაზიარების კოეფიციენტი:</translation>
+    </message>
+    <message>
+        <source>Current speed:</source>
+        <translation>მიმდინარე სიჩქარე:</translation>
+    </message>
+    <message>
+        <source>Activity</source>
+        <translation>აქტივობა</translation>
+    </message>
+    <message>
+        <source>Torrents downloading:</source>
+        <translation>მიმდინარე ჩამოტვირთვის ტორენტები:</translation>
+    </message>
+    <message>
+        <source>Torrents seeding:</source>
+        <translation>სიდინგის ტორენტები:</translation>
+    </message>
+    <message>
+        <source>Torrents stopped:</source>
+        <translation>შეჩერებული ტორენტები:</translation>
+    </message>
+    <message>
+        <source>Torrents with errors:</source>
+        <translation>შეცდომიანი ტორენტები:</translation>
+    </message>
+    <message>
+        <source>Running for:</source>
+        <translation>მუშაობს:</translation>
+    </message>
+    <message>
+        <source>History</source>
+        <translation>ისტორია</translation>
+    </message>
+    <message>
+        <source>Period</source>
+        <translation>პერიოდი</translation>
+    </message>
+    <message>
+        <source>Today</source>
+        <translation>დღეს</translation>
+    </message>
+    <message>
+        <source>Last 7 days</source>
+        <translation>ბოლო 7 დღე</translation>
+    </message>
+    <message>
+        <source>This month</source>
+        <translation>ეს თვე</translation>
+    </message>
+    <message>
+        <source>Last month</source>
+        <translation>გასული თვე</translation>
+    </message>
+    <message>
+        <source>Last 12 months</source>
+        <translation>ბოლო 12 თვე</translation>
+    </message>
+    <message>
+        <source>Tracking since:</source>
+        <translation>თვალყური იდევნება:</translation>
+    </message>
+    <message>
+        <source>By month</source>
+        <translation>თვეების მიხედვით</translation>
+    </message>
+    <message>
+        <source>Month</source>
+        <translation>თვე</translation>
+    </message>
+    <message>
+        <source>Downloaded</source>
+        <translation>ჩამოტვირთული</translation>
+    </message>
+    <message>
+        <source>Uploaded</source>
+        <translation>ატვირთული</translation>
+    </message>
+    <message>
+        <source>Share ratio</source>
+        <translation>გაზიარების კოეფიციენტი</translation>
+    </message>
+    <message>
+        <source>WebUI downloads added, this month</source>
+        <translation>WebUI-ით დამატებული ჩამოტვირთვები, ამ თვეში</translation>
+    </message>
+    <message>
+        <source>Counts the requests that added a download. Apps without a login, such as Sonarr and Radarr, are shown as (localhost). Downloads added in the desktop window are not counted.</source>
+        <translation>ითვლის მოთხოვნებს, რომლებმაც ჩამოტვირთვა დაამატეს. აპები შესვლის გარეშე, როგორიცაა Sonarr და Radarr, ჩანს როგორც (localhost). დესკტოპის ფანჯარაში დამატებული ჩამოტვირთვები არ ითვლება.</translation>
+    </message>
+    <message>
+        <source>Technical</source>
+        <translation>ტექნიკური</translation>
+    </message>
+    <message>
+        <source>Disk</source>
+        <translation>დისკი</translation>
+    </message>
+    <message>
+        <source>Peers waiting on disk writes:</source>
+        <translation>დისკზე ჩაწერას მოლოდინში მყოფი პარტნიორები:</translation>
+    </message>
+    <message>
+        <source>Peers waiting on disk reads:</source>
+        <translation>დისკიდან წაკითხვას მოლოდინში მყოფი პარტნიორები:</translation>
+    </message>
+    <message>
+        <source>Network</source>
+        <translation>ქსელი</translation>
+    </message>
+    <message>
+        <source>DHT nodes:</source>
+        <translation>DHT კვანძები:</translation>
+    </message>
+    <message>
+        <source>Data discarded this session:</source>
+        <translation>ამ სესიაში გაუქმებული მონაცემები:</translation>
+    </message>
+    <message>
+        <source>Before tracking began</source>
+        <translation>თვალყურის დევნების დაწყებამდე</translation>
+    </message>
+    <message>
+        <source>Nothing added yet</source>
+        <translation>ჯერ არაფერი დამატებულა</translation>
+    </message>
+    <message>
+        <source>Off</source>
+        <translation>გამორთულია</translation>
     </message>
 </context>
 <context>
@@ -11941,6 +12801,22 @@ Please choose a different name and try again.</source>
     <message>
         <source>Maximum priority</source>
         <translation type="vanished">მაქსიმალური პრიორიტეტი</translation>
+    </message>
+    <message>
+        <source>Reset auto width</source>
+        <translation>ავტომატური სიგანის დაბრუნება</translation>
+    </message>
+    <message>
+        <source>Fit all non-hidden columns to their contents again, and forget the widths that were set by hand</source>
+        <translation>ყველა ხილული სვეტის ხელახლა მორგება შიგთავსზე და ხელით დაყენებული სიგანეების დავიწყება</translation>
+    </message>
+    <message>
+        <source>Reset auto width</source>
+        <translation>ავტომატური სიგანის დაბრუნება</translation>
+    </message>
+    <message>
+        <source>Fit all non-hidden columns to their contents again, and forget the widths that were set by hand</source>
+        <translation>ყველა ხილული სვეტის ხელახლა მორგება შიგთავსზე და ხელით დაყენებული სიგანეების დავიწყება</translation>
     </message>
 </context>
 <context>
@@ -13020,6 +13896,22 @@ Please choose a different name and try again.</source>
         <source>Column visibility</source>
         <translation>სვეტის ხილვადობა</translation>
     </message>
+    <message>
+        <source>Reset auto width</source>
+        <translation>ავტომატური სიგანის დაბრუნება</translation>
+    </message>
+    <message>
+        <source>Fit all non-hidden columns to their contents again, and forget the widths that were set by hand</source>
+        <translation>ყველა ხილული სვეტის ხელახლა მორგება შიგთავსზე და ხელით დაყენებული სიგანეების დავიწყება</translation>
+    </message>
+    <message>
+        <source>Reset auto width</source>
+        <translation>ავტომატური სიგანის დაბრუნება</translation>
+    </message>
+    <message>
+        <source>Fit all non-hidden columns to their contents again, and forget the widths that were set by hand</source>
+        <translation>ყველა ხილული სვეტის ხელახლა მორგება შიგთავსზე და ხელით დაყენებული სიგანეების დავიწყება</translation>
+    </message>
 </context>
 <context>
     <name>TrackerStatusFilterWidget</name>
@@ -13886,6 +14778,22 @@ Please choose a different name and try again.</source>
         <source>Super seeding mode</source>
         <translation>სუპერ სიდირების რეჟიმი</translation>
     </message>
+    <message>
+        <source>Reset auto width</source>
+        <translation>ავტომატური სიგანის დაბრუნება</translation>
+    </message>
+    <message>
+        <source>Fit all non-hidden columns to their contents again, and forget the widths that were set by hand</source>
+        <translation>ყველა ხილული სვეტის ხელახლა მორგება შიგთავსზე და ხელით დაყენებული სიგანეების დავიწყება</translation>
+    </message>
+    <message>
+        <source>Reset auto width</source>
+        <translation>ავტომატური სიგანის დაბრუნება</translation>
+    </message>
+    <message>
+        <source>Fit all non-hidden columns to their contents again, and forget the widths that were set by hand</source>
+        <translation>ყველა ხილული სვეტის ხელახლა მორგება შიგთავსზე და ხელით დაყენებული სიგანეების დავიწყება</translation>
+    </message>
 </context>
 <context>
     <name>UIThemeDialog</name>
@@ -14220,6 +15128,46 @@ Please choose a different name and try again.</source>
         <source>WebAPI login failure. Reason: invalid credentials, attempt count: %1, IP: %2, username: %3</source>
         <translation type="unfinished"></translation>
     </message>
+    <message>
+        <source>Something went wrong on the server. Details are in qBittorrent&apos;s log.</source>
+        <translation>სერვერზე რაღაც არასწორად წავიდა. დეტალები qBittorrent-ის ჟურნალშია.</translation>
+    </message>
+    <message>
+        <source>This account is locked after too many failed login attempts. Try again in %1 minute(s).</source>
+        <translation>ეს ანგარიში დაბლოკილია შესვლის ძალიან ბევრი წარუმატებელი მცდელობის გამო. სცადეთ ხელახლა %1 წუთში.</translation>
+    </message>
+    <message>
+        <source>Your role (%1) doesn&apos;t allow this: %2.</source>
+        <translation>თქვენი როლი (%1) ამას არ აძლევს ნებას: %2.</translation>
+    </message>
+    <message>
+        <source>Only an admin can remove the tag that says who added a torrent.</source>
+        <translation>მხოლოდ ადმინისტრატორს შეუძლია ტეგის წაშლა, რომელიც აჩვენებს, ვინ დაამატა ტორენტი.</translation>
+    </message>
+    <message>
+        <source>Only an admin can clear or replace all tags of a torrent that has a tag saying who added it.</source>
+        <translation>მხოლოდ ადმინისტრატორს შეუძლია ისეთი ტორენტის ყველა ტეგის გასუფთავება ან შეცვლა, რომელსაც აქვს დამამატებელის ტეგი.</translation>
+    </message>
+    <message>
+        <source>Something went wrong on the server. Details are in qBittorrent&apos;s log.</source>
+        <translation>სერვერზე რაღაც არასწორად წავიდა. დეტალები qBittorrent-ის ჟურნალშია.</translation>
+    </message>
+    <message>
+        <source>This account is locked after too many failed login attempts. Try again in %1 minute(s).</source>
+        <translation>ეს ანგარიში დაბლოკილია შესვლის ძალიან ბევრი წარუმატებელი მცდელობის გამო. სცადეთ ხელახლა %1 წუთში.</translation>
+    </message>
+    <message>
+        <source>Your role (%1) doesn&apos;t allow this: %2.</source>
+        <translation>თქვენი როლი (%1) ამას არ აძლევს ნებას: %2.</translation>
+    </message>
+    <message>
+        <source>Only an admin can remove the tag that says who added a torrent.</source>
+        <translation>მხოლოდ ადმინისტრატორს შეუძლია ტეგის წაშლა, რომელიც აჩვენებს, ვინ დაამატა ტორენტი.</translation>
+    </message>
+    <message>
+        <source>Only an admin can clear or replace all tags of a torrent that has a tag saying who added it.</source>
+        <translation>მხოლოდ ადმინისტრატორს შეუძლია ისეთი ტორენტის ყველა ტეგის გასუფთავება ან შეცვლა, რომელსაც აქვს დამამატებელის ტეგი.</translation>
+    </message>
 </context>
 <context>
     <name>WebUI</name>
@@ -14359,6 +15307,669 @@ Please choose a different name and try again.</source>
         <source>&lt; 1m</source>
         <comment>&lt; 1 minute</comment>
         <translation>&lt; 1წთ</translation>
+    </message>
+</context>
+<context>
+    <name>UpdateInstaller</name>
+    <message>
+        <source>Kettle Edition update</source>
+        <translation>Kettle Edition-ის განახლება</translation>
+    </message>
+    <message>
+        <source>Kettle Edition was updated to %1.</source>
+        <translation>Kettle Edition განახლდა %1-მდე.</translation>
+    </message>
+    <message>
+        <source>Kettle Edition updated</source>
+        <translation>Kettle Edition განახლდა</translation>
+    </message>
+    <message>
+        <source>Downloading Kettle Edition %1 (%2 changed files).</source>
+        <translation>იწერება Kettle Edition %1 (%2 შეცვლილი ფაილი).</translation>
+    </message>
+    <message>
+        <source>Kettle Edition %1 is downloaded and ready to install.</source>
+        <translation>Kettle Edition %1 ჩამოიტვირთა და მზადაა დასაყენებლად.</translation>
+    </message>
+    <message>
+        <source>Kettle Edition update</source>
+        <translation>Kettle Edition-ის განახლება</translation>
+    </message>
+    <message>
+        <source>Kettle Edition was updated to %1.</source>
+        <translation>Kettle Edition განახლდა %1-მდე.</translation>
+    </message>
+    <message>
+        <source>Kettle Edition updated</source>
+        <translation>Kettle Edition განახლდა</translation>
+    </message>
+    <message>
+        <source>Downloading Kettle Edition %1 (%2 changed files).</source>
+        <translation>იწერება Kettle Edition %1 (%2 შეცვლილი ფაილი).</translation>
+    </message>
+    <message>
+        <source>Kettle Edition %1 is downloaded and ready to install.</source>
+        <translation>Kettle Edition %1 ჩამოიტვირთა და მზადაა დასაყენებლად.</translation>
+    </message>
+</context>
+<context>
+    <name>UserAccountDialog</name>
+    <message>
+        <source>User</source>
+        <translation>მომხმარებელი</translation>
+    </message>
+    <message>
+        <source>Username:</source>
+        <translation>მომხმარებლის სახელი:</translation>
+    </message>
+    <message>
+        <source>Role:</source>
+        <translation>როლი:</translation>
+    </message>
+    <message>
+        <source>Password:</source>
+        <translation>პაროლი:</translation>
+    </message>
+    <message>
+        <source>Confirm password:</source>
+        <translation>პაროლის დადასტურება:</translation>
+    </message>
+    <message>
+        <source>Disable this account</source>
+        <translation>ამ ანგარიშის გათიშვა</translation>
+    </message>
+    <message>
+        <source>Edit User</source>
+        <translation>მომხმარებლის რედაქტირება</translation>
+    </message>
+    <message>
+        <source>Leave empty to keep the current password</source>
+        <translation>დატოვეთ ცარიელი მიმდინარე პაროლის შესანარჩუნებლად</translation>
+    </message>
+    <message>
+        <source>Add User</source>
+        <translation>მომხმარებლის დამატება</translation>
+    </message>
+    <message>
+        <source>At least %1 characters</source>
+        <translation>მინიმუმ %1 სიმბოლო</translation>
+    </message>
+    <message>
+        <source>Enter a username.</source>
+        <translation>შეიყვანეთ მომხმარებლის სახელი.</translation>
+    </message>
+    <message>
+        <source>The password must be at least %1 characters long.</source>
+        <translation>პაროლი უნდა იყოს მინიმუმ %1 სიმბოლო.</translation>
+    </message>
+    <message>
+        <source>The passwords don&apos;t match.</source>
+        <translation>პაროლები არ ემთხვევა.</translation>
+    </message>
+    <message>
+        <source>User</source>
+        <translation>მომხმარებელი</translation>
+    </message>
+    <message>
+        <source>Username:</source>
+        <translation>მომხმარებლის სახელი:</translation>
+    </message>
+    <message>
+        <source>Role:</source>
+        <translation>როლი:</translation>
+    </message>
+    <message>
+        <source>Password:</source>
+        <translation>პაროლი:</translation>
+    </message>
+    <message>
+        <source>Confirm password:</source>
+        <translation>პაროლის დადასტურება:</translation>
+    </message>
+    <message>
+        <source>Disable this account</source>
+        <translation>ამ ანგარიშის გათიშვა</translation>
+    </message>
+    <message>
+        <source>Edit User</source>
+        <translation>მომხმარებლის რედაქტირება</translation>
+    </message>
+    <message>
+        <source>Leave empty to keep the current password</source>
+        <translation>დატოვეთ ცარიელი მიმდინარე პაროლის შესანარჩუნებლად</translation>
+    </message>
+    <message>
+        <source>Add User</source>
+        <translation>მომხმარებლის დამატება</translation>
+    </message>
+    <message>
+        <source>At least %1 characters</source>
+        <translation>მინიმუმ %1 სიმბოლო</translation>
+    </message>
+    <message>
+        <source>Enter a username.</source>
+        <translation>შეიყვანეთ მომხმარებლის სახელი.</translation>
+    </message>
+    <message>
+        <source>The password must be at least %1 characters long.</source>
+        <translation>პაროლი უნდა იყოს მინიმუმ %1 სიმბოლო.</translation>
+    </message>
+    <message>
+        <source>The passwords don&apos;t match.</source>
+        <translation>პაროლები არ ემთხვევა.</translation>
+    </message>
+</context>
+<context>
+    <name>UserAccountsWidget</name>
+    <message>
+        <source>User Accounts</source>
+        <translation>მომხმარებლის ანგარიშები</translation>
+    </message>
+    <message>
+        <source>Users</source>
+        <translation>მომხმარებლები</translation>
+    </message>
+    <message>
+        <source>People who can log in to the WebUI with their own username and password.</source>
+        <translation>ადამიანები, რომლებსაც შეუძლიათ WebUI-ში შესვლა საკუთარი მომხმარებლის სახელითა და პაროლით.</translation>
+    </message>
+    <message>
+        <source>Add User...</source>
+        <translation>მომხმარებლის დამატება...</translation>
+    </message>
+    <message>
+        <source>Edit...</source>
+        <translation>რედაქტირება...</translation>
+    </message>
+    <message>
+        <source>Remove</source>
+        <translation>ამოშლა</translation>
+    </message>
+    <message>
+        <source>Roles</source>
+        <translation>როლები</translation>
+    </message>
+    <message>
+        <source>A role decides what its users are allowed to do.</source>
+        <translation>როლი განსაზღვრავს, რისი გაკეთება შეუძლიათ მის მომხმარებლებს.</translation>
+    </message>
+    <message>
+        <source>Add Role...</source>
+        <translation>როლის დამატება...</translation>
+    </message>
+    <message>
+        <source>Logged In</source>
+        <translation>შესულები</translation>
+    </message>
+    <message>
+        <source>Browsers and devices where someone is logged in with a user account.</source>
+        <translation>ბრაუზერები და მოწყობილობები, სადაც ვიღაც მომხმარებლის ანგარიშით არის შესული.</translation>
+    </message>
+    <message>
+        <source>Log Out</source>
+        <translation>გასვლა</translation>
+    </message>
+    <message>
+        <source>Username</source>
+        <translation>მომხმარებლის სახელი</translation>
+    </message>
+    <message>
+        <source>Role</source>
+        <translation>როლი</translation>
+    </message>
+    <message>
+        <source>Status</source>
+        <translation>სტატუსი</translation>
+    </message>
+    <message>
+        <source>Last login</source>
+        <translation>ბოლო შესვლა</translation>
+    </message>
+    <message>
+        <source>Created</source>
+        <translation>შეიქმნა</translation>
+    </message>
+    <message>
+        <source>Name</source>
+        <translation>სახელი</translation>
+    </message>
+    <message>
+        <source>Description</source>
+        <translation>აღწერა</translation>
+    </message>
+    <message>
+        <source>Permissions</source>
+        <translation>უფლებები</translation>
+    </message>
+    <message>
+        <source>User</source>
+        <translation>მომხმარებელი</translation>
+    </message>
+    <message>
+        <source>Browser</source>
+        <translation>ბრაუზერი</translation>
+    </message>
+    <message>
+        <source>Logged in</source>
+        <translation>შესვლის დრო</translation>
+    </message>
+    <message>
+        <source>Last active</source>
+        <translation>ბოლო აქტივობა</translation>
+    </message>
+    <message>
+        <source>Expires</source>
+        <translation>ვადა გასდის</translation>
+    </message>
+    <message>
+        <source>The user database could not be opened. See the Execution Log for details.</source>
+        <translation>მომხმარებლების ბაზის გახსნა ვერ მოხერხდა. დეტალებისთვის იხილეთ შესრულების ჟურნალი.</translation>
+    </message>
+    <message>
+        <source>Disabled</source>
+        <translation>გათიშულია</translation>
+    </message>
+    <message>
+        <source>Enabled</source>
+        <translation>ჩართულია</translation>
+    </message>
+    <message>
+        <source>Never</source>
+        <translation>არასდროს</translation>
+    </message>
+    <message>
+        <source>No accounts yet, so everyone still uses the shared WebUI login. Add an Admin account first.</source>
+        <translation>ანგარიშები ჯერ არ არის, ამიტომ ყველა ჯერ კიდევ WebUI-ის საერთო შესვლას იყენებს. ჯერ დაამატეთ ადმინისტრატორის ანგარიში.</translation>
+    </message>
+    <message>
+        <source>Couldn&apos;t read the user database. %1</source>
+        <translation>მომხმარებლების ბაზის წაკითხვა ვერ მოხერხდა. %1</translation>
+    </message>
+    <message>
+        <source>Remove user</source>
+        <translation>მომხმარებლის წაშლა</translation>
+    </message>
+    <message>
+        <source>Are you sure you want to remove the user &apos;%1&apos;?</source>
+        <translation>ნამდვილად გსურთ მომხმარებლის „%1“ წაშლა?</translation>
+    </message>
+    <message>
+        <source>Remove role</source>
+        <translation>როლის წაშლა</translation>
+    </message>
+    <message>
+        <source>Are you sure you want to remove the role &apos;%1&apos;?</source>
+        <translation>ნამდვილად გსურთ როლის „%1“ წაშლა?</translation>
+    </message>
+    <message>
+        <source>Enable</source>
+        <translation>ჩართვა</translation>
+    </message>
+    <message>
+        <source>Disable</source>
+        <translation>გათიშვა</translation>
+    </message>
+    <message>
+        <source>Log Out Everywhere</source>
+        <translation>გასვლა ყველგან</translation>
+    </message>
+    <message>
+        <source>User Accounts</source>
+        <translation>მომხმარებლის ანგარიშები</translation>
+    </message>
+    <message>
+        <source>Users</source>
+        <translation>მომხმარებლები</translation>
+    </message>
+    <message>
+        <source>People who can log in to the WebUI with their own username and password.</source>
+        <translation>ადამიანები, რომლებსაც შეუძლიათ WebUI-ში შესვლა საკუთარი მომხმარებლის სახელითა და პაროლით.</translation>
+    </message>
+    <message>
+        <source>Add User...</source>
+        <translation>მომხმარებლის დამატება...</translation>
+    </message>
+    <message>
+        <source>Edit...</source>
+        <translation>რედაქტირება...</translation>
+    </message>
+    <message>
+        <source>Remove</source>
+        <translation>ამოშლა</translation>
+    </message>
+    <message>
+        <source>Roles</source>
+        <translation>როლები</translation>
+    </message>
+    <message>
+        <source>A role decides what its users are allowed to do.</source>
+        <translation>როლი განსაზღვრავს, რისი გაკეთება შეუძლიათ მის მომხმარებლებს.</translation>
+    </message>
+    <message>
+        <source>Add Role...</source>
+        <translation>როლის დამატება...</translation>
+    </message>
+    <message>
+        <source>Logged In</source>
+        <translation>შესულები</translation>
+    </message>
+    <message>
+        <source>Browsers and devices where someone is logged in with a user account.</source>
+        <translation>ბრაუზერები და მოწყობილობები, სადაც ვიღაც მომხმარებლის ანგარიშით არის შესული.</translation>
+    </message>
+    <message>
+        <source>Log Out</source>
+        <translation>გასვლა</translation>
+    </message>
+    <message>
+        <source>Username</source>
+        <translation>მომხმარებლის სახელი</translation>
+    </message>
+    <message>
+        <source>Role</source>
+        <translation>როლი</translation>
+    </message>
+    <message>
+        <source>Status</source>
+        <translation>სტატუსი</translation>
+    </message>
+    <message>
+        <source>Last login</source>
+        <translation>ბოლო შესვლა</translation>
+    </message>
+    <message>
+        <source>Created</source>
+        <translation>შეიქმნა</translation>
+    </message>
+    <message>
+        <source>Name</source>
+        <translation>სახელი</translation>
+    </message>
+    <message>
+        <source>Description</source>
+        <translation>აღწერა</translation>
+    </message>
+    <message>
+        <source>Permissions</source>
+        <translation>უფლებები</translation>
+    </message>
+    <message>
+        <source>User</source>
+        <translation>მომხმარებელი</translation>
+    </message>
+    <message>
+        <source>Browser</source>
+        <translation>ბრაუზერი</translation>
+    </message>
+    <message>
+        <source>Logged in</source>
+        <translation>შესვლის დრო</translation>
+    </message>
+    <message>
+        <source>Last active</source>
+        <translation>ბოლო აქტივობა</translation>
+    </message>
+    <message>
+        <source>Expires</source>
+        <translation>ვადა გასდის</translation>
+    </message>
+    <message>
+        <source>The user database could not be opened. See the Execution Log for details.</source>
+        <translation>მომხმარებლების ბაზის გახსნა ვერ მოხერხდა. დეტალებისთვის იხილეთ შესრულების ჟურნალი.</translation>
+    </message>
+    <message>
+        <source>Disabled</source>
+        <translation>გათიშულია</translation>
+    </message>
+    <message>
+        <source>Enabled</source>
+        <translation>ჩართულია</translation>
+    </message>
+    <message>
+        <source>Never</source>
+        <translation>არასდროს</translation>
+    </message>
+    <message>
+        <source>No accounts yet, so everyone still uses the shared WebUI login. Add an Admin account first.</source>
+        <translation>ანგარიშები ჯერ არ არის, ამიტომ ყველა ჯერ კიდევ WebUI-ის საერთო შესვლას იყენებს. ჯერ დაამატეთ ადმინისტრატორის ანგარიში.</translation>
+    </message>
+    <message>
+        <source>Couldn&apos;t read the user database. %1</source>
+        <translation>მომხმარებლების ბაზის წაკითხვა ვერ მოხერხდა. %1</translation>
+    </message>
+    <message>
+        <source>Remove user</source>
+        <translation>მომხმარებლის წაშლა</translation>
+    </message>
+    <message>
+        <source>Are you sure you want to remove the user &apos;%1&apos;?</source>
+        <translation>ნამდვილად გსურთ მომხმარებლის „%1“ წაშლა?</translation>
+    </message>
+    <message>
+        <source>Remove role</source>
+        <translation>როლის წაშლა</translation>
+    </message>
+    <message>
+        <source>Are you sure you want to remove the role &apos;%1&apos;?</source>
+        <translation>ნამდვილად გსურთ როლის „%1“ წაშლა?</translation>
+    </message>
+    <message>
+        <source>Enable</source>
+        <translation>ჩართვა</translation>
+    </message>
+    <message>
+        <source>Disable</source>
+        <translation>გათიშვა</translation>
+    </message>
+    <message>
+        <source>Log Out Everywhere</source>
+        <translation>გასვლა ყველგან</translation>
+    </message>
+</context>
+<context>
+    <name>UserRoleDialog</name>
+    <message>
+        <source>Role</source>
+        <translation>როლი</translation>
+    </message>
+    <message>
+        <source>Name:</source>
+        <translation>სახელი:</translation>
+    </message>
+    <message>
+        <source>Description:</source>
+        <translation>აღწერა:</translation>
+    </message>
+    <message>
+        <source>Gives control over the PC or qBittorrent itself.</source>
+        <translation>იძლევა კომპიუტერის ან თვით qBittorrent-ის კონტროლს.</translation>
+    </message>
+    <message>
+        <source>Add Role</source>
+        <translation>როლის დამატება</translation>
+    </message>
+    <message>
+        <source>Edit Role</source>
+        <translation>როლის რედაქტირება</translation>
+    </message>
+    <message>
+        <source>Enter a role name.</source>
+        <translation>შეიყვანეთ როლის სახელი.</translation>
+    </message>
+    <message>
+        <source>Role</source>
+        <translation>როლი</translation>
+    </message>
+    <message>
+        <source>Name:</source>
+        <translation>სახელი:</translation>
+    </message>
+    <message>
+        <source>Description:</source>
+        <translation>აღწერა:</translation>
+    </message>
+    <message>
+        <source>Gives control over the PC or qBittorrent itself.</source>
+        <translation>იძლევა კომპიუტერის ან თვით qBittorrent-ის კონტროლს.</translation>
+    </message>
+    <message>
+        <source>Add Role</source>
+        <translation>როლის დამატება</translation>
+    </message>
+    <message>
+        <source>Edit Role</source>
+        <translation>როლის რედაქტირება</translation>
+    </message>
+    <message>
+        <source>Enter a role name.</source>
+        <translation>შეიყვანეთ როლის სახელი.</translation>
+    </message>
+</context>
+<context>
+    <name>WebUIActivityWidget</name>
+    <message>
+        <source>All</source>
+        <translation>ყველა</translation>
+    </message>
+    <message>
+        <source>Filter activity</source>
+        <translation>აქტივობის გაფილტვრა</translation>
+    </message>
+    <message>
+        <source>Export...</source>
+        <translation>ექსპორტი...</translation>
+    </message>
+    <message>
+        <source>User:</source>
+        <translation>მომხმარებელი:</translation>
+    </message>
+    <message>
+        <source>Category:</source>
+        <translation>კატეგორია:</translation>
+    </message>
+    <message>
+        <source>Result:</source>
+        <translation>შედეგი:</translation>
+    </message>
+    <message>
+        <source>Time</source>
+        <translation>დრო</translation>
+    </message>
+    <message>
+        <source>User</source>
+        <translation>მომხმარებელი</translation>
+    </message>
+    <message>
+        <source>Role</source>
+        <translation>როლი</translation>
+    </message>
+    <message>
+        <source>Category</source>
+        <translation>კატეგორია</translation>
+    </message>
+    <message>
+        <source>Action</source>
+        <translation>მოქმედება</translation>
+    </message>
+    <message>
+        <source>Result</source>
+        <translation>შედეგი</translation>
+    </message>
+    <message>
+        <source>The user database could not be opened. See the General tab for details.</source>
+        <translation>მომხმარებლების ბაზის გახსნა ვერ მოხერხდა. დეტალებისთვის იხილეთ ზოგადი ჩანართი.</translation>
+    </message>
+    <message>
+        <source>Results (showing %1 out of %2)</source>
+        <translation>შედეგები (ნაჩვენებია %1 %2-დან)</translation>
+    </message>
+    <message>
+        <source>Copy</source>
+        <translation>კოპირება</translation>
+    </message>
+    <message>
+        <source>Export WebUI activity</source>
+        <translation>WebUI-ის აქტივობის ექსპორტი</translation>
+    </message>
+    <message>
+        <source>CSV files</source>
+        <translation>CSV ფაილები</translation>
+    </message>
+    <message>
+        <source>Couldn&apos;t save the file. Reason: %1</source>
+        <translation>ფაილის შენახვა ვერ მოხერხდა. მიზეზი: %1</translation>
+    </message>
+    <message>
+        <source>All</source>
+        <translation>ყველა</translation>
+    </message>
+    <message>
+        <source>Filter activity</source>
+        <translation>აქტივობის გაფილტვრა</translation>
+    </message>
+    <message>
+        <source>Export...</source>
+        <translation>ექსპორტი...</translation>
+    </message>
+    <message>
+        <source>User:</source>
+        <translation>მომხმარებელი:</translation>
+    </message>
+    <message>
+        <source>Category:</source>
+        <translation>კატეგორია:</translation>
+    </message>
+    <message>
+        <source>Result:</source>
+        <translation>შედეგი:</translation>
+    </message>
+    <message>
+        <source>Time</source>
+        <translation>დრო</translation>
+    </message>
+    <message>
+        <source>User</source>
+        <translation>მომხმარებელი</translation>
+    </message>
+    <message>
+        <source>Role</source>
+        <translation>როლი</translation>
+    </message>
+    <message>
+        <source>Category</source>
+        <translation>კატეგორია</translation>
+    </message>
+    <message>
+        <source>Action</source>
+        <translation>მოქმედება</translation>
+    </message>
+    <message>
+        <source>Result</source>
+        <translation>შედეგი</translation>
+    </message>
+    <message>
+        <source>The user database could not be opened. See the General tab for details.</source>
+        <translation>მომხმარებლების ბაზის გახსნა ვერ მოხერხდა. დეტალებისთვის იხილეთ ზოგადი ჩანართი.</translation>
+    </message>
+    <message>
+        <source>Results (showing %1 out of %2)</source>
+        <translation>შედეგები (ნაჩვენებია %1 %2-დან)</translation>
+    </message>
+    <message>
+        <source>Copy</source>
+        <translation>კოპირება</translation>
+    </message>
+    <message>
+        <source>Export WebUI activity</source>
+        <translation>WebUI-ის აქტივობის ექსპორტი</translation>
+    </message>
+    <message>
+        <source>CSV files</source>
+        <translation>CSV ფაილები</translation>
+    </message>
+    <message>
+        <source>Couldn&apos;t save the file. Reason: %1</source>
+        <translation>ფაილის შენახვა ვერ მოხერხდა. მიზეზი: %1</translation>
     </message>
 </context>
 </TS>

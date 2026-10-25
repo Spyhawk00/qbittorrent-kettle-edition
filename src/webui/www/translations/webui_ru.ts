@@ -227,6 +227,85 @@ The piece hash will be checked when it is requested for the first time by a peer
         <source>%1 needed · %2 free</source>
         <translation type="unfinished" />
     </message>
+    <message>
+        <source>Don&apos;t create subfolder</source>
+        <translation>Не создавать подпапку</translation>
+    </message>
+    <message>
+        <source>Never show again</source>
+        <translation>Больше не показывать</translation>
+    </message>
+    <message>
+        <source>Select None</source>
+        <translation>Снять выбор</translation>
+    </message>
+    <message>
+        <source>Torrent options</source>
+        <translation>Параметры торрента</translation>
+    </message>
+    <message>
+        <source>Your role saves torrents in the default folders.</source>
+        <translation>Ваша роль сохраняет торренты в папки по умолчанию.</translation>
+    </message>
+</context>
+<context>
+    <name>AdvancedSettings</name>
+    <message>
+        <source>General</source>
+        <translation>Главный</translation>
+    </message>
+    <message>
+        <source>Network</source>
+        <translation>Сеть</translation>
+    </message>
+    <message>
+        <source>Storage</source>
+        <translation>Хранилище</translation>
+    </message>
+    <message>
+        <source>Peers and trackers</source>
+        <translation>Пиры и трекеры</translation>
+    </message>
+    <message>
+        <source>Program behavior</source>
+        <translation>Поведение программы</translation>
+    </message>
+    <message>
+        <source>Display and notifications</source>
+        <translation>Отображение и уведомления</translation>
+    </message>
+    <message>
+        <source>Network connection</source>
+        <translation>Сетевое соединение</translation>
+    </message>
+    <message>
+        <source>Security and privacy</source>
+        <translation>Безопасность и конфиденциальность</translation>
+    </message>
+    <message>
+        <source>Connection tuning</source>
+        <translation>Настройка соединений</translation>
+    </message>
+    <message>
+        <source>Saving and torrent files</source>
+        <translation>Сохранение и торрент-файлы</translation>
+    </message>
+    <message>
+        <source>Disk and memory</source>
+        <translation>Диск и память</translation>
+    </message>
+    <message>
+        <source>Trackers</source>
+        <translation>Трекеры</translation>
+    </message>
+    <message>
+        <source>Peers and seeding</source>
+        <translation>Пиры и раздача</translation>
+    </message>
+    <message>
+        <source>DHT and I2P</source>
+        <translation>DHT и I2P</translation>
+    </message>
 </context>
 <context>
     <name>CategoryFilterModel</name>
@@ -631,6 +710,14 @@ The piece hash will be checked when it is requested for the first time by a peer
         <source>More</source>
         <translation>Ещё</translation>
     </message>
+    <message>
+        <source>Change Password...</source>
+        <translation>Сменить пароль...</translation>
+    </message>
+    <message>
+        <source>Signed in as</source>
+        <translation>Вы вошли как</translation>
+    </message>
 </context>
 <context>
     <name>MainWindow</name>
@@ -937,6 +1024,34 @@ The piece hash will be checked when it is requested for the first time by a peer
     <message>
         <source>Resume Session</source>
         <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Global Speed Limits</source>
+        <translation>Общие ограничения скорости</translation>
+    </message>
+    <message>
+        <source>Pause Session</source>
+        <translation>Приостановить сеанс</translation>
+    </message>
+    <message>
+        <source>Pause session</source>
+        <translation>Приостановить сеанс</translation>
+    </message>
+    <message>
+        <source>Resume Session</source>
+        <translation>Возобновить сеанс</translation>
+    </message>
+    <message>
+        <source>Resume session</source>
+        <translation>Возобновить сеанс</translation>
+    </message>
+    <message>
+        <source>Your account can&apos;t add torrents.</source>
+        <translation>Ваша учётная запись не может добавлять торренты.</translation>
+    </message>
+    <message>
+        <source>[PAUSED]</source>
+        <translation>[ПРИОСТАНОВЛЕНО]</translation>
     </message>
 </context>
 <context>
@@ -2535,6 +2650,190 @@ Use ';' to split multiple entries. Can use wildcard '*'.</source>
         <source>a@x.com;b@y.com,c@z.com - send two emails: the first to just a@x.com, the second to both b@y.com and c@z.com</source>
         <translation type="unfinished" />
     </message>
+    <message>
+        <source>0 means users are logged out after the session timeout.</source>
+        <translation>0 означает, что пользователи выходят после истечения времени сеанса.</translation>
+    </message>
+    <message>
+        <source>Access</source>
+        <translation>Доступ</translation>
+    </message>
+    <message>
+        <source>All the above</source>
+        <translation>Все из вышеуказанных</translation>
+    </message>
+    <message>
+        <source>Allow this login when user accounts exist</source>
+        <translation>Разрешить этот вход, когда есть учётные записи</translation>
+    </message>
+    <message>
+        <source>Also save search results</source>
+        <translation>Сохранять также результаты поиска</translation>
+    </message>
+    <message>
+        <source>Also when addition is cancelled</source>
+        <translation>Удалять торрент-файл при отмене добавления</translation>
+    </message>
+    <message>
+        <source>Any of the above</source>
+        <translation>Любое из вышеуказанных</translation>
+    </message>
+    <message>
+        <source>Below normal</source>
+        <translation>Ниже обычного</translation>
+    </message>
+    <message>
+        <source>Changes to users, roles and logins apply at once.</source>
+        <translation>Изменения пользователей, ролей и входов применяются сразу.</translation>
+    </message>
+    <message>
+        <source>Don&apos;t create subfolder</source>
+        <translation>Не создавать подпапку</translation>
+    </message>
+    <message>
+        <source>Example:</source>
+        <translation>Пример:</translation>
+    </message>
+    <message>
+        <source>I2P (experimental)</source>
+        <translation>Сеть I2P (экспериментально)</translation>
+    </message>
+    <message>
+        <source>Keep WebUI activity log for:</source>
+        <translation>Хранить журнал действий WebUI:</translation>
+    </message>
+    <message>
+        <source>Keep unselected files in &quot;.unwanted&quot; folder</source>
+        <translation>Помещать невыбранные файлы в папку «.unwanted»</translation>
+    </message>
+    <message>
+        <source>Keep users logged in for:</source>
+        <translation>Держать пользователей в системе:</translation>
+    </message>
+    <message>
+        <source>Language:</source>
+        <translation>Язык:</translation>
+    </message>
+    <message>
+        <source>Lock account after consecutive failures:</source>
+        <translation>Блокировать учётную запись после подряд идущих неудач:</translation>
+    </message>
+    <message>
+        <source>Logins and Activity Log</source>
+        <translation>Входы и журнал действий</translation>
+    </message>
+    <message>
+        <source>Low</source>
+        <translation>Низкий</translation>
+    </message>
+    <message>
+        <source>Maximum active checking torrents:</source>
+        <translation>Предел активных проверок торрентов:</translation>
+    </message>
+    <message>
+        <source>Medium</source>
+        <translation>Средний</translation>
+    </message>
+    <message>
+        <source>No settings match</source>
+        <translation>Нет подходящих настроек</translation>
+    </message>
+    <message>
+        <source>Process memory priority:</source>
+        <translation>Приоритет памяти процесса:</translation>
+    </message>
+    <message>
+        <source>Save search tabs</source>
+        <translation>Сохранять вкладки поиска</translation>
+    </message>
+    <message>
+        <source>Search UI</source>
+        <translation>Интерфейс поиска</translation>
+    </message>
+    <message>
+        <source>Search settings</source>
+        <translation>Поиск настроек</translation>
+    </message>
+    <message>
+        <source>Service:</source>
+        <translation>Служба:</translation>
+    </message>
+    <message>
+        <source>Show console window</source>
+        <translation>Показать окно консоли</translation>
+    </message>
+    <message>
+        <source>Show the window when adding a torrent</source>
+        <translation>Показывать окно при добавлении торрента</translation>
+    </message>
+    <message>
+        <source>Specify reverse proxy IPs (or subnets, e.g. 0.0.0.0/24) in order to use forwarded client address (X-Forwarded-For header). Use &apos;;&apos; to split multiple entries.</source>
+        <translation>Укажите IP-адреса (или подсети, напр., 0.0.0.0/24) обратных прокси-серверов, чтобы использовать перенаправленный адрес клиента (заголовок X-Forwarded-For). Используйте «;» для разделения нескольких записей.</translation>
+    </message>
+    <message>
+        <source>Status bar and log</source>
+        <translation>Строка состояния и журнал</translation>
+    </message>
+    <message>
+        <source>The WebUI activity log can be kept for 1 to 3650 days.</source>
+        <translation>Журнал действий WebUI можно хранить от 1 до 3650 дней.</translation>
+    </message>
+    <message>
+        <source>The settings below apply with OK or Apply.</source>
+        <translation>Настройки ниже применяются кнопкой «ОК» или «Применить».</translation>
+    </message>
+    <message>
+        <source>Tip: Encapsulate parameter with quotation marks to avoid text being cut off at whitespace (e.g., &quot;%N&quot;)</source>
+        <translation>Подсказка: включите параметр в кавычки для защиты от обрезки на пробелах (пример, &quot;%N&quot;)</translation>
+    </message>
+    <message>
+        <source>Transfer List</source>
+        <translation>Список торрентов</translation>
+    </message>
+    <message>
+        <source>Until the first user account is created, this login always works.</source>
+        <translation>Пока не создана первая учётная запись, этот вход всегда работает.</translation>
+    </message>
+    <message>
+        <source>User Accounts</source>
+        <translation>Учётные записи</translation>
+    </message>
+    <message>
+        <source>Users can be kept logged in for 0 to 365 days.</source>
+        <translation>Пользователей можно держать в системе от 0 до 365 дней.</translation>
+    </message>
+    <message>
+        <source>Very low</source>
+        <translation>Очень низкий</translation>
+    </message>
+    <message>
+        <source>Warning! Data loss possible!</source>
+        <translation>Внимание! Возможна потеря данных!</translation>
+    </message>
+    <message>
+        <source>When Default Save/Incomplete Path changed:</source>
+        <translation>По смене стандартного пути сохранения/неполных:</translation>
+    </message>
+    <message>
+        <source>Whitelist for filtering HTTP Host header values.
+In order to defend against DNS rebinding attack,
+you should put in domain names used by WebUI server.
+
+Use &apos;;&apos; to split multiple entries. Can use wildcard &apos;*&apos;.</source>
+        <translation>Белый список фильтра заголовков HTTP-хоста.
+С целью защиты от атаки DNS вы должны указать
+доменные имена для сервера веб-интерфейса.
+
+Используйте «;» для разделения имён. Допустимы шаблоны типа «*».</translation>
+    </message>
+    <message>
+        <source>You changed the address, port or HTTPS setting of the WebUI. Saving moves the WebUI, so Options will save, close and reload the page, the same as OK. If the page doesn&apos;t come back, open the WebUI at its new address.\n\nSave anyway?</source>
+        <translation>Вы изменили адрес, порт или настройку HTTPS для WebUI. При сохранении WebUI переезжает, поэтому Настройки сохранятся, закроются и перезагрузят страницу, как при «ОК». Если страница не вернётся, откройте WebUI по новому адресу.\n\nВсё равно сохранить?</translation>
+    </message>
+    <message>
+        <source>lock for:</source>
+        <translation>блокировать на:</translation>
+    </message>
 </context>
 <context>
     <name>PeerListWidget</name>
@@ -2963,6 +3262,10 @@ Use ';' to split multiple entries. Can use wildcard '*'.</source>
         <source>Copy download URL</source>
         <translation type="unfinished" />
     </message>
+    <message>
+        <source>Copy path</source>
+        <translation>Копировать путь</translation>
+    </message>
 </context>
 <context>
     <name>ScanFoldersModel</name>
@@ -3075,6 +3378,142 @@ Use ';' to split multiple entries. Can use wildcard '*'.</source>
     <message>
         <source>The time it takes from receiving a request from a peer until we're sending the response back on the socket</source>
         <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Activity</source>
+        <translation>Активность</translation>
+    </message>
+    <message>
+        <source>All time</source>
+        <translation>Всё время</translation>
+    </message>
+    <message>
+        <source>Before tracking began</source>
+        <translation>До начала учёта</translation>
+    </message>
+    <message>
+        <source>By month</source>
+        <translation>По месяцам</translation>
+    </message>
+    <message>
+        <source>Counts the requests that added a download. Apps without a login, such as Sonarr and Radarr, are shown as (localhost). Downloads added in the desktop window are not counted.</source>
+        <translation>Считает запросы, добавившие загрузку. Приложения без входа, например Sonarr и Radarr, показываются как (localhost). Загрузки, добавленные в окне настольного приложения, не учитываются.</translation>
+    </message>
+    <message>
+        <source>Current speed:</source>
+        <translation>Текущая скорость:</translation>
+    </message>
+    <message>
+        <source>DHT nodes:</source>
+        <translation>Узлов DHT:</translation>
+    </message>
+    <message>
+        <source>Data discarded this session:</source>
+        <translation>Отброшено данных за сеанс:</translation>
+    </message>
+    <message>
+        <source>Disk</source>
+        <translation>Диск</translation>
+    </message>
+    <message>
+        <source>History</source>
+        <translation>История</translation>
+    </message>
+    <message>
+        <source>Last 12 months</source>
+        <translation>Последние 12 месяцев</translation>
+    </message>
+    <message>
+        <source>Last 7 days</source>
+        <translation>Последние 7 дней</translation>
+    </message>
+    <message>
+        <source>Last month</source>
+        <translation>Прошлый месяц</translation>
+    </message>
+    <message>
+        <source>Month</source>
+        <translation>Месяц</translation>
+    </message>
+    <message>
+        <source>Nothing added yet</source>
+        <translation>Пока ничего не добавлено</translation>
+    </message>
+    <message>
+        <source>Off</source>
+        <translation>Выкл.</translation>
+    </message>
+    <message>
+        <source>Overview</source>
+        <translation>Обзор</translation>
+    </message>
+    <message>
+        <source>Peers waiting on disk reads:</source>
+        <translation>Пиров ожидает чтения с диска:</translation>
+    </message>
+    <message>
+        <source>Peers waiting on disk writes:</source>
+        <translation>Пиров ожидает записи на диск:</translation>
+    </message>
+    <message>
+        <source>Period</source>
+        <translation>Период</translation>
+    </message>
+    <message>
+        <source>Request latency:</source>
+        <translation>Задержка запроса:</translation>
+    </message>
+    <message>
+        <source>Running for:</source>
+        <translation>Работает:</translation>
+    </message>
+    <message>
+        <source>Share ratio</source>
+        <translation>Рейтинг раздачи</translation>
+    </message>
+    <message>
+        <source>Share ratio:</source>
+        <translation>Рейтинг раздачи:</translation>
+    </message>
+    <message>
+        <source>Technical</source>
+        <translation>Технические данные</translation>
+    </message>
+    <message>
+        <source>This month</source>
+        <translation>Этот месяц</translation>
+    </message>
+    <message>
+        <source>This session</source>
+        <translation>Этот сеанс</translation>
+    </message>
+    <message>
+        <source>Today</source>
+        <translation>Сегодня</translation>
+    </message>
+    <message>
+        <source>Torrents downloading:</source>
+        <translation>Скачивается торрентов:</translation>
+    </message>
+    <message>
+        <source>Torrents seeding:</source>
+        <translation>Раздаётся торрентов:</translation>
+    </message>
+    <message>
+        <source>Torrents stopped:</source>
+        <translation>Остановлено торрентов:</translation>
+    </message>
+    <message>
+        <source>Torrents with errors:</source>
+        <translation>Торрентов с ошибками:</translation>
+    </message>
+    <message>
+        <source>Tracking since:</source>
+        <translation>Учёт ведётся с:</translation>
+    </message>
+    <message>
+        <source>WebUI downloads added, this month</source>
+        <translation>Загрузки, добавленные через WebUI, в этом месяце</translation>
     </message>
 </context>
 <context>
@@ -3862,6 +4301,10 @@ Use ';' to split multiple entries. Can use wildcard '*'.</source>
         <source>Content Path</source>
         <translation>Путь содержимого</translation>
     </message>
+    <message>
+        <source>Remove all tags from selected torrents?</source>
+        <translation>Удалить все метки для выбранных торрентов?</translation>
+    </message>
 </context>
 <context>
     <name>UpDownRatioDialog</name>
@@ -3917,6 +4360,14 @@ Use ';' to split multiple entries. Can use wildcard '*'.</source>
         <source>Action when the limit is reached</source>
         <translation>Действие по достижении ограничения</translation>
     </message>
+    <message>
+        <source>Match all the limits</source>
+        <translation>Соответствовать всем ограничениям</translation>
+    </message>
+    <message>
+        <source>Match any limit</source>
+        <translation>Соответствовать любому ограничению</translation>
+    </message>
 </context>
 <context>
     <name>about</name>
@@ -3934,6 +4385,10 @@ Use ';' to split multiple entries. Can use wildcard '*'.</source>
     <message>
         <source>Remove tracker</source>
         <translation>Удалить трекер</translation>
+    </message>
+    <message>
+        <source>This choice is remembered for the next removal.</source>
+        <translation>Этот выбор будет запомнен для следующего удаления.</translation>
     </message>
 </context>
 <context>
@@ -4147,6 +4602,34 @@ Use ';' to split multiple entries. Can use wildcard '*'.</source>
         <source>Select plugins</source>
         <translation>Выбрать плагины</translation>
     </message>
+    <message>
+        <source>Category to search in</source>
+        <translation>Категория для поиска</translation>
+    </message>
+    <message>
+        <source>Close the selected search</source>
+        <translation>Закрыть выбранный поиск</translation>
+    </message>
+    <message>
+        <source>Empty search pattern</source>
+        <translation>Пустой шаблон поиска</translation>
+    </message>
+    <message>
+        <source>Search engines to use</source>
+        <translation>Используемые поисковики</translation>
+    </message>
+    <message>
+        <source>Search for torrents...</source>
+        <translation>Поиск торрентов...</translation>
+    </message>
+    <message>
+        <source>Searches</source>
+        <translation>Поиски</translation>
+    </message>
+    <message>
+        <source>Type a search above and press Enter.</source>
+        <translation>Введите запрос выше и нажмите Enter.</translation>
+    </message>
 </context>
 <context>
     <name>PluginSelectDlg</name>
@@ -4185,6 +4668,10 @@ Use ';' to split multiple entries. Can use wildcard '*'.</source>
     <message>
         <source>Search plugins</source>
         <translation>Поисковые плагины</translation>
+    </message>
+    <message>
+        <source>Warning: Be sure to comply with your country&apos;s copyright laws when downloading torrents from any of these search engines.</source>
+        <translation>Предупреждение: Обязательно соблюдайте законы об авторских правах вашей страны при загрузке торрентов из этих поисковых систем.</translation>
     </message>
 </context>
 <context>
@@ -4408,6 +4895,30 @@ Use ';' to split multiple entries. Can use wildcard '*'.</source>
         <source>qBittorrent icon</source>
         <translation>Значок qBittorrent</translation>
     </message>
+    <message>
+        <source>Based on:</source>
+        <translation>Основана на:</translation>
+    </message>
+    <message>
+        <source>Edition version:</source>
+        <translation>Версия редакции:</translation>
+    </message>
+    <message>
+        <source>Kettle Edition is a personal build of qBittorrent that adds user accounts with roles for the WebUI and the desktop app, an activity log, and an installable WebUI with a phone layout. A kettle is a group of hawks soaring together. This is an unofficial build, not affiliated with the qBittorrent project.</source>
+        <translation>Kettle Edition — личная сборка qBittorrent, добавляющая учётные записи пользователей с ролями для WebUI и настольного приложения, журнал действий и устанавливаемый WebUI с макетом для телефона. Kettle — это стая ястребов, парящих вместе. Это неофициальная сборка, не связанная с проектом qBittorrent.</translation>
+    </message>
+    <message>
+        <source>Maintainer:</source>
+        <translation>Сопровождающий:</translation>
+    </message>
+    <message>
+        <source>This edition</source>
+        <translation>Эта версия</translation>
+    </message>
+    <message>
+        <source>qBittorrent project:</source>
+        <translation>Проект qBittorrent:</translation>
+    </message>
 </context>
 <context>
     <name>OptionDialog</name>
@@ -4509,6 +5020,46 @@ Use ';' to split multiple entries. Can use wildcard '*'.</source>
     <message>
         <source>Open shared download window</source>
         <translation type="unfinished" />
+    </message>
+    <message>
+        <source>%1 of %2 shown</source>
+        <translation>Показано %1 из %2</translation>
+    </message>
+    <message>
+        <source>%1 of %2 shown (%3 hidden)</source>
+        <translation>Показано %1 из %2 (скрыто %3)</translation>
+    </message>
+    <message>
+        <source>Close all searches</source>
+        <translation>Закрыть все поиски</translation>
+    </message>
+    <message>
+        <source>Close search</source>
+        <translation>Закрыть поиск</translation>
+    </message>
+    <message>
+        <source>Filter search results...</source>
+        <translation>Фильтр результатов поиска…</translation>
+    </message>
+    <message>
+        <source>Finished: %1</source>
+        <translation>Завершено: %1</translation>
+    </message>
+    <message>
+        <source>Refresh search</source>
+        <translation>Обновить поиск</translation>
+    </message>
+    <message>
+        <source>Search aborted: %1</source>
+        <translation>Поиск прерван: %1</translation>
+    </message>
+    <message>
+        <source>Search returned no results</source>
+        <translation>Поиск не дал результатов</translation>
+    </message>
+    <message>
+        <source>Searching: %1</source>
+        <translation>Поиск: %1</translation>
     </message>
 </context>
 <context>
@@ -4647,6 +5198,10 @@ Use ';' to split multiple entries. Can use wildcard '*'.</source>
     <message>
         <source>Blocked opening RSS article URL. Only http:// and https:// links can be opened.</source>
         <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Details</source>
+        <translation>Подробности</translation>
     </message>
 </context>
 <context>
@@ -4925,6 +5480,10 @@ Supports the formats: S01E01, 1x1, 2017.12.31 and 31.12.2017 (Date formats also 
         <source>Import</source>
         <translation type="unfinished" />
     </message>
+    <message>
+        <source>Don&apos;t create subfolder</source>
+        <translation>Не создавать подпапку</translation>
+    </message>
 </context>
 <context>
     <name>TrackerFiltersList</name>
@@ -5114,6 +5673,26 @@ Supports the formats: S01E01, 1x1, 2017.12.31 and 31.12.2017 (Date formats also 
         <source>Choose a log level...</source>
         <translation>Выберите уровень журнала…</translation>
     </message>
+    <message>
+        <source>Export...</source>
+        <translation>Экспорт...</translation>
+    </message>
+    <message>
+        <source>Filter activity</source>
+        <translation>Фильтр действий</translation>
+    </message>
+    <message>
+        <source>Result:</source>
+        <translation>Результат:</translation>
+    </message>
+    <message>
+        <source>User:</source>
+        <translation>Пользователь:</translation>
+    </message>
+    <message>
+        <source>WebUI Activity</source>
+        <translation>Активность WebUI</translation>
+    </message>
 </context>
 <context>
     <name>TrackersFilterWidget</name>
@@ -5183,6 +5762,14 @@ Supports the formats: S01E01, 1x1, 2017.12.31 and 31.12.2017 (Date formats also 
     <message>
         <source>Torrent share limits</source>
         <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Torrent share limits</source>
+        <translation>Ограничения раздачи торрента</translation>
+    </message>
+    <message>
+        <source>Your role saves torrents in the default folders.</source>
+        <translation>Ваша роль сохраняет торренты в папки по умолчанию.</translation>
     </message>
 </context>
 <context>
@@ -5282,6 +5869,14 @@ Supports the formats: S01E01, 1x1, 2017.12.31 and 31.12.2017 (Date formats also 
     <message>
         <source>Invalid Username or Password.</source>
         <translation>Неверное имя пользователя или пароль.</translation>
+    </message>
+    <message>
+        <source>A kettle is a group of hawks soaring together.</source>
+        <translation>Kettle — это стая ястребов, парящих вместе.</translation>
+    </message>
+    <message>
+        <source>Sign in</source>
+        <translation>Войти</translation>
     </message>
 </context>
 <context>
@@ -5516,6 +6111,22 @@ Supports the formats: S01E01, 1x1, 2017.12.31 and 31.12.2017 (Date formats also 
         <source>If checked, filenames starting with a period punctuation mark `.` will not be added to the created torrent.</source>
         <translation type="unfinished" />
     </message>
+    <message>
+        <source>Align to piece boundary for files larger than:</source>
+        <translation>Выравнивать по размеру частей файлы больше чем:</translation>
+    </message>
+    <message>
+        <source>Optimize alignment</source>
+        <translation>Оптимизировать выравнивание</translation>
+    </message>
+    <message>
+        <source>Private torrent (Won&apos;t distribute on DHT network)</source>
+        <translation>Частный торрент (не раздаётся по децентрализованной сети DHT)</translation>
+    </message>
+    <message>
+        <source>Start seeding immediately</source>
+        <translation>Запустить раздачу сразу</translation>
+    </message>
 </context>
 <context>
     <name>DownloadFromURLDialog</name>
@@ -5626,6 +6237,10 @@ Supports the formats: S01E01, 1x1, 2017.12.31 and 31.12.2017 (Date formats also 
         <source>Failed to set speed limits</source>
         <translation type="unfinished" />
     </message>
+    <message>
+        <source>Speed limits</source>
+        <translation>Ограничения скорости</translation>
+    </message>
 </context>
 <context>
     <name>ListWidget</name>
@@ -5636,6 +6251,10 @@ Supports the formats: S01E01, 1x1, 2017.12.31 and 31.12.2017 (Date formats also 
     <message>
         <source>Resize</source>
         <translation>Изменить размер</translation>
+    </message>
+    <message>
+        <source>Reset Auto Width</source>
+        <translation>Сбросить автоширину</translation>
     </message>
 </context>
 <context>
@@ -5651,6 +6270,10 @@ Supports the formats: S01E01, 1x1, 2017.12.31 and 31.12.2017 (Date formats also 
     <message>
         <source>Rotate this API key? The current key will immediately stop working and a new key will be generated.</source>
         <translation>Сменить этот ключ API? Текущий ключ сразу перестанет работать, и будет создан новый ключ.</translation>
+    </message>
+    <message>
+        <source>Generate an API key? This key can be used to interact with qBittorrent&apos;s API.</source>
+        <translation>Создать ключ API? Этот ключ можно использовать для взаимодействия с API qBittorrent.</translation>
     </message>
 </context>
 <context>
@@ -5766,6 +6389,54 @@ Supports the formats: S01E01, 1x1, 2017.12.31 and 31.12.2017 (Date formats also 
         <source>Remove torrent</source>
         <translation type="unfinished" />
     </message>
+    <message>
+        <source>Action when the limit is reached:</source>
+        <translation>Действие по достижении ограничения:</translation>
+    </message>
+    <message>
+        <source>Default (%1)</source>
+        <translation>Стандартно (%1)</translation>
+    </message>
+    <message>
+        <source>From category</source>
+        <translation>Из категории</translation>
+    </message>
+    <message>
+        <source>From category (%1)</source>
+        <translation>Из категории (%1)</translation>
+    </message>
+    <message>
+        <source>Inactive seeding time:</source>
+        <translation>Время бездействия раздачи:</translation>
+    </message>
+    <message>
+        <source>Match all the limits</source>
+        <translation>Соответствовать всем ограничениям</translation>
+    </message>
+    <message>
+        <source>Match any limit</source>
+        <translation>Соответствовать любому ограничению</translation>
+    </message>
+    <message>
+        <source>Mode:</source>
+        <translation>Режим:</translation>
+    </message>
+    <message>
+        <source>Ratio:</source>
+        <translation>Рейтинг:</translation>
+    </message>
+    <message>
+        <source>Seeding time:</source>
+        <translation>Время раздачи:</translation>
+    </message>
+    <message>
+        <source>Set to</source>
+        <translation>Установить на</translation>
+    </message>
+    <message>
+        <source>Unlimited</source>
+        <translation>Без ограничений</translation>
+    </message>
 </context>
 <context>
     <name>TorrentContent</name>
@@ -5776,6 +6447,208 @@ Supports the formats: S01E01, 1x1, 2017.12.31 and 31.12.2017 (Date formats also 
     <message>
         <source>Not available for folders</source>
         <translation type="unfinished" />
+    </message>
+</context>
+<context>
+    <name>UserAccounts</name>
+    <message>
+        <source>(this browser)</source>
+        <translation>(этот браузер)</translation>
+    </message>
+    <message>
+        <source>A role decides what its users are allowed to do.</source>
+        <translation>Роль определяет, что разрешено её пользователям.</translation>
+    </message>
+    <message>
+        <source>Add Role</source>
+        <translation>Добавить роль</translation>
+    </message>
+    <message>
+        <source>Add Role...</source>
+        <translation>Добавить роль...</translation>
+    </message>
+    <message>
+        <source>Add User</source>
+        <translation>Добавить пользователя</translation>
+    </message>
+    <message>
+        <source>Add User...</source>
+        <translation>Добавить пользователя...</translation>
+    </message>
+    <message>
+        <source>Are you sure you want to remove the role &apos;%1&apos;?</source>
+        <translation>Вы действительно хотите удалить роль «%1»?</translation>
+    </message>
+    <message>
+        <source>Are you sure you want to remove the user &apos;%1&apos;?</source>
+        <translation>Вы действительно хотите удалить пользователя «%1»?</translation>
+    </message>
+    <message>
+        <source>At least %1 characters</source>
+        <translation>Не менее %1 символов</translation>
+    </message>
+    <message>
+        <source>Browser</source>
+        <translation>Браузер</translation>
+    </message>
+    <message>
+        <source>Browsers and devices where someone is logged in with a user account.</source>
+        <translation>Браузеры и устройства, где кто-то вошёл с учётной записью.</translation>
+    </message>
+    <message>
+        <source>Change Password</source>
+        <translation>Сменить пароль</translation>
+    </message>
+    <message>
+        <source>Confirm password:</source>
+        <translation>Подтвердите пароль:</translation>
+    </message>
+    <message>
+        <source>Created</source>
+        <translation>Создана</translation>
+    </message>
+    <message>
+        <source>Current password:</source>
+        <translation>Текущий пароль:</translation>
+    </message>
+    <message>
+        <source>Description</source>
+        <translation>Описание</translation>
+    </message>
+    <message>
+        <source>Description:</source>
+        <translation>Описание:</translation>
+    </message>
+    <message>
+        <source>Disable</source>
+        <translation>Отключить</translation>
+    </message>
+    <message>
+        <source>Disable this account</source>
+        <translation>Отключить эту учётную запись</translation>
+    </message>
+    <message>
+        <source>Edit Role</source>
+        <translation>Изменить роль</translation>
+    </message>
+    <message>
+        <source>Edit User</source>
+        <translation>Изменить пользователя</translation>
+    </message>
+    <message>
+        <source>Edit...</source>
+        <translation>Изменить...</translation>
+    </message>
+    <message>
+        <source>Enable</source>
+        <translation>Включить</translation>
+    </message>
+    <message>
+        <source>Enter a role name.</source>
+        <translation>Введите название роли.</translation>
+    </message>
+    <message>
+        <source>Enter a username.</source>
+        <translation>Введите имя пользователя.</translation>
+    </message>
+    <message>
+        <source>Expires</source>
+        <translation>Истекает</translation>
+    </message>
+    <message>
+        <source>Gives control over the PC or qBittorrent itself</source>
+        <translation>Даёт управление компьютером или самим qBittorrent</translation>
+    </message>
+    <message>
+        <source>Last active</source>
+        <translation>Последняя активность</translation>
+    </message>
+    <message>
+        <source>Last login</source>
+        <translation>Последний вход</translation>
+    </message>
+    <message>
+        <source>Leave empty to keep the current password</source>
+        <translation>Оставьте пустым, чтобы сохранить текущий пароль</translation>
+    </message>
+    <message>
+        <source>Log Out</source>
+        <translation>Выйти</translation>
+    </message>
+    <message>
+        <source>Log Out Everywhere</source>
+        <translation>Выйти везде</translation>
+    </message>
+    <message>
+        <source>Logged In</source>
+        <translation>Вошли</translation>
+    </message>
+    <message>
+        <source>Logged in</source>
+        <translation>Время входа</translation>
+    </message>
+    <message>
+        <source>New password:</source>
+        <translation>Новый пароль:</translation>
+    </message>
+    <message>
+        <source>No accounts yet, so everyone still uses the shared WebUI login. Add an Admin account first.</source>
+        <translation>Учётных записей пока нет, поэтому все по-прежнему используют общий вход WebUI. Сначала добавьте учётную запись администратора.</translation>
+    </message>
+    <message>
+        <source>People who can log in to the WebUI with their own username and password.</source>
+        <translation>Люди, которые могут входить в WebUI со своим именем пользователя и паролем.</translation>
+    </message>
+    <message>
+        <source>Permissions</source>
+        <translation>Разрешения</translation>
+    </message>
+    <message>
+        <source>Role</source>
+        <translation>Роль</translation>
+    </message>
+    <message>
+        <source>Role:</source>
+        <translation>Роль:</translation>
+    </message>
+    <message>
+        <source>Roles</source>
+        <translation>Роли</translation>
+    </message>
+    <message>
+        <source>The password must be at least %1 characters long.</source>
+        <translation>Пароль должен содержать не менее %1 символов.</translation>
+    </message>
+    <message>
+        <source>The passwords don&apos;t match.</source>
+        <translation>Пароли не совпадают.</translation>
+    </message>
+    <message>
+        <source>Users</source>
+        <translation>Пользователи</translation>
+    </message>
+    <message>
+        <source>Your password was changed. Other browsers and devices where you were logged in have been logged out.</source>
+        <translation>Ваш пароль изменён. Другие браузеры и устройства, где вы вошли, выполнили выход.</translation>
+    </message>
+</context>
+<context>
+    <name>WebUIActivity</name>
+    <message>
+        <source>Action</source>
+        <translation>Действие</translation>
+    </message>
+    <message>
+        <source>Result</source>
+        <translation>Результат</translation>
+    </message>
+    <message>
+        <source>Role</source>
+        <translation>Роль</translation>
+    </message>
+    <message>
+        <source>Time</source>
+        <translation>Время</translation>
     </message>
 </context>
 </TS>

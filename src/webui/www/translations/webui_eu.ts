@@ -223,6 +223,81 @@ The piece hash will be checked when it is requested for the first time by a peer
         <source>%1 needed · %2 free</source>
         <translation type="unfinished" />
     </message>
+    <message>
+        <source>Don&apos;t create subfolder</source>
+        <translation>Ez sortu azpiagiritegia</translation>
+    </message>
+    <message>
+        <source>Never show again</source>
+        <translation>Ez erakutsi berriro</translation>
+    </message>
+    <message>
+        <source>Select None</source>
+        <translation>Ez hautatu ezer</translation>
+    </message>
+    <message>
+        <source>Your role saves torrents in the default folders.</source>
+        <translation>Zure rolak torrentak lehenetsitako karpetetan gordetzen ditu.</translation>
+    </message>
+</context>
+<context>
+    <name>AdvancedSettings</name>
+    <message>
+        <source>General</source>
+        <translation>Orokorra</translation>
+    </message>
+    <message>
+        <source>Network</source>
+        <translation>Sarea</translation>
+    </message>
+    <message>
+        <source>Storage</source>
+        <translation>Biltegiratzea</translation>
+    </message>
+    <message>
+        <source>Peers and trackers</source>
+        <translation>Hartzaileak eta aztarnariak</translation>
+    </message>
+    <message>
+        <source>Program behavior</source>
+        <translation>Programaren portaera</translation>
+    </message>
+    <message>
+        <source>Display and notifications</source>
+        <translation>Pantaila eta jakinarazpenak</translation>
+    </message>
+    <message>
+        <source>Network connection</source>
+        <translation>Sareko elkarketa</translation>
+    </message>
+    <message>
+        <source>Security and privacy</source>
+        <translation>Segurtasuna eta pribatutasuna</translation>
+    </message>
+    <message>
+        <source>Connection tuning</source>
+        <translation>Elkarketaren doikuntza</translation>
+    </message>
+    <message>
+        <source>Saving and torrent files</source>
+        <translation>Gordetzea eta torrent fitxategiak</translation>
+    </message>
+    <message>
+        <source>Disk and memory</source>
+        <translation>Diskoa eta memoria</translation>
+    </message>
+    <message>
+        <source>Trackers</source>
+        <translation>Aztarnariak</translation>
+    </message>
+    <message>
+        <source>Peers and seeding</source>
+        <translation>Hartzaileak eta emaritza</translation>
+    </message>
+    <message>
+        <source>DHT and I2P</source>
+        <translation>DHT eta I2P</translation>
+    </message>
 </context>
 <context>
     <name>CategoryFilterModel</name>
@@ -623,6 +698,14 @@ The piece hash will be checked when it is requested for the first time by a peer
         <source>More</source>
         <translation>Gehiago</translation>
     </message>
+    <message>
+        <source>Change Password...</source>
+        <translation>Aldatu pasahitza...</translation>
+    </message>
+    <message>
+        <source>Signed in as</source>
+        <translation>Saioa hasita honekin</translation>
+    </message>
 </context>
 <context>
     <name>MainWindow</name>
@@ -929,6 +1012,34 @@ The piece hash will be checked when it is requested for the first time by a peer
     <message>
         <source>Resume Session</source>
         <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Global Speed Limits</source>
+        <translation>Abiadura Muga Orokorrak</translation>
+    </message>
+    <message>
+        <source>Pause Session</source>
+        <translation>Pausatu saioa</translation>
+    </message>
+    <message>
+        <source>Pause session</source>
+        <translation>Pausatu saioa</translation>
+    </message>
+    <message>
+        <source>Resume Session</source>
+        <translation>Jarraitu saioarekin</translation>
+    </message>
+    <message>
+        <source>Resume session</source>
+        <translation>Jarraitu saioarekin</translation>
+    </message>
+    <message>
+        <source>Your account can&apos;t add torrents.</source>
+        <translation>Zure kontuak ezin ditu torrentak gehitu.</translation>
+    </message>
+    <message>
+        <source>[PAUSED]</source>
+        <translation>[PAUSATUTA]</translation>
     </message>
 </context>
 <context>
@@ -2515,6 +2626,182 @@ Erabili ';' sarrera ugari banantzeko. '*' ordez-hizkia erabili daiteke.</transla
         <source>a@x.com;b@y.com,c@z.com - send two emails: the first to just a@x.com, the second to both b@y.com and c@z.com</source>
         <translation type="unfinished" />
     </message>
+    <message>
+        <source>0 means users are logged out after the session timeout.</source>
+        <translation>0 esan nahi du erabiltzaileak saioaren denbora-muga amaitzean saiotik ateratzen direla.</translation>
+    </message>
+    <message>
+        <source>Access</source>
+        <translation>Sarbidea</translation>
+    </message>
+    <message>
+        <source>Allow this login when user accounts exist</source>
+        <translation>Baimendu saio-hasiera hau erabiltzaile-kontuak daudenean</translation>
+    </message>
+    <message>
+        <source>Also save search results</source>
+        <translation>Gorde bilaketa-emaitzak ere</translation>
+    </message>
+    <message>
+        <source>Also when addition is cancelled</source>
+        <translation>Baita gehitzea ezeztatutakoan</translation>
+    </message>
+    <message>
+        <source>Below normal</source>
+        <translation>Arruntetik behera</translation>
+    </message>
+    <message>
+        <source>Changes to users, roles and logins apply at once.</source>
+        <translation>Erabiltzaile, rol eta saio-hasieretako aldaketak berehala aplikatzen dira.</translation>
+    </message>
+    <message>
+        <source>Don&apos;t create subfolder</source>
+        <translation>Ez sortu azpiagiritegia</translation>
+    </message>
+    <message>
+        <source>Example:</source>
+        <translation>Adibidea:</translation>
+    </message>
+    <message>
+        <source>I2P (experimental)</source>
+        <translation>I2P (esperimentala)</translation>
+    </message>
+    <message>
+        <source>Keep WebUI activity log for:</source>
+        <translation>Mantendu WebUI jarduera-erregistroa:</translation>
+    </message>
+    <message>
+        <source>Keep unselected files in &quot;.unwanted&quot; folder</source>
+        <translation>Gorde hautatu gabeko fitxategiak &quot;.unwanted&quot; karpetan</translation>
+    </message>
+    <message>
+        <source>Keep users logged in for:</source>
+        <translation>Mantendu erabiltzaileak saioan:</translation>
+    </message>
+    <message>
+        <source>Language:</source>
+        <translation>Hizkuntza:</translation>
+    </message>
+    <message>
+        <source>Lock account after consecutive failures:</source>
+        <translation>Blokeatu kontua jarraian huts egin ondoren:</translation>
+    </message>
+    <message>
+        <source>Logins and Activity Log</source>
+        <translation>Saio-hasierak eta jarduera-erregistroa</translation>
+    </message>
+    <message>
+        <source>Low</source>
+        <translation>Apala</translation>
+    </message>
+    <message>
+        <source>Maximum active checking torrents:</source>
+        <translation>Gehienezko egiaztapen-torrent aktibo:</translation>
+    </message>
+    <message>
+        <source>Medium</source>
+        <translation>Ertaina</translation>
+    </message>
+    <message>
+        <source>No settings match</source>
+        <translation>Ez dago ezarpen egokirik</translation>
+    </message>
+    <message>
+        <source>Process memory priority:</source>
+        <translation>Prozesuaren memoria-lehentasuna:</translation>
+    </message>
+    <message>
+        <source>Save search tabs</source>
+        <translation>Gorde bilaketa-fitxak</translation>
+    </message>
+    <message>
+        <source>Search settings</source>
+        <translation>Bilatu ezarpenetan</translation>
+    </message>
+    <message>
+        <source>Service:</source>
+        <translation>Zerbitzua:</translation>
+    </message>
+    <message>
+        <source>Show console window</source>
+        <translation>Erakutsi kontsolaren leihoa</translation>
+    </message>
+    <message>
+        <source>Show the window when adding a torrent</source>
+        <translation>Erakutsi leihoa torrent bat gehitzean</translation>
+    </message>
+    <message>
+        <source>Specify reverse proxy IPs (or subnets, e.g. 0.0.0.0/24) in order to use forwarded client address (X-Forwarded-For header). Use &apos;;&apos; to split multiple entries.</source>
+        <translation>Zehaztu alderantzizko proxy IPak (edo azpisareak, adib. 0.0.0.0/24) birbidalitako bezeroaren helbidea (X-Forwarded-For goiburua) erabiltzeko. Erabili &apos;;&apos; hainbat sarrera banatzeko.</translation>
+    </message>
+    <message>
+        <source>Status bar and log</source>
+        <translation>Egoera-barra eta erregistroa</translation>
+    </message>
+    <message>
+        <source>The WebUI activity log can be kept for 1 to 3650 days.</source>
+        <translation>WebUI jarduera-erregistroa 1etik 3650 egunera arte gorde daiteke.</translation>
+    </message>
+    <message>
+        <source>The settings below apply with OK or Apply.</source>
+        <translation>Beheko ezarpenak Ados edo Aplikatu botoiarekin aplikatzen dira.</translation>
+    </message>
+    <message>
+        <source>Tip: Encapsulate parameter with quotation marks to avoid text being cut off at whitespace (e.g., &quot;%N&quot;)</source>
+        <translation>Aholkua: Enkapsulatu parametroa adartxo artean idazkia zuriune batekin ebakia izatea saihesteko (adib., &quot;%N&quot;)</translation>
+    </message>
+    <message>
+        <source>Transfer List</source>
+        <translation>Eskualdaketa Zerrenda</translation>
+    </message>
+    <message>
+        <source>Until the first user account is created, this login always works.</source>
+        <translation>Lehen erabiltzaile-kontua sortu arte, saio-hasiera honek beti funtzionatzen du.</translation>
+    </message>
+    <message>
+        <source>User</source>
+        <translation>Erabiltzailea</translation>
+    </message>
+    <message>
+        <source>User Accounts</source>
+        <translation>Erabiltzaile-kontuak</translation>
+    </message>
+    <message>
+        <source>Users can be kept logged in for 0 to 365 days.</source>
+        <translation>Erabiltzaileak 0tik 365 egunera arte mantendu daitezke saioan.</translation>
+    </message>
+    <message>
+        <source>Very low</source>
+        <translation>Oso apala</translation>
+    </message>
+    <message>
+        <source>Warning! Data loss possible!</source>
+        <translation>Kontuz! Datuak galdu daitezke!</translation>
+    </message>
+    <message>
+        <source>When Default Save/Incomplete Path changed:</source>
+        <translation>Gorde/Osagabe bide-izen lehenetsia aldatzen denean:</translation>
+    </message>
+    <message>
+        <source>Whitelist for filtering HTTP Host header values.
+In order to defend against DNS rebinding attack,
+you should put in domain names used by WebUI server.
+
+Use &apos;;&apos; to split multiple entries. Can use wildcard &apos;*&apos;.</source>
+        <translation>Zerrenda-zuria HTTP Hostalari idazburu balioak iragazteko.
+DNS berrelkartze erasoen aurka babesteko,
+WebEI zerbitzariak erabiltzen dituen domeinu izenetan jarri behar duzu.
+
+Erabili &apos;;&apos; sarrera ugari banantzeko. &apos;*&apos; ordez-hizkia erabili daiteke.</translation>
+    </message>
+    <message>
+        <source>You changed the address, port or HTTPS setting of the WebUI. Saving moves the WebUI, so Options will save, close and reload the page, the same as OK. If the page doesn&apos;t come back, open the WebUI at its new address.\n\nSave anyway?</source>
+        <translation>WebUI-ren helbidea, ataka edo HTTPS ezarpena aldatu duzu. Gordetzeak WebUI mugitzen du, beraz Aukerek gorde, itxi eta orria birkargatuko dute, Ados bezala. Orria itzultzen ez bada, ireki WebUI bere helbide berrian.\n\nGorde hala ere?</translation>
+    </message>
+    <message>
+        <source>lock for:</source>
+        <translation>blokeatu:</translation>
+    </message>
 </context>
 <context>
     <name>PeerListWidget</name>
@@ -3055,6 +3342,142 @@ Erabili ';' sarrera ugari banantzeko. '*' ordez-hizkia erabili daiteke.</transla
     <message>
         <source>The time it takes from receiving a request from a peer until we're sending the response back on the socket</source>
         <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Activity</source>
+        <translation>Jarduera</translation>
+    </message>
+    <message>
+        <source>All time</source>
+        <translation>Denbora osoa</translation>
+    </message>
+    <message>
+        <source>Before tracking began</source>
+        <translation>Jarraipena hasi aurretik</translation>
+    </message>
+    <message>
+        <source>By month</source>
+        <translation>Hilabeteka</translation>
+    </message>
+    <message>
+        <source>Counts the requests that added a download. Apps without a login, such as Sonarr and Radarr, are shown as (localhost). Downloads added in the desktop window are not counted.</source>
+        <translation>Deskarga bat gehitu duten eskaerak zenbatzen ditu. Saio-hasierarik gabeko aplikazioak, Sonarr eta Radarr bezala, (localhost) gisa agertzen dira. Mahaigaineko leihoan gehitutako deskargak ez dira zenbatzen.</translation>
+    </message>
+    <message>
+        <source>Current speed:</source>
+        <translation>Uneko abiadura:</translation>
+    </message>
+    <message>
+        <source>DHT nodes:</source>
+        <translation>DHT nodoak:</translation>
+    </message>
+    <message>
+        <source>Data discarded this session:</source>
+        <translation>Saio honetan baztertutako datuak:</translation>
+    </message>
+    <message>
+        <source>Disk</source>
+        <translation>Diskoa</translation>
+    </message>
+    <message>
+        <source>History</source>
+        <translation>Historia</translation>
+    </message>
+    <message>
+        <source>Last 12 months</source>
+        <translation>Azken 12 hilabeteak</translation>
+    </message>
+    <message>
+        <source>Last 7 days</source>
+        <translation>Azken 7 egunak</translation>
+    </message>
+    <message>
+        <source>Last month</source>
+        <translation>Joan den hilabetea</translation>
+    </message>
+    <message>
+        <source>Month</source>
+        <translation>Hilabetea</translation>
+    </message>
+    <message>
+        <source>Nothing added yet</source>
+        <translation>Oraindik ez da ezer gehitu</translation>
+    </message>
+    <message>
+        <source>Off</source>
+        <translation>Desaktibatuta</translation>
+    </message>
+    <message>
+        <source>Overview</source>
+        <translation>Ikuspegi orokorra</translation>
+    </message>
+    <message>
+        <source>Peers waiting on disk reads:</source>
+        <translation>Diskotik irakurtzeko zain dauden hartzaileak:</translation>
+    </message>
+    <message>
+        <source>Peers waiting on disk writes:</source>
+        <translation>Diskoan idazteko zain dauden hartzaileak:</translation>
+    </message>
+    <message>
+        <source>Period</source>
+        <translation>Aldia</translation>
+    </message>
+    <message>
+        <source>Request latency:</source>
+        <translation>Eskaeraren latentzia:</translation>
+    </message>
+    <message>
+        <source>Running for:</source>
+        <translation>Martxan:</translation>
+    </message>
+    <message>
+        <source>Share ratio</source>
+        <translation>Partekatze-erlazioa</translation>
+    </message>
+    <message>
+        <source>Share ratio:</source>
+        <translation>Partekatze-erlazioa:</translation>
+    </message>
+    <message>
+        <source>Technical</source>
+        <translation>Teknikoa</translation>
+    </message>
+    <message>
+        <source>This month</source>
+        <translation>Hilabete hau</translation>
+    </message>
+    <message>
+        <source>This session</source>
+        <translation>Saio hau</translation>
+    </message>
+    <message>
+        <source>Today</source>
+        <translation>Gaur</translation>
+    </message>
+    <message>
+        <source>Torrents downloading:</source>
+        <translation>Deskargatzen ari diren torrentak:</translation>
+    </message>
+    <message>
+        <source>Torrents seeding:</source>
+        <translation>Emaritzan ari diren torrentak:</translation>
+    </message>
+    <message>
+        <source>Torrents stopped:</source>
+        <translation>Geldituta dauden torrentak:</translation>
+    </message>
+    <message>
+        <source>Torrents with errors:</source>
+        <translation>Erroreak dituzten torrentak:</translation>
+    </message>
+    <message>
+        <source>Tracking since:</source>
+        <translation>Jarraipena hasi zenetik:</translation>
+    </message>
+    <message>
+        <source>WebUI downloads added, this month</source>
+        <translation>WebUI bidez gehitutako deskargak, hilabete honetan</translation>
     </message>
 </context>
 <context>
@@ -3842,6 +4265,10 @@ Erabili ';' sarrera ugari banantzeko. '*' ordez-hizkia erabili daiteke.</transla
         <source>Content Path</source>
         <translation type="unfinished" />
     </message>
+    <message>
+        <source>Remove all tags from selected torrents?</source>
+        <translation>Kendu etiketa guztiak hautatutako torrentetatik?</translation>
+    </message>
 </context>
 <context>
     <name>UpDownRatioDialog</name>
@@ -3914,6 +4341,10 @@ Erabili ';' sarrera ugari banantzeko. '*' ordez-hizkia erabili daiteke.</transla
     <message>
         <source>Remove tracker</source>
         <translation>Kendu aztarnaria</translation>
+    </message>
+    <message>
+        <source>This choice is remembered for the next removal.</source>
+        <translation>Aukera hau hurrengo kentzeko gogoratuko da.</translation>
     </message>
 </context>
 <context>
@@ -4127,6 +4558,34 @@ Erabili ';' sarrera ugari banantzeko. '*' ordez-hizkia erabili daiteke.</transla
         <source>Select plugins</source>
         <translation type="unfinished" />
     </message>
+    <message>
+        <source>Category to search in</source>
+        <translation>Bilatzeko kategoria</translation>
+    </message>
+    <message>
+        <source>Close the selected search</source>
+        <translation>Itxi hautatutako bilaketa</translation>
+    </message>
+    <message>
+        <source>Empty search pattern</source>
+        <translation>Bilaketa eredua hutsik</translation>
+    </message>
+    <message>
+        <source>Search engines to use</source>
+        <translation>Erabiltzeko bilaketa-motorrak</translation>
+    </message>
+    <message>
+        <source>Search for torrents...</source>
+        <translation>Bilatu torrentak...</translation>
+    </message>
+    <message>
+        <source>Searches</source>
+        <translation>Bilaketak</translation>
+    </message>
+    <message>
+        <source>Type a search above and press Enter.</source>
+        <translation>Idatzi bilaketa bat goian eta sakatu Sartu.</translation>
+    </message>
 </context>
 <context>
     <name>PluginSelectDlg</name>
@@ -4165,6 +4624,10 @@ Erabili ';' sarrera ugari banantzeko. '*' ordez-hizkia erabili daiteke.</transla
     <message>
         <source>Search plugins</source>
         <translation>Bilatu pluginak</translation>
+    </message>
+    <message>
+        <source>Warning: Be sure to comply with your country&apos;s copyright laws when downloading torrents from any of these search engines.</source>
+        <translation>Kontuz: Zihurtatu zure herrialdeko kopia-eskubide legeak betetzen dituzula torrentak jeisterakoan bilaketa gailu hauen bidez.</translation>
     </message>
 </context>
 <context>
@@ -4388,6 +4851,30 @@ Erabili ';' sarrera ugari banantzeko. '*' ordez-hizkia erabili daiteke.</transla
         <source>qBittorrent icon</source>
         <translation>qBittorrent ikonoa</translation>
     </message>
+    <message>
+        <source>Based on:</source>
+        <translation>Oinarria:</translation>
+    </message>
+    <message>
+        <source>Edition version:</source>
+        <translation>Argitalpenaren bertsioa:</translation>
+    </message>
+    <message>
+        <source>Kettle Edition is a personal build of qBittorrent that adds user accounts with roles for the WebUI and the desktop app, an activity log, and an installable WebUI with a phone layout. A kettle is a group of hawks soaring together. This is an unofficial build, not affiliated with the qBittorrent project.</source>
+        <translation>Kettle Edition qBittorrent-en eraikuntza pertsonal bat da, WebUI eta mahaigaineko aplikaziorako rolak dituzten erabiltzaile-kontuak, jarduera-erregistroa eta telefonorako diseinua duen WebUI instalagarria gehitzen dituena. Kettle elkarrekin hegan egiten duten zakur-hegaztien taldea da. Eraikuntza ez-ofiziala da, qBittorrent proiektuarekin loturarik gabea.</translation>
+    </message>
+    <message>
+        <source>Maintainer:</source>
+        <translation>Mantentzailea:</translation>
+    </message>
+    <message>
+        <source>This edition</source>
+        <translation>Argitalpen hau</translation>
+    </message>
+    <message>
+        <source>qBittorrent project:</source>
+        <translation>qBittorrent proiektua:</translation>
+    </message>
 </context>
 <context>
     <name>OptionDialog</name>
@@ -4489,6 +4976,46 @@ Erabili ';' sarrera ugari banantzeko. '*' ordez-hizkia erabili daiteke.</transla
     <message>
         <source>Open shared download window</source>
         <translation type="unfinished" />
+    </message>
+    <message>
+        <source>%1 of %2 shown</source>
+        <translation>%1 / %2 erakusten</translation>
+    </message>
+    <message>
+        <source>%1 of %2 shown (%3 hidden)</source>
+        <translation>%1 / %2 erakusten (%3 ezkutuan)</translation>
+    </message>
+    <message>
+        <source>Close all searches</source>
+        <translation>Itxi bilaketa guztiak</translation>
+    </message>
+    <message>
+        <source>Close search</source>
+        <translation>Itxi bilaketa</translation>
+    </message>
+    <message>
+        <source>Filter search results...</source>
+        <translation>Iragazi bilaketa emaitzak...</translation>
+    </message>
+    <message>
+        <source>Finished: %1</source>
+        <translation>Amaituta: %1</translation>
+    </message>
+    <message>
+        <source>Refresh search</source>
+        <translation>Eguneratu bilaketa</translation>
+    </message>
+    <message>
+        <source>Search aborted: %1</source>
+        <translation>Bilaketa eten da: %1</translation>
+    </message>
+    <message>
+        <source>Search returned no results</source>
+        <translation>Bilaketak ez du emaitzik itzuli</translation>
+    </message>
+    <message>
+        <source>Searching: %1</source>
+        <translation>Bilatzen: %1</translation>
     </message>
 </context>
 <context>
@@ -4627,6 +5154,10 @@ Erabili ';' sarrera ugari banantzeko. '*' ordez-hizkia erabili daiteke.</transla
     <message>
         <source>Blocked opening RSS article URL. Only http:// and https:// links can be opened.</source>
         <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Details</source>
+        <translation>Xehetasunak</translation>
     </message>
 </context>
 <context>
@@ -4905,6 +5436,10 @@ Sostengatutako heuskarriak: S01E01, 1x1, 2017.12.31 eta 31.12.2017 (Data heuskar
         <source>Import</source>
         <translation type="unfinished" />
     </message>
+    <message>
+        <source>Don&apos;t create subfolder</source>
+        <translation>Ez sortu azpiagiritegia</translation>
+    </message>
 </context>
 <context>
     <name>TrackerFiltersList</name>
@@ -5094,6 +5629,26 @@ Sostengatutako heuskarriak: S01E01, 1x1, 2017.12.31 eta 31.12.2017 (Data heuskar
         <source>Choose a log level...</source>
         <translation>Aukeratu erregistro-maila...</translation>
     </message>
+    <message>
+        <source>Export...</source>
+        <translation>Esportatu...</translation>
+    </message>
+    <message>
+        <source>Filter activity</source>
+        <translation>Iragazi jarduera</translation>
+    </message>
+    <message>
+        <source>Result:</source>
+        <translation>Emaitza:</translation>
+    </message>
+    <message>
+        <source>User:</source>
+        <translation>Erabiltzailea:</translation>
+    </message>
+    <message>
+        <source>WebUI Activity</source>
+        <translation>WebUI jarduera</translation>
+    </message>
 </context>
 <context>
     <name>TrackersFilterWidget</name>
@@ -5163,6 +5718,14 @@ Sostengatutako heuskarriak: S01E01, 1x1, 2017.12.31 eta 31.12.2017 (Data heuskar
     <message>
         <source>Torrent share limits</source>
         <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Torrent share limits</source>
+        <translation>Torrentaren elkarbanatze mugak</translation>
+    </message>
+    <message>
+        <source>Your role saves torrents in the default folders.</source>
+        <translation>Zure rolak torrentak lehenetsitako karpetetan gordetzen ditu.</translation>
     </message>
 </context>
 <context>
@@ -5262,6 +5825,14 @@ Sostengatutako heuskarriak: S01E01, 1x1, 2017.12.31 eta 31.12.2017 (Data heuskar
     <message>
         <source>Invalid Username or Password.</source>
         <translation>Erabiltzaile-izen edo Sarhitz baliogabea.</translation>
+    </message>
+    <message>
+        <source>A kettle is a group of hawks soaring together.</source>
+        <translation>Kettle elkarrekin hegan egiten duten zakur-hegaztien taldea da.</translation>
+    </message>
+    <message>
+        <source>Sign in</source>
+        <translation>Hasi saioa</translation>
     </message>
 </context>
 <context>
@@ -5470,6 +6041,22 @@ Sostengatutako heuskarriak: S01E01, 1x1, 2017.12.31 eta 31.12.2017 (Data heuskar
         <source>If checked, filenames starting with a period punctuation mark `.` will not be added to the created torrent.</source>
         <translation type="unfinished" />
     </message>
+    <message>
+        <source>Align to piece boundary for files larger than:</source>
+        <translation>Lerrokatu atal mugan hau baino handiagoak diren agiriak:</translation>
+    </message>
+    <message>
+        <source>Optimize alignment</source>
+        <translation>Hoberendu lerrokapena</translation>
+    </message>
+    <message>
+        <source>Private torrent (Won&apos;t distribute on DHT network)</source>
+        <translation>Torrent pribatua (Ez da DHT sarean banatzen)</translation>
+    </message>
+    <message>
+        <source>Start seeding immediately</source>
+        <translation>Hasi emaritza berehala</translation>
+    </message>
 </context>
 <context>
     <name>DownloadFromURLDialog</name>
@@ -5580,6 +6167,10 @@ Sostengatutako heuskarriak: S01E01, 1x1, 2017.12.31 eta 31.12.2017 (Data heuskar
         <source>Failed to set speed limits</source>
         <translation type="unfinished" />
     </message>
+    <message>
+        <source>Speed limits</source>
+        <translation>Abiadura mugak</translation>
+    </message>
 </context>
 <context>
     <name>ListWidget</name>
@@ -5590,6 +6181,10 @@ Sostengatutako heuskarriak: S01E01, 1x1, 2017.12.31 eta 31.12.2017 (Data heuskar
     <message>
         <source>Resize</source>
         <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Reset Auto Width</source>
+        <translation>Berrezarri zabalera automatikoa</translation>
     </message>
 </context>
 <context>
@@ -5720,6 +6315,30 @@ Sostengatutako heuskarriak: S01E01, 1x1, 2017.12.31 eta 31.12.2017 (Data heuskar
         <source>Remove torrent</source>
         <translation type="unfinished" />
     </message>
+    <message>
+        <source>Action when the limit is reached:</source>
+        <translation>Ekintza mugara iristen denean:</translation>
+    </message>
+    <message>
+        <source>Inactive seeding time:</source>
+        <translation>Denbora inaktiboa emaritzen:</translation>
+    </message>
+    <message>
+        <source>Ratio:</source>
+        <translation>Proportzioa:</translation>
+    </message>
+    <message>
+        <source>Seeding time:</source>
+        <translation>Emaritza denbora:</translation>
+    </message>
+    <message>
+        <source>Set to</source>
+        <translation>Ezarri honetara</translation>
+    </message>
+    <message>
+        <source>Unlimited</source>
+        <translation>Mugagabea</translation>
+    </message>
 </context>
 <context>
     <name>TorrentContent</name>
@@ -5730,6 +6349,216 @@ Sostengatutako heuskarriak: S01E01, 1x1, 2017.12.31 eta 31.12.2017 (Data heuskar
     <message>
         <source>Not available for folders</source>
         <translation type="unfinished" />
+    </message>
+</context>
+<context>
+    <name>UserAccounts</name>
+    <message>
+        <source>(this browser)</source>
+        <translation>(nabigatzaile hau)</translation>
+    </message>
+    <message>
+        <source>A role decides what its users are allowed to do.</source>
+        <translation>Rol batek bere erabiltzaileek zer egin dezaketen erabakitzen du.</translation>
+    </message>
+    <message>
+        <source>Add Role</source>
+        <translation>Gehitu rola</translation>
+    </message>
+    <message>
+        <source>Add Role...</source>
+        <translation>Gehitu rola...</translation>
+    </message>
+    <message>
+        <source>Add User</source>
+        <translation>Gehitu erabiltzailea</translation>
+    </message>
+    <message>
+        <source>Add User...</source>
+        <translation>Gehitu erabiltzailea...</translation>
+    </message>
+    <message>
+        <source>Are you sure you want to remove the role &apos;%1&apos;?</source>
+        <translation>Ziur zaude &apos;%1&apos; rola kendu nahi duzula?</translation>
+    </message>
+    <message>
+        <source>Are you sure you want to remove the user &apos;%1&apos;?</source>
+        <translation>Ziur zaude &apos;%1&apos; erabiltzailea kendu nahi duzula?</translation>
+    </message>
+    <message>
+        <source>At least %1 characters</source>
+        <translation>Gutxienez %1 karaktere</translation>
+    </message>
+    <message>
+        <source>Browser</source>
+        <translation>Nabigatzailea</translation>
+    </message>
+    <message>
+        <source>Browsers and devices where someone is logged in with a user account.</source>
+        <translation>Erabiltzaile-kontu batekin norbait saioan dagoen nabigatzaileak eta gailuak.</translation>
+    </message>
+    <message>
+        <source>Change Password</source>
+        <translation>Aldatu pasahitza</translation>
+    </message>
+    <message>
+        <source>Confirm password:</source>
+        <translation>Berretsi pasahitza:</translation>
+    </message>
+    <message>
+        <source>Created</source>
+        <translation>Sortuta</translation>
+    </message>
+    <message>
+        <source>Current password:</source>
+        <translation>Uneko pasahitza:</translation>
+    </message>
+    <message>
+        <source>Description</source>
+        <translation>Deskribapena</translation>
+    </message>
+    <message>
+        <source>Description:</source>
+        <translation>Deskribapena:</translation>
+    </message>
+    <message>
+        <source>Disable</source>
+        <translation>Desgaitu</translation>
+    </message>
+    <message>
+        <source>Disable this account</source>
+        <translation>Desgaitu kontu hau</translation>
+    </message>
+    <message>
+        <source>Edit Role</source>
+        <translation>Editatu rola</translation>
+    </message>
+    <message>
+        <source>Edit User</source>
+        <translation>Editatu erabiltzailea</translation>
+    </message>
+    <message>
+        <source>Edit...</source>
+        <translation>Editatu...</translation>
+    </message>
+    <message>
+        <source>Enable</source>
+        <translation>Gaitu</translation>
+    </message>
+    <message>
+        <source>Enter a role name.</source>
+        <translation>Sartu rol-izen bat.</translation>
+    </message>
+    <message>
+        <source>Enter a username.</source>
+        <translation>Sartu erabiltzaile-izen bat.</translation>
+    </message>
+    <message>
+        <source>Expires</source>
+        <translation>Iraungitzen da</translation>
+    </message>
+    <message>
+        <source>Gives control over the PC or qBittorrent itself</source>
+        <translation>PCaren edo qBittorrent-en beraren kontrola ematen du</translation>
+    </message>
+    <message>
+        <source>Last active</source>
+        <translation>Azken jarduera</translation>
+    </message>
+    <message>
+        <source>Last login</source>
+        <translation>Azken saio-hasiera</translation>
+    </message>
+    <message>
+        <source>Leave empty to keep the current password</source>
+        <translation>Utzi hutsik uneko pasahitza mantentzeko</translation>
+    </message>
+    <message>
+        <source>Log Out</source>
+        <translation>Itxi saioa</translation>
+    </message>
+    <message>
+        <source>Log Out Everywhere</source>
+        <translation>Itxi saioa nonahi</translation>
+    </message>
+    <message>
+        <source>Logged In</source>
+        <translation>Saioan daudenak</translation>
+    </message>
+    <message>
+        <source>Logged in</source>
+        <translation>Saioa hasita</translation>
+    </message>
+    <message>
+        <source>New password:</source>
+        <translation>Pasahitza berria:</translation>
+    </message>
+    <message>
+        <source>No accounts yet, so everyone still uses the shared WebUI login. Add an Admin account first.</source>
+        <translation>Oraindik ez dago konturik, beraz denek WebUI-ko partekatutako saio-hasiera erabiltzen dute oraindik. Gehitu lehenik Admin kontu bat.</translation>
+    </message>
+    <message>
+        <source>People who can log in to the WebUI with their own username and password.</source>
+        <translation>Beren erabiltzaile-izen eta pasahitzarekin WebUI-ra sar daitezkeen pertsonak.</translation>
+    </message>
+    <message>
+        <source>Permissions</source>
+        <translation>Baimenak</translation>
+    </message>
+    <message>
+        <source>Role</source>
+        <translation>Rola</translation>
+    </message>
+    <message>
+        <source>Role:</source>
+        <translation>Rola:</translation>
+    </message>
+    <message>
+        <source>Roles</source>
+        <translation>Rolak</translation>
+    </message>
+    <message>
+        <source>The password must be at least %1 characters long.</source>
+        <translation>Pasahitzak gutxienez %1 karaktere izan behar ditu.</translation>
+    </message>
+    <message>
+        <source>The passwords don&apos;t match.</source>
+        <translation>Pasahitzak ez datoz bat.</translation>
+    </message>
+    <message>
+        <source>User</source>
+        <translation>Erabiltzailea</translation>
+    </message>
+    <message>
+        <source>Users</source>
+        <translation>Erabiltzaileak</translation>
+    </message>
+    <message>
+        <source>Your password was changed. Other browsers and devices where you were logged in have been logged out.</source>
+        <translation>Zure pasahitza aldatu da. Saioan egon zaren beste nabigatzaile eta gailuetan saioa itxi da.</translation>
+    </message>
+</context>
+<context>
+    <name>WebUIActivity</name>
+    <message>
+        <source>Action</source>
+        <translation>Ekintza</translation>
+    </message>
+    <message>
+        <source>Result</source>
+        <translation>Emaitza</translation>
+    </message>
+    <message>
+        <source>Role</source>
+        <translation>Rola</translation>
+    </message>
+    <message>
+        <source>Time</source>
+        <translation>Ordua</translation>
+    </message>
+    <message>
+        <source>User</source>
+        <translation>Erabiltzailea</translation>
     </message>
 </context>
 </TS>

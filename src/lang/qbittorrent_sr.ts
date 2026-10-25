@@ -141,6 +141,62 @@
         <source>The free IP to Country Lite database by DB-IP is used for resolving the countries of peers. The database is licensed under the Creative Commons Attribution 4.0 International License</source>
         <translation>Бесплатна IP to Country Lite база података компаније DB-IP користи се за разврставање земаља вршњака. База података је лиценцирана под Creative Commons Attribution 4.0 International Дозволом</translation>
     </message>
+    <message>
+        <source>This edition</source>
+        <translation>Ово издање</translation>
+    </message>
+    <message>
+        <source>Edition version:</source>
+        <translation>Верзија издања:</translation>
+    </message>
+    <message>
+        <source>Based on:</source>
+        <translation>Заснован на:</translation>
+    </message>
+    <message>
+        <source>Maintainer:</source>
+        <translation>Одржавалац:</translation>
+    </message>
+    <message>
+        <source>qBittorrent project:</source>
+        <translation>qBittorrent пројекат:</translation>
+    </message>
+    <message>
+        <source>Kettle Edition is a personal build of qBittorrent that adds user accounts with roles for the WebUI and the desktop app, an activity log, and an installable WebUI with a phone layout. A kettle is a group of hawks soaring together. This is an unofficial build, not affiliated with the qBittorrent project.</source>
+        <translation>Kettle Edition је лична верзија qBittorrent-а која додаје корисничке налоге са улогама за WebUI и десктоп апликацију, дневник активности и WebUI који се може инсталирати са распоредом за телефон. Kettle је јато јастребова који заједно лебде. Ово је незванична верзија која није повезана са пројектом qBittorrent.</translation>
+    </message>
+    <message>
+        <source>N/A</source>
+        <translation>Н/Д</translation>
+    </message>
+    <message>
+        <source>This edition</source>
+        <translation>Ово издање</translation>
+    </message>
+    <message>
+        <source>Edition version:</source>
+        <translation>Верзија издања:</translation>
+    </message>
+    <message>
+        <source>Based on:</source>
+        <translation>Заснован на:</translation>
+    </message>
+    <message>
+        <source>Maintainer:</source>
+        <translation>Одржавалац:</translation>
+    </message>
+    <message>
+        <source>qBittorrent project:</source>
+        <translation>qBittorrent пројекат:</translation>
+    </message>
+    <message>
+        <source>Kettle Edition is a personal build of qBittorrent that adds user accounts with roles for the WebUI and the desktop app, an activity log, and an installable WebUI with a phone layout. A kettle is a group of hawks soaring together. This is an unofficial build, not affiliated with the qBittorrent project.</source>
+        <translation>Kettle Edition је лична верзија qBittorrent-а која додаје корисничке налоге са улогама за WebUI и десктоп апликацију, дневник активности и WebUI који се може инсталирати са распоредом за телефон. Kettle је јато јастребова који заједно лебде. Ово је незванична верзија која није повезана са пројектом qBittorrent.</translation>
+    </message>
+    <message>
+        <source>N/A</source>
+        <translation>Н/Д</translation>
+    </message>
 </context>
 <context>
     <name>AbstractFileStorage</name>
@@ -1459,6 +1515,62 @@
         <location filename="../gui/advancedsettings.cpp" line="925"/>
         <source>Embedded tracker port</source>
         <translation>Уграђени пратилац порта</translation>
+    </message>
+    <message>
+        <source>Network</source>
+        <translation>Мрежа</translation>
+    </message>
+    <message>
+        <source>Storage</source>
+        <translation>Складиште</translation>
+    </message>
+    <message>
+        <source>Peers and trackers</source>
+        <translation>Учесници и пратиоци</translation>
+    </message>
+    <message>
+        <source>Program behavior</source>
+        <translation>Понашање програма</translation>
+    </message>
+    <message>
+        <source>Display and notifications</source>
+        <translation>Приказ и обавештења</translation>
+    </message>
+    <message>
+        <source>Network connection</source>
+        <translation>Мрежна конекција</translation>
+    </message>
+    <message>
+        <source>Security and privacy</source>
+        <translation>Сигурност и приватност</translation>
+    </message>
+    <message>
+        <source>Connection tuning</source>
+        <translation>Подешавање конекције</translation>
+    </message>
+    <message>
+        <source>Saving and torrent files</source>
+        <translation>Чување и торент датотеке</translation>
+    </message>
+    <message>
+        <source>Disk and memory</source>
+        <translation>Диск и меморија</translation>
+    </message>
+    <message>
+        <source>Peers and seeding</source>
+        <translation>Учесници и донирање</translation>
+    </message>
+    <message>
+        <source>DHT and I2P</source>
+        <translation>DHT и I2P</translation>
+    </message>
+    <message>
+        <source>General</source>
+        <translation>Опште</translation>
+    </message>
+    <message>
+        <source>Trackers</source>
+        <translation>Пратиоци</translation>
     </message>
 </context>
 <context>
@@ -3480,6 +3592,22 @@ Supports the formats: S01E01, 1x1, 2017.12.31 and 31.12.2017 (Date formats also 
         <source>Remove torrent</source>
         <translation>Уклони торент</translation>
     </message>
+    <message>
+        <source>This choice is remembered for the next removal.</source>
+        <translation>Овај избор ће бити запамћен за следеће уклањање.</translation>
+    </message>
+    <message>
+        <source>Remove</source>
+        <translation>Уклони</translation>
+    </message>
+    <message>
+        <source>This choice is remembered for the next removal.</source>
+        <translation>Овај избор ће бити запамћен за следеће уклањање.</translation>
+    </message>
+    <message>
+        <source>Remove</source>
+        <translation>Уклони</translation>
+    </message>
 </context>
 <context>
     <name>DownloadFromURLDialog</name>
@@ -3553,6 +3681,14 @@ Supports the formats: S01E01, 1x1, 2017.12.31 and 31.12.2017 (Date formats also 
         <location filename="../gui/executionlogwidget.cpp" line="99"/>
         <source>Clear</source>
         <translation>Очисти</translation>
+    </message>
+    <message>
+        <source>WebUI Activity</source>
+        <translation>WebUI активност</translation>
+    </message>
+    <message>
+        <source>WebUI Activity</source>
+        <translation>WebUI активност</translation>
     </message>
 </context>
 <context>
@@ -4726,6 +4862,46 @@ Minimum requirement: %2.</source>
         <location filename="../gui/mainwindow.cpp" line="1346"/>
         <source>Torrent Files</source>
         <translation>Торент Фајлови</translation>
+    </message>
+    <message>
+        <source>Kettle Edition %1 is available.</source>
+        <translation>Kettle Edition %1 је доступан.</translation>
+    </message>
+    <message>
+        <source>qBittorrent Kettle Edition %1 is available. It is downloaded now and installed at 4:00 AM, or when qBittorrent starts next.</source>
+        <translation>qBittorrent Kettle Edition %1 је доступан. Преузима се сада и биће инсталиран у 4:00 или при следећем покретању qBittorrent-а.</translation>
+    </message>
+    <message>
+        <source>qBittorrent Kettle Edition %1 is available. It is downloaded now. Turn on &quot;Automatically install Kettle Edition updates&quot; in Options to install it.</source>
+        <translation>qBittorrent Kettle Edition %1 је доступан. Преузима се сада. Укључите „Аутоматски инсталирај Kettle Edition ажурирања“ у Опцијама да га инсталирате.</translation>
+    </message>
+    <message>
+        <source>You have the latest qBittorrent Kettle Edition (%1).</source>
+        <translation>Имате најновији qBittorrent Kettle Edition (%1).</translation>
+    </message>
+    <message>
+        <source>Could not check for qBittorrent Kettle Edition updates. See the Execution Log for details.</source>
+        <translation>Није могуће проверити ажурирања за qBittorrent Kettle Edition. Детаље погледајте у дневнику извршавања.</translation>
+    </message>
+    <message>
+        <source>Kettle Edition %1 is available.</source>
+        <translation>Kettle Edition %1 је доступан.</translation>
+    </message>
+    <message>
+        <source>qBittorrent Kettle Edition %1 is available. It is downloaded now and installed at 4:00 AM, or when qBittorrent starts next.</source>
+        <translation>qBittorrent Kettle Edition %1 је доступан. Преузима се сада и биће инсталиран у 4:00 или при следећем покретању qBittorrent-а.</translation>
+    </message>
+    <message>
+        <source>qBittorrent Kettle Edition %1 is available. It is downloaded now. Turn on &quot;Automatically install Kettle Edition updates&quot; in Options to install it.</source>
+        <translation>qBittorrent Kettle Edition %1 је доступан. Преузима се сада. Укључите „Аутоматски инсталирај Kettle Edition ажурирања“ у Опцијама да га инсталирате.</translation>
+    </message>
+    <message>
+        <source>You have the latest qBittorrent Kettle Edition (%1).</source>
+        <translation>Имате најновији qBittorrent Kettle Edition (%1).</translation>
+    </message>
+    <message>
+        <source>Could not check for qBittorrent Kettle Edition updates. See the Execution Log for details.</source>
+        <translation>Није могуће проверити ажурирања за qBittorrent Kettle Edition. Детаље погледајте у дневнику извршавања.</translation>
     </message>
 </context>
 <context>
@@ -8500,6 +8676,190 @@ Check the Execution Log for errors.</source>
         <source>Length Error</source>
         <translation>Грешка у дужини</translation>
     </message>
+    <message>
+        <source>Search settings</source>
+        <translation>Претражи подешавања</translation>
+    </message>
+    <message>
+        <source>No settings match</source>
+        <translation>Нема одговарајућих подешавања</translation>
+    </message>
+    <message>
+        <source>User Accounts</source>
+        <translation>Кориснички налози</translation>
+    </message>
+    <message>
+        <source>Automatically install Kettle Edition updates</source>
+        <translation>Аутоматски инсталирај Kettle Edition ажурирања</translation>
+    </message>
+    <message>
+        <source>Status bar and log</source>
+        <translation>Статусна трака и дневник</translation>
+    </message>
+    <message>
+        <source>Files</source>
+        <translation>Датотеке</translation>
+    </message>
+    <message>
+        <source>Checking</source>
+        <translation>Провера</translation>
+    </message>
+    <message>
+        <source>Until the first user account is created, this login always works.</source>
+        <translation>Док се не направи први кориснички налог, ова пријава увек ради.</translation>
+    </message>
+    <message>
+        <source>Allow this login when user accounts exist</source>
+        <translation>Дозволи ову пријаву када постоје кориснички налози</translation>
+    </message>
+    <message>
+        <source>Access</source>
+        <translation>Приступ</translation>
+    </message>
+    <message>
+        <source>Changes to users, roles and logins apply at once. The settings below apply with OK or Apply.</source>
+        <translation>Промене корисника, улога и пријава примењују се одмах. Подешавања испод примењују се са У реду или Примени.</translation>
+    </message>
+    <message>
+        <source>Logins and Activity Log</source>
+        <translation>Пријаве и дневник активности</translation>
+    </message>
+    <message>
+        <source>0 means users are logged out after the session timeout.</source>
+        <translation>0 значи да се корисници одјављују након истека сесије.</translation>
+    </message>
+    <message>
+        <source>Keep users logged in for:</source>
+        <translation>Држи кориснике пријављеним:</translation>
+    </message>
+    <message>
+        <source>Until session timeout</source>
+        <translation>До истека сесије</translation>
+    </message>
+    <message>
+        <source> days</source>
+        <translation> дана</translation>
+    </message>
+    <message>
+        <source>Lock account after consecutive failures:</source>
+        <translation>Закључај налог после узастопних неуспеха:</translation>
+    </message>
+    <message>
+        <source>Keep WebUI activity log for:</source>
+        <translation>Чувај WebUI дневник активности:</translation>
+    </message>
+    <message>
+        <source>lock for:</source>
+        <translation>закључај на:</translation>
+    </message>
+    <message>
+        <source>%1 works best with Windows dark mode</source>
+        <translation>%1 најбоље ради са Windows тамним режимом</translation>
+    </message>
+    <message>
+        <source>WebUI address</source>
+        <translation>WebUI адреса</translation>
+    </message>
+    <message>
+        <source>With the WebUI address set to %1, only this PC can reach the WebUI. Remote access, including through a reverse proxy on another machine, will stop working.
+
+Save anyway?</source>
+        <translation>Када је WebUI адреса подешена на %1, само овај рачунар може приступити WebUI-ју. Удаљени приступ, укључујући преко обрнутог проксија на другој машини, престаће да ради.
+
+Сачувати ипак?</translation>
+    </message>
+    <message>
+        <source>Search settings</source>
+        <translation>Претражи подешавања</translation>
+    </message>
+    <message>
+        <source>No settings match</source>
+        <translation>Нема одговарајућих подешавања</translation>
+    </message>
+    <message>
+        <source>User Accounts</source>
+        <translation>Кориснички налози</translation>
+    </message>
+    <message>
+        <source>Automatically install Kettle Edition updates</source>
+        <translation>Аутоматски инсталирај Kettle Edition ажурирања</translation>
+    </message>
+    <message>
+        <source>Status bar and log</source>
+        <translation>Статусна трака и дневник</translation>
+    </message>
+    <message>
+        <source>Files</source>
+        <translation>Датотеке</translation>
+    </message>
+    <message>
+        <source>Checking</source>
+        <translation>Провера</translation>
+    </message>
+    <message>
+        <source>Until the first user account is created, this login always works.</source>
+        <translation>Док се не направи први кориснички налог, ова пријава увек ради.</translation>
+    </message>
+    <message>
+        <source>Allow this login when user accounts exist</source>
+        <translation>Дозволи ову пријаву када постоје кориснички налози</translation>
+    </message>
+    <message>
+        <source>Access</source>
+        <translation>Приступ</translation>
+    </message>
+    <message>
+        <source>Changes to users, roles and logins apply at once. The settings below apply with OK or Apply.</source>
+        <translation>Промене корисника, улога и пријава примењују се одмах. Подешавања испод примењују се са У реду или Примени.</translation>
+    </message>
+    <message>
+        <source>Logins and Activity Log</source>
+        <translation>Пријаве и дневник активности</translation>
+    </message>
+    <message>
+        <source>0 means users are logged out after the session timeout.</source>
+        <translation>0 значи да се корисници одјављују након истека сесије.</translation>
+    </message>
+    <message>
+        <source>Keep users logged in for:</source>
+        <translation>Држи кориснике пријављеним:</translation>
+    </message>
+    <message>
+        <source>Until session timeout</source>
+        <translation>До истека сесије</translation>
+    </message>
+    <message>
+        <source> days</source>
+        <translation> дана</translation>
+    </message>
+    <message>
+        <source>Lock account after consecutive failures:</source>
+        <translation>Закључај налог после узастопних неуспеха:</translation>
+    </message>
+    <message>
+        <source>Keep WebUI activity log for:</source>
+        <translation>Чувај WebUI дневник активности:</translation>
+    </message>
+    <message>
+        <source>lock for:</source>
+        <translation>закључај на:</translation>
+    </message>
+    <message>
+        <source>%1 works best with Windows dark mode</source>
+        <translation>%1 најбоље ради са Windows тамним режимом</translation>
+    </message>
+    <message>
+        <source>WebUI address</source>
+        <translation>WebUI адреса</translation>
+    </message>
+    <message>
+        <source>With the WebUI address set to %1, only this PC can reach the WebUI. Remote access, including through a reverse proxy on another machine, will stop working.
+
+Save anyway?</source>
+        <translation>Када је WebUI адреса подешена на %1, само овај рачунар може приступити WebUI-ју. Удаљени приступ, укључујући преко обрнутог проксија на другој машини, престаће да ради.
+
+Сачувати ипак?</translation>
+    </message>
 </context>
 <context>
     <name>PeerInfo</name>
@@ -8752,6 +9112,22 @@ Check the Execution Log for errors.</source>
         <location filename="../gui/properties/peerlistwidget.cpp" line="309"/>
         <source>Copy IP:port</source>
         <translation>Копирај IP:порт</translation>
+    </message>
+    <message>
+        <source>Reset auto width</source>
+        <translation>Поништи аутоматску ширину</translation>
+    </message>
+    <message>
+        <source>Fit all non-hidden columns to their contents again, and forget the widths that were set by hand</source>
+        <translation>Поново прилагоди све видљиве колоне њиховом садржају и заборави ручно подешене ширине</translation>
+    </message>
+    <message>
+        <source>Reset auto width</source>
+        <translation>Поништи аутоматску ширину</translation>
+    </message>
+    <message>
+        <source>Fit all non-hidden columns to their contents again, and forget the widths that were set by hand</source>
+        <translation>Поново прилагоди све видљиве колоне њиховом садржају и заборави ручно подешене ширине</translation>
     </message>
 </context>
 <context>
@@ -10140,6 +10516,14 @@ Those plugins were disabled.</source>
         <source>Open link</source>
         <translation>Отвори линк</translation>
     </message>
+    <message>
+        <source>Details</source>
+        <translation>Детаљи</translation>
+    </message>
+    <message>
+        <source>Details</source>
+        <translation>Детаљи</translation>
+    </message>
 </context>
 <context>
     <name>SearchController</name>
@@ -10493,6 +10877,70 @@ Those plugins were disabled.</source>
         <source>Resize all non-hidden columns to the size of their contents</source>
         <translation>Промени ширину свих видљивих колона на ширину њиховог садржаја</translation>
     </message>
+    <message>
+        <source>%1 of %2 shown (%3 hidden)</source>
+        <translation>Приказано %1 од %2 (%3 скривено)</translation>
+    </message>
+    <message>
+        <source>%1 of %2 shown</source>
+        <translation>Приказано %1 од %2</translation>
+    </message>
+    <message>
+        <source>Searching: %1</source>
+        <translation>Претрага: %1</translation>
+    </message>
+    <message>
+        <source>Finished: %1</source>
+        <translation>Завршено: %1</translation>
+    </message>
+    <message>
+        <source>Search aborted: %1</source>
+        <translation>Претрага прекинута: %1</translation>
+    </message>
+    <message>
+        <source>Reset auto width</source>
+        <translation>Поништи аутоматску ширину</translation>
+    </message>
+    <message>
+        <source>Fit all non-hidden columns to their contents again, and forget the widths that were set by hand</source>
+        <translation>Поново прилагоди све видљиве колоне њиховом садржају и заборави ручно подешене ширине</translation>
+    </message>
+    <message>
+        <source>Unknown</source>
+        <translation>Непознато</translation>
+    </message>
+    <message>
+        <source>%1 of %2 shown (%3 hidden)</source>
+        <translation>Приказано %1 од %2 (%3 скривено)</translation>
+    </message>
+    <message>
+        <source>%1 of %2 shown</source>
+        <translation>Приказано %1 од %2</translation>
+    </message>
+    <message>
+        <source>Searching: %1</source>
+        <translation>Претрага: %1</translation>
+    </message>
+    <message>
+        <source>Finished: %1</source>
+        <translation>Завршено: %1</translation>
+    </message>
+    <message>
+        <source>Search aborted: %1</source>
+        <translation>Претрага прекинута: %1</translation>
+    </message>
+    <message>
+        <source>Reset auto width</source>
+        <translation>Поништи аутоматску ширину</translation>
+    </message>
+    <message>
+        <source>Fit all non-hidden columns to their contents again, and forget the widths that were set by hand</source>
+        <translation>Поново прилагоди све видљиве колоне њиховом садржају и заборави ручно подешене ширине</translation>
+    </message>
+    <message>
+        <source>Unknown</source>
+        <translation>Непознато</translation>
+    </message>
 </context>
 <context>
     <name>SearchPluginManager</name>
@@ -10790,6 +11238,14 @@ Those plugins were disabled.</source>
         <source>Couldn&apos;t update &quot;%1&quot; search engine plugin. %2</source>
         <translation type="unfinished">Ажурирање додатка за претрагу &quot;%1&quot; није успела. %2</translation>
     </message>
+    <message>
+        <source>Install Kettle Plugins</source>
+        <translation>Инсталирај Kettle додатке</translation>
+    </message>
+    <message>
+        <source>Install Kettle Plugins</source>
+        <translation>Инсталирај Kettle додатке</translation>
+    </message>
 </context>
 <context>
     <name>SearchPluginSourceDialog</name>
@@ -10929,6 +11385,90 @@ Click the &quot;Search plugins...&quot; button at the bottom right of the window
         <location filename="../gui/search/searchwidget.ui" line="58"/>
         <source>Stop</source>
         <translation>Заустави</translation>
+    </message>
+    <message>
+        <source>Searches</source>
+        <translation>Претраге</translation>
+    </message>
+    <message>
+        <source>Close the selected search</source>
+        <translation>Затвори изабрану претрагу</translation>
+    </message>
+    <message>
+        <source>Search for torrents...</source>
+        <translation>Тражи торенте...</translation>
+    </message>
+    <message>
+        <source>Category to search in</source>
+        <translation>Категорија за претрагу</translation>
+    </message>
+    <message>
+        <source>Search engines to use</source>
+        <translation>Претраживачи који се користе</translation>
+    </message>
+    <message>
+        <source>There aren&apos;t any search plugins installed.
+Click the &quot;Search plugins...&quot; button at the top right of the window to install some.</source>
+        <translation>Нема инсталираних додатака за претрагу.
+Кликните дугме „Додаци за претрагу...“ у горњем десном углу прозора да их инсталирате.</translation>
+    </message>
+    <message>
+        <source>Type a search above and press Enter.</source>
+        <translation>Упишите претрагу изнад и притисните Enter.</translation>
+    </message>
+    <message>
+        <source>Refresh search</source>
+        <translation>Освежи претрагу</translation>
+    </message>
+    <message>
+        <source>Close search</source>
+        <translation>Затвори претрагу</translation>
+    </message>
+    <message>
+        <source>Close all searches</source>
+        <translation>Затвори све претраге</translation>
+    </message>
+    <message>
+        <source>Searches</source>
+        <translation>Претраге</translation>
+    </message>
+    <message>
+        <source>Close the selected search</source>
+        <translation>Затвори изабрану претрагу</translation>
+    </message>
+    <message>
+        <source>Search for torrents...</source>
+        <translation>Тражи торенте...</translation>
+    </message>
+    <message>
+        <source>Category to search in</source>
+        <translation>Категорија за претрагу</translation>
+    </message>
+    <message>
+        <source>Search engines to use</source>
+        <translation>Претраживачи који се користе</translation>
+    </message>
+    <message>
+        <source>There aren&apos;t any search plugins installed.
+Click the &quot;Search plugins...&quot; button at the top right of the window to install some.</source>
+        <translation>Нема инсталираних додатака за претрагу.
+Кликните дугме „Додаци за претрагу...“ у горњем десном углу прозора да их инсталирате.</translation>
+    </message>
+    <message>
+        <source>Type a search above and press Enter.</source>
+        <translation>Упишите претрагу изнад и притисните Enter.</translation>
+    </message>
+    <message>
+        <source>Refresh search</source>
+        <translation>Освежи претрагу</translation>
+    </message>
+    <message>
+        <source>Close search</source>
+        <translation>Затвори претрагу</translation>
+    </message>
+    <message>
+        <source>Close all searches</source>
+        <translation>Затвори све претраге</translation>
     </message>
 </context>
 <context>
@@ -11391,6 +11931,326 @@ Click the &quot;Search plugins...&quot; button at the bottom right of the window
         <location filename="../gui/statsdialog.cpp" line="111"/>
         <source>%1 ms</source>
         <translation type="unfinished">%1 мс</translation>
+    </message>
+    <message>
+        <source>Copy</source>
+        <translation>Копирај</translation>
+    </message>
+    <message>
+        <source>Overview</source>
+        <translation>Преглед</translation>
+    </message>
+    <message>
+        <source>Transfer</source>
+        <translation>Пренос</translation>
+    </message>
+    <message>
+        <source>This session</source>
+        <translation>Ова сесија</translation>
+    </message>
+    <message>
+        <source>All time</source>
+        <translation>Све време</translation>
+    </message>
+    <message>
+        <source>Downloaded:</source>
+        <translation>Преузето:</translation>
+    </message>
+    <message>
+        <source>Uploaded:</source>
+        <translation>Послато:</translation>
+    </message>
+    <message>
+        <source>Share ratio:</source>
+        <translation>Однос дељења:</translation>
+    </message>
+    <message>
+        <source>Current speed:</source>
+        <translation>Тренутна брзина:</translation>
+    </message>
+    <message>
+        <source>Activity</source>
+        <translation>Активност</translation>
+    </message>
+    <message>
+        <source>Torrents downloading:</source>
+        <translation>Торенти који се преузимају:</translation>
+    </message>
+    <message>
+        <source>Torrents seeding:</source>
+        <translation>Торенти који се донирају:</translation>
+    </message>
+    <message>
+        <source>Torrents stopped:</source>
+        <translation>Заустављени торенти:</translation>
+    </message>
+    <message>
+        <source>Torrents with errors:</source>
+        <translation>Торенти са грешкама:</translation>
+    </message>
+    <message>
+        <source>Running for:</source>
+        <translation>Ради већ:</translation>
+    </message>
+    <message>
+        <source>History</source>
+        <translation>Историја</translation>
+    </message>
+    <message>
+        <source>Period</source>
+        <translation>Период</translation>
+    </message>
+    <message>
+        <source>Today</source>
+        <translation>Данас</translation>
+    </message>
+    <message>
+        <source>Last 7 days</source>
+        <translation>Последњих 7 дана</translation>
+    </message>
+    <message>
+        <source>This month</source>
+        <translation>Овај месец</translation>
+    </message>
+    <message>
+        <source>Last month</source>
+        <translation>Прошли месец</translation>
+    </message>
+    <message>
+        <source>Last 12 months</source>
+        <translation>Последњих 12 месеци</translation>
+    </message>
+    <message>
+        <source>Tracking since:</source>
+        <translation>Праћење од:</translation>
+    </message>
+    <message>
+        <source>By month</source>
+        <translation>По месецима</translation>
+    </message>
+    <message>
+        <source>Month</source>
+        <translation>Месец</translation>
+    </message>
+    <message>
+        <source>Downloaded</source>
+        <translation>Преузето</translation>
+    </message>
+    <message>
+        <source>Uploaded</source>
+        <translation>Послато</translation>
+    </message>
+    <message>
+        <source>Share ratio</source>
+        <translation>Однос дељења</translation>
+    </message>
+    <message>
+        <source>WebUI downloads added, this month</source>
+        <translation>Преузимања додата преко WebUI-ја овај месец</translation>
+    </message>
+    <message>
+        <source>Counts the requests that added a download. Apps without a login, such as Sonarr and Radarr, are shown as (localhost). Downloads added in the desktop window are not counted.</source>
+        <translation>Броји захтеве који су додали преузимање. Апликације без пријаве, као Sonarr и Radarr, приказују се као (localhost). Преузимања додата у десктоп прозору се не броје.</translation>
+    </message>
+    <message>
+        <source>Technical</source>
+        <translation>Техничко</translation>
+    </message>
+    <message>
+        <source>Disk</source>
+        <translation>Диск</translation>
+    </message>
+    <message>
+        <source>Peers waiting on disk writes:</source>
+        <translation>Учесници који чекају упис на диск:</translation>
+    </message>
+    <message>
+        <source>Peers waiting on disk reads:</source>
+        <translation>Учесници који чекају читање са диска:</translation>
+    </message>
+    <message>
+        <source>Network</source>
+        <translation>Мрежа</translation>
+    </message>
+    <message>
+        <source>DHT nodes:</source>
+        <translation>DHT чворови:</translation>
+    </message>
+    <message>
+        <source>Data discarded this session:</source>
+        <translation>Одбачени подаци у овој сесији:</translation>
+    </message>
+    <message>
+        <source>Before tracking began</source>
+        <translation>Пре почетка праћења</translation>
+    </message>
+    <message>
+        <source>Nothing added yet</source>
+        <translation>Још ништа није додато</translation>
+    </message>
+    <message>
+        <source>Off</source>
+        <translation>Искључено</translation>
+    </message>
+    <message>
+        <source>Copy</source>
+        <translation>Копирај</translation>
+    </message>
+    <message>
+        <source>Overview</source>
+        <translation>Преглед</translation>
+    </message>
+    <message>
+        <source>Transfer</source>
+        <translation>Пренос</translation>
+    </message>
+    <message>
+        <source>This session</source>
+        <translation>Ова сесија</translation>
+    </message>
+    <message>
+        <source>All time</source>
+        <translation>Све време</translation>
+    </message>
+    <message>
+        <source>Downloaded:</source>
+        <translation>Преузето:</translation>
+    </message>
+    <message>
+        <source>Uploaded:</source>
+        <translation>Послато:</translation>
+    </message>
+    <message>
+        <source>Share ratio:</source>
+        <translation>Однос дељења:</translation>
+    </message>
+    <message>
+        <source>Current speed:</source>
+        <translation>Тренутна брзина:</translation>
+    </message>
+    <message>
+        <source>Activity</source>
+        <translation>Активност</translation>
+    </message>
+    <message>
+        <source>Torrents downloading:</source>
+        <translation>Торенти који се преузимају:</translation>
+    </message>
+    <message>
+        <source>Torrents seeding:</source>
+        <translation>Торенти који се донирају:</translation>
+    </message>
+    <message>
+        <source>Torrents stopped:</source>
+        <translation>Заустављени торенти:</translation>
+    </message>
+    <message>
+        <source>Torrents with errors:</source>
+        <translation>Торенти са грешкама:</translation>
+    </message>
+    <message>
+        <source>Running for:</source>
+        <translation>Ради већ:</translation>
+    </message>
+    <message>
+        <source>History</source>
+        <translation>Историја</translation>
+    </message>
+    <message>
+        <source>Period</source>
+        <translation>Период</translation>
+    </message>
+    <message>
+        <source>Today</source>
+        <translation>Данас</translation>
+    </message>
+    <message>
+        <source>Last 7 days</source>
+        <translation>Последњих 7 дана</translation>
+    </message>
+    <message>
+        <source>This month</source>
+        <translation>Овај месец</translation>
+    </message>
+    <message>
+        <source>Last month</source>
+        <translation>Прошли месец</translation>
+    </message>
+    <message>
+        <source>Last 12 months</source>
+        <translation>Последњих 12 месеци</translation>
+    </message>
+    <message>
+        <source>Tracking since:</source>
+        <translation>Праћење од:</translation>
+    </message>
+    <message>
+        <source>By month</source>
+        <translation>По месецима</translation>
+    </message>
+    <message>
+        <source>Month</source>
+        <translation>Месец</translation>
+    </message>
+    <message>
+        <source>Downloaded</source>
+        <translation>Преузето</translation>
+    </message>
+    <message>
+        <source>Uploaded</source>
+        <translation>Послато</translation>
+    </message>
+    <message>
+        <source>Share ratio</source>
+        <translation>Однос дељења</translation>
+    </message>
+    <message>
+        <source>WebUI downloads added, this month</source>
+        <translation>Преузимања додата преко WebUI-ја овај месец</translation>
+    </message>
+    <message>
+        <source>Counts the requests that added a download. Apps without a login, such as Sonarr and Radarr, are shown as (localhost). Downloads added in the desktop window are not counted.</source>
+        <translation>Броји захтеве који су додали преузимање. Апликације без пријаве, као Sonarr и Radarr, приказују се као (localhost). Преузимања додата у десктоп прозору се не броје.</translation>
+    </message>
+    <message>
+        <source>Technical</source>
+        <translation>Техничко</translation>
+    </message>
+    <message>
+        <source>Disk</source>
+        <translation>Диск</translation>
+    </message>
+    <message>
+        <source>Peers waiting on disk writes:</source>
+        <translation>Учесници који чекају упис на диск:</translation>
+    </message>
+    <message>
+        <source>Peers waiting on disk reads:</source>
+        <translation>Учесници који чекају читање са диска:</translation>
+    </message>
+    <message>
+        <source>Network</source>
+        <translation>Мрежа</translation>
+    </message>
+    <message>
+        <source>DHT nodes:</source>
+        <translation>DHT чворови:</translation>
+    </message>
+    <message>
+        <source>Data discarded this session:</source>
+        <translation>Одбачени подаци у овој сесији:</translation>
+    </message>
+    <message>
+        <source>Before tracking began</source>
+        <translation>Пре почетка праћења</translation>
+    </message>
+    <message>
+        <source>Nothing added yet</source>
+        <translation>Још ништа није додато</translation>
+    </message>
+    <message>
+        <source>Off</source>
+        <translation>Искључено</translation>
     </message>
 </context>
 <context>
@@ -12086,6 +12946,22 @@ Please choose a different name and try again.</source>
     <message>
         <source>Priority by shown file order</source>
         <translation type="vanished">Приоритет према приказаном редоследу датотека</translation>
+    </message>
+    <message>
+        <source>Reset auto width</source>
+        <translation>Поништи аутоматску ширину</translation>
+    </message>
+    <message>
+        <source>Fit all non-hidden columns to their contents again, and forget the widths that were set by hand</source>
+        <translation>Поново прилагоди све видљиве колоне њиховом садржају и заборави ручно подешене ширине</translation>
+    </message>
+    <message>
+        <source>Reset auto width</source>
+        <translation>Поништи аутоматску ширину</translation>
+    </message>
+    <message>
+        <source>Fit all non-hidden columns to their contents again, and forget the widths that were set by hand</source>
+        <translation>Поново прилагоди све видљиве колоне њиховом садржају и заборави ручно подешене ширине</translation>
     </message>
 </context>
 <context>
@@ -13170,6 +14046,22 @@ Please choose a different name and try again.</source>
         <source>Column visibility</source>
         <translation>Прегледност колона</translation>
     </message>
+    <message>
+        <source>Reset auto width</source>
+        <translation>Поништи аутоматску ширину</translation>
+    </message>
+    <message>
+        <source>Fit all non-hidden columns to their contents again, and forget the widths that were set by hand</source>
+        <translation>Поново прилагоди све видљиве колоне њиховом садржају и заборави ручно подешене ширине</translation>
+    </message>
+    <message>
+        <source>Reset auto width</source>
+        <translation>Поништи аутоматску ширину</translation>
+    </message>
+    <message>
+        <source>Fit all non-hidden columns to their contents again, and forget the widths that were set by hand</source>
+        <translation>Поново прилагоди све видљиве колоне њиховом садржају и заборави ручно подешене ширине</translation>
+    </message>
 </context>
 <context>
     <name>TrackerStatusFilterWidget</name>
@@ -14036,6 +14928,22 @@ Please choose a different name and try again.</source>
         <source>Super seeding mode</source>
         <translation>Супер seeding (донирајући) режим</translation>
     </message>
+    <message>
+        <source>Reset auto width</source>
+        <translation>Поништи аутоматску ширину</translation>
+    </message>
+    <message>
+        <source>Fit all non-hidden columns to their contents again, and forget the widths that were set by hand</source>
+        <translation>Поново прилагоди све видљиве колоне њиховом садржају и заборави ручно подешене ширине</translation>
+    </message>
+    <message>
+        <source>Reset auto width</source>
+        <translation>Поништи аутоматску ширину</translation>
+    </message>
+    <message>
+        <source>Fit all non-hidden columns to their contents again, and forget the widths that were set by hand</source>
+        <translation>Поново прилагоди све видљиве колоне њиховом садржају и заборави ручно подешене ширине</translation>
+    </message>
 </context>
 <context>
     <name>UIThemeDialog</name>
@@ -14370,6 +15278,46 @@ Please choose a different name and try again.</source>
         <source>WebAPI login failure. Reason: invalid credentials, attempt count: %1, IP: %2, username: %3</source>
         <translation>Логовање преко WebAPI-ја није успело. Разлог: неважећи акредитиви, број покушаја: %1, IP: %2, корисничко име: %3</translation>
     </message>
+    <message>
+        <source>Something went wrong on the server. Details are in qBittorrent&apos;s log.</source>
+        <translation>Нешто је пошло по злу на серверу. Детаљи су у qBittorrent дневнику.</translation>
+    </message>
+    <message>
+        <source>This account is locked after too many failed login attempts. Try again in %1 minute(s).</source>
+        <translation>Овај налог је закључан због превише неуспелих покушаја пријаве. Покушајте поново за %1 мин.</translation>
+    </message>
+    <message>
+        <source>Your role (%1) doesn&apos;t allow this: %2.</source>
+        <translation>Ваша улога (%1) ово не дозвољава: %2.</translation>
+    </message>
+    <message>
+        <source>Only an admin can remove the tag that says who added a torrent.</source>
+        <translation>Само админ може уклонити ознаку која показује ко је додао торент.</translation>
+    </message>
+    <message>
+        <source>Only an admin can clear or replace all tags of a torrent that has a tag saying who added it.</source>
+        <translation>Само админ може обрисати или заменити све ознаке торента који има ознаку ко га је додао.</translation>
+    </message>
+    <message>
+        <source>Something went wrong on the server. Details are in qBittorrent&apos;s log.</source>
+        <translation>Нешто је пошло по злу на серверу. Детаљи су у qBittorrent дневнику.</translation>
+    </message>
+    <message>
+        <source>This account is locked after too many failed login attempts. Try again in %1 minute(s).</source>
+        <translation>Овај налог је закључан због превише неуспелих покушаја пријаве. Покушајте поново за %1 мин.</translation>
+    </message>
+    <message>
+        <source>Your role (%1) doesn&apos;t allow this: %2.</source>
+        <translation>Ваша улога (%1) ово не дозвољава: %2.</translation>
+    </message>
+    <message>
+        <source>Only an admin can remove the tag that says who added a torrent.</source>
+        <translation>Само админ може уклонити ознаку која показује ко је додао торент.</translation>
+    </message>
+    <message>
+        <source>Only an admin can clear or replace all tags of a torrent that has a tag saying who added it.</source>
+        <translation>Само админ може обрисати или заменити све ознаке торента који има ознаку ко га је додао.</translation>
+    </message>
 </context>
 <context>
     <name>WebUI</name>
@@ -14509,6 +15457,669 @@ Please choose a different name and try again.</source>
         <source>&lt; 1m</source>
         <comment>&lt; 1 minute</comment>
         <translation>&lt; 1m</translation>
+    </message>
+</context>
+<context>
+    <name>UpdateInstaller</name>
+    <message>
+        <source>Kettle Edition update</source>
+        <translation>Kettle Edition ажурирање</translation>
+    </message>
+    <message>
+        <source>Kettle Edition was updated to %1.</source>
+        <translation>Kettle Edition је ажуриран на %1.</translation>
+    </message>
+    <message>
+        <source>Kettle Edition updated</source>
+        <translation>Kettle Edition ажуриран</translation>
+    </message>
+    <message>
+        <source>Downloading Kettle Edition %1 (%2 changed files).</source>
+        <translation>Преузима се Kettle Edition %1 (измењених датотека: %2).</translation>
+    </message>
+    <message>
+        <source>Kettle Edition %1 is downloaded and ready to install.</source>
+        <translation>Kettle Edition %1 је преузет и спреман за инсталацију.</translation>
+    </message>
+    <message>
+        <source>Kettle Edition update</source>
+        <translation>Kettle Edition ажурирање</translation>
+    </message>
+    <message>
+        <source>Kettle Edition was updated to %1.</source>
+        <translation>Kettle Edition је ажуриран на %1.</translation>
+    </message>
+    <message>
+        <source>Kettle Edition updated</source>
+        <translation>Kettle Edition ажуриран</translation>
+    </message>
+    <message>
+        <source>Downloading Kettle Edition %1 (%2 changed files).</source>
+        <translation>Преузима се Kettle Edition %1 (измењених датотека: %2).</translation>
+    </message>
+    <message>
+        <source>Kettle Edition %1 is downloaded and ready to install.</source>
+        <translation>Kettle Edition %1 је преузет и спреман за инсталацију.</translation>
+    </message>
+</context>
+<context>
+    <name>UserAccountDialog</name>
+    <message>
+        <source>User</source>
+        <translation>Корисник</translation>
+    </message>
+    <message>
+        <source>Username:</source>
+        <translation>Корисничко име:</translation>
+    </message>
+    <message>
+        <source>Role:</source>
+        <translation>Улога:</translation>
+    </message>
+    <message>
+        <source>Password:</source>
+        <translation>Лозинка:</translation>
+    </message>
+    <message>
+        <source>Confirm password:</source>
+        <translation>Потврди лозинку:</translation>
+    </message>
+    <message>
+        <source>Disable this account</source>
+        <translation>Онемогући овај налог</translation>
+    </message>
+    <message>
+        <source>Edit User</source>
+        <translation>Уреди корисника</translation>
+    </message>
+    <message>
+        <source>Leave empty to keep the current password</source>
+        <translation>Оставите празно да задржите тренутну лозинку</translation>
+    </message>
+    <message>
+        <source>Add User</source>
+        <translation>Додај корисника</translation>
+    </message>
+    <message>
+        <source>At least %1 characters</source>
+        <translation>Најмање %1 знакова</translation>
+    </message>
+    <message>
+        <source>Enter a username.</source>
+        <translation>Унесите корисничко име.</translation>
+    </message>
+    <message>
+        <source>The password must be at least %1 characters long.</source>
+        <translation>Лозинка мора имати најмање %1 знакова.</translation>
+    </message>
+    <message>
+        <source>The passwords don&apos;t match.</source>
+        <translation>Лозинке се не поклапају.</translation>
+    </message>
+    <message>
+        <source>User</source>
+        <translation>Корисник</translation>
+    </message>
+    <message>
+        <source>Username:</source>
+        <translation>Корисничко име:</translation>
+    </message>
+    <message>
+        <source>Role:</source>
+        <translation>Улога:</translation>
+    </message>
+    <message>
+        <source>Password:</source>
+        <translation>Лозинка:</translation>
+    </message>
+    <message>
+        <source>Confirm password:</source>
+        <translation>Потврди лозинку:</translation>
+    </message>
+    <message>
+        <source>Disable this account</source>
+        <translation>Онемогући овај налог</translation>
+    </message>
+    <message>
+        <source>Edit User</source>
+        <translation>Уреди корисника</translation>
+    </message>
+    <message>
+        <source>Leave empty to keep the current password</source>
+        <translation>Оставите празно да задржите тренутну лозинку</translation>
+    </message>
+    <message>
+        <source>Add User</source>
+        <translation>Додај корисника</translation>
+    </message>
+    <message>
+        <source>At least %1 characters</source>
+        <translation>Најмање %1 знакова</translation>
+    </message>
+    <message>
+        <source>Enter a username.</source>
+        <translation>Унесите корисничко име.</translation>
+    </message>
+    <message>
+        <source>The password must be at least %1 characters long.</source>
+        <translation>Лозинка мора имати најмање %1 знакова.</translation>
+    </message>
+    <message>
+        <source>The passwords don&apos;t match.</source>
+        <translation>Лозинке се не поклапају.</translation>
+    </message>
+</context>
+<context>
+    <name>UserAccountsWidget</name>
+    <message>
+        <source>User Accounts</source>
+        <translation>Кориснички налози</translation>
+    </message>
+    <message>
+        <source>Users</source>
+        <translation>Корисници</translation>
+    </message>
+    <message>
+        <source>People who can log in to the WebUI with their own username and password.</source>
+        <translation>Особе које се могу пријавити на WebUI својим корисничким именом и лозинком.</translation>
+    </message>
+    <message>
+        <source>Add User...</source>
+        <translation>Додај корисника...</translation>
+    </message>
+    <message>
+        <source>Edit...</source>
+        <translation>Уреди...</translation>
+    </message>
+    <message>
+        <source>Remove</source>
+        <translation>Уклони</translation>
+    </message>
+    <message>
+        <source>Roles</source>
+        <translation>Улоге</translation>
+    </message>
+    <message>
+        <source>A role decides what its users are allowed to do.</source>
+        <translation>Улога одређује шта њени корисници смеју да раде.</translation>
+    </message>
+    <message>
+        <source>Add Role...</source>
+        <translation>Додај улогу...</translation>
+    </message>
+    <message>
+        <source>Logged In</source>
+        <translation>Пријављени</translation>
+    </message>
+    <message>
+        <source>Browsers and devices where someone is logged in with a user account.</source>
+        <translation>Прегледачи и уређаји на којима је неко пријављен корисничким налогом.</translation>
+    </message>
+    <message>
+        <source>Log Out</source>
+        <translation>Одјави</translation>
+    </message>
+    <message>
+        <source>Username</source>
+        <translation>Корисничко име</translation>
+    </message>
+    <message>
+        <source>Role</source>
+        <translation>Улога</translation>
+    </message>
+    <message>
+        <source>Status</source>
+        <translation>Статус</translation>
+    </message>
+    <message>
+        <source>Last login</source>
+        <translation>Последња пријава</translation>
+    </message>
+    <message>
+        <source>Created</source>
+        <translation>Направљен</translation>
+    </message>
+    <message>
+        <source>Name</source>
+        <translation>Назив</translation>
+    </message>
+    <message>
+        <source>Description</source>
+        <translation>Опис</translation>
+    </message>
+    <message>
+        <source>Permissions</source>
+        <translation>Дозволе</translation>
+    </message>
+    <message>
+        <source>User</source>
+        <translation>Корисник</translation>
+    </message>
+    <message>
+        <source>Browser</source>
+        <translation>Прегледач</translation>
+    </message>
+    <message>
+        <source>Logged in</source>
+        <translation>Пријављен</translation>
+    </message>
+    <message>
+        <source>Last active</source>
+        <translation>Последња активност</translation>
+    </message>
+    <message>
+        <source>Expires</source>
+        <translation>Истиче</translation>
+    </message>
+    <message>
+        <source>The user database could not be opened. See the Execution Log for details.</source>
+        <translation>База корисника није могла да се отвори. Детаље погледајте у дневнику извршавања.</translation>
+    </message>
+    <message>
+        <source>Disabled</source>
+        <translation>Онемогућен</translation>
+    </message>
+    <message>
+        <source>Enabled</source>
+        <translation>Омогућен</translation>
+    </message>
+    <message>
+        <source>Never</source>
+        <translation>Никад</translation>
+    </message>
+    <message>
+        <source>No accounts yet, so everyone still uses the shared WebUI login. Add an Admin account first.</source>
+        <translation>Још нема налога, па сви и даље користе заједничку WebUI пријаву. Прво додајте Admin налог.</translation>
+    </message>
+    <message>
+        <source>Couldn&apos;t read the user database. %1</source>
+        <translation>База корисника није могла да се прочита. %1</translation>
+    </message>
+    <message>
+        <source>Remove user</source>
+        <translation>Уклони корисника</translation>
+    </message>
+    <message>
+        <source>Are you sure you want to remove the user &apos;%1&apos;?</source>
+        <translation>Да ли сте сигурни да желите да уклоните корисника &apos;%1&apos;?</translation>
+    </message>
+    <message>
+        <source>Remove role</source>
+        <translation>Уклони улогу</translation>
+    </message>
+    <message>
+        <source>Are you sure you want to remove the role &apos;%1&apos;?</source>
+        <translation>Да ли сте сигурни да желите да уклоните улогу &apos;%1&apos;?</translation>
+    </message>
+    <message>
+        <source>Enable</source>
+        <translation>Омогући</translation>
+    </message>
+    <message>
+        <source>Disable</source>
+        <translation>Онемогући</translation>
+    </message>
+    <message>
+        <source>Log Out Everywhere</source>
+        <translation>Одјави свуда</translation>
+    </message>
+    <message>
+        <source>User Accounts</source>
+        <translation>Кориснички налози</translation>
+    </message>
+    <message>
+        <source>Users</source>
+        <translation>Корисници</translation>
+    </message>
+    <message>
+        <source>People who can log in to the WebUI with their own username and password.</source>
+        <translation>Особе које се могу пријавити на WebUI својим корисничким именом и лозинком.</translation>
+    </message>
+    <message>
+        <source>Add User...</source>
+        <translation>Додај корисника...</translation>
+    </message>
+    <message>
+        <source>Edit...</source>
+        <translation>Уреди...</translation>
+    </message>
+    <message>
+        <source>Remove</source>
+        <translation>Уклони</translation>
+    </message>
+    <message>
+        <source>Roles</source>
+        <translation>Улоге</translation>
+    </message>
+    <message>
+        <source>A role decides what its users are allowed to do.</source>
+        <translation>Улога одређује шта њени корисници смеју да раде.</translation>
+    </message>
+    <message>
+        <source>Add Role...</source>
+        <translation>Додај улогу...</translation>
+    </message>
+    <message>
+        <source>Logged In</source>
+        <translation>Пријављени</translation>
+    </message>
+    <message>
+        <source>Browsers and devices where someone is logged in with a user account.</source>
+        <translation>Прегледачи и уређаји на којима је неко пријављен корисничким налогом.</translation>
+    </message>
+    <message>
+        <source>Log Out</source>
+        <translation>Одјави</translation>
+    </message>
+    <message>
+        <source>Username</source>
+        <translation>Корисничко име</translation>
+    </message>
+    <message>
+        <source>Role</source>
+        <translation>Улога</translation>
+    </message>
+    <message>
+        <source>Status</source>
+        <translation>Статус</translation>
+    </message>
+    <message>
+        <source>Last login</source>
+        <translation>Последња пријава</translation>
+    </message>
+    <message>
+        <source>Created</source>
+        <translation>Направљен</translation>
+    </message>
+    <message>
+        <source>Name</source>
+        <translation>Назив</translation>
+    </message>
+    <message>
+        <source>Description</source>
+        <translation>Опис</translation>
+    </message>
+    <message>
+        <source>Permissions</source>
+        <translation>Дозволе</translation>
+    </message>
+    <message>
+        <source>User</source>
+        <translation>Корисник</translation>
+    </message>
+    <message>
+        <source>Browser</source>
+        <translation>Прегледач</translation>
+    </message>
+    <message>
+        <source>Logged in</source>
+        <translation>Пријављен</translation>
+    </message>
+    <message>
+        <source>Last active</source>
+        <translation>Последња активност</translation>
+    </message>
+    <message>
+        <source>Expires</source>
+        <translation>Истиче</translation>
+    </message>
+    <message>
+        <source>The user database could not be opened. See the Execution Log for details.</source>
+        <translation>База корисника није могла да се отвори. Детаље погледајте у дневнику извршавања.</translation>
+    </message>
+    <message>
+        <source>Disabled</source>
+        <translation>Онемогућен</translation>
+    </message>
+    <message>
+        <source>Enabled</source>
+        <translation>Омогућен</translation>
+    </message>
+    <message>
+        <source>Never</source>
+        <translation>Никад</translation>
+    </message>
+    <message>
+        <source>No accounts yet, so everyone still uses the shared WebUI login. Add an Admin account first.</source>
+        <translation>Још нема налога, па сви и даље користе заједничку WebUI пријаву. Прво додајте Admin налог.</translation>
+    </message>
+    <message>
+        <source>Couldn&apos;t read the user database. %1</source>
+        <translation>База корисника није могла да се прочита. %1</translation>
+    </message>
+    <message>
+        <source>Remove user</source>
+        <translation>Уклони корисника</translation>
+    </message>
+    <message>
+        <source>Are you sure you want to remove the user &apos;%1&apos;?</source>
+        <translation>Да ли сте сигурни да желите да уклоните корисника &apos;%1&apos;?</translation>
+    </message>
+    <message>
+        <source>Remove role</source>
+        <translation>Уклони улогу</translation>
+    </message>
+    <message>
+        <source>Are you sure you want to remove the role &apos;%1&apos;?</source>
+        <translation>Да ли сте сигурни да желите да уклоните улогу &apos;%1&apos;?</translation>
+    </message>
+    <message>
+        <source>Enable</source>
+        <translation>Омогући</translation>
+    </message>
+    <message>
+        <source>Disable</source>
+        <translation>Онемогући</translation>
+    </message>
+    <message>
+        <source>Log Out Everywhere</source>
+        <translation>Одјави свуда</translation>
+    </message>
+</context>
+<context>
+    <name>UserRoleDialog</name>
+    <message>
+        <source>Role</source>
+        <translation>Улога</translation>
+    </message>
+    <message>
+        <source>Name:</source>
+        <translation>Назив:</translation>
+    </message>
+    <message>
+        <source>Description:</source>
+        <translation>Опис:</translation>
+    </message>
+    <message>
+        <source>Gives control over the PC or qBittorrent itself.</source>
+        <translation>Даје контролу над рачунаром или самим qBittorrent-ом.</translation>
+    </message>
+    <message>
+        <source>Add Role</source>
+        <translation>Додај улогу</translation>
+    </message>
+    <message>
+        <source>Edit Role</source>
+        <translation>Уреди улогу</translation>
+    </message>
+    <message>
+        <source>Enter a role name.</source>
+        <translation>Унесите назив улоге.</translation>
+    </message>
+    <message>
+        <source>Role</source>
+        <translation>Улога</translation>
+    </message>
+    <message>
+        <source>Name:</source>
+        <translation>Назив:</translation>
+    </message>
+    <message>
+        <source>Description:</source>
+        <translation>Опис:</translation>
+    </message>
+    <message>
+        <source>Gives control over the PC or qBittorrent itself.</source>
+        <translation>Даје контролу над рачунаром или самим qBittorrent-ом.</translation>
+    </message>
+    <message>
+        <source>Add Role</source>
+        <translation>Додај улогу</translation>
+    </message>
+    <message>
+        <source>Edit Role</source>
+        <translation>Уреди улогу</translation>
+    </message>
+    <message>
+        <source>Enter a role name.</source>
+        <translation>Унесите назив улоге.</translation>
+    </message>
+</context>
+<context>
+    <name>WebUIActivityWidget</name>
+    <message>
+        <source>All</source>
+        <translation>Све</translation>
+    </message>
+    <message>
+        <source>Filter activity</source>
+        <translation>Филтрирај активност</translation>
+    </message>
+    <message>
+        <source>Export...</source>
+        <translation>Извези...</translation>
+    </message>
+    <message>
+        <source>User:</source>
+        <translation>Корисник:</translation>
+    </message>
+    <message>
+        <source>Category:</source>
+        <translation>Категорија:</translation>
+    </message>
+    <message>
+        <source>Result:</source>
+        <translation>Резултат:</translation>
+    </message>
+    <message>
+        <source>Time</source>
+        <translation>Време</translation>
+    </message>
+    <message>
+        <source>User</source>
+        <translation>Корисник</translation>
+    </message>
+    <message>
+        <source>Role</source>
+        <translation>Улога</translation>
+    </message>
+    <message>
+        <source>Category</source>
+        <translation>Категорија</translation>
+    </message>
+    <message>
+        <source>Action</source>
+        <translation>Радња</translation>
+    </message>
+    <message>
+        <source>Result</source>
+        <translation>Резултат</translation>
+    </message>
+    <message>
+        <source>The user database could not be opened. See the General tab for details.</source>
+        <translation>База корисника није могла да се отвори. Детаље погледајте на картици Опште.</translation>
+    </message>
+    <message>
+        <source>Results (showing %1 out of %2)</source>
+        <translation>Резултати (приказано %1 од %2)</translation>
+    </message>
+    <message>
+        <source>Copy</source>
+        <translation>Копирај</translation>
+    </message>
+    <message>
+        <source>Export WebUI activity</source>
+        <translation>Извези WebUI активност</translation>
+    </message>
+    <message>
+        <source>CSV files</source>
+        <translation>CSV датотеке</translation>
+    </message>
+    <message>
+        <source>Couldn&apos;t save the file. Reason: %1</source>
+        <translation>Датотека није могла да се сачува. Разлог: %1</translation>
+    </message>
+    <message>
+        <source>All</source>
+        <translation>Све</translation>
+    </message>
+    <message>
+        <source>Filter activity</source>
+        <translation>Филтрирај активност</translation>
+    </message>
+    <message>
+        <source>Export...</source>
+        <translation>Извези...</translation>
+    </message>
+    <message>
+        <source>User:</source>
+        <translation>Корисник:</translation>
+    </message>
+    <message>
+        <source>Category:</source>
+        <translation>Категорија:</translation>
+    </message>
+    <message>
+        <source>Result:</source>
+        <translation>Резултат:</translation>
+    </message>
+    <message>
+        <source>Time</source>
+        <translation>Време</translation>
+    </message>
+    <message>
+        <source>User</source>
+        <translation>Корисник</translation>
+    </message>
+    <message>
+        <source>Role</source>
+        <translation>Улога</translation>
+    </message>
+    <message>
+        <source>Category</source>
+        <translation>Категорија</translation>
+    </message>
+    <message>
+        <source>Action</source>
+        <translation>Радња</translation>
+    </message>
+    <message>
+        <source>Result</source>
+        <translation>Резултат</translation>
+    </message>
+    <message>
+        <source>The user database could not be opened. See the General tab for details.</source>
+        <translation>База корисника није могла да се отвори. Детаље погледајте на картици Опште.</translation>
+    </message>
+    <message>
+        <source>Results (showing %1 out of %2)</source>
+        <translation>Резултати (приказано %1 од %2)</translation>
+    </message>
+    <message>
+        <source>Copy</source>
+        <translation>Копирај</translation>
+    </message>
+    <message>
+        <source>Export WebUI activity</source>
+        <translation>Извези WebUI активност</translation>
+    </message>
+    <message>
+        <source>CSV files</source>
+        <translation>CSV датотеке</translation>
+    </message>
+    <message>
+        <source>Couldn&apos;t save the file. Reason: %1</source>
+        <translation>Датотека није могла да се сачува. Разлог: %1</translation>
     </message>
 </context>
 </TS>

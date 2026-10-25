@@ -223,6 +223,85 @@ The piece hash will be checked when it is requested for the first time by a peer
         <source>%1 needed · %2 free</source>
         <translation type="unfinished" />
     </message>
+    <message>
+        <source>Don&apos;t create subfolder</source>
+        <translation>Ikke opprett undermappe</translation>
+    </message>
+    <message>
+        <source>Never show again</source>
+        <translation>Aldri vis igjen</translation>
+    </message>
+    <message>
+        <source>Select None</source>
+        <translation>Fravelg alle</translation>
+    </message>
+    <message>
+        <source>Torrent options</source>
+        <translation>Torrentinnstillinger</translation>
+    </message>
+    <message>
+        <source>Your role saves torrents in the default folders.</source>
+        <translation>Rollen din lagrer torrents i standardmappene.</translation>
+    </message>
+</context>
+<context>
+    <name>AdvancedSettings</name>
+    <message>
+        <source>General</source>
+        <translation>Generelt</translation>
+    </message>
+    <message>
+        <source>Network</source>
+        <translation>Nettverk</translation>
+    </message>
+    <message>
+        <source>Storage</source>
+        <translation>Lagring</translation>
+    </message>
+    <message>
+        <source>Peers and trackers</source>
+        <translation>Likemenn og sporere</translation>
+    </message>
+    <message>
+        <source>Program behavior</source>
+        <translation>Programoppførsel</translation>
+    </message>
+    <message>
+        <source>Display and notifications</source>
+        <translation>Visning og varsler</translation>
+    </message>
+    <message>
+        <source>Network connection</source>
+        <translation>Nettverkstilkobling</translation>
+    </message>
+    <message>
+        <source>Security and privacy</source>
+        <translation>Sikkerhet og personvern</translation>
+    </message>
+    <message>
+        <source>Connection tuning</source>
+        <translation>Justering av tilkobling</translation>
+    </message>
+    <message>
+        <source>Saving and torrent files</source>
+        <translation>Lagring og torrentfiler</translation>
+    </message>
+    <message>
+        <source>Disk and memory</source>
+        <translation>Disk og minne</translation>
+    </message>
+    <message>
+        <source>Trackers</source>
+        <translation>Sporere</translation>
+    </message>
+    <message>
+        <source>Peers and seeding</source>
+        <translation>Likemenn og deling</translation>
+    </message>
+    <message>
+        <source>DHT and I2P</source>
+        <translation>DHT og I2P</translation>
+    </message>
 </context>
 <context>
     <name>CategoryFilterModel</name>
@@ -623,6 +702,14 @@ The piece hash will be checked when it is requested for the first time by a peer
         <source>More</source>
         <translation>Mer</translation>
     </message>
+    <message>
+        <source>Change Password...</source>
+        <translation>Endre passord...</translation>
+    </message>
+    <message>
+        <source>Signed in as</source>
+        <translation>Pålogget som</translation>
+    </message>
 </context>
 <context>
     <name>MainWindow</name>
@@ -929,6 +1016,34 @@ The piece hash will be checked when it is requested for the first time by a peer
     <message>
         <source>Resume Session</source>
         <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Global Speed Limits</source>
+        <translation>Globale hastighetsgrenser</translation>
+    </message>
+    <message>
+        <source>Pause Session</source>
+        <translation>Sett økten på pause</translation>
+    </message>
+    <message>
+        <source>Pause session</source>
+        <translation>Sett økten på pause</translation>
+    </message>
+    <message>
+        <source>Resume Session</source>
+        <translation>Gjenoppta økten</translation>
+    </message>
+    <message>
+        <source>Resume session</source>
+        <translation>Gjenoppta økten</translation>
+    </message>
+    <message>
+        <source>Your account can&apos;t add torrents.</source>
+        <translation>Kontoen din kan ikke legge til torrents.</translation>
+    </message>
+    <message>
+        <source>[PAUSED]</source>
+        <translation>[PAUSET]</translation>
     </message>
 </context>
 <context>
@@ -2523,6 +2638,186 @@ Bruk ";" for å splitte flerfoldige oppføringer. Jokertegnet "*" kan brukes.</t
         <source>a@x.com;b@y.com,c@z.com - send two emails: the first to just a@x.com, the second to both b@y.com and c@z.com</source>
         <translation type="unfinished" />
     </message>
+    <message>
+        <source>0 means users are logged out after the session timeout.</source>
+        <translation>0 betyr at brukere logges ut etter tidsavbrudd for økten.</translation>
+    </message>
+    <message>
+        <source>Access</source>
+        <translation>Tilgang</translation>
+    </message>
+    <message>
+        <source>Allow this login when user accounts exist</source>
+        <translation>Tillat denne påloggingen når det finnes brukerkontoer</translation>
+    </message>
+    <message>
+        <source>Also save search results</source>
+        <translation>Lagre også søkeresultater</translation>
+    </message>
+    <message>
+        <source>Also when addition is cancelled</source>
+        <translation>Også når tillegging blir avbrutt</translation>
+    </message>
+    <message>
+        <source>Below normal</source>
+        <translation>Under normal</translation>
+    </message>
+    <message>
+        <source>Changes to users, roles and logins apply at once.</source>
+        <translation>Endringer i brukere, roller og pålogginger trer i kraft med en gang.</translation>
+    </message>
+    <message>
+        <source>Don&apos;t create subfolder</source>
+        <translation>Ikke opprett undermappe</translation>
+    </message>
+    <message>
+        <source>Example:</source>
+        <translation>Eksempel:</translation>
+    </message>
+    <message>
+        <source>I2P (experimental)</source>
+        <translation>I2P (eksperimentell)</translation>
+    </message>
+    <message>
+        <source>Keep WebUI activity log for:</source>
+        <translation>Behold WebUI-aktivitetsloggen i:</translation>
+    </message>
+    <message>
+        <source>Keep unselected files in &quot;.unwanted&quot; folder</source>
+        <translation>Behold fravalgte filer i mappa «.unwanted»</translation>
+    </message>
+    <message>
+        <source>Keep users logged in for:</source>
+        <translation>Hold brukere pålogget i:</translation>
+    </message>
+    <message>
+        <source>Language:</source>
+        <translation>Språk:</translation>
+    </message>
+    <message>
+        <source>Lock account after consecutive failures:</source>
+        <translation>Lås kontoen etter påfølgende feil:</translation>
+    </message>
+    <message>
+        <source>Logins and Activity Log</source>
+        <translation>Pålogginger og aktivitetslogg</translation>
+    </message>
+    <message>
+        <source>Low</source>
+        <translation>Lav</translation>
+    </message>
+    <message>
+        <source>Maximum active checking torrents:</source>
+        <translation>Største antall aktive kontroller av torrenter:</translation>
+    </message>
+    <message>
+        <source>Medium</source>
+        <translation>Medium</translation>
+    </message>
+    <message>
+        <source>No settings match</source>
+        <translation>Ingen innstillinger passer</translation>
+    </message>
+    <message>
+        <source>Process memory priority:</source>
+        <translation>Prosessens minneprioritet:</translation>
+    </message>
+    <message>
+        <source>Save search tabs</source>
+        <translation>Lagre søkefaner</translation>
+    </message>
+    <message>
+        <source>Search UI</source>
+        <translation>Søkegrensesnitt</translation>
+    </message>
+    <message>
+        <source>Search settings</source>
+        <translation>Søk i innstillinger</translation>
+    </message>
+    <message>
+        <source>Service:</source>
+        <translation>Tjeneste:</translation>
+    </message>
+    <message>
+        <source>Show console window</source>
+        <translation>Vis konsollvindu</translation>
+    </message>
+    <message>
+        <source>Show the window when adding a torrent</source>
+        <translation>Vis vinduet når en torrent legges til</translation>
+    </message>
+    <message>
+        <source>Specify reverse proxy IPs (or subnets, e.g. 0.0.0.0/24) in order to use forwarded client address (X-Forwarded-For header). Use &apos;;&apos; to split multiple entries.</source>
+        <translation>Angi IP-er til reverserte mellomtjenere (f.eks. 0.0.0.0/24 for subnett) for å bruke videresendte klientaddresser (attributtet X-Forwarded-For). Bruk «;» for å adskille flere oppføringer.</translation>
+    </message>
+    <message>
+        <source>Status bar and log</source>
+        <translation>Statuslinje og logg</translation>
+    </message>
+    <message>
+        <source>The WebUI activity log can be kept for 1 to 3650 days.</source>
+        <translation>WebUI-aktivitetsloggen kan beholdes i 1 til 3650 dager.</translation>
+    </message>
+    <message>
+        <source>The settings below apply with OK or Apply.</source>
+        <translation>Innstillingene under trer i kraft med OK eller Bruk.</translation>
+    </message>
+    <message>
+        <source>Tip: Encapsulate parameter with quotation marks to avoid text being cut off at whitespace (e.g., &quot;%N&quot;)</source>
+        <translation>Tips: Innkapsle parameter med anførselstegn for å unngå at teksten blir avskåret ved mellomrom (f.eks., &quot;%N&quot;)</translation>
+    </message>
+    <message>
+        <source>Transfer List</source>
+        <translation>Overføringsliste</translation>
+    </message>
+    <message>
+        <source>Until the first user account is created, this login always works.</source>
+        <translation>Til den første brukerkontoen er opprettet, fungerer denne påloggingen alltid.</translation>
+    </message>
+    <message>
+        <source>User</source>
+        <translation>Bruker</translation>
+    </message>
+    <message>
+        <source>User Accounts</source>
+        <translation>Brukerkontoer</translation>
+    </message>
+    <message>
+        <source>Users can be kept logged in for 0 to 365 days.</source>
+        <translation>Brukere kan holdes pålogget i 0 til 365 dager.</translation>
+    </message>
+    <message>
+        <source>Very low</source>
+        <translation>Veldig lav</translation>
+    </message>
+    <message>
+        <source>Warning! Data loss possible!</source>
+        <translation>Advarsel! Datatap mulig!</translation>
+    </message>
+    <message>
+        <source>When Default Save/Incomplete Path changed:</source>
+        <translation>Når forvalgt lagringssti/ufullstendig sti endres:</translation>
+    </message>
+    <message>
+        <source>Whitelist for filtering HTTP Host header values.
+In order to defend against DNS rebinding attack,
+you should put in domain names used by WebUI server.
+
+Use &apos;;&apos; to split multiple entries. Can use wildcard &apos;*&apos;.</source>
+        <translation>Hviteliste for filtrering av HTTP-vertshodeverdier.
+For å kunne beskytte mot DNS-ombindingsangrep,
+burde du skrive inn domenenavn brukt av vevgrensesnittjeneren.
+
+Bruk &quot;;&quot; for å splitte flerfoldige oppføringer. Jokertegnet &quot;*&quot; kan brukes.</translation>
+    </message>
+    <message>
+        <source>You changed the address, port or HTTPS setting of the WebUI. Saving moves the WebUI, so Options will save, close and reload the page, the same as OK. If the page doesn&apos;t come back, open the WebUI at its new address.\n\nSave anyway?</source>
+        <translation>Du endret adressen, porten eller HTTPS-innstillingen til WebUI. Lagring flytter WebUI, så Valg lagrer, lukkes og laster siden på nytt, som med OK. Hvis siden ikke kommer tilbake, åpne WebUI på den nye adressen.\n\nLagre likevel?</translation>
+    </message>
+    <message>
+        <source>lock for:</source>
+        <translation>lås i:</translation>
+    </message>
 </context>
 <context>
     <name>PeerListWidget</name>
@@ -3063,6 +3358,142 @@ Bruk ";" for å splitte flerfoldige oppføringer. Jokertegnet "*" kan brukes.</t
     <message>
         <source>The time it takes from receiving a request from a peer until we're sending the response back on the socket</source>
         <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Activity</source>
+        <translation>Aktivitet</translation>
+    </message>
+    <message>
+        <source>All time</source>
+        <translation>All tid</translation>
+    </message>
+    <message>
+        <source>Before tracking began</source>
+        <translation>Før sporingen startet</translation>
+    </message>
+    <message>
+        <source>By month</source>
+        <translation>Per måned</translation>
+    </message>
+    <message>
+        <source>Counts the requests that added a download. Apps without a login, such as Sonarr and Radarr, are shown as (localhost). Downloads added in the desktop window are not counted.</source>
+        <translation>Teller forespørslene som la til en nedlasting. Apper uten pålogging, som Sonarr og Radarr, vises som (localhost). Nedlastinger lagt til i skrivebordsvinduet telles ikke.</translation>
+    </message>
+    <message>
+        <source>Current speed:</source>
+        <translation>Gjeldende hastighet:</translation>
+    </message>
+    <message>
+        <source>DHT nodes:</source>
+        <translation>DHT-noder:</translation>
+    </message>
+    <message>
+        <source>Data discarded this session:</source>
+        <translation>Forkastede data i denne økten:</translation>
+    </message>
+    <message>
+        <source>Disk</source>
+        <translation>Disk</translation>
+    </message>
+    <message>
+        <source>History</source>
+        <translation>Historikk</translation>
+    </message>
+    <message>
+        <source>Last 12 months</source>
+        <translation>Siste 12 måneder</translation>
+    </message>
+    <message>
+        <source>Last 7 days</source>
+        <translation>Siste 7 dager</translation>
+    </message>
+    <message>
+        <source>Last month</source>
+        <translation>Forrige måned</translation>
+    </message>
+    <message>
+        <source>Month</source>
+        <translation>Måned</translation>
+    </message>
+    <message>
+        <source>Nothing added yet</source>
+        <translation>Ingenting lagt til ennå</translation>
+    </message>
+    <message>
+        <source>Off</source>
+        <translation>Av</translation>
+    </message>
+    <message>
+        <source>Overview</source>
+        <translation>Oversikt</translation>
+    </message>
+    <message>
+        <source>Peers waiting on disk reads:</source>
+        <translation>Likemenn som venter på disklesing:</translation>
+    </message>
+    <message>
+        <source>Peers waiting on disk writes:</source>
+        <translation>Likemenn som venter på diskskriving:</translation>
+    </message>
+    <message>
+        <source>Period</source>
+        <translation>Periode</translation>
+    </message>
+    <message>
+        <source>Request latency:</source>
+        <translation>Forespørselsforsinkelse:</translation>
+    </message>
+    <message>
+        <source>Running for:</source>
+        <translation>Kjørt i:</translation>
+    </message>
+    <message>
+        <source>Share ratio</source>
+        <translation>Delingsforhold</translation>
+    </message>
+    <message>
+        <source>Share ratio:</source>
+        <translation>Delingsforhold:</translation>
+    </message>
+    <message>
+        <source>Technical</source>
+        <translation>Teknisk</translation>
+    </message>
+    <message>
+        <source>This month</source>
+        <translation>Denne måneden</translation>
+    </message>
+    <message>
+        <source>This session</source>
+        <translation>Denne økten</translation>
+    </message>
+    <message>
+        <source>Today</source>
+        <translation>I dag</translation>
+    </message>
+    <message>
+        <source>Torrents downloading:</source>
+        <translation>Torrents som lastes ned:</translation>
+    </message>
+    <message>
+        <source>Torrents seeding:</source>
+        <translation>Torrents som seedes:</translation>
+    </message>
+    <message>
+        <source>Torrents stopped:</source>
+        <translation>Stoppede torrents:</translation>
+    </message>
+    <message>
+        <source>Torrents with errors:</source>
+        <translation>Torrents med feil:</translation>
+    </message>
+    <message>
+        <source>Tracking since:</source>
+        <translation>Sporing siden:</translation>
+    </message>
+    <message>
+        <source>WebUI downloads added, this month</source>
+        <translation>Nedlastinger lagt til via WebUI, denne måneden</translation>
     </message>
 </context>
 <context>
@@ -3850,6 +4281,10 @@ Bruk ";" for å splitte flerfoldige oppføringer. Jokertegnet "*" kan brukes.</t
         <source>Content Path</source>
         <translation type="unfinished" />
     </message>
+    <message>
+        <source>Remove all tags from selected torrents?</source>
+        <translation>Fjern alle etiketter fra valgte torrenter?</translation>
+    </message>
 </context>
 <context>
     <name>UpDownRatioDialog</name>
@@ -3922,6 +4357,10 @@ Bruk ";" for å splitte flerfoldige oppføringer. Jokertegnet "*" kan brukes.</t
     <message>
         <source>Remove tracker</source>
         <translation>Fjern sporer</translation>
+    </message>
+    <message>
+        <source>This choice is remembered for the next removal.</source>
+        <translation>Dette valget huskes til neste fjerning.</translation>
     </message>
 </context>
 <context>
@@ -4135,6 +4574,34 @@ Bruk ";" for å splitte flerfoldige oppføringer. Jokertegnet "*" kan brukes.</t
         <source>Select plugins</source>
         <translation>Velg programtillegg</translation>
     </message>
+    <message>
+        <source>Category to search in</source>
+        <translation>Kategori å søke i</translation>
+    </message>
+    <message>
+        <source>Close the selected search</source>
+        <translation>Lukk det valgte søket</translation>
+    </message>
+    <message>
+        <source>Empty search pattern</source>
+        <translation>Tom søkestreng</translation>
+    </message>
+    <message>
+        <source>Search engines to use</source>
+        <translation>Søkemotorer som skal brukes</translation>
+    </message>
+    <message>
+        <source>Search for torrents...</source>
+        <translation>Søk etter torrents...</translation>
+    </message>
+    <message>
+        <source>Searches</source>
+        <translation>Søk</translation>
+    </message>
+    <message>
+        <source>Type a search above and press Enter.</source>
+        <translation>Skriv et søk ovenfor og trykk Enter.</translation>
+    </message>
 </context>
 <context>
     <name>PluginSelectDlg</name>
@@ -4173,6 +4640,10 @@ Bruk ";" for å splitte flerfoldige oppføringer. Jokertegnet "*" kan brukes.</t
     <message>
         <source>Search plugins</source>
         <translation>Søketillegg</translation>
+    </message>
+    <message>
+        <source>Warning: Be sure to comply with your country&apos;s copyright laws when downloading torrents from any of these search engines.</source>
+        <translation>Advarsel: Pass på å overholde landets opphavsrettslover når du laster ned torrenter fra noen av disse søkemotorene.</translation>
     </message>
 </context>
 <context>
@@ -4396,6 +4867,30 @@ Bruk ";" for å splitte flerfoldige oppføringer. Jokertegnet "*" kan brukes.</t
         <source>qBittorrent icon</source>
         <translation>qBittorrent-ikon</translation>
     </message>
+    <message>
+        <source>Based on:</source>
+        <translation>Basert på:</translation>
+    </message>
+    <message>
+        <source>Edition version:</source>
+        <translation>Utgaveversjon:</translation>
+    </message>
+    <message>
+        <source>Kettle Edition is a personal build of qBittorrent that adds user accounts with roles for the WebUI and the desktop app, an activity log, and an installable WebUI with a phone layout. A kettle is a group of hawks soaring together. This is an unofficial build, not affiliated with the qBittorrent project.</source>
+        <translation>Kettle Edition er en personlig bygging av qBittorrent som legger til brukerkontoer med roller for WebUI og skrivebordsprogrammet, en aktivitetslogg og en installerbar WebUI med telefonoppsett. En kettle er en gruppe hauker som svever sammen. Dette er en uoffisiell bygging som ikke er tilknyttet qBittorrent-prosjektet.</translation>
+    </message>
+    <message>
+        <source>Maintainer:</source>
+        <translation>Vedlikeholder:</translation>
+    </message>
+    <message>
+        <source>This edition</source>
+        <translation>Denne utgaven</translation>
+    </message>
+    <message>
+        <source>qBittorrent project:</source>
+        <translation>qBittorrent-prosjektet:</translation>
+    </message>
 </context>
 <context>
     <name>OptionDialog</name>
@@ -4497,6 +4992,46 @@ Bruk ";" for å splitte flerfoldige oppføringer. Jokertegnet "*" kan brukes.</t
     <message>
         <source>Open shared download window</source>
         <translation type="unfinished" />
+    </message>
+    <message>
+        <source>%1 of %2 shown</source>
+        <translation>%1 av %2 vist</translation>
+    </message>
+    <message>
+        <source>%1 of %2 shown (%3 hidden)</source>
+        <translation>%1 av %2 vist (%3 skjult)</translation>
+    </message>
+    <message>
+        <source>Close all searches</source>
+        <translation>Lukk alle søk</translation>
+    </message>
+    <message>
+        <source>Close search</source>
+        <translation>Lukk søk</translation>
+    </message>
+    <message>
+        <source>Filter search results...</source>
+        <translation>Filtrer søkeresultater …</translation>
+    </message>
+    <message>
+        <source>Finished: %1</source>
+        <translation>Ferdig: %1</translation>
+    </message>
+    <message>
+        <source>Refresh search</source>
+        <translation>Oppdater søk</translation>
+    </message>
+    <message>
+        <source>Search aborted: %1</source>
+        <translation>Søket ble avbrutt: %1</translation>
+    </message>
+    <message>
+        <source>Search returned no results</source>
+        <translation>Søket ga ingen resultater</translation>
+    </message>
+    <message>
+        <source>Searching: %1</source>
+        <translation>Søker: %1</translation>
     </message>
 </context>
 <context>
@@ -4635,6 +5170,10 @@ Bruk ";" for å splitte flerfoldige oppføringer. Jokertegnet "*" kan brukes.</t
     <message>
         <source>Blocked opening RSS article URL. Only http:// and https:// links can be opened.</source>
         <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Details</source>
+        <translation>Detaljer</translation>
     </message>
 </context>
 <context>
@@ -4913,6 +5452,10 @@ Støtter de følgende formatene: S01E01, 1x1, 2017.12.31, og 31.12.2017 (Datofor
         <source>Import</source>
         <translation type="unfinished" />
     </message>
+    <message>
+        <source>Don&apos;t create subfolder</source>
+        <translation>Ikke opprett undermappe</translation>
+    </message>
 </context>
 <context>
     <name>TrackerFiltersList</name>
@@ -5102,6 +5645,26 @@ Støtter de følgende formatene: S01E01, 1x1, 2017.12.31, og 31.12.2017 (Datofor
         <source>Choose a log level...</source>
         <translation>Velg loggnivå …</translation>
     </message>
+    <message>
+        <source>Export...</source>
+        <translation>Eksporter...</translation>
+    </message>
+    <message>
+        <source>Filter activity</source>
+        <translation>Filtrer aktivitet</translation>
+    </message>
+    <message>
+        <source>Result:</source>
+        <translation>Resultat:</translation>
+    </message>
+    <message>
+        <source>User:</source>
+        <translation>Bruker:</translation>
+    </message>
+    <message>
+        <source>WebUI Activity</source>
+        <translation>WebUI-aktivitet</translation>
+    </message>
 </context>
 <context>
     <name>TrackersFilterWidget</name>
@@ -5171,6 +5734,14 @@ Støtter de følgende formatene: S01E01, 1x1, 2017.12.31, og 31.12.2017 (Datofor
     <message>
         <source>Torrent share limits</source>
         <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Torrent share limits</source>
+        <translation>Delingsgrenser for torrent</translation>
+    </message>
+    <message>
+        <source>Your role saves torrents in the default folders.</source>
+        <translation>Rollen din lagrer torrents i standardmappene.</translation>
     </message>
 </context>
 <context>
@@ -5270,6 +5841,14 @@ Støtter de følgende formatene: S01E01, 1x1, 2017.12.31, og 31.12.2017 (Datofor
     <message>
         <source>Invalid Username or Password.</source>
         <translation>Ugyldig brukernavn eller passord.</translation>
+    </message>
+    <message>
+        <source>A kettle is a group of hawks soaring together.</source>
+        <translation>En kettle er en gruppe hauker som svever sammen.</translation>
+    </message>
+    <message>
+        <source>Sign in</source>
+        <translation>Logg inn</translation>
     </message>
 </context>
 <context>
@@ -5504,6 +6083,22 @@ Støtter de følgende formatene: S01E01, 1x1, 2017.12.31, og 31.12.2017 (Datofor
         <source>If checked, filenames starting with a period punctuation mark `.` will not be added to the created torrent.</source>
         <translation type="unfinished" />
     </message>
+    <message>
+        <source>Align to piece boundary for files larger than:</source>
+        <translation>Juster til delgrense for filer større enn:</translation>
+    </message>
+    <message>
+        <source>Optimize alignment</source>
+        <translation>Optimaliser fildatajusteringen</translation>
+    </message>
+    <message>
+        <source>Private torrent (Won&apos;t distribute on DHT network)</source>
+        <translation>Privat torrent (vil ikke distribueres på DHT-nettverk)</translation>
+    </message>
+    <message>
+        <source>Start seeding immediately</source>
+        <translation>Begynn deling umiddelbart</translation>
+    </message>
 </context>
 <context>
     <name>DownloadFromURLDialog</name>
@@ -5614,6 +6209,10 @@ Støtter de følgende formatene: S01E01, 1x1, 2017.12.31, og 31.12.2017 (Datofor
         <source>Failed to set speed limits</source>
         <translation type="unfinished" />
     </message>
+    <message>
+        <source>Speed limits</source>
+        <translation>Hastighetsgrenser</translation>
+    </message>
 </context>
 <context>
     <name>ListWidget</name>
@@ -5624,6 +6223,10 @@ Støtter de følgende formatene: S01E01, 1x1, 2017.12.31, og 31.12.2017 (Datofor
     <message>
         <source>Resize</source>
         <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Reset Auto Width</source>
+        <translation>Tilbakestill automatisk bredde</translation>
     </message>
 </context>
 <context>
@@ -5754,6 +6357,30 @@ Støtter de følgende formatene: S01E01, 1x1, 2017.12.31, og 31.12.2017 (Datofor
         <source>Remove torrent</source>
         <translation type="unfinished" />
     </message>
+    <message>
+        <source>Action when the limit is reached:</source>
+        <translation>Handling når grensen er nådd:</translation>
+    </message>
+    <message>
+        <source>Inactive seeding time:</source>
+        <translation>Inaktiv delingstid:</translation>
+    </message>
+    <message>
+        <source>Ratio:</source>
+        <translation>Forhold:</translation>
+    </message>
+    <message>
+        <source>Seeding time:</source>
+        <translation>Delingstid:</translation>
+    </message>
+    <message>
+        <source>Set to</source>
+        <translation>Velg</translation>
+    </message>
+    <message>
+        <source>Unlimited</source>
+        <translation>Ubegrenset</translation>
+    </message>
 </context>
 <context>
     <name>TorrentContent</name>
@@ -5764,6 +6391,216 @@ Støtter de følgende formatene: S01E01, 1x1, 2017.12.31, og 31.12.2017 (Datofor
     <message>
         <source>Not available for folders</source>
         <translation type="unfinished" />
+    </message>
+</context>
+<context>
+    <name>UserAccounts</name>
+    <message>
+        <source>(this browser)</source>
+        <translation>(denne nettleseren)</translation>
+    </message>
+    <message>
+        <source>A role decides what its users are allowed to do.</source>
+        <translation>En rolle bestemmer hva brukerne kan gjøre.</translation>
+    </message>
+    <message>
+        <source>Add Role</source>
+        <translation>Legg til rolle</translation>
+    </message>
+    <message>
+        <source>Add Role...</source>
+        <translation>Legg til rolle...</translation>
+    </message>
+    <message>
+        <source>Add User</source>
+        <translation>Legg til bruker</translation>
+    </message>
+    <message>
+        <source>Add User...</source>
+        <translation>Legg til bruker...</translation>
+    </message>
+    <message>
+        <source>Are you sure you want to remove the role &apos;%1&apos;?</source>
+        <translation>Er du sikker på at du vil fjerne rollen «%1»?</translation>
+    </message>
+    <message>
+        <source>Are you sure you want to remove the user &apos;%1&apos;?</source>
+        <translation>Er du sikker på at du vil fjerne brukeren «%1»?</translation>
+    </message>
+    <message>
+        <source>At least %1 characters</source>
+        <translation>Minst %1 tegn</translation>
+    </message>
+    <message>
+        <source>Browser</source>
+        <translation>Nettleser</translation>
+    </message>
+    <message>
+        <source>Browsers and devices where someone is logged in with a user account.</source>
+        <translation>Nettlesere og enheter der noen er logget inn med en brukerkonto.</translation>
+    </message>
+    <message>
+        <source>Change Password</source>
+        <translation>Endre passord</translation>
+    </message>
+    <message>
+        <source>Confirm password:</source>
+        <translation>Bekreft passord:</translation>
+    </message>
+    <message>
+        <source>Created</source>
+        <translation>Opprettet</translation>
+    </message>
+    <message>
+        <source>Current password:</source>
+        <translation>Gjeldende passord:</translation>
+    </message>
+    <message>
+        <source>Description</source>
+        <translation>Beskrivelse</translation>
+    </message>
+    <message>
+        <source>Description:</source>
+        <translation>Beskrivelse:</translation>
+    </message>
+    <message>
+        <source>Disable</source>
+        <translation>Deaktiver</translation>
+    </message>
+    <message>
+        <source>Disable this account</source>
+        <translation>Deaktiver denne kontoen</translation>
+    </message>
+    <message>
+        <source>Edit Role</source>
+        <translation>Rediger rolle</translation>
+    </message>
+    <message>
+        <source>Edit User</source>
+        <translation>Rediger bruker</translation>
+    </message>
+    <message>
+        <source>Edit...</source>
+        <translation>Rediger...</translation>
+    </message>
+    <message>
+        <source>Enable</source>
+        <translation>Aktiver</translation>
+    </message>
+    <message>
+        <source>Enter a role name.</source>
+        <translation>Skriv inn et rollenavn.</translation>
+    </message>
+    <message>
+        <source>Enter a username.</source>
+        <translation>Skriv inn et brukernavn.</translation>
+    </message>
+    <message>
+        <source>Expires</source>
+        <translation>Utløper</translation>
+    </message>
+    <message>
+        <source>Gives control over the PC or qBittorrent itself</source>
+        <translation>Gir kontroll over PC-en eller selve qBittorrent</translation>
+    </message>
+    <message>
+        <source>Last active</source>
+        <translation>Sist aktiv</translation>
+    </message>
+    <message>
+        <source>Last login</source>
+        <translation>Siste pålogging</translation>
+    </message>
+    <message>
+        <source>Leave empty to keep the current password</source>
+        <translation>La stå tomt for å beholde gjeldende passord</translation>
+    </message>
+    <message>
+        <source>Log Out</source>
+        <translation>Logg ut</translation>
+    </message>
+    <message>
+        <source>Log Out Everywhere</source>
+        <translation>Logg ut overalt</translation>
+    </message>
+    <message>
+        <source>Logged In</source>
+        <translation>Pålogget</translation>
+    </message>
+    <message>
+        <source>Logged in</source>
+        <translation>Logget inn</translation>
+    </message>
+    <message>
+        <source>New password:</source>
+        <translation>Nytt passord:</translation>
+    </message>
+    <message>
+        <source>No accounts yet, so everyone still uses the shared WebUI login. Add an Admin account first.</source>
+        <translation>Det finnes ingen kontoer ennå, så alle bruker fortsatt den delte WebUI-påloggingen. Legg først til en Admin-konto.</translation>
+    </message>
+    <message>
+        <source>People who can log in to the WebUI with their own username and password.</source>
+        <translation>Personer som kan logge inn på WebUI med eget brukernavn og passord.</translation>
+    </message>
+    <message>
+        <source>Permissions</source>
+        <translation>Tillatelser</translation>
+    </message>
+    <message>
+        <source>Role</source>
+        <translation>Rolle</translation>
+    </message>
+    <message>
+        <source>Role:</source>
+        <translation>Rolle:</translation>
+    </message>
+    <message>
+        <source>Roles</source>
+        <translation>Roller</translation>
+    </message>
+    <message>
+        <source>The password must be at least %1 characters long.</source>
+        <translation>Passordet må være minst %1 tegn langt.</translation>
+    </message>
+    <message>
+        <source>The passwords don&apos;t match.</source>
+        <translation>Passordene er ikke like.</translation>
+    </message>
+    <message>
+        <source>User</source>
+        <translation>Bruker</translation>
+    </message>
+    <message>
+        <source>Users</source>
+        <translation>Brukere</translation>
+    </message>
+    <message>
+        <source>Your password was changed. Other browsers and devices where you were logged in have been logged out.</source>
+        <translation>Passordet ditt ble endret. Andre nettlesere og enheter der du var pålogget, er logget ut.</translation>
+    </message>
+</context>
+<context>
+    <name>WebUIActivity</name>
+    <message>
+        <source>Action</source>
+        <translation>Handling</translation>
+    </message>
+    <message>
+        <source>Result</source>
+        <translation>Resultat</translation>
+    </message>
+    <message>
+        <source>Role</source>
+        <translation>Rolle</translation>
+    </message>
+    <message>
+        <source>Time</source>
+        <translation>Tid</translation>
+    </message>
+    <message>
+        <source>User</source>
+        <translation>Bruker</translation>
     </message>
 </context>
 </TS>

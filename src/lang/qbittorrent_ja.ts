@@ -141,6 +141,62 @@
         <source>The free IP to Country Lite database by DB-IP is used for resolving the countries of peers. The database is licensed under the Creative Commons Attribution 4.0 International License</source>
         <translation>DB-IPが提供するフリーの「IP to Country Lite」データベースは、ピアの国名を解決するために使用されています。このデータベースは、クリエイティブ・コモンズの「表示 4.0 国際」に基づきライセンスされています。</translation>
     </message>
+    <message>
+        <source>This edition</source>
+        <translation>このエディション</translation>
+    </message>
+    <message>
+        <source>Edition version:</source>
+        <translation>エディションのバージョン:</translation>
+    </message>
+    <message>
+        <source>Based on:</source>
+        <translation>ベース:</translation>
+    </message>
+    <message>
+        <source>Maintainer:</source>
+        <translation>メンテナー:</translation>
+    </message>
+    <message>
+        <source>qBittorrent project:</source>
+        <translation>qBittorrent プロジェクト:</translation>
+    </message>
+    <message>
+        <source>Kettle Edition is a personal build of qBittorrent that adds user accounts with roles for the WebUI and the desktop app, an activity log, and an installable WebUI with a phone layout. A kettle is a group of hawks soaring together. This is an unofficial build, not affiliated with the qBittorrent project.</source>
+        <translation>Kettle Edition は qBittorrent の個人用ビルドで、WebUI とデスクトップアプリ向けのロール付きユーザーアカウント、アクティビティログ、スマートフォン向けレイアウトのインストール可能な WebUI を追加します。Kettle とは、一緒に舞い上がるタカの群れのことです。これは非公式ビルドであり、qBittorrent プロジェクトとは関係ありません。</translation>
+    </message>
+    <message>
+        <source>N/A</source>
+        <translation>なし</translation>
+    </message>
+    <message>
+        <source>This edition</source>
+        <translation>このエディション</translation>
+    </message>
+    <message>
+        <source>Edition version:</source>
+        <translation>エディションのバージョン:</translation>
+    </message>
+    <message>
+        <source>Based on:</source>
+        <translation>ベース:</translation>
+    </message>
+    <message>
+        <source>Maintainer:</source>
+        <translation>メンテナー:</translation>
+    </message>
+    <message>
+        <source>qBittorrent project:</source>
+        <translation>qBittorrent プロジェクト:</translation>
+    </message>
+    <message>
+        <source>Kettle Edition is a personal build of qBittorrent that adds user accounts with roles for the WebUI and the desktop app, an activity log, and an installable WebUI with a phone layout. A kettle is a group of hawks soaring together. This is an unofficial build, not affiliated with the qBittorrent project.</source>
+        <translation>Kettle Edition は qBittorrent の個人用ビルドで、WebUI とデスクトップアプリ向けのロール付きユーザーアカウント、アクティビティログ、スマートフォン向けレイアウトのインストール可能な WebUI を追加します。Kettle とは、一緒に舞い上がるタカの群れのことです。これは非公式ビルドであり、qBittorrent プロジェクトとは関係ありません。</translation>
+    </message>
+    <message>
+        <source>N/A</source>
+        <translation>なし</translation>
+    </message>
 </context>
 <context>
     <name>AbstractFileStorage</name>
@@ -1459,6 +1515,62 @@
         <location filename="../gui/advancedsettings.cpp" line="925"/>
         <source>Embedded tracker port</source>
         <translation>組み込みトラッカーのポート</translation>
+    </message>
+    <message>
+        <source>Network</source>
+        <translation>ネットワーク</translation>
+    </message>
+    <message>
+        <source>Storage</source>
+        <translation>ストレージ</translation>
+    </message>
+    <message>
+        <source>Peers and trackers</source>
+        <translation>ピアとトラッカー</translation>
+    </message>
+    <message>
+        <source>Program behavior</source>
+        <translation>プログラムの動作</translation>
+    </message>
+    <message>
+        <source>Display and notifications</source>
+        <translation>表示と通知</translation>
+    </message>
+    <message>
+        <source>Network connection</source>
+        <translation>ネットワーク接続</translation>
+    </message>
+    <message>
+        <source>Security and privacy</source>
+        <translation>セキュリティとプライバシー</translation>
+    </message>
+    <message>
+        <source>Connection tuning</source>
+        <translation>接続の調整</translation>
+    </message>
+    <message>
+        <source>Saving and torrent files</source>
+        <translation>保存とトレントファイル</translation>
+    </message>
+    <message>
+        <source>Disk and memory</source>
+        <translation>ディスクとメモリ</translation>
+    </message>
+    <message>
+        <source>Peers and seeding</source>
+        <translation>ピアとシード</translation>
+    </message>
+    <message>
+        <source>DHT and I2P</source>
+        <translation>DHT と I2P</translation>
+    </message>
+    <message>
+        <source>General</source>
+        <translation>全般</translation>
+    </message>
+    <message>
+        <source>Trackers</source>
+        <translation>トラッカー</translation>
     </message>
 </context>
 <context>
@@ -3480,6 +3592,22 @@ Supports the formats: S01E01, 1x1, 2017.12.31 and 31.12.2017 (Date formats also 
         <source>Remove torrent</source>
         <translation>Torrentを削除</translation>
     </message>
+    <message>
+        <source>This choice is remembered for the next removal.</source>
+        <translation>この選択は次回の削除でも記憶されます。</translation>
+    </message>
+    <message>
+        <source>Remove</source>
+        <translation>削除</translation>
+    </message>
+    <message>
+        <source>This choice is remembered for the next removal.</source>
+        <translation>この選択は次回の削除でも記憶されます。</translation>
+    </message>
+    <message>
+        <source>Remove</source>
+        <translation>削除</translation>
+    </message>
 </context>
 <context>
     <name>DownloadFromURLDialog</name>
@@ -3553,6 +3681,14 @@ Supports the formats: S01E01, 1x1, 2017.12.31 and 31.12.2017 (Date formats also 
         <location filename="../gui/executionlogwidget.cpp" line="99"/>
         <source>Clear</source>
         <translation>クリア</translation>
+    </message>
+    <message>
+        <source>WebUI Activity</source>
+        <translation>WebUI アクティビティ</translation>
+    </message>
+    <message>
+        <source>WebUI Activity</source>
+        <translation>WebUI アクティビティ</translation>
     </message>
 </context>
 <context>
@@ -4726,6 +4862,46 @@ Minimum requirement: %2.</source>
         <location filename="../gui/mainwindow.cpp" line="1346"/>
         <source>Torrent Files</source>
         <translation>Torrentファイル</translation>
+    </message>
+    <message>
+        <source>Kettle Edition %1 is available.</source>
+        <translation>Kettle Edition %1 が利用可能です。</translation>
+    </message>
+    <message>
+        <source>qBittorrent Kettle Edition %1 is available. It is downloaded now and installed at 4:00 AM, or when qBittorrent starts next.</source>
+        <translation>qBittorrent Kettle Edition %1 が利用可能です。今ダウンロードし、午前 4:00 または次回 qBittorrent 起動時にインストールします。</translation>
+    </message>
+    <message>
+        <source>qBittorrent Kettle Edition %1 is available. It is downloaded now. Turn on &quot;Automatically install Kettle Edition updates&quot; in Options to install it.</source>
+        <translation>qBittorrent Kettle Edition %1 が利用可能です。今ダウンロードします。インストールするにはオプションで「Kettle Edition の更新を自動的にインストールする」をオンにしてください。</translation>
+    </message>
+    <message>
+        <source>You have the latest qBittorrent Kettle Edition (%1).</source>
+        <translation>qBittorrent Kettle Edition は最新です (%1)。</translation>
+    </message>
+    <message>
+        <source>Could not check for qBittorrent Kettle Edition updates. See the Execution Log for details.</source>
+        <translation>qBittorrent Kettle Edition の更新を確認できませんでした。詳細は実行ログを参照してください。</translation>
+    </message>
+    <message>
+        <source>Kettle Edition %1 is available.</source>
+        <translation>Kettle Edition %1 が利用可能です。</translation>
+    </message>
+    <message>
+        <source>qBittorrent Kettle Edition %1 is available. It is downloaded now and installed at 4:00 AM, or when qBittorrent starts next.</source>
+        <translation>qBittorrent Kettle Edition %1 が利用可能です。今ダウンロードし、午前 4:00 または次回 qBittorrent 起動時にインストールします。</translation>
+    </message>
+    <message>
+        <source>qBittorrent Kettle Edition %1 is available. It is downloaded now. Turn on &quot;Automatically install Kettle Edition updates&quot; in Options to install it.</source>
+        <translation>qBittorrent Kettle Edition %1 が利用可能です。今ダウンロードします。インストールするにはオプションで「Kettle Edition の更新を自動的にインストールする」をオンにしてください。</translation>
+    </message>
+    <message>
+        <source>You have the latest qBittorrent Kettle Edition (%1).</source>
+        <translation>qBittorrent Kettle Edition は最新です (%1)。</translation>
+    </message>
+    <message>
+        <source>Could not check for qBittorrent Kettle Edition updates. See the Execution Log for details.</source>
+        <translation>qBittorrent Kettle Edition の更新を確認できませんでした。詳細は実行ログを参照してください。</translation>
     </message>
 </context>
 <context>
@@ -8503,6 +8679,190 @@ Check the Execution Log for errors.</source>
         <source>Length Error</source>
         <translation>文字数エラー</translation>
     </message>
+    <message>
+        <source>Search settings</source>
+        <translation>設定を検索</translation>
+    </message>
+    <message>
+        <source>No settings match</source>
+        <translation>一致する設定はありません</translation>
+    </message>
+    <message>
+        <source>User Accounts</source>
+        <translation>ユーザーアカウント</translation>
+    </message>
+    <message>
+        <source>Automatically install Kettle Edition updates</source>
+        <translation>Kettle Edition の更新を自動的にインストールする</translation>
+    </message>
+    <message>
+        <source>Status bar and log</source>
+        <translation>ステータスバーとログ</translation>
+    </message>
+    <message>
+        <source>Files</source>
+        <translation>ファイル</translation>
+    </message>
+    <message>
+        <source>Checking</source>
+        <translation>チェック</translation>
+    </message>
+    <message>
+        <source>Until the first user account is created, this login always works.</source>
+        <translation>最初のユーザーアカウントを作成するまで、このログインは常に使えます。</translation>
+    </message>
+    <message>
+        <source>Allow this login when user accounts exist</source>
+        <translation>ユーザーアカウントがある場合もこのログインを許可する</translation>
+    </message>
+    <message>
+        <source>Access</source>
+        <translation>アクセス</translation>
+    </message>
+    <message>
+        <source>Changes to users, roles and logins apply at once. The settings below apply with OK or Apply.</source>
+        <translation>ユーザー、ロール、ログインの変更はすぐに反映されます。以下の設定は OK または適用で反映されます。</translation>
+    </message>
+    <message>
+        <source>Logins and Activity Log</source>
+        <translation>ログインとアクティビティログ</translation>
+    </message>
+    <message>
+        <source>0 means users are logged out after the session timeout.</source>
+        <translation>0 にすると、セッションのタイムアウト後にユーザーがログアウトされます。</translation>
+    </message>
+    <message>
+        <source>Keep users logged in for:</source>
+        <translation>ログイン状態を保つ期間:</translation>
+    </message>
+    <message>
+        <source>Until session timeout</source>
+        <translation>セッションのタイムアウトまで</translation>
+    </message>
+    <message>
+        <source> days</source>
+        <translation> 日</translation>
+    </message>
+    <message>
+        <source>Lock account after consecutive failures:</source>
+        <translation>連続失敗後にアカウントをロックする回数:</translation>
+    </message>
+    <message>
+        <source>Keep WebUI activity log for:</source>
+        <translation>WebUI アクティビティログの保存期間:</translation>
+    </message>
+    <message>
+        <source>lock for:</source>
+        <translation>ロック期間:</translation>
+    </message>
+    <message>
+        <source>%1 works best with Windows dark mode</source>
+        <translation>%1 は Windows のダークモードで最も良く動作します</translation>
+    </message>
+    <message>
+        <source>WebUI address</source>
+        <translation>WebUI のアドレス</translation>
+    </message>
+    <message>
+        <source>With the WebUI address set to %1, only this PC can reach the WebUI. Remote access, including through a reverse proxy on another machine, will stop working.
+
+Save anyway?</source>
+        <translation>WebUI のアドレスが %1 の場合、この PC だけが WebUI にアクセスできます。別のマシン上のリバースプロキシ経由を含め、リモートアクセスはできなくなります。
+
+それでも保存しますか?</translation>
+    </message>
+    <message>
+        <source>Search settings</source>
+        <translation>設定を検索</translation>
+    </message>
+    <message>
+        <source>No settings match</source>
+        <translation>一致する設定はありません</translation>
+    </message>
+    <message>
+        <source>User Accounts</source>
+        <translation>ユーザーアカウント</translation>
+    </message>
+    <message>
+        <source>Automatically install Kettle Edition updates</source>
+        <translation>Kettle Edition の更新を自動的にインストールする</translation>
+    </message>
+    <message>
+        <source>Status bar and log</source>
+        <translation>ステータスバーとログ</translation>
+    </message>
+    <message>
+        <source>Files</source>
+        <translation>ファイル</translation>
+    </message>
+    <message>
+        <source>Checking</source>
+        <translation>チェック</translation>
+    </message>
+    <message>
+        <source>Until the first user account is created, this login always works.</source>
+        <translation>最初のユーザーアカウントを作成するまで、このログインは常に使えます。</translation>
+    </message>
+    <message>
+        <source>Allow this login when user accounts exist</source>
+        <translation>ユーザーアカウントがある場合もこのログインを許可する</translation>
+    </message>
+    <message>
+        <source>Access</source>
+        <translation>アクセス</translation>
+    </message>
+    <message>
+        <source>Changes to users, roles and logins apply at once. The settings below apply with OK or Apply.</source>
+        <translation>ユーザー、ロール、ログインの変更はすぐに反映されます。以下の設定は OK または適用で反映されます。</translation>
+    </message>
+    <message>
+        <source>Logins and Activity Log</source>
+        <translation>ログインとアクティビティログ</translation>
+    </message>
+    <message>
+        <source>0 means users are logged out after the session timeout.</source>
+        <translation>0 にすると、セッションのタイムアウト後にユーザーがログアウトされます。</translation>
+    </message>
+    <message>
+        <source>Keep users logged in for:</source>
+        <translation>ログイン状態を保つ期間:</translation>
+    </message>
+    <message>
+        <source>Until session timeout</source>
+        <translation>セッションのタイムアウトまで</translation>
+    </message>
+    <message>
+        <source> days</source>
+        <translation> 日</translation>
+    </message>
+    <message>
+        <source>Lock account after consecutive failures:</source>
+        <translation>連続失敗後にアカウントをロックする回数:</translation>
+    </message>
+    <message>
+        <source>Keep WebUI activity log for:</source>
+        <translation>WebUI アクティビティログの保存期間:</translation>
+    </message>
+    <message>
+        <source>lock for:</source>
+        <translation>ロック期間:</translation>
+    </message>
+    <message>
+        <source>%1 works best with Windows dark mode</source>
+        <translation>%1 は Windows のダークモードで最も良く動作します</translation>
+    </message>
+    <message>
+        <source>WebUI address</source>
+        <translation>WebUI のアドレス</translation>
+    </message>
+    <message>
+        <source>With the WebUI address set to %1, only this PC can reach the WebUI. Remote access, including through a reverse proxy on another machine, will stop working.
+
+Save anyway?</source>
+        <translation>WebUI のアドレスが %1 の場合、この PC だけが WebUI にアクセスできます。別のマシン上のリバースプロキシ経由を含め、リモートアクセスはできなくなります。
+
+それでも保存しますか?</translation>
+    </message>
 </context>
 <context>
     <name>PeerInfo</name>
@@ -8755,6 +9115,22 @@ Check the Execution Log for errors.</source>
         <location filename="../gui/properties/peerlistwidget.cpp" line="309"/>
         <source>Copy IP:port</source>
         <translation>IP:ポートをコピー</translation>
+    </message>
+    <message>
+        <source>Reset auto width</source>
+        <translation>自動幅をリセット</translation>
+    </message>
+    <message>
+        <source>Fit all non-hidden columns to their contents again, and forget the widths that were set by hand</source>
+        <translation>表示中のすべての列を内容に合わせ直し、手動で設定した幅を忘れます</translation>
+    </message>
+    <message>
+        <source>Reset auto width</source>
+        <translation>自動幅をリセット</translation>
+    </message>
+    <message>
+        <source>Fit all non-hidden columns to their contents again, and forget the widths that were set by hand</source>
+        <translation>表示中のすべての列を内容に合わせ直し、手動で設定した幅を忘れます</translation>
     </message>
 </context>
 <context>
@@ -10145,6 +10521,14 @@ Those plugins were disabled.</source>
         <source>Open link</source>
         <translation type="unfinished"></translation>
     </message>
+    <message>
+        <source>Details</source>
+        <translation>詳細</translation>
+    </message>
+    <message>
+        <source>Details</source>
+        <translation>詳細</translation>
+    </message>
 </context>
 <context>
     <name>SearchController</name>
@@ -10499,6 +10883,70 @@ Those plugins were disabled.</source>
         <source>Resize all non-hidden columns to the size of their contents</source>
         <translation>非表示以外のすべての列をコンテンツのサイズにリサイズします</translation>
     </message>
+    <message>
+        <source>%1 of %2 shown (%3 hidden)</source>
+        <translation>%2 件中 %1 件を表示 (%3 件非表示)</translation>
+    </message>
+    <message>
+        <source>%1 of %2 shown</source>
+        <translation>%2 件中 %1 件を表示</translation>
+    </message>
+    <message>
+        <source>Searching: %1</source>
+        <translation>検索中: %1</translation>
+    </message>
+    <message>
+        <source>Finished: %1</source>
+        <translation>完了: %1</translation>
+    </message>
+    <message>
+        <source>Search aborted: %1</source>
+        <translation>検索を中止しました: %1</translation>
+    </message>
+    <message>
+        <source>Reset auto width</source>
+        <translation>自動幅をリセット</translation>
+    </message>
+    <message>
+        <source>Fit all non-hidden columns to their contents again, and forget the widths that were set by hand</source>
+        <translation>表示中のすべての列を内容に合わせ直し、手動で設定した幅を忘れます</translation>
+    </message>
+    <message>
+        <source>Unknown</source>
+        <translation>不明</translation>
+    </message>
+    <message>
+        <source>%1 of %2 shown (%3 hidden)</source>
+        <translation>%2 件中 %1 件を表示 (%3 件非表示)</translation>
+    </message>
+    <message>
+        <source>%1 of %2 shown</source>
+        <translation>%2 件中 %1 件を表示</translation>
+    </message>
+    <message>
+        <source>Searching: %1</source>
+        <translation>検索中: %1</translation>
+    </message>
+    <message>
+        <source>Finished: %1</source>
+        <translation>完了: %1</translation>
+    </message>
+    <message>
+        <source>Search aborted: %1</source>
+        <translation>検索を中止しました: %1</translation>
+    </message>
+    <message>
+        <source>Reset auto width</source>
+        <translation>自動幅をリセット</translation>
+    </message>
+    <message>
+        <source>Fit all non-hidden columns to their contents again, and forget the widths that were set by hand</source>
+        <translation>表示中のすべての列を内容に合わせ直し、手動で設定した幅を忘れます</translation>
+    </message>
+    <message>
+        <source>Unknown</source>
+        <translation>不明</translation>
+    </message>
 </context>
 <context>
     <name>SearchPluginManager</name>
@@ -10796,6 +11244,14 @@ Those plugins were disabled.</source>
         <source>Couldn&apos;t update &quot;%1&quot; search engine plugin. %2</source>
         <translation type="unfinished">検索エンジンプラグイン(%1)をアップデートできませんでした。%2</translation>
     </message>
+    <message>
+        <source>Install Kettle Plugins</source>
+        <translation>Kettle プラグインをインストール</translation>
+    </message>
+    <message>
+        <source>Install Kettle Plugins</source>
+        <translation>Kettle プラグインをインストール</translation>
+    </message>
 </context>
 <context>
     <name>SearchPluginSourceDialog</name>
@@ -10935,6 +11391,90 @@ Click the &quot;Search plugins...&quot; button at the bottom right of the window
         <location filename="../gui/search/searchwidget.ui" line="58"/>
         <source>Stop</source>
         <translation>停止</translation>
+    </message>
+    <message>
+        <source>Searches</source>
+        <translation>検索</translation>
+    </message>
+    <message>
+        <source>Close the selected search</source>
+        <translation>選択した検索を閉じる</translation>
+    </message>
+    <message>
+        <source>Search for torrents...</source>
+        <translation>torrent を検索...</translation>
+    </message>
+    <message>
+        <source>Category to search in</source>
+        <translation>検索するカテゴリ</translation>
+    </message>
+    <message>
+        <source>Search engines to use</source>
+        <translation>使用する検索エンジン</translation>
+    </message>
+    <message>
+        <source>There aren&apos;t any search plugins installed.
+Click the &quot;Search plugins...&quot; button at the top right of the window to install some.</source>
+        <translation>検索プラグインがインストールされていません。
+インストールするには、ウィンドウ右上の「検索プラグイン...」ボタンをクリックしてください。</translation>
+    </message>
+    <message>
+        <source>Type a search above and press Enter.</source>
+        <translation>上に検索語を入力して Enter を押してください。</translation>
+    </message>
+    <message>
+        <source>Refresh search</source>
+        <translation>検索を更新</translation>
+    </message>
+    <message>
+        <source>Close search</source>
+        <translation>検索を閉じる</translation>
+    </message>
+    <message>
+        <source>Close all searches</source>
+        <translation>すべての検索を閉じる</translation>
+    </message>
+    <message>
+        <source>Searches</source>
+        <translation>検索</translation>
+    </message>
+    <message>
+        <source>Close the selected search</source>
+        <translation>選択した検索を閉じる</translation>
+    </message>
+    <message>
+        <source>Search for torrents...</source>
+        <translation>torrent を検索...</translation>
+    </message>
+    <message>
+        <source>Category to search in</source>
+        <translation>検索するカテゴリ</translation>
+    </message>
+    <message>
+        <source>Search engines to use</source>
+        <translation>使用する検索エンジン</translation>
+    </message>
+    <message>
+        <source>There aren&apos;t any search plugins installed.
+Click the &quot;Search plugins...&quot; button at the top right of the window to install some.</source>
+        <translation>検索プラグインがインストールされていません。
+インストールするには、ウィンドウ右上の「検索プラグイン...」ボタンをクリックしてください。</translation>
+    </message>
+    <message>
+        <source>Type a search above and press Enter.</source>
+        <translation>上に検索語を入力して Enter を押してください。</translation>
+    </message>
+    <message>
+        <source>Refresh search</source>
+        <translation>検索を更新</translation>
+    </message>
+    <message>
+        <source>Close search</source>
+        <translation>検索を閉じる</translation>
+    </message>
+    <message>
+        <source>Close all searches</source>
+        <translation>すべての検索を閉じる</translation>
     </message>
 </context>
 <context>
@@ -11397,6 +11937,326 @@ Click the &quot;Search plugins...&quot; button at the bottom right of the window
         <location filename="../gui/statsdialog.cpp" line="111"/>
         <source>%1 ms</source>
         <translation type="unfinished">%1ミリ秒</translation>
+    </message>
+    <message>
+        <source>Copy</source>
+        <translation>コピー</translation>
+    </message>
+    <message>
+        <source>Overview</source>
+        <translation>概要</translation>
+    </message>
+    <message>
+        <source>Transfer</source>
+        <translation>転送</translation>
+    </message>
+    <message>
+        <source>This session</source>
+        <translation>このセッション</translation>
+    </message>
+    <message>
+        <source>All time</source>
+        <translation>累計</translation>
+    </message>
+    <message>
+        <source>Downloaded:</source>
+        <translation>ダウンロード:</translation>
+    </message>
+    <message>
+        <source>Uploaded:</source>
+        <translation>アップロード:</translation>
+    </message>
+    <message>
+        <source>Share ratio:</source>
+        <translation>シェア率:</translation>
+    </message>
+    <message>
+        <source>Current speed:</source>
+        <translation>現在の速度:</translation>
+    </message>
+    <message>
+        <source>Activity</source>
+        <translation>アクティビティ</translation>
+    </message>
+    <message>
+        <source>Torrents downloading:</source>
+        <translation>ダウンロード中の torrent:</translation>
+    </message>
+    <message>
+        <source>Torrents seeding:</source>
+        <translation>シード中の torrent:</translation>
+    </message>
+    <message>
+        <source>Torrents stopped:</source>
+        <translation>停止中の torrent:</translation>
+    </message>
+    <message>
+        <source>Torrents with errors:</source>
+        <translation>エラーのある torrent:</translation>
+    </message>
+    <message>
+        <source>Running for:</source>
+        <translation>稼働時間:</translation>
+    </message>
+    <message>
+        <source>History</source>
+        <translation>履歴</translation>
+    </message>
+    <message>
+        <source>Period</source>
+        <translation>期間</translation>
+    </message>
+    <message>
+        <source>Today</source>
+        <translation>今日</translation>
+    </message>
+    <message>
+        <source>Last 7 days</source>
+        <translation>過去 7 日間</translation>
+    </message>
+    <message>
+        <source>This month</source>
+        <translation>今月</translation>
+    </message>
+    <message>
+        <source>Last month</source>
+        <translation>先月</translation>
+    </message>
+    <message>
+        <source>Last 12 months</source>
+        <translation>過去 12 か月</translation>
+    </message>
+    <message>
+        <source>Tracking since:</source>
+        <translation>記録開始日:</translation>
+    </message>
+    <message>
+        <source>By month</source>
+        <translation>月別</translation>
+    </message>
+    <message>
+        <source>Month</source>
+        <translation>月</translation>
+    </message>
+    <message>
+        <source>Downloaded</source>
+        <translation>ダウンロード</translation>
+    </message>
+    <message>
+        <source>Uploaded</source>
+        <translation>アップロード</translation>
+    </message>
+    <message>
+        <source>Share ratio</source>
+        <translation>シェア率</translation>
+    </message>
+    <message>
+        <source>WebUI downloads added, this month</source>
+        <translation>WebUI から追加されたダウンロード (今月)</translation>
+    </message>
+    <message>
+        <source>Counts the requests that added a download. Apps without a login, such as Sonarr and Radarr, are shown as (localhost). Downloads added in the desktop window are not counted.</source>
+        <translation>ダウンロードを追加したリクエストを数えます。Sonarr や Radarr など、ログインしないアプリは (localhost) と表示されます。デスクトップのウィンドウで追加したダウンロードは数えません。</translation>
+    </message>
+    <message>
+        <source>Technical</source>
+        <translation>技術情報</translation>
+    </message>
+    <message>
+        <source>Disk</source>
+        <translation>ディスク</translation>
+    </message>
+    <message>
+        <source>Peers waiting on disk writes:</source>
+        <translation>ディスク書き込み待ちのピア:</translation>
+    </message>
+    <message>
+        <source>Peers waiting on disk reads:</source>
+        <translation>ディスク読み込み待ちのピア:</translation>
+    </message>
+    <message>
+        <source>Network</source>
+        <translation>ネットワーク</translation>
+    </message>
+    <message>
+        <source>DHT nodes:</source>
+        <translation>DHT ノード:</translation>
+    </message>
+    <message>
+        <source>Data discarded this session:</source>
+        <translation>このセッションで破棄されたデータ:</translation>
+    </message>
+    <message>
+        <source>Before tracking began</source>
+        <translation>記録開始前</translation>
+    </message>
+    <message>
+        <source>Nothing added yet</source>
+        <translation>まだ何も追加されていません</translation>
+    </message>
+    <message>
+        <source>Off</source>
+        <translation>オフ</translation>
+    </message>
+    <message>
+        <source>Copy</source>
+        <translation>コピー</translation>
+    </message>
+    <message>
+        <source>Overview</source>
+        <translation>概要</translation>
+    </message>
+    <message>
+        <source>Transfer</source>
+        <translation>転送</translation>
+    </message>
+    <message>
+        <source>This session</source>
+        <translation>このセッション</translation>
+    </message>
+    <message>
+        <source>All time</source>
+        <translation>累計</translation>
+    </message>
+    <message>
+        <source>Downloaded:</source>
+        <translation>ダウンロード:</translation>
+    </message>
+    <message>
+        <source>Uploaded:</source>
+        <translation>アップロード:</translation>
+    </message>
+    <message>
+        <source>Share ratio:</source>
+        <translation>シェア率:</translation>
+    </message>
+    <message>
+        <source>Current speed:</source>
+        <translation>現在の速度:</translation>
+    </message>
+    <message>
+        <source>Activity</source>
+        <translation>アクティビティ</translation>
+    </message>
+    <message>
+        <source>Torrents downloading:</source>
+        <translation>ダウンロード中の torrent:</translation>
+    </message>
+    <message>
+        <source>Torrents seeding:</source>
+        <translation>シード中の torrent:</translation>
+    </message>
+    <message>
+        <source>Torrents stopped:</source>
+        <translation>停止中の torrent:</translation>
+    </message>
+    <message>
+        <source>Torrents with errors:</source>
+        <translation>エラーのある torrent:</translation>
+    </message>
+    <message>
+        <source>Running for:</source>
+        <translation>稼働時間:</translation>
+    </message>
+    <message>
+        <source>History</source>
+        <translation>履歴</translation>
+    </message>
+    <message>
+        <source>Period</source>
+        <translation>期間</translation>
+    </message>
+    <message>
+        <source>Today</source>
+        <translation>今日</translation>
+    </message>
+    <message>
+        <source>Last 7 days</source>
+        <translation>過去 7 日間</translation>
+    </message>
+    <message>
+        <source>This month</source>
+        <translation>今月</translation>
+    </message>
+    <message>
+        <source>Last month</source>
+        <translation>先月</translation>
+    </message>
+    <message>
+        <source>Last 12 months</source>
+        <translation>過去 12 か月</translation>
+    </message>
+    <message>
+        <source>Tracking since:</source>
+        <translation>記録開始日:</translation>
+    </message>
+    <message>
+        <source>By month</source>
+        <translation>月別</translation>
+    </message>
+    <message>
+        <source>Month</source>
+        <translation>月</translation>
+    </message>
+    <message>
+        <source>Downloaded</source>
+        <translation>ダウンロード</translation>
+    </message>
+    <message>
+        <source>Uploaded</source>
+        <translation>アップロード</translation>
+    </message>
+    <message>
+        <source>Share ratio</source>
+        <translation>シェア率</translation>
+    </message>
+    <message>
+        <source>WebUI downloads added, this month</source>
+        <translation>WebUI から追加されたダウンロード (今月)</translation>
+    </message>
+    <message>
+        <source>Counts the requests that added a download. Apps without a login, such as Sonarr and Radarr, are shown as (localhost). Downloads added in the desktop window are not counted.</source>
+        <translation>ダウンロードを追加したリクエストを数えます。Sonarr や Radarr など、ログインしないアプリは (localhost) と表示されます。デスクトップのウィンドウで追加したダウンロードは数えません。</translation>
+    </message>
+    <message>
+        <source>Technical</source>
+        <translation>技術情報</translation>
+    </message>
+    <message>
+        <source>Disk</source>
+        <translation>ディスク</translation>
+    </message>
+    <message>
+        <source>Peers waiting on disk writes:</source>
+        <translation>ディスク書き込み待ちのピア:</translation>
+    </message>
+    <message>
+        <source>Peers waiting on disk reads:</source>
+        <translation>ディスク読み込み待ちのピア:</translation>
+    </message>
+    <message>
+        <source>Network</source>
+        <translation>ネットワーク</translation>
+    </message>
+    <message>
+        <source>DHT nodes:</source>
+        <translation>DHT ノード:</translation>
+    </message>
+    <message>
+        <source>Data discarded this session:</source>
+        <translation>このセッションで破棄されたデータ:</translation>
+    </message>
+    <message>
+        <source>Before tracking began</source>
+        <translation>記録開始前</translation>
+    </message>
+    <message>
+        <source>Nothing added yet</source>
+        <translation>まだ何も追加されていません</translation>
+    </message>
+    <message>
+        <source>Off</source>
+        <translation>オフ</translation>
     </message>
 </context>
 <context>
@@ -12088,6 +12948,22 @@ Please choose a different name and try again.</source>
     <message>
         <source>Priority by shown file order</source>
         <translation type="vanished">表示ファイル順の優先度</translation>
+    </message>
+    <message>
+        <source>Reset auto width</source>
+        <translation>自動幅をリセット</translation>
+    </message>
+    <message>
+        <source>Fit all non-hidden columns to their contents again, and forget the widths that were set by hand</source>
+        <translation>表示中のすべての列を内容に合わせ直し、手動で設定した幅を忘れます</translation>
+    </message>
+    <message>
+        <source>Reset auto width</source>
+        <translation>自動幅をリセット</translation>
+    </message>
+    <message>
+        <source>Fit all non-hidden columns to their contents again, and forget the widths that were set by hand</source>
+        <translation>表示中のすべての列を内容に合わせ直し、手動で設定した幅を忘れます</translation>
     </message>
 </context>
 <context>
@@ -13172,6 +14048,22 @@ Please choose a different name and try again.</source>
         <source>Column visibility</source>
         <translation>表示カラム</translation>
     </message>
+    <message>
+        <source>Reset auto width</source>
+        <translation>自動幅をリセット</translation>
+    </message>
+    <message>
+        <source>Fit all non-hidden columns to their contents again, and forget the widths that were set by hand</source>
+        <translation>表示中のすべての列を内容に合わせ直し、手動で設定した幅を忘れます</translation>
+    </message>
+    <message>
+        <source>Reset auto width</source>
+        <translation>自動幅をリセット</translation>
+    </message>
+    <message>
+        <source>Fit all non-hidden columns to their contents again, and forget the widths that were set by hand</source>
+        <translation>表示中のすべての列を内容に合わせ直し、手動で設定した幅を忘れます</translation>
+    </message>
 </context>
 <context>
     <name>TrackerStatusFilterWidget</name>
@@ -14038,6 +14930,22 @@ Please choose a different name and try again.</source>
         <source>Super seeding mode</source>
         <translation>スーパーシードモード</translation>
     </message>
+    <message>
+        <source>Reset auto width</source>
+        <translation>自動幅をリセット</translation>
+    </message>
+    <message>
+        <source>Fit all non-hidden columns to their contents again, and forget the widths that were set by hand</source>
+        <translation>表示中のすべての列を内容に合わせ直し、手動で設定した幅を忘れます</translation>
+    </message>
+    <message>
+        <source>Reset auto width</source>
+        <translation>自動幅をリセット</translation>
+    </message>
+    <message>
+        <source>Fit all non-hidden columns to their contents again, and forget the widths that were set by hand</source>
+        <translation>表示中のすべての列を内容に合わせ直し、手動で設定した幅を忘れます</translation>
+    </message>
 </context>
 <context>
     <name>UIThemeDialog</name>
@@ -14372,6 +15280,46 @@ Please choose a different name and try again.</source>
         <source>WebAPI login failure. Reason: invalid credentials, attempt count: %1, IP: %2, username: %3</source>
         <translation>WebAPIのログインに失敗しました。理由: 無効な資格情報で%1回試行しました。IP: %2 ユーザー名: %3</translation>
     </message>
+    <message>
+        <source>Something went wrong on the server. Details are in qBittorrent&apos;s log.</source>
+        <translation>サーバーで問題が発生しました。詳細は qBittorrent のログにあります。</translation>
+    </message>
+    <message>
+        <source>This account is locked after too many failed login attempts. Try again in %1 minute(s).</source>
+        <translation>ログインの失敗が多すぎるため、このアカウントはロックされています。%1 分後にもう一度お試しください。</translation>
+    </message>
+    <message>
+        <source>Your role (%1) doesn&apos;t allow this: %2.</source>
+        <translation>あなたのロール (%1) ではできません: %2。</translation>
+    </message>
+    <message>
+        <source>Only an admin can remove the tag that says who added a torrent.</source>
+        <translation>torrent を誰が追加したかを示すタグは、管理者だけが削除できます。</translation>
+    </message>
+    <message>
+        <source>Only an admin can clear or replace all tags of a torrent that has a tag saying who added it.</source>
+        <translation>追加者を示すタグが付いた torrent のタグをすべて消去または置き換えられるのは、管理者だけです。</translation>
+    </message>
+    <message>
+        <source>Something went wrong on the server. Details are in qBittorrent&apos;s log.</source>
+        <translation>サーバーで問題が発生しました。詳細は qBittorrent のログにあります。</translation>
+    </message>
+    <message>
+        <source>This account is locked after too many failed login attempts. Try again in %1 minute(s).</source>
+        <translation>ログインの失敗が多すぎるため、このアカウントはロックされています。%1 分後にもう一度お試しください。</translation>
+    </message>
+    <message>
+        <source>Your role (%1) doesn&apos;t allow this: %2.</source>
+        <translation>あなたのロール (%1) ではできません: %2。</translation>
+    </message>
+    <message>
+        <source>Only an admin can remove the tag that says who added a torrent.</source>
+        <translation>torrent を誰が追加したかを示すタグは、管理者だけが削除できます。</translation>
+    </message>
+    <message>
+        <source>Only an admin can clear or replace all tags of a torrent that has a tag saying who added it.</source>
+        <translation>追加者を示すタグが付いた torrent のタグをすべて消去または置き換えられるのは、管理者だけです。</translation>
+    </message>
 </context>
 <context>
     <name>WebUI</name>
@@ -14511,6 +15459,669 @@ Please choose a different name and try again.</source>
         <source>&lt; 1m</source>
         <comment>&lt; 1 minute</comment>
         <translation>&lt; 1分</translation>
+    </message>
+</context>
+<context>
+    <name>UpdateInstaller</name>
+    <message>
+        <source>Kettle Edition update</source>
+        <translation>Kettle Edition の更新</translation>
+    </message>
+    <message>
+        <source>Kettle Edition was updated to %1.</source>
+        <translation>Kettle Edition を %1 に更新しました。</translation>
+    </message>
+    <message>
+        <source>Kettle Edition updated</source>
+        <translation>Kettle Edition を更新しました</translation>
+    </message>
+    <message>
+        <source>Downloading Kettle Edition %1 (%2 changed files).</source>
+        <translation>Kettle Edition %1 をダウンロード中 (変更ファイル %2 個)。</translation>
+    </message>
+    <message>
+        <source>Kettle Edition %1 is downloaded and ready to install.</source>
+        <translation>Kettle Edition %1 のダウンロードが完了し、インストールの準備ができました。</translation>
+    </message>
+    <message>
+        <source>Kettle Edition update</source>
+        <translation>Kettle Edition の更新</translation>
+    </message>
+    <message>
+        <source>Kettle Edition was updated to %1.</source>
+        <translation>Kettle Edition を %1 に更新しました。</translation>
+    </message>
+    <message>
+        <source>Kettle Edition updated</source>
+        <translation>Kettle Edition を更新しました</translation>
+    </message>
+    <message>
+        <source>Downloading Kettle Edition %1 (%2 changed files).</source>
+        <translation>Kettle Edition %1 をダウンロード中 (変更ファイル %2 個)。</translation>
+    </message>
+    <message>
+        <source>Kettle Edition %1 is downloaded and ready to install.</source>
+        <translation>Kettle Edition %1 のダウンロードが完了し、インストールの準備ができました。</translation>
+    </message>
+</context>
+<context>
+    <name>UserAccountDialog</name>
+    <message>
+        <source>User</source>
+        <translation>ユーザー</translation>
+    </message>
+    <message>
+        <source>Username:</source>
+        <translation>ユーザー名:</translation>
+    </message>
+    <message>
+        <source>Role:</source>
+        <translation>ロール:</translation>
+    </message>
+    <message>
+        <source>Password:</source>
+        <translation>パスワード:</translation>
+    </message>
+    <message>
+        <source>Confirm password:</source>
+        <translation>パスワードの確認:</translation>
+    </message>
+    <message>
+        <source>Disable this account</source>
+        <translation>このアカウントを無効にする</translation>
+    </message>
+    <message>
+        <source>Edit User</source>
+        <translation>ユーザーを編集</translation>
+    </message>
+    <message>
+        <source>Leave empty to keep the current password</source>
+        <translation>現在のパスワードを維持するには空のままにしてください</translation>
+    </message>
+    <message>
+        <source>Add User</source>
+        <translation>ユーザーを追加</translation>
+    </message>
+    <message>
+        <source>At least %1 characters</source>
+        <translation>%1 文字以上</translation>
+    </message>
+    <message>
+        <source>Enter a username.</source>
+        <translation>ユーザー名を入力してください。</translation>
+    </message>
+    <message>
+        <source>The password must be at least %1 characters long.</source>
+        <translation>パスワードは %1 文字以上にしてください。</translation>
+    </message>
+    <message>
+        <source>The passwords don&apos;t match.</source>
+        <translation>パスワードが一致しません。</translation>
+    </message>
+    <message>
+        <source>User</source>
+        <translation>ユーザー</translation>
+    </message>
+    <message>
+        <source>Username:</source>
+        <translation>ユーザー名:</translation>
+    </message>
+    <message>
+        <source>Role:</source>
+        <translation>ロール:</translation>
+    </message>
+    <message>
+        <source>Password:</source>
+        <translation>パスワード:</translation>
+    </message>
+    <message>
+        <source>Confirm password:</source>
+        <translation>パスワードの確認:</translation>
+    </message>
+    <message>
+        <source>Disable this account</source>
+        <translation>このアカウントを無効にする</translation>
+    </message>
+    <message>
+        <source>Edit User</source>
+        <translation>ユーザーを編集</translation>
+    </message>
+    <message>
+        <source>Leave empty to keep the current password</source>
+        <translation>現在のパスワードを維持するには空のままにしてください</translation>
+    </message>
+    <message>
+        <source>Add User</source>
+        <translation>ユーザーを追加</translation>
+    </message>
+    <message>
+        <source>At least %1 characters</source>
+        <translation>%1 文字以上</translation>
+    </message>
+    <message>
+        <source>Enter a username.</source>
+        <translation>ユーザー名を入力してください。</translation>
+    </message>
+    <message>
+        <source>The password must be at least %1 characters long.</source>
+        <translation>パスワードは %1 文字以上にしてください。</translation>
+    </message>
+    <message>
+        <source>The passwords don&apos;t match.</source>
+        <translation>パスワードが一致しません。</translation>
+    </message>
+</context>
+<context>
+    <name>UserAccountsWidget</name>
+    <message>
+        <source>User Accounts</source>
+        <translation>ユーザーアカウント</translation>
+    </message>
+    <message>
+        <source>Users</source>
+        <translation>ユーザー</translation>
+    </message>
+    <message>
+        <source>People who can log in to the WebUI with their own username and password.</source>
+        <translation>自分のユーザー名とパスワードで WebUI にログインできる人です。</translation>
+    </message>
+    <message>
+        <source>Add User...</source>
+        <translation>ユーザーを追加...</translation>
+    </message>
+    <message>
+        <source>Edit...</source>
+        <translation>編集...</translation>
+    </message>
+    <message>
+        <source>Remove</source>
+        <translation>削除</translation>
+    </message>
+    <message>
+        <source>Roles</source>
+        <translation>ロール</translation>
+    </message>
+    <message>
+        <source>A role decides what its users are allowed to do.</source>
+        <translation>ロールは、そのユーザーが何をしてよいかを決めます。</translation>
+    </message>
+    <message>
+        <source>Add Role...</source>
+        <translation>ロールを追加...</translation>
+    </message>
+    <message>
+        <source>Logged In</source>
+        <translation>ログイン中</translation>
+    </message>
+    <message>
+        <source>Browsers and devices where someone is logged in with a user account.</source>
+        <translation>ユーザーアカウントでログインしているブラウザーとデバイスです。</translation>
+    </message>
+    <message>
+        <source>Log Out</source>
+        <translation>ログアウト</translation>
+    </message>
+    <message>
+        <source>Username</source>
+        <translation>ユーザー名</translation>
+    </message>
+    <message>
+        <source>Role</source>
+        <translation>ロール</translation>
+    </message>
+    <message>
+        <source>Status</source>
+        <translation>状態</translation>
+    </message>
+    <message>
+        <source>Last login</source>
+        <translation>最終ログイン</translation>
+    </message>
+    <message>
+        <source>Created</source>
+        <translation>作成日</translation>
+    </message>
+    <message>
+        <source>Name</source>
+        <translation>名前</translation>
+    </message>
+    <message>
+        <source>Description</source>
+        <translation>説明</translation>
+    </message>
+    <message>
+        <source>Permissions</source>
+        <translation>権限</translation>
+    </message>
+    <message>
+        <source>User</source>
+        <translation>ユーザー</translation>
+    </message>
+    <message>
+        <source>Browser</source>
+        <translation>ブラウザー</translation>
+    </message>
+    <message>
+        <source>Logged in</source>
+        <translation>ログイン日時</translation>
+    </message>
+    <message>
+        <source>Last active</source>
+        <translation>最終アクティビティ</translation>
+    </message>
+    <message>
+        <source>Expires</source>
+        <translation>有効期限</translation>
+    </message>
+    <message>
+        <source>The user database could not be opened. See the Execution Log for details.</source>
+        <translation>ユーザーデータベースを開けませんでした。詳細は実行ログを参照してください。</translation>
+    </message>
+    <message>
+        <source>Disabled</source>
+        <translation>無効</translation>
+    </message>
+    <message>
+        <source>Enabled</source>
+        <translation>有効</translation>
+    </message>
+    <message>
+        <source>Never</source>
+        <translation>なし</translation>
+    </message>
+    <message>
+        <source>No accounts yet, so everyone still uses the shared WebUI login. Add an Admin account first.</source>
+        <translation>アカウントがまだないため、全員が共有の WebUI ログインを使っています。先に Admin アカウントを追加してください。</translation>
+    </message>
+    <message>
+        <source>Couldn&apos;t read the user database. %1</source>
+        <translation>ユーザーデータベースを読み込めませんでした。%1</translation>
+    </message>
+    <message>
+        <source>Remove user</source>
+        <translation>ユーザーを削除</translation>
+    </message>
+    <message>
+        <source>Are you sure you want to remove the user &apos;%1&apos;?</source>
+        <translation>ユーザー &apos;%1&apos; を削除してもよろしいですか?</translation>
+    </message>
+    <message>
+        <source>Remove role</source>
+        <translation>ロールを削除</translation>
+    </message>
+    <message>
+        <source>Are you sure you want to remove the role &apos;%1&apos;?</source>
+        <translation>ロール &apos;%1&apos; を削除してもよろしいですか?</translation>
+    </message>
+    <message>
+        <source>Enable</source>
+        <translation>有効にする</translation>
+    </message>
+    <message>
+        <source>Disable</source>
+        <translation>無効にする</translation>
+    </message>
+    <message>
+        <source>Log Out Everywhere</source>
+        <translation>すべての場所でログアウト</translation>
+    </message>
+    <message>
+        <source>User Accounts</source>
+        <translation>ユーザーアカウント</translation>
+    </message>
+    <message>
+        <source>Users</source>
+        <translation>ユーザー</translation>
+    </message>
+    <message>
+        <source>People who can log in to the WebUI with their own username and password.</source>
+        <translation>自分のユーザー名とパスワードで WebUI にログインできる人です。</translation>
+    </message>
+    <message>
+        <source>Add User...</source>
+        <translation>ユーザーを追加...</translation>
+    </message>
+    <message>
+        <source>Edit...</source>
+        <translation>編集...</translation>
+    </message>
+    <message>
+        <source>Remove</source>
+        <translation>削除</translation>
+    </message>
+    <message>
+        <source>Roles</source>
+        <translation>ロール</translation>
+    </message>
+    <message>
+        <source>A role decides what its users are allowed to do.</source>
+        <translation>ロールは、そのユーザーが何をしてよいかを決めます。</translation>
+    </message>
+    <message>
+        <source>Add Role...</source>
+        <translation>ロールを追加...</translation>
+    </message>
+    <message>
+        <source>Logged In</source>
+        <translation>ログイン中</translation>
+    </message>
+    <message>
+        <source>Browsers and devices where someone is logged in with a user account.</source>
+        <translation>ユーザーアカウントでログインしているブラウザーとデバイスです。</translation>
+    </message>
+    <message>
+        <source>Log Out</source>
+        <translation>ログアウト</translation>
+    </message>
+    <message>
+        <source>Username</source>
+        <translation>ユーザー名</translation>
+    </message>
+    <message>
+        <source>Role</source>
+        <translation>ロール</translation>
+    </message>
+    <message>
+        <source>Status</source>
+        <translation>状態</translation>
+    </message>
+    <message>
+        <source>Last login</source>
+        <translation>最終ログイン</translation>
+    </message>
+    <message>
+        <source>Created</source>
+        <translation>作成日</translation>
+    </message>
+    <message>
+        <source>Name</source>
+        <translation>名前</translation>
+    </message>
+    <message>
+        <source>Description</source>
+        <translation>説明</translation>
+    </message>
+    <message>
+        <source>Permissions</source>
+        <translation>権限</translation>
+    </message>
+    <message>
+        <source>User</source>
+        <translation>ユーザー</translation>
+    </message>
+    <message>
+        <source>Browser</source>
+        <translation>ブラウザー</translation>
+    </message>
+    <message>
+        <source>Logged in</source>
+        <translation>ログイン日時</translation>
+    </message>
+    <message>
+        <source>Last active</source>
+        <translation>最終アクティビティ</translation>
+    </message>
+    <message>
+        <source>Expires</source>
+        <translation>有効期限</translation>
+    </message>
+    <message>
+        <source>The user database could not be opened. See the Execution Log for details.</source>
+        <translation>ユーザーデータベースを開けませんでした。詳細は実行ログを参照してください。</translation>
+    </message>
+    <message>
+        <source>Disabled</source>
+        <translation>無効</translation>
+    </message>
+    <message>
+        <source>Enabled</source>
+        <translation>有効</translation>
+    </message>
+    <message>
+        <source>Never</source>
+        <translation>なし</translation>
+    </message>
+    <message>
+        <source>No accounts yet, so everyone still uses the shared WebUI login. Add an Admin account first.</source>
+        <translation>アカウントがまだないため、全員が共有の WebUI ログインを使っています。先に Admin アカウントを追加してください。</translation>
+    </message>
+    <message>
+        <source>Couldn&apos;t read the user database. %1</source>
+        <translation>ユーザーデータベースを読み込めませんでした。%1</translation>
+    </message>
+    <message>
+        <source>Remove user</source>
+        <translation>ユーザーを削除</translation>
+    </message>
+    <message>
+        <source>Are you sure you want to remove the user &apos;%1&apos;?</source>
+        <translation>ユーザー &apos;%1&apos; を削除してもよろしいですか?</translation>
+    </message>
+    <message>
+        <source>Remove role</source>
+        <translation>ロールを削除</translation>
+    </message>
+    <message>
+        <source>Are you sure you want to remove the role &apos;%1&apos;?</source>
+        <translation>ロール &apos;%1&apos; を削除してもよろしいですか?</translation>
+    </message>
+    <message>
+        <source>Enable</source>
+        <translation>有効にする</translation>
+    </message>
+    <message>
+        <source>Disable</source>
+        <translation>無効にする</translation>
+    </message>
+    <message>
+        <source>Log Out Everywhere</source>
+        <translation>すべての場所でログアウト</translation>
+    </message>
+</context>
+<context>
+    <name>UserRoleDialog</name>
+    <message>
+        <source>Role</source>
+        <translation>ロール</translation>
+    </message>
+    <message>
+        <source>Name:</source>
+        <translation>名前:</translation>
+    </message>
+    <message>
+        <source>Description:</source>
+        <translation>説明:</translation>
+    </message>
+    <message>
+        <source>Gives control over the PC or qBittorrent itself.</source>
+        <translation>PC または qBittorrent 自体の制御を許可します。</translation>
+    </message>
+    <message>
+        <source>Add Role</source>
+        <translation>ロールを追加</translation>
+    </message>
+    <message>
+        <source>Edit Role</source>
+        <translation>ロールを編集</translation>
+    </message>
+    <message>
+        <source>Enter a role name.</source>
+        <translation>ロール名を入力してください。</translation>
+    </message>
+    <message>
+        <source>Role</source>
+        <translation>ロール</translation>
+    </message>
+    <message>
+        <source>Name:</source>
+        <translation>名前:</translation>
+    </message>
+    <message>
+        <source>Description:</source>
+        <translation>説明:</translation>
+    </message>
+    <message>
+        <source>Gives control over the PC or qBittorrent itself.</source>
+        <translation>PC または qBittorrent 自体の制御を許可します。</translation>
+    </message>
+    <message>
+        <source>Add Role</source>
+        <translation>ロールを追加</translation>
+    </message>
+    <message>
+        <source>Edit Role</source>
+        <translation>ロールを編集</translation>
+    </message>
+    <message>
+        <source>Enter a role name.</source>
+        <translation>ロール名を入力してください。</translation>
+    </message>
+</context>
+<context>
+    <name>WebUIActivityWidget</name>
+    <message>
+        <source>All</source>
+        <translation>すべて</translation>
+    </message>
+    <message>
+        <source>Filter activity</source>
+        <translation>アクティビティを絞り込む</translation>
+    </message>
+    <message>
+        <source>Export...</source>
+        <translation>エクスポート...</translation>
+    </message>
+    <message>
+        <source>User:</source>
+        <translation>ユーザー:</translation>
+    </message>
+    <message>
+        <source>Category:</source>
+        <translation>カテゴリ:</translation>
+    </message>
+    <message>
+        <source>Result:</source>
+        <translation>結果:</translation>
+    </message>
+    <message>
+        <source>Time</source>
+        <translation>時刻</translation>
+    </message>
+    <message>
+        <source>User</source>
+        <translation>ユーザー</translation>
+    </message>
+    <message>
+        <source>Role</source>
+        <translation>ロール</translation>
+    </message>
+    <message>
+        <source>Category</source>
+        <translation>カテゴリ</translation>
+    </message>
+    <message>
+        <source>Action</source>
+        <translation>操作</translation>
+    </message>
+    <message>
+        <source>Result</source>
+        <translation>結果</translation>
+    </message>
+    <message>
+        <source>The user database could not be opened. See the General tab for details.</source>
+        <translation>ユーザーデータベースを開けませんでした。詳細は「全般」タブを参照してください。</translation>
+    </message>
+    <message>
+        <source>Results (showing %1 out of %2)</source>
+        <translation>結果 (%2 件中 %1 件を表示)</translation>
+    </message>
+    <message>
+        <source>Copy</source>
+        <translation>コピー</translation>
+    </message>
+    <message>
+        <source>Export WebUI activity</source>
+        <translation>WebUI アクティビティをエクスポート</translation>
+    </message>
+    <message>
+        <source>CSV files</source>
+        <translation>CSV ファイル</translation>
+    </message>
+    <message>
+        <source>Couldn&apos;t save the file. Reason: %1</source>
+        <translation>ファイルを保存できませんでした。理由: %1</translation>
+    </message>
+    <message>
+        <source>All</source>
+        <translation>すべて</translation>
+    </message>
+    <message>
+        <source>Filter activity</source>
+        <translation>アクティビティを絞り込む</translation>
+    </message>
+    <message>
+        <source>Export...</source>
+        <translation>エクスポート...</translation>
+    </message>
+    <message>
+        <source>User:</source>
+        <translation>ユーザー:</translation>
+    </message>
+    <message>
+        <source>Category:</source>
+        <translation>カテゴリ:</translation>
+    </message>
+    <message>
+        <source>Result:</source>
+        <translation>結果:</translation>
+    </message>
+    <message>
+        <source>Time</source>
+        <translation>時刻</translation>
+    </message>
+    <message>
+        <source>User</source>
+        <translation>ユーザー</translation>
+    </message>
+    <message>
+        <source>Role</source>
+        <translation>ロール</translation>
+    </message>
+    <message>
+        <source>Category</source>
+        <translation>カテゴリ</translation>
+    </message>
+    <message>
+        <source>Action</source>
+        <translation>操作</translation>
+    </message>
+    <message>
+        <source>Result</source>
+        <translation>結果</translation>
+    </message>
+    <message>
+        <source>The user database could not be opened. See the General tab for details.</source>
+        <translation>ユーザーデータベースを開けませんでした。詳細は「全般」タブを参照してください。</translation>
+    </message>
+    <message>
+        <source>Results (showing %1 out of %2)</source>
+        <translation>結果 (%2 件中 %1 件を表示)</translation>
+    </message>
+    <message>
+        <source>Copy</source>
+        <translation>コピー</translation>
+    </message>
+    <message>
+        <source>Export WebUI activity</source>
+        <translation>WebUI アクティビティをエクスポート</translation>
+    </message>
+    <message>
+        <source>CSV files</source>
+        <translation>CSV ファイル</translation>
+    </message>
+    <message>
+        <source>Couldn&apos;t save the file. Reason: %1</source>
+        <translation>ファイルを保存できませんでした。理由: %1</translation>
     </message>
 </context>
 </TS>

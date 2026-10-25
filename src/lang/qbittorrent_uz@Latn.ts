@@ -127,6 +127,62 @@
         <source>The free IP to Country Lite database by DB-IP is used for resolving the countries of peers. The database is licensed under the Creative Commons Attribution 4.0 International License</source>
         <translation type="unfinished"/>
     </message>
+    <message>
+        <source>This edition</source>
+        <translation>Ushbu nashr</translation>
+    </message>
+    <message>
+        <source>Edition version:</source>
+        <translation>Nashr versiyasi:</translation>
+    </message>
+    <message>
+        <source>Based on:</source>
+        <translation>Asos:</translation>
+    </message>
+    <message>
+        <source>Maintainer:</source>
+        <translation>Qo&apos;llab-quvvatlovchi:</translation>
+    </message>
+    <message>
+        <source>qBittorrent project:</source>
+        <translation>qBittorrent loyihasi:</translation>
+    </message>
+    <message>
+        <source>Kettle Edition is a personal build of qBittorrent that adds user accounts with roles for the WebUI and the desktop app, an activity log, and an installable WebUI with a phone layout. A kettle is a group of hawks soaring together. This is an unofficial build, not affiliated with the qBittorrent project.</source>
+        <translation>Kettle Edition — qBittorrent&apos;ning shaxsiy yig&apos;ilmasi bo&apos;lib, WebUI va ish stoli ilovasi uchun rollarga ega foydalanuvchi hisoblarini, faoliyat jurnalini hamda telefon ko&apos;rinishli o&apos;rnatiladigan WebUI&apos;ni qo&apos;shadi. Kettle — birga uchib yuruvchi lochinlar to&apos;dasi. Bu norasmiy yig&apos;ilma bo&apos;lib, qBittorrent loyihasiga aloqasi yo&apos;q.</translation>
+    </message>
+    <message>
+        <source>N/A</source>
+        <translation>Yo&apos;q</translation>
+    </message>
+    <message>
+        <source>This edition</source>
+        <translation>Ushbu nashr</translation>
+    </message>
+    <message>
+        <source>Edition version:</source>
+        <translation>Nashr versiyasi:</translation>
+    </message>
+    <message>
+        <source>Based on:</source>
+        <translation>Asos:</translation>
+    </message>
+    <message>
+        <source>Maintainer:</source>
+        <translation>Qo&apos;llab-quvvatlovchi:</translation>
+    </message>
+    <message>
+        <source>qBittorrent project:</source>
+        <translation>qBittorrent loyihasi:</translation>
+    </message>
+    <message>
+        <source>Kettle Edition is a personal build of qBittorrent that adds user accounts with roles for the WebUI and the desktop app, an activity log, and an installable WebUI with a phone layout. A kettle is a group of hawks soaring together. This is an unofficial build, not affiliated with the qBittorrent project.</source>
+        <translation>Kettle Edition — qBittorrent&apos;ning shaxsiy yig&apos;ilmasi bo&apos;lib, WebUI va ish stoli ilovasi uchun rollarga ega foydalanuvchi hisoblarini, faoliyat jurnalini hamda telefon ko&apos;rinishli o&apos;rnatiladigan WebUI&apos;ni qo&apos;shadi. Kettle — birga uchib yuruvchi lochinlar to&apos;dasi. Bu norasmiy yig&apos;ilma bo&apos;lib, qBittorrent loyihasiga aloqasi yo&apos;q.</translation>
+    </message>
+    <message>
+        <source>N/A</source>
+        <translation>Yo&apos;q</translation>
+    </message>
 </context>
 <context>
     <name>AbstractFileStorage</name>
@@ -1387,6 +1443,62 @@
         <location filename="../gui/advancedsettings.cpp" line="881"/>
         <source>Embedded tracker port</source>
         <translation>Ichki o‘rnatilgan treker porti</translation>
+    </message>
+    <message>
+        <source>Network</source>
+        <translation>Tarmoq</translation>
+    </message>
+    <message>
+        <source>Storage</source>
+        <translation>Saqlash</translation>
+    </message>
+    <message>
+        <source>Peers and trackers</source>
+        <translation>Peerlar va trekerlar</translation>
+    </message>
+    <message>
+        <source>Program behavior</source>
+        <translation>Dastur xatti-harakati</translation>
+    </message>
+    <message>
+        <source>Display and notifications</source>
+        <translation>Koʻrsatish va bildirishnomalar</translation>
+    </message>
+    <message>
+        <source>Network connection</source>
+        <translation>Tarmoq ulanishi</translation>
+    </message>
+    <message>
+        <source>Security and privacy</source>
+        <translation>Xavfsizlik va maxfiylik</translation>
+    </message>
+    <message>
+        <source>Connection tuning</source>
+        <translation>Ulanishni sozlash</translation>
+    </message>
+    <message>
+        <source>Saving and torrent files</source>
+        <translation>Saqlash va torrent fayllar</translation>
+    </message>
+    <message>
+        <source>Disk and memory</source>
+        <translation>Disk va xotira</translation>
+    </message>
+    <message>
+        <source>Peers and seeding</source>
+        <translation>Peerlar va seeding</translation>
+    </message>
+    <message>
+        <source>DHT and I2P</source>
+        <translation>DHT va I2P</translation>
+    </message>
+    <message>
+        <source>General</source>
+        <translation>Umumiy</translation>
+    </message>
+    <message>
+        <source>Trackers</source>
+        <translation>Trekerlar</translation>
     </message>
 </context>
 <context>
@@ -3243,7 +3355,15 @@ Supports the formats: S01E01, 1x1, 2017.12.31 and 31.12.2017 (Date formats also 
     <message>
         <location filename="../gui/deletionconfirmationdialog.cpp" line="60"/>
         <source>Remove</source>
-        <translation type="unfinished"/>
+        <translation>Olib tashlash</translation>
+    </message>
+    <message>
+        <source>This choice is remembered for the next removal.</source>
+        <translation>Bu tanlov keyingi olib tashlash uchun eslab qolinadi.</translation>
+    </message>
+    <message>
+        <source>Remove</source>
+        <translation>Olib tashlash</translation>
     </message>
 </context>
 <context>
@@ -3318,6 +3438,14 @@ Supports the formats: S01E01, 1x1, 2017.12.31 and 31.12.2017 (Date formats also 
         <location filename="../gui/executionlogwidget.cpp" line="99"/>
         <source>Clear</source>
         <translation>Tozalash</translation>
+    </message>
+    <message>
+        <source>WebUI Activity</source>
+        <translation>WebUI faoliyati</translation>
+    </message>
+    <message>
+        <source>WebUI Activity</source>
+        <translation>WebUI faoliyati</translation>
     </message>
 </context>
 <context>
@@ -4406,6 +4534,46 @@ Minimum requirement: %2.</source>
         <location filename="../gui/mainwindow.cpp" line="1306"/>
         <source>Torrent Files</source>
         <translation>Torrent fayllari</translation>
+    </message>
+    <message>
+        <source>Kettle Edition %1 is available.</source>
+        <translation>Kettle Edition %1 mavjud.</translation>
+    </message>
+    <message>
+        <source>qBittorrent Kettle Edition %1 is available. It is downloaded now and installed at 4:00 AM, or when qBittorrent starts next.</source>
+        <translation>qBittorrent Kettle Edition %1 mavjud. U hozir yuklab olinmoqda va soat 4:00 da yoki qBittorrent keyingi safar ishga tushganda o&apos;rnatiladi.</translation>
+    </message>
+    <message>
+        <source>qBittorrent Kettle Edition %1 is available. It is downloaded now. Turn on &quot;Automatically install Kettle Edition updates&quot; in Options to install it.</source>
+        <translation>qBittorrent Kettle Edition %1 mavjud. U hozir yuklab olinmoqda. O&apos;rnatish uchun Sozlamalarda &quot;Kettle Edition yangilanishlarini avtomatik o&apos;rnatish&quot;ni yoqing.</translation>
+    </message>
+    <message>
+        <source>You have the latest qBittorrent Kettle Edition (%1).</source>
+        <translation>Sizda qBittorrent Kettle Edition&apos;ning so&apos;nggi versiyasi (%1) bor.</translation>
+    </message>
+    <message>
+        <source>Could not check for qBittorrent Kettle Edition updates. See the Execution Log for details.</source>
+        <translation>qBittorrent Kettle Edition yangilanishlarini tekshirib bo&apos;lmadi. Tafsilotlar uchun bajarilish jurnaliga qarang.</translation>
+    </message>
+    <message>
+        <source>Kettle Edition %1 is available.</source>
+        <translation>Kettle Edition %1 mavjud.</translation>
+    </message>
+    <message>
+        <source>qBittorrent Kettle Edition %1 is available. It is downloaded now and installed at 4:00 AM, or when qBittorrent starts next.</source>
+        <translation>qBittorrent Kettle Edition %1 mavjud. U hozir yuklab olinmoqda va soat 4:00 da yoki qBittorrent keyingi safar ishga tushganda o&apos;rnatiladi.</translation>
+    </message>
+    <message>
+        <source>qBittorrent Kettle Edition %1 is available. It is downloaded now. Turn on &quot;Automatically install Kettle Edition updates&quot; in Options to install it.</source>
+        <translation>qBittorrent Kettle Edition %1 mavjud. U hozir yuklab olinmoqda. O&apos;rnatish uchun Sozlamalarda &quot;Kettle Edition yangilanishlarini avtomatik o&apos;rnatish&quot;ni yoqing.</translation>
+    </message>
+    <message>
+        <source>You have the latest qBittorrent Kettle Edition (%1).</source>
+        <translation>Sizda qBittorrent Kettle Edition&apos;ning so&apos;nggi versiyasi (%1) bor.</translation>
+    </message>
+    <message>
+        <source>Could not check for qBittorrent Kettle Edition updates. See the Execution Log for details.</source>
+        <translation>qBittorrent Kettle Edition yangilanishlarini tekshirib bo&apos;lmadi. Tafsilotlar uchun bajarilish jurnaliga qarang.</translation>
     </message>
 </context>
 <context>
@@ -7873,6 +8041,190 @@ readme[0-9].txt: filter &apos;readme1.txt&apos;, &apos;readme2.txt&apos; but not
         <source>Length Error</source>
         <translation type="unfinished"/>
     </message>
+    <message>
+        <source>Search settings</source>
+        <translation>Sozlamalardan qidirish</translation>
+    </message>
+    <message>
+        <source>No settings match</source>
+        <translation>Mos sozlama yo&apos;q</translation>
+    </message>
+    <message>
+        <source>User Accounts</source>
+        <translation>Foydalanuvchi hisoblari</translation>
+    </message>
+    <message>
+        <source>Automatically install Kettle Edition updates</source>
+        <translation>Kettle Edition yangilanishlarini avtomatik o&apos;rnatish</translation>
+    </message>
+    <message>
+        <source>Status bar and log</source>
+        <translation>Holat paneli va jurnal</translation>
+    </message>
+    <message>
+        <source>Files</source>
+        <translation>Fayllar</translation>
+    </message>
+    <message>
+        <source>Checking</source>
+        <translation>Tekshirish</translation>
+    </message>
+    <message>
+        <source>Until the first user account is created, this login always works.</source>
+        <translation>Birinchi foydalanuvchi hisobi yaratilmaguncha bu kirish doim ishlaydi.</translation>
+    </message>
+    <message>
+        <source>Allow this login when user accounts exist</source>
+        <translation>Foydalanuvchi hisoblari mavjud bo&apos;lganda ham bu kirishga ruxsat berish</translation>
+    </message>
+    <message>
+        <source>Access</source>
+        <translation>Kirish huquqi</translation>
+    </message>
+    <message>
+        <source>Changes to users, roles and logins apply at once. The settings below apply with OK or Apply.</source>
+        <translation>Foydalanuvchilar, rollar va kirishlardagi o&apos;zgarishlar darhol qo&apos;llanadi. Quyidagi sozlamalar OK yoki Qo&apos;llash bilan qo&apos;llanadi.</translation>
+    </message>
+    <message>
+        <source>Logins and Activity Log</source>
+        <translation>Kirishlar va faoliyat jurnali</translation>
+    </message>
+    <message>
+        <source>0 means users are logged out after the session timeout.</source>
+        <translation>0 foydalanuvchilar seans vaqti tugagach chiqib ketishini bildiradi.</translation>
+    </message>
+    <message>
+        <source>Keep users logged in for:</source>
+        <translation>Foydalanuvchilarni tizimda saqlash:</translation>
+    </message>
+    <message>
+        <source>Until session timeout</source>
+        <translation>Seans vaqti tugaguncha</translation>
+    </message>
+    <message>
+        <source> days</source>
+        <translation> kun</translation>
+    </message>
+    <message>
+        <source>Lock account after consecutive failures:</source>
+        <translation>Ketma-ket muvaffaqiyatsizliklardan so&apos;ng hisobni qulflash:</translation>
+    </message>
+    <message>
+        <source>Keep WebUI activity log for:</source>
+        <translation>WebUI faoliyat jurnalini saqlash:</translation>
+    </message>
+    <message>
+        <source>lock for:</source>
+        <translation>qulflash muddati:</translation>
+    </message>
+    <message>
+        <source>%1 works best with Windows dark mode</source>
+        <translation>%1 Windows&apos;ning qorong&apos;i rejimida eng yaxshi ishlaydi</translation>
+    </message>
+    <message>
+        <source>WebUI address</source>
+        <translation>WebUI manzili</translation>
+    </message>
+    <message>
+        <source>With the WebUI address set to %1, only this PC can reach the WebUI. Remote access, including through a reverse proxy on another machine, will stop working.
+
+Save anyway?</source>
+        <translation>WebUI manzili %1 qilib o&apos;rnatilganda WebUI&apos;ga faqat shu kompyuter kira oladi. Masofadan kirish, jumladan boshqa mashinadagi teskari proksi orqali ham, to&apos;xtaydi.
+
+Baribir saqlansinmi?</translation>
+    </message>
+    <message>
+        <source>Search settings</source>
+        <translation>Sozlamalardan qidirish</translation>
+    </message>
+    <message>
+        <source>No settings match</source>
+        <translation>Mos sozlama yo&apos;q</translation>
+    </message>
+    <message>
+        <source>User Accounts</source>
+        <translation>Foydalanuvchi hisoblari</translation>
+    </message>
+    <message>
+        <source>Automatically install Kettle Edition updates</source>
+        <translation>Kettle Edition yangilanishlarini avtomatik o&apos;rnatish</translation>
+    </message>
+    <message>
+        <source>Status bar and log</source>
+        <translation>Holat paneli va jurnal</translation>
+    </message>
+    <message>
+        <source>Files</source>
+        <translation>Fayllar</translation>
+    </message>
+    <message>
+        <source>Checking</source>
+        <translation>Tekshirish</translation>
+    </message>
+    <message>
+        <source>Until the first user account is created, this login always works.</source>
+        <translation>Birinchi foydalanuvchi hisobi yaratilmaguncha bu kirish doim ishlaydi.</translation>
+    </message>
+    <message>
+        <source>Allow this login when user accounts exist</source>
+        <translation>Foydalanuvchi hisoblari mavjud bo&apos;lganda ham bu kirishga ruxsat berish</translation>
+    </message>
+    <message>
+        <source>Access</source>
+        <translation>Kirish huquqi</translation>
+    </message>
+    <message>
+        <source>Changes to users, roles and logins apply at once. The settings below apply with OK or Apply.</source>
+        <translation>Foydalanuvchilar, rollar va kirishlardagi o&apos;zgarishlar darhol qo&apos;llanadi. Quyidagi sozlamalar OK yoki Qo&apos;llash bilan qo&apos;llanadi.</translation>
+    </message>
+    <message>
+        <source>Logins and Activity Log</source>
+        <translation>Kirishlar va faoliyat jurnali</translation>
+    </message>
+    <message>
+        <source>0 means users are logged out after the session timeout.</source>
+        <translation>0 foydalanuvchilar seans vaqti tugagach chiqib ketishini bildiradi.</translation>
+    </message>
+    <message>
+        <source>Keep users logged in for:</source>
+        <translation>Foydalanuvchilarni tizimda saqlash:</translation>
+    </message>
+    <message>
+        <source>Until session timeout</source>
+        <translation>Seans vaqti tugaguncha</translation>
+    </message>
+    <message>
+        <source> days</source>
+        <translation> kun</translation>
+    </message>
+    <message>
+        <source>Lock account after consecutive failures:</source>
+        <translation>Ketma-ket muvaffaqiyatsizliklardan so&apos;ng hisobni qulflash:</translation>
+    </message>
+    <message>
+        <source>Keep WebUI activity log for:</source>
+        <translation>WebUI faoliyat jurnalini saqlash:</translation>
+    </message>
+    <message>
+        <source>lock for:</source>
+        <translation>qulflash muddati:</translation>
+    </message>
+    <message>
+        <source>%1 works best with Windows dark mode</source>
+        <translation>%1 Windows&apos;ning qorong&apos;i rejimida eng yaxshi ishlaydi</translation>
+    </message>
+    <message>
+        <source>WebUI address</source>
+        <translation>WebUI manzili</translation>
+    </message>
+    <message>
+        <source>With the WebUI address set to %1, only this PC can reach the WebUI. Remote access, including through a reverse proxy on another machine, will stop working.
+
+Save anyway?</source>
+        <translation>WebUI manzili %1 qilib o&apos;rnatilganda WebUI&apos;ga faqat shu kompyuter kira oladi. Masofadan kirish, jumladan boshqa mashinadagi teskari proksi orqali ham, to&apos;xtaydi.
+
+Baribir saqlansinmi?</translation>
+    </message>
 </context>
 <context>
     <name>PeerInfo</name>
@@ -8119,6 +8471,22 @@ readme[0-9].txt: filter &apos;readme1.txt&apos;, &apos;readme2.txt&apos; but not
         <location filename="../gui/properties/peerlistwidget.cpp" line="305"/>
         <source>Copy IP:port</source>
         <translation type="unfinished"/>
+    </message>
+    <message>
+        <source>Reset auto width</source>
+        <translation>Avtomatik kenglikni tiklash</translation>
+    </message>
+    <message>
+        <source>Fit all non-hidden columns to their contents again, and forget the widths that were set by hand</source>
+        <translation>Barcha ko&apos;rinadigan ustunlarni mazmuniga qayta moslash va qo&apos;lda belgilangan kengliklarni unutish</translation>
+    </message>
+    <message>
+        <source>Reset auto width</source>
+        <translation>Avtomatik kenglikni tiklash</translation>
+    </message>
+    <message>
+        <source>Fit all non-hidden columns to their contents again, and forget the widths that were set by hand</source>
+        <translation>Barcha ko&apos;rinadigan ustunlarni mazmuniga qayta moslash va qo&apos;lda belgilangan kengliklarni unutish</translation>
     </message>
 </context>
 <context>
@@ -9252,6 +9620,14 @@ Those plugins were disabled.</source>
         <source>Open link</source>
         <translation type="unfinished"/>
     </message>
+    <message>
+        <source>Details</source>
+        <translation>Tafsilotlar</translation>
+    </message>
+    <message>
+        <source>Details</source>
+        <translation>Tafsilotlar</translation>
+    </message>
 </context>
 <context>
     <name>SearchController</name>
@@ -9578,6 +9954,70 @@ Those plugins were disabled.</source>
         <source>Resize all non-hidden columns to the size of their contents</source>
         <translation type="unfinished"/>
     </message>
+    <message>
+        <source>%1 of %2 shown (%3 hidden)</source>
+        <translation>%2 tadan %1 tasi ko&apos;rsatilmoqda (%3 tasi yashirin)</translation>
+    </message>
+    <message>
+        <source>%1 of %2 shown</source>
+        <translation>%2 tadan %1 tasi ko&apos;rsatilmoqda</translation>
+    </message>
+    <message>
+        <source>Searching: %1</source>
+        <translation>Qidirilmoqda: %1</translation>
+    </message>
+    <message>
+        <source>Finished: %1</source>
+        <translation>Tugadi: %1</translation>
+    </message>
+    <message>
+        <source>Search aborted: %1</source>
+        <translation>Qidiruv to&apos;xtatildi: %1</translation>
+    </message>
+    <message>
+        <source>Reset auto width</source>
+        <translation>Avtomatik kenglikni tiklash</translation>
+    </message>
+    <message>
+        <source>Fit all non-hidden columns to their contents again, and forget the widths that were set by hand</source>
+        <translation>Barcha ko&apos;rinadigan ustunlarni mazmuniga qayta moslash va qo&apos;lda belgilangan kengliklarni unutish</translation>
+    </message>
+    <message>
+        <source>Unknown</source>
+        <translation>Noma&apos;lum</translation>
+    </message>
+    <message>
+        <source>%1 of %2 shown (%3 hidden)</source>
+        <translation>%2 tadan %1 tasi ko&apos;rsatilmoqda (%3 tasi yashirin)</translation>
+    </message>
+    <message>
+        <source>%1 of %2 shown</source>
+        <translation>%2 tadan %1 tasi ko&apos;rsatilmoqda</translation>
+    </message>
+    <message>
+        <source>Searching: %1</source>
+        <translation>Qidirilmoqda: %1</translation>
+    </message>
+    <message>
+        <source>Finished: %1</source>
+        <translation>Tugadi: %1</translation>
+    </message>
+    <message>
+        <source>Search aborted: %1</source>
+        <translation>Qidiruv to&apos;xtatildi: %1</translation>
+    </message>
+    <message>
+        <source>Reset auto width</source>
+        <translation>Avtomatik kenglikni tiklash</translation>
+    </message>
+    <message>
+        <source>Fit all non-hidden columns to their contents again, and forget the widths that were set by hand</source>
+        <translation>Barcha ko&apos;rinadigan ustunlarni mazmuniga qayta moslash va qo&apos;lda belgilangan kengliklarni unutish</translation>
+    </message>
+    <message>
+        <source>Unknown</source>
+        <translation>Noma&apos;lum</translation>
+    </message>
 </context>
 <context>
     <name>SearchPluginManager</name>
@@ -9803,6 +10243,90 @@ Click the &quot;Search plugins...&quot; button at the bottom right of the window
         <location filename="../gui/search/searchwidget.ui" line="58"/>
         <source>Stop</source>
         <translation type="unfinished"/>
+    </message>
+    <message>
+        <source>Searches</source>
+        <translation>Qidiruvlar</translation>
+    </message>
+    <message>
+        <source>Close the selected search</source>
+        <translation>Tanlangan qidiruvni yopish</translation>
+    </message>
+    <message>
+        <source>Search for torrents...</source>
+        <translation>Torrentlarni qidirish...</translation>
+    </message>
+    <message>
+        <source>Category to search in</source>
+        <translation>Qidiriladigan toifa</translation>
+    </message>
+    <message>
+        <source>Search engines to use</source>
+        <translation>Foydalaniladigan qidiruv tizimlari</translation>
+    </message>
+    <message>
+        <source>There aren&apos;t any search plugins installed.
+Click the &quot;Search plugins...&quot; button at the top right of the window to install some.</source>
+        <translation>Qidiruv plaginlari o&apos;rnatilmagan.
+O&apos;rnatish uchun oynaning yuqori o&apos;ng burchagidagi &quot;Qidiruv plaginlari...&quot; tugmasini bosing.</translation>
+    </message>
+    <message>
+        <source>Type a search above and press Enter.</source>
+        <translation>Yuqorida qidiruv yozing va Enter bosing.</translation>
+    </message>
+    <message>
+        <source>Refresh search</source>
+        <translation>Qidiruvni yangilash</translation>
+    </message>
+    <message>
+        <source>Close search</source>
+        <translation>Qidiruvni yopish</translation>
+    </message>
+    <message>
+        <source>Close all searches</source>
+        <translation>Barcha qidiruvlarni yopish</translation>
+    </message>
+    <message>
+        <source>Searches</source>
+        <translation>Qidiruvlar</translation>
+    </message>
+    <message>
+        <source>Close the selected search</source>
+        <translation>Tanlangan qidiruvni yopish</translation>
+    </message>
+    <message>
+        <source>Search for torrents...</source>
+        <translation>Torrentlarni qidirish...</translation>
+    </message>
+    <message>
+        <source>Category to search in</source>
+        <translation>Qidiriladigan toifa</translation>
+    </message>
+    <message>
+        <source>Search engines to use</source>
+        <translation>Foydalaniladigan qidiruv tizimlari</translation>
+    </message>
+    <message>
+        <source>There aren&apos;t any search plugins installed.
+Click the &quot;Search plugins...&quot; button at the top right of the window to install some.</source>
+        <translation>Qidiruv plaginlari o&apos;rnatilmagan.
+O&apos;rnatish uchun oynaning yuqori o&apos;ng burchagidagi &quot;Qidiruv plaginlari...&quot; tugmasini bosing.</translation>
+    </message>
+    <message>
+        <source>Type a search above and press Enter.</source>
+        <translation>Yuqorida qidiruv yozing va Enter bosing.</translation>
+    </message>
+    <message>
+        <source>Refresh search</source>
+        <translation>Qidiruvni yangilash</translation>
+    </message>
+    <message>
+        <source>Close search</source>
+        <translation>Qidiruvni yopish</translation>
+    </message>
+    <message>
+        <source>Close all searches</source>
+        <translation>Barcha qidiruvlarni yopish</translation>
     </message>
 </context>
 <context>
@@ -10226,6 +10750,326 @@ Click the &quot;Search plugins...&quot; button at the bottom right of the window
         <source>%1 ms</source>
         <comment>18 milliseconds</comment>
         <translation type="unfinished"/>
+    </message>
+    <message>
+        <source>Copy</source>
+        <translation>Nusxalash</translation>
+    </message>
+    <message>
+        <source>Overview</source>
+        <translation>Umumiy ko&apos;rinish</translation>
+    </message>
+    <message>
+        <source>Transfer</source>
+        <translation>Uzatish</translation>
+    </message>
+    <message>
+        <source>This session</source>
+        <translation>Bu seans</translation>
+    </message>
+    <message>
+        <source>All time</source>
+        <translation>Butun vaqt</translation>
+    </message>
+    <message>
+        <source>Downloaded:</source>
+        <translation>Yuklab olingan:</translation>
+    </message>
+    <message>
+        <source>Uploaded:</source>
+        <translation>Yuklangan:</translation>
+    </message>
+    <message>
+        <source>Share ratio:</source>
+        <translation>Ulashish nisbati:</translation>
+    </message>
+    <message>
+        <source>Current speed:</source>
+        <translation>Joriy tezlik:</translation>
+    </message>
+    <message>
+        <source>Activity</source>
+        <translation>Faoliyat</translation>
+    </message>
+    <message>
+        <source>Torrents downloading:</source>
+        <translation>Yuklab olinayotgan torrentlar:</translation>
+    </message>
+    <message>
+        <source>Torrents seeding:</source>
+        <translation>Tarqatilayotgan torrentlar:</translation>
+    </message>
+    <message>
+        <source>Torrents stopped:</source>
+        <translation>To&apos;xtatilgan torrentlar:</translation>
+    </message>
+    <message>
+        <source>Torrents with errors:</source>
+        <translation>Xatoli torrentlar:</translation>
+    </message>
+    <message>
+        <source>Running for:</source>
+        <translation>Ishlash vaqti:</translation>
+    </message>
+    <message>
+        <source>History</source>
+        <translation>Tarix</translation>
+    </message>
+    <message>
+        <source>Period</source>
+        <translation>Davr</translation>
+    </message>
+    <message>
+        <source>Today</source>
+        <translation>Bugun</translation>
+    </message>
+    <message>
+        <source>Last 7 days</source>
+        <translation>So&apos;nggi 7 kun</translation>
+    </message>
+    <message>
+        <source>This month</source>
+        <translation>Shu oy</translation>
+    </message>
+    <message>
+        <source>Last month</source>
+        <translation>O&apos;tgan oy</translation>
+    </message>
+    <message>
+        <source>Last 12 months</source>
+        <translation>So&apos;nggi 12 oy</translation>
+    </message>
+    <message>
+        <source>Tracking since:</source>
+        <translation>Kuzatuv boshlangan sana:</translation>
+    </message>
+    <message>
+        <source>By month</source>
+        <translation>Oylar bo&apos;yicha</translation>
+    </message>
+    <message>
+        <source>Month</source>
+        <translation>Oy</translation>
+    </message>
+    <message>
+        <source>Downloaded</source>
+        <translation>Yuklab olingan</translation>
+    </message>
+    <message>
+        <source>Uploaded</source>
+        <translation>Yuklangan</translation>
+    </message>
+    <message>
+        <source>Share ratio</source>
+        <translation>Ulashish nisbati</translation>
+    </message>
+    <message>
+        <source>WebUI downloads added, this month</source>
+        <translation>WebUI orqali qo&apos;shilgan yuklamalar, shu oy</translation>
+    </message>
+    <message>
+        <source>Counts the requests that added a download. Apps without a login, such as Sonarr and Radarr, are shown as (localhost). Downloads added in the desktop window are not counted.</source>
+        <translation>Yuklama qo&apos;shgan so&apos;rovlarni sanaydi. Sonarr va Radarr kabi kirishsiz ilovalar (localhost) deb ko&apos;rsatiladi. Ish stoli oynasida qo&apos;shilgan yuklamalar sanalmaydi.</translation>
+    </message>
+    <message>
+        <source>Technical</source>
+        <translation>Texnik</translation>
+    </message>
+    <message>
+        <source>Disk</source>
+        <translation>Disk</translation>
+    </message>
+    <message>
+        <source>Peers waiting on disk writes:</source>
+        <translation>Diskka yozishni kutayotgan ulanuvchilar:</translation>
+    </message>
+    <message>
+        <source>Peers waiting on disk reads:</source>
+        <translation>Diskdan o&apos;qishni kutayotgan ulanuvchilar:</translation>
+    </message>
+    <message>
+        <source>Network</source>
+        <translation>Tarmoq</translation>
+    </message>
+    <message>
+        <source>DHT nodes:</source>
+        <translation>DHT tugunlari:</translation>
+    </message>
+    <message>
+        <source>Data discarded this session:</source>
+        <translation>Shu seansda tashlab yuborilgan ma&apos;lumot:</translation>
+    </message>
+    <message>
+        <source>Before tracking began</source>
+        <translation>Kuzatuv boshlanishidan oldin</translation>
+    </message>
+    <message>
+        <source>Nothing added yet</source>
+        <translation>Hali hech narsa qo&apos;shilmagan</translation>
+    </message>
+    <message>
+        <source>Off</source>
+        <translation>O&apos;chiq</translation>
+    </message>
+    <message>
+        <source>Copy</source>
+        <translation>Nusxalash</translation>
+    </message>
+    <message>
+        <source>Overview</source>
+        <translation>Umumiy ko&apos;rinish</translation>
+    </message>
+    <message>
+        <source>Transfer</source>
+        <translation>Uzatish</translation>
+    </message>
+    <message>
+        <source>This session</source>
+        <translation>Bu seans</translation>
+    </message>
+    <message>
+        <source>All time</source>
+        <translation>Butun vaqt</translation>
+    </message>
+    <message>
+        <source>Downloaded:</source>
+        <translation>Yuklab olingan:</translation>
+    </message>
+    <message>
+        <source>Uploaded:</source>
+        <translation>Yuklangan:</translation>
+    </message>
+    <message>
+        <source>Share ratio:</source>
+        <translation>Ulashish nisbati:</translation>
+    </message>
+    <message>
+        <source>Current speed:</source>
+        <translation>Joriy tezlik:</translation>
+    </message>
+    <message>
+        <source>Activity</source>
+        <translation>Faoliyat</translation>
+    </message>
+    <message>
+        <source>Torrents downloading:</source>
+        <translation>Yuklab olinayotgan torrentlar:</translation>
+    </message>
+    <message>
+        <source>Torrents seeding:</source>
+        <translation>Tarqatilayotgan torrentlar:</translation>
+    </message>
+    <message>
+        <source>Torrents stopped:</source>
+        <translation>To&apos;xtatilgan torrentlar:</translation>
+    </message>
+    <message>
+        <source>Torrents with errors:</source>
+        <translation>Xatoli torrentlar:</translation>
+    </message>
+    <message>
+        <source>Running for:</source>
+        <translation>Ishlash vaqti:</translation>
+    </message>
+    <message>
+        <source>History</source>
+        <translation>Tarix</translation>
+    </message>
+    <message>
+        <source>Period</source>
+        <translation>Davr</translation>
+    </message>
+    <message>
+        <source>Today</source>
+        <translation>Bugun</translation>
+    </message>
+    <message>
+        <source>Last 7 days</source>
+        <translation>So&apos;nggi 7 kun</translation>
+    </message>
+    <message>
+        <source>This month</source>
+        <translation>Shu oy</translation>
+    </message>
+    <message>
+        <source>Last month</source>
+        <translation>O&apos;tgan oy</translation>
+    </message>
+    <message>
+        <source>Last 12 months</source>
+        <translation>So&apos;nggi 12 oy</translation>
+    </message>
+    <message>
+        <source>Tracking since:</source>
+        <translation>Kuzatuv boshlangan sana:</translation>
+    </message>
+    <message>
+        <source>By month</source>
+        <translation>Oylar bo&apos;yicha</translation>
+    </message>
+    <message>
+        <source>Month</source>
+        <translation>Oy</translation>
+    </message>
+    <message>
+        <source>Downloaded</source>
+        <translation>Yuklab olingan</translation>
+    </message>
+    <message>
+        <source>Uploaded</source>
+        <translation>Yuklangan</translation>
+    </message>
+    <message>
+        <source>Share ratio</source>
+        <translation>Ulashish nisbati</translation>
+    </message>
+    <message>
+        <source>WebUI downloads added, this month</source>
+        <translation>WebUI orqali qo&apos;shilgan yuklamalar, shu oy</translation>
+    </message>
+    <message>
+        <source>Counts the requests that added a download. Apps without a login, such as Sonarr and Radarr, are shown as (localhost). Downloads added in the desktop window are not counted.</source>
+        <translation>Yuklama qo&apos;shgan so&apos;rovlarni sanaydi. Sonarr va Radarr kabi kirishsiz ilovalar (localhost) deb ko&apos;rsatiladi. Ish stoli oynasida qo&apos;shilgan yuklamalar sanalmaydi.</translation>
+    </message>
+    <message>
+        <source>Technical</source>
+        <translation>Texnik</translation>
+    </message>
+    <message>
+        <source>Disk</source>
+        <translation>Disk</translation>
+    </message>
+    <message>
+        <source>Peers waiting on disk writes:</source>
+        <translation>Diskka yozishni kutayotgan ulanuvchilar:</translation>
+    </message>
+    <message>
+        <source>Peers waiting on disk reads:</source>
+        <translation>Diskdan o&apos;qishni kutayotgan ulanuvchilar:</translation>
+    </message>
+    <message>
+        <source>Network</source>
+        <translation>Tarmoq</translation>
+    </message>
+    <message>
+        <source>DHT nodes:</source>
+        <translation>DHT tugunlari:</translation>
+    </message>
+    <message>
+        <source>Data discarded this session:</source>
+        <translation>Shu seansda tashlab yuborilgan ma&apos;lumot:</translation>
+    </message>
+    <message>
+        <source>Before tracking began</source>
+        <translation>Kuzatuv boshlanishidan oldin</translation>
+    </message>
+    <message>
+        <source>Nothing added yet</source>
+        <translation>Hali hech narsa qo&apos;shilmagan</translation>
+    </message>
+    <message>
+        <source>Off</source>
+        <translation>O&apos;chiq</translation>
     </message>
 </context>
 <context>
@@ -10837,6 +11681,22 @@ Please choose a different name and try again.</source>
         <location filename="../gui/torrentcontentwidget.cpp" line="472"/>
         <source>Priority by shown file order</source>
         <translation type="unfinished"/>
+    </message>
+    <message>
+        <source>Reset auto width</source>
+        <translation>Avtomatik kenglikni tiklash</translation>
+    </message>
+    <message>
+        <source>Fit all non-hidden columns to their contents again, and forget the widths that were set by hand</source>
+        <translation>Barcha ko&apos;rinadigan ustunlarni mazmuniga qayta moslash va qo&apos;lda belgilangan kengliklarni unutish</translation>
+    </message>
+    <message>
+        <source>Reset auto width</source>
+        <translation>Avtomatik kenglikni tiklash</translation>
+    </message>
+    <message>
+        <source>Fit all non-hidden columns to their contents again, and forget the widths that were set by hand</source>
+        <translation>Barcha ko&apos;rinadigan ustunlarni mazmuniga qayta moslash va qo&apos;lda belgilangan kengliklarni unutish</translation>
     </message>
 </context>
 <context>
@@ -11796,6 +12656,22 @@ Please choose a different name and try again.</source>
         <source>Column visibility</source>
         <translation type="unfinished"/>
     </message>
+    <message>
+        <source>Reset auto width</source>
+        <translation>Avtomatik kenglikni tiklash</translation>
+    </message>
+    <message>
+        <source>Fit all non-hidden columns to their contents again, and forget the widths that were set by hand</source>
+        <translation>Barcha ko&apos;rinadigan ustunlarni mazmuniga qayta moslash va qo&apos;lda belgilangan kengliklarni unutish</translation>
+    </message>
+    <message>
+        <source>Reset auto width</source>
+        <translation>Avtomatik kenglikni tiklash</translation>
+    </message>
+    <message>
+        <source>Fit all non-hidden columns to their contents again, and forget the widths that were set by hand</source>
+        <translation>Barcha ko&apos;rinadigan ustunlarni mazmuniga qayta moslash va qo&apos;lda belgilangan kengliklarni unutish</translation>
+    </message>
 </context>
 <context>
     <name>TrackersAdditionDialog</name>
@@ -12597,6 +13473,22 @@ Please choose a different name and try again.</source>
         <source>Super seeding mode</source>
         <translation type="unfinished"/>
     </message>
+    <message>
+        <source>Reset auto width</source>
+        <translation>Avtomatik kenglikni tiklash</translation>
+    </message>
+    <message>
+        <source>Fit all non-hidden columns to their contents again, and forget the widths that were set by hand</source>
+        <translation>Barcha ko&apos;rinadigan ustunlarni mazmuniga qayta moslash va qo&apos;lda belgilangan kengliklarni unutish</translation>
+    </message>
+    <message>
+        <source>Reset auto width</source>
+        <translation>Avtomatik kenglikni tiklash</translation>
+    </message>
+    <message>
+        <source>Fit all non-hidden columns to their contents again, and forget the widths that were set by hand</source>
+        <translation>Barcha ko&apos;rinadigan ustunlarni mazmuniga qayta moslash va qo&apos;lda belgilangan kengliklarni unutish</translation>
+    </message>
 </context>
 <context>
     <name>UIThemeDialog</name>
@@ -12906,6 +13798,46 @@ Please choose a different name and try again.</source>
         <source>WebUI: Invalid Host header. Request source IP: &apos;%1&apos;. Received Host header: &apos;%2&apos;</source>
         <translation type="unfinished"/>
     </message>
+    <message>
+        <source>Something went wrong on the server. Details are in qBittorrent&apos;s log.</source>
+        <translation>Serverda nimadir xato ketdi. Tafsilotlar qBittorrent jurnalida.</translation>
+    </message>
+    <message>
+        <source>This account is locked after too many failed login attempts. Try again in %1 minute(s).</source>
+        <translation>Kirishga juda ko&apos;p muvaffaqiyatsiz urinish bo&apos;lgani uchun bu hisob qulflandi. %1 daqiqadan so&apos;ng qayta urinib ko&apos;ring.</translation>
+    </message>
+    <message>
+        <source>Your role (%1) doesn&apos;t allow this: %2.</source>
+        <translation>Sizning rolingiz (%1) buni ruxsat etmaydi: %2.</translation>
+    </message>
+    <message>
+        <source>Only an admin can remove the tag that says who added a torrent.</source>
+        <translation>Torrentni kim qo&apos;shganini ko&apos;rsatuvchi tegni faqat admin olib tashlay oladi.</translation>
+    </message>
+    <message>
+        <source>Only an admin can clear or replace all tags of a torrent that has a tag saying who added it.</source>
+        <translation>Kim qo&apos;shganini ko&apos;rsatuvchi tegi bor torrentning barcha teglarini faqat admin tozalay yoki almashtira oladi.</translation>
+    </message>
+    <message>
+        <source>Something went wrong on the server. Details are in qBittorrent&apos;s log.</source>
+        <translation>Serverda nimadir xato ketdi. Tafsilotlar qBittorrent jurnalida.</translation>
+    </message>
+    <message>
+        <source>This account is locked after too many failed login attempts. Try again in %1 minute(s).</source>
+        <translation>Kirishga juda ko&apos;p muvaffaqiyatsiz urinish bo&apos;lgani uchun bu hisob qulflandi. %1 daqiqadan so&apos;ng qayta urinib ko&apos;ring.</translation>
+    </message>
+    <message>
+        <source>Your role (%1) doesn&apos;t allow this: %2.</source>
+        <translation>Sizning rolingiz (%1) buni ruxsat etmaydi: %2.</translation>
+    </message>
+    <message>
+        <source>Only an admin can remove the tag that says who added a torrent.</source>
+        <translation>Torrentni kim qo&apos;shganini ko&apos;rsatuvchi tegni faqat admin olib tashlay oladi.</translation>
+    </message>
+    <message>
+        <source>Only an admin can clear or replace all tags of a torrent that has a tag saying who added it.</source>
+        <translation>Kim qo&apos;shganini ko&apos;rsatuvchi tegi bor torrentning barcha teglarini faqat admin tozalay yoki almashtira oladi.</translation>
+    </message>
 </context>
 <context>
     <name>WebUI</name>
@@ -13040,6 +13972,680 @@ Please choose a different name and try again.</source>
         <source>&lt; 1m</source>
         <comment>&lt; 1 minute</comment>
         <translation type="unfinished"/>
+    </message>
+</context>
+<context>
+    <name>SearchPluginSelectDialog</name>
+    <message>
+        <source>Install Kettle Plugins</source>
+        <translation>Kettle plaginlarini o&apos;rnatish</translation>
+    </message>
+    <message>
+        <source>Install Kettle Plugins</source>
+        <translation>Kettle plaginlarini o&apos;rnatish</translation>
+    </message>
+</context>
+<context>
+    <name>UpdateInstaller</name>
+    <message>
+        <source>Kettle Edition update</source>
+        <translation>Kettle Edition yangilanishi</translation>
+    </message>
+    <message>
+        <source>Kettle Edition was updated to %1.</source>
+        <translation>Kettle Edition %1 versiyasiga yangilandi.</translation>
+    </message>
+    <message>
+        <source>Kettle Edition updated</source>
+        <translation>Kettle Edition yangilandi</translation>
+    </message>
+    <message>
+        <source>Downloading Kettle Edition %1 (%2 changed files).</source>
+        <translation>Kettle Edition %1 yuklab olinmoqda (%2 ta o&apos;zgargan fayl).</translation>
+    </message>
+    <message>
+        <source>Kettle Edition %1 is downloaded and ready to install.</source>
+        <translation>Kettle Edition %1 yuklab olindi va o&apos;rnatishga tayyor.</translation>
+    </message>
+    <message>
+        <source>Kettle Edition update</source>
+        <translation>Kettle Edition yangilanishi</translation>
+    </message>
+    <message>
+        <source>Kettle Edition was updated to %1.</source>
+        <translation>Kettle Edition %1 versiyasiga yangilandi.</translation>
+    </message>
+    <message>
+        <source>Kettle Edition updated</source>
+        <translation>Kettle Edition yangilandi</translation>
+    </message>
+    <message>
+        <source>Downloading Kettle Edition %1 (%2 changed files).</source>
+        <translation>Kettle Edition %1 yuklab olinmoqda (%2 ta o&apos;zgargan fayl).</translation>
+    </message>
+    <message>
+        <source>Kettle Edition %1 is downloaded and ready to install.</source>
+        <translation>Kettle Edition %1 yuklab olindi va o&apos;rnatishga tayyor.</translation>
+    </message>
+</context>
+<context>
+    <name>UserAccountDialog</name>
+    <message>
+        <source>User</source>
+        <translation>Foydalanuvchi</translation>
+    </message>
+    <message>
+        <source>Username:</source>
+        <translation>Foydalanuvchi nomi:</translation>
+    </message>
+    <message>
+        <source>Role:</source>
+        <translation>Rol:</translation>
+    </message>
+    <message>
+        <source>Password:</source>
+        <translation>Parol:</translation>
+    </message>
+    <message>
+        <source>Confirm password:</source>
+        <translation>Parolni tasdiqlang:</translation>
+    </message>
+    <message>
+        <source>Disable this account</source>
+        <translation>Bu hisobni o&apos;chirish</translation>
+    </message>
+    <message>
+        <source>Edit User</source>
+        <translation>Foydalanuvchini tahrirlash</translation>
+    </message>
+    <message>
+        <source>Leave empty to keep the current password</source>
+        <translation>Joriy parolni saqlash uchun bo&apos;sh qoldiring</translation>
+    </message>
+    <message>
+        <source>Add User</source>
+        <translation>Foydalanuvchi qo&apos;shish</translation>
+    </message>
+    <message>
+        <source>At least %1 characters</source>
+        <translation>Kamida %1 ta belgi</translation>
+    </message>
+    <message>
+        <source>Enter a username.</source>
+        <translation>Foydalanuvchi nomini kiriting.</translation>
+    </message>
+    <message>
+        <source>The password must be at least %1 characters long.</source>
+        <translation>Parol kamida %1 ta belgidan iborat bo&apos;lishi kerak.</translation>
+    </message>
+    <message>
+        <source>The passwords don&apos;t match.</source>
+        <translation>Parollar mos kelmadi.</translation>
+    </message>
+    <message>
+        <source>User</source>
+        <translation>Foydalanuvchi</translation>
+    </message>
+    <message>
+        <source>Username:</source>
+        <translation>Foydalanuvchi nomi:</translation>
+    </message>
+    <message>
+        <source>Role:</source>
+        <translation>Rol:</translation>
+    </message>
+    <message>
+        <source>Password:</source>
+        <translation>Parol:</translation>
+    </message>
+    <message>
+        <source>Confirm password:</source>
+        <translation>Parolni tasdiqlang:</translation>
+    </message>
+    <message>
+        <source>Disable this account</source>
+        <translation>Bu hisobni o&apos;chirish</translation>
+    </message>
+    <message>
+        <source>Edit User</source>
+        <translation>Foydalanuvchini tahrirlash</translation>
+    </message>
+    <message>
+        <source>Leave empty to keep the current password</source>
+        <translation>Joriy parolni saqlash uchun bo&apos;sh qoldiring</translation>
+    </message>
+    <message>
+        <source>Add User</source>
+        <translation>Foydalanuvchi qo&apos;shish</translation>
+    </message>
+    <message>
+        <source>At least %1 characters</source>
+        <translation>Kamida %1 ta belgi</translation>
+    </message>
+    <message>
+        <source>Enter a username.</source>
+        <translation>Foydalanuvchi nomini kiriting.</translation>
+    </message>
+    <message>
+        <source>The password must be at least %1 characters long.</source>
+        <translation>Parol kamida %1 ta belgidan iborat bo&apos;lishi kerak.</translation>
+    </message>
+    <message>
+        <source>The passwords don&apos;t match.</source>
+        <translation>Parollar mos kelmadi.</translation>
+    </message>
+</context>
+<context>
+    <name>UserAccountsWidget</name>
+    <message>
+        <source>User Accounts</source>
+        <translation>Foydalanuvchi hisoblari</translation>
+    </message>
+    <message>
+        <source>Users</source>
+        <translation>Foydalanuvchilar</translation>
+    </message>
+    <message>
+        <source>People who can log in to the WebUI with their own username and password.</source>
+        <translation>WebUI&apos;ga o&apos;z foydalanuvchi nomi va paroli bilan kira oladigan odamlar.</translation>
+    </message>
+    <message>
+        <source>Add User...</source>
+        <translation>Foydalanuvchi qo&apos;shish...</translation>
+    </message>
+    <message>
+        <source>Edit...</source>
+        <translation>Tahrirlash...</translation>
+    </message>
+    <message>
+        <source>Remove</source>
+        <translation>Olib tashlash</translation>
+    </message>
+    <message>
+        <source>Roles</source>
+        <translation>Rollar</translation>
+    </message>
+    <message>
+        <source>A role decides what its users are allowed to do.</source>
+        <translation>Rol uning foydalanuvchilariga nima qilishga ruxsat berilishini belgilaydi.</translation>
+    </message>
+    <message>
+        <source>Add Role...</source>
+        <translation>Rol qo&apos;shish...</translation>
+    </message>
+    <message>
+        <source>Logged In</source>
+        <translation>Kirganlar</translation>
+    </message>
+    <message>
+        <source>Browsers and devices where someone is logged in with a user account.</source>
+        <translation>Kimdir foydalanuvchi hisobi bilan kirgan brauzerlar va qurilmalar.</translation>
+    </message>
+    <message>
+        <source>Log Out</source>
+        <translation>Chiqish</translation>
+    </message>
+    <message>
+        <source>Username</source>
+        <translation>Foydalanuvchi nomi</translation>
+    </message>
+    <message>
+        <source>Role</source>
+        <translation>Rol</translation>
+    </message>
+    <message>
+        <source>Status</source>
+        <translation>Holat</translation>
+    </message>
+    <message>
+        <source>Last login</source>
+        <translation>Oxirgi kirish</translation>
+    </message>
+    <message>
+        <source>Created</source>
+        <translation>Yaratilgan</translation>
+    </message>
+    <message>
+        <source>Name</source>
+        <translation>Nomi</translation>
+    </message>
+    <message>
+        <source>Description</source>
+        <translation>Tavsif</translation>
+    </message>
+    <message>
+        <source>Permissions</source>
+        <translation>Ruxsatlar</translation>
+    </message>
+    <message>
+        <source>User</source>
+        <translation>Foydalanuvchi</translation>
+    </message>
+    <message>
+        <source>Browser</source>
+        <translation>Brauzer</translation>
+    </message>
+    <message>
+        <source>Logged in</source>
+        <translation>Kirgan vaqti</translation>
+    </message>
+    <message>
+        <source>Last active</source>
+        <translation>Oxirgi faollik</translation>
+    </message>
+    <message>
+        <source>Expires</source>
+        <translation>Tugaydi</translation>
+    </message>
+    <message>
+        <source>The user database could not be opened. See the Execution Log for details.</source>
+        <translation>Foydalanuvchilar bazasini ochib bo&apos;lmadi. Tafsilotlar uchun bajarilish jurnaliga qarang.</translation>
+    </message>
+    <message>
+        <source>Disabled</source>
+        <translation>O&apos;chirilgan</translation>
+    </message>
+    <message>
+        <source>Enabled</source>
+        <translation>Yoqilgan</translation>
+    </message>
+    <message>
+        <source>Never</source>
+        <translation>Hech qachon</translation>
+    </message>
+    <message>
+        <source>No accounts yet, so everyone still uses the shared WebUI login. Add an Admin account first.</source>
+        <translation>Hozircha hisoblar yo&apos;q, shuning uchun hamma hali ham umumiy WebUI kirishidan foydalanadi. Avval Admin hisobini qo&apos;shing.</translation>
+    </message>
+    <message>
+        <source>Couldn&apos;t read the user database. %1</source>
+        <translation>Foydalanuvchilar bazasini o&apos;qib bo&apos;lmadi. %1</translation>
+    </message>
+    <message>
+        <source>Remove user</source>
+        <translation>Foydalanuvchini olib tashlash</translation>
+    </message>
+    <message>
+        <source>Are you sure you want to remove the user &apos;%1&apos;?</source>
+        <translation>&apos;%1&apos; foydalanuvchisini olib tashlamoqchimisiz?</translation>
+    </message>
+    <message>
+        <source>Remove role</source>
+        <translation>Rolni olib tashlash</translation>
+    </message>
+    <message>
+        <source>Are you sure you want to remove the role &apos;%1&apos;?</source>
+        <translation>&apos;%1&apos; rolini olib tashlamoqchimisiz?</translation>
+    </message>
+    <message>
+        <source>Enable</source>
+        <translation>Yoqish</translation>
+    </message>
+    <message>
+        <source>Disable</source>
+        <translation>O&apos;chirish</translation>
+    </message>
+    <message>
+        <source>Log Out Everywhere</source>
+        <translation>Hamma joydan chiqish</translation>
+    </message>
+    <message>
+        <source>User Accounts</source>
+        <translation>Foydalanuvchi hisoblari</translation>
+    </message>
+    <message>
+        <source>Users</source>
+        <translation>Foydalanuvchilar</translation>
+    </message>
+    <message>
+        <source>People who can log in to the WebUI with their own username and password.</source>
+        <translation>WebUI&apos;ga o&apos;z foydalanuvchi nomi va paroli bilan kira oladigan odamlar.</translation>
+    </message>
+    <message>
+        <source>Add User...</source>
+        <translation>Foydalanuvchi qo&apos;shish...</translation>
+    </message>
+    <message>
+        <source>Edit...</source>
+        <translation>Tahrirlash...</translation>
+    </message>
+    <message>
+        <source>Remove</source>
+        <translation>Olib tashlash</translation>
+    </message>
+    <message>
+        <source>Roles</source>
+        <translation>Rollar</translation>
+    </message>
+    <message>
+        <source>A role decides what its users are allowed to do.</source>
+        <translation>Rol uning foydalanuvchilariga nima qilishga ruxsat berilishini belgilaydi.</translation>
+    </message>
+    <message>
+        <source>Add Role...</source>
+        <translation>Rol qo&apos;shish...</translation>
+    </message>
+    <message>
+        <source>Logged In</source>
+        <translation>Kirganlar</translation>
+    </message>
+    <message>
+        <source>Browsers and devices where someone is logged in with a user account.</source>
+        <translation>Kimdir foydalanuvchi hisobi bilan kirgan brauzerlar va qurilmalar.</translation>
+    </message>
+    <message>
+        <source>Log Out</source>
+        <translation>Chiqish</translation>
+    </message>
+    <message>
+        <source>Username</source>
+        <translation>Foydalanuvchi nomi</translation>
+    </message>
+    <message>
+        <source>Role</source>
+        <translation>Rol</translation>
+    </message>
+    <message>
+        <source>Status</source>
+        <translation>Holat</translation>
+    </message>
+    <message>
+        <source>Last login</source>
+        <translation>Oxirgi kirish</translation>
+    </message>
+    <message>
+        <source>Created</source>
+        <translation>Yaratilgan</translation>
+    </message>
+    <message>
+        <source>Name</source>
+        <translation>Nomi</translation>
+    </message>
+    <message>
+        <source>Description</source>
+        <translation>Tavsif</translation>
+    </message>
+    <message>
+        <source>Permissions</source>
+        <translation>Ruxsatlar</translation>
+    </message>
+    <message>
+        <source>User</source>
+        <translation>Foydalanuvchi</translation>
+    </message>
+    <message>
+        <source>Browser</source>
+        <translation>Brauzer</translation>
+    </message>
+    <message>
+        <source>Logged in</source>
+        <translation>Kirgan vaqti</translation>
+    </message>
+    <message>
+        <source>Last active</source>
+        <translation>Oxirgi faollik</translation>
+    </message>
+    <message>
+        <source>Expires</source>
+        <translation>Tugaydi</translation>
+    </message>
+    <message>
+        <source>The user database could not be opened. See the Execution Log for details.</source>
+        <translation>Foydalanuvchilar bazasini ochib bo&apos;lmadi. Tafsilotlar uchun bajarilish jurnaliga qarang.</translation>
+    </message>
+    <message>
+        <source>Disabled</source>
+        <translation>O&apos;chirilgan</translation>
+    </message>
+    <message>
+        <source>Enabled</source>
+        <translation>Yoqilgan</translation>
+    </message>
+    <message>
+        <source>Never</source>
+        <translation>Hech qachon</translation>
+    </message>
+    <message>
+        <source>No accounts yet, so everyone still uses the shared WebUI login. Add an Admin account first.</source>
+        <translation>Hozircha hisoblar yo&apos;q, shuning uchun hamma hali ham umumiy WebUI kirishidan foydalanadi. Avval Admin hisobini qo&apos;shing.</translation>
+    </message>
+    <message>
+        <source>Couldn&apos;t read the user database. %1</source>
+        <translation>Foydalanuvchilar bazasini o&apos;qib bo&apos;lmadi. %1</translation>
+    </message>
+    <message>
+        <source>Remove user</source>
+        <translation>Foydalanuvchini olib tashlash</translation>
+    </message>
+    <message>
+        <source>Are you sure you want to remove the user &apos;%1&apos;?</source>
+        <translation>&apos;%1&apos; foydalanuvchisini olib tashlamoqchimisiz?</translation>
+    </message>
+    <message>
+        <source>Remove role</source>
+        <translation>Rolni olib tashlash</translation>
+    </message>
+    <message>
+        <source>Are you sure you want to remove the role &apos;%1&apos;?</source>
+        <translation>&apos;%1&apos; rolini olib tashlamoqchimisiz?</translation>
+    </message>
+    <message>
+        <source>Enable</source>
+        <translation>Yoqish</translation>
+    </message>
+    <message>
+        <source>Disable</source>
+        <translation>O&apos;chirish</translation>
+    </message>
+    <message>
+        <source>Log Out Everywhere</source>
+        <translation>Hamma joydan chiqish</translation>
+    </message>
+</context>
+<context>
+    <name>UserRoleDialog</name>
+    <message>
+        <source>Role</source>
+        <translation>Rol</translation>
+    </message>
+    <message>
+        <source>Name:</source>
+        <translation>Nomi:</translation>
+    </message>
+    <message>
+        <source>Description:</source>
+        <translation>Tavsif:</translation>
+    </message>
+    <message>
+        <source>Gives control over the PC or qBittorrent itself.</source>
+        <translation>Kompyuterni yoki qBittorrent&apos;ning o&apos;zini boshqarish huquqini beradi.</translation>
+    </message>
+    <message>
+        <source>Add Role</source>
+        <translation>Rol qo&apos;shish</translation>
+    </message>
+    <message>
+        <source>Edit Role</source>
+        <translation>Rolni tahrirlash</translation>
+    </message>
+    <message>
+        <source>Enter a role name.</source>
+        <translation>Rol nomini kiriting.</translation>
+    </message>
+    <message>
+        <source>Role</source>
+        <translation>Rol</translation>
+    </message>
+    <message>
+        <source>Name:</source>
+        <translation>Nomi:</translation>
+    </message>
+    <message>
+        <source>Description:</source>
+        <translation>Tavsif:</translation>
+    </message>
+    <message>
+        <source>Gives control over the PC or qBittorrent itself.</source>
+        <translation>Kompyuterni yoki qBittorrent&apos;ning o&apos;zini boshqarish huquqini beradi.</translation>
+    </message>
+    <message>
+        <source>Add Role</source>
+        <translation>Rol qo&apos;shish</translation>
+    </message>
+    <message>
+        <source>Edit Role</source>
+        <translation>Rolni tahrirlash</translation>
+    </message>
+    <message>
+        <source>Enter a role name.</source>
+        <translation>Rol nomini kiriting.</translation>
+    </message>
+</context>
+<context>
+    <name>WebUIActivityWidget</name>
+    <message>
+        <source>All</source>
+        <translation>Hammasi</translation>
+    </message>
+    <message>
+        <source>Filter activity</source>
+        <translation>Faoliyatni saralash</translation>
+    </message>
+    <message>
+        <source>Export...</source>
+        <translation>Eksport...</translation>
+    </message>
+    <message>
+        <source>User:</source>
+        <translation>Foydalanuvchi:</translation>
+    </message>
+    <message>
+        <source>Category:</source>
+        <translation>Toifa:</translation>
+    </message>
+    <message>
+        <source>Result:</source>
+        <translation>Natija:</translation>
+    </message>
+    <message>
+        <source>Time</source>
+        <translation>Vaqt</translation>
+    </message>
+    <message>
+        <source>User</source>
+        <translation>Foydalanuvchi</translation>
+    </message>
+    <message>
+        <source>Role</source>
+        <translation>Rol</translation>
+    </message>
+    <message>
+        <source>Category</source>
+        <translation>Toifa</translation>
+    </message>
+    <message>
+        <source>Action</source>
+        <translation>Amal</translation>
+    </message>
+    <message>
+        <source>Result</source>
+        <translation>Natija</translation>
+    </message>
+    <message>
+        <source>The user database could not be opened. See the General tab for details.</source>
+        <translation>Foydalanuvchilar bazasini ochib bo&apos;lmadi. Tafsilotlar uchun Umumiy yorlig&apos;iga qarang.</translation>
+    </message>
+    <message>
+        <source>Results (showing %1 out of %2)</source>
+        <translation>Natijalar (%2 tadan %1 tasi ko&apos;rsatilmoqda)</translation>
+    </message>
+    <message>
+        <source>Copy</source>
+        <translation>Nusxalash</translation>
+    </message>
+    <message>
+        <source>Export WebUI activity</source>
+        <translation>WebUI faoliyatini eksport qilish</translation>
+    </message>
+    <message>
+        <source>CSV files</source>
+        <translation>CSV fayllar</translation>
+    </message>
+    <message>
+        <source>Couldn&apos;t save the file. Reason: %1</source>
+        <translation>Faylni saqlab bo&apos;lmadi. Sabab: %1</translation>
+    </message>
+    <message>
+        <source>All</source>
+        <translation>Hammasi</translation>
+    </message>
+    <message>
+        <source>Filter activity</source>
+        <translation>Faoliyatni saralash</translation>
+    </message>
+    <message>
+        <source>Export...</source>
+        <translation>Eksport...</translation>
+    </message>
+    <message>
+        <source>User:</source>
+        <translation>Foydalanuvchi:</translation>
+    </message>
+    <message>
+        <source>Category:</source>
+        <translation>Toifa:</translation>
+    </message>
+    <message>
+        <source>Result:</source>
+        <translation>Natija:</translation>
+    </message>
+    <message>
+        <source>Time</source>
+        <translation>Vaqt</translation>
+    </message>
+    <message>
+        <source>User</source>
+        <translation>Foydalanuvchi</translation>
+    </message>
+    <message>
+        <source>Role</source>
+        <translation>Rol</translation>
+    </message>
+    <message>
+        <source>Category</source>
+        <translation>Toifa</translation>
+    </message>
+    <message>
+        <source>Action</source>
+        <translation>Amal</translation>
+    </message>
+    <message>
+        <source>Result</source>
+        <translation>Natija</translation>
+    </message>
+    <message>
+        <source>The user database could not be opened. See the General tab for details.</source>
+        <translation>Foydalanuvchilar bazasini ochib bo&apos;lmadi. Tafsilotlar uchun Umumiy yorlig&apos;iga qarang.</translation>
+    </message>
+    <message>
+        <source>Results (showing %1 out of %2)</source>
+        <translation>Natijalar (%2 tadan %1 tasi ko&apos;rsatilmoqda)</translation>
+    </message>
+    <message>
+        <source>Copy</source>
+        <translation>Nusxalash</translation>
+    </message>
+    <message>
+        <source>Export WebUI activity</source>
+        <translation>WebUI faoliyatini eksport qilish</translation>
+    </message>
+    <message>
+        <source>CSV files</source>
+        <translation>CSV fayllar</translation>
+    </message>
+    <message>
+        <source>Couldn&apos;t save the file. Reason: %1</source>
+        <translation>Faylni saqlab bo&apos;lmadi. Sabab: %1</translation>
     </message>
 </context>
 </TS>

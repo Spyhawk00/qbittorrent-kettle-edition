@@ -141,6 +141,62 @@
         <source>The free IP to Country Lite database by DB-IP is used for resolving the countries of peers. The database is licensed under the Creative Commons Attribution 4.0 International License</source>
         <translation>Baza de date gratuită „IP to Country Lite”, pusă la dispoziție de DB-IP, este folosită pentru a găsi țările partenerilor. Baza de date este licențiată sub licența Creative Commons Attribution 4.0 International License</translation>
     </message>
+    <message>
+        <source>This edition</source>
+        <translation>Această ediție</translation>
+    </message>
+    <message>
+        <source>Edition version:</source>
+        <translation>Versiunea ediției:</translation>
+    </message>
+    <message>
+        <source>Based on:</source>
+        <translation>Bazată pe:</translation>
+    </message>
+    <message>
+        <source>Maintainer:</source>
+        <translation>Întreținător:</translation>
+    </message>
+    <message>
+        <source>qBittorrent project:</source>
+        <translation>Proiectul qBittorrent:</translation>
+    </message>
+    <message>
+        <source>Kettle Edition is a personal build of qBittorrent that adds user accounts with roles for the WebUI and the desktop app, an activity log, and an installable WebUI with a phone layout. A kettle is a group of hawks soaring together. This is an unofficial build, not affiliated with the qBittorrent project.</source>
+        <translation>Kettle Edition este o versiune personală a qBittorrent care adaugă conturi de utilizator cu roluri pentru WebUI și aplicația desktop, un jurnal de activitate și o WebUI instalabilă cu aspect pentru telefon. Un kettle este un grup de șoimi care planează împreună. Aceasta este o versiune neoficială, fără legătură cu proiectul qBittorrent.</translation>
+    </message>
+    <message>
+        <source>N/A</source>
+        <translation>N/D</translation>
+    </message>
+    <message>
+        <source>This edition</source>
+        <translation>Această ediție</translation>
+    </message>
+    <message>
+        <source>Edition version:</source>
+        <translation>Versiunea ediției:</translation>
+    </message>
+    <message>
+        <source>Based on:</source>
+        <translation>Bazată pe:</translation>
+    </message>
+    <message>
+        <source>Maintainer:</source>
+        <translation>Întreținător:</translation>
+    </message>
+    <message>
+        <source>qBittorrent project:</source>
+        <translation>Proiectul qBittorrent:</translation>
+    </message>
+    <message>
+        <source>Kettle Edition is a personal build of qBittorrent that adds user accounts with roles for the WebUI and the desktop app, an activity log, and an installable WebUI with a phone layout. A kettle is a group of hawks soaring together. This is an unofficial build, not affiliated with the qBittorrent project.</source>
+        <translation>Kettle Edition este o versiune personală a qBittorrent care adaugă conturi de utilizator cu roluri pentru WebUI și aplicația desktop, un jurnal de activitate și o WebUI instalabilă cu aspect pentru telefon. Un kettle este un grup de șoimi care planează împreună. Aceasta este o versiune neoficială, fără legătură cu proiectul qBittorrent.</translation>
+    </message>
+    <message>
+        <source>N/A</source>
+        <translation>N/D</translation>
+    </message>
 </context>
 <context>
     <name>AbstractFileStorage</name>
@@ -1459,6 +1515,62 @@
         <location filename="../gui/advancedsettings.cpp" line="925"/>
         <source>Embedded tracker port</source>
         <translation>Port urmăritor încorporat</translation>
+    </message>
+    <message>
+        <source>Network</source>
+        <translation>Rețea</translation>
+    </message>
+    <message>
+        <source>Storage</source>
+        <translation>Stocare</translation>
+    </message>
+    <message>
+        <source>Peers and trackers</source>
+        <translation>Parteneri și trackere</translation>
+    </message>
+    <message>
+        <source>Program behavior</source>
+        <translation>Comportamentul programului</translation>
+    </message>
+    <message>
+        <source>Display and notifications</source>
+        <translation>Afișare și notificări</translation>
+    </message>
+    <message>
+        <source>Network connection</source>
+        <translation>Conexiune la rețea</translation>
+    </message>
+    <message>
+        <source>Security and privacy</source>
+        <translation>Securitate și confidențialitate</translation>
+    </message>
+    <message>
+        <source>Connection tuning</source>
+        <translation>Reglarea conexiunii</translation>
+    </message>
+    <message>
+        <source>Saving and torrent files</source>
+        <translation>Salvare și fișiere torrent</translation>
+    </message>
+    <message>
+        <source>Disk and memory</source>
+        <translation>Disc și memorie</translation>
+    </message>
+    <message>
+        <source>Peers and seeding</source>
+        <translation>Parteneri și partajare</translation>
+    </message>
+    <message>
+        <source>DHT and I2P</source>
+        <translation>DHT și I2P</translation>
+    </message>
+    <message>
+        <source>General</source>
+        <translation>Generale</translation>
+    </message>
+    <message>
+        <source>Trackers</source>
+        <translation>Urmăritoare</translation>
     </message>
 </context>
 <context>
@@ -3468,6 +3580,22 @@ Recunoaște formatele: S01E01, 1x1, 2017.12.31 si 31.12.2017 (Formatele pentru d
         <source>Remove torrent</source>
         <translation>Elimină torentul</translation>
     </message>
+    <message>
+        <source>This choice is remembered for the next removal.</source>
+        <translation>Această alegere va fi ținută minte pentru următoarea eliminare.</translation>
+    </message>
+    <message>
+        <source>Remove</source>
+        <translation>Elimină</translation>
+    </message>
+    <message>
+        <source>This choice is remembered for the next removal.</source>
+        <translation>Această alegere va fi ținută minte pentru următoarea eliminare.</translation>
+    </message>
+    <message>
+        <source>Remove</source>
+        <translation>Elimină</translation>
+    </message>
 </context>
 <context>
     <name>DownloadFromURLDialog</name>
@@ -3541,6 +3669,14 @@ Recunoaște formatele: S01E01, 1x1, 2017.12.31 si 31.12.2017 (Formatele pentru d
         <location filename="../gui/executionlogwidget.cpp" line="99"/>
         <source>Clear</source>
         <translation>Curăță</translation>
+    </message>
+    <message>
+        <source>WebUI Activity</source>
+        <translation>Activitate WebUI</translation>
+    </message>
+    <message>
+        <source>WebUI Activity</source>
+        <translation>Activitate WebUI</translation>
     </message>
 </context>
 <context>
@@ -4705,6 +4841,46 @@ Cerința minimă: %2.</translation>
         <location filename="../gui/mainwindow.cpp" line="1346"/>
         <source>Torrent Files</source>
         <translation>Fișiere torrent</translation>
+    </message>
+    <message>
+        <source>Kettle Edition %1 is available.</source>
+        <translation>Kettle Edition %1 este disponibilă.</translation>
+    </message>
+    <message>
+        <source>qBittorrent Kettle Edition %1 is available. It is downloaded now and installed at 4:00 AM, or when qBittorrent starts next.</source>
+        <translation>qBittorrent Kettle Edition %1 este disponibilă. Se descarcă acum și va fi instalată la 4:00 sau la următoarea pornire a qBittorrent.</translation>
+    </message>
+    <message>
+        <source>qBittorrent Kettle Edition %1 is available. It is downloaded now. Turn on &quot;Automatically install Kettle Edition updates&quot; in Options to install it.</source>
+        <translation>qBittorrent Kettle Edition %1 este disponibilă. Se descarcă acum. Activați „Instalează automat actualizările Kettle Edition” în Opțiuni pentru a o instala.</translation>
+    </message>
+    <message>
+        <source>You have the latest qBittorrent Kettle Edition (%1).</source>
+        <translation>Aveți cea mai recentă versiune qBittorrent Kettle Edition (%1).</translation>
+    </message>
+    <message>
+        <source>Could not check for qBittorrent Kettle Edition updates. See the Execution Log for details.</source>
+        <translation>Nu s-au putut verifica actualizările qBittorrent Kettle Edition. Consultați jurnalul de execuție pentru detalii.</translation>
+    </message>
+    <message>
+        <source>Kettle Edition %1 is available.</source>
+        <translation>Kettle Edition %1 este disponibilă.</translation>
+    </message>
+    <message>
+        <source>qBittorrent Kettle Edition %1 is available. It is downloaded now and installed at 4:00 AM, or when qBittorrent starts next.</source>
+        <translation>qBittorrent Kettle Edition %1 este disponibilă. Se descarcă acum și va fi instalată la 4:00 sau la următoarea pornire a qBittorrent.</translation>
+    </message>
+    <message>
+        <source>qBittorrent Kettle Edition %1 is available. It is downloaded now. Turn on &quot;Automatically install Kettle Edition updates&quot; in Options to install it.</source>
+        <translation>qBittorrent Kettle Edition %1 este disponibilă. Se descarcă acum. Activați „Instalează automat actualizările Kettle Edition” în Opțiuni pentru a o instala.</translation>
+    </message>
+    <message>
+        <source>You have the latest qBittorrent Kettle Edition (%1).</source>
+        <translation>Aveți cea mai recentă versiune qBittorrent Kettle Edition (%1).</translation>
+    </message>
+    <message>
+        <source>Could not check for qBittorrent Kettle Edition updates. See the Execution Log for details.</source>
+        <translation>Nu s-au putut verifica actualizările qBittorrent Kettle Edition. Consultați jurnalul de execuție pentru detalii.</translation>
     </message>
 </context>
 <context>
@@ -8448,6 +8624,190 @@ Check the Execution Log for errors.</source>
         <source>Length Error</source>
         <translation>Eroare lungime</translation>
     </message>
+    <message>
+        <source>Search settings</source>
+        <translation>Caută în setări</translation>
+    </message>
+    <message>
+        <source>No settings match</source>
+        <translation>Nicio setare nu se potrivește</translation>
+    </message>
+    <message>
+        <source>User Accounts</source>
+        <translation>Conturi de utilizator</translation>
+    </message>
+    <message>
+        <source>Automatically install Kettle Edition updates</source>
+        <translation>Instalează automat actualizările Kettle Edition</translation>
+    </message>
+    <message>
+        <source>Status bar and log</source>
+        <translation>Bară de stare și jurnal</translation>
+    </message>
+    <message>
+        <source>Files</source>
+        <translation>Fișiere</translation>
+    </message>
+    <message>
+        <source>Checking</source>
+        <translation>Verificare</translation>
+    </message>
+    <message>
+        <source>Until the first user account is created, this login always works.</source>
+        <translation>Până la crearea primului cont de utilizator, această autentificare funcționează mereu.</translation>
+    </message>
+    <message>
+        <source>Allow this login when user accounts exist</source>
+        <translation>Permite această autentificare când există conturi de utilizator</translation>
+    </message>
+    <message>
+        <source>Access</source>
+        <translation>Acces</translation>
+    </message>
+    <message>
+        <source>Changes to users, roles and logins apply at once. The settings below apply with OK or Apply.</source>
+        <translation>Modificările utilizatorilor, rolurilor și autentificărilor se aplică imediat. Setările de mai jos se aplică cu OK sau Aplică.</translation>
+    </message>
+    <message>
+        <source>Logins and Activity Log</source>
+        <translation>Autentificări și jurnal de activitate</translation>
+    </message>
+    <message>
+        <source>0 means users are logged out after the session timeout.</source>
+        <translation>0 înseamnă că utilizatorii sunt deconectați după expirarea sesiunii.</translation>
+    </message>
+    <message>
+        <source>Keep users logged in for:</source>
+        <translation>Păstrează utilizatorii autentificați timp de:</translation>
+    </message>
+    <message>
+        <source>Until session timeout</source>
+        <translation>Până la expirarea sesiunii</translation>
+    </message>
+    <message>
+        <source> days</source>
+        <translation> zile</translation>
+    </message>
+    <message>
+        <source>Lock account after consecutive failures:</source>
+        <translation>Blochează contul după eșecuri consecutive:</translation>
+    </message>
+    <message>
+        <source>Keep WebUI activity log for:</source>
+        <translation>Păstrează jurnalul de activitate WebUI timp de:</translation>
+    </message>
+    <message>
+        <source>lock for:</source>
+        <translation>blochează pentru:</translation>
+    </message>
+    <message>
+        <source>%1 works best with Windows dark mode</source>
+        <translation>%1 funcționează cel mai bine cu modul întunecat din Windows</translation>
+    </message>
+    <message>
+        <source>WebUI address</source>
+        <translation>Adresa WebUI</translation>
+    </message>
+    <message>
+        <source>With the WebUI address set to %1, only this PC can reach the WebUI. Remote access, including through a reverse proxy on another machine, will stop working.
+
+Save anyway?</source>
+        <translation>Cu adresa WebUI setată la %1, numai acest PC poate accesa WebUI. Accesul de la distanță, inclusiv printr-un proxy invers de pe altă mașină, va înceta să funcționeze.
+
+Salvezi oricum?</translation>
+    </message>
+    <message>
+        <source>Search settings</source>
+        <translation>Caută în setări</translation>
+    </message>
+    <message>
+        <source>No settings match</source>
+        <translation>Nicio setare nu se potrivește</translation>
+    </message>
+    <message>
+        <source>User Accounts</source>
+        <translation>Conturi de utilizator</translation>
+    </message>
+    <message>
+        <source>Automatically install Kettle Edition updates</source>
+        <translation>Instalează automat actualizările Kettle Edition</translation>
+    </message>
+    <message>
+        <source>Status bar and log</source>
+        <translation>Bară de stare și jurnal</translation>
+    </message>
+    <message>
+        <source>Files</source>
+        <translation>Fișiere</translation>
+    </message>
+    <message>
+        <source>Checking</source>
+        <translation>Verificare</translation>
+    </message>
+    <message>
+        <source>Until the first user account is created, this login always works.</source>
+        <translation>Până la crearea primului cont de utilizator, această autentificare funcționează mereu.</translation>
+    </message>
+    <message>
+        <source>Allow this login when user accounts exist</source>
+        <translation>Permite această autentificare când există conturi de utilizator</translation>
+    </message>
+    <message>
+        <source>Access</source>
+        <translation>Acces</translation>
+    </message>
+    <message>
+        <source>Changes to users, roles and logins apply at once. The settings below apply with OK or Apply.</source>
+        <translation>Modificările utilizatorilor, rolurilor și autentificărilor se aplică imediat. Setările de mai jos se aplică cu OK sau Aplică.</translation>
+    </message>
+    <message>
+        <source>Logins and Activity Log</source>
+        <translation>Autentificări și jurnal de activitate</translation>
+    </message>
+    <message>
+        <source>0 means users are logged out after the session timeout.</source>
+        <translation>0 înseamnă că utilizatorii sunt deconectați după expirarea sesiunii.</translation>
+    </message>
+    <message>
+        <source>Keep users logged in for:</source>
+        <translation>Păstrează utilizatorii autentificați timp de:</translation>
+    </message>
+    <message>
+        <source>Until session timeout</source>
+        <translation>Până la expirarea sesiunii</translation>
+    </message>
+    <message>
+        <source> days</source>
+        <translation> zile</translation>
+    </message>
+    <message>
+        <source>Lock account after consecutive failures:</source>
+        <translation>Blochează contul după eșecuri consecutive:</translation>
+    </message>
+    <message>
+        <source>Keep WebUI activity log for:</source>
+        <translation>Păstrează jurnalul de activitate WebUI timp de:</translation>
+    </message>
+    <message>
+        <source>lock for:</source>
+        <translation>blochează pentru:</translation>
+    </message>
+    <message>
+        <source>%1 works best with Windows dark mode</source>
+        <translation>%1 funcționează cel mai bine cu modul întunecat din Windows</translation>
+    </message>
+    <message>
+        <source>WebUI address</source>
+        <translation>Adresa WebUI</translation>
+    </message>
+    <message>
+        <source>With the WebUI address set to %1, only this PC can reach the WebUI. Remote access, including through a reverse proxy on another machine, will stop working.
+
+Save anyway?</source>
+        <translation>Cu adresa WebUI setată la %1, numai acest PC poate accesa WebUI. Accesul de la distanță, inclusiv printr-un proxy invers de pe altă mașină, va înceta să funcționeze.
+
+Salvezi oricum?</translation>
+    </message>
 </context>
 <context>
     <name>PeerInfo</name>
@@ -8700,6 +9060,22 @@ Check the Execution Log for errors.</source>
         <location filename="../gui/properties/peerlistwidget.cpp" line="309"/>
         <source>Copy IP:port</source>
         <translation>Copiază IP:port</translation>
+    </message>
+    <message>
+        <source>Reset auto width</source>
+        <translation>Resetează lățimea automată</translation>
+    </message>
+    <message>
+        <source>Fit all non-hidden columns to their contents again, and forget the widths that were set by hand</source>
+        <translation>Reajustează toate coloanele vizibile la conținutul lor și uită lățimile setate manual</translation>
+    </message>
+    <message>
+        <source>Reset auto width</source>
+        <translation>Resetează lățimea automată</translation>
+    </message>
+    <message>
+        <source>Fit all non-hidden columns to their contents again, and forget the widths that were set by hand</source>
+        <translation>Reajustează toate coloanele vizibile la conținutul lor și uită lățimile setate manual</translation>
     </message>
 </context>
 <context>
@@ -10084,6 +10460,14 @@ Totuși, acele module au fost dezactivate.</translation>
         <source>Open link</source>
         <translation type="unfinished"></translation>
     </message>
+    <message>
+        <source>Details</source>
+        <translation>Detalii</translation>
+    </message>
+    <message>
+        <source>Details</source>
+        <translation>Detalii</translation>
+    </message>
 </context>
 <context>
     <name>SearchController</name>
@@ -10433,6 +10817,70 @@ Totuși, acele module au fost dezactivate.</translation>
         <source>Resize all non-hidden columns to the size of their contents</source>
         <translation>Redimensionează toate coloanele neascunse la dimensiunea conținutului acestora</translation>
     </message>
+    <message>
+        <source>%1 of %2 shown (%3 hidden)</source>
+        <translation>%1 din %2 afișate (%3 ascunse)</translation>
+    </message>
+    <message>
+        <source>%1 of %2 shown</source>
+        <translation>%1 din %2 afișate</translation>
+    </message>
+    <message>
+        <source>Searching: %1</source>
+        <translation>Se caută: %1</translation>
+    </message>
+    <message>
+        <source>Finished: %1</source>
+        <translation>Terminat: %1</translation>
+    </message>
+    <message>
+        <source>Search aborted: %1</source>
+        <translation>Căutare întreruptă: %1</translation>
+    </message>
+    <message>
+        <source>Reset auto width</source>
+        <translation>Resetează lățimea automată</translation>
+    </message>
+    <message>
+        <source>Fit all non-hidden columns to their contents again, and forget the widths that were set by hand</source>
+        <translation>Reajustează toate coloanele vizibile la conținutul lor și uită lățimile setate manual</translation>
+    </message>
+    <message>
+        <source>Unknown</source>
+        <translation>Necunoscut</translation>
+    </message>
+    <message>
+        <source>%1 of %2 shown (%3 hidden)</source>
+        <translation>%1 din %2 afișate (%3 ascunse)</translation>
+    </message>
+    <message>
+        <source>%1 of %2 shown</source>
+        <translation>%1 din %2 afișate</translation>
+    </message>
+    <message>
+        <source>Searching: %1</source>
+        <translation>Se caută: %1</translation>
+    </message>
+    <message>
+        <source>Finished: %1</source>
+        <translation>Terminat: %1</translation>
+    </message>
+    <message>
+        <source>Search aborted: %1</source>
+        <translation>Căutare întreruptă: %1</translation>
+    </message>
+    <message>
+        <source>Reset auto width</source>
+        <translation>Resetează lățimea automată</translation>
+    </message>
+    <message>
+        <source>Fit all non-hidden columns to their contents again, and forget the widths that were set by hand</source>
+        <translation>Reajustează toate coloanele vizibile la conținutul lor și uită lățimile setate manual</translation>
+    </message>
+    <message>
+        <source>Unknown</source>
+        <translation>Necunoscut</translation>
+    </message>
 </context>
 <context>
     <name>SearchPluginManager</name>
@@ -10730,6 +11178,14 @@ Totuși, acele module au fost dezactivate.</translation>
         <source>Couldn&apos;t update &quot;%1&quot; search engine plugin. %2</source>
         <translation type="unfinished">Modulul de motor de căutare „%1” nu a putut fi actualizat. %2</translation>
     </message>
+    <message>
+        <source>Install Kettle Plugins</source>
+        <translation>Instalează pluginurile Kettle</translation>
+    </message>
+    <message>
+        <source>Install Kettle Plugins</source>
+        <translation>Instalează pluginurile Kettle</translation>
+    </message>
 </context>
 <context>
     <name>SearchPluginSourceDialog</name>
@@ -10869,6 +11325,90 @@ Dați clic pe butonul „Module de căutare...” din colțul din dreapta-jos al
         <location filename="../gui/search/searchwidget.ui" line="58"/>
         <source>Stop</source>
         <translation>Oprește</translation>
+    </message>
+    <message>
+        <source>Searches</source>
+        <translation>Căutări</translation>
+    </message>
+    <message>
+        <source>Close the selected search</source>
+        <translation>Închide căutarea selectată</translation>
+    </message>
+    <message>
+        <source>Search for torrents...</source>
+        <translation>Caută torrente...</translation>
+    </message>
+    <message>
+        <source>Category to search in</source>
+        <translation>Categoria în care se caută</translation>
+    </message>
+    <message>
+        <source>Search engines to use</source>
+        <translation>Motoare de căutare de folosit</translation>
+    </message>
+    <message>
+        <source>There aren&apos;t any search plugins installed.
+Click the &quot;Search plugins...&quot; button at the top right of the window to install some.</source>
+        <translation>Nu este instalat niciun plugin de căutare.
+Faceți clic pe butonul „Pluginuri de căutare...” din dreapta sus a ferestrei pentru a instala unele.</translation>
+    </message>
+    <message>
+        <source>Type a search above and press Enter.</source>
+        <translation>Tastați o căutare mai sus și apăsați Enter.</translation>
+    </message>
+    <message>
+        <source>Refresh search</source>
+        <translation>Reîmprospătează căutarea</translation>
+    </message>
+    <message>
+        <source>Close search</source>
+        <translation>Închide căutarea</translation>
+    </message>
+    <message>
+        <source>Close all searches</source>
+        <translation>Închide toate căutările</translation>
+    </message>
+    <message>
+        <source>Searches</source>
+        <translation>Căutări</translation>
+    </message>
+    <message>
+        <source>Close the selected search</source>
+        <translation>Închide căutarea selectată</translation>
+    </message>
+    <message>
+        <source>Search for torrents...</source>
+        <translation>Caută torrente...</translation>
+    </message>
+    <message>
+        <source>Category to search in</source>
+        <translation>Categoria în care se caută</translation>
+    </message>
+    <message>
+        <source>Search engines to use</source>
+        <translation>Motoare de căutare de folosit</translation>
+    </message>
+    <message>
+        <source>There aren&apos;t any search plugins installed.
+Click the &quot;Search plugins...&quot; button at the top right of the window to install some.</source>
+        <translation>Nu este instalat niciun plugin de căutare.
+Faceți clic pe butonul „Pluginuri de căutare...” din dreapta sus a ferestrei pentru a instala unele.</translation>
+    </message>
+    <message>
+        <source>Type a search above and press Enter.</source>
+        <translation>Tastați o căutare mai sus și apăsați Enter.</translation>
+    </message>
+    <message>
+        <source>Refresh search</source>
+        <translation>Reîmprospătează căutarea</translation>
+    </message>
+    <message>
+        <source>Close search</source>
+        <translation>Închide căutarea</translation>
+    </message>
+    <message>
+        <source>Close all searches</source>
+        <translation>Închide toate căutările</translation>
     </message>
 </context>
 <context>
@@ -11331,6 +11871,326 @@ Dați clic pe butonul „Module de căutare...” din colțul din dreapta-jos al
         <location filename="../gui/statsdialog.cpp" line="111"/>
         <source>%1 ms</source>
         <translation type="unfinished">%1 ms</translation>
+    </message>
+    <message>
+        <source>Copy</source>
+        <translation>Copiază</translation>
+    </message>
+    <message>
+        <source>Overview</source>
+        <translation>Prezentare generală</translation>
+    </message>
+    <message>
+        <source>Transfer</source>
+        <translation>Transfer</translation>
+    </message>
+    <message>
+        <source>This session</source>
+        <translation>Această sesiune</translation>
+    </message>
+    <message>
+        <source>All time</source>
+        <translation>Dintotdeauna</translation>
+    </message>
+    <message>
+        <source>Downloaded:</source>
+        <translation>Descărcat:</translation>
+    </message>
+    <message>
+        <source>Uploaded:</source>
+        <translation>Încărcat:</translation>
+    </message>
+    <message>
+        <source>Share ratio:</source>
+        <translation>Raport de partajare:</translation>
+    </message>
+    <message>
+        <source>Current speed:</source>
+        <translation>Viteză curentă:</translation>
+    </message>
+    <message>
+        <source>Activity</source>
+        <translation>Activitate</translation>
+    </message>
+    <message>
+        <source>Torrents downloading:</source>
+        <translation>Torrente în descărcare:</translation>
+    </message>
+    <message>
+        <source>Torrents seeding:</source>
+        <translation>Torrente în seeding:</translation>
+    </message>
+    <message>
+        <source>Torrents stopped:</source>
+        <translation>Torrente oprite:</translation>
+    </message>
+    <message>
+        <source>Torrents with errors:</source>
+        <translation>Torrente cu erori:</translation>
+    </message>
+    <message>
+        <source>Running for:</source>
+        <translation>Rulează de:</translation>
+    </message>
+    <message>
+        <source>History</source>
+        <translation>Istoric</translation>
+    </message>
+    <message>
+        <source>Period</source>
+        <translation>Perioadă</translation>
+    </message>
+    <message>
+        <source>Today</source>
+        <translation>Astăzi</translation>
+    </message>
+    <message>
+        <source>Last 7 days</source>
+        <translation>Ultimele 7 zile</translation>
+    </message>
+    <message>
+        <source>This month</source>
+        <translation>Luna aceasta</translation>
+    </message>
+    <message>
+        <source>Last month</source>
+        <translation>Luna trecută</translation>
+    </message>
+    <message>
+        <source>Last 12 months</source>
+        <translation>Ultimele 12 luni</translation>
+    </message>
+    <message>
+        <source>Tracking since:</source>
+        <translation>Urmărire din:</translation>
+    </message>
+    <message>
+        <source>By month</source>
+        <translation>Pe luni</translation>
+    </message>
+    <message>
+        <source>Month</source>
+        <translation>Lună</translation>
+    </message>
+    <message>
+        <source>Downloaded</source>
+        <translation>Descărcat</translation>
+    </message>
+    <message>
+        <source>Uploaded</source>
+        <translation>Încărcat</translation>
+    </message>
+    <message>
+        <source>Share ratio</source>
+        <translation>Raport de partajare</translation>
+    </message>
+    <message>
+        <source>WebUI downloads added, this month</source>
+        <translation>Descărcări adăugate prin WebUI, luna aceasta</translation>
+    </message>
+    <message>
+        <source>Counts the requests that added a download. Apps without a login, such as Sonarr and Radarr, are shown as (localhost). Downloads added in the desktop window are not counted.</source>
+        <translation>Numără cererile care au adăugat o descărcare. Aplicațiile fără autentificare, precum Sonarr și Radarr, apar ca (localhost). Descărcările adăugate în fereastra desktop nu sunt numărate.</translation>
+    </message>
+    <message>
+        <source>Technical</source>
+        <translation>Tehnic</translation>
+    </message>
+    <message>
+        <source>Disk</source>
+        <translation>Disc</translation>
+    </message>
+    <message>
+        <source>Peers waiting on disk writes:</source>
+        <translation>Parteneri care așteaptă scrierea pe disc:</translation>
+    </message>
+    <message>
+        <source>Peers waiting on disk reads:</source>
+        <translation>Parteneri care așteaptă citirea de pe disc:</translation>
+    </message>
+    <message>
+        <source>Network</source>
+        <translation>Rețea</translation>
+    </message>
+    <message>
+        <source>DHT nodes:</source>
+        <translation>Noduri DHT:</translation>
+    </message>
+    <message>
+        <source>Data discarded this session:</source>
+        <translation>Date eliminate în această sesiune:</translation>
+    </message>
+    <message>
+        <source>Before tracking began</source>
+        <translation>Înainte de începerea urmăririi</translation>
+    </message>
+    <message>
+        <source>Nothing added yet</source>
+        <translation>Nu s-a adăugat nimic încă</translation>
+    </message>
+    <message>
+        <source>Off</source>
+        <translation>Oprit</translation>
+    </message>
+    <message>
+        <source>Copy</source>
+        <translation>Copiază</translation>
+    </message>
+    <message>
+        <source>Overview</source>
+        <translation>Prezentare generală</translation>
+    </message>
+    <message>
+        <source>Transfer</source>
+        <translation>Transfer</translation>
+    </message>
+    <message>
+        <source>This session</source>
+        <translation>Această sesiune</translation>
+    </message>
+    <message>
+        <source>All time</source>
+        <translation>Dintotdeauna</translation>
+    </message>
+    <message>
+        <source>Downloaded:</source>
+        <translation>Descărcat:</translation>
+    </message>
+    <message>
+        <source>Uploaded:</source>
+        <translation>Încărcat:</translation>
+    </message>
+    <message>
+        <source>Share ratio:</source>
+        <translation>Raport de partajare:</translation>
+    </message>
+    <message>
+        <source>Current speed:</source>
+        <translation>Viteză curentă:</translation>
+    </message>
+    <message>
+        <source>Activity</source>
+        <translation>Activitate</translation>
+    </message>
+    <message>
+        <source>Torrents downloading:</source>
+        <translation>Torrente în descărcare:</translation>
+    </message>
+    <message>
+        <source>Torrents seeding:</source>
+        <translation>Torrente în seeding:</translation>
+    </message>
+    <message>
+        <source>Torrents stopped:</source>
+        <translation>Torrente oprite:</translation>
+    </message>
+    <message>
+        <source>Torrents with errors:</source>
+        <translation>Torrente cu erori:</translation>
+    </message>
+    <message>
+        <source>Running for:</source>
+        <translation>Rulează de:</translation>
+    </message>
+    <message>
+        <source>History</source>
+        <translation>Istoric</translation>
+    </message>
+    <message>
+        <source>Period</source>
+        <translation>Perioadă</translation>
+    </message>
+    <message>
+        <source>Today</source>
+        <translation>Astăzi</translation>
+    </message>
+    <message>
+        <source>Last 7 days</source>
+        <translation>Ultimele 7 zile</translation>
+    </message>
+    <message>
+        <source>This month</source>
+        <translation>Luna aceasta</translation>
+    </message>
+    <message>
+        <source>Last month</source>
+        <translation>Luna trecută</translation>
+    </message>
+    <message>
+        <source>Last 12 months</source>
+        <translation>Ultimele 12 luni</translation>
+    </message>
+    <message>
+        <source>Tracking since:</source>
+        <translation>Urmărire din:</translation>
+    </message>
+    <message>
+        <source>By month</source>
+        <translation>Pe luni</translation>
+    </message>
+    <message>
+        <source>Month</source>
+        <translation>Lună</translation>
+    </message>
+    <message>
+        <source>Downloaded</source>
+        <translation>Descărcat</translation>
+    </message>
+    <message>
+        <source>Uploaded</source>
+        <translation>Încărcat</translation>
+    </message>
+    <message>
+        <source>Share ratio</source>
+        <translation>Raport de partajare</translation>
+    </message>
+    <message>
+        <source>WebUI downloads added, this month</source>
+        <translation>Descărcări adăugate prin WebUI, luna aceasta</translation>
+    </message>
+    <message>
+        <source>Counts the requests that added a download. Apps without a login, such as Sonarr and Radarr, are shown as (localhost). Downloads added in the desktop window are not counted.</source>
+        <translation>Numără cererile care au adăugat o descărcare. Aplicațiile fără autentificare, precum Sonarr și Radarr, apar ca (localhost). Descărcările adăugate în fereastra desktop nu sunt numărate.</translation>
+    </message>
+    <message>
+        <source>Technical</source>
+        <translation>Tehnic</translation>
+    </message>
+    <message>
+        <source>Disk</source>
+        <translation>Disc</translation>
+    </message>
+    <message>
+        <source>Peers waiting on disk writes:</source>
+        <translation>Parteneri care așteaptă scrierea pe disc:</translation>
+    </message>
+    <message>
+        <source>Peers waiting on disk reads:</source>
+        <translation>Parteneri care așteaptă citirea de pe disc:</translation>
+    </message>
+    <message>
+        <source>Network</source>
+        <translation>Rețea</translation>
+    </message>
+    <message>
+        <source>DHT nodes:</source>
+        <translation>Noduri DHT:</translation>
+    </message>
+    <message>
+        <source>Data discarded this session:</source>
+        <translation>Date eliminate în această sesiune:</translation>
+    </message>
+    <message>
+        <source>Before tracking began</source>
+        <translation>Înainte de începerea urmăririi</translation>
+    </message>
+    <message>
+        <source>Nothing added yet</source>
+        <translation>Nu s-a adăugat nimic încă</translation>
+    </message>
+    <message>
+        <source>Off</source>
+        <translation>Oprit</translation>
     </message>
 </context>
 <context>
@@ -12026,6 +12886,22 @@ Alegeți o denumire diferită și încercați iar.</translation>
     <message>
         <source>Priority by shown file order</source>
         <translation type="vanished">Prioritate după ordinea afișată a fișierelor</translation>
+    </message>
+    <message>
+        <source>Reset auto width</source>
+        <translation>Resetează lățimea automată</translation>
+    </message>
+    <message>
+        <source>Fit all non-hidden columns to their contents again, and forget the widths that were set by hand</source>
+        <translation>Reajustează toate coloanele vizibile la conținutul lor și uită lățimile setate manual</translation>
+    </message>
+    <message>
+        <source>Reset auto width</source>
+        <translation>Resetează lățimea automată</translation>
+    </message>
+    <message>
+        <source>Fit all non-hidden columns to their contents again, and forget the widths that were set by hand</source>
+        <translation>Reajustează toate coloanele vizibile la conținutul lor și uită lățimile setate manual</translation>
     </message>
 </context>
 <context>
@@ -13110,6 +13986,22 @@ Alegeți o denumire diferită și încercați iar.</translation>
         <source>Column visibility</source>
         <translation>Vizibilitate coloană</translation>
     </message>
+    <message>
+        <source>Reset auto width</source>
+        <translation>Resetează lățimea automată</translation>
+    </message>
+    <message>
+        <source>Fit all non-hidden columns to their contents again, and forget the widths that were set by hand</source>
+        <translation>Reajustează toate coloanele vizibile la conținutul lor și uită lățimile setate manual</translation>
+    </message>
+    <message>
+        <source>Reset auto width</source>
+        <translation>Resetează lățimea automată</translation>
+    </message>
+    <message>
+        <source>Fit all non-hidden columns to their contents again, and forget the widths that were set by hand</source>
+        <translation>Reajustează toate coloanele vizibile la conținutul lor și uită lățimile setate manual</translation>
+    </message>
 </context>
 <context>
     <name>TrackerStatusFilterWidget</name>
@@ -13976,6 +14868,22 @@ Alegeți o denumire diferită și încercați iar.</translation>
         <source>Super seeding mode</source>
         <translation>Mod super-contribuire</translation>
     </message>
+    <message>
+        <source>Reset auto width</source>
+        <translation>Resetează lățimea automată</translation>
+    </message>
+    <message>
+        <source>Fit all non-hidden columns to their contents again, and forget the widths that were set by hand</source>
+        <translation>Reajustează toate coloanele vizibile la conținutul lor și uită lățimile setate manual</translation>
+    </message>
+    <message>
+        <source>Reset auto width</source>
+        <translation>Resetează lățimea automată</translation>
+    </message>
+    <message>
+        <source>Fit all non-hidden columns to their contents again, and forget the widths that were set by hand</source>
+        <translation>Reajustează toate coloanele vizibile la conținutul lor și uită lățimile setate manual</translation>
+    </message>
 </context>
 <context>
     <name>UIThemeDialog</name>
@@ -14310,6 +15218,46 @@ Alegeți o denumire diferită și încercați iar.</translation>
         <source>WebAPI login failure. Reason: invalid credentials, attempt count: %1, IP: %2, username: %3</source>
         <translation>Autentificare WebAPI eșuată. Motivul: acreditări nevalide, număr încercări: %1, IP: %2, nume utilizator: %3</translation>
     </message>
+    <message>
+        <source>Something went wrong on the server. Details are in qBittorrent&apos;s log.</source>
+        <translation>Ceva nu a mers bine pe server. Detaliile sunt în jurnalul qBittorrent.</translation>
+    </message>
+    <message>
+        <source>This account is locked after too many failed login attempts. Try again in %1 minute(s).</source>
+        <translation>Acest cont este blocat după prea multe încercări de autentificare eșuate. Încercați din nou peste %1 minut(e).</translation>
+    </message>
+    <message>
+        <source>Your role (%1) doesn&apos;t allow this: %2.</source>
+        <translation>Rolul dvs. (%1) nu permite acest lucru: %2.</translation>
+    </message>
+    <message>
+        <source>Only an admin can remove the tag that says who added a torrent.</source>
+        <translation>Doar un administrator poate elimina eticheta care spune cine a adăugat un torrent.</translation>
+    </message>
+    <message>
+        <source>Only an admin can clear or replace all tags of a torrent that has a tag saying who added it.</source>
+        <translation>Doar un administrator poate șterge sau înlocui toate etichetele unui torrent care are o etichetă ce spune cine l-a adăugat.</translation>
+    </message>
+    <message>
+        <source>Something went wrong on the server. Details are in qBittorrent&apos;s log.</source>
+        <translation>Ceva nu a mers bine pe server. Detaliile sunt în jurnalul qBittorrent.</translation>
+    </message>
+    <message>
+        <source>This account is locked after too many failed login attempts. Try again in %1 minute(s).</source>
+        <translation>Acest cont este blocat după prea multe încercări de autentificare eșuate. Încercați din nou peste %1 minut(e).</translation>
+    </message>
+    <message>
+        <source>Your role (%1) doesn&apos;t allow this: %2.</source>
+        <translation>Rolul dvs. (%1) nu permite acest lucru: %2.</translation>
+    </message>
+    <message>
+        <source>Only an admin can remove the tag that says who added a torrent.</source>
+        <translation>Doar un administrator poate elimina eticheta care spune cine a adăugat un torrent.</translation>
+    </message>
+    <message>
+        <source>Only an admin can clear or replace all tags of a torrent that has a tag saying who added it.</source>
+        <translation>Doar un administrator poate șterge sau înlocui toate etichetele unui torrent care are o etichetă ce spune cine l-a adăugat.</translation>
+    </message>
 </context>
 <context>
     <name>WebUI</name>
@@ -14449,6 +15397,669 @@ Alegeți o denumire diferită și încercați iar.</translation>
         <source>&lt; 1m</source>
         <comment>&lt; 1 minute</comment>
         <translation>&lt; 1m</translation>
+    </message>
+</context>
+<context>
+    <name>UpdateInstaller</name>
+    <message>
+        <source>Kettle Edition update</source>
+        <translation>Actualizare Kettle Edition</translation>
+    </message>
+    <message>
+        <source>Kettle Edition was updated to %1.</source>
+        <translation>Kettle Edition a fost actualizată la %1.</translation>
+    </message>
+    <message>
+        <source>Kettle Edition updated</source>
+        <translation>Kettle Edition actualizată</translation>
+    </message>
+    <message>
+        <source>Downloading Kettle Edition %1 (%2 changed files).</source>
+        <translation>Se descarcă Kettle Edition %1 (%2 fișiere modificate).</translation>
+    </message>
+    <message>
+        <source>Kettle Edition %1 is downloaded and ready to install.</source>
+        <translation>Kettle Edition %1 a fost descărcată și este gata de instalare.</translation>
+    </message>
+    <message>
+        <source>Kettle Edition update</source>
+        <translation>Actualizare Kettle Edition</translation>
+    </message>
+    <message>
+        <source>Kettle Edition was updated to %1.</source>
+        <translation>Kettle Edition a fost actualizată la %1.</translation>
+    </message>
+    <message>
+        <source>Kettle Edition updated</source>
+        <translation>Kettle Edition actualizată</translation>
+    </message>
+    <message>
+        <source>Downloading Kettle Edition %1 (%2 changed files).</source>
+        <translation>Se descarcă Kettle Edition %1 (%2 fișiere modificate).</translation>
+    </message>
+    <message>
+        <source>Kettle Edition %1 is downloaded and ready to install.</source>
+        <translation>Kettle Edition %1 a fost descărcată și este gata de instalare.</translation>
+    </message>
+</context>
+<context>
+    <name>UserAccountDialog</name>
+    <message>
+        <source>User</source>
+        <translation>Utilizator</translation>
+    </message>
+    <message>
+        <source>Username:</source>
+        <translation>Nume de utilizator:</translation>
+    </message>
+    <message>
+        <source>Role:</source>
+        <translation>Rol:</translation>
+    </message>
+    <message>
+        <source>Password:</source>
+        <translation>Parolă:</translation>
+    </message>
+    <message>
+        <source>Confirm password:</source>
+        <translation>Confirmă parola:</translation>
+    </message>
+    <message>
+        <source>Disable this account</source>
+        <translation>Dezactivează acest cont</translation>
+    </message>
+    <message>
+        <source>Edit User</source>
+        <translation>Editează utilizatorul</translation>
+    </message>
+    <message>
+        <source>Leave empty to keep the current password</source>
+        <translation>Lăsați gol pentru a păstra parola curentă</translation>
+    </message>
+    <message>
+        <source>Add User</source>
+        <translation>Adaugă utilizator</translation>
+    </message>
+    <message>
+        <source>At least %1 characters</source>
+        <translation>Cel puțin %1 caractere</translation>
+    </message>
+    <message>
+        <source>Enter a username.</source>
+        <translation>Introduceți un nume de utilizator.</translation>
+    </message>
+    <message>
+        <source>The password must be at least %1 characters long.</source>
+        <translation>Parola trebuie să aibă cel puțin %1 caractere.</translation>
+    </message>
+    <message>
+        <source>The passwords don&apos;t match.</source>
+        <translation>Parolele nu se potrivesc.</translation>
+    </message>
+    <message>
+        <source>User</source>
+        <translation>Utilizator</translation>
+    </message>
+    <message>
+        <source>Username:</source>
+        <translation>Nume de utilizator:</translation>
+    </message>
+    <message>
+        <source>Role:</source>
+        <translation>Rol:</translation>
+    </message>
+    <message>
+        <source>Password:</source>
+        <translation>Parolă:</translation>
+    </message>
+    <message>
+        <source>Confirm password:</source>
+        <translation>Confirmă parola:</translation>
+    </message>
+    <message>
+        <source>Disable this account</source>
+        <translation>Dezactivează acest cont</translation>
+    </message>
+    <message>
+        <source>Edit User</source>
+        <translation>Editează utilizatorul</translation>
+    </message>
+    <message>
+        <source>Leave empty to keep the current password</source>
+        <translation>Lăsați gol pentru a păstra parola curentă</translation>
+    </message>
+    <message>
+        <source>Add User</source>
+        <translation>Adaugă utilizator</translation>
+    </message>
+    <message>
+        <source>At least %1 characters</source>
+        <translation>Cel puțin %1 caractere</translation>
+    </message>
+    <message>
+        <source>Enter a username.</source>
+        <translation>Introduceți un nume de utilizator.</translation>
+    </message>
+    <message>
+        <source>The password must be at least %1 characters long.</source>
+        <translation>Parola trebuie să aibă cel puțin %1 caractere.</translation>
+    </message>
+    <message>
+        <source>The passwords don&apos;t match.</source>
+        <translation>Parolele nu se potrivesc.</translation>
+    </message>
+</context>
+<context>
+    <name>UserAccountsWidget</name>
+    <message>
+        <source>User Accounts</source>
+        <translation>Conturi de utilizator</translation>
+    </message>
+    <message>
+        <source>Users</source>
+        <translation>Utilizatori</translation>
+    </message>
+    <message>
+        <source>People who can log in to the WebUI with their own username and password.</source>
+        <translation>Persoane care se pot autentifica în WebUI cu propriul nume de utilizator și parolă.</translation>
+    </message>
+    <message>
+        <source>Add User...</source>
+        <translation>Adaugă utilizator...</translation>
+    </message>
+    <message>
+        <source>Edit...</source>
+        <translation>Editează...</translation>
+    </message>
+    <message>
+        <source>Remove</source>
+        <translation>Elimină</translation>
+    </message>
+    <message>
+        <source>Roles</source>
+        <translation>Roluri</translation>
+    </message>
+    <message>
+        <source>A role decides what its users are allowed to do.</source>
+        <translation>Un rol decide ce au voie să facă utilizatorii săi.</translation>
+    </message>
+    <message>
+        <source>Add Role...</source>
+        <translation>Adaugă rol...</translation>
+    </message>
+    <message>
+        <source>Logged In</source>
+        <translation>Autentificați</translation>
+    </message>
+    <message>
+        <source>Browsers and devices where someone is logged in with a user account.</source>
+        <translation>Browsere și dispozitive unde cineva este autentificat cu un cont de utilizator.</translation>
+    </message>
+    <message>
+        <source>Log Out</source>
+        <translation>Deconectează</translation>
+    </message>
+    <message>
+        <source>Username</source>
+        <translation>Nume de utilizator</translation>
+    </message>
+    <message>
+        <source>Role</source>
+        <translation>Rol</translation>
+    </message>
+    <message>
+        <source>Status</source>
+        <translation>Stare</translation>
+    </message>
+    <message>
+        <source>Last login</source>
+        <translation>Ultima autentificare</translation>
+    </message>
+    <message>
+        <source>Created</source>
+        <translation>Creat</translation>
+    </message>
+    <message>
+        <source>Name</source>
+        <translation>Nume</translation>
+    </message>
+    <message>
+        <source>Description</source>
+        <translation>Descriere</translation>
+    </message>
+    <message>
+        <source>Permissions</source>
+        <translation>Permisiuni</translation>
+    </message>
+    <message>
+        <source>User</source>
+        <translation>Utilizator</translation>
+    </message>
+    <message>
+        <source>Browser</source>
+        <translation>Browser</translation>
+    </message>
+    <message>
+        <source>Logged in</source>
+        <translation>Autentificat la</translation>
+    </message>
+    <message>
+        <source>Last active</source>
+        <translation>Ultima activitate</translation>
+    </message>
+    <message>
+        <source>Expires</source>
+        <translation>Expiră</translation>
+    </message>
+    <message>
+        <source>The user database could not be opened. See the Execution Log for details.</source>
+        <translation>Baza de date a utilizatorilor nu a putut fi deschisă. Consultați jurnalul de execuție pentru detalii.</translation>
+    </message>
+    <message>
+        <source>Disabled</source>
+        <translation>Dezactivat</translation>
+    </message>
+    <message>
+        <source>Enabled</source>
+        <translation>Activat</translation>
+    </message>
+    <message>
+        <source>Never</source>
+        <translation>Niciodată</translation>
+    </message>
+    <message>
+        <source>No accounts yet, so everyone still uses the shared WebUI login. Add an Admin account first.</source>
+        <translation>Nu există încă conturi, deci toți folosesc în continuare autentificarea comună WebUI. Adăugați mai întâi un cont Admin.</translation>
+    </message>
+    <message>
+        <source>Couldn&apos;t read the user database. %1</source>
+        <translation>Baza de date a utilizatorilor nu a putut fi citită. %1</translation>
+    </message>
+    <message>
+        <source>Remove user</source>
+        <translation>Elimină utilizatorul</translation>
+    </message>
+    <message>
+        <source>Are you sure you want to remove the user &apos;%1&apos;?</source>
+        <translation>Sigur doriți să eliminați utilizatorul „%1”?</translation>
+    </message>
+    <message>
+        <source>Remove role</source>
+        <translation>Elimină rolul</translation>
+    </message>
+    <message>
+        <source>Are you sure you want to remove the role &apos;%1&apos;?</source>
+        <translation>Sigur doriți să eliminați rolul „%1”?</translation>
+    </message>
+    <message>
+        <source>Enable</source>
+        <translation>Activează</translation>
+    </message>
+    <message>
+        <source>Disable</source>
+        <translation>Dezactivează</translation>
+    </message>
+    <message>
+        <source>Log Out Everywhere</source>
+        <translation>Deconectează de peste tot</translation>
+    </message>
+    <message>
+        <source>User Accounts</source>
+        <translation>Conturi de utilizator</translation>
+    </message>
+    <message>
+        <source>Users</source>
+        <translation>Utilizatori</translation>
+    </message>
+    <message>
+        <source>People who can log in to the WebUI with their own username and password.</source>
+        <translation>Persoane care se pot autentifica în WebUI cu propriul nume de utilizator și parolă.</translation>
+    </message>
+    <message>
+        <source>Add User...</source>
+        <translation>Adaugă utilizator...</translation>
+    </message>
+    <message>
+        <source>Edit...</source>
+        <translation>Editează...</translation>
+    </message>
+    <message>
+        <source>Remove</source>
+        <translation>Elimină</translation>
+    </message>
+    <message>
+        <source>Roles</source>
+        <translation>Roluri</translation>
+    </message>
+    <message>
+        <source>A role decides what its users are allowed to do.</source>
+        <translation>Un rol decide ce au voie să facă utilizatorii săi.</translation>
+    </message>
+    <message>
+        <source>Add Role...</source>
+        <translation>Adaugă rol...</translation>
+    </message>
+    <message>
+        <source>Logged In</source>
+        <translation>Autentificați</translation>
+    </message>
+    <message>
+        <source>Browsers and devices where someone is logged in with a user account.</source>
+        <translation>Browsere și dispozitive unde cineva este autentificat cu un cont de utilizator.</translation>
+    </message>
+    <message>
+        <source>Log Out</source>
+        <translation>Deconectează</translation>
+    </message>
+    <message>
+        <source>Username</source>
+        <translation>Nume de utilizator</translation>
+    </message>
+    <message>
+        <source>Role</source>
+        <translation>Rol</translation>
+    </message>
+    <message>
+        <source>Status</source>
+        <translation>Stare</translation>
+    </message>
+    <message>
+        <source>Last login</source>
+        <translation>Ultima autentificare</translation>
+    </message>
+    <message>
+        <source>Created</source>
+        <translation>Creat</translation>
+    </message>
+    <message>
+        <source>Name</source>
+        <translation>Nume</translation>
+    </message>
+    <message>
+        <source>Description</source>
+        <translation>Descriere</translation>
+    </message>
+    <message>
+        <source>Permissions</source>
+        <translation>Permisiuni</translation>
+    </message>
+    <message>
+        <source>User</source>
+        <translation>Utilizator</translation>
+    </message>
+    <message>
+        <source>Browser</source>
+        <translation>Browser</translation>
+    </message>
+    <message>
+        <source>Logged in</source>
+        <translation>Autentificat la</translation>
+    </message>
+    <message>
+        <source>Last active</source>
+        <translation>Ultima activitate</translation>
+    </message>
+    <message>
+        <source>Expires</source>
+        <translation>Expiră</translation>
+    </message>
+    <message>
+        <source>The user database could not be opened. See the Execution Log for details.</source>
+        <translation>Baza de date a utilizatorilor nu a putut fi deschisă. Consultați jurnalul de execuție pentru detalii.</translation>
+    </message>
+    <message>
+        <source>Disabled</source>
+        <translation>Dezactivat</translation>
+    </message>
+    <message>
+        <source>Enabled</source>
+        <translation>Activat</translation>
+    </message>
+    <message>
+        <source>Never</source>
+        <translation>Niciodată</translation>
+    </message>
+    <message>
+        <source>No accounts yet, so everyone still uses the shared WebUI login. Add an Admin account first.</source>
+        <translation>Nu există încă conturi, deci toți folosesc în continuare autentificarea comună WebUI. Adăugați mai întâi un cont Admin.</translation>
+    </message>
+    <message>
+        <source>Couldn&apos;t read the user database. %1</source>
+        <translation>Baza de date a utilizatorilor nu a putut fi citită. %1</translation>
+    </message>
+    <message>
+        <source>Remove user</source>
+        <translation>Elimină utilizatorul</translation>
+    </message>
+    <message>
+        <source>Are you sure you want to remove the user &apos;%1&apos;?</source>
+        <translation>Sigur doriți să eliminați utilizatorul „%1”?</translation>
+    </message>
+    <message>
+        <source>Remove role</source>
+        <translation>Elimină rolul</translation>
+    </message>
+    <message>
+        <source>Are you sure you want to remove the role &apos;%1&apos;?</source>
+        <translation>Sigur doriți să eliminați rolul „%1”?</translation>
+    </message>
+    <message>
+        <source>Enable</source>
+        <translation>Activează</translation>
+    </message>
+    <message>
+        <source>Disable</source>
+        <translation>Dezactivează</translation>
+    </message>
+    <message>
+        <source>Log Out Everywhere</source>
+        <translation>Deconectează de peste tot</translation>
+    </message>
+</context>
+<context>
+    <name>UserRoleDialog</name>
+    <message>
+        <source>Role</source>
+        <translation>Rol</translation>
+    </message>
+    <message>
+        <source>Name:</source>
+        <translation>Nume:</translation>
+    </message>
+    <message>
+        <source>Description:</source>
+        <translation>Descriere:</translation>
+    </message>
+    <message>
+        <source>Gives control over the PC or qBittorrent itself.</source>
+        <translation>Oferă control asupra PC-ului sau asupra qBittorrent însuși.</translation>
+    </message>
+    <message>
+        <source>Add Role</source>
+        <translation>Adaugă rol</translation>
+    </message>
+    <message>
+        <source>Edit Role</source>
+        <translation>Editează rolul</translation>
+    </message>
+    <message>
+        <source>Enter a role name.</source>
+        <translation>Introduceți un nume de rol.</translation>
+    </message>
+    <message>
+        <source>Role</source>
+        <translation>Rol</translation>
+    </message>
+    <message>
+        <source>Name:</source>
+        <translation>Nume:</translation>
+    </message>
+    <message>
+        <source>Description:</source>
+        <translation>Descriere:</translation>
+    </message>
+    <message>
+        <source>Gives control over the PC or qBittorrent itself.</source>
+        <translation>Oferă control asupra PC-ului sau asupra qBittorrent însuși.</translation>
+    </message>
+    <message>
+        <source>Add Role</source>
+        <translation>Adaugă rol</translation>
+    </message>
+    <message>
+        <source>Edit Role</source>
+        <translation>Editează rolul</translation>
+    </message>
+    <message>
+        <source>Enter a role name.</source>
+        <translation>Introduceți un nume de rol.</translation>
+    </message>
+</context>
+<context>
+    <name>WebUIActivityWidget</name>
+    <message>
+        <source>All</source>
+        <translation>Toate</translation>
+    </message>
+    <message>
+        <source>Filter activity</source>
+        <translation>Filtrează activitatea</translation>
+    </message>
+    <message>
+        <source>Export...</source>
+        <translation>Exportă...</translation>
+    </message>
+    <message>
+        <source>User:</source>
+        <translation>Utilizator:</translation>
+    </message>
+    <message>
+        <source>Category:</source>
+        <translation>Categorie:</translation>
+    </message>
+    <message>
+        <source>Result:</source>
+        <translation>Rezultat:</translation>
+    </message>
+    <message>
+        <source>Time</source>
+        <translation>Ora</translation>
+    </message>
+    <message>
+        <source>User</source>
+        <translation>Utilizator</translation>
+    </message>
+    <message>
+        <source>Role</source>
+        <translation>Rol</translation>
+    </message>
+    <message>
+        <source>Category</source>
+        <translation>Categorie</translation>
+    </message>
+    <message>
+        <source>Action</source>
+        <translation>Acțiune</translation>
+    </message>
+    <message>
+        <source>Result</source>
+        <translation>Rezultat</translation>
+    </message>
+    <message>
+        <source>The user database could not be opened. See the General tab for details.</source>
+        <translation>Baza de date a utilizatorilor nu a putut fi deschisă. Consultați fila General pentru detalii.</translation>
+    </message>
+    <message>
+        <source>Results (showing %1 out of %2)</source>
+        <translation>Rezultate (se afișează %1 din %2)</translation>
+    </message>
+    <message>
+        <source>Copy</source>
+        <translation>Copiază</translation>
+    </message>
+    <message>
+        <source>Export WebUI activity</source>
+        <translation>Exportă activitatea WebUI</translation>
+    </message>
+    <message>
+        <source>CSV files</source>
+        <translation>Fișiere CSV</translation>
+    </message>
+    <message>
+        <source>Couldn&apos;t save the file. Reason: %1</source>
+        <translation>Fișierul nu a putut fi salvat. Motiv: %1</translation>
+    </message>
+    <message>
+        <source>All</source>
+        <translation>Toate</translation>
+    </message>
+    <message>
+        <source>Filter activity</source>
+        <translation>Filtrează activitatea</translation>
+    </message>
+    <message>
+        <source>Export...</source>
+        <translation>Exportă...</translation>
+    </message>
+    <message>
+        <source>User:</source>
+        <translation>Utilizator:</translation>
+    </message>
+    <message>
+        <source>Category:</source>
+        <translation>Categorie:</translation>
+    </message>
+    <message>
+        <source>Result:</source>
+        <translation>Rezultat:</translation>
+    </message>
+    <message>
+        <source>Time</source>
+        <translation>Ora</translation>
+    </message>
+    <message>
+        <source>User</source>
+        <translation>Utilizator</translation>
+    </message>
+    <message>
+        <source>Role</source>
+        <translation>Rol</translation>
+    </message>
+    <message>
+        <source>Category</source>
+        <translation>Categorie</translation>
+    </message>
+    <message>
+        <source>Action</source>
+        <translation>Acțiune</translation>
+    </message>
+    <message>
+        <source>Result</source>
+        <translation>Rezultat</translation>
+    </message>
+    <message>
+        <source>The user database could not be opened. See the General tab for details.</source>
+        <translation>Baza de date a utilizatorilor nu a putut fi deschisă. Consultați fila General pentru detalii.</translation>
+    </message>
+    <message>
+        <source>Results (showing %1 out of %2)</source>
+        <translation>Rezultate (se afișează %1 din %2)</translation>
+    </message>
+    <message>
+        <source>Copy</source>
+        <translation>Copiază</translation>
+    </message>
+    <message>
+        <source>Export WebUI activity</source>
+        <translation>Exportă activitatea WebUI</translation>
+    </message>
+    <message>
+        <source>CSV files</source>
+        <translation>Fișiere CSV</translation>
+    </message>
+    <message>
+        <source>Couldn&apos;t save the file. Reason: %1</source>
+        <translation>Fișierul nu a putut fi salvat. Motiv: %1</translation>
     </message>
 </context>
 </TS>

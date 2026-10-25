@@ -994,6 +994,7 @@ class OptionsParityTests(unittest.TestCase):
         script = self.html[self.html.index("const layout = ["):self.html.index("const textBoxes")]
         webui, depth = [], 0
         for (bracket, name) in re.findall(r'(\[|\])|"([^"]+)"', script):
+            name = re.sub(r"QBT_TR\((.*)\)QBT_TR\[CONTEXT=AdvancedSettings\]", lambda m: m.group(1), name)
             if bracket:
                 depth += 1 if (bracket == "[") else -1
             elif depth == 2:

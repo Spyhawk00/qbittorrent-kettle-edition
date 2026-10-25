@@ -223,6 +223,85 @@ The piece hash will be checked when it is requested for the first time by a peer
         <source>%1 needed · %2 free</source>
         <translation type="unfinished" />
     </message>
+    <message>
+        <source>Don&apos;t create subfolder</source>
+        <translation>Nu crea subdosar</translation>
+    </message>
+    <message>
+        <source>Never show again</source>
+        <translation>Nu arăta din nou</translation>
+    </message>
+    <message>
+        <source>Select None</source>
+        <translation>Nu selecta nimic</translation>
+    </message>
+    <message>
+        <source>Torrent options</source>
+        <translation>Opțiuni torent</translation>
+    </message>
+    <message>
+        <source>Your role saves torrents in the default folders.</source>
+        <translation>Rolul dvs. salvează torrentele în dosarele implicite.</translation>
+    </message>
+</context>
+<context>
+    <name>AdvancedSettings</name>
+    <message>
+        <source>General</source>
+        <translation>Generale</translation>
+    </message>
+    <message>
+        <source>Network</source>
+        <translation>Rețea</translation>
+    </message>
+    <message>
+        <source>Storage</source>
+        <translation>Stocare</translation>
+    </message>
+    <message>
+        <source>Peers and trackers</source>
+        <translation>Parteneri și trackere</translation>
+    </message>
+    <message>
+        <source>Program behavior</source>
+        <translation>Comportamentul programului</translation>
+    </message>
+    <message>
+        <source>Display and notifications</source>
+        <translation>Afișare și notificări</translation>
+    </message>
+    <message>
+        <source>Network connection</source>
+        <translation>Conexiune la rețea</translation>
+    </message>
+    <message>
+        <source>Security and privacy</source>
+        <translation>Securitate și confidențialitate</translation>
+    </message>
+    <message>
+        <source>Connection tuning</source>
+        <translation>Reglarea conexiunii</translation>
+    </message>
+    <message>
+        <source>Saving and torrent files</source>
+        <translation>Salvare și fișiere torrent</translation>
+    </message>
+    <message>
+        <source>Disk and memory</source>
+        <translation>Disc și memorie</translation>
+    </message>
+    <message>
+        <source>Trackers</source>
+        <translation>Urmăritoare</translation>
+    </message>
+    <message>
+        <source>Peers and seeding</source>
+        <translation>Parteneri și partajare</translation>
+    </message>
+    <message>
+        <source>DHT and I2P</source>
+        <translation>DHT și I2P</translation>
+    </message>
 </context>
 <context>
     <name>CategoryFilterModel</name>
@@ -623,6 +702,14 @@ The piece hash will be checked when it is requested for the first time by a peer
         <source>More</source>
         <translation>Mai multe</translation>
     </message>
+    <message>
+        <source>Change Password...</source>
+        <translation>Schimbă parola...</translation>
+    </message>
+    <message>
+        <source>Signed in as</source>
+        <translation>Autentificat ca</translation>
+    </message>
 </context>
 <context>
     <name>MainWindow</name>
@@ -929,6 +1016,34 @@ The piece hash will be checked when it is requested for the first time by a peer
     <message>
         <source>Resume Session</source>
         <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Global Speed Limits</source>
+        <translation>Limite de viteză globale</translation>
+    </message>
+    <message>
+        <source>Pause Session</source>
+        <translation>Pune sesiunea în pauză</translation>
+    </message>
+    <message>
+        <source>Pause session</source>
+        <translation>Pune sesiunea în pauză</translation>
+    </message>
+    <message>
+        <source>Resume Session</source>
+        <translation>Reia sesiunea</translation>
+    </message>
+    <message>
+        <source>Resume session</source>
+        <translation>Reia sesiunea</translation>
+    </message>
+    <message>
+        <source>Your account can&apos;t add torrents.</source>
+        <translation>Contul dvs. nu poate adăuga torrente.</translation>
+    </message>
+    <message>
+        <source>[PAUSED]</source>
+        <translation>[ÎN PAUZĂ]</translation>
     </message>
 </context>
 <context>
@@ -2511,6 +2626,150 @@ Use ';' to split multiple entries. Can use wildcard '*'.</source>
         <source>a@x.com;b@y.com,c@z.com - send two emails: the first to just a@x.com, the second to both b@y.com and c@z.com</source>
         <translation type="unfinished" />
     </message>
+    <message>
+        <source>0 means users are logged out after the session timeout.</source>
+        <translation>0 înseamnă că utilizatorii sunt deconectați după expirarea sesiunii.</translation>
+    </message>
+    <message>
+        <source>Access</source>
+        <translation>Acces</translation>
+    </message>
+    <message>
+        <source>Allow this login when user accounts exist</source>
+        <translation>Permite această autentificare când există conturi de utilizator</translation>
+    </message>
+    <message>
+        <source>Also save search results</source>
+        <translation>Salvează și rezultatele căutării</translation>
+    </message>
+    <message>
+        <source>Also when addition is cancelled</source>
+        <translation>Și când adăugarea a fost abandonată</translation>
+    </message>
+    <message>
+        <source>Below normal</source>
+        <translation>Sub normal</translation>
+    </message>
+    <message>
+        <source>Changes to users, roles and logins apply at once.</source>
+        <translation>Modificările utilizatorilor, rolurilor și autentificărilor se aplică imediat.</translation>
+    </message>
+    <message>
+        <source>Don&apos;t create subfolder</source>
+        <translation>Nu crea subdosar</translation>
+    </message>
+    <message>
+        <source>Example:</source>
+        <translation>Exemplu: </translation>
+    </message>
+    <message>
+        <source>Keep WebUI activity log for:</source>
+        <translation>Păstrează jurnalul de activitate WebUI timp de:</translation>
+    </message>
+    <message>
+        <source>Keep users logged in for:</source>
+        <translation>Păstrează utilizatorii autentificați timp de:</translation>
+    </message>
+    <message>
+        <source>Language:</source>
+        <translation>Limbă:</translation>
+    </message>
+    <message>
+        <source>Lock account after consecutive failures:</source>
+        <translation>Blochează contul după eșecuri consecutive:</translation>
+    </message>
+    <message>
+        <source>Logins and Activity Log</source>
+        <translation>Autentificări și jurnal de activitate</translation>
+    </message>
+    <message>
+        <source>Low</source>
+        <translation>Scăzut</translation>
+    </message>
+    <message>
+        <source>Medium</source>
+        <translation>Mediu</translation>
+    </message>
+    <message>
+        <source>No settings match</source>
+        <translation>Nicio setare nu se potrivește</translation>
+    </message>
+    <message>
+        <source>Process memory priority:</source>
+        <translation>Prioritatea memoriei procesului:</translation>
+    </message>
+    <message>
+        <source>Save search tabs</source>
+        <translation>Salvează filele de căutare</translation>
+    </message>
+    <message>
+        <source>Search settings</source>
+        <translation>Caută în setări</translation>
+    </message>
+    <message>
+        <source>Service:</source>
+        <translation>Serviciu:</translation>
+    </message>
+    <message>
+        <source>Show console window</source>
+        <translation>Arată fereastra de consolă</translation>
+    </message>
+    <message>
+        <source>Show the window when adding a torrent</source>
+        <translation>Afișează fereastra la adăugarea unui torrent</translation>
+    </message>
+    <message>
+        <source>Status bar and log</source>
+        <translation>Bară de stare și jurnal</translation>
+    </message>
+    <message>
+        <source>The WebUI activity log can be kept for 1 to 3650 days.</source>
+        <translation>Jurnalul de activitate WebUI poate fi păstrat între 1 și 3650 de zile.</translation>
+    </message>
+    <message>
+        <source>The settings below apply with OK or Apply.</source>
+        <translation>Setările de mai jos se aplică cu OK sau Aplică.</translation>
+    </message>
+    <message>
+        <source>Tip: Encapsulate parameter with quotation marks to avoid text being cut off at whitespace (e.g., &quot;%N&quot;)</source>
+        <translation>Sfat: Încapsulați parametrul între ghilimele (englezești) pentru a evita ca textul să fie tăiat la spațiu (de ex., &quot;%N&quot;)</translation>
+    </message>
+    <message>
+        <source>Transfer List</source>
+        <translation>Lista de transferuri</translation>
+    </message>
+    <message>
+        <source>Until the first user account is created, this login always works.</source>
+        <translation>Până la crearea primului cont de utilizator, această autentificare funcționează mereu.</translation>
+    </message>
+    <message>
+        <source>User</source>
+        <translation>Utilizator</translation>
+    </message>
+    <message>
+        <source>User Accounts</source>
+        <translation>Conturi de utilizator</translation>
+    </message>
+    <message>
+        <source>Users can be kept logged in for 0 to 365 days.</source>
+        <translation>Utilizatorii pot fi ținuți autentificați între 0 și 365 de zile.</translation>
+    </message>
+    <message>
+        <source>Very low</source>
+        <translation>Foarte scăzut</translation>
+    </message>
+    <message>
+        <source>Warning! Data loss possible!</source>
+        <translation>Atenție! Este posibilă pierderea datelor!</translation>
+    </message>
+    <message>
+        <source>You changed the address, port or HTTPS setting of the WebUI. Saving moves the WebUI, so Options will save, close and reload the page, the same as OK. If the page doesn&apos;t come back, open the WebUI at its new address.\n\nSave anyway?</source>
+        <translation>Ați schimbat adresa, portul sau setarea HTTPS a WebUI. Salvarea mută WebUI, așa că Opțiunile vor salva, se vor închide și vor reîncărca pagina, ca la OK. Dacă pagina nu revine, deschideți WebUI la noua adresă.\n\nSalvezi oricum?</translation>
+    </message>
+    <message>
+        <source>lock for:</source>
+        <translation>blochează pentru:</translation>
+    </message>
 </context>
 <context>
     <name>PeerListWidget</name>
@@ -3051,6 +3310,142 @@ Use ';' to split multiple entries. Can use wildcard '*'.</source>
     <message>
         <source>The time it takes from receiving a request from a peer until we're sending the response back on the socket</source>
         <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Activity</source>
+        <translation>Activitate</translation>
+    </message>
+    <message>
+        <source>All time</source>
+        <translation>Dintotdeauna</translation>
+    </message>
+    <message>
+        <source>Before tracking began</source>
+        <translation>Înainte de începerea urmăririi</translation>
+    </message>
+    <message>
+        <source>By month</source>
+        <translation>Pe luni</translation>
+    </message>
+    <message>
+        <source>Counts the requests that added a download. Apps without a login, such as Sonarr and Radarr, are shown as (localhost). Downloads added in the desktop window are not counted.</source>
+        <translation>Numără cererile care au adăugat o descărcare. Aplicațiile fără autentificare, precum Sonarr și Radarr, apar ca (localhost). Descărcările adăugate în fereastra desktop nu sunt numărate.</translation>
+    </message>
+    <message>
+        <source>Current speed:</source>
+        <translation>Viteză curentă:</translation>
+    </message>
+    <message>
+        <source>DHT nodes:</source>
+        <translation>Noduri DHT:</translation>
+    </message>
+    <message>
+        <source>Data discarded this session:</source>
+        <translation>Date eliminate în această sesiune:</translation>
+    </message>
+    <message>
+        <source>Disk</source>
+        <translation>Disc</translation>
+    </message>
+    <message>
+        <source>History</source>
+        <translation>Istoric</translation>
+    </message>
+    <message>
+        <source>Last 12 months</source>
+        <translation>Ultimele 12 luni</translation>
+    </message>
+    <message>
+        <source>Last 7 days</source>
+        <translation>Ultimele 7 zile</translation>
+    </message>
+    <message>
+        <source>Last month</source>
+        <translation>Luna trecută</translation>
+    </message>
+    <message>
+        <source>Month</source>
+        <translation>Lună</translation>
+    </message>
+    <message>
+        <source>Nothing added yet</source>
+        <translation>Nu s-a adăugat nimic încă</translation>
+    </message>
+    <message>
+        <source>Off</source>
+        <translation>Oprit</translation>
+    </message>
+    <message>
+        <source>Overview</source>
+        <translation>Prezentare generală</translation>
+    </message>
+    <message>
+        <source>Peers waiting on disk reads:</source>
+        <translation>Parteneri care așteaptă citirea de pe disc:</translation>
+    </message>
+    <message>
+        <source>Peers waiting on disk writes:</source>
+        <translation>Parteneri care așteaptă scrierea pe disc:</translation>
+    </message>
+    <message>
+        <source>Period</source>
+        <translation>Perioadă</translation>
+    </message>
+    <message>
+        <source>Request latency:</source>
+        <translation>Latența cererii:</translation>
+    </message>
+    <message>
+        <source>Running for:</source>
+        <translation>Rulează de:</translation>
+    </message>
+    <message>
+        <source>Share ratio</source>
+        <translation>Raport de partajare</translation>
+    </message>
+    <message>
+        <source>Share ratio:</source>
+        <translation>Raport de partajare:</translation>
+    </message>
+    <message>
+        <source>Technical</source>
+        <translation>Tehnic</translation>
+    </message>
+    <message>
+        <source>This month</source>
+        <translation>Luna aceasta</translation>
+    </message>
+    <message>
+        <source>This session</source>
+        <translation>Această sesiune</translation>
+    </message>
+    <message>
+        <source>Today</source>
+        <translation>Astăzi</translation>
+    </message>
+    <message>
+        <source>Torrents downloading:</source>
+        <translation>Torrente în descărcare:</translation>
+    </message>
+    <message>
+        <source>Torrents seeding:</source>
+        <translation>Torrente în seeding:</translation>
+    </message>
+    <message>
+        <source>Torrents stopped:</source>
+        <translation>Torrente oprite:</translation>
+    </message>
+    <message>
+        <source>Torrents with errors:</source>
+        <translation>Torrente cu erori:</translation>
+    </message>
+    <message>
+        <source>Tracking since:</source>
+        <translation>Urmărire din:</translation>
+    </message>
+    <message>
+        <source>WebUI downloads added, this month</source>
+        <translation>Descărcări adăugate prin WebUI, luna aceasta</translation>
     </message>
 </context>
 <context>
@@ -3838,6 +4233,10 @@ Use ';' to split multiple entries. Can use wildcard '*'.</source>
         <source>Content Path</source>
         <translation type="unfinished" />
     </message>
+    <message>
+        <source>Remove all tags from selected torrents?</source>
+        <translation>Eliminați toate marcajele de la torentele alese?</translation>
+    </message>
 </context>
 <context>
     <name>UpDownRatioDialog</name>
@@ -3910,6 +4309,10 @@ Use ';' to split multiple entries. Can use wildcard '*'.</source>
     <message>
         <source>Remove tracker</source>
         <translation>Elimină urmăritorul</translation>
+    </message>
+    <message>
+        <source>This choice is remembered for the next removal.</source>
+        <translation>Această alegere va fi ținută minte pentru următoarea eliminare.</translation>
     </message>
 </context>
 <context>
@@ -4123,6 +4526,34 @@ Use ';' to split multiple entries. Can use wildcard '*'.</source>
         <source>Select plugins</source>
         <translation type="unfinished" />
     </message>
+    <message>
+        <source>Category to search in</source>
+        <translation>Categoria în care se caută</translation>
+    </message>
+    <message>
+        <source>Close the selected search</source>
+        <translation>Închide căutarea selectată</translation>
+    </message>
+    <message>
+        <source>Empty search pattern</source>
+        <translation>Model de căutare gol</translation>
+    </message>
+    <message>
+        <source>Search engines to use</source>
+        <translation>Motoare de căutare de folosit</translation>
+    </message>
+    <message>
+        <source>Search for torrents...</source>
+        <translation>Caută torrente...</translation>
+    </message>
+    <message>
+        <source>Searches</source>
+        <translation>Căutări</translation>
+    </message>
+    <message>
+        <source>Type a search above and press Enter.</source>
+        <translation>Tastați o căutare mai sus și apăsați Enter.</translation>
+    </message>
 </context>
 <context>
     <name>PluginSelectDlg</name>
@@ -4161,6 +4592,10 @@ Use ';' to split multiple entries. Can use wildcard '*'.</source>
     <message>
         <source>Search plugins</source>
         <translation>Extensii de căutare</translation>
+    </message>
+    <message>
+        <source>Warning: Be sure to comply with your country&apos;s copyright laws when downloading torrents from any of these search engines.</source>
+        <translation>Atenție: Asigurați-vă că respectați legile locale cu privire la drepturile de autor când descărcați torente de pe aceste motoare de căutare.</translation>
     </message>
 </context>
 <context>
@@ -4384,6 +4819,30 @@ Use ';' to split multiple entries. Can use wildcard '*'.</source>
         <source>qBittorrent icon</source>
         <translation>Pictogramă qBittorrent</translation>
     </message>
+    <message>
+        <source>Based on:</source>
+        <translation>Bazată pe:</translation>
+    </message>
+    <message>
+        <source>Edition version:</source>
+        <translation>Versiunea ediției:</translation>
+    </message>
+    <message>
+        <source>Kettle Edition is a personal build of qBittorrent that adds user accounts with roles for the WebUI and the desktop app, an activity log, and an installable WebUI with a phone layout. A kettle is a group of hawks soaring together. This is an unofficial build, not affiliated with the qBittorrent project.</source>
+        <translation>Kettle Edition este o versiune personală a qBittorrent care adaugă conturi de utilizator cu roluri pentru WebUI și aplicația desktop, un jurnal de activitate și o WebUI instalabilă cu aspect pentru telefon. Un kettle este un grup de șoimi care planează împreună. Aceasta este o versiune neoficială, fără legătură cu proiectul qBittorrent.</translation>
+    </message>
+    <message>
+        <source>Maintainer:</source>
+        <translation>Întreținător:</translation>
+    </message>
+    <message>
+        <source>This edition</source>
+        <translation>Această ediție</translation>
+    </message>
+    <message>
+        <source>qBittorrent project:</source>
+        <translation>Proiectul qBittorrent:</translation>
+    </message>
 </context>
 <context>
     <name>OptionDialog</name>
@@ -4485,6 +4944,46 @@ Use ';' to split multiple entries. Can use wildcard '*'.</source>
     <message>
         <source>Open shared download window</source>
         <translation type="unfinished" />
+    </message>
+    <message>
+        <source>%1 of %2 shown</source>
+        <translation>%1 din %2 afișate</translation>
+    </message>
+    <message>
+        <source>%1 of %2 shown (%3 hidden)</source>
+        <translation>%1 din %2 afișate (%3 ascunse)</translation>
+    </message>
+    <message>
+        <source>Close all searches</source>
+        <translation>Închide toate căutările</translation>
+    </message>
+    <message>
+        <source>Close search</source>
+        <translation>Închide căutarea</translation>
+    </message>
+    <message>
+        <source>Filter search results...</source>
+        <translation>Filtrare rezultate căutare...</translation>
+    </message>
+    <message>
+        <source>Finished: %1</source>
+        <translation>Terminat: %1</translation>
+    </message>
+    <message>
+        <source>Refresh search</source>
+        <translation>Reîmprospătează căutarea</translation>
+    </message>
+    <message>
+        <source>Search aborted: %1</source>
+        <translation>Căutare întreruptă: %1</translation>
+    </message>
+    <message>
+        <source>Search returned no results</source>
+        <translation>Căutarea nu a întors niciun rezultat</translation>
+    </message>
+    <message>
+        <source>Searching: %1</source>
+        <translation>Se caută: %1</translation>
     </message>
 </context>
 <context>
@@ -4623,6 +5122,10 @@ Use ';' to split multiple entries. Can use wildcard '*'.</source>
     <message>
         <source>Blocked opening RSS article URL. Only http:// and https:// links can be opened.</source>
         <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Details</source>
+        <translation>Detalii</translation>
     </message>
 </context>
 <context>
@@ -4901,6 +5404,10 @@ Recunoaște formatele: S01E01, 1x1, 2017.12.31 si 31.12.2017 (Formatele pentru d
         <source>Import</source>
         <translation type="unfinished" />
     </message>
+    <message>
+        <source>Don&apos;t create subfolder</source>
+        <translation>Nu crea subdosar</translation>
+    </message>
 </context>
 <context>
     <name>TrackerFiltersList</name>
@@ -5090,6 +5597,26 @@ Recunoaște formatele: S01E01, 1x1, 2017.12.31 si 31.12.2017 (Formatele pentru d
         <source>Choose a log level...</source>
         <translation type="unfinished" />
     </message>
+    <message>
+        <source>Export...</source>
+        <translation>Exportă...</translation>
+    </message>
+    <message>
+        <source>Filter activity</source>
+        <translation>Filtrează activitatea</translation>
+    </message>
+    <message>
+        <source>Result:</source>
+        <translation>Rezultat:</translation>
+    </message>
+    <message>
+        <source>User:</source>
+        <translation>Utilizator:</translation>
+    </message>
+    <message>
+        <source>WebUI Activity</source>
+        <translation>Activitate WebUI</translation>
+    </message>
 </context>
 <context>
     <name>TrackersFilterWidget</name>
@@ -5159,6 +5686,14 @@ Recunoaște formatele: S01E01, 1x1, 2017.12.31 si 31.12.2017 (Formatele pentru d
     <message>
         <source>Torrent share limits</source>
         <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Torrent share limits</source>
+        <translation>Limitele de partajare a torenților</translation>
+    </message>
+    <message>
+        <source>Your role saves torrents in the default folders.</source>
+        <translation>Rolul dvs. salvează torrentele în dosarele implicite.</translation>
     </message>
 </context>
 <context>
@@ -5258,6 +5793,14 @@ Recunoaște formatele: S01E01, 1x1, 2017.12.31 si 31.12.2017 (Formatele pentru d
     <message>
         <source>Invalid Username or Password.</source>
         <translation>Numele de utilizator sau parola nu sunt valide.</translation>
+    </message>
+    <message>
+        <source>A kettle is a group of hawks soaring together.</source>
+        <translation>Un kettle este un grup de șoimi care planează împreună.</translation>
+    </message>
+    <message>
+        <source>Sign in</source>
+        <translation>Autentificare</translation>
     </message>
 </context>
 <context>
@@ -5466,6 +6009,22 @@ Recunoaște formatele: S01E01, 1x1, 2017.12.31 si 31.12.2017 (Formatele pentru d
         <source>If checked, filenames starting with a period punctuation mark `.` will not be added to the created torrent.</source>
         <translation type="unfinished" />
     </message>
+    <message>
+        <source>Align to piece boundary for files larger than:</source>
+        <translation>Aliniază la hotarul bucății pentru fișiere mai mari de:</translation>
+    </message>
+    <message>
+        <source>Optimize alignment</source>
+        <translation>Optimizează alinierea</translation>
+    </message>
+    <message>
+        <source>Private torrent (Won&apos;t distribute on DHT network)</source>
+        <translation>Torent privat (nu se distribuie în rețeaua DHT)</translation>
+    </message>
+    <message>
+        <source>Start seeding immediately</source>
+        <translation>Începe contribuirea imediat</translation>
+    </message>
 </context>
 <context>
     <name>DownloadFromURLDialog</name>
@@ -5576,6 +6135,10 @@ Recunoaște formatele: S01E01, 1x1, 2017.12.31 si 31.12.2017 (Formatele pentru d
         <source>Failed to set speed limits</source>
         <translation type="unfinished" />
     </message>
+    <message>
+        <source>Speed limits</source>
+        <translation>Limite de viteză</translation>
+    </message>
 </context>
 <context>
     <name>ListWidget</name>
@@ -5586,6 +6149,10 @@ Recunoaște formatele: S01E01, 1x1, 2017.12.31 si 31.12.2017 (Formatele pentru d
     <message>
         <source>Resize</source>
         <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Reset Auto Width</source>
+        <translation>Resetează lățimea automată</translation>
     </message>
 </context>
 <context>
@@ -5716,6 +6283,14 @@ Recunoaște formatele: S01E01, 1x1, 2017.12.31 si 31.12.2017 (Formatele pentru d
         <source>Remove torrent</source>
         <translation type="unfinished" />
     </message>
+    <message>
+        <source>Ratio:</source>
+        <translation>Raport:</translation>
+    </message>
+    <message>
+        <source>Unlimited</source>
+        <translation>Nelimitat</translation>
+    </message>
 </context>
 <context>
     <name>TorrentContent</name>
@@ -5726,6 +6301,216 @@ Recunoaște formatele: S01E01, 1x1, 2017.12.31 si 31.12.2017 (Formatele pentru d
     <message>
         <source>Not available for folders</source>
         <translation type="unfinished" />
+    </message>
+</context>
+<context>
+    <name>UserAccounts</name>
+    <message>
+        <source>(this browser)</source>
+        <translation>(acest browser)</translation>
+    </message>
+    <message>
+        <source>A role decides what its users are allowed to do.</source>
+        <translation>Un rol decide ce au voie să facă utilizatorii săi.</translation>
+    </message>
+    <message>
+        <source>Add Role</source>
+        <translation>Adaugă rol</translation>
+    </message>
+    <message>
+        <source>Add Role...</source>
+        <translation>Adaugă rol...</translation>
+    </message>
+    <message>
+        <source>Add User</source>
+        <translation>Adaugă utilizator</translation>
+    </message>
+    <message>
+        <source>Add User...</source>
+        <translation>Adaugă utilizator...</translation>
+    </message>
+    <message>
+        <source>Are you sure you want to remove the role &apos;%1&apos;?</source>
+        <translation>Sigur doriți să eliminați rolul „%1”?</translation>
+    </message>
+    <message>
+        <source>Are you sure you want to remove the user &apos;%1&apos;?</source>
+        <translation>Sigur doriți să eliminați utilizatorul „%1”?</translation>
+    </message>
+    <message>
+        <source>At least %1 characters</source>
+        <translation>Cel puțin %1 caractere</translation>
+    </message>
+    <message>
+        <source>Browser</source>
+        <translation>Browser</translation>
+    </message>
+    <message>
+        <source>Browsers and devices where someone is logged in with a user account.</source>
+        <translation>Browsere și dispozitive unde cineva este autentificat cu un cont de utilizator.</translation>
+    </message>
+    <message>
+        <source>Change Password</source>
+        <translation>Schimbă parola</translation>
+    </message>
+    <message>
+        <source>Confirm password:</source>
+        <translation>Confirmă parola:</translation>
+    </message>
+    <message>
+        <source>Created</source>
+        <translation>Creat</translation>
+    </message>
+    <message>
+        <source>Current password:</source>
+        <translation>Parola curentă:</translation>
+    </message>
+    <message>
+        <source>Description</source>
+        <translation>Descriere</translation>
+    </message>
+    <message>
+        <source>Description:</source>
+        <translation>Descriere:</translation>
+    </message>
+    <message>
+        <source>Disable</source>
+        <translation>Dezactivează</translation>
+    </message>
+    <message>
+        <source>Disable this account</source>
+        <translation>Dezactivează acest cont</translation>
+    </message>
+    <message>
+        <source>Edit Role</source>
+        <translation>Editează rolul</translation>
+    </message>
+    <message>
+        <source>Edit User</source>
+        <translation>Editează utilizatorul</translation>
+    </message>
+    <message>
+        <source>Edit...</source>
+        <translation>Editează...</translation>
+    </message>
+    <message>
+        <source>Enable</source>
+        <translation>Activează</translation>
+    </message>
+    <message>
+        <source>Enter a role name.</source>
+        <translation>Introduceți un nume de rol.</translation>
+    </message>
+    <message>
+        <source>Enter a username.</source>
+        <translation>Introduceți un nume de utilizator.</translation>
+    </message>
+    <message>
+        <source>Expires</source>
+        <translation>Expiră</translation>
+    </message>
+    <message>
+        <source>Gives control over the PC or qBittorrent itself</source>
+        <translation>Oferă control asupra PC-ului sau asupra qBittorrent însuși</translation>
+    </message>
+    <message>
+        <source>Last active</source>
+        <translation>Ultima activitate</translation>
+    </message>
+    <message>
+        <source>Last login</source>
+        <translation>Ultima autentificare</translation>
+    </message>
+    <message>
+        <source>Leave empty to keep the current password</source>
+        <translation>Lăsați gol pentru a păstra parola curentă</translation>
+    </message>
+    <message>
+        <source>Log Out</source>
+        <translation>Deconectează</translation>
+    </message>
+    <message>
+        <source>Log Out Everywhere</source>
+        <translation>Deconectează de peste tot</translation>
+    </message>
+    <message>
+        <source>Logged In</source>
+        <translation>Autentificați</translation>
+    </message>
+    <message>
+        <source>Logged in</source>
+        <translation>Autentificat la</translation>
+    </message>
+    <message>
+        <source>New password:</source>
+        <translation>Parola nouă:</translation>
+    </message>
+    <message>
+        <source>No accounts yet, so everyone still uses the shared WebUI login. Add an Admin account first.</source>
+        <translation>Nu există încă conturi, deci toți folosesc în continuare autentificarea comună WebUI. Adăugați mai întâi un cont Admin.</translation>
+    </message>
+    <message>
+        <source>People who can log in to the WebUI with their own username and password.</source>
+        <translation>Persoane care se pot autentifica în WebUI cu propriul nume de utilizator și parolă.</translation>
+    </message>
+    <message>
+        <source>Permissions</source>
+        <translation>Permisiuni</translation>
+    </message>
+    <message>
+        <source>Role</source>
+        <translation>Rol</translation>
+    </message>
+    <message>
+        <source>Role:</source>
+        <translation>Rol:</translation>
+    </message>
+    <message>
+        <source>Roles</source>
+        <translation>Roluri</translation>
+    </message>
+    <message>
+        <source>The password must be at least %1 characters long.</source>
+        <translation>Parola trebuie să aibă cel puțin %1 caractere.</translation>
+    </message>
+    <message>
+        <source>The passwords don&apos;t match.</source>
+        <translation>Parolele nu se potrivesc.</translation>
+    </message>
+    <message>
+        <source>User</source>
+        <translation>Utilizator</translation>
+    </message>
+    <message>
+        <source>Users</source>
+        <translation>Utilizatori</translation>
+    </message>
+    <message>
+        <source>Your password was changed. Other browsers and devices where you were logged in have been logged out.</source>
+        <translation>Parola dvs. a fost schimbată. Celelalte browsere și dispozitive unde erați autentificat au fost deconectate.</translation>
+    </message>
+</context>
+<context>
+    <name>WebUIActivity</name>
+    <message>
+        <source>Action</source>
+        <translation>Acțiune</translation>
+    </message>
+    <message>
+        <source>Result</source>
+        <translation>Rezultat</translation>
+    </message>
+    <message>
+        <source>Role</source>
+        <translation>Rol</translation>
+    </message>
+    <message>
+        <source>Time</source>
+        <translation>Ora</translation>
+    </message>
+    <message>
+        <source>User</source>
+        <translation>Utilizator</translation>
     </message>
 </context>
 </TS>

@@ -141,6 +141,62 @@
         <source>The free IP to Country Lite database by DB-IP is used for resolving the countries of peers. The database is licensed under the Creative Commons Attribution 4.0 International License</source>
         <translation>DB-IP арқылы тегін IP to Country Lite дерекқоры тең елдерді шешу үшін қолданылады. Деректер базасы Creative Commons Attribution 4.0 халықаралық лицензиясы бойынша лицензияланған</translation>
     </message>
+    <message>
+        <source>This edition</source>
+        <translation>Осы шығарылым</translation>
+    </message>
+    <message>
+        <source>Edition version:</source>
+        <translation>Шығарылым нұсқасы:</translation>
+    </message>
+    <message>
+        <source>Based on:</source>
+        <translation>Негізі:</translation>
+    </message>
+    <message>
+        <source>Maintainer:</source>
+        <translation>Қолдаушы:</translation>
+    </message>
+    <message>
+        <source>qBittorrent project:</source>
+        <translation>qBittorrent жобасы:</translation>
+    </message>
+    <message>
+        <source>Kettle Edition is a personal build of qBittorrent that adds user accounts with roles for the WebUI and the desktop app, an activity log, and an installable WebUI with a phone layout. A kettle is a group of hawks soaring together. This is an unofficial build, not affiliated with the qBittorrent project.</source>
+        <translation>Kettle Edition — qBittorrent-тің жеке құрастырмасы, ол WebUI және жұмыс үстелі қолданбасы үшін рөлдері бар пайдаланушы тіркелгілерін, әрекет журналын және телефон макеті бар орнатылатын WebUI қосады. Kettle — бірге қалықтайтын лашындар тобы. Бұл бейресми құрастырма, qBittorrent жобасына қатысы жоқ.</translation>
+    </message>
+    <message>
+        <source>N/A</source>
+        <translation>Жоқ</translation>
+    </message>
+    <message>
+        <source>This edition</source>
+        <translation>Осы шығарылым</translation>
+    </message>
+    <message>
+        <source>Edition version:</source>
+        <translation>Шығарылым нұсқасы:</translation>
+    </message>
+    <message>
+        <source>Based on:</source>
+        <translation>Негізі:</translation>
+    </message>
+    <message>
+        <source>Maintainer:</source>
+        <translation>Қолдаушы:</translation>
+    </message>
+    <message>
+        <source>qBittorrent project:</source>
+        <translation>qBittorrent жобасы:</translation>
+    </message>
+    <message>
+        <source>Kettle Edition is a personal build of qBittorrent that adds user accounts with roles for the WebUI and the desktop app, an activity log, and an installable WebUI with a phone layout. A kettle is a group of hawks soaring together. This is an unofficial build, not affiliated with the qBittorrent project.</source>
+        <translation>Kettle Edition — qBittorrent-тің жеке құрастырмасы, ол WebUI және жұмыс үстелі қолданбасы үшін рөлдері бар пайдаланушы тіркелгілерін, әрекет журналын және телефон макеті бар орнатылатын WebUI қосады. Kettle — бірге қалықтайтын лашындар тобы. Бұл бейресми құрастырма, qBittorrent жобасына қатысы жоқ.</translation>
+    </message>
+    <message>
+        <source>N/A</source>
+        <translation>Жоқ</translation>
+    </message>
 </context>
 <context>
     <name>AbstractFileStorage</name>
@@ -1459,6 +1515,62 @@
         <location filename="../gui/advancedsettings.cpp" line="925"/>
         <source>Embedded tracker port</source>
         <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Network</source>
+        <translation>Желі</translation>
+    </message>
+    <message>
+        <source>Storage</source>
+        <translation>Сақтау</translation>
+    </message>
+    <message>
+        <source>Peers and trackers</source>
+        <translation>Пирлер және трекерлер</translation>
+    </message>
+    <message>
+        <source>Program behavior</source>
+        <translation>Бағдарлама әрекеті</translation>
+    </message>
+    <message>
+        <source>Display and notifications</source>
+        <translation>Көрсету және хабарландырулар</translation>
+    </message>
+    <message>
+        <source>Network connection</source>
+        <translation>Желі байланысы</translation>
+    </message>
+    <message>
+        <source>Security and privacy</source>
+        <translation>Қауіпсіздік және құпиялылық</translation>
+    </message>
+    <message>
+        <source>Connection tuning</source>
+        <translation>Байланысты баптау</translation>
+    </message>
+    <message>
+        <source>Saving and torrent files</source>
+        <translation>Сақтау және торрент файлдары</translation>
+    </message>
+    <message>
+        <source>Disk and memory</source>
+        <translation>Диск және жад</translation>
+    </message>
+    <message>
+        <source>Peers and seeding</source>
+        <translation>Пирлер және тарату</translation>
+    </message>
+    <message>
+        <source>DHT and I2P</source>
+        <translation>DHT және I2P</translation>
+    </message>
+    <message>
+        <source>Trackers</source>
+        <translation>Трекерлер</translation>
+    </message>
+    <message>
+        <source>General</source>
+        <translation>Жалпы</translation>
     </message>
 </context>
 <context>
@@ -3462,6 +3574,22 @@ Supports the formats: S01E01, 1x1, 2017.12.31 and 31.12.2017 (Date formats also 
         <source>Remove torrent</source>
         <translation type="unfinished"></translation>
     </message>
+    <message>
+        <source>This choice is remembered for the next removal.</source>
+        <translation>Бұл таңдау келесі жоюға есте сақталады.</translation>
+    </message>
+    <message>
+        <source>Remove</source>
+        <translation>Жою</translation>
+    </message>
+    <message>
+        <source>This choice is remembered for the next removal.</source>
+        <translation>Бұл таңдау келесі жоюға есте сақталады.</translation>
+    </message>
+    <message>
+        <source>Remove</source>
+        <translation>Жою</translation>
+    </message>
 </context>
 <context>
     <name>DownloadFromURLDialog</name>
@@ -3535,6 +3663,14 @@ Supports the formats: S01E01, 1x1, 2017.12.31 and 31.12.2017 (Date formats also 
         <location filename="../gui/executionlogwidget.cpp" line="99"/>
         <source>Clear</source>
         <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>WebUI Activity</source>
+        <translation>WebUI әрекеті</translation>
+    </message>
+    <message>
+        <source>WebUI Activity</source>
+        <translation>WebUI әрекеті</translation>
     </message>
 </context>
 <context>
@@ -4695,6 +4831,46 @@ Minimum requirement: %2.</source>
         <location filename="../gui/mainwindow.cpp" line="1346"/>
         <source>Torrent Files</source>
         <translation>Торрент файлдары</translation>
+    </message>
+    <message>
+        <source>Kettle Edition %1 is available.</source>
+        <translation>Kettle Edition %1 қолжетімді.</translation>
+    </message>
+    <message>
+        <source>qBittorrent Kettle Edition %1 is available. It is downloaded now and installed at 4:00 AM, or when qBittorrent starts next.</source>
+        <translation>qBittorrent Kettle Edition %1 қолжетімді. Ол қазір жүктеліп жатыр және таңғы 4:00-де немесе qBittorrent келесі рет іске қосылғанда орнатылады.</translation>
+    </message>
+    <message>
+        <source>qBittorrent Kettle Edition %1 is available. It is downloaded now. Turn on &quot;Automatically install Kettle Edition updates&quot; in Options to install it.</source>
+        <translation>qBittorrent Kettle Edition %1 қолжетімді. Ол қазір жүктеліп жатыр. Орнату үшін Опцияларда «Kettle Edition жаңартуларын автоматты түрде орнату» қосыңыз.</translation>
+    </message>
+    <message>
+        <source>You have the latest qBittorrent Kettle Edition (%1).</source>
+        <translation>Сізде qBittorrent Kettle Edition-ның соңғы нұсқасы бар (%1).</translation>
+    </message>
+    <message>
+        <source>Could not check for qBittorrent Kettle Edition updates. See the Execution Log for details.</source>
+        <translation>qBittorrent Kettle Edition жаңартуларын тексеру мүмкін болмады. Мәліметтер үшін орындау журналын қараңыз.</translation>
+    </message>
+    <message>
+        <source>Kettle Edition %1 is available.</source>
+        <translation>Kettle Edition %1 қолжетімді.</translation>
+    </message>
+    <message>
+        <source>qBittorrent Kettle Edition %1 is available. It is downloaded now and installed at 4:00 AM, or when qBittorrent starts next.</source>
+        <translation>qBittorrent Kettle Edition %1 қолжетімді. Ол қазір жүктеліп жатыр және таңғы 4:00-де немесе qBittorrent келесі рет іске қосылғанда орнатылады.</translation>
+    </message>
+    <message>
+        <source>qBittorrent Kettle Edition %1 is available. It is downloaded now. Turn on &quot;Automatically install Kettle Edition updates&quot; in Options to install it.</source>
+        <translation>qBittorrent Kettle Edition %1 қолжетімді. Ол қазір жүктеліп жатыр. Орнату үшін Опцияларда «Kettle Edition жаңартуларын автоматты түрде орнату» қосыңыз.</translation>
+    </message>
+    <message>
+        <source>You have the latest qBittorrent Kettle Edition (%1).</source>
+        <translation>Сізде qBittorrent Kettle Edition-ның соңғы нұсқасы бар (%1).</translation>
+    </message>
+    <message>
+        <source>Could not check for qBittorrent Kettle Edition updates. See the Execution Log for details.</source>
+        <translation>qBittorrent Kettle Edition жаңартуларын тексеру мүмкін болмады. Мәліметтер үшін орындау журналын қараңыз.</translation>
     </message>
 </context>
 <context>
@@ -8382,6 +8558,190 @@ Check the Execution Log for errors.</source>
         <source>Length Error</source>
         <translation type="unfinished"></translation>
     </message>
+    <message>
+        <source>Search settings</source>
+        <translation>Параметрлерден іздеу</translation>
+    </message>
+    <message>
+        <source>No settings match</source>
+        <translation>Сәйкес параметр жоқ</translation>
+    </message>
+    <message>
+        <source>User Accounts</source>
+        <translation>Пайдаланушы тіркелгілері</translation>
+    </message>
+    <message>
+        <source>Automatically install Kettle Edition updates</source>
+        <translation>Kettle Edition жаңартуларын автоматты түрде орнату</translation>
+    </message>
+    <message>
+        <source>Status bar and log</source>
+        <translation>Күй жолағы және журнал</translation>
+    </message>
+    <message>
+        <source>Files</source>
+        <translation>Файлдар</translation>
+    </message>
+    <message>
+        <source>Checking</source>
+        <translation>Тексеру</translation>
+    </message>
+    <message>
+        <source>Until the first user account is created, this login always works.</source>
+        <translation>Алғашқы пайдаланушы тіркелгісі жасалғанша бұл кіру әрқашан жұмыс істейді.</translation>
+    </message>
+    <message>
+        <source>Allow this login when user accounts exist</source>
+        <translation>Пайдаланушы тіркелгілері бар кезде де бұл кіруге рұқсат ету</translation>
+    </message>
+    <message>
+        <source>Access</source>
+        <translation>Қолжетімділік</translation>
+    </message>
+    <message>
+        <source>Changes to users, roles and logins apply at once. The settings below apply with OK or Apply.</source>
+        <translation>Пайдаланушылар, рөлдер және кірулердегі өзгерістер бірден қолданылады. Төмендегі параметрлер OK немесе Қолдану арқылы қолданылады.</translation>
+    </message>
+    <message>
+        <source>Logins and Activity Log</source>
+        <translation>Кірулер және әрекет журналы</translation>
+    </message>
+    <message>
+        <source>0 means users are logged out after the session timeout.</source>
+        <translation>0 пайдаланушылар сессия күту уақыты біткенде шығып кетеді дегенді білдіреді.</translation>
+    </message>
+    <message>
+        <source>Keep users logged in for:</source>
+        <translation>Пайдаланушыларды кірген күйде сақтау:</translation>
+    </message>
+    <message>
+        <source>Until session timeout</source>
+        <translation>Сессия күту уақытына дейін</translation>
+    </message>
+    <message>
+        <source> days</source>
+        <translation> күн</translation>
+    </message>
+    <message>
+        <source>Lock account after consecutive failures:</source>
+        <translation>Қатарынан сәтсіздіктен кейін тіркелгіні құлыптау:</translation>
+    </message>
+    <message>
+        <source>Keep WebUI activity log for:</source>
+        <translation>WebUI әрекет журналын сақтау:</translation>
+    </message>
+    <message>
+        <source>lock for:</source>
+        <translation>құлыптау мерзімі:</translation>
+    </message>
+    <message>
+        <source>%1 works best with Windows dark mode</source>
+        <translation>%1 Windows қараңғы режимімен жақсырақ жұмыс істейді</translation>
+    </message>
+    <message>
+        <source>WebUI address</source>
+        <translation>WebUI мекенжайы</translation>
+    </message>
+    <message>
+        <source>With the WebUI address set to %1, only this PC can reach the WebUI. Remote access, including through a reverse proxy on another machine, will stop working.
+
+Save anyway?</source>
+        <translation>WebUI мекенжайы %1 болғанда WebUI-ге тек осы компьютер қол жеткізе алады. Қашықтан қолжетімділік, соның ішінде басқа машинадағы кері прокси арқылы, жұмысын тоқтатады.
+
+Қалай болғанда да сақтау керек пе?</translation>
+    </message>
+    <message>
+        <source>Search settings</source>
+        <translation>Параметрлерден іздеу</translation>
+    </message>
+    <message>
+        <source>No settings match</source>
+        <translation>Сәйкес параметр жоқ</translation>
+    </message>
+    <message>
+        <source>User Accounts</source>
+        <translation>Пайдаланушы тіркелгілері</translation>
+    </message>
+    <message>
+        <source>Automatically install Kettle Edition updates</source>
+        <translation>Kettle Edition жаңартуларын автоматты түрде орнату</translation>
+    </message>
+    <message>
+        <source>Status bar and log</source>
+        <translation>Күй жолағы және журнал</translation>
+    </message>
+    <message>
+        <source>Files</source>
+        <translation>Файлдар</translation>
+    </message>
+    <message>
+        <source>Checking</source>
+        <translation>Тексеру</translation>
+    </message>
+    <message>
+        <source>Until the first user account is created, this login always works.</source>
+        <translation>Алғашқы пайдаланушы тіркелгісі жасалғанша бұл кіру әрқашан жұмыс істейді.</translation>
+    </message>
+    <message>
+        <source>Allow this login when user accounts exist</source>
+        <translation>Пайдаланушы тіркелгілері бар кезде де бұл кіруге рұқсат ету</translation>
+    </message>
+    <message>
+        <source>Access</source>
+        <translation>Қолжетімділік</translation>
+    </message>
+    <message>
+        <source>Changes to users, roles and logins apply at once. The settings below apply with OK or Apply.</source>
+        <translation>Пайдаланушылар, рөлдер және кірулердегі өзгерістер бірден қолданылады. Төмендегі параметрлер OK немесе Қолдану арқылы қолданылады.</translation>
+    </message>
+    <message>
+        <source>Logins and Activity Log</source>
+        <translation>Кірулер және әрекет журналы</translation>
+    </message>
+    <message>
+        <source>0 means users are logged out after the session timeout.</source>
+        <translation>0 пайдаланушылар сессия күту уақыты біткенде шығып кетеді дегенді білдіреді.</translation>
+    </message>
+    <message>
+        <source>Keep users logged in for:</source>
+        <translation>Пайдаланушыларды кірген күйде сақтау:</translation>
+    </message>
+    <message>
+        <source>Until session timeout</source>
+        <translation>Сессия күту уақытына дейін</translation>
+    </message>
+    <message>
+        <source> days</source>
+        <translation> күн</translation>
+    </message>
+    <message>
+        <source>Lock account after consecutive failures:</source>
+        <translation>Қатарынан сәтсіздіктен кейін тіркелгіні құлыптау:</translation>
+    </message>
+    <message>
+        <source>Keep WebUI activity log for:</source>
+        <translation>WebUI әрекет журналын сақтау:</translation>
+    </message>
+    <message>
+        <source>lock for:</source>
+        <translation>құлыптау мерзімі:</translation>
+    </message>
+    <message>
+        <source>%1 works best with Windows dark mode</source>
+        <translation>%1 Windows қараңғы режимімен жақсырақ жұмыс істейді</translation>
+    </message>
+    <message>
+        <source>WebUI address</source>
+        <translation>WebUI мекенжайы</translation>
+    </message>
+    <message>
+        <source>With the WebUI address set to %1, only this PC can reach the WebUI. Remote access, including through a reverse proxy on another machine, will stop working.
+
+Save anyway?</source>
+        <translation>WebUI мекенжайы %1 болғанда WebUI-ге тек осы компьютер қол жеткізе алады. Қашықтан қолжетімділік, соның ішінде басқа машинадағы кері прокси арқылы, жұмысын тоқтатады.
+
+Қалай болғанда да сақтау керек пе?</translation>
+    </message>
 </context>
 <context>
     <name>PeerInfo</name>
@@ -8634,6 +8994,22 @@ Check the Execution Log for errors.</source>
         <location filename="../gui/properties/peerlistwidget.cpp" line="309"/>
         <source>Copy IP:port</source>
         <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Reset auto width</source>
+        <translation>Автоматты енді қалпына келтіру</translation>
+    </message>
+    <message>
+        <source>Fit all non-hidden columns to their contents again, and forget the widths that were set by hand</source>
+        <translation>Көрінетін барлық бағандарды мазмұнына қайта келтіру және қолмен орнатылған енді ұмыту</translation>
+    </message>
+    <message>
+        <source>Reset auto width</source>
+        <translation>Автоматты енді қалпына келтіру</translation>
+    </message>
+    <message>
+        <source>Fit all non-hidden columns to their contents again, and forget the widths that were set by hand</source>
+        <translation>Көрінетін барлық бағандарды мазмұнына қайта келтіру және қолмен орнатылған енді ұмыту</translation>
     </message>
 </context>
 <context>
@@ -9909,6 +10285,14 @@ Check the Execution Log for errors.</source>
         <source>Open link</source>
         <translation type="unfinished"></translation>
     </message>
+    <message>
+        <source>Details</source>
+        <translation>Мәліметтер</translation>
+    </message>
+    <message>
+        <source>Details</source>
+        <translation>Мәліметтер</translation>
+    </message>
 </context>
 <context>
     <name>SearchController</name>
@@ -10258,6 +10642,70 @@ Check the Execution Log for errors.</source>
         <source>Resize all non-hidden columns to the size of their contents</source>
         <translation type="unfinished"></translation>
     </message>
+    <message>
+        <source>%1 of %2 shown (%3 hidden)</source>
+        <translation>%2 ішінен %1 көрсетілді (%3 жасырын)</translation>
+    </message>
+    <message>
+        <source>%1 of %2 shown</source>
+        <translation>%2 ішінен %1 көрсетілді</translation>
+    </message>
+    <message>
+        <source>Searching: %1</source>
+        <translation>Іздеу: %1</translation>
+    </message>
+    <message>
+        <source>Finished: %1</source>
+        <translation>Аяқталды: %1</translation>
+    </message>
+    <message>
+        <source>Search aborted: %1</source>
+        <translation>Іздеу тоқтатылды: %1</translation>
+    </message>
+    <message>
+        <source>Reset auto width</source>
+        <translation>Автоматты енді қалпына келтіру</translation>
+    </message>
+    <message>
+        <source>Fit all non-hidden columns to their contents again, and forget the widths that were set by hand</source>
+        <translation>Көрінетін барлық бағандарды мазмұнына қайта келтіру және қолмен орнатылған енді ұмыту</translation>
+    </message>
+    <message>
+        <source>Unknown</source>
+        <translation>Белгісіз</translation>
+    </message>
+    <message>
+        <source>%1 of %2 shown (%3 hidden)</source>
+        <translation>%2 ішінен %1 көрсетілді (%3 жасырын)</translation>
+    </message>
+    <message>
+        <source>%1 of %2 shown</source>
+        <translation>%2 ішінен %1 көрсетілді</translation>
+    </message>
+    <message>
+        <source>Searching: %1</source>
+        <translation>Іздеу: %1</translation>
+    </message>
+    <message>
+        <source>Finished: %1</source>
+        <translation>Аяқталды: %1</translation>
+    </message>
+    <message>
+        <source>Search aborted: %1</source>
+        <translation>Іздеу тоқтатылды: %1</translation>
+    </message>
+    <message>
+        <source>Reset auto width</source>
+        <translation>Автоматты енді қалпына келтіру</translation>
+    </message>
+    <message>
+        <source>Fit all non-hidden columns to their contents again, and forget the widths that were set by hand</source>
+        <translation>Көрінетін барлық бағандарды мазмұнына қайта келтіру және қолмен орнатылған енді ұмыту</translation>
+    </message>
+    <message>
+        <source>Unknown</source>
+        <translation>Белгісіз</translation>
+    </message>
 </context>
 <context>
     <name>SearchPluginManager</name>
@@ -10542,6 +10990,14 @@ Those plugins were disabled.</source>
         <source>Couldn&apos;t update &quot;%1&quot; search engine plugin. %2</source>
         <translation type="unfinished"></translation>
     </message>
+    <message>
+        <source>Install Kettle Plugins</source>
+        <translation>Kettle плагиндерін орнату</translation>
+    </message>
+    <message>
+        <source>Install Kettle Plugins</source>
+        <translation>Kettle плагиндерін орнату</translation>
+    </message>
 </context>
 <context>
     <name>SearchPluginSourceDialog</name>
@@ -10680,6 +11136,90 @@ Click the &quot;Search plugins...&quot; button at the bottom right of the window
         <location filename="../gui/search/searchwidget.ui" line="58"/>
         <source>Stop</source>
         <translation>Тоқтату</translation>
+    </message>
+    <message>
+        <source>Searches</source>
+        <translation>Іздеулер</translation>
+    </message>
+    <message>
+        <source>Close the selected search</source>
+        <translation>Таңдалған іздеуді жабу</translation>
+    </message>
+    <message>
+        <source>Search for torrents...</source>
+        <translation>Торренттерді іздеу...</translation>
+    </message>
+    <message>
+        <source>Category to search in</source>
+        <translation>Іздеу санаты</translation>
+    </message>
+    <message>
+        <source>Search engines to use</source>
+        <translation>Қолданылатын іздеу жүйелері</translation>
+    </message>
+    <message>
+        <source>There aren&apos;t any search plugins installed.
+Click the &quot;Search plugins...&quot; button at the top right of the window to install some.</source>
+        <translation>Іздеу плагиндері орнатылмаған.
+Орнату үшін терезенің жоғарғы оң жағындағы «Іздеу плагиндері...» түймесін басыңыз.</translation>
+    </message>
+    <message>
+        <source>Type a search above and press Enter.</source>
+        <translation>Жоғарыда іздеу сұрауын теріп, Enter басыңыз.</translation>
+    </message>
+    <message>
+        <source>Refresh search</source>
+        <translation>Іздеуді жаңарту</translation>
+    </message>
+    <message>
+        <source>Close search</source>
+        <translation>Іздеуді жабу</translation>
+    </message>
+    <message>
+        <source>Close all searches</source>
+        <translation>Барлық іздеулерді жабу</translation>
+    </message>
+    <message>
+        <source>Searches</source>
+        <translation>Іздеулер</translation>
+    </message>
+    <message>
+        <source>Close the selected search</source>
+        <translation>Таңдалған іздеуді жабу</translation>
+    </message>
+    <message>
+        <source>Search for torrents...</source>
+        <translation>Торренттерді іздеу...</translation>
+    </message>
+    <message>
+        <source>Category to search in</source>
+        <translation>Іздеу санаты</translation>
+    </message>
+    <message>
+        <source>Search engines to use</source>
+        <translation>Қолданылатын іздеу жүйелері</translation>
+    </message>
+    <message>
+        <source>There aren&apos;t any search plugins installed.
+Click the &quot;Search plugins...&quot; button at the top right of the window to install some.</source>
+        <translation>Іздеу плагиндері орнатылмаған.
+Орнату үшін терезенің жоғарғы оң жағындағы «Іздеу плагиндері...» түймесін басыңыз.</translation>
+    </message>
+    <message>
+        <source>Type a search above and press Enter.</source>
+        <translation>Жоғарыда іздеу сұрауын теріп, Enter басыңыз.</translation>
+    </message>
+    <message>
+        <source>Refresh search</source>
+        <translation>Іздеуді жаңарту</translation>
+    </message>
+    <message>
+        <source>Close search</source>
+        <translation>Іздеуді жабу</translation>
+    </message>
+    <message>
+        <source>Close all searches</source>
+        <translation>Барлық іздеулерді жабу</translation>
     </message>
 </context>
 <context>
@@ -11137,6 +11677,326 @@ Click the &quot;Search plugins...&quot; button at the bottom right of the window
         <location filename="../gui/statsdialog.cpp" line="111"/>
         <source>%1 ms</source>
         <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Copy</source>
+        <translation>Көшіру</translation>
+    </message>
+    <message>
+        <source>Overview</source>
+        <translation>Шолу</translation>
+    </message>
+    <message>
+        <source>Transfer</source>
+        <translation>Тасымалдау</translation>
+    </message>
+    <message>
+        <source>This session</source>
+        <translation>Осы сессия</translation>
+    </message>
+    <message>
+        <source>All time</source>
+        <translation>Барлық уақыт</translation>
+    </message>
+    <message>
+        <source>Downloaded:</source>
+        <translation>Жүктелген:</translation>
+    </message>
+    <message>
+        <source>Uploaded:</source>
+        <translation>Жіберілген:</translation>
+    </message>
+    <message>
+        <source>Share ratio:</source>
+        <translation>Бөлісу қатынасы:</translation>
+    </message>
+    <message>
+        <source>Current speed:</source>
+        <translation>Ағымдағы жылдамдық:</translation>
+    </message>
+    <message>
+        <source>Activity</source>
+        <translation>Әрекет</translation>
+    </message>
+    <message>
+        <source>Torrents downloading:</source>
+        <translation>Жүктеліп жатқан торренттер:</translation>
+    </message>
+    <message>
+        <source>Torrents seeding:</source>
+        <translation>Сидтеліп жатқан торренттер:</translation>
+    </message>
+    <message>
+        <source>Torrents stopped:</source>
+        <translation>Тоқтатылған торренттер:</translation>
+    </message>
+    <message>
+        <source>Torrents with errors:</source>
+        <translation>Қате бар торренттер:</translation>
+    </message>
+    <message>
+        <source>Running for:</source>
+        <translation>Жұмыс уақыты:</translation>
+    </message>
+    <message>
+        <source>History</source>
+        <translation>Тарих</translation>
+    </message>
+    <message>
+        <source>Period</source>
+        <translation>Кезең</translation>
+    </message>
+    <message>
+        <source>Today</source>
+        <translation>Бүгін</translation>
+    </message>
+    <message>
+        <source>Last 7 days</source>
+        <translation>Соңғы 7 күн</translation>
+    </message>
+    <message>
+        <source>This month</source>
+        <translation>Осы ай</translation>
+    </message>
+    <message>
+        <source>Last month</source>
+        <translation>Өткен ай</translation>
+    </message>
+    <message>
+        <source>Last 12 months</source>
+        <translation>Соңғы 12 ай</translation>
+    </message>
+    <message>
+        <source>Tracking since:</source>
+        <translation>Бақылау басталған күн:</translation>
+    </message>
+    <message>
+        <source>By month</source>
+        <translation>Айлар бойынша</translation>
+    </message>
+    <message>
+        <source>Month</source>
+        <translation>Ай</translation>
+    </message>
+    <message>
+        <source>Downloaded</source>
+        <translation>Жүктелген</translation>
+    </message>
+    <message>
+        <source>Uploaded</source>
+        <translation>Жіберілген</translation>
+    </message>
+    <message>
+        <source>Share ratio</source>
+        <translation>Бөлісу қатынасы</translation>
+    </message>
+    <message>
+        <source>WebUI downloads added, this month</source>
+        <translation>WebUI арқылы қосылған жүктеулер, осы ай</translation>
+    </message>
+    <message>
+        <source>Counts the requests that added a download. Apps without a login, such as Sonarr and Radarr, are shown as (localhost). Downloads added in the desktop window are not counted.</source>
+        <translation>Жүктеу қосқан сұрауларды санайды. Sonarr және Radarr сияқты кірусіз қолданбалар (localhost) ретінде көрсетіледі. Жұмыс үстелі терезесінде қосылған жүктеулер санталмайды.</translation>
+    </message>
+    <message>
+        <source>Technical</source>
+        <translation>Техникалық</translation>
+    </message>
+    <message>
+        <source>Disk</source>
+        <translation>Диск</translation>
+    </message>
+    <message>
+        <source>Peers waiting on disk writes:</source>
+        <translation>Дискіге жазуды күтіп тұрған пирлер:</translation>
+    </message>
+    <message>
+        <source>Peers waiting on disk reads:</source>
+        <translation>Дискіден оқуды күтіп тұрған пирлер:</translation>
+    </message>
+    <message>
+        <source>Network</source>
+        <translation>Желі</translation>
+    </message>
+    <message>
+        <source>DHT nodes:</source>
+        <translation>DHT түйіндері:</translation>
+    </message>
+    <message>
+        <source>Data discarded this session:</source>
+        <translation>Осы сессияда тасталған деректер:</translation>
+    </message>
+    <message>
+        <source>Before tracking began</source>
+        <translation>Бақылау басталғанға дейін</translation>
+    </message>
+    <message>
+        <source>Nothing added yet</source>
+        <translation>Әлі ештеңе қосылмаған</translation>
+    </message>
+    <message>
+        <source>Off</source>
+        <translation>Өшірулі</translation>
+    </message>
+    <message>
+        <source>Copy</source>
+        <translation>Көшіру</translation>
+    </message>
+    <message>
+        <source>Overview</source>
+        <translation>Шолу</translation>
+    </message>
+    <message>
+        <source>Transfer</source>
+        <translation>Тасымалдау</translation>
+    </message>
+    <message>
+        <source>This session</source>
+        <translation>Осы сессия</translation>
+    </message>
+    <message>
+        <source>All time</source>
+        <translation>Барлық уақыт</translation>
+    </message>
+    <message>
+        <source>Downloaded:</source>
+        <translation>Жүктелген:</translation>
+    </message>
+    <message>
+        <source>Uploaded:</source>
+        <translation>Жіберілген:</translation>
+    </message>
+    <message>
+        <source>Share ratio:</source>
+        <translation>Бөлісу қатынасы:</translation>
+    </message>
+    <message>
+        <source>Current speed:</source>
+        <translation>Ағымдағы жылдамдық:</translation>
+    </message>
+    <message>
+        <source>Activity</source>
+        <translation>Әрекет</translation>
+    </message>
+    <message>
+        <source>Torrents downloading:</source>
+        <translation>Жүктеліп жатқан торренттер:</translation>
+    </message>
+    <message>
+        <source>Torrents seeding:</source>
+        <translation>Сидтеліп жатқан торренттер:</translation>
+    </message>
+    <message>
+        <source>Torrents stopped:</source>
+        <translation>Тоқтатылған торренттер:</translation>
+    </message>
+    <message>
+        <source>Torrents with errors:</source>
+        <translation>Қате бар торренттер:</translation>
+    </message>
+    <message>
+        <source>Running for:</source>
+        <translation>Жұмыс уақыты:</translation>
+    </message>
+    <message>
+        <source>History</source>
+        <translation>Тарих</translation>
+    </message>
+    <message>
+        <source>Period</source>
+        <translation>Кезең</translation>
+    </message>
+    <message>
+        <source>Today</source>
+        <translation>Бүгін</translation>
+    </message>
+    <message>
+        <source>Last 7 days</source>
+        <translation>Соңғы 7 күн</translation>
+    </message>
+    <message>
+        <source>This month</source>
+        <translation>Осы ай</translation>
+    </message>
+    <message>
+        <source>Last month</source>
+        <translation>Өткен ай</translation>
+    </message>
+    <message>
+        <source>Last 12 months</source>
+        <translation>Соңғы 12 ай</translation>
+    </message>
+    <message>
+        <source>Tracking since:</source>
+        <translation>Бақылау басталған күн:</translation>
+    </message>
+    <message>
+        <source>By month</source>
+        <translation>Айлар бойынша</translation>
+    </message>
+    <message>
+        <source>Month</source>
+        <translation>Ай</translation>
+    </message>
+    <message>
+        <source>Downloaded</source>
+        <translation>Жүктелген</translation>
+    </message>
+    <message>
+        <source>Uploaded</source>
+        <translation>Жіберілген</translation>
+    </message>
+    <message>
+        <source>Share ratio</source>
+        <translation>Бөлісу қатынасы</translation>
+    </message>
+    <message>
+        <source>WebUI downloads added, this month</source>
+        <translation>WebUI арқылы қосылған жүктеулер, осы ай</translation>
+    </message>
+    <message>
+        <source>Counts the requests that added a download. Apps without a login, such as Sonarr and Radarr, are shown as (localhost). Downloads added in the desktop window are not counted.</source>
+        <translation>Жүктеу қосқан сұрауларды санайды. Sonarr және Radarr сияқты кірусіз қолданбалар (localhost) ретінде көрсетіледі. Жұмыс үстелі терезесінде қосылған жүктеулер санталмайды.</translation>
+    </message>
+    <message>
+        <source>Technical</source>
+        <translation>Техникалық</translation>
+    </message>
+    <message>
+        <source>Disk</source>
+        <translation>Диск</translation>
+    </message>
+    <message>
+        <source>Peers waiting on disk writes:</source>
+        <translation>Дискіге жазуды күтіп тұрған пирлер:</translation>
+    </message>
+    <message>
+        <source>Peers waiting on disk reads:</source>
+        <translation>Дискіден оқуды күтіп тұрған пирлер:</translation>
+    </message>
+    <message>
+        <source>Network</source>
+        <translation>Желі</translation>
+    </message>
+    <message>
+        <source>DHT nodes:</source>
+        <translation>DHT түйіндері:</translation>
+    </message>
+    <message>
+        <source>Data discarded this session:</source>
+        <translation>Осы сессияда тасталған деректер:</translation>
+    </message>
+    <message>
+        <source>Before tracking began</source>
+        <translation>Бақылау басталғанға дейін</translation>
+    </message>
+    <message>
+        <source>Nothing added yet</source>
+        <translation>Әлі ештеңе қосылмаған</translation>
+    </message>
+    <message>
+        <source>Off</source>
+        <translation>Өшірулі</translation>
     </message>
 </context>
 <context>
@@ -11811,6 +12671,22 @@ Please choose a different name and try again.</source>
         <location filename="../gui/torrentcontentwidget.cpp" line="471"/>
         <source>By shown file order</source>
         <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Reset auto width</source>
+        <translation>Автоматты енді қалпына келтіру</translation>
+    </message>
+    <message>
+        <source>Fit all non-hidden columns to their contents again, and forget the widths that were set by hand</source>
+        <translation>Көрінетін барлық бағандарды мазмұнына қайта келтіру және қолмен орнатылған енді ұмыту</translation>
+    </message>
+    <message>
+        <source>Reset auto width</source>
+        <translation>Автоматты енді қалпына келтіру</translation>
+    </message>
+    <message>
+        <source>Fit all non-hidden columns to their contents again, and forget the widths that were set by hand</source>
+        <translation>Көрінетін барлық бағандарды мазмұнына қайта келтіру және қолмен орнатылған енді ұмыту</translation>
     </message>
 </context>
 <context>
@@ -12890,6 +13766,22 @@ Please choose a different name and try again.</source>
         <source>Column visibility</source>
         <translation type="unfinished"></translation>
     </message>
+    <message>
+        <source>Reset auto width</source>
+        <translation>Автоматты енді қалпына келтіру</translation>
+    </message>
+    <message>
+        <source>Fit all non-hidden columns to their contents again, and forget the widths that were set by hand</source>
+        <translation>Көрінетін барлық бағандарды мазмұнына қайта келтіру және қолмен орнатылған енді ұмыту</translation>
+    </message>
+    <message>
+        <source>Reset auto width</source>
+        <translation>Автоматты енді қалпына келтіру</translation>
+    </message>
+    <message>
+        <source>Fit all non-hidden columns to their contents again, and forget the widths that were set by hand</source>
+        <translation>Көрінетін барлық бағандарды мазмұнына қайта келтіру және қолмен орнатылған енді ұмыту</translation>
+    </message>
 </context>
 <context>
     <name>TrackerStatusFilterWidget</name>
@@ -13756,6 +14648,22 @@ Please choose a different name and try again.</source>
         <source>Super seeding mode</source>
         <translation type="unfinished"></translation>
     </message>
+    <message>
+        <source>Reset auto width</source>
+        <translation>Автоматты енді қалпына келтіру</translation>
+    </message>
+    <message>
+        <source>Fit all non-hidden columns to their contents again, and forget the widths that were set by hand</source>
+        <translation>Көрінетін барлық бағандарды мазмұнына қайта келтіру және қолмен орнатылған енді ұмыту</translation>
+    </message>
+    <message>
+        <source>Reset auto width</source>
+        <translation>Автоматты енді қалпына келтіру</translation>
+    </message>
+    <message>
+        <source>Fit all non-hidden columns to their contents again, and forget the widths that were set by hand</source>
+        <translation>Көрінетін барлық бағандарды мазмұнына қайта келтіру және қолмен орнатылған енді ұмыту</translation>
+    </message>
 </context>
 <context>
     <name>UIThemeDialog</name>
@@ -14090,6 +14998,46 @@ Please choose a different name and try again.</source>
         <source>WebAPI login failure. Reason: invalid credentials, attempt count: %1, IP: %2, username: %3</source>
         <translation type="unfinished"></translation>
     </message>
+    <message>
+        <source>Something went wrong on the server. Details are in qBittorrent&apos;s log.</source>
+        <translation>Серверде бір нәрсе дұрыс болмады. Мәліметтер qBittorrent журналында.</translation>
+    </message>
+    <message>
+        <source>This account is locked after too many failed login attempts. Try again in %1 minute(s).</source>
+        <translation>Кіру әрекеттері тым көп сәтсіз болғандықтан бұл тіркелгі құлыпталды. %1 минуттан кейін қайталап көріңіз.</translation>
+    </message>
+    <message>
+        <source>Your role (%1) doesn&apos;t allow this: %2.</source>
+        <translation>Сіздің рөліңіз (%1) бұған рұқсат етпейді: %2.</translation>
+    </message>
+    <message>
+        <source>Only an admin can remove the tag that says who added a torrent.</source>
+        <translation>Торрентті кім қосқанын көрсететін тегті тек админ жоя алады.</translation>
+    </message>
+    <message>
+        <source>Only an admin can clear or replace all tags of a torrent that has a tag saying who added it.</source>
+        <translation>Қосушыны көрсететін тегі бар торрентінің барлық тегтерін тек админ тазалай немесе ауыстыра алады.</translation>
+    </message>
+    <message>
+        <source>Something went wrong on the server. Details are in qBittorrent&apos;s log.</source>
+        <translation>Серверде бір нәрсе дұрыс болмады. Мәліметтер qBittorrent журналында.</translation>
+    </message>
+    <message>
+        <source>This account is locked after too many failed login attempts. Try again in %1 minute(s).</source>
+        <translation>Кіру әрекеттері тым көп сәтсіз болғандықтан бұл тіркелгі құлыпталды. %1 минуттан кейін қайталап көріңіз.</translation>
+    </message>
+    <message>
+        <source>Your role (%1) doesn&apos;t allow this: %2.</source>
+        <translation>Сіздің рөліңіз (%1) бұған рұқсат етпейді: %2.</translation>
+    </message>
+    <message>
+        <source>Only an admin can remove the tag that says who added a torrent.</source>
+        <translation>Торрентті кім қосқанын көрсететін тегті тек админ жоя алады.</translation>
+    </message>
+    <message>
+        <source>Only an admin can clear or replace all tags of a torrent that has a tag saying who added it.</source>
+        <translation>Қосушыны көрсететін тегі бар торрентінің барлық тегтерін тек админ тазалай немесе ауыстыра алады.</translation>
+    </message>
 </context>
 <context>
     <name>WebUI</name>
@@ -14229,6 +15177,669 @@ Please choose a different name and try again.</source>
         <source>&lt; 1m</source>
         <comment>&lt; 1 minute</comment>
         <translation>&lt; 1м</translation>
+    </message>
+</context>
+<context>
+    <name>UpdateInstaller</name>
+    <message>
+        <source>Kettle Edition update</source>
+        <translation>Kettle Edition жаңартуы</translation>
+    </message>
+    <message>
+        <source>Kettle Edition was updated to %1.</source>
+        <translation>Kettle Edition %1 нұсқасына жаңартылды.</translation>
+    </message>
+    <message>
+        <source>Kettle Edition updated</source>
+        <translation>Kettle Edition жаңартылды</translation>
+    </message>
+    <message>
+        <source>Downloading Kettle Edition %1 (%2 changed files).</source>
+        <translation>Kettle Edition %1 жүктелуде (%2 өзгерген файл).</translation>
+    </message>
+    <message>
+        <source>Kettle Edition %1 is downloaded and ready to install.</source>
+        <translation>Kettle Edition %1 жүктеліп, орнатуға дайын.</translation>
+    </message>
+    <message>
+        <source>Kettle Edition update</source>
+        <translation>Kettle Edition жаңартуы</translation>
+    </message>
+    <message>
+        <source>Kettle Edition was updated to %1.</source>
+        <translation>Kettle Edition %1 нұсқасына жаңартылды.</translation>
+    </message>
+    <message>
+        <source>Kettle Edition updated</source>
+        <translation>Kettle Edition жаңартылды</translation>
+    </message>
+    <message>
+        <source>Downloading Kettle Edition %1 (%2 changed files).</source>
+        <translation>Kettle Edition %1 жүктелуде (%2 өзгерген файл).</translation>
+    </message>
+    <message>
+        <source>Kettle Edition %1 is downloaded and ready to install.</source>
+        <translation>Kettle Edition %1 жүктеліп, орнатуға дайын.</translation>
+    </message>
+</context>
+<context>
+    <name>UserAccountDialog</name>
+    <message>
+        <source>User</source>
+        <translation>Пайдаланушы</translation>
+    </message>
+    <message>
+        <source>Username:</source>
+        <translation>Пайдаланушы аты:</translation>
+    </message>
+    <message>
+        <source>Role:</source>
+        <translation>Рөл:</translation>
+    </message>
+    <message>
+        <source>Password:</source>
+        <translation>Құпиясөз:</translation>
+    </message>
+    <message>
+        <source>Confirm password:</source>
+        <translation>Құпиясөзді растау:</translation>
+    </message>
+    <message>
+        <source>Disable this account</source>
+        <translation>Бұл тіркелгіні өшіру</translation>
+    </message>
+    <message>
+        <source>Edit User</source>
+        <translation>Пайдаланушыны өңдеу</translation>
+    </message>
+    <message>
+        <source>Leave empty to keep the current password</source>
+        <translation>Ағымдағы құпиясөзді сақтау үшін бос қалдырыңыз</translation>
+    </message>
+    <message>
+        <source>Add User</source>
+        <translation>Пайдаланушыны қосу</translation>
+    </message>
+    <message>
+        <source>At least %1 characters</source>
+        <translation>Кемінде %1 таңба</translation>
+    </message>
+    <message>
+        <source>Enter a username.</source>
+        <translation>Пайдаланушы атын енгізіңіз.</translation>
+    </message>
+    <message>
+        <source>The password must be at least %1 characters long.</source>
+        <translation>Құпиясөз кемінде %1 таңбадан тұруы керек.</translation>
+    </message>
+    <message>
+        <source>The passwords don&apos;t match.</source>
+        <translation>Құпиясөздер сәйкес келмейді.</translation>
+    </message>
+    <message>
+        <source>User</source>
+        <translation>Пайдаланушы</translation>
+    </message>
+    <message>
+        <source>Username:</source>
+        <translation>Пайдаланушы аты:</translation>
+    </message>
+    <message>
+        <source>Role:</source>
+        <translation>Рөл:</translation>
+    </message>
+    <message>
+        <source>Password:</source>
+        <translation>Құпиясөз:</translation>
+    </message>
+    <message>
+        <source>Confirm password:</source>
+        <translation>Құпиясөзді растау:</translation>
+    </message>
+    <message>
+        <source>Disable this account</source>
+        <translation>Бұл тіркелгіні өшіру</translation>
+    </message>
+    <message>
+        <source>Edit User</source>
+        <translation>Пайдаланушыны өңдеу</translation>
+    </message>
+    <message>
+        <source>Leave empty to keep the current password</source>
+        <translation>Ағымдағы құпиясөзді сақтау үшін бос қалдырыңыз</translation>
+    </message>
+    <message>
+        <source>Add User</source>
+        <translation>Пайдаланушыны қосу</translation>
+    </message>
+    <message>
+        <source>At least %1 characters</source>
+        <translation>Кемінде %1 таңба</translation>
+    </message>
+    <message>
+        <source>Enter a username.</source>
+        <translation>Пайдаланушы атын енгізіңіз.</translation>
+    </message>
+    <message>
+        <source>The password must be at least %1 characters long.</source>
+        <translation>Құпиясөз кемінде %1 таңбадан тұруы керек.</translation>
+    </message>
+    <message>
+        <source>The passwords don&apos;t match.</source>
+        <translation>Құпиясөздер сәйкес келмейді.</translation>
+    </message>
+</context>
+<context>
+    <name>UserAccountsWidget</name>
+    <message>
+        <source>User Accounts</source>
+        <translation>Пайдаланушы тіркелгілері</translation>
+    </message>
+    <message>
+        <source>Users</source>
+        <translation>Пайдаланушылар</translation>
+    </message>
+    <message>
+        <source>People who can log in to the WebUI with their own username and password.</source>
+        <translation>WebUI-ге өз пайдаланушы аты мен құпиясөзімен кіре алатын адамдар.</translation>
+    </message>
+    <message>
+        <source>Add User...</source>
+        <translation>Пайдаланушыны қосу...</translation>
+    </message>
+    <message>
+        <source>Edit...</source>
+        <translation>Өңдеу...</translation>
+    </message>
+    <message>
+        <source>Remove</source>
+        <translation>Жою</translation>
+    </message>
+    <message>
+        <source>Roles</source>
+        <translation>Рөлдер</translation>
+    </message>
+    <message>
+        <source>A role decides what its users are allowed to do.</source>
+        <translation>Рөл оның пайдаланушылары не істей алатынын анықтайды.</translation>
+    </message>
+    <message>
+        <source>Add Role...</source>
+        <translation>Рөл қосу...</translation>
+    </message>
+    <message>
+        <source>Logged In</source>
+        <translation>Кіргендер</translation>
+    </message>
+    <message>
+        <source>Browsers and devices where someone is logged in with a user account.</source>
+        <translation>Пайдаланушы тіркелгісімен біреу кірген браузерлер мен құрылғылар.</translation>
+    </message>
+    <message>
+        <source>Log Out</source>
+        <translation>Шығу</translation>
+    </message>
+    <message>
+        <source>Username</source>
+        <translation>Пайдаланушы аты</translation>
+    </message>
+    <message>
+        <source>Role</source>
+        <translation>Рөл</translation>
+    </message>
+    <message>
+        <source>Status</source>
+        <translation>Күйі</translation>
+    </message>
+    <message>
+        <source>Last login</source>
+        <translation>Соңғы кіру</translation>
+    </message>
+    <message>
+        <source>Created</source>
+        <translation>Жасалған</translation>
+    </message>
+    <message>
+        <source>Name</source>
+        <translation>Аты</translation>
+    </message>
+    <message>
+        <source>Description</source>
+        <translation>Сипаттама</translation>
+    </message>
+    <message>
+        <source>Permissions</source>
+        <translation>Рұқсаттар</translation>
+    </message>
+    <message>
+        <source>User</source>
+        <translation>Пайдаланушы</translation>
+    </message>
+    <message>
+        <source>Browser</source>
+        <translation>Браузер</translation>
+    </message>
+    <message>
+        <source>Logged in</source>
+        <translation>Кірген уақыты</translation>
+    </message>
+    <message>
+        <source>Last active</source>
+        <translation>Соңғы белсенділік</translation>
+    </message>
+    <message>
+        <source>Expires</source>
+        <translation>Мерзімі бітеді</translation>
+    </message>
+    <message>
+        <source>The user database could not be opened. See the Execution Log for details.</source>
+        <translation>Пайдаланушылар дерекқорын ашу мүмкін болмады. Мәліметтер үшін орындау журналын қараңыз.</translation>
+    </message>
+    <message>
+        <source>Disabled</source>
+        <translation>Өшірулі</translation>
+    </message>
+    <message>
+        <source>Enabled</source>
+        <translation>Қосулы</translation>
+    </message>
+    <message>
+        <source>Never</source>
+        <translation>Ешқашан</translation>
+    </message>
+    <message>
+        <source>No accounts yet, so everyone still uses the shared WebUI login. Add an Admin account first.</source>
+        <translation>Әзірге тіркелгілер жоқ, сондықтан бәрі әлі де WebUI-дің ортақ кіруін пайдаланады. Алдымен Admin тіркелгісін қосыңыз.</translation>
+    </message>
+    <message>
+        <source>Couldn&apos;t read the user database. %1</source>
+        <translation>Пайдаланушылар дерекқорын оқу мүмкін болмады. %1</translation>
+    </message>
+    <message>
+        <source>Remove user</source>
+        <translation>Пайдаланушыны жою</translation>
+    </message>
+    <message>
+        <source>Are you sure you want to remove the user &apos;%1&apos;?</source>
+        <translation>«%1» пайдаланушысын жойғыңыз келетініне сенімдісіз бе?</translation>
+    </message>
+    <message>
+        <source>Remove role</source>
+        <translation>Рөлді жою</translation>
+    </message>
+    <message>
+        <source>Are you sure you want to remove the role &apos;%1&apos;?</source>
+        <translation>«%1» рөлін жойғыңыз келетініне сенімдісіз бе?</translation>
+    </message>
+    <message>
+        <source>Enable</source>
+        <translation>Қосу</translation>
+    </message>
+    <message>
+        <source>Disable</source>
+        <translation>Өшіру</translation>
+    </message>
+    <message>
+        <source>Log Out Everywhere</source>
+        <translation>Барлық жерден шығу</translation>
+    </message>
+    <message>
+        <source>User Accounts</source>
+        <translation>Пайдаланушы тіркелгілері</translation>
+    </message>
+    <message>
+        <source>Users</source>
+        <translation>Пайдаланушылар</translation>
+    </message>
+    <message>
+        <source>People who can log in to the WebUI with their own username and password.</source>
+        <translation>WebUI-ге өз пайдаланушы аты мен құпиясөзімен кіре алатын адамдар.</translation>
+    </message>
+    <message>
+        <source>Add User...</source>
+        <translation>Пайдаланушыны қосу...</translation>
+    </message>
+    <message>
+        <source>Edit...</source>
+        <translation>Өңдеу...</translation>
+    </message>
+    <message>
+        <source>Remove</source>
+        <translation>Жою</translation>
+    </message>
+    <message>
+        <source>Roles</source>
+        <translation>Рөлдер</translation>
+    </message>
+    <message>
+        <source>A role decides what its users are allowed to do.</source>
+        <translation>Рөл оның пайдаланушылары не істей алатынын анықтайды.</translation>
+    </message>
+    <message>
+        <source>Add Role...</source>
+        <translation>Рөл қосу...</translation>
+    </message>
+    <message>
+        <source>Logged In</source>
+        <translation>Кіргендер</translation>
+    </message>
+    <message>
+        <source>Browsers and devices where someone is logged in with a user account.</source>
+        <translation>Пайдаланушы тіркелгісімен біреу кірген браузерлер мен құрылғылар.</translation>
+    </message>
+    <message>
+        <source>Log Out</source>
+        <translation>Шығу</translation>
+    </message>
+    <message>
+        <source>Username</source>
+        <translation>Пайдаланушы аты</translation>
+    </message>
+    <message>
+        <source>Role</source>
+        <translation>Рөл</translation>
+    </message>
+    <message>
+        <source>Status</source>
+        <translation>Күйі</translation>
+    </message>
+    <message>
+        <source>Last login</source>
+        <translation>Соңғы кіру</translation>
+    </message>
+    <message>
+        <source>Created</source>
+        <translation>Жасалған</translation>
+    </message>
+    <message>
+        <source>Name</source>
+        <translation>Аты</translation>
+    </message>
+    <message>
+        <source>Description</source>
+        <translation>Сипаттама</translation>
+    </message>
+    <message>
+        <source>Permissions</source>
+        <translation>Рұқсаттар</translation>
+    </message>
+    <message>
+        <source>User</source>
+        <translation>Пайдаланушы</translation>
+    </message>
+    <message>
+        <source>Browser</source>
+        <translation>Браузер</translation>
+    </message>
+    <message>
+        <source>Logged in</source>
+        <translation>Кірген уақыты</translation>
+    </message>
+    <message>
+        <source>Last active</source>
+        <translation>Соңғы белсенділік</translation>
+    </message>
+    <message>
+        <source>Expires</source>
+        <translation>Мерзімі бітеді</translation>
+    </message>
+    <message>
+        <source>The user database could not be opened. See the Execution Log for details.</source>
+        <translation>Пайдаланушылар дерекқорын ашу мүмкін болмады. Мәліметтер үшін орындау журналын қараңыз.</translation>
+    </message>
+    <message>
+        <source>Disabled</source>
+        <translation>Өшірулі</translation>
+    </message>
+    <message>
+        <source>Enabled</source>
+        <translation>Қосулы</translation>
+    </message>
+    <message>
+        <source>Never</source>
+        <translation>Ешқашан</translation>
+    </message>
+    <message>
+        <source>No accounts yet, so everyone still uses the shared WebUI login. Add an Admin account first.</source>
+        <translation>Әзірге тіркелгілер жоқ, сондықтан бәрі әлі де WebUI-дің ортақ кіруін пайдаланады. Алдымен Admin тіркелгісін қосыңыз.</translation>
+    </message>
+    <message>
+        <source>Couldn&apos;t read the user database. %1</source>
+        <translation>Пайдаланушылар дерекқорын оқу мүмкін болмады. %1</translation>
+    </message>
+    <message>
+        <source>Remove user</source>
+        <translation>Пайдаланушыны жою</translation>
+    </message>
+    <message>
+        <source>Are you sure you want to remove the user &apos;%1&apos;?</source>
+        <translation>«%1» пайдаланушысын жойғыңыз келетініне сенімдісіз бе?</translation>
+    </message>
+    <message>
+        <source>Remove role</source>
+        <translation>Рөлді жою</translation>
+    </message>
+    <message>
+        <source>Are you sure you want to remove the role &apos;%1&apos;?</source>
+        <translation>«%1» рөлін жойғыңыз келетініне сенімдісіз бе?</translation>
+    </message>
+    <message>
+        <source>Enable</source>
+        <translation>Қосу</translation>
+    </message>
+    <message>
+        <source>Disable</source>
+        <translation>Өшіру</translation>
+    </message>
+    <message>
+        <source>Log Out Everywhere</source>
+        <translation>Барлық жерден шығу</translation>
+    </message>
+</context>
+<context>
+    <name>UserRoleDialog</name>
+    <message>
+        <source>Role</source>
+        <translation>Рөл</translation>
+    </message>
+    <message>
+        <source>Name:</source>
+        <translation>Аты:</translation>
+    </message>
+    <message>
+        <source>Description:</source>
+        <translation>Сипаттама:</translation>
+    </message>
+    <message>
+        <source>Gives control over the PC or qBittorrent itself.</source>
+        <translation>Компьютерді немесе qBittorrent-тің өзін басқару мүмкіндігін береді.</translation>
+    </message>
+    <message>
+        <source>Add Role</source>
+        <translation>Рөл қосу</translation>
+    </message>
+    <message>
+        <source>Edit Role</source>
+        <translation>Рөлді өңдеу</translation>
+    </message>
+    <message>
+        <source>Enter a role name.</source>
+        <translation>Рөл атын енгізіңіз.</translation>
+    </message>
+    <message>
+        <source>Role</source>
+        <translation>Рөл</translation>
+    </message>
+    <message>
+        <source>Name:</source>
+        <translation>Аты:</translation>
+    </message>
+    <message>
+        <source>Description:</source>
+        <translation>Сипаттама:</translation>
+    </message>
+    <message>
+        <source>Gives control over the PC or qBittorrent itself.</source>
+        <translation>Компьютерді немесе qBittorrent-тің өзін басқару мүмкіндігін береді.</translation>
+    </message>
+    <message>
+        <source>Add Role</source>
+        <translation>Рөл қосу</translation>
+    </message>
+    <message>
+        <source>Edit Role</source>
+        <translation>Рөлді өңдеу</translation>
+    </message>
+    <message>
+        <source>Enter a role name.</source>
+        <translation>Рөл атын енгізіңіз.</translation>
+    </message>
+</context>
+<context>
+    <name>WebUIActivityWidget</name>
+    <message>
+        <source>All</source>
+        <translation>Барлығы</translation>
+    </message>
+    <message>
+        <source>Filter activity</source>
+        <translation>Әрекетті сүзу</translation>
+    </message>
+    <message>
+        <source>Export...</source>
+        <translation>Экспорттау...</translation>
+    </message>
+    <message>
+        <source>User:</source>
+        <translation>Пайдаланушы:</translation>
+    </message>
+    <message>
+        <source>Category:</source>
+        <translation>Санат:</translation>
+    </message>
+    <message>
+        <source>Result:</source>
+        <translation>Нәтиже:</translation>
+    </message>
+    <message>
+        <source>Time</source>
+        <translation>Уақыты</translation>
+    </message>
+    <message>
+        <source>User</source>
+        <translation>Пайдаланушы</translation>
+    </message>
+    <message>
+        <source>Role</source>
+        <translation>Рөл</translation>
+    </message>
+    <message>
+        <source>Category</source>
+        <translation>Санат</translation>
+    </message>
+    <message>
+        <source>Action</source>
+        <translation>Әрекет</translation>
+    </message>
+    <message>
+        <source>Result</source>
+        <translation>Нәтиже</translation>
+    </message>
+    <message>
+        <source>The user database could not be opened. See the General tab for details.</source>
+        <translation>Пайдаланушылар дерекқорын ашу мүмкін болмады. Мәліметтер үшін Жалпы қойындысын қараңыз.</translation>
+    </message>
+    <message>
+        <source>Results (showing %1 out of %2)</source>
+        <translation>Нәтижелер (%2 ішінен %1 көрсетілді)</translation>
+    </message>
+    <message>
+        <source>Copy</source>
+        <translation>Көшіру</translation>
+    </message>
+    <message>
+        <source>Export WebUI activity</source>
+        <translation>WebUI әрекетін экспорттау</translation>
+    </message>
+    <message>
+        <source>CSV files</source>
+        <translation>CSV файлдары</translation>
+    </message>
+    <message>
+        <source>Couldn&apos;t save the file. Reason: %1</source>
+        <translation>Файлды сақтау мүмкін болмады. Себебі: %1</translation>
+    </message>
+    <message>
+        <source>All</source>
+        <translation>Барлығы</translation>
+    </message>
+    <message>
+        <source>Filter activity</source>
+        <translation>Әрекетті сүзу</translation>
+    </message>
+    <message>
+        <source>Export...</source>
+        <translation>Экспорттау...</translation>
+    </message>
+    <message>
+        <source>User:</source>
+        <translation>Пайдаланушы:</translation>
+    </message>
+    <message>
+        <source>Category:</source>
+        <translation>Санат:</translation>
+    </message>
+    <message>
+        <source>Result:</source>
+        <translation>Нәтиже:</translation>
+    </message>
+    <message>
+        <source>Time</source>
+        <translation>Уақыты</translation>
+    </message>
+    <message>
+        <source>User</source>
+        <translation>Пайдаланушы</translation>
+    </message>
+    <message>
+        <source>Role</source>
+        <translation>Рөл</translation>
+    </message>
+    <message>
+        <source>Category</source>
+        <translation>Санат</translation>
+    </message>
+    <message>
+        <source>Action</source>
+        <translation>Әрекет</translation>
+    </message>
+    <message>
+        <source>Result</source>
+        <translation>Нәтиже</translation>
+    </message>
+    <message>
+        <source>The user database could not be opened. See the General tab for details.</source>
+        <translation>Пайдаланушылар дерекқорын ашу мүмкін болмады. Мәліметтер үшін Жалпы қойындысын қараңыз.</translation>
+    </message>
+    <message>
+        <source>Results (showing %1 out of %2)</source>
+        <translation>Нәтижелер (%2 ішінен %1 көрсетілді)</translation>
+    </message>
+    <message>
+        <source>Copy</source>
+        <translation>Көшіру</translation>
+    </message>
+    <message>
+        <source>Export WebUI activity</source>
+        <translation>WebUI әрекетін экспорттау</translation>
+    </message>
+    <message>
+        <source>CSV files</source>
+        <translation>CSV файлдары</translation>
+    </message>
+    <message>
+        <source>Couldn&apos;t save the file. Reason: %1</source>
+        <translation>Файлды сақтау мүмкін болмады. Себебі: %1</translation>
     </message>
 </context>
 </TS>

@@ -141,6 +141,62 @@
         <source>The free IP to Country Lite database by DB-IP is used for resolving the countries of peers. The database is licensed under the Creative Commons Attribution 4.0 International License</source>
         <translation>DB-IP에 의한 Country Lite 데이터베이스의 무료 IP는 피어의 국가를 분석하는 데 사용됩니다. 데이터베이스는 크리에이티브 커먼즈 저작자표시 4.0 국제 라이선스에 따라 사용이 허가됩니다.</translation>
     </message>
+    <message>
+        <source>This edition</source>
+        <translation>이 에디션</translation>
+    </message>
+    <message>
+        <source>Edition version:</source>
+        <translation>에디션 버전:</translation>
+    </message>
+    <message>
+        <source>Based on:</source>
+        <translation>기반:</translation>
+    </message>
+    <message>
+        <source>Maintainer:</source>
+        <translation>유지 관리자:</translation>
+    </message>
+    <message>
+        <source>qBittorrent project:</source>
+        <translation>qBittorrent 프로젝트:</translation>
+    </message>
+    <message>
+        <source>Kettle Edition is a personal build of qBittorrent that adds user accounts with roles for the WebUI and the desktop app, an activity log, and an installable WebUI with a phone layout. A kettle is a group of hawks soaring together. This is an unofficial build, not affiliated with the qBittorrent project.</source>
+        <translation>Kettle Edition은 WebUI와 데스크톱 앱을 위한 역할 기반 사용자 계정, 활동 로그, 휴대폰 레이아웃을 갖춘 설치 가능한 WebUI를 추가한 qBittorrent의 개인 빌드입니다. Kettle은 함께 선회하는 매 무리를 뜻합니다. 이것은 비공식 빌드이며 qBittorrent 프로젝트와 관련이 없습니다.</translation>
+    </message>
+    <message>
+        <source>N/A</source>
+        <translation>해당 없음</translation>
+    </message>
+    <message>
+        <source>This edition</source>
+        <translation>이 에디션</translation>
+    </message>
+    <message>
+        <source>Edition version:</source>
+        <translation>에디션 버전:</translation>
+    </message>
+    <message>
+        <source>Based on:</source>
+        <translation>기반:</translation>
+    </message>
+    <message>
+        <source>Maintainer:</source>
+        <translation>유지 관리자:</translation>
+    </message>
+    <message>
+        <source>qBittorrent project:</source>
+        <translation>qBittorrent 프로젝트:</translation>
+    </message>
+    <message>
+        <source>Kettle Edition is a personal build of qBittorrent that adds user accounts with roles for the WebUI and the desktop app, an activity log, and an installable WebUI with a phone layout. A kettle is a group of hawks soaring together. This is an unofficial build, not affiliated with the qBittorrent project.</source>
+        <translation>Kettle Edition은 WebUI와 데스크톱 앱을 위한 역할 기반 사용자 계정, 활동 로그, 휴대폰 레이아웃을 갖춘 설치 가능한 WebUI를 추가한 qBittorrent의 개인 빌드입니다. Kettle은 함께 선회하는 매 무리를 뜻합니다. 이것은 비공식 빌드이며 qBittorrent 프로젝트와 관련이 없습니다.</translation>
+    </message>
+    <message>
+        <source>N/A</source>
+        <translation>해당 없음</translation>
+    </message>
 </context>
 <context>
     <name>AbstractFileStorage</name>
@@ -1459,6 +1515,62 @@
         <location filename="../gui/advancedsettings.cpp" line="925"/>
         <source>Embedded tracker port</source>
         <translation>내장 트래커 포트</translation>
+    </message>
+    <message>
+        <source>Network</source>
+        <translation>네트워크</translation>
+    </message>
+    <message>
+        <source>Storage</source>
+        <translation>저장소</translation>
+    </message>
+    <message>
+        <source>Peers and trackers</source>
+        <translation>피어 및 트래커</translation>
+    </message>
+    <message>
+        <source>Program behavior</source>
+        <translation>프로그램 동작</translation>
+    </message>
+    <message>
+        <source>Display and notifications</source>
+        <translation>표시 및 알림</translation>
+    </message>
+    <message>
+        <source>Network connection</source>
+        <translation>네트워크 연결</translation>
+    </message>
+    <message>
+        <source>Security and privacy</source>
+        <translation>보안 및 개인정보</translation>
+    </message>
+    <message>
+        <source>Connection tuning</source>
+        <translation>연결 조정</translation>
+    </message>
+    <message>
+        <source>Saving and torrent files</source>
+        <translation>저장 및 토렌트 파일</translation>
+    </message>
+    <message>
+        <source>Disk and memory</source>
+        <translation>디스크 및 메모리</translation>
+    </message>
+    <message>
+        <source>Peers and seeding</source>
+        <translation>피어 및 시딩</translation>
+    </message>
+    <message>
+        <source>DHT and I2P</source>
+        <translation>DHT 및 I2P</translation>
+    </message>
+    <message>
+        <source>General</source>
+        <translation>일반</translation>
+    </message>
+    <message>
+        <source>Trackers</source>
+        <translation>트래커</translation>
     </message>
 </context>
 <context>
@@ -3480,6 +3592,22 @@ Supports the formats: S01E01, 1x1, 2017.12.31 and 31.12.2017 (Date formats also 
         <source>Remove torrent</source>
         <translation>토렌트 제거</translation>
     </message>
+    <message>
+        <source>This choice is remembered for the next removal.</source>
+        <translation>이 선택은 다음 제거 때도 기억됩니다.</translation>
+    </message>
+    <message>
+        <source>Remove</source>
+        <translation>제거</translation>
+    </message>
+    <message>
+        <source>This choice is remembered for the next removal.</source>
+        <translation>이 선택은 다음 제거 때도 기억됩니다.</translation>
+    </message>
+    <message>
+        <source>Remove</source>
+        <translation>제거</translation>
+    </message>
 </context>
 <context>
     <name>DownloadFromURLDialog</name>
@@ -3553,6 +3681,14 @@ Supports the formats: S01E01, 1x1, 2017.12.31 and 31.12.2017 (Date formats also 
         <location filename="../gui/executionlogwidget.cpp" line="99"/>
         <source>Clear</source>
         <translation>지우기</translation>
+    </message>
+    <message>
+        <source>WebUI Activity</source>
+        <translation>WebUI 활동</translation>
+    </message>
+    <message>
+        <source>WebUI Activity</source>
+        <translation>WebUI 활동</translation>
     </message>
 </context>
 <context>
@@ -4726,6 +4862,46 @@ Minimum requirement: %2.</source>
         <location filename="../gui/mainwindow.cpp" line="1346"/>
         <source>Torrent Files</source>
         <translation>토렌트 파일</translation>
+    </message>
+    <message>
+        <source>Kettle Edition %1 is available.</source>
+        <translation>Kettle Edition %1을(를) 사용할 수 있습니다.</translation>
+    </message>
+    <message>
+        <source>qBittorrent Kettle Edition %1 is available. It is downloaded now and installed at 4:00 AM, or when qBittorrent starts next.</source>
+        <translation>qBittorrent Kettle Edition %1을(를) 사용할 수 있습니다. 지금 다운로드하며 오전 4:00 또는 다음에 qBittorrent가 시작될 때 설치됩니다.</translation>
+    </message>
+    <message>
+        <source>qBittorrent Kettle Edition %1 is available. It is downloaded now. Turn on &quot;Automatically install Kettle Edition updates&quot; in Options to install it.</source>
+        <translation>qBittorrent Kettle Edition %1을(를) 사용할 수 있습니다. 지금 다운로드합니다. 설치하려면 옵션에서 &quot;Kettle Edition 업데이트 자동 설치&quot;를 켜세요.</translation>
+    </message>
+    <message>
+        <source>You have the latest qBittorrent Kettle Edition (%1).</source>
+        <translation>qBittorrent Kettle Edition 최신 버전(%1)을 사용 중입니다.</translation>
+    </message>
+    <message>
+        <source>Could not check for qBittorrent Kettle Edition updates. See the Execution Log for details.</source>
+        <translation>qBittorrent Kettle Edition 업데이트를 확인할 수 없습니다. 자세한 내용은 실행 로그를 확인하세요.</translation>
+    </message>
+    <message>
+        <source>Kettle Edition %1 is available.</source>
+        <translation>Kettle Edition %1을(를) 사용할 수 있습니다.</translation>
+    </message>
+    <message>
+        <source>qBittorrent Kettle Edition %1 is available. It is downloaded now and installed at 4:00 AM, or when qBittorrent starts next.</source>
+        <translation>qBittorrent Kettle Edition %1을(를) 사용할 수 있습니다. 지금 다운로드하며 오전 4:00 또는 다음에 qBittorrent가 시작될 때 설치됩니다.</translation>
+    </message>
+    <message>
+        <source>qBittorrent Kettle Edition %1 is available. It is downloaded now. Turn on &quot;Automatically install Kettle Edition updates&quot; in Options to install it.</source>
+        <translation>qBittorrent Kettle Edition %1을(를) 사용할 수 있습니다. 지금 다운로드합니다. 설치하려면 옵션에서 &quot;Kettle Edition 업데이트 자동 설치&quot;를 켜세요.</translation>
+    </message>
+    <message>
+        <source>You have the latest qBittorrent Kettle Edition (%1).</source>
+        <translation>qBittorrent Kettle Edition 최신 버전(%1)을 사용 중입니다.</translation>
+    </message>
+    <message>
+        <source>Could not check for qBittorrent Kettle Edition updates. See the Execution Log for details.</source>
+        <translation>qBittorrent Kettle Edition 업데이트를 확인할 수 없습니다. 자세한 내용은 실행 로그를 확인하세요.</translation>
     </message>
 </context>
 <context>
@@ -8515,6 +8691,190 @@ Check the Execution Log for errors.</source>
         <source>Length Error</source>
         <translation>길이 오류</translation>
     </message>
+    <message>
+        <source>Search settings</source>
+        <translation>설정 검색</translation>
+    </message>
+    <message>
+        <source>No settings match</source>
+        <translation>일치하는 설정 없음</translation>
+    </message>
+    <message>
+        <source>User Accounts</source>
+        <translation>사용자 계정</translation>
+    </message>
+    <message>
+        <source>Automatically install Kettle Edition updates</source>
+        <translation>Kettle Edition 업데이트 자동 설치</translation>
+    </message>
+    <message>
+        <source>Status bar and log</source>
+        <translation>상태 표시줄 및 로그</translation>
+    </message>
+    <message>
+        <source>Files</source>
+        <translation>파일</translation>
+    </message>
+    <message>
+        <source>Checking</source>
+        <translation>검사</translation>
+    </message>
+    <message>
+        <source>Until the first user account is created, this login always works.</source>
+        <translation>첫 사용자 계정을 만들 때까지 이 로그인은 항상 작동합니다.</translation>
+    </message>
+    <message>
+        <source>Allow this login when user accounts exist</source>
+        <translation>사용자 계정이 있을 때도 이 로그인 허용</translation>
+    </message>
+    <message>
+        <source>Access</source>
+        <translation>접근</translation>
+    </message>
+    <message>
+        <source>Changes to users, roles and logins apply at once. The settings below apply with OK or Apply.</source>
+        <translation>사용자, 역할, 로그인 변경은 즉시 적용됩니다. 아래 설정은 확인 또는 적용을 누르면 적용됩니다.</translation>
+    </message>
+    <message>
+        <source>Logins and Activity Log</source>
+        <translation>로그인 및 활동 로그</translation>
+    </message>
+    <message>
+        <source>0 means users are logged out after the session timeout.</source>
+        <translation>0은 세션 제한 시간이 지나면 사용자가 로그아웃된다는 뜻입니다.</translation>
+    </message>
+    <message>
+        <source>Keep users logged in for:</source>
+        <translation>로그인 유지 기간:</translation>
+    </message>
+    <message>
+        <source>Until session timeout</source>
+        <translation>세션 제한 시간까지</translation>
+    </message>
+    <message>
+        <source> days</source>
+        <translation> 일</translation>
+    </message>
+    <message>
+        <source>Lock account after consecutive failures:</source>
+        <translation>연속 실패 후 계정 잠금 횟수:</translation>
+    </message>
+    <message>
+        <source>Keep WebUI activity log for:</source>
+        <translation>WebUI 활동 로그 보관 기간:</translation>
+    </message>
+    <message>
+        <source>lock for:</source>
+        <translation>잠금 시간:</translation>
+    </message>
+    <message>
+        <source>%1 works best with Windows dark mode</source>
+        <translation>%1은(는) Windows 다크 모드에서 가장 잘 작동합니다</translation>
+    </message>
+    <message>
+        <source>WebUI address</source>
+        <translation>WebUI 주소</translation>
+    </message>
+    <message>
+        <source>With the WebUI address set to %1, only this PC can reach the WebUI. Remote access, including through a reverse proxy on another machine, will stop working.
+
+Save anyway?</source>
+        <translation>WebUI 주소가 %1(으)로 설정되면 이 PC만 WebUI에 접속할 수 있습니다. 다른 컴퓨터의 리버스 프록시를 통한 것을 포함해 원격 접속은 작동하지 않게 됩니다.
+
+그래도 저장하시겠습니까?</translation>
+    </message>
+    <message>
+        <source>Search settings</source>
+        <translation>설정 검색</translation>
+    </message>
+    <message>
+        <source>No settings match</source>
+        <translation>일치하는 설정 없음</translation>
+    </message>
+    <message>
+        <source>User Accounts</source>
+        <translation>사용자 계정</translation>
+    </message>
+    <message>
+        <source>Automatically install Kettle Edition updates</source>
+        <translation>Kettle Edition 업데이트 자동 설치</translation>
+    </message>
+    <message>
+        <source>Status bar and log</source>
+        <translation>상태 표시줄 및 로그</translation>
+    </message>
+    <message>
+        <source>Files</source>
+        <translation>파일</translation>
+    </message>
+    <message>
+        <source>Checking</source>
+        <translation>검사</translation>
+    </message>
+    <message>
+        <source>Until the first user account is created, this login always works.</source>
+        <translation>첫 사용자 계정을 만들 때까지 이 로그인은 항상 작동합니다.</translation>
+    </message>
+    <message>
+        <source>Allow this login when user accounts exist</source>
+        <translation>사용자 계정이 있을 때도 이 로그인 허용</translation>
+    </message>
+    <message>
+        <source>Access</source>
+        <translation>접근</translation>
+    </message>
+    <message>
+        <source>Changes to users, roles and logins apply at once. The settings below apply with OK or Apply.</source>
+        <translation>사용자, 역할, 로그인 변경은 즉시 적용됩니다. 아래 설정은 확인 또는 적용을 누르면 적용됩니다.</translation>
+    </message>
+    <message>
+        <source>Logins and Activity Log</source>
+        <translation>로그인 및 활동 로그</translation>
+    </message>
+    <message>
+        <source>0 means users are logged out after the session timeout.</source>
+        <translation>0은 세션 제한 시간이 지나면 사용자가 로그아웃된다는 뜻입니다.</translation>
+    </message>
+    <message>
+        <source>Keep users logged in for:</source>
+        <translation>로그인 유지 기간:</translation>
+    </message>
+    <message>
+        <source>Until session timeout</source>
+        <translation>세션 제한 시간까지</translation>
+    </message>
+    <message>
+        <source> days</source>
+        <translation> 일</translation>
+    </message>
+    <message>
+        <source>Lock account after consecutive failures:</source>
+        <translation>연속 실패 후 계정 잠금 횟수:</translation>
+    </message>
+    <message>
+        <source>Keep WebUI activity log for:</source>
+        <translation>WebUI 활동 로그 보관 기간:</translation>
+    </message>
+    <message>
+        <source>lock for:</source>
+        <translation>잠금 시간:</translation>
+    </message>
+    <message>
+        <source>%1 works best with Windows dark mode</source>
+        <translation>%1은(는) Windows 다크 모드에서 가장 잘 작동합니다</translation>
+    </message>
+    <message>
+        <source>WebUI address</source>
+        <translation>WebUI 주소</translation>
+    </message>
+    <message>
+        <source>With the WebUI address set to %1, only this PC can reach the WebUI. Remote access, including through a reverse proxy on another machine, will stop working.
+
+Save anyway?</source>
+        <translation>WebUI 주소가 %1(으)로 설정되면 이 PC만 WebUI에 접속할 수 있습니다. 다른 컴퓨터의 리버스 프록시를 통한 것을 포함해 원격 접속은 작동하지 않게 됩니다.
+
+그래도 저장하시겠습니까?</translation>
+    </message>
 </context>
 <context>
     <name>PeerInfo</name>
@@ -8767,6 +9127,22 @@ Check the Execution Log for errors.</source>
         <location filename="../gui/properties/peerlistwidget.cpp" line="309"/>
         <source>Copy IP:port</source>
         <translation>IP:포트 복사</translation>
+    </message>
+    <message>
+        <source>Reset auto width</source>
+        <translation>자동 너비 초기화</translation>
+    </message>
+    <message>
+        <source>Fit all non-hidden columns to their contents again, and forget the widths that were set by hand</source>
+        <translation>보이는 모든 열을 내용에 맞게 다시 조정하고 직접 설정한 너비를 잊습니다</translation>
+    </message>
+    <message>
+        <source>Reset auto width</source>
+        <translation>자동 너비 초기화</translation>
+    </message>
+    <message>
+        <source>Fit all non-hidden columns to their contents again, and forget the widths that were set by hand</source>
+        <translation>보이는 모든 열을 내용에 맞게 다시 조정하고 직접 설정한 너비를 잊습니다</translation>
     </message>
 </context>
 <context>
@@ -10157,6 +10533,14 @@ Those plugins were disabled.</source>
         <source>Open link</source>
         <translation>링크 열기</translation>
     </message>
+    <message>
+        <source>Details</source>
+        <translation>세부 정보</translation>
+    </message>
+    <message>
+        <source>Details</source>
+        <translation>세부 정보</translation>
+    </message>
 </context>
 <context>
     <name>SearchController</name>
@@ -10511,6 +10895,70 @@ Those plugins were disabled.</source>
         <source>Resize all non-hidden columns to the size of their contents</source>
         <translation>숨겨지지 않은 모든 열의 크기를 해당 콘텐츠 크기로 조정합니다</translation>
     </message>
+    <message>
+        <source>%1 of %2 shown (%3 hidden)</source>
+        <translation>%2개 중 %1개 표시 (%3개 숨김)</translation>
+    </message>
+    <message>
+        <source>%1 of %2 shown</source>
+        <translation>%2개 중 %1개 표시</translation>
+    </message>
+    <message>
+        <source>Searching: %1</source>
+        <translation>검색 중: %1</translation>
+    </message>
+    <message>
+        <source>Finished: %1</source>
+        <translation>완료: %1</translation>
+    </message>
+    <message>
+        <source>Search aborted: %1</source>
+        <translation>검색 중단됨: %1</translation>
+    </message>
+    <message>
+        <source>Reset auto width</source>
+        <translation>자동 너비 초기화</translation>
+    </message>
+    <message>
+        <source>Fit all non-hidden columns to their contents again, and forget the widths that were set by hand</source>
+        <translation>보이는 모든 열을 내용에 맞게 다시 조정하고 직접 설정한 너비를 잊습니다</translation>
+    </message>
+    <message>
+        <source>Unknown</source>
+        <translation>알 수 없음</translation>
+    </message>
+    <message>
+        <source>%1 of %2 shown (%3 hidden)</source>
+        <translation>%2개 중 %1개 표시 (%3개 숨김)</translation>
+    </message>
+    <message>
+        <source>%1 of %2 shown</source>
+        <translation>%2개 중 %1개 표시</translation>
+    </message>
+    <message>
+        <source>Searching: %1</source>
+        <translation>검색 중: %1</translation>
+    </message>
+    <message>
+        <source>Finished: %1</source>
+        <translation>완료: %1</translation>
+    </message>
+    <message>
+        <source>Search aborted: %1</source>
+        <translation>검색 중단됨: %1</translation>
+    </message>
+    <message>
+        <source>Reset auto width</source>
+        <translation>자동 너비 초기화</translation>
+    </message>
+    <message>
+        <source>Fit all non-hidden columns to their contents again, and forget the widths that were set by hand</source>
+        <translation>보이는 모든 열을 내용에 맞게 다시 조정하고 직접 설정한 너비를 잊습니다</translation>
+    </message>
+    <message>
+        <source>Unknown</source>
+        <translation>알 수 없음</translation>
+    </message>
 </context>
 <context>
     <name>SearchPluginManager</name>
@@ -10808,6 +11256,14 @@ Those plugins were disabled.</source>
         <source>Couldn&apos;t update &quot;%1&quot; search engine plugin. %2</source>
         <translation type="unfinished">&quot;%1&quot; 검색 엔진 플러그인을 업데이트할 수 없습니다. %2</translation>
     </message>
+    <message>
+        <source>Install Kettle Plugins</source>
+        <translation>Kettle 플러그인 설치</translation>
+    </message>
+    <message>
+        <source>Install Kettle Plugins</source>
+        <translation>Kettle 플러그인 설치</translation>
+    </message>
 </context>
 <context>
     <name>SearchPluginSourceDialog</name>
@@ -10947,6 +11403,90 @@ Click the &quot;Search plugins...&quot; button at the bottom right of the window
         <location filename="../gui/search/searchwidget.ui" line="58"/>
         <source>Stop</source>
         <translation>중지</translation>
+    </message>
+    <message>
+        <source>Searches</source>
+        <translation>검색</translation>
+    </message>
+    <message>
+        <source>Close the selected search</source>
+        <translation>선택한 검색 닫기</translation>
+    </message>
+    <message>
+        <source>Search for torrents...</source>
+        <translation>토렌트 검색...</translation>
+    </message>
+    <message>
+        <source>Category to search in</source>
+        <translation>검색할 카테고리</translation>
+    </message>
+    <message>
+        <source>Search engines to use</source>
+        <translation>사용할 검색 엔진</translation>
+    </message>
+    <message>
+        <source>There aren&apos;t any search plugins installed.
+Click the &quot;Search plugins...&quot; button at the top right of the window to install some.</source>
+        <translation>설치된 검색 플러그인이 없습니다.
+설치하려면 창 오른쪽 위의 &quot;검색 플러그인...&quot; 버튼을 클릭하세요.</translation>
+    </message>
+    <message>
+        <source>Type a search above and press Enter.</source>
+        <translation>위에 검색어를 입력하고 Enter를 누르세요.</translation>
+    </message>
+    <message>
+        <source>Refresh search</source>
+        <translation>검색 새로 고침</translation>
+    </message>
+    <message>
+        <source>Close search</source>
+        <translation>검색 닫기</translation>
+    </message>
+    <message>
+        <source>Close all searches</source>
+        <translation>모든 검색 닫기</translation>
+    </message>
+    <message>
+        <source>Searches</source>
+        <translation>검색</translation>
+    </message>
+    <message>
+        <source>Close the selected search</source>
+        <translation>선택한 검색 닫기</translation>
+    </message>
+    <message>
+        <source>Search for torrents...</source>
+        <translation>토렌트 검색...</translation>
+    </message>
+    <message>
+        <source>Category to search in</source>
+        <translation>검색할 카테고리</translation>
+    </message>
+    <message>
+        <source>Search engines to use</source>
+        <translation>사용할 검색 엔진</translation>
+    </message>
+    <message>
+        <source>There aren&apos;t any search plugins installed.
+Click the &quot;Search plugins...&quot; button at the top right of the window to install some.</source>
+        <translation>설치된 검색 플러그인이 없습니다.
+설치하려면 창 오른쪽 위의 &quot;검색 플러그인...&quot; 버튼을 클릭하세요.</translation>
+    </message>
+    <message>
+        <source>Type a search above and press Enter.</source>
+        <translation>위에 검색어를 입력하고 Enter를 누르세요.</translation>
+    </message>
+    <message>
+        <source>Refresh search</source>
+        <translation>검색 새로 고침</translation>
+    </message>
+    <message>
+        <source>Close search</source>
+        <translation>검색 닫기</translation>
+    </message>
+    <message>
+        <source>Close all searches</source>
+        <translation>모든 검색 닫기</translation>
     </message>
 </context>
 <context>
@@ -11413,6 +11953,326 @@ Click the &quot;Search plugins...&quot; button at the bottom right of the window
         <location filename="../gui/statsdialog.cpp" line="111"/>
         <source>%1 ms</source>
         <translation type="unfinished">%1 ms</translation>
+    </message>
+    <message>
+        <source>Copy</source>
+        <translation>복사</translation>
+    </message>
+    <message>
+        <source>Overview</source>
+        <translation>개요</translation>
+    </message>
+    <message>
+        <source>Transfer</source>
+        <translation>전송</translation>
+    </message>
+    <message>
+        <source>This session</source>
+        <translation>이 세션</translation>
+    </message>
+    <message>
+        <source>All time</source>
+        <translation>전체 기간</translation>
+    </message>
+    <message>
+        <source>Downloaded:</source>
+        <translation>다운로드:</translation>
+    </message>
+    <message>
+        <source>Uploaded:</source>
+        <translation>업로드:</translation>
+    </message>
+    <message>
+        <source>Share ratio:</source>
+        <translation>공유 비율:</translation>
+    </message>
+    <message>
+        <source>Current speed:</source>
+        <translation>현재 속도:</translation>
+    </message>
+    <message>
+        <source>Activity</source>
+        <translation>활동</translation>
+    </message>
+    <message>
+        <source>Torrents downloading:</source>
+        <translation>다운로드 중인 토렌트:</translation>
+    </message>
+    <message>
+        <source>Torrents seeding:</source>
+        <translation>시딩 중인 토렌트:</translation>
+    </message>
+    <message>
+        <source>Torrents stopped:</source>
+        <translation>중지된 토렌트:</translation>
+    </message>
+    <message>
+        <source>Torrents with errors:</source>
+        <translation>오류가 있는 토렌트:</translation>
+    </message>
+    <message>
+        <source>Running for:</source>
+        <translation>실행 시간:</translation>
+    </message>
+    <message>
+        <source>History</source>
+        <translation>기록</translation>
+    </message>
+    <message>
+        <source>Period</source>
+        <translation>기간</translation>
+    </message>
+    <message>
+        <source>Today</source>
+        <translation>오늘</translation>
+    </message>
+    <message>
+        <source>Last 7 days</source>
+        <translation>최근 7일</translation>
+    </message>
+    <message>
+        <source>This month</source>
+        <translation>이번 달</translation>
+    </message>
+    <message>
+        <source>Last month</source>
+        <translation>지난달</translation>
+    </message>
+    <message>
+        <source>Last 12 months</source>
+        <translation>최근 12개월</translation>
+    </message>
+    <message>
+        <source>Tracking since:</source>
+        <translation>추적 시작일:</translation>
+    </message>
+    <message>
+        <source>By month</source>
+        <translation>월별</translation>
+    </message>
+    <message>
+        <source>Month</source>
+        <translation>월</translation>
+    </message>
+    <message>
+        <source>Downloaded</source>
+        <translation>다운로드</translation>
+    </message>
+    <message>
+        <source>Uploaded</source>
+        <translation>업로드</translation>
+    </message>
+    <message>
+        <source>Share ratio</source>
+        <translation>공유 비율</translation>
+    </message>
+    <message>
+        <source>WebUI downloads added, this month</source>
+        <translation>WebUI로 추가된 다운로드, 이번 달</translation>
+    </message>
+    <message>
+        <source>Counts the requests that added a download. Apps without a login, such as Sonarr and Radarr, are shown as (localhost). Downloads added in the desktop window are not counted.</source>
+        <translation>다운로드를 추가한 요청을 셉니다. Sonarr, Radarr처럼 로그인하지 않는 앱은 (localhost)로 표시됩니다. 데스크톱 창에서 추가한 다운로드는 세지 않습니다.</translation>
+    </message>
+    <message>
+        <source>Technical</source>
+        <translation>기술 정보</translation>
+    </message>
+    <message>
+        <source>Disk</source>
+        <translation>디스크</translation>
+    </message>
+    <message>
+        <source>Peers waiting on disk writes:</source>
+        <translation>디스크 쓰기를 기다리는 피어:</translation>
+    </message>
+    <message>
+        <source>Peers waiting on disk reads:</source>
+        <translation>디스크 읽기를 기다리는 피어:</translation>
+    </message>
+    <message>
+        <source>Network</source>
+        <translation>네트워크</translation>
+    </message>
+    <message>
+        <source>DHT nodes:</source>
+        <translation>DHT 노드:</translation>
+    </message>
+    <message>
+        <source>Data discarded this session:</source>
+        <translation>이 세션에서 버려진 데이터:</translation>
+    </message>
+    <message>
+        <source>Before tracking began</source>
+        <translation>추적 시작 전</translation>
+    </message>
+    <message>
+        <source>Nothing added yet</source>
+        <translation>아직 추가된 것이 없습니다</translation>
+    </message>
+    <message>
+        <source>Off</source>
+        <translation>꺼짐</translation>
+    </message>
+    <message>
+        <source>Copy</source>
+        <translation>복사</translation>
+    </message>
+    <message>
+        <source>Overview</source>
+        <translation>개요</translation>
+    </message>
+    <message>
+        <source>Transfer</source>
+        <translation>전송</translation>
+    </message>
+    <message>
+        <source>This session</source>
+        <translation>이 세션</translation>
+    </message>
+    <message>
+        <source>All time</source>
+        <translation>전체 기간</translation>
+    </message>
+    <message>
+        <source>Downloaded:</source>
+        <translation>다운로드:</translation>
+    </message>
+    <message>
+        <source>Uploaded:</source>
+        <translation>업로드:</translation>
+    </message>
+    <message>
+        <source>Share ratio:</source>
+        <translation>공유 비율:</translation>
+    </message>
+    <message>
+        <source>Current speed:</source>
+        <translation>현재 속도:</translation>
+    </message>
+    <message>
+        <source>Activity</source>
+        <translation>활동</translation>
+    </message>
+    <message>
+        <source>Torrents downloading:</source>
+        <translation>다운로드 중인 토렌트:</translation>
+    </message>
+    <message>
+        <source>Torrents seeding:</source>
+        <translation>시딩 중인 토렌트:</translation>
+    </message>
+    <message>
+        <source>Torrents stopped:</source>
+        <translation>중지된 토렌트:</translation>
+    </message>
+    <message>
+        <source>Torrents with errors:</source>
+        <translation>오류가 있는 토렌트:</translation>
+    </message>
+    <message>
+        <source>Running for:</source>
+        <translation>실행 시간:</translation>
+    </message>
+    <message>
+        <source>History</source>
+        <translation>기록</translation>
+    </message>
+    <message>
+        <source>Period</source>
+        <translation>기간</translation>
+    </message>
+    <message>
+        <source>Today</source>
+        <translation>오늘</translation>
+    </message>
+    <message>
+        <source>Last 7 days</source>
+        <translation>최근 7일</translation>
+    </message>
+    <message>
+        <source>This month</source>
+        <translation>이번 달</translation>
+    </message>
+    <message>
+        <source>Last month</source>
+        <translation>지난달</translation>
+    </message>
+    <message>
+        <source>Last 12 months</source>
+        <translation>최근 12개월</translation>
+    </message>
+    <message>
+        <source>Tracking since:</source>
+        <translation>추적 시작일:</translation>
+    </message>
+    <message>
+        <source>By month</source>
+        <translation>월별</translation>
+    </message>
+    <message>
+        <source>Month</source>
+        <translation>월</translation>
+    </message>
+    <message>
+        <source>Downloaded</source>
+        <translation>다운로드</translation>
+    </message>
+    <message>
+        <source>Uploaded</source>
+        <translation>업로드</translation>
+    </message>
+    <message>
+        <source>Share ratio</source>
+        <translation>공유 비율</translation>
+    </message>
+    <message>
+        <source>WebUI downloads added, this month</source>
+        <translation>WebUI로 추가된 다운로드, 이번 달</translation>
+    </message>
+    <message>
+        <source>Counts the requests that added a download. Apps without a login, such as Sonarr and Radarr, are shown as (localhost). Downloads added in the desktop window are not counted.</source>
+        <translation>다운로드를 추가한 요청을 셉니다. Sonarr, Radarr처럼 로그인하지 않는 앱은 (localhost)로 표시됩니다. 데스크톱 창에서 추가한 다운로드는 세지 않습니다.</translation>
+    </message>
+    <message>
+        <source>Technical</source>
+        <translation>기술 정보</translation>
+    </message>
+    <message>
+        <source>Disk</source>
+        <translation>디스크</translation>
+    </message>
+    <message>
+        <source>Peers waiting on disk writes:</source>
+        <translation>디스크 쓰기를 기다리는 피어:</translation>
+    </message>
+    <message>
+        <source>Peers waiting on disk reads:</source>
+        <translation>디스크 읽기를 기다리는 피어:</translation>
+    </message>
+    <message>
+        <source>Network</source>
+        <translation>네트워크</translation>
+    </message>
+    <message>
+        <source>DHT nodes:</source>
+        <translation>DHT 노드:</translation>
+    </message>
+    <message>
+        <source>Data discarded this session:</source>
+        <translation>이 세션에서 버려진 데이터:</translation>
+    </message>
+    <message>
+        <source>Before tracking began</source>
+        <translation>추적 시작 전</translation>
+    </message>
+    <message>
+        <source>Nothing added yet</source>
+        <translation>아직 추가된 것이 없습니다</translation>
+    </message>
+    <message>
+        <source>Off</source>
+        <translation>꺼짐</translation>
     </message>
 </context>
 <context>
@@ -12104,6 +12964,22 @@ Please choose a different name and try again.</source>
     <message>
         <source>Priority by shown file order</source>
         <translation type="vanished">표시된 파일 순서에 따른 우선순위</translation>
+    </message>
+    <message>
+        <source>Reset auto width</source>
+        <translation>자동 너비 초기화</translation>
+    </message>
+    <message>
+        <source>Fit all non-hidden columns to their contents again, and forget the widths that were set by hand</source>
+        <translation>보이는 모든 열을 내용에 맞게 다시 조정하고 직접 설정한 너비를 잊습니다</translation>
+    </message>
+    <message>
+        <source>Reset auto width</source>
+        <translation>자동 너비 초기화</translation>
+    </message>
+    <message>
+        <source>Fit all non-hidden columns to their contents again, and forget the widths that were set by hand</source>
+        <translation>보이는 모든 열을 내용에 맞게 다시 조정하고 직접 설정한 너비를 잊습니다</translation>
     </message>
 </context>
 <context>
@@ -13188,6 +14064,22 @@ Please choose a different name and try again.</source>
         <source>Column visibility</source>
         <translation>열 표시 여부</translation>
     </message>
+    <message>
+        <source>Reset auto width</source>
+        <translation>자동 너비 초기화</translation>
+    </message>
+    <message>
+        <source>Fit all non-hidden columns to their contents again, and forget the widths that were set by hand</source>
+        <translation>보이는 모든 열을 내용에 맞게 다시 조정하고 직접 설정한 너비를 잊습니다</translation>
+    </message>
+    <message>
+        <source>Reset auto width</source>
+        <translation>자동 너비 초기화</translation>
+    </message>
+    <message>
+        <source>Fit all non-hidden columns to their contents again, and forget the widths that were set by hand</source>
+        <translation>보이는 모든 열을 내용에 맞게 다시 조정하고 직접 설정한 너비를 잊습니다</translation>
+    </message>
 </context>
 <context>
     <name>TrackerStatusFilterWidget</name>
@@ -14054,6 +14946,22 @@ Please choose a different name and try again.</source>
         <source>Super seeding mode</source>
         <translation>슈퍼 시딩 모드</translation>
     </message>
+    <message>
+        <source>Reset auto width</source>
+        <translation>자동 너비 초기화</translation>
+    </message>
+    <message>
+        <source>Fit all non-hidden columns to their contents again, and forget the widths that were set by hand</source>
+        <translation>보이는 모든 열을 내용에 맞게 다시 조정하고 직접 설정한 너비를 잊습니다</translation>
+    </message>
+    <message>
+        <source>Reset auto width</source>
+        <translation>자동 너비 초기화</translation>
+    </message>
+    <message>
+        <source>Fit all non-hidden columns to their contents again, and forget the widths that were set by hand</source>
+        <translation>보이는 모든 열을 내용에 맞게 다시 조정하고 직접 설정한 너비를 잊습니다</translation>
+    </message>
 </context>
 <context>
     <name>UIThemeDialog</name>
@@ -14388,6 +15296,46 @@ Please choose a different name and try again.</source>
         <source>WebAPI login failure. Reason: invalid credentials, attempt count: %1, IP: %2, username: %3</source>
         <translation>WebAPI 로그인 실패. 원인: 잘못된 자격 증명, 시도 횟수: %1, IP: %2, 사용자 이름: %3</translation>
     </message>
+    <message>
+        <source>Something went wrong on the server. Details are in qBittorrent&apos;s log.</source>
+        <translation>서버에서 문제가 발생했습니다. 자세한 내용은 qBittorrent 로그에 있습니다.</translation>
+    </message>
+    <message>
+        <source>This account is locked after too many failed login attempts. Try again in %1 minute(s).</source>
+        <translation>로그인 시도 실패가 너무 많아 이 계정이 잠겼습니다. %1분 후에 다시 시도하세요.</translation>
+    </message>
+    <message>
+        <source>Your role (%1) doesn&apos;t allow this: %2.</source>
+        <translation>현재 역할(%1)로는 할 수 없습니다: %2.</translation>
+    </message>
+    <message>
+        <source>Only an admin can remove the tag that says who added a torrent.</source>
+        <translation>토렌트를 누가 추가했는지 나타내는 태그는 관리자만 제거할 수 있습니다.</translation>
+    </message>
+    <message>
+        <source>Only an admin can clear or replace all tags of a torrent that has a tag saying who added it.</source>
+        <translation>추가한 사람을 나타내는 태그가 있는 토렌트의 모든 태그는 관리자만 지우거나 바꿀 수 있습니다.</translation>
+    </message>
+    <message>
+        <source>Something went wrong on the server. Details are in qBittorrent&apos;s log.</source>
+        <translation>서버에서 문제가 발생했습니다. 자세한 내용은 qBittorrent 로그에 있습니다.</translation>
+    </message>
+    <message>
+        <source>This account is locked after too many failed login attempts. Try again in %1 minute(s).</source>
+        <translation>로그인 시도 실패가 너무 많아 이 계정이 잠겼습니다. %1분 후에 다시 시도하세요.</translation>
+    </message>
+    <message>
+        <source>Your role (%1) doesn&apos;t allow this: %2.</source>
+        <translation>현재 역할(%1)로는 할 수 없습니다: %2.</translation>
+    </message>
+    <message>
+        <source>Only an admin can remove the tag that says who added a torrent.</source>
+        <translation>토렌트를 누가 추가했는지 나타내는 태그는 관리자만 제거할 수 있습니다.</translation>
+    </message>
+    <message>
+        <source>Only an admin can clear or replace all tags of a torrent that has a tag saying who added it.</source>
+        <translation>추가한 사람을 나타내는 태그가 있는 토렌트의 모든 태그는 관리자만 지우거나 바꿀 수 있습니다.</translation>
+    </message>
 </context>
 <context>
     <name>WebUI</name>
@@ -14527,6 +15475,669 @@ Please choose a different name and try again.</source>
         <source>&lt; 1m</source>
         <comment>&lt; 1 minute</comment>
         <translation>1분 미만</translation>
+    </message>
+</context>
+<context>
+    <name>UpdateInstaller</name>
+    <message>
+        <source>Kettle Edition update</source>
+        <translation>Kettle Edition 업데이트</translation>
+    </message>
+    <message>
+        <source>Kettle Edition was updated to %1.</source>
+        <translation>Kettle Edition이(가) %1(으)로 업데이트되었습니다.</translation>
+    </message>
+    <message>
+        <source>Kettle Edition updated</source>
+        <translation>Kettle Edition 업데이트됨</translation>
+    </message>
+    <message>
+        <source>Downloading Kettle Edition %1 (%2 changed files).</source>
+        <translation>Kettle Edition %1 다운로드 중 (변경된 파일 %2개).</translation>
+    </message>
+    <message>
+        <source>Kettle Edition %1 is downloaded and ready to install.</source>
+        <translation>Kettle Edition %1 다운로드가 끝났으며 설치할 준비가 되었습니다.</translation>
+    </message>
+    <message>
+        <source>Kettle Edition update</source>
+        <translation>Kettle Edition 업데이트</translation>
+    </message>
+    <message>
+        <source>Kettle Edition was updated to %1.</source>
+        <translation>Kettle Edition이(가) %1(으)로 업데이트되었습니다.</translation>
+    </message>
+    <message>
+        <source>Kettle Edition updated</source>
+        <translation>Kettle Edition 업데이트됨</translation>
+    </message>
+    <message>
+        <source>Downloading Kettle Edition %1 (%2 changed files).</source>
+        <translation>Kettle Edition %1 다운로드 중 (변경된 파일 %2개).</translation>
+    </message>
+    <message>
+        <source>Kettle Edition %1 is downloaded and ready to install.</source>
+        <translation>Kettle Edition %1 다운로드가 끝났으며 설치할 준비가 되었습니다.</translation>
+    </message>
+</context>
+<context>
+    <name>UserAccountDialog</name>
+    <message>
+        <source>User</source>
+        <translation>사용자</translation>
+    </message>
+    <message>
+        <source>Username:</source>
+        <translation>사용자 이름:</translation>
+    </message>
+    <message>
+        <source>Role:</source>
+        <translation>역할:</translation>
+    </message>
+    <message>
+        <source>Password:</source>
+        <translation>비밀번호:</translation>
+    </message>
+    <message>
+        <source>Confirm password:</source>
+        <translation>비밀번호 확인:</translation>
+    </message>
+    <message>
+        <source>Disable this account</source>
+        <translation>이 계정 비활성화</translation>
+    </message>
+    <message>
+        <source>Edit User</source>
+        <translation>사용자 편집</translation>
+    </message>
+    <message>
+        <source>Leave empty to keep the current password</source>
+        <translation>현재 비밀번호를 유지하려면 비워 두세요</translation>
+    </message>
+    <message>
+        <source>Add User</source>
+        <translation>사용자 추가</translation>
+    </message>
+    <message>
+        <source>At least %1 characters</source>
+        <translation>%1자 이상</translation>
+    </message>
+    <message>
+        <source>Enter a username.</source>
+        <translation>사용자 이름을 입력하세요.</translation>
+    </message>
+    <message>
+        <source>The password must be at least %1 characters long.</source>
+        <translation>비밀번호는 %1자 이상이어야 합니다.</translation>
+    </message>
+    <message>
+        <source>The passwords don&apos;t match.</source>
+        <translation>비밀번호가 일치하지 않습니다.</translation>
+    </message>
+    <message>
+        <source>User</source>
+        <translation>사용자</translation>
+    </message>
+    <message>
+        <source>Username:</source>
+        <translation>사용자 이름:</translation>
+    </message>
+    <message>
+        <source>Role:</source>
+        <translation>역할:</translation>
+    </message>
+    <message>
+        <source>Password:</source>
+        <translation>비밀번호:</translation>
+    </message>
+    <message>
+        <source>Confirm password:</source>
+        <translation>비밀번호 확인:</translation>
+    </message>
+    <message>
+        <source>Disable this account</source>
+        <translation>이 계정 비활성화</translation>
+    </message>
+    <message>
+        <source>Edit User</source>
+        <translation>사용자 편집</translation>
+    </message>
+    <message>
+        <source>Leave empty to keep the current password</source>
+        <translation>현재 비밀번호를 유지하려면 비워 두세요</translation>
+    </message>
+    <message>
+        <source>Add User</source>
+        <translation>사용자 추가</translation>
+    </message>
+    <message>
+        <source>At least %1 characters</source>
+        <translation>%1자 이상</translation>
+    </message>
+    <message>
+        <source>Enter a username.</source>
+        <translation>사용자 이름을 입력하세요.</translation>
+    </message>
+    <message>
+        <source>The password must be at least %1 characters long.</source>
+        <translation>비밀번호는 %1자 이상이어야 합니다.</translation>
+    </message>
+    <message>
+        <source>The passwords don&apos;t match.</source>
+        <translation>비밀번호가 일치하지 않습니다.</translation>
+    </message>
+</context>
+<context>
+    <name>UserAccountsWidget</name>
+    <message>
+        <source>User Accounts</source>
+        <translation>사용자 계정</translation>
+    </message>
+    <message>
+        <source>Users</source>
+        <translation>사용자</translation>
+    </message>
+    <message>
+        <source>People who can log in to the WebUI with their own username and password.</source>
+        <translation>자신의 사용자 이름과 비밀번호로 WebUI에 로그인할 수 있는 사람들입니다.</translation>
+    </message>
+    <message>
+        <source>Add User...</source>
+        <translation>사용자 추가...</translation>
+    </message>
+    <message>
+        <source>Edit...</source>
+        <translation>편집...</translation>
+    </message>
+    <message>
+        <source>Remove</source>
+        <translation>제거</translation>
+    </message>
+    <message>
+        <source>Roles</source>
+        <translation>역할</translation>
+    </message>
+    <message>
+        <source>A role decides what its users are allowed to do.</source>
+        <translation>역할은 그 사용자가 할 수 있는 일을 정합니다.</translation>
+    </message>
+    <message>
+        <source>Add Role...</source>
+        <translation>역할 추가...</translation>
+    </message>
+    <message>
+        <source>Logged In</source>
+        <translation>로그인됨</translation>
+    </message>
+    <message>
+        <source>Browsers and devices where someone is logged in with a user account.</source>
+        <translation>사용자 계정으로 로그인한 브라우저와 기기입니다.</translation>
+    </message>
+    <message>
+        <source>Log Out</source>
+        <translation>로그아웃</translation>
+    </message>
+    <message>
+        <source>Username</source>
+        <translation>사용자 이름</translation>
+    </message>
+    <message>
+        <source>Role</source>
+        <translation>역할</translation>
+    </message>
+    <message>
+        <source>Status</source>
+        <translation>상태</translation>
+    </message>
+    <message>
+        <source>Last login</source>
+        <translation>마지막 로그인</translation>
+    </message>
+    <message>
+        <source>Created</source>
+        <translation>생성일</translation>
+    </message>
+    <message>
+        <source>Name</source>
+        <translation>이름</translation>
+    </message>
+    <message>
+        <source>Description</source>
+        <translation>설명</translation>
+    </message>
+    <message>
+        <source>Permissions</source>
+        <translation>권한</translation>
+    </message>
+    <message>
+        <source>User</source>
+        <translation>사용자</translation>
+    </message>
+    <message>
+        <source>Browser</source>
+        <translation>브라우저</translation>
+    </message>
+    <message>
+        <source>Logged in</source>
+        <translation>로그인 시각</translation>
+    </message>
+    <message>
+        <source>Last active</source>
+        <translation>마지막 활동</translation>
+    </message>
+    <message>
+        <source>Expires</source>
+        <translation>만료</translation>
+    </message>
+    <message>
+        <source>The user database could not be opened. See the Execution Log for details.</source>
+        <translation>사용자 데이터베이스를 열 수 없습니다. 자세한 내용은 실행 로그를 확인하세요.</translation>
+    </message>
+    <message>
+        <source>Disabled</source>
+        <translation>비활성화됨</translation>
+    </message>
+    <message>
+        <source>Enabled</source>
+        <translation>활성화됨</translation>
+    </message>
+    <message>
+        <source>Never</source>
+        <translation>없음</translation>
+    </message>
+    <message>
+        <source>No accounts yet, so everyone still uses the shared WebUI login. Add an Admin account first.</source>
+        <translation>아직 계정이 없어 모두 공유 WebUI 로그인을 사용 중입니다. 먼저 Admin 계정을 추가하세요.</translation>
+    </message>
+    <message>
+        <source>Couldn&apos;t read the user database. %1</source>
+        <translation>사용자 데이터베이스를 읽을 수 없습니다. %1</translation>
+    </message>
+    <message>
+        <source>Remove user</source>
+        <translation>사용자 제거</translation>
+    </message>
+    <message>
+        <source>Are you sure you want to remove the user &apos;%1&apos;?</source>
+        <translation>사용자 &apos;%1&apos;을(를) 제거하시겠습니까?</translation>
+    </message>
+    <message>
+        <source>Remove role</source>
+        <translation>역할 제거</translation>
+    </message>
+    <message>
+        <source>Are you sure you want to remove the role &apos;%1&apos;?</source>
+        <translation>역할 &apos;%1&apos;을(를) 제거하시겠습니까?</translation>
+    </message>
+    <message>
+        <source>Enable</source>
+        <translation>활성화</translation>
+    </message>
+    <message>
+        <source>Disable</source>
+        <translation>비활성화</translation>
+    </message>
+    <message>
+        <source>Log Out Everywhere</source>
+        <translation>모든 곳에서 로그아웃</translation>
+    </message>
+    <message>
+        <source>User Accounts</source>
+        <translation>사용자 계정</translation>
+    </message>
+    <message>
+        <source>Users</source>
+        <translation>사용자</translation>
+    </message>
+    <message>
+        <source>People who can log in to the WebUI with their own username and password.</source>
+        <translation>자신의 사용자 이름과 비밀번호로 WebUI에 로그인할 수 있는 사람들입니다.</translation>
+    </message>
+    <message>
+        <source>Add User...</source>
+        <translation>사용자 추가...</translation>
+    </message>
+    <message>
+        <source>Edit...</source>
+        <translation>편집...</translation>
+    </message>
+    <message>
+        <source>Remove</source>
+        <translation>제거</translation>
+    </message>
+    <message>
+        <source>Roles</source>
+        <translation>역할</translation>
+    </message>
+    <message>
+        <source>A role decides what its users are allowed to do.</source>
+        <translation>역할은 그 사용자가 할 수 있는 일을 정합니다.</translation>
+    </message>
+    <message>
+        <source>Add Role...</source>
+        <translation>역할 추가...</translation>
+    </message>
+    <message>
+        <source>Logged In</source>
+        <translation>로그인됨</translation>
+    </message>
+    <message>
+        <source>Browsers and devices where someone is logged in with a user account.</source>
+        <translation>사용자 계정으로 로그인한 브라우저와 기기입니다.</translation>
+    </message>
+    <message>
+        <source>Log Out</source>
+        <translation>로그아웃</translation>
+    </message>
+    <message>
+        <source>Username</source>
+        <translation>사용자 이름</translation>
+    </message>
+    <message>
+        <source>Role</source>
+        <translation>역할</translation>
+    </message>
+    <message>
+        <source>Status</source>
+        <translation>상태</translation>
+    </message>
+    <message>
+        <source>Last login</source>
+        <translation>마지막 로그인</translation>
+    </message>
+    <message>
+        <source>Created</source>
+        <translation>생성일</translation>
+    </message>
+    <message>
+        <source>Name</source>
+        <translation>이름</translation>
+    </message>
+    <message>
+        <source>Description</source>
+        <translation>설명</translation>
+    </message>
+    <message>
+        <source>Permissions</source>
+        <translation>권한</translation>
+    </message>
+    <message>
+        <source>User</source>
+        <translation>사용자</translation>
+    </message>
+    <message>
+        <source>Browser</source>
+        <translation>브라우저</translation>
+    </message>
+    <message>
+        <source>Logged in</source>
+        <translation>로그인 시각</translation>
+    </message>
+    <message>
+        <source>Last active</source>
+        <translation>마지막 활동</translation>
+    </message>
+    <message>
+        <source>Expires</source>
+        <translation>만료</translation>
+    </message>
+    <message>
+        <source>The user database could not be opened. See the Execution Log for details.</source>
+        <translation>사용자 데이터베이스를 열 수 없습니다. 자세한 내용은 실행 로그를 확인하세요.</translation>
+    </message>
+    <message>
+        <source>Disabled</source>
+        <translation>비활성화됨</translation>
+    </message>
+    <message>
+        <source>Enabled</source>
+        <translation>활성화됨</translation>
+    </message>
+    <message>
+        <source>Never</source>
+        <translation>없음</translation>
+    </message>
+    <message>
+        <source>No accounts yet, so everyone still uses the shared WebUI login. Add an Admin account first.</source>
+        <translation>아직 계정이 없어 모두 공유 WebUI 로그인을 사용 중입니다. 먼저 Admin 계정을 추가하세요.</translation>
+    </message>
+    <message>
+        <source>Couldn&apos;t read the user database. %1</source>
+        <translation>사용자 데이터베이스를 읽을 수 없습니다. %1</translation>
+    </message>
+    <message>
+        <source>Remove user</source>
+        <translation>사용자 제거</translation>
+    </message>
+    <message>
+        <source>Are you sure you want to remove the user &apos;%1&apos;?</source>
+        <translation>사용자 &apos;%1&apos;을(를) 제거하시겠습니까?</translation>
+    </message>
+    <message>
+        <source>Remove role</source>
+        <translation>역할 제거</translation>
+    </message>
+    <message>
+        <source>Are you sure you want to remove the role &apos;%1&apos;?</source>
+        <translation>역할 &apos;%1&apos;을(를) 제거하시겠습니까?</translation>
+    </message>
+    <message>
+        <source>Enable</source>
+        <translation>활성화</translation>
+    </message>
+    <message>
+        <source>Disable</source>
+        <translation>비활성화</translation>
+    </message>
+    <message>
+        <source>Log Out Everywhere</source>
+        <translation>모든 곳에서 로그아웃</translation>
+    </message>
+</context>
+<context>
+    <name>UserRoleDialog</name>
+    <message>
+        <source>Role</source>
+        <translation>역할</translation>
+    </message>
+    <message>
+        <source>Name:</source>
+        <translation>이름:</translation>
+    </message>
+    <message>
+        <source>Description:</source>
+        <translation>설명:</translation>
+    </message>
+    <message>
+        <source>Gives control over the PC or qBittorrent itself.</source>
+        <translation>PC 또는 qBittorrent 자체에 대한 제어 권한을 줍니다.</translation>
+    </message>
+    <message>
+        <source>Add Role</source>
+        <translation>역할 추가</translation>
+    </message>
+    <message>
+        <source>Edit Role</source>
+        <translation>역할 편집</translation>
+    </message>
+    <message>
+        <source>Enter a role name.</source>
+        <translation>역할 이름을 입력하세요.</translation>
+    </message>
+    <message>
+        <source>Role</source>
+        <translation>역할</translation>
+    </message>
+    <message>
+        <source>Name:</source>
+        <translation>이름:</translation>
+    </message>
+    <message>
+        <source>Description:</source>
+        <translation>설명:</translation>
+    </message>
+    <message>
+        <source>Gives control over the PC or qBittorrent itself.</source>
+        <translation>PC 또는 qBittorrent 자체에 대한 제어 권한을 줍니다.</translation>
+    </message>
+    <message>
+        <source>Add Role</source>
+        <translation>역할 추가</translation>
+    </message>
+    <message>
+        <source>Edit Role</source>
+        <translation>역할 편집</translation>
+    </message>
+    <message>
+        <source>Enter a role name.</source>
+        <translation>역할 이름을 입력하세요.</translation>
+    </message>
+</context>
+<context>
+    <name>WebUIActivityWidget</name>
+    <message>
+        <source>All</source>
+        <translation>모두</translation>
+    </message>
+    <message>
+        <source>Filter activity</source>
+        <translation>활동 필터</translation>
+    </message>
+    <message>
+        <source>Export...</source>
+        <translation>내보내기...</translation>
+    </message>
+    <message>
+        <source>User:</source>
+        <translation>사용자:</translation>
+    </message>
+    <message>
+        <source>Category:</source>
+        <translation>카테고리:</translation>
+    </message>
+    <message>
+        <source>Result:</source>
+        <translation>결과:</translation>
+    </message>
+    <message>
+        <source>Time</source>
+        <translation>시간</translation>
+    </message>
+    <message>
+        <source>User</source>
+        <translation>사용자</translation>
+    </message>
+    <message>
+        <source>Role</source>
+        <translation>역할</translation>
+    </message>
+    <message>
+        <source>Category</source>
+        <translation>카테고리</translation>
+    </message>
+    <message>
+        <source>Action</source>
+        <translation>동작</translation>
+    </message>
+    <message>
+        <source>Result</source>
+        <translation>결과</translation>
+    </message>
+    <message>
+        <source>The user database could not be opened. See the General tab for details.</source>
+        <translation>사용자 데이터베이스를 열 수 없습니다. 자세한 내용은 일반 탭을 확인하세요.</translation>
+    </message>
+    <message>
+        <source>Results (showing %1 out of %2)</source>
+        <translation>결과 (%2개 중 %1개 표시)</translation>
+    </message>
+    <message>
+        <source>Copy</source>
+        <translation>복사</translation>
+    </message>
+    <message>
+        <source>Export WebUI activity</source>
+        <translation>WebUI 활동 내보내기</translation>
+    </message>
+    <message>
+        <source>CSV files</source>
+        <translation>CSV 파일</translation>
+    </message>
+    <message>
+        <source>Couldn&apos;t save the file. Reason: %1</source>
+        <translation>파일을 저장할 수 없습니다. 이유: %1</translation>
+    </message>
+    <message>
+        <source>All</source>
+        <translation>모두</translation>
+    </message>
+    <message>
+        <source>Filter activity</source>
+        <translation>활동 필터</translation>
+    </message>
+    <message>
+        <source>Export...</source>
+        <translation>내보내기...</translation>
+    </message>
+    <message>
+        <source>User:</source>
+        <translation>사용자:</translation>
+    </message>
+    <message>
+        <source>Category:</source>
+        <translation>카테고리:</translation>
+    </message>
+    <message>
+        <source>Result:</source>
+        <translation>결과:</translation>
+    </message>
+    <message>
+        <source>Time</source>
+        <translation>시간</translation>
+    </message>
+    <message>
+        <source>User</source>
+        <translation>사용자</translation>
+    </message>
+    <message>
+        <source>Role</source>
+        <translation>역할</translation>
+    </message>
+    <message>
+        <source>Category</source>
+        <translation>카테고리</translation>
+    </message>
+    <message>
+        <source>Action</source>
+        <translation>동작</translation>
+    </message>
+    <message>
+        <source>Result</source>
+        <translation>결과</translation>
+    </message>
+    <message>
+        <source>The user database could not be opened. See the General tab for details.</source>
+        <translation>사용자 데이터베이스를 열 수 없습니다. 자세한 내용은 일반 탭을 확인하세요.</translation>
+    </message>
+    <message>
+        <source>Results (showing %1 out of %2)</source>
+        <translation>결과 (%2개 중 %1개 표시)</translation>
+    </message>
+    <message>
+        <source>Copy</source>
+        <translation>복사</translation>
+    </message>
+    <message>
+        <source>Export WebUI activity</source>
+        <translation>WebUI 활동 내보내기</translation>
+    </message>
+    <message>
+        <source>CSV files</source>
+        <translation>CSV 파일</translation>
+    </message>
+    <message>
+        <source>Couldn&apos;t save the file. Reason: %1</source>
+        <translation>파일을 저장할 수 없습니다. 이유: %1</translation>
     </message>
 </context>
 </TS>

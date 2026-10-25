@@ -227,6 +227,85 @@ The piece hash will be checked when it is requested for the first time by a peer
         <source>%1 needed · %2 free</source>
         <translation type="unfinished" />
     </message>
+    <message>
+        <source>Don&apos;t create subfolder</source>
+        <translation>不创建子文件夹</translation>
+    </message>
+    <message>
+        <source>Never show again</source>
+        <translation>不再显示</translation>
+    </message>
+    <message>
+        <source>Select None</source>
+        <translation>全不选</translation>
+    </message>
+    <message>
+        <source>Torrent options</source>
+        <translation>Torrent 选项</translation>
+    </message>
+    <message>
+        <source>Your role saves torrents in the default folders.</source>
+        <translation>您的角色会把 torrent 保存到默认文件夹。</translation>
+    </message>
+</context>
+<context>
+    <name>AdvancedSettings</name>
+    <message>
+        <source>General</source>
+        <translation>通用</translation>
+    </message>
+    <message>
+        <source>Network</source>
+        <translation>网络</translation>
+    </message>
+    <message>
+        <source>Storage</source>
+        <translation>存储</translation>
+    </message>
+    <message>
+        <source>Peers and trackers</source>
+        <translation>用户与 Tracker</translation>
+    </message>
+    <message>
+        <source>Program behavior</source>
+        <translation>程序行为</translation>
+    </message>
+    <message>
+        <source>Display and notifications</source>
+        <translation>显示与通知</translation>
+    </message>
+    <message>
+        <source>Network connection</source>
+        <translation>网络连接</translation>
+    </message>
+    <message>
+        <source>Security and privacy</source>
+        <translation>安全与隐私</translation>
+    </message>
+    <message>
+        <source>Connection tuning</source>
+        <translation>连接调优</translation>
+    </message>
+    <message>
+        <source>Saving and torrent files</source>
+        <translation>保存与种子文件</translation>
+    </message>
+    <message>
+        <source>Disk and memory</source>
+        <translation>磁盘与内存</translation>
+    </message>
+    <message>
+        <source>Trackers</source>
+        <translation>Tracker</translation>
+    </message>
+    <message>
+        <source>Peers and seeding</source>
+        <translation>用户与做种</translation>
+    </message>
+    <message>
+        <source>DHT and I2P</source>
+        <translation>DHT 与 I2P</translation>
+    </message>
 </context>
 <context>
     <name>CategoryFilterModel</name>
@@ -631,6 +710,14 @@ The piece hash will be checked when it is requested for the first time by a peer
         <source>More</source>
         <translation>更多</translation>
     </message>
+    <message>
+        <source>Change Password...</source>
+        <translation>更改密码...</translation>
+    </message>
+    <message>
+        <source>Signed in as</source>
+        <translation>登录身份</translation>
+    </message>
 </context>
 <context>
     <name>MainWindow</name>
@@ -937,6 +1024,34 @@ The piece hash will be checked when it is requested for the first time by a peer
     <message>
         <source>Resume Session</source>
         <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Global Speed Limits</source>
+        <translation>全局速度限制</translation>
+    </message>
+    <message>
+        <source>Pause Session</source>
+        <translation>暂停会话</translation>
+    </message>
+    <message>
+        <source>Pause session</source>
+        <translation>暂停会话</translation>
+    </message>
+    <message>
+        <source>Resume Session</source>
+        <translation>恢复会话</translation>
+    </message>
+    <message>
+        <source>Resume session</source>
+        <translation>恢复会话</translation>
+    </message>
+    <message>
+        <source>Your account can&apos;t add torrents.</source>
+        <translation>您的账户无法添加 torrent。</translation>
+    </message>
+    <message>
+        <source>[PAUSED]</source>
+        <translation>[已暂停]</translation>
     </message>
 </context>
 <context>
@@ -2535,6 +2650,190 @@ Use ';' to split multiple entries. Can use wildcard '*'.</source>
         <source>a@x.com;b@y.com,c@z.com - send two emails: the first to just a@x.com, the second to both b@y.com and c@z.com</source>
         <translation type="unfinished" />
     </message>
+    <message>
+        <source>0 means users are logged out after the session timeout.</source>
+        <translation>0 表示会话超时后用户将被注销。</translation>
+    </message>
+    <message>
+        <source>Access</source>
+        <translation>访问</translation>
+    </message>
+    <message>
+        <source>All the above</source>
+        <translation>以上所有项</translation>
+    </message>
+    <message>
+        <source>Allow this login when user accounts exist</source>
+        <translation>存在用户账户时仍允许此登录</translation>
+    </message>
+    <message>
+        <source>Also save search results</source>
+        <translation>同时保存搜索结果</translation>
+    </message>
+    <message>
+        <source>Also when addition is cancelled</source>
+        <translation>添加操作被取消时也删除 .torrent 文件</translation>
+    </message>
+    <message>
+        <source>Any of the above</source>
+        <translation>以上任意一项</translation>
+    </message>
+    <message>
+        <source>Below normal</source>
+        <translation>低于正常</translation>
+    </message>
+    <message>
+        <source>Changes to users, roles and logins apply at once.</source>
+        <translation>对用户、角色和登录的更改会立即生效。</translation>
+    </message>
+    <message>
+        <source>Don&apos;t create subfolder</source>
+        <translation>不创建子文件夹</translation>
+    </message>
+    <message>
+        <source>Example:</source>
+        <translation>例如：</translation>
+    </message>
+    <message>
+        <source>I2P (experimental)</source>
+        <translation>I2P（实验性）</translation>
+    </message>
+    <message>
+        <source>Keep WebUI activity log for:</source>
+        <translation>WebUI 活动日志保留时长：</translation>
+    </message>
+    <message>
+        <source>Keep unselected files in &quot;.unwanted&quot; folder</source>
+        <translation>将未选中的文件保留在 &quot;.unwanted&quot; 文件夹中</translation>
+    </message>
+    <message>
+        <source>Keep users logged in for:</source>
+        <translation>保持用户登录时长：</translation>
+    </message>
+    <message>
+        <source>Language:</source>
+        <translation>语言</translation>
+    </message>
+    <message>
+        <source>Lock account after consecutive failures:</source>
+        <translation>连续失败后锁定账户：</translation>
+    </message>
+    <message>
+        <source>Logins and Activity Log</source>
+        <translation>登录与活动日志</translation>
+    </message>
+    <message>
+        <source>Low</source>
+        <translation>低</translation>
+    </message>
+    <message>
+        <source>Maximum active checking torrents:</source>
+        <translation>最大活跃检查 Torrent 数：</translation>
+    </message>
+    <message>
+        <source>Medium</source>
+        <translation>中等</translation>
+    </message>
+    <message>
+        <source>No settings match</source>
+        <translation>没有匹配的设置</translation>
+    </message>
+    <message>
+        <source>Process memory priority:</source>
+        <translation>进程内存优先级：</translation>
+    </message>
+    <message>
+        <source>Save search tabs</source>
+        <translation>保存搜索选项卡</translation>
+    </message>
+    <message>
+        <source>Search UI</source>
+        <translation>搜索用户界面</translation>
+    </message>
+    <message>
+        <source>Search settings</source>
+        <translation>搜索设置</translation>
+    </message>
+    <message>
+        <source>Service:</source>
+        <translation>服务：</translation>
+    </message>
+    <message>
+        <source>Show console window</source>
+        <translation>显示控制台窗口</translation>
+    </message>
+    <message>
+        <source>Show the window when adding a torrent</source>
+        <translation>添加 torrent 时显示窗口</translation>
+    </message>
+    <message>
+        <source>Specify reverse proxy IPs (or subnets, e.g. 0.0.0.0/24) in order to use forwarded client address (X-Forwarded-For header). Use &apos;;&apos; to split multiple entries.</source>
+        <translation>指定反向代理 IP（或子网，如 0.0.0.0/24）以使用转发的客户端地址（X-Forwarded-For 标头）。使用 “;” 符号分割多个条目。</translation>
+    </message>
+    <message>
+        <source>Status bar and log</source>
+        <translation>状态栏和日志</translation>
+    </message>
+    <message>
+        <source>The WebUI activity log can be kept for 1 to 3650 days.</source>
+        <translation>WebUI 活动日志可保留 1 到 3650 天。</translation>
+    </message>
+    <message>
+        <source>The settings below apply with OK or Apply.</source>
+        <translation>下方的设置在点击“确定”或“应用”后生效。</translation>
+    </message>
+    <message>
+        <source>Tip: Encapsulate parameter with quotation marks to avoid text being cut off at whitespace (e.g., &quot;%N&quot;)</source>
+        <translation>提示：使用引号将参数扩起以防止文本被空白符分割（例如：&quot;%N&quot;）</translation>
+    </message>
+    <message>
+        <source>Transfer List</source>
+        <translation>传输列表</translation>
+    </message>
+    <message>
+        <source>Until the first user account is created, this login always works.</source>
+        <translation>在创建第一个用户账户之前，此登录始终可用。</translation>
+    </message>
+    <message>
+        <source>User Accounts</source>
+        <translation>用户账户</translation>
+    </message>
+    <message>
+        <source>Users can be kept logged in for 0 to 365 days.</source>
+        <translation>可让用户保持登录 0 到 365 天。</translation>
+    </message>
+    <message>
+        <source>Very low</source>
+        <translation>极低</translation>
+    </message>
+    <message>
+        <source>Warning! Data loss possible!</source>
+        <translation>警告！该操作可能会丢失数据！</translation>
+    </message>
+    <message>
+        <source>When Default Save/Incomplete Path changed:</source>
+        <translation>默认保存/不完整路径更改时：</translation>
+    </message>
+    <message>
+        <source>Whitelist for filtering HTTP Host header values.
+In order to defend against DNS rebinding attack,
+you should put in domain names used by WebUI server.
+
+Use &apos;;&apos; to split multiple entries. Can use wildcard &apos;*&apos;.</source>
+        <translation>白名单用于过滤 HTTP 头的 Host 参数。
+为了预防 DNS 反向绑定攻击，
+您应当指定供 Web UI 使用的域名。
+
+使用 &apos;;&apos; 区分不同的输入。可以使用通配符 &apos;*&apos;。</translation>
+    </message>
+    <message>
+        <source>You changed the address, port or HTTPS setting of the WebUI. Saving moves the WebUI, so Options will save, close and reload the page, the same as OK. If the page doesn&apos;t come back, open the WebUI at its new address.\n\nSave anyway?</source>
+        <translation>您更改了 WebUI 的地址、端口或 HTTPS 设置。保存会移动 WebUI，因此选项会像点击“确定”一样保存、关闭并重新加载页面。如果页面没有恢复，请在新地址打开 WebUI。\n\n仍要保存吗？</translation>
+    </message>
+    <message>
+        <source>lock for:</source>
+        <translation>锁定时长：</translation>
+    </message>
 </context>
 <context>
     <name>PeerListWidget</name>
@@ -2963,6 +3262,10 @@ Use ';' to split multiple entries. Can use wildcard '*'.</source>
         <source>Copy download URL</source>
         <translation type="unfinished" />
     </message>
+    <message>
+        <source>Copy path</source>
+        <translation>复制路径</translation>
+    </message>
 </context>
 <context>
     <name>ScanFoldersModel</name>
@@ -3075,6 +3378,142 @@ Use ';' to split multiple entries. Can use wildcard '*'.</source>
     <message>
         <source>The time it takes from receiving a request from a peer until we're sending the response back on the socket</source>
         <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Activity</source>
+        <translation>活动</translation>
+    </message>
+    <message>
+        <source>All time</source>
+        <translation>所有时间</translation>
+    </message>
+    <message>
+        <source>Before tracking began</source>
+        <translation>开始统计之前</translation>
+    </message>
+    <message>
+        <source>By month</source>
+        <translation>按月</translation>
+    </message>
+    <message>
+        <source>Counts the requests that added a download. Apps without a login, such as Sonarr and Radarr, are shown as (localhost). Downloads added in the desktop window are not counted.</source>
+        <translation>统计添加了下载的请求。没有登录的应用（如 Sonarr 和 Radarr）显示为 (localhost)。在桌面窗口中添加的下载不计入。</translation>
+    </message>
+    <message>
+        <source>Current speed:</source>
+        <translation>当前速度：</translation>
+    </message>
+    <message>
+        <source>DHT nodes:</source>
+        <translation>DHT 节点：</translation>
+    </message>
+    <message>
+        <source>Data discarded this session:</source>
+        <translation>本次会话丢弃的数据：</translation>
+    </message>
+    <message>
+        <source>Disk</source>
+        <translation>磁盘</translation>
+    </message>
+    <message>
+        <source>History</source>
+        <translation>历史</translation>
+    </message>
+    <message>
+        <source>Last 12 months</source>
+        <translation>最近 12 个月</translation>
+    </message>
+    <message>
+        <source>Last 7 days</source>
+        <translation>最近 7 天</translation>
+    </message>
+    <message>
+        <source>Last month</source>
+        <translation>上月</translation>
+    </message>
+    <message>
+        <source>Month</source>
+        <translation>月份</translation>
+    </message>
+    <message>
+        <source>Nothing added yet</source>
+        <translation>尚未添加任何内容</translation>
+    </message>
+    <message>
+        <source>Off</source>
+        <translation>关闭</translation>
+    </message>
+    <message>
+        <source>Overview</source>
+        <translation>概览</translation>
+    </message>
+    <message>
+        <source>Peers waiting on disk reads:</source>
+        <translation>等待读取磁盘的用户：</translation>
+    </message>
+    <message>
+        <source>Peers waiting on disk writes:</source>
+        <translation>等待写入磁盘的用户：</translation>
+    </message>
+    <message>
+        <source>Period</source>
+        <translation>时间段</translation>
+    </message>
+    <message>
+        <source>Request latency:</source>
+        <translation>请求延迟：</translation>
+    </message>
+    <message>
+        <source>Running for:</source>
+        <translation>已运行：</translation>
+    </message>
+    <message>
+        <source>Share ratio</source>
+        <translation>分享率</translation>
+    </message>
+    <message>
+        <source>Share ratio:</source>
+        <translation>分享率：</translation>
+    </message>
+    <message>
+        <source>Technical</source>
+        <translation>技术信息</translation>
+    </message>
+    <message>
+        <source>This month</source>
+        <translation>本月</translation>
+    </message>
+    <message>
+        <source>This session</source>
+        <translation>本次会话</translation>
+    </message>
+    <message>
+        <source>Today</source>
+        <translation>今天</translation>
+    </message>
+    <message>
+        <source>Torrents downloading:</source>
+        <translation>正在下载的 torrent：</translation>
+    </message>
+    <message>
+        <source>Torrents seeding:</source>
+        <translation>正在做种的 torrent：</translation>
+    </message>
+    <message>
+        <source>Torrents stopped:</source>
+        <translation>已停止的 torrent：</translation>
+    </message>
+    <message>
+        <source>Torrents with errors:</source>
+        <translation>出错的 torrent：</translation>
+    </message>
+    <message>
+        <source>Tracking since:</source>
+        <translation>统计开始于：</translation>
+    </message>
+    <message>
+        <source>WebUI downloads added, this month</source>
+        <translation>通过 WebUI 添加的下载，本月</translation>
     </message>
 </context>
 <context>
@@ -3862,6 +4301,10 @@ Use ';' to split multiple entries. Can use wildcard '*'.</source>
         <source>Content Path</source>
         <translation>内容路径</translation>
     </message>
+    <message>
+        <source>Remove all tags from selected torrents?</source>
+        <translation>从选中的 Torrent 中删除所有标签？</translation>
+    </message>
 </context>
 <context>
     <name>UpDownRatioDialog</name>
@@ -3917,6 +4360,14 @@ Use ';' to split multiple entries. Can use wildcard '*'.</source>
         <source>Action when the limit is reached</source>
         <translation>达到限制时采取的操作</translation>
     </message>
+    <message>
+        <source>Match all the limits</source>
+        <translation>符合所有限制</translation>
+    </message>
+    <message>
+        <source>Match any limit</source>
+        <translation>符合任何限制</translation>
+    </message>
 </context>
 <context>
     <name>about</name>
@@ -3934,6 +4385,10 @@ Use ';' to split multiple entries. Can use wildcard '*'.</source>
     <message>
         <source>Remove tracker</source>
         <translation>移除 tracker</translation>
+    </message>
+    <message>
+        <source>This choice is remembered for the next removal.</source>
+        <translation>此选择将在下次移除时被记住。</translation>
     </message>
 </context>
 <context>
@@ -4147,6 +4602,34 @@ Use ';' to split multiple entries. Can use wildcard '*'.</source>
         <source>Select plugins</source>
         <translation>选择插件</translation>
     </message>
+    <message>
+        <source>Category to search in</source>
+        <translation>要搜索的分类</translation>
+    </message>
+    <message>
+        <source>Close the selected search</source>
+        <translation>关闭所选搜索</translation>
+    </message>
+    <message>
+        <source>Empty search pattern</source>
+        <translation>无搜索关键词</translation>
+    </message>
+    <message>
+        <source>Search engines to use</source>
+        <translation>要使用的搜索引擎</translation>
+    </message>
+    <message>
+        <source>Search for torrents...</source>
+        <translation>搜索 torrent...</translation>
+    </message>
+    <message>
+        <source>Searches</source>
+        <translation>搜索</translation>
+    </message>
+    <message>
+        <source>Type a search above and press Enter.</source>
+        <translation>请在上方输入搜索内容并按 Enter。</translation>
+    </message>
 </context>
 <context>
     <name>PluginSelectDlg</name>
@@ -4185,6 +4668,10 @@ Use ';' to split multiple entries. Can use wildcard '*'.</source>
     <message>
         <source>Search plugins</source>
         <translation>搜索插件</translation>
+    </message>
+    <message>
+        <source>Warning: Be sure to comply with your country&apos;s copyright laws when downloading torrents from any of these search engines.</source>
+        <translation>警告：在下载来自这些搜索引擎的 torrent 时，请确认它符合您所在国家的版权法。</translation>
     </message>
 </context>
 <context>
@@ -4408,6 +4895,30 @@ Use ';' to split multiple entries. Can use wildcard '*'.</source>
         <source>qBittorrent icon</source>
         <translation>qBittorrent 图标</translation>
     </message>
+    <message>
+        <source>Based on:</source>
+        <translation>基于：</translation>
+    </message>
+    <message>
+        <source>Edition version:</source>
+        <translation>版本号：</translation>
+    </message>
+    <message>
+        <source>Kettle Edition is a personal build of qBittorrent that adds user accounts with roles for the WebUI and the desktop app, an activity log, and an installable WebUI with a phone layout. A kettle is a group of hawks soaring together. This is an unofficial build, not affiliated with the qBittorrent project.</source>
+        <translation>Kettle Edition 是 qBittorrent 的个人构建版，为 WebUI 和桌面应用增加了带角色的用户账户、活动日志，以及可安装、带手机布局的 WebUI。Kettle 是指一起盘旋翱翔的鹰群。这是非官方构建版，与 qBittorrent 项目无关。</translation>
+    </message>
+    <message>
+        <source>Maintainer:</source>
+        <translation>维护者：</translation>
+    </message>
+    <message>
+        <source>This edition</source>
+        <translation>此版本</translation>
+    </message>
+    <message>
+        <source>qBittorrent project:</source>
+        <translation>qBittorrent 项目：</translation>
+    </message>
 </context>
 <context>
     <name>OptionDialog</name>
@@ -4509,6 +5020,46 @@ Use ';' to split multiple entries. Can use wildcard '*'.</source>
     <message>
         <source>Open shared download window</source>
         <translation type="unfinished" />
+    </message>
+    <message>
+        <source>%1 of %2 shown</source>
+        <translation>显示 %2 项中的 %1 项</translation>
+    </message>
+    <message>
+        <source>%1 of %2 shown (%3 hidden)</source>
+        <translation>显示 %2 项中的 %1 项（%3 项已隐藏）</translation>
+    </message>
+    <message>
+        <source>Close all searches</source>
+        <translation>关闭所有搜索</translation>
+    </message>
+    <message>
+        <source>Close search</source>
+        <translation>关闭搜索</translation>
+    </message>
+    <message>
+        <source>Filter search results...</source>
+        <translation>过滤搜索结果...</translation>
+    </message>
+    <message>
+        <source>Finished: %1</source>
+        <translation>已完成：%1</translation>
+    </message>
+    <message>
+        <source>Refresh search</source>
+        <translation>刷新搜索</translation>
+    </message>
+    <message>
+        <source>Search aborted: %1</source>
+        <translation>搜索已中止：%1</translation>
+    </message>
+    <message>
+        <source>Search returned no results</source>
+        <translation>搜索未返回任何结果</translation>
+    </message>
+    <message>
+        <source>Searching: %1</source>
+        <translation>正在搜索：%1</translation>
     </message>
 </context>
 <context>
@@ -4647,6 +5198,10 @@ Use ';' to split multiple entries. Can use wildcard '*'.</source>
     <message>
         <source>Blocked opening RSS article URL. Only http:// and https:// links can be opened.</source>
         <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Details</source>
+        <translation>详细信息</translation>
     </message>
 </context>
 <context>
@@ -4925,6 +5480,10 @@ Supports the formats: S01E01, 1x1, 2017.12.31 and 31.12.2017 (Date formats also 
         <source>Import</source>
         <translation type="unfinished" />
     </message>
+    <message>
+        <source>Don&apos;t create subfolder</source>
+        <translation>不创建子文件夹</translation>
+    </message>
 </context>
 <context>
     <name>TrackerFiltersList</name>
@@ -5114,6 +5673,26 @@ Supports the formats: S01E01, 1x1, 2017.12.31 and 31.12.2017 (Date formats also 
         <source>Choose a log level...</source>
         <translation>选择日志级别...</translation>
     </message>
+    <message>
+        <source>Export...</source>
+        <translation>导出...</translation>
+    </message>
+    <message>
+        <source>Filter activity</source>
+        <translation>筛选活动</translation>
+    </message>
+    <message>
+        <source>Result:</source>
+        <translation>结果：</translation>
+    </message>
+    <message>
+        <source>User:</source>
+        <translation>用户：</translation>
+    </message>
+    <message>
+        <source>WebUI Activity</source>
+        <translation>WebUI 活动</translation>
+    </message>
 </context>
 <context>
     <name>TrackersFilterWidget</name>
@@ -5183,6 +5762,14 @@ Supports the formats: S01E01, 1x1, 2017.12.31 and 31.12.2017 (Date formats also 
     <message>
         <source>Torrent share limits</source>
         <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Torrent share limits</source>
+        <translation>Torrent 分享限制</translation>
+    </message>
+    <message>
+        <source>Your role saves torrents in the default folders.</source>
+        <translation>您的角色会把 torrent 保存到默认文件夹。</translation>
     </message>
 </context>
 <context>
@@ -5282,6 +5869,14 @@ Supports the formats: S01E01, 1x1, 2017.12.31 and 31.12.2017 (Date formats also 
     <message>
         <source>Invalid Username or Password.</source>
         <translation>无效的用户名或密码。</translation>
+    </message>
+    <message>
+        <source>A kettle is a group of hawks soaring together.</source>
+        <translation>Kettle 是指一起盘旋翱翔的鹰群。</translation>
+    </message>
+    <message>
+        <source>Sign in</source>
+        <translation>登录</translation>
     </message>
 </context>
 <context>
@@ -5511,6 +6106,22 @@ Supports the formats: S01E01, 1x1, 2017.12.31 and 31.12.2017 (Date formats also 
         <source>If checked, filenames starting with a period punctuation mark `.` will not be added to the created torrent.</source>
         <translation type="unfinished" />
     </message>
+    <message>
+        <source>Align to piece boundary for files larger than:</source>
+        <translation>当文件大于指定大小时对齐文件块边界：</translation>
+    </message>
+    <message>
+        <source>Optimize alignment</source>
+        <translation>优化对齐</translation>
+    </message>
+    <message>
+        <source>Private torrent (Won&apos;t distribute on DHT network)</source>
+        <translation>私有 torrent  (不会在 DHT 网络上分发)</translation>
+    </message>
+    <message>
+        <source>Start seeding immediately</source>
+        <translation>完成后开始做种</translation>
+    </message>
 </context>
 <context>
     <name>DownloadFromURLDialog</name>
@@ -5621,6 +6232,10 @@ Supports the formats: S01E01, 1x1, 2017.12.31 and 31.12.2017 (Date formats also 
         <source>Failed to set speed limits</source>
         <translation type="unfinished" />
     </message>
+    <message>
+        <source>Speed limits</source>
+        <translation>速度限制</translation>
+    </message>
 </context>
 <context>
     <name>ListWidget</name>
@@ -5631,6 +6246,10 @@ Supports the formats: S01E01, 1x1, 2017.12.31 and 31.12.2017 (Date formats also 
     <message>
         <source>Resize</source>
         <translation>调整大小</translation>
+    </message>
+    <message>
+        <source>Reset Auto Width</source>
+        <translation>重置自动列宽</translation>
     </message>
 </context>
 <context>
@@ -5646,6 +6265,10 @@ Supports the formats: S01E01, 1x1, 2017.12.31 and 31.12.2017 (Date formats also 
     <message>
         <source>Rotate this API key? The current key will immediately stop working and a new key will be generated.</source>
         <translation>重置该 API key 吗？当前 key 会立即停止工作，会生成新 key。</translation>
+    </message>
+    <message>
+        <source>Generate an API key? This key can be used to interact with qBittorrent&apos;s API.</source>
+        <translation>生成 API key 吗？这枚 key 可用于和 qBittorrent 的 API 互动。</translation>
     </message>
 </context>
 <context>
@@ -5761,6 +6384,54 @@ Supports the formats: S01E01, 1x1, 2017.12.31 and 31.12.2017 (Date formats also 
         <source>Remove torrent</source>
         <translation type="unfinished" />
     </message>
+    <message>
+        <source>Action when the limit is reached:</source>
+        <translation>达到限制时采取的操作：</translation>
+    </message>
+    <message>
+        <source>Default (%1)</source>
+        <translation>默认 (%1)</translation>
+    </message>
+    <message>
+        <source>From category</source>
+        <translation>来自分类</translation>
+    </message>
+    <message>
+        <source>From category (%1)</source>
+        <translation>来自分类 (%1)</translation>
+    </message>
+    <message>
+        <source>Inactive seeding time:</source>
+        <translation>不活跃的做种时间：</translation>
+    </message>
+    <message>
+        <source>Match all the limits</source>
+        <translation>符合所有限制</translation>
+    </message>
+    <message>
+        <source>Match any limit</source>
+        <translation>符合任何限制</translation>
+    </message>
+    <message>
+        <source>Mode:</source>
+        <translation>模式：</translation>
+    </message>
+    <message>
+        <source>Ratio:</source>
+        <translation>比率</translation>
+    </message>
+    <message>
+        <source>Seeding time:</source>
+        <translation>做种时间：</translation>
+    </message>
+    <message>
+        <source>Set to</source>
+        <translation>已设为</translation>
+    </message>
+    <message>
+        <source>Unlimited</source>
+        <translation>无限制的</translation>
+    </message>
 </context>
 <context>
     <name>TorrentContent</name>
@@ -5771,6 +6442,208 @@ Supports the formats: S01E01, 1x1, 2017.12.31 and 31.12.2017 (Date formats also 
     <message>
         <source>Not available for folders</source>
         <translation type="unfinished" />
+    </message>
+</context>
+<context>
+    <name>UserAccounts</name>
+    <message>
+        <source>(this browser)</source>
+        <translation>（此浏览器）</translation>
+    </message>
+    <message>
+        <source>A role decides what its users are allowed to do.</source>
+        <translation>角色决定其用户可以做什么。</translation>
+    </message>
+    <message>
+        <source>Add Role</source>
+        <translation>添加角色</translation>
+    </message>
+    <message>
+        <source>Add Role...</source>
+        <translation>添加角色...</translation>
+    </message>
+    <message>
+        <source>Add User</source>
+        <translation>添加用户</translation>
+    </message>
+    <message>
+        <source>Add User...</source>
+        <translation>添加用户...</translation>
+    </message>
+    <message>
+        <source>Are you sure you want to remove the role &apos;%1&apos;?</source>
+        <translation>确定要移除角色“%1”吗？</translation>
+    </message>
+    <message>
+        <source>Are you sure you want to remove the user &apos;%1&apos;?</source>
+        <translation>确定要移除用户“%1”吗？</translation>
+    </message>
+    <message>
+        <source>At least %1 characters</source>
+        <translation>至少 %1 个字符</translation>
+    </message>
+    <message>
+        <source>Browser</source>
+        <translation>浏览器</translation>
+    </message>
+    <message>
+        <source>Browsers and devices where someone is logged in with a user account.</source>
+        <translation>有人使用用户账户登录的浏览器和设备。</translation>
+    </message>
+    <message>
+        <source>Change Password</source>
+        <translation>更改密码</translation>
+    </message>
+    <message>
+        <source>Confirm password:</source>
+        <translation>确认密码：</translation>
+    </message>
+    <message>
+        <source>Created</source>
+        <translation>创建时间</translation>
+    </message>
+    <message>
+        <source>Current password:</source>
+        <translation>当前密码：</translation>
+    </message>
+    <message>
+        <source>Description</source>
+        <translation>描述</translation>
+    </message>
+    <message>
+        <source>Description:</source>
+        <translation>描述：</translation>
+    </message>
+    <message>
+        <source>Disable</source>
+        <translation>禁用</translation>
+    </message>
+    <message>
+        <source>Disable this account</source>
+        <translation>禁用此账户</translation>
+    </message>
+    <message>
+        <source>Edit Role</source>
+        <translation>编辑角色</translation>
+    </message>
+    <message>
+        <source>Edit User</source>
+        <translation>编辑用户</translation>
+    </message>
+    <message>
+        <source>Edit...</source>
+        <translation>编辑...</translation>
+    </message>
+    <message>
+        <source>Enable</source>
+        <translation>启用</translation>
+    </message>
+    <message>
+        <source>Enter a role name.</source>
+        <translation>请输入角色名称。</translation>
+    </message>
+    <message>
+        <source>Enter a username.</source>
+        <translation>请输入用户名。</translation>
+    </message>
+    <message>
+        <source>Expires</source>
+        <translation>到期时间</translation>
+    </message>
+    <message>
+        <source>Gives control over the PC or qBittorrent itself</source>
+        <translation>授予对电脑或 qBittorrent 本身的控制权</translation>
+    </message>
+    <message>
+        <source>Last active</source>
+        <translation>最后活动</translation>
+    </message>
+    <message>
+        <source>Last login</source>
+        <translation>上次登录</translation>
+    </message>
+    <message>
+        <source>Leave empty to keep the current password</source>
+        <translation>留空以保留当前密码</translation>
+    </message>
+    <message>
+        <source>Log Out</source>
+        <translation>注销</translation>
+    </message>
+    <message>
+        <source>Log Out Everywhere</source>
+        <translation>在所有位置注销</translation>
+    </message>
+    <message>
+        <source>Logged In</source>
+        <translation>已登录</translation>
+    </message>
+    <message>
+        <source>Logged in</source>
+        <translation>登录时间</translation>
+    </message>
+    <message>
+        <source>New password:</source>
+        <translation>新密码：</translation>
+    </message>
+    <message>
+        <source>No accounts yet, so everyone still uses the shared WebUI login. Add an Admin account first.</source>
+        <translation>目前还没有账户，所以所有人仍使用共享的 WebUI 登录。请先添加管理员账户。</translation>
+    </message>
+    <message>
+        <source>People who can log in to the WebUI with their own username and password.</source>
+        <translation>可以用自己的用户名和密码登录 WebUI 的人。</translation>
+    </message>
+    <message>
+        <source>Permissions</source>
+        <translation>权限</translation>
+    </message>
+    <message>
+        <source>Role</source>
+        <translation>角色</translation>
+    </message>
+    <message>
+        <source>Role:</source>
+        <translation>角色：</translation>
+    </message>
+    <message>
+        <source>Roles</source>
+        <translation>角色</translation>
+    </message>
+    <message>
+        <source>The password must be at least %1 characters long.</source>
+        <translation>密码长度至少为 %1 个字符。</translation>
+    </message>
+    <message>
+        <source>The passwords don&apos;t match.</source>
+        <translation>两次输入的密码不一致。</translation>
+    </message>
+    <message>
+        <source>Users</source>
+        <translation>用户</translation>
+    </message>
+    <message>
+        <source>Your password was changed. Other browsers and devices where you were logged in have been logged out.</source>
+        <translation>您的密码已更改。您在其他浏览器和设备上的登录已被注销。</translation>
+    </message>
+</context>
+<context>
+    <name>WebUIActivity</name>
+    <message>
+        <source>Action</source>
+        <translation>操作</translation>
+    </message>
+    <message>
+        <source>Result</source>
+        <translation>结果</translation>
+    </message>
+    <message>
+        <source>Role</source>
+        <translation>角色</translation>
+    </message>
+    <message>
+        <source>Time</source>
+        <translation>时间</translation>
     </message>
 </context>
 </TS>

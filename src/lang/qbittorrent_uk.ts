@@ -141,6 +141,62 @@
         <source>The free IP to Country Lite database by DB-IP is used for resolving the countries of peers. The database is licensed under the Creative Commons Attribution 4.0 International License</source>
         <translation>Для визначення країн пірів використовується відкрита база даних DB-IP, яка ліцензується відповідно до Creative Commons Attribution 4.0 International</translation>
     </message>
+    <message>
+        <source>This edition</source>
+        <translation>Це видання</translation>
+    </message>
+    <message>
+        <source>Edition version:</source>
+        <translation>Версія видання:</translation>
+    </message>
+    <message>
+        <source>Based on:</source>
+        <translation>Засновано на:</translation>
+    </message>
+    <message>
+        <source>Maintainer:</source>
+        <translation>Супровідник:</translation>
+    </message>
+    <message>
+        <source>qBittorrent project:</source>
+        <translation>Проєкт qBittorrent:</translation>
+    </message>
+    <message>
+        <source>Kettle Edition is a personal build of qBittorrent that adds user accounts with roles for the WebUI and the desktop app, an activity log, and an installable WebUI with a phone layout. A kettle is a group of hawks soaring together. This is an unofficial build, not affiliated with the qBittorrent project.</source>
+        <translation>Kettle Edition — особиста збірка qBittorrent, що додає облікові записи користувачів з ролями для WebUI і настільного застосунку, журнал дій та WebUI, який можна встановити, з розміткою для телефона. Kettle — це зграя яструбів, що линуть разом. Це неофіційна збірка, не пов’язана з проєктом qBittorrent.</translation>
+    </message>
+    <message>
+        <source>N/A</source>
+        <translation>Н/Д</translation>
+    </message>
+    <message>
+        <source>This edition</source>
+        <translation>Це видання</translation>
+    </message>
+    <message>
+        <source>Edition version:</source>
+        <translation>Версія видання:</translation>
+    </message>
+    <message>
+        <source>Based on:</source>
+        <translation>Засновано на:</translation>
+    </message>
+    <message>
+        <source>Maintainer:</source>
+        <translation>Супровідник:</translation>
+    </message>
+    <message>
+        <source>qBittorrent project:</source>
+        <translation>Проєкт qBittorrent:</translation>
+    </message>
+    <message>
+        <source>Kettle Edition is a personal build of qBittorrent that adds user accounts with roles for the WebUI and the desktop app, an activity log, and an installable WebUI with a phone layout. A kettle is a group of hawks soaring together. This is an unofficial build, not affiliated with the qBittorrent project.</source>
+        <translation>Kettle Edition — особиста збірка qBittorrent, що додає облікові записи користувачів з ролями для WebUI і настільного застосунку, журнал дій та WebUI, який можна встановити, з розміткою для телефона. Kettle — це зграя яструбів, що линуть разом. Це неофіційна збірка, не пов’язана з проєктом qBittorrent.</translation>
+    </message>
+    <message>
+        <source>N/A</source>
+        <translation>Н/Д</translation>
+    </message>
 </context>
 <context>
     <name>AbstractFileStorage</name>
@@ -1459,6 +1515,62 @@
         <location filename="../gui/advancedsettings.cpp" line="925"/>
         <source>Embedded tracker port</source>
         <translation>Порт вбудованого трекера</translation>
+    </message>
+    <message>
+        <source>Network</source>
+        <translation>Мережа</translation>
+    </message>
+    <message>
+        <source>Storage</source>
+        <translation>Сховище</translation>
+    </message>
+    <message>
+        <source>Peers and trackers</source>
+        <translation>Піри та трекери</translation>
+    </message>
+    <message>
+        <source>Program behavior</source>
+        <translation>Поведінка програми</translation>
+    </message>
+    <message>
+        <source>Display and notifications</source>
+        <translation>Відображення та сповіщення</translation>
+    </message>
+    <message>
+        <source>Network connection</source>
+        <translation>Мережеве з'єднання</translation>
+    </message>
+    <message>
+        <source>Security and privacy</source>
+        <translation>Безпека та конфіденційність</translation>
+    </message>
+    <message>
+        <source>Connection tuning</source>
+        <translation>Налаштування з'єднання</translation>
+    </message>
+    <message>
+        <source>Saving and torrent files</source>
+        <translation>Збереження та торент-файли</translation>
+    </message>
+    <message>
+        <source>Disk and memory</source>
+        <translation>Диск і пам'ять</translation>
+    </message>
+    <message>
+        <source>Peers and seeding</source>
+        <translation>Піри та роздача</translation>
+    </message>
+    <message>
+        <source>DHT and I2P</source>
+        <translation>DHT та I2P</translation>
+    </message>
+    <message>
+        <source>General</source>
+        <translation>Загальні</translation>
+    </message>
+    <message>
+        <source>Trackers</source>
+        <translation>Трекери</translation>
     </message>
 </context>
 <context>
@@ -3480,6 +3592,22 @@ Supports the formats: S01E01, 1x1, 2017.12.31 and 31.12.2017 (Date formats also 
         <source>Remove torrent</source>
         <translation>Видалити торрент</translation>
     </message>
+    <message>
+        <source>This choice is remembered for the next removal.</source>
+        <translation>Цей вибір буде запам’ятано для наступного видалення.</translation>
+    </message>
+    <message>
+        <source>Remove</source>
+        <translation>Вилучити</translation>
+    </message>
+    <message>
+        <source>This choice is remembered for the next removal.</source>
+        <translation>Цей вибір буде запам’ятано для наступного видалення.</translation>
+    </message>
+    <message>
+        <source>Remove</source>
+        <translation>Вилучити</translation>
+    </message>
 </context>
 <context>
     <name>DownloadFromURLDialog</name>
@@ -3553,6 +3681,14 @@ Supports the formats: S01E01, 1x1, 2017.12.31 and 31.12.2017 (Date formats also 
         <location filename="../gui/executionlogwidget.cpp" line="99"/>
         <source>Clear</source>
         <translation>Очистити</translation>
+    </message>
+    <message>
+        <source>WebUI Activity</source>
+        <translation>Активність WebUI</translation>
+    </message>
+    <message>
+        <source>WebUI Activity</source>
+        <translation>Активність WebUI</translation>
     </message>
 </context>
 <context>
@@ -4726,6 +4862,46 @@ Minimum requirement: %2.</source>
         <location filename="../gui/mainwindow.cpp" line="1346"/>
         <source>Torrent Files</source>
         <translation>Torrent-файли</translation>
+    </message>
+    <message>
+        <source>Kettle Edition %1 is available.</source>
+        <translation>Доступна Kettle Edition %1.</translation>
+    </message>
+    <message>
+        <source>qBittorrent Kettle Edition %1 is available. It is downloaded now and installed at 4:00 AM, or when qBittorrent starts next.</source>
+        <translation>Доступна qBittorrent Kettle Edition %1. Її завантажують зараз, а встановлять о 4:00 або під час наступного запуску qBittorrent.</translation>
+    </message>
+    <message>
+        <source>qBittorrent Kettle Edition %1 is available. It is downloaded now. Turn on &quot;Automatically install Kettle Edition updates&quot; in Options to install it.</source>
+        <translation>Доступна qBittorrent Kettle Edition %1. Її завантажують зараз. Щоб встановити, увімкніть у Параметрах «Автоматично встановлювати оновлення Kettle Edition».</translation>
+    </message>
+    <message>
+        <source>You have the latest qBittorrent Kettle Edition (%1).</source>
+        <translation>У вас остання версія qBittorrent Kettle Edition (%1).</translation>
+    </message>
+    <message>
+        <source>Could not check for qBittorrent Kettle Edition updates. See the Execution Log for details.</source>
+        <translation>Не вдалося перевірити оновлення qBittorrent Kettle Edition. Подробиці в журналі виконання.</translation>
+    </message>
+    <message>
+        <source>Kettle Edition %1 is available.</source>
+        <translation>Доступна Kettle Edition %1.</translation>
+    </message>
+    <message>
+        <source>qBittorrent Kettle Edition %1 is available. It is downloaded now and installed at 4:00 AM, or when qBittorrent starts next.</source>
+        <translation>Доступна qBittorrent Kettle Edition %1. Її завантажують зараз, а встановлять о 4:00 або під час наступного запуску qBittorrent.</translation>
+    </message>
+    <message>
+        <source>qBittorrent Kettle Edition %1 is available. It is downloaded now. Turn on &quot;Automatically install Kettle Edition updates&quot; in Options to install it.</source>
+        <translation>Доступна qBittorrent Kettle Edition %1. Її завантажують зараз. Щоб встановити, увімкніть у Параметрах «Автоматично встановлювати оновлення Kettle Edition».</translation>
+    </message>
+    <message>
+        <source>You have the latest qBittorrent Kettle Edition (%1).</source>
+        <translation>У вас остання версія qBittorrent Kettle Edition (%1).</translation>
+    </message>
+    <message>
+        <source>Could not check for qBittorrent Kettle Edition updates. See the Execution Log for details.</source>
+        <translation>Не вдалося перевірити оновлення qBittorrent Kettle Edition. Подробиці в журналі виконання.</translation>
     </message>
 </context>
 <context>
@@ -8515,6 +8691,190 @@ Check the Execution Log for errors.</source>
         <source>Length Error</source>
         <translation>Помилка довжини</translation>
     </message>
+    <message>
+        <source>Search settings</source>
+        <translation>Пошук налаштувань</translation>
+    </message>
+    <message>
+        <source>No settings match</source>
+        <translation>Немає відповідних налаштувань</translation>
+    </message>
+    <message>
+        <source>User Accounts</source>
+        <translation>Облікові записи</translation>
+    </message>
+    <message>
+        <source>Automatically install Kettle Edition updates</source>
+        <translation>Автоматично встановлювати оновлення Kettle Edition</translation>
+    </message>
+    <message>
+        <source>Status bar and log</source>
+        <translation>Рядок стану та журнал</translation>
+    </message>
+    <message>
+        <source>Files</source>
+        <translation>Файли</translation>
+    </message>
+    <message>
+        <source>Checking</source>
+        <translation>Перевірка</translation>
+    </message>
+    <message>
+        <source>Until the first user account is created, this login always works.</source>
+        <translation>Доки не створено перший обліковий запис, цей вхід завжди працює.</translation>
+    </message>
+    <message>
+        <source>Allow this login when user accounts exist</source>
+        <translation>Дозволити цей вхід, коли є облікові записи</translation>
+    </message>
+    <message>
+        <source>Access</source>
+        <translation>Доступ</translation>
+    </message>
+    <message>
+        <source>Changes to users, roles and logins apply at once. The settings below apply with OK or Apply.</source>
+        <translation>Зміни користувачів, ролей і входів застосовуються одразу. Налаштування нижче застосовуються кнопкою «ОК» або «Застосувати».</translation>
+    </message>
+    <message>
+        <source>Logins and Activity Log</source>
+        <translation>Входи та журнал дій</translation>
+    </message>
+    <message>
+        <source>0 means users are logged out after the session timeout.</source>
+        <translation>0 означає, що користувачі виходять після завершення часу сеансу.</translation>
+    </message>
+    <message>
+        <source>Keep users logged in for:</source>
+        <translation>Тримати користувачів у системі:</translation>
+    </message>
+    <message>
+        <source>Until session timeout</source>
+        <translation>До завершення часу сеансу</translation>
+    </message>
+    <message>
+        <source> days</source>
+        <translation> дн.</translation>
+    </message>
+    <message>
+        <source>Lock account after consecutive failures:</source>
+        <translation>Блокувати обліковий запис після послідовних невдач:</translation>
+    </message>
+    <message>
+        <source>Keep WebUI activity log for:</source>
+        <translation>Зберігати журнал дій WebUI:</translation>
+    </message>
+    <message>
+        <source>lock for:</source>
+        <translation>блокувати на:</translation>
+    </message>
+    <message>
+        <source>%1 works best with Windows dark mode</source>
+        <translation>%1 найкраще працює з темним режимом Windows</translation>
+    </message>
+    <message>
+        <source>WebUI address</source>
+        <translation>Адреса WebUI</translation>
+    </message>
+    <message>
+        <source>With the WebUI address set to %1, only this PC can reach the WebUI. Remote access, including through a reverse proxy on another machine, will stop working.
+
+Save anyway?</source>
+        <translation>Якщо адреса WebUI — %1, до WebUI зможе підключитися лише цей комп’ютер. Віддалений доступ, зокрема через зворотний проксі на іншому комп’ютері, перестане працювати.
+
+Все одно зберегти?</translation>
+    </message>
+    <message>
+        <source>Search settings</source>
+        <translation>Пошук налаштувань</translation>
+    </message>
+    <message>
+        <source>No settings match</source>
+        <translation>Немає відповідних налаштувань</translation>
+    </message>
+    <message>
+        <source>User Accounts</source>
+        <translation>Облікові записи</translation>
+    </message>
+    <message>
+        <source>Automatically install Kettle Edition updates</source>
+        <translation>Автоматично встановлювати оновлення Kettle Edition</translation>
+    </message>
+    <message>
+        <source>Status bar and log</source>
+        <translation>Рядок стану та журнал</translation>
+    </message>
+    <message>
+        <source>Files</source>
+        <translation>Файли</translation>
+    </message>
+    <message>
+        <source>Checking</source>
+        <translation>Перевірка</translation>
+    </message>
+    <message>
+        <source>Until the first user account is created, this login always works.</source>
+        <translation>Доки не створено перший обліковий запис, цей вхід завжди працює.</translation>
+    </message>
+    <message>
+        <source>Allow this login when user accounts exist</source>
+        <translation>Дозволити цей вхід, коли є облікові записи</translation>
+    </message>
+    <message>
+        <source>Access</source>
+        <translation>Доступ</translation>
+    </message>
+    <message>
+        <source>Changes to users, roles and logins apply at once. The settings below apply with OK or Apply.</source>
+        <translation>Зміни користувачів, ролей і входів застосовуються одразу. Налаштування нижче застосовуються кнопкою «ОК» або «Застосувати».</translation>
+    </message>
+    <message>
+        <source>Logins and Activity Log</source>
+        <translation>Входи та журнал дій</translation>
+    </message>
+    <message>
+        <source>0 means users are logged out after the session timeout.</source>
+        <translation>0 означає, що користувачі виходять після завершення часу сеансу.</translation>
+    </message>
+    <message>
+        <source>Keep users logged in for:</source>
+        <translation>Тримати користувачів у системі:</translation>
+    </message>
+    <message>
+        <source>Until session timeout</source>
+        <translation>До завершення часу сеансу</translation>
+    </message>
+    <message>
+        <source> days</source>
+        <translation> дн.</translation>
+    </message>
+    <message>
+        <source>Lock account after consecutive failures:</source>
+        <translation>Блокувати обліковий запис після послідовних невдач:</translation>
+    </message>
+    <message>
+        <source>Keep WebUI activity log for:</source>
+        <translation>Зберігати журнал дій WebUI:</translation>
+    </message>
+    <message>
+        <source>lock for:</source>
+        <translation>блокувати на:</translation>
+    </message>
+    <message>
+        <source>%1 works best with Windows dark mode</source>
+        <translation>%1 найкраще працює з темним режимом Windows</translation>
+    </message>
+    <message>
+        <source>WebUI address</source>
+        <translation>Адреса WebUI</translation>
+    </message>
+    <message>
+        <source>With the WebUI address set to %1, only this PC can reach the WebUI. Remote access, including through a reverse proxy on another machine, will stop working.
+
+Save anyway?</source>
+        <translation>Якщо адреса WebUI — %1, до WebUI зможе підключитися лише цей комп’ютер. Віддалений доступ, зокрема через зворотний проксі на іншому комп’ютері, перестане працювати.
+
+Все одно зберегти?</translation>
+    </message>
 </context>
 <context>
     <name>PeerInfo</name>
@@ -8767,6 +9127,22 @@ Check the Execution Log for errors.</source>
         <location filename="../gui/properties/peerlistwidget.cpp" line="309"/>
         <source>Copy IP:port</source>
         <translation>Копіювати IP:порт</translation>
+    </message>
+    <message>
+        <source>Reset auto width</source>
+        <translation>Скинути автоширину</translation>
+    </message>
+    <message>
+        <source>Fit all non-hidden columns to their contents again, and forget the widths that were set by hand</source>
+        <translation>Знову підігнати всі видимі стовпці під їхній вміст і забути ширину, задану вручну</translation>
+    </message>
+    <message>
+        <source>Reset auto width</source>
+        <translation>Скинути автоширину</translation>
+    </message>
+    <message>
+        <source>Fit all non-hidden columns to their contents again, and forget the widths that were set by hand</source>
+        <translation>Знову підігнати всі видимі стовпці під їхній вміст і забути ширину, задану вручну</translation>
     </message>
 </context>
 <context>
@@ -10157,6 +10533,14 @@ Those plugins were disabled.</source>
         <source>Open link</source>
         <translation>Відкрити посилання</translation>
     </message>
+    <message>
+        <source>Details</source>
+        <translation>Подробиці</translation>
+    </message>
+    <message>
+        <source>Details</source>
+        <translation>Подробиці</translation>
+    </message>
 </context>
 <context>
     <name>SearchController</name>
@@ -10511,6 +10895,70 @@ Those plugins were disabled.</source>
         <source>Resize all non-hidden columns to the size of their contents</source>
         <translation>Змінити розмір усіх не прихованих стовпців до розміру їх вмісту</translation>
     </message>
+    <message>
+        <source>%1 of %2 shown (%3 hidden)</source>
+        <translation>Показано %1 із %2 (приховано %3)</translation>
+    </message>
+    <message>
+        <source>%1 of %2 shown</source>
+        <translation>Показано %1 із %2</translation>
+    </message>
+    <message>
+        <source>Searching: %1</source>
+        <translation>Пошук: %1</translation>
+    </message>
+    <message>
+        <source>Finished: %1</source>
+        <translation>Завершено: %1</translation>
+    </message>
+    <message>
+        <source>Search aborted: %1</source>
+        <translation>Пошук перервано: %1</translation>
+    </message>
+    <message>
+        <source>Reset auto width</source>
+        <translation>Скинути автоширину</translation>
+    </message>
+    <message>
+        <source>Fit all non-hidden columns to their contents again, and forget the widths that were set by hand</source>
+        <translation>Знову підігнати всі видимі стовпці під їхній вміст і забути ширину, задану вручну</translation>
+    </message>
+    <message>
+        <source>Unknown</source>
+        <translation>Невідомо</translation>
+    </message>
+    <message>
+        <source>%1 of %2 shown (%3 hidden)</source>
+        <translation>Показано %1 із %2 (приховано %3)</translation>
+    </message>
+    <message>
+        <source>%1 of %2 shown</source>
+        <translation>Показано %1 із %2</translation>
+    </message>
+    <message>
+        <source>Searching: %1</source>
+        <translation>Пошук: %1</translation>
+    </message>
+    <message>
+        <source>Finished: %1</source>
+        <translation>Завершено: %1</translation>
+    </message>
+    <message>
+        <source>Search aborted: %1</source>
+        <translation>Пошук перервано: %1</translation>
+    </message>
+    <message>
+        <source>Reset auto width</source>
+        <translation>Скинути автоширину</translation>
+    </message>
+    <message>
+        <source>Fit all non-hidden columns to their contents again, and forget the widths that were set by hand</source>
+        <translation>Знову підігнати всі видимі стовпці під їхній вміст і забути ширину, задану вручну</translation>
+    </message>
+    <message>
+        <source>Unknown</source>
+        <translation>Невідомо</translation>
+    </message>
 </context>
 <context>
     <name>SearchPluginManager</name>
@@ -10808,6 +11256,14 @@ Those plugins were disabled.</source>
         <source>Couldn&apos;t update &quot;%1&quot; search engine plugin. %2</source>
         <translation type="unfinished">Не вдалося оновити пошуковий додаток &quot;%1&quot;. %2</translation>
     </message>
+    <message>
+        <source>Install Kettle Plugins</source>
+        <translation>Встановити плагіни Kettle</translation>
+    </message>
+    <message>
+        <source>Install Kettle Plugins</source>
+        <translation>Встановити плагіни Kettle</translation>
+    </message>
 </context>
 <context>
     <name>SearchPluginSourceDialog</name>
@@ -10947,6 +11403,90 @@ Click the &quot;Search plugins...&quot; button at the bottom right of the window
         <location filename="../gui/search/searchwidget.ui" line="58"/>
         <source>Stop</source>
         <translation>Зупинити</translation>
+    </message>
+    <message>
+        <source>Searches</source>
+        <translation>Пошуки</translation>
+    </message>
+    <message>
+        <source>Close the selected search</source>
+        <translation>Закрити вибраний пошук</translation>
+    </message>
+    <message>
+        <source>Search for torrents...</source>
+        <translation>Шукати торенти...</translation>
+    </message>
+    <message>
+        <source>Category to search in</source>
+        <translation>Категорія для пошуку</translation>
+    </message>
+    <message>
+        <source>Search engines to use</source>
+        <translation>Пошукові системи для використання</translation>
+    </message>
+    <message>
+        <source>There aren&apos;t any search plugins installed.
+Click the &quot;Search plugins...&quot; button at the top right of the window to install some.</source>
+        <translation>Не встановлено жодного пошукового плагіна.
+Натисніть кнопку «Пошукові плагіни...» у правому верхньому куті вікна, щоб встановити їх.</translation>
+    </message>
+    <message>
+        <source>Type a search above and press Enter.</source>
+        <translation>Введіть запит вище та натисніть Enter.</translation>
+    </message>
+    <message>
+        <source>Refresh search</source>
+        <translation>Оновити пошук</translation>
+    </message>
+    <message>
+        <source>Close search</source>
+        <translation>Закрити пошук</translation>
+    </message>
+    <message>
+        <source>Close all searches</source>
+        <translation>Закрити всі пошуки</translation>
+    </message>
+    <message>
+        <source>Searches</source>
+        <translation>Пошуки</translation>
+    </message>
+    <message>
+        <source>Close the selected search</source>
+        <translation>Закрити вибраний пошук</translation>
+    </message>
+    <message>
+        <source>Search for torrents...</source>
+        <translation>Шукати торенти...</translation>
+    </message>
+    <message>
+        <source>Category to search in</source>
+        <translation>Категорія для пошуку</translation>
+    </message>
+    <message>
+        <source>Search engines to use</source>
+        <translation>Пошукові системи для використання</translation>
+    </message>
+    <message>
+        <source>There aren&apos;t any search plugins installed.
+Click the &quot;Search plugins...&quot; button at the top right of the window to install some.</source>
+        <translation>Не встановлено жодного пошукового плагіна.
+Натисніть кнопку «Пошукові плагіни...» у правому верхньому куті вікна, щоб встановити їх.</translation>
+    </message>
+    <message>
+        <source>Type a search above and press Enter.</source>
+        <translation>Введіть запит вище та натисніть Enter.</translation>
+    </message>
+    <message>
+        <source>Refresh search</source>
+        <translation>Оновити пошук</translation>
+    </message>
+    <message>
+        <source>Close search</source>
+        <translation>Закрити пошук</translation>
+    </message>
+    <message>
+        <source>Close all searches</source>
+        <translation>Закрити всі пошуки</translation>
     </message>
 </context>
 <context>
@@ -11413,6 +11953,326 @@ Click the &quot;Search plugins...&quot; button at the bottom right of the window
         <location filename="../gui/statsdialog.cpp" line="111"/>
         <source>%1 ms</source>
         <translation type="unfinished">%1 мс</translation>
+    </message>
+    <message>
+        <source>Copy</source>
+        <translation>Копіювати</translation>
+    </message>
+    <message>
+        <source>Overview</source>
+        <translation>Огляд</translation>
+    </message>
+    <message>
+        <source>Transfer</source>
+        <translation>Передавання</translation>
+    </message>
+    <message>
+        <source>This session</source>
+        <translation>Цей сеанс</translation>
+    </message>
+    <message>
+        <source>All time</source>
+        <translation>Увесь час</translation>
+    </message>
+    <message>
+        <source>Downloaded:</source>
+        <translation>Завантажено:</translation>
+    </message>
+    <message>
+        <source>Uploaded:</source>
+        <translation>Відвантажено:</translation>
+    </message>
+    <message>
+        <source>Share ratio:</source>
+        <translation>Коефіцієнт роздавання:</translation>
+    </message>
+    <message>
+        <source>Current speed:</source>
+        <translation>Поточна швидкість:</translation>
+    </message>
+    <message>
+        <source>Activity</source>
+        <translation>Активність</translation>
+    </message>
+    <message>
+        <source>Torrents downloading:</source>
+        <translation>Торентів завантажується:</translation>
+    </message>
+    <message>
+        <source>Torrents seeding:</source>
+        <translation>Торентів роздається:</translation>
+    </message>
+    <message>
+        <source>Torrents stopped:</source>
+        <translation>Торентів зупинено:</translation>
+    </message>
+    <message>
+        <source>Torrents with errors:</source>
+        <translation>Торентів із помилками:</translation>
+    </message>
+    <message>
+        <source>Running for:</source>
+        <translation>Працює:</translation>
+    </message>
+    <message>
+        <source>History</source>
+        <translation>Історія</translation>
+    </message>
+    <message>
+        <source>Period</source>
+        <translation>Період</translation>
+    </message>
+    <message>
+        <source>Today</source>
+        <translation>Сьогодні</translation>
+    </message>
+    <message>
+        <source>Last 7 days</source>
+        <translation>Останні 7 днів</translation>
+    </message>
+    <message>
+        <source>This month</source>
+        <translation>Цей місяць</translation>
+    </message>
+    <message>
+        <source>Last month</source>
+        <translation>Минулий місяць</translation>
+    </message>
+    <message>
+        <source>Last 12 months</source>
+        <translation>Останні 12 місяців</translation>
+    </message>
+    <message>
+        <source>Tracking since:</source>
+        <translation>Облік ведеться з:</translation>
+    </message>
+    <message>
+        <source>By month</source>
+        <translation>За місяцями</translation>
+    </message>
+    <message>
+        <source>Month</source>
+        <translation>Місяць</translation>
+    </message>
+    <message>
+        <source>Downloaded</source>
+        <translation>Завантажено</translation>
+    </message>
+    <message>
+        <source>Uploaded</source>
+        <translation>Відвантажено</translation>
+    </message>
+    <message>
+        <source>Share ratio</source>
+        <translation>Коефіцієнт роздавання</translation>
+    </message>
+    <message>
+        <source>WebUI downloads added, this month</source>
+        <translation>Завантаження, додані через WebUI, цього місяця</translation>
+    </message>
+    <message>
+        <source>Counts the requests that added a download. Apps without a login, such as Sonarr and Radarr, are shown as (localhost). Downloads added in the desktop window are not counted.</source>
+        <translation>Рахує запити, що додали завантаження. Застосунки без входу, як-от Sonarr і Radarr, показано як (localhost). Завантаження, додані у вікні настільного застосунку, не враховуються.</translation>
+    </message>
+    <message>
+        <source>Technical</source>
+        <translation>Технічне</translation>
+    </message>
+    <message>
+        <source>Disk</source>
+        <translation>Диск</translation>
+    </message>
+    <message>
+        <source>Peers waiting on disk writes:</source>
+        <translation>Пірів чекає запису на диск:</translation>
+    </message>
+    <message>
+        <source>Peers waiting on disk reads:</source>
+        <translation>Пірів чекає читання з диска:</translation>
+    </message>
+    <message>
+        <source>Network</source>
+        <translation>Мережа</translation>
+    </message>
+    <message>
+        <source>DHT nodes:</source>
+        <translation>Вузлів DHT:</translation>
+    </message>
+    <message>
+        <source>Data discarded this session:</source>
+        <translation>Відкинуто даних за сеанс:</translation>
+    </message>
+    <message>
+        <source>Before tracking began</source>
+        <translation>До початку обліку</translation>
+    </message>
+    <message>
+        <source>Nothing added yet</source>
+        <translation>Поки нічого не додано</translation>
+    </message>
+    <message>
+        <source>Off</source>
+        <translation>Вимк.</translation>
+    </message>
+    <message>
+        <source>Copy</source>
+        <translation>Копіювати</translation>
+    </message>
+    <message>
+        <source>Overview</source>
+        <translation>Огляд</translation>
+    </message>
+    <message>
+        <source>Transfer</source>
+        <translation>Передавання</translation>
+    </message>
+    <message>
+        <source>This session</source>
+        <translation>Цей сеанс</translation>
+    </message>
+    <message>
+        <source>All time</source>
+        <translation>Увесь час</translation>
+    </message>
+    <message>
+        <source>Downloaded:</source>
+        <translation>Завантажено:</translation>
+    </message>
+    <message>
+        <source>Uploaded:</source>
+        <translation>Відвантажено:</translation>
+    </message>
+    <message>
+        <source>Share ratio:</source>
+        <translation>Коефіцієнт роздавання:</translation>
+    </message>
+    <message>
+        <source>Current speed:</source>
+        <translation>Поточна швидкість:</translation>
+    </message>
+    <message>
+        <source>Activity</source>
+        <translation>Активність</translation>
+    </message>
+    <message>
+        <source>Torrents downloading:</source>
+        <translation>Торентів завантажується:</translation>
+    </message>
+    <message>
+        <source>Torrents seeding:</source>
+        <translation>Торентів роздається:</translation>
+    </message>
+    <message>
+        <source>Torrents stopped:</source>
+        <translation>Торентів зупинено:</translation>
+    </message>
+    <message>
+        <source>Torrents with errors:</source>
+        <translation>Торентів із помилками:</translation>
+    </message>
+    <message>
+        <source>Running for:</source>
+        <translation>Працює:</translation>
+    </message>
+    <message>
+        <source>History</source>
+        <translation>Історія</translation>
+    </message>
+    <message>
+        <source>Period</source>
+        <translation>Період</translation>
+    </message>
+    <message>
+        <source>Today</source>
+        <translation>Сьогодні</translation>
+    </message>
+    <message>
+        <source>Last 7 days</source>
+        <translation>Останні 7 днів</translation>
+    </message>
+    <message>
+        <source>This month</source>
+        <translation>Цей місяць</translation>
+    </message>
+    <message>
+        <source>Last month</source>
+        <translation>Минулий місяць</translation>
+    </message>
+    <message>
+        <source>Last 12 months</source>
+        <translation>Останні 12 місяців</translation>
+    </message>
+    <message>
+        <source>Tracking since:</source>
+        <translation>Облік ведеться з:</translation>
+    </message>
+    <message>
+        <source>By month</source>
+        <translation>За місяцями</translation>
+    </message>
+    <message>
+        <source>Month</source>
+        <translation>Місяць</translation>
+    </message>
+    <message>
+        <source>Downloaded</source>
+        <translation>Завантажено</translation>
+    </message>
+    <message>
+        <source>Uploaded</source>
+        <translation>Відвантажено</translation>
+    </message>
+    <message>
+        <source>Share ratio</source>
+        <translation>Коефіцієнт роздавання</translation>
+    </message>
+    <message>
+        <source>WebUI downloads added, this month</source>
+        <translation>Завантаження, додані через WebUI, цього місяця</translation>
+    </message>
+    <message>
+        <source>Counts the requests that added a download. Apps without a login, such as Sonarr and Radarr, are shown as (localhost). Downloads added in the desktop window are not counted.</source>
+        <translation>Рахує запити, що додали завантаження. Застосунки без входу, як-от Sonarr і Radarr, показано як (localhost). Завантаження, додані у вікні настільного застосунку, не враховуються.</translation>
+    </message>
+    <message>
+        <source>Technical</source>
+        <translation>Технічне</translation>
+    </message>
+    <message>
+        <source>Disk</source>
+        <translation>Диск</translation>
+    </message>
+    <message>
+        <source>Peers waiting on disk writes:</source>
+        <translation>Пірів чекає запису на диск:</translation>
+    </message>
+    <message>
+        <source>Peers waiting on disk reads:</source>
+        <translation>Пірів чекає читання з диска:</translation>
+    </message>
+    <message>
+        <source>Network</source>
+        <translation>Мережа</translation>
+    </message>
+    <message>
+        <source>DHT nodes:</source>
+        <translation>Вузлів DHT:</translation>
+    </message>
+    <message>
+        <source>Data discarded this session:</source>
+        <translation>Відкинуто даних за сеанс:</translation>
+    </message>
+    <message>
+        <source>Before tracking began</source>
+        <translation>До початку обліку</translation>
+    </message>
+    <message>
+        <source>Nothing added yet</source>
+        <translation>Поки нічого не додано</translation>
+    </message>
+    <message>
+        <source>Off</source>
+        <translation>Вимк.</translation>
     </message>
 </context>
 <context>
@@ -12108,6 +12968,22 @@ Please choose a different name and try again.</source>
     <message>
         <source>Priority by shown file order</source>
         <translation type="vanished">Пріоритет за порядком файлів</translation>
+    </message>
+    <message>
+        <source>Reset auto width</source>
+        <translation>Скинути автоширину</translation>
+    </message>
+    <message>
+        <source>Fit all non-hidden columns to their contents again, and forget the widths that were set by hand</source>
+        <translation>Знову підігнати всі видимі стовпці під їхній вміст і забути ширину, задану вручну</translation>
+    </message>
+    <message>
+        <source>Reset auto width</source>
+        <translation>Скинути автоширину</translation>
+    </message>
+    <message>
+        <source>Fit all non-hidden columns to their contents again, and forget the widths that were set by hand</source>
+        <translation>Знову підігнати всі видимі стовпці під їхній вміст і забути ширину, задану вручну</translation>
     </message>
 </context>
 <context>
@@ -13192,6 +14068,22 @@ Please choose a different name and try again.</source>
         <source>Column visibility</source>
         <translation>Показані колонки</translation>
     </message>
+    <message>
+        <source>Reset auto width</source>
+        <translation>Скинути автоширину</translation>
+    </message>
+    <message>
+        <source>Fit all non-hidden columns to their contents again, and forget the widths that were set by hand</source>
+        <translation>Знову підігнати всі видимі стовпці під їхній вміст і забути ширину, задану вручну</translation>
+    </message>
+    <message>
+        <source>Reset auto width</source>
+        <translation>Скинути автоширину</translation>
+    </message>
+    <message>
+        <source>Fit all non-hidden columns to their contents again, and forget the widths that were set by hand</source>
+        <translation>Знову підігнати всі видимі стовпці під їхній вміст і забути ширину, задану вручну</translation>
+    </message>
 </context>
 <context>
     <name>TrackerStatusFilterWidget</name>
@@ -14058,6 +14950,22 @@ Please choose a different name and try again.</source>
         <source>Super seeding mode</source>
         <translation>Режим супер-сідування</translation>
     </message>
+    <message>
+        <source>Reset auto width</source>
+        <translation>Скинути автоширину</translation>
+    </message>
+    <message>
+        <source>Fit all non-hidden columns to their contents again, and forget the widths that were set by hand</source>
+        <translation>Знову підігнати всі видимі стовпці під їхній вміст і забути ширину, задану вручну</translation>
+    </message>
+    <message>
+        <source>Reset auto width</source>
+        <translation>Скинути автоширину</translation>
+    </message>
+    <message>
+        <source>Fit all non-hidden columns to their contents again, and forget the widths that were set by hand</source>
+        <translation>Знову підігнати всі видимі стовпці під їхній вміст і забути ширину, задану вручну</translation>
+    </message>
 </context>
 <context>
     <name>UIThemeDialog</name>
@@ -14392,6 +15300,46 @@ Please choose a different name and try again.</source>
         <source>WebAPI login failure. Reason: invalid credentials, attempt count: %1, IP: %2, username: %3</source>
         <translation>Невдача логіну WebAPI. Причина: неправильні дані для входу, кількість спроб: %1, IP: %2, користувач: %3</translation>
     </message>
+    <message>
+        <source>Something went wrong on the server. Details are in qBittorrent&apos;s log.</source>
+        <translation>На сервері щось пішло не так. Подробиці в журналі qBittorrent.</translation>
+    </message>
+    <message>
+        <source>This account is locked after too many failed login attempts. Try again in %1 minute(s).</source>
+        <translation>Цей обліковий запис заблоковано через забагато невдалих спроб входу. Повторіть за %1 хв.</translation>
+    </message>
+    <message>
+        <source>Your role (%1) doesn&apos;t allow this: %2.</source>
+        <translation>Ваша роль (%1) цього не дозволяє: %2.</translation>
+    </message>
+    <message>
+        <source>Only an admin can remove the tag that says who added a torrent.</source>
+        <translation>Лише адміністратор може вилучити мітку, що показує, хто додав торент.</translation>
+    </message>
+    <message>
+        <source>Only an admin can clear or replace all tags of a torrent that has a tag saying who added it.</source>
+        <translation>Лише адміністратор може очистити або замінити всі мітки торента, який має мітку з указанням того, хто його додав.</translation>
+    </message>
+    <message>
+        <source>Something went wrong on the server. Details are in qBittorrent&apos;s log.</source>
+        <translation>На сервері щось пішло не так. Подробиці в журналі qBittorrent.</translation>
+    </message>
+    <message>
+        <source>This account is locked after too many failed login attempts. Try again in %1 minute(s).</source>
+        <translation>Цей обліковий запис заблоковано через забагато невдалих спроб входу. Повторіть за %1 хв.</translation>
+    </message>
+    <message>
+        <source>Your role (%1) doesn&apos;t allow this: %2.</source>
+        <translation>Ваша роль (%1) цього не дозволяє: %2.</translation>
+    </message>
+    <message>
+        <source>Only an admin can remove the tag that says who added a torrent.</source>
+        <translation>Лише адміністратор може вилучити мітку, що показує, хто додав торент.</translation>
+    </message>
+    <message>
+        <source>Only an admin can clear or replace all tags of a torrent that has a tag saying who added it.</source>
+        <translation>Лише адміністратор може очистити або замінити всі мітки торента, який має мітку з указанням того, хто його додав.</translation>
+    </message>
 </context>
 <context>
     <name>WebUI</name>
@@ -14723,6 +15671,669 @@ Please choose a different name and try again.</source>
         <source>&lt; 1m</source>
         <comment>&lt; 1 minute</comment>
         <translation>&lt; 1хв</translation>
+    </message>
+</context>
+<context>
+    <name>UpdateInstaller</name>
+    <message>
+        <source>Kettle Edition update</source>
+        <translation>Оновлення Kettle Edition</translation>
+    </message>
+    <message>
+        <source>Kettle Edition was updated to %1.</source>
+        <translation>Kettle Edition оновлено до %1.</translation>
+    </message>
+    <message>
+        <source>Kettle Edition updated</source>
+        <translation>Kettle Edition оновлено</translation>
+    </message>
+    <message>
+        <source>Downloading Kettle Edition %1 (%2 changed files).</source>
+        <translation>Завантажується Kettle Edition %1 (змінених файлів: %2).</translation>
+    </message>
+    <message>
+        <source>Kettle Edition %1 is downloaded and ready to install.</source>
+        <translation>Kettle Edition %1 завантажено, і вона готова до встановлення.</translation>
+    </message>
+    <message>
+        <source>Kettle Edition update</source>
+        <translation>Оновлення Kettle Edition</translation>
+    </message>
+    <message>
+        <source>Kettle Edition was updated to %1.</source>
+        <translation>Kettle Edition оновлено до %1.</translation>
+    </message>
+    <message>
+        <source>Kettle Edition updated</source>
+        <translation>Kettle Edition оновлено</translation>
+    </message>
+    <message>
+        <source>Downloading Kettle Edition %1 (%2 changed files).</source>
+        <translation>Завантажується Kettle Edition %1 (змінених файлів: %2).</translation>
+    </message>
+    <message>
+        <source>Kettle Edition %1 is downloaded and ready to install.</source>
+        <translation>Kettle Edition %1 завантажено, і вона готова до встановлення.</translation>
+    </message>
+</context>
+<context>
+    <name>UserAccountDialog</name>
+    <message>
+        <source>User</source>
+        <translation>Користувач</translation>
+    </message>
+    <message>
+        <source>Username:</source>
+        <translation>Ім’я користувача:</translation>
+    </message>
+    <message>
+        <source>Role:</source>
+        <translation>Роль:</translation>
+    </message>
+    <message>
+        <source>Password:</source>
+        <translation>Пароль:</translation>
+    </message>
+    <message>
+        <source>Confirm password:</source>
+        <translation>Підтвердьте пароль:</translation>
+    </message>
+    <message>
+        <source>Disable this account</source>
+        <translation>Вимкнути цей обліковий запис</translation>
+    </message>
+    <message>
+        <source>Edit User</source>
+        <translation>Редагувати користувача</translation>
+    </message>
+    <message>
+        <source>Leave empty to keep the current password</source>
+        <translation>Залиште порожнім, щоб зберегти поточний пароль</translation>
+    </message>
+    <message>
+        <source>Add User</source>
+        <translation>Додати користувача</translation>
+    </message>
+    <message>
+        <source>At least %1 characters</source>
+        <translation>Щонайменше %1 символів</translation>
+    </message>
+    <message>
+        <source>Enter a username.</source>
+        <translation>Введіть ім’я користувача.</translation>
+    </message>
+    <message>
+        <source>The password must be at least %1 characters long.</source>
+        <translation>Пароль має містити щонайменше %1 символів.</translation>
+    </message>
+    <message>
+        <source>The passwords don&apos;t match.</source>
+        <translation>Паролі не збігаються.</translation>
+    </message>
+    <message>
+        <source>User</source>
+        <translation>Користувач</translation>
+    </message>
+    <message>
+        <source>Username:</source>
+        <translation>Ім’я користувача:</translation>
+    </message>
+    <message>
+        <source>Role:</source>
+        <translation>Роль:</translation>
+    </message>
+    <message>
+        <source>Password:</source>
+        <translation>Пароль:</translation>
+    </message>
+    <message>
+        <source>Confirm password:</source>
+        <translation>Підтвердьте пароль:</translation>
+    </message>
+    <message>
+        <source>Disable this account</source>
+        <translation>Вимкнути цей обліковий запис</translation>
+    </message>
+    <message>
+        <source>Edit User</source>
+        <translation>Редагувати користувача</translation>
+    </message>
+    <message>
+        <source>Leave empty to keep the current password</source>
+        <translation>Залиште порожнім, щоб зберегти поточний пароль</translation>
+    </message>
+    <message>
+        <source>Add User</source>
+        <translation>Додати користувача</translation>
+    </message>
+    <message>
+        <source>At least %1 characters</source>
+        <translation>Щонайменше %1 символів</translation>
+    </message>
+    <message>
+        <source>Enter a username.</source>
+        <translation>Введіть ім’я користувача.</translation>
+    </message>
+    <message>
+        <source>The password must be at least %1 characters long.</source>
+        <translation>Пароль має містити щонайменше %1 символів.</translation>
+    </message>
+    <message>
+        <source>The passwords don&apos;t match.</source>
+        <translation>Паролі не збігаються.</translation>
+    </message>
+</context>
+<context>
+    <name>UserAccountsWidget</name>
+    <message>
+        <source>User Accounts</source>
+        <translation>Облікові записи</translation>
+    </message>
+    <message>
+        <source>Users</source>
+        <translation>Користувачі</translation>
+    </message>
+    <message>
+        <source>People who can log in to the WebUI with their own username and password.</source>
+        <translation>Люди, які можуть входити до WebUI зі своїм іменем користувача й паролем.</translation>
+    </message>
+    <message>
+        <source>Add User...</source>
+        <translation>Додати користувача...</translation>
+    </message>
+    <message>
+        <source>Edit...</source>
+        <translation>Редагувати...</translation>
+    </message>
+    <message>
+        <source>Remove</source>
+        <translation>Вилучити</translation>
+    </message>
+    <message>
+        <source>Roles</source>
+        <translation>Ролі</translation>
+    </message>
+    <message>
+        <source>A role decides what its users are allowed to do.</source>
+        <translation>Роль визначає, що дозволено її користувачам.</translation>
+    </message>
+    <message>
+        <source>Add Role...</source>
+        <translation>Додати роль...</translation>
+    </message>
+    <message>
+        <source>Logged In</source>
+        <translation>Увійшли</translation>
+    </message>
+    <message>
+        <source>Browsers and devices where someone is logged in with a user account.</source>
+        <translation>Браузери та пристрої, де хтось увійшов з обліковим записом.</translation>
+    </message>
+    <message>
+        <source>Log Out</source>
+        <translation>Вийти</translation>
+    </message>
+    <message>
+        <source>Username</source>
+        <translation>Ім’я користувача</translation>
+    </message>
+    <message>
+        <source>Role</source>
+        <translation>Роль</translation>
+    </message>
+    <message>
+        <source>Status</source>
+        <translation>Стан</translation>
+    </message>
+    <message>
+        <source>Last login</source>
+        <translation>Останній вхід</translation>
+    </message>
+    <message>
+        <source>Created</source>
+        <translation>Створено</translation>
+    </message>
+    <message>
+        <source>Name</source>
+        <translation>Назва</translation>
+    </message>
+    <message>
+        <source>Description</source>
+        <translation>Опис</translation>
+    </message>
+    <message>
+        <source>Permissions</source>
+        <translation>Дозволи</translation>
+    </message>
+    <message>
+        <source>User</source>
+        <translation>Користувач</translation>
+    </message>
+    <message>
+        <source>Browser</source>
+        <translation>Браузер</translation>
+    </message>
+    <message>
+        <source>Logged in</source>
+        <translation>Час входу</translation>
+    </message>
+    <message>
+        <source>Last active</source>
+        <translation>Остання активність</translation>
+    </message>
+    <message>
+        <source>Expires</source>
+        <translation>Спливає</translation>
+    </message>
+    <message>
+        <source>The user database could not be opened. See the Execution Log for details.</source>
+        <translation>Не вдалося відкрити базу користувачів. Подробиці в журналі виконання.</translation>
+    </message>
+    <message>
+        <source>Disabled</source>
+        <translation>Вимкнено</translation>
+    </message>
+    <message>
+        <source>Enabled</source>
+        <translation>Увімкнено</translation>
+    </message>
+    <message>
+        <source>Never</source>
+        <translation>Ніколи</translation>
+    </message>
+    <message>
+        <source>No accounts yet, so everyone still uses the shared WebUI login. Add an Admin account first.</source>
+        <translation>Облікових записів поки немає, тому всі й далі користуються спільним входом WebUI. Спершу додайте обліковий запис адміністратора.</translation>
+    </message>
+    <message>
+        <source>Couldn&apos;t read the user database. %1</source>
+        <translation>Не вдалося прочитати базу користувачів. %1</translation>
+    </message>
+    <message>
+        <source>Remove user</source>
+        <translation>Вилучити користувача</translation>
+    </message>
+    <message>
+        <source>Are you sure you want to remove the user &apos;%1&apos;?</source>
+        <translation>Ви справді хочете вилучити користувача «%1»?</translation>
+    </message>
+    <message>
+        <source>Remove role</source>
+        <translation>Вилучити роль</translation>
+    </message>
+    <message>
+        <source>Are you sure you want to remove the role &apos;%1&apos;?</source>
+        <translation>Ви справді хочете вилучити роль «%1»?</translation>
+    </message>
+    <message>
+        <source>Enable</source>
+        <translation>Увімкнути</translation>
+    </message>
+    <message>
+        <source>Disable</source>
+        <translation>Вимкнути</translation>
+    </message>
+    <message>
+        <source>Log Out Everywhere</source>
+        <translation>Вийти всюди</translation>
+    </message>
+    <message>
+        <source>User Accounts</source>
+        <translation>Облікові записи</translation>
+    </message>
+    <message>
+        <source>Users</source>
+        <translation>Користувачі</translation>
+    </message>
+    <message>
+        <source>People who can log in to the WebUI with their own username and password.</source>
+        <translation>Люди, які можуть входити до WebUI зі своїм іменем користувача й паролем.</translation>
+    </message>
+    <message>
+        <source>Add User...</source>
+        <translation>Додати користувача...</translation>
+    </message>
+    <message>
+        <source>Edit...</source>
+        <translation>Редагувати...</translation>
+    </message>
+    <message>
+        <source>Remove</source>
+        <translation>Вилучити</translation>
+    </message>
+    <message>
+        <source>Roles</source>
+        <translation>Ролі</translation>
+    </message>
+    <message>
+        <source>A role decides what its users are allowed to do.</source>
+        <translation>Роль визначає, що дозволено її користувачам.</translation>
+    </message>
+    <message>
+        <source>Add Role...</source>
+        <translation>Додати роль...</translation>
+    </message>
+    <message>
+        <source>Logged In</source>
+        <translation>Увійшли</translation>
+    </message>
+    <message>
+        <source>Browsers and devices where someone is logged in with a user account.</source>
+        <translation>Браузери та пристрої, де хтось увійшов з обліковим записом.</translation>
+    </message>
+    <message>
+        <source>Log Out</source>
+        <translation>Вийти</translation>
+    </message>
+    <message>
+        <source>Username</source>
+        <translation>Ім’я користувача</translation>
+    </message>
+    <message>
+        <source>Role</source>
+        <translation>Роль</translation>
+    </message>
+    <message>
+        <source>Status</source>
+        <translation>Стан</translation>
+    </message>
+    <message>
+        <source>Last login</source>
+        <translation>Останній вхід</translation>
+    </message>
+    <message>
+        <source>Created</source>
+        <translation>Створено</translation>
+    </message>
+    <message>
+        <source>Name</source>
+        <translation>Назва</translation>
+    </message>
+    <message>
+        <source>Description</source>
+        <translation>Опис</translation>
+    </message>
+    <message>
+        <source>Permissions</source>
+        <translation>Дозволи</translation>
+    </message>
+    <message>
+        <source>User</source>
+        <translation>Користувач</translation>
+    </message>
+    <message>
+        <source>Browser</source>
+        <translation>Браузер</translation>
+    </message>
+    <message>
+        <source>Logged in</source>
+        <translation>Час входу</translation>
+    </message>
+    <message>
+        <source>Last active</source>
+        <translation>Остання активність</translation>
+    </message>
+    <message>
+        <source>Expires</source>
+        <translation>Спливає</translation>
+    </message>
+    <message>
+        <source>The user database could not be opened. See the Execution Log for details.</source>
+        <translation>Не вдалося відкрити базу користувачів. Подробиці в журналі виконання.</translation>
+    </message>
+    <message>
+        <source>Disabled</source>
+        <translation>Вимкнено</translation>
+    </message>
+    <message>
+        <source>Enabled</source>
+        <translation>Увімкнено</translation>
+    </message>
+    <message>
+        <source>Never</source>
+        <translation>Ніколи</translation>
+    </message>
+    <message>
+        <source>No accounts yet, so everyone still uses the shared WebUI login. Add an Admin account first.</source>
+        <translation>Облікових записів поки немає, тому всі й далі користуються спільним входом WebUI. Спершу додайте обліковий запис адміністратора.</translation>
+    </message>
+    <message>
+        <source>Couldn&apos;t read the user database. %1</source>
+        <translation>Не вдалося прочитати базу користувачів. %1</translation>
+    </message>
+    <message>
+        <source>Remove user</source>
+        <translation>Вилучити користувача</translation>
+    </message>
+    <message>
+        <source>Are you sure you want to remove the user &apos;%1&apos;?</source>
+        <translation>Ви справді хочете вилучити користувача «%1»?</translation>
+    </message>
+    <message>
+        <source>Remove role</source>
+        <translation>Вилучити роль</translation>
+    </message>
+    <message>
+        <source>Are you sure you want to remove the role &apos;%1&apos;?</source>
+        <translation>Ви справді хочете вилучити роль «%1»?</translation>
+    </message>
+    <message>
+        <source>Enable</source>
+        <translation>Увімкнути</translation>
+    </message>
+    <message>
+        <source>Disable</source>
+        <translation>Вимкнути</translation>
+    </message>
+    <message>
+        <source>Log Out Everywhere</source>
+        <translation>Вийти всюди</translation>
+    </message>
+</context>
+<context>
+    <name>UserRoleDialog</name>
+    <message>
+        <source>Role</source>
+        <translation>Роль</translation>
+    </message>
+    <message>
+        <source>Name:</source>
+        <translation>Назва:</translation>
+    </message>
+    <message>
+        <source>Description:</source>
+        <translation>Опис:</translation>
+    </message>
+    <message>
+        <source>Gives control over the PC or qBittorrent itself.</source>
+        <translation>Дає керування комп’ютером або самим qBittorrent.</translation>
+    </message>
+    <message>
+        <source>Add Role</source>
+        <translation>Додати роль</translation>
+    </message>
+    <message>
+        <source>Edit Role</source>
+        <translation>Редагувати роль</translation>
+    </message>
+    <message>
+        <source>Enter a role name.</source>
+        <translation>Введіть назву ролі.</translation>
+    </message>
+    <message>
+        <source>Role</source>
+        <translation>Роль</translation>
+    </message>
+    <message>
+        <source>Name:</source>
+        <translation>Назва:</translation>
+    </message>
+    <message>
+        <source>Description:</source>
+        <translation>Опис:</translation>
+    </message>
+    <message>
+        <source>Gives control over the PC or qBittorrent itself.</source>
+        <translation>Дає керування комп’ютером або самим qBittorrent.</translation>
+    </message>
+    <message>
+        <source>Add Role</source>
+        <translation>Додати роль</translation>
+    </message>
+    <message>
+        <source>Edit Role</source>
+        <translation>Редагувати роль</translation>
+    </message>
+    <message>
+        <source>Enter a role name.</source>
+        <translation>Введіть назву ролі.</translation>
+    </message>
+</context>
+<context>
+    <name>WebUIActivityWidget</name>
+    <message>
+        <source>All</source>
+        <translation>Усі</translation>
+    </message>
+    <message>
+        <source>Filter activity</source>
+        <translation>Фільтр дій</translation>
+    </message>
+    <message>
+        <source>Export...</source>
+        <translation>Експорт...</translation>
+    </message>
+    <message>
+        <source>User:</source>
+        <translation>Користувач:</translation>
+    </message>
+    <message>
+        <source>Category:</source>
+        <translation>Категорія:</translation>
+    </message>
+    <message>
+        <source>Result:</source>
+        <translation>Результат:</translation>
+    </message>
+    <message>
+        <source>Time</source>
+        <translation>Час</translation>
+    </message>
+    <message>
+        <source>User</source>
+        <translation>Користувач</translation>
+    </message>
+    <message>
+        <source>Role</source>
+        <translation>Роль</translation>
+    </message>
+    <message>
+        <source>Category</source>
+        <translation>Категорія</translation>
+    </message>
+    <message>
+        <source>Action</source>
+        <translation>Дія</translation>
+    </message>
+    <message>
+        <source>Result</source>
+        <translation>Результат</translation>
+    </message>
+    <message>
+        <source>The user database could not be opened. See the General tab for details.</source>
+        <translation>Не вдалося відкрити базу користувачів. Подробиці на вкладці «Загальні».</translation>
+    </message>
+    <message>
+        <source>Results (showing %1 out of %2)</source>
+        <translation>Результати (показано %1 із %2)</translation>
+    </message>
+    <message>
+        <source>Copy</source>
+        <translation>Копіювати</translation>
+    </message>
+    <message>
+        <source>Export WebUI activity</source>
+        <translation>Експорт дій WebUI</translation>
+    </message>
+    <message>
+        <source>CSV files</source>
+        <translation>Файли CSV</translation>
+    </message>
+    <message>
+        <source>Couldn&apos;t save the file. Reason: %1</source>
+        <translation>Не вдалося зберегти файл. Причина: %1</translation>
+    </message>
+    <message>
+        <source>All</source>
+        <translation>Усі</translation>
+    </message>
+    <message>
+        <source>Filter activity</source>
+        <translation>Фільтр дій</translation>
+    </message>
+    <message>
+        <source>Export...</source>
+        <translation>Експорт...</translation>
+    </message>
+    <message>
+        <source>User:</source>
+        <translation>Користувач:</translation>
+    </message>
+    <message>
+        <source>Category:</source>
+        <translation>Категорія:</translation>
+    </message>
+    <message>
+        <source>Result:</source>
+        <translation>Результат:</translation>
+    </message>
+    <message>
+        <source>Time</source>
+        <translation>Час</translation>
+    </message>
+    <message>
+        <source>User</source>
+        <translation>Користувач</translation>
+    </message>
+    <message>
+        <source>Role</source>
+        <translation>Роль</translation>
+    </message>
+    <message>
+        <source>Category</source>
+        <translation>Категорія</translation>
+    </message>
+    <message>
+        <source>Action</source>
+        <translation>Дія</translation>
+    </message>
+    <message>
+        <source>Result</source>
+        <translation>Результат</translation>
+    </message>
+    <message>
+        <source>The user database could not be opened. See the General tab for details.</source>
+        <translation>Не вдалося відкрити базу користувачів. Подробиці на вкладці «Загальні».</translation>
+    </message>
+    <message>
+        <source>Results (showing %1 out of %2)</source>
+        <translation>Результати (показано %1 із %2)</translation>
+    </message>
+    <message>
+        <source>Copy</source>
+        <translation>Копіювати</translation>
+    </message>
+    <message>
+        <source>Export WebUI activity</source>
+        <translation>Експорт дій WebUI</translation>
+    </message>
+    <message>
+        <source>CSV files</source>
+        <translation>Файли CSV</translation>
+    </message>
+    <message>
+        <source>Couldn&apos;t save the file. Reason: %1</source>
+        <translation>Не вдалося зберегти файл. Причина: %1</translation>
     </message>
 </context>
 </TS>

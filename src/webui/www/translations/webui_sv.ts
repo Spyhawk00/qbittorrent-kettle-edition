@@ -227,6 +227,85 @@ The piece hash will be checked when it is requested for the first time by a peer
         <source>%1 needed · %2 free</source>
         <translation type="unfinished" />
     </message>
+    <message>
+        <source>Don&apos;t create subfolder</source>
+        <translation>Skapa inte undermapp</translation>
+    </message>
+    <message>
+        <source>Never show again</source>
+        <translation>Visa aldrig igen</translation>
+    </message>
+    <message>
+        <source>Select None</source>
+        <translation>Avmarkera alla</translation>
+    </message>
+    <message>
+        <source>Torrent options</source>
+        <translation>Torrentalternativ</translation>
+    </message>
+    <message>
+        <source>Your role saves torrents in the default folders.</source>
+        <translation>Din roll sparar torrenter i standardmapparna.</translation>
+    </message>
+</context>
+<context>
+    <name>AdvancedSettings</name>
+    <message>
+        <source>General</source>
+        <translation>Allmänt</translation>
+    </message>
+    <message>
+        <source>Network</source>
+        <translation>Nätverk</translation>
+    </message>
+    <message>
+        <source>Storage</source>
+        <translation>Lagring</translation>
+    </message>
+    <message>
+        <source>Peers and trackers</source>
+        <translation>Jämlikar och spårare</translation>
+    </message>
+    <message>
+        <source>Program behavior</source>
+        <translation>Programbeteende</translation>
+    </message>
+    <message>
+        <source>Display and notifications</source>
+        <translation>Visning och aviseringar</translation>
+    </message>
+    <message>
+        <source>Network connection</source>
+        <translation>Nätverksanslutning</translation>
+    </message>
+    <message>
+        <source>Security and privacy</source>
+        <translation>Säkerhet och integritet</translation>
+    </message>
+    <message>
+        <source>Connection tuning</source>
+        <translation>Anslutningsjustering</translation>
+    </message>
+    <message>
+        <source>Saving and torrent files</source>
+        <translation>Sparande och torrentfiler</translation>
+    </message>
+    <message>
+        <source>Disk and memory</source>
+        <translation>Disk och minne</translation>
+    </message>
+    <message>
+        <source>Trackers</source>
+        <translation>Spårare</translation>
+    </message>
+    <message>
+        <source>Peers and seeding</source>
+        <translation>Jämlikar och distribution</translation>
+    </message>
+    <message>
+        <source>DHT and I2P</source>
+        <translation>DHT och I2P</translation>
+    </message>
 </context>
 <context>
     <name>CategoryFilterModel</name>
@@ -631,6 +710,14 @@ The piece hash will be checked when it is requested for the first time by a peer
         <source>More</source>
         <translation>Mer</translation>
     </message>
+    <message>
+        <source>Change Password...</source>
+        <translation>Ändra lösenord...</translation>
+    </message>
+    <message>
+        <source>Signed in as</source>
+        <translation>Inloggad som</translation>
+    </message>
 </context>
 <context>
     <name>MainWindow</name>
@@ -937,6 +1024,34 @@ The piece hash will be checked when it is requested for the first time by a peer
     <message>
         <source>Resume Session</source>
         <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Global Speed Limits</source>
+        <translation>Global hastighetsgräns för sändning</translation>
+    </message>
+    <message>
+        <source>Pause Session</source>
+        <translation>Pausa sessionen</translation>
+    </message>
+    <message>
+        <source>Pause session</source>
+        <translation>Pausa sessionen</translation>
+    </message>
+    <message>
+        <source>Resume Session</source>
+        <translation>Återuppta sessionen</translation>
+    </message>
+    <message>
+        <source>Resume session</source>
+        <translation>Återuppta sessionen</translation>
+    </message>
+    <message>
+        <source>Your account can&apos;t add torrents.</source>
+        <translation>Ditt konto kan inte lägga till torrenter.</translation>
+    </message>
+    <message>
+        <source>[PAUSED]</source>
+        <translation>[PAUSAD]</translation>
     </message>
 </context>
 <context>
@@ -2535,6 +2650,190 @@ Använd ";" för att dela upp i flera poster. Du kan använda jokertecknet "*".<
         <source>a@x.com;b@y.com,c@z.com - send two emails: the first to just a@x.com, the second to both b@y.com and c@z.com</source>
         <translation type="unfinished" />
     </message>
+    <message>
+        <source>0 means users are logged out after the session timeout.</source>
+        <translation>0 betyder att användare loggas ut efter sessionens timeout.</translation>
+    </message>
+    <message>
+        <source>Access</source>
+        <translation>Åtkomst</translation>
+    </message>
+    <message>
+        <source>All the above</source>
+        <translation>Allt ovanstående</translation>
+    </message>
+    <message>
+        <source>Allow this login when user accounts exist</source>
+        <translation>Tillåt den här inloggningen när användarkonton finns</translation>
+    </message>
+    <message>
+        <source>Also save search results</source>
+        <translation>Spara även sökresultat</translation>
+    </message>
+    <message>
+        <source>Also when addition is cancelled</source>
+        <translation>Även när tilläggning avbryts</translation>
+    </message>
+    <message>
+        <source>Any of the above</source>
+        <translation>Något av ovanstående</translation>
+    </message>
+    <message>
+        <source>Below normal</source>
+        <translation>Under normal</translation>
+    </message>
+    <message>
+        <source>Changes to users, roles and logins apply at once.</source>
+        <translation>Ändringar av användare, roller och inloggningar gäller direkt.</translation>
+    </message>
+    <message>
+        <source>Don&apos;t create subfolder</source>
+        <translation>Skapa inte undermapp</translation>
+    </message>
+    <message>
+        <source>Example:</source>
+        <translation>Exempel:</translation>
+    </message>
+    <message>
+        <source>I2P (experimental)</source>
+        <translation>I2P (experimentell)</translation>
+    </message>
+    <message>
+        <source>Keep WebUI activity log for:</source>
+        <translation>Behåll WebUI-aktivitetsloggen i:</translation>
+    </message>
+    <message>
+        <source>Keep unselected files in &quot;.unwanted&quot; folder</source>
+        <translation>Behåll omarkerade filer i mappen &quot;.unwanted&quot;</translation>
+    </message>
+    <message>
+        <source>Keep users logged in for:</source>
+        <translation>Håll användare inloggade i:</translation>
+    </message>
+    <message>
+        <source>Language:</source>
+        <translation>Språk:</translation>
+    </message>
+    <message>
+        <source>Lock account after consecutive failures:</source>
+        <translation>Lås kontot efter flera misslyckanden i rad:</translation>
+    </message>
+    <message>
+        <source>Logins and Activity Log</source>
+        <translation>Inloggningar och aktivitetslogg</translation>
+    </message>
+    <message>
+        <source>Low</source>
+        <translation>Låg</translation>
+    </message>
+    <message>
+        <source>Maximum active checking torrents:</source>
+        <translation>Högst antal aktiva kontrollerande torrenter:</translation>
+    </message>
+    <message>
+        <source>Medium</source>
+        <translation>Medel</translation>
+    </message>
+    <message>
+        <source>No settings match</source>
+        <translation>Inga inställningar matchar</translation>
+    </message>
+    <message>
+        <source>Process memory priority:</source>
+        <translation>Processens minnesprioritet:</translation>
+    </message>
+    <message>
+        <source>Save search tabs</source>
+        <translation>Spara söktabbar</translation>
+    </message>
+    <message>
+        <source>Search UI</source>
+        <translation>Sök i användargränssnittet</translation>
+    </message>
+    <message>
+        <source>Search settings</source>
+        <translation>Sök i inställningar</translation>
+    </message>
+    <message>
+        <source>Service:</source>
+        <translation>Tjänst:</translation>
+    </message>
+    <message>
+        <source>Show console window</source>
+        <translation>Visa konsolfönster</translation>
+    </message>
+    <message>
+        <source>Show the window when adding a torrent</source>
+        <translation>Visa fönstret när en torrent läggs till</translation>
+    </message>
+    <message>
+        <source>Specify reverse proxy IPs (or subnets, e.g. 0.0.0.0/24) in order to use forwarded client address (X-Forwarded-For header). Use &apos;;&apos; to split multiple entries.</source>
+        <translation>Ange IP-adresser för omvänd proxy (eller undernät, t.ex. 0.0.0.0/24) för att använda vidarebefordrad klientadress (X-Forwarded-For-rubrik). Använd &apos;;&apos; för att dela upp flera poster.</translation>
+    </message>
+    <message>
+        <source>Status bar and log</source>
+        <translation>Statusfält och logg</translation>
+    </message>
+    <message>
+        <source>The WebUI activity log can be kept for 1 to 3650 days.</source>
+        <translation>WebUI-aktivitetsloggen kan behållas i 1 till 3650 dagar.</translation>
+    </message>
+    <message>
+        <source>The settings below apply with OK or Apply.</source>
+        <translation>Inställningarna nedan gäller med OK eller Verkställ.</translation>
+    </message>
+    <message>
+        <source>Tip: Encapsulate parameter with quotation marks to avoid text being cut off at whitespace (e.g., &quot;%N&quot;)</source>
+        <translation>Tips: Inkapsla parametern med citattecken för att undvika att text skärs av vid blanktecknet (t. ex. &quot;%N&quot;)</translation>
+    </message>
+    <message>
+        <source>Transfer List</source>
+        <translation>Överföringslista</translation>
+    </message>
+    <message>
+        <source>Until the first user account is created, this login always works.</source>
+        <translation>Tills det första användarkontot har skapats fungerar den här inloggningen alltid.</translation>
+    </message>
+    <message>
+        <source>User Accounts</source>
+        <translation>Användarkonton</translation>
+    </message>
+    <message>
+        <source>Users can be kept logged in for 0 to 365 days.</source>
+        <translation>Användare kan hållas inloggade i 0 till 365 dagar.</translation>
+    </message>
+    <message>
+        <source>Very low</source>
+        <translation>Mycket låg</translation>
+    </message>
+    <message>
+        <source>Warning! Data loss possible!</source>
+        <translation>Varning! Dataförlust möjlig!</translation>
+    </message>
+    <message>
+        <source>When Default Save/Incomplete Path changed:</source>
+        <translation>När standard spara/ofullständig sökväg ändrades:</translation>
+    </message>
+    <message>
+        <source>Whitelist for filtering HTTP Host header values.
+In order to defend against DNS rebinding attack,
+you should put in domain names used by WebUI server.
+
+Use &apos;;&apos; to split multiple entries. Can use wildcard &apos;*&apos;.</source>
+        <translation>Vitlista för filtrering av värden i HTTP-värdrubriken.
+För att skydda dig mot DNS-återbindingsattacker bör du ange
+domännamn som används av servern för webbanvändargränssnittet.
+
+Använd &quot;;&quot; för att dela upp flera poster. Du kan använda jokertecknet &quot;*&quot;.</translation>
+    </message>
+    <message>
+        <source>You changed the address, port or HTTPS setting of the WebUI. Saving moves the WebUI, so Options will save, close and reload the page, the same as OK. If the page doesn&apos;t come back, open the WebUI at its new address.\n\nSave anyway?</source>
+        <translation>Du ändrade adress, port eller HTTPS-inställning för WebUI. Sparandet flyttar WebUI, så Alternativ sparar, stängs och laddar om sidan, som med OK. Om sidan inte kommer tillbaka, öppna WebUI på den nya adressen.\n\nSpara ändå?</translation>
+    </message>
+    <message>
+        <source>lock for:</source>
+        <translation>lås i:</translation>
+    </message>
 </context>
 <context>
     <name>PeerListWidget</name>
@@ -2963,6 +3262,10 @@ Använd ";" för att dela upp i flera poster. Du kan använda jokertecknet "*".<
         <source>Copy download URL</source>
         <translation type="unfinished" />
     </message>
+    <message>
+        <source>Copy path</source>
+        <translation>Kopiera sökväg</translation>
+    </message>
 </context>
 <context>
     <name>ScanFoldersModel</name>
@@ -3075,6 +3378,142 @@ Använd ";" för att dela upp i flera poster. Du kan använda jokertecknet "*".<
     <message>
         <source>The time it takes from receiving a request from a peer until we're sending the response back on the socket</source>
         <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Activity</source>
+        <translation>Aktivitet</translation>
+    </message>
+    <message>
+        <source>All time</source>
+        <translation>Någonsin</translation>
+    </message>
+    <message>
+        <source>Before tracking began</source>
+        <translation>Innan spårningen började</translation>
+    </message>
+    <message>
+        <source>By month</source>
+        <translation>Per månad</translation>
+    </message>
+    <message>
+        <source>Counts the requests that added a download. Apps without a login, such as Sonarr and Radarr, are shown as (localhost). Downloads added in the desktop window are not counted.</source>
+        <translation>Räknar de begäranden som lade till en hämtning. Appar utan inloggning, som Sonarr och Radarr, visas som (localhost). Hämtningar som lagts till i skrivbordsfönstret räknas inte.</translation>
+    </message>
+    <message>
+        <source>Current speed:</source>
+        <translation>Aktuell hastighet:</translation>
+    </message>
+    <message>
+        <source>DHT nodes:</source>
+        <translation>DHT-noder:</translation>
+    </message>
+    <message>
+        <source>Data discarded this session:</source>
+        <translation>Kasserade data i den här sessionen:</translation>
+    </message>
+    <message>
+        <source>Disk</source>
+        <translation>Disk</translation>
+    </message>
+    <message>
+        <source>History</source>
+        <translation>Historik</translation>
+    </message>
+    <message>
+        <source>Last 12 months</source>
+        <translation>Senaste 12 månaderna</translation>
+    </message>
+    <message>
+        <source>Last 7 days</source>
+        <translation>Senaste 7 dagarna</translation>
+    </message>
+    <message>
+        <source>Last month</source>
+        <translation>Förra månaden</translation>
+    </message>
+    <message>
+        <source>Month</source>
+        <translation>Månad</translation>
+    </message>
+    <message>
+        <source>Nothing added yet</source>
+        <translation>Inget tillagt än</translation>
+    </message>
+    <message>
+        <source>Off</source>
+        <translation>Av</translation>
+    </message>
+    <message>
+        <source>Overview</source>
+        <translation>Översikt</translation>
+    </message>
+    <message>
+        <source>Peers waiting on disk reads:</source>
+        <translation>Jämlikar som väntar på läsning från disk:</translation>
+    </message>
+    <message>
+        <source>Peers waiting on disk writes:</source>
+        <translation>Jämlikar som väntar på skrivning till disk:</translation>
+    </message>
+    <message>
+        <source>Period</source>
+        <translation>Period</translation>
+    </message>
+    <message>
+        <source>Request latency:</source>
+        <translation>Begärans fördröjning:</translation>
+    </message>
+    <message>
+        <source>Running for:</source>
+        <translation>Har körts i:</translation>
+    </message>
+    <message>
+        <source>Share ratio</source>
+        <translation>Delningsförhållande</translation>
+    </message>
+    <message>
+        <source>Share ratio:</source>
+        <translation>Delningsförhållande:</translation>
+    </message>
+    <message>
+        <source>Technical</source>
+        <translation>Tekniskt</translation>
+    </message>
+    <message>
+        <source>This month</source>
+        <translation>Den här månaden</translation>
+    </message>
+    <message>
+        <source>This session</source>
+        <translation>Den här sessionen</translation>
+    </message>
+    <message>
+        <source>Today</source>
+        <translation>Idag</translation>
+    </message>
+    <message>
+        <source>Torrents downloading:</source>
+        <translation>Torrenter som hämtas:</translation>
+    </message>
+    <message>
+        <source>Torrents seeding:</source>
+        <translation>Torrenter som distribueras:</translation>
+    </message>
+    <message>
+        <source>Torrents stopped:</source>
+        <translation>Stoppade torrenter:</translation>
+    </message>
+    <message>
+        <source>Torrents with errors:</source>
+        <translation>Torrenter med fel:</translation>
+    </message>
+    <message>
+        <source>Tracking since:</source>
+        <translation>Spårning sedan:</translation>
+    </message>
+    <message>
+        <source>WebUI downloads added, this month</source>
+        <translation>Hämtningar tillagda via WebUI, den här månaden</translation>
     </message>
 </context>
 <context>
@@ -3862,6 +4301,10 @@ Använd ";" för att dela upp i flera poster. Du kan använda jokertecknet "*".<
         <source>Content Path</source>
         <translation>Innehållssökväg</translation>
     </message>
+    <message>
+        <source>Remove all tags from selected torrents?</source>
+        <translation>Ta bort alla taggar från valda torrenter?</translation>
+    </message>
 </context>
 <context>
     <name>UpDownRatioDialog</name>
@@ -3917,6 +4360,14 @@ Använd ";" för att dela upp i flera poster. Du kan använda jokertecknet "*".<
         <source>Action when the limit is reached</source>
         <translation>Åtgärd när gränsen är nådd</translation>
     </message>
+    <message>
+        <source>Match all the limits</source>
+        <translation>Matcha alla gränser</translation>
+    </message>
+    <message>
+        <source>Match any limit</source>
+        <translation>Matcha valfri gräns</translation>
+    </message>
 </context>
 <context>
     <name>about</name>
@@ -3934,6 +4385,10 @@ Använd ";" för att dela upp i flera poster. Du kan använda jokertecknet "*".<
     <message>
         <source>Remove tracker</source>
         <translation>Ta bort spårare</translation>
+    </message>
+    <message>
+        <source>This choice is remembered for the next removal.</source>
+        <translation>Det här valet kommer ihåg till nästa borttagning.</translation>
     </message>
 </context>
 <context>
@@ -4147,6 +4602,34 @@ Använd ";" för att dela upp i flera poster. Du kan använda jokertecknet "*".<
         <source>Select plugins</source>
         <translation>Välj insticksmoduler</translation>
     </message>
+    <message>
+        <source>Category to search in</source>
+        <translation>Kategori att söka i</translation>
+    </message>
+    <message>
+        <source>Close the selected search</source>
+        <translation>Stäng den valda sökningen</translation>
+    </message>
+    <message>
+        <source>Empty search pattern</source>
+        <translation>Tomt sökmönster</translation>
+    </message>
+    <message>
+        <source>Search engines to use</source>
+        <translation>Sökmotorer att använda</translation>
+    </message>
+    <message>
+        <source>Search for torrents...</source>
+        <translation>Sök efter torrenter...</translation>
+    </message>
+    <message>
+        <source>Searches</source>
+        <translation>Sökningar</translation>
+    </message>
+    <message>
+        <source>Type a search above and press Enter.</source>
+        <translation>Skriv en sökning ovan och tryck på Retur.</translation>
+    </message>
 </context>
 <context>
     <name>PluginSelectDlg</name>
@@ -4185,6 +4668,10 @@ Använd ";" för att dela upp i flera poster. Du kan använda jokertecknet "*".<
     <message>
         <source>Search plugins</source>
         <translation>Sökinsticksmoduler</translation>
+    </message>
+    <message>
+        <source>Warning: Be sure to comply with your country&apos;s copyright laws when downloading torrents from any of these search engines.</source>
+        <translation>Varning: Var noga med att följa ditt lands upphovsrättslagar när du hämtar torrenter från någon av dessa sökmotorer.</translation>
     </message>
 </context>
 <context>
@@ -4408,6 +4895,30 @@ Använd ";" för att dela upp i flera poster. Du kan använda jokertecknet "*".<
         <source>qBittorrent icon</source>
         <translation>qBittorrent-ikon</translation>
     </message>
+    <message>
+        <source>Based on:</source>
+        <translation>Baserad på:</translation>
+    </message>
+    <message>
+        <source>Edition version:</source>
+        <translation>Utgåvans version:</translation>
+    </message>
+    <message>
+        <source>Kettle Edition is a personal build of qBittorrent that adds user accounts with roles for the WebUI and the desktop app, an activity log, and an installable WebUI with a phone layout. A kettle is a group of hawks soaring together. This is an unofficial build, not affiliated with the qBittorrent project.</source>
+        <translation>Kettle Edition är ett personligt bygge av qBittorrent som lägger till användarkonton med roller för WebUI och skrivbordsappen, en aktivitetslogg och ett installerbart WebUI med telefonlayout. En kettle är en grupp hökar som svävar tillsammans. Det här är ett inofficiellt bygge utan koppling till qBittorrent-projektet.</translation>
+    </message>
+    <message>
+        <source>Maintainer:</source>
+        <translation>Underhållare:</translation>
+    </message>
+    <message>
+        <source>This edition</source>
+        <translation>Den här utgåvan</translation>
+    </message>
+    <message>
+        <source>qBittorrent project:</source>
+        <translation>qBittorrent-projektet:</translation>
+    </message>
 </context>
 <context>
     <name>OptionDialog</name>
@@ -4509,6 +5020,46 @@ Använd ";" för att dela upp i flera poster. Du kan använda jokertecknet "*".<
     <message>
         <source>Open shared download window</source>
         <translation type="unfinished" />
+    </message>
+    <message>
+        <source>%1 of %2 shown</source>
+        <translation>%1 av %2 visas</translation>
+    </message>
+    <message>
+        <source>%1 of %2 shown (%3 hidden)</source>
+        <translation>%1 av %2 visas (%3 dolda)</translation>
+    </message>
+    <message>
+        <source>Close all searches</source>
+        <translation>Stäng alla sökningar</translation>
+    </message>
+    <message>
+        <source>Close search</source>
+        <translation>Stäng sökning</translation>
+    </message>
+    <message>
+        <source>Filter search results...</source>
+        <translation>Filtrera sökresultat...</translation>
+    </message>
+    <message>
+        <source>Finished: %1</source>
+        <translation>Klar: %1</translation>
+    </message>
+    <message>
+        <source>Refresh search</source>
+        <translation>Uppdatera sökning</translation>
+    </message>
+    <message>
+        <source>Search aborted: %1</source>
+        <translation>Sökningen avbröts: %1</translation>
+    </message>
+    <message>
+        <source>Search returned no results</source>
+        <translation>Sökningen gav inga resultat</translation>
+    </message>
+    <message>
+        <source>Searching: %1</source>
+        <translation>Söker: %1</translation>
     </message>
 </context>
 <context>
@@ -4647,6 +5198,10 @@ Använd ";" för att dela upp i flera poster. Du kan använda jokertecknet "*".<
     <message>
         <source>Blocked opening RSS article URL. Only http:// and https:// links can be opened.</source>
         <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Details</source>
+        <translation>Detaljer</translation>
     </message>
 </context>
 <context>
@@ -4925,6 +5480,10 @@ Stöder formaten: S01E01, 1x1, 2017.12.31 och 31.12.2017 (datumformatet stöder 
         <source>Import</source>
         <translation type="unfinished" />
     </message>
+    <message>
+        <source>Don&apos;t create subfolder</source>
+        <translation>Skapa inte undermapp</translation>
+    </message>
 </context>
 <context>
     <name>TrackerFiltersList</name>
@@ -5114,6 +5673,26 @@ Stöder formaten: S01E01, 1x1, 2017.12.31 och 31.12.2017 (datumformatet stöder 
         <source>Choose a log level...</source>
         <translation>Välj loggnivå...</translation>
     </message>
+    <message>
+        <source>Export...</source>
+        <translation>Exportera...</translation>
+    </message>
+    <message>
+        <source>Filter activity</source>
+        <translation>Filtrera aktivitet</translation>
+    </message>
+    <message>
+        <source>Result:</source>
+        <translation>Resultat:</translation>
+    </message>
+    <message>
+        <source>User:</source>
+        <translation>Användare:</translation>
+    </message>
+    <message>
+        <source>WebUI Activity</source>
+        <translation>WebUI-aktivitet</translation>
+    </message>
 </context>
 <context>
     <name>TrackersFilterWidget</name>
@@ -5183,6 +5762,14 @@ Stöder formaten: S01E01, 1x1, 2017.12.31 och 31.12.2017 (datumformatet stöder 
     <message>
         <source>Torrent share limits</source>
         <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Torrent share limits</source>
+        <translation>Torrentdelningsgränser</translation>
+    </message>
+    <message>
+        <source>Your role saves torrents in the default folders.</source>
+        <translation>Din roll sparar torrenter i standardmapparna.</translation>
     </message>
 </context>
 <context>
@@ -5282,6 +5869,14 @@ Stöder formaten: S01E01, 1x1, 2017.12.31 och 31.12.2017 (datumformatet stöder 
     <message>
         <source>Invalid Username or Password.</source>
         <translation>Felaktigt användarnamn eller lösenord.</translation>
+    </message>
+    <message>
+        <source>A kettle is a group of hawks soaring together.</source>
+        <translation>En kettle är en grupp hökar som svävar tillsammans.</translation>
+    </message>
+    <message>
+        <source>Sign in</source>
+        <translation>Logga in</translation>
     </message>
 </context>
 <context>
@@ -5516,6 +6111,22 @@ Stöder formaten: S01E01, 1x1, 2017.12.31 och 31.12.2017 (datumformatet stöder 
         <source>If checked, filenames starting with a period punctuation mark `.` will not be added to the created torrent.</source>
         <translation type="unfinished" />
     </message>
+    <message>
+        <source>Align to piece boundary for files larger than:</source>
+        <translation>Justera till delgränsen för filer större än:</translation>
+    </message>
+    <message>
+        <source>Optimize alignment</source>
+        <translation>Optimera justering</translation>
+    </message>
+    <message>
+        <source>Private torrent (Won&apos;t distribute on DHT network)</source>
+        <translation>Privat torrent (kommer inte att dela på DHT-nätverk)</translation>
+    </message>
+    <message>
+        <source>Start seeding immediately</source>
+        <translation>Börja distribuera direkt</translation>
+    </message>
 </context>
 <context>
     <name>DownloadFromURLDialog</name>
@@ -5626,6 +6237,10 @@ Stöder formaten: S01E01, 1x1, 2017.12.31 och 31.12.2017 (datumformatet stöder 
         <source>Failed to set speed limits</source>
         <translation type="unfinished" />
     </message>
+    <message>
+        <source>Speed limits</source>
+        <translation>Hastighetsgränser</translation>
+    </message>
 </context>
 <context>
     <name>ListWidget</name>
@@ -5636,6 +6251,10 @@ Stöder formaten: S01E01, 1x1, 2017.12.31 och 31.12.2017 (datumformatet stöder 
     <message>
         <source>Resize</source>
         <translation>Storleksändra</translation>
+    </message>
+    <message>
+        <source>Reset Auto Width</source>
+        <translation>Återställ automatisk bredd</translation>
     </message>
 </context>
 <context>
@@ -5651,6 +6270,10 @@ Stöder formaten: S01E01, 1x1, 2017.12.31 och 31.12.2017 (datumformatet stöder 
     <message>
         <source>Rotate this API key? The current key will immediately stop working and a new key will be generated.</source>
         <translation>Rotera denna API-nyckel? Den aktuella nyckeln kommer omedelbart att sluta fungera och en ny nyckel kommer att genereras.</translation>
+    </message>
+    <message>
+        <source>Generate an API key? This key can be used to interact with qBittorrent&apos;s API.</source>
+        <translation>Generera en API-nyckel? Denna nyckel kan användas för att interagera med qBittorrents API.</translation>
     </message>
 </context>
 <context>
@@ -5766,6 +6389,54 @@ Stöder formaten: S01E01, 1x1, 2017.12.31 och 31.12.2017 (datumformatet stöder 
         <source>Remove torrent</source>
         <translation type="unfinished" />
     </message>
+    <message>
+        <source>Action when the limit is reached:</source>
+        <translation>Åtgärd när gränsen är nådd:</translation>
+    </message>
+    <message>
+        <source>Default (%1)</source>
+        <translation>Standard (%1)</translation>
+    </message>
+    <message>
+        <source>From category</source>
+        <translation>Från kategori</translation>
+    </message>
+    <message>
+        <source>From category (%1)</source>
+        <translation>Från kategori (%1)</translation>
+    </message>
+    <message>
+        <source>Inactive seeding time:</source>
+        <translation>Inaktiv distributionstid:</translation>
+    </message>
+    <message>
+        <source>Match all the limits</source>
+        <translation>Matcha alla gränser</translation>
+    </message>
+    <message>
+        <source>Match any limit</source>
+        <translation>Matcha valfri gräns</translation>
+    </message>
+    <message>
+        <source>Mode:</source>
+        <translation>Läge:</translation>
+    </message>
+    <message>
+        <source>Ratio:</source>
+        <translation>Kvot:</translation>
+    </message>
+    <message>
+        <source>Seeding time:</source>
+        <translation>Distributionstid:</translation>
+    </message>
+    <message>
+        <source>Set to</source>
+        <translation>Ställ in på</translation>
+    </message>
+    <message>
+        <source>Unlimited</source>
+        <translation>Obegränsat</translation>
+    </message>
 </context>
 <context>
     <name>TorrentContent</name>
@@ -5776,6 +6447,208 @@ Stöder formaten: S01E01, 1x1, 2017.12.31 och 31.12.2017 (datumformatet stöder 
     <message>
         <source>Not available for folders</source>
         <translation type="unfinished" />
+    </message>
+</context>
+<context>
+    <name>UserAccounts</name>
+    <message>
+        <source>(this browser)</source>
+        <translation>(den här webbläsaren)</translation>
+    </message>
+    <message>
+        <source>A role decides what its users are allowed to do.</source>
+        <translation>En roll avgör vad dess användare får göra.</translation>
+    </message>
+    <message>
+        <source>Add Role</source>
+        <translation>Lägg till roll</translation>
+    </message>
+    <message>
+        <source>Add Role...</source>
+        <translation>Lägg till roll...</translation>
+    </message>
+    <message>
+        <source>Add User</source>
+        <translation>Lägg till användare</translation>
+    </message>
+    <message>
+        <source>Add User...</source>
+        <translation>Lägg till användare...</translation>
+    </message>
+    <message>
+        <source>Are you sure you want to remove the role &apos;%1&apos;?</source>
+        <translation>Är du säker på att du vill ta bort rollen &quot;%1&quot;?</translation>
+    </message>
+    <message>
+        <source>Are you sure you want to remove the user &apos;%1&apos;?</source>
+        <translation>Är du säker på att du vill ta bort användaren &quot;%1&quot;?</translation>
+    </message>
+    <message>
+        <source>At least %1 characters</source>
+        <translation>Minst %1 tecken</translation>
+    </message>
+    <message>
+        <source>Browser</source>
+        <translation>Webbläsare</translation>
+    </message>
+    <message>
+        <source>Browsers and devices where someone is logged in with a user account.</source>
+        <translation>Webbläsare och enheter där någon är inloggad med ett användarkonto.</translation>
+    </message>
+    <message>
+        <source>Change Password</source>
+        <translation>Ändra lösenord</translation>
+    </message>
+    <message>
+        <source>Confirm password:</source>
+        <translation>Bekräfta lösenord:</translation>
+    </message>
+    <message>
+        <source>Created</source>
+        <translation>Skapad</translation>
+    </message>
+    <message>
+        <source>Current password:</source>
+        <translation>Nuvarande lösenord:</translation>
+    </message>
+    <message>
+        <source>Description</source>
+        <translation>Beskrivning</translation>
+    </message>
+    <message>
+        <source>Description:</source>
+        <translation>Beskrivning:</translation>
+    </message>
+    <message>
+        <source>Disable</source>
+        <translation>Inaktivera</translation>
+    </message>
+    <message>
+        <source>Disable this account</source>
+        <translation>Inaktivera det här kontot</translation>
+    </message>
+    <message>
+        <source>Edit Role</source>
+        <translation>Redigera roll</translation>
+    </message>
+    <message>
+        <source>Edit User</source>
+        <translation>Redigera användare</translation>
+    </message>
+    <message>
+        <source>Edit...</source>
+        <translation>Redigera...</translation>
+    </message>
+    <message>
+        <source>Enable</source>
+        <translation>Aktivera</translation>
+    </message>
+    <message>
+        <source>Enter a role name.</source>
+        <translation>Ange ett rollnamn.</translation>
+    </message>
+    <message>
+        <source>Enter a username.</source>
+        <translation>Ange ett användarnamn.</translation>
+    </message>
+    <message>
+        <source>Expires</source>
+        <translation>Går ut</translation>
+    </message>
+    <message>
+        <source>Gives control over the PC or qBittorrent itself</source>
+        <translation>Ger kontroll över datorn eller över själva qBittorrent</translation>
+    </message>
+    <message>
+        <source>Last active</source>
+        <translation>Senast aktiv</translation>
+    </message>
+    <message>
+        <source>Last login</source>
+        <translation>Senaste inloggning</translation>
+    </message>
+    <message>
+        <source>Leave empty to keep the current password</source>
+        <translation>Lämna tomt för att behålla det nuvarande lösenordet</translation>
+    </message>
+    <message>
+        <source>Log Out</source>
+        <translation>Logga ut</translation>
+    </message>
+    <message>
+        <source>Log Out Everywhere</source>
+        <translation>Logga ut överallt</translation>
+    </message>
+    <message>
+        <source>Logged In</source>
+        <translation>Inloggade</translation>
+    </message>
+    <message>
+        <source>Logged in</source>
+        <translation>Inloggad</translation>
+    </message>
+    <message>
+        <source>New password:</source>
+        <translation>Nytt lösenord:</translation>
+    </message>
+    <message>
+        <source>No accounts yet, so everyone still uses the shared WebUI login. Add an Admin account first.</source>
+        <translation>Det finns inga konton än, så alla använder fortfarande den delade WebUI-inloggningen. Lägg först till ett Admin-konto.</translation>
+    </message>
+    <message>
+        <source>People who can log in to the WebUI with their own username and password.</source>
+        <translation>Personer som kan logga in i WebUI med eget användarnamn och lösenord.</translation>
+    </message>
+    <message>
+        <source>Permissions</source>
+        <translation>Behörigheter</translation>
+    </message>
+    <message>
+        <source>Role</source>
+        <translation>Roll</translation>
+    </message>
+    <message>
+        <source>Role:</source>
+        <translation>Roll:</translation>
+    </message>
+    <message>
+        <source>Roles</source>
+        <translation>Roller</translation>
+    </message>
+    <message>
+        <source>The password must be at least %1 characters long.</source>
+        <translation>Lösenordet måste vara minst %1 tecken långt.</translation>
+    </message>
+    <message>
+        <source>The passwords don&apos;t match.</source>
+        <translation>Lösenorden matchar inte.</translation>
+    </message>
+    <message>
+        <source>Users</source>
+        <translation>Användare</translation>
+    </message>
+    <message>
+        <source>Your password was changed. Other browsers and devices where you were logged in have been logged out.</source>
+        <translation>Ditt lösenord har ändrats. Andra webbläsare och enheter där du var inloggad har loggats ut.</translation>
+    </message>
+</context>
+<context>
+    <name>WebUIActivity</name>
+    <message>
+        <source>Action</source>
+        <translation>Åtgärd</translation>
+    </message>
+    <message>
+        <source>Result</source>
+        <translation>Resultat</translation>
+    </message>
+    <message>
+        <source>Role</source>
+        <translation>Roll</translation>
+    </message>
+    <message>
+        <source>Time</source>
+        <translation>Tid</translation>
     </message>
 </context>
 </TS>

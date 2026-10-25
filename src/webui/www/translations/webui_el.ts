@@ -223,6 +223,85 @@ The piece hash will be checked when it is requested for the first time by a peer
         <source>%1 needed · %2 free</source>
         <translation type="unfinished" />
     </message>
+    <message>
+        <source>Don&apos;t create subfolder</source>
+        <translation>Να μη δημιουργηθεί υποφάκελος</translation>
+    </message>
+    <message>
+        <source>Never show again</source>
+        <translation>Να μην εμφανιστεί ξανά</translation>
+    </message>
+    <message>
+        <source>Select None</source>
+        <translation>Καμία επιλογή</translation>
+    </message>
+    <message>
+        <source>Torrent options</source>
+        <translation>Επιλογές Torrent</translation>
+    </message>
+    <message>
+        <source>Your role saves torrents in the default folders.</source>
+        <translation>Ο ρόλος σας αποθηκεύει τα torrents στους προεπιλεγμένους φακέλους.</translation>
+    </message>
+</context>
+<context>
+    <name>AdvancedSettings</name>
+    <message>
+        <source>General</source>
+        <translation>Γενικά</translation>
+    </message>
+    <message>
+        <source>Network</source>
+        <translation>Δίκτυο</translation>
+    </message>
+    <message>
+        <source>Storage</source>
+        <translation>Αποθήκευση</translation>
+    </message>
+    <message>
+        <source>Peers and trackers</source>
+        <translation>Peers και trackers</translation>
+    </message>
+    <message>
+        <source>Program behavior</source>
+        <translation>Συμπεριφορά προγράμματος</translation>
+    </message>
+    <message>
+        <source>Display and notifications</source>
+        <translation>Εμφάνιση και ειδοποιήσεις</translation>
+    </message>
+    <message>
+        <source>Network connection</source>
+        <translation>Σύνδεση δικτύου</translation>
+    </message>
+    <message>
+        <source>Security and privacy</source>
+        <translation>Ασφάλεια και απόρρητο</translation>
+    </message>
+    <message>
+        <source>Connection tuning</source>
+        <translation>Ρύθμιση σύνδεσης</translation>
+    </message>
+    <message>
+        <source>Saving and torrent files</source>
+        <translation>Αποθήκευση και αρχεία torrent</translation>
+    </message>
+    <message>
+        <source>Disk and memory</source>
+        <translation>Δίσκος και μνήμη</translation>
+    </message>
+    <message>
+        <source>Trackers</source>
+        <translation>Trackers</translation>
+    </message>
+    <message>
+        <source>Peers and seeding</source>
+        <translation>Peers και seeding</translation>
+    </message>
+    <message>
+        <source>DHT and I2P</source>
+        <translation>DHT και I2P</translation>
+    </message>
 </context>
 <context>
     <name>CategoryFilterModel</name>
@@ -623,6 +702,14 @@ The piece hash will be checked when it is requested for the first time by a peer
         <source>More</source>
         <translation>Περισσότερα</translation>
     </message>
+    <message>
+        <source>Change Password...</source>
+        <translation>Αλλαγή κωδικού...</translation>
+    </message>
+    <message>
+        <source>Signed in as</source>
+        <translation>Συνδεδεμένος ως</translation>
+    </message>
 </context>
 <context>
     <name>MainWindow</name>
@@ -929,6 +1016,34 @@ The piece hash will be checked when it is requested for the first time by a peer
     <message>
         <source>Resume Session</source>
         <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Global Speed Limits</source>
+        <translation>Γενικά Όρια Ταχύτητας</translation>
+    </message>
+    <message>
+        <source>Pause Session</source>
+        <translation>Παύση συνεδρίας</translation>
+    </message>
+    <message>
+        <source>Pause session</source>
+        <translation>Παύση συνεδρίας</translation>
+    </message>
+    <message>
+        <source>Resume Session</source>
+        <translation>Συνέχιση συνεδρίας</translation>
+    </message>
+    <message>
+        <source>Resume session</source>
+        <translation>Συνέχιση συνεδρίας</translation>
+    </message>
+    <message>
+        <source>Your account can&apos;t add torrents.</source>
+        <translation>Ο λογαριασμός σας δεν μπορεί να προσθέσει torrents.</translation>
+    </message>
+    <message>
+        <source>[PAUSED]</source>
+        <translation>[ΣΕ ΠΑΥΣΗ]</translation>
     </message>
 </context>
 <context>
@@ -2515,6 +2630,186 @@ Use ';' to split multiple entries. Can use wildcard '*'.</source>
         <source>a@x.com;b@y.com,c@z.com - send two emails: the first to just a@x.com, the second to both b@y.com and c@z.com</source>
         <translation type="unfinished" />
     </message>
+    <message>
+        <source>0 means users are logged out after the session timeout.</source>
+        <translation>Το 0 σημαίνει ότι οι χρήστες αποσυνδέονται μετά το χρονικό όριο της συνεδρίας.</translation>
+    </message>
+    <message>
+        <source>Access</source>
+        <translation>Πρόσβαση</translation>
+    </message>
+    <message>
+        <source>Allow this login when user accounts exist</source>
+        <translation>Να επιτρέπεται αυτή η σύνδεση όταν υπάρχουν λογαριασμοί χρηστών</translation>
+    </message>
+    <message>
+        <source>Also save search results</source>
+        <translation>Αποθήκευση και των αποτελεσμάτων αναζήτησης</translation>
+    </message>
+    <message>
+        <source>Also when addition is cancelled</source>
+        <translation>Επίσης όταν ακυρώνεται η προσθήκη</translation>
+    </message>
+    <message>
+        <source>Below normal</source>
+        <translation>Κάτω από κανονική</translation>
+    </message>
+    <message>
+        <source>Changes to users, roles and logins apply at once.</source>
+        <translation>Οι αλλαγές σε χρήστες, ρόλους και συνδέσεις εφαρμόζονται αμέσως.</translation>
+    </message>
+    <message>
+        <source>Don&apos;t create subfolder</source>
+        <translation>Να μη δημιουργηθεί υποφάκελος</translation>
+    </message>
+    <message>
+        <source>Example:</source>
+        <translation>Παράδειγμα:</translation>
+    </message>
+    <message>
+        <source>I2P (experimental)</source>
+        <translation>I2P (πειραματικό)</translation>
+    </message>
+    <message>
+        <source>Keep WebUI activity log for:</source>
+        <translation>Διατήρηση αρχείου δραστηριότητας WebUI για:</translation>
+    </message>
+    <message>
+        <source>Keep unselected files in &quot;.unwanted&quot; folder</source>
+        <translation>Διατήρηση των μη επιλεγμένων αρχείων στον φάκελο «.unwanted».</translation>
+    </message>
+    <message>
+        <source>Keep users logged in for:</source>
+        <translation>Διατήρηση χρηστών συνδεδεμένων για:</translation>
+    </message>
+    <message>
+        <source>Language:</source>
+        <translation>Γλώσσα</translation>
+    </message>
+    <message>
+        <source>Lock account after consecutive failures:</source>
+        <translation>Κλείδωμα λογαριασμού μετά από διαδοχικές αποτυχίες:</translation>
+    </message>
+    <message>
+        <source>Logins and Activity Log</source>
+        <translation>Συνδέσεις και αρχείο δραστηριότητας</translation>
+    </message>
+    <message>
+        <source>Low</source>
+        <translation>Χαμηλή</translation>
+    </message>
+    <message>
+        <source>Maximum active checking torrents:</source>
+        <translation>Μέγιστος έλεγχος ενεργών torrents:</translation>
+    </message>
+    <message>
+        <source>Medium</source>
+        <translation>Μέτρια</translation>
+    </message>
+    <message>
+        <source>No settings match</source>
+        <translation>Καμία ρύθμιση δεν ταιριάζει</translation>
+    </message>
+    <message>
+        <source>Process memory priority:</source>
+        <translation>Προτεραιότητα μνήμης διεργασίας:</translation>
+    </message>
+    <message>
+        <source>Save search tabs</source>
+        <translation>Αποθήκευση καρτελών αναζήτησης</translation>
+    </message>
+    <message>
+        <source>Search UI</source>
+        <translation>Διεπαφή αναζήτησης</translation>
+    </message>
+    <message>
+        <source>Search settings</source>
+        <translation>Αναζήτηση ρυθμίσεων</translation>
+    </message>
+    <message>
+        <source>Service:</source>
+        <translation>Υπηρεσία:</translation>
+    </message>
+    <message>
+        <source>Show console window</source>
+        <translation>Εμφάνιση παραθύρου κονσόλας</translation>
+    </message>
+    <message>
+        <source>Show the window when adding a torrent</source>
+        <translation>Εμφάνιση του παραθύρου κατά την προσθήκη torrent</translation>
+    </message>
+    <message>
+        <source>Specify reverse proxy IPs (or subnets, e.g. 0.0.0.0/24) in order to use forwarded client address (X-Forwarded-For header). Use &apos;;&apos; to split multiple entries.</source>
+        <translation>Καθορίστε αντίστροφες proxy IPs (ή subnets, π.χ. 0.0.0.0/24) για να χρησιμοποιήσετε τη προωθημένη διεύθυνση του client (X-Forwarded-For header). Χρησιμοποιήστε το &apos;;&apos; για να διαχωρίσετε πολλές εγγραφές.</translation>
+    </message>
+    <message>
+        <source>Status bar and log</source>
+        <translation>Γραμμή κατάστασης και αρχείο καταγραφής</translation>
+    </message>
+    <message>
+        <source>The WebUI activity log can be kept for 1 to 3650 days.</source>
+        <translation>Το αρχείο δραστηριότητας WebUI μπορεί να διατηρηθεί από 1 έως 3650 ημέρες.</translation>
+    </message>
+    <message>
+        <source>The settings below apply with OK or Apply.</source>
+        <translation>Οι ρυθμίσεις παρακάτω εφαρμόζονται με OK ή Εφαρμογή.</translation>
+    </message>
+    <message>
+        <source>Tip: Encapsulate parameter with quotation marks to avoid text being cut off at whitespace (e.g., &quot;%N&quot;)</source>
+        <translation>Συμβουλή: Περικλείστε την παράμετρο με αγγλικά εισαγωγικά για να αποφύγετε την αποκοπή του κειμένου στα κενά (π.χ. &quot;%Ν&quot;)</translation>
+    </message>
+    <message>
+        <source>Transfer List</source>
+        <translation>Λίστα Μεταφοράς</translation>
+    </message>
+    <message>
+        <source>Until the first user account is created, this login always works.</source>
+        <translation>Μέχρι να δημιουργηθεί ο πρώτος λογαριασμός χρήστη, αυτή η σύνδεση λειτουργεί πάντα.</translation>
+    </message>
+    <message>
+        <source>User</source>
+        <translation>Χρήστης</translation>
+    </message>
+    <message>
+        <source>User Accounts</source>
+        <translation>Λογαριασμοί χρηστών</translation>
+    </message>
+    <message>
+        <source>Users can be kept logged in for 0 to 365 days.</source>
+        <translation>Οι χρήστες μπορούν να μένουν συνδεδεμένοι από 0 έως 365 ημέρες.</translation>
+    </message>
+    <message>
+        <source>Very low</source>
+        <translation>Πολύ χαμηλή</translation>
+    </message>
+    <message>
+        <source>Warning! Data loss possible!</source>
+        <translation>Προειδοποίηση! Πιθανή απώλεια δεδομένων!</translation>
+    </message>
+    <message>
+        <source>When Default Save/Incomplete Path changed:</source>
+        <translation>Οταν αλλάξει η Προεπιλεγμένη Αποθήκευση/Ημιτελής διαδρομή:</translation>
+    </message>
+    <message>
+        <source>Whitelist for filtering HTTP Host header values.
+In order to defend against DNS rebinding attack,
+you should put in domain names used by WebUI server.
+
+Use &apos;;&apos; to split multiple entries. Can use wildcard &apos;*&apos;.</source>
+        <translation>Allowlist για φίλτρο τιμών κεφαλίδας HTTP Host.
+Για να αμυνθείτε από επιθέσεις επαναδέσμευσης DNS,
+θα πρέπει να βάλετε ονόματα τομέα που χρησιμοποιούνται από τον διακομιστή του WebUI.
+
+Χρησιμοποιήστε «;» για να χωρίσετε πολλαπλές καταχωρήσεις. Μπορείτε να χρησιμοποιήσετε και wildcard «*».</translation>
+    </message>
+    <message>
+        <source>You changed the address, port or HTTPS setting of the WebUI. Saving moves the WebUI, so Options will save, close and reload the page, the same as OK. If the page doesn&apos;t come back, open the WebUI at its new address.\n\nSave anyway?</source>
+        <translation>Αλλάξατε τη διεύθυνση, τη θύρα ή τη ρύθμιση HTTPS του WebUI. Η αποθήκευση μετακινεί το WebUI, οπότε οι Επιλογές θα αποθηκεύσουν, θα κλείσουν και θα φορτώσουν ξανά τη σελίδα, όπως με το OK. Αν η σελίδα δεν επανέλθει, ανοίξτε το WebUI στη νέα διεύθυνση.\n\nΑποθήκευση ούτως ή άλλως;</translation>
+    </message>
+    <message>
+        <source>lock for:</source>
+        <translation>κλείδωμα για:</translation>
+    </message>
 </context>
 <context>
     <name>PeerListWidget</name>
@@ -3055,6 +3350,142 @@ Use ';' to split multiple entries. Can use wildcard '*'.</source>
     <message>
         <source>The time it takes from receiving a request from a peer until we're sending the response back on the socket</source>
         <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Activity</source>
+        <translation>Δραστηριότητα</translation>
+    </message>
+    <message>
+        <source>All time</source>
+        <translation>Συνολικά</translation>
+    </message>
+    <message>
+        <source>Before tracking began</source>
+        <translation>Πριν ξεκινήσει η καταγραφή</translation>
+    </message>
+    <message>
+        <source>By month</source>
+        <translation>Ανά μήνα</translation>
+    </message>
+    <message>
+        <source>Counts the requests that added a download. Apps without a login, such as Sonarr and Radarr, are shown as (localhost). Downloads added in the desktop window are not counted.</source>
+        <translation>Μετρά τα αιτήματα που πρόσθεσαν λήψη. Εφαρμογές χωρίς σύνδεση, όπως Sonarr και Radarr, εμφανίζονται ως (localhost). Λήψεις που προστέθηκαν από το παράθυρο επιφάνειας εργασίας δεν μετρώνται.</translation>
+    </message>
+    <message>
+        <source>Current speed:</source>
+        <translation>Τρέχουσα ταχύτητα:</translation>
+    </message>
+    <message>
+        <source>DHT nodes:</source>
+        <translation>Κόμβοι DHT:</translation>
+    </message>
+    <message>
+        <source>Data discarded this session:</source>
+        <translation>Δεδομένα που απορρίφθηκαν σε αυτή τη συνεδρία:</translation>
+    </message>
+    <message>
+        <source>Disk</source>
+        <translation>Δίσκος</translation>
+    </message>
+    <message>
+        <source>History</source>
+        <translation>Ιστορικό</translation>
+    </message>
+    <message>
+        <source>Last 12 months</source>
+        <translation>Τελευταίοι 12 μήνες</translation>
+    </message>
+    <message>
+        <source>Last 7 days</source>
+        <translation>Τελευταίες 7 ημέρες</translation>
+    </message>
+    <message>
+        <source>Last month</source>
+        <translation>Τον προηγούμενο μήνα</translation>
+    </message>
+    <message>
+        <source>Month</source>
+        <translation>Μήνας</translation>
+    </message>
+    <message>
+        <source>Nothing added yet</source>
+        <translation>Δεν έχει προστεθεί τίποτα ακόμη</translation>
+    </message>
+    <message>
+        <source>Off</source>
+        <translation>Ανενεργό</translation>
+    </message>
+    <message>
+        <source>Overview</source>
+        <translation>Επισκόπηση</translation>
+    </message>
+    <message>
+        <source>Peers waiting on disk reads:</source>
+        <translation>Peers που περιμένουν ανάγνωση από τον δίσκο:</translation>
+    </message>
+    <message>
+        <source>Peers waiting on disk writes:</source>
+        <translation>Peers που περιμένουν εγγραφή στον δίσκο:</translation>
+    </message>
+    <message>
+        <source>Period</source>
+        <translation>Περίοδος</translation>
+    </message>
+    <message>
+        <source>Request latency:</source>
+        <translation>Καθυστέρηση αιτήματος:</translation>
+    </message>
+    <message>
+        <source>Running for:</source>
+        <translation>Σε λειτουργία για:</translation>
+    </message>
+    <message>
+        <source>Share ratio</source>
+        <translation>Λόγος διαμοιρασμού</translation>
+    </message>
+    <message>
+        <source>Share ratio:</source>
+        <translation>Λόγος διαμοιρασμού:</translation>
+    </message>
+    <message>
+        <source>Technical</source>
+        <translation>Τεχνικά</translation>
+    </message>
+    <message>
+        <source>This month</source>
+        <translation>Αυτόν τον μήνα</translation>
+    </message>
+    <message>
+        <source>This session</source>
+        <translation>Αυτή η συνεδρία</translation>
+    </message>
+    <message>
+        <source>Today</source>
+        <translation>Σήμερα</translation>
+    </message>
+    <message>
+        <source>Torrents downloading:</source>
+        <translation>Torrents σε λήψη:</translation>
+    </message>
+    <message>
+        <source>Torrents seeding:</source>
+        <translation>Torrents σε διαμοιρασμό:</translation>
+    </message>
+    <message>
+        <source>Torrents stopped:</source>
+        <translation>Σταματημένα torrents:</translation>
+    </message>
+    <message>
+        <source>Torrents with errors:</source>
+        <translation>Torrents με σφάλματα:</translation>
+    </message>
+    <message>
+        <source>Tracking since:</source>
+        <translation>Καταγραφή από:</translation>
+    </message>
+    <message>
+        <source>WebUI downloads added, this month</source>
+        <translation>Λήψεις που προστέθηκαν μέσω WebUI, αυτόν τον μήνα</translation>
     </message>
 </context>
 <context>
@@ -3842,6 +4273,10 @@ Use ';' to split multiple entries. Can use wildcard '*'.</source>
         <source>Content Path</source>
         <translation type="unfinished" />
     </message>
+    <message>
+        <source>Remove all tags from selected torrents?</source>
+        <translation>Αφαίρεση όλων των ετικετών από τα επιλεγμένα torrent;</translation>
+    </message>
 </context>
 <context>
     <name>UpDownRatioDialog</name>
@@ -3914,6 +4349,10 @@ Use ';' to split multiple entries. Can use wildcard '*'.</source>
     <message>
         <source>Remove tracker</source>
         <translation>Αφαίρεση tracker</translation>
+    </message>
+    <message>
+        <source>This choice is remembered for the next removal.</source>
+        <translation>Αυτή η επιλογή θα θυμάται για την επόμενη αφαίρεση.</translation>
     </message>
 </context>
 <context>
@@ -4127,6 +4566,34 @@ Use ';' to split multiple entries. Can use wildcard '*'.</source>
         <source>Select plugins</source>
         <translation type="unfinished" />
     </message>
+    <message>
+        <source>Category to search in</source>
+        <translation>Κατηγορία αναζήτησης</translation>
+    </message>
+    <message>
+        <source>Close the selected search</source>
+        <translation>Κλείσιμο επιλεγμένης αναζήτησης</translation>
+    </message>
+    <message>
+        <source>Empty search pattern</source>
+        <translation>Κενό πρότυπο αναζήτησης</translation>
+    </message>
+    <message>
+        <source>Search engines to use</source>
+        <translation>Μηχανές αναζήτησης προς χρήση</translation>
+    </message>
+    <message>
+        <source>Search for torrents...</source>
+        <translation>Αναζήτηση torrents...</translation>
+    </message>
+    <message>
+        <source>Searches</source>
+        <translation>Αναζητήσεις</translation>
+    </message>
+    <message>
+        <source>Type a search above and press Enter.</source>
+        <translation>Πληκτρολογήστε μια αναζήτηση παραπάνω και πατήστε Enter.</translation>
+    </message>
 </context>
 <context>
     <name>PluginSelectDlg</name>
@@ -4165,6 +4632,10 @@ Use ';' to split multiple entries. Can use wildcard '*'.</source>
     <message>
         <source>Search plugins</source>
         <translation>Προσθήκες αναζήτησης</translation>
+    </message>
+    <message>
+        <source>Warning: Be sure to comply with your country&apos;s copyright laws when downloading torrents from any of these search engines.</source>
+        <translation>Προειδοποίηση: Βεβαιωθείτε ότι συμμορφώνεστε με τους νόμους περί πνευματικής ιδιοκτησίας της χώρας σας κατά τη λήψη torrents από οποιαδήποτε από αυτές τις μηχανές αναζήτησης.</translation>
     </message>
 </context>
 <context>
@@ -4388,6 +4859,30 @@ Use ';' to split multiple entries. Can use wildcard '*'.</source>
         <source>qBittorrent icon</source>
         <translation>Εικονίδιο του qBittorrent</translation>
     </message>
+    <message>
+        <source>Based on:</source>
+        <translation>Βασίζεται σε:</translation>
+    </message>
+    <message>
+        <source>Edition version:</source>
+        <translation>Έκδοση της έκδοσης:</translation>
+    </message>
+    <message>
+        <source>Kettle Edition is a personal build of qBittorrent that adds user accounts with roles for the WebUI and the desktop app, an activity log, and an installable WebUI with a phone layout. A kettle is a group of hawks soaring together. This is an unofficial build, not affiliated with the qBittorrent project.</source>
+        <translation>Το Kettle Edition είναι μια προσωπική έκδοση του qBittorrent που προσθέτει λογαριασμούς χρηστών με ρόλους για το WebUI και την εφαρμογή επιφάνειας εργασίας, ένα αρχείο καταγραφής δραστηριότητας και ένα WebUI που εγκαθίσταται με διάταξη για τηλέφωνο. Το kettle είναι μια ομάδα γερακιών που πετούν μαζί. Αυτή είναι ανεπίσημη έκδοση, χωρίς σχέση με το έργο qBittorrent.</translation>
+    </message>
+    <message>
+        <source>Maintainer:</source>
+        <translation>Συντηρητής:</translation>
+    </message>
+    <message>
+        <source>This edition</source>
+        <translation>Αυτή η έκδοση</translation>
+    </message>
+    <message>
+        <source>qBittorrent project:</source>
+        <translation>Έργο qBittorrent:</translation>
+    </message>
 </context>
 <context>
     <name>OptionDialog</name>
@@ -4489,6 +4984,46 @@ Use ';' to split multiple entries. Can use wildcard '*'.</source>
     <message>
         <source>Open shared download window</source>
         <translation type="unfinished" />
+    </message>
+    <message>
+        <source>%1 of %2 shown</source>
+        <translation>Εμφανίζονται %1 από %2</translation>
+    </message>
+    <message>
+        <source>%1 of %2 shown (%3 hidden)</source>
+        <translation>Εμφανίζονται %1 από %2 (%3 κρυφά)</translation>
+    </message>
+    <message>
+        <source>Close all searches</source>
+        <translation>Κλείσιμο όλων των αναζητήσεων</translation>
+    </message>
+    <message>
+        <source>Close search</source>
+        <translation>Κλείσιμο αναζήτησης</translation>
+    </message>
+    <message>
+        <source>Filter search results...</source>
+        <translation>Φίλτρο αποτελεσμάτων αναζήτησης...</translation>
+    </message>
+    <message>
+        <source>Finished: %1</source>
+        <translation>Ολοκληρώθηκε: %1</translation>
+    </message>
+    <message>
+        <source>Refresh search</source>
+        <translation>Ανανέωση αναζήτησης</translation>
+    </message>
+    <message>
+        <source>Search aborted: %1</source>
+        <translation>Η αναζήτηση διακόπηκε: %1</translation>
+    </message>
+    <message>
+        <source>Search returned no results</source>
+        <translation>Η αναζήτηση δεν επέστρεψε κάποιο αποτέλεσμα</translation>
+    </message>
+    <message>
+        <source>Searching: %1</source>
+        <translation>Αναζήτηση: %1</translation>
     </message>
 </context>
 <context>
@@ -4627,6 +5162,10 @@ Use ';' to split multiple entries. Can use wildcard '*'.</source>
     <message>
         <source>Blocked opening RSS article URL. Only http:// and https:// links can be opened.</source>
         <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Details</source>
+        <translation>Λεπτομέρειες</translation>
     </message>
 </context>
 <context>
@@ -4905,6 +5444,10 @@ Supports the formats: S01E01, 1x1, 2017.12.31 and 31.12.2017 (Date formats also 
         <source>Import</source>
         <translation type="unfinished" />
     </message>
+    <message>
+        <source>Don&apos;t create subfolder</source>
+        <translation>Να μη δημιουργηθεί υποφάκελος</translation>
+    </message>
 </context>
 <context>
     <name>TrackerFiltersList</name>
@@ -5094,6 +5637,26 @@ Supports the formats: S01E01, 1x1, 2017.12.31 and 31.12.2017 (Date formats also 
         <source>Choose a log level...</source>
         <translation>Επιλέξτε ένα επίπεδο καταγραφής...</translation>
     </message>
+    <message>
+        <source>Export...</source>
+        <translation>Εξαγωγή...</translation>
+    </message>
+    <message>
+        <source>Filter activity</source>
+        <translation>Φιλτράρισμα δραστηριότητας</translation>
+    </message>
+    <message>
+        <source>Result:</source>
+        <translation>Αποτέλεσμα:</translation>
+    </message>
+    <message>
+        <source>User:</source>
+        <translation>Χρήστης:</translation>
+    </message>
+    <message>
+        <source>WebUI Activity</source>
+        <translation>Δραστηριότητα WebUI</translation>
+    </message>
 </context>
 <context>
     <name>TrackersFilterWidget</name>
@@ -5163,6 +5726,14 @@ Supports the formats: S01E01, 1x1, 2017.12.31 and 31.12.2017 (Date formats also 
     <message>
         <source>Torrent share limits</source>
         <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Torrent share limits</source>
+        <translation>Όρια διαμοιρασμού torrent</translation>
+    </message>
+    <message>
+        <source>Your role saves torrents in the default folders.</source>
+        <translation>Ο ρόλος σας αποθηκεύει τα torrents στους προεπιλεγμένους φακέλους.</translation>
     </message>
 </context>
 <context>
@@ -5262,6 +5833,14 @@ Supports the formats: S01E01, 1x1, 2017.12.31 and 31.12.2017 (Date formats also 
     <message>
         <source>Invalid Username or Password.</source>
         <translation>Μη έγκυρο Όνομα Χρήστη ή Κωδικός Πρόσβασης.</translation>
+    </message>
+    <message>
+        <source>A kettle is a group of hawks soaring together.</source>
+        <translation>Το kettle είναι μια ομάδα γερακιών που πετούν μαζί.</translation>
+    </message>
+    <message>
+        <source>Sign in</source>
+        <translation>Σύνδεση</translation>
     </message>
 </context>
 <context>
@@ -5476,6 +6055,22 @@ Supports the formats: S01E01, 1x1, 2017.12.31 and 31.12.2017 (Date formats also 
         <source>If checked, filenames starting with a period punctuation mark `.` will not be added to the created torrent.</source>
         <translation type="unfinished" />
     </message>
+    <message>
+        <source>Align to piece boundary for files larger than:</source>
+        <translation>Ευθυγράμμιση στα όρια κομματιού για αρχεία μεγαλύτερα από:</translation>
+    </message>
+    <message>
+        <source>Optimize alignment</source>
+        <translation>Βελτιστοποίηση ευθυγράμμισης</translation>
+    </message>
+    <message>
+        <source>Private torrent (Won&apos;t distribute on DHT network)</source>
+        <translation>Ιδιωτικό torrent (δε θα διανεμηθεί σε δίκτυο DHT)</translation>
+    </message>
+    <message>
+        <source>Start seeding immediately</source>
+        <translation>Εκκίνηση seeding αμέσως</translation>
+    </message>
 </context>
 <context>
     <name>DownloadFromURLDialog</name>
@@ -5586,6 +6181,10 @@ Supports the formats: S01E01, 1x1, 2017.12.31 and 31.12.2017 (Date formats also 
         <source>Failed to set speed limits</source>
         <translation type="unfinished" />
     </message>
+    <message>
+        <source>Speed limits</source>
+        <translation>Όρια ταχύτητας</translation>
+    </message>
 </context>
 <context>
     <name>ListWidget</name>
@@ -5596,6 +6195,10 @@ Supports the formats: S01E01, 1x1, 2017.12.31 and 31.12.2017 (Date formats also 
     <message>
         <source>Resize</source>
         <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Reset Auto Width</source>
+        <translation>Επαναφορά αυτόματου πλάτους</translation>
     </message>
 </context>
 <context>
@@ -5726,6 +6329,30 @@ Supports the formats: S01E01, 1x1, 2017.12.31 and 31.12.2017 (Date formats also 
         <source>Remove torrent</source>
         <translation type="unfinished" />
     </message>
+    <message>
+        <source>Action when the limit is reached:</source>
+        <translation>Ενέργεια όταν συμπληρωθεί το όριο:</translation>
+    </message>
+    <message>
+        <source>Inactive seeding time:</source>
+        <translation>Χρόνος που δεν γίνεται seeding</translation>
+    </message>
+    <message>
+        <source>Ratio:</source>
+        <translation>Αναλογία:</translation>
+    </message>
+    <message>
+        <source>Seeding time:</source>
+        <translation>Χρόνος seeding:</translation>
+    </message>
+    <message>
+        <source>Set to</source>
+        <translation>Ορισμός σε</translation>
+    </message>
+    <message>
+        <source>Unlimited</source>
+        <translation>Απεριόριστο</translation>
+    </message>
 </context>
 <context>
     <name>TorrentContent</name>
@@ -5736,6 +6363,216 @@ Supports the formats: S01E01, 1x1, 2017.12.31 and 31.12.2017 (Date formats also 
     <message>
         <source>Not available for folders</source>
         <translation type="unfinished" />
+    </message>
+</context>
+<context>
+    <name>UserAccounts</name>
+    <message>
+        <source>(this browser)</source>
+        <translation>(αυτό το πρόγραμμα περιήγησης)</translation>
+    </message>
+    <message>
+        <source>A role decides what its users are allowed to do.</source>
+        <translation>Ένας ρόλος καθορίζει τι επιτρέπεται στους χρήστες του.</translation>
+    </message>
+    <message>
+        <source>Add Role</source>
+        <translation>Προσθήκη ρόλου</translation>
+    </message>
+    <message>
+        <source>Add Role...</source>
+        <translation>Προσθήκη ρόλου...</translation>
+    </message>
+    <message>
+        <source>Add User</source>
+        <translation>Προσθήκη χρήστη</translation>
+    </message>
+    <message>
+        <source>Add User...</source>
+        <translation>Προσθήκη χρήστη...</translation>
+    </message>
+    <message>
+        <source>Are you sure you want to remove the role &apos;%1&apos;?</source>
+        <translation>Θέλετε σίγουρα να αφαιρέσετε τον ρόλο «%1»;</translation>
+    </message>
+    <message>
+        <source>Are you sure you want to remove the user &apos;%1&apos;?</source>
+        <translation>Θέλετε σίγουρα να αφαιρέσετε τον χρήστη «%1»;</translation>
+    </message>
+    <message>
+        <source>At least %1 characters</source>
+        <translation>Τουλάχιστον %1 χαρακτήρες</translation>
+    </message>
+    <message>
+        <source>Browser</source>
+        <translation>Πρόγραμμα περιήγησης</translation>
+    </message>
+    <message>
+        <source>Browsers and devices where someone is logged in with a user account.</source>
+        <translation>Προγράμματα περιήγησης και συσκευές όπου κάποιος είναι συνδεδεμένος με λογαριασμό χρήστη.</translation>
+    </message>
+    <message>
+        <source>Change Password</source>
+        <translation>Αλλαγή κωδικού</translation>
+    </message>
+    <message>
+        <source>Confirm password:</source>
+        <translation>Επιβεβαίωση κωδικού:</translation>
+    </message>
+    <message>
+        <source>Created</source>
+        <translation>Δημιουργήθηκε</translation>
+    </message>
+    <message>
+        <source>Current password:</source>
+        <translation>Τρέχων κωδικός:</translation>
+    </message>
+    <message>
+        <source>Description</source>
+        <translation>Περιγραφή</translation>
+    </message>
+    <message>
+        <source>Description:</source>
+        <translation>Περιγραφή:</translation>
+    </message>
+    <message>
+        <source>Disable</source>
+        <translation>Απενεργοποίηση</translation>
+    </message>
+    <message>
+        <source>Disable this account</source>
+        <translation>Απενεργοποίηση αυτού του λογαριασμού</translation>
+    </message>
+    <message>
+        <source>Edit Role</source>
+        <translation>Επεξεργασία ρόλου</translation>
+    </message>
+    <message>
+        <source>Edit User</source>
+        <translation>Επεξεργασία χρήστη</translation>
+    </message>
+    <message>
+        <source>Edit...</source>
+        <translation>Επεξεργασία...</translation>
+    </message>
+    <message>
+        <source>Enable</source>
+        <translation>Ενεργοποίηση</translation>
+    </message>
+    <message>
+        <source>Enter a role name.</source>
+        <translation>Εισαγάγετε όνομα ρόλου.</translation>
+    </message>
+    <message>
+        <source>Enter a username.</source>
+        <translation>Εισαγάγετε όνομα χρήστη.</translation>
+    </message>
+    <message>
+        <source>Expires</source>
+        <translation>Λήγει</translation>
+    </message>
+    <message>
+        <source>Gives control over the PC or qBittorrent itself</source>
+        <translation>Δίνει έλεγχο στον υπολογιστή ή στο ίδιο το qBittorrent</translation>
+    </message>
+    <message>
+        <source>Last active</source>
+        <translation>Τελευταία δραστηριότητα</translation>
+    </message>
+    <message>
+        <source>Last login</source>
+        <translation>Τελευταία σύνδεση</translation>
+    </message>
+    <message>
+        <source>Leave empty to keep the current password</source>
+        <translation>Αφήστε κενό για να κρατήσετε τον τρέχοντα κωδικό</translation>
+    </message>
+    <message>
+        <source>Log Out</source>
+        <translation>Αποσύνδεση</translation>
+    </message>
+    <message>
+        <source>Log Out Everywhere</source>
+        <translation>Αποσύνδεση παντού</translation>
+    </message>
+    <message>
+        <source>Logged In</source>
+        <translation>Συνδεδεμένοι</translation>
+    </message>
+    <message>
+        <source>Logged in</source>
+        <translation>Συνδέθηκε</translation>
+    </message>
+    <message>
+        <source>New password:</source>
+        <translation>Νέος κωδικός:</translation>
+    </message>
+    <message>
+        <source>No accounts yet, so everyone still uses the shared WebUI login. Add an Admin account first.</source>
+        <translation>Δεν υπάρχουν ακόμη λογαριασμοί, οπότε όλοι χρησιμοποιούν ακόμη την κοινή σύνδεση WebUI. Προσθέστε πρώτα λογαριασμό διαχειριστή.</translation>
+    </message>
+    <message>
+        <source>People who can log in to the WebUI with their own username and password.</source>
+        <translation>Άτομα που μπορούν να συνδεθούν στο WebUI με δικό τους όνομα χρήστη και κωδικό.</translation>
+    </message>
+    <message>
+        <source>Permissions</source>
+        <translation>Δικαιώματα</translation>
+    </message>
+    <message>
+        <source>Role</source>
+        <translation>Ρόλος</translation>
+    </message>
+    <message>
+        <source>Role:</source>
+        <translation>Ρόλος:</translation>
+    </message>
+    <message>
+        <source>Roles</source>
+        <translation>Ρόλοι</translation>
+    </message>
+    <message>
+        <source>The password must be at least %1 characters long.</source>
+        <translation>Ο κωδικός πρέπει να έχει τουλάχιστον %1 χαρακτήρες.</translation>
+    </message>
+    <message>
+        <source>The passwords don&apos;t match.</source>
+        <translation>Οι κωδικοί δεν ταιριάζουν.</translation>
+    </message>
+    <message>
+        <source>User</source>
+        <translation>Χρήστης</translation>
+    </message>
+    <message>
+        <source>Users</source>
+        <translation>Χρήστες</translation>
+    </message>
+    <message>
+        <source>Your password was changed. Other browsers and devices where you were logged in have been logged out.</source>
+        <translation>Ο κωδικός σας άλλαξε. Άλλα προγράμματα περιήγησης και συσκευές όπου ήσασταν συνδεδεμένοι αποσυνδέθηκαν.</translation>
+    </message>
+</context>
+<context>
+    <name>WebUIActivity</name>
+    <message>
+        <source>Action</source>
+        <translation>Ενέργεια</translation>
+    </message>
+    <message>
+        <source>Result</source>
+        <translation>Αποτέλεσμα</translation>
+    </message>
+    <message>
+        <source>Role</source>
+        <translation>Ρόλος</translation>
+    </message>
+    <message>
+        <source>Time</source>
+        <translation>Ώρα</translation>
+    </message>
+    <message>
+        <source>User</source>
+        <translation>Χρήστης</translation>
     </message>
 </context>
 </TS>

@@ -141,6 +141,62 @@
         <source>The free IP to Country Lite database by DB-IP is used for resolving the countries of peers. The database is licensed under the Creative Commons Attribution 4.0 International License</source>
         <translation>מסד־הנתונים החינמי IP to Country Lite מאת DB-IP משמש עבור פתירת מדינות של עמיתים. מסד־הנתונים ברישיון תחת הרישיון הבינלאומי Creative Commons Attribution 4.0</translation>
     </message>
+    <message>
+        <source>This edition</source>
+        <translation>מהדורה זו</translation>
+    </message>
+    <message>
+        <source>Edition version:</source>
+        <translation>גרסת המהדורה:</translation>
+    </message>
+    <message>
+        <source>Based on:</source>
+        <translation>מבוסס על:</translation>
+    </message>
+    <message>
+        <source>Maintainer:</source>
+        <translation>מתחזק:</translation>
+    </message>
+    <message>
+        <source>qBittorrent project:</source>
+        <translation>פרויקט qBittorrent:</translation>
+    </message>
+    <message>
+        <source>Kettle Edition is a personal build of qBittorrent that adds user accounts with roles for the WebUI and the desktop app, an activity log, and an installable WebUI with a phone layout. A kettle is a group of hawks soaring together. This is an unofficial build, not affiliated with the qBittorrent project.</source>
+        <translation>Kettle Edition היא מהדורה אישית של qBittorrent שמוסיפה חשבונות משתמש עם תפקידים ל-WebUI ולאפליקציית שולחן העבודה, יומן פעילות ו-WebUI להתקנה עם פריסה לטלפון. Kettle הוא להקת בזים שמרחפים יחד. זו מהדורה לא רשמית שאינה קשורה לפרויקט qBittorrent.</translation>
+    </message>
+    <message>
+        <source>N/A</source>
+        <translation>לא זמין</translation>
+    </message>
+    <message>
+        <source>This edition</source>
+        <translation>מהדורה זו</translation>
+    </message>
+    <message>
+        <source>Edition version:</source>
+        <translation>גרסת המהדורה:</translation>
+    </message>
+    <message>
+        <source>Based on:</source>
+        <translation>מבוסס על:</translation>
+    </message>
+    <message>
+        <source>Maintainer:</source>
+        <translation>מתחזק:</translation>
+    </message>
+    <message>
+        <source>qBittorrent project:</source>
+        <translation>פרויקט qBittorrent:</translation>
+    </message>
+    <message>
+        <source>Kettle Edition is a personal build of qBittorrent that adds user accounts with roles for the WebUI and the desktop app, an activity log, and an installable WebUI with a phone layout. A kettle is a group of hawks soaring together. This is an unofficial build, not affiliated with the qBittorrent project.</source>
+        <translation>Kettle Edition היא מהדורה אישית של qBittorrent שמוסיפה חשבונות משתמש עם תפקידים ל-WebUI ולאפליקציית שולחן העבודה, יומן פעילות ו-WebUI להתקנה עם פריסה לטלפון. Kettle הוא להקת בזים שמרחפים יחד. זו מהדורה לא רשמית שאינה קשורה לפרויקט qBittorrent.</translation>
+    </message>
+    <message>
+        <source>N/A</source>
+        <translation>לא זמין</translation>
+    </message>
 </context>
 <context>
     <name>AbstractFileStorage</name>
@@ -1459,6 +1515,62 @@
         <location filename="../gui/advancedsettings.cpp" line="925"/>
         <source>Embedded tracker port</source>
         <translation>פתחת עוקבן משובץ</translation>
+    </message>
+    <message>
+        <source>Network</source>
+        <translation>רשת</translation>
+    </message>
+    <message>
+        <source>Storage</source>
+        <translation>אחסון</translation>
+    </message>
+    <message>
+        <source>Peers and trackers</source>
+        <translation>עמיתים ועוקבנים</translation>
+    </message>
+    <message>
+        <source>Program behavior</source>
+        <translation>התנהגות התוכנה</translation>
+    </message>
+    <message>
+        <source>Display and notifications</source>
+        <translation>תצוגה והתראות</translation>
+    </message>
+    <message>
+        <source>Network connection</source>
+        <translation>חיבור לרשת</translation>
+    </message>
+    <message>
+        <source>Security and privacy</source>
+        <translation>אבטחה ופרטיות</translation>
+    </message>
+    <message>
+        <source>Connection tuning</source>
+        <translation>כוונון החיבור</translation>
+    </message>
+    <message>
+        <source>Saving and torrent files</source>
+        <translation>שמירה וקובצי טורנט</translation>
+    </message>
+    <message>
+        <source>Disk and memory</source>
+        <translation>דיסק וזיכרון</translation>
+    </message>
+    <message>
+        <source>Peers and seeding</source>
+        <translation>עמיתים והפצה</translation>
+    </message>
+    <message>
+        <source>DHT and I2P</source>
+        <translation>DHT ו-I2P</translation>
+    </message>
+    <message>
+        <source>General</source>
+        <translation>כללי</translation>
+    </message>
+    <message>
+        <source>Trackers</source>
+        <translation>עוקבנים</translation>
     </message>
 </context>
 <context>
@@ -3476,6 +3588,22 @@ Supports the formats: S01E01, 1x1, 2017.12.31 and 31.12.2017 (Date formats also 
         <source>Remove torrent</source>
         <translation>הסר טורנט</translation>
     </message>
+    <message>
+        <source>This choice is remembered for the next removal.</source>
+        <translation>הבחירה הזו תיזכר להסרה הבאה.</translation>
+    </message>
+    <message>
+        <source>Remove</source>
+        <translation>הסר</translation>
+    </message>
+    <message>
+        <source>This choice is remembered for the next removal.</source>
+        <translation>הבחירה הזו תיזכר להסרה הבאה.</translation>
+    </message>
+    <message>
+        <source>Remove</source>
+        <translation>הסר</translation>
+    </message>
 </context>
 <context>
     <name>DownloadFromURLDialog</name>
@@ -3549,6 +3677,14 @@ Supports the formats: S01E01, 1x1, 2017.12.31 and 31.12.2017 (Date formats also 
         <location filename="../gui/executionlogwidget.cpp" line="99"/>
         <source>Clear</source>
         <translation>נקה</translation>
+    </message>
+    <message>
+        <source>WebUI Activity</source>
+        <translation>פעילות WebUI</translation>
+    </message>
+    <message>
+        <source>WebUI Activity</source>
+        <translation>פעילות WebUI</translation>
     </message>
 </context>
 <context>
@@ -4713,6 +4849,46 @@ Minimum requirement: %2.</source>
         <location filename="../gui/mainwindow.cpp" line="1346"/>
         <source>Torrent Files</source>
         <translation>קבצי טורנט</translation>
+    </message>
+    <message>
+        <source>Kettle Edition %1 is available.</source>
+        <translation>Kettle Edition %1 זמינה.</translation>
+    </message>
+    <message>
+        <source>qBittorrent Kettle Edition %1 is available. It is downloaded now and installed at 4:00 AM, or when qBittorrent starts next.</source>
+        <translation>qBittorrent Kettle Edition %1 זמינה. היא יורדת עכשיו ותותקן בשעה 4:00 או בהפעלה הבאה של qBittorrent.</translation>
+    </message>
+    <message>
+        <source>qBittorrent Kettle Edition %1 is available. It is downloaded now. Turn on &quot;Automatically install Kettle Edition updates&quot; in Options to install it.</source>
+        <translation>qBittorrent Kettle Edition %1 זמינה. היא יורדת עכשיו. הפעל את &quot;התקן עדכוני Kettle Edition אוטומטית&quot; באפשרויות כדי להתקין אותה.</translation>
+    </message>
+    <message>
+        <source>You have the latest qBittorrent Kettle Edition (%1).</source>
+        <translation>יש לך את qBittorrent Kettle Edition העדכנית ביותר (%1).</translation>
+    </message>
+    <message>
+        <source>Could not check for qBittorrent Kettle Edition updates. See the Execution Log for details.</source>
+        <translation>לא ניתן היה לבדוק עדכונים ל-qBittorrent Kettle Edition. פרטים ביומן הביצוע.</translation>
+    </message>
+    <message>
+        <source>Kettle Edition %1 is available.</source>
+        <translation>Kettle Edition %1 זמינה.</translation>
+    </message>
+    <message>
+        <source>qBittorrent Kettle Edition %1 is available. It is downloaded now and installed at 4:00 AM, or when qBittorrent starts next.</source>
+        <translation>qBittorrent Kettle Edition %1 זמינה. היא יורדת עכשיו ותותקן בשעה 4:00 או בהפעלה הבאה של qBittorrent.</translation>
+    </message>
+    <message>
+        <source>qBittorrent Kettle Edition %1 is available. It is downloaded now. Turn on &quot;Automatically install Kettle Edition updates&quot; in Options to install it.</source>
+        <translation>qBittorrent Kettle Edition %1 זמינה. היא יורדת עכשיו. הפעל את &quot;התקן עדכוני Kettle Edition אוטומטית&quot; באפשרויות כדי להתקין אותה.</translation>
+    </message>
+    <message>
+        <source>You have the latest qBittorrent Kettle Edition (%1).</source>
+        <translation>יש לך את qBittorrent Kettle Edition העדכנית ביותר (%1).</translation>
+    </message>
+    <message>
+        <source>Could not check for qBittorrent Kettle Edition updates. See the Execution Log for details.</source>
+        <translation>לא ניתן היה לבדוק עדכונים ל-qBittorrent Kettle Edition. פרטים ביומן הביצוע.</translation>
     </message>
 </context>
 <context>
@@ -8463,6 +8639,190 @@ Check the Execution Log for errors.</source>
         <source>Length Error</source>
         <translation>שגיאת אורך</translation>
     </message>
+    <message>
+        <source>Search settings</source>
+        <translation>חיפוש בהגדרות</translation>
+    </message>
+    <message>
+        <source>No settings match</source>
+        <translation>אין הגדרות תואמות</translation>
+    </message>
+    <message>
+        <source>User Accounts</source>
+        <translation>חשבונות משתמש</translation>
+    </message>
+    <message>
+        <source>Automatically install Kettle Edition updates</source>
+        <translation>התקן עדכוני Kettle Edition אוטומטית</translation>
+    </message>
+    <message>
+        <source>Status bar and log</source>
+        <translation>שורת מצב ויומן</translation>
+    </message>
+    <message>
+        <source>Files</source>
+        <translation>קבצים</translation>
+    </message>
+    <message>
+        <source>Checking</source>
+        <translation>בדיקה</translation>
+    </message>
+    <message>
+        <source>Until the first user account is created, this login always works.</source>
+        <translation>עד שייווצר חשבון המשתמש הראשון, כניסה זו תמיד פועלת.</translation>
+    </message>
+    <message>
+        <source>Allow this login when user accounts exist</source>
+        <translation>אפשר כניסה זו כשקיימים חשבונות משתמש</translation>
+    </message>
+    <message>
+        <source>Access</source>
+        <translation>גישה</translation>
+    </message>
+    <message>
+        <source>Changes to users, roles and logins apply at once. The settings below apply with OK or Apply.</source>
+        <translation>שינויים במשתמשים, בתפקידים ובכניסות חלים מיד. ההגדרות שלהלן חלות באישור או בהחל.</translation>
+    </message>
+    <message>
+        <source>Logins and Activity Log</source>
+        <translation>כניסות ויומן פעילות</translation>
+    </message>
+    <message>
+        <source>0 means users are logged out after the session timeout.</source>
+        <translation>0 פירושו שמשתמשים מנותקים לאחר פסק הזמן של ההפעלה.</translation>
+    </message>
+    <message>
+        <source>Keep users logged in for:</source>
+        <translation>השאר משתמשים מחוברים למשך:</translation>
+    </message>
+    <message>
+        <source>Until session timeout</source>
+        <translation>עד פסק הזמן של ההפעלה</translation>
+    </message>
+    <message>
+        <source> days</source>
+        <translation> ימים</translation>
+    </message>
+    <message>
+        <source>Lock account after consecutive failures:</source>
+        <translation>נעל חשבון לאחר כשלונות רצופים:</translation>
+    </message>
+    <message>
+        <source>Keep WebUI activity log for:</source>
+        <translation>שמור יומן פעילות WebUI למשך:</translation>
+    </message>
+    <message>
+        <source>lock for:</source>
+        <translation>נעל למשך:</translation>
+    </message>
+    <message>
+        <source>%1 works best with Windows dark mode</source>
+        <translation>%1 עובד הכי טוב עם המצב הכהה של Windows</translation>
+    </message>
+    <message>
+        <source>WebUI address</source>
+        <translation>כתובת WebUI</translation>
+    </message>
+    <message>
+        <source>With the WebUI address set to %1, only this PC can reach the WebUI. Remote access, including through a reverse proxy on another machine, will stop working.
+
+Save anyway?</source>
+        <translation>כשכתובת ה-WebUI מוגדרת ל-%1, רק המחשב הזה יכול לגשת ל-WebUI. גישה מרחוק, כולל דרך פרוקסי הפוך במחשב אחר, תפסיק לעבוד.
+
+לשמור בכל זאת?</translation>
+    </message>
+    <message>
+        <source>Search settings</source>
+        <translation>חיפוש בהגדרות</translation>
+    </message>
+    <message>
+        <source>No settings match</source>
+        <translation>אין הגדרות תואמות</translation>
+    </message>
+    <message>
+        <source>User Accounts</source>
+        <translation>חשבונות משתמש</translation>
+    </message>
+    <message>
+        <source>Automatically install Kettle Edition updates</source>
+        <translation>התקן עדכוני Kettle Edition אוטומטית</translation>
+    </message>
+    <message>
+        <source>Status bar and log</source>
+        <translation>שורת מצב ויומן</translation>
+    </message>
+    <message>
+        <source>Files</source>
+        <translation>קבצים</translation>
+    </message>
+    <message>
+        <source>Checking</source>
+        <translation>בדיקה</translation>
+    </message>
+    <message>
+        <source>Until the first user account is created, this login always works.</source>
+        <translation>עד שייווצר חשבון המשתמש הראשון, כניסה זו תמיד פועלת.</translation>
+    </message>
+    <message>
+        <source>Allow this login when user accounts exist</source>
+        <translation>אפשר כניסה זו כשקיימים חשבונות משתמש</translation>
+    </message>
+    <message>
+        <source>Access</source>
+        <translation>גישה</translation>
+    </message>
+    <message>
+        <source>Changes to users, roles and logins apply at once. The settings below apply with OK or Apply.</source>
+        <translation>שינויים במשתמשים, בתפקידים ובכניסות חלים מיד. ההגדרות שלהלן חלות באישור או בהחל.</translation>
+    </message>
+    <message>
+        <source>Logins and Activity Log</source>
+        <translation>כניסות ויומן פעילות</translation>
+    </message>
+    <message>
+        <source>0 means users are logged out after the session timeout.</source>
+        <translation>0 פירושו שמשתמשים מנותקים לאחר פסק הזמן של ההפעלה.</translation>
+    </message>
+    <message>
+        <source>Keep users logged in for:</source>
+        <translation>השאר משתמשים מחוברים למשך:</translation>
+    </message>
+    <message>
+        <source>Until session timeout</source>
+        <translation>עד פסק הזמן של ההפעלה</translation>
+    </message>
+    <message>
+        <source> days</source>
+        <translation> ימים</translation>
+    </message>
+    <message>
+        <source>Lock account after consecutive failures:</source>
+        <translation>נעל חשבון לאחר כשלונות רצופים:</translation>
+    </message>
+    <message>
+        <source>Keep WebUI activity log for:</source>
+        <translation>שמור יומן פעילות WebUI למשך:</translation>
+    </message>
+    <message>
+        <source>lock for:</source>
+        <translation>נעל למשך:</translation>
+    </message>
+    <message>
+        <source>%1 works best with Windows dark mode</source>
+        <translation>%1 עובד הכי טוב עם המצב הכהה של Windows</translation>
+    </message>
+    <message>
+        <source>WebUI address</source>
+        <translation>כתובת WebUI</translation>
+    </message>
+    <message>
+        <source>With the WebUI address set to %1, only this PC can reach the WebUI. Remote access, including through a reverse proxy on another machine, will stop working.
+
+Save anyway?</source>
+        <translation>כשכתובת ה-WebUI מוגדרת ל-%1, רק המחשב הזה יכול לגשת ל-WebUI. גישה מרחוק, כולל דרך פרוקסי הפוך במחשב אחר, תפסיק לעבוד.
+
+לשמור בכל זאת?</translation>
+    </message>
 </context>
 <context>
     <name>PeerInfo</name>
@@ -8715,6 +9075,22 @@ Check the Execution Log for errors.</source>
         <location filename="../gui/properties/peerlistwidget.cpp" line="309"/>
         <source>Copy IP:port</source>
         <translation>העתק IP:פתחה</translation>
+    </message>
+    <message>
+        <source>Reset auto width</source>
+        <translation>אפס רוחב אוטומטי</translation>
+    </message>
+    <message>
+        <source>Fit all non-hidden columns to their contents again, and forget the widths that were set by hand</source>
+        <translation>התאם שוב את כל העמודות הגלויות לתוכנן ושכח רוחבים שנקבעו ידנית</translation>
+    </message>
+    <message>
+        <source>Reset auto width</source>
+        <translation>אפס רוחב אוטומטי</translation>
+    </message>
+    <message>
+        <source>Fit all non-hidden columns to their contents again, and forget the widths that were set by hand</source>
+        <translation>התאם שוב את כל העמודות הגלויות לתוכנן ושכח רוחבים שנקבעו ידנית</translation>
     </message>
 </context>
 <context>
@@ -10099,6 +10475,14 @@ Those plugins were disabled.</source>
         <source>Open link</source>
         <translation type="unfinished"></translation>
     </message>
+    <message>
+        <source>Details</source>
+        <translation>פרטים</translation>
+    </message>
+    <message>
+        <source>Details</source>
+        <translation>פרטים</translation>
+    </message>
 </context>
 <context>
     <name>SearchController</name>
@@ -10452,6 +10836,70 @@ Those plugins were disabled.</source>
         <source>Resize all non-hidden columns to the size of their contents</source>
         <translation>שנה גודל של כל העמודות הבלתי מוסתרות אל הגודל של התכנים שלהן</translation>
     </message>
+    <message>
+        <source>%1 of %2 shown (%3 hidden)</source>
+        <translation>מוצגים %1 מתוך %2 (%3 מוסתרים)</translation>
+    </message>
+    <message>
+        <source>%1 of %2 shown</source>
+        <translation>מוצגים %1 מתוך %2</translation>
+    </message>
+    <message>
+        <source>Searching: %1</source>
+        <translation>מחפש: %1</translation>
+    </message>
+    <message>
+        <source>Finished: %1</source>
+        <translation>הסתיים: %1</translation>
+    </message>
+    <message>
+        <source>Search aborted: %1</source>
+        <translation>החיפוש הופסק: %1</translation>
+    </message>
+    <message>
+        <source>Reset auto width</source>
+        <translation>אפס רוחב אוטומטי</translation>
+    </message>
+    <message>
+        <source>Fit all non-hidden columns to their contents again, and forget the widths that were set by hand</source>
+        <translation>התאם שוב את כל העמודות הגלויות לתוכנן ושכח רוחבים שנקבעו ידנית</translation>
+    </message>
+    <message>
+        <source>Unknown</source>
+        <translation>לא ידוע</translation>
+    </message>
+    <message>
+        <source>%1 of %2 shown (%3 hidden)</source>
+        <translation>מוצגים %1 מתוך %2 (%3 מוסתרים)</translation>
+    </message>
+    <message>
+        <source>%1 of %2 shown</source>
+        <translation>מוצגים %1 מתוך %2</translation>
+    </message>
+    <message>
+        <source>Searching: %1</source>
+        <translation>מחפש: %1</translation>
+    </message>
+    <message>
+        <source>Finished: %1</source>
+        <translation>הסתיים: %1</translation>
+    </message>
+    <message>
+        <source>Search aborted: %1</source>
+        <translation>החיפוש הופסק: %1</translation>
+    </message>
+    <message>
+        <source>Reset auto width</source>
+        <translation>אפס רוחב אוטומטי</translation>
+    </message>
+    <message>
+        <source>Fit all non-hidden columns to their contents again, and forget the widths that were set by hand</source>
+        <translation>התאם שוב את כל העמודות הגלויות לתוכנן ושכח רוחבים שנקבעו ידנית</translation>
+    </message>
+    <message>
+        <source>Unknown</source>
+        <translation>לא ידוע</translation>
+    </message>
 </context>
 <context>
     <name>SearchPluginManager</name>
@@ -10749,6 +11197,14 @@ Those plugins were disabled.</source>
         <source>Couldn&apos;t update &quot;%1&quot; search engine plugin. %2</source>
         <translation type="unfinished">לא היה ניתן לעדכן את המתקע של מנוע החיפוש &quot;%1&quot;. %2</translation>
     </message>
+    <message>
+        <source>Install Kettle Plugins</source>
+        <translation>התקן תוספים של Kettle</translation>
+    </message>
+    <message>
+        <source>Install Kettle Plugins</source>
+        <translation>התקן תוספים של Kettle</translation>
+    </message>
 </context>
 <context>
     <name>SearchPluginSourceDialog</name>
@@ -10888,6 +11344,90 @@ Click the &quot;Search plugins...&quot; button at the bottom right of the window
         <location filename="../gui/search/searchwidget.ui" line="58"/>
         <source>Stop</source>
         <translation>עצור</translation>
+    </message>
+    <message>
+        <source>Searches</source>
+        <translation>חיפושים</translation>
+    </message>
+    <message>
+        <source>Close the selected search</source>
+        <translation>סגור את החיפוש שנבחר</translation>
+    </message>
+    <message>
+        <source>Search for torrents...</source>
+        <translation>חפש טורנטים...</translation>
+    </message>
+    <message>
+        <source>Category to search in</source>
+        <translation>קטגוריה לחיפוש</translation>
+    </message>
+    <message>
+        <source>Search engines to use</source>
+        <translation>מנועי חיפוש לשימוש</translation>
+    </message>
+    <message>
+        <source>There aren&apos;t any search plugins installed.
+Click the &quot;Search plugins...&quot; button at the top right of the window to install some.</source>
+        <translation>אין תוספי חיפוש מותקנים.
+לחץ על הכפתור &quot;תוספי חיפוש...&quot; בפינה הימנית העליונה של החלון כדי להתקין.</translation>
+    </message>
+    <message>
+        <source>Type a search above and press Enter.</source>
+        <translation>הקלד חיפוש למעלה ולחץ Enter.</translation>
+    </message>
+    <message>
+        <source>Refresh search</source>
+        <translation>רענן חיפוש</translation>
+    </message>
+    <message>
+        <source>Close search</source>
+        <translation>סגור חיפוש</translation>
+    </message>
+    <message>
+        <source>Close all searches</source>
+        <translation>סגור את כל החיפושים</translation>
+    </message>
+    <message>
+        <source>Searches</source>
+        <translation>חיפושים</translation>
+    </message>
+    <message>
+        <source>Close the selected search</source>
+        <translation>סגור את החיפוש שנבחר</translation>
+    </message>
+    <message>
+        <source>Search for torrents...</source>
+        <translation>חפש טורנטים...</translation>
+    </message>
+    <message>
+        <source>Category to search in</source>
+        <translation>קטגוריה לחיפוש</translation>
+    </message>
+    <message>
+        <source>Search engines to use</source>
+        <translation>מנועי חיפוש לשימוש</translation>
+    </message>
+    <message>
+        <source>There aren&apos;t any search plugins installed.
+Click the &quot;Search plugins...&quot; button at the top right of the window to install some.</source>
+        <translation>אין תוספי חיפוש מותקנים.
+לחץ על הכפתור &quot;תוספי חיפוש...&quot; בפינה הימנית העליונה של החלון כדי להתקין.</translation>
+    </message>
+    <message>
+        <source>Type a search above and press Enter.</source>
+        <translation>הקלד חיפוש למעלה ולחץ Enter.</translation>
+    </message>
+    <message>
+        <source>Refresh search</source>
+        <translation>רענן חיפוש</translation>
+    </message>
+    <message>
+        <source>Close search</source>
+        <translation>סגור חיפוש</translation>
+    </message>
+    <message>
+        <source>Close all searches</source>
+        <translation>סגור את כל החיפושים</translation>
     </message>
 </context>
 <context>
@@ -11350,6 +11890,326 @@ Click the &quot;Search plugins...&quot; button at the bottom right of the window
         <location filename="../gui/statsdialog.cpp" line="111"/>
         <source>%1 ms</source>
         <translation type="unfinished">%1 מילי שנייה</translation>
+    </message>
+    <message>
+        <source>Copy</source>
+        <translation>העתק</translation>
+    </message>
+    <message>
+        <source>Overview</source>
+        <translation>סקירה</translation>
+    </message>
+    <message>
+        <source>Transfer</source>
+        <translation>העברה</translation>
+    </message>
+    <message>
+        <source>This session</source>
+        <translation>הפעלה זו</translation>
+    </message>
+    <message>
+        <source>All time</source>
+        <translation>כל הזמן</translation>
+    </message>
+    <message>
+        <source>Downloaded:</source>
+        <translation>הורד:</translation>
+    </message>
+    <message>
+        <source>Uploaded:</source>
+        <translation>הועלה:</translation>
+    </message>
+    <message>
+        <source>Share ratio:</source>
+        <translation>יחס שיתוף:</translation>
+    </message>
+    <message>
+        <source>Current speed:</source>
+        <translation>מהירות נוכחית:</translation>
+    </message>
+    <message>
+        <source>Activity</source>
+        <translation>פעילות</translation>
+    </message>
+    <message>
+        <source>Torrents downloading:</source>
+        <translation>טורנטים בהורדה:</translation>
+    </message>
+    <message>
+        <source>Torrents seeding:</source>
+        <translation>טורנטים בזריעה:</translation>
+    </message>
+    <message>
+        <source>Torrents stopped:</source>
+        <translation>טורנטים שהופסקו:</translation>
+    </message>
+    <message>
+        <source>Torrents with errors:</source>
+        <translation>טורנטים עם שגיאות:</translation>
+    </message>
+    <message>
+        <source>Running for:</source>
+        <translation>פועל כבר:</translation>
+    </message>
+    <message>
+        <source>History</source>
+        <translation>היסטוריה</translation>
+    </message>
+    <message>
+        <source>Period</source>
+        <translation>תקופה</translation>
+    </message>
+    <message>
+        <source>Today</source>
+        <translation>היום</translation>
+    </message>
+    <message>
+        <source>Last 7 days</source>
+        <translation>7 הימים האחרונים</translation>
+    </message>
+    <message>
+        <source>This month</source>
+        <translation>החודש</translation>
+    </message>
+    <message>
+        <source>Last month</source>
+        <translation>החודש שעבר</translation>
+    </message>
+    <message>
+        <source>Last 12 months</source>
+        <translation>12 החודשים האחרונים</translation>
+    </message>
+    <message>
+        <source>Tracking since:</source>
+        <translation>מעקב מאז:</translation>
+    </message>
+    <message>
+        <source>By month</source>
+        <translation>לפי חודש</translation>
+    </message>
+    <message>
+        <source>Month</source>
+        <translation>חודש</translation>
+    </message>
+    <message>
+        <source>Downloaded</source>
+        <translation>הורד</translation>
+    </message>
+    <message>
+        <source>Uploaded</source>
+        <translation>הועלה</translation>
+    </message>
+    <message>
+        <source>Share ratio</source>
+        <translation>יחס שיתוף</translation>
+    </message>
+    <message>
+        <source>WebUI downloads added, this month</source>
+        <translation>הורדות שנוספו דרך WebUI, החודש</translation>
+    </message>
+    <message>
+        <source>Counts the requests that added a download. Apps without a login, such as Sonarr and Radarr, are shown as (localhost). Downloads added in the desktop window are not counted.</source>
+        <translation>סופר בקשות שהוסיפו הורדה. יישומים ללא כניסה, כמו Sonarr ו-Radarr, מוצגים כ-(localhost). הורדות שנוספו בחלון שולחן העבודה אינן נספרות.</translation>
+    </message>
+    <message>
+        <source>Technical</source>
+        <translation>טכני</translation>
+    </message>
+    <message>
+        <source>Disk</source>
+        <translation>דיסק</translation>
+    </message>
+    <message>
+        <source>Peers waiting on disk writes:</source>
+        <translation>עמיתים שממתינים לכתיבה לדיסק:</translation>
+    </message>
+    <message>
+        <source>Peers waiting on disk reads:</source>
+        <translation>עמיתים שממתינים לקריאה מהדיסק:</translation>
+    </message>
+    <message>
+        <source>Network</source>
+        <translation>רשת</translation>
+    </message>
+    <message>
+        <source>DHT nodes:</source>
+        <translation>צמתי DHT:</translation>
+    </message>
+    <message>
+        <source>Data discarded this session:</source>
+        <translation>נתונים שנזרקו בהפעלה זו:</translation>
+    </message>
+    <message>
+        <source>Before tracking began</source>
+        <translation>לפני שהמעקב התחיל</translation>
+    </message>
+    <message>
+        <source>Nothing added yet</source>
+        <translation>עדיין לא נוסף דבר</translation>
+    </message>
+    <message>
+        <source>Off</source>
+        <translation>כבוי</translation>
+    </message>
+    <message>
+        <source>Copy</source>
+        <translation>העתק</translation>
+    </message>
+    <message>
+        <source>Overview</source>
+        <translation>סקירה</translation>
+    </message>
+    <message>
+        <source>Transfer</source>
+        <translation>העברה</translation>
+    </message>
+    <message>
+        <source>This session</source>
+        <translation>הפעלה זו</translation>
+    </message>
+    <message>
+        <source>All time</source>
+        <translation>כל הזמן</translation>
+    </message>
+    <message>
+        <source>Downloaded:</source>
+        <translation>הורד:</translation>
+    </message>
+    <message>
+        <source>Uploaded:</source>
+        <translation>הועלה:</translation>
+    </message>
+    <message>
+        <source>Share ratio:</source>
+        <translation>יחס שיתוף:</translation>
+    </message>
+    <message>
+        <source>Current speed:</source>
+        <translation>מהירות נוכחית:</translation>
+    </message>
+    <message>
+        <source>Activity</source>
+        <translation>פעילות</translation>
+    </message>
+    <message>
+        <source>Torrents downloading:</source>
+        <translation>טורנטים בהורדה:</translation>
+    </message>
+    <message>
+        <source>Torrents seeding:</source>
+        <translation>טורנטים בזריעה:</translation>
+    </message>
+    <message>
+        <source>Torrents stopped:</source>
+        <translation>טורנטים שהופסקו:</translation>
+    </message>
+    <message>
+        <source>Torrents with errors:</source>
+        <translation>טורנטים עם שגיאות:</translation>
+    </message>
+    <message>
+        <source>Running for:</source>
+        <translation>פועל כבר:</translation>
+    </message>
+    <message>
+        <source>History</source>
+        <translation>היסטוריה</translation>
+    </message>
+    <message>
+        <source>Period</source>
+        <translation>תקופה</translation>
+    </message>
+    <message>
+        <source>Today</source>
+        <translation>היום</translation>
+    </message>
+    <message>
+        <source>Last 7 days</source>
+        <translation>7 הימים האחרונים</translation>
+    </message>
+    <message>
+        <source>This month</source>
+        <translation>החודש</translation>
+    </message>
+    <message>
+        <source>Last month</source>
+        <translation>החודש שעבר</translation>
+    </message>
+    <message>
+        <source>Last 12 months</source>
+        <translation>12 החודשים האחרונים</translation>
+    </message>
+    <message>
+        <source>Tracking since:</source>
+        <translation>מעקב מאז:</translation>
+    </message>
+    <message>
+        <source>By month</source>
+        <translation>לפי חודש</translation>
+    </message>
+    <message>
+        <source>Month</source>
+        <translation>חודש</translation>
+    </message>
+    <message>
+        <source>Downloaded</source>
+        <translation>הורד</translation>
+    </message>
+    <message>
+        <source>Uploaded</source>
+        <translation>הועלה</translation>
+    </message>
+    <message>
+        <source>Share ratio</source>
+        <translation>יחס שיתוף</translation>
+    </message>
+    <message>
+        <source>WebUI downloads added, this month</source>
+        <translation>הורדות שנוספו דרך WebUI, החודש</translation>
+    </message>
+    <message>
+        <source>Counts the requests that added a download. Apps without a login, such as Sonarr and Radarr, are shown as (localhost). Downloads added in the desktop window are not counted.</source>
+        <translation>סופר בקשות שהוסיפו הורדה. יישומים ללא כניסה, כמו Sonarr ו-Radarr, מוצגים כ-(localhost). הורדות שנוספו בחלון שולחן העבודה אינן נספרות.</translation>
+    </message>
+    <message>
+        <source>Technical</source>
+        <translation>טכני</translation>
+    </message>
+    <message>
+        <source>Disk</source>
+        <translation>דיסק</translation>
+    </message>
+    <message>
+        <source>Peers waiting on disk writes:</source>
+        <translation>עמיתים שממתינים לכתיבה לדיסק:</translation>
+    </message>
+    <message>
+        <source>Peers waiting on disk reads:</source>
+        <translation>עמיתים שממתינים לקריאה מהדיסק:</translation>
+    </message>
+    <message>
+        <source>Network</source>
+        <translation>רשת</translation>
+    </message>
+    <message>
+        <source>DHT nodes:</source>
+        <translation>צמתי DHT:</translation>
+    </message>
+    <message>
+        <source>Data discarded this session:</source>
+        <translation>נתונים שנזרקו בהפעלה זו:</translation>
+    </message>
+    <message>
+        <source>Before tracking began</source>
+        <translation>לפני שהמעקב התחיל</translation>
+    </message>
+    <message>
+        <source>Nothing added yet</source>
+        <translation>עדיין לא נוסף דבר</translation>
+    </message>
+    <message>
+        <source>Off</source>
+        <translation>כבוי</translation>
     </message>
 </context>
 <context>
@@ -12043,6 +12903,22 @@ Please choose a different name and try again.</source>
     <message>
         <source>Priority by shown file order</source>
         <translation type="vanished">עדיפות לפי סדר קבצים נראים</translation>
+    </message>
+    <message>
+        <source>Reset auto width</source>
+        <translation>אפס רוחב אוטומטי</translation>
+    </message>
+    <message>
+        <source>Fit all non-hidden columns to their contents again, and forget the widths that were set by hand</source>
+        <translation>התאם שוב את כל העמודות הגלויות לתוכנן ושכח רוחבים שנקבעו ידנית</translation>
+    </message>
+    <message>
+        <source>Reset auto width</source>
+        <translation>אפס רוחב אוטומטי</translation>
+    </message>
+    <message>
+        <source>Fit all non-hidden columns to their contents again, and forget the widths that were set by hand</source>
+        <translation>התאם שוב את כל העמודות הגלויות לתוכנן ושכח רוחבים שנקבעו ידנית</translation>
     </message>
 </context>
 <context>
@@ -13127,6 +14003,22 @@ Please choose a different name and try again.</source>
         <source>Column visibility</source>
         <translation>נראות עמודות</translation>
     </message>
+    <message>
+        <source>Reset auto width</source>
+        <translation>אפס רוחב אוטומטי</translation>
+    </message>
+    <message>
+        <source>Fit all non-hidden columns to their contents again, and forget the widths that were set by hand</source>
+        <translation>התאם שוב את כל העמודות הגלויות לתוכנן ושכח רוחבים שנקבעו ידנית</translation>
+    </message>
+    <message>
+        <source>Reset auto width</source>
+        <translation>אפס רוחב אוטומטי</translation>
+    </message>
+    <message>
+        <source>Fit all non-hidden columns to their contents again, and forget the widths that were set by hand</source>
+        <translation>התאם שוב את כל העמודות הגלויות לתוכנן ושכח רוחבים שנקבעו ידנית</translation>
+    </message>
 </context>
 <context>
     <name>TrackerStatusFilterWidget</name>
@@ -13993,6 +14885,22 @@ Please choose a different name and try again.</source>
         <source>Super seeding mode</source>
         <translation>מצב זריעת־על</translation>
     </message>
+    <message>
+        <source>Reset auto width</source>
+        <translation>אפס רוחב אוטומטי</translation>
+    </message>
+    <message>
+        <source>Fit all non-hidden columns to their contents again, and forget the widths that were set by hand</source>
+        <translation>התאם שוב את כל העמודות הגלויות לתוכנן ושכח רוחבים שנקבעו ידנית</translation>
+    </message>
+    <message>
+        <source>Reset auto width</source>
+        <translation>אפס רוחב אוטומטי</translation>
+    </message>
+    <message>
+        <source>Fit all non-hidden columns to their contents again, and forget the widths that were set by hand</source>
+        <translation>התאם שוב את כל העמודות הגלויות לתוכנן ושכח רוחבים שנקבעו ידנית</translation>
+    </message>
 </context>
 <context>
     <name>UIThemeDialog</name>
@@ -14327,6 +15235,46 @@ Please choose a different name and try again.</source>
         <source>WebAPI login failure. Reason: invalid credentials, attempt count: %1, IP: %2, username: %3</source>
         <translation>כישלון התחברות WebAPI. סיבה: אישורים בלתי תקפים, ספירת ניסיונות: %1, IP: %2, שם משתמש: %3</translation>
     </message>
+    <message>
+        <source>Something went wrong on the server. Details are in qBittorrent&apos;s log.</source>
+        <translation>משהו השתבש בשרת. פרטים ביומן של qBittorrent.</translation>
+    </message>
+    <message>
+        <source>This account is locked after too many failed login attempts. Try again in %1 minute(s).</source>
+        <translation>חשבון זה ננעל לאחר יותר מדי ניסיונות כניסה כושלים. נסה שוב בעוד %1 דקות.</translation>
+    </message>
+    <message>
+        <source>Your role (%1) doesn&apos;t allow this: %2.</source>
+        <translation>התפקיד שלך (%1) אינו מאפשר זאת: %2.</translation>
+    </message>
+    <message>
+        <source>Only an admin can remove the tag that says who added a torrent.</source>
+        <translation>רק מנהל יכול להסיר את התגית שמציינת מי הוסיף טורנט.</translation>
+    </message>
+    <message>
+        <source>Only an admin can clear or replace all tags of a torrent that has a tag saying who added it.</source>
+        <translation>רק מנהל יכול לנקות או להחליף את כל התגיות של טורנט שיש לו תגית שמציינת מי הוסיף אותו.</translation>
+    </message>
+    <message>
+        <source>Something went wrong on the server. Details are in qBittorrent&apos;s log.</source>
+        <translation>משהו השתבש בשרת. פרטים ביומן של qBittorrent.</translation>
+    </message>
+    <message>
+        <source>This account is locked after too many failed login attempts. Try again in %1 minute(s).</source>
+        <translation>חשבון זה ננעל לאחר יותר מדי ניסיונות כניסה כושלים. נסה שוב בעוד %1 דקות.</translation>
+    </message>
+    <message>
+        <source>Your role (%1) doesn&apos;t allow this: %2.</source>
+        <translation>התפקיד שלך (%1) אינו מאפשר זאת: %2.</translation>
+    </message>
+    <message>
+        <source>Only an admin can remove the tag that says who added a torrent.</source>
+        <translation>רק מנהל יכול להסיר את התגית שמציינת מי הוסיף טורנט.</translation>
+    </message>
+    <message>
+        <source>Only an admin can clear or replace all tags of a torrent that has a tag saying who added it.</source>
+        <translation>רק מנהל יכול לנקות או להחליף את כל התגיות של טורנט שיש לו תגית שמציינת מי הוסיף אותו.</translation>
+    </message>
 </context>
 <context>
     <name>WebUI</name>
@@ -14466,6 +15414,669 @@ Please choose a different name and try again.</source>
         <source>&lt; 1m</source>
         <comment>&lt; 1 minute</comment>
         <translation>פחות מדקה</translation>
+    </message>
+</context>
+<context>
+    <name>UpdateInstaller</name>
+    <message>
+        <source>Kettle Edition update</source>
+        <translation>עדכון Kettle Edition</translation>
+    </message>
+    <message>
+        <source>Kettle Edition was updated to %1.</source>
+        <translation>Kettle Edition עודכנה ל-%1.</translation>
+    </message>
+    <message>
+        <source>Kettle Edition updated</source>
+        <translation>Kettle Edition עודכנה</translation>
+    </message>
+    <message>
+        <source>Downloading Kettle Edition %1 (%2 changed files).</source>
+        <translation>מוריד את Kettle Edition %1 (%2 קבצים ששונו).</translation>
+    </message>
+    <message>
+        <source>Kettle Edition %1 is downloaded and ready to install.</source>
+        <translation>Kettle Edition %1 הורדה ומוכנה להתקנה.</translation>
+    </message>
+    <message>
+        <source>Kettle Edition update</source>
+        <translation>עדכון Kettle Edition</translation>
+    </message>
+    <message>
+        <source>Kettle Edition was updated to %1.</source>
+        <translation>Kettle Edition עודכנה ל-%1.</translation>
+    </message>
+    <message>
+        <source>Kettle Edition updated</source>
+        <translation>Kettle Edition עודכנה</translation>
+    </message>
+    <message>
+        <source>Downloading Kettle Edition %1 (%2 changed files).</source>
+        <translation>מוריד את Kettle Edition %1 (%2 קבצים ששונו).</translation>
+    </message>
+    <message>
+        <source>Kettle Edition %1 is downloaded and ready to install.</source>
+        <translation>Kettle Edition %1 הורדה ומוכנה להתקנה.</translation>
+    </message>
+</context>
+<context>
+    <name>UserAccountDialog</name>
+    <message>
+        <source>User</source>
+        <translation>משתמש</translation>
+    </message>
+    <message>
+        <source>Username:</source>
+        <translation>שם משתמש:</translation>
+    </message>
+    <message>
+        <source>Role:</source>
+        <translation>תפקיד:</translation>
+    </message>
+    <message>
+        <source>Password:</source>
+        <translation>סיסמה:</translation>
+    </message>
+    <message>
+        <source>Confirm password:</source>
+        <translation>אשר סיסמה:</translation>
+    </message>
+    <message>
+        <source>Disable this account</source>
+        <translation>השבת חשבון זה</translation>
+    </message>
+    <message>
+        <source>Edit User</source>
+        <translation>ערוך משתמש</translation>
+    </message>
+    <message>
+        <source>Leave empty to keep the current password</source>
+        <translation>השאר ריק כדי לשמור את הסיסמה הנוכחית</translation>
+    </message>
+    <message>
+        <source>Add User</source>
+        <translation>הוסף משתמש</translation>
+    </message>
+    <message>
+        <source>At least %1 characters</source>
+        <translation>לפחות %1 תווים</translation>
+    </message>
+    <message>
+        <source>Enter a username.</source>
+        <translation>הזן שם משתמש.</translation>
+    </message>
+    <message>
+        <source>The password must be at least %1 characters long.</source>
+        <translation>הסיסמה חייבת להיות באורך של לפחות %1 תווים.</translation>
+    </message>
+    <message>
+        <source>The passwords don&apos;t match.</source>
+        <translation>הסיסמאות אינן תואמות.</translation>
+    </message>
+    <message>
+        <source>User</source>
+        <translation>משתמש</translation>
+    </message>
+    <message>
+        <source>Username:</source>
+        <translation>שם משתמש:</translation>
+    </message>
+    <message>
+        <source>Role:</source>
+        <translation>תפקיד:</translation>
+    </message>
+    <message>
+        <source>Password:</source>
+        <translation>סיסמה:</translation>
+    </message>
+    <message>
+        <source>Confirm password:</source>
+        <translation>אשר סיסמה:</translation>
+    </message>
+    <message>
+        <source>Disable this account</source>
+        <translation>השבת חשבון זה</translation>
+    </message>
+    <message>
+        <source>Edit User</source>
+        <translation>ערוך משתמש</translation>
+    </message>
+    <message>
+        <source>Leave empty to keep the current password</source>
+        <translation>השאר ריק כדי לשמור את הסיסמה הנוכחית</translation>
+    </message>
+    <message>
+        <source>Add User</source>
+        <translation>הוסף משתמש</translation>
+    </message>
+    <message>
+        <source>At least %1 characters</source>
+        <translation>לפחות %1 תווים</translation>
+    </message>
+    <message>
+        <source>Enter a username.</source>
+        <translation>הזן שם משתמש.</translation>
+    </message>
+    <message>
+        <source>The password must be at least %1 characters long.</source>
+        <translation>הסיסמה חייבת להיות באורך של לפחות %1 תווים.</translation>
+    </message>
+    <message>
+        <source>The passwords don&apos;t match.</source>
+        <translation>הסיסמאות אינן תואמות.</translation>
+    </message>
+</context>
+<context>
+    <name>UserAccountsWidget</name>
+    <message>
+        <source>User Accounts</source>
+        <translation>חשבונות משתמש</translation>
+    </message>
+    <message>
+        <source>Users</source>
+        <translation>משתמשים</translation>
+    </message>
+    <message>
+        <source>People who can log in to the WebUI with their own username and password.</source>
+        <translation>אנשים שיכולים להיכנס ל-WebUI עם שם משתמש וסיסמה משלהם.</translation>
+    </message>
+    <message>
+        <source>Add User...</source>
+        <translation>הוסף משתמש...</translation>
+    </message>
+    <message>
+        <source>Edit...</source>
+        <translation>ערוך...</translation>
+    </message>
+    <message>
+        <source>Remove</source>
+        <translation>הסר</translation>
+    </message>
+    <message>
+        <source>Roles</source>
+        <translation>תפקידים</translation>
+    </message>
+    <message>
+        <source>A role decides what its users are allowed to do.</source>
+        <translation>תפקיד קובע מה מותר למשתמשיו לעשות.</translation>
+    </message>
+    <message>
+        <source>Add Role...</source>
+        <translation>הוסף תפקיד...</translation>
+    </message>
+    <message>
+        <source>Logged In</source>
+        <translation>מחוברים</translation>
+    </message>
+    <message>
+        <source>Browsers and devices where someone is logged in with a user account.</source>
+        <translation>דפדפנים והתקנים שבהם מישהו מחובר עם חשבון משתמש.</translation>
+    </message>
+    <message>
+        <source>Log Out</source>
+        <translation>התנתק</translation>
+    </message>
+    <message>
+        <source>Username</source>
+        <translation>שם משתמש</translation>
+    </message>
+    <message>
+        <source>Role</source>
+        <translation>תפקיד</translation>
+    </message>
+    <message>
+        <source>Status</source>
+        <translation>מצב</translation>
+    </message>
+    <message>
+        <source>Last login</source>
+        <translation>כניסה אחרונה</translation>
+    </message>
+    <message>
+        <source>Created</source>
+        <translation>נוצר</translation>
+    </message>
+    <message>
+        <source>Name</source>
+        <translation>שם</translation>
+    </message>
+    <message>
+        <source>Description</source>
+        <translation>תיאור</translation>
+    </message>
+    <message>
+        <source>Permissions</source>
+        <translation>הרשאות</translation>
+    </message>
+    <message>
+        <source>User</source>
+        <translation>משתמש</translation>
+    </message>
+    <message>
+        <source>Browser</source>
+        <translation>דפדפן</translation>
+    </message>
+    <message>
+        <source>Logged in</source>
+        <translation>התחבר</translation>
+    </message>
+    <message>
+        <source>Last active</source>
+        <translation>פעילות אחרונה</translation>
+    </message>
+    <message>
+        <source>Expires</source>
+        <translation>פג תוקף</translation>
+    </message>
+    <message>
+        <source>The user database could not be opened. See the Execution Log for details.</source>
+        <translation>לא ניתן היה לפתוח את מסד נתוני המשתמשים. פרטים ביומן הביצוע.</translation>
+    </message>
+    <message>
+        <source>Disabled</source>
+        <translation>מושבת</translation>
+    </message>
+    <message>
+        <source>Enabled</source>
+        <translation>מופעל</translation>
+    </message>
+    <message>
+        <source>Never</source>
+        <translation>אף פעם</translation>
+    </message>
+    <message>
+        <source>No accounts yet, so everyone still uses the shared WebUI login. Add an Admin account first.</source>
+        <translation>עדיין אין חשבונות, ולכן כולם עדיין משתמשים בכניסה המשותפת של WebUI. הוסף קודם חשבון מנהל.</translation>
+    </message>
+    <message>
+        <source>Couldn&apos;t read the user database. %1</source>
+        <translation>לא ניתן היה לקרוא את מסד נתוני המשתמשים. %1</translation>
+    </message>
+    <message>
+        <source>Remove user</source>
+        <translation>הסר משתמש</translation>
+    </message>
+    <message>
+        <source>Are you sure you want to remove the user &apos;%1&apos;?</source>
+        <translation>האם אתה בטוח שברצונך להסיר את המשתמש &apos;%1&apos;?</translation>
+    </message>
+    <message>
+        <source>Remove role</source>
+        <translation>הסר תפקיד</translation>
+    </message>
+    <message>
+        <source>Are you sure you want to remove the role &apos;%1&apos;?</source>
+        <translation>האם אתה בטוח שברצונך להסיר את התפקיד &apos;%1&apos;?</translation>
+    </message>
+    <message>
+        <source>Enable</source>
+        <translation>הפעל</translation>
+    </message>
+    <message>
+        <source>Disable</source>
+        <translation>השבת</translation>
+    </message>
+    <message>
+        <source>Log Out Everywhere</source>
+        <translation>התנתק מכל מקום</translation>
+    </message>
+    <message>
+        <source>User Accounts</source>
+        <translation>חשבונות משתמש</translation>
+    </message>
+    <message>
+        <source>Users</source>
+        <translation>משתמשים</translation>
+    </message>
+    <message>
+        <source>People who can log in to the WebUI with their own username and password.</source>
+        <translation>אנשים שיכולים להיכנס ל-WebUI עם שם משתמש וסיסמה משלהם.</translation>
+    </message>
+    <message>
+        <source>Add User...</source>
+        <translation>הוסף משתמש...</translation>
+    </message>
+    <message>
+        <source>Edit...</source>
+        <translation>ערוך...</translation>
+    </message>
+    <message>
+        <source>Remove</source>
+        <translation>הסר</translation>
+    </message>
+    <message>
+        <source>Roles</source>
+        <translation>תפקידים</translation>
+    </message>
+    <message>
+        <source>A role decides what its users are allowed to do.</source>
+        <translation>תפקיד קובע מה מותר למשתמשיו לעשות.</translation>
+    </message>
+    <message>
+        <source>Add Role...</source>
+        <translation>הוסף תפקיד...</translation>
+    </message>
+    <message>
+        <source>Logged In</source>
+        <translation>מחוברים</translation>
+    </message>
+    <message>
+        <source>Browsers and devices where someone is logged in with a user account.</source>
+        <translation>דפדפנים והתקנים שבהם מישהו מחובר עם חשבון משתמש.</translation>
+    </message>
+    <message>
+        <source>Log Out</source>
+        <translation>התנתק</translation>
+    </message>
+    <message>
+        <source>Username</source>
+        <translation>שם משתמש</translation>
+    </message>
+    <message>
+        <source>Role</source>
+        <translation>תפקיד</translation>
+    </message>
+    <message>
+        <source>Status</source>
+        <translation>מצב</translation>
+    </message>
+    <message>
+        <source>Last login</source>
+        <translation>כניסה אחרונה</translation>
+    </message>
+    <message>
+        <source>Created</source>
+        <translation>נוצר</translation>
+    </message>
+    <message>
+        <source>Name</source>
+        <translation>שם</translation>
+    </message>
+    <message>
+        <source>Description</source>
+        <translation>תיאור</translation>
+    </message>
+    <message>
+        <source>Permissions</source>
+        <translation>הרשאות</translation>
+    </message>
+    <message>
+        <source>User</source>
+        <translation>משתמש</translation>
+    </message>
+    <message>
+        <source>Browser</source>
+        <translation>דפדפן</translation>
+    </message>
+    <message>
+        <source>Logged in</source>
+        <translation>התחבר</translation>
+    </message>
+    <message>
+        <source>Last active</source>
+        <translation>פעילות אחרונה</translation>
+    </message>
+    <message>
+        <source>Expires</source>
+        <translation>פג תוקף</translation>
+    </message>
+    <message>
+        <source>The user database could not be opened. See the Execution Log for details.</source>
+        <translation>לא ניתן היה לפתוח את מסד נתוני המשתמשים. פרטים ביומן הביצוע.</translation>
+    </message>
+    <message>
+        <source>Disabled</source>
+        <translation>מושבת</translation>
+    </message>
+    <message>
+        <source>Enabled</source>
+        <translation>מופעל</translation>
+    </message>
+    <message>
+        <source>Never</source>
+        <translation>אף פעם</translation>
+    </message>
+    <message>
+        <source>No accounts yet, so everyone still uses the shared WebUI login. Add an Admin account first.</source>
+        <translation>עדיין אין חשבונות, ולכן כולם עדיין משתמשים בכניסה המשותפת של WebUI. הוסף קודם חשבון מנהל.</translation>
+    </message>
+    <message>
+        <source>Couldn&apos;t read the user database. %1</source>
+        <translation>לא ניתן היה לקרוא את מסד נתוני המשתמשים. %1</translation>
+    </message>
+    <message>
+        <source>Remove user</source>
+        <translation>הסר משתמש</translation>
+    </message>
+    <message>
+        <source>Are you sure you want to remove the user &apos;%1&apos;?</source>
+        <translation>האם אתה בטוח שברצונך להסיר את המשתמש &apos;%1&apos;?</translation>
+    </message>
+    <message>
+        <source>Remove role</source>
+        <translation>הסר תפקיד</translation>
+    </message>
+    <message>
+        <source>Are you sure you want to remove the role &apos;%1&apos;?</source>
+        <translation>האם אתה בטוח שברצונך להסיר את התפקיד &apos;%1&apos;?</translation>
+    </message>
+    <message>
+        <source>Enable</source>
+        <translation>הפעל</translation>
+    </message>
+    <message>
+        <source>Disable</source>
+        <translation>השבת</translation>
+    </message>
+    <message>
+        <source>Log Out Everywhere</source>
+        <translation>התנתק מכל מקום</translation>
+    </message>
+</context>
+<context>
+    <name>UserRoleDialog</name>
+    <message>
+        <source>Role</source>
+        <translation>תפקיד</translation>
+    </message>
+    <message>
+        <source>Name:</source>
+        <translation>שם:</translation>
+    </message>
+    <message>
+        <source>Description:</source>
+        <translation>תיאור:</translation>
+    </message>
+    <message>
+        <source>Gives control over the PC or qBittorrent itself.</source>
+        <translation>נותן שליטה במחשב או ב-qBittorrent עצמו.</translation>
+    </message>
+    <message>
+        <source>Add Role</source>
+        <translation>הוסף תפקיד</translation>
+    </message>
+    <message>
+        <source>Edit Role</source>
+        <translation>ערוך תפקיד</translation>
+    </message>
+    <message>
+        <source>Enter a role name.</source>
+        <translation>הזן שם תפקיד.</translation>
+    </message>
+    <message>
+        <source>Role</source>
+        <translation>תפקיד</translation>
+    </message>
+    <message>
+        <source>Name:</source>
+        <translation>שם:</translation>
+    </message>
+    <message>
+        <source>Description:</source>
+        <translation>תיאור:</translation>
+    </message>
+    <message>
+        <source>Gives control over the PC or qBittorrent itself.</source>
+        <translation>נותן שליטה במחשב או ב-qBittorrent עצמו.</translation>
+    </message>
+    <message>
+        <source>Add Role</source>
+        <translation>הוסף תפקיד</translation>
+    </message>
+    <message>
+        <source>Edit Role</source>
+        <translation>ערוך תפקיד</translation>
+    </message>
+    <message>
+        <source>Enter a role name.</source>
+        <translation>הזן שם תפקיד.</translation>
+    </message>
+</context>
+<context>
+    <name>WebUIActivityWidget</name>
+    <message>
+        <source>All</source>
+        <translation>הכל</translation>
+    </message>
+    <message>
+        <source>Filter activity</source>
+        <translation>סנן פעילות</translation>
+    </message>
+    <message>
+        <source>Export...</source>
+        <translation>ייצא...</translation>
+    </message>
+    <message>
+        <source>User:</source>
+        <translation>משתמש:</translation>
+    </message>
+    <message>
+        <source>Category:</source>
+        <translation>קטגוריה:</translation>
+    </message>
+    <message>
+        <source>Result:</source>
+        <translation>תוצאה:</translation>
+    </message>
+    <message>
+        <source>Time</source>
+        <translation>זמן</translation>
+    </message>
+    <message>
+        <source>User</source>
+        <translation>משתמש</translation>
+    </message>
+    <message>
+        <source>Role</source>
+        <translation>תפקיד</translation>
+    </message>
+    <message>
+        <source>Category</source>
+        <translation>קטגוריה</translation>
+    </message>
+    <message>
+        <source>Action</source>
+        <translation>פעולה</translation>
+    </message>
+    <message>
+        <source>Result</source>
+        <translation>תוצאה</translation>
+    </message>
+    <message>
+        <source>The user database could not be opened. See the General tab for details.</source>
+        <translation>לא ניתן היה לפתוח את מסד נתוני המשתמשים. פרטים בלשונית כללי.</translation>
+    </message>
+    <message>
+        <source>Results (showing %1 out of %2)</source>
+        <translation>תוצאות (מוצגות %1 מתוך %2)</translation>
+    </message>
+    <message>
+        <source>Copy</source>
+        <translation>העתק</translation>
+    </message>
+    <message>
+        <source>Export WebUI activity</source>
+        <translation>ייצא פעילות WebUI</translation>
+    </message>
+    <message>
+        <source>CSV files</source>
+        <translation>קבצי CSV</translation>
+    </message>
+    <message>
+        <source>Couldn&apos;t save the file. Reason: %1</source>
+        <translation>לא ניתן היה לשמור את הקובץ. סיבה: %1</translation>
+    </message>
+    <message>
+        <source>All</source>
+        <translation>הכל</translation>
+    </message>
+    <message>
+        <source>Filter activity</source>
+        <translation>סנן פעילות</translation>
+    </message>
+    <message>
+        <source>Export...</source>
+        <translation>ייצא...</translation>
+    </message>
+    <message>
+        <source>User:</source>
+        <translation>משתמש:</translation>
+    </message>
+    <message>
+        <source>Category:</source>
+        <translation>קטגוריה:</translation>
+    </message>
+    <message>
+        <source>Result:</source>
+        <translation>תוצאה:</translation>
+    </message>
+    <message>
+        <source>Time</source>
+        <translation>זמן</translation>
+    </message>
+    <message>
+        <source>User</source>
+        <translation>משתמש</translation>
+    </message>
+    <message>
+        <source>Role</source>
+        <translation>תפקיד</translation>
+    </message>
+    <message>
+        <source>Category</source>
+        <translation>קטגוריה</translation>
+    </message>
+    <message>
+        <source>Action</source>
+        <translation>פעולה</translation>
+    </message>
+    <message>
+        <source>Result</source>
+        <translation>תוצאה</translation>
+    </message>
+    <message>
+        <source>The user database could not be opened. See the General tab for details.</source>
+        <translation>לא ניתן היה לפתוח את מסד נתוני המשתמשים. פרטים בלשונית כללי.</translation>
+    </message>
+    <message>
+        <source>Results (showing %1 out of %2)</source>
+        <translation>תוצאות (מוצגות %1 מתוך %2)</translation>
+    </message>
+    <message>
+        <source>Copy</source>
+        <translation>העתק</translation>
+    </message>
+    <message>
+        <source>Export WebUI activity</source>
+        <translation>ייצא פעילות WebUI</translation>
+    </message>
+    <message>
+        <source>CSV files</source>
+        <translation>קבצי CSV</translation>
+    </message>
+    <message>
+        <source>Couldn&apos;t save the file. Reason: %1</source>
+        <translation>לא ניתן היה לשמור את הקובץ. סיבה: %1</translation>
     </message>
 </context>
 </TS>

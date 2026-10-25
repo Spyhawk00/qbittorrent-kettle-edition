@@ -223,6 +223,81 @@ The piece hash will be checked when it is requested for the first time by a peer
         <source>%1 needed · %2 free</source>
         <translation type="unfinished" />
     </message>
+    <message>
+        <source>Don&apos;t create subfolder</source>
+        <translation>Opret ikke undermappe</translation>
+    </message>
+    <message>
+        <source>Never show again</source>
+        <translation>Vis aldrig igen</translation>
+    </message>
+    <message>
+        <source>Select None</source>
+        <translation>Vælg Intet</translation>
+    </message>
+    <message>
+        <source>Your role saves torrents in the default folders.</source>
+        <translation>Din rolle gemmer torrents i standardmapperne.</translation>
+    </message>
+</context>
+<context>
+    <name>AdvancedSettings</name>
+    <message>
+        <source>General</source>
+        <translation>Generelt</translation>
+    </message>
+    <message>
+        <source>Network</source>
+        <translation>Netværk</translation>
+    </message>
+    <message>
+        <source>Storage</source>
+        <translation>Lager</translation>
+    </message>
+    <message>
+        <source>Peers and trackers</source>
+        <translation>Modparter og trackere</translation>
+    </message>
+    <message>
+        <source>Program behavior</source>
+        <translation>Programmets opførsel</translation>
+    </message>
+    <message>
+        <source>Display and notifications</source>
+        <translation>Visning og notifikationer</translation>
+    </message>
+    <message>
+        <source>Network connection</source>
+        <translation>Netværksforbindelse</translation>
+    </message>
+    <message>
+        <source>Security and privacy</source>
+        <translation>Sikkerhed og privatliv</translation>
+    </message>
+    <message>
+        <source>Connection tuning</source>
+        <translation>Justering af forbindelse</translation>
+    </message>
+    <message>
+        <source>Saving and torrent files</source>
+        <translation>Gemning og torrentfiler</translation>
+    </message>
+    <message>
+        <source>Disk and memory</source>
+        <translation>Disk og hukommelse</translation>
+    </message>
+    <message>
+        <source>Trackers</source>
+        <translation>Trackere</translation>
+    </message>
+    <message>
+        <source>Peers and seeding</source>
+        <translation>Modparter og seeding</translation>
+    </message>
+    <message>
+        <source>DHT and I2P</source>
+        <translation>DHT og I2P</translation>
+    </message>
 </context>
 <context>
     <name>CategoryFilterModel</name>
@@ -623,6 +698,14 @@ The piece hash will be checked when it is requested for the first time by a peer
         <source>More</source>
         <translation>Mere</translation>
     </message>
+    <message>
+        <source>Change Password...</source>
+        <translation>Skift adgangskode...</translation>
+    </message>
+    <message>
+        <source>Signed in as</source>
+        <translation>Logget ind som</translation>
+    </message>
 </context>
 <context>
     <name>MainWindow</name>
@@ -929,6 +1012,30 @@ The piece hash will be checked when it is requested for the first time by a peer
     <message>
         <source>Resume Session</source>
         <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Pause Session</source>
+        <translation>Sæt session på pause</translation>
+    </message>
+    <message>
+        <source>Pause session</source>
+        <translation>Sæt session på pause</translation>
+    </message>
+    <message>
+        <source>Resume Session</source>
+        <translation>Genoptag session</translation>
+    </message>
+    <message>
+        <source>Resume session</source>
+        <translation>Genoptag session</translation>
+    </message>
+    <message>
+        <source>Your account can&apos;t add torrents.</source>
+        <translation>Din konto kan ikke tilføje torrents.</translation>
+    </message>
+    <message>
+        <source>[PAUSED]</source>
+        <translation>[PAUSET]</translation>
     </message>
 </context>
 <context>
@@ -2515,6 +2622,162 @@ Brug ';' til af adskille flere indtastninger. Jokertegnet '*' kan bruges.</trans
         <source>a@x.com;b@y.com,c@z.com - send two emails: the first to just a@x.com, the second to both b@y.com and c@z.com</source>
         <translation type="unfinished" />
     </message>
+    <message>
+        <source>0 means users are logged out after the session timeout.</source>
+        <translation>0 betyder, at brugere logges ud efter sessionens timeout.</translation>
+    </message>
+    <message>
+        <source>Access</source>
+        <translation>Adgang</translation>
+    </message>
+    <message>
+        <source>Allow this login when user accounts exist</source>
+        <translation>Tillad dette login, når der findes brugerkonti</translation>
+    </message>
+    <message>
+        <source>Also save search results</source>
+        <translation>Gem også søgeresultater</translation>
+    </message>
+    <message>
+        <source>Also when addition is cancelled</source>
+        <translation>Også når tilføjelse annulleres</translation>
+    </message>
+    <message>
+        <source>Below normal</source>
+        <translation>Under normal</translation>
+    </message>
+    <message>
+        <source>Changes to users, roles and logins apply at once.</source>
+        <translation>Ændringer af brugere, roller og logins træder i kraft med det samme.</translation>
+    </message>
+    <message>
+        <source>Don&apos;t create subfolder</source>
+        <translation>Opret ikke undermappe</translation>
+    </message>
+    <message>
+        <source>Example:</source>
+        <translation>Eksempel:</translation>
+    </message>
+    <message>
+        <source>Keep WebUI activity log for:</source>
+        <translation>Behold WebUI-aktivitetslog i:</translation>
+    </message>
+    <message>
+        <source>Keep users logged in for:</source>
+        <translation>Hold brugere logget ind i:</translation>
+    </message>
+    <message>
+        <source>Language:</source>
+        <translation>Sprog:</translation>
+    </message>
+    <message>
+        <source>Lock account after consecutive failures:</source>
+        <translation>Lås konto efter fejl i træk:</translation>
+    </message>
+    <message>
+        <source>Logins and Activity Log</source>
+        <translation>Logins og aktivitetslog</translation>
+    </message>
+    <message>
+        <source>Low</source>
+        <translation>Lav</translation>
+    </message>
+    <message>
+        <source>Medium</source>
+        <translation>Medium</translation>
+    </message>
+    <message>
+        <source>No settings match</source>
+        <translation>Ingen indstillinger passer</translation>
+    </message>
+    <message>
+        <source>Process memory priority:</source>
+        <translation>Proceshukommelsesprioritet:</translation>
+    </message>
+    <message>
+        <source>Save search tabs</source>
+        <translation>Gem søgefaner</translation>
+    </message>
+    <message>
+        <source>Search settings</source>
+        <translation>Søg i indstillinger</translation>
+    </message>
+    <message>
+        <source>Service:</source>
+        <translation>Tjeneste:</translation>
+    </message>
+    <message>
+        <source>Show console window</source>
+        <translation>Vis konsolvindue</translation>
+    </message>
+    <message>
+        <source>Show the window when adding a torrent</source>
+        <translation>Vis vinduet, når en torrent tilføjes</translation>
+    </message>
+    <message>
+        <source>Status bar and log</source>
+        <translation>Statuslinje og log</translation>
+    </message>
+    <message>
+        <source>The WebUI activity log can be kept for 1 to 3650 days.</source>
+        <translation>WebUI-aktivitetsloggen kan beholdes i 1 til 3650 dage.</translation>
+    </message>
+    <message>
+        <source>The settings below apply with OK or Apply.</source>
+        <translation>Indstillingerne nedenfor træder i kraft med OK eller Anvend.</translation>
+    </message>
+    <message>
+        <source>Tip: Encapsulate parameter with quotation marks to avoid text being cut off at whitespace (e.g., &quot;%N&quot;)</source>
+        <translation>Tip: Omslut parameter med citationstegn så teksten ikke bliver afkortet af blanktegn (f.eks. &quot;%N&quot;)</translation>
+    </message>
+    <message>
+        <source>Transfer List</source>
+        <translation>Overførselsliste</translation>
+    </message>
+    <message>
+        <source>Until the first user account is created, this login always works.</source>
+        <translation>Indtil den første brugerkonto er oprettet, virker dette login altid.</translation>
+    </message>
+    <message>
+        <source>User</source>
+        <translation>Bruger</translation>
+    </message>
+    <message>
+        <source>User Accounts</source>
+        <translation>Brugerkonti</translation>
+    </message>
+    <message>
+        <source>Users can be kept logged in for 0 to 365 days.</source>
+        <translation>Brugere kan holdes logget ind i 0 til 365 dage.</translation>
+    </message>
+    <message>
+        <source>Very low</source>
+        <translation>Meget lav</translation>
+    </message>
+    <message>
+        <source>Warning! Data loss possible!</source>
+        <translation>Advarsel! Data kan gå tabt!</translation>
+    </message>
+    <message>
+        <source>Whitelist for filtering HTTP Host header values.
+In order to defend against DNS rebinding attack,
+you should put in domain names used by WebUI server.
+
+Use &apos;;&apos; to split multiple entries. Can use wildcard &apos;*&apos;.</source>
+        <translation>Hvidliste til filtrering af HTTP værtsheaderværdier.
+For at afværge DNS-genbindingsangreb,
+bør du putte domænenavne i som bruges af webgrænsefladens server.
+
+Brug &apos;;&apos; til af adskille flere indtastninger. Jokertegnet &apos;*&apos; kan bruges.</translation>
+    </message>
+    <message>
+        <source>You changed the address, port or HTTPS setting of the WebUI. Saving moves the WebUI, so Options will save, close and reload the page, the same as OK. If the page doesn&apos;t come back, open the WebUI at its new address.\n\nSave anyway?</source>
+        <translation>Du har ændret adresse, port eller HTTPS-indstilling for WebUI. Når du gemmer, flytter WebUI, så Indstillinger gemmer, lukker og genindlæser siden, ligesom ved OK. Hvis siden ikke kommer tilbage, så åbn WebUI på den nye adresse.\n\nGem alligevel?</translation>
+    </message>
+    <message>
+        <source>lock for:</source>
+        <translation>lås i:</translation>
+    </message>
 </context>
 <context>
     <name>PeerListWidget</name>
@@ -3055,6 +3318,142 @@ Brug ';' til af adskille flere indtastninger. Jokertegnet '*' kan bruges.</trans
     <message>
         <source>The time it takes from receiving a request from a peer until we're sending the response back on the socket</source>
         <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Activity</source>
+        <translation>Aktivitet</translation>
+    </message>
+    <message>
+        <source>All time</source>
+        <translation>Alle tider</translation>
+    </message>
+    <message>
+        <source>Before tracking began</source>
+        <translation>Før sporingen begyndte</translation>
+    </message>
+    <message>
+        <source>By month</source>
+        <translation>Pr. måned</translation>
+    </message>
+    <message>
+        <source>Counts the requests that added a download. Apps without a login, such as Sonarr and Radarr, are shown as (localhost). Downloads added in the desktop window are not counted.</source>
+        <translation>Tæller de anmodninger, der tilføjede en download. Apps uden login, som Sonarr og Radarr, vises som (localhost). Downloads tilføjet i skrivebordsvinduet tælles ikke.</translation>
+    </message>
+    <message>
+        <source>Current speed:</source>
+        <translation>Aktuel hastighed:</translation>
+    </message>
+    <message>
+        <source>DHT nodes:</source>
+        <translation>DHT-noder:</translation>
+    </message>
+    <message>
+        <source>Data discarded this session:</source>
+        <translation>Kasserede data i denne session:</translation>
+    </message>
+    <message>
+        <source>Disk</source>
+        <translation>Disk</translation>
+    </message>
+    <message>
+        <source>History</source>
+        <translation>Historik</translation>
+    </message>
+    <message>
+        <source>Last 12 months</source>
+        <translation>Seneste 12 måneder</translation>
+    </message>
+    <message>
+        <source>Last 7 days</source>
+        <translation>Seneste 7 dage</translation>
+    </message>
+    <message>
+        <source>Last month</source>
+        <translation>Sidste måned</translation>
+    </message>
+    <message>
+        <source>Month</source>
+        <translation>Måned</translation>
+    </message>
+    <message>
+        <source>Nothing added yet</source>
+        <translation>Intet tilføjet endnu</translation>
+    </message>
+    <message>
+        <source>Off</source>
+        <translation>Fra</translation>
+    </message>
+    <message>
+        <source>Overview</source>
+        <translation>Oversigt</translation>
+    </message>
+    <message>
+        <source>Peers waiting on disk reads:</source>
+        <translation>Modparter der venter på disklæsning:</translation>
+    </message>
+    <message>
+        <source>Peers waiting on disk writes:</source>
+        <translation>Modparter der venter på diskskrivning:</translation>
+    </message>
+    <message>
+        <source>Period</source>
+        <translation>Periode</translation>
+    </message>
+    <message>
+        <source>Request latency:</source>
+        <translation>Svartid for anmodning:</translation>
+    </message>
+    <message>
+        <source>Running for:</source>
+        <translation>Kørt i:</translation>
+    </message>
+    <message>
+        <source>Share ratio</source>
+        <translation>Delingsforhold</translation>
+    </message>
+    <message>
+        <source>Share ratio:</source>
+        <translation>Delingsforhold:</translation>
+    </message>
+    <message>
+        <source>Technical</source>
+        <translation>Teknisk</translation>
+    </message>
+    <message>
+        <source>This month</source>
+        <translation>Denne måned</translation>
+    </message>
+    <message>
+        <source>This session</source>
+        <translation>Denne session</translation>
+    </message>
+    <message>
+        <source>Today</source>
+        <translation>I dag</translation>
+    </message>
+    <message>
+        <source>Torrents downloading:</source>
+        <translation>Torrents der downloader:</translation>
+    </message>
+    <message>
+        <source>Torrents seeding:</source>
+        <translation>Torrents der seeder:</translation>
+    </message>
+    <message>
+        <source>Torrents stopped:</source>
+        <translation>Stoppede torrents:</translation>
+    </message>
+    <message>
+        <source>Torrents with errors:</source>
+        <translation>Torrents med fejl:</translation>
+    </message>
+    <message>
+        <source>Tracking since:</source>
+        <translation>Sporing siden:</translation>
+    </message>
+    <message>
+        <source>WebUI downloads added, this month</source>
+        <translation>Downloads tilføjet via WebUI, denne måned</translation>
     </message>
 </context>
 <context>
@@ -3842,6 +4241,10 @@ Brug ';' til af adskille flere indtastninger. Jokertegnet '*' kan bruges.</trans
         <source>Content Path</source>
         <translation type="unfinished" />
     </message>
+    <message>
+        <source>Remove all tags from selected torrents?</source>
+        <translation>Fjern alle mærkater fra valgte torrents?</translation>
+    </message>
 </context>
 <context>
     <name>UpDownRatioDialog</name>
@@ -3914,6 +4317,10 @@ Brug ';' til af adskille flere indtastninger. Jokertegnet '*' kan bruges.</trans
     <message>
         <source>Remove tracker</source>
         <translation>Fjern tracker</translation>
+    </message>
+    <message>
+        <source>This choice is remembered for the next removal.</source>
+        <translation>Dette valg huskes til næste fjernelse.</translation>
     </message>
 </context>
 <context>
@@ -4127,6 +4534,34 @@ Brug ';' til af adskille flere indtastninger. Jokertegnet '*' kan bruges.</trans
         <source>Select plugins</source>
         <translation type="unfinished" />
     </message>
+    <message>
+        <source>Category to search in</source>
+        <translation>Kategori at søge i</translation>
+    </message>
+    <message>
+        <source>Close the selected search</source>
+        <translation>Luk den valgte søgning</translation>
+    </message>
+    <message>
+        <source>Empty search pattern</source>
+        <translation>Tomt søgemønster</translation>
+    </message>
+    <message>
+        <source>Search engines to use</source>
+        <translation>Søgemaskiner der skal bruges</translation>
+    </message>
+    <message>
+        <source>Search for torrents...</source>
+        <translation>Søg efter torrents...</translation>
+    </message>
+    <message>
+        <source>Searches</source>
+        <translation>Søgninger</translation>
+    </message>
+    <message>
+        <source>Type a search above and press Enter.</source>
+        <translation>Skriv en søgning ovenfor, og tryk på Enter.</translation>
+    </message>
 </context>
 <context>
     <name>PluginSelectDlg</name>
@@ -4165,6 +4600,10 @@ Brug ';' til af adskille flere indtastninger. Jokertegnet '*' kan bruges.</trans
     <message>
         <source>Search plugins</source>
         <translation>Søge-plugins</translation>
+    </message>
+    <message>
+        <source>Warning: Be sure to comply with your country&apos;s copyright laws when downloading torrents from any of these search engines.</source>
+        <translation>Advarsel: Sørg for at overholde dit lands love om ophavsret når du downloader torrents fra søgemotorerne.</translation>
     </message>
 </context>
 <context>
@@ -4388,6 +4827,30 @@ Brug ';' til af adskille flere indtastninger. Jokertegnet '*' kan bruges.</trans
         <source>qBittorrent icon</source>
         <translation type="unfinished" />
     </message>
+    <message>
+        <source>Based on:</source>
+        <translation>Baseret på:</translation>
+    </message>
+    <message>
+        <source>Edition version:</source>
+        <translation>Udgavens version:</translation>
+    </message>
+    <message>
+        <source>Kettle Edition is a personal build of qBittorrent that adds user accounts with roles for the WebUI and the desktop app, an activity log, and an installable WebUI with a phone layout. A kettle is a group of hawks soaring together. This is an unofficial build, not affiliated with the qBittorrent project.</source>
+        <translation>Kettle Edition er en personlig build af qBittorrent, der tilføjer brugerkonti med roller til WebUI og skrivebordsprogrammet, en aktivitetslog og en installerbar WebUI med telefonlayout. En kettle er en gruppe høge, der svæver sammen. Dette er en uofficiel build, som ikke er tilknyttet qBittorrent-projektet.</translation>
+    </message>
+    <message>
+        <source>Maintainer:</source>
+        <translation>Vedligeholder:</translation>
+    </message>
+    <message>
+        <source>This edition</source>
+        <translation>Denne udgave</translation>
+    </message>
+    <message>
+        <source>qBittorrent project:</source>
+        <translation>qBittorrent-projektet:</translation>
+    </message>
 </context>
 <context>
     <name>OptionDialog</name>
@@ -4489,6 +4952,46 @@ Brug ';' til af adskille flere indtastninger. Jokertegnet '*' kan bruges.</trans
     <message>
         <source>Open shared download window</source>
         <translation type="unfinished" />
+    </message>
+    <message>
+        <source>%1 of %2 shown</source>
+        <translation>%1 af %2 vist</translation>
+    </message>
+    <message>
+        <source>%1 of %2 shown (%3 hidden)</source>
+        <translation>%1 af %2 vist (%3 skjult)</translation>
+    </message>
+    <message>
+        <source>Close all searches</source>
+        <translation>Luk alle søgninger</translation>
+    </message>
+    <message>
+        <source>Close search</source>
+        <translation>Luk søgning</translation>
+    </message>
+    <message>
+        <source>Filter search results...</source>
+        <translation>Filtrer søgeresultater...</translation>
+    </message>
+    <message>
+        <source>Finished: %1</source>
+        <translation>Færdig: %1</translation>
+    </message>
+    <message>
+        <source>Refresh search</source>
+        <translation>Opdater søgning</translation>
+    </message>
+    <message>
+        <source>Search aborted: %1</source>
+        <translation>Søgning afbrudt: %1</translation>
+    </message>
+    <message>
+        <source>Search returned no results</source>
+        <translation>Søgningen gav ingen resultater</translation>
+    </message>
+    <message>
+        <source>Searching: %1</source>
+        <translation>Søger: %1</translation>
     </message>
 </context>
 <context>
@@ -4627,6 +5130,10 @@ Brug ';' til af adskille flere indtastninger. Jokertegnet '*' kan bruges.</trans
     <message>
         <source>Blocked opening RSS article URL. Only http:// and https:// links can be opened.</source>
         <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Details</source>
+        <translation>Detaljer</translation>
     </message>
 </context>
 <context>
@@ -4904,6 +5411,10 @@ Supports the formats: S01E01, 1x1, 2017.12.31 and 31.12.2017 (Date formats also 
         <source>Import</source>
         <translation type="unfinished" />
     </message>
+    <message>
+        <source>Don&apos;t create subfolder</source>
+        <translation>Opret ikke undermappe</translation>
+    </message>
 </context>
 <context>
     <name>TrackerFiltersList</name>
@@ -5093,6 +5604,26 @@ Supports the formats: S01E01, 1x1, 2017.12.31 and 31.12.2017 (Date formats also 
         <source>Choose a log level...</source>
         <translation type="unfinished" />
     </message>
+    <message>
+        <source>Export...</source>
+        <translation>Eksporter...</translation>
+    </message>
+    <message>
+        <source>Filter activity</source>
+        <translation>Filtrer aktivitet</translation>
+    </message>
+    <message>
+        <source>Result:</source>
+        <translation>Resultat:</translation>
+    </message>
+    <message>
+        <source>User:</source>
+        <translation>Bruger:</translation>
+    </message>
+    <message>
+        <source>WebUI Activity</source>
+        <translation>WebUI-aktivitet</translation>
+    </message>
 </context>
 <context>
     <name>TrackersFilterWidget</name>
@@ -5162,6 +5693,10 @@ Supports the formats: S01E01, 1x1, 2017.12.31 and 31.12.2017 (Date formats also 
     <message>
         <source>Torrent share limits</source>
         <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Your role saves torrents in the default folders.</source>
+        <translation>Din rolle gemmer torrents i standardmapperne.</translation>
     </message>
 </context>
 <context>
@@ -5261,6 +5796,14 @@ Supports the formats: S01E01, 1x1, 2017.12.31 and 31.12.2017 (Date formats also 
     <message>
         <source>Invalid Username or Password.</source>
         <translation>Ugyldigt brugernavn eller adgangskode.</translation>
+    </message>
+    <message>
+        <source>A kettle is a group of hawks soaring together.</source>
+        <translation>En kettle er en gruppe høge, der svæver sammen.</translation>
+    </message>
+    <message>
+        <source>Sign in</source>
+        <translation>Log ind</translation>
     </message>
 </context>
 <context>
@@ -5469,6 +6012,22 @@ Supports the formats: S01E01, 1x1, 2017.12.31 and 31.12.2017 (Date formats also 
         <source>If checked, filenames starting with a period punctuation mark `.` will not be added to the created torrent.</source>
         <translation type="unfinished" />
     </message>
+    <message>
+        <source>Align to piece boundary for files larger than:</source>
+        <translation>Juster til stykgrænse for filer som er større end:</translation>
+    </message>
+    <message>
+        <source>Optimize alignment</source>
+        <translation>Optimer justering</translation>
+    </message>
+    <message>
+        <source>Private torrent (Won&apos;t distribute on DHT network)</source>
+        <translation>Privat torrent (distribueres ikke på DHT-netværk)</translation>
+    </message>
+    <message>
+        <source>Start seeding immediately</source>
+        <translation>Start seeding med det samme</translation>
+    </message>
 </context>
 <context>
     <name>DownloadFromURLDialog</name>
@@ -5589,6 +6148,10 @@ Supports the formats: S01E01, 1x1, 2017.12.31 and 31.12.2017 (Date formats also 
     <message>
         <source>Resize</source>
         <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Reset Auto Width</source>
+        <translation>Nulstil automatisk bredde</translation>
     </message>
 </context>
 <context>
@@ -5729,6 +6292,216 @@ Supports the formats: S01E01, 1x1, 2017.12.31 and 31.12.2017 (Date formats also 
     <message>
         <source>Not available for folders</source>
         <translation type="unfinished" />
+    </message>
+</context>
+<context>
+    <name>UserAccounts</name>
+    <message>
+        <source>(this browser)</source>
+        <translation>(denne browser)</translation>
+    </message>
+    <message>
+        <source>A role decides what its users are allowed to do.</source>
+        <translation>En rolle bestemmer, hvad dens brugere må gøre.</translation>
+    </message>
+    <message>
+        <source>Add Role</source>
+        <translation>Tilføj rolle</translation>
+    </message>
+    <message>
+        <source>Add Role...</source>
+        <translation>Tilføj rolle...</translation>
+    </message>
+    <message>
+        <source>Add User</source>
+        <translation>Tilføj bruger</translation>
+    </message>
+    <message>
+        <source>Add User...</source>
+        <translation>Tilføj bruger...</translation>
+    </message>
+    <message>
+        <source>Are you sure you want to remove the role &apos;%1&apos;?</source>
+        <translation>Er du sikker på, at du vil fjerne rollen &apos;%1&apos;?</translation>
+    </message>
+    <message>
+        <source>Are you sure you want to remove the user &apos;%1&apos;?</source>
+        <translation>Er du sikker på, at du vil fjerne brugeren &apos;%1&apos;?</translation>
+    </message>
+    <message>
+        <source>At least %1 characters</source>
+        <translation>Mindst %1 tegn</translation>
+    </message>
+    <message>
+        <source>Browser</source>
+        <translation>Browser</translation>
+    </message>
+    <message>
+        <source>Browsers and devices where someone is logged in with a user account.</source>
+        <translation>Browsere og enheder, hvor nogen er logget ind med en brugerkonto.</translation>
+    </message>
+    <message>
+        <source>Change Password</source>
+        <translation>Skift adgangskode</translation>
+    </message>
+    <message>
+        <source>Confirm password:</source>
+        <translation>Bekræft adgangskode:</translation>
+    </message>
+    <message>
+        <source>Created</source>
+        <translation>Oprettet</translation>
+    </message>
+    <message>
+        <source>Current password:</source>
+        <translation>Nuværende adgangskode:</translation>
+    </message>
+    <message>
+        <source>Description</source>
+        <translation>Beskrivelse</translation>
+    </message>
+    <message>
+        <source>Description:</source>
+        <translation>Beskrivelse:</translation>
+    </message>
+    <message>
+        <source>Disable</source>
+        <translation>Deaktiver</translation>
+    </message>
+    <message>
+        <source>Disable this account</source>
+        <translation>Deaktiver denne konto</translation>
+    </message>
+    <message>
+        <source>Edit Role</source>
+        <translation>Rediger rolle</translation>
+    </message>
+    <message>
+        <source>Edit User</source>
+        <translation>Rediger bruger</translation>
+    </message>
+    <message>
+        <source>Edit...</source>
+        <translation>Rediger...</translation>
+    </message>
+    <message>
+        <source>Enable</source>
+        <translation>Aktiver</translation>
+    </message>
+    <message>
+        <source>Enter a role name.</source>
+        <translation>Angiv et rollenavn.</translation>
+    </message>
+    <message>
+        <source>Enter a username.</source>
+        <translation>Angiv et brugernavn.</translation>
+    </message>
+    <message>
+        <source>Expires</source>
+        <translation>Udløber</translation>
+    </message>
+    <message>
+        <source>Gives control over the PC or qBittorrent itself</source>
+        <translation>Giver kontrol over pc&apos;en eller selve qBittorrent</translation>
+    </message>
+    <message>
+        <source>Last active</source>
+        <translation>Sidst aktiv</translation>
+    </message>
+    <message>
+        <source>Last login</source>
+        <translation>Seneste login</translation>
+    </message>
+    <message>
+        <source>Leave empty to keep the current password</source>
+        <translation>Lad feltet stå tomt for at beholde den nuværende adgangskode</translation>
+    </message>
+    <message>
+        <source>Log Out</source>
+        <translation>Log ud</translation>
+    </message>
+    <message>
+        <source>Log Out Everywhere</source>
+        <translation>Log ud overalt</translation>
+    </message>
+    <message>
+        <source>Logged In</source>
+        <translation>Logget ind</translation>
+    </message>
+    <message>
+        <source>Logged in</source>
+        <translation>Logget ind</translation>
+    </message>
+    <message>
+        <source>New password:</source>
+        <translation>Ny adgangskode:</translation>
+    </message>
+    <message>
+        <source>No accounts yet, so everyone still uses the shared WebUI login. Add an Admin account first.</source>
+        <translation>Der er ingen konti endnu, så alle bruger stadig det fælles WebUI-login. Tilføj først en Admin-konto.</translation>
+    </message>
+    <message>
+        <source>People who can log in to the WebUI with their own username and password.</source>
+        <translation>Personer der kan logge ind på WebUI med deres eget brugernavn og adgangskode.</translation>
+    </message>
+    <message>
+        <source>Permissions</source>
+        <translation>Tilladelser</translation>
+    </message>
+    <message>
+        <source>Role</source>
+        <translation>Rolle</translation>
+    </message>
+    <message>
+        <source>Role:</source>
+        <translation>Rolle:</translation>
+    </message>
+    <message>
+        <source>Roles</source>
+        <translation>Roller</translation>
+    </message>
+    <message>
+        <source>The password must be at least %1 characters long.</source>
+        <translation>Adgangskoden skal være mindst %1 tegn lang.</translation>
+    </message>
+    <message>
+        <source>The passwords don&apos;t match.</source>
+        <translation>Adgangskoderne er ikke ens.</translation>
+    </message>
+    <message>
+        <source>User</source>
+        <translation>Bruger</translation>
+    </message>
+    <message>
+        <source>Users</source>
+        <translation>Brugere</translation>
+    </message>
+    <message>
+        <source>Your password was changed. Other browsers and devices where you were logged in have been logged out.</source>
+        <translation>Din adgangskode blev ændret. Andre browsere og enheder, hvor du var logget ind, er blevet logget ud.</translation>
+    </message>
+</context>
+<context>
+    <name>WebUIActivity</name>
+    <message>
+        <source>Action</source>
+        <translation>Handling</translation>
+    </message>
+    <message>
+        <source>Result</source>
+        <translation>Resultat</translation>
+    </message>
+    <message>
+        <source>Role</source>
+        <translation>Rolle</translation>
+    </message>
+    <message>
+        <source>Time</source>
+        <translation>Tid</translation>
+    </message>
+    <message>
+        <source>User</source>
+        <translation>Bruger</translation>
     </message>
 </context>
 </TS>

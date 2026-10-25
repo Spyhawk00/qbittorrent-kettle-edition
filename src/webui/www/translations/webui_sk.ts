@@ -227,6 +227,85 @@ The piece hash will be checked when it is requested for the first time by a peer
         <source>%1 needed · %2 free</source>
         <translation type="unfinished" />
     </message>
+    <message>
+        <source>Don&apos;t create subfolder</source>
+        <translation>Nevytvárať podpriečinok</translation>
+    </message>
+    <message>
+        <source>Never show again</source>
+        <translation>Už nikdy nezobrazovať</translation>
+    </message>
+    <message>
+        <source>Select None</source>
+        <translation>Nevybrať nič</translation>
+    </message>
+    <message>
+        <source>Torrent options</source>
+        <translation>Nastavenia torrentu</translation>
+    </message>
+    <message>
+        <source>Your role saves torrents in the default folders.</source>
+        <translation>Vaša rola ukladá torrenty do predvolených priečinkov.</translation>
+    </message>
+</context>
+<context>
+    <name>AdvancedSettings</name>
+    <message>
+        <source>General</source>
+        <translation>Všeobecné</translation>
+    </message>
+    <message>
+        <source>Network</source>
+        <translation>Sieť</translation>
+    </message>
+    <message>
+        <source>Storage</source>
+        <translation>Úložisko</translation>
+    </message>
+    <message>
+        <source>Peers and trackers</source>
+        <translation>Peery a trackery</translation>
+    </message>
+    <message>
+        <source>Program behavior</source>
+        <translation>Správanie programu</translation>
+    </message>
+    <message>
+        <source>Display and notifications</source>
+        <translation>Zobrazenie a oznámenia</translation>
+    </message>
+    <message>
+        <source>Network connection</source>
+        <translation>Sieťové spojenie</translation>
+    </message>
+    <message>
+        <source>Security and privacy</source>
+        <translation>Zabezpečenie a súkromie</translation>
+    </message>
+    <message>
+        <source>Connection tuning</source>
+        <translation>Ladenie spojenia</translation>
+    </message>
+    <message>
+        <source>Saving and torrent files</source>
+        <translation>Ukladanie a súbory torrentov</translation>
+    </message>
+    <message>
+        <source>Disk and memory</source>
+        <translation>Disk a pamäť</translation>
+    </message>
+    <message>
+        <source>Trackers</source>
+        <translation>Trackery</translation>
+    </message>
+    <message>
+        <source>Peers and seeding</source>
+        <translation>Peery a seedovanie</translation>
+    </message>
+    <message>
+        <source>DHT and I2P</source>
+        <translation>DHT a I2P</translation>
+    </message>
 </context>
 <context>
     <name>CategoryFilterModel</name>
@@ -627,6 +706,14 @@ The piece hash will be checked when it is requested for the first time by a peer
         <source>More</source>
         <translation>Viac</translation>
     </message>
+    <message>
+        <source>Change Password...</source>
+        <translation>Zmeniť heslo...</translation>
+    </message>
+    <message>
+        <source>Signed in as</source>
+        <translation>Prihlásený ako</translation>
+    </message>
 </context>
 <context>
     <name>MainWindow</name>
@@ -933,6 +1020,34 @@ The piece hash will be checked when it is requested for the first time by a peer
     <message>
         <source>Resume Session</source>
         <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Global Speed Limits</source>
+        <translation>Globálne rýchlostné limity</translation>
+    </message>
+    <message>
+        <source>Pause Session</source>
+        <translation>Pozastaviť reláciu</translation>
+    </message>
+    <message>
+        <source>Pause session</source>
+        <translation>Pozastaviť reláciu</translation>
+    </message>
+    <message>
+        <source>Resume Session</source>
+        <translation>Obnoviť reláciu</translation>
+    </message>
+    <message>
+        <source>Resume session</source>
+        <translation>Obnoviť reláciu</translation>
+    </message>
+    <message>
+        <source>Your account can&apos;t add torrents.</source>
+        <translation>Váš účet nemôže pridávať torrenty.</translation>
+    </message>
+    <message>
+        <source>[PAUSED]</source>
+        <translation>[POZASTAVENÉ]</translation>
     </message>
 </context>
 <context>
@@ -2527,6 +2642,182 @@ Použite ';' pre oddelenie viacerých položiek. Môžete použiť masku '*'.</t
         <source>a@x.com;b@y.com,c@z.com - send two emails: the first to just a@x.com, the second to both b@y.com and c@z.com</source>
         <translation type="unfinished" />
     </message>
+    <message>
+        <source>0 means users are logged out after the session timeout.</source>
+        <translation>0 znamená, že sa používatelia po vypršaní časového limitu relácie odhlásia.</translation>
+    </message>
+    <message>
+        <source>Access</source>
+        <translation>Prístup</translation>
+    </message>
+    <message>
+        <source>Allow this login when user accounts exist</source>
+        <translation>Povoliť toto prihlásenie, keď existujú používateľské účty</translation>
+    </message>
+    <message>
+        <source>Also save search results</source>
+        <translation>Ukladať aj výsledky hľadania</translation>
+    </message>
+    <message>
+        <source>Also when addition is cancelled</source>
+        <translation>Vymazať tiež ak bolo pridanie zrušené</translation>
+    </message>
+    <message>
+        <source>Below normal</source>
+        <translation>Pod normálom</translation>
+    </message>
+    <message>
+        <source>Changes to users, roles and logins apply at once.</source>
+        <translation>Zmeny používateľov, rolí a prihlásení sa použijú okamžite.</translation>
+    </message>
+    <message>
+        <source>Don&apos;t create subfolder</source>
+        <translation>Nevytvárať podpriečinok</translation>
+    </message>
+    <message>
+        <source>Example:</source>
+        <translation>Príklad:</translation>
+    </message>
+    <message>
+        <source>I2P (experimental)</source>
+        <translation>I2P (experimentálne)</translation>
+    </message>
+    <message>
+        <source>Keep WebUI activity log for:</source>
+        <translation>Uchovávať protokol aktivity WebUI počas:</translation>
+    </message>
+    <message>
+        <source>Keep unselected files in &quot;.unwanted&quot; folder</source>
+        <translation>Ponechať neoznačené súbory v adresári &quot;.unwanted&quot;</translation>
+    </message>
+    <message>
+        <source>Keep users logged in for:</source>
+        <translation>Ponechať používateľov prihlásených počas:</translation>
+    </message>
+    <message>
+        <source>Language:</source>
+        <translation>Jazyk:</translation>
+    </message>
+    <message>
+        <source>Lock account after consecutive failures:</source>
+        <translation>Zamknúť účet po po sebe idúcich zlyhaniach:</translation>
+    </message>
+    <message>
+        <source>Logins and Activity Log</source>
+        <translation>Prihlásenia a protokol aktivity</translation>
+    </message>
+    <message>
+        <source>Low</source>
+        <translation>Malá</translation>
+    </message>
+    <message>
+        <source>Maximum active checking torrents:</source>
+        <translation>Maximum súbežne kontrolovaných torrentov:</translation>
+    </message>
+    <message>
+        <source>Medium</source>
+        <translation>Stredná</translation>
+    </message>
+    <message>
+        <source>No settings match</source>
+        <translation>Žiadne zodpovedajúce nastavenia</translation>
+    </message>
+    <message>
+        <source>Process memory priority:</source>
+        <translation>Priorita pamäte procesu:</translation>
+    </message>
+    <message>
+        <source>Save search tabs</source>
+        <translation>Ukladať karty hľadania</translation>
+    </message>
+    <message>
+        <source>Search UI</source>
+        <translation>Prehľadávať UI</translation>
+    </message>
+    <message>
+        <source>Search settings</source>
+        <translation>Hľadať v nastaveniach</translation>
+    </message>
+    <message>
+        <source>Service:</source>
+        <translation>Služba:</translation>
+    </message>
+    <message>
+        <source>Show console window</source>
+        <translation>Zobraziť okno konzoli</translation>
+    </message>
+    <message>
+        <source>Show the window when adding a torrent</source>
+        <translation>Zobraziť okno pri pridaní torrentu</translation>
+    </message>
+    <message>
+        <source>Specify reverse proxy IPs (or subnets, e.g. 0.0.0.0/24) in order to use forwarded client address (X-Forwarded-For header). Use &apos;;&apos; to split multiple entries.</source>
+        <translation>Uveďte IP adresy (alebo podsiete, napr. 0.0.0.0/24) reverzného proxy pre preposlanie adresy klienta (hlavička X-Forwarded-For). Použite &apos;;&apos; pre rozdelenie viacerých položiek.</translation>
+    </message>
+    <message>
+        <source>Status bar and log</source>
+        <translation>Stavový riadok a protokol</translation>
+    </message>
+    <message>
+        <source>The WebUI activity log can be kept for 1 to 3650 days.</source>
+        <translation>Protokol aktivity WebUI možno uchovávať 1 až 3650 dní.</translation>
+    </message>
+    <message>
+        <source>The settings below apply with OK or Apply.</source>
+        <translation>Nastavenia nižšie sa použijú tlačidlom OK alebo Použiť.</translation>
+    </message>
+    <message>
+        <source>Tip: Encapsulate parameter with quotation marks to avoid text being cut off at whitespace (e.g., &quot;%N&quot;)</source>
+        <translation>Tip: Ohraničiť parameter úvodzovkami, aby nedošlo k odstrihnutiu textu za medzerou (napr. &quot;%N&quot;)</translation>
+    </message>
+    <message>
+        <source>Transfer List</source>
+        <translation>Zoznam prenosov</translation>
+    </message>
+    <message>
+        <source>Until the first user account is created, this login always works.</source>
+        <translation>Kým sa nevytvorí prvý používateľský účet, toto prihlásenie vždy funguje.</translation>
+    </message>
+    <message>
+        <source>User Accounts</source>
+        <translation>Používateľské účty</translation>
+    </message>
+    <message>
+        <source>Users can be kept logged in for 0 to 365 days.</source>
+        <translation>Používatelia môžu zostať prihlásení 0 až 365 dní.</translation>
+    </message>
+    <message>
+        <source>Very low</source>
+        <translation>Veľmi malé</translation>
+    </message>
+    <message>
+        <source>Warning! Data loss possible!</source>
+        <translation>Upozornenie! Vyskytla sa možná strata dát!</translation>
+    </message>
+    <message>
+        <source>When Default Save/Incomplete Path changed:</source>
+        <translation>Keď sa zmení východzia cesta uloženia/nekompletných:</translation>
+    </message>
+    <message>
+        <source>Whitelist for filtering HTTP Host header values.
+In order to defend against DNS rebinding attack,
+you should put in domain names used by WebUI server.
+
+Use &apos;;&apos; to split multiple entries. Can use wildcard &apos;*&apos;.</source>
+        <translation>Zoznam povolených pre filtrovanie hodnôt HTTP hlaviček hostiteľa.
+Pre obranu proti DNS rebinding útokom,
+mali vložiť doménové názvy použité pre WebUI server.
+
+Použite &apos;;&apos; pre oddelenie viacerých položiek. Môžete použiť masku &apos;*&apos;.</translation>
+    </message>
+    <message>
+        <source>You changed the address, port or HTTPS setting of the WebUI. Saving moves the WebUI, so Options will save, close and reload the page, the same as OK. If the page doesn&apos;t come back, open the WebUI at its new address.\n\nSave anyway?</source>
+        <translation>Zmenili ste adresu, port alebo nastavenie HTTPS WebUI. Uložením sa WebUI presunie, takže Možnosti uložia, zatvoria a znova načítajú stránku, rovnako ako OK. Ak sa stránka nevráti, otvorte WebUI na novej adrese.\n\nUložiť aj tak?</translation>
+    </message>
+    <message>
+        <source>lock for:</source>
+        <translation>zamknúť na:</translation>
+    </message>
 </context>
 <context>
     <name>PeerListWidget</name>
@@ -3067,6 +3358,142 @@ Použite ';' pre oddelenie viacerých položiek. Môžete použiť masku '*'.</t
     <message>
         <source>The time it takes from receiving a request from a peer until we're sending the response back on the socket</source>
         <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Activity</source>
+        <translation>Aktivita</translation>
+    </message>
+    <message>
+        <source>All time</source>
+        <translation>Celkom</translation>
+    </message>
+    <message>
+        <source>Before tracking began</source>
+        <translation>Pred začatím sledovania</translation>
+    </message>
+    <message>
+        <source>By month</source>
+        <translation>Po mesiacoch</translation>
+    </message>
+    <message>
+        <source>Counts the requests that added a download. Apps without a login, such as Sonarr and Radarr, are shown as (localhost). Downloads added in the desktop window are not counted.</source>
+        <translation>Počíta požiadavky, ktoré pridali sťahovanie. Aplikácie bez prihlásenia, napríklad Sonarr a Radarr, sa zobrazujú ako (localhost). Sťahovania pridané v okne desktopovej aplikácie sa nepočítajú.</translation>
+    </message>
+    <message>
+        <source>Current speed:</source>
+        <translation>Aktuálna rýchlosť:</translation>
+    </message>
+    <message>
+        <source>DHT nodes:</source>
+        <translation>Uzly DHT:</translation>
+    </message>
+    <message>
+        <source>Data discarded this session:</source>
+        <translation>Zahodené dáta v tejto relácii:</translation>
+    </message>
+    <message>
+        <source>Disk</source>
+        <translation>Disk</translation>
+    </message>
+    <message>
+        <source>History</source>
+        <translation>História</translation>
+    </message>
+    <message>
+        <source>Last 12 months</source>
+        <translation>Posledných 12 mesiacov</translation>
+    </message>
+    <message>
+        <source>Last 7 days</source>
+        <translation>Posledných 7 dní</translation>
+    </message>
+    <message>
+        <source>Last month</source>
+        <translation>Minulý mesiac</translation>
+    </message>
+    <message>
+        <source>Month</source>
+        <translation>Mesiac</translation>
+    </message>
+    <message>
+        <source>Nothing added yet</source>
+        <translation>Zatiaľ nič nepridané</translation>
+    </message>
+    <message>
+        <source>Off</source>
+        <translation>Vypnuté</translation>
+    </message>
+    <message>
+        <source>Overview</source>
+        <translation>Prehľad</translation>
+    </message>
+    <message>
+        <source>Peers waiting on disk reads:</source>
+        <translation>Peeri čakajúci na čítanie z disku:</translation>
+    </message>
+    <message>
+        <source>Peers waiting on disk writes:</source>
+        <translation>Peeri čakajúci na zápis na disk:</translation>
+    </message>
+    <message>
+        <source>Period</source>
+        <translation>Obdobie</translation>
+    </message>
+    <message>
+        <source>Request latency:</source>
+        <translation>Oneskorenie požiadavky:</translation>
+    </message>
+    <message>
+        <source>Running for:</source>
+        <translation>Beží:</translation>
+    </message>
+    <message>
+        <source>Share ratio</source>
+        <translation>Pomer zdieľania</translation>
+    </message>
+    <message>
+        <source>Share ratio:</source>
+        <translation>Pomer zdieľania:</translation>
+    </message>
+    <message>
+        <source>Technical</source>
+        <translation>Technické</translation>
+    </message>
+    <message>
+        <source>This month</source>
+        <translation>Tento mesiac</translation>
+    </message>
+    <message>
+        <source>This session</source>
+        <translation>Táto relácia</translation>
+    </message>
+    <message>
+        <source>Today</source>
+        <translation>Dnes</translation>
+    </message>
+    <message>
+        <source>Torrents downloading:</source>
+        <translation>Sťahované torrenty:</translation>
+    </message>
+    <message>
+        <source>Torrents seeding:</source>
+        <translation>Seedované torrenty:</translation>
+    </message>
+    <message>
+        <source>Torrents stopped:</source>
+        <translation>Zastavené torrenty:</translation>
+    </message>
+    <message>
+        <source>Torrents with errors:</source>
+        <translation>Torrenty s chybami:</translation>
+    </message>
+    <message>
+        <source>Tracking since:</source>
+        <translation>Sledovanie od:</translation>
+    </message>
+    <message>
+        <source>WebUI downloads added, this month</source>
+        <translation>Sťahovania pridané cez WebUI, tento mesiac</translation>
     </message>
 </context>
 <context>
@@ -3854,6 +4281,10 @@ Použite ';' pre oddelenie viacerých položiek. Môžete použiť masku '*'.</t
         <source>Content Path</source>
         <translation type="unfinished" />
     </message>
+    <message>
+        <source>Remove all tags from selected torrents?</source>
+        <translation>Odstrániť všetky štítky z vybratých torrentov?</translation>
+    </message>
 </context>
 <context>
     <name>UpDownRatioDialog</name>
@@ -3926,6 +4357,10 @@ Použite ';' pre oddelenie viacerých položiek. Môžete použiť masku '*'.</t
     <message>
         <source>Remove tracker</source>
         <translation>Odstrániť tracker</translation>
+    </message>
+    <message>
+        <source>This choice is remembered for the next removal.</source>
+        <translation>Táto voľba sa zapamätá pre ďalšie odstránenie.</translation>
     </message>
 </context>
 <context>
@@ -4139,6 +4574,34 @@ Použite ';' pre oddelenie viacerých položiek. Môžete použiť masku '*'.</t
         <source>Select plugins</source>
         <translation>Vyberte pluginy</translation>
     </message>
+    <message>
+        <source>Category to search in</source>
+        <translation>Kategória, v ktorej hľadať</translation>
+    </message>
+    <message>
+        <source>Close the selected search</source>
+        <translation>Zavrieť vybrané hľadanie</translation>
+    </message>
+    <message>
+        <source>Empty search pattern</source>
+        <translation>Prázdny hľadaný reťazec</translation>
+    </message>
+    <message>
+        <source>Search engines to use</source>
+        <translation>Používané vyhľadávače</translation>
+    </message>
+    <message>
+        <source>Search for torrents...</source>
+        <translation>Hľadať torrenty...</translation>
+    </message>
+    <message>
+        <source>Searches</source>
+        <translation>Hľadania</translation>
+    </message>
+    <message>
+        <source>Type a search above and press Enter.</source>
+        <translation>Zadajte hľadanie vyššie a stlačte Enter.</translation>
+    </message>
 </context>
 <context>
     <name>PluginSelectDlg</name>
@@ -4177,6 +4640,10 @@ Použite ';' pre oddelenie viacerých položiek. Môžete použiť masku '*'.</t
     <message>
         <source>Search plugins</source>
         <translation>Pluginy vyhľadávania</translation>
+    </message>
+    <message>
+        <source>Warning: Be sure to comply with your country&apos;s copyright laws when downloading torrents from any of these search engines.</source>
+        <translation>Varovanie: Uistite sa, že dodržiavate zákony Vašej krajiny o ochrane duševného vlastníctva keď sťahujete torrenty z ktoréhokoľvek z týchto vyhľadávačov.</translation>
     </message>
 </context>
 <context>
@@ -4400,6 +4867,30 @@ Použite ';' pre oddelenie viacerých položiek. Môžete použiť masku '*'.</t
         <source>qBittorrent icon</source>
         <translation>Ikona qBittorrentu</translation>
     </message>
+    <message>
+        <source>Based on:</source>
+        <translation>Založené na:</translation>
+    </message>
+    <message>
+        <source>Edition version:</source>
+        <translation>Verzia vydania:</translation>
+    </message>
+    <message>
+        <source>Kettle Edition is a personal build of qBittorrent that adds user accounts with roles for the WebUI and the desktop app, an activity log, and an installable WebUI with a phone layout. A kettle is a group of hawks soaring together. This is an unofficial build, not affiliated with the qBittorrent project.</source>
+        <translation>Kettle Edition je osobná zostava qBittorrentu, ktorá pridáva používateľské účty s rolami pre WebUI a desktopovú aplikáciu, protokol aktivity a inštalovateľné WebUI s rozložením pre telefón. Kettle je skupina jastrabov, ktoré spolu krúžia. Toto je neoficiálna zostava, ktorá nie je spojená s projektom qBittorrent.</translation>
+    </message>
+    <message>
+        <source>Maintainer:</source>
+        <translation>Správca:</translation>
+    </message>
+    <message>
+        <source>This edition</source>
+        <translation>Toto vydanie</translation>
+    </message>
+    <message>
+        <source>qBittorrent project:</source>
+        <translation>Projekt qBittorrent:</translation>
+    </message>
 </context>
 <context>
     <name>OptionDialog</name>
@@ -4501,6 +4992,46 @@ Použite ';' pre oddelenie viacerých položiek. Môžete použiť masku '*'.</t
     <message>
         <source>Open shared download window</source>
         <translation type="unfinished" />
+    </message>
+    <message>
+        <source>%1 of %2 shown</source>
+        <translation>Zobrazené %1 z %2</translation>
+    </message>
+    <message>
+        <source>%1 of %2 shown (%3 hidden)</source>
+        <translation>Zobrazené %1 z %2 (%3 skrytých)</translation>
+    </message>
+    <message>
+        <source>Close all searches</source>
+        <translation>Zavrieť všetky hľadania</translation>
+    </message>
+    <message>
+        <source>Close search</source>
+        <translation>Zavrieť hľadanie</translation>
+    </message>
+    <message>
+        <source>Filter search results...</source>
+        <translation>Filtrovať výsledky hľadania...</translation>
+    </message>
+    <message>
+        <source>Finished: %1</source>
+        <translation>Dokončené: %1</translation>
+    </message>
+    <message>
+        <source>Refresh search</source>
+        <translation>Obnoviť hľadanie</translation>
+    </message>
+    <message>
+        <source>Search aborted: %1</source>
+        <translation>Hľadanie prerušené: %1</translation>
+    </message>
+    <message>
+        <source>Search returned no results</source>
+        <translation>Vyhľadávanie nevrátilo žiadne výsledky</translation>
+    </message>
+    <message>
+        <source>Searching: %1</source>
+        <translation>Hľadá sa: %1</translation>
     </message>
 </context>
 <context>
@@ -4639,6 +5170,10 @@ Použite ';' pre oddelenie viacerých položiek. Môžete použiť masku '*'.</t
     <message>
         <source>Blocked opening RSS article URL. Only http:// and https:// links can be opened.</source>
         <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Details</source>
+        <translation>Podrobnosti</translation>
     </message>
 </context>
 <context>
@@ -4917,6 +5452,10 @@ Podporuje formáty: S01E01, 1x1, 2017.12.31 a 31.12.2017 (podporuje aj formáty 
         <source>Import</source>
         <translation type="unfinished" />
     </message>
+    <message>
+        <source>Don&apos;t create subfolder</source>
+        <translation>Nevytvárať podpriečinok</translation>
+    </message>
 </context>
 <context>
     <name>TrackerFiltersList</name>
@@ -5106,6 +5645,26 @@ Podporuje formáty: S01E01, 1x1, 2017.12.31 a 31.12.2017 (podporuje aj formáty 
         <source>Choose a log level...</source>
         <translation>Vyberte úrovne logu...</translation>
     </message>
+    <message>
+        <source>Export...</source>
+        <translation>Exportovať...</translation>
+    </message>
+    <message>
+        <source>Filter activity</source>
+        <translation>Filtrovať aktivitu</translation>
+    </message>
+    <message>
+        <source>Result:</source>
+        <translation>Výsledok:</translation>
+    </message>
+    <message>
+        <source>User:</source>
+        <translation>Používateľ:</translation>
+    </message>
+    <message>
+        <source>WebUI Activity</source>
+        <translation>Aktivita WebUI</translation>
+    </message>
 </context>
 <context>
     <name>TrackersFilterWidget</name>
@@ -5175,6 +5734,14 @@ Podporuje formáty: S01E01, 1x1, 2017.12.31 a 31.12.2017 (podporuje aj formáty 
     <message>
         <source>Torrent share limits</source>
         <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Torrent share limits</source>
+        <translation>Obmedzenia zdieľania torrentu</translation>
+    </message>
+    <message>
+        <source>Your role saves torrents in the default folders.</source>
+        <translation>Vaša rola ukladá torrenty do predvolených priečinkov.</translation>
     </message>
 </context>
 <context>
@@ -5274,6 +5841,14 @@ Podporuje formáty: S01E01, 1x1, 2017.12.31 a 31.12.2017 (podporuje aj formáty 
     <message>
         <source>Invalid Username or Password.</source>
         <translation>Nesprávne užívateľské meno alebo heslo.</translation>
+    </message>
+    <message>
+        <source>A kettle is a group of hawks soaring together.</source>
+        <translation>Kettle je skupina jastrabov, ktoré spolu krúžia.</translation>
+    </message>
+    <message>
+        <source>Sign in</source>
+        <translation>Prihlásiť sa</translation>
     </message>
 </context>
 <context>
@@ -5496,6 +6071,22 @@ Podporuje formáty: S01E01, 1x1, 2017.12.31 a 31.12.2017 (podporuje aj formáty 
         <source>If checked, filenames starting with a period punctuation mark `.` will not be added to the created torrent.</source>
         <translation type="unfinished" />
     </message>
+    <message>
+        <source>Align to piece boundary for files larger than:</source>
+        <translation>Nastavte veľkosť dielčích súborov pre súbory väčšie ako:</translation>
+    </message>
+    <message>
+        <source>Optimize alignment</source>
+        <translation>Optimalizovať radenie súborov</translation>
+    </message>
+    <message>
+        <source>Private torrent (Won&apos;t distribute on DHT network)</source>
+        <translation>Súkromný torrent (nebude sa šíriť pomocou siete DHT)</translation>
+    </message>
+    <message>
+        <source>Start seeding immediately</source>
+        <translation>Začať seedovať ihneď</translation>
+    </message>
 </context>
 <context>
     <name>DownloadFromURLDialog</name>
@@ -5606,6 +6197,10 @@ Podporuje formáty: S01E01, 1x1, 2017.12.31 a 31.12.2017 (podporuje aj formáty 
         <source>Failed to set speed limits</source>
         <translation type="unfinished" />
     </message>
+    <message>
+        <source>Speed limits</source>
+        <translation>Rýchlostné obmedzenia</translation>
+    </message>
 </context>
 <context>
     <name>ListWidget</name>
@@ -5616,6 +6211,10 @@ Podporuje formáty: S01E01, 1x1, 2017.12.31 a 31.12.2017 (podporuje aj formáty 
     <message>
         <source>Resize</source>
         <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Reset Auto Width</source>
+        <translation>Obnoviť automatickú šírku</translation>
     </message>
 </context>
 <context>
@@ -5631,6 +6230,10 @@ Podporuje formáty: S01E01, 1x1, 2017.12.31 a 31.12.2017 (podporuje aj formáty 
     <message>
         <source>Rotate this API key? The current key will immediately stop working and a new key will be generated.</source>
         <translation>Vymeniť tento API kľúč? Súčasný kľúč prestane okamžite fungovať a vygeneruje sa nový kľúč.</translation>
+    </message>
+    <message>
+        <source>Generate an API key? This key can be used to interact with qBittorrent&apos;s API.</source>
+        <translation>Vygenerovať API kľúč? Tento kľúč bude možné použiť na komunikáciu s qBittorrent API.</translation>
     </message>
 </context>
 <context>
@@ -5746,6 +6349,38 @@ Podporuje formáty: S01E01, 1x1, 2017.12.31 a 31.12.2017 (podporuje aj formáty 
         <source>Remove torrent</source>
         <translation type="unfinished" />
     </message>
+    <message>
+        <source>Action when the limit is reached:</source>
+        <translation>Akcia pri dosiahnutí limitu:</translation>
+    </message>
+    <message>
+        <source>Default (%1)</source>
+        <translation>Predvolená (%1)</translation>
+    </message>
+    <message>
+        <source>Inactive seeding time:</source>
+        <translation>Čas neaktívneho seedovania:</translation>
+    </message>
+    <message>
+        <source>Mode:</source>
+        <translation>Režim:</translation>
+    </message>
+    <message>
+        <source>Ratio:</source>
+        <translation>Pomer:</translation>
+    </message>
+    <message>
+        <source>Seeding time:</source>
+        <translation>Čas seedovania:</translation>
+    </message>
+    <message>
+        <source>Set to</source>
+        <translation>Nastaviť na</translation>
+    </message>
+    <message>
+        <source>Unlimited</source>
+        <translation>Neobmedzené</translation>
+    </message>
 </context>
 <context>
     <name>TorrentContent</name>
@@ -5756,6 +6391,208 @@ Podporuje formáty: S01E01, 1x1, 2017.12.31 a 31.12.2017 (podporuje aj formáty 
     <message>
         <source>Not available for folders</source>
         <translation type="unfinished" />
+    </message>
+</context>
+<context>
+    <name>UserAccounts</name>
+    <message>
+        <source>(this browser)</source>
+        <translation>(tento prehliadač)</translation>
+    </message>
+    <message>
+        <source>A role decides what its users are allowed to do.</source>
+        <translation>Rola určuje, čo smú jej používatelia robiť.</translation>
+    </message>
+    <message>
+        <source>Add Role</source>
+        <translation>Pridať rolu</translation>
+    </message>
+    <message>
+        <source>Add Role...</source>
+        <translation>Pridať rolu...</translation>
+    </message>
+    <message>
+        <source>Add User</source>
+        <translation>Pridať používateľa</translation>
+    </message>
+    <message>
+        <source>Add User...</source>
+        <translation>Pridať používateľa...</translation>
+    </message>
+    <message>
+        <source>Are you sure you want to remove the role &apos;%1&apos;?</source>
+        <translation>Naozaj chcete odstrániť rolu „%1“?</translation>
+    </message>
+    <message>
+        <source>Are you sure you want to remove the user &apos;%1&apos;?</source>
+        <translation>Naozaj chcete odstrániť používateľa „%1“?</translation>
+    </message>
+    <message>
+        <source>At least %1 characters</source>
+        <translation>Aspoň %1 znakov</translation>
+    </message>
+    <message>
+        <source>Browser</source>
+        <translation>Prehliadač</translation>
+    </message>
+    <message>
+        <source>Browsers and devices where someone is logged in with a user account.</source>
+        <translation>Prehliadače a zariadenia, kde je niekto prihlásený používateľským účtom.</translation>
+    </message>
+    <message>
+        <source>Change Password</source>
+        <translation>Zmeniť heslo</translation>
+    </message>
+    <message>
+        <source>Confirm password:</source>
+        <translation>Potvrdenie hesla:</translation>
+    </message>
+    <message>
+        <source>Created</source>
+        <translation>Vytvorené</translation>
+    </message>
+    <message>
+        <source>Current password:</source>
+        <translation>Súčasné heslo:</translation>
+    </message>
+    <message>
+        <source>Description</source>
+        <translation>Popis</translation>
+    </message>
+    <message>
+        <source>Description:</source>
+        <translation>Popis:</translation>
+    </message>
+    <message>
+        <source>Disable</source>
+        <translation>Zakázať</translation>
+    </message>
+    <message>
+        <source>Disable this account</source>
+        <translation>Zakázať tento účet</translation>
+    </message>
+    <message>
+        <source>Edit Role</source>
+        <translation>Upraviť rolu</translation>
+    </message>
+    <message>
+        <source>Edit User</source>
+        <translation>Upraviť používateľa</translation>
+    </message>
+    <message>
+        <source>Edit...</source>
+        <translation>Upraviť...</translation>
+    </message>
+    <message>
+        <source>Enable</source>
+        <translation>Povoliť</translation>
+    </message>
+    <message>
+        <source>Enter a role name.</source>
+        <translation>Zadajte názov roly.</translation>
+    </message>
+    <message>
+        <source>Enter a username.</source>
+        <translation>Zadajte používateľské meno.</translation>
+    </message>
+    <message>
+        <source>Expires</source>
+        <translation>Vyprší</translation>
+    </message>
+    <message>
+        <source>Gives control over the PC or qBittorrent itself</source>
+        <translation>Dáva kontrolu nad počítačom alebo nad samotným qBittorrentom</translation>
+    </message>
+    <message>
+        <source>Last active</source>
+        <translation>Posledná aktivita</translation>
+    </message>
+    <message>
+        <source>Last login</source>
+        <translation>Posledné prihlásenie</translation>
+    </message>
+    <message>
+        <source>Leave empty to keep the current password</source>
+        <translation>Ponechajte prázdne, aby zostalo súčasné heslo</translation>
+    </message>
+    <message>
+        <source>Log Out</source>
+        <translation>Odhlásiť</translation>
+    </message>
+    <message>
+        <source>Log Out Everywhere</source>
+        <translation>Odhlásiť všade</translation>
+    </message>
+    <message>
+        <source>Logged In</source>
+        <translation>Prihlásení</translation>
+    </message>
+    <message>
+        <source>Logged in</source>
+        <translation>Prihlásený</translation>
+    </message>
+    <message>
+        <source>New password:</source>
+        <translation>Nové heslo:</translation>
+    </message>
+    <message>
+        <source>No accounts yet, so everyone still uses the shared WebUI login. Add an Admin account first.</source>
+        <translation>Zatiaľ nie sú žiadne účty, takže všetci stále používajú spoločné prihlásenie WebUI. Najprv pridajte účet správcu.</translation>
+    </message>
+    <message>
+        <source>People who can log in to the WebUI with their own username and password.</source>
+        <translation>Ľudia, ktorí sa môžu prihlásiť do WebUI vlastným používateľským menom a heslom.</translation>
+    </message>
+    <message>
+        <source>Permissions</source>
+        <translation>Oprávnenia</translation>
+    </message>
+    <message>
+        <source>Role</source>
+        <translation>Rola</translation>
+    </message>
+    <message>
+        <source>Role:</source>
+        <translation>Rola:</translation>
+    </message>
+    <message>
+        <source>Roles</source>
+        <translation>Roly</translation>
+    </message>
+    <message>
+        <source>The password must be at least %1 characters long.</source>
+        <translation>Heslo musí mať aspoň %1 znakov.</translation>
+    </message>
+    <message>
+        <source>The passwords don&apos;t match.</source>
+        <translation>Heslá sa nezhodujú.</translation>
+    </message>
+    <message>
+        <source>Users</source>
+        <translation>Používatelia</translation>
+    </message>
+    <message>
+        <source>Your password was changed. Other browsers and devices where you were logged in have been logged out.</source>
+        <translation>Vaše heslo bolo zmenené. Ostatné prehliadače a zariadenia, kde ste boli prihlásení, boli odhlásené.</translation>
+    </message>
+</context>
+<context>
+    <name>WebUIActivity</name>
+    <message>
+        <source>Action</source>
+        <translation>Akcia</translation>
+    </message>
+    <message>
+        <source>Result</source>
+        <translation>Výsledok</translation>
+    </message>
+    <message>
+        <source>Role</source>
+        <translation>Rola</translation>
+    </message>
+    <message>
+        <source>Time</source>
+        <translation>Čas</translation>
     </message>
 </context>
 </TS>

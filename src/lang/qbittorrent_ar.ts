@@ -141,6 +141,62 @@
         <source>The free IP to Country Lite database by DB-IP is used for resolving the countries of peers. The database is licensed under the Creative Commons Attribution 4.0 International License</source>
         <translation>تُستخدم قاعدة بيانات IP to Country Lite المجانية بواسطة DB-IP لفصل بلدان القرناء. قاعدة البيانات مُرخصة بموجب ترخيص Creative Commons Attribution 4.0 International License</translation>
     </message>
+    <message>
+        <source>This edition</source>
+        <translation>هذا الإصدار</translation>
+    </message>
+    <message>
+        <source>Edition version:</source>
+        <translation>رقم إصدار النسخة:</translation>
+    </message>
+    <message>
+        <source>Based on:</source>
+        <translation>مبني على:</translation>
+    </message>
+    <message>
+        <source>Maintainer:</source>
+        <translation>المشرف على الصيانة:</translation>
+    </message>
+    <message>
+        <source>qBittorrent project:</source>
+        <translation>مشروع qBittorrent:</translation>
+    </message>
+    <message>
+        <source>Kettle Edition is a personal build of qBittorrent that adds user accounts with roles for the WebUI and the desktop app, an activity log, and an installable WebUI with a phone layout. A kettle is a group of hawks soaring together. This is an unofficial build, not affiliated with the qBittorrent project.</source>
+        <translation>Kettle Edition هي نسخة شخصية من qBittorrent تضيف حسابات مستخدمين بأدوار لواجهة الويب وتطبيق سطح المكتب، وسجل نشاط، وواجهة ويب قابلة للتثبيت بتخطيط للهاتف. الـ kettle هو مجموعة من الصقور تحلق معًا. هذه نسخة غير رسمية وغير تابعة لمشروع qBittorrent.</translation>
+    </message>
+    <message>
+        <source>N/A</source>
+        <translation>غير متاح</translation>
+    </message>
+    <message>
+        <source>This edition</source>
+        <translation>هذا الإصدار</translation>
+    </message>
+    <message>
+        <source>Edition version:</source>
+        <translation>رقم إصدار النسخة:</translation>
+    </message>
+    <message>
+        <source>Based on:</source>
+        <translation>مبني على:</translation>
+    </message>
+    <message>
+        <source>Maintainer:</source>
+        <translation>المشرف على الصيانة:</translation>
+    </message>
+    <message>
+        <source>qBittorrent project:</source>
+        <translation>مشروع qBittorrent:</translation>
+    </message>
+    <message>
+        <source>Kettle Edition is a personal build of qBittorrent that adds user accounts with roles for the WebUI and the desktop app, an activity log, and an installable WebUI with a phone layout. A kettle is a group of hawks soaring together. This is an unofficial build, not affiliated with the qBittorrent project.</source>
+        <translation>Kettle Edition هي نسخة شخصية من qBittorrent تضيف حسابات مستخدمين بأدوار لواجهة الويب وتطبيق سطح المكتب، وسجل نشاط، وواجهة ويب قابلة للتثبيت بتخطيط للهاتف. الـ kettle هو مجموعة من الصقور تحلق معًا. هذه نسخة غير رسمية وغير تابعة لمشروع qBittorrent.</translation>
+    </message>
+    <message>
+        <source>N/A</source>
+        <translation>غير متاح</translation>
+    </message>
 </context>
 <context>
     <name>AbstractFileStorage</name>
@@ -1459,6 +1515,62 @@
         <location filename="../gui/advancedsettings.cpp" line="925"/>
         <source>Embedded tracker port</source>
         <translation>منفذ المتتبع الداخلي</translation>
+    </message>
+    <message>
+        <source>Network</source>
+        <translation>الشبكة</translation>
+    </message>
+    <message>
+        <source>Storage</source>
+        <translation>التخزين</translation>
+    </message>
+    <message>
+        <source>Peers and trackers</source>
+        <translation>الأقران والمتتبعات</translation>
+    </message>
+    <message>
+        <source>Program behavior</source>
+        <translation>سلوك البرنامج</translation>
+    </message>
+    <message>
+        <source>Display and notifications</source>
+        <translation>العرض والإشعارات</translation>
+    </message>
+    <message>
+        <source>Network connection</source>
+        <translation>اتصال الشبكة</translation>
+    </message>
+    <message>
+        <source>Security and privacy</source>
+        <translation>الأمان والخصوصية</translation>
+    </message>
+    <message>
+        <source>Connection tuning</source>
+        <translation>ضبط الاتصال</translation>
+    </message>
+    <message>
+        <source>Saving and torrent files</source>
+        <translation>الحفظ وملفات التورنت</translation>
+    </message>
+    <message>
+        <source>Disk and memory</source>
+        <translation>القرص والذاكرة</translation>
+    </message>
+    <message>
+        <source>Peers and seeding</source>
+        <translation>الأقران والبذر</translation>
+    </message>
+    <message>
+        <source>DHT and I2P</source>
+        <translation>DHT وI2P</translation>
+    </message>
+    <message>
+        <source>General</source>
+        <translation>عام</translation>
+    </message>
+    <message>
+        <source>Trackers</source>
+        <translation>المتتبعات</translation>
     </message>
 </context>
 <context>
@@ -3481,6 +3593,22 @@ Supports the formats: S01E01, 1x1, 2017.12.31 and 31.12.2017 (Date formats also 
         <source>Remove torrent</source>
         <translation>إزالة التورنت</translation>
     </message>
+    <message>
+        <source>This choice is remembered for the next removal.</source>
+        <translation>سيتم تذكر هذا الاختيار في عملية الحذف التالية.</translation>
+    </message>
+    <message>
+        <source>Remove</source>
+        <translation>إزالة</translation>
+    </message>
+    <message>
+        <source>This choice is remembered for the next removal.</source>
+        <translation>سيتم تذكر هذا الاختيار في عملية الحذف التالية.</translation>
+    </message>
+    <message>
+        <source>Remove</source>
+        <translation>إزالة</translation>
+    </message>
 </context>
 <context>
     <name>DownloadFromURLDialog</name>
@@ -3554,6 +3682,14 @@ Supports the formats: S01E01, 1x1, 2017.12.31 and 31.12.2017 (Date formats also 
         <location filename="../gui/executionlogwidget.cpp" line="99"/>
         <source>Clear</source>
         <translation>مسح</translation>
+    </message>
+    <message>
+        <source>WebUI Activity</source>
+        <translation>نشاط واجهة الويب</translation>
+    </message>
+    <message>
+        <source>WebUI Activity</source>
+        <translation>نشاط واجهة الويب</translation>
     </message>
 </context>
 <context>
@@ -4718,6 +4854,46 @@ Minimum requirement: %2.</source>
         <location filename="../gui/mainwindow.cpp" line="1346"/>
         <source>Torrent Files</source>
         <translation>ملفات التورنت</translation>
+    </message>
+    <message>
+        <source>Kettle Edition %1 is available.</source>
+        <translation>Kettle Edition %1 متاح.</translation>
+    </message>
+    <message>
+        <source>qBittorrent Kettle Edition %1 is available. It is downloaded now and installed at 4:00 AM, or when qBittorrent starts next.</source>
+        <translation>qBittorrent Kettle Edition %1 متاح. يتم تنزيله الآن وتثبيته عند الساعة 4:00 صباحًا، أو عند بدء qBittorrent في المرة القادمة.</translation>
+    </message>
+    <message>
+        <source>qBittorrent Kettle Edition %1 is available. It is downloaded now. Turn on &quot;Automatically install Kettle Edition updates&quot; in Options to install it.</source>
+        <translation>qBittorrent Kettle Edition %1 متاح. يتم تنزيله الآن. فعّل &quot;تثبيت تحديثات Kettle Edition تلقائيًا&quot; في الخيارات لتثبيته.</translation>
+    </message>
+    <message>
+        <source>You have the latest qBittorrent Kettle Edition (%1).</source>
+        <translation>لديك أحدث إصدار من qBittorrent Kettle Edition (%1).</translation>
+    </message>
+    <message>
+        <source>Could not check for qBittorrent Kettle Edition updates. See the Execution Log for details.</source>
+        <translation>تعذر البحث عن تحديثات qBittorrent Kettle Edition. راجع سجل التنفيذ للتفاصيل.</translation>
+    </message>
+    <message>
+        <source>Kettle Edition %1 is available.</source>
+        <translation>Kettle Edition %1 متاح.</translation>
+    </message>
+    <message>
+        <source>qBittorrent Kettle Edition %1 is available. It is downloaded now and installed at 4:00 AM, or when qBittorrent starts next.</source>
+        <translation>qBittorrent Kettle Edition %1 متاح. يتم تنزيله الآن وتثبيته عند الساعة 4:00 صباحًا، أو عند بدء qBittorrent في المرة القادمة.</translation>
+    </message>
+    <message>
+        <source>qBittorrent Kettle Edition %1 is available. It is downloaded now. Turn on &quot;Automatically install Kettle Edition updates&quot; in Options to install it.</source>
+        <translation>qBittorrent Kettle Edition %1 متاح. يتم تنزيله الآن. فعّل &quot;تثبيت تحديثات Kettle Edition تلقائيًا&quot; في الخيارات لتثبيته.</translation>
+    </message>
+    <message>
+        <source>You have the latest qBittorrent Kettle Edition (%1).</source>
+        <translation>لديك أحدث إصدار من qBittorrent Kettle Edition (%1).</translation>
+    </message>
+    <message>
+        <source>Could not check for qBittorrent Kettle Edition updates. See the Execution Log for details.</source>
+        <translation>تعذر البحث عن تحديثات qBittorrent Kettle Edition. راجع سجل التنفيذ للتفاصيل.</translation>
     </message>
 </context>
 <context>
@@ -8482,6 +8658,190 @@ Check the Execution Log for errors.</source>
         <source>Length Error</source>
         <translation>خطأ في الطول</translation>
     </message>
+    <message>
+        <source>Search settings</source>
+        <translation>البحث في الإعدادات</translation>
+    </message>
+    <message>
+        <source>No settings match</source>
+        <translation>لا توجد إعدادات مطابقة</translation>
+    </message>
+    <message>
+        <source>User Accounts</source>
+        <translation>حسابات المستخدمين</translation>
+    </message>
+    <message>
+        <source>Automatically install Kettle Edition updates</source>
+        <translation>تثبيت تحديثات Kettle Edition تلقائيًا</translation>
+    </message>
+    <message>
+        <source>Status bar and log</source>
+        <translation>شريط الحالة والسجل</translation>
+    </message>
+    <message>
+        <source>Files</source>
+        <translation>الملفات</translation>
+    </message>
+    <message>
+        <source>Checking</source>
+        <translation>الفحص</translation>
+    </message>
+    <message>
+        <source>Until the first user account is created, this login always works.</source>
+        <translation>إلى أن يتم إنشاء أول حساب مستخدم، يعمل تسجيل الدخول هذا دائمًا.</translation>
+    </message>
+    <message>
+        <source>Allow this login when user accounts exist</source>
+        <translation>السماح بتسجيل الدخول هذا عند وجود حسابات مستخدمين</translation>
+    </message>
+    <message>
+        <source>Access</source>
+        <translation>الوصول</translation>
+    </message>
+    <message>
+        <source>Changes to users, roles and logins apply at once. The settings below apply with OK or Apply.</source>
+        <translation>التغييرات على المستخدمين والأدوار وتسجيلات الدخول تُطبَّق فورًا. الإعدادات أدناه تُطبَّق عند الضغط على موافق أو تطبيق.</translation>
+    </message>
+    <message>
+        <source>Logins and Activity Log</source>
+        <translation>تسجيلات الدخول وسجل النشاط</translation>
+    </message>
+    <message>
+        <source>0 means users are logged out after the session timeout.</source>
+        <translation>0 يعني تسجيل خروج المستخدمين بعد انتهاء مهلة الجلسة.</translation>
+    </message>
+    <message>
+        <source>Keep users logged in for:</source>
+        <translation>إبقاء المستخدمين مسجلين الدخول لمدة:</translation>
+    </message>
+    <message>
+        <source>Until session timeout</source>
+        <translation>حتى انتهاء مهلة الجلسة</translation>
+    </message>
+    <message>
+        <source> days</source>
+        <translation> أيام</translation>
+    </message>
+    <message>
+        <source>Lock account after consecutive failures:</source>
+        <translation>قفل الحساب بعد إخفاقات متتالية:</translation>
+    </message>
+    <message>
+        <source>Keep WebUI activity log for:</source>
+        <translation>الاحتفاظ بسجل نشاط واجهة الويب لمدة:</translation>
+    </message>
+    <message>
+        <source>lock for:</source>
+        <translation>القفل لمدة:</translation>
+    </message>
+    <message>
+        <source>%1 works best with Windows dark mode</source>
+        <translation>%1 يعمل بشكل أفضل مع الوضع الداكن في Windows</translation>
+    </message>
+    <message>
+        <source>WebUI address</source>
+        <translation>عنوان واجهة الويب</translation>
+    </message>
+    <message>
+        <source>With the WebUI address set to %1, only this PC can reach the WebUI. Remote access, including through a reverse proxy on another machine, will stop working.
+
+Save anyway?</source>
+        <translation>عند ضبط عنوان واجهة الويب على %1، يمكن لهذا الكمبيوتر فقط الوصول إلى واجهة الويب. سيتوقف الوصول عن بُعد، بما في ذلك عبر وكيل عكسي على جهاز آخر.
+
+هل تريد الحفظ على أي حال؟</translation>
+    </message>
+    <message>
+        <source>Search settings</source>
+        <translation>البحث في الإعدادات</translation>
+    </message>
+    <message>
+        <source>No settings match</source>
+        <translation>لا توجد إعدادات مطابقة</translation>
+    </message>
+    <message>
+        <source>User Accounts</source>
+        <translation>حسابات المستخدمين</translation>
+    </message>
+    <message>
+        <source>Automatically install Kettle Edition updates</source>
+        <translation>تثبيت تحديثات Kettle Edition تلقائيًا</translation>
+    </message>
+    <message>
+        <source>Status bar and log</source>
+        <translation>شريط الحالة والسجل</translation>
+    </message>
+    <message>
+        <source>Files</source>
+        <translation>الملفات</translation>
+    </message>
+    <message>
+        <source>Checking</source>
+        <translation>الفحص</translation>
+    </message>
+    <message>
+        <source>Until the first user account is created, this login always works.</source>
+        <translation>إلى أن يتم إنشاء أول حساب مستخدم، يعمل تسجيل الدخول هذا دائمًا.</translation>
+    </message>
+    <message>
+        <source>Allow this login when user accounts exist</source>
+        <translation>السماح بتسجيل الدخول هذا عند وجود حسابات مستخدمين</translation>
+    </message>
+    <message>
+        <source>Access</source>
+        <translation>الوصول</translation>
+    </message>
+    <message>
+        <source>Changes to users, roles and logins apply at once. The settings below apply with OK or Apply.</source>
+        <translation>التغييرات على المستخدمين والأدوار وتسجيلات الدخول تُطبَّق فورًا. الإعدادات أدناه تُطبَّق عند الضغط على موافق أو تطبيق.</translation>
+    </message>
+    <message>
+        <source>Logins and Activity Log</source>
+        <translation>تسجيلات الدخول وسجل النشاط</translation>
+    </message>
+    <message>
+        <source>0 means users are logged out after the session timeout.</source>
+        <translation>0 يعني تسجيل خروج المستخدمين بعد انتهاء مهلة الجلسة.</translation>
+    </message>
+    <message>
+        <source>Keep users logged in for:</source>
+        <translation>إبقاء المستخدمين مسجلين الدخول لمدة:</translation>
+    </message>
+    <message>
+        <source>Until session timeout</source>
+        <translation>حتى انتهاء مهلة الجلسة</translation>
+    </message>
+    <message>
+        <source> days</source>
+        <translation> أيام</translation>
+    </message>
+    <message>
+        <source>Lock account after consecutive failures:</source>
+        <translation>قفل الحساب بعد إخفاقات متتالية:</translation>
+    </message>
+    <message>
+        <source>Keep WebUI activity log for:</source>
+        <translation>الاحتفاظ بسجل نشاط واجهة الويب لمدة:</translation>
+    </message>
+    <message>
+        <source>lock for:</source>
+        <translation>القفل لمدة:</translation>
+    </message>
+    <message>
+        <source>%1 works best with Windows dark mode</source>
+        <translation>%1 يعمل بشكل أفضل مع الوضع الداكن في Windows</translation>
+    </message>
+    <message>
+        <source>WebUI address</source>
+        <translation>عنوان واجهة الويب</translation>
+    </message>
+    <message>
+        <source>With the WebUI address set to %1, only this PC can reach the WebUI. Remote access, including through a reverse proxy on another machine, will stop working.
+
+Save anyway?</source>
+        <translation>عند ضبط عنوان واجهة الويب على %1، يمكن لهذا الكمبيوتر فقط الوصول إلى واجهة الويب. سيتوقف الوصول عن بُعد، بما في ذلك عبر وكيل عكسي على جهاز آخر.
+
+هل تريد الحفظ على أي حال؟</translation>
+    </message>
 </context>
 <context>
     <name>PeerInfo</name>
@@ -8734,6 +9094,22 @@ Check the Execution Log for errors.</source>
         <location filename="../gui/properties/peerlistwidget.cpp" line="309"/>
         <source>Copy IP:port</source>
         <translation>نسخ آي بي: المنفذ</translation>
+    </message>
+    <message>
+        <source>Reset auto width</source>
+        <translation>إعادة ضبط العرض التلقائي</translation>
+    </message>
+    <message>
+        <source>Fit all non-hidden columns to their contents again, and forget the widths that were set by hand</source>
+        <translation>ملاءمة جميع الأعمدة غير المخفية مع محتوياتها مجددًا، ونسيان العروض التي ضُبطت يدويًا</translation>
+    </message>
+    <message>
+        <source>Reset auto width</source>
+        <translation>إعادة ضبط العرض التلقائي</translation>
+    </message>
+    <message>
+        <source>Fit all non-hidden columns to their contents again, and forget the widths that were set by hand</source>
+        <translation>ملاءمة جميع الأعمدة غير المخفية مع محتوياتها مجددًا، ونسيان العروض التي ضُبطت يدويًا</translation>
     </message>
 </context>
 <context>
@@ -10122,6 +10498,14 @@ Those plugins were disabled.</source>
         <source>Open link</source>
         <translation type="unfinished"></translation>
     </message>
+    <message>
+        <source>Details</source>
+        <translation>التفاصيل</translation>
+    </message>
+    <message>
+        <source>Details</source>
+        <translation>التفاصيل</translation>
+    </message>
 </context>
 <context>
     <name>SearchController</name>
@@ -10475,6 +10859,70 @@ Those plugins were disabled.</source>
         <source>Resize all non-hidden columns to the size of their contents</source>
         <translation>قم بتغيير حجم جميع الأعمدة غير المخفية إلى حجم محتوياتها</translation>
     </message>
+    <message>
+        <source>%1 of %2 shown (%3 hidden)</source>
+        <translation>عرض %1 من %2 (%3 مخفية)</translation>
+    </message>
+    <message>
+        <source>%1 of %2 shown</source>
+        <translation>عرض %1 من %2</translation>
+    </message>
+    <message>
+        <source>Searching: %1</source>
+        <translation>جارٍ البحث: %1</translation>
+    </message>
+    <message>
+        <source>Finished: %1</source>
+        <translation>انتهى: %1</translation>
+    </message>
+    <message>
+        <source>Search aborted: %1</source>
+        <translation>أُلغي البحث: %1</translation>
+    </message>
+    <message>
+        <source>Reset auto width</source>
+        <translation>إعادة ضبط العرض التلقائي</translation>
+    </message>
+    <message>
+        <source>Fit all non-hidden columns to their contents again, and forget the widths that were set by hand</source>
+        <translation>ملاءمة جميع الأعمدة غير المخفية مع محتوياتها مجددًا، ونسيان العروض التي ضُبطت يدويًا</translation>
+    </message>
+    <message>
+        <source>Unknown</source>
+        <translation>غير معروف</translation>
+    </message>
+    <message>
+        <source>%1 of %2 shown (%3 hidden)</source>
+        <translation>عرض %1 من %2 (%3 مخفية)</translation>
+    </message>
+    <message>
+        <source>%1 of %2 shown</source>
+        <translation>عرض %1 من %2</translation>
+    </message>
+    <message>
+        <source>Searching: %1</source>
+        <translation>جارٍ البحث: %1</translation>
+    </message>
+    <message>
+        <source>Finished: %1</source>
+        <translation>انتهى: %1</translation>
+    </message>
+    <message>
+        <source>Search aborted: %1</source>
+        <translation>أُلغي البحث: %1</translation>
+    </message>
+    <message>
+        <source>Reset auto width</source>
+        <translation>إعادة ضبط العرض التلقائي</translation>
+    </message>
+    <message>
+        <source>Fit all non-hidden columns to their contents again, and forget the widths that were set by hand</source>
+        <translation>ملاءمة جميع الأعمدة غير المخفية مع محتوياتها مجددًا، ونسيان العروض التي ضُبطت يدويًا</translation>
+    </message>
+    <message>
+        <source>Unknown</source>
+        <translation>غير معروف</translation>
+    </message>
 </context>
 <context>
     <name>SearchPluginManager</name>
@@ -10772,6 +11220,14 @@ Those plugins were disabled.</source>
         <source>Couldn&apos;t update &quot;%1&quot; search engine plugin. %2</source>
         <translation type="unfinished">تعذر تحديث &quot;%1&quot; المكون الإضافي لمحرك البحث. %2</translation>
     </message>
+    <message>
+        <source>Install Kettle Plugins</source>
+        <translation>تثبيت إضافات Kettle</translation>
+    </message>
+    <message>
+        <source>Install Kettle Plugins</source>
+        <translation>تثبيت إضافات Kettle</translation>
+    </message>
 </context>
 <context>
     <name>SearchPluginSourceDialog</name>
@@ -10911,6 +11367,90 @@ Click the &quot;Search plugins...&quot; button at the bottom right of the window
         <location filename="../gui/search/searchwidget.ui" line="58"/>
         <source>Stop</source>
         <translation>أوقف</translation>
+    </message>
+    <message>
+        <source>Searches</source>
+        <translation>عمليات البحث</translation>
+    </message>
+    <message>
+        <source>Close the selected search</source>
+        <translation>إغلاق البحث المحدد</translation>
+    </message>
+    <message>
+        <source>Search for torrents...</source>
+        <translation>ابحث عن تورنتات...</translation>
+    </message>
+    <message>
+        <source>Category to search in</source>
+        <translation>الفئة المراد البحث فيها</translation>
+    </message>
+    <message>
+        <source>Search engines to use</source>
+        <translation>محركات البحث المستخدمة</translation>
+    </message>
+    <message>
+        <source>There aren&apos;t any search plugins installed.
+Click the &quot;Search plugins...&quot; button at the top right of the window to install some.</source>
+        <translation>لا توجد إضافات بحث مثبتة.
+انقر على زر &quot;إضافات البحث...&quot; أعلى يمين النافذة لتثبيت بعضها.</translation>
+    </message>
+    <message>
+        <source>Type a search above and press Enter.</source>
+        <translation>اكتب عملية بحث أعلاه واضغط Enter.</translation>
+    </message>
+    <message>
+        <source>Refresh search</source>
+        <translation>تحديث البحث</translation>
+    </message>
+    <message>
+        <source>Close search</source>
+        <translation>إغلاق البحث</translation>
+    </message>
+    <message>
+        <source>Close all searches</source>
+        <translation>إغلاق جميع عمليات البحث</translation>
+    </message>
+    <message>
+        <source>Searches</source>
+        <translation>عمليات البحث</translation>
+    </message>
+    <message>
+        <source>Close the selected search</source>
+        <translation>إغلاق البحث المحدد</translation>
+    </message>
+    <message>
+        <source>Search for torrents...</source>
+        <translation>ابحث عن تورنتات...</translation>
+    </message>
+    <message>
+        <source>Category to search in</source>
+        <translation>الفئة المراد البحث فيها</translation>
+    </message>
+    <message>
+        <source>Search engines to use</source>
+        <translation>محركات البحث المستخدمة</translation>
+    </message>
+    <message>
+        <source>There aren&apos;t any search plugins installed.
+Click the &quot;Search plugins...&quot; button at the top right of the window to install some.</source>
+        <translation>لا توجد إضافات بحث مثبتة.
+انقر على زر &quot;إضافات البحث...&quot; أعلى يمين النافذة لتثبيت بعضها.</translation>
+    </message>
+    <message>
+        <source>Type a search above and press Enter.</source>
+        <translation>اكتب عملية بحث أعلاه واضغط Enter.</translation>
+    </message>
+    <message>
+        <source>Refresh search</source>
+        <translation>تحديث البحث</translation>
+    </message>
+    <message>
+        <source>Close search</source>
+        <translation>إغلاق البحث</translation>
+    </message>
+    <message>
+        <source>Close all searches</source>
+        <translation>إغلاق جميع عمليات البحث</translation>
     </message>
 </context>
 <context>
@@ -11373,6 +11913,326 @@ Click the &quot;Search plugins...&quot; button at the bottom right of the window
         <location filename="../gui/statsdialog.cpp" line="111"/>
         <source>%1 ms</source>
         <translation type="unfinished">%1 ملي ثانية</translation>
+    </message>
+    <message>
+        <source>Copy</source>
+        <translation>نسخ</translation>
+    </message>
+    <message>
+        <source>Overview</source>
+        <translation>نظرة عامة</translation>
+    </message>
+    <message>
+        <source>Transfer</source>
+        <translation>النقل</translation>
+    </message>
+    <message>
+        <source>This session</source>
+        <translation>هذه الجلسة</translation>
+    </message>
+    <message>
+        <source>All time</source>
+        <translation>كل الأوقات</translation>
+    </message>
+    <message>
+        <source>Downloaded:</source>
+        <translation>التنزيل:</translation>
+    </message>
+    <message>
+        <source>Uploaded:</source>
+        <translation>الرفع:</translation>
+    </message>
+    <message>
+        <source>Share ratio:</source>
+        <translation>نسبة المشاركة:</translation>
+    </message>
+    <message>
+        <source>Current speed:</source>
+        <translation>السرعة الحالية:</translation>
+    </message>
+    <message>
+        <source>Activity</source>
+        <translation>النشاط</translation>
+    </message>
+    <message>
+        <source>Torrents downloading:</source>
+        <translation>تورنتات قيد التنزيل:</translation>
+    </message>
+    <message>
+        <source>Torrents seeding:</source>
+        <translation>تورنتات قيد البذر:</translation>
+    </message>
+    <message>
+        <source>Torrents stopped:</source>
+        <translation>تورنتات متوقفة:</translation>
+    </message>
+    <message>
+        <source>Torrents with errors:</source>
+        <translation>تورنتات بها أخطاء:</translation>
+    </message>
+    <message>
+        <source>Running for:</source>
+        <translation>مدة التشغيل:</translation>
+    </message>
+    <message>
+        <source>History</source>
+        <translation>السجل</translation>
+    </message>
+    <message>
+        <source>Period</source>
+        <translation>الفترة</translation>
+    </message>
+    <message>
+        <source>Today</source>
+        <translation>اليوم</translation>
+    </message>
+    <message>
+        <source>Last 7 days</source>
+        <translation>آخر 7 أيام</translation>
+    </message>
+    <message>
+        <source>This month</source>
+        <translation>هذا الشهر</translation>
+    </message>
+    <message>
+        <source>Last month</source>
+        <translation>الشهر الماضي</translation>
+    </message>
+    <message>
+        <source>Last 12 months</source>
+        <translation>آخر 12 شهرًا</translation>
+    </message>
+    <message>
+        <source>Tracking since:</source>
+        <translation>التتبع منذ:</translation>
+    </message>
+    <message>
+        <source>By month</source>
+        <translation>حسب الشهر</translation>
+    </message>
+    <message>
+        <source>Month</source>
+        <translation>الشهر</translation>
+    </message>
+    <message>
+        <source>Downloaded</source>
+        <translation>التنزيل</translation>
+    </message>
+    <message>
+        <source>Uploaded</source>
+        <translation>الرفع</translation>
+    </message>
+    <message>
+        <source>Share ratio</source>
+        <translation>نسبة المشاركة</translation>
+    </message>
+    <message>
+        <source>WebUI downloads added, this month</source>
+        <translation>التنزيلات المضافة عبر واجهة الويب هذا الشهر</translation>
+    </message>
+    <message>
+        <source>Counts the requests that added a download. Apps without a login, such as Sonarr and Radarr, are shown as (localhost). Downloads added in the desktop window are not counted.</source>
+        <translation>يحسب الطلبات التي أضافت تنزيلًا. التطبيقات بلا تسجيل دخول، مثل Sonarr وRadarr، تظهر باسم (localhost). التنزيلات المضافة من نافذة سطح المكتب لا تُحسب.</translation>
+    </message>
+    <message>
+        <source>Technical</source>
+        <translation>تقني</translation>
+    </message>
+    <message>
+        <source>Disk</source>
+        <translation>القرص</translation>
+    </message>
+    <message>
+        <source>Peers waiting on disk writes:</source>
+        <translation>أقران تنتظر الكتابة على القرص:</translation>
+    </message>
+    <message>
+        <source>Peers waiting on disk reads:</source>
+        <translation>أقران تنتظر القراءة من القرص:</translation>
+    </message>
+    <message>
+        <source>Network</source>
+        <translation>الشبكة</translation>
+    </message>
+    <message>
+        <source>DHT nodes:</source>
+        <translation>عقد DHT:</translation>
+    </message>
+    <message>
+        <source>Data discarded this session:</source>
+        <translation>البيانات المهملة في هذه الجلسة:</translation>
+    </message>
+    <message>
+        <source>Before tracking began</source>
+        <translation>قبل بدء التتبع</translation>
+    </message>
+    <message>
+        <source>Nothing added yet</source>
+        <translation>لم يُضف شيء بعد</translation>
+    </message>
+    <message>
+        <source>Off</source>
+        <translation>إيقاف</translation>
+    </message>
+    <message>
+        <source>Copy</source>
+        <translation>نسخ</translation>
+    </message>
+    <message>
+        <source>Overview</source>
+        <translation>نظرة عامة</translation>
+    </message>
+    <message>
+        <source>Transfer</source>
+        <translation>النقل</translation>
+    </message>
+    <message>
+        <source>This session</source>
+        <translation>هذه الجلسة</translation>
+    </message>
+    <message>
+        <source>All time</source>
+        <translation>كل الأوقات</translation>
+    </message>
+    <message>
+        <source>Downloaded:</source>
+        <translation>التنزيل:</translation>
+    </message>
+    <message>
+        <source>Uploaded:</source>
+        <translation>الرفع:</translation>
+    </message>
+    <message>
+        <source>Share ratio:</source>
+        <translation>نسبة المشاركة:</translation>
+    </message>
+    <message>
+        <source>Current speed:</source>
+        <translation>السرعة الحالية:</translation>
+    </message>
+    <message>
+        <source>Activity</source>
+        <translation>النشاط</translation>
+    </message>
+    <message>
+        <source>Torrents downloading:</source>
+        <translation>تورنتات قيد التنزيل:</translation>
+    </message>
+    <message>
+        <source>Torrents seeding:</source>
+        <translation>تورنتات قيد البذر:</translation>
+    </message>
+    <message>
+        <source>Torrents stopped:</source>
+        <translation>تورنتات متوقفة:</translation>
+    </message>
+    <message>
+        <source>Torrents with errors:</source>
+        <translation>تورنتات بها أخطاء:</translation>
+    </message>
+    <message>
+        <source>Running for:</source>
+        <translation>مدة التشغيل:</translation>
+    </message>
+    <message>
+        <source>History</source>
+        <translation>السجل</translation>
+    </message>
+    <message>
+        <source>Period</source>
+        <translation>الفترة</translation>
+    </message>
+    <message>
+        <source>Today</source>
+        <translation>اليوم</translation>
+    </message>
+    <message>
+        <source>Last 7 days</source>
+        <translation>آخر 7 أيام</translation>
+    </message>
+    <message>
+        <source>This month</source>
+        <translation>هذا الشهر</translation>
+    </message>
+    <message>
+        <source>Last month</source>
+        <translation>الشهر الماضي</translation>
+    </message>
+    <message>
+        <source>Last 12 months</source>
+        <translation>آخر 12 شهرًا</translation>
+    </message>
+    <message>
+        <source>Tracking since:</source>
+        <translation>التتبع منذ:</translation>
+    </message>
+    <message>
+        <source>By month</source>
+        <translation>حسب الشهر</translation>
+    </message>
+    <message>
+        <source>Month</source>
+        <translation>الشهر</translation>
+    </message>
+    <message>
+        <source>Downloaded</source>
+        <translation>التنزيل</translation>
+    </message>
+    <message>
+        <source>Uploaded</source>
+        <translation>الرفع</translation>
+    </message>
+    <message>
+        <source>Share ratio</source>
+        <translation>نسبة المشاركة</translation>
+    </message>
+    <message>
+        <source>WebUI downloads added, this month</source>
+        <translation>التنزيلات المضافة عبر واجهة الويب هذا الشهر</translation>
+    </message>
+    <message>
+        <source>Counts the requests that added a download. Apps without a login, such as Sonarr and Radarr, are shown as (localhost). Downloads added in the desktop window are not counted.</source>
+        <translation>يحسب الطلبات التي أضافت تنزيلًا. التطبيقات بلا تسجيل دخول، مثل Sonarr وRadarr، تظهر باسم (localhost). التنزيلات المضافة من نافذة سطح المكتب لا تُحسب.</translation>
+    </message>
+    <message>
+        <source>Technical</source>
+        <translation>تقني</translation>
+    </message>
+    <message>
+        <source>Disk</source>
+        <translation>القرص</translation>
+    </message>
+    <message>
+        <source>Peers waiting on disk writes:</source>
+        <translation>أقران تنتظر الكتابة على القرص:</translation>
+    </message>
+    <message>
+        <source>Peers waiting on disk reads:</source>
+        <translation>أقران تنتظر القراءة من القرص:</translation>
+    </message>
+    <message>
+        <source>Network</source>
+        <translation>الشبكة</translation>
+    </message>
+    <message>
+        <source>DHT nodes:</source>
+        <translation>عقد DHT:</translation>
+    </message>
+    <message>
+        <source>Data discarded this session:</source>
+        <translation>البيانات المهملة في هذه الجلسة:</translation>
+    </message>
+    <message>
+        <source>Before tracking began</source>
+        <translation>قبل بدء التتبع</translation>
+    </message>
+    <message>
+        <source>Nothing added yet</source>
+        <translation>لم يُضف شيء بعد</translation>
+    </message>
+    <message>
+        <source>Off</source>
+        <translation>إيقاف</translation>
     </message>
 </context>
 <context>
@@ -12074,6 +12934,22 @@ Please choose a different name and try again.</source>
     <message>
         <source>Priority by shown file order</source>
         <translation type="vanished">الأولوية حسب ترتيب الملف المعروض</translation>
+    </message>
+    <message>
+        <source>Reset auto width</source>
+        <translation>إعادة ضبط العرض التلقائي</translation>
+    </message>
+    <message>
+        <source>Fit all non-hidden columns to their contents again, and forget the widths that were set by hand</source>
+        <translation>ملاءمة جميع الأعمدة غير المخفية مع محتوياتها مجددًا، ونسيان العروض التي ضُبطت يدويًا</translation>
+    </message>
+    <message>
+        <source>Reset auto width</source>
+        <translation>إعادة ضبط العرض التلقائي</translation>
+    </message>
+    <message>
+        <source>Fit all non-hidden columns to their contents again, and forget the widths that were set by hand</source>
+        <translation>ملاءمة جميع الأعمدة غير المخفية مع محتوياتها مجددًا، ونسيان العروض التي ضُبطت يدويًا</translation>
     </message>
 </context>
 <context>
@@ -13157,6 +14033,22 @@ Please choose a different name and try again.</source>
         <source>Column visibility</source>
         <translation>وضوح العامود</translation>
     </message>
+    <message>
+        <source>Reset auto width</source>
+        <translation>إعادة ضبط العرض التلقائي</translation>
+    </message>
+    <message>
+        <source>Fit all non-hidden columns to their contents again, and forget the widths that were set by hand</source>
+        <translation>ملاءمة جميع الأعمدة غير المخفية مع محتوياتها مجددًا، ونسيان العروض التي ضُبطت يدويًا</translation>
+    </message>
+    <message>
+        <source>Reset auto width</source>
+        <translation>إعادة ضبط العرض التلقائي</translation>
+    </message>
+    <message>
+        <source>Fit all non-hidden columns to their contents again, and forget the widths that were set by hand</source>
+        <translation>ملاءمة جميع الأعمدة غير المخفية مع محتوياتها مجددًا، ونسيان العروض التي ضُبطت يدويًا</translation>
+    </message>
 </context>
 <context>
     <name>TrackerStatusFilterWidget</name>
@@ -14023,6 +14915,22 @@ Please choose a different name and try again.</source>
         <source>Super seeding mode</source>
         <translation>نمط البذر الخارق</translation>
     </message>
+    <message>
+        <source>Reset auto width</source>
+        <translation>إعادة ضبط العرض التلقائي</translation>
+    </message>
+    <message>
+        <source>Fit all non-hidden columns to their contents again, and forget the widths that were set by hand</source>
+        <translation>ملاءمة جميع الأعمدة غير المخفية مع محتوياتها مجددًا، ونسيان العروض التي ضُبطت يدويًا</translation>
+    </message>
+    <message>
+        <source>Reset auto width</source>
+        <translation>إعادة ضبط العرض التلقائي</translation>
+    </message>
+    <message>
+        <source>Fit all non-hidden columns to their contents again, and forget the widths that were set by hand</source>
+        <translation>ملاءمة جميع الأعمدة غير المخفية مع محتوياتها مجددًا، ونسيان العروض التي ضُبطت يدويًا</translation>
+    </message>
 </context>
 <context>
     <name>UIThemeDialog</name>
@@ -14357,6 +15265,46 @@ Please choose a different name and try again.</source>
         <source>WebAPI login failure. Reason: invalid credentials, attempt count: %1, IP: %2, username: %3</source>
         <translation>فشل في الولوج إلى واجهة برمجة تطبيقات الويب. السبب: بيانات تفويض غير صالحة ، عدد المحاولات: %1  ، الآي بي: %2 ، اسم المستخدم: %3</translation>
     </message>
+    <message>
+        <source>Something went wrong on the server. Details are in qBittorrent&apos;s log.</source>
+        <translation>حدث خطأ على الخادم. التفاصيل في سجل qBittorrent.</translation>
+    </message>
+    <message>
+        <source>This account is locked after too many failed login attempts. Try again in %1 minute(s).</source>
+        <translation>هذا الحساب مقفل بسبب كثرة محاولات تسجيل الدخول الفاشلة. حاول مجددًا بعد %1 دقيقة.</translation>
+    </message>
+    <message>
+        <source>Your role (%1) doesn&apos;t allow this: %2.</source>
+        <translation>دورك (%1) لا يسمح بهذا: %2.</translation>
+    </message>
+    <message>
+        <source>Only an admin can remove the tag that says who added a torrent.</source>
+        <translation>لا يمكن إلا للمدير إزالة الوسم الذي يبيّن من أضاف التورنت.</translation>
+    </message>
+    <message>
+        <source>Only an admin can clear or replace all tags of a torrent that has a tag saying who added it.</source>
+        <translation>لا يمكن إلا للمدير مسح أو استبدال كل وسوم تورنت عليه وسم يبيّن من أضافه.</translation>
+    </message>
+    <message>
+        <source>Something went wrong on the server. Details are in qBittorrent&apos;s log.</source>
+        <translation>حدث خطأ على الخادم. التفاصيل في سجل qBittorrent.</translation>
+    </message>
+    <message>
+        <source>This account is locked after too many failed login attempts. Try again in %1 minute(s).</source>
+        <translation>هذا الحساب مقفل بسبب كثرة محاولات تسجيل الدخول الفاشلة. حاول مجددًا بعد %1 دقيقة.</translation>
+    </message>
+    <message>
+        <source>Your role (%1) doesn&apos;t allow this: %2.</source>
+        <translation>دورك (%1) لا يسمح بهذا: %2.</translation>
+    </message>
+    <message>
+        <source>Only an admin can remove the tag that says who added a torrent.</source>
+        <translation>لا يمكن إلا للمدير إزالة الوسم الذي يبيّن من أضاف التورنت.</translation>
+    </message>
+    <message>
+        <source>Only an admin can clear or replace all tags of a torrent that has a tag saying who added it.</source>
+        <translation>لا يمكن إلا للمدير مسح أو استبدال كل وسوم تورنت عليه وسم يبيّن من أضافه.</translation>
+    </message>
 </context>
 <context>
     <name>WebUI</name>
@@ -14496,6 +15444,669 @@ Please choose a different name and try again.</source>
         <source>&lt; 1m</source>
         <comment>&lt; 1 minute</comment>
         <translation>&lt; د</translation>
+    </message>
+</context>
+<context>
+    <name>UpdateInstaller</name>
+    <message>
+        <source>Kettle Edition update</source>
+        <translation>تحديث Kettle Edition</translation>
+    </message>
+    <message>
+        <source>Kettle Edition was updated to %1.</source>
+        <translation>تم تحديث Kettle Edition إلى %1.</translation>
+    </message>
+    <message>
+        <source>Kettle Edition updated</source>
+        <translation>تم تحديث Kettle Edition</translation>
+    </message>
+    <message>
+        <source>Downloading Kettle Edition %1 (%2 changed files).</source>
+        <translation>جارٍ تنزيل Kettle Edition %1 (%2 ملفات متغيرة).</translation>
+    </message>
+    <message>
+        <source>Kettle Edition %1 is downloaded and ready to install.</source>
+        <translation>تم تنزيل Kettle Edition %1 وهو جاهز للتثبيت.</translation>
+    </message>
+    <message>
+        <source>Kettle Edition update</source>
+        <translation>تحديث Kettle Edition</translation>
+    </message>
+    <message>
+        <source>Kettle Edition was updated to %1.</source>
+        <translation>تم تحديث Kettle Edition إلى %1.</translation>
+    </message>
+    <message>
+        <source>Kettle Edition updated</source>
+        <translation>تم تحديث Kettle Edition</translation>
+    </message>
+    <message>
+        <source>Downloading Kettle Edition %1 (%2 changed files).</source>
+        <translation>جارٍ تنزيل Kettle Edition %1 (%2 ملفات متغيرة).</translation>
+    </message>
+    <message>
+        <source>Kettle Edition %1 is downloaded and ready to install.</source>
+        <translation>تم تنزيل Kettle Edition %1 وهو جاهز للتثبيت.</translation>
+    </message>
+</context>
+<context>
+    <name>UserAccountDialog</name>
+    <message>
+        <source>User</source>
+        <translation>مستخدم</translation>
+    </message>
+    <message>
+        <source>Username:</source>
+        <translation>اسم المستخدم:</translation>
+    </message>
+    <message>
+        <source>Role:</source>
+        <translation>الدور:</translation>
+    </message>
+    <message>
+        <source>Password:</source>
+        <translation>كلمة المرور:</translation>
+    </message>
+    <message>
+        <source>Confirm password:</source>
+        <translation>تأكيد كلمة المرور:</translation>
+    </message>
+    <message>
+        <source>Disable this account</source>
+        <translation>تعطيل هذا الحساب</translation>
+    </message>
+    <message>
+        <source>Edit User</source>
+        <translation>تعديل مستخدم</translation>
+    </message>
+    <message>
+        <source>Leave empty to keep the current password</source>
+        <translation>اتركه فارغًا للإبقاء على كلمة المرور الحالية</translation>
+    </message>
+    <message>
+        <source>Add User</source>
+        <translation>إضافة مستخدم</translation>
+    </message>
+    <message>
+        <source>At least %1 characters</source>
+        <translation>%1 أحرف على الأقل</translation>
+    </message>
+    <message>
+        <source>Enter a username.</source>
+        <translation>أدخل اسم مستخدم.</translation>
+    </message>
+    <message>
+        <source>The password must be at least %1 characters long.</source>
+        <translation>يجب ألا تقل كلمة المرور عن %1 أحرف.</translation>
+    </message>
+    <message>
+        <source>The passwords don&apos;t match.</source>
+        <translation>كلمتا المرور غير متطابقتين.</translation>
+    </message>
+    <message>
+        <source>User</source>
+        <translation>مستخدم</translation>
+    </message>
+    <message>
+        <source>Username:</source>
+        <translation>اسم المستخدم:</translation>
+    </message>
+    <message>
+        <source>Role:</source>
+        <translation>الدور:</translation>
+    </message>
+    <message>
+        <source>Password:</source>
+        <translation>كلمة المرور:</translation>
+    </message>
+    <message>
+        <source>Confirm password:</source>
+        <translation>تأكيد كلمة المرور:</translation>
+    </message>
+    <message>
+        <source>Disable this account</source>
+        <translation>تعطيل هذا الحساب</translation>
+    </message>
+    <message>
+        <source>Edit User</source>
+        <translation>تعديل مستخدم</translation>
+    </message>
+    <message>
+        <source>Leave empty to keep the current password</source>
+        <translation>اتركه فارغًا للإبقاء على كلمة المرور الحالية</translation>
+    </message>
+    <message>
+        <source>Add User</source>
+        <translation>إضافة مستخدم</translation>
+    </message>
+    <message>
+        <source>At least %1 characters</source>
+        <translation>%1 أحرف على الأقل</translation>
+    </message>
+    <message>
+        <source>Enter a username.</source>
+        <translation>أدخل اسم مستخدم.</translation>
+    </message>
+    <message>
+        <source>The password must be at least %1 characters long.</source>
+        <translation>يجب ألا تقل كلمة المرور عن %1 أحرف.</translation>
+    </message>
+    <message>
+        <source>The passwords don&apos;t match.</source>
+        <translation>كلمتا المرور غير متطابقتين.</translation>
+    </message>
+</context>
+<context>
+    <name>UserAccountsWidget</name>
+    <message>
+        <source>User Accounts</source>
+        <translation>حسابات المستخدمين</translation>
+    </message>
+    <message>
+        <source>Users</source>
+        <translation>المستخدمون</translation>
+    </message>
+    <message>
+        <source>People who can log in to the WebUI with their own username and password.</source>
+        <translation>الأشخاص الذين يمكنهم تسجيل الدخول إلى واجهة الويب باسم مستخدم وكلمة مرور خاصين بهم.</translation>
+    </message>
+    <message>
+        <source>Add User...</source>
+        <translation>إضافة مستخدم...</translation>
+    </message>
+    <message>
+        <source>Edit...</source>
+        <translation>تعديل...</translation>
+    </message>
+    <message>
+        <source>Remove</source>
+        <translation>إزالة</translation>
+    </message>
+    <message>
+        <source>Roles</source>
+        <translation>الأدوار</translation>
+    </message>
+    <message>
+        <source>A role decides what its users are allowed to do.</source>
+        <translation>الدور يحدد ما يُسمح لمستخدميه بفعله.</translation>
+    </message>
+    <message>
+        <source>Add Role...</source>
+        <translation>إضافة دور...</translation>
+    </message>
+    <message>
+        <source>Logged In</source>
+        <translation>مسجلو الدخول</translation>
+    </message>
+    <message>
+        <source>Browsers and devices where someone is logged in with a user account.</source>
+        <translation>المتصفحات والأجهزة التي سُجّل الدخول عليها بحساب مستخدم.</translation>
+    </message>
+    <message>
+        <source>Log Out</source>
+        <translation>تسجيل الخروج</translation>
+    </message>
+    <message>
+        <source>Username</source>
+        <translation>اسم المستخدم</translation>
+    </message>
+    <message>
+        <source>Role</source>
+        <translation>الدور</translation>
+    </message>
+    <message>
+        <source>Status</source>
+        <translation>الحالة</translation>
+    </message>
+    <message>
+        <source>Last login</source>
+        <translation>آخر تسجيل دخول</translation>
+    </message>
+    <message>
+        <source>Created</source>
+        <translation>تاريخ الإنشاء</translation>
+    </message>
+    <message>
+        <source>Name</source>
+        <translation>الاسم</translation>
+    </message>
+    <message>
+        <source>Description</source>
+        <translation>الوصف</translation>
+    </message>
+    <message>
+        <source>Permissions</source>
+        <translation>الأذونات</translation>
+    </message>
+    <message>
+        <source>User</source>
+        <translation>مستخدم</translation>
+    </message>
+    <message>
+        <source>Browser</source>
+        <translation>المتصفح</translation>
+    </message>
+    <message>
+        <source>Logged in</source>
+        <translation>وقت الدخول</translation>
+    </message>
+    <message>
+        <source>Last active</source>
+        <translation>آخر نشاط</translation>
+    </message>
+    <message>
+        <source>Expires</source>
+        <translation>ينتهي في</translation>
+    </message>
+    <message>
+        <source>The user database could not be opened. See the Execution Log for details.</source>
+        <translation>تعذر فتح قاعدة بيانات المستخدمين. راجع سجل التنفيذ للتفاصيل.</translation>
+    </message>
+    <message>
+        <source>Disabled</source>
+        <translation>معطّل</translation>
+    </message>
+    <message>
+        <source>Enabled</source>
+        <translation>مفعّل</translation>
+    </message>
+    <message>
+        <source>Never</source>
+        <translation>أبدًا</translation>
+    </message>
+    <message>
+        <source>No accounts yet, so everyone still uses the shared WebUI login. Add an Admin account first.</source>
+        <translation>لا توجد حسابات بعد، لذا لا يزال الجميع يستخدمون تسجيل الدخول المشترك لواجهة الويب. أضف حساب مدير أولًا.</translation>
+    </message>
+    <message>
+        <source>Couldn&apos;t read the user database. %1</source>
+        <translation>تعذرت قراءة قاعدة بيانات المستخدمين. %1</translation>
+    </message>
+    <message>
+        <source>Remove user</source>
+        <translation>إزالة المستخدم</translation>
+    </message>
+    <message>
+        <source>Are you sure you want to remove the user &apos;%1&apos;?</source>
+        <translation>هل أنت متأكد من إزالة المستخدم &apos;%1&apos;؟</translation>
+    </message>
+    <message>
+        <source>Remove role</source>
+        <translation>إزالة الدور</translation>
+    </message>
+    <message>
+        <source>Are you sure you want to remove the role &apos;%1&apos;?</source>
+        <translation>هل أنت متأكد من إزالة الدور &apos;%1&apos;؟</translation>
+    </message>
+    <message>
+        <source>Enable</source>
+        <translation>تفعيل</translation>
+    </message>
+    <message>
+        <source>Disable</source>
+        <translation>تعطيل</translation>
+    </message>
+    <message>
+        <source>Log Out Everywhere</source>
+        <translation>تسجيل الخروج من كل مكان</translation>
+    </message>
+    <message>
+        <source>User Accounts</source>
+        <translation>حسابات المستخدمين</translation>
+    </message>
+    <message>
+        <source>Users</source>
+        <translation>المستخدمون</translation>
+    </message>
+    <message>
+        <source>People who can log in to the WebUI with their own username and password.</source>
+        <translation>الأشخاص الذين يمكنهم تسجيل الدخول إلى واجهة الويب باسم مستخدم وكلمة مرور خاصين بهم.</translation>
+    </message>
+    <message>
+        <source>Add User...</source>
+        <translation>إضافة مستخدم...</translation>
+    </message>
+    <message>
+        <source>Edit...</source>
+        <translation>تعديل...</translation>
+    </message>
+    <message>
+        <source>Remove</source>
+        <translation>إزالة</translation>
+    </message>
+    <message>
+        <source>Roles</source>
+        <translation>الأدوار</translation>
+    </message>
+    <message>
+        <source>A role decides what its users are allowed to do.</source>
+        <translation>الدور يحدد ما يُسمح لمستخدميه بفعله.</translation>
+    </message>
+    <message>
+        <source>Add Role...</source>
+        <translation>إضافة دور...</translation>
+    </message>
+    <message>
+        <source>Logged In</source>
+        <translation>مسجلو الدخول</translation>
+    </message>
+    <message>
+        <source>Browsers and devices where someone is logged in with a user account.</source>
+        <translation>المتصفحات والأجهزة التي سُجّل الدخول عليها بحساب مستخدم.</translation>
+    </message>
+    <message>
+        <source>Log Out</source>
+        <translation>تسجيل الخروج</translation>
+    </message>
+    <message>
+        <source>Username</source>
+        <translation>اسم المستخدم</translation>
+    </message>
+    <message>
+        <source>Role</source>
+        <translation>الدور</translation>
+    </message>
+    <message>
+        <source>Status</source>
+        <translation>الحالة</translation>
+    </message>
+    <message>
+        <source>Last login</source>
+        <translation>آخر تسجيل دخول</translation>
+    </message>
+    <message>
+        <source>Created</source>
+        <translation>تاريخ الإنشاء</translation>
+    </message>
+    <message>
+        <source>Name</source>
+        <translation>الاسم</translation>
+    </message>
+    <message>
+        <source>Description</source>
+        <translation>الوصف</translation>
+    </message>
+    <message>
+        <source>Permissions</source>
+        <translation>الأذونات</translation>
+    </message>
+    <message>
+        <source>User</source>
+        <translation>مستخدم</translation>
+    </message>
+    <message>
+        <source>Browser</source>
+        <translation>المتصفح</translation>
+    </message>
+    <message>
+        <source>Logged in</source>
+        <translation>وقت الدخول</translation>
+    </message>
+    <message>
+        <source>Last active</source>
+        <translation>آخر نشاط</translation>
+    </message>
+    <message>
+        <source>Expires</source>
+        <translation>ينتهي في</translation>
+    </message>
+    <message>
+        <source>The user database could not be opened. See the Execution Log for details.</source>
+        <translation>تعذر فتح قاعدة بيانات المستخدمين. راجع سجل التنفيذ للتفاصيل.</translation>
+    </message>
+    <message>
+        <source>Disabled</source>
+        <translation>معطّل</translation>
+    </message>
+    <message>
+        <source>Enabled</source>
+        <translation>مفعّل</translation>
+    </message>
+    <message>
+        <source>Never</source>
+        <translation>أبدًا</translation>
+    </message>
+    <message>
+        <source>No accounts yet, so everyone still uses the shared WebUI login. Add an Admin account first.</source>
+        <translation>لا توجد حسابات بعد، لذا لا يزال الجميع يستخدمون تسجيل الدخول المشترك لواجهة الويب. أضف حساب مدير أولًا.</translation>
+    </message>
+    <message>
+        <source>Couldn&apos;t read the user database. %1</source>
+        <translation>تعذرت قراءة قاعدة بيانات المستخدمين. %1</translation>
+    </message>
+    <message>
+        <source>Remove user</source>
+        <translation>إزالة المستخدم</translation>
+    </message>
+    <message>
+        <source>Are you sure you want to remove the user &apos;%1&apos;?</source>
+        <translation>هل أنت متأكد من إزالة المستخدم &apos;%1&apos;؟</translation>
+    </message>
+    <message>
+        <source>Remove role</source>
+        <translation>إزالة الدور</translation>
+    </message>
+    <message>
+        <source>Are you sure you want to remove the role &apos;%1&apos;?</source>
+        <translation>هل أنت متأكد من إزالة الدور &apos;%1&apos;؟</translation>
+    </message>
+    <message>
+        <source>Enable</source>
+        <translation>تفعيل</translation>
+    </message>
+    <message>
+        <source>Disable</source>
+        <translation>تعطيل</translation>
+    </message>
+    <message>
+        <source>Log Out Everywhere</source>
+        <translation>تسجيل الخروج من كل مكان</translation>
+    </message>
+</context>
+<context>
+    <name>UserRoleDialog</name>
+    <message>
+        <source>Role</source>
+        <translation>الدور</translation>
+    </message>
+    <message>
+        <source>Name:</source>
+        <translation>الاسم:</translation>
+    </message>
+    <message>
+        <source>Description:</source>
+        <translation>الوصف:</translation>
+    </message>
+    <message>
+        <source>Gives control over the PC or qBittorrent itself.</source>
+        <translation>يمنح التحكم في الكمبيوتر أو في qBittorrent نفسه.</translation>
+    </message>
+    <message>
+        <source>Add Role</source>
+        <translation>إضافة دور</translation>
+    </message>
+    <message>
+        <source>Edit Role</source>
+        <translation>تعديل دور</translation>
+    </message>
+    <message>
+        <source>Enter a role name.</source>
+        <translation>أدخل اسم دور.</translation>
+    </message>
+    <message>
+        <source>Role</source>
+        <translation>الدور</translation>
+    </message>
+    <message>
+        <source>Name:</source>
+        <translation>الاسم:</translation>
+    </message>
+    <message>
+        <source>Description:</source>
+        <translation>الوصف:</translation>
+    </message>
+    <message>
+        <source>Gives control over the PC or qBittorrent itself.</source>
+        <translation>يمنح التحكم في الكمبيوتر أو في qBittorrent نفسه.</translation>
+    </message>
+    <message>
+        <source>Add Role</source>
+        <translation>إضافة دور</translation>
+    </message>
+    <message>
+        <source>Edit Role</source>
+        <translation>تعديل دور</translation>
+    </message>
+    <message>
+        <source>Enter a role name.</source>
+        <translation>أدخل اسم دور.</translation>
+    </message>
+</context>
+<context>
+    <name>WebUIActivityWidget</name>
+    <message>
+        <source>All</source>
+        <translation>الكل</translation>
+    </message>
+    <message>
+        <source>Filter activity</source>
+        <translation>تصفية النشاط</translation>
+    </message>
+    <message>
+        <source>Export...</source>
+        <translation>تصدير...</translation>
+    </message>
+    <message>
+        <source>User:</source>
+        <translation>المستخدم:</translation>
+    </message>
+    <message>
+        <source>Category:</source>
+        <translation>الفئة:</translation>
+    </message>
+    <message>
+        <source>Result:</source>
+        <translation>النتيجة:</translation>
+    </message>
+    <message>
+        <source>Time</source>
+        <translation>الوقت</translation>
+    </message>
+    <message>
+        <source>User</source>
+        <translation>مستخدم</translation>
+    </message>
+    <message>
+        <source>Role</source>
+        <translation>الدور</translation>
+    </message>
+    <message>
+        <source>Category</source>
+        <translation>الفئة</translation>
+    </message>
+    <message>
+        <source>Action</source>
+        <translation>الإجراء</translation>
+    </message>
+    <message>
+        <source>Result</source>
+        <translation>النتيجة</translation>
+    </message>
+    <message>
+        <source>The user database could not be opened. See the General tab for details.</source>
+        <translation>تعذر فتح قاعدة بيانات المستخدمين. راجع علامة التبويب عام للتفاصيل.</translation>
+    </message>
+    <message>
+        <source>Results (showing %1 out of %2)</source>
+        <translation>النتائج (عرض %1 من %2)</translation>
+    </message>
+    <message>
+        <source>Copy</source>
+        <translation>نسخ</translation>
+    </message>
+    <message>
+        <source>Export WebUI activity</source>
+        <translation>تصدير نشاط واجهة الويب</translation>
+    </message>
+    <message>
+        <source>CSV files</source>
+        <translation>ملفات CSV</translation>
+    </message>
+    <message>
+        <source>Couldn&apos;t save the file. Reason: %1</source>
+        <translation>تعذر حفظ الملف. السبب: %1</translation>
+    </message>
+    <message>
+        <source>All</source>
+        <translation>الكل</translation>
+    </message>
+    <message>
+        <source>Filter activity</source>
+        <translation>تصفية النشاط</translation>
+    </message>
+    <message>
+        <source>Export...</source>
+        <translation>تصدير...</translation>
+    </message>
+    <message>
+        <source>User:</source>
+        <translation>المستخدم:</translation>
+    </message>
+    <message>
+        <source>Category:</source>
+        <translation>الفئة:</translation>
+    </message>
+    <message>
+        <source>Result:</source>
+        <translation>النتيجة:</translation>
+    </message>
+    <message>
+        <source>Time</source>
+        <translation>الوقت</translation>
+    </message>
+    <message>
+        <source>User</source>
+        <translation>مستخدم</translation>
+    </message>
+    <message>
+        <source>Role</source>
+        <translation>الدور</translation>
+    </message>
+    <message>
+        <source>Category</source>
+        <translation>الفئة</translation>
+    </message>
+    <message>
+        <source>Action</source>
+        <translation>الإجراء</translation>
+    </message>
+    <message>
+        <source>Result</source>
+        <translation>النتيجة</translation>
+    </message>
+    <message>
+        <source>The user database could not be opened. See the General tab for details.</source>
+        <translation>تعذر فتح قاعدة بيانات المستخدمين. راجع علامة التبويب عام للتفاصيل.</translation>
+    </message>
+    <message>
+        <source>Results (showing %1 out of %2)</source>
+        <translation>النتائج (عرض %1 من %2)</translation>
+    </message>
+    <message>
+        <source>Copy</source>
+        <translation>نسخ</translation>
+    </message>
+    <message>
+        <source>Export WebUI activity</source>
+        <translation>تصدير نشاط واجهة الويب</translation>
+    </message>
+    <message>
+        <source>CSV files</source>
+        <translation>ملفات CSV</translation>
+    </message>
+    <message>
+        <source>Couldn&apos;t save the file. Reason: %1</source>
+        <translation>تعذر حفظ الملف. السبب: %1</translation>
     </message>
 </context>
 </TS>

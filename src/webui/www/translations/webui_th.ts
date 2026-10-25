@@ -223,6 +223,85 @@ The piece hash will be checked when it is requested for the first time by a peer
         <source>%1 needed · %2 free</source>
         <translation type="unfinished" />
     </message>
+    <message>
+        <source>Don&apos;t create subfolder</source>
+        <translation>ไม่ต้องสร้างโฟลเดอร์ย่อย</translation>
+    </message>
+    <message>
+        <source>Never show again</source>
+        <translation>ไม่ต้องแสดงอีก</translation>
+    </message>
+    <message>
+        <source>Select None</source>
+        <translation>ไม่เลือกทั้งหมด</translation>
+    </message>
+    <message>
+        <source>Torrent options</source>
+        <translation>ตัวเลือกทอร์เรนต์ </translation>
+    </message>
+    <message>
+        <source>Your role saves torrents in the default folders.</source>
+        <translation>บทบาทของคุณบันทึกทอร์เรนต์ลงโฟลเดอร์เริ่มต้น</translation>
+    </message>
+</context>
+<context>
+    <name>AdvancedSettings</name>
+    <message>
+        <source>General</source>
+        <translation>ทั่วไป</translation>
+    </message>
+    <message>
+        <source>Network</source>
+        <translation>เครือข่าย</translation>
+    </message>
+    <message>
+        <source>Storage</source>
+        <translation>ที่เก็บข้อมูล</translation>
+    </message>
+    <message>
+        <source>Peers and trackers</source>
+        <translation>เพียร์และแทร็กเกอร์</translation>
+    </message>
+    <message>
+        <source>Program behavior</source>
+        <translation>พฤติกรรมของโปรแกรม</translation>
+    </message>
+    <message>
+        <source>Display and notifications</source>
+        <translation>การแสดงผลและการแจ้งเตือน</translation>
+    </message>
+    <message>
+        <source>Network connection</source>
+        <translation>การเชื่อมต่อเครือข่าย</translation>
+    </message>
+    <message>
+        <source>Security and privacy</source>
+        <translation>ความปลอดภัยและความเป็นส่วนตัว</translation>
+    </message>
+    <message>
+        <source>Connection tuning</source>
+        <translation>การปรับแต่งการเชื่อมต่อ</translation>
+    </message>
+    <message>
+        <source>Saving and torrent files</source>
+        <translation>การบันทึกและไฟล์ทอร์เรนต์</translation>
+    </message>
+    <message>
+        <source>Disk and memory</source>
+        <translation>ดิสก์และหน่วยความจำ</translation>
+    </message>
+    <message>
+        <source>Trackers</source>
+        <translation>แทร็กเกอร์</translation>
+    </message>
+    <message>
+        <source>Peers and seeding</source>
+        <translation>เพียร์และการซีด</translation>
+    </message>
+    <message>
+        <source>DHT and I2P</source>
+        <translation>DHT และ I2P</translation>
+    </message>
 </context>
 <context>
     <name>CategoryFilterModel</name>
@@ -623,6 +702,14 @@ The piece hash will be checked when it is requested for the first time by a peer
         <source>More</source>
         <translation>เพิ่มเติม</translation>
     </message>
+    <message>
+        <source>Change Password...</source>
+        <translation>เปลี่ยนรหัสผ่าน...</translation>
+    </message>
+    <message>
+        <source>Signed in as</source>
+        <translation>เข้าสู่ระบบในชื่อ</translation>
+    </message>
 </context>
 <context>
     <name>MainWindow</name>
@@ -929,6 +1016,34 @@ The piece hash will be checked when it is requested for the first time by a peer
     <message>
         <source>Resume Session</source>
         <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Global Speed Limits</source>
+        <translation>ขีดจำกัดความเร็วทั่วโลก</translation>
+    </message>
+    <message>
+        <source>Pause Session</source>
+        <translation>หยุดเซสชันชั่วคราว</translation>
+    </message>
+    <message>
+        <source>Pause session</source>
+        <translation>หยุดเซสชันชั่วคราว</translation>
+    </message>
+    <message>
+        <source>Resume Session</source>
+        <translation>ทำเซสชันต่อ</translation>
+    </message>
+    <message>
+        <source>Resume session</source>
+        <translation>ทำเซสชันต่อ</translation>
+    </message>
+    <message>
+        <source>Your account can&apos;t add torrents.</source>
+        <translation>บัญชีของคุณเพิ่มทอร์เรนต์ไม่ได้</translation>
+    </message>
+    <message>
+        <source>[PAUSED]</source>
+        <translation>[หยุดชั่วคราว]</translation>
     </message>
 </context>
 <context>
@@ -2511,6 +2626,138 @@ Use ';' to split multiple entries. Can use wildcard '*'.</source>
         <source>a@x.com;b@y.com,c@z.com - send two emails: the first to just a@x.com, the second to both b@y.com and c@z.com</source>
         <translation type="unfinished" />
     </message>
+    <message>
+        <source>0 means users are logged out after the session timeout.</source>
+        <translation>0 หมายถึงผู้ใช้จะถูกออกจากระบบหลังหมดเวลาเซสชัน</translation>
+    </message>
+    <message>
+        <source>Access</source>
+        <translation>การเข้าถึง</translation>
+    </message>
+    <message>
+        <source>Allow this login when user accounts exist</source>
+        <translation>อนุญาตการเข้าสู่ระบบนี้เมื่อมีบัญชีผู้ใช้</translation>
+    </message>
+    <message>
+        <source>Also save search results</source>
+        <translation>บันทึกผลการค้นหาด้วย</translation>
+    </message>
+    <message>
+        <source>Below normal</source>
+        <translation>ต่ำกว่าปกติ</translation>
+    </message>
+    <message>
+        <source>Changes to users, roles and logins apply at once.</source>
+        <translation>การเปลี่ยนแปลงผู้ใช้ บทบาท และการเข้าสู่ระบบมีผลทันที</translation>
+    </message>
+    <message>
+        <source>Don&apos;t create subfolder</source>
+        <translation>ไม่ต้องสร้างโฟลเดอร์ย่อย</translation>
+    </message>
+    <message>
+        <source>Example:</source>
+        <translation>ตัวอย่าง:</translation>
+    </message>
+    <message>
+        <source>Keep WebUI activity log for:</source>
+        <translation>เก็บบันทึกกิจกรรม WebUI นาน:</translation>
+    </message>
+    <message>
+        <source>Keep unselected files in &quot;.unwanted&quot; folder</source>
+        <translation>เก็บไฟล์ที่ไม่ได้เลือกไว้ในโฟลเดอร์ &quot;.unwanted&quot;</translation>
+    </message>
+    <message>
+        <source>Keep users logged in for:</source>
+        <translation>ให้ผู้ใช้อยู่ในระบบนาน:</translation>
+    </message>
+    <message>
+        <source>Language:</source>
+        <translation>ภาษา:</translation>
+    </message>
+    <message>
+        <source>Lock account after consecutive failures:</source>
+        <translation>ล็อกบัญชีหลังล้มเหลวติดต่อกัน:</translation>
+    </message>
+    <message>
+        <source>Logins and Activity Log</source>
+        <translation>การเข้าสู่ระบบและบันทึกกิจกรรม</translation>
+    </message>
+    <message>
+        <source>Low</source>
+        <translation>ช้า</translation>
+    </message>
+    <message>
+        <source>Medium</source>
+        <translation>ปานกลาง</translation>
+    </message>
+    <message>
+        <source>No settings match</source>
+        <translation>ไม่มีการตั้งค่าที่ตรงกัน</translation>
+    </message>
+    <message>
+        <source>Process memory priority:</source>
+        <translation>ลำดับความสำคัญหน่วยความจำของโปรเซส:</translation>
+    </message>
+    <message>
+        <source>Save search tabs</source>
+        <translation>บันทึกแท็บค้นหา</translation>
+    </message>
+    <message>
+        <source>Search settings</source>
+        <translation>ค้นหาการตั้งค่า</translation>
+    </message>
+    <message>
+        <source>Service:</source>
+        <translation>บริการ:</translation>
+    </message>
+    <message>
+        <source>Show the window when adding a torrent</source>
+        <translation>แสดงหน้าต่างเมื่อเพิ่มทอร์เรนต์</translation>
+    </message>
+    <message>
+        <source>Status bar and log</source>
+        <translation>แถบสถานะและบันทึก</translation>
+    </message>
+    <message>
+        <source>The WebUI activity log can be kept for 1 to 3650 days.</source>
+        <translation>เก็บบันทึกกิจกรรม WebUI ได้ตั้งแต่ 1 ถึง 3650 วัน</translation>
+    </message>
+    <message>
+        <source>The settings below apply with OK or Apply.</source>
+        <translation>การตั้งค่าด้านล่างมีผลเมื่อกดตกลงหรือใช้</translation>
+    </message>
+    <message>
+        <source>Transfer List</source>
+        <translation>รายชื่อการถ่ายโอน</translation>
+    </message>
+    <message>
+        <source>Until the first user account is created, this login always works.</source>
+        <translation>จนกว่าจะสร้างบัญชีผู้ใช้แรก การเข้าสู่ระบบนี้จะใช้งานได้เสมอ</translation>
+    </message>
+    <message>
+        <source>User</source>
+        <translation>ผู้ใช้</translation>
+    </message>
+    <message>
+        <source>User Accounts</source>
+        <translation>บัญชีผู้ใช้</translation>
+    </message>
+    <message>
+        <source>Users can be kept logged in for 0 to 365 days.</source>
+        <translation>ให้ผู้ใช้อยู่ในระบบได้ตั้งแต่ 0 ถึง 365 วัน</translation>
+    </message>
+    <message>
+        <source>Very low</source>
+        <translation>ช้ามาก</translation>
+    </message>
+    <message>
+        <source>You changed the address, port or HTTPS setting of the WebUI. Saving moves the WebUI, so Options will save, close and reload the page, the same as OK. If the page doesn&apos;t come back, open the WebUI at its new address.\n\nSave anyway?</source>
+        <translation>คุณเปลี่ยนที่อยู่ พอร์ต หรือการตั้งค่า HTTPS ของ WebUI การบันทึกจะย้าย WebUI ตัวเลือกจึงจะบันทึก ปิด และโหลดหน้าใหม่เหมือนกดตกลง หากหน้าไม่กลับมา ให้เปิด WebUI ที่ที่อยู่ใหม่\n\nบันทึกต่อไปหรือไม่?</translation>
+    </message>
+    <message>
+        <source>lock for:</source>
+        <translation>ล็อกนาน:</translation>
+    </message>
 </context>
 <context>
     <name>PeerListWidget</name>
@@ -3051,6 +3298,142 @@ Use ';' to split multiple entries. Can use wildcard '*'.</source>
     <message>
         <source>The time it takes from receiving a request from a peer until we're sending the response back on the socket</source>
         <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Activity</source>
+        <translation>กิจกรรม</translation>
+    </message>
+    <message>
+        <source>All time</source>
+        <translation>ตลอดเวลา</translation>
+    </message>
+    <message>
+        <source>Before tracking began</source>
+        <translation>ก่อนเริ่มติดตาม</translation>
+    </message>
+    <message>
+        <source>By month</source>
+        <translation>ตามเดือน</translation>
+    </message>
+    <message>
+        <source>Counts the requests that added a download. Apps without a login, such as Sonarr and Radarr, are shown as (localhost). Downloads added in the desktop window are not counted.</source>
+        <translation>นับคำขอที่เพิ่มการดาวน์โหลด แอปที่ไม่ได้เข้าสู่ระบบ เช่น Sonarr และ Radarr จะแสดงเป็น (localhost) การดาวน์โหลดที่เพิ่มในหน้าต่างเดสก์ท็อปจะไม่ถูกนับ</translation>
+    </message>
+    <message>
+        <source>Current speed:</source>
+        <translation>ความเร็วปัจจุบัน:</translation>
+    </message>
+    <message>
+        <source>DHT nodes:</source>
+        <translation>โหนด DHT:</translation>
+    </message>
+    <message>
+        <source>Data discarded this session:</source>
+        <translation>ข้อมูลที่ทิ้งในเซสชันนี้:</translation>
+    </message>
+    <message>
+        <source>Disk</source>
+        <translation>ดิสก์</translation>
+    </message>
+    <message>
+        <source>History</source>
+        <translation>ประวัติ</translation>
+    </message>
+    <message>
+        <source>Last 12 months</source>
+        <translation>12 เดือนที่ผ่านมา</translation>
+    </message>
+    <message>
+        <source>Last 7 days</source>
+        <translation>7 วันที่ผ่านมา</translation>
+    </message>
+    <message>
+        <source>Last month</source>
+        <translation>เดือนที่แล้ว</translation>
+    </message>
+    <message>
+        <source>Month</source>
+        <translation>เดือน</translation>
+    </message>
+    <message>
+        <source>Nothing added yet</source>
+        <translation>ยังไม่มีการเพิ่มอะไร</translation>
+    </message>
+    <message>
+        <source>Off</source>
+        <translation>ปิด</translation>
+    </message>
+    <message>
+        <source>Overview</source>
+        <translation>ภาพรวม</translation>
+    </message>
+    <message>
+        <source>Peers waiting on disk reads:</source>
+        <translation>เพียร์ที่รออ่านจากดิสก์:</translation>
+    </message>
+    <message>
+        <source>Peers waiting on disk writes:</source>
+        <translation>เพียร์ที่รอเขียนลงดิสก์:</translation>
+    </message>
+    <message>
+        <source>Period</source>
+        <translation>ช่วงเวลา</translation>
+    </message>
+    <message>
+        <source>Request latency:</source>
+        <translation>ความหน่วงของคำขอ:</translation>
+    </message>
+    <message>
+        <source>Running for:</source>
+        <translation>ทำงานมาแล้ว:</translation>
+    </message>
+    <message>
+        <source>Share ratio</source>
+        <translation>อัตราส่วนการแชร์</translation>
+    </message>
+    <message>
+        <source>Share ratio:</source>
+        <translation>อัตราส่วนการแชร์:</translation>
+    </message>
+    <message>
+        <source>Technical</source>
+        <translation>ข้อมูลทางเทคนิค</translation>
+    </message>
+    <message>
+        <source>This month</source>
+        <translation>เดือนนี้</translation>
+    </message>
+    <message>
+        <source>This session</source>
+        <translation>เซสชันนี้</translation>
+    </message>
+    <message>
+        <source>Today</source>
+        <translation>วันนี้</translation>
+    </message>
+    <message>
+        <source>Torrents downloading:</source>
+        <translation>ทอร์เรนต์ที่กำลังดาวน์โหลด:</translation>
+    </message>
+    <message>
+        <source>Torrents seeding:</source>
+        <translation>ทอร์เรนต์ที่กำลังซีด:</translation>
+    </message>
+    <message>
+        <source>Torrents stopped:</source>
+        <translation>ทอร์เรนต์ที่หยุด:</translation>
+    </message>
+    <message>
+        <source>Torrents with errors:</source>
+        <translation>ทอร์เรนต์ที่มีข้อผิดพลาด:</translation>
+    </message>
+    <message>
+        <source>Tracking since:</source>
+        <translation>ติดตามตั้งแต่:</translation>
+    </message>
+    <message>
+        <source>WebUI downloads added, this month</source>
+        <translation>การดาวน์โหลดที่เพิ่มผ่าน WebUI เดือนนี้</translation>
     </message>
 </context>
 <context>
@@ -3838,6 +4221,10 @@ Use ';' to split multiple entries. Can use wildcard '*'.</source>
         <source>Content Path</source>
         <translation type="unfinished" />
     </message>
+    <message>
+        <source>Remove all tags from selected torrents?</source>
+        <translation>ลบแท็กทั้งหมดออกจากทอร์เรนต์ที่เลือกหรือไม่?</translation>
+    </message>
 </context>
 <context>
     <name>UpDownRatioDialog</name>
@@ -3910,6 +4297,10 @@ Use ';' to split multiple entries. Can use wildcard '*'.</source>
     <message>
         <source>Remove tracker</source>
         <translation type="unfinished" />
+    </message>
+    <message>
+        <source>This choice is remembered for the next removal.</source>
+        <translation>ตัวเลือกนี้จะถูกจำไว้สำหรับการลบครั้งถัดไป</translation>
     </message>
 </context>
 <context>
@@ -4122,6 +4513,30 @@ Use ';' to split multiple entries. Can use wildcard '*'.</source>
     <message>
         <source>Select plugins</source>
         <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Category to search in</source>
+        <translation>หมวดหมู่ที่จะค้นหา</translation>
+    </message>
+    <message>
+        <source>Close the selected search</source>
+        <translation>ปิดการค้นหาที่เลือก</translation>
+    </message>
+    <message>
+        <source>Search engines to use</source>
+        <translation>เครื่องมือค้นหาที่จะใช้</translation>
+    </message>
+    <message>
+        <source>Search for torrents...</source>
+        <translation>ค้นหาทอร์เรนต์...</translation>
+    </message>
+    <message>
+        <source>Searches</source>
+        <translation>การค้นหา</translation>
+    </message>
+    <message>
+        <source>Type a search above and press Enter.</source>
+        <translation>พิมพ์คำค้นด้านบนแล้วกด Enter</translation>
     </message>
 </context>
 <context>
@@ -4384,6 +4799,30 @@ Use ';' to split multiple entries. Can use wildcard '*'.</source>
         <source>qBittorrent icon</source>
         <translation>ไอคอน qBittorrent</translation>
     </message>
+    <message>
+        <source>Based on:</source>
+        <translation>อ้างอิงจาก:</translation>
+    </message>
+    <message>
+        <source>Edition version:</source>
+        <translation>เวอร์ชันของรุ่น:</translation>
+    </message>
+    <message>
+        <source>Kettle Edition is a personal build of qBittorrent that adds user accounts with roles for the WebUI and the desktop app, an activity log, and an installable WebUI with a phone layout. A kettle is a group of hawks soaring together. This is an unofficial build, not affiliated with the qBittorrent project.</source>
+        <translation>Kettle Edition เป็นบิลด์ส่วนตัวของ qBittorrent ที่เพิ่มบัญชีผู้ใช้พร้อมบทบาทสำหรับ WebUI และแอปเดสก์ท็อป บันทึกกิจกรรม และ WebUI ที่ติดตั้งได้พร้อมเลย์เอาต์สำหรับโทรศัพท์ Kettle คือฝูงเหยี่ยวที่ร่อนไปด้วยกัน นี่เป็นบิลด์ที่ไม่เป็นทางการ ไม่เกี่ยวข้องกับโปรเจกต์ qBittorrent</translation>
+    </message>
+    <message>
+        <source>Maintainer:</source>
+        <translation>ผู้ดูแล:</translation>
+    </message>
+    <message>
+        <source>This edition</source>
+        <translation>รุ่นนี้</translation>
+    </message>
+    <message>
+        <source>qBittorrent project:</source>
+        <translation>โปรเจกต์ qBittorrent:</translation>
+    </message>
 </context>
 <context>
     <name>OptionDialog</name>
@@ -4485,6 +4924,38 @@ Use ';' to split multiple entries. Can use wildcard '*'.</source>
     <message>
         <source>Open shared download window</source>
         <translation type="unfinished" />
+    </message>
+    <message>
+        <source>%1 of %2 shown</source>
+        <translation>แสดง %1 จาก %2</translation>
+    </message>
+    <message>
+        <source>%1 of %2 shown (%3 hidden)</source>
+        <translation>แสดง %1 จาก %2 (ซ่อน %3)</translation>
+    </message>
+    <message>
+        <source>Close all searches</source>
+        <translation>ปิดการค้นหาทั้งหมด</translation>
+    </message>
+    <message>
+        <source>Close search</source>
+        <translation>ปิดการค้นหา</translation>
+    </message>
+    <message>
+        <source>Finished: %1</source>
+        <translation>เสร็จสิ้น: %1</translation>
+    </message>
+    <message>
+        <source>Refresh search</source>
+        <translation>รีเฟรชการค้นหา</translation>
+    </message>
+    <message>
+        <source>Search aborted: %1</source>
+        <translation>ยกเลิกการค้นหา: %1</translation>
+    </message>
+    <message>
+        <source>Searching: %1</source>
+        <translation>กำลังค้นหา: %1</translation>
     </message>
 </context>
 <context>
@@ -4623,6 +5094,10 @@ Use ';' to split multiple entries. Can use wildcard '*'.</source>
     <message>
         <source>Blocked opening RSS article URL. Only http:// and https:// links can be opened.</source>
         <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Details</source>
+        <translation>รายละเอียด</translation>
     </message>
 </context>
 <context>
@@ -4901,6 +5376,10 @@ Supports the formats: S01E01, 1x1, 2017.12.31 and 31.12.2017 (Date formats also 
         <source>Import</source>
         <translation type="unfinished" />
     </message>
+    <message>
+        <source>Don&apos;t create subfolder</source>
+        <translation>ไม่ต้องสร้างโฟลเดอร์ย่อย</translation>
+    </message>
 </context>
 <context>
     <name>TrackerFiltersList</name>
@@ -5090,6 +5569,26 @@ Supports the formats: S01E01, 1x1, 2017.12.31 and 31.12.2017 (Date formats also 
         <source>Choose a log level...</source>
         <translation type="unfinished" />
     </message>
+    <message>
+        <source>Export...</source>
+        <translation>ส่งออก...</translation>
+    </message>
+    <message>
+        <source>Filter activity</source>
+        <translation>กรองกิจกรรม</translation>
+    </message>
+    <message>
+        <source>Result:</source>
+        <translation>ผลลัพธ์:</translation>
+    </message>
+    <message>
+        <source>User:</source>
+        <translation>ผู้ใช้:</translation>
+    </message>
+    <message>
+        <source>WebUI Activity</source>
+        <translation>กิจกรรม WebUI</translation>
+    </message>
 </context>
 <context>
     <name>TrackersFilterWidget</name>
@@ -5159,6 +5658,14 @@ Supports the formats: S01E01, 1x1, 2017.12.31 and 31.12.2017 (Date formats also 
     <message>
         <source>Torrent share limits</source>
         <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Torrent share limits</source>
+        <translation>จำกัดการแชร์ทอร์เรนต์</translation>
+    </message>
+    <message>
+        <source>Your role saves torrents in the default folders.</source>
+        <translation>บทบาทของคุณบันทึกทอร์เรนต์ลงโฟลเดอร์เริ่มต้น</translation>
     </message>
 </context>
 <context>
@@ -5258,6 +5765,14 @@ Supports the formats: S01E01, 1x1, 2017.12.31 and 31.12.2017 (Date formats also 
     <message>
         <source>Invalid Username or Password.</source>
         <translation>ชื่อผู้ใช้หรือรหัสผ่านไม่ถูกต้อง.</translation>
+    </message>
+    <message>
+        <source>A kettle is a group of hawks soaring together.</source>
+        <translation>Kettle คือฝูงเหยี่ยวที่ร่อนไปด้วยกัน</translation>
+    </message>
+    <message>
+        <source>Sign in</source>
+        <translation>เข้าสู่ระบบ</translation>
     </message>
 </context>
 <context>
@@ -5466,6 +5981,10 @@ Supports the formats: S01E01, 1x1, 2017.12.31 and 31.12.2017 (Date formats also 
         <source>If checked, filenames starting with a period punctuation mark `.` will not be added to the created torrent.</source>
         <translation type="unfinished" />
     </message>
+    <message>
+        <source>Start seeding immediately</source>
+        <translation>เริ่มการหว่านทันที</translation>
+    </message>
 </context>
 <context>
     <name>DownloadFromURLDialog</name>
@@ -5576,6 +6095,10 @@ Supports the formats: S01E01, 1x1, 2017.12.31 and 31.12.2017 (Date formats also 
         <source>Failed to set speed limits</source>
         <translation type="unfinished" />
     </message>
+    <message>
+        <source>Speed limits</source>
+        <translation>จำกัดการส่งต่อ</translation>
+    </message>
 </context>
 <context>
     <name>ListWidget</name>
@@ -5586,6 +6109,10 @@ Supports the formats: S01E01, 1x1, 2017.12.31 and 31.12.2017 (Date formats also 
     <message>
         <source>Resize</source>
         <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Reset Auto Width</source>
+        <translation>รีเซ็ตความกว้างอัตโนมัติ</translation>
     </message>
 </context>
 <context>
@@ -5726,6 +6253,216 @@ Supports the formats: S01E01, 1x1, 2017.12.31 and 31.12.2017 (Date formats also 
     <message>
         <source>Not available for folders</source>
         <translation type="unfinished" />
+    </message>
+</context>
+<context>
+    <name>UserAccounts</name>
+    <message>
+        <source>(this browser)</source>
+        <translation>(เบราว์เซอร์นี้)</translation>
+    </message>
+    <message>
+        <source>A role decides what its users are allowed to do.</source>
+        <translation>บทบาทกำหนดว่าผู้ใช้ของบทบาทนั้นทำอะไรได้บ้าง</translation>
+    </message>
+    <message>
+        <source>Add Role</source>
+        <translation>เพิ่มบทบาท</translation>
+    </message>
+    <message>
+        <source>Add Role...</source>
+        <translation>เพิ่มบทบาท...</translation>
+    </message>
+    <message>
+        <source>Add User</source>
+        <translation>เพิ่มผู้ใช้</translation>
+    </message>
+    <message>
+        <source>Add User...</source>
+        <translation>เพิ่มผู้ใช้...</translation>
+    </message>
+    <message>
+        <source>Are you sure you want to remove the role &apos;%1&apos;?</source>
+        <translation>คุณแน่ใจหรือไม่ว่าต้องการลบบทบาท &apos;%1&apos;?</translation>
+    </message>
+    <message>
+        <source>Are you sure you want to remove the user &apos;%1&apos;?</source>
+        <translation>คุณแน่ใจหรือไม่ว่าต้องการลบผู้ใช้ &apos;%1&apos;?</translation>
+    </message>
+    <message>
+        <source>At least %1 characters</source>
+        <translation>อย่างน้อย %1 ตัวอักษร</translation>
+    </message>
+    <message>
+        <source>Browser</source>
+        <translation>เบราว์เซอร์</translation>
+    </message>
+    <message>
+        <source>Browsers and devices where someone is logged in with a user account.</source>
+        <translation>เบราว์เซอร์และอุปกรณ์ที่มีคนเข้าสู่ระบบด้วยบัญชีผู้ใช้</translation>
+    </message>
+    <message>
+        <source>Change Password</source>
+        <translation>เปลี่ยนรหัสผ่าน</translation>
+    </message>
+    <message>
+        <source>Confirm password:</source>
+        <translation>ยืนยันรหัสผ่าน:</translation>
+    </message>
+    <message>
+        <source>Created</source>
+        <translation>สร้างเมื่อ</translation>
+    </message>
+    <message>
+        <source>Current password:</source>
+        <translation>รหัสผ่านปัจจุบัน:</translation>
+    </message>
+    <message>
+        <source>Description</source>
+        <translation>คำอธิบาย</translation>
+    </message>
+    <message>
+        <source>Description:</source>
+        <translation>คำอธิบาย:</translation>
+    </message>
+    <message>
+        <source>Disable</source>
+        <translation>ปิดใช้งาน</translation>
+    </message>
+    <message>
+        <source>Disable this account</source>
+        <translation>ปิดใช้งานบัญชีนี้</translation>
+    </message>
+    <message>
+        <source>Edit Role</source>
+        <translation>แก้ไขบทบาท</translation>
+    </message>
+    <message>
+        <source>Edit User</source>
+        <translation>แก้ไขผู้ใช้</translation>
+    </message>
+    <message>
+        <source>Edit...</source>
+        <translation>แก้ไข...</translation>
+    </message>
+    <message>
+        <source>Enable</source>
+        <translation>เปิดใช้งาน</translation>
+    </message>
+    <message>
+        <source>Enter a role name.</source>
+        <translation>ป้อนชื่อบทบาท</translation>
+    </message>
+    <message>
+        <source>Enter a username.</source>
+        <translation>ป้อนชื่อผู้ใช้</translation>
+    </message>
+    <message>
+        <source>Expires</source>
+        <translation>หมดอายุ</translation>
+    </message>
+    <message>
+        <source>Gives control over the PC or qBittorrent itself</source>
+        <translation>ให้สิทธิ์ควบคุมพีซีหรือ qBittorrent เอง</translation>
+    </message>
+    <message>
+        <source>Last active</source>
+        <translation>ใช้งานล่าสุด</translation>
+    </message>
+    <message>
+        <source>Last login</source>
+        <translation>เข้าสู่ระบบล่าสุด</translation>
+    </message>
+    <message>
+        <source>Leave empty to keep the current password</source>
+        <translation>เว้นว่างไว้เพื่อใช้รหัสผ่านปัจจุบัน</translation>
+    </message>
+    <message>
+        <source>Log Out</source>
+        <translation>ออกจากระบบ</translation>
+    </message>
+    <message>
+        <source>Log Out Everywhere</source>
+        <translation>ออกจากระบบทุกที่</translation>
+    </message>
+    <message>
+        <source>Logged In</source>
+        <translation>เข้าสู่ระบบอยู่</translation>
+    </message>
+    <message>
+        <source>Logged in</source>
+        <translation>เข้าสู่ระบบเมื่อ</translation>
+    </message>
+    <message>
+        <source>New password:</source>
+        <translation>รหัสผ่านใหม่:</translation>
+    </message>
+    <message>
+        <source>No accounts yet, so everyone still uses the shared WebUI login. Add an Admin account first.</source>
+        <translation>ยังไม่มีบัญชี ทุกคนจึงยังใช้การเข้าสู่ระบบ WebUI ร่วมกัน เพิ่มบัญชีผู้ดูแลก่อน</translation>
+    </message>
+    <message>
+        <source>People who can log in to the WebUI with their own username and password.</source>
+        <translation>คนที่เข้าสู่ระบบ WebUI ได้ด้วยชื่อผู้ใช้และรหัสผ่านของตนเอง</translation>
+    </message>
+    <message>
+        <source>Permissions</source>
+        <translation>สิทธิ์</translation>
+    </message>
+    <message>
+        <source>Role</source>
+        <translation>บทบาท</translation>
+    </message>
+    <message>
+        <source>Role:</source>
+        <translation>บทบาท:</translation>
+    </message>
+    <message>
+        <source>Roles</source>
+        <translation>บทบาท</translation>
+    </message>
+    <message>
+        <source>The password must be at least %1 characters long.</source>
+        <translation>รหัสผ่านต้องยาวอย่างน้อย %1 ตัวอักษร</translation>
+    </message>
+    <message>
+        <source>The passwords don&apos;t match.</source>
+        <translation>รหัสผ่านไม่ตรงกัน</translation>
+    </message>
+    <message>
+        <source>User</source>
+        <translation>ผู้ใช้</translation>
+    </message>
+    <message>
+        <source>Users</source>
+        <translation>ผู้ใช้</translation>
+    </message>
+    <message>
+        <source>Your password was changed. Other browsers and devices where you were logged in have been logged out.</source>
+        <translation>เปลี่ยนรหัสผ่านของคุณแล้ว เบราว์เซอร์และอุปกรณ์อื่นที่คุณเข้าสู่ระบบอยู่ถูกออกจากระบบแล้ว</translation>
+    </message>
+</context>
+<context>
+    <name>WebUIActivity</name>
+    <message>
+        <source>Action</source>
+        <translation>การกระทำ</translation>
+    </message>
+    <message>
+        <source>Result</source>
+        <translation>ผลลัพธ์</translation>
+    </message>
+    <message>
+        <source>Role</source>
+        <translation>บทบาท</translation>
+    </message>
+    <message>
+        <source>Time</source>
+        <translation>เวลา</translation>
+    </message>
+    <message>
+        <source>User</source>
+        <translation>ผู้ใช้</translation>
     </message>
 </context>
 </TS>

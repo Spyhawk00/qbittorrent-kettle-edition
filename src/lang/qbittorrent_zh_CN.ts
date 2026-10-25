@@ -141,6 +141,62 @@
         <source>The free IP to Country Lite database by DB-IP is used for resolving the countries of peers. The database is licensed under the Creative Commons Attribution 4.0 International License</source>
         <translation>由 DB-IP 提供的免费 IP to Country Lite 数据库，用于解析节点所在的国家。该数据库已根据知识共享署名 4.0 国际许可协议获得许可</translation>
     </message>
+    <message>
+        <source>This edition</source>
+        <translation>此版本</translation>
+    </message>
+    <message>
+        <source>Edition version:</source>
+        <translation>版本号：</translation>
+    </message>
+    <message>
+        <source>Based on:</source>
+        <translation>基于：</translation>
+    </message>
+    <message>
+        <source>Maintainer:</source>
+        <translation>维护者：</translation>
+    </message>
+    <message>
+        <source>qBittorrent project:</source>
+        <translation>qBittorrent 项目：</translation>
+    </message>
+    <message>
+        <source>Kettle Edition is a personal build of qBittorrent that adds user accounts with roles for the WebUI and the desktop app, an activity log, and an installable WebUI with a phone layout. A kettle is a group of hawks soaring together. This is an unofficial build, not affiliated with the qBittorrent project.</source>
+        <translation>Kettle Edition 是 qBittorrent 的个人构建版，为 WebUI 和桌面应用增加了带角色的用户账户、活动日志，以及可安装、带手机布局的 WebUI。Kettle 是指一起盘旋翱翔的鹰群。这是非官方构建版，与 qBittorrent 项目无关。</translation>
+    </message>
+    <message>
+        <source>N/A</source>
+        <translation>不适用</translation>
+    </message>
+    <message>
+        <source>This edition</source>
+        <translation>此版本</translation>
+    </message>
+    <message>
+        <source>Edition version:</source>
+        <translation>版本号：</translation>
+    </message>
+    <message>
+        <source>Based on:</source>
+        <translation>基于：</translation>
+    </message>
+    <message>
+        <source>Maintainer:</source>
+        <translation>维护者：</translation>
+    </message>
+    <message>
+        <source>qBittorrent project:</source>
+        <translation>qBittorrent 项目：</translation>
+    </message>
+    <message>
+        <source>Kettle Edition is a personal build of qBittorrent that adds user accounts with roles for the WebUI and the desktop app, an activity log, and an installable WebUI with a phone layout. A kettle is a group of hawks soaring together. This is an unofficial build, not affiliated with the qBittorrent project.</source>
+        <translation>Kettle Edition 是 qBittorrent 的个人构建版，为 WebUI 和桌面应用增加了带角色的用户账户、活动日志，以及可安装、带手机布局的 WebUI。Kettle 是指一起盘旋翱翔的鹰群。这是非官方构建版，与 qBittorrent 项目无关。</translation>
+    </message>
+    <message>
+        <source>N/A</source>
+        <translation>不适用</translation>
+    </message>
 </context>
 <context>
     <name>AbstractFileStorage</name>
@@ -1459,6 +1515,62 @@
         <location filename="../gui/advancedsettings.cpp" line="925"/>
         <source>Embedded tracker port</source>
         <translation>内置 Tracker 端口</translation>
+    </message>
+    <message>
+        <source>Network</source>
+        <translation>网络</translation>
+    </message>
+    <message>
+        <source>Storage</source>
+        <translation>存储</translation>
+    </message>
+    <message>
+        <source>Peers and trackers</source>
+        <translation>用户与 Tracker</translation>
+    </message>
+    <message>
+        <source>Program behavior</source>
+        <translation>程序行为</translation>
+    </message>
+    <message>
+        <source>Display and notifications</source>
+        <translation>显示与通知</translation>
+    </message>
+    <message>
+        <source>Network connection</source>
+        <translation>网络连接</translation>
+    </message>
+    <message>
+        <source>Security and privacy</source>
+        <translation>安全与隐私</translation>
+    </message>
+    <message>
+        <source>Connection tuning</source>
+        <translation>连接调优</translation>
+    </message>
+    <message>
+        <source>Saving and torrent files</source>
+        <translation>保存与种子文件</translation>
+    </message>
+    <message>
+        <source>Disk and memory</source>
+        <translation>磁盘与内存</translation>
+    </message>
+    <message>
+        <source>Peers and seeding</source>
+        <translation>用户与做种</translation>
+    </message>
+    <message>
+        <source>DHT and I2P</source>
+        <translation>DHT 与 I2P</translation>
+    </message>
+    <message>
+        <source>General</source>
+        <translation>通用</translation>
+    </message>
+    <message>
+        <source>Trackers</source>
+        <translation>Tracker</translation>
     </message>
 </context>
 <context>
@@ -3480,6 +3592,22 @@ Supports the formats: S01E01, 1x1, 2017.12.31 and 31.12.2017 (Date formats also 
         <source>Remove torrent</source>
         <translation>删除 torrent</translation>
     </message>
+    <message>
+        <source>This choice is remembered for the next removal.</source>
+        <translation>此选择将在下次移除时被记住。</translation>
+    </message>
+    <message>
+        <source>Remove</source>
+        <translation>移除</translation>
+    </message>
+    <message>
+        <source>This choice is remembered for the next removal.</source>
+        <translation>此选择将在下次移除时被记住。</translation>
+    </message>
+    <message>
+        <source>Remove</source>
+        <translation>移除</translation>
+    </message>
 </context>
 <context>
     <name>DownloadFromURLDialog</name>
@@ -3553,6 +3681,14 @@ Supports the formats: S01E01, 1x1, 2017.12.31 and 31.12.2017 (Date formats also 
         <location filename="../gui/executionlogwidget.cpp" line="99"/>
         <source>Clear</source>
         <translation>清空</translation>
+    </message>
+    <message>
+        <source>WebUI Activity</source>
+        <translation>WebUI 活动</translation>
+    </message>
+    <message>
+        <source>WebUI Activity</source>
+        <translation>WebUI 活动</translation>
     </message>
 </context>
 <context>
@@ -4726,6 +4862,46 @@ Minimum requirement: %2.</source>
         <location filename="../gui/mainwindow.cpp" line="1346"/>
         <source>Torrent Files</source>
         <translation>Torrent 文件</translation>
+    </message>
+    <message>
+        <source>Kettle Edition %1 is available.</source>
+        <translation>Kettle Edition %1 可用。</translation>
+    </message>
+    <message>
+        <source>qBittorrent Kettle Edition %1 is available. It is downloaded now and installed at 4:00 AM, or when qBittorrent starts next.</source>
+        <translation>qBittorrent Kettle Edition %1 可用。现正下载，并将在凌晨 4:00 或 qBittorrent 下次启动时安装。</translation>
+    </message>
+    <message>
+        <source>qBittorrent Kettle Edition %1 is available. It is downloaded now. Turn on &quot;Automatically install Kettle Edition updates&quot; in Options to install it.</source>
+        <translation>qBittorrent Kettle Edition %1 可用。现正下载。请在选项中开启“自动安装 Kettle Edition 更新”以安装。</translation>
+    </message>
+    <message>
+        <source>You have the latest qBittorrent Kettle Edition (%1).</source>
+        <translation>您已是最新的 qBittorrent Kettle Edition (%1)。</translation>
+    </message>
+    <message>
+        <source>Could not check for qBittorrent Kettle Edition updates. See the Execution Log for details.</source>
+        <translation>无法检查 qBittorrent Kettle Edition 更新。详情请查看执行日志。</translation>
+    </message>
+    <message>
+        <source>Kettle Edition %1 is available.</source>
+        <translation>Kettle Edition %1 可用。</translation>
+    </message>
+    <message>
+        <source>qBittorrent Kettle Edition %1 is available. It is downloaded now and installed at 4:00 AM, or when qBittorrent starts next.</source>
+        <translation>qBittorrent Kettle Edition %1 可用。现正下载，并将在凌晨 4:00 或 qBittorrent 下次启动时安装。</translation>
+    </message>
+    <message>
+        <source>qBittorrent Kettle Edition %1 is available. It is downloaded now. Turn on &quot;Automatically install Kettle Edition updates&quot; in Options to install it.</source>
+        <translation>qBittorrent Kettle Edition %1 可用。现正下载。请在选项中开启“自动安装 Kettle Edition 更新”以安装。</translation>
+    </message>
+    <message>
+        <source>You have the latest qBittorrent Kettle Edition (%1).</source>
+        <translation>您已是最新的 qBittorrent Kettle Edition (%1)。</translation>
+    </message>
+    <message>
+        <source>Could not check for qBittorrent Kettle Edition updates. See the Execution Log for details.</source>
+        <translation>无法检查 qBittorrent Kettle Edition 更新。详情请查看执行日志。</translation>
     </message>
 </context>
 <context>
@@ -8515,6 +8691,190 @@ Check the Execution Log for errors.</source>
         <source>Length Error</source>
         <translation>长度错误</translation>
     </message>
+    <message>
+        <source>Search settings</source>
+        <translation>搜索设置</translation>
+    </message>
+    <message>
+        <source>No settings match</source>
+        <translation>没有匹配的设置</translation>
+    </message>
+    <message>
+        <source>User Accounts</source>
+        <translation>用户账户</translation>
+    </message>
+    <message>
+        <source>Automatically install Kettle Edition updates</source>
+        <translation>自动安装 Kettle Edition 更新</translation>
+    </message>
+    <message>
+        <source>Status bar and log</source>
+        <translation>状态栏和日志</translation>
+    </message>
+    <message>
+        <source>Files</source>
+        <translation>文件</translation>
+    </message>
+    <message>
+        <source>Checking</source>
+        <translation>检查</translation>
+    </message>
+    <message>
+        <source>Until the first user account is created, this login always works.</source>
+        <translation>在创建第一个用户账户之前，此登录始终可用。</translation>
+    </message>
+    <message>
+        <source>Allow this login when user accounts exist</source>
+        <translation>存在用户账户时仍允许此登录</translation>
+    </message>
+    <message>
+        <source>Access</source>
+        <translation>访问</translation>
+    </message>
+    <message>
+        <source>Changes to users, roles and logins apply at once. The settings below apply with OK or Apply.</source>
+        <translation>对用户、角色和登录的更改会立即生效。下方的设置在点击“确定”或“应用”后生效。</translation>
+    </message>
+    <message>
+        <source>Logins and Activity Log</source>
+        <translation>登录与活动日志</translation>
+    </message>
+    <message>
+        <source>0 means users are logged out after the session timeout.</source>
+        <translation>0 表示会话超时后用户将被注销。</translation>
+    </message>
+    <message>
+        <source>Keep users logged in for:</source>
+        <translation>保持用户登录时长：</translation>
+    </message>
+    <message>
+        <source>Until session timeout</source>
+        <translation>直到会话超时</translation>
+    </message>
+    <message>
+        <source> days</source>
+        <translation> 天</translation>
+    </message>
+    <message>
+        <source>Lock account after consecutive failures:</source>
+        <translation>连续失败后锁定账户：</translation>
+    </message>
+    <message>
+        <source>Keep WebUI activity log for:</source>
+        <translation>WebUI 活动日志保留时长：</translation>
+    </message>
+    <message>
+        <source>lock for:</source>
+        <translation>锁定时长：</translation>
+    </message>
+    <message>
+        <source>%1 works best with Windows dark mode</source>
+        <translation>%1 在 Windows 深色模式下效果最佳</translation>
+    </message>
+    <message>
+        <source>WebUI address</source>
+        <translation>WebUI 地址</translation>
+    </message>
+    <message>
+        <source>With the WebUI address set to %1, only this PC can reach the WebUI. Remote access, including through a reverse proxy on another machine, will stop working.
+
+Save anyway?</source>
+        <translation>WebUI 地址设为 %1 时，只有这台电脑能访问 WebUI。远程访问（包括通过其他机器上的反向代理）将失效。
+
+仍要保存吗？</translation>
+    </message>
+    <message>
+        <source>Search settings</source>
+        <translation>搜索设置</translation>
+    </message>
+    <message>
+        <source>No settings match</source>
+        <translation>没有匹配的设置</translation>
+    </message>
+    <message>
+        <source>User Accounts</source>
+        <translation>用户账户</translation>
+    </message>
+    <message>
+        <source>Automatically install Kettle Edition updates</source>
+        <translation>自动安装 Kettle Edition 更新</translation>
+    </message>
+    <message>
+        <source>Status bar and log</source>
+        <translation>状态栏和日志</translation>
+    </message>
+    <message>
+        <source>Files</source>
+        <translation>文件</translation>
+    </message>
+    <message>
+        <source>Checking</source>
+        <translation>检查</translation>
+    </message>
+    <message>
+        <source>Until the first user account is created, this login always works.</source>
+        <translation>在创建第一个用户账户之前，此登录始终可用。</translation>
+    </message>
+    <message>
+        <source>Allow this login when user accounts exist</source>
+        <translation>存在用户账户时仍允许此登录</translation>
+    </message>
+    <message>
+        <source>Access</source>
+        <translation>访问</translation>
+    </message>
+    <message>
+        <source>Changes to users, roles and logins apply at once. The settings below apply with OK or Apply.</source>
+        <translation>对用户、角色和登录的更改会立即生效。下方的设置在点击“确定”或“应用”后生效。</translation>
+    </message>
+    <message>
+        <source>Logins and Activity Log</source>
+        <translation>登录与活动日志</translation>
+    </message>
+    <message>
+        <source>0 means users are logged out after the session timeout.</source>
+        <translation>0 表示会话超时后用户将被注销。</translation>
+    </message>
+    <message>
+        <source>Keep users logged in for:</source>
+        <translation>保持用户登录时长：</translation>
+    </message>
+    <message>
+        <source>Until session timeout</source>
+        <translation>直到会话超时</translation>
+    </message>
+    <message>
+        <source> days</source>
+        <translation> 天</translation>
+    </message>
+    <message>
+        <source>Lock account after consecutive failures:</source>
+        <translation>连续失败后锁定账户：</translation>
+    </message>
+    <message>
+        <source>Keep WebUI activity log for:</source>
+        <translation>WebUI 活动日志保留时长：</translation>
+    </message>
+    <message>
+        <source>lock for:</source>
+        <translation>锁定时长：</translation>
+    </message>
+    <message>
+        <source>%1 works best with Windows dark mode</source>
+        <translation>%1 在 Windows 深色模式下效果最佳</translation>
+    </message>
+    <message>
+        <source>WebUI address</source>
+        <translation>WebUI 地址</translation>
+    </message>
+    <message>
+        <source>With the WebUI address set to %1, only this PC can reach the WebUI. Remote access, including through a reverse proxy on another machine, will stop working.
+
+Save anyway?</source>
+        <translation>WebUI 地址设为 %1 时，只有这台电脑能访问 WebUI。远程访问（包括通过其他机器上的反向代理）将失效。
+
+仍要保存吗？</translation>
+    </message>
 </context>
 <context>
     <name>PeerInfo</name>
@@ -8767,6 +9127,22 @@ Check the Execution Log for errors.</source>
         <location filename="../gui/properties/peerlistwidget.cpp" line="309"/>
         <source>Copy IP:port</source>
         <translation>复制 IP:端口</translation>
+    </message>
+    <message>
+        <source>Reset auto width</source>
+        <translation>重置自动列宽</translation>
+    </message>
+    <message>
+        <source>Fit all non-hidden columns to their contents again, and forget the widths that were set by hand</source>
+        <translation>让所有可见列重新适应内容，并忘记手动设置的宽度</translation>
+    </message>
+    <message>
+        <source>Reset auto width</source>
+        <translation>重置自动列宽</translation>
+    </message>
+    <message>
+        <source>Fit all non-hidden columns to their contents again, and forget the widths that were set by hand</source>
+        <translation>让所有可见列重新适应内容，并忘记手动设置的宽度</translation>
     </message>
 </context>
 <context>
@@ -10155,6 +10531,14 @@ Those plugins were disabled.</source>
         <source>Open link</source>
         <translation>打开链接</translation>
     </message>
+    <message>
+        <source>Details</source>
+        <translation>详细信息</translation>
+    </message>
+    <message>
+        <source>Details</source>
+        <translation>详细信息</translation>
+    </message>
 </context>
 <context>
     <name>SearchController</name>
@@ -10508,6 +10892,70 @@ Those plugins were disabled.</source>
         <source>Resize all non-hidden columns to the size of their contents</source>
         <translation>将所有非隐藏列的大小调整为其内容的大小</translation>
     </message>
+    <message>
+        <source>%1 of %2 shown (%3 hidden)</source>
+        <translation>显示 %2 项中的 %1 项（%3 项已隐藏）</translation>
+    </message>
+    <message>
+        <source>%1 of %2 shown</source>
+        <translation>显示 %2 项中的 %1 项</translation>
+    </message>
+    <message>
+        <source>Searching: %1</source>
+        <translation>正在搜索：%1</translation>
+    </message>
+    <message>
+        <source>Finished: %1</source>
+        <translation>已完成：%1</translation>
+    </message>
+    <message>
+        <source>Search aborted: %1</source>
+        <translation>搜索已中止：%1</translation>
+    </message>
+    <message>
+        <source>Reset auto width</source>
+        <translation>重置自动列宽</translation>
+    </message>
+    <message>
+        <source>Fit all non-hidden columns to their contents again, and forget the widths that were set by hand</source>
+        <translation>让所有可见列重新适应内容，并忘记手动设置的宽度</translation>
+    </message>
+    <message>
+        <source>Unknown</source>
+        <translation>未知</translation>
+    </message>
+    <message>
+        <source>%1 of %2 shown (%3 hidden)</source>
+        <translation>显示 %2 项中的 %1 项（%3 项已隐藏）</translation>
+    </message>
+    <message>
+        <source>%1 of %2 shown</source>
+        <translation>显示 %2 项中的 %1 项</translation>
+    </message>
+    <message>
+        <source>Searching: %1</source>
+        <translation>正在搜索：%1</translation>
+    </message>
+    <message>
+        <source>Finished: %1</source>
+        <translation>已完成：%1</translation>
+    </message>
+    <message>
+        <source>Search aborted: %1</source>
+        <translation>搜索已中止：%1</translation>
+    </message>
+    <message>
+        <source>Reset auto width</source>
+        <translation>重置自动列宽</translation>
+    </message>
+    <message>
+        <source>Fit all non-hidden columns to their contents again, and forget the widths that were set by hand</source>
+        <translation>让所有可见列重新适应内容，并忘记手动设置的宽度</translation>
+    </message>
+    <message>
+        <source>Unknown</source>
+        <translation>未知</translation>
+    </message>
 </context>
 <context>
     <name>SearchPluginManager</name>
@@ -10805,6 +11253,14 @@ Those plugins were disabled.</source>
         <source>Couldn&apos;t update &quot;%1&quot; search engine plugin. %2</source>
         <translation type="unfinished">无法更新搜索引擎插件 &quot;%1&quot;。%2</translation>
     </message>
+    <message>
+        <source>Install Kettle Plugins</source>
+        <translation>安装 Kettle 插件</translation>
+    </message>
+    <message>
+        <source>Install Kettle Plugins</source>
+        <translation>安装 Kettle 插件</translation>
+    </message>
 </context>
 <context>
     <name>SearchPluginSourceDialog</name>
@@ -10944,6 +11400,90 @@ Click the &quot;Search plugins...&quot; button at the bottom right of the window
         <location filename="../gui/search/searchwidget.ui" line="58"/>
         <source>Stop</source>
         <translation>停止</translation>
+    </message>
+    <message>
+        <source>Searches</source>
+        <translation>搜索</translation>
+    </message>
+    <message>
+        <source>Close the selected search</source>
+        <translation>关闭所选搜索</translation>
+    </message>
+    <message>
+        <source>Search for torrents...</source>
+        <translation>搜索 torrent...</translation>
+    </message>
+    <message>
+        <source>Category to search in</source>
+        <translation>要搜索的分类</translation>
+    </message>
+    <message>
+        <source>Search engines to use</source>
+        <translation>要使用的搜索引擎</translation>
+    </message>
+    <message>
+        <source>There aren&apos;t any search plugins installed.
+Click the &quot;Search plugins...&quot; button at the top right of the window to install some.</source>
+        <translation>尚未安装搜索插件。
+点击窗口右上角的“搜索插件...”按钮即可安装。</translation>
+    </message>
+    <message>
+        <source>Type a search above and press Enter.</source>
+        <translation>请在上方输入搜索内容并按 Enter。</translation>
+    </message>
+    <message>
+        <source>Refresh search</source>
+        <translation>刷新搜索</translation>
+    </message>
+    <message>
+        <source>Close search</source>
+        <translation>关闭搜索</translation>
+    </message>
+    <message>
+        <source>Close all searches</source>
+        <translation>关闭所有搜索</translation>
+    </message>
+    <message>
+        <source>Searches</source>
+        <translation>搜索</translation>
+    </message>
+    <message>
+        <source>Close the selected search</source>
+        <translation>关闭所选搜索</translation>
+    </message>
+    <message>
+        <source>Search for torrents...</source>
+        <translation>搜索 torrent...</translation>
+    </message>
+    <message>
+        <source>Category to search in</source>
+        <translation>要搜索的分类</translation>
+    </message>
+    <message>
+        <source>Search engines to use</source>
+        <translation>要使用的搜索引擎</translation>
+    </message>
+    <message>
+        <source>There aren&apos;t any search plugins installed.
+Click the &quot;Search plugins...&quot; button at the top right of the window to install some.</source>
+        <translation>尚未安装搜索插件。
+点击窗口右上角的“搜索插件...”按钮即可安装。</translation>
+    </message>
+    <message>
+        <source>Type a search above and press Enter.</source>
+        <translation>请在上方输入搜索内容并按 Enter。</translation>
+    </message>
+    <message>
+        <source>Refresh search</source>
+        <translation>刷新搜索</translation>
+    </message>
+    <message>
+        <source>Close search</source>
+        <translation>关闭搜索</translation>
+    </message>
+    <message>
+        <source>Close all searches</source>
+        <translation>关闭所有搜索</translation>
     </message>
 </context>
 <context>
@@ -11410,6 +11950,326 @@ Click the &quot;Search plugins...&quot; button at the bottom right of the window
         <location filename="../gui/statsdialog.cpp" line="111"/>
         <source>%1 ms</source>
         <translation type="unfinished"> %1 ms</translation>
+    </message>
+    <message>
+        <source>Copy</source>
+        <translation>复制</translation>
+    </message>
+    <message>
+        <source>Overview</source>
+        <translation>概览</translation>
+    </message>
+    <message>
+        <source>Transfer</source>
+        <translation>传输</translation>
+    </message>
+    <message>
+        <source>This session</source>
+        <translation>本次会话</translation>
+    </message>
+    <message>
+        <source>All time</source>
+        <translation>所有时间</translation>
+    </message>
+    <message>
+        <source>Downloaded:</source>
+        <translation>已下载：</translation>
+    </message>
+    <message>
+        <source>Uploaded:</source>
+        <translation>已上传：</translation>
+    </message>
+    <message>
+        <source>Share ratio:</source>
+        <translation>分享率：</translation>
+    </message>
+    <message>
+        <source>Current speed:</source>
+        <translation>当前速度：</translation>
+    </message>
+    <message>
+        <source>Activity</source>
+        <translation>活动</translation>
+    </message>
+    <message>
+        <source>Torrents downloading:</source>
+        <translation>正在下载的 torrent：</translation>
+    </message>
+    <message>
+        <source>Torrents seeding:</source>
+        <translation>正在做种的 torrent：</translation>
+    </message>
+    <message>
+        <source>Torrents stopped:</source>
+        <translation>已停止的 torrent：</translation>
+    </message>
+    <message>
+        <source>Torrents with errors:</source>
+        <translation>出错的 torrent：</translation>
+    </message>
+    <message>
+        <source>Running for:</source>
+        <translation>已运行：</translation>
+    </message>
+    <message>
+        <source>History</source>
+        <translation>历史</translation>
+    </message>
+    <message>
+        <source>Period</source>
+        <translation>时间段</translation>
+    </message>
+    <message>
+        <source>Today</source>
+        <translation>今天</translation>
+    </message>
+    <message>
+        <source>Last 7 days</source>
+        <translation>最近 7 天</translation>
+    </message>
+    <message>
+        <source>This month</source>
+        <translation>本月</translation>
+    </message>
+    <message>
+        <source>Last month</source>
+        <translation>上月</translation>
+    </message>
+    <message>
+        <source>Last 12 months</source>
+        <translation>最近 12 个月</translation>
+    </message>
+    <message>
+        <source>Tracking since:</source>
+        <translation>统计开始于：</translation>
+    </message>
+    <message>
+        <source>By month</source>
+        <translation>按月</translation>
+    </message>
+    <message>
+        <source>Month</source>
+        <translation>月份</translation>
+    </message>
+    <message>
+        <source>Downloaded</source>
+        <translation>已下载</translation>
+    </message>
+    <message>
+        <source>Uploaded</source>
+        <translation>已上传</translation>
+    </message>
+    <message>
+        <source>Share ratio</source>
+        <translation>分享率</translation>
+    </message>
+    <message>
+        <source>WebUI downloads added, this month</source>
+        <translation>通过 WebUI 添加的下载，本月</translation>
+    </message>
+    <message>
+        <source>Counts the requests that added a download. Apps without a login, such as Sonarr and Radarr, are shown as (localhost). Downloads added in the desktop window are not counted.</source>
+        <translation>统计添加了下载的请求。没有登录的应用（如 Sonarr 和 Radarr）显示为 (localhost)。在桌面窗口中添加的下载不计入。</translation>
+    </message>
+    <message>
+        <source>Technical</source>
+        <translation>技术信息</translation>
+    </message>
+    <message>
+        <source>Disk</source>
+        <translation>磁盘</translation>
+    </message>
+    <message>
+        <source>Peers waiting on disk writes:</source>
+        <translation>等待写入磁盘的用户：</translation>
+    </message>
+    <message>
+        <source>Peers waiting on disk reads:</source>
+        <translation>等待读取磁盘的用户：</translation>
+    </message>
+    <message>
+        <source>Network</source>
+        <translation>网络</translation>
+    </message>
+    <message>
+        <source>DHT nodes:</source>
+        <translation>DHT 节点：</translation>
+    </message>
+    <message>
+        <source>Data discarded this session:</source>
+        <translation>本次会话丢弃的数据：</translation>
+    </message>
+    <message>
+        <source>Before tracking began</source>
+        <translation>开始统计之前</translation>
+    </message>
+    <message>
+        <source>Nothing added yet</source>
+        <translation>尚未添加任何内容</translation>
+    </message>
+    <message>
+        <source>Off</source>
+        <translation>关闭</translation>
+    </message>
+    <message>
+        <source>Copy</source>
+        <translation>复制</translation>
+    </message>
+    <message>
+        <source>Overview</source>
+        <translation>概览</translation>
+    </message>
+    <message>
+        <source>Transfer</source>
+        <translation>传输</translation>
+    </message>
+    <message>
+        <source>This session</source>
+        <translation>本次会话</translation>
+    </message>
+    <message>
+        <source>All time</source>
+        <translation>所有时间</translation>
+    </message>
+    <message>
+        <source>Downloaded:</source>
+        <translation>已下载：</translation>
+    </message>
+    <message>
+        <source>Uploaded:</source>
+        <translation>已上传：</translation>
+    </message>
+    <message>
+        <source>Share ratio:</source>
+        <translation>分享率：</translation>
+    </message>
+    <message>
+        <source>Current speed:</source>
+        <translation>当前速度：</translation>
+    </message>
+    <message>
+        <source>Activity</source>
+        <translation>活动</translation>
+    </message>
+    <message>
+        <source>Torrents downloading:</source>
+        <translation>正在下载的 torrent：</translation>
+    </message>
+    <message>
+        <source>Torrents seeding:</source>
+        <translation>正在做种的 torrent：</translation>
+    </message>
+    <message>
+        <source>Torrents stopped:</source>
+        <translation>已停止的 torrent：</translation>
+    </message>
+    <message>
+        <source>Torrents with errors:</source>
+        <translation>出错的 torrent：</translation>
+    </message>
+    <message>
+        <source>Running for:</source>
+        <translation>已运行：</translation>
+    </message>
+    <message>
+        <source>History</source>
+        <translation>历史</translation>
+    </message>
+    <message>
+        <source>Period</source>
+        <translation>时间段</translation>
+    </message>
+    <message>
+        <source>Today</source>
+        <translation>今天</translation>
+    </message>
+    <message>
+        <source>Last 7 days</source>
+        <translation>最近 7 天</translation>
+    </message>
+    <message>
+        <source>This month</source>
+        <translation>本月</translation>
+    </message>
+    <message>
+        <source>Last month</source>
+        <translation>上月</translation>
+    </message>
+    <message>
+        <source>Last 12 months</source>
+        <translation>最近 12 个月</translation>
+    </message>
+    <message>
+        <source>Tracking since:</source>
+        <translation>统计开始于：</translation>
+    </message>
+    <message>
+        <source>By month</source>
+        <translation>按月</translation>
+    </message>
+    <message>
+        <source>Month</source>
+        <translation>月份</translation>
+    </message>
+    <message>
+        <source>Downloaded</source>
+        <translation>已下载</translation>
+    </message>
+    <message>
+        <source>Uploaded</source>
+        <translation>已上传</translation>
+    </message>
+    <message>
+        <source>Share ratio</source>
+        <translation>分享率</translation>
+    </message>
+    <message>
+        <source>WebUI downloads added, this month</source>
+        <translation>通过 WebUI 添加的下载，本月</translation>
+    </message>
+    <message>
+        <source>Counts the requests that added a download. Apps without a login, such as Sonarr and Radarr, are shown as (localhost). Downloads added in the desktop window are not counted.</source>
+        <translation>统计添加了下载的请求。没有登录的应用（如 Sonarr 和 Radarr）显示为 (localhost)。在桌面窗口中添加的下载不计入。</translation>
+    </message>
+    <message>
+        <source>Technical</source>
+        <translation>技术信息</translation>
+    </message>
+    <message>
+        <source>Disk</source>
+        <translation>磁盘</translation>
+    </message>
+    <message>
+        <source>Peers waiting on disk writes:</source>
+        <translation>等待写入磁盘的用户：</translation>
+    </message>
+    <message>
+        <source>Peers waiting on disk reads:</source>
+        <translation>等待读取磁盘的用户：</translation>
+    </message>
+    <message>
+        <source>Network</source>
+        <translation>网络</translation>
+    </message>
+    <message>
+        <source>DHT nodes:</source>
+        <translation>DHT 节点：</translation>
+    </message>
+    <message>
+        <source>Data discarded this session:</source>
+        <translation>本次会话丢弃的数据：</translation>
+    </message>
+    <message>
+        <source>Before tracking began</source>
+        <translation>开始统计之前</translation>
+    </message>
+    <message>
+        <source>Nothing added yet</source>
+        <translation>尚未添加任何内容</translation>
+    </message>
+    <message>
+        <source>Off</source>
+        <translation>关闭</translation>
     </message>
 </context>
 <context>
@@ -12101,6 +12961,22 @@ Please choose a different name and try again.</source>
     <message>
         <source>Priority by shown file order</source>
         <translation type="vanished">按文件顺序显示的优先级</translation>
+    </message>
+    <message>
+        <source>Reset auto width</source>
+        <translation>重置自动列宽</translation>
+    </message>
+    <message>
+        <source>Fit all non-hidden columns to their contents again, and forget the widths that were set by hand</source>
+        <translation>让所有可见列重新适应内容，并忘记手动设置的宽度</translation>
+    </message>
+    <message>
+        <source>Reset auto width</source>
+        <translation>重置自动列宽</translation>
+    </message>
+    <message>
+        <source>Fit all non-hidden columns to their contents again, and forget the widths that were set by hand</source>
+        <translation>让所有可见列重新适应内容，并忘记手动设置的宽度</translation>
     </message>
 </context>
 <context>
@@ -13185,6 +14061,22 @@ Please choose a different name and try again.</source>
         <source>Column visibility</source>
         <translation>显示列</translation>
     </message>
+    <message>
+        <source>Reset auto width</source>
+        <translation>重置自动列宽</translation>
+    </message>
+    <message>
+        <source>Fit all non-hidden columns to their contents again, and forget the widths that were set by hand</source>
+        <translation>让所有可见列重新适应内容，并忘记手动设置的宽度</translation>
+    </message>
+    <message>
+        <source>Reset auto width</source>
+        <translation>重置自动列宽</translation>
+    </message>
+    <message>
+        <source>Fit all non-hidden columns to their contents again, and forget the widths that were set by hand</source>
+        <translation>让所有可见列重新适应内容，并忘记手动设置的宽度</translation>
+    </message>
 </context>
 <context>
     <name>TrackerStatusFilterWidget</name>
@@ -14051,6 +14943,22 @@ Please choose a different name and try again.</source>
         <source>Super seeding mode</source>
         <translation>超级做种模式</translation>
     </message>
+    <message>
+        <source>Reset auto width</source>
+        <translation>重置自动列宽</translation>
+    </message>
+    <message>
+        <source>Fit all non-hidden columns to their contents again, and forget the widths that were set by hand</source>
+        <translation>让所有可见列重新适应内容，并忘记手动设置的宽度</translation>
+    </message>
+    <message>
+        <source>Reset auto width</source>
+        <translation>重置自动列宽</translation>
+    </message>
+    <message>
+        <source>Fit all non-hidden columns to their contents again, and forget the widths that were set by hand</source>
+        <translation>让所有可见列重新适应内容，并忘记手动设置的宽度</translation>
+    </message>
 </context>
 <context>
     <name>UIThemeDialog</name>
@@ -14385,6 +15293,46 @@ Please choose a different name and try again.</source>
         <source>WebAPI login failure. Reason: invalid credentials, attempt count: %1, IP: %2, username: %3</source>
         <translation>WebAPI 登录失败。原因：凭证无效，尝试次数：%1，IP：%2，用户名：%3</translation>
     </message>
+    <message>
+        <source>Something went wrong on the server. Details are in qBittorrent&apos;s log.</source>
+        <translation>服务器出错了。详情请查看 qBittorrent 的日志。</translation>
+    </message>
+    <message>
+        <source>This account is locked after too many failed login attempts. Try again in %1 minute(s).</source>
+        <translation>由于登录失败次数过多，此账户已被锁定。请在 %1 分钟后重试。</translation>
+    </message>
+    <message>
+        <source>Your role (%1) doesn&apos;t allow this: %2.</source>
+        <translation>您的角色 (%1) 不允许此操作：%2。</translation>
+    </message>
+    <message>
+        <source>Only an admin can remove the tag that says who added a torrent.</source>
+        <translation>只有管理员才能移除标明谁添加了 torrent 的标签。</translation>
+    </message>
+    <message>
+        <source>Only an admin can clear or replace all tags of a torrent that has a tag saying who added it.</source>
+        <translation>只有管理员才能清除或替换带有添加者标签的 torrent 的所有标签。</translation>
+    </message>
+    <message>
+        <source>Something went wrong on the server. Details are in qBittorrent&apos;s log.</source>
+        <translation>服务器出错了。详情请查看 qBittorrent 的日志。</translation>
+    </message>
+    <message>
+        <source>This account is locked after too many failed login attempts. Try again in %1 minute(s).</source>
+        <translation>由于登录失败次数过多，此账户已被锁定。请在 %1 分钟后重试。</translation>
+    </message>
+    <message>
+        <source>Your role (%1) doesn&apos;t allow this: %2.</source>
+        <translation>您的角色 (%1) 不允许此操作：%2。</translation>
+    </message>
+    <message>
+        <source>Only an admin can remove the tag that says who added a torrent.</source>
+        <translation>只有管理员才能移除标明谁添加了 torrent 的标签。</translation>
+    </message>
+    <message>
+        <source>Only an admin can clear or replace all tags of a torrent that has a tag saying who added it.</source>
+        <translation>只有管理员才能清除或替换带有添加者标签的 torrent 的所有标签。</translation>
+    </message>
 </context>
 <context>
     <name>WebUI</name>
@@ -14524,6 +15472,669 @@ Please choose a different name and try again.</source>
         <source>&lt; 1m</source>
         <comment>&lt; 1 minute</comment>
         <translation>&lt; 1 分钟</translation>
+    </message>
+</context>
+<context>
+    <name>UpdateInstaller</name>
+    <message>
+        <source>Kettle Edition update</source>
+        <translation>Kettle Edition 更新</translation>
+    </message>
+    <message>
+        <source>Kettle Edition was updated to %1.</source>
+        <translation>Kettle Edition 已更新到 %1。</translation>
+    </message>
+    <message>
+        <source>Kettle Edition updated</source>
+        <translation>Kettle Edition 已更新</translation>
+    </message>
+    <message>
+        <source>Downloading Kettle Edition %1 (%2 changed files).</source>
+        <translation>正在下载 Kettle Edition %1（%2 个已更改的文件）。</translation>
+    </message>
+    <message>
+        <source>Kettle Edition %1 is downloaded and ready to install.</source>
+        <translation>Kettle Edition %1 已下载，可以安装。</translation>
+    </message>
+    <message>
+        <source>Kettle Edition update</source>
+        <translation>Kettle Edition 更新</translation>
+    </message>
+    <message>
+        <source>Kettle Edition was updated to %1.</source>
+        <translation>Kettle Edition 已更新到 %1。</translation>
+    </message>
+    <message>
+        <source>Kettle Edition updated</source>
+        <translation>Kettle Edition 已更新</translation>
+    </message>
+    <message>
+        <source>Downloading Kettle Edition %1 (%2 changed files).</source>
+        <translation>正在下载 Kettle Edition %1（%2 个已更改的文件）。</translation>
+    </message>
+    <message>
+        <source>Kettle Edition %1 is downloaded and ready to install.</source>
+        <translation>Kettle Edition %1 已下载，可以安装。</translation>
+    </message>
+</context>
+<context>
+    <name>UserAccountDialog</name>
+    <message>
+        <source>User</source>
+        <translation>用户</translation>
+    </message>
+    <message>
+        <source>Username:</source>
+        <translation>用户名：</translation>
+    </message>
+    <message>
+        <source>Role:</source>
+        <translation>角色：</translation>
+    </message>
+    <message>
+        <source>Password:</source>
+        <translation>密码：</translation>
+    </message>
+    <message>
+        <source>Confirm password:</source>
+        <translation>确认密码：</translation>
+    </message>
+    <message>
+        <source>Disable this account</source>
+        <translation>禁用此账户</translation>
+    </message>
+    <message>
+        <source>Edit User</source>
+        <translation>编辑用户</translation>
+    </message>
+    <message>
+        <source>Leave empty to keep the current password</source>
+        <translation>留空以保留当前密码</translation>
+    </message>
+    <message>
+        <source>Add User</source>
+        <translation>添加用户</translation>
+    </message>
+    <message>
+        <source>At least %1 characters</source>
+        <translation>至少 %1 个字符</translation>
+    </message>
+    <message>
+        <source>Enter a username.</source>
+        <translation>请输入用户名。</translation>
+    </message>
+    <message>
+        <source>The password must be at least %1 characters long.</source>
+        <translation>密码长度至少为 %1 个字符。</translation>
+    </message>
+    <message>
+        <source>The passwords don&apos;t match.</source>
+        <translation>两次输入的密码不一致。</translation>
+    </message>
+    <message>
+        <source>User</source>
+        <translation>用户</translation>
+    </message>
+    <message>
+        <source>Username:</source>
+        <translation>用户名：</translation>
+    </message>
+    <message>
+        <source>Role:</source>
+        <translation>角色：</translation>
+    </message>
+    <message>
+        <source>Password:</source>
+        <translation>密码：</translation>
+    </message>
+    <message>
+        <source>Confirm password:</source>
+        <translation>确认密码：</translation>
+    </message>
+    <message>
+        <source>Disable this account</source>
+        <translation>禁用此账户</translation>
+    </message>
+    <message>
+        <source>Edit User</source>
+        <translation>编辑用户</translation>
+    </message>
+    <message>
+        <source>Leave empty to keep the current password</source>
+        <translation>留空以保留当前密码</translation>
+    </message>
+    <message>
+        <source>Add User</source>
+        <translation>添加用户</translation>
+    </message>
+    <message>
+        <source>At least %1 characters</source>
+        <translation>至少 %1 个字符</translation>
+    </message>
+    <message>
+        <source>Enter a username.</source>
+        <translation>请输入用户名。</translation>
+    </message>
+    <message>
+        <source>The password must be at least %1 characters long.</source>
+        <translation>密码长度至少为 %1 个字符。</translation>
+    </message>
+    <message>
+        <source>The passwords don&apos;t match.</source>
+        <translation>两次输入的密码不一致。</translation>
+    </message>
+</context>
+<context>
+    <name>UserAccountsWidget</name>
+    <message>
+        <source>User Accounts</source>
+        <translation>用户账户</translation>
+    </message>
+    <message>
+        <source>Users</source>
+        <translation>用户</translation>
+    </message>
+    <message>
+        <source>People who can log in to the WebUI with their own username and password.</source>
+        <translation>可以用自己的用户名和密码登录 WebUI 的人。</translation>
+    </message>
+    <message>
+        <source>Add User...</source>
+        <translation>添加用户...</translation>
+    </message>
+    <message>
+        <source>Edit...</source>
+        <translation>编辑...</translation>
+    </message>
+    <message>
+        <source>Remove</source>
+        <translation>移除</translation>
+    </message>
+    <message>
+        <source>Roles</source>
+        <translation>角色</translation>
+    </message>
+    <message>
+        <source>A role decides what its users are allowed to do.</source>
+        <translation>角色决定其用户可以做什么。</translation>
+    </message>
+    <message>
+        <source>Add Role...</source>
+        <translation>添加角色...</translation>
+    </message>
+    <message>
+        <source>Logged In</source>
+        <translation>已登录</translation>
+    </message>
+    <message>
+        <source>Browsers and devices where someone is logged in with a user account.</source>
+        <translation>有人使用用户账户登录的浏览器和设备。</translation>
+    </message>
+    <message>
+        <source>Log Out</source>
+        <translation>注销</translation>
+    </message>
+    <message>
+        <source>Username</source>
+        <translation>用户名</translation>
+    </message>
+    <message>
+        <source>Role</source>
+        <translation>角色</translation>
+    </message>
+    <message>
+        <source>Status</source>
+        <translation>状态</translation>
+    </message>
+    <message>
+        <source>Last login</source>
+        <translation>上次登录</translation>
+    </message>
+    <message>
+        <source>Created</source>
+        <translation>创建时间</translation>
+    </message>
+    <message>
+        <source>Name</source>
+        <translation>名称</translation>
+    </message>
+    <message>
+        <source>Description</source>
+        <translation>描述</translation>
+    </message>
+    <message>
+        <source>Permissions</source>
+        <translation>权限</translation>
+    </message>
+    <message>
+        <source>User</source>
+        <translation>用户</translation>
+    </message>
+    <message>
+        <source>Browser</source>
+        <translation>浏览器</translation>
+    </message>
+    <message>
+        <source>Logged in</source>
+        <translation>登录时间</translation>
+    </message>
+    <message>
+        <source>Last active</source>
+        <translation>最后活动</translation>
+    </message>
+    <message>
+        <source>Expires</source>
+        <translation>到期时间</translation>
+    </message>
+    <message>
+        <source>The user database could not be opened. See the Execution Log for details.</source>
+        <translation>无法打开用户数据库。详情请查看执行日志。</translation>
+    </message>
+    <message>
+        <source>Disabled</source>
+        <translation>已禁用</translation>
+    </message>
+    <message>
+        <source>Enabled</source>
+        <translation>已启用</translation>
+    </message>
+    <message>
+        <source>Never</source>
+        <translation>从不</translation>
+    </message>
+    <message>
+        <source>No accounts yet, so everyone still uses the shared WebUI login. Add an Admin account first.</source>
+        <translation>目前还没有账户，所以所有人仍使用共享的 WebUI 登录。请先添加管理员账户。</translation>
+    </message>
+    <message>
+        <source>Couldn&apos;t read the user database. %1</source>
+        <translation>无法读取用户数据库。%1</translation>
+    </message>
+    <message>
+        <source>Remove user</source>
+        <translation>移除用户</translation>
+    </message>
+    <message>
+        <source>Are you sure you want to remove the user &apos;%1&apos;?</source>
+        <translation>确定要移除用户“%1”吗？</translation>
+    </message>
+    <message>
+        <source>Remove role</source>
+        <translation>移除角色</translation>
+    </message>
+    <message>
+        <source>Are you sure you want to remove the role &apos;%1&apos;?</source>
+        <translation>确定要移除角色“%1”吗？</translation>
+    </message>
+    <message>
+        <source>Enable</source>
+        <translation>启用</translation>
+    </message>
+    <message>
+        <source>Disable</source>
+        <translation>禁用</translation>
+    </message>
+    <message>
+        <source>Log Out Everywhere</source>
+        <translation>在所有位置注销</translation>
+    </message>
+    <message>
+        <source>User Accounts</source>
+        <translation>用户账户</translation>
+    </message>
+    <message>
+        <source>Users</source>
+        <translation>用户</translation>
+    </message>
+    <message>
+        <source>People who can log in to the WebUI with their own username and password.</source>
+        <translation>可以用自己的用户名和密码登录 WebUI 的人。</translation>
+    </message>
+    <message>
+        <source>Add User...</source>
+        <translation>添加用户...</translation>
+    </message>
+    <message>
+        <source>Edit...</source>
+        <translation>编辑...</translation>
+    </message>
+    <message>
+        <source>Remove</source>
+        <translation>移除</translation>
+    </message>
+    <message>
+        <source>Roles</source>
+        <translation>角色</translation>
+    </message>
+    <message>
+        <source>A role decides what its users are allowed to do.</source>
+        <translation>角色决定其用户可以做什么。</translation>
+    </message>
+    <message>
+        <source>Add Role...</source>
+        <translation>添加角色...</translation>
+    </message>
+    <message>
+        <source>Logged In</source>
+        <translation>已登录</translation>
+    </message>
+    <message>
+        <source>Browsers and devices where someone is logged in with a user account.</source>
+        <translation>有人使用用户账户登录的浏览器和设备。</translation>
+    </message>
+    <message>
+        <source>Log Out</source>
+        <translation>注销</translation>
+    </message>
+    <message>
+        <source>Username</source>
+        <translation>用户名</translation>
+    </message>
+    <message>
+        <source>Role</source>
+        <translation>角色</translation>
+    </message>
+    <message>
+        <source>Status</source>
+        <translation>状态</translation>
+    </message>
+    <message>
+        <source>Last login</source>
+        <translation>上次登录</translation>
+    </message>
+    <message>
+        <source>Created</source>
+        <translation>创建时间</translation>
+    </message>
+    <message>
+        <source>Name</source>
+        <translation>名称</translation>
+    </message>
+    <message>
+        <source>Description</source>
+        <translation>描述</translation>
+    </message>
+    <message>
+        <source>Permissions</source>
+        <translation>权限</translation>
+    </message>
+    <message>
+        <source>User</source>
+        <translation>用户</translation>
+    </message>
+    <message>
+        <source>Browser</source>
+        <translation>浏览器</translation>
+    </message>
+    <message>
+        <source>Logged in</source>
+        <translation>登录时间</translation>
+    </message>
+    <message>
+        <source>Last active</source>
+        <translation>最后活动</translation>
+    </message>
+    <message>
+        <source>Expires</source>
+        <translation>到期时间</translation>
+    </message>
+    <message>
+        <source>The user database could not be opened. See the Execution Log for details.</source>
+        <translation>无法打开用户数据库。详情请查看执行日志。</translation>
+    </message>
+    <message>
+        <source>Disabled</source>
+        <translation>已禁用</translation>
+    </message>
+    <message>
+        <source>Enabled</source>
+        <translation>已启用</translation>
+    </message>
+    <message>
+        <source>Never</source>
+        <translation>从不</translation>
+    </message>
+    <message>
+        <source>No accounts yet, so everyone still uses the shared WebUI login. Add an Admin account first.</source>
+        <translation>目前还没有账户，所以所有人仍使用共享的 WebUI 登录。请先添加管理员账户。</translation>
+    </message>
+    <message>
+        <source>Couldn&apos;t read the user database. %1</source>
+        <translation>无法读取用户数据库。%1</translation>
+    </message>
+    <message>
+        <source>Remove user</source>
+        <translation>移除用户</translation>
+    </message>
+    <message>
+        <source>Are you sure you want to remove the user &apos;%1&apos;?</source>
+        <translation>确定要移除用户“%1”吗？</translation>
+    </message>
+    <message>
+        <source>Remove role</source>
+        <translation>移除角色</translation>
+    </message>
+    <message>
+        <source>Are you sure you want to remove the role &apos;%1&apos;?</source>
+        <translation>确定要移除角色“%1”吗？</translation>
+    </message>
+    <message>
+        <source>Enable</source>
+        <translation>启用</translation>
+    </message>
+    <message>
+        <source>Disable</source>
+        <translation>禁用</translation>
+    </message>
+    <message>
+        <source>Log Out Everywhere</source>
+        <translation>在所有位置注销</translation>
+    </message>
+</context>
+<context>
+    <name>UserRoleDialog</name>
+    <message>
+        <source>Role</source>
+        <translation>角色</translation>
+    </message>
+    <message>
+        <source>Name:</source>
+        <translation>名称：</translation>
+    </message>
+    <message>
+        <source>Description:</source>
+        <translation>描述：</translation>
+    </message>
+    <message>
+        <source>Gives control over the PC or qBittorrent itself.</source>
+        <translation>授予对电脑或 qBittorrent 本身的控制权。</translation>
+    </message>
+    <message>
+        <source>Add Role</source>
+        <translation>添加角色</translation>
+    </message>
+    <message>
+        <source>Edit Role</source>
+        <translation>编辑角色</translation>
+    </message>
+    <message>
+        <source>Enter a role name.</source>
+        <translation>请输入角色名称。</translation>
+    </message>
+    <message>
+        <source>Role</source>
+        <translation>角色</translation>
+    </message>
+    <message>
+        <source>Name:</source>
+        <translation>名称：</translation>
+    </message>
+    <message>
+        <source>Description:</source>
+        <translation>描述：</translation>
+    </message>
+    <message>
+        <source>Gives control over the PC or qBittorrent itself.</source>
+        <translation>授予对电脑或 qBittorrent 本身的控制权。</translation>
+    </message>
+    <message>
+        <source>Add Role</source>
+        <translation>添加角色</translation>
+    </message>
+    <message>
+        <source>Edit Role</source>
+        <translation>编辑角色</translation>
+    </message>
+    <message>
+        <source>Enter a role name.</source>
+        <translation>请输入角色名称。</translation>
+    </message>
+</context>
+<context>
+    <name>WebUIActivityWidget</name>
+    <message>
+        <source>All</source>
+        <translation>全部</translation>
+    </message>
+    <message>
+        <source>Filter activity</source>
+        <translation>筛选活动</translation>
+    </message>
+    <message>
+        <source>Export...</source>
+        <translation>导出...</translation>
+    </message>
+    <message>
+        <source>User:</source>
+        <translation>用户：</translation>
+    </message>
+    <message>
+        <source>Category:</source>
+        <translation>分类：</translation>
+    </message>
+    <message>
+        <source>Result:</source>
+        <translation>结果：</translation>
+    </message>
+    <message>
+        <source>Time</source>
+        <translation>时间</translation>
+    </message>
+    <message>
+        <source>User</source>
+        <translation>用户</translation>
+    </message>
+    <message>
+        <source>Role</source>
+        <translation>角色</translation>
+    </message>
+    <message>
+        <source>Category</source>
+        <translation>分类</translation>
+    </message>
+    <message>
+        <source>Action</source>
+        <translation>操作</translation>
+    </message>
+    <message>
+        <source>Result</source>
+        <translation>结果</translation>
+    </message>
+    <message>
+        <source>The user database could not be opened. See the General tab for details.</source>
+        <translation>无法打开用户数据库。详情请查看“常规”选项卡。</translation>
+    </message>
+    <message>
+        <source>Results (showing %1 out of %2)</source>
+        <translation>结果（显示 %2 项中的 %1 项）</translation>
+    </message>
+    <message>
+        <source>Copy</source>
+        <translation>复制</translation>
+    </message>
+    <message>
+        <source>Export WebUI activity</source>
+        <translation>导出 WebUI 活动</translation>
+    </message>
+    <message>
+        <source>CSV files</source>
+        <translation>CSV 文件</translation>
+    </message>
+    <message>
+        <source>Couldn&apos;t save the file. Reason: %1</source>
+        <translation>无法保存文件。原因：%1</translation>
+    </message>
+    <message>
+        <source>All</source>
+        <translation>全部</translation>
+    </message>
+    <message>
+        <source>Filter activity</source>
+        <translation>筛选活动</translation>
+    </message>
+    <message>
+        <source>Export...</source>
+        <translation>导出...</translation>
+    </message>
+    <message>
+        <source>User:</source>
+        <translation>用户：</translation>
+    </message>
+    <message>
+        <source>Category:</source>
+        <translation>分类：</translation>
+    </message>
+    <message>
+        <source>Result:</source>
+        <translation>结果：</translation>
+    </message>
+    <message>
+        <source>Time</source>
+        <translation>时间</translation>
+    </message>
+    <message>
+        <source>User</source>
+        <translation>用户</translation>
+    </message>
+    <message>
+        <source>Role</source>
+        <translation>角色</translation>
+    </message>
+    <message>
+        <source>Category</source>
+        <translation>分类</translation>
+    </message>
+    <message>
+        <source>Action</source>
+        <translation>操作</translation>
+    </message>
+    <message>
+        <source>Result</source>
+        <translation>结果</translation>
+    </message>
+    <message>
+        <source>The user database could not be opened. See the General tab for details.</source>
+        <translation>无法打开用户数据库。详情请查看“常规”选项卡。</translation>
+    </message>
+    <message>
+        <source>Results (showing %1 out of %2)</source>
+        <translation>结果（显示 %2 项中的 %1 项）</translation>
+    </message>
+    <message>
+        <source>Copy</source>
+        <translation>复制</translation>
+    </message>
+    <message>
+        <source>Export WebUI activity</source>
+        <translation>导出 WebUI 活动</translation>
+    </message>
+    <message>
+        <source>CSV files</source>
+        <translation>CSV 文件</translation>
+    </message>
+    <message>
+        <source>Couldn&apos;t save the file. Reason: %1</source>
+        <translation>无法保存文件。原因：%1</translation>
     </message>
 </context>
 </TS>

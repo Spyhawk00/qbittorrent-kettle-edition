@@ -223,6 +223,85 @@ The piece hash will be checked when it is requested for the first time by a peer
         <source>%1 needed · %2 free</source>
         <translation type="unfinished" />
     </message>
+    <message>
+        <source>Don&apos;t create subfolder</source>
+        <translation>אל תיצור תת־תיקייה</translation>
+    </message>
+    <message>
+        <source>Never show again</source>
+        <translation>אל תראה שוב אף פעם</translation>
+    </message>
+    <message>
+        <source>Select None</source>
+        <translation>בחר כלום</translation>
+    </message>
+    <message>
+        <source>Torrent options</source>
+        <translation>אפשרויות טורנט</translation>
+    </message>
+    <message>
+        <source>Your role saves torrents in the default folders.</source>
+        <translation>התפקיד שלך שומר טורנטים בתיקיות ברירת המחדל.</translation>
+    </message>
+</context>
+<context>
+    <name>AdvancedSettings</name>
+    <message>
+        <source>General</source>
+        <translation>כללי</translation>
+    </message>
+    <message>
+        <source>Network</source>
+        <translation>רשת</translation>
+    </message>
+    <message>
+        <source>Storage</source>
+        <translation>אחסון</translation>
+    </message>
+    <message>
+        <source>Peers and trackers</source>
+        <translation>עמיתים ועוקבנים</translation>
+    </message>
+    <message>
+        <source>Program behavior</source>
+        <translation>התנהגות התוכנה</translation>
+    </message>
+    <message>
+        <source>Display and notifications</source>
+        <translation>תצוגה והתראות</translation>
+    </message>
+    <message>
+        <source>Network connection</source>
+        <translation>חיבור לרשת</translation>
+    </message>
+    <message>
+        <source>Security and privacy</source>
+        <translation>אבטחה ופרטיות</translation>
+    </message>
+    <message>
+        <source>Connection tuning</source>
+        <translation>כוונון החיבור</translation>
+    </message>
+    <message>
+        <source>Saving and torrent files</source>
+        <translation>שמירה וקובצי טורנט</translation>
+    </message>
+    <message>
+        <source>Disk and memory</source>
+        <translation>דיסק וזיכרון</translation>
+    </message>
+    <message>
+        <source>Trackers</source>
+        <translation>עוקבנים</translation>
+    </message>
+    <message>
+        <source>Peers and seeding</source>
+        <translation>עמיתים והפצה</translation>
+    </message>
+    <message>
+        <source>DHT and I2P</source>
+        <translation>DHT ו-I2P</translation>
+    </message>
 </context>
 <context>
     <name>CategoryFilterModel</name>
@@ -623,6 +702,14 @@ The piece hash will be checked when it is requested for the first time by a peer
         <source>More</source>
         <translation>עוד</translation>
     </message>
+    <message>
+        <source>Change Password...</source>
+        <translation>שנה סיסמה...</translation>
+    </message>
+    <message>
+        <source>Signed in as</source>
+        <translation>מחובר בתור</translation>
+    </message>
 </context>
 <context>
     <name>MainWindow</name>
@@ -929,6 +1016,34 @@ The piece hash will be checked when it is requested for the first time by a peer
     <message>
         <source>Resume Session</source>
         <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Global Speed Limits</source>
+        <translation>מגבלות מהירות כלליות</translation>
+    </message>
+    <message>
+        <source>Pause Session</source>
+        <translation>השהה הפעלה</translation>
+    </message>
+    <message>
+        <source>Pause session</source>
+        <translation>השהה הפעלה</translation>
+    </message>
+    <message>
+        <source>Resume Session</source>
+        <translation>המשך הפעלה</translation>
+    </message>
+    <message>
+        <source>Resume session</source>
+        <translation>המשך הפעלה</translation>
+    </message>
+    <message>
+        <source>Your account can&apos;t add torrents.</source>
+        <translation>החשבון שלך אינו יכול להוסיף טורנטים.</translation>
+    </message>
+    <message>
+        <source>[PAUSED]</source>
+        <translation>[מושהה]</translation>
     </message>
 </context>
 <context>
@@ -2515,6 +2630,174 @@ Use ';' to split multiple entries. Can use wildcard '*'.</source>
         <source>a@x.com;b@y.com,c@z.com - send two emails: the first to just a@x.com, the second to both b@y.com and c@z.com</source>
         <translation type="unfinished" />
     </message>
+    <message>
+        <source>0 means users are logged out after the session timeout.</source>
+        <translation>0 פירושו שמשתמשים מנותקים לאחר פסק הזמן של ההפעלה.</translation>
+    </message>
+    <message>
+        <source>Access</source>
+        <translation>גישה</translation>
+    </message>
+    <message>
+        <source>Allow this login when user accounts exist</source>
+        <translation>אפשר כניסה זו כשקיימים חשבונות משתמש</translation>
+    </message>
+    <message>
+        <source>Also save search results</source>
+        <translation>שמור גם תוצאות חיפוש</translation>
+    </message>
+    <message>
+        <source>Also when addition is cancelled</source>
+        <translation>גם כאשר הוספה מבוטלת</translation>
+    </message>
+    <message>
+        <source>Below normal</source>
+        <translation>מתחת לרגילה</translation>
+    </message>
+    <message>
+        <source>Changes to users, roles and logins apply at once.</source>
+        <translation>שינויים במשתמשים, בתפקידים ובכניסות חלים מיד.</translation>
+    </message>
+    <message>
+        <source>Don&apos;t create subfolder</source>
+        <translation>אל תיצור תת־תיקייה</translation>
+    </message>
+    <message>
+        <source>Example:</source>
+        <translation>דוגמה:</translation>
+    </message>
+    <message>
+        <source>I2P (experimental)</source>
+        <translation>I2P (ניסיוני)</translation>
+    </message>
+    <message>
+        <source>Keep WebUI activity log for:</source>
+        <translation>שמור יומן פעילות WebUI למשך:</translation>
+    </message>
+    <message>
+        <source>Keep users logged in for:</source>
+        <translation>השאר משתמשים מחוברים למשך:</translation>
+    </message>
+    <message>
+        <source>Language:</source>
+        <translation>שפה:</translation>
+    </message>
+    <message>
+        <source>Lock account after consecutive failures:</source>
+        <translation>נעל חשבון לאחר כשלונות רצופים:</translation>
+    </message>
+    <message>
+        <source>Logins and Activity Log</source>
+        <translation>כניסות ויומן פעילות</translation>
+    </message>
+    <message>
+        <source>Low</source>
+        <translation>נמוכה</translation>
+    </message>
+    <message>
+        <source>Maximum active checking torrents:</source>
+        <translation>טורנטים נבדקים פעילים מרביים:</translation>
+    </message>
+    <message>
+        <source>Medium</source>
+        <translation>בינונית</translation>
+    </message>
+    <message>
+        <source>No settings match</source>
+        <translation>אין הגדרות תואמות</translation>
+    </message>
+    <message>
+        <source>Process memory priority:</source>
+        <translation>עדיפות זיכרון של התהליך:</translation>
+    </message>
+    <message>
+        <source>Save search tabs</source>
+        <translation>שמור לשוניות חיפוש</translation>
+    </message>
+    <message>
+        <source>Search settings</source>
+        <translation>חיפוש בהגדרות</translation>
+    </message>
+    <message>
+        <source>Service:</source>
+        <translation>שירות:</translation>
+    </message>
+    <message>
+        <source>Show console window</source>
+        <translation>הראה חלון מסוף</translation>
+    </message>
+    <message>
+        <source>Show the window when adding a torrent</source>
+        <translation>הצג את החלון בעת הוספת טורנט</translation>
+    </message>
+    <message>
+        <source>Status bar and log</source>
+        <translation>שורת מצב ויומן</translation>
+    </message>
+    <message>
+        <source>The WebUI activity log can be kept for 1 to 3650 days.</source>
+        <translation>ניתן לשמור את יומן פעילות WebUI בין 1 ל-3650 ימים.</translation>
+    </message>
+    <message>
+        <source>The settings below apply with OK or Apply.</source>
+        <translation>ההגדרות שלהלן חלות באישור או בהחל.</translation>
+    </message>
+    <message>
+        <source>Tip: Encapsulate parameter with quotation marks to avoid text being cut off at whitespace (e.g., &quot;%N&quot;)</source>
+        <translation>עצה: תמצת פרמטר בעזרת סימני ציטוט כדי למנוע ממלל להיחתך בשטח לבן (לדוגמה, &quot;%N&quot;)</translation>
+    </message>
+    <message>
+        <source>Transfer List</source>
+        <translation>רשימת העברות</translation>
+    </message>
+    <message>
+        <source>Until the first user account is created, this login always works.</source>
+        <translation>עד שייווצר חשבון המשתמש הראשון, כניסה זו תמיד פועלת.</translation>
+    </message>
+    <message>
+        <source>User</source>
+        <translation>משתמש</translation>
+    </message>
+    <message>
+        <source>User Accounts</source>
+        <translation>חשבונות משתמש</translation>
+    </message>
+    <message>
+        <source>Users can be kept logged in for 0 to 365 days.</source>
+        <translation>ניתן להשאיר משתמשים מחוברים בין 0 ל-365 ימים.</translation>
+    </message>
+    <message>
+        <source>Very low</source>
+        <translation>נמוכה מאוד</translation>
+    </message>
+    <message>
+        <source>Warning! Data loss possible!</source>
+        <translation>אזהרה! אבדן נתונים אפשרי!</translation>
+    </message>
+    <message>
+        <source>When Default Save/Incomplete Path changed:</source>
+        <translation>כאשר נתיב ברירת מחדל של שמירה/אי־שלמות השתנה:</translation>
+    </message>
+    <message>
+        <source>Whitelist for filtering HTTP Host header values.
+In order to defend against DNS rebinding attack,
+you should put in domain names used by WebUI server.
+
+Use &apos;;&apos; to split multiple entries. Can use wildcard &apos;*&apos;.</source>
+        <translation>רשימה לבנה עבור סינון ערכי כותרת של מארח HTTP.
+על מנת להגן מפני מתקפת קשירה מחדש של DNS,
+אתה צריך להכניס שמות חתום הנמצאים בשימוש ע״י שרת ממשק רשת.
+
+השתמש ב־&apos;;&apos; כדי לפצל כניסות רבות. ניתן להשתמש בתו כללי &apos;*&apos;.</translation>
+    </message>
+    <message>
+        <source>You changed the address, port or HTTPS setting of the WebUI. Saving moves the WebUI, so Options will save, close and reload the page, the same as OK. If the page doesn&apos;t come back, open the WebUI at its new address.\n\nSave anyway?</source>
+        <translation>שינית את הכתובת, היציאה או הגדרת ה-HTTPS של WebUI. השמירה מזיזה את WebUI, ולכן האפשרויות ישמרו, ייסגרו ויטענו את הדף מחדש, כמו באישור. אם הדף לא חוזר, פתח את WebUI בכתובת החדשה.\n\nלשמור בכל זאת?</translation>
+    </message>
+    <message>
+        <source>lock for:</source>
+        <translation>נעל למשך:</translation>
+    </message>
 </context>
 <context>
     <name>PeerListWidget</name>
@@ -3055,6 +3338,142 @@ Use ';' to split multiple entries. Can use wildcard '*'.</source>
     <message>
         <source>The time it takes from receiving a request from a peer until we're sending the response back on the socket</source>
         <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Activity</source>
+        <translation>פעילות</translation>
+    </message>
+    <message>
+        <source>All time</source>
+        <translation>כל הזמן</translation>
+    </message>
+    <message>
+        <source>Before tracking began</source>
+        <translation>לפני שהמעקב התחיל</translation>
+    </message>
+    <message>
+        <source>By month</source>
+        <translation>לפי חודש</translation>
+    </message>
+    <message>
+        <source>Counts the requests that added a download. Apps without a login, such as Sonarr and Radarr, are shown as (localhost). Downloads added in the desktop window are not counted.</source>
+        <translation>סופר בקשות שהוסיפו הורדה. יישומים ללא כניסה, כמו Sonarr ו-Radarr, מוצגים כ-(localhost). הורדות שנוספו בחלון שולחן העבודה אינן נספרות.</translation>
+    </message>
+    <message>
+        <source>Current speed:</source>
+        <translation>מהירות נוכחית:</translation>
+    </message>
+    <message>
+        <source>DHT nodes:</source>
+        <translation>צמתי DHT:</translation>
+    </message>
+    <message>
+        <source>Data discarded this session:</source>
+        <translation>נתונים שנזרקו בהפעלה זו:</translation>
+    </message>
+    <message>
+        <source>Disk</source>
+        <translation>דיסק</translation>
+    </message>
+    <message>
+        <source>History</source>
+        <translation>היסטוריה</translation>
+    </message>
+    <message>
+        <source>Last 12 months</source>
+        <translation>12 החודשים האחרונים</translation>
+    </message>
+    <message>
+        <source>Last 7 days</source>
+        <translation>7 הימים האחרונים</translation>
+    </message>
+    <message>
+        <source>Last month</source>
+        <translation>החודש שעבר</translation>
+    </message>
+    <message>
+        <source>Month</source>
+        <translation>חודש</translation>
+    </message>
+    <message>
+        <source>Nothing added yet</source>
+        <translation>עדיין לא נוסף דבר</translation>
+    </message>
+    <message>
+        <source>Off</source>
+        <translation>כבוי</translation>
+    </message>
+    <message>
+        <source>Overview</source>
+        <translation>סקירה</translation>
+    </message>
+    <message>
+        <source>Peers waiting on disk reads:</source>
+        <translation>עמיתים שממתינים לקריאה מהדיסק:</translation>
+    </message>
+    <message>
+        <source>Peers waiting on disk writes:</source>
+        <translation>עמיתים שממתינים לכתיבה לדיסק:</translation>
+    </message>
+    <message>
+        <source>Period</source>
+        <translation>תקופה</translation>
+    </message>
+    <message>
+        <source>Request latency:</source>
+        <translation>השהיית בקשה:</translation>
+    </message>
+    <message>
+        <source>Running for:</source>
+        <translation>פועל כבר:</translation>
+    </message>
+    <message>
+        <source>Share ratio</source>
+        <translation>יחס שיתוף</translation>
+    </message>
+    <message>
+        <source>Share ratio:</source>
+        <translation>יחס שיתוף:</translation>
+    </message>
+    <message>
+        <source>Technical</source>
+        <translation>טכני</translation>
+    </message>
+    <message>
+        <source>This month</source>
+        <translation>החודש</translation>
+    </message>
+    <message>
+        <source>This session</source>
+        <translation>הפעלה זו</translation>
+    </message>
+    <message>
+        <source>Today</source>
+        <translation>היום</translation>
+    </message>
+    <message>
+        <source>Torrents downloading:</source>
+        <translation>טורנטים בהורדה:</translation>
+    </message>
+    <message>
+        <source>Torrents seeding:</source>
+        <translation>טורנטים בזריעה:</translation>
+    </message>
+    <message>
+        <source>Torrents stopped:</source>
+        <translation>טורנטים שהופסקו:</translation>
+    </message>
+    <message>
+        <source>Torrents with errors:</source>
+        <translation>טורנטים עם שגיאות:</translation>
+    </message>
+    <message>
+        <source>Tracking since:</source>
+        <translation>מעקב מאז:</translation>
+    </message>
+    <message>
+        <source>WebUI downloads added, this month</source>
+        <translation>הורדות שנוספו דרך WebUI, החודש</translation>
     </message>
 </context>
 <context>
@@ -3842,6 +4261,10 @@ Use ';' to split multiple entries. Can use wildcard '*'.</source>
         <source>Content Path</source>
         <translation type="unfinished" />
     </message>
+    <message>
+        <source>Remove all tags from selected torrents?</source>
+        <translation>האם להסיר את כל התגיות מהטורנטים הנבחרים?</translation>
+    </message>
 </context>
 <context>
     <name>UpDownRatioDialog</name>
@@ -3914,6 +4337,10 @@ Use ';' to split multiple entries. Can use wildcard '*'.</source>
     <message>
         <source>Remove tracker</source>
         <translation>הסר עוקבן</translation>
+    </message>
+    <message>
+        <source>This choice is remembered for the next removal.</source>
+        <translation>הבחירה הזו תיזכר להסרה הבאה.</translation>
     </message>
 </context>
 <context>
@@ -4127,6 +4554,34 @@ Use ';' to split multiple entries. Can use wildcard '*'.</source>
         <source>Select plugins</source>
         <translation type="unfinished" />
     </message>
+    <message>
+        <source>Category to search in</source>
+        <translation>קטגוריה לחיפוש</translation>
+    </message>
+    <message>
+        <source>Close the selected search</source>
+        <translation>סגור את החיפוש שנבחר</translation>
+    </message>
+    <message>
+        <source>Empty search pattern</source>
+        <translation>תבנית חיפוש ריקה</translation>
+    </message>
+    <message>
+        <source>Search engines to use</source>
+        <translation>מנועי חיפוש לשימוש</translation>
+    </message>
+    <message>
+        <source>Search for torrents...</source>
+        <translation>חפש טורנטים...</translation>
+    </message>
+    <message>
+        <source>Searches</source>
+        <translation>חיפושים</translation>
+    </message>
+    <message>
+        <source>Type a search above and press Enter.</source>
+        <translation>הקלד חיפוש למעלה ולחץ Enter.</translation>
+    </message>
 </context>
 <context>
     <name>PluginSelectDlg</name>
@@ -4165,6 +4620,10 @@ Use ';' to split multiple entries. Can use wildcard '*'.</source>
     <message>
         <source>Search plugins</source>
         <translation>מתקעי חיפוש</translation>
+    </message>
+    <message>
+        <source>Warning: Be sure to comply with your country&apos;s copyright laws when downloading torrents from any of these search engines.</source>
+        <translation>אזהרה: הייה בטוח להיענות לחוקי זכויות היוצרים של מדינתך בעת הורדת טורנטים מכל אחד ממנועי חיפוש אלו.</translation>
     </message>
 </context>
 <context>
@@ -4388,6 +4847,30 @@ Use ';' to split multiple entries. Can use wildcard '*'.</source>
         <source>qBittorrent icon</source>
         <translation>איקון של qBittorrent</translation>
     </message>
+    <message>
+        <source>Based on:</source>
+        <translation>מבוסס על:</translation>
+    </message>
+    <message>
+        <source>Edition version:</source>
+        <translation>גרסת המהדורה:</translation>
+    </message>
+    <message>
+        <source>Kettle Edition is a personal build of qBittorrent that adds user accounts with roles for the WebUI and the desktop app, an activity log, and an installable WebUI with a phone layout. A kettle is a group of hawks soaring together. This is an unofficial build, not affiliated with the qBittorrent project.</source>
+        <translation>Kettle Edition היא מהדורה אישית של qBittorrent שמוסיפה חשבונות משתמש עם תפקידים ל-WebUI ולאפליקציית שולחן העבודה, יומן פעילות ו-WebUI להתקנה עם פריסה לטלפון. Kettle הוא להקת בזים שמרחפים יחד. זו מהדורה לא רשמית שאינה קשורה לפרויקט qBittorrent.</translation>
+    </message>
+    <message>
+        <source>Maintainer:</source>
+        <translation>מתחזק:</translation>
+    </message>
+    <message>
+        <source>This edition</source>
+        <translation>מהדורה זו</translation>
+    </message>
+    <message>
+        <source>qBittorrent project:</source>
+        <translation>פרויקט qBittorrent:</translation>
+    </message>
 </context>
 <context>
     <name>OptionDialog</name>
@@ -4489,6 +4972,46 @@ Use ';' to split multiple entries. Can use wildcard '*'.</source>
     <message>
         <source>Open shared download window</source>
         <translation type="unfinished" />
+    </message>
+    <message>
+        <source>%1 of %2 shown</source>
+        <translation>מוצגים %1 מתוך %2</translation>
+    </message>
+    <message>
+        <source>%1 of %2 shown (%3 hidden)</source>
+        <translation>מוצגים %1 מתוך %2 (%3 מוסתרים)</translation>
+    </message>
+    <message>
+        <source>Close all searches</source>
+        <translation>סגור את כל החיפושים</translation>
+    </message>
+    <message>
+        <source>Close search</source>
+        <translation>סגור חיפוש</translation>
+    </message>
+    <message>
+        <source>Filter search results...</source>
+        <translation>סנן תוצאות חיפוש…</translation>
+    </message>
+    <message>
+        <source>Finished: %1</source>
+        <translation>הסתיים: %1</translation>
+    </message>
+    <message>
+        <source>Refresh search</source>
+        <translation>רענן חיפוש</translation>
+    </message>
+    <message>
+        <source>Search aborted: %1</source>
+        <translation>החיפוש הופסק: %1</translation>
+    </message>
+    <message>
+        <source>Search returned no results</source>
+        <translation>החיפוש לא הניב תוצאות</translation>
+    </message>
+    <message>
+        <source>Searching: %1</source>
+        <translation>מחפש: %1</translation>
     </message>
 </context>
 <context>
@@ -4627,6 +5150,10 @@ Use ';' to split multiple entries. Can use wildcard '*'.</source>
     <message>
         <source>Blocked opening RSS article URL. Only http:// and https:// links can be opened.</source>
         <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Details</source>
+        <translation>פרטים</translation>
     </message>
 </context>
 <context>
@@ -4905,6 +5432,10 @@ Supports the formats: S01E01, 1x1, 2017.12.31 and 31.12.2017 (Date formats also 
         <source>Import</source>
         <translation type="unfinished" />
     </message>
+    <message>
+        <source>Don&apos;t create subfolder</source>
+        <translation>אל תיצור תת־תיקייה</translation>
+    </message>
 </context>
 <context>
     <name>TrackerFiltersList</name>
@@ -5094,6 +5625,26 @@ Supports the formats: S01E01, 1x1, 2017.12.31 and 31.12.2017 (Date formats also 
         <source>Choose a log level...</source>
         <translation type="unfinished" />
     </message>
+    <message>
+        <source>Export...</source>
+        <translation>ייצא...</translation>
+    </message>
+    <message>
+        <source>Filter activity</source>
+        <translation>סנן פעילות</translation>
+    </message>
+    <message>
+        <source>Result:</source>
+        <translation>תוצאה:</translation>
+    </message>
+    <message>
+        <source>User:</source>
+        <translation>משתמש:</translation>
+    </message>
+    <message>
+        <source>WebUI Activity</source>
+        <translation>פעילות WebUI</translation>
+    </message>
 </context>
 <context>
     <name>TrackersFilterWidget</name>
@@ -5163,6 +5714,14 @@ Supports the formats: S01E01, 1x1, 2017.12.31 and 31.12.2017 (Date formats also 
     <message>
         <source>Torrent share limits</source>
         <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Torrent share limits</source>
+        <translation>מגבלות שיתוף של טורנט</translation>
+    </message>
+    <message>
+        <source>Your role saves torrents in the default folders.</source>
+        <translation>התפקיד שלך שומר טורנטים בתיקיות ברירת המחדל.</translation>
     </message>
 </context>
 <context>
@@ -5262,6 +5821,14 @@ Supports the formats: S01E01, 1x1, 2017.12.31 and 31.12.2017 (Date formats also 
     <message>
         <source>Invalid Username or Password.</source>
         <translation>שם משתמש או סיסמה בלתי תקפים.</translation>
+    </message>
+    <message>
+        <source>A kettle is a group of hawks soaring together.</source>
+        <translation>Kettle הוא להקת בזים שמרחפים יחד.</translation>
+    </message>
+    <message>
+        <source>Sign in</source>
+        <translation>התחבר</translation>
     </message>
 </context>
 <context>
@@ -5470,6 +6037,22 @@ Supports the formats: S01E01, 1x1, 2017.12.31 and 31.12.2017 (Date formats also 
         <source>If checked, filenames starting with a period punctuation mark `.` will not be added to the created torrent.</source>
         <translation type="unfinished" />
     </message>
+    <message>
+        <source>Align to piece boundary for files larger than:</source>
+        <translation>יישר אל גבול חתיכה עבור קבצים שגדולים מן:</translation>
+    </message>
+    <message>
+        <source>Optimize alignment</source>
+        <translation>מטב יישור</translation>
+    </message>
+    <message>
+        <source>Private torrent (Won&apos;t distribute on DHT network)</source>
+        <translation>טורנט פרטי (לא יופץ על רשת DHT)</translation>
+    </message>
+    <message>
+        <source>Start seeding immediately</source>
+        <translation>התחל לזרוע באופן מיידי</translation>
+    </message>
 </context>
 <context>
     <name>DownloadFromURLDialog</name>
@@ -5580,6 +6163,10 @@ Supports the formats: S01E01, 1x1, 2017.12.31 and 31.12.2017 (Date formats also 
         <source>Failed to set speed limits</source>
         <translation type="unfinished" />
     </message>
+    <message>
+        <source>Speed limits</source>
+        <translation>מגבלות מהירות</translation>
+    </message>
 </context>
 <context>
     <name>ListWidget</name>
@@ -5590,6 +6177,10 @@ Supports the formats: S01E01, 1x1, 2017.12.31 and 31.12.2017 (Date formats also 
     <message>
         <source>Resize</source>
         <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Reset Auto Width</source>
+        <translation>אפס רוחב אוטומטי</translation>
     </message>
 </context>
 <context>
@@ -5720,6 +6311,10 @@ Supports the formats: S01E01, 1x1, 2017.12.31 and 31.12.2017 (Date formats also 
         <source>Remove torrent</source>
         <translation type="unfinished" />
     </message>
+    <message>
+        <source>Ratio:</source>
+        <translation>יחס:</translation>
+    </message>
 </context>
 <context>
     <name>TorrentContent</name>
@@ -5730,6 +6325,216 @@ Supports the formats: S01E01, 1x1, 2017.12.31 and 31.12.2017 (Date formats also 
     <message>
         <source>Not available for folders</source>
         <translation type="unfinished" />
+    </message>
+</context>
+<context>
+    <name>UserAccounts</name>
+    <message>
+        <source>(this browser)</source>
+        <translation>(דפדפן זה)</translation>
+    </message>
+    <message>
+        <source>A role decides what its users are allowed to do.</source>
+        <translation>תפקיד קובע מה מותר למשתמשיו לעשות.</translation>
+    </message>
+    <message>
+        <source>Add Role</source>
+        <translation>הוסף תפקיד</translation>
+    </message>
+    <message>
+        <source>Add Role...</source>
+        <translation>הוסף תפקיד...</translation>
+    </message>
+    <message>
+        <source>Add User</source>
+        <translation>הוסף משתמש</translation>
+    </message>
+    <message>
+        <source>Add User...</source>
+        <translation>הוסף משתמש...</translation>
+    </message>
+    <message>
+        <source>Are you sure you want to remove the role &apos;%1&apos;?</source>
+        <translation>האם אתה בטוח שברצונך להסיר את התפקיד &apos;%1&apos;?</translation>
+    </message>
+    <message>
+        <source>Are you sure you want to remove the user &apos;%1&apos;?</source>
+        <translation>האם אתה בטוח שברצונך להסיר את המשתמש &apos;%1&apos;?</translation>
+    </message>
+    <message>
+        <source>At least %1 characters</source>
+        <translation>לפחות %1 תווים</translation>
+    </message>
+    <message>
+        <source>Browser</source>
+        <translation>דפדפן</translation>
+    </message>
+    <message>
+        <source>Browsers and devices where someone is logged in with a user account.</source>
+        <translation>דפדפנים והתקנים שבהם מישהו מחובר עם חשבון משתמש.</translation>
+    </message>
+    <message>
+        <source>Change Password</source>
+        <translation>שנה סיסמה</translation>
+    </message>
+    <message>
+        <source>Confirm password:</source>
+        <translation>אשר סיסמה:</translation>
+    </message>
+    <message>
+        <source>Created</source>
+        <translation>נוצר</translation>
+    </message>
+    <message>
+        <source>Current password:</source>
+        <translation>סיסמה נוכחית:</translation>
+    </message>
+    <message>
+        <source>Description</source>
+        <translation>תיאור</translation>
+    </message>
+    <message>
+        <source>Description:</source>
+        <translation>תיאור:</translation>
+    </message>
+    <message>
+        <source>Disable</source>
+        <translation>השבת</translation>
+    </message>
+    <message>
+        <source>Disable this account</source>
+        <translation>השבת חשבון זה</translation>
+    </message>
+    <message>
+        <source>Edit Role</source>
+        <translation>ערוך תפקיד</translation>
+    </message>
+    <message>
+        <source>Edit User</source>
+        <translation>ערוך משתמש</translation>
+    </message>
+    <message>
+        <source>Edit...</source>
+        <translation>ערוך...</translation>
+    </message>
+    <message>
+        <source>Enable</source>
+        <translation>הפעל</translation>
+    </message>
+    <message>
+        <source>Enter a role name.</source>
+        <translation>הזן שם תפקיד.</translation>
+    </message>
+    <message>
+        <source>Enter a username.</source>
+        <translation>הזן שם משתמש.</translation>
+    </message>
+    <message>
+        <source>Expires</source>
+        <translation>פג תוקף</translation>
+    </message>
+    <message>
+        <source>Gives control over the PC or qBittorrent itself</source>
+        <translation>נותן שליטה במחשב או ב-qBittorrent עצמו</translation>
+    </message>
+    <message>
+        <source>Last active</source>
+        <translation>פעילות אחרונה</translation>
+    </message>
+    <message>
+        <source>Last login</source>
+        <translation>כניסה אחרונה</translation>
+    </message>
+    <message>
+        <source>Leave empty to keep the current password</source>
+        <translation>השאר ריק כדי לשמור את הסיסמה הנוכחית</translation>
+    </message>
+    <message>
+        <source>Log Out</source>
+        <translation>התנתק</translation>
+    </message>
+    <message>
+        <source>Log Out Everywhere</source>
+        <translation>התנתק מכל מקום</translation>
+    </message>
+    <message>
+        <source>Logged In</source>
+        <translation>מחוברים</translation>
+    </message>
+    <message>
+        <source>Logged in</source>
+        <translation>התחבר</translation>
+    </message>
+    <message>
+        <source>New password:</source>
+        <translation>סיסמה חדשה:</translation>
+    </message>
+    <message>
+        <source>No accounts yet, so everyone still uses the shared WebUI login. Add an Admin account first.</source>
+        <translation>עדיין אין חשבונות, ולכן כולם עדיין משתמשים בכניסה המשותפת של WebUI. הוסף קודם חשבון מנהל.</translation>
+    </message>
+    <message>
+        <source>People who can log in to the WebUI with their own username and password.</source>
+        <translation>אנשים שיכולים להיכנס ל-WebUI עם שם משתמש וסיסמה משלהם.</translation>
+    </message>
+    <message>
+        <source>Permissions</source>
+        <translation>הרשאות</translation>
+    </message>
+    <message>
+        <source>Role</source>
+        <translation>תפקיד</translation>
+    </message>
+    <message>
+        <source>Role:</source>
+        <translation>תפקיד:</translation>
+    </message>
+    <message>
+        <source>Roles</source>
+        <translation>תפקידים</translation>
+    </message>
+    <message>
+        <source>The password must be at least %1 characters long.</source>
+        <translation>הסיסמה חייבת להיות באורך של לפחות %1 תווים.</translation>
+    </message>
+    <message>
+        <source>The passwords don&apos;t match.</source>
+        <translation>הסיסמאות אינן תואמות.</translation>
+    </message>
+    <message>
+        <source>User</source>
+        <translation>משתמש</translation>
+    </message>
+    <message>
+        <source>Users</source>
+        <translation>משתמשים</translation>
+    </message>
+    <message>
+        <source>Your password was changed. Other browsers and devices where you were logged in have been logged out.</source>
+        <translation>הסיסמה שלך שונתה. דפדפנים והתקנים אחרים שהיית מחובר בהם נותקו.</translation>
+    </message>
+</context>
+<context>
+    <name>WebUIActivity</name>
+    <message>
+        <source>Action</source>
+        <translation>פעולה</translation>
+    </message>
+    <message>
+        <source>Result</source>
+        <translation>תוצאה</translation>
+    </message>
+    <message>
+        <source>Role</source>
+        <translation>תפקיד</translation>
+    </message>
+    <message>
+        <source>Time</source>
+        <translation>זמן</translation>
+    </message>
+    <message>
+        <source>User</source>
+        <translation>משתמש</translation>
     </message>
 </context>
 </TS>

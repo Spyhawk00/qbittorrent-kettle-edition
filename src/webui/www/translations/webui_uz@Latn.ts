@@ -215,6 +215,141 @@ The piece hash will be checked when it is requested for the first time by a peer
         <source>%1 needed · %2 free</source>
         <translation type="unfinished" />
     </message>
+    <message>
+        <source>All</source>
+        <translation>Hammasi</translation>
+    </message>
+    <message>
+        <source>Automatic</source>
+        <translation>Avtomatik</translation>
+    </message>
+    <message>
+        <source>Category:</source>
+        <translation>Toifa:</translation>
+    </message>
+    <message>
+        <source>Content layout:</source>
+        <translation>Kontent maketi:</translation>
+    </message>
+    <message>
+        <source>Create subfolder</source>
+        <translation>Quyi jild yaratish</translation>
+    </message>
+    <message>
+        <source>Date:</source>
+        <translation>Sana:</translation>
+    </message>
+    <message>
+        <source>Do not download</source>
+        <translation>Yuklab olinmasin</translation>
+    </message>
+    <message>
+        <source>Don&apos;t create subfolder</source>
+        <translation>Quyi jild yaratilmasin</translation>
+    </message>
+    <message>
+        <source>Manual</source>
+        <translation>Qo&apos;llanma</translation>
+    </message>
+    <message>
+        <source>N/A</source>
+        <translation>Yo&apos;q</translation>
+    </message>
+    <message>
+        <source>Never show again</source>
+        <translation>Boshqa ko‘rsatilmasin</translation>
+    </message>
+    <message>
+        <source>Not available</source>
+        <translation>Mavjud emas</translation>
+    </message>
+    <message>
+        <source>Original</source>
+        <translation>Asli</translation>
+    </message>
+    <message>
+        <source>Save at</source>
+        <translation>Saqlash joyi</translation>
+    </message>
+    <message>
+        <source>Set as default category</source>
+        <translation>Birlamchi toifa qilib belgilash</translation>
+    </message>
+    <message>
+        <source>Size:</source>
+        <translation>Hajmi:</translation>
+    </message>
+    <message>
+        <source>Torrent Management Mode:</source>
+        <translation>Torrent boshqaruvi rejimi</translation>
+    </message>
+    <message>
+        <source>Torrent information</source>
+        <translation>Torrent axboroti</translation>
+    </message>
+    <message>
+        <source>Your role saves torrents in the default folders.</source>
+        <translation>Sizning rolingiz torrentlarni standart jildlarga saqlaydi.</translation>
+    </message>
+</context>
+<context>
+    <name>AdvancedSettings</name>
+    <message>
+        <source>General</source>
+        <translation>Umumiy</translation>
+    </message>
+    <message>
+        <source>Network</source>
+        <translation>Tarmoq</translation>
+    </message>
+    <message>
+        <source>Storage</source>
+        <translation>Saqlash</translation>
+    </message>
+    <message>
+        <source>Peers and trackers</source>
+        <translation>Peerlar va trekerlar</translation>
+    </message>
+    <message>
+        <source>Program behavior</source>
+        <translation>Dastur xatti-harakati</translation>
+    </message>
+    <message>
+        <source>Display and notifications</source>
+        <translation>Koʻrsatish va bildirishnomalar</translation>
+    </message>
+    <message>
+        <source>Network connection</source>
+        <translation>Tarmoq ulanishi</translation>
+    </message>
+    <message>
+        <source>Security and privacy</source>
+        <translation>Xavfsizlik va maxfiylik</translation>
+    </message>
+    <message>
+        <source>Connection tuning</source>
+        <translation>Ulanishni sozlash</translation>
+    </message>
+    <message>
+        <source>Saving and torrent files</source>
+        <translation>Saqlash va torrent fayllar</translation>
+    </message>
+    <message>
+        <source>Disk and memory</source>
+        <translation>Disk va xotira</translation>
+    </message>
+    <message>
+        <source>Trackers</source>
+        <translation>Trekerlar</translation>
+    </message>
+    <message>
+        <source>Peers and seeding</source>
+        <translation>Peerlar va seeding</translation>
+    </message>
+    <message>
+        <source>DHT and I2P</source>
+        <translation>DHT va I2P</translation>
+    </message>
 </context>
 <context>
     <name>CategoryFilterModel</name>
@@ -225,6 +360,10 @@ The piece hash will be checked when it is requested for the first time by a peer
     <message>
         <source>Uncategorized</source>
         <translation type="unfinished" />
+    </message>
+    <message>
+        <source>All</source>
+        <translation>Hammasi</translation>
     </message>
 </context>
 <context>
@@ -680,6 +819,26 @@ The piece hash will be checked when it is requested for the first time by a peer
         <source>More</source>
         <translation>Yana</translation>
     </message>
+    <message>
+        <source>Change Password...</source>
+        <translation>Parolni o&apos;zgartirish...</translation>
+    </message>
+    <message>
+        <source>Open documentation</source>
+        <translation>Qoʻllanmani ochish</translation>
+    </message>
+    <message>
+        <source>Original author</source>
+        <translation>Asl muallif</translation>
+    </message>
+    <message>
+        <source>Signed in as</source>
+        <translation>Kirgan foydalanuvchi</translation>
+    </message>
+    <message>
+        <source>Unknown</source>
+        <translation>Noma&apos;lum</translation>
+    </message>
 </context>
 <context>
     <name>MainWindow</name>
@@ -1027,6 +1186,50 @@ The piece hash will be checked when it is requested for the first time by a peer
     <message>
         <source>Resume Session</source>
         <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Execution Log</source>
+        <translation>Faoliyat logi</translation>
+    </message>
+    <message>
+        <source>Name</source>
+        <translation>Nomi</translation>
+    </message>
+    <message>
+        <source>Pause Session</source>
+        <translation>Seansni to&apos;xtatib turish</translation>
+    </message>
+    <message>
+        <source>Pause session</source>
+        <translation>Seansni to&apos;xtatib turish</translation>
+    </message>
+    <message>
+        <source>Remove</source>
+        <translation>Olib tashlash</translation>
+    </message>
+    <message>
+        <source>Resume Session</source>
+        <translation>Seansni davom ettirish</translation>
+    </message>
+    <message>
+        <source>Resume session</source>
+        <translation>Seansni davom ettirish</translation>
+    </message>
+    <message>
+        <source>Search</source>
+        <translation>Qidiruv</translation>
+    </message>
+    <message>
+        <source>Transfers</source>
+        <translation>Oldi-berdilar</translation>
+    </message>
+    <message>
+        <source>Your account can&apos;t add torrents.</source>
+        <translation>Hisobingiz torrent qo&apos;sha olmaydi.</translation>
+    </message>
+    <message>
+        <source>[PAUSED]</source>
+        <translation>[TO&apos;XTATILGAN]</translation>
     </message>
 </context>
 <context>
@@ -2601,6 +2804,150 @@ Use ';' to split multiple entries. Can use wildcard '*'.</source>
         <source>a@x.com;b@y.com,c@z.com - send two emails: the first to just a@x.com, the second to both b@y.com and c@z.com</source>
         <translation type="unfinished" />
     </message>
+    <message>
+        <source> min</source>
+        <translation>daq</translation>
+    </message>
+    <message>
+        <source>0 means users are logged out after the session timeout.</source>
+        <translation>0 foydalanuvchilar seans vaqti tugagach chiqib ketishini bildiradi.</translation>
+    </message>
+    <message>
+        <source>Access</source>
+        <translation>Kirish huquqi</translation>
+    </message>
+    <message>
+        <source>Allow this login when user accounts exist</source>
+        <translation>Foydalanuvchi hisoblari mavjud bo&apos;lganda ham bu kirishga ruxsat berish</translation>
+    </message>
+    <message>
+        <source>Also save search results</source>
+        <translation>Qidiruv natijalarini ham saqlash</translation>
+    </message>
+    <message>
+        <source>Any interface</source>
+        <translation>Har qanday interfeys</translation>
+    </message>
+    <message>
+        <source>Automatic</source>
+        <translation>Avtomatik</translation>
+    </message>
+    <message>
+        <source>Changes to users, roles and logins apply at once.</source>
+        <translation>Foydalanuvchilar, rollar va kirishlardagi o&apos;zgarishlar darhol qo&apos;llanadi.</translation>
+    </message>
+    <message>
+        <source>Checking</source>
+        <translation>Tekshirish</translation>
+    </message>
+    <message>
+        <source>Create subfolder</source>
+        <translation>Quyi jild yaratish</translation>
+    </message>
+    <message>
+        <source>Don&apos;t create subfolder</source>
+        <translation>Quyi jild yaratilmasin</translation>
+    </message>
+    <message>
+        <source>Enable OS cache</source>
+        <translation>OT keshi ishga tushirilsin</translation>
+    </message>
+    <message>
+        <source>Every day</source>
+        <translation>Har kuni</translation>
+    </message>
+    <message>
+        <source>Files</source>
+        <translation>Fayllar</translation>
+    </message>
+    <message>
+        <source>Keep WebUI activity log for:</source>
+        <translation>WebUI faoliyat jurnalini saqlash:</translation>
+    </message>
+    <message>
+        <source>Keep users logged in for:</source>
+        <translation>Foydalanuvchilarni tizimda saqlash:</translation>
+    </message>
+    <message>
+        <source>Lock account after consecutive failures:</source>
+        <translation>Ketma-ket muvaffaqiyatsizliklardan so&apos;ng hisobni qulflash:</translation>
+    </message>
+    <message>
+        <source>Logins and Activity Log</source>
+        <translation>Kirishlar va faoliyat jurnali</translation>
+    </message>
+    <message>
+        <source>Manual</source>
+        <translation>Qo&apos;llanma</translation>
+    </message>
+    <message>
+        <source>No settings match</source>
+        <translation>Mos sozlama yo&apos;q</translation>
+    </message>
+    <message>
+        <source>Original</source>
+        <translation>Asli</translation>
+    </message>
+    <message>
+        <source>Password:</source>
+        <translation>Parol:</translation>
+    </message>
+    <message>
+        <source>Process memory priority:</source>
+        <translation>Jarayon xotirasi ustuvorligi:</translation>
+    </message>
+    <message>
+        <source>Save search tabs</source>
+        <translation>Qidiruv yorliqlarini saqlash</translation>
+    </message>
+    <message>
+        <source>Search settings</source>
+        <translation>Sozlamalardan qidirish</translation>
+    </message>
+    <message>
+        <source>Show the window when adding a torrent</source>
+        <translation>Torrent qo&apos;shilganda oynani ko&apos;rsatish</translation>
+    </message>
+    <message>
+        <source>Status bar and log</source>
+        <translation>Holat paneli va jurnal</translation>
+    </message>
+    <message>
+        <source>The WebUI activity log can be kept for 1 to 3650 days.</source>
+        <translation>WebUI faoliyat jurnalini 1 dan 3650 kungacha saqlash mumkin.</translation>
+    </message>
+    <message>
+        <source>The settings below apply with OK or Apply.</source>
+        <translation>Quyidagi sozlamalar OK yoki Qo&apos;llash bilan qo&apos;llanadi.</translation>
+    </message>
+    <message>
+        <source>Until the first user account is created, this login always works.</source>
+        <translation>Birinchi foydalanuvchi hisobi yaratilmaguncha bu kirish doim ishlaydi.</translation>
+    </message>
+    <message>
+        <source>User</source>
+        <translation>Foydalanuvchi</translation>
+    </message>
+    <message>
+        <source>User Accounts</source>
+        <translation>Foydalanuvchi hisoblari</translation>
+    </message>
+    <message>
+        <source>Username:</source>
+        <translation>Foydalanuvchi nomi:</translation>
+    </message>
+    <message>
+        <source>Users can be kept logged in for 0 to 365 days.</source>
+        <translation>Foydalanuvchilarni 0 dan 365 kungacha tizimda saqlash mumkin.</translation>
+    </message>
+    <message>
+        <source>You changed the address, port or HTTPS setting of the WebUI. Saving moves the WebUI, so Options will save, close and reload the page, the same as OK. If the page doesn&apos;t come back, open the WebUI at its new address.\n\nSave anyway?</source>
+        <translation>Siz WebUI manzilini, portini yoki HTTPS sozlamasini o&apos;zgartirdingiz. Saqlash WebUI&apos;ni ko&apos;chiradi, shuning uchun Sozlamalar OK kabi saqlaydi, yopiladi va sahifani qayta yuklaydi. Sahifa qaytmasa, WebUI&apos;ni yangi manzilda oching.\n\nBaribir saqlansinmi?</translation>
+    </message>
+    <message>
+        <source>lock for:</source>
+        <translation>qulflash muddati:</translation>
+    </message>
 </context>
 <context>
     <name>PeerListWidget</name>
@@ -2688,6 +3035,14 @@ Use ';' to split multiple entries. Can use wildcard '*'.</source>
         <source>Contribution</source>
         <translation type="unfinished" />
     </message>
+    <message>
+        <source>Files</source>
+        <translation>Fayllar</translation>
+    </message>
+    <message>
+        <source>Uploaded</source>
+        <translation>Yuklangan</translation>
+    </message>
 </context>
 <context>
     <name>PropListDelegate</name>
@@ -2713,6 +3068,10 @@ Use ';' to split multiple entries. Can use wildcard '*'.</source>
     <message>
         <source>Do not download</source>
         <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Do not download</source>
+        <translation>Yuklab olinmasin</translation>
     </message>
 </context>
 <context>
@@ -3029,6 +3388,22 @@ Use ';' to split multiple entries. Can use wildcard '*'.</source>
         <source>Copy download URL</source>
         <translation type="unfinished" />
     </message>
+    <message>
+        <source>Downloaded:</source>
+        <translation>Yuklab olingan:</translation>
+    </message>
+    <message>
+        <source>N/A</source>
+        <translation>Yo&apos;q</translation>
+    </message>
+    <message>
+        <source>Transfer</source>
+        <translation>Uzatish</translation>
+    </message>
+    <message>
+        <source>Uploaded:</source>
+        <translation>Yuklangan:</translation>
+    </message>
 </context>
 <context>
     <name>ScanFoldersModel</name>
@@ -3141,6 +3516,162 @@ Use ';' to split multiple entries. Can use wildcard '*'.</source>
     <message>
         <source>The time it takes from receiving a request from a peer until we're sending the response back on the socket</source>
         <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Activity</source>
+        <translation>Faoliyat</translation>
+    </message>
+    <message>
+        <source>All time</source>
+        <translation>Butun vaqt</translation>
+    </message>
+    <message>
+        <source>Before tracking began</source>
+        <translation>Kuzatuv boshlanishidan oldin</translation>
+    </message>
+    <message>
+        <source>By month</source>
+        <translation>Oylar bo&apos;yicha</translation>
+    </message>
+    <message>
+        <source>Copy</source>
+        <translation>Nusxalash</translation>
+    </message>
+    <message>
+        <source>Counts the requests that added a download. Apps without a login, such as Sonarr and Radarr, are shown as (localhost). Downloads added in the desktop window are not counted.</source>
+        <translation>Yuklama qo&apos;shgan so&apos;rovlarni sanaydi. Sonarr va Radarr kabi kirishsiz ilovalar (localhost) deb ko&apos;rsatiladi. Ish stoli oynasida qo&apos;shilgan yuklamalar sanalmaydi.</translation>
+    </message>
+    <message>
+        <source>Current speed:</source>
+        <translation>Joriy tezlik:</translation>
+    </message>
+    <message>
+        <source>DHT nodes:</source>
+        <translation>DHT tugunlari:</translation>
+    </message>
+    <message>
+        <source>Data discarded this session:</source>
+        <translation>Shu seansda tashlab yuborilgan ma&apos;lumot:</translation>
+    </message>
+    <message>
+        <source>Disk</source>
+        <translation>Disk</translation>
+    </message>
+    <message>
+        <source>Downloaded:</source>
+        <translation>Yuklab olingan:</translation>
+    </message>
+    <message>
+        <source>History</source>
+        <translation>Tarix</translation>
+    </message>
+    <message>
+        <source>Last 12 months</source>
+        <translation>So&apos;nggi 12 oy</translation>
+    </message>
+    <message>
+        <source>Last 7 days</source>
+        <translation>So&apos;nggi 7 kun</translation>
+    </message>
+    <message>
+        <source>Last month</source>
+        <translation>O&apos;tgan oy</translation>
+    </message>
+    <message>
+        <source>Month</source>
+        <translation>Oy</translation>
+    </message>
+    <message>
+        <source>Nothing added yet</source>
+        <translation>Hali hech narsa qo&apos;shilmagan</translation>
+    </message>
+    <message>
+        <source>Off</source>
+        <translation>O&apos;chiq</translation>
+    </message>
+    <message>
+        <source>Overview</source>
+        <translation>Umumiy ko&apos;rinish</translation>
+    </message>
+    <message>
+        <source>Peers waiting on disk reads:</source>
+        <translation>Diskdan o&apos;qishni kutayotgan ulanuvchilar:</translation>
+    </message>
+    <message>
+        <source>Peers waiting on disk writes:</source>
+        <translation>Diskka yozishni kutayotgan ulanuvchilar:</translation>
+    </message>
+    <message>
+        <source>Period</source>
+        <translation>Davr</translation>
+    </message>
+    <message>
+        <source>Request latency:</source>
+        <translation>So&apos;rov kechikishi:</translation>
+    </message>
+    <message>
+        <source>Running for:</source>
+        <translation>Ishlash vaqti:</translation>
+    </message>
+    <message>
+        <source>Share ratio</source>
+        <translation>Ulashish nisbati</translation>
+    </message>
+    <message>
+        <source>Share ratio:</source>
+        <translation>Ulashish nisbati:</translation>
+    </message>
+    <message>
+        <source>Technical</source>
+        <translation>Texnik</translation>
+    </message>
+    <message>
+        <source>This month</source>
+        <translation>Shu oy</translation>
+    </message>
+    <message>
+        <source>This session</source>
+        <translation>Bu seans</translation>
+    </message>
+    <message>
+        <source>Today</source>
+        <translation>Bugun</translation>
+    </message>
+    <message>
+        <source>Torrents downloading:</source>
+        <translation>Yuklab olinayotgan torrentlar:</translation>
+    </message>
+    <message>
+        <source>Torrents seeding:</source>
+        <translation>Tarqatilayotgan torrentlar:</translation>
+    </message>
+    <message>
+        <source>Torrents stopped:</source>
+        <translation>To&apos;xtatilgan torrentlar:</translation>
+    </message>
+    <message>
+        <source>Torrents with errors:</source>
+        <translation>Xatoli torrentlar:</translation>
+    </message>
+    <message>
+        <source>Tracking since:</source>
+        <translation>Kuzatuv boshlangan sana:</translation>
+    </message>
+    <message>
+        <source>Transfer</source>
+        <translation>Uzatish</translation>
+    </message>
+    <message>
+        <source>Uploaded</source>
+        <translation>Yuklangan</translation>
+    </message>
+    <message>
+        <source>Uploaded:</source>
+        <translation>Yuklangan:</translation>
+    </message>
+    <message>
+        <source>WebUI downloads added, this month</source>
+        <translation>WebUI orqali qo&apos;shilgan yuklamalar, shu oy</translation>
     </message>
 </context>
 <context>
@@ -3462,6 +3993,22 @@ Use ';' to split multiple entries. Can use wildcard '*'.</source>
         <source>Created On</source>
         <translation type="unfinished" />
     </message>
+    <message>
+        <source>Category</source>
+        <translation>Toifa</translation>
+    </message>
+    <message>
+        <source>Name</source>
+        <translation>Nomi</translation>
+    </message>
+    <message>
+        <source>Status</source>
+        <translation>Holat</translation>
+    </message>
+    <message>
+        <source>Uploaded</source>
+        <translation>Yuklangan</translation>
+    </message>
 </context>
 <context>
     <name>TrackerListWidget</name>
@@ -3609,6 +4156,26 @@ Use ';' to split multiple entries. Can use wildcard '*'.</source>
         <source>Force reannounce to all trackers</source>
         <translation type="unfinished" />
     </message>
+    <message>
+        <source>Disabled</source>
+        <translation>O&apos;chirilgan</translation>
+    </message>
+    <message>
+        <source>N/A</source>
+        <translation>Yo&apos;q</translation>
+    </message>
+    <message>
+        <source>Name</source>
+        <translation>Nomi</translation>
+    </message>
+    <message>
+        <source>Original</source>
+        <translation>Asli</translation>
+    </message>
+    <message>
+        <source>Status</source>
+        <translation>Holat</translation>
+    </message>
 </context>
 <context>
     <name>TrackersAdditionDialog</name>
@@ -3700,6 +4267,22 @@ Use ';' to split multiple entries. Can use wildcard '*'.</source>
         <source>N/A</source>
         <translation type="unfinished" />
     </message>
+    <message>
+        <source>Checking</source>
+        <translation>Tekshirish</translation>
+    </message>
+    <message>
+        <source>Downloading</source>
+        <translation>Yuklab olinmoqda</translation>
+    </message>
+    <message>
+        <source>N/A</source>
+        <translation>Yo&apos;q</translation>
+    </message>
+    <message>
+        <source>Seeding</source>
+        <translation>Tarqatilmoqda</translation>
+    </message>
 </context>
 <context>
     <name>TransferListFiltersWidget</name>
@@ -3726,6 +4309,10 @@ Use ';' to split multiple entries. Can use wildcard '*'.</source>
     <message>
         <source>Collapse/expand category</source>
         <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Status</source>
+        <translation>Holat</translation>
     </message>
 </context>
 <context>
@@ -3932,6 +4519,30 @@ Use ';' to split multiple entries. Can use wildcard '*'.</source>
         <source>Content Path</source>
         <translation type="unfinished" />
     </message>
+    <message>
+        <source>Category</source>
+        <translation>Toifa</translation>
+    </message>
+    <message>
+        <source>Copy</source>
+        <translation>Nusxalash</translation>
+    </message>
+    <message>
+        <source>Magnet link</source>
+        <translation>Magnet havola</translation>
+    </message>
+    <message>
+        <source>Name</source>
+        <translation>Nomi</translation>
+    </message>
+    <message>
+        <source>New name:</source>
+        <translation>Yangi nomi:</translation>
+    </message>
+    <message>
+        <source>Remove</source>
+        <translation>Olib tashlash</translation>
+    </message>
 </context>
 <context>
     <name>UpDownRatioDialog</name>
@@ -4004,6 +4615,10 @@ Use ';' to split multiple entries. Can use wildcard '*'.</source>
     <message>
         <source>Remove tracker</source>
         <translation type="unfinished" />
+    </message>
+    <message>
+        <source>This choice is remembered for the next removal.</source>
+        <translation>Bu tanlov keyingi olib tashlash uchun eslab qolinadi.</translation>
     </message>
 </context>
 <context>
@@ -4087,6 +4702,10 @@ Use ';' to split multiple entries. Can use wildcard '*'.</source>
     <message>
         <source>%1y %2d</source>
         <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Unknown</source>
+        <translation>Noma&apos;lum</translation>
     </message>
 </context>
 <context>
@@ -4221,6 +4840,42 @@ Use ';' to split multiple entries. Can use wildcard '*'.</source>
         <source>Select plugins</source>
         <translation type="unfinished" />
     </message>
+    <message>
+        <source>Category to search in</source>
+        <translation>Qidiriladigan toifa</translation>
+    </message>
+    <message>
+        <source>Close the selected search</source>
+        <translation>Tanlangan qidiruvni yopish</translation>
+    </message>
+    <message>
+        <source>Search</source>
+        <translation>Qidiruv</translation>
+    </message>
+    <message>
+        <source>Search engines to use</source>
+        <translation>Foydalaniladigan qidiruv tizimlari</translation>
+    </message>
+    <message>
+        <source>Search for torrents...</source>
+        <translation>Torrentlarni qidirish...</translation>
+    </message>
+    <message>
+        <source>Searches</source>
+        <translation>Qidiruvlar</translation>
+    </message>
+    <message>
+        <source>Size:</source>
+        <translation>Hajmi:</translation>
+    </message>
+    <message>
+        <source>Type a search above and press Enter.</source>
+        <translation>Yuqorida qidiruv yozing va Enter bosing.</translation>
+    </message>
+    <message>
+        <source>to</source>
+        <translation>qayerga</translation>
+    </message>
 </context>
 <context>
     <name>PluginSelectDlg</name>
@@ -4260,6 +4915,10 @@ Use ';' to split multiple entries. Can use wildcard '*'.</source>
         <source>Search plugins</source>
         <translation type="unfinished" />
     </message>
+    <message>
+        <source>Enabled</source>
+        <translation>Yoqilgan</translation>
+    </message>
 </context>
 <context>
     <name>SearchResultsTable</name>
@@ -4291,6 +4950,10 @@ Use ';' to split multiple entries. Can use wildcard '*'.</source>
         <source>Engine</source>
         <translation type="unfinished" />
     </message>
+    <message>
+        <source>Name</source>
+        <translation>Nomi</translation>
+    </message>
 </context>
 <context>
     <name>SearchPluginsTable</name>
@@ -4317,6 +4980,14 @@ Use ';' to split multiple entries. Can use wildcard '*'.</source>
     <message>
         <source>No</source>
         <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Enabled</source>
+        <translation>Yoqilgan</translation>
+    </message>
+    <message>
+        <source>Name</source>
+        <translation>Nomi</translation>
     </message>
 </context>
 <context>
@@ -4394,6 +5065,10 @@ Use ';' to split multiple entries. Can use wildcard '*'.</source>
     <message>
         <source>Untagged</source>
         <translation type="unfinished" />
+    </message>
+    <message>
+        <source>All</source>
+        <translation>Hammasi</translation>
     </message>
 </context>
 <context>
@@ -4482,6 +5157,98 @@ Use ';' to split multiple entries. Can use wildcard '*'.</source>
         <source>qBittorrent icon</source>
         <translation type="unfinished" />
     </message>
+    <message>
+        <source>About qBittorrent</source>
+        <translation>qBittorrent haqida</translation>
+    </message>
+    <message>
+        <source>An advanced BitTorrent client programmed in C++, based on Qt toolkit and libtorrent-rasterbar.</source>
+        <translation>C++ tilida Qt tulkit va libtorrent-rasterbar kutubxonalari asosida ishlab chiqilgan kengaytirilgan BitTorrent mijoz dasturi.</translation>
+    </message>
+    <message>
+        <source>Authors</source>
+        <translation>Mualliflar</translation>
+    </message>
+    <message>
+        <source>Based on:</source>
+        <translation>Asos:</translation>
+    </message>
+    <message>
+        <source>Bug Tracker:</source>
+        <translation>Xato kuzatuvchisi:</translation>
+    </message>
+    <message>
+        <source>Current maintainer</source>
+        <translation>Joriy ta&apos;minotchi</translation>
+    </message>
+    <message>
+        <source>E-mail:</source>
+        <translation>E-mail:</translation>
+    </message>
+    <message>
+        <source>Edition version:</source>
+        <translation>Nashr versiyasi:</translation>
+    </message>
+    <message>
+        <source>France</source>
+        <translation>Fransiya</translation>
+    </message>
+    <message>
+        <source>Greece</source>
+        <translation>Gretsiya</translation>
+    </message>
+    <message>
+        <source>Home Page:</source>
+        <translation>Uy sahifasi:</translation>
+    </message>
+    <message>
+        <source>Kettle Edition is a personal build of qBittorrent that adds user accounts with roles for the WebUI and the desktop app, an activity log, and an installable WebUI with a phone layout. A kettle is a group of hawks soaring together. This is an unofficial build, not affiliated with the qBittorrent project.</source>
+        <translation>Kettle Edition — qBittorrent&apos;ning shaxsiy yig&apos;ilmasi bo&apos;lib, WebUI va ish stoli ilovasi uchun rollarga ega foydalanuvchi hisoblarini, faoliyat jurnalini hamda telefon ko&apos;rinishli o&apos;rnatiladigan WebUI&apos;ni qo&apos;shadi. Kettle — birga uchib yuruvchi lochinlar to&apos;dasi. Bu norasmiy yig&apos;ilma bo&apos;lib, qBittorrent loyihasiga aloqasi yo&apos;q.</translation>
+    </message>
+    <message>
+        <source>License</source>
+        <translation>Litsenziya</translation>
+    </message>
+    <message>
+        <source>Maintainer:</source>
+        <translation>Qo&apos;llab-quvvatlovchi:</translation>
+    </message>
+    <message>
+        <source>N/A</source>
+        <translation>Yo&apos;q</translation>
+    </message>
+    <message>
+        <source>Name:</source>
+        <translation>Nomi:</translation>
+    </message>
+    <message>
+        <source>Nationality:</source>
+        <translation>Millati:</translation>
+    </message>
+    <message>
+        <source>Software Used</source>
+        <translation>Foydalanilgan dasturiy ta&apos;minot</translation>
+    </message>
+    <message>
+        <source>Special Thanks</source>
+        <translation>Alohida minnatdorchilik</translation>
+    </message>
+    <message>
+        <source>This edition</source>
+        <translation>Ushbu nashr</translation>
+    </message>
+    <message>
+        <source>Translators</source>
+        <translation>Tarjimonlar</translation>
+    </message>
+    <message>
+        <source>qBittorrent project:</source>
+        <translation>qBittorrent loyihasi:</translation>
+    </message>
+    <message>
+        <source>qBittorrent was built with the following libraries:</source>
+        <translation>qBittorrent quyidagi kutubxonalar bilan ishlab chiqilgan:</translation>
+    </message>
 </context>
 <context>
     <name>OptionDialog</name>
@@ -4496,6 +5263,18 @@ Use ';' to split multiple entries. Can use wildcard '*'.</source>
     <message>
         <source>All IPv4 addresses</source>
         <translation type="unfinished" />
+    </message>
+    <message>
+        <source>All IPv4 addresses</source>
+        <translation>Barcha IPv4 manzillar</translation>
+    </message>
+    <message>
+        <source>All IPv6 addresses</source>
+        <translation>Barcha IPv6 manzillar</translation>
+    </message>
+    <message>
+        <source>All addresses</source>
+        <translation>Barcha manzillar</translation>
     </message>
 </context>
 <context>
@@ -4584,6 +5363,50 @@ Use ';' to split multiple entries. Can use wildcard '*'.</source>
         <source>Open shared download window</source>
         <translation type="unfinished" />
     </message>
+    <message>
+        <source>%1 of %2 shown</source>
+        <translation>%2 tadan %1 tasi ko&apos;rsatilmoqda</translation>
+    </message>
+    <message>
+        <source>%1 of %2 shown (%3 hidden)</source>
+        <translation>%2 tadan %1 tasi ko&apos;rsatilmoqda (%3 tasi yashirin)</translation>
+    </message>
+    <message>
+        <source>Close all searches</source>
+        <translation>Barcha qidiruvlarni yopish</translation>
+    </message>
+    <message>
+        <source>Close search</source>
+        <translation>Qidiruvni yopish</translation>
+    </message>
+    <message>
+        <source>Copy</source>
+        <translation>Nusxalash</translation>
+    </message>
+    <message>
+        <source>Finished: %1</source>
+        <translation>Tugadi: %1</translation>
+    </message>
+    <message>
+        <source>Name</source>
+        <translation>Nomi</translation>
+    </message>
+    <message>
+        <source>Refresh search</source>
+        <translation>Qidiruvni yangilash</translation>
+    </message>
+    <message>
+        <source>Search aborted: %1</source>
+        <translation>Qidiruv to&apos;xtatildi: %1</translation>
+    </message>
+    <message>
+        <source>Searching: %1</source>
+        <translation>Qidirilmoqda: %1</translation>
+    </message>
+    <message>
+        <source>Unknown</source>
+        <translation>Noma&apos;lum</translation>
+    </message>
 </context>
 <context>
     <name>TorrentContentTreeView</name>
@@ -4594,6 +5417,10 @@ Use ';' to split multiple entries. Can use wildcard '*'.</source>
     <message>
         <source>New name:</source>
         <translation type="unfinished" />
+    </message>
+    <message>
+        <source>New name:</source>
+        <translation>Yangi nomi:</translation>
     </message>
 </context>
 <context>
@@ -4721,6 +5548,10 @@ Use ';' to split multiple entries. Can use wildcard '*'.</source>
     <message>
         <source>Blocked opening RSS article URL. Only http:// and https:// links can be opened.</source>
         <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Details</source>
+        <translation>Tafsilotlar</translation>
     </message>
 </context>
 <context>
@@ -4998,6 +5829,138 @@ Supports the formats: S01E01, 1x1, 2017.12.31 and 31.12.2017 (Date formats also 
         <source>Import</source>
         <translation type="unfinished" />
     </message>
+    <message>
+        <source> days</source>
+        <translation> kun</translation>
+    </message>
+    <message>
+        <source> will match 2, 5, 8 through 15, 30 and onward episodes of season one</source>
+        <translation> birinchi faslning 2, 5, 8-15, 30 va undan keyingi qismlariga mos keladi</translation>
+    </message>
+    <message>
+        <source>Add new rule...</source>
+        <translation>Yangi qoida qo‘shish...</translation>
+    </message>
+    <message>
+        <source>Always</source>
+        <translation>Har doim</translation>
+    </message>
+    <message>
+        <source>Apply Rule to Feeds:</source>
+        <translation>Qoidani tasmalarga qo‘llash:</translation>
+    </message>
+    <message>
+        <source>Are you sure you want to remove the selected download rules?</source>
+        <translation>Haqiqatan ham tanlangan yuklab olish qoidalarini o‘chirib tashlamoqchimisiz?</translation>
+    </message>
+    <message>
+        <source>Create subfolder</source>
+        <translation>Quyi jild yaratish</translation>
+    </message>
+    <message>
+        <source>Delete rule</source>
+        <translation>Qoidani o‘chirib tashlash</translation>
+    </message>
+    <message>
+        <source>Don&apos;t create subfolder</source>
+        <translation>Quyi jild yaratilmasin</translation>
+    </message>
+    <message>
+        <source>Download Rules</source>
+        <translation>Yuklab olish qoidalari</translation>
+    </message>
+    <message>
+        <source>Episode Filter:</source>
+        <translation>Qism filtri:</translation>
+    </message>
+    <message>
+        <source>Episode filter rules: </source>
+        <translation>Qism filtri qoidalari:</translation>
+    </message>
+    <message>
+        <source>Example: </source>
+        <translation>Misol:</translation>
+    </message>
+    <message>
+        <source>Filter must end with semicolon</source>
+        <translation>Filtr oxirida nuqta-vergul qo‘yilishi shart</translation>
+    </message>
+    <message>
+        <source>Ignore Subsequent Matches for (0 to Disable)</source>
+        <translation>Hosilaviy mosliklar hisobga olinmasin (0: o‘chirib qo‘yish)</translation>
+    </message>
+    <message>
+        <source>Last Match: %1 days ago</source>
+        <translation>Oxirgi marta %1 kun oldin mos kelgan</translation>
+    </message>
+    <message>
+        <source>Last Match: Unknown</source>
+        <translation>Oxirgi mos kelish sanasi noma’lum</translation>
+    </message>
+    <message>
+        <source>Matches articles based on episode filter.</source>
+        <translation>Qism filtriga asoslangan maqolalar mosligini aniqlaydi.</translation>
+    </message>
+    <message>
+        <source>Matching RSS Articles</source>
+        <translation>RSS maqolalari mosligini aniqlash</translation>
+    </message>
+    <message>
+        <source>Must Contain:</source>
+        <translation>Tarkibida bu bo‘lishi shart:</translation>
+    </message>
+    <message>
+        <source>Must Not Contain:</source>
+        <translation>Tarkibida bu bo‘lmasligi shart:</translation>
+    </message>
+    <message>
+        <source>New rule name</source>
+        <translation>Yangi qoida nomi</translation>
+    </message>
+    <message>
+        <source>Normal range: &lt;b&gt;1x25-40;&lt;/b&gt; matches episodes 25 through 40 of season one</source>
+        <translation>Normal miqyos &lt;b&gt;1x25-40;&lt;/b&gt; birinchi faslning 25-40 qismlariga mos keladi</translation>
+    </message>
+    <message>
+        <source>Original</source>
+        <translation>Asli</translation>
+    </message>
+    <message>
+        <source>Please type the name of the new download rule.</source>
+        <translation>Yangi yuklab olish qoidasi uchun nom kiriting</translation>
+    </message>
+    <message>
+        <source>Please type the new rule name</source>
+        <translation>Yangi qoida nomini kiriting</translation>
+    </message>
+    <message>
+        <source>Rename rule...</source>
+        <translation>Qoida nomini o‘zgartirish...</translation>
+    </message>
+    <message>
+        <source>Rule deletion confirmation</source>
+        <translation>Qoidani o‘chirib tashlashni tasdiqlash</translation>
+    </message>
+    <message>
+        <source>Rule renaming</source>
+        <translation>Qoida ismini o‘zgartirish</translation>
+    </message>
+    <message>
+        <source>Season number is a mandatory non-zero value</source>
+        <translation>Fasl raqamiga nol bo‘lmagan qiymat kiritish shart</translation>
+    </message>
+    <message>
+        <source>Single number: &lt;b&gt;1x25;&lt;/b&gt; matches episode 25 of season one</source>
+        <translation>Bitta son: &lt;b&gt;1x25;&lt;/b&gt; birinchi faslning 25-qismiga mos keladi</translation>
+    </message>
+    <message>
+        <source>Three range types for episodes are supported: </source>
+        <translation>Qismlar uchun uch xildagi miqyos qo‘llanadi:</translation>
+    </message>
+    <message>
+        <source>Use Regular Expressions</source>
+        <translation>Muntazam ifodalar ishlatish</translation>
+    </message>
 </context>
 <context>
     <name>TrackerFiltersList</name>
@@ -5041,6 +6004,10 @@ Supports the formats: S01E01, 1x1, 2017.12.31 and 31.12.2017 (Date formats also 
         <source>Force start torrents</source>
         <translation type="unfinished" />
     </message>
+    <message>
+        <source>All</source>
+        <translation>Hammasi</translation>
+    </message>
 </context>
 <context>
     <name>FeedListWidget</name>
@@ -5051,6 +6018,10 @@ Supports the formats: S01E01, 1x1, 2017.12.31 and 31.12.2017 (Date formats also 
     <message>
         <source>Unread</source>
         <translation type="unfinished" />
+    </message>
+    <message>
+        <source>RSS feeds</source>
+        <translation>RSS tasmalari</translation>
     </message>
 </context>
 <context>
@@ -5187,6 +6158,54 @@ Supports the formats: S01E01, 1x1, 2017.12.31 and 31.12.2017 (Date formats also 
         <source>Choose a log level...</source>
         <translation type="unfinished" />
     </message>
+    <message>
+        <source>All</source>
+        <translation>Hammasi</translation>
+    </message>
+    <message>
+        <source>Blocked IPs</source>
+        <translation>Bloklangan IP manzillari</translation>
+    </message>
+    <message>
+        <source>Category:</source>
+        <translation>Toifa:</translation>
+    </message>
+    <message>
+        <source>Clear</source>
+        <translation>Tozalash</translation>
+    </message>
+    <message>
+        <source>Copy</source>
+        <translation>Nusxalash</translation>
+    </message>
+    <message>
+        <source>Export...</source>
+        <translation>Eksport...</translation>
+    </message>
+    <message>
+        <source>Filter activity</source>
+        <translation>Faoliyatni saralash</translation>
+    </message>
+    <message>
+        <source>Result:</source>
+        <translation>Natija:</translation>
+    </message>
+    <message>
+        <source>Status</source>
+        <translation>Holat</translation>
+    </message>
+    <message>
+        <source>Unknown</source>
+        <translation>Noma&apos;lum</translation>
+    </message>
+    <message>
+        <source>User:</source>
+        <translation>Foydalanuvchi:</translation>
+    </message>
+    <message>
+        <source>WebUI Activity</source>
+        <translation>WebUI faoliyati</translation>
+    </message>
 </context>
 <context>
     <name>TrackersFilterWidget</name>
@@ -5257,6 +6276,14 @@ Supports the formats: S01E01, 1x1, 2017.12.31 and 31.12.2017 (Date formats also 
         <source>Torrent share limits</source>
         <translation type="unfinished" />
     </message>
+    <message>
+        <source>Category:</source>
+        <translation>Toifa:</translation>
+    </message>
+    <message>
+        <source>Your role saves torrents in the default folders.</source>
+        <translation>Sizning rolingiz torrentlarni standart jildlarga saqlaydi.</translation>
+    </message>
 </context>
 <context>
     <name>CookiesDialog</name>
@@ -5291,6 +6318,18 @@ Supports the formats: S01E01, 1x1, 2017.12.31 and 31.12.2017 (Date formats also 
     <message>
         <source>Path</source>
         <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Name</source>
+        <translation>Nomi</translation>
+    </message>
+    <message>
+        <source>Remove</source>
+        <translation>Olib tashlash</translation>
+    </message>
+    <message>
+        <source>Value</source>
+        <translation>Qiymat</translation>
     </message>
 </context>
 <context>
@@ -5355,6 +6394,18 @@ Supports the formats: S01E01, 1x1, 2017.12.31 and 31.12.2017 (Date formats also 
     <message>
         <source>Invalid Username or Password.</source>
         <translation type="unfinished" />
+    </message>
+    <message>
+        <source>A kettle is a group of hawks soaring together.</source>
+        <translation>Kettle — birga uchib yuruvchi lochinlar to&apos;dasi.</translation>
+    </message>
+    <message>
+        <source>Sign in</source>
+        <translation>Kirish</translation>
+    </message>
+    <message>
+        <source>Username</source>
+        <translation>Foydalanuvchi nomi</translation>
     </message>
 </context>
 <context>
@@ -5563,6 +6614,14 @@ Supports the formats: S01E01, 1x1, 2017.12.31 and 31.12.2017 (Date formats also 
         <source>If checked, filenames starting with a period punctuation mark `.` will not be added to the created torrent.</source>
         <translation type="unfinished" />
     </message>
+    <message>
+        <source>N/A</source>
+        <translation>Yo&apos;q</translation>
+    </message>
+    <message>
+        <source>Status</source>
+        <translation>Holat</translation>
+    </message>
 </context>
 <context>
     <name>DownloadFromURLDialog</name>
@@ -5605,6 +6664,10 @@ Supports the formats: S01E01, 1x1, 2017.12.31 and 31.12.2017 (Date formats also 
     <message>
         <source>All torrents will use a single options dialog. Check below to configure each one separately.</source>
         <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Magnet link</source>
+        <translation>Magnet havola</translation>
     </message>
 </context>
 <context>
@@ -5679,6 +6742,10 @@ Supports the formats: S01E01, 1x1, 2017.12.31 and 31.12.2017 (Date formats also 
     <message>
         <source>Resize</source>
         <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Reset Auto Width</source>
+        <translation>Avtomatik kenglikni tiklash</translation>
     </message>
 </context>
 <context>
@@ -5819,6 +6886,256 @@ Supports the formats: S01E01, 1x1, 2017.12.31 and 31.12.2017 (Date formats also 
     <message>
         <source>Not available for folders</source>
         <translation type="unfinished" />
+    </message>
+</context>
+<context>
+    <name>UserAccounts</name>
+    <message>
+        <source>(this browser)</source>
+        <translation>(bu brauzer)</translation>
+    </message>
+    <message>
+        <source>A role decides what its users are allowed to do.</source>
+        <translation>Rol uning foydalanuvchilariga nima qilishga ruxsat berilishini belgilaydi.</translation>
+    </message>
+    <message>
+        <source>Add Role</source>
+        <translation>Rol qo&apos;shish</translation>
+    </message>
+    <message>
+        <source>Add Role...</source>
+        <translation>Rol qo&apos;shish...</translation>
+    </message>
+    <message>
+        <source>Add User</source>
+        <translation>Foydalanuvchi qo&apos;shish</translation>
+    </message>
+    <message>
+        <source>Add User...</source>
+        <translation>Foydalanuvchi qo&apos;shish...</translation>
+    </message>
+    <message>
+        <source>Are you sure you want to remove the role &apos;%1&apos;?</source>
+        <translation>&apos;%1&apos; rolini olib tashlamoqchimisiz?</translation>
+    </message>
+    <message>
+        <source>Are you sure you want to remove the user &apos;%1&apos;?</source>
+        <translation>&apos;%1&apos; foydalanuvchisini olib tashlamoqchimisiz?</translation>
+    </message>
+    <message>
+        <source>At least %1 characters</source>
+        <translation>Kamida %1 ta belgi</translation>
+    </message>
+    <message>
+        <source>Browser</source>
+        <translation>Brauzer</translation>
+    </message>
+    <message>
+        <source>Browsers and devices where someone is logged in with a user account.</source>
+        <translation>Kimdir foydalanuvchi hisobi bilan kirgan brauzerlar va qurilmalar.</translation>
+    </message>
+    <message>
+        <source>Change Password</source>
+        <translation>Parolni o&apos;zgartirish</translation>
+    </message>
+    <message>
+        <source>Confirm password:</source>
+        <translation>Parolni tasdiqlang:</translation>
+    </message>
+    <message>
+        <source>Created</source>
+        <translation>Yaratilgan</translation>
+    </message>
+    <message>
+        <source>Current password:</source>
+        <translation>Joriy parol:</translation>
+    </message>
+    <message>
+        <source>Description</source>
+        <translation>Tavsif</translation>
+    </message>
+    <message>
+        <source>Description:</source>
+        <translation>Tavsif:</translation>
+    </message>
+    <message>
+        <source>Disable</source>
+        <translation>O&apos;chirish</translation>
+    </message>
+    <message>
+        <source>Disable this account</source>
+        <translation>Bu hisobni o&apos;chirish</translation>
+    </message>
+    <message>
+        <source>Disabled</source>
+        <translation>O&apos;chirilgan</translation>
+    </message>
+    <message>
+        <source>Edit Role</source>
+        <translation>Rolni tahrirlash</translation>
+    </message>
+    <message>
+        <source>Edit User</source>
+        <translation>Foydalanuvchini tahrirlash</translation>
+    </message>
+    <message>
+        <source>Edit...</source>
+        <translation>Tahrirlash...</translation>
+    </message>
+    <message>
+        <source>Enable</source>
+        <translation>Yoqish</translation>
+    </message>
+    <message>
+        <source>Enabled</source>
+        <translation>Yoqilgan</translation>
+    </message>
+    <message>
+        <source>Enter a role name.</source>
+        <translation>Rol nomini kiriting.</translation>
+    </message>
+    <message>
+        <source>Enter a username.</source>
+        <translation>Foydalanuvchi nomini kiriting.</translation>
+    </message>
+    <message>
+        <source>Expires</source>
+        <translation>Tugaydi</translation>
+    </message>
+    <message>
+        <source>Gives control over the PC or qBittorrent itself</source>
+        <translation>Kompyuterni yoki qBittorrent&apos;ning o&apos;zini boshqarish huquqini beradi</translation>
+    </message>
+    <message>
+        <source>Last active</source>
+        <translation>Oxirgi faollik</translation>
+    </message>
+    <message>
+        <source>Last login</source>
+        <translation>Oxirgi kirish</translation>
+    </message>
+    <message>
+        <source>Leave empty to keep the current password</source>
+        <translation>Joriy parolni saqlash uchun bo&apos;sh qoldiring</translation>
+    </message>
+    <message>
+        <source>Log Out</source>
+        <translation>Chiqish</translation>
+    </message>
+    <message>
+        <source>Log Out Everywhere</source>
+        <translation>Hamma joydan chiqish</translation>
+    </message>
+    <message>
+        <source>Logged In</source>
+        <translation>Kirganlar</translation>
+    </message>
+    <message>
+        <source>Logged in</source>
+        <translation>Kirgan vaqti</translation>
+    </message>
+    <message>
+        <source>Name</source>
+        <translation>Nomi</translation>
+    </message>
+    <message>
+        <source>Name:</source>
+        <translation>Nomi:</translation>
+    </message>
+    <message>
+        <source>New password:</source>
+        <translation>Yangi parol:</translation>
+    </message>
+    <message>
+        <source>No accounts yet, so everyone still uses the shared WebUI login. Add an Admin account first.</source>
+        <translation>Hozircha hisoblar yo&apos;q, shuning uchun hamma hali ham umumiy WebUI kirishidan foydalanadi. Avval Admin hisobini qo&apos;shing.</translation>
+    </message>
+    <message>
+        <source>Password:</source>
+        <translation>Parol:</translation>
+    </message>
+    <message>
+        <source>People who can log in to the WebUI with their own username and password.</source>
+        <translation>WebUI&apos;ga o&apos;z foydalanuvchi nomi va paroli bilan kira oladigan odamlar.</translation>
+    </message>
+    <message>
+        <source>Permissions</source>
+        <translation>Ruxsatlar</translation>
+    </message>
+    <message>
+        <source>Remove</source>
+        <translation>Olib tashlash</translation>
+    </message>
+    <message>
+        <source>Role</source>
+        <translation>Rol</translation>
+    </message>
+    <message>
+        <source>Role:</source>
+        <translation>Rol:</translation>
+    </message>
+    <message>
+        <source>Roles</source>
+        <translation>Rollar</translation>
+    </message>
+    <message>
+        <source>Status</source>
+        <translation>Holat</translation>
+    </message>
+    <message>
+        <source>The password must be at least %1 characters long.</source>
+        <translation>Parol kamida %1 ta belgidan iborat bo&apos;lishi kerak.</translation>
+    </message>
+    <message>
+        <source>The passwords don&apos;t match.</source>
+        <translation>Parollar mos kelmadi.</translation>
+    </message>
+    <message>
+        <source>User</source>
+        <translation>Foydalanuvchi</translation>
+    </message>
+    <message>
+        <source>Username</source>
+        <translation>Foydalanuvchi nomi</translation>
+    </message>
+    <message>
+        <source>Username:</source>
+        <translation>Foydalanuvchi nomi:</translation>
+    </message>
+    <message>
+        <source>Users</source>
+        <translation>Foydalanuvchilar</translation>
+    </message>
+    <message>
+        <source>Your password was changed. Other browsers and devices where you were logged in have been logged out.</source>
+        <translation>Parolingiz o&apos;zgartirildi. Siz kirgan boshqa brauzerlar va qurilmalardan chiqarildi.</translation>
+    </message>
+</context>
+<context>
+    <name>WebUIActivity</name>
+    <message>
+        <source>Action</source>
+        <translation>Amal</translation>
+    </message>
+    <message>
+        <source>Category</source>
+        <translation>Toifa</translation>
+    </message>
+    <message>
+        <source>Result</source>
+        <translation>Natija</translation>
+    </message>
+    <message>
+        <source>Role</source>
+        <translation>Rol</translation>
+    </message>
+    <message>
+        <source>Time</source>
+        <translation>Vaqt</translation>
+    </message>
+    <message>
+        <source>User</source>
+        <translation>Foydalanuvchi</translation>
     </message>
 </context>
 </TS>

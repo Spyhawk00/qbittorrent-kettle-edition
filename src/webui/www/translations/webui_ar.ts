@@ -223,6 +223,85 @@ The piece hash will be checked when it is requested for the first time by a peer
         <source>%1 needed · %2 free</source>
         <translation type="unfinished" />
     </message>
+    <message>
+        <source>Don&apos;t create subfolder</source>
+        <translation>لا تقم بإنشاء مجلد فرعي</translation>
+    </message>
+    <message>
+        <source>Never show again</source>
+        <translation>لا تعرض مرة أخرى</translation>
+    </message>
+    <message>
+        <source>Select None</source>
+        <translation>لا تحدد شيء</translation>
+    </message>
+    <message>
+        <source>Torrent options</source>
+        <translation>خيارات التورنت</translation>
+    </message>
+    <message>
+        <source>Your role saves torrents in the default folders.</source>
+        <translation>دورك يحفظ التورنتات في المجلدات الافتراضية.</translation>
+    </message>
+</context>
+<context>
+    <name>AdvancedSettings</name>
+    <message>
+        <source>General</source>
+        <translation>عام</translation>
+    </message>
+    <message>
+        <source>Network</source>
+        <translation>الشبكة</translation>
+    </message>
+    <message>
+        <source>Storage</source>
+        <translation>التخزين</translation>
+    </message>
+    <message>
+        <source>Peers and trackers</source>
+        <translation>الأقران والمتتبعات</translation>
+    </message>
+    <message>
+        <source>Program behavior</source>
+        <translation>سلوك البرنامج</translation>
+    </message>
+    <message>
+        <source>Display and notifications</source>
+        <translation>العرض والإشعارات</translation>
+    </message>
+    <message>
+        <source>Network connection</source>
+        <translation>اتصال الشبكة</translation>
+    </message>
+    <message>
+        <source>Security and privacy</source>
+        <translation>الأمان والخصوصية</translation>
+    </message>
+    <message>
+        <source>Connection tuning</source>
+        <translation>ضبط الاتصال</translation>
+    </message>
+    <message>
+        <source>Saving and torrent files</source>
+        <translation>الحفظ وملفات التورنت</translation>
+    </message>
+    <message>
+        <source>Disk and memory</source>
+        <translation>القرص والذاكرة</translation>
+    </message>
+    <message>
+        <source>Trackers</source>
+        <translation>المتتبعات</translation>
+    </message>
+    <message>
+        <source>Peers and seeding</source>
+        <translation>الأقران والبذر</translation>
+    </message>
+    <message>
+        <source>DHT and I2P</source>
+        <translation>DHT وI2P</translation>
+    </message>
 </context>
 <context>
     <name>CategoryFilterModel</name>
@@ -623,6 +702,14 @@ The piece hash will be checked when it is requested for the first time by a peer
         <source>More</source>
         <translation>المزيد</translation>
     </message>
+    <message>
+        <source>Change Password...</source>
+        <translation>تغيير كلمة المرور...</translation>
+    </message>
+    <message>
+        <source>Signed in as</source>
+        <translation>مسجل الدخول باسم</translation>
+    </message>
 </context>
 <context>
     <name>MainWindow</name>
@@ -929,6 +1016,34 @@ The piece hash will be checked when it is requested for the first time by a peer
     <message>
         <source>Resume Session</source>
         <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Global Speed Limits</source>
+        <translation>حدود السرعة العامة</translation>
+    </message>
+    <message>
+        <source>Pause Session</source>
+        <translation>إيقاف الجلسة مؤقتًا</translation>
+    </message>
+    <message>
+        <source>Pause session</source>
+        <translation>إيقاف الجلسة مؤقتًا</translation>
+    </message>
+    <message>
+        <source>Resume Session</source>
+        <translation>استئناف الجلسة</translation>
+    </message>
+    <message>
+        <source>Resume session</source>
+        <translation>استئناف الجلسة</translation>
+    </message>
+    <message>
+        <source>Your account can&apos;t add torrents.</source>
+        <translation>لا يمكن لحسابك إضافة تورنتات.</translation>
+    </message>
+    <message>
+        <source>[PAUSED]</source>
+        <translation>[متوقف مؤقتًا]</translation>
     </message>
 </context>
 <context>
@@ -2515,6 +2630,182 @@ Use ';' to split multiple entries. Can use wildcard '*'.</source>
         <source>a@x.com;b@y.com,c@z.com - send two emails: the first to just a@x.com, the second to both b@y.com and c@z.com</source>
         <translation type="unfinished" />
     </message>
+    <message>
+        <source>0 means users are logged out after the session timeout.</source>
+        <translation>0 يعني تسجيل خروج المستخدمين بعد انتهاء مهلة الجلسة.</translation>
+    </message>
+    <message>
+        <source>Access</source>
+        <translation>الوصول</translation>
+    </message>
+    <message>
+        <source>Allow this login when user accounts exist</source>
+        <translation>السماح بتسجيل الدخول هذا عند وجود حسابات مستخدمين</translation>
+    </message>
+    <message>
+        <source>Also save search results</source>
+        <translation>حفظ نتائج البحث أيضًا</translation>
+    </message>
+    <message>
+        <source>Also when addition is cancelled</source>
+        <translation>أيضا عندما يتم إلغاء الإضافة</translation>
+    </message>
+    <message>
+        <source>Below normal</source>
+        <translation>أقل من المعتاد</translation>
+    </message>
+    <message>
+        <source>Changes to users, roles and logins apply at once.</source>
+        <translation>التغييرات على المستخدمين والأدوار وتسجيلات الدخول تُطبَّق فورًا.</translation>
+    </message>
+    <message>
+        <source>Don&apos;t create subfolder</source>
+        <translation>لا تقم بإنشاء مجلد فرعي</translation>
+    </message>
+    <message>
+        <source>Example:</source>
+        <translation>المثال:</translation>
+    </message>
+    <message>
+        <source>I2P (experimental)</source>
+        <translation>I2P (تجريبي)</translation>
+    </message>
+    <message>
+        <source>Keep WebUI activity log for:</source>
+        <translation>الاحتفاظ بسجل نشاط واجهة الويب لمدة:</translation>
+    </message>
+    <message>
+        <source>Keep users logged in for:</source>
+        <translation>إبقاء المستخدمين مسجلين الدخول لمدة:</translation>
+    </message>
+    <message>
+        <source>Language:</source>
+        <translation>اللغة:</translation>
+    </message>
+    <message>
+        <source>Lock account after consecutive failures:</source>
+        <translation>قفل الحساب بعد إخفاقات متتالية:</translation>
+    </message>
+    <message>
+        <source>Logins and Activity Log</source>
+        <translation>تسجيلات الدخول وسجل النشاط</translation>
+    </message>
+    <message>
+        <source>Low</source>
+        <translation>منخفض</translation>
+    </message>
+    <message>
+        <source>Maximum active checking torrents:</source>
+        <translation>الحد الأقصى التحقق النشطة لتورنت:</translation>
+    </message>
+    <message>
+        <source>Medium</source>
+        <translation>متوسط</translation>
+    </message>
+    <message>
+        <source>No settings match</source>
+        <translation>لا توجد إعدادات مطابقة</translation>
+    </message>
+    <message>
+        <source>Process memory priority:</source>
+        <translation>أولوية ذاكرة العملية:</translation>
+    </message>
+    <message>
+        <source>Save search tabs</source>
+        <translation>حفظ علامات تبويب البحث</translation>
+    </message>
+    <message>
+        <source>Search UI</source>
+        <translation>واجهة البحث</translation>
+    </message>
+    <message>
+        <source>Search settings</source>
+        <translation>البحث في الإعدادات</translation>
+    </message>
+    <message>
+        <source>Service:</source>
+        <translation>الخدمة:</translation>
+    </message>
+    <message>
+        <source>Show console window</source>
+        <translation>عرض نافذة وحدة التحكم</translation>
+    </message>
+    <message>
+        <source>Show the window when adding a torrent</source>
+        <translation>إظهار النافذة عند إضافة تورنت</translation>
+    </message>
+    <message>
+        <source>Specify reverse proxy IPs (or subnets, e.g. 0.0.0.0/24) in order to use forwarded client address (X-Forwarded-For header). Use &apos;;&apos; to split multiple entries.</source>
+        <translation>حدد عناوين IP للوكيل العكسي (أو الشبكات الفرعية، على سبيل المثال 0.0.0.0/24) لاستخدام عنوان العميل المُعاد توجيهه (رأس X-Forwarded-For). يستخدم &apos;؛&apos; لتقسيم إدخالات متعددة.</translation>
+    </message>
+    <message>
+        <source>Status bar and log</source>
+        <translation>شريط الحالة والسجل</translation>
+    </message>
+    <message>
+        <source>The WebUI activity log can be kept for 1 to 3650 days.</source>
+        <translation>يمكن الاحتفاظ بسجل نشاط واجهة الويب من 1 إلى 3650 يومًا.</translation>
+    </message>
+    <message>
+        <source>The settings below apply with OK or Apply.</source>
+        <translation>الإعدادات أدناه تُطبَّق عند الضغط على موافق أو تطبيق.</translation>
+    </message>
+    <message>
+        <source>Tip: Encapsulate parameter with quotation marks to avoid text being cut off at whitespace (e.g., &quot;%N&quot;)</source>
+        <translation>نصيحة: غلف المعلمات بعلامات اقتباس لتجنب قطع النص عند مسافة بيضاء (على سبيل المثال، &quot;%N&quot;)</translation>
+    </message>
+    <message>
+        <source>Transfer List</source>
+        <translation>قائمة النقل</translation>
+    </message>
+    <message>
+        <source>Until the first user account is created, this login always works.</source>
+        <translation>إلى أن يتم إنشاء أول حساب مستخدم، يعمل تسجيل الدخول هذا دائمًا.</translation>
+    </message>
+    <message>
+        <source>User</source>
+        <translation>مستخدم</translation>
+    </message>
+    <message>
+        <source>User Accounts</source>
+        <translation>حسابات المستخدمين</translation>
+    </message>
+    <message>
+        <source>Users can be kept logged in for 0 to 365 days.</source>
+        <translation>يمكن إبقاء المستخدمين مسجلين الدخول من 0 إلى 365 يومًا.</translation>
+    </message>
+    <message>
+        <source>Very low</source>
+        <translation>منخفض جدًا</translation>
+    </message>
+    <message>
+        <source>Warning! Data loss possible!</source>
+        <translation>تحذير! فقدان البيانات ممكن!</translation>
+    </message>
+    <message>
+        <source>When Default Save/Incomplete Path changed:</source>
+        <translation>عند تغيير مسار الحفظ/غير الكامل الافتراضي:</translation>
+    </message>
+    <message>
+        <source>Whitelist for filtering HTTP Host header values.
+In order to defend against DNS rebinding attack,
+you should put in domain names used by WebUI server.
+
+Use &apos;;&apos; to split multiple entries. Can use wildcard &apos;*&apos;.</source>
+        <translation>القائمة البيضاء لتصفية قيم رأس خادم HTTP.
+من أجل الدفاع ضد هجوم ارتداد DNS ،
+يجب عليك إدخال أسماء المجالات التي يستخدمها خادم واجهة الوِب الرسومية.
+
+استعمال &apos;;&apos; لتقسيم عدة إدخالات. يمكن استخدام حرف البدل &apos;*&apos;.</translation>
+    </message>
+    <message>
+        <source>You changed the address, port or HTTPS setting of the WebUI. Saving moves the WebUI, so Options will save, close and reload the page, the same as OK. If the page doesn&apos;t come back, open the WebUI at its new address.\n\nSave anyway?</source>
+        <translation>غيّرت عنوان واجهة الويب أو منفذها أو إعداد HTTPS. الحفظ ينقل واجهة الويب، لذا ستحفظ الخيارات وتغلق وتعيد تحميل الصفحة كما يفعل موافق. إذا لم تعد الصفحة، افتح واجهة الويب على عنوانها الجديد.\n\nهل تريد الحفظ على أي حال؟</translation>
+    </message>
+    <message>
+        <source>lock for:</source>
+        <translation>القفل لمدة:</translation>
+    </message>
 </context>
 <context>
     <name>PeerListWidget</name>
@@ -3055,6 +3346,142 @@ Use ';' to split multiple entries. Can use wildcard '*'.</source>
     <message>
         <source>The time it takes from receiving a request from a peer until we're sending the response back on the socket</source>
         <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Activity</source>
+        <translation>النشاط</translation>
+    </message>
+    <message>
+        <source>All time</source>
+        <translation>كل الأوقات</translation>
+    </message>
+    <message>
+        <source>Before tracking began</source>
+        <translation>قبل بدء التتبع</translation>
+    </message>
+    <message>
+        <source>By month</source>
+        <translation>حسب الشهر</translation>
+    </message>
+    <message>
+        <source>Counts the requests that added a download. Apps without a login, such as Sonarr and Radarr, are shown as (localhost). Downloads added in the desktop window are not counted.</source>
+        <translation>يحسب الطلبات التي أضافت تنزيلًا. التطبيقات بلا تسجيل دخول، مثل Sonarr وRadarr، تظهر باسم (localhost). التنزيلات المضافة من نافذة سطح المكتب لا تُحسب.</translation>
+    </message>
+    <message>
+        <source>Current speed:</source>
+        <translation>السرعة الحالية:</translation>
+    </message>
+    <message>
+        <source>DHT nodes:</source>
+        <translation>عقد DHT:</translation>
+    </message>
+    <message>
+        <source>Data discarded this session:</source>
+        <translation>البيانات المهملة في هذه الجلسة:</translation>
+    </message>
+    <message>
+        <source>Disk</source>
+        <translation>القرص</translation>
+    </message>
+    <message>
+        <source>History</source>
+        <translation>السجل</translation>
+    </message>
+    <message>
+        <source>Last 12 months</source>
+        <translation>آخر 12 شهرًا</translation>
+    </message>
+    <message>
+        <source>Last 7 days</source>
+        <translation>آخر 7 أيام</translation>
+    </message>
+    <message>
+        <source>Last month</source>
+        <translation>الشهر الماضي</translation>
+    </message>
+    <message>
+        <source>Month</source>
+        <translation>الشهر</translation>
+    </message>
+    <message>
+        <source>Nothing added yet</source>
+        <translation>لم يُضف شيء بعد</translation>
+    </message>
+    <message>
+        <source>Off</source>
+        <translation>إيقاف</translation>
+    </message>
+    <message>
+        <source>Overview</source>
+        <translation>نظرة عامة</translation>
+    </message>
+    <message>
+        <source>Peers waiting on disk reads:</source>
+        <translation>أقران تنتظر القراءة من القرص:</translation>
+    </message>
+    <message>
+        <source>Peers waiting on disk writes:</source>
+        <translation>أقران تنتظر الكتابة على القرص:</translation>
+    </message>
+    <message>
+        <source>Period</source>
+        <translation>الفترة</translation>
+    </message>
+    <message>
+        <source>Request latency:</source>
+        <translation>زمن استجابة الطلب:</translation>
+    </message>
+    <message>
+        <source>Running for:</source>
+        <translation>مدة التشغيل:</translation>
+    </message>
+    <message>
+        <source>Share ratio</source>
+        <translation>نسبة المشاركة</translation>
+    </message>
+    <message>
+        <source>Share ratio:</source>
+        <translation>نسبة المشاركة:</translation>
+    </message>
+    <message>
+        <source>Technical</source>
+        <translation>تقني</translation>
+    </message>
+    <message>
+        <source>This month</source>
+        <translation>هذا الشهر</translation>
+    </message>
+    <message>
+        <source>This session</source>
+        <translation>هذه الجلسة</translation>
+    </message>
+    <message>
+        <source>Today</source>
+        <translation>اليوم</translation>
+    </message>
+    <message>
+        <source>Torrents downloading:</source>
+        <translation>تورنتات قيد التنزيل:</translation>
+    </message>
+    <message>
+        <source>Torrents seeding:</source>
+        <translation>تورنتات قيد البذر:</translation>
+    </message>
+    <message>
+        <source>Torrents stopped:</source>
+        <translation>تورنتات متوقفة:</translation>
+    </message>
+    <message>
+        <source>Torrents with errors:</source>
+        <translation>تورنتات بها أخطاء:</translation>
+    </message>
+    <message>
+        <source>Tracking since:</source>
+        <translation>التتبع منذ:</translation>
+    </message>
+    <message>
+        <source>WebUI downloads added, this month</source>
+        <translation>التنزيلات المضافة عبر واجهة الويب هذا الشهر</translation>
     </message>
 </context>
 <context>
@@ -3842,6 +4269,10 @@ Use ';' to split multiple entries. Can use wildcard '*'.</source>
         <source>Content Path</source>
         <translation type="unfinished" />
     </message>
+    <message>
+        <source>Remove all tags from selected torrents?</source>
+        <translation>إزالة جميع الوسوم من التورنتات المُختارة؟</translation>
+    </message>
 </context>
 <context>
     <name>UpDownRatioDialog</name>
@@ -3914,6 +4345,10 @@ Use ';' to split multiple entries. Can use wildcard '*'.</source>
     <message>
         <source>Remove tracker</source>
         <translation>إزالة المتتبع</translation>
+    </message>
+    <message>
+        <source>This choice is remembered for the next removal.</source>
+        <translation>سيتم تذكر هذا الاختيار في عملية الحذف التالية.</translation>
     </message>
 </context>
 <context>
@@ -4127,6 +4562,34 @@ Use ';' to split multiple entries. Can use wildcard '*'.</source>
         <source>Select plugins</source>
         <translation type="unfinished" />
     </message>
+    <message>
+        <source>Category to search in</source>
+        <translation>الفئة المراد البحث فيها</translation>
+    </message>
+    <message>
+        <source>Close the selected search</source>
+        <translation>إغلاق البحث المحدد</translation>
+    </message>
+    <message>
+        <source>Empty search pattern</source>
+        <translation>نمط البحث فارغ</translation>
+    </message>
+    <message>
+        <source>Search engines to use</source>
+        <translation>محركات البحث المستخدمة</translation>
+    </message>
+    <message>
+        <source>Search for torrents...</source>
+        <translation>ابحث عن تورنتات...</translation>
+    </message>
+    <message>
+        <source>Searches</source>
+        <translation>عمليات البحث</translation>
+    </message>
+    <message>
+        <source>Type a search above and press Enter.</source>
+        <translation>اكتب عملية بحث أعلاه واضغط Enter.</translation>
+    </message>
 </context>
 <context>
     <name>PluginSelectDlg</name>
@@ -4165,6 +4628,10 @@ Use ';' to split multiple entries. Can use wildcard '*'.</source>
     <message>
         <source>Search plugins</source>
         <translation>ملحقات البحث</translation>
+    </message>
+    <message>
+        <source>Warning: Be sure to comply with your country&apos;s copyright laws when downloading torrents from any of these search engines.</source>
+        <translation>تحذير: تأكد من الامتثال لقوانين حقوق الطبع والنشر في بلدك عند تنزيل التورنت من أي من محركات البحث هذه.</translation>
     </message>
 </context>
 <context>
@@ -4388,6 +4855,30 @@ Use ';' to split multiple entries. Can use wildcard '*'.</source>
         <source>qBittorrent icon</source>
         <translation>رمز كيوبت‎تورنت</translation>
     </message>
+    <message>
+        <source>Based on:</source>
+        <translation>مبني على:</translation>
+    </message>
+    <message>
+        <source>Edition version:</source>
+        <translation>رقم إصدار النسخة:</translation>
+    </message>
+    <message>
+        <source>Kettle Edition is a personal build of qBittorrent that adds user accounts with roles for the WebUI and the desktop app, an activity log, and an installable WebUI with a phone layout. A kettle is a group of hawks soaring together. This is an unofficial build, not affiliated with the qBittorrent project.</source>
+        <translation>Kettle Edition هي نسخة شخصية من qBittorrent تضيف حسابات مستخدمين بأدوار لواجهة الويب وتطبيق سطح المكتب، وسجل نشاط، وواجهة ويب قابلة للتثبيت بتخطيط للهاتف. الـ kettle هو مجموعة من الصقور تحلق معًا. هذه نسخة غير رسمية وغير تابعة لمشروع qBittorrent.</translation>
+    </message>
+    <message>
+        <source>Maintainer:</source>
+        <translation>المشرف على الصيانة:</translation>
+    </message>
+    <message>
+        <source>This edition</source>
+        <translation>هذا الإصدار</translation>
+    </message>
+    <message>
+        <source>qBittorrent project:</source>
+        <translation>مشروع qBittorrent:</translation>
+    </message>
 </context>
 <context>
     <name>OptionDialog</name>
@@ -4489,6 +4980,46 @@ Use ';' to split multiple entries. Can use wildcard '*'.</source>
     <message>
         <source>Open shared download window</source>
         <translation type="unfinished" />
+    </message>
+    <message>
+        <source>%1 of %2 shown</source>
+        <translation>عرض %1 من %2</translation>
+    </message>
+    <message>
+        <source>%1 of %2 shown (%3 hidden)</source>
+        <translation>عرض %1 من %2 (%3 مخفية)</translation>
+    </message>
+    <message>
+        <source>Close all searches</source>
+        <translation>إغلاق جميع عمليات البحث</translation>
+    </message>
+    <message>
+        <source>Close search</source>
+        <translation>إغلاق البحث</translation>
+    </message>
+    <message>
+        <source>Filter search results...</source>
+        <translation>تصفية نتائج البحث...</translation>
+    </message>
+    <message>
+        <source>Finished: %1</source>
+        <translation>انتهى: %1</translation>
+    </message>
+    <message>
+        <source>Refresh search</source>
+        <translation>تحديث البحث</translation>
+    </message>
+    <message>
+        <source>Search aborted: %1</source>
+        <translation>أُلغي البحث: %1</translation>
+    </message>
+    <message>
+        <source>Search returned no results</source>
+        <translation>البحث لم يسفر عن أي نتائج</translation>
+    </message>
+    <message>
+        <source>Searching: %1</source>
+        <translation>جارٍ البحث: %1</translation>
     </message>
 </context>
 <context>
@@ -4627,6 +5158,10 @@ Use ';' to split multiple entries. Can use wildcard '*'.</source>
     <message>
         <source>Blocked opening RSS article URL. Only http:// and https:// links can be opened.</source>
         <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Details</source>
+        <translation>التفاصيل</translation>
     </message>
 </context>
 <context>
@@ -4905,6 +5440,10 @@ Supports the formats: S01E01, 1x1, 2017.12.31 and 31.12.2017 (Date formats also 
         <source>Import</source>
         <translation type="unfinished" />
     </message>
+    <message>
+        <source>Don&apos;t create subfolder</source>
+        <translation>لا تقم بإنشاء مجلد فرعي</translation>
+    </message>
 </context>
 <context>
     <name>TrackerFiltersList</name>
@@ -5094,6 +5633,26 @@ Supports the formats: S01E01, 1x1, 2017.12.31 and 31.12.2017 (Date formats also 
         <source>Choose a log level...</source>
         <translation type="unfinished" />
     </message>
+    <message>
+        <source>Export...</source>
+        <translation>تصدير...</translation>
+    </message>
+    <message>
+        <source>Filter activity</source>
+        <translation>تصفية النشاط</translation>
+    </message>
+    <message>
+        <source>Result:</source>
+        <translation>النتيجة:</translation>
+    </message>
+    <message>
+        <source>User:</source>
+        <translation>المستخدم:</translation>
+    </message>
+    <message>
+        <source>WebUI Activity</source>
+        <translation>نشاط واجهة الويب</translation>
+    </message>
 </context>
 <context>
     <name>TrackersFilterWidget</name>
@@ -5163,6 +5722,14 @@ Supports the formats: S01E01, 1x1, 2017.12.31 and 31.12.2017 (Date formats also 
     <message>
         <source>Torrent share limits</source>
         <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Torrent share limits</source>
+        <translation>حدود مشاركة التورنت</translation>
+    </message>
+    <message>
+        <source>Your role saves torrents in the default folders.</source>
+        <translation>دورك يحفظ التورنتات في المجلدات الافتراضية.</translation>
     </message>
 </context>
 <context>
@@ -5262,6 +5829,14 @@ Supports the formats: S01E01, 1x1, 2017.12.31 and 31.12.2017 (Date formats also 
     <message>
         <source>Invalid Username or Password.</source>
         <translation>اسم المستخدم أو كلمة السر غير صالحة.</translation>
+    </message>
+    <message>
+        <source>A kettle is a group of hawks soaring together.</source>
+        <translation>الـ kettle هو مجموعة من الصقور تحلق معًا.</translation>
+    </message>
+    <message>
+        <source>Sign in</source>
+        <translation>تسجيل الدخول</translation>
     </message>
 </context>
 <context>
@@ -5470,6 +6045,22 @@ Supports the formats: S01E01, 1x1, 2017.12.31 and 31.12.2017 (Date formats also 
         <source>If checked, filenames starting with a period punctuation mark `.` will not be added to the created torrent.</source>
         <translation type="unfinished" />
     </message>
+    <message>
+        <source>Align to piece boundary for files larger than:</source>
+        <translation>محاذاة حدود القطعة للملفات الأكبر من:</translation>
+    </message>
+    <message>
+        <source>Optimize alignment</source>
+        <translation>تحسين التوافق</translation>
+    </message>
+    <message>
+        <source>Private torrent (Won&apos;t distribute on DHT network)</source>
+        <translation>تورنت خاص (لن توزع على شبكة DHT)</translation>
+    </message>
+    <message>
+        <source>Start seeding immediately</source>
+        <translation>بدء البذر على الفور</translation>
+    </message>
 </context>
 <context>
     <name>DownloadFromURLDialog</name>
@@ -5580,6 +6171,10 @@ Supports the formats: S01E01, 1x1, 2017.12.31 and 31.12.2017 (Date formats also 
         <source>Failed to set speed limits</source>
         <translation type="unfinished" />
     </message>
+    <message>
+        <source>Speed limits</source>
+        <translation>حدود السرعة</translation>
+    </message>
 </context>
 <context>
     <name>ListWidget</name>
@@ -5590,6 +6185,10 @@ Supports the formats: S01E01, 1x1, 2017.12.31 and 31.12.2017 (Date formats also 
     <message>
         <source>Resize</source>
         <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Reset Auto Width</source>
+        <translation>إعادة ضبط العرض التلقائي</translation>
     </message>
 </context>
 <context>
@@ -5730,6 +6329,216 @@ Supports the formats: S01E01, 1x1, 2017.12.31 and 31.12.2017 (Date formats also 
     <message>
         <source>Not available for folders</source>
         <translation type="unfinished" />
+    </message>
+</context>
+<context>
+    <name>UserAccounts</name>
+    <message>
+        <source>(this browser)</source>
+        <translation>(هذا المتصفح)</translation>
+    </message>
+    <message>
+        <source>A role decides what its users are allowed to do.</source>
+        <translation>الدور يحدد ما يُسمح لمستخدميه بفعله.</translation>
+    </message>
+    <message>
+        <source>Add Role</source>
+        <translation>إضافة دور</translation>
+    </message>
+    <message>
+        <source>Add Role...</source>
+        <translation>إضافة دور...</translation>
+    </message>
+    <message>
+        <source>Add User</source>
+        <translation>إضافة مستخدم</translation>
+    </message>
+    <message>
+        <source>Add User...</source>
+        <translation>إضافة مستخدم...</translation>
+    </message>
+    <message>
+        <source>Are you sure you want to remove the role &apos;%1&apos;?</source>
+        <translation>هل أنت متأكد من إزالة الدور &apos;%1&apos;؟</translation>
+    </message>
+    <message>
+        <source>Are you sure you want to remove the user &apos;%1&apos;?</source>
+        <translation>هل أنت متأكد من إزالة المستخدم &apos;%1&apos;؟</translation>
+    </message>
+    <message>
+        <source>At least %1 characters</source>
+        <translation>%1 أحرف على الأقل</translation>
+    </message>
+    <message>
+        <source>Browser</source>
+        <translation>المتصفح</translation>
+    </message>
+    <message>
+        <source>Browsers and devices where someone is logged in with a user account.</source>
+        <translation>المتصفحات والأجهزة التي سُجّل الدخول عليها بحساب مستخدم.</translation>
+    </message>
+    <message>
+        <source>Change Password</source>
+        <translation>تغيير كلمة المرور</translation>
+    </message>
+    <message>
+        <source>Confirm password:</source>
+        <translation>تأكيد كلمة المرور:</translation>
+    </message>
+    <message>
+        <source>Created</source>
+        <translation>تاريخ الإنشاء</translation>
+    </message>
+    <message>
+        <source>Current password:</source>
+        <translation>كلمة المرور الحالية:</translation>
+    </message>
+    <message>
+        <source>Description</source>
+        <translation>الوصف</translation>
+    </message>
+    <message>
+        <source>Description:</source>
+        <translation>الوصف:</translation>
+    </message>
+    <message>
+        <source>Disable</source>
+        <translation>تعطيل</translation>
+    </message>
+    <message>
+        <source>Disable this account</source>
+        <translation>تعطيل هذا الحساب</translation>
+    </message>
+    <message>
+        <source>Edit Role</source>
+        <translation>تعديل دور</translation>
+    </message>
+    <message>
+        <source>Edit User</source>
+        <translation>تعديل مستخدم</translation>
+    </message>
+    <message>
+        <source>Edit...</source>
+        <translation>تعديل...</translation>
+    </message>
+    <message>
+        <source>Enable</source>
+        <translation>تفعيل</translation>
+    </message>
+    <message>
+        <source>Enter a role name.</source>
+        <translation>أدخل اسم دور.</translation>
+    </message>
+    <message>
+        <source>Enter a username.</source>
+        <translation>أدخل اسم مستخدم.</translation>
+    </message>
+    <message>
+        <source>Expires</source>
+        <translation>ينتهي في</translation>
+    </message>
+    <message>
+        <source>Gives control over the PC or qBittorrent itself</source>
+        <translation>يمنح التحكم في الكمبيوتر أو في qBittorrent نفسه</translation>
+    </message>
+    <message>
+        <source>Last active</source>
+        <translation>آخر نشاط</translation>
+    </message>
+    <message>
+        <source>Last login</source>
+        <translation>آخر تسجيل دخول</translation>
+    </message>
+    <message>
+        <source>Leave empty to keep the current password</source>
+        <translation>اتركه فارغًا للإبقاء على كلمة المرور الحالية</translation>
+    </message>
+    <message>
+        <source>Log Out</source>
+        <translation>تسجيل الخروج</translation>
+    </message>
+    <message>
+        <source>Log Out Everywhere</source>
+        <translation>تسجيل الخروج من كل مكان</translation>
+    </message>
+    <message>
+        <source>Logged In</source>
+        <translation>مسجلو الدخول</translation>
+    </message>
+    <message>
+        <source>Logged in</source>
+        <translation>وقت الدخول</translation>
+    </message>
+    <message>
+        <source>New password:</source>
+        <translation>كلمة المرور الجديدة:</translation>
+    </message>
+    <message>
+        <source>No accounts yet, so everyone still uses the shared WebUI login. Add an Admin account first.</source>
+        <translation>لا توجد حسابات بعد، لذا لا يزال الجميع يستخدمون تسجيل الدخول المشترك لواجهة الويب. أضف حساب مدير أولًا.</translation>
+    </message>
+    <message>
+        <source>People who can log in to the WebUI with their own username and password.</source>
+        <translation>الأشخاص الذين يمكنهم تسجيل الدخول إلى واجهة الويب باسم مستخدم وكلمة مرور خاصين بهم.</translation>
+    </message>
+    <message>
+        <source>Permissions</source>
+        <translation>الأذونات</translation>
+    </message>
+    <message>
+        <source>Role</source>
+        <translation>الدور</translation>
+    </message>
+    <message>
+        <source>Role:</source>
+        <translation>الدور:</translation>
+    </message>
+    <message>
+        <source>Roles</source>
+        <translation>الأدوار</translation>
+    </message>
+    <message>
+        <source>The password must be at least %1 characters long.</source>
+        <translation>يجب ألا تقل كلمة المرور عن %1 أحرف.</translation>
+    </message>
+    <message>
+        <source>The passwords don&apos;t match.</source>
+        <translation>كلمتا المرور غير متطابقتين.</translation>
+    </message>
+    <message>
+        <source>User</source>
+        <translation>مستخدم</translation>
+    </message>
+    <message>
+        <source>Users</source>
+        <translation>المستخدمون</translation>
+    </message>
+    <message>
+        <source>Your password was changed. Other browsers and devices where you were logged in have been logged out.</source>
+        <translation>تم تغيير كلمة المرور. تم تسجيل الخروج من المتصفحات والأجهزة الأخرى التي كنت مسجلًا الدخول عليها.</translation>
+    </message>
+</context>
+<context>
+    <name>WebUIActivity</name>
+    <message>
+        <source>Action</source>
+        <translation>الإجراء</translation>
+    </message>
+    <message>
+        <source>Result</source>
+        <translation>النتيجة</translation>
+    </message>
+    <message>
+        <source>Role</source>
+        <translation>الدور</translation>
+    </message>
+    <message>
+        <source>Time</source>
+        <translation>الوقت</translation>
+    </message>
+    <message>
+        <source>User</source>
+        <translation>مستخدم</translation>
     </message>
 </context>
 </TS>

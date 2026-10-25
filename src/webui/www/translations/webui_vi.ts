@@ -227,6 +227,85 @@ The piece hash will be checked when it is requested for the first time by a peer
         <source>%1 needed · %2 free</source>
         <translation type="unfinished" />
     </message>
+    <message>
+        <source>Don&apos;t create subfolder</source>
+        <translation>Không tạo thư mục con</translation>
+    </message>
+    <message>
+        <source>Never show again</source>
+        <translation>Không hiển thị lại</translation>
+    </message>
+    <message>
+        <source>Select None</source>
+        <translation>Không Chọn</translation>
+    </message>
+    <message>
+        <source>Torrent options</source>
+        <translation>Tùy chọn Torrent</translation>
+    </message>
+    <message>
+        <source>Your role saves torrents in the default folders.</source>
+        <translation>Vai trò của bạn lưu torrent vào các thư mục mặc định.</translation>
+    </message>
+</context>
+<context>
+    <name>AdvancedSettings</name>
+    <message>
+        <source>General</source>
+        <translation>Tổng quan</translation>
+    </message>
+    <message>
+        <source>Network</source>
+        <translation>Mạng</translation>
+    </message>
+    <message>
+        <source>Storage</source>
+        <translation>Lưu trữ</translation>
+    </message>
+    <message>
+        <source>Peers and trackers</source>
+        <translation>Máy ngang hàng và máy theo dõi</translation>
+    </message>
+    <message>
+        <source>Program behavior</source>
+        <translation>Hoạt động của chương trình</translation>
+    </message>
+    <message>
+        <source>Display and notifications</source>
+        <translation>Hiển thị và thông báo</translation>
+    </message>
+    <message>
+        <source>Network connection</source>
+        <translation>Kết nối mạng</translation>
+    </message>
+    <message>
+        <source>Security and privacy</source>
+        <translation>Bảo mật và quyền riêng tư</translation>
+    </message>
+    <message>
+        <source>Connection tuning</source>
+        <translation>Tinh chỉnh kết nối</translation>
+    </message>
+    <message>
+        <source>Saving and torrent files</source>
+        <translation>Lưu và tệp torrent</translation>
+    </message>
+    <message>
+        <source>Disk and memory</source>
+        <translation>Đĩa và bộ nhớ</translation>
+    </message>
+    <message>
+        <source>Trackers</source>
+        <translation>Máy theo dõi</translation>
+    </message>
+    <message>
+        <source>Peers and seeding</source>
+        <translation>Máy ngang hàng và chia sẻ</translation>
+    </message>
+    <message>
+        <source>DHT and I2P</source>
+        <translation>DHT và I2P</translation>
+    </message>
 </context>
 <context>
     <name>CategoryFilterModel</name>
@@ -631,6 +710,14 @@ The piece hash will be checked when it is requested for the first time by a peer
         <source>More</source>
         <translation>Thêm</translation>
     </message>
+    <message>
+        <source>Change Password...</source>
+        <translation>Đổi mật khẩu...</translation>
+    </message>
+    <message>
+        <source>Signed in as</source>
+        <translation>Đăng nhập với tên</translation>
+    </message>
 </context>
 <context>
     <name>MainWindow</name>
@@ -937,6 +1024,34 @@ The piece hash will be checked when it is requested for the first time by a peer
     <message>
         <source>Resume Session</source>
         <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Global Speed Limits</source>
+        <translation>Giới Hạn Tốc Độ Chung</translation>
+    </message>
+    <message>
+        <source>Pause Session</source>
+        <translation>Tạm dừng phiên</translation>
+    </message>
+    <message>
+        <source>Pause session</source>
+        <translation>Tạm dừng phiên</translation>
+    </message>
+    <message>
+        <source>Resume Session</source>
+        <translation>Tiếp tục phiên</translation>
+    </message>
+    <message>
+        <source>Resume session</source>
+        <translation>Tiếp tục phiên</translation>
+    </message>
+    <message>
+        <source>Your account can&apos;t add torrents.</source>
+        <translation>Tài khoản của bạn không thể thêm torrent.</translation>
+    </message>
+    <message>
+        <source>[PAUSED]</source>
+        <translation>[ĐÃ TẠM DỪNG]</translation>
     </message>
 </context>
 <context>
@@ -2535,6 +2650,190 @@ Sử dụng ';' để chia nhiều mục nhập. Có thể sử dụng ký tự 
         <source>a@x.com;b@y.com,c@z.com - send two emails: the first to just a@x.com, the second to both b@y.com and c@z.com</source>
         <translation type="unfinished" />
     </message>
+    <message>
+        <source>0 means users are logged out after the session timeout.</source>
+        <translation>0 nghĩa là người dùng bị đăng xuất sau khi hết thời gian chờ của phiên.</translation>
+    </message>
+    <message>
+        <source>Access</source>
+        <translation>Truy cập</translation>
+    </message>
+    <message>
+        <source>All the above</source>
+        <translation>Tất cả điều trên</translation>
+    </message>
+    <message>
+        <source>Allow this login when user accounts exist</source>
+        <translation>Cho phép cách đăng nhập này khi đã có tài khoản người dùng</translation>
+    </message>
+    <message>
+        <source>Also save search results</source>
+        <translation>Lưu cả kết quả tìm kiếm</translation>
+    </message>
+    <message>
+        <source>Also when addition is cancelled</source>
+        <translation>Ngoài ra khi việc bổ sung bị hủy bỏ</translation>
+    </message>
+    <message>
+        <source>Any of the above</source>
+        <translation>Bất kỳ điều trên</translation>
+    </message>
+    <message>
+        <source>Below normal</source>
+        <translation>Dưới bình thường</translation>
+    </message>
+    <message>
+        <source>Changes to users, roles and logins apply at once.</source>
+        <translation>Thay đổi về người dùng, vai trò và đăng nhập có hiệu lực ngay.</translation>
+    </message>
+    <message>
+        <source>Don&apos;t create subfolder</source>
+        <translation>Không tạo thư mục con</translation>
+    </message>
+    <message>
+        <source>Example:</source>
+        <translation>Ví dụ:</translation>
+    </message>
+    <message>
+        <source>I2P (experimental)</source>
+        <translation>I2P (thử nghiệm)</translation>
+    </message>
+    <message>
+        <source>Keep WebUI activity log for:</source>
+        <translation>Giữ nhật ký hoạt động WebUI trong:</translation>
+    </message>
+    <message>
+        <source>Keep unselected files in &quot;.unwanted&quot; folder</source>
+        <translation>Giữ các tập tin không được chọn trong thư mục &quot;.unwanted&quot;</translation>
+    </message>
+    <message>
+        <source>Keep users logged in for:</source>
+        <translation>Giữ người dùng đăng nhập trong:</translation>
+    </message>
+    <message>
+        <source>Language:</source>
+        <translation>Ngôn ngữ:</translation>
+    </message>
+    <message>
+        <source>Lock account after consecutive failures:</source>
+        <translation>Khóa tài khoản sau số lần thất bại liên tiếp:</translation>
+    </message>
+    <message>
+        <source>Logins and Activity Log</source>
+        <translation>Đăng nhập và nhật ký hoạt động</translation>
+    </message>
+    <message>
+        <source>Low</source>
+        <translation>Thấp</translation>
+    </message>
+    <message>
+        <source>Maximum active checking torrents:</source>
+        <translation>Hoạt dộng kiểm tra torrents tối đa:</translation>
+    </message>
+    <message>
+        <source>Medium</source>
+        <translation>Trung bình</translation>
+    </message>
+    <message>
+        <source>No settings match</source>
+        <translation>Không có cài đặt khớp</translation>
+    </message>
+    <message>
+        <source>Process memory priority:</source>
+        <translation>Mức ưu tiên bộ nhớ của tiến trình:</translation>
+    </message>
+    <message>
+        <source>Save search tabs</source>
+        <translation>Lưu các tab tìm kiếm</translation>
+    </message>
+    <message>
+        <source>Search UI</source>
+        <translation>UI Tìm Kiếm</translation>
+    </message>
+    <message>
+        <source>Search settings</source>
+        <translation>Tìm trong cài đặt</translation>
+    </message>
+    <message>
+        <source>Service:</source>
+        <translation>Dịch vụ:</translation>
+    </message>
+    <message>
+        <source>Show console window</source>
+        <translation>Hiển thị cửa sổ bảng điều khiển</translation>
+    </message>
+    <message>
+        <source>Show the window when adding a torrent</source>
+        <translation>Hiện cửa sổ khi thêm torrent</translation>
+    </message>
+    <message>
+        <source>Specify reverse proxy IPs (or subnets, e.g. 0.0.0.0/24) in order to use forwarded client address (X-Forwarded-For header). Use &apos;;&apos; to split multiple entries.</source>
+        <translation>Chỉ định IP proxy ngược (hoặc mạng con, ví dụ: 0.0.0.0/24) để sử dụng địa chỉ ứng dụng khách được chuyển tiếp (tiêu đề X-Forwarded-For). Sử dụng &apos;;&apos; để chia nhiều mục nhập.</translation>
+    </message>
+    <message>
+        <source>Status bar and log</source>
+        <translation>Thanh trạng thái và nhật ký</translation>
+    </message>
+    <message>
+        <source>The WebUI activity log can be kept for 1 to 3650 days.</source>
+        <translation>Nhật ký hoạt động WebUI có thể giữ từ 1 đến 3650 ngày.</translation>
+    </message>
+    <message>
+        <source>The settings below apply with OK or Apply.</source>
+        <translation>Các cài đặt bên dưới có hiệu lực khi nhấn OK hoặc Áp dụng.</translation>
+    </message>
+    <message>
+        <source>Tip: Encapsulate parameter with quotation marks to avoid text being cut off at whitespace (e.g., &quot;%N&quot;)</source>
+        <translation>Mẹo: Bao bọc tham số bằng ngoặc kép để tránh văn bản bị cắt tại khoảng trắng (v.d., &quot;%N&quot;)</translation>
+    </message>
+    <message>
+        <source>Transfer List</source>
+        <translation>Danh Sách Trao Đổi</translation>
+    </message>
+    <message>
+        <source>Until the first user account is created, this login always works.</source>
+        <translation>Cho đến khi tạo tài khoản người dùng đầu tiên, cách đăng nhập này luôn hoạt động.</translation>
+    </message>
+    <message>
+        <source>User Accounts</source>
+        <translation>Tài khoản người dùng</translation>
+    </message>
+    <message>
+        <source>Users can be kept logged in for 0 to 365 days.</source>
+        <translation>Có thể giữ người dùng đăng nhập từ 0 đến 365 ngày.</translation>
+    </message>
+    <message>
+        <source>Very low</source>
+        <translation>Rất thấp</translation>
+    </message>
+    <message>
+        <source>Warning! Data loss possible!</source>
+        <translation>Cảnh báo! Có thể mất dữ liệu!</translation>
+    </message>
+    <message>
+        <source>When Default Save/Incomplete Path changed:</source>
+        <translation>Khi Đường Dẫn Lưu/Chưa Hoàn Tất Mặc Định thay đổi:</translation>
+    </message>
+    <message>
+        <source>Whitelist for filtering HTTP Host header values.
+In order to defend against DNS rebinding attack,
+you should put in domain names used by WebUI server.
+
+Use &apos;;&apos; to split multiple entries. Can use wildcard &apos;*&apos;.</source>
+        <translation>Danh sách trắng để lọc các giá trị tiêu đề Máy chủ lưu trữ HTTP.
+Để bảo vệ khỏi cuộc tấn công gắn lại DNS,
+bạn nên đặt tên miền được sử dụng bởi máy chủ WebUI.
+
+Sử dụng &apos;;&apos; để chia nhiều mục nhập. Có thể sử dụng ký tự đại diện &apos;*&apos;.</translation>
+    </message>
+    <message>
+        <source>You changed the address, port or HTTPS setting of the WebUI. Saving moves the WebUI, so Options will save, close and reload the page, the same as OK. If the page doesn&apos;t come back, open the WebUI at its new address.\n\nSave anyway?</source>
+        <translation>Bạn đã đổi địa chỉ, cổng hoặc cài đặt HTTPS của WebUI. Lưu sẽ di chuyển WebUI, nên Tùy chọn sẽ lưu, đóng và tải lại trang như khi nhấn OK. Nếu trang không trở lại, hãy mở WebUI ở địa chỉ mới.\n\nVẫn lưu?</translation>
+    </message>
+    <message>
+        <source>lock for:</source>
+        <translation>khóa trong:</translation>
+    </message>
 </context>
 <context>
     <name>PeerListWidget</name>
@@ -2963,6 +3262,10 @@ Sử dụng ';' để chia nhiều mục nhập. Có thể sử dụng ký tự 
         <source>Copy download URL</source>
         <translation type="unfinished" />
     </message>
+    <message>
+        <source>Copy path</source>
+        <translation>Sao chép đường dẫn</translation>
+    </message>
 </context>
 <context>
     <name>ScanFoldersModel</name>
@@ -3075,6 +3378,142 @@ Sử dụng ';' để chia nhiều mục nhập. Có thể sử dụng ký tự 
     <message>
         <source>The time it takes from receiving a request from a peer until we're sending the response back on the socket</source>
         <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Activity</source>
+        <translation>Hoạt động</translation>
+    </message>
+    <message>
+        <source>All time</source>
+        <translation>Mọi lúc</translation>
+    </message>
+    <message>
+        <source>Before tracking began</source>
+        <translation>Trước khi bắt đầu theo dõi</translation>
+    </message>
+    <message>
+        <source>By month</source>
+        <translation>Theo tháng</translation>
+    </message>
+    <message>
+        <source>Counts the requests that added a download. Apps without a login, such as Sonarr and Radarr, are shown as (localhost). Downloads added in the desktop window are not counted.</source>
+        <translation>Đếm các yêu cầu đã thêm một lượt tải xuống. Ứng dụng không đăng nhập, như Sonarr và Radarr, hiện là (localhost). Lượt tải thêm trong cửa sổ máy tính không được tính.</translation>
+    </message>
+    <message>
+        <source>Current speed:</source>
+        <translation>Tốc độ hiện tại:</translation>
+    </message>
+    <message>
+        <source>DHT nodes:</source>
+        <translation>Nút DHT:</translation>
+    </message>
+    <message>
+        <source>Data discarded this session:</source>
+        <translation>Dữ liệu bị loại bỏ trong phiên này:</translation>
+    </message>
+    <message>
+        <source>Disk</source>
+        <translation>Đĩa</translation>
+    </message>
+    <message>
+        <source>History</source>
+        <translation>Lịch sử</translation>
+    </message>
+    <message>
+        <source>Last 12 months</source>
+        <translation>12 tháng qua</translation>
+    </message>
+    <message>
+        <source>Last 7 days</source>
+        <translation>7 ngày qua</translation>
+    </message>
+    <message>
+        <source>Last month</source>
+        <translation>Tháng trước</translation>
+    </message>
+    <message>
+        <source>Month</source>
+        <translation>Tháng</translation>
+    </message>
+    <message>
+        <source>Nothing added yet</source>
+        <translation>Chưa thêm gì</translation>
+    </message>
+    <message>
+        <source>Off</source>
+        <translation>Tắt</translation>
+    </message>
+    <message>
+        <source>Overview</source>
+        <translation>Tổng quan</translation>
+    </message>
+    <message>
+        <source>Peers waiting on disk reads:</source>
+        <translation>Máy ngang hàng đang chờ đọc đĩa:</translation>
+    </message>
+    <message>
+        <source>Peers waiting on disk writes:</source>
+        <translation>Máy ngang hàng đang chờ ghi đĩa:</translation>
+    </message>
+    <message>
+        <source>Period</source>
+        <translation>Khoảng thời gian</translation>
+    </message>
+    <message>
+        <source>Request latency:</source>
+        <translation>Độ trễ yêu cầu:</translation>
+    </message>
+    <message>
+        <source>Running for:</source>
+        <translation>Đã chạy:</translation>
+    </message>
+    <message>
+        <source>Share ratio</source>
+        <translation>Tỷ lệ chia sẻ</translation>
+    </message>
+    <message>
+        <source>Share ratio:</source>
+        <translation>Tỷ lệ chia sẻ:</translation>
+    </message>
+    <message>
+        <source>Technical</source>
+        <translation>Kỹ thuật</translation>
+    </message>
+    <message>
+        <source>This month</source>
+        <translation>Tháng này</translation>
+    </message>
+    <message>
+        <source>This session</source>
+        <translation>Phiên này</translation>
+    </message>
+    <message>
+        <source>Today</source>
+        <translation>Hôm nay</translation>
+    </message>
+    <message>
+        <source>Torrents downloading:</source>
+        <translation>Torrent đang tải xuống:</translation>
+    </message>
+    <message>
+        <source>Torrents seeding:</source>
+        <translation>Torrent đang chia sẻ:</translation>
+    </message>
+    <message>
+        <source>Torrents stopped:</source>
+        <translation>Torrent đã dừng:</translation>
+    </message>
+    <message>
+        <source>Torrents with errors:</source>
+        <translation>Torrent có lỗi:</translation>
+    </message>
+    <message>
+        <source>Tracking since:</source>
+        <translation>Theo dõi từ:</translation>
+    </message>
+    <message>
+        <source>WebUI downloads added, this month</source>
+        <translation>Tải xuống thêm qua WebUI, tháng này</translation>
     </message>
 </context>
 <context>
@@ -3862,6 +4301,10 @@ Sử dụng ';' để chia nhiều mục nhập. Có thể sử dụng ký tự 
         <source>Content Path</source>
         <translation>Đường Dẫn Nội Dung</translation>
     </message>
+    <message>
+        <source>Remove all tags from selected torrents?</source>
+        <translation>Xóa hết thẻ khỏi torrent đã chọn?</translation>
+    </message>
 </context>
 <context>
     <name>UpDownRatioDialog</name>
@@ -3917,6 +4360,14 @@ Sử dụng ';' để chia nhiều mục nhập. Có thể sử dụng ký tự 
         <source>Action when the limit is reached</source>
         <translation>Hành động khi đạt đến giới hạn</translation>
     </message>
+    <message>
+        <source>Match all the limits</source>
+        <translation>Phù hợp tất cả các giới hạn</translation>
+    </message>
+    <message>
+        <source>Match any limit</source>
+        <translation>Phù hợp với bất kỳ giới hạn nào</translation>
+    </message>
 </context>
 <context>
     <name>about</name>
@@ -3934,6 +4385,10 @@ Sử dụng ';' để chia nhiều mục nhập. Có thể sử dụng ký tự 
     <message>
         <source>Remove tracker</source>
         <translation>Xóa máy theo dõi</translation>
+    </message>
+    <message>
+        <source>This choice is remembered for the next removal.</source>
+        <translation>Lựa chọn này sẽ được nhớ cho lần gỡ bỏ tiếp theo.</translation>
     </message>
 </context>
 <context>
@@ -4147,6 +4602,34 @@ Sử dụng ';' để chia nhiều mục nhập. Có thể sử dụng ký tự 
         <source>Select plugins</source>
         <translation>Chọn plugin</translation>
     </message>
+    <message>
+        <source>Category to search in</source>
+        <translation>Danh mục để tìm</translation>
+    </message>
+    <message>
+        <source>Close the selected search</source>
+        <translation>Đóng tìm kiếm đã chọn</translation>
+    </message>
+    <message>
+        <source>Empty search pattern</source>
+        <translation>Mẫu tìm kiếm trống</translation>
+    </message>
+    <message>
+        <source>Search engines to use</source>
+        <translation>Công cụ tìm kiếm sẽ dùng</translation>
+    </message>
+    <message>
+        <source>Search for torrents...</source>
+        <translation>Tìm torrent...</translation>
+    </message>
+    <message>
+        <source>Searches</source>
+        <translation>Tìm kiếm</translation>
+    </message>
+    <message>
+        <source>Type a search above and press Enter.</source>
+        <translation>Nhập từ khóa tìm kiếm ở trên rồi nhấn Enter.</translation>
+    </message>
 </context>
 <context>
     <name>PluginSelectDlg</name>
@@ -4185,6 +4668,10 @@ Sử dụng ';' để chia nhiều mục nhập. Có thể sử dụng ký tự 
     <message>
         <source>Search plugins</source>
         <translation>Tìm kiếm plugin</translation>
+    </message>
+    <message>
+        <source>Warning: Be sure to comply with your country&apos;s copyright laws when downloading torrents from any of these search engines.</source>
+        <translation>Cảnh báo: Đảm bảo tuân thủ luật bản quyền của quốc gia bạn khi tải xuống torrent từ bất kỳ công cụ tìm kiếm nào trong số này.</translation>
     </message>
 </context>
 <context>
@@ -4408,6 +4895,30 @@ Sử dụng ';' để chia nhiều mục nhập. Có thể sử dụng ký tự 
         <source>qBittorrent icon</source>
         <translation>biểu tượng qBittorrent</translation>
     </message>
+    <message>
+        <source>Based on:</source>
+        <translation>Dựa trên:</translation>
+    </message>
+    <message>
+        <source>Edition version:</source>
+        <translation>Phiên bản của bản phát hành:</translation>
+    </message>
+    <message>
+        <source>Kettle Edition is a personal build of qBittorrent that adds user accounts with roles for the WebUI and the desktop app, an activity log, and an installable WebUI with a phone layout. A kettle is a group of hawks soaring together. This is an unofficial build, not affiliated with the qBittorrent project.</source>
+        <translation>Kettle Edition là bản dựng cá nhân của qBittorrent, bổ sung tài khoản người dùng có vai trò cho WebUI và ứng dụng máy tính, nhật ký hoạt động, và WebUI có thể cài đặt với bố cục cho điện thoại. Kettle là một đàn diều hâu bay lượn cùng nhau. Đây là bản dựng không chính thức, không liên kết với dự án qBittorrent.</translation>
+    </message>
+    <message>
+        <source>Maintainer:</source>
+        <translation>Người bảo trì:</translation>
+    </message>
+    <message>
+        <source>This edition</source>
+        <translation>Bản phát hành này</translation>
+    </message>
+    <message>
+        <source>qBittorrent project:</source>
+        <translation>Dự án qBittorrent:</translation>
+    </message>
 </context>
 <context>
     <name>OptionDialog</name>
@@ -4509,6 +5020,46 @@ Sử dụng ';' để chia nhiều mục nhập. Có thể sử dụng ký tự 
     <message>
         <source>Open shared download window</source>
         <translation type="unfinished" />
+    </message>
+    <message>
+        <source>%1 of %2 shown</source>
+        <translation>Hiển thị %1 trên %2</translation>
+    </message>
+    <message>
+        <source>%1 of %2 shown (%3 hidden)</source>
+        <translation>Hiển thị %1 trên %2 (ẩn %3)</translation>
+    </message>
+    <message>
+        <source>Close all searches</source>
+        <translation>Đóng tất cả tìm kiếm</translation>
+    </message>
+    <message>
+        <source>Close search</source>
+        <translation>Đóng tìm kiếm</translation>
+    </message>
+    <message>
+        <source>Filter search results...</source>
+        <translation>Lọc kết quả tìm kiếm...</translation>
+    </message>
+    <message>
+        <source>Finished: %1</source>
+        <translation>Đã xong: %1</translation>
+    </message>
+    <message>
+        <source>Refresh search</source>
+        <translation>Làm mới tìm kiếm</translation>
+    </message>
+    <message>
+        <source>Search aborted: %1</source>
+        <translation>Đã hủy tìm kiếm: %1</translation>
+    </message>
+    <message>
+        <source>Search returned no results</source>
+        <translation>Tìm kiếm không trả về kết quả</translation>
+    </message>
+    <message>
+        <source>Searching: %1</source>
+        <translation>Đang tìm: %1</translation>
     </message>
 </context>
 <context>
@@ -4647,6 +5198,10 @@ Sử dụng ';' để chia nhiều mục nhập. Có thể sử dụng ký tự 
     <message>
         <source>Blocked opening RSS article URL. Only http:// and https:// links can be opened.</source>
         <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Details</source>
+        <translation>Chi tiết</translation>
     </message>
 </context>
 <context>
@@ -4925,6 +5480,10 @@ Hỗ trợ định dạng: S01E01, 1x1, 2017.12.31 và 31.12.2017 (Hỗ trợ đ
         <source>Import</source>
         <translation type="unfinished" />
     </message>
+    <message>
+        <source>Don&apos;t create subfolder</source>
+        <translation>Không tạo thư mục con</translation>
+    </message>
 </context>
 <context>
     <name>TrackerFiltersList</name>
@@ -5114,6 +5673,26 @@ Hỗ trợ định dạng: S01E01, 1x1, 2017.12.31 và 31.12.2017 (Hỗ trợ đ
         <source>Choose a log level...</source>
         <translation>Chọn cấp độ nhật ký...</translation>
     </message>
+    <message>
+        <source>Export...</source>
+        <translation>Xuất...</translation>
+    </message>
+    <message>
+        <source>Filter activity</source>
+        <translation>Lọc hoạt động</translation>
+    </message>
+    <message>
+        <source>Result:</source>
+        <translation>Kết quả:</translation>
+    </message>
+    <message>
+        <source>User:</source>
+        <translation>Người dùng:</translation>
+    </message>
+    <message>
+        <source>WebUI Activity</source>
+        <translation>Hoạt động WebUI</translation>
+    </message>
 </context>
 <context>
     <name>TrackersFilterWidget</name>
@@ -5183,6 +5762,14 @@ Hỗ trợ định dạng: S01E01, 1x1, 2017.12.31 và 31.12.2017 (Hỗ trợ đ
     <message>
         <source>Torrent share limits</source>
         <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Torrent share limits</source>
+        <translation>Giới hạn chia sẻ torrent</translation>
+    </message>
+    <message>
+        <source>Your role saves torrents in the default folders.</source>
+        <translation>Vai trò của bạn lưu torrent vào các thư mục mặc định.</translation>
     </message>
 </context>
 <context>
@@ -5282,6 +5869,14 @@ Hỗ trợ định dạng: S01E01, 1x1, 2017.12.31 và 31.12.2017 (Hỗ trợ đ
     <message>
         <source>Invalid Username or Password.</source>
         <translation>Tên tài khoản hoặc Mật khẩu không hợp lệ</translation>
+    </message>
+    <message>
+        <source>A kettle is a group of hawks soaring together.</source>
+        <translation>Kettle là một đàn diều hâu bay lượn cùng nhau.</translation>
+    </message>
+    <message>
+        <source>Sign in</source>
+        <translation>Đăng nhập</translation>
     </message>
 </context>
 <context>
@@ -5516,6 +6111,22 @@ Hỗ trợ định dạng: S01E01, 1x1, 2017.12.31 và 31.12.2017 (Hỗ trợ đ
         <source>If checked, filenames starting with a period punctuation mark `.` will not be added to the created torrent.</source>
         <translation type="unfinished" />
     </message>
+    <message>
+        <source>Align to piece boundary for files larger than:</source>
+        <translation>Căn chỉnh theo ranh giới mảnh cho các tệp lớn hơn:</translation>
+    </message>
+    <message>
+        <source>Optimize alignment</source>
+        <translation>Căn chỉnh tối ưu hóa</translation>
+    </message>
+    <message>
+        <source>Private torrent (Won&apos;t distribute on DHT network)</source>
+        <translation>Torrent riêng tư (Sẽ không phân phối trên mạng DHT)</translation>
+    </message>
+    <message>
+        <source>Start seeding immediately</source>
+        <translation>Bắt đầu chia sẻ ngay lập tức</translation>
+    </message>
 </context>
 <context>
     <name>DownloadFromURLDialog</name>
@@ -5626,6 +6237,10 @@ Hỗ trợ định dạng: S01E01, 1x1, 2017.12.31 và 31.12.2017 (Hỗ trợ đ
         <source>Failed to set speed limits</source>
         <translation type="unfinished" />
     </message>
+    <message>
+        <source>Speed limits</source>
+        <translation>Giới hạn tốc độ</translation>
+    </message>
 </context>
 <context>
     <name>ListWidget</name>
@@ -5636,6 +6251,10 @@ Hỗ trợ định dạng: S01E01, 1x1, 2017.12.31 và 31.12.2017 (Hỗ trợ đ
     <message>
         <source>Resize</source>
         <translation>Đổi Kích Thước</translation>
+    </message>
+    <message>
+        <source>Reset Auto Width</source>
+        <translation>Đặt lại độ rộng tự động</translation>
     </message>
 </context>
 <context>
@@ -5651,6 +6270,10 @@ Hỗ trợ định dạng: S01E01, 1x1, 2017.12.31 và 31.12.2017 (Hỗ trợ đ
     <message>
         <source>Rotate this API key? The current key will immediately stop working and a new key will be generated.</source>
         <translation>Xoay khóa API này? Khóa hiện tại sẽ ngay lập tức ngừng hoạt động và một khóa mới sẽ được tạo.</translation>
+    </message>
+    <message>
+        <source>Generate an API key? This key can be used to interact with qBittorrent&apos;s API.</source>
+        <translation>Tạo khóa API? Khóa này có thể được sử dụng để tương tác với API của qBittorrent.</translation>
     </message>
 </context>
 <context>
@@ -5766,6 +6389,54 @@ Hỗ trợ định dạng: S01E01, 1x1, 2017.12.31 và 31.12.2017 (Hỗ trợ đ
         <source>Remove torrent</source>
         <translation type="unfinished" />
     </message>
+    <message>
+        <source>Action when the limit is reached:</source>
+        <translation>Hành động khi đạt đến giới hạn:</translation>
+    </message>
+    <message>
+        <source>Default (%1)</source>
+        <translation>Mặc định (%1)</translation>
+    </message>
+    <message>
+        <source>From category</source>
+        <translation>Từ danh mục</translation>
+    </message>
+    <message>
+        <source>From category (%1)</source>
+        <translation>Từ danh mục (%1)</translation>
+    </message>
+    <message>
+        <source>Inactive seeding time:</source>
+        <translation>Thời gian seeding không hoạt động:</translation>
+    </message>
+    <message>
+        <source>Match all the limits</source>
+        <translation>Phù hợp tất cả các giới hạn</translation>
+    </message>
+    <message>
+        <source>Match any limit</source>
+        <translation>Phù hợp với bất kỳ giới hạn nào</translation>
+    </message>
+    <message>
+        <source>Mode:</source>
+        <translation>Chế độ:</translation>
+    </message>
+    <message>
+        <source>Ratio:</source>
+        <translation>Tỉ lệ:</translation>
+    </message>
+    <message>
+        <source>Seeding time:</source>
+        <translation>Thời gian Seeding:</translation>
+    </message>
+    <message>
+        <source>Set to</source>
+        <translation>Đặt là</translation>
+    </message>
+    <message>
+        <source>Unlimited</source>
+        <translation>Không giới hạn</translation>
+    </message>
 </context>
 <context>
     <name>TorrentContent</name>
@@ -5776,6 +6447,208 @@ Hỗ trợ định dạng: S01E01, 1x1, 2017.12.31 và 31.12.2017 (Hỗ trợ đ
     <message>
         <source>Not available for folders</source>
         <translation type="unfinished" />
+    </message>
+</context>
+<context>
+    <name>UserAccounts</name>
+    <message>
+        <source>(this browser)</source>
+        <translation>(trình duyệt này)</translation>
+    </message>
+    <message>
+        <source>A role decides what its users are allowed to do.</source>
+        <translation>Vai trò quyết định người dùng của nó được làm gì.</translation>
+    </message>
+    <message>
+        <source>Add Role</source>
+        <translation>Thêm vai trò</translation>
+    </message>
+    <message>
+        <source>Add Role...</source>
+        <translation>Thêm vai trò...</translation>
+    </message>
+    <message>
+        <source>Add User</source>
+        <translation>Thêm người dùng</translation>
+    </message>
+    <message>
+        <source>Add User...</source>
+        <translation>Thêm người dùng...</translation>
+    </message>
+    <message>
+        <source>Are you sure you want to remove the role &apos;%1&apos;?</source>
+        <translation>Bạn có chắc muốn gỡ bỏ vai trò &apos;%1&apos; không?</translation>
+    </message>
+    <message>
+        <source>Are you sure you want to remove the user &apos;%1&apos;?</source>
+        <translation>Bạn có chắc muốn gỡ bỏ người dùng &apos;%1&apos; không?</translation>
+    </message>
+    <message>
+        <source>At least %1 characters</source>
+        <translation>Ít nhất %1 ký tự</translation>
+    </message>
+    <message>
+        <source>Browser</source>
+        <translation>Trình duyệt</translation>
+    </message>
+    <message>
+        <source>Browsers and devices where someone is logged in with a user account.</source>
+        <translation>Trình duyệt và thiết bị nơi ai đó đã đăng nhập bằng tài khoản người dùng.</translation>
+    </message>
+    <message>
+        <source>Change Password</source>
+        <translation>Đổi mật khẩu</translation>
+    </message>
+    <message>
+        <source>Confirm password:</source>
+        <translation>Xác nhận mật khẩu:</translation>
+    </message>
+    <message>
+        <source>Created</source>
+        <translation>Ngày tạo</translation>
+    </message>
+    <message>
+        <source>Current password:</source>
+        <translation>Mật khẩu hiện tại:</translation>
+    </message>
+    <message>
+        <source>Description</source>
+        <translation>Mô tả</translation>
+    </message>
+    <message>
+        <source>Description:</source>
+        <translation>Mô tả:</translation>
+    </message>
+    <message>
+        <source>Disable</source>
+        <translation>Vô hiệu hóa</translation>
+    </message>
+    <message>
+        <source>Disable this account</source>
+        <translation>Vô hiệu hóa tài khoản này</translation>
+    </message>
+    <message>
+        <source>Edit Role</source>
+        <translation>Sửa vai trò</translation>
+    </message>
+    <message>
+        <source>Edit User</source>
+        <translation>Sửa người dùng</translation>
+    </message>
+    <message>
+        <source>Edit...</source>
+        <translation>Sửa...</translation>
+    </message>
+    <message>
+        <source>Enable</source>
+        <translation>Bật</translation>
+    </message>
+    <message>
+        <source>Enter a role name.</source>
+        <translation>Nhập tên vai trò.</translation>
+    </message>
+    <message>
+        <source>Enter a username.</source>
+        <translation>Nhập tên người dùng.</translation>
+    </message>
+    <message>
+        <source>Expires</source>
+        <translation>Hết hạn</translation>
+    </message>
+    <message>
+        <source>Gives control over the PC or qBittorrent itself</source>
+        <translation>Cho quyền điều khiển máy tính hoặc chính qBittorrent</translation>
+    </message>
+    <message>
+        <source>Last active</source>
+        <translation>Hoạt động lần cuối</translation>
+    </message>
+    <message>
+        <source>Last login</source>
+        <translation>Đăng nhập lần cuối</translation>
+    </message>
+    <message>
+        <source>Leave empty to keep the current password</source>
+        <translation>Để trống để giữ mật khẩu hiện tại</translation>
+    </message>
+    <message>
+        <source>Log Out</source>
+        <translation>Đăng xuất</translation>
+    </message>
+    <message>
+        <source>Log Out Everywhere</source>
+        <translation>Đăng xuất mọi nơi</translation>
+    </message>
+    <message>
+        <source>Logged In</source>
+        <translation>Đang đăng nhập</translation>
+    </message>
+    <message>
+        <source>Logged in</source>
+        <translation>Đăng nhập lúc</translation>
+    </message>
+    <message>
+        <source>New password:</source>
+        <translation>Mật khẩu mới:</translation>
+    </message>
+    <message>
+        <source>No accounts yet, so everyone still uses the shared WebUI login. Add an Admin account first.</source>
+        <translation>Chưa có tài khoản nào nên mọi người vẫn dùng đăng nhập WebUI chung. Hãy thêm tài khoản Quản trị trước.</translation>
+    </message>
+    <message>
+        <source>People who can log in to the WebUI with their own username and password.</source>
+        <translation>Những người có thể đăng nhập WebUI bằng tên người dùng và mật khẩu riêng.</translation>
+    </message>
+    <message>
+        <source>Permissions</source>
+        <translation>Quyền</translation>
+    </message>
+    <message>
+        <source>Role</source>
+        <translation>Vai trò</translation>
+    </message>
+    <message>
+        <source>Role:</source>
+        <translation>Vai trò:</translation>
+    </message>
+    <message>
+        <source>Roles</source>
+        <translation>Vai trò</translation>
+    </message>
+    <message>
+        <source>The password must be at least %1 characters long.</source>
+        <translation>Mật khẩu phải dài ít nhất %1 ký tự.</translation>
+    </message>
+    <message>
+        <source>The passwords don&apos;t match.</source>
+        <translation>Mật khẩu không khớp.</translation>
+    </message>
+    <message>
+        <source>Users</source>
+        <translation>Người dùng</translation>
+    </message>
+    <message>
+        <source>Your password was changed. Other browsers and devices where you were logged in have been logged out.</source>
+        <translation>Mật khẩu của bạn đã được đổi. Các trình duyệt và thiết bị khác mà bạn đã đăng nhập đã bị đăng xuất.</translation>
+    </message>
+</context>
+<context>
+    <name>WebUIActivity</name>
+    <message>
+        <source>Action</source>
+        <translation>Hành động</translation>
+    </message>
+    <message>
+        <source>Result</source>
+        <translation>Kết quả</translation>
+    </message>
+    <message>
+        <source>Role</source>
+        <translation>Vai trò</translation>
+    </message>
+    <message>
+        <source>Time</source>
+        <translation>Thời gian</translation>
     </message>
 </context>
 </TS>

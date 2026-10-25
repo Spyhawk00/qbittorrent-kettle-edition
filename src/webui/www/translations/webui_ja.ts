@@ -223,6 +223,85 @@ The piece hash will be checked when it is requested for the first time by a peer
         <source>%1 needed · %2 free</source>
         <translation type="unfinished" />
     </message>
+    <message>
+        <source>Don&apos;t create subfolder</source>
+        <translation>サブフォルダーを作成しない</translation>
+    </message>
+    <message>
+        <source>Never show again</source>
+        <translation>次回から表示しない</translation>
+    </message>
+    <message>
+        <source>Select None</source>
+        <translation>すべて解除</translation>
+    </message>
+    <message>
+        <source>Torrent options</source>
+        <translation>Torrentのオプション</translation>
+    </message>
+    <message>
+        <source>Your role saves torrents in the default folders.</source>
+        <translation>あなたのロールは torrent を既定のフォルダーに保存します。</translation>
+    </message>
+</context>
+<context>
+    <name>AdvancedSettings</name>
+    <message>
+        <source>General</source>
+        <translation>全般</translation>
+    </message>
+    <message>
+        <source>Network</source>
+        <translation>ネットワーク</translation>
+    </message>
+    <message>
+        <source>Storage</source>
+        <translation>ストレージ</translation>
+    </message>
+    <message>
+        <source>Peers and trackers</source>
+        <translation>ピアとトラッカー</translation>
+    </message>
+    <message>
+        <source>Program behavior</source>
+        <translation>プログラムの動作</translation>
+    </message>
+    <message>
+        <source>Display and notifications</source>
+        <translation>表示と通知</translation>
+    </message>
+    <message>
+        <source>Network connection</source>
+        <translation>ネットワーク接続</translation>
+    </message>
+    <message>
+        <source>Security and privacy</source>
+        <translation>セキュリティとプライバシー</translation>
+    </message>
+    <message>
+        <source>Connection tuning</source>
+        <translation>接続の調整</translation>
+    </message>
+    <message>
+        <source>Saving and torrent files</source>
+        <translation>保存とトレントファイル</translation>
+    </message>
+    <message>
+        <source>Disk and memory</source>
+        <translation>ディスクとメモリ</translation>
+    </message>
+    <message>
+        <source>Trackers</source>
+        <translation>トラッカー</translation>
+    </message>
+    <message>
+        <source>Peers and seeding</source>
+        <translation>ピアとシード</translation>
+    </message>
+    <message>
+        <source>DHT and I2P</source>
+        <translation>DHT と I2P</translation>
+    </message>
 </context>
 <context>
     <name>CategoryFilterModel</name>
@@ -623,6 +702,14 @@ The piece hash will be checked when it is requested for the first time by a peer
         <source>More</source>
         <translation>その他</translation>
     </message>
+    <message>
+        <source>Change Password...</source>
+        <translation>パスワードを変更...</translation>
+    </message>
+    <message>
+        <source>Signed in as</source>
+        <translation>ログイン中のユーザー</translation>
+    </message>
 </context>
 <context>
     <name>MainWindow</name>
@@ -929,6 +1016,34 @@ The piece hash will be checked when it is requested for the first time by a peer
     <message>
         <source>Resume Session</source>
         <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Global Speed Limits</source>
+        <translation>グローバルの速度制限</translation>
+    </message>
+    <message>
+        <source>Pause Session</source>
+        <translation>セッションを一時停止</translation>
+    </message>
+    <message>
+        <source>Pause session</source>
+        <translation>セッションを一時停止</translation>
+    </message>
+    <message>
+        <source>Resume Session</source>
+        <translation>セッションを再開</translation>
+    </message>
+    <message>
+        <source>Resume session</source>
+        <translation>セッションを再開</translation>
+    </message>
+    <message>
+        <source>Your account can&apos;t add torrents.</source>
+        <translation>このアカウントは torrent を追加できません。</translation>
+    </message>
+    <message>
+        <source>[PAUSED]</source>
+        <translation>[一時停止中]</translation>
     </message>
 </context>
 <context>
@@ -2519,6 +2634,186 @@ DNSリバインディング攻撃を防ぐために、WebUIサーバーが使用
         <source>a@x.com;b@y.com,c@z.com - send two emails: the first to just a@x.com, the second to both b@y.com and c@z.com</source>
         <translation type="unfinished" />
     </message>
+    <message>
+        <source>0 means users are logged out after the session timeout.</source>
+        <translation>0 にすると、セッションのタイムアウト後にユーザーがログアウトされます。</translation>
+    </message>
+    <message>
+        <source>Access</source>
+        <translation>アクセス</translation>
+    </message>
+    <message>
+        <source>Allow this login when user accounts exist</source>
+        <translation>ユーザーアカウントがある場合もこのログインを許可する</translation>
+    </message>
+    <message>
+        <source>Also save search results</source>
+        <translation>検索結果も保存する</translation>
+    </message>
+    <message>
+        <source>Also when addition is cancelled</source>
+        <translation>追加がキャンセルされた場合でも削除する</translation>
+    </message>
+    <message>
+        <source>Below normal</source>
+        <translation>標準以下</translation>
+    </message>
+    <message>
+        <source>Changes to users, roles and logins apply at once.</source>
+        <translation>ユーザー、ロール、ログインの変更はすぐに反映されます。</translation>
+    </message>
+    <message>
+        <source>Don&apos;t create subfolder</source>
+        <translation>サブフォルダーを作成しない</translation>
+    </message>
+    <message>
+        <source>Example:</source>
+        <translation>例:</translation>
+    </message>
+    <message>
+        <source>I2P (experimental)</source>
+        <translation>I2P (実験的)</translation>
+    </message>
+    <message>
+        <source>Keep WebUI activity log for:</source>
+        <translation>WebUI アクティビティログの保存期間:</translation>
+    </message>
+    <message>
+        <source>Keep unselected files in &quot;.unwanted&quot; folder</source>
+        <translation>選択されていないファイルを&quot;.unwanted&quot;フォルダーに保存する</translation>
+    </message>
+    <message>
+        <source>Keep users logged in for:</source>
+        <translation>ログイン状態を保つ期間:</translation>
+    </message>
+    <message>
+        <source>Language:</source>
+        <translation>言語:</translation>
+    </message>
+    <message>
+        <source>Lock account after consecutive failures:</source>
+        <translation>連続失敗後にアカウントをロックする回数:</translation>
+    </message>
+    <message>
+        <source>Logins and Activity Log</source>
+        <translation>ログインとアクティビティログ</translation>
+    </message>
+    <message>
+        <source>Low</source>
+        <translation>低</translation>
+    </message>
+    <message>
+        <source>Maximum active checking torrents:</source>
+        <translation>Torrentをチェックする最大アクティブ数</translation>
+    </message>
+    <message>
+        <source>Medium</source>
+        <translation>中</translation>
+    </message>
+    <message>
+        <source>No settings match</source>
+        <translation>一致する設定はありません</translation>
+    </message>
+    <message>
+        <source>Process memory priority:</source>
+        <translation>プロセスのメモリ優先度:</translation>
+    </message>
+    <message>
+        <source>Save search tabs</source>
+        <translation>検索タブを保存する</translation>
+    </message>
+    <message>
+        <source>Search UI</source>
+        <translation>検索UI</translation>
+    </message>
+    <message>
+        <source>Search settings</source>
+        <translation>設定を検索</translation>
+    </message>
+    <message>
+        <source>Service:</source>
+        <translation>サービス:</translation>
+    </message>
+    <message>
+        <source>Show console window</source>
+        <translation>コンソールウィンドウを表示する</translation>
+    </message>
+    <message>
+        <source>Show the window when adding a torrent</source>
+        <translation>torrent の追加時にウィンドウを表示する</translation>
+    </message>
+    <message>
+        <source>Specify reverse proxy IPs (or subnets, e.g. 0.0.0.0/24) in order to use forwarded client address (X-Forwarded-For header). Use &apos;;&apos; to split multiple entries.</source>
+        <translation> 転送クライアントアドレス(X-Forwarded-For ヘッダー)を使用するためのリバースプロキシのIP(または 0.0.0.0/24 などのサブネット)を指定します。複数項目は&apos;;&apos;で区切ります。</translation>
+    </message>
+    <message>
+        <source>Status bar and log</source>
+        <translation>ステータスバーとログ</translation>
+    </message>
+    <message>
+        <source>The WebUI activity log can be kept for 1 to 3650 days.</source>
+        <translation>WebUI アクティビティログは 1 日から 3650 日まで保存できます。</translation>
+    </message>
+    <message>
+        <source>The settings below apply with OK or Apply.</source>
+        <translation>以下の設定は OK または適用で反映されます。</translation>
+    </message>
+    <message>
+        <source>Tip: Encapsulate parameter with quotation marks to avoid text being cut off at whitespace (e.g., &quot;%N&quot;)</source>
+        <translation>ヒント: 空白文字でテキストが切れることを防ぐために、パラメーターはダブルクオーテーションで囲います(例: &quot;%N&quot;)</translation>
+    </message>
+    <message>
+        <source>Transfer List</source>
+        <translation>転送リスト</translation>
+    </message>
+    <message>
+        <source>Until the first user account is created, this login always works.</source>
+        <translation>最初のユーザーアカウントを作成するまで、このログインは常に使えます。</translation>
+    </message>
+    <message>
+        <source>User</source>
+        <translation>ユーザー</translation>
+    </message>
+    <message>
+        <source>User Accounts</source>
+        <translation>ユーザーアカウント</translation>
+    </message>
+    <message>
+        <source>Users can be kept logged in for 0 to 365 days.</source>
+        <translation>ユーザーのログイン状態は 0 日から 365 日まで保てます。</translation>
+    </message>
+    <message>
+        <source>Very low</source>
+        <translation>最低</translation>
+    </message>
+    <message>
+        <source>Warning! Data loss possible!</source>
+        <translation>注意: データが失われる可能性があります。</translation>
+    </message>
+    <message>
+        <source>When Default Save/Incomplete Path changed:</source>
+        <translation>デフォルトの保存/未完了パスが変更されたとき:</translation>
+    </message>
+    <message>
+        <source>Whitelist for filtering HTTP Host header values.
+In order to defend against DNS rebinding attack,
+you should put in domain names used by WebUI server.
+
+Use &apos;;&apos; to split multiple entries. Can use wildcard &apos;*&apos;.</source>
+        <translation>HTTPのHostヘッダーをフィルタリングするためのホワイトリストです。
+DNSリバインディング攻撃を防ぐために、Web UIサーバーが使用する
+ドメイン名を入力する必要があります。
+
+複数のエントリに分けるには&apos;;&apos;を使用します。ワイルドカード&apos;*&apos;を使用できます。</translation>
+    </message>
+    <message>
+        <source>You changed the address, port or HTTPS setting of the WebUI. Saving moves the WebUI, so Options will save, close and reload the page, the same as OK. If the page doesn&apos;t come back, open the WebUI at its new address.\n\nSave anyway?</source>
+        <translation>WebUI のアドレス、ポート、または HTTPS の設定を変更しました。保存すると WebUI が移動するため、オプションは OK と同様に保存して閉じ、ページを再読み込みします。ページが戻らない場合は、新しいアドレスで WebUI を開いてください。\n\nそれでも保存しますか?</translation>
+    </message>
+    <message>
+        <source>lock for:</source>
+        <translation>ロック期間:</translation>
+    </message>
 </context>
 <context>
     <name>PeerListWidget</name>
@@ -3059,6 +3354,142 @@ DNSリバインディング攻撃を防ぐために、WebUIサーバーが使用
     <message>
         <source>The time it takes from receiving a request from a peer until we're sending the response back on the socket</source>
         <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Activity</source>
+        <translation>アクティビティ</translation>
+    </message>
+    <message>
+        <source>All time</source>
+        <translation>累計</translation>
+    </message>
+    <message>
+        <source>Before tracking began</source>
+        <translation>記録開始前</translation>
+    </message>
+    <message>
+        <source>By month</source>
+        <translation>月別</translation>
+    </message>
+    <message>
+        <source>Counts the requests that added a download. Apps without a login, such as Sonarr and Radarr, are shown as (localhost). Downloads added in the desktop window are not counted.</source>
+        <translation>ダウンロードを追加したリクエストを数えます。Sonarr や Radarr など、ログインしないアプリは (localhost) と表示されます。デスクトップのウィンドウで追加したダウンロードは数えません。</translation>
+    </message>
+    <message>
+        <source>Current speed:</source>
+        <translation>現在の速度:</translation>
+    </message>
+    <message>
+        <source>DHT nodes:</source>
+        <translation>DHT ノード:</translation>
+    </message>
+    <message>
+        <source>Data discarded this session:</source>
+        <translation>このセッションで破棄されたデータ:</translation>
+    </message>
+    <message>
+        <source>Disk</source>
+        <translation>ディスク</translation>
+    </message>
+    <message>
+        <source>History</source>
+        <translation>履歴</translation>
+    </message>
+    <message>
+        <source>Last 12 months</source>
+        <translation>過去 12 か月</translation>
+    </message>
+    <message>
+        <source>Last 7 days</source>
+        <translation>過去 7 日間</translation>
+    </message>
+    <message>
+        <source>Last month</source>
+        <translation>先月</translation>
+    </message>
+    <message>
+        <source>Month</source>
+        <translation>月</translation>
+    </message>
+    <message>
+        <source>Nothing added yet</source>
+        <translation>まだ何も追加されていません</translation>
+    </message>
+    <message>
+        <source>Off</source>
+        <translation>オフ</translation>
+    </message>
+    <message>
+        <source>Overview</source>
+        <translation>概要</translation>
+    </message>
+    <message>
+        <source>Peers waiting on disk reads:</source>
+        <translation>ディスク読み込み待ちのピア:</translation>
+    </message>
+    <message>
+        <source>Peers waiting on disk writes:</source>
+        <translation>ディスク書き込み待ちのピア:</translation>
+    </message>
+    <message>
+        <source>Period</source>
+        <translation>期間</translation>
+    </message>
+    <message>
+        <source>Request latency:</source>
+        <translation>リクエストの遅延:</translation>
+    </message>
+    <message>
+        <source>Running for:</source>
+        <translation>稼働時間:</translation>
+    </message>
+    <message>
+        <source>Share ratio</source>
+        <translation>シェア率</translation>
+    </message>
+    <message>
+        <source>Share ratio:</source>
+        <translation>シェア率:</translation>
+    </message>
+    <message>
+        <source>Technical</source>
+        <translation>技術情報</translation>
+    </message>
+    <message>
+        <source>This month</source>
+        <translation>今月</translation>
+    </message>
+    <message>
+        <source>This session</source>
+        <translation>このセッション</translation>
+    </message>
+    <message>
+        <source>Today</source>
+        <translation>今日</translation>
+    </message>
+    <message>
+        <source>Torrents downloading:</source>
+        <translation>ダウンロード中の torrent:</translation>
+    </message>
+    <message>
+        <source>Torrents seeding:</source>
+        <translation>シード中の torrent:</translation>
+    </message>
+    <message>
+        <source>Torrents stopped:</source>
+        <translation>停止中の torrent:</translation>
+    </message>
+    <message>
+        <source>Torrents with errors:</source>
+        <translation>エラーのある torrent:</translation>
+    </message>
+    <message>
+        <source>Tracking since:</source>
+        <translation>記録開始日:</translation>
+    </message>
+    <message>
+        <source>WebUI downloads added, this month</source>
+        <translation>WebUI から追加されたダウンロード (今月)</translation>
     </message>
 </context>
 <context>
@@ -3846,6 +4277,10 @@ DNSリバインディング攻撃を防ぐために、WebUIサーバーが使用
         <source>Content Path</source>
         <translation type="unfinished" />
     </message>
+    <message>
+        <source>Remove all tags from selected torrents?</source>
+        <translation>選択されたTorrentからすべてのタグを削除しますか？</translation>
+    </message>
 </context>
 <context>
     <name>UpDownRatioDialog</name>
@@ -3918,6 +4353,10 @@ DNSリバインディング攻撃を防ぐために、WebUIサーバーが使用
     <message>
         <source>Remove tracker</source>
         <translation>トラッカーを削除</translation>
+    </message>
+    <message>
+        <source>This choice is remembered for the next removal.</source>
+        <translation>この選択は次回の削除でも記憶されます。</translation>
     </message>
 </context>
 <context>
@@ -4131,6 +4570,34 @@ DNSリバインディング攻撃を防ぐために、WebUIサーバーが使用
         <source>Select plugins</source>
         <translation type="unfinished" />
     </message>
+    <message>
+        <source>Category to search in</source>
+        <translation>検索するカテゴリ</translation>
+    </message>
+    <message>
+        <source>Close the selected search</source>
+        <translation>選択した検索を閉じる</translation>
+    </message>
+    <message>
+        <source>Empty search pattern</source>
+        <translation>空の検索パターン</translation>
+    </message>
+    <message>
+        <source>Search engines to use</source>
+        <translation>使用する検索エンジン</translation>
+    </message>
+    <message>
+        <source>Search for torrents...</source>
+        <translation>torrent を検索...</translation>
+    </message>
+    <message>
+        <source>Searches</source>
+        <translation>検索</translation>
+    </message>
+    <message>
+        <source>Type a search above and press Enter.</source>
+        <translation>上に検索語を入力して Enter を押してください。</translation>
+    </message>
 </context>
 <context>
     <name>PluginSelectDlg</name>
@@ -4169,6 +4636,10 @@ DNSリバインディング攻撃を防ぐために、WebUIサーバーが使用
     <message>
         <source>Search plugins</source>
         <translation>検索プラグイン</translation>
+    </message>
+    <message>
+        <source>Warning: Be sure to comply with your country&apos;s copyright laws when downloading torrents from any of these search engines.</source>
+        <translation>警告: これら検索エンジンからTorrentをダウンロードする際は、あなたの国の著作権法を必ず遵守してください。</translation>
     </message>
 </context>
 <context>
@@ -4392,6 +4863,30 @@ DNSリバインディング攻撃を防ぐために、WebUIサーバーが使用
         <source>qBittorrent icon</source>
         <translation>qBittorrentアイコン</translation>
     </message>
+    <message>
+        <source>Based on:</source>
+        <translation>ベース:</translation>
+    </message>
+    <message>
+        <source>Edition version:</source>
+        <translation>エディションのバージョン:</translation>
+    </message>
+    <message>
+        <source>Kettle Edition is a personal build of qBittorrent that adds user accounts with roles for the WebUI and the desktop app, an activity log, and an installable WebUI with a phone layout. A kettle is a group of hawks soaring together. This is an unofficial build, not affiliated with the qBittorrent project.</source>
+        <translation>Kettle Edition は qBittorrent の個人用ビルドで、WebUI とデスクトップアプリ向けのロール付きユーザーアカウント、アクティビティログ、スマートフォン向けレイアウトのインストール可能な WebUI を追加します。Kettle とは、一緒に舞い上がるタカの群れのことです。これは非公式ビルドであり、qBittorrent プロジェクトとは関係ありません。</translation>
+    </message>
+    <message>
+        <source>Maintainer:</source>
+        <translation>メンテナー:</translation>
+    </message>
+    <message>
+        <source>This edition</source>
+        <translation>このエディション</translation>
+    </message>
+    <message>
+        <source>qBittorrent project:</source>
+        <translation>qBittorrent プロジェクト:</translation>
+    </message>
 </context>
 <context>
     <name>OptionDialog</name>
@@ -4493,6 +4988,46 @@ DNSリバインディング攻撃を防ぐために、WebUIサーバーが使用
     <message>
         <source>Open shared download window</source>
         <translation type="unfinished" />
+    </message>
+    <message>
+        <source>%1 of %2 shown</source>
+        <translation>%2 件中 %1 件を表示</translation>
+    </message>
+    <message>
+        <source>%1 of %2 shown (%3 hidden)</source>
+        <translation>%2 件中 %1 件を表示 (%3 件非表示)</translation>
+    </message>
+    <message>
+        <source>Close all searches</source>
+        <translation>すべての検索を閉じる</translation>
+    </message>
+    <message>
+        <source>Close search</source>
+        <translation>検索を閉じる</translation>
+    </message>
+    <message>
+        <source>Filter search results...</source>
+        <translation>検索結果を絞り込む...</translation>
+    </message>
+    <message>
+        <source>Finished: %1</source>
+        <translation>完了: %1</translation>
+    </message>
+    <message>
+        <source>Refresh search</source>
+        <translation>検索を更新</translation>
+    </message>
+    <message>
+        <source>Search aborted: %1</source>
+        <translation>検索を中止しました: %1</translation>
+    </message>
+    <message>
+        <source>Search returned no results</source>
+        <translation>検索結果は 0 件でした</translation>
+    </message>
+    <message>
+        <source>Searching: %1</source>
+        <translation>検索中: %1</translation>
     </message>
 </context>
 <context>
@@ -4631,6 +5166,10 @@ DNSリバインディング攻撃を防ぐために、WebUIサーバーが使用
     <message>
         <source>Blocked opening RSS article URL. Only http:// and https:// links can be opened.</source>
         <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Details</source>
+        <translation>詳細</translation>
     </message>
 </context>
 <context>
@@ -4909,6 +5448,10 @@ Supports the formats: S01E01, 1x1, 2017.12.31 and 31.12.2017 (Date formats also 
         <source>Import</source>
         <translation type="unfinished" />
     </message>
+    <message>
+        <source>Don&apos;t create subfolder</source>
+        <translation>サブフォルダーを作成しない</translation>
+    </message>
 </context>
 <context>
     <name>TrackerFiltersList</name>
@@ -5098,6 +5641,26 @@ Supports the formats: S01E01, 1x1, 2017.12.31 and 31.12.2017 (Date formats also 
         <source>Choose a log level...</source>
         <translation>ログレベルを選択...</translation>
     </message>
+    <message>
+        <source>Export...</source>
+        <translation>エクスポート...</translation>
+    </message>
+    <message>
+        <source>Filter activity</source>
+        <translation>アクティビティを絞り込む</translation>
+    </message>
+    <message>
+        <source>Result:</source>
+        <translation>結果:</translation>
+    </message>
+    <message>
+        <source>User:</source>
+        <translation>ユーザー:</translation>
+    </message>
+    <message>
+        <source>WebUI Activity</source>
+        <translation>WebUI アクティビティ</translation>
+    </message>
 </context>
 <context>
     <name>TrackersFilterWidget</name>
@@ -5167,6 +5730,14 @@ Supports the formats: S01E01, 1x1, 2017.12.31 and 31.12.2017 (Date formats also 
     <message>
         <source>Torrent share limits</source>
         <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Torrent share limits</source>
+        <translation>Torrentの共有制限</translation>
+    </message>
+    <message>
+        <source>Your role saves torrents in the default folders.</source>
+        <translation>あなたのロールは torrent を既定のフォルダーに保存します。</translation>
     </message>
 </context>
 <context>
@@ -5266,6 +5837,14 @@ Supports the formats: S01E01, 1x1, 2017.12.31 and 31.12.2017 (Date formats also 
     <message>
         <source>Invalid Username or Password.</source>
         <translation>ユーザー名またはパスワーが正しくありません。</translation>
+    </message>
+    <message>
+        <source>A kettle is a group of hawks soaring together.</source>
+        <translation>Kettle とは、一緒に舞い上がるタカの群れのことです。</translation>
+    </message>
+    <message>
+        <source>Sign in</source>
+        <translation>サインイン</translation>
     </message>
 </context>
 <context>
@@ -5474,6 +6053,22 @@ Supports the formats: S01E01, 1x1, 2017.12.31 and 31.12.2017 (Date formats also 
         <source>If checked, filenames starting with a period punctuation mark `.` will not be added to the created torrent.</source>
         <translation type="unfinished" />
     </message>
+    <message>
+        <source>Align to piece boundary for files larger than:</source>
+        <translation>次のサイズを超えるファイルのピース境界を揃える:</translation>
+    </message>
+    <message>
+        <source>Optimize alignment</source>
+        <translation>アラインメントを最適化</translation>
+    </message>
+    <message>
+        <source>Private torrent (Won&apos;t distribute on DHT network)</source>
+        <translation>プライベートTorrent (DHTネットワークで配信しない)</translation>
+    </message>
+    <message>
+        <source>Start seeding immediately</source>
+        <translation>すぐにシードを開始する</translation>
+    </message>
 </context>
 <context>
     <name>DownloadFromURLDialog</name>
@@ -5584,6 +6179,10 @@ Supports the formats: S01E01, 1x1, 2017.12.31 and 31.12.2017 (Date formats also 
         <source>Failed to set speed limits</source>
         <translation type="unfinished" />
     </message>
+    <message>
+        <source>Speed limits</source>
+        <translation>速度制限</translation>
+    </message>
 </context>
 <context>
     <name>ListWidget</name>
@@ -5594,6 +6193,10 @@ Supports the formats: S01E01, 1x1, 2017.12.31 and 31.12.2017 (Date formats also 
     <message>
         <source>Resize</source>
         <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Reset Auto Width</source>
+        <translation>自動幅をリセット</translation>
     </message>
 </context>
 <context>
@@ -5724,6 +6327,30 @@ Supports the formats: S01E01, 1x1, 2017.12.31 and 31.12.2017 (Date formats also 
         <source>Remove torrent</source>
         <translation type="unfinished" />
     </message>
+    <message>
+        <source>Action when the limit is reached:</source>
+        <translation>制限に達したときのアクション:</translation>
+    </message>
+    <message>
+        <source>Inactive seeding time:</source>
+        <translation>非稼働シード時間:</translation>
+    </message>
+    <message>
+        <source>Ratio:</source>
+        <translation>共有比:</translation>
+    </message>
+    <message>
+        <source>Seeding time:</source>
+        <translation>シード時間:</translation>
+    </message>
+    <message>
+        <source>Set to</source>
+        <translation>選択</translation>
+    </message>
+    <message>
+        <source>Unlimited</source>
+        <translation>無制限</translation>
+    </message>
 </context>
 <context>
     <name>TorrentContent</name>
@@ -5734,6 +6361,216 @@ Supports the formats: S01E01, 1x1, 2017.12.31 and 31.12.2017 (Date formats also 
     <message>
         <source>Not available for folders</source>
         <translation type="unfinished" />
+    </message>
+</context>
+<context>
+    <name>UserAccounts</name>
+    <message>
+        <source>(this browser)</source>
+        <translation>(このブラウザー)</translation>
+    </message>
+    <message>
+        <source>A role decides what its users are allowed to do.</source>
+        <translation>ロールは、そのユーザーが何をしてよいかを決めます。</translation>
+    </message>
+    <message>
+        <source>Add Role</source>
+        <translation>ロールを追加</translation>
+    </message>
+    <message>
+        <source>Add Role...</source>
+        <translation>ロールを追加...</translation>
+    </message>
+    <message>
+        <source>Add User</source>
+        <translation>ユーザーを追加</translation>
+    </message>
+    <message>
+        <source>Add User...</source>
+        <translation>ユーザーを追加...</translation>
+    </message>
+    <message>
+        <source>Are you sure you want to remove the role &apos;%1&apos;?</source>
+        <translation>ロール &apos;%1&apos; を削除してもよろしいですか?</translation>
+    </message>
+    <message>
+        <source>Are you sure you want to remove the user &apos;%1&apos;?</source>
+        <translation>ユーザー &apos;%1&apos; を削除してもよろしいですか?</translation>
+    </message>
+    <message>
+        <source>At least %1 characters</source>
+        <translation>%1 文字以上</translation>
+    </message>
+    <message>
+        <source>Browser</source>
+        <translation>ブラウザー</translation>
+    </message>
+    <message>
+        <source>Browsers and devices where someone is logged in with a user account.</source>
+        <translation>ユーザーアカウントでログインしているブラウザーとデバイスです。</translation>
+    </message>
+    <message>
+        <source>Change Password</source>
+        <translation>パスワードを変更</translation>
+    </message>
+    <message>
+        <source>Confirm password:</source>
+        <translation>パスワードの確認:</translation>
+    </message>
+    <message>
+        <source>Created</source>
+        <translation>作成日</translation>
+    </message>
+    <message>
+        <source>Current password:</source>
+        <translation>現在のパスワード:</translation>
+    </message>
+    <message>
+        <source>Description</source>
+        <translation>説明</translation>
+    </message>
+    <message>
+        <source>Description:</source>
+        <translation>説明:</translation>
+    </message>
+    <message>
+        <source>Disable</source>
+        <translation>無効にする</translation>
+    </message>
+    <message>
+        <source>Disable this account</source>
+        <translation>このアカウントを無効にする</translation>
+    </message>
+    <message>
+        <source>Edit Role</source>
+        <translation>ロールを編集</translation>
+    </message>
+    <message>
+        <source>Edit User</source>
+        <translation>ユーザーを編集</translation>
+    </message>
+    <message>
+        <source>Edit...</source>
+        <translation>編集...</translation>
+    </message>
+    <message>
+        <source>Enable</source>
+        <translation>有効にする</translation>
+    </message>
+    <message>
+        <source>Enter a role name.</source>
+        <translation>ロール名を入力してください。</translation>
+    </message>
+    <message>
+        <source>Enter a username.</source>
+        <translation>ユーザー名を入力してください。</translation>
+    </message>
+    <message>
+        <source>Expires</source>
+        <translation>有効期限</translation>
+    </message>
+    <message>
+        <source>Gives control over the PC or qBittorrent itself</source>
+        <translation>PC または qBittorrent 自体の制御を許可します</translation>
+    </message>
+    <message>
+        <source>Last active</source>
+        <translation>最終アクティビティ</translation>
+    </message>
+    <message>
+        <source>Last login</source>
+        <translation>最終ログイン</translation>
+    </message>
+    <message>
+        <source>Leave empty to keep the current password</source>
+        <translation>現在のパスワードを維持するには空のままにしてください</translation>
+    </message>
+    <message>
+        <source>Log Out</source>
+        <translation>ログアウト</translation>
+    </message>
+    <message>
+        <source>Log Out Everywhere</source>
+        <translation>すべての場所でログアウト</translation>
+    </message>
+    <message>
+        <source>Logged In</source>
+        <translation>ログイン中</translation>
+    </message>
+    <message>
+        <source>Logged in</source>
+        <translation>ログイン日時</translation>
+    </message>
+    <message>
+        <source>New password:</source>
+        <translation>新しいパスワード:</translation>
+    </message>
+    <message>
+        <source>No accounts yet, so everyone still uses the shared WebUI login. Add an Admin account first.</source>
+        <translation>アカウントがまだないため、全員が共有の WebUI ログインを使っています。先に Admin アカウントを追加してください。</translation>
+    </message>
+    <message>
+        <source>People who can log in to the WebUI with their own username and password.</source>
+        <translation>自分のユーザー名とパスワードで WebUI にログインできる人です。</translation>
+    </message>
+    <message>
+        <source>Permissions</source>
+        <translation>権限</translation>
+    </message>
+    <message>
+        <source>Role</source>
+        <translation>ロール</translation>
+    </message>
+    <message>
+        <source>Role:</source>
+        <translation>ロール:</translation>
+    </message>
+    <message>
+        <source>Roles</source>
+        <translation>ロール</translation>
+    </message>
+    <message>
+        <source>The password must be at least %1 characters long.</source>
+        <translation>パスワードは %1 文字以上にしてください。</translation>
+    </message>
+    <message>
+        <source>The passwords don&apos;t match.</source>
+        <translation>パスワードが一致しません。</translation>
+    </message>
+    <message>
+        <source>User</source>
+        <translation>ユーザー</translation>
+    </message>
+    <message>
+        <source>Users</source>
+        <translation>ユーザー</translation>
+    </message>
+    <message>
+        <source>Your password was changed. Other browsers and devices where you were logged in have been logged out.</source>
+        <translation>パスワードを変更しました。ログインしていた他のブラウザーとデバイスはログアウトされました。</translation>
+    </message>
+</context>
+<context>
+    <name>WebUIActivity</name>
+    <message>
+        <source>Action</source>
+        <translation>操作</translation>
+    </message>
+    <message>
+        <source>Result</source>
+        <translation>結果</translation>
+    </message>
+    <message>
+        <source>Role</source>
+        <translation>ロール</translation>
+    </message>
+    <message>
+        <source>Time</source>
+        <translation>時刻</translation>
+    </message>
+    <message>
+        <source>User</source>
+        <translation>ユーザー</translation>
     </message>
 </context>
 </TS>

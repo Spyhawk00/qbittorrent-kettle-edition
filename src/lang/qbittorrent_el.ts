@@ -141,6 +141,62 @@
         <source>The free IP to Country Lite database by DB-IP is used for resolving the countries of peers. The database is licensed under the Creative Commons Attribution 4.0 International License</source>
         <translation>Η δωρεάν βάση δεδομένων IP to Country Lite χρησιμοποιείται για την επίλυση των χωρών των peers. Η βάση δεδομένων διατίθεται με τους όρους της Διεθνούς Άδειας Αναφορά Δημιουργού 4.0 της Creative Commons.</translation>
     </message>
+    <message>
+        <source>This edition</source>
+        <translation>Αυτή η έκδοση</translation>
+    </message>
+    <message>
+        <source>Edition version:</source>
+        <translation>Έκδοση της έκδοσης:</translation>
+    </message>
+    <message>
+        <source>Based on:</source>
+        <translation>Βασίζεται σε:</translation>
+    </message>
+    <message>
+        <source>Maintainer:</source>
+        <translation>Συντηρητής:</translation>
+    </message>
+    <message>
+        <source>qBittorrent project:</source>
+        <translation>Έργο qBittorrent:</translation>
+    </message>
+    <message>
+        <source>Kettle Edition is a personal build of qBittorrent that adds user accounts with roles for the WebUI and the desktop app, an activity log, and an installable WebUI with a phone layout. A kettle is a group of hawks soaring together. This is an unofficial build, not affiliated with the qBittorrent project.</source>
+        <translation>Το Kettle Edition είναι μια προσωπική έκδοση του qBittorrent που προσθέτει λογαριασμούς χρηστών με ρόλους για το WebUI και την εφαρμογή επιφάνειας εργασίας, ένα αρχείο καταγραφής δραστηριότητας και ένα WebUI που εγκαθίσταται με διάταξη για τηλέφωνο. Το kettle είναι μια ομάδα γερακιών που πετούν μαζί. Αυτή είναι ανεπίσημη έκδοση, χωρίς σχέση με το έργο qBittorrent.</translation>
+    </message>
+    <message>
+        <source>N/A</source>
+        <translation>Μ/Δ</translation>
+    </message>
+    <message>
+        <source>This edition</source>
+        <translation>Αυτή η έκδοση</translation>
+    </message>
+    <message>
+        <source>Edition version:</source>
+        <translation>Έκδοση της έκδοσης:</translation>
+    </message>
+    <message>
+        <source>Based on:</source>
+        <translation>Βασίζεται σε:</translation>
+    </message>
+    <message>
+        <source>Maintainer:</source>
+        <translation>Συντηρητής:</translation>
+    </message>
+    <message>
+        <source>qBittorrent project:</source>
+        <translation>Έργο qBittorrent:</translation>
+    </message>
+    <message>
+        <source>Kettle Edition is a personal build of qBittorrent that adds user accounts with roles for the WebUI and the desktop app, an activity log, and an installable WebUI with a phone layout. A kettle is a group of hawks soaring together. This is an unofficial build, not affiliated with the qBittorrent project.</source>
+        <translation>Το Kettle Edition είναι μια προσωπική έκδοση του qBittorrent που προσθέτει λογαριασμούς χρηστών με ρόλους για το WebUI και την εφαρμογή επιφάνειας εργασίας, ένα αρχείο καταγραφής δραστηριότητας και ένα WebUI που εγκαθίσταται με διάταξη για τηλέφωνο. Το kettle είναι μια ομάδα γερακιών που πετούν μαζί. Αυτή είναι ανεπίσημη έκδοση, χωρίς σχέση με το έργο qBittorrent.</translation>
+    </message>
+    <message>
+        <source>N/A</source>
+        <translation>Μ/Δ</translation>
+    </message>
 </context>
 <context>
     <name>AbstractFileStorage</name>
@@ -1459,6 +1515,62 @@
         <location filename="../gui/advancedsettings.cpp" line="925"/>
         <source>Embedded tracker port</source>
         <translation>Θύρα ενσωματωμένου tracker</translation>
+    </message>
+    <message>
+        <source>Network</source>
+        <translation>Δίκτυο</translation>
+    </message>
+    <message>
+        <source>Storage</source>
+        <translation>Αποθήκευση</translation>
+    </message>
+    <message>
+        <source>Peers and trackers</source>
+        <translation>Peers και trackers</translation>
+    </message>
+    <message>
+        <source>Program behavior</source>
+        <translation>Συμπεριφορά προγράμματος</translation>
+    </message>
+    <message>
+        <source>Display and notifications</source>
+        <translation>Εμφάνιση και ειδοποιήσεις</translation>
+    </message>
+    <message>
+        <source>Network connection</source>
+        <translation>Σύνδεση δικτύου</translation>
+    </message>
+    <message>
+        <source>Security and privacy</source>
+        <translation>Ασφάλεια και απόρρητο</translation>
+    </message>
+    <message>
+        <source>Connection tuning</source>
+        <translation>Ρύθμιση σύνδεσης</translation>
+    </message>
+    <message>
+        <source>Saving and torrent files</source>
+        <translation>Αποθήκευση και αρχεία torrent</translation>
+    </message>
+    <message>
+        <source>Disk and memory</source>
+        <translation>Δίσκος και μνήμη</translation>
+    </message>
+    <message>
+        <source>Peers and seeding</source>
+        <translation>Peers και seeding</translation>
+    </message>
+    <message>
+        <source>DHT and I2P</source>
+        <translation>DHT και I2P</translation>
+    </message>
+    <message>
+        <source>General</source>
+        <translation>Γενικά</translation>
+    </message>
+    <message>
+        <source>Trackers</source>
+        <translation>Trackers</translation>
     </message>
 </context>
 <context>
@@ -3480,6 +3592,22 @@ Supports the formats: S01E01, 1x1, 2017.12.31 and 31.12.2017 (Date formats also 
         <source>Remove torrent</source>
         <translation>Αφαίρεση torrent</translation>
     </message>
+    <message>
+        <source>This choice is remembered for the next removal.</source>
+        <translation>Αυτή η επιλογή θα θυμάται για την επόμενη αφαίρεση.</translation>
+    </message>
+    <message>
+        <source>Remove</source>
+        <translation>Αφαίρεση</translation>
+    </message>
+    <message>
+        <source>This choice is remembered for the next removal.</source>
+        <translation>Αυτή η επιλογή θα θυμάται για την επόμενη αφαίρεση.</translation>
+    </message>
+    <message>
+        <source>Remove</source>
+        <translation>Αφαίρεση</translation>
+    </message>
 </context>
 <context>
     <name>DownloadFromURLDialog</name>
@@ -3553,6 +3681,14 @@ Supports the formats: S01E01, 1x1, 2017.12.31 and 31.12.2017 (Date formats also 
         <location filename="../gui/executionlogwidget.cpp" line="99"/>
         <source>Clear</source>
         <translation>Καθαρισμός</translation>
+    </message>
+    <message>
+        <source>WebUI Activity</source>
+        <translation>Δραστηριότητα WebUI</translation>
+    </message>
+    <message>
+        <source>WebUI Activity</source>
+        <translation>Δραστηριότητα WebUI</translation>
     </message>
 </context>
 <context>
@@ -4717,6 +4853,46 @@ Minimum requirement: %2.</source>
         <location filename="../gui/mainwindow.cpp" line="1346"/>
         <source>Torrent Files</source>
         <translation>Αρχεία Torrent</translation>
+    </message>
+    <message>
+        <source>Kettle Edition %1 is available.</source>
+        <translation>Το Kettle Edition %1 είναι διαθέσιμο.</translation>
+    </message>
+    <message>
+        <source>qBittorrent Kettle Edition %1 is available. It is downloaded now and installed at 4:00 AM, or when qBittorrent starts next.</source>
+        <translation>Το qBittorrent Kettle Edition %1 είναι διαθέσιμο. Λήψη τώρα και εγκατάσταση στις 4:00 π.μ. ή στην επόμενη εκκίνηση του qBittorrent.</translation>
+    </message>
+    <message>
+        <source>qBittorrent Kettle Edition %1 is available. It is downloaded now. Turn on &quot;Automatically install Kettle Edition updates&quot; in Options to install it.</source>
+        <translation>Το qBittorrent Kettle Edition %1 είναι διαθέσιμο. Λήψη τώρα. Ενεργοποιήστε το «Αυτόματη εγκατάσταση ενημερώσεων Kettle Edition» στις Επιλογές για να εγκατασταθεί.</translation>
+    </message>
+    <message>
+        <source>You have the latest qBittorrent Kettle Edition (%1).</source>
+        <translation>Έχετε το πιο πρόσφατο qBittorrent Kettle Edition (%1).</translation>
+    </message>
+    <message>
+        <source>Could not check for qBittorrent Kettle Edition updates. See the Execution Log for details.</source>
+        <translation>Δεν ήταν δυνατός ο έλεγχος για ενημερώσεις του qBittorrent Kettle Edition. Δείτε το αρχείο καταγραφής εκτέλεσης για λεπτομέρειες.</translation>
+    </message>
+    <message>
+        <source>Kettle Edition %1 is available.</source>
+        <translation>Το Kettle Edition %1 είναι διαθέσιμο.</translation>
+    </message>
+    <message>
+        <source>qBittorrent Kettle Edition %1 is available. It is downloaded now and installed at 4:00 AM, or when qBittorrent starts next.</source>
+        <translation>Το qBittorrent Kettle Edition %1 είναι διαθέσιμο. Λήψη τώρα και εγκατάσταση στις 4:00 π.μ. ή στην επόμενη εκκίνηση του qBittorrent.</translation>
+    </message>
+    <message>
+        <source>qBittorrent Kettle Edition %1 is available. It is downloaded now. Turn on &quot;Automatically install Kettle Edition updates&quot; in Options to install it.</source>
+        <translation>Το qBittorrent Kettle Edition %1 είναι διαθέσιμο. Λήψη τώρα. Ενεργοποιήστε το «Αυτόματη εγκατάσταση ενημερώσεων Kettle Edition» στις Επιλογές για να εγκατασταθεί.</translation>
+    </message>
+    <message>
+        <source>You have the latest qBittorrent Kettle Edition (%1).</source>
+        <translation>Έχετε το πιο πρόσφατο qBittorrent Kettle Edition (%1).</translation>
+    </message>
+    <message>
+        <source>Could not check for qBittorrent Kettle Edition updates. See the Execution Log for details.</source>
+        <translation>Δεν ήταν δυνατός ο έλεγχος για ενημερώσεις του qBittorrent Kettle Edition. Δείτε το αρχείο καταγραφής εκτέλεσης για λεπτομέρειες.</translation>
     </message>
 </context>
 <context>
@@ -8484,6 +8660,190 @@ Check the Execution Log for errors.</source>
         <source>Length Error</source>
         <translation>Σφάλμα Μήκους</translation>
     </message>
+    <message>
+        <source>Search settings</source>
+        <translation>Αναζήτηση ρυθμίσεων</translation>
+    </message>
+    <message>
+        <source>No settings match</source>
+        <translation>Καμία ρύθμιση δεν ταιριάζει</translation>
+    </message>
+    <message>
+        <source>User Accounts</source>
+        <translation>Λογαριασμοί χρηστών</translation>
+    </message>
+    <message>
+        <source>Automatically install Kettle Edition updates</source>
+        <translation>Αυτόματη εγκατάσταση ενημερώσεων Kettle Edition</translation>
+    </message>
+    <message>
+        <source>Status bar and log</source>
+        <translation>Γραμμή κατάστασης και αρχείο καταγραφής</translation>
+    </message>
+    <message>
+        <source>Files</source>
+        <translation>Αρχεία</translation>
+    </message>
+    <message>
+        <source>Checking</source>
+        <translation>Έλεγχος</translation>
+    </message>
+    <message>
+        <source>Until the first user account is created, this login always works.</source>
+        <translation>Μέχρι να δημιουργηθεί ο πρώτος λογαριασμός χρήστη, αυτή η σύνδεση λειτουργεί πάντα.</translation>
+    </message>
+    <message>
+        <source>Allow this login when user accounts exist</source>
+        <translation>Να επιτρέπεται αυτή η σύνδεση όταν υπάρχουν λογαριασμοί χρηστών</translation>
+    </message>
+    <message>
+        <source>Access</source>
+        <translation>Πρόσβαση</translation>
+    </message>
+    <message>
+        <source>Changes to users, roles and logins apply at once. The settings below apply with OK or Apply.</source>
+        <translation>Οι αλλαγές σε χρήστες, ρόλους και συνδέσεις εφαρμόζονται αμέσως. Οι ρυθμίσεις παρακάτω εφαρμόζονται με OK ή Εφαρμογή.</translation>
+    </message>
+    <message>
+        <source>Logins and Activity Log</source>
+        <translation>Συνδέσεις και αρχείο δραστηριότητας</translation>
+    </message>
+    <message>
+        <source>0 means users are logged out after the session timeout.</source>
+        <translation>Το 0 σημαίνει ότι οι χρήστες αποσυνδέονται μετά το χρονικό όριο της συνεδρίας.</translation>
+    </message>
+    <message>
+        <source>Keep users logged in for:</source>
+        <translation>Διατήρηση χρηστών συνδεδεμένων για:</translation>
+    </message>
+    <message>
+        <source>Until session timeout</source>
+        <translation>Μέχρι το χρονικό όριο συνεδρίας</translation>
+    </message>
+    <message>
+        <source> days</source>
+        <translation> ημέρες</translation>
+    </message>
+    <message>
+        <source>Lock account after consecutive failures:</source>
+        <translation>Κλείδωμα λογαριασμού μετά από διαδοχικές αποτυχίες:</translation>
+    </message>
+    <message>
+        <source>Keep WebUI activity log for:</source>
+        <translation>Διατήρηση αρχείου δραστηριότητας WebUI για:</translation>
+    </message>
+    <message>
+        <source>lock for:</source>
+        <translation>κλείδωμα για:</translation>
+    </message>
+    <message>
+        <source>%1 works best with Windows dark mode</source>
+        <translation>Το %1 λειτουργεί καλύτερα με τη σκοτεινή λειτουργία των Windows</translation>
+    </message>
+    <message>
+        <source>WebUI address</source>
+        <translation>Διεύθυνση WebUI</translation>
+    </message>
+    <message>
+        <source>With the WebUI address set to %1, only this PC can reach the WebUI. Remote access, including through a reverse proxy on another machine, will stop working.
+
+Save anyway?</source>
+        <translation>Με τη διεύθυνση WebUI ορισμένη σε %1, μόνο αυτός ο υπολογιστής έχει πρόσβαση στο WebUI. Η απομακρυσμένη πρόσβαση, και μέσω αντίστροφου proxy σε άλλο υπολογιστή, θα σταματήσει.
+
+Αποθήκευση ούτως ή άλλως;</translation>
+    </message>
+    <message>
+        <source>Search settings</source>
+        <translation>Αναζήτηση ρυθμίσεων</translation>
+    </message>
+    <message>
+        <source>No settings match</source>
+        <translation>Καμία ρύθμιση δεν ταιριάζει</translation>
+    </message>
+    <message>
+        <source>User Accounts</source>
+        <translation>Λογαριασμοί χρηστών</translation>
+    </message>
+    <message>
+        <source>Automatically install Kettle Edition updates</source>
+        <translation>Αυτόματη εγκατάσταση ενημερώσεων Kettle Edition</translation>
+    </message>
+    <message>
+        <source>Status bar and log</source>
+        <translation>Γραμμή κατάστασης και αρχείο καταγραφής</translation>
+    </message>
+    <message>
+        <source>Files</source>
+        <translation>Αρχεία</translation>
+    </message>
+    <message>
+        <source>Checking</source>
+        <translation>Έλεγχος</translation>
+    </message>
+    <message>
+        <source>Until the first user account is created, this login always works.</source>
+        <translation>Μέχρι να δημιουργηθεί ο πρώτος λογαριασμός χρήστη, αυτή η σύνδεση λειτουργεί πάντα.</translation>
+    </message>
+    <message>
+        <source>Allow this login when user accounts exist</source>
+        <translation>Να επιτρέπεται αυτή η σύνδεση όταν υπάρχουν λογαριασμοί χρηστών</translation>
+    </message>
+    <message>
+        <source>Access</source>
+        <translation>Πρόσβαση</translation>
+    </message>
+    <message>
+        <source>Changes to users, roles and logins apply at once. The settings below apply with OK or Apply.</source>
+        <translation>Οι αλλαγές σε χρήστες, ρόλους και συνδέσεις εφαρμόζονται αμέσως. Οι ρυθμίσεις παρακάτω εφαρμόζονται με OK ή Εφαρμογή.</translation>
+    </message>
+    <message>
+        <source>Logins and Activity Log</source>
+        <translation>Συνδέσεις και αρχείο δραστηριότητας</translation>
+    </message>
+    <message>
+        <source>0 means users are logged out after the session timeout.</source>
+        <translation>Το 0 σημαίνει ότι οι χρήστες αποσυνδέονται μετά το χρονικό όριο της συνεδρίας.</translation>
+    </message>
+    <message>
+        <source>Keep users logged in for:</source>
+        <translation>Διατήρηση χρηστών συνδεδεμένων για:</translation>
+    </message>
+    <message>
+        <source>Until session timeout</source>
+        <translation>Μέχρι το χρονικό όριο συνεδρίας</translation>
+    </message>
+    <message>
+        <source> days</source>
+        <translation> ημέρες</translation>
+    </message>
+    <message>
+        <source>Lock account after consecutive failures:</source>
+        <translation>Κλείδωμα λογαριασμού μετά από διαδοχικές αποτυχίες:</translation>
+    </message>
+    <message>
+        <source>Keep WebUI activity log for:</source>
+        <translation>Διατήρηση αρχείου δραστηριότητας WebUI για:</translation>
+    </message>
+    <message>
+        <source>lock for:</source>
+        <translation>κλείδωμα για:</translation>
+    </message>
+    <message>
+        <source>%1 works best with Windows dark mode</source>
+        <translation>Το %1 λειτουργεί καλύτερα με τη σκοτεινή λειτουργία των Windows</translation>
+    </message>
+    <message>
+        <source>WebUI address</source>
+        <translation>Διεύθυνση WebUI</translation>
+    </message>
+    <message>
+        <source>With the WebUI address set to %1, only this PC can reach the WebUI. Remote access, including through a reverse proxy on another machine, will stop working.
+
+Save anyway?</source>
+        <translation>Με τη διεύθυνση WebUI ορισμένη σε %1, μόνο αυτός ο υπολογιστής έχει πρόσβαση στο WebUI. Η απομακρυσμένη πρόσβαση, και μέσω αντίστροφου proxy σε άλλο υπολογιστή, θα σταματήσει.
+
+Αποθήκευση ούτως ή άλλως;</translation>
+    </message>
 </context>
 <context>
     <name>PeerInfo</name>
@@ -8736,6 +9096,22 @@ Check the Execution Log for errors.</source>
         <location filename="../gui/properties/peerlistwidget.cpp" line="309"/>
         <source>Copy IP:port</source>
         <translation>Αντιγραφή IP:θύρα</translation>
+    </message>
+    <message>
+        <source>Reset auto width</source>
+        <translation>Επαναφορά αυτόματου πλάτους</translation>
+    </message>
+    <message>
+        <source>Fit all non-hidden columns to their contents again, and forget the widths that were set by hand</source>
+        <translation>Προσαρμογή ξανά όλων των ορατών στηλών στο περιεχόμενό τους και ξεχασμός των πλατών που ορίστηκαν χειροκίνητα</translation>
+    </message>
+    <message>
+        <source>Reset auto width</source>
+        <translation>Επαναφορά αυτόματου πλάτους</translation>
+    </message>
+    <message>
+        <source>Fit all non-hidden columns to their contents again, and forget the widths that were set by hand</source>
+        <translation>Προσαρμογή ξανά όλων των ορατών στηλών στο περιεχόμενό τους και ξεχασμός των πλατών που ορίστηκαν χειροκίνητα</translation>
     </message>
 </context>
 <context>
@@ -10124,6 +10500,14 @@ Those plugins were disabled.</source>
         <source>Open link</source>
         <translation type="unfinished"></translation>
     </message>
+    <message>
+        <source>Details</source>
+        <translation>Λεπτομέρειες</translation>
+    </message>
+    <message>
+        <source>Details</source>
+        <translation>Λεπτομέρειες</translation>
+    </message>
 </context>
 <context>
     <name>SearchController</name>
@@ -10477,6 +10861,70 @@ Those plugins were disabled.</source>
         <source>Resize all non-hidden columns to the size of their contents</source>
         <translation>Αλλαγή του μεγέθους όλων των μη κρυφών στηλών στο μέγεθος του περιεχομένου τους</translation>
     </message>
+    <message>
+        <source>%1 of %2 shown (%3 hidden)</source>
+        <translation>Εμφανίζονται %1 από %2 (%3 κρυφά)</translation>
+    </message>
+    <message>
+        <source>%1 of %2 shown</source>
+        <translation>Εμφανίζονται %1 από %2</translation>
+    </message>
+    <message>
+        <source>Searching: %1</source>
+        <translation>Αναζήτηση: %1</translation>
+    </message>
+    <message>
+        <source>Finished: %1</source>
+        <translation>Ολοκληρώθηκε: %1</translation>
+    </message>
+    <message>
+        <source>Search aborted: %1</source>
+        <translation>Η αναζήτηση διακόπηκε: %1</translation>
+    </message>
+    <message>
+        <source>Reset auto width</source>
+        <translation>Επαναφορά αυτόματου πλάτους</translation>
+    </message>
+    <message>
+        <source>Fit all non-hidden columns to their contents again, and forget the widths that were set by hand</source>
+        <translation>Προσαρμογή ξανά όλων των ορατών στηλών στο περιεχόμενό τους και ξεχασμός των πλατών που ορίστηκαν χειροκίνητα</translation>
+    </message>
+    <message>
+        <source>Unknown</source>
+        <translation>Άγνωστο</translation>
+    </message>
+    <message>
+        <source>%1 of %2 shown (%3 hidden)</source>
+        <translation>Εμφανίζονται %1 από %2 (%3 κρυφά)</translation>
+    </message>
+    <message>
+        <source>%1 of %2 shown</source>
+        <translation>Εμφανίζονται %1 από %2</translation>
+    </message>
+    <message>
+        <source>Searching: %1</source>
+        <translation>Αναζήτηση: %1</translation>
+    </message>
+    <message>
+        <source>Finished: %1</source>
+        <translation>Ολοκληρώθηκε: %1</translation>
+    </message>
+    <message>
+        <source>Search aborted: %1</source>
+        <translation>Η αναζήτηση διακόπηκε: %1</translation>
+    </message>
+    <message>
+        <source>Reset auto width</source>
+        <translation>Επαναφορά αυτόματου πλάτους</translation>
+    </message>
+    <message>
+        <source>Fit all non-hidden columns to their contents again, and forget the widths that were set by hand</source>
+        <translation>Προσαρμογή ξανά όλων των ορατών στηλών στο περιεχόμενό τους και ξεχασμός των πλατών που ορίστηκαν χειροκίνητα</translation>
+    </message>
+    <message>
+        <source>Unknown</source>
+        <translation>Άγνωστο</translation>
+    </message>
 </context>
 <context>
     <name>SearchPluginManager</name>
@@ -10774,6 +11222,14 @@ Those plugins were disabled.</source>
         <source>Couldn&apos;t update &quot;%1&quot; search engine plugin. %2</source>
         <translation type="unfinished">Δεν ήταν δυνατή η ενημέρωση της προσθήκης μηχανής αναζήτησης &quot;%1&quot;. %2</translation>
     </message>
+    <message>
+        <source>Install Kettle Plugins</source>
+        <translation>Εγκατάσταση πρόσθετων Kettle</translation>
+    </message>
+    <message>
+        <source>Install Kettle Plugins</source>
+        <translation>Εγκατάσταση πρόσθετων Kettle</translation>
+    </message>
 </context>
 <context>
     <name>SearchPluginSourceDialog</name>
@@ -10913,6 +11369,90 @@ Click the &quot;Search plugins...&quot; button at the bottom right of the window
         <location filename="../gui/search/searchwidget.ui" line="58"/>
         <source>Stop</source>
         <translation>Διακοπή</translation>
+    </message>
+    <message>
+        <source>Searches</source>
+        <translation>Αναζητήσεις</translation>
+    </message>
+    <message>
+        <source>Close the selected search</source>
+        <translation>Κλείσιμο επιλεγμένης αναζήτησης</translation>
+    </message>
+    <message>
+        <source>Search for torrents...</source>
+        <translation>Αναζήτηση torrents...</translation>
+    </message>
+    <message>
+        <source>Category to search in</source>
+        <translation>Κατηγορία αναζήτησης</translation>
+    </message>
+    <message>
+        <source>Search engines to use</source>
+        <translation>Μηχανές αναζήτησης προς χρήση</translation>
+    </message>
+    <message>
+        <source>There aren&apos;t any search plugins installed.
+Click the &quot;Search plugins...&quot; button at the top right of the window to install some.</source>
+        <translation>Δεν υπάρχουν εγκατεστημένα πρόσθετα αναζήτησης.
+Πατήστε το κουμπί «Πρόσθετα αναζήτησης...» πάνω δεξιά στο παράθυρο για να εγκαταστήσετε.</translation>
+    </message>
+    <message>
+        <source>Type a search above and press Enter.</source>
+        <translation>Πληκτρολογήστε μια αναζήτηση παραπάνω και πατήστε Enter.</translation>
+    </message>
+    <message>
+        <source>Refresh search</source>
+        <translation>Ανανέωση αναζήτησης</translation>
+    </message>
+    <message>
+        <source>Close search</source>
+        <translation>Κλείσιμο αναζήτησης</translation>
+    </message>
+    <message>
+        <source>Close all searches</source>
+        <translation>Κλείσιμο όλων των αναζητήσεων</translation>
+    </message>
+    <message>
+        <source>Searches</source>
+        <translation>Αναζητήσεις</translation>
+    </message>
+    <message>
+        <source>Close the selected search</source>
+        <translation>Κλείσιμο επιλεγμένης αναζήτησης</translation>
+    </message>
+    <message>
+        <source>Search for torrents...</source>
+        <translation>Αναζήτηση torrents...</translation>
+    </message>
+    <message>
+        <source>Category to search in</source>
+        <translation>Κατηγορία αναζήτησης</translation>
+    </message>
+    <message>
+        <source>Search engines to use</source>
+        <translation>Μηχανές αναζήτησης προς χρήση</translation>
+    </message>
+    <message>
+        <source>There aren&apos;t any search plugins installed.
+Click the &quot;Search plugins...&quot; button at the top right of the window to install some.</source>
+        <translation>Δεν υπάρχουν εγκατεστημένα πρόσθετα αναζήτησης.
+Πατήστε το κουμπί «Πρόσθετα αναζήτησης...» πάνω δεξιά στο παράθυρο για να εγκαταστήσετε.</translation>
+    </message>
+    <message>
+        <source>Type a search above and press Enter.</source>
+        <translation>Πληκτρολογήστε μια αναζήτηση παραπάνω και πατήστε Enter.</translation>
+    </message>
+    <message>
+        <source>Refresh search</source>
+        <translation>Ανανέωση αναζήτησης</translation>
+    </message>
+    <message>
+        <source>Close search</source>
+        <translation>Κλείσιμο αναζήτησης</translation>
+    </message>
+    <message>
+        <source>Close all searches</source>
+        <translation>Κλείσιμο όλων των αναζητήσεων</translation>
     </message>
 </context>
 <context>
@@ -11375,6 +11915,326 @@ Click the &quot;Search plugins...&quot; button at the bottom right of the window
         <location filename="../gui/statsdialog.cpp" line="111"/>
         <source>%1 ms</source>
         <translation type="unfinished">%1 ms</translation>
+    </message>
+    <message>
+        <source>Copy</source>
+        <translation>Αντιγραφή</translation>
+    </message>
+    <message>
+        <source>Overview</source>
+        <translation>Επισκόπηση</translation>
+    </message>
+    <message>
+        <source>Transfer</source>
+        <translation>Μεταφορά</translation>
+    </message>
+    <message>
+        <source>This session</source>
+        <translation>Αυτή η συνεδρία</translation>
+    </message>
+    <message>
+        <source>All time</source>
+        <translation>Συνολικά</translation>
+    </message>
+    <message>
+        <source>Downloaded:</source>
+        <translation>Λήψη:</translation>
+    </message>
+    <message>
+        <source>Uploaded:</source>
+        <translation>Αποστολή:</translation>
+    </message>
+    <message>
+        <source>Share ratio:</source>
+        <translation>Λόγος διαμοιρασμού:</translation>
+    </message>
+    <message>
+        <source>Current speed:</source>
+        <translation>Τρέχουσα ταχύτητα:</translation>
+    </message>
+    <message>
+        <source>Activity</source>
+        <translation>Δραστηριότητα</translation>
+    </message>
+    <message>
+        <source>Torrents downloading:</source>
+        <translation>Torrents σε λήψη:</translation>
+    </message>
+    <message>
+        <source>Torrents seeding:</source>
+        <translation>Torrents σε διαμοιρασμό:</translation>
+    </message>
+    <message>
+        <source>Torrents stopped:</source>
+        <translation>Σταματημένα torrents:</translation>
+    </message>
+    <message>
+        <source>Torrents with errors:</source>
+        <translation>Torrents με σφάλματα:</translation>
+    </message>
+    <message>
+        <source>Running for:</source>
+        <translation>Σε λειτουργία για:</translation>
+    </message>
+    <message>
+        <source>History</source>
+        <translation>Ιστορικό</translation>
+    </message>
+    <message>
+        <source>Period</source>
+        <translation>Περίοδος</translation>
+    </message>
+    <message>
+        <source>Today</source>
+        <translation>Σήμερα</translation>
+    </message>
+    <message>
+        <source>Last 7 days</source>
+        <translation>Τελευταίες 7 ημέρες</translation>
+    </message>
+    <message>
+        <source>This month</source>
+        <translation>Αυτόν τον μήνα</translation>
+    </message>
+    <message>
+        <source>Last month</source>
+        <translation>Τον προηγούμενο μήνα</translation>
+    </message>
+    <message>
+        <source>Last 12 months</source>
+        <translation>Τελευταίοι 12 μήνες</translation>
+    </message>
+    <message>
+        <source>Tracking since:</source>
+        <translation>Καταγραφή από:</translation>
+    </message>
+    <message>
+        <source>By month</source>
+        <translation>Ανά μήνα</translation>
+    </message>
+    <message>
+        <source>Month</source>
+        <translation>Μήνας</translation>
+    </message>
+    <message>
+        <source>Downloaded</source>
+        <translation>Λήψη</translation>
+    </message>
+    <message>
+        <source>Uploaded</source>
+        <translation>Αποστολή</translation>
+    </message>
+    <message>
+        <source>Share ratio</source>
+        <translation>Λόγος διαμοιρασμού</translation>
+    </message>
+    <message>
+        <source>WebUI downloads added, this month</source>
+        <translation>Λήψεις που προστέθηκαν μέσω WebUI, αυτόν τον μήνα</translation>
+    </message>
+    <message>
+        <source>Counts the requests that added a download. Apps without a login, such as Sonarr and Radarr, are shown as (localhost). Downloads added in the desktop window are not counted.</source>
+        <translation>Μετρά τα αιτήματα που πρόσθεσαν λήψη. Εφαρμογές χωρίς σύνδεση, όπως Sonarr και Radarr, εμφανίζονται ως (localhost). Λήψεις που προστέθηκαν από το παράθυρο επιφάνειας εργασίας δεν μετρώνται.</translation>
+    </message>
+    <message>
+        <source>Technical</source>
+        <translation>Τεχνικά</translation>
+    </message>
+    <message>
+        <source>Disk</source>
+        <translation>Δίσκος</translation>
+    </message>
+    <message>
+        <source>Peers waiting on disk writes:</source>
+        <translation>Peers που περιμένουν εγγραφή στον δίσκο:</translation>
+    </message>
+    <message>
+        <source>Peers waiting on disk reads:</source>
+        <translation>Peers που περιμένουν ανάγνωση από τον δίσκο:</translation>
+    </message>
+    <message>
+        <source>Network</source>
+        <translation>Δίκτυο</translation>
+    </message>
+    <message>
+        <source>DHT nodes:</source>
+        <translation>Κόμβοι DHT:</translation>
+    </message>
+    <message>
+        <source>Data discarded this session:</source>
+        <translation>Δεδομένα που απορρίφθηκαν σε αυτή τη συνεδρία:</translation>
+    </message>
+    <message>
+        <source>Before tracking began</source>
+        <translation>Πριν ξεκινήσει η καταγραφή</translation>
+    </message>
+    <message>
+        <source>Nothing added yet</source>
+        <translation>Δεν έχει προστεθεί τίποτα ακόμη</translation>
+    </message>
+    <message>
+        <source>Off</source>
+        <translation>Ανενεργό</translation>
+    </message>
+    <message>
+        <source>Copy</source>
+        <translation>Αντιγραφή</translation>
+    </message>
+    <message>
+        <source>Overview</source>
+        <translation>Επισκόπηση</translation>
+    </message>
+    <message>
+        <source>Transfer</source>
+        <translation>Μεταφορά</translation>
+    </message>
+    <message>
+        <source>This session</source>
+        <translation>Αυτή η συνεδρία</translation>
+    </message>
+    <message>
+        <source>All time</source>
+        <translation>Συνολικά</translation>
+    </message>
+    <message>
+        <source>Downloaded:</source>
+        <translation>Λήψη:</translation>
+    </message>
+    <message>
+        <source>Uploaded:</source>
+        <translation>Αποστολή:</translation>
+    </message>
+    <message>
+        <source>Share ratio:</source>
+        <translation>Λόγος διαμοιρασμού:</translation>
+    </message>
+    <message>
+        <source>Current speed:</source>
+        <translation>Τρέχουσα ταχύτητα:</translation>
+    </message>
+    <message>
+        <source>Activity</source>
+        <translation>Δραστηριότητα</translation>
+    </message>
+    <message>
+        <source>Torrents downloading:</source>
+        <translation>Torrents σε λήψη:</translation>
+    </message>
+    <message>
+        <source>Torrents seeding:</source>
+        <translation>Torrents σε διαμοιρασμό:</translation>
+    </message>
+    <message>
+        <source>Torrents stopped:</source>
+        <translation>Σταματημένα torrents:</translation>
+    </message>
+    <message>
+        <source>Torrents with errors:</source>
+        <translation>Torrents με σφάλματα:</translation>
+    </message>
+    <message>
+        <source>Running for:</source>
+        <translation>Σε λειτουργία για:</translation>
+    </message>
+    <message>
+        <source>History</source>
+        <translation>Ιστορικό</translation>
+    </message>
+    <message>
+        <source>Period</source>
+        <translation>Περίοδος</translation>
+    </message>
+    <message>
+        <source>Today</source>
+        <translation>Σήμερα</translation>
+    </message>
+    <message>
+        <source>Last 7 days</source>
+        <translation>Τελευταίες 7 ημέρες</translation>
+    </message>
+    <message>
+        <source>This month</source>
+        <translation>Αυτόν τον μήνα</translation>
+    </message>
+    <message>
+        <source>Last month</source>
+        <translation>Τον προηγούμενο μήνα</translation>
+    </message>
+    <message>
+        <source>Last 12 months</source>
+        <translation>Τελευταίοι 12 μήνες</translation>
+    </message>
+    <message>
+        <source>Tracking since:</source>
+        <translation>Καταγραφή από:</translation>
+    </message>
+    <message>
+        <source>By month</source>
+        <translation>Ανά μήνα</translation>
+    </message>
+    <message>
+        <source>Month</source>
+        <translation>Μήνας</translation>
+    </message>
+    <message>
+        <source>Downloaded</source>
+        <translation>Λήψη</translation>
+    </message>
+    <message>
+        <source>Uploaded</source>
+        <translation>Αποστολή</translation>
+    </message>
+    <message>
+        <source>Share ratio</source>
+        <translation>Λόγος διαμοιρασμού</translation>
+    </message>
+    <message>
+        <source>WebUI downloads added, this month</source>
+        <translation>Λήψεις που προστέθηκαν μέσω WebUI, αυτόν τον μήνα</translation>
+    </message>
+    <message>
+        <source>Counts the requests that added a download. Apps without a login, such as Sonarr and Radarr, are shown as (localhost). Downloads added in the desktop window are not counted.</source>
+        <translation>Μετρά τα αιτήματα που πρόσθεσαν λήψη. Εφαρμογές χωρίς σύνδεση, όπως Sonarr και Radarr, εμφανίζονται ως (localhost). Λήψεις που προστέθηκαν από το παράθυρο επιφάνειας εργασίας δεν μετρώνται.</translation>
+    </message>
+    <message>
+        <source>Technical</source>
+        <translation>Τεχνικά</translation>
+    </message>
+    <message>
+        <source>Disk</source>
+        <translation>Δίσκος</translation>
+    </message>
+    <message>
+        <source>Peers waiting on disk writes:</source>
+        <translation>Peers που περιμένουν εγγραφή στον δίσκο:</translation>
+    </message>
+    <message>
+        <source>Peers waiting on disk reads:</source>
+        <translation>Peers που περιμένουν ανάγνωση από τον δίσκο:</translation>
+    </message>
+    <message>
+        <source>Network</source>
+        <translation>Δίκτυο</translation>
+    </message>
+    <message>
+        <source>DHT nodes:</source>
+        <translation>Κόμβοι DHT:</translation>
+    </message>
+    <message>
+        <source>Data discarded this session:</source>
+        <translation>Δεδομένα που απορρίφθηκαν σε αυτή τη συνεδρία:</translation>
+    </message>
+    <message>
+        <source>Before tracking began</source>
+        <translation>Πριν ξεκινήσει η καταγραφή</translation>
+    </message>
+    <message>
+        <source>Nothing added yet</source>
+        <translation>Δεν έχει προστεθεί τίποτα ακόμη</translation>
+    </message>
+    <message>
+        <source>Off</source>
+        <translation>Ανενεργό</translation>
     </message>
 </context>
 <context>
@@ -12068,6 +12928,22 @@ Please choose a different name and try again.</source>
     <message>
         <source>Priority by shown file order</source>
         <translation type="vanished">Προτεραιότητα όπως η σειρά των αρχείων που εμφανίζονται</translation>
+    </message>
+    <message>
+        <source>Reset auto width</source>
+        <translation>Επαναφορά αυτόματου πλάτους</translation>
+    </message>
+    <message>
+        <source>Fit all non-hidden columns to their contents again, and forget the widths that were set by hand</source>
+        <translation>Προσαρμογή ξανά όλων των ορατών στηλών στο περιεχόμενό τους και ξεχασμός των πλατών που ορίστηκαν χειροκίνητα</translation>
+    </message>
+    <message>
+        <source>Reset auto width</source>
+        <translation>Επαναφορά αυτόματου πλάτους</translation>
+    </message>
+    <message>
+        <source>Fit all non-hidden columns to their contents again, and forget the widths that were set by hand</source>
+        <translation>Προσαρμογή ξανά όλων των ορατών στηλών στο περιεχόμενό τους και ξεχασμός των πλατών που ορίστηκαν χειροκίνητα</translation>
     </message>
 </context>
 <context>
@@ -13152,6 +14028,22 @@ Please choose a different name and try again.</source>
         <source>Column visibility</source>
         <translation>Ορατότητα στήλης</translation>
     </message>
+    <message>
+        <source>Reset auto width</source>
+        <translation>Επαναφορά αυτόματου πλάτους</translation>
+    </message>
+    <message>
+        <source>Fit all non-hidden columns to their contents again, and forget the widths that were set by hand</source>
+        <translation>Προσαρμογή ξανά όλων των ορατών στηλών στο περιεχόμενό τους και ξεχασμός των πλατών που ορίστηκαν χειροκίνητα</translation>
+    </message>
+    <message>
+        <source>Reset auto width</source>
+        <translation>Επαναφορά αυτόματου πλάτους</translation>
+    </message>
+    <message>
+        <source>Fit all non-hidden columns to their contents again, and forget the widths that were set by hand</source>
+        <translation>Προσαρμογή ξανά όλων των ορατών στηλών στο περιεχόμενό τους και ξεχασμός των πλατών που ορίστηκαν χειροκίνητα</translation>
+    </message>
 </context>
 <context>
     <name>TrackerStatusFilterWidget</name>
@@ -14018,6 +14910,22 @@ Please choose a different name and try again.</source>
         <source>Super seeding mode</source>
         <translation>Λειτουργία super seeding</translation>
     </message>
+    <message>
+        <source>Reset auto width</source>
+        <translation>Επαναφορά αυτόματου πλάτους</translation>
+    </message>
+    <message>
+        <source>Fit all non-hidden columns to their contents again, and forget the widths that were set by hand</source>
+        <translation>Προσαρμογή ξανά όλων των ορατών στηλών στο περιεχόμενό τους και ξεχασμός των πλατών που ορίστηκαν χειροκίνητα</translation>
+    </message>
+    <message>
+        <source>Reset auto width</source>
+        <translation>Επαναφορά αυτόματου πλάτους</translation>
+    </message>
+    <message>
+        <source>Fit all non-hidden columns to their contents again, and forget the widths that were set by hand</source>
+        <translation>Προσαρμογή ξανά όλων των ορατών στηλών στο περιεχόμενό τους και ξεχασμός των πλατών που ορίστηκαν χειροκίνητα</translation>
+    </message>
 </context>
 <context>
     <name>UIThemeDialog</name>
@@ -14352,6 +15260,46 @@ Please choose a different name and try again.</source>
         <source>WebAPI login failure. Reason: invalid credentials, attempt count: %1, IP: %2, username: %3</source>
         <translation>Αποτυχία σύνδεσης στο WebAPI. Αιτία: μη έγκυρα διαπιστευτήρια, αριθμός προσπαθειών: %1, IP: %2, όνομα χρήστη: %3</translation>
     </message>
+    <message>
+        <source>Something went wrong on the server. Details are in qBittorrent&apos;s log.</source>
+        <translation>Κάτι πήγε στραβά στον διακομιστή. Λεπτομέρειες στο αρχείο καταγραφής του qBittorrent.</translation>
+    </message>
+    <message>
+        <source>This account is locked after too many failed login attempts. Try again in %1 minute(s).</source>
+        <translation>Αυτός ο λογαριασμός κλειδώθηκε μετά από πολλές αποτυχημένες προσπάθειες σύνδεσης. Δοκιμάστε ξανά σε %1 λεπτό(ά).</translation>
+    </message>
+    <message>
+        <source>Your role (%1) doesn&apos;t allow this: %2.</source>
+        <translation>Ο ρόλος σας (%1) δεν το επιτρέπει: %2.</translation>
+    </message>
+    <message>
+        <source>Only an admin can remove the tag that says who added a torrent.</source>
+        <translation>Μόνο ένας διαχειριστής μπορεί να αφαιρέσει την ετικέτα που δείχνει ποιος πρόσθεσε ένα torrent.</translation>
+    </message>
+    <message>
+        <source>Only an admin can clear or replace all tags of a torrent that has a tag saying who added it.</source>
+        <translation>Μόνο ένας διαχειριστής μπορεί να καθαρίσει ή να αντικαταστήσει όλες τις ετικέτες ενός torrent που έχει ετικέτα με το ποιος το πρόσθεσε.</translation>
+    </message>
+    <message>
+        <source>Something went wrong on the server. Details are in qBittorrent&apos;s log.</source>
+        <translation>Κάτι πήγε στραβά στον διακομιστή. Λεπτομέρειες στο αρχείο καταγραφής του qBittorrent.</translation>
+    </message>
+    <message>
+        <source>This account is locked after too many failed login attempts. Try again in %1 minute(s).</source>
+        <translation>Αυτός ο λογαριασμός κλειδώθηκε μετά από πολλές αποτυχημένες προσπάθειες σύνδεσης. Δοκιμάστε ξανά σε %1 λεπτό(ά).</translation>
+    </message>
+    <message>
+        <source>Your role (%1) doesn&apos;t allow this: %2.</source>
+        <translation>Ο ρόλος σας (%1) δεν το επιτρέπει: %2.</translation>
+    </message>
+    <message>
+        <source>Only an admin can remove the tag that says who added a torrent.</source>
+        <translation>Μόνο ένας διαχειριστής μπορεί να αφαιρέσει την ετικέτα που δείχνει ποιος πρόσθεσε ένα torrent.</translation>
+    </message>
+    <message>
+        <source>Only an admin can clear or replace all tags of a torrent that has a tag saying who added it.</source>
+        <translation>Μόνο ένας διαχειριστής μπορεί να καθαρίσει ή να αντικαταστήσει όλες τις ετικέτες ενός torrent που έχει ετικέτα με το ποιος το πρόσθεσε.</translation>
+    </message>
 </context>
 <context>
     <name>WebUI</name>
@@ -14491,6 +15439,669 @@ Please choose a different name and try again.</source>
         <source>&lt; 1m</source>
         <comment>&lt; 1 minute</comment>
         <translation>&lt; 1λεπτό</translation>
+    </message>
+</context>
+<context>
+    <name>UpdateInstaller</name>
+    <message>
+        <source>Kettle Edition update</source>
+        <translation>Ενημέρωση Kettle Edition</translation>
+    </message>
+    <message>
+        <source>Kettle Edition was updated to %1.</source>
+        <translation>Το Kettle Edition ενημερώθηκε στο %1.</translation>
+    </message>
+    <message>
+        <source>Kettle Edition updated</source>
+        <translation>Το Kettle Edition ενημερώθηκε</translation>
+    </message>
+    <message>
+        <source>Downloading Kettle Edition %1 (%2 changed files).</source>
+        <translation>Λήψη Kettle Edition %1 (%2 αλλαγμένα αρχεία).</translation>
+    </message>
+    <message>
+        <source>Kettle Edition %1 is downloaded and ready to install.</source>
+        <translation>Το Kettle Edition %1 λήφθηκε και είναι έτοιμο για εγκατάσταση.</translation>
+    </message>
+    <message>
+        <source>Kettle Edition update</source>
+        <translation>Ενημέρωση Kettle Edition</translation>
+    </message>
+    <message>
+        <source>Kettle Edition was updated to %1.</source>
+        <translation>Το Kettle Edition ενημερώθηκε στο %1.</translation>
+    </message>
+    <message>
+        <source>Kettle Edition updated</source>
+        <translation>Το Kettle Edition ενημερώθηκε</translation>
+    </message>
+    <message>
+        <source>Downloading Kettle Edition %1 (%2 changed files).</source>
+        <translation>Λήψη Kettle Edition %1 (%2 αλλαγμένα αρχεία).</translation>
+    </message>
+    <message>
+        <source>Kettle Edition %1 is downloaded and ready to install.</source>
+        <translation>Το Kettle Edition %1 λήφθηκε και είναι έτοιμο για εγκατάσταση.</translation>
+    </message>
+</context>
+<context>
+    <name>UserAccountDialog</name>
+    <message>
+        <source>User</source>
+        <translation>Χρήστης</translation>
+    </message>
+    <message>
+        <source>Username:</source>
+        <translation>Όνομα χρήστη:</translation>
+    </message>
+    <message>
+        <source>Role:</source>
+        <translation>Ρόλος:</translation>
+    </message>
+    <message>
+        <source>Password:</source>
+        <translation>Κωδικός πρόσβασης:</translation>
+    </message>
+    <message>
+        <source>Confirm password:</source>
+        <translation>Επιβεβαίωση κωδικού:</translation>
+    </message>
+    <message>
+        <source>Disable this account</source>
+        <translation>Απενεργοποίηση αυτού του λογαριασμού</translation>
+    </message>
+    <message>
+        <source>Edit User</source>
+        <translation>Επεξεργασία χρήστη</translation>
+    </message>
+    <message>
+        <source>Leave empty to keep the current password</source>
+        <translation>Αφήστε κενό για να κρατήσετε τον τρέχοντα κωδικό</translation>
+    </message>
+    <message>
+        <source>Add User</source>
+        <translation>Προσθήκη χρήστη</translation>
+    </message>
+    <message>
+        <source>At least %1 characters</source>
+        <translation>Τουλάχιστον %1 χαρακτήρες</translation>
+    </message>
+    <message>
+        <source>Enter a username.</source>
+        <translation>Εισαγάγετε όνομα χρήστη.</translation>
+    </message>
+    <message>
+        <source>The password must be at least %1 characters long.</source>
+        <translation>Ο κωδικός πρέπει να έχει τουλάχιστον %1 χαρακτήρες.</translation>
+    </message>
+    <message>
+        <source>The passwords don&apos;t match.</source>
+        <translation>Οι κωδικοί δεν ταιριάζουν.</translation>
+    </message>
+    <message>
+        <source>User</source>
+        <translation>Χρήστης</translation>
+    </message>
+    <message>
+        <source>Username:</source>
+        <translation>Όνομα χρήστη:</translation>
+    </message>
+    <message>
+        <source>Role:</source>
+        <translation>Ρόλος:</translation>
+    </message>
+    <message>
+        <source>Password:</source>
+        <translation>Κωδικός πρόσβασης:</translation>
+    </message>
+    <message>
+        <source>Confirm password:</source>
+        <translation>Επιβεβαίωση κωδικού:</translation>
+    </message>
+    <message>
+        <source>Disable this account</source>
+        <translation>Απενεργοποίηση αυτού του λογαριασμού</translation>
+    </message>
+    <message>
+        <source>Edit User</source>
+        <translation>Επεξεργασία χρήστη</translation>
+    </message>
+    <message>
+        <source>Leave empty to keep the current password</source>
+        <translation>Αφήστε κενό για να κρατήσετε τον τρέχοντα κωδικό</translation>
+    </message>
+    <message>
+        <source>Add User</source>
+        <translation>Προσθήκη χρήστη</translation>
+    </message>
+    <message>
+        <source>At least %1 characters</source>
+        <translation>Τουλάχιστον %1 χαρακτήρες</translation>
+    </message>
+    <message>
+        <source>Enter a username.</source>
+        <translation>Εισαγάγετε όνομα χρήστη.</translation>
+    </message>
+    <message>
+        <source>The password must be at least %1 characters long.</source>
+        <translation>Ο κωδικός πρέπει να έχει τουλάχιστον %1 χαρακτήρες.</translation>
+    </message>
+    <message>
+        <source>The passwords don&apos;t match.</source>
+        <translation>Οι κωδικοί δεν ταιριάζουν.</translation>
+    </message>
+</context>
+<context>
+    <name>UserAccountsWidget</name>
+    <message>
+        <source>User Accounts</source>
+        <translation>Λογαριασμοί χρηστών</translation>
+    </message>
+    <message>
+        <source>Users</source>
+        <translation>Χρήστες</translation>
+    </message>
+    <message>
+        <source>People who can log in to the WebUI with their own username and password.</source>
+        <translation>Άτομα που μπορούν να συνδεθούν στο WebUI με δικό τους όνομα χρήστη και κωδικό.</translation>
+    </message>
+    <message>
+        <source>Add User...</source>
+        <translation>Προσθήκη χρήστη...</translation>
+    </message>
+    <message>
+        <source>Edit...</source>
+        <translation>Επεξεργασία...</translation>
+    </message>
+    <message>
+        <source>Remove</source>
+        <translation>Αφαίρεση</translation>
+    </message>
+    <message>
+        <source>Roles</source>
+        <translation>Ρόλοι</translation>
+    </message>
+    <message>
+        <source>A role decides what its users are allowed to do.</source>
+        <translation>Ένας ρόλος καθορίζει τι επιτρέπεται στους χρήστες του.</translation>
+    </message>
+    <message>
+        <source>Add Role...</source>
+        <translation>Προσθήκη ρόλου...</translation>
+    </message>
+    <message>
+        <source>Logged In</source>
+        <translation>Συνδεδεμένοι</translation>
+    </message>
+    <message>
+        <source>Browsers and devices where someone is logged in with a user account.</source>
+        <translation>Προγράμματα περιήγησης και συσκευές όπου κάποιος είναι συνδεδεμένος με λογαριασμό χρήστη.</translation>
+    </message>
+    <message>
+        <source>Log Out</source>
+        <translation>Αποσύνδεση</translation>
+    </message>
+    <message>
+        <source>Username</source>
+        <translation>Όνομα χρήστη</translation>
+    </message>
+    <message>
+        <source>Role</source>
+        <translation>Ρόλος</translation>
+    </message>
+    <message>
+        <source>Status</source>
+        <translation>Κατάσταση</translation>
+    </message>
+    <message>
+        <source>Last login</source>
+        <translation>Τελευταία σύνδεση</translation>
+    </message>
+    <message>
+        <source>Created</source>
+        <translation>Δημιουργήθηκε</translation>
+    </message>
+    <message>
+        <source>Name</source>
+        <translation>Όνομα</translation>
+    </message>
+    <message>
+        <source>Description</source>
+        <translation>Περιγραφή</translation>
+    </message>
+    <message>
+        <source>Permissions</source>
+        <translation>Δικαιώματα</translation>
+    </message>
+    <message>
+        <source>User</source>
+        <translation>Χρήστης</translation>
+    </message>
+    <message>
+        <source>Browser</source>
+        <translation>Πρόγραμμα περιήγησης</translation>
+    </message>
+    <message>
+        <source>Logged in</source>
+        <translation>Συνδέθηκε</translation>
+    </message>
+    <message>
+        <source>Last active</source>
+        <translation>Τελευταία δραστηριότητα</translation>
+    </message>
+    <message>
+        <source>Expires</source>
+        <translation>Λήγει</translation>
+    </message>
+    <message>
+        <source>The user database could not be opened. See the Execution Log for details.</source>
+        <translation>Η βάση δεδομένων χρηστών δεν άνοιξε. Δείτε το αρχείο καταγραφής εκτέλεσης για λεπτομέρειες.</translation>
+    </message>
+    <message>
+        <source>Disabled</source>
+        <translation>Απενεργοποιημένος</translation>
+    </message>
+    <message>
+        <source>Enabled</source>
+        <translation>Ενεργοποιημένος</translation>
+    </message>
+    <message>
+        <source>Never</source>
+        <translation>Ποτέ</translation>
+    </message>
+    <message>
+        <source>No accounts yet, so everyone still uses the shared WebUI login. Add an Admin account first.</source>
+        <translation>Δεν υπάρχουν ακόμη λογαριασμοί, οπότε όλοι χρησιμοποιούν ακόμη την κοινή σύνδεση WebUI. Προσθέστε πρώτα λογαριασμό διαχειριστή.</translation>
+    </message>
+    <message>
+        <source>Couldn&apos;t read the user database. %1</source>
+        <translation>Η βάση δεδομένων χρηστών δεν διαβάστηκε. %1</translation>
+    </message>
+    <message>
+        <source>Remove user</source>
+        <translation>Αφαίρεση χρήστη</translation>
+    </message>
+    <message>
+        <source>Are you sure you want to remove the user &apos;%1&apos;?</source>
+        <translation>Θέλετε σίγουρα να αφαιρέσετε τον χρήστη «%1»;</translation>
+    </message>
+    <message>
+        <source>Remove role</source>
+        <translation>Αφαίρεση ρόλου</translation>
+    </message>
+    <message>
+        <source>Are you sure you want to remove the role &apos;%1&apos;?</source>
+        <translation>Θέλετε σίγουρα να αφαιρέσετε τον ρόλο «%1»;</translation>
+    </message>
+    <message>
+        <source>Enable</source>
+        <translation>Ενεργοποίηση</translation>
+    </message>
+    <message>
+        <source>Disable</source>
+        <translation>Απενεργοποίηση</translation>
+    </message>
+    <message>
+        <source>Log Out Everywhere</source>
+        <translation>Αποσύνδεση παντού</translation>
+    </message>
+    <message>
+        <source>User Accounts</source>
+        <translation>Λογαριασμοί χρηστών</translation>
+    </message>
+    <message>
+        <source>Users</source>
+        <translation>Χρήστες</translation>
+    </message>
+    <message>
+        <source>People who can log in to the WebUI with their own username and password.</source>
+        <translation>Άτομα που μπορούν να συνδεθούν στο WebUI με δικό τους όνομα χρήστη και κωδικό.</translation>
+    </message>
+    <message>
+        <source>Add User...</source>
+        <translation>Προσθήκη χρήστη...</translation>
+    </message>
+    <message>
+        <source>Edit...</source>
+        <translation>Επεξεργασία...</translation>
+    </message>
+    <message>
+        <source>Remove</source>
+        <translation>Αφαίρεση</translation>
+    </message>
+    <message>
+        <source>Roles</source>
+        <translation>Ρόλοι</translation>
+    </message>
+    <message>
+        <source>A role decides what its users are allowed to do.</source>
+        <translation>Ένας ρόλος καθορίζει τι επιτρέπεται στους χρήστες του.</translation>
+    </message>
+    <message>
+        <source>Add Role...</source>
+        <translation>Προσθήκη ρόλου...</translation>
+    </message>
+    <message>
+        <source>Logged In</source>
+        <translation>Συνδεδεμένοι</translation>
+    </message>
+    <message>
+        <source>Browsers and devices where someone is logged in with a user account.</source>
+        <translation>Προγράμματα περιήγησης και συσκευές όπου κάποιος είναι συνδεδεμένος με λογαριασμό χρήστη.</translation>
+    </message>
+    <message>
+        <source>Log Out</source>
+        <translation>Αποσύνδεση</translation>
+    </message>
+    <message>
+        <source>Username</source>
+        <translation>Όνομα χρήστη</translation>
+    </message>
+    <message>
+        <source>Role</source>
+        <translation>Ρόλος</translation>
+    </message>
+    <message>
+        <source>Status</source>
+        <translation>Κατάσταση</translation>
+    </message>
+    <message>
+        <source>Last login</source>
+        <translation>Τελευταία σύνδεση</translation>
+    </message>
+    <message>
+        <source>Created</source>
+        <translation>Δημιουργήθηκε</translation>
+    </message>
+    <message>
+        <source>Name</source>
+        <translation>Όνομα</translation>
+    </message>
+    <message>
+        <source>Description</source>
+        <translation>Περιγραφή</translation>
+    </message>
+    <message>
+        <source>Permissions</source>
+        <translation>Δικαιώματα</translation>
+    </message>
+    <message>
+        <source>User</source>
+        <translation>Χρήστης</translation>
+    </message>
+    <message>
+        <source>Browser</source>
+        <translation>Πρόγραμμα περιήγησης</translation>
+    </message>
+    <message>
+        <source>Logged in</source>
+        <translation>Συνδέθηκε</translation>
+    </message>
+    <message>
+        <source>Last active</source>
+        <translation>Τελευταία δραστηριότητα</translation>
+    </message>
+    <message>
+        <source>Expires</source>
+        <translation>Λήγει</translation>
+    </message>
+    <message>
+        <source>The user database could not be opened. See the Execution Log for details.</source>
+        <translation>Η βάση δεδομένων χρηστών δεν άνοιξε. Δείτε το αρχείο καταγραφής εκτέλεσης για λεπτομέρειες.</translation>
+    </message>
+    <message>
+        <source>Disabled</source>
+        <translation>Απενεργοποιημένος</translation>
+    </message>
+    <message>
+        <source>Enabled</source>
+        <translation>Ενεργοποιημένος</translation>
+    </message>
+    <message>
+        <source>Never</source>
+        <translation>Ποτέ</translation>
+    </message>
+    <message>
+        <source>No accounts yet, so everyone still uses the shared WebUI login. Add an Admin account first.</source>
+        <translation>Δεν υπάρχουν ακόμη λογαριασμοί, οπότε όλοι χρησιμοποιούν ακόμη την κοινή σύνδεση WebUI. Προσθέστε πρώτα λογαριασμό διαχειριστή.</translation>
+    </message>
+    <message>
+        <source>Couldn&apos;t read the user database. %1</source>
+        <translation>Η βάση δεδομένων χρηστών δεν διαβάστηκε. %1</translation>
+    </message>
+    <message>
+        <source>Remove user</source>
+        <translation>Αφαίρεση χρήστη</translation>
+    </message>
+    <message>
+        <source>Are you sure you want to remove the user &apos;%1&apos;?</source>
+        <translation>Θέλετε σίγουρα να αφαιρέσετε τον χρήστη «%1»;</translation>
+    </message>
+    <message>
+        <source>Remove role</source>
+        <translation>Αφαίρεση ρόλου</translation>
+    </message>
+    <message>
+        <source>Are you sure you want to remove the role &apos;%1&apos;?</source>
+        <translation>Θέλετε σίγουρα να αφαιρέσετε τον ρόλο «%1»;</translation>
+    </message>
+    <message>
+        <source>Enable</source>
+        <translation>Ενεργοποίηση</translation>
+    </message>
+    <message>
+        <source>Disable</source>
+        <translation>Απενεργοποίηση</translation>
+    </message>
+    <message>
+        <source>Log Out Everywhere</source>
+        <translation>Αποσύνδεση παντού</translation>
+    </message>
+</context>
+<context>
+    <name>UserRoleDialog</name>
+    <message>
+        <source>Role</source>
+        <translation>Ρόλος</translation>
+    </message>
+    <message>
+        <source>Name:</source>
+        <translation>Όνομα:</translation>
+    </message>
+    <message>
+        <source>Description:</source>
+        <translation>Περιγραφή:</translation>
+    </message>
+    <message>
+        <source>Gives control over the PC or qBittorrent itself.</source>
+        <translation>Δίνει έλεγχο στον υπολογιστή ή στο ίδιο το qBittorrent.</translation>
+    </message>
+    <message>
+        <source>Add Role</source>
+        <translation>Προσθήκη ρόλου</translation>
+    </message>
+    <message>
+        <source>Edit Role</source>
+        <translation>Επεξεργασία ρόλου</translation>
+    </message>
+    <message>
+        <source>Enter a role name.</source>
+        <translation>Εισαγάγετε όνομα ρόλου.</translation>
+    </message>
+    <message>
+        <source>Role</source>
+        <translation>Ρόλος</translation>
+    </message>
+    <message>
+        <source>Name:</source>
+        <translation>Όνομα:</translation>
+    </message>
+    <message>
+        <source>Description:</source>
+        <translation>Περιγραφή:</translation>
+    </message>
+    <message>
+        <source>Gives control over the PC or qBittorrent itself.</source>
+        <translation>Δίνει έλεγχο στον υπολογιστή ή στο ίδιο το qBittorrent.</translation>
+    </message>
+    <message>
+        <source>Add Role</source>
+        <translation>Προσθήκη ρόλου</translation>
+    </message>
+    <message>
+        <source>Edit Role</source>
+        <translation>Επεξεργασία ρόλου</translation>
+    </message>
+    <message>
+        <source>Enter a role name.</source>
+        <translation>Εισαγάγετε όνομα ρόλου.</translation>
+    </message>
+</context>
+<context>
+    <name>WebUIActivityWidget</name>
+    <message>
+        <source>All</source>
+        <translation>Όλα</translation>
+    </message>
+    <message>
+        <source>Filter activity</source>
+        <translation>Φιλτράρισμα δραστηριότητας</translation>
+    </message>
+    <message>
+        <source>Export...</source>
+        <translation>Εξαγωγή...</translation>
+    </message>
+    <message>
+        <source>User:</source>
+        <translation>Χρήστης:</translation>
+    </message>
+    <message>
+        <source>Category:</source>
+        <translation>Κατηγορία:</translation>
+    </message>
+    <message>
+        <source>Result:</source>
+        <translation>Αποτέλεσμα:</translation>
+    </message>
+    <message>
+        <source>Time</source>
+        <translation>Ώρα</translation>
+    </message>
+    <message>
+        <source>User</source>
+        <translation>Χρήστης</translation>
+    </message>
+    <message>
+        <source>Role</source>
+        <translation>Ρόλος</translation>
+    </message>
+    <message>
+        <source>Category</source>
+        <translation>Κατηγορία</translation>
+    </message>
+    <message>
+        <source>Action</source>
+        <translation>Ενέργεια</translation>
+    </message>
+    <message>
+        <source>Result</source>
+        <translation>Αποτέλεσμα</translation>
+    </message>
+    <message>
+        <source>The user database could not be opened. See the General tab for details.</source>
+        <translation>Η βάση δεδομένων χρηστών δεν άνοιξε. Δείτε την καρτέλα Γενικά για λεπτομέρειες.</translation>
+    </message>
+    <message>
+        <source>Results (showing %1 out of %2)</source>
+        <translation>Αποτελέσματα (εμφανίζονται %1 από %2)</translation>
+    </message>
+    <message>
+        <source>Copy</source>
+        <translation>Αντιγραφή</translation>
+    </message>
+    <message>
+        <source>Export WebUI activity</source>
+        <translation>Εξαγωγή δραστηριότητας WebUI</translation>
+    </message>
+    <message>
+        <source>CSV files</source>
+        <translation>Αρχεία CSV</translation>
+    </message>
+    <message>
+        <source>Couldn&apos;t save the file. Reason: %1</source>
+        <translation>Το αρχείο δεν αποθηκεύτηκε. Αιτία: %1</translation>
+    </message>
+    <message>
+        <source>All</source>
+        <translation>Όλα</translation>
+    </message>
+    <message>
+        <source>Filter activity</source>
+        <translation>Φιλτράρισμα δραστηριότητας</translation>
+    </message>
+    <message>
+        <source>Export...</source>
+        <translation>Εξαγωγή...</translation>
+    </message>
+    <message>
+        <source>User:</source>
+        <translation>Χρήστης:</translation>
+    </message>
+    <message>
+        <source>Category:</source>
+        <translation>Κατηγορία:</translation>
+    </message>
+    <message>
+        <source>Result:</source>
+        <translation>Αποτέλεσμα:</translation>
+    </message>
+    <message>
+        <source>Time</source>
+        <translation>Ώρα</translation>
+    </message>
+    <message>
+        <source>User</source>
+        <translation>Χρήστης</translation>
+    </message>
+    <message>
+        <source>Role</source>
+        <translation>Ρόλος</translation>
+    </message>
+    <message>
+        <source>Category</source>
+        <translation>Κατηγορία</translation>
+    </message>
+    <message>
+        <source>Action</source>
+        <translation>Ενέργεια</translation>
+    </message>
+    <message>
+        <source>Result</source>
+        <translation>Αποτέλεσμα</translation>
+    </message>
+    <message>
+        <source>The user database could not be opened. See the General tab for details.</source>
+        <translation>Η βάση δεδομένων χρηστών δεν άνοιξε. Δείτε την καρτέλα Γενικά για λεπτομέρειες.</translation>
+    </message>
+    <message>
+        <source>Results (showing %1 out of %2)</source>
+        <translation>Αποτελέσματα (εμφανίζονται %1 από %2)</translation>
+    </message>
+    <message>
+        <source>Copy</source>
+        <translation>Αντιγραφή</translation>
+    </message>
+    <message>
+        <source>Export WebUI activity</source>
+        <translation>Εξαγωγή δραστηριότητας WebUI</translation>
+    </message>
+    <message>
+        <source>CSV files</source>
+        <translation>Αρχεία CSV</translation>
+    </message>
+    <message>
+        <source>Couldn&apos;t save the file. Reason: %1</source>
+        <translation>Το αρχείο δεν αποθηκεύτηκε. Αιτία: %1</translation>
     </message>
 </context>
 </TS>

@@ -141,6 +141,62 @@
         <source>The free IP to Country Lite database by DB-IP is used for resolving the countries of peers. The database is licensed under the Creative Commons Attribution 4.0 International License</source>
         <translation>ฐานข้อมูล IP to Country Lite ฟรี จาก DB-IP ถูกใช้สำหรับแก้ไขประเทศของเพียร์ ฐานข้อมูลนี้ได้รับอนุญาตภายใต้ Creative Commons Attribution 4.0 International License</translation>
     </message>
+    <message>
+        <source>This edition</source>
+        <translation>รุ่นนี้</translation>
+    </message>
+    <message>
+        <source>Edition version:</source>
+        <translation>เวอร์ชันของรุ่น:</translation>
+    </message>
+    <message>
+        <source>Based on:</source>
+        <translation>อ้างอิงจาก:</translation>
+    </message>
+    <message>
+        <source>Maintainer:</source>
+        <translation>ผู้ดูแล:</translation>
+    </message>
+    <message>
+        <source>qBittorrent project:</source>
+        <translation>โปรเจกต์ qBittorrent:</translation>
+    </message>
+    <message>
+        <source>Kettle Edition is a personal build of qBittorrent that adds user accounts with roles for the WebUI and the desktop app, an activity log, and an installable WebUI with a phone layout. A kettle is a group of hawks soaring together. This is an unofficial build, not affiliated with the qBittorrent project.</source>
+        <translation>Kettle Edition เป็นบิลด์ส่วนตัวของ qBittorrent ที่เพิ่มบัญชีผู้ใช้พร้อมบทบาทสำหรับ WebUI และแอปเดสก์ท็อป บันทึกกิจกรรม และ WebUI ที่ติดตั้งได้พร้อมเลย์เอาต์สำหรับโทรศัพท์ Kettle คือฝูงเหยี่ยวที่ร่อนไปด้วยกัน นี่เป็นบิลด์ที่ไม่เป็นทางการ ไม่เกี่ยวข้องกับโปรเจกต์ qBittorrent</translation>
+    </message>
+    <message>
+        <source>N/A</source>
+        <translation>ไม่มี</translation>
+    </message>
+    <message>
+        <source>This edition</source>
+        <translation>รุ่นนี้</translation>
+    </message>
+    <message>
+        <source>Edition version:</source>
+        <translation>เวอร์ชันของรุ่น:</translation>
+    </message>
+    <message>
+        <source>Based on:</source>
+        <translation>อ้างอิงจาก:</translation>
+    </message>
+    <message>
+        <source>Maintainer:</source>
+        <translation>ผู้ดูแล:</translation>
+    </message>
+    <message>
+        <source>qBittorrent project:</source>
+        <translation>โปรเจกต์ qBittorrent:</translation>
+    </message>
+    <message>
+        <source>Kettle Edition is a personal build of qBittorrent that adds user accounts with roles for the WebUI and the desktop app, an activity log, and an installable WebUI with a phone layout. A kettle is a group of hawks soaring together. This is an unofficial build, not affiliated with the qBittorrent project.</source>
+        <translation>Kettle Edition เป็นบิลด์ส่วนตัวของ qBittorrent ที่เพิ่มบัญชีผู้ใช้พร้อมบทบาทสำหรับ WebUI และแอปเดสก์ท็อป บันทึกกิจกรรม และ WebUI ที่ติดตั้งได้พร้อมเลย์เอาต์สำหรับโทรศัพท์ Kettle คือฝูงเหยี่ยวที่ร่อนไปด้วยกัน นี่เป็นบิลด์ที่ไม่เป็นทางการ ไม่เกี่ยวข้องกับโปรเจกต์ qBittorrent</translation>
+    </message>
+    <message>
+        <source>N/A</source>
+        <translation>ไม่มี</translation>
+    </message>
 </context>
 <context>
     <name>AbstractFileStorage</name>
@@ -1460,6 +1516,62 @@
         <location filename="../gui/advancedsettings.cpp" line="925"/>
         <source>Embedded tracker port</source>
         <translation>พอร์ตติดตามแบบฝัง</translation>
+    </message>
+    <message>
+        <source>Network</source>
+        <translation>เครือข่าย</translation>
+    </message>
+    <message>
+        <source>Storage</source>
+        <translation>ที่เก็บข้อมูล</translation>
+    </message>
+    <message>
+        <source>Peers and trackers</source>
+        <translation>เพียร์และแทร็กเกอร์</translation>
+    </message>
+    <message>
+        <source>Program behavior</source>
+        <translation>พฤติกรรมของโปรแกรม</translation>
+    </message>
+    <message>
+        <source>Display and notifications</source>
+        <translation>การแสดงผลและการแจ้งเตือน</translation>
+    </message>
+    <message>
+        <source>Network connection</source>
+        <translation>การเชื่อมต่อเครือข่าย</translation>
+    </message>
+    <message>
+        <source>Security and privacy</source>
+        <translation>ความปลอดภัยและความเป็นส่วนตัว</translation>
+    </message>
+    <message>
+        <source>Connection tuning</source>
+        <translation>การปรับแต่งการเชื่อมต่อ</translation>
+    </message>
+    <message>
+        <source>Saving and torrent files</source>
+        <translation>การบันทึกและไฟล์ทอร์เรนต์</translation>
+    </message>
+    <message>
+        <source>Disk and memory</source>
+        <translation>ดิสก์และหน่วยความจำ</translation>
+    </message>
+    <message>
+        <source>Peers and seeding</source>
+        <translation>เพียร์และการซีด</translation>
+    </message>
+    <message>
+        <source>DHT and I2P</source>
+        <translation>DHT และ I2P</translation>
+    </message>
+    <message>
+        <source>General</source>
+        <translation>ทั่วไป</translation>
+    </message>
+    <message>
+        <source>Trackers</source>
+        <translation>แทร็กเกอร์</translation>
     </message>
 </context>
 <context>
@@ -3468,6 +3580,22 @@ Supports the formats: S01E01, 1x1, 2017.12.31 and 31.12.2017 (Date formats also 
         <source>Remove torrent</source>
         <translation>ลบทอร์เรนต์</translation>
     </message>
+    <message>
+        <source>This choice is remembered for the next removal.</source>
+        <translation>ตัวเลือกนี้จะถูกจำไว้สำหรับการลบครั้งถัดไป</translation>
+    </message>
+    <message>
+        <source>Remove</source>
+        <translation>ลบออก</translation>
+    </message>
+    <message>
+        <source>This choice is remembered for the next removal.</source>
+        <translation>ตัวเลือกนี้จะถูกจำไว้สำหรับการลบครั้งถัดไป</translation>
+    </message>
+    <message>
+        <source>Remove</source>
+        <translation>ลบออก</translation>
+    </message>
 </context>
 <context>
     <name>DownloadFromURLDialog</name>
@@ -3541,6 +3669,14 @@ Supports the formats: S01E01, 1x1, 2017.12.31 and 31.12.2017 (Date formats also 
         <location filename="../gui/executionlogwidget.cpp" line="99"/>
         <source>Clear</source>
         <translation>ล้าง</translation>
+    </message>
+    <message>
+        <source>WebUI Activity</source>
+        <translation>กิจกรรม WebUI</translation>
+    </message>
+    <message>
+        <source>WebUI Activity</source>
+        <translation>กิจกรรม WebUI</translation>
     </message>
 </context>
 <context>
@@ -4704,6 +4840,46 @@ Minimum requirement: %2.</source>
         <location filename="../gui/mainwindow.cpp" line="1346"/>
         <source>Torrent Files</source>
         <translation>ไฟล์ทอร์เรนต์</translation>
+    </message>
+    <message>
+        <source>Kettle Edition %1 is available.</source>
+        <translation>มี Kettle Edition %1 พร้อมใช้งาน</translation>
+    </message>
+    <message>
+        <source>qBittorrent Kettle Edition %1 is available. It is downloaded now and installed at 4:00 AM, or when qBittorrent starts next.</source>
+        <translation>มี qBittorrent Kettle Edition %1 พร้อมใช้งาน กำลังดาวน์โหลดตอนนี้ และจะติดตั้งเวลา 4:00 น. หรือเมื่อ qBittorrent เริ่มทำงานครั้งถัดไป</translation>
+    </message>
+    <message>
+        <source>qBittorrent Kettle Edition %1 is available. It is downloaded now. Turn on &quot;Automatically install Kettle Edition updates&quot; in Options to install it.</source>
+        <translation>มี qBittorrent Kettle Edition %1 พร้อมใช้งาน กำลังดาวน์โหลดตอนนี้ เปิด &quot;ติดตั้งอัปเดต Kettle Edition อัตโนมัติ&quot; ในตัวเลือกเพื่อติดตั้ง</translation>
+    </message>
+    <message>
+        <source>You have the latest qBittorrent Kettle Edition (%1).</source>
+        <translation>คุณใช้ qBittorrent Kettle Edition รุ่นล่าสุดแล้ว (%1)</translation>
+    </message>
+    <message>
+        <source>Could not check for qBittorrent Kettle Edition updates. See the Execution Log for details.</source>
+        <translation>ตรวจสอบอัปเดต qBittorrent Kettle Edition ไม่ได้ ดูรายละเอียดในบันทึกการทำงาน</translation>
+    </message>
+    <message>
+        <source>Kettle Edition %1 is available.</source>
+        <translation>มี Kettle Edition %1 พร้อมใช้งาน</translation>
+    </message>
+    <message>
+        <source>qBittorrent Kettle Edition %1 is available. It is downloaded now and installed at 4:00 AM, or when qBittorrent starts next.</source>
+        <translation>มี qBittorrent Kettle Edition %1 พร้อมใช้งาน กำลังดาวน์โหลดตอนนี้ และจะติดตั้งเวลา 4:00 น. หรือเมื่อ qBittorrent เริ่มทำงานครั้งถัดไป</translation>
+    </message>
+    <message>
+        <source>qBittorrent Kettle Edition %1 is available. It is downloaded now. Turn on &quot;Automatically install Kettle Edition updates&quot; in Options to install it.</source>
+        <translation>มี qBittorrent Kettle Edition %1 พร้อมใช้งาน กำลังดาวน์โหลดตอนนี้ เปิด &quot;ติดตั้งอัปเดต Kettle Edition อัตโนมัติ&quot; ในตัวเลือกเพื่อติดตั้ง</translation>
+    </message>
+    <message>
+        <source>You have the latest qBittorrent Kettle Edition (%1).</source>
+        <translation>คุณใช้ qBittorrent Kettle Edition รุ่นล่าสุดแล้ว (%1)</translation>
+    </message>
+    <message>
+        <source>Could not check for qBittorrent Kettle Edition updates. See the Execution Log for details.</source>
+        <translation>ตรวจสอบอัปเดต qBittorrent Kettle Edition ไม่ได้ ดูรายละเอียดในบันทึกการทำงาน</translation>
     </message>
 </context>
 <context>
@@ -8403,6 +8579,190 @@ Check the Execution Log for errors.</source>
         <source>Length Error</source>
         <translation type="unfinished"></translation>
     </message>
+    <message>
+        <source>Search settings</source>
+        <translation>ค้นหาการตั้งค่า</translation>
+    </message>
+    <message>
+        <source>No settings match</source>
+        <translation>ไม่มีการตั้งค่าที่ตรงกัน</translation>
+    </message>
+    <message>
+        <source>User Accounts</source>
+        <translation>บัญชีผู้ใช้</translation>
+    </message>
+    <message>
+        <source>Automatically install Kettle Edition updates</source>
+        <translation>ติดตั้งอัปเดต Kettle Edition อัตโนมัติ</translation>
+    </message>
+    <message>
+        <source>Status bar and log</source>
+        <translation>แถบสถานะและบันทึก</translation>
+    </message>
+    <message>
+        <source>Files</source>
+        <translation>ไฟล์</translation>
+    </message>
+    <message>
+        <source>Checking</source>
+        <translation>การตรวจสอบ</translation>
+    </message>
+    <message>
+        <source>Until the first user account is created, this login always works.</source>
+        <translation>จนกว่าจะสร้างบัญชีผู้ใช้แรก การเข้าสู่ระบบนี้จะใช้งานได้เสมอ</translation>
+    </message>
+    <message>
+        <source>Allow this login when user accounts exist</source>
+        <translation>อนุญาตการเข้าสู่ระบบนี้เมื่อมีบัญชีผู้ใช้</translation>
+    </message>
+    <message>
+        <source>Access</source>
+        <translation>การเข้าถึง</translation>
+    </message>
+    <message>
+        <source>Changes to users, roles and logins apply at once. The settings below apply with OK or Apply.</source>
+        <translation>การเปลี่ยนแปลงผู้ใช้ บทบาท และการเข้าสู่ระบบมีผลทันที การตั้งค่าด้านล่างมีผลเมื่อกดตกลงหรือใช้</translation>
+    </message>
+    <message>
+        <source>Logins and Activity Log</source>
+        <translation>การเข้าสู่ระบบและบันทึกกิจกรรม</translation>
+    </message>
+    <message>
+        <source>0 means users are logged out after the session timeout.</source>
+        <translation>0 หมายถึงผู้ใช้จะถูกออกจากระบบหลังหมดเวลาเซสชัน</translation>
+    </message>
+    <message>
+        <source>Keep users logged in for:</source>
+        <translation>ให้ผู้ใช้อยู่ในระบบนาน:</translation>
+    </message>
+    <message>
+        <source>Until session timeout</source>
+        <translation>จนกว่าเซสชันจะหมดเวลา</translation>
+    </message>
+    <message>
+        <source> days</source>
+        <translation> วัน</translation>
+    </message>
+    <message>
+        <source>Lock account after consecutive failures:</source>
+        <translation>ล็อกบัญชีหลังล้มเหลวติดต่อกัน:</translation>
+    </message>
+    <message>
+        <source>Keep WebUI activity log for:</source>
+        <translation>เก็บบันทึกกิจกรรม WebUI นาน:</translation>
+    </message>
+    <message>
+        <source>lock for:</source>
+        <translation>ล็อกนาน:</translation>
+    </message>
+    <message>
+        <source>%1 works best with Windows dark mode</source>
+        <translation>%1 ทำงานได้ดีที่สุดกับโหมดมืดของ Windows</translation>
+    </message>
+    <message>
+        <source>WebUI address</source>
+        <translation>ที่อยู่ WebUI</translation>
+    </message>
+    <message>
+        <source>With the WebUI address set to %1, only this PC can reach the WebUI. Remote access, including through a reverse proxy on another machine, will stop working.
+
+Save anyway?</source>
+        <translation>เมื่อตั้งที่อยู่ WebUI เป็น %1 เฉพาะพีซีเครื่องนี้เท่านั้นที่เข้าถึง WebUI ได้ การเข้าถึงจากระยะไกล รวมถึงผ่านรีเวิร์สพร็อกซีบนเครื่องอื่น จะใช้ไม่ได้
+
+บันทึกต่อไปหรือไม่?</translation>
+    </message>
+    <message>
+        <source>Search settings</source>
+        <translation>ค้นหาการตั้งค่า</translation>
+    </message>
+    <message>
+        <source>No settings match</source>
+        <translation>ไม่มีการตั้งค่าที่ตรงกัน</translation>
+    </message>
+    <message>
+        <source>User Accounts</source>
+        <translation>บัญชีผู้ใช้</translation>
+    </message>
+    <message>
+        <source>Automatically install Kettle Edition updates</source>
+        <translation>ติดตั้งอัปเดต Kettle Edition อัตโนมัติ</translation>
+    </message>
+    <message>
+        <source>Status bar and log</source>
+        <translation>แถบสถานะและบันทึก</translation>
+    </message>
+    <message>
+        <source>Files</source>
+        <translation>ไฟล์</translation>
+    </message>
+    <message>
+        <source>Checking</source>
+        <translation>การตรวจสอบ</translation>
+    </message>
+    <message>
+        <source>Until the first user account is created, this login always works.</source>
+        <translation>จนกว่าจะสร้างบัญชีผู้ใช้แรก การเข้าสู่ระบบนี้จะใช้งานได้เสมอ</translation>
+    </message>
+    <message>
+        <source>Allow this login when user accounts exist</source>
+        <translation>อนุญาตการเข้าสู่ระบบนี้เมื่อมีบัญชีผู้ใช้</translation>
+    </message>
+    <message>
+        <source>Access</source>
+        <translation>การเข้าถึง</translation>
+    </message>
+    <message>
+        <source>Changes to users, roles and logins apply at once. The settings below apply with OK or Apply.</source>
+        <translation>การเปลี่ยนแปลงผู้ใช้ บทบาท และการเข้าสู่ระบบมีผลทันที การตั้งค่าด้านล่างมีผลเมื่อกดตกลงหรือใช้</translation>
+    </message>
+    <message>
+        <source>Logins and Activity Log</source>
+        <translation>การเข้าสู่ระบบและบันทึกกิจกรรม</translation>
+    </message>
+    <message>
+        <source>0 means users are logged out after the session timeout.</source>
+        <translation>0 หมายถึงผู้ใช้จะถูกออกจากระบบหลังหมดเวลาเซสชัน</translation>
+    </message>
+    <message>
+        <source>Keep users logged in for:</source>
+        <translation>ให้ผู้ใช้อยู่ในระบบนาน:</translation>
+    </message>
+    <message>
+        <source>Until session timeout</source>
+        <translation>จนกว่าเซสชันจะหมดเวลา</translation>
+    </message>
+    <message>
+        <source> days</source>
+        <translation> วัน</translation>
+    </message>
+    <message>
+        <source>Lock account after consecutive failures:</source>
+        <translation>ล็อกบัญชีหลังล้มเหลวติดต่อกัน:</translation>
+    </message>
+    <message>
+        <source>Keep WebUI activity log for:</source>
+        <translation>เก็บบันทึกกิจกรรม WebUI นาน:</translation>
+    </message>
+    <message>
+        <source>lock for:</source>
+        <translation>ล็อกนาน:</translation>
+    </message>
+    <message>
+        <source>%1 works best with Windows dark mode</source>
+        <translation>%1 ทำงานได้ดีที่สุดกับโหมดมืดของ Windows</translation>
+    </message>
+    <message>
+        <source>WebUI address</source>
+        <translation>ที่อยู่ WebUI</translation>
+    </message>
+    <message>
+        <source>With the WebUI address set to %1, only this PC can reach the WebUI. Remote access, including through a reverse proxy on another machine, will stop working.
+
+Save anyway?</source>
+        <translation>เมื่อตั้งที่อยู่ WebUI เป็น %1 เฉพาะพีซีเครื่องนี้เท่านั้นที่เข้าถึง WebUI ได้ การเข้าถึงจากระยะไกล รวมถึงผ่านรีเวิร์สพร็อกซีบนเครื่องอื่น จะใช้ไม่ได้
+
+บันทึกต่อไปหรือไม่?</translation>
+    </message>
 </context>
 <context>
     <name>PeerInfo</name>
@@ -8655,6 +9015,22 @@ Check the Execution Log for errors.</source>
         <location filename="../gui/properties/peerlistwidget.cpp" line="309"/>
         <source>Copy IP:port</source>
         <translation>คัดลอก IP:พอร์ต</translation>
+    </message>
+    <message>
+        <source>Reset auto width</source>
+        <translation>รีเซ็ตความกว้างอัตโนมัติ</translation>
+    </message>
+    <message>
+        <source>Fit all non-hidden columns to their contents again, and forget the widths that were set by hand</source>
+        <translation>ปรับคอลัมน์ที่มองเห็นทั้งหมดให้พอดีกับเนื้อหาอีกครั้ง และลืมความกว้างที่ตั้งด้วยมือ</translation>
+    </message>
+    <message>
+        <source>Reset auto width</source>
+        <translation>รีเซ็ตความกว้างอัตโนมัติ</translation>
+    </message>
+    <message>
+        <source>Fit all non-hidden columns to their contents again, and forget the widths that were set by hand</source>
+        <translation>ปรับคอลัมน์ที่มองเห็นทั้งหมดให้พอดีกับเนื้อหาอีกครั้ง และลืมความกว้างที่ตั้งด้วยมือ</translation>
     </message>
 </context>
 <context>
@@ -10009,6 +10385,14 @@ Check the Execution Log for errors.</source>
         <source>Open link</source>
         <translation type="unfinished"></translation>
     </message>
+    <message>
+        <source>Details</source>
+        <translation>รายละเอียด</translation>
+    </message>
+    <message>
+        <source>Details</source>
+        <translation>รายละเอียด</translation>
+    </message>
 </context>
 <context>
     <name>SearchController</name>
@@ -10358,6 +10742,70 @@ Check the Execution Log for errors.</source>
         <source>Resize all non-hidden columns to the size of their contents</source>
         <translation type="unfinished"></translation>
     </message>
+    <message>
+        <source>%1 of %2 shown (%3 hidden)</source>
+        <translation>แสดง %1 จาก %2 (ซ่อน %3)</translation>
+    </message>
+    <message>
+        <source>%1 of %2 shown</source>
+        <translation>แสดง %1 จาก %2</translation>
+    </message>
+    <message>
+        <source>Searching: %1</source>
+        <translation>กำลังค้นหา: %1</translation>
+    </message>
+    <message>
+        <source>Finished: %1</source>
+        <translation>เสร็จสิ้น: %1</translation>
+    </message>
+    <message>
+        <source>Search aborted: %1</source>
+        <translation>ยกเลิกการค้นหา: %1</translation>
+    </message>
+    <message>
+        <source>Reset auto width</source>
+        <translation>รีเซ็ตความกว้างอัตโนมัติ</translation>
+    </message>
+    <message>
+        <source>Fit all non-hidden columns to their contents again, and forget the widths that were set by hand</source>
+        <translation>ปรับคอลัมน์ที่มองเห็นทั้งหมดให้พอดีกับเนื้อหาอีกครั้ง และลืมความกว้างที่ตั้งด้วยมือ</translation>
+    </message>
+    <message>
+        <source>Unknown</source>
+        <translation>ไม่ทราบ</translation>
+    </message>
+    <message>
+        <source>%1 of %2 shown (%3 hidden)</source>
+        <translation>แสดง %1 จาก %2 (ซ่อน %3)</translation>
+    </message>
+    <message>
+        <source>%1 of %2 shown</source>
+        <translation>แสดง %1 จาก %2</translation>
+    </message>
+    <message>
+        <source>Searching: %1</source>
+        <translation>กำลังค้นหา: %1</translation>
+    </message>
+    <message>
+        <source>Finished: %1</source>
+        <translation>เสร็จสิ้น: %1</translation>
+    </message>
+    <message>
+        <source>Search aborted: %1</source>
+        <translation>ยกเลิกการค้นหา: %1</translation>
+    </message>
+    <message>
+        <source>Reset auto width</source>
+        <translation>รีเซ็ตความกว้างอัตโนมัติ</translation>
+    </message>
+    <message>
+        <source>Fit all non-hidden columns to their contents again, and forget the widths that were set by hand</source>
+        <translation>ปรับคอลัมน์ที่มองเห็นทั้งหมดให้พอดีกับเนื้อหาอีกครั้ง และลืมความกว้างที่ตั้งด้วยมือ</translation>
+    </message>
+    <message>
+        <source>Unknown</source>
+        <translation>ไม่ทราบ</translation>
+    </message>
 </context>
 <context>
     <name>SearchPluginManager</name>
@@ -10642,6 +11090,14 @@ Those plugins were disabled.</source>
         <source>Couldn&apos;t update &quot;%1&quot; search engine plugin. %2</source>
         <translation type="unfinished">ไม่สามารถอัปเดต &quot;%1&quot; ปลั๊กอินสำหรับการค้นหา %2</translation>
     </message>
+    <message>
+        <source>Install Kettle Plugins</source>
+        <translation>ติดตั้งปลั๊กอิน Kettle</translation>
+    </message>
+    <message>
+        <source>Install Kettle Plugins</source>
+        <translation>ติดตั้งปลั๊กอิน Kettle</translation>
+    </message>
 </context>
 <context>
     <name>SearchPluginSourceDialog</name>
@@ -10780,6 +11236,90 @@ Click the &quot;Search plugins...&quot; button at the bottom right of the window
         <location filename="../gui/search/searchwidget.ui" line="58"/>
         <source>Stop</source>
         <translation>หยุด</translation>
+    </message>
+    <message>
+        <source>Searches</source>
+        <translation>การค้นหา</translation>
+    </message>
+    <message>
+        <source>Close the selected search</source>
+        <translation>ปิดการค้นหาที่เลือก</translation>
+    </message>
+    <message>
+        <source>Search for torrents...</source>
+        <translation>ค้นหาทอร์เรนต์...</translation>
+    </message>
+    <message>
+        <source>Category to search in</source>
+        <translation>หมวดหมู่ที่จะค้นหา</translation>
+    </message>
+    <message>
+        <source>Search engines to use</source>
+        <translation>เครื่องมือค้นหาที่จะใช้</translation>
+    </message>
+    <message>
+        <source>There aren&apos;t any search plugins installed.
+Click the &quot;Search plugins...&quot; button at the top right of the window to install some.</source>
+        <translation>ยังไม่ได้ติดตั้งปลั๊กอินค้นหา
+คลิกปุ่ม &quot;ปลั๊กอินค้นหา...&quot; ที่มุมขวาบนของหน้าต่างเพื่อติดตั้ง</translation>
+    </message>
+    <message>
+        <source>Type a search above and press Enter.</source>
+        <translation>พิมพ์คำค้นด้านบนแล้วกด Enter</translation>
+    </message>
+    <message>
+        <source>Refresh search</source>
+        <translation>รีเฟรชการค้นหา</translation>
+    </message>
+    <message>
+        <source>Close search</source>
+        <translation>ปิดการค้นหา</translation>
+    </message>
+    <message>
+        <source>Close all searches</source>
+        <translation>ปิดการค้นหาทั้งหมด</translation>
+    </message>
+    <message>
+        <source>Searches</source>
+        <translation>การค้นหา</translation>
+    </message>
+    <message>
+        <source>Close the selected search</source>
+        <translation>ปิดการค้นหาที่เลือก</translation>
+    </message>
+    <message>
+        <source>Search for torrents...</source>
+        <translation>ค้นหาทอร์เรนต์...</translation>
+    </message>
+    <message>
+        <source>Category to search in</source>
+        <translation>หมวดหมู่ที่จะค้นหา</translation>
+    </message>
+    <message>
+        <source>Search engines to use</source>
+        <translation>เครื่องมือค้นหาที่จะใช้</translation>
+    </message>
+    <message>
+        <source>There aren&apos;t any search plugins installed.
+Click the &quot;Search plugins...&quot; button at the top right of the window to install some.</source>
+        <translation>ยังไม่ได้ติดตั้งปลั๊กอินค้นหา
+คลิกปุ่ม &quot;ปลั๊กอินค้นหา...&quot; ที่มุมขวาบนของหน้าต่างเพื่อติดตั้ง</translation>
+    </message>
+    <message>
+        <source>Type a search above and press Enter.</source>
+        <translation>พิมพ์คำค้นด้านบนแล้วกด Enter</translation>
+    </message>
+    <message>
+        <source>Refresh search</source>
+        <translation>รีเฟรชการค้นหา</translation>
+    </message>
+    <message>
+        <source>Close search</source>
+        <translation>ปิดการค้นหา</translation>
+    </message>
+    <message>
+        <source>Close all searches</source>
+        <translation>ปิดการค้นหาทั้งหมด</translation>
     </message>
 </context>
 <context>
@@ -11242,6 +11782,326 @@ Click the &quot;Search plugins...&quot; button at the bottom right of the window
         <location filename="../gui/statsdialog.cpp" line="111"/>
         <source>%1 ms</source>
         <translation type="unfinished">%1 ms</translation>
+    </message>
+    <message>
+        <source>Copy</source>
+        <translation>คัดลอก</translation>
+    </message>
+    <message>
+        <source>Overview</source>
+        <translation>ภาพรวม</translation>
+    </message>
+    <message>
+        <source>Transfer</source>
+        <translation>การถ่ายโอน</translation>
+    </message>
+    <message>
+        <source>This session</source>
+        <translation>เซสชันนี้</translation>
+    </message>
+    <message>
+        <source>All time</source>
+        <translation>ตลอดเวลา</translation>
+    </message>
+    <message>
+        <source>Downloaded:</source>
+        <translation>ดาวน์โหลดแล้ว:</translation>
+    </message>
+    <message>
+        <source>Uploaded:</source>
+        <translation>อัปโหลดแล้ว:</translation>
+    </message>
+    <message>
+        <source>Share ratio:</source>
+        <translation>อัตราส่วนการแชร์:</translation>
+    </message>
+    <message>
+        <source>Current speed:</source>
+        <translation>ความเร็วปัจจุบัน:</translation>
+    </message>
+    <message>
+        <source>Activity</source>
+        <translation>กิจกรรม</translation>
+    </message>
+    <message>
+        <source>Torrents downloading:</source>
+        <translation>ทอร์เรนต์ที่กำลังดาวน์โหลด:</translation>
+    </message>
+    <message>
+        <source>Torrents seeding:</source>
+        <translation>ทอร์เรนต์ที่กำลังซีด:</translation>
+    </message>
+    <message>
+        <source>Torrents stopped:</source>
+        <translation>ทอร์เรนต์ที่หยุด:</translation>
+    </message>
+    <message>
+        <source>Torrents with errors:</source>
+        <translation>ทอร์เรนต์ที่มีข้อผิดพลาด:</translation>
+    </message>
+    <message>
+        <source>Running for:</source>
+        <translation>ทำงานมาแล้ว:</translation>
+    </message>
+    <message>
+        <source>History</source>
+        <translation>ประวัติ</translation>
+    </message>
+    <message>
+        <source>Period</source>
+        <translation>ช่วงเวลา</translation>
+    </message>
+    <message>
+        <source>Today</source>
+        <translation>วันนี้</translation>
+    </message>
+    <message>
+        <source>Last 7 days</source>
+        <translation>7 วันที่ผ่านมา</translation>
+    </message>
+    <message>
+        <source>This month</source>
+        <translation>เดือนนี้</translation>
+    </message>
+    <message>
+        <source>Last month</source>
+        <translation>เดือนที่แล้ว</translation>
+    </message>
+    <message>
+        <source>Last 12 months</source>
+        <translation>12 เดือนที่ผ่านมา</translation>
+    </message>
+    <message>
+        <source>Tracking since:</source>
+        <translation>ติดตามตั้งแต่:</translation>
+    </message>
+    <message>
+        <source>By month</source>
+        <translation>ตามเดือน</translation>
+    </message>
+    <message>
+        <source>Month</source>
+        <translation>เดือน</translation>
+    </message>
+    <message>
+        <source>Downloaded</source>
+        <translation>ดาวน์โหลดแล้ว</translation>
+    </message>
+    <message>
+        <source>Uploaded</source>
+        <translation>อัปโหลดแล้ว</translation>
+    </message>
+    <message>
+        <source>Share ratio</source>
+        <translation>อัตราส่วนการแชร์</translation>
+    </message>
+    <message>
+        <source>WebUI downloads added, this month</source>
+        <translation>การดาวน์โหลดที่เพิ่มผ่าน WebUI เดือนนี้</translation>
+    </message>
+    <message>
+        <source>Counts the requests that added a download. Apps without a login, such as Sonarr and Radarr, are shown as (localhost). Downloads added in the desktop window are not counted.</source>
+        <translation>นับคำขอที่เพิ่มการดาวน์โหลด แอปที่ไม่ได้เข้าสู่ระบบ เช่น Sonarr และ Radarr จะแสดงเป็น (localhost) การดาวน์โหลดที่เพิ่มในหน้าต่างเดสก์ท็อปจะไม่ถูกนับ</translation>
+    </message>
+    <message>
+        <source>Technical</source>
+        <translation>ข้อมูลทางเทคนิค</translation>
+    </message>
+    <message>
+        <source>Disk</source>
+        <translation>ดิสก์</translation>
+    </message>
+    <message>
+        <source>Peers waiting on disk writes:</source>
+        <translation>เพียร์ที่รอเขียนลงดิสก์:</translation>
+    </message>
+    <message>
+        <source>Peers waiting on disk reads:</source>
+        <translation>เพียร์ที่รออ่านจากดิสก์:</translation>
+    </message>
+    <message>
+        <source>Network</source>
+        <translation>เครือข่าย</translation>
+    </message>
+    <message>
+        <source>DHT nodes:</source>
+        <translation>โหนด DHT:</translation>
+    </message>
+    <message>
+        <source>Data discarded this session:</source>
+        <translation>ข้อมูลที่ทิ้งในเซสชันนี้:</translation>
+    </message>
+    <message>
+        <source>Before tracking began</source>
+        <translation>ก่อนเริ่มติดตาม</translation>
+    </message>
+    <message>
+        <source>Nothing added yet</source>
+        <translation>ยังไม่มีการเพิ่มอะไร</translation>
+    </message>
+    <message>
+        <source>Off</source>
+        <translation>ปิด</translation>
+    </message>
+    <message>
+        <source>Copy</source>
+        <translation>คัดลอก</translation>
+    </message>
+    <message>
+        <source>Overview</source>
+        <translation>ภาพรวม</translation>
+    </message>
+    <message>
+        <source>Transfer</source>
+        <translation>การถ่ายโอน</translation>
+    </message>
+    <message>
+        <source>This session</source>
+        <translation>เซสชันนี้</translation>
+    </message>
+    <message>
+        <source>All time</source>
+        <translation>ตลอดเวลา</translation>
+    </message>
+    <message>
+        <source>Downloaded:</source>
+        <translation>ดาวน์โหลดแล้ว:</translation>
+    </message>
+    <message>
+        <source>Uploaded:</source>
+        <translation>อัปโหลดแล้ว:</translation>
+    </message>
+    <message>
+        <source>Share ratio:</source>
+        <translation>อัตราส่วนการแชร์:</translation>
+    </message>
+    <message>
+        <source>Current speed:</source>
+        <translation>ความเร็วปัจจุบัน:</translation>
+    </message>
+    <message>
+        <source>Activity</source>
+        <translation>กิจกรรม</translation>
+    </message>
+    <message>
+        <source>Torrents downloading:</source>
+        <translation>ทอร์เรนต์ที่กำลังดาวน์โหลด:</translation>
+    </message>
+    <message>
+        <source>Torrents seeding:</source>
+        <translation>ทอร์เรนต์ที่กำลังซีด:</translation>
+    </message>
+    <message>
+        <source>Torrents stopped:</source>
+        <translation>ทอร์เรนต์ที่หยุด:</translation>
+    </message>
+    <message>
+        <source>Torrents with errors:</source>
+        <translation>ทอร์เรนต์ที่มีข้อผิดพลาด:</translation>
+    </message>
+    <message>
+        <source>Running for:</source>
+        <translation>ทำงานมาแล้ว:</translation>
+    </message>
+    <message>
+        <source>History</source>
+        <translation>ประวัติ</translation>
+    </message>
+    <message>
+        <source>Period</source>
+        <translation>ช่วงเวลา</translation>
+    </message>
+    <message>
+        <source>Today</source>
+        <translation>วันนี้</translation>
+    </message>
+    <message>
+        <source>Last 7 days</source>
+        <translation>7 วันที่ผ่านมา</translation>
+    </message>
+    <message>
+        <source>This month</source>
+        <translation>เดือนนี้</translation>
+    </message>
+    <message>
+        <source>Last month</source>
+        <translation>เดือนที่แล้ว</translation>
+    </message>
+    <message>
+        <source>Last 12 months</source>
+        <translation>12 เดือนที่ผ่านมา</translation>
+    </message>
+    <message>
+        <source>Tracking since:</source>
+        <translation>ติดตามตั้งแต่:</translation>
+    </message>
+    <message>
+        <source>By month</source>
+        <translation>ตามเดือน</translation>
+    </message>
+    <message>
+        <source>Month</source>
+        <translation>เดือน</translation>
+    </message>
+    <message>
+        <source>Downloaded</source>
+        <translation>ดาวน์โหลดแล้ว</translation>
+    </message>
+    <message>
+        <source>Uploaded</source>
+        <translation>อัปโหลดแล้ว</translation>
+    </message>
+    <message>
+        <source>Share ratio</source>
+        <translation>อัตราส่วนการแชร์</translation>
+    </message>
+    <message>
+        <source>WebUI downloads added, this month</source>
+        <translation>การดาวน์โหลดที่เพิ่มผ่าน WebUI เดือนนี้</translation>
+    </message>
+    <message>
+        <source>Counts the requests that added a download. Apps without a login, such as Sonarr and Radarr, are shown as (localhost). Downloads added in the desktop window are not counted.</source>
+        <translation>นับคำขอที่เพิ่มการดาวน์โหลด แอปที่ไม่ได้เข้าสู่ระบบ เช่น Sonarr และ Radarr จะแสดงเป็น (localhost) การดาวน์โหลดที่เพิ่มในหน้าต่างเดสก์ท็อปจะไม่ถูกนับ</translation>
+    </message>
+    <message>
+        <source>Technical</source>
+        <translation>ข้อมูลทางเทคนิค</translation>
+    </message>
+    <message>
+        <source>Disk</source>
+        <translation>ดิสก์</translation>
+    </message>
+    <message>
+        <source>Peers waiting on disk writes:</source>
+        <translation>เพียร์ที่รอเขียนลงดิสก์:</translation>
+    </message>
+    <message>
+        <source>Peers waiting on disk reads:</source>
+        <translation>เพียร์ที่รออ่านจากดิสก์:</translation>
+    </message>
+    <message>
+        <source>Network</source>
+        <translation>เครือข่าย</translation>
+    </message>
+    <message>
+        <source>DHT nodes:</source>
+        <translation>โหนด DHT:</translation>
+    </message>
+    <message>
+        <source>Data discarded this session:</source>
+        <translation>ข้อมูลที่ทิ้งในเซสชันนี้:</translation>
+    </message>
+    <message>
+        <source>Before tracking began</source>
+        <translation>ก่อนเริ่มติดตาม</translation>
+    </message>
+    <message>
+        <source>Nothing added yet</source>
+        <translation>ยังไม่มีการเพิ่มอะไร</translation>
+    </message>
+    <message>
+        <source>Off</source>
+        <translation>ปิด</translation>
     </message>
 </context>
 <context>
@@ -11933,6 +12793,22 @@ Please choose a different name and try again.</source>
     <message>
         <source>Priority by shown file order</source>
         <translation type="vanished">ลำดับความสำคัญตามลำดับไฟล์ที่แสดง</translation>
+    </message>
+    <message>
+        <source>Reset auto width</source>
+        <translation>รีเซ็ตความกว้างอัตโนมัติ</translation>
+    </message>
+    <message>
+        <source>Fit all non-hidden columns to their contents again, and forget the widths that were set by hand</source>
+        <translation>ปรับคอลัมน์ที่มองเห็นทั้งหมดให้พอดีกับเนื้อหาอีกครั้ง และลืมความกว้างที่ตั้งด้วยมือ</translation>
+    </message>
+    <message>
+        <source>Reset auto width</source>
+        <translation>รีเซ็ตความกว้างอัตโนมัติ</translation>
+    </message>
+    <message>
+        <source>Fit all non-hidden columns to their contents again, and forget the widths that were set by hand</source>
+        <translation>ปรับคอลัมน์ที่มองเห็นทั้งหมดให้พอดีกับเนื้อหาอีกครั้ง และลืมความกว้างที่ตั้งด้วยมือ</translation>
     </message>
 </context>
 <context>
@@ -13012,6 +13888,22 @@ Please choose a different name and try again.</source>
         <source>Column visibility</source>
         <translation>การเปิดเผยคอลัมน์</translation>
     </message>
+    <message>
+        <source>Reset auto width</source>
+        <translation>รีเซ็ตความกว้างอัตโนมัติ</translation>
+    </message>
+    <message>
+        <source>Fit all non-hidden columns to their contents again, and forget the widths that were set by hand</source>
+        <translation>ปรับคอลัมน์ที่มองเห็นทั้งหมดให้พอดีกับเนื้อหาอีกครั้ง และลืมความกว้างที่ตั้งด้วยมือ</translation>
+    </message>
+    <message>
+        <source>Reset auto width</source>
+        <translation>รีเซ็ตความกว้างอัตโนมัติ</translation>
+    </message>
+    <message>
+        <source>Fit all non-hidden columns to their contents again, and forget the widths that were set by hand</source>
+        <translation>ปรับคอลัมน์ที่มองเห็นทั้งหมดให้พอดีกับเนื้อหาอีกครั้ง และลืมความกว้างที่ตั้งด้วยมือ</translation>
+    </message>
 </context>
 <context>
     <name>TrackerStatusFilterWidget</name>
@@ -13878,6 +14770,22 @@ Please choose a different name and try again.</source>
         <source>Super seeding mode</source>
         <translation>โหลดส่งต่อข้อมูลขั้นสูง</translation>
     </message>
+    <message>
+        <source>Reset auto width</source>
+        <translation>รีเซ็ตความกว้างอัตโนมัติ</translation>
+    </message>
+    <message>
+        <source>Fit all non-hidden columns to their contents again, and forget the widths that were set by hand</source>
+        <translation>ปรับคอลัมน์ที่มองเห็นทั้งหมดให้พอดีกับเนื้อหาอีกครั้ง และลืมความกว้างที่ตั้งด้วยมือ</translation>
+    </message>
+    <message>
+        <source>Reset auto width</source>
+        <translation>รีเซ็ตความกว้างอัตโนมัติ</translation>
+    </message>
+    <message>
+        <source>Fit all non-hidden columns to their contents again, and forget the widths that were set by hand</source>
+        <translation>ปรับคอลัมน์ที่มองเห็นทั้งหมดให้พอดีกับเนื้อหาอีกครั้ง และลืมความกว้างที่ตั้งด้วยมือ</translation>
+    </message>
 </context>
 <context>
     <name>UIThemeDialog</name>
@@ -14212,6 +15120,46 @@ Please choose a different name and try again.</source>
         <source>WebAPI login failure. Reason: invalid credentials, attempt count: %1, IP: %2, username: %3</source>
         <translation>WebAPI เข้าสู่ระบบล้มเหลว. เหตุผลคือ: ข้อมูลประจำตัวไม่ถูกต้อง, จำนวนการพยายาม: %1, IP: %2, ชื่อผู้ใช้: %3</translation>
     </message>
+    <message>
+        <source>Something went wrong on the server. Details are in qBittorrent&apos;s log.</source>
+        <translation>เซิร์ฟเวอร์เกิดข้อผิดพลาด รายละเอียดอยู่ในบันทึกของ qBittorrent</translation>
+    </message>
+    <message>
+        <source>This account is locked after too many failed login attempts. Try again in %1 minute(s).</source>
+        <translation>บัญชีนี้ถูกล็อกเพราะพยายามเข้าสู่ระบบล้มเหลวหลายครั้งเกินไป ลองใหม่ใน %1 นาที</translation>
+    </message>
+    <message>
+        <source>Your role (%1) doesn&apos;t allow this: %2.</source>
+        <translation>บทบาทของคุณ (%1) ไม่อนุญาตให้ทำสิ่งนี้: %2</translation>
+    </message>
+    <message>
+        <source>Only an admin can remove the tag that says who added a torrent.</source>
+        <translation>เฉพาะผู้ดูแลเท่านั้นที่ลบแท็กที่บอกว่าใครเพิ่มทอร์เรนต์ได้</translation>
+    </message>
+    <message>
+        <source>Only an admin can clear or replace all tags of a torrent that has a tag saying who added it.</source>
+        <translation>เฉพาะผู้ดูแลเท่านั้นที่ล้างหรือแทนที่แท็กทั้งหมดของทอร์เรนต์ที่มีแท็กบอกผู้เพิ่มได้</translation>
+    </message>
+    <message>
+        <source>Something went wrong on the server. Details are in qBittorrent&apos;s log.</source>
+        <translation>เซิร์ฟเวอร์เกิดข้อผิดพลาด รายละเอียดอยู่ในบันทึกของ qBittorrent</translation>
+    </message>
+    <message>
+        <source>This account is locked after too many failed login attempts. Try again in %1 minute(s).</source>
+        <translation>บัญชีนี้ถูกล็อกเพราะพยายามเข้าสู่ระบบล้มเหลวหลายครั้งเกินไป ลองใหม่ใน %1 นาที</translation>
+    </message>
+    <message>
+        <source>Your role (%1) doesn&apos;t allow this: %2.</source>
+        <translation>บทบาทของคุณ (%1) ไม่อนุญาตให้ทำสิ่งนี้: %2</translation>
+    </message>
+    <message>
+        <source>Only an admin can remove the tag that says who added a torrent.</source>
+        <translation>เฉพาะผู้ดูแลเท่านั้นที่ลบแท็กที่บอกว่าใครเพิ่มทอร์เรนต์ได้</translation>
+    </message>
+    <message>
+        <source>Only an admin can clear or replace all tags of a torrent that has a tag saying who added it.</source>
+        <translation>เฉพาะผู้ดูแลเท่านั้นที่ล้างหรือแทนที่แท็กทั้งหมดของทอร์เรนต์ที่มีแท็กบอกผู้เพิ่มได้</translation>
+    </message>
 </context>
 <context>
     <name>WebUI</name>
@@ -14351,6 +15299,669 @@ Please choose a different name and try again.</source>
         <source>&lt; 1m</source>
         <comment>&lt; 1 minute</comment>
         <translation>&lt; 1 นาที</translation>
+    </message>
+</context>
+<context>
+    <name>UpdateInstaller</name>
+    <message>
+        <source>Kettle Edition update</source>
+        <translation>อัปเดต Kettle Edition</translation>
+    </message>
+    <message>
+        <source>Kettle Edition was updated to %1.</source>
+        <translation>อัปเดต Kettle Edition เป็น %1 แล้ว</translation>
+    </message>
+    <message>
+        <source>Kettle Edition updated</source>
+        <translation>อัปเดต Kettle Edition แล้ว</translation>
+    </message>
+    <message>
+        <source>Downloading Kettle Edition %1 (%2 changed files).</source>
+        <translation>กำลังดาวน์โหลด Kettle Edition %1 (ไฟล์ที่เปลี่ยน %2 ไฟล์)</translation>
+    </message>
+    <message>
+        <source>Kettle Edition %1 is downloaded and ready to install.</source>
+        <translation>ดาวน์โหลด Kettle Edition %1 แล้วและพร้อมติดตั้ง</translation>
+    </message>
+    <message>
+        <source>Kettle Edition update</source>
+        <translation>อัปเดต Kettle Edition</translation>
+    </message>
+    <message>
+        <source>Kettle Edition was updated to %1.</source>
+        <translation>อัปเดต Kettle Edition เป็น %1 แล้ว</translation>
+    </message>
+    <message>
+        <source>Kettle Edition updated</source>
+        <translation>อัปเดต Kettle Edition แล้ว</translation>
+    </message>
+    <message>
+        <source>Downloading Kettle Edition %1 (%2 changed files).</source>
+        <translation>กำลังดาวน์โหลด Kettle Edition %1 (ไฟล์ที่เปลี่ยน %2 ไฟล์)</translation>
+    </message>
+    <message>
+        <source>Kettle Edition %1 is downloaded and ready to install.</source>
+        <translation>ดาวน์โหลด Kettle Edition %1 แล้วและพร้อมติดตั้ง</translation>
+    </message>
+</context>
+<context>
+    <name>UserAccountDialog</name>
+    <message>
+        <source>User</source>
+        <translation>ผู้ใช้</translation>
+    </message>
+    <message>
+        <source>Username:</source>
+        <translation>ชื่อผู้ใช้:</translation>
+    </message>
+    <message>
+        <source>Role:</source>
+        <translation>บทบาท:</translation>
+    </message>
+    <message>
+        <source>Password:</source>
+        <translation>รหัสผ่าน:</translation>
+    </message>
+    <message>
+        <source>Confirm password:</source>
+        <translation>ยืนยันรหัสผ่าน:</translation>
+    </message>
+    <message>
+        <source>Disable this account</source>
+        <translation>ปิดใช้งานบัญชีนี้</translation>
+    </message>
+    <message>
+        <source>Edit User</source>
+        <translation>แก้ไขผู้ใช้</translation>
+    </message>
+    <message>
+        <source>Leave empty to keep the current password</source>
+        <translation>เว้นว่างไว้เพื่อใช้รหัสผ่านปัจจุบัน</translation>
+    </message>
+    <message>
+        <source>Add User</source>
+        <translation>เพิ่มผู้ใช้</translation>
+    </message>
+    <message>
+        <source>At least %1 characters</source>
+        <translation>อย่างน้อย %1 ตัวอักษร</translation>
+    </message>
+    <message>
+        <source>Enter a username.</source>
+        <translation>ป้อนชื่อผู้ใช้</translation>
+    </message>
+    <message>
+        <source>The password must be at least %1 characters long.</source>
+        <translation>รหัสผ่านต้องยาวอย่างน้อย %1 ตัวอักษร</translation>
+    </message>
+    <message>
+        <source>The passwords don&apos;t match.</source>
+        <translation>รหัสผ่านไม่ตรงกัน</translation>
+    </message>
+    <message>
+        <source>User</source>
+        <translation>ผู้ใช้</translation>
+    </message>
+    <message>
+        <source>Username:</source>
+        <translation>ชื่อผู้ใช้:</translation>
+    </message>
+    <message>
+        <source>Role:</source>
+        <translation>บทบาท:</translation>
+    </message>
+    <message>
+        <source>Password:</source>
+        <translation>รหัสผ่าน:</translation>
+    </message>
+    <message>
+        <source>Confirm password:</source>
+        <translation>ยืนยันรหัสผ่าน:</translation>
+    </message>
+    <message>
+        <source>Disable this account</source>
+        <translation>ปิดใช้งานบัญชีนี้</translation>
+    </message>
+    <message>
+        <source>Edit User</source>
+        <translation>แก้ไขผู้ใช้</translation>
+    </message>
+    <message>
+        <source>Leave empty to keep the current password</source>
+        <translation>เว้นว่างไว้เพื่อใช้รหัสผ่านปัจจุบัน</translation>
+    </message>
+    <message>
+        <source>Add User</source>
+        <translation>เพิ่มผู้ใช้</translation>
+    </message>
+    <message>
+        <source>At least %1 characters</source>
+        <translation>อย่างน้อย %1 ตัวอักษร</translation>
+    </message>
+    <message>
+        <source>Enter a username.</source>
+        <translation>ป้อนชื่อผู้ใช้</translation>
+    </message>
+    <message>
+        <source>The password must be at least %1 characters long.</source>
+        <translation>รหัสผ่านต้องยาวอย่างน้อย %1 ตัวอักษร</translation>
+    </message>
+    <message>
+        <source>The passwords don&apos;t match.</source>
+        <translation>รหัสผ่านไม่ตรงกัน</translation>
+    </message>
+</context>
+<context>
+    <name>UserAccountsWidget</name>
+    <message>
+        <source>User Accounts</source>
+        <translation>บัญชีผู้ใช้</translation>
+    </message>
+    <message>
+        <source>Users</source>
+        <translation>ผู้ใช้</translation>
+    </message>
+    <message>
+        <source>People who can log in to the WebUI with their own username and password.</source>
+        <translation>คนที่เข้าสู่ระบบ WebUI ได้ด้วยชื่อผู้ใช้และรหัสผ่านของตนเอง</translation>
+    </message>
+    <message>
+        <source>Add User...</source>
+        <translation>เพิ่มผู้ใช้...</translation>
+    </message>
+    <message>
+        <source>Edit...</source>
+        <translation>แก้ไข...</translation>
+    </message>
+    <message>
+        <source>Remove</source>
+        <translation>ลบออก</translation>
+    </message>
+    <message>
+        <source>Roles</source>
+        <translation>บทบาท</translation>
+    </message>
+    <message>
+        <source>A role decides what its users are allowed to do.</source>
+        <translation>บทบาทกำหนดว่าผู้ใช้ของบทบาทนั้นทำอะไรได้บ้าง</translation>
+    </message>
+    <message>
+        <source>Add Role...</source>
+        <translation>เพิ่มบทบาท...</translation>
+    </message>
+    <message>
+        <source>Logged In</source>
+        <translation>เข้าสู่ระบบอยู่</translation>
+    </message>
+    <message>
+        <source>Browsers and devices where someone is logged in with a user account.</source>
+        <translation>เบราว์เซอร์และอุปกรณ์ที่มีคนเข้าสู่ระบบด้วยบัญชีผู้ใช้</translation>
+    </message>
+    <message>
+        <source>Log Out</source>
+        <translation>ออกจากระบบ</translation>
+    </message>
+    <message>
+        <source>Username</source>
+        <translation>ชื่อผู้ใช้</translation>
+    </message>
+    <message>
+        <source>Role</source>
+        <translation>บทบาท</translation>
+    </message>
+    <message>
+        <source>Status</source>
+        <translation>สถานะ</translation>
+    </message>
+    <message>
+        <source>Last login</source>
+        <translation>เข้าสู่ระบบล่าสุด</translation>
+    </message>
+    <message>
+        <source>Created</source>
+        <translation>สร้างเมื่อ</translation>
+    </message>
+    <message>
+        <source>Name</source>
+        <translation>ชื่อ</translation>
+    </message>
+    <message>
+        <source>Description</source>
+        <translation>คำอธิบาย</translation>
+    </message>
+    <message>
+        <source>Permissions</source>
+        <translation>สิทธิ์</translation>
+    </message>
+    <message>
+        <source>User</source>
+        <translation>ผู้ใช้</translation>
+    </message>
+    <message>
+        <source>Browser</source>
+        <translation>เบราว์เซอร์</translation>
+    </message>
+    <message>
+        <source>Logged in</source>
+        <translation>เข้าสู่ระบบเมื่อ</translation>
+    </message>
+    <message>
+        <source>Last active</source>
+        <translation>ใช้งานล่าสุด</translation>
+    </message>
+    <message>
+        <source>Expires</source>
+        <translation>หมดอายุ</translation>
+    </message>
+    <message>
+        <source>The user database could not be opened. See the Execution Log for details.</source>
+        <translation>เปิดฐานข้อมูลผู้ใช้ไม่ได้ ดูรายละเอียดในบันทึกการทำงาน</translation>
+    </message>
+    <message>
+        <source>Disabled</source>
+        <translation>ปิดใช้งาน</translation>
+    </message>
+    <message>
+        <source>Enabled</source>
+        <translation>เปิดใช้งาน</translation>
+    </message>
+    <message>
+        <source>Never</source>
+        <translation>ไม่เคย</translation>
+    </message>
+    <message>
+        <source>No accounts yet, so everyone still uses the shared WebUI login. Add an Admin account first.</source>
+        <translation>ยังไม่มีบัญชี ทุกคนจึงยังใช้การเข้าสู่ระบบ WebUI ร่วมกัน เพิ่มบัญชีผู้ดูแลก่อน</translation>
+    </message>
+    <message>
+        <source>Couldn&apos;t read the user database. %1</source>
+        <translation>อ่านฐานข้อมูลผู้ใช้ไม่ได้ %1</translation>
+    </message>
+    <message>
+        <source>Remove user</source>
+        <translation>ลบผู้ใช้</translation>
+    </message>
+    <message>
+        <source>Are you sure you want to remove the user &apos;%1&apos;?</source>
+        <translation>คุณแน่ใจหรือไม่ว่าต้องการลบผู้ใช้ &apos;%1&apos;?</translation>
+    </message>
+    <message>
+        <source>Remove role</source>
+        <translation>ลบบทบาท</translation>
+    </message>
+    <message>
+        <source>Are you sure you want to remove the role &apos;%1&apos;?</source>
+        <translation>คุณแน่ใจหรือไม่ว่าต้องการลบบทบาท &apos;%1&apos;?</translation>
+    </message>
+    <message>
+        <source>Enable</source>
+        <translation>เปิดใช้งาน</translation>
+    </message>
+    <message>
+        <source>Disable</source>
+        <translation>ปิดใช้งาน</translation>
+    </message>
+    <message>
+        <source>Log Out Everywhere</source>
+        <translation>ออกจากระบบทุกที่</translation>
+    </message>
+    <message>
+        <source>User Accounts</source>
+        <translation>บัญชีผู้ใช้</translation>
+    </message>
+    <message>
+        <source>Users</source>
+        <translation>ผู้ใช้</translation>
+    </message>
+    <message>
+        <source>People who can log in to the WebUI with their own username and password.</source>
+        <translation>คนที่เข้าสู่ระบบ WebUI ได้ด้วยชื่อผู้ใช้และรหัสผ่านของตนเอง</translation>
+    </message>
+    <message>
+        <source>Add User...</source>
+        <translation>เพิ่มผู้ใช้...</translation>
+    </message>
+    <message>
+        <source>Edit...</source>
+        <translation>แก้ไข...</translation>
+    </message>
+    <message>
+        <source>Remove</source>
+        <translation>ลบออก</translation>
+    </message>
+    <message>
+        <source>Roles</source>
+        <translation>บทบาท</translation>
+    </message>
+    <message>
+        <source>A role decides what its users are allowed to do.</source>
+        <translation>บทบาทกำหนดว่าผู้ใช้ของบทบาทนั้นทำอะไรได้บ้าง</translation>
+    </message>
+    <message>
+        <source>Add Role...</source>
+        <translation>เพิ่มบทบาท...</translation>
+    </message>
+    <message>
+        <source>Logged In</source>
+        <translation>เข้าสู่ระบบอยู่</translation>
+    </message>
+    <message>
+        <source>Browsers and devices where someone is logged in with a user account.</source>
+        <translation>เบราว์เซอร์และอุปกรณ์ที่มีคนเข้าสู่ระบบด้วยบัญชีผู้ใช้</translation>
+    </message>
+    <message>
+        <source>Log Out</source>
+        <translation>ออกจากระบบ</translation>
+    </message>
+    <message>
+        <source>Username</source>
+        <translation>ชื่อผู้ใช้</translation>
+    </message>
+    <message>
+        <source>Role</source>
+        <translation>บทบาท</translation>
+    </message>
+    <message>
+        <source>Status</source>
+        <translation>สถานะ</translation>
+    </message>
+    <message>
+        <source>Last login</source>
+        <translation>เข้าสู่ระบบล่าสุด</translation>
+    </message>
+    <message>
+        <source>Created</source>
+        <translation>สร้างเมื่อ</translation>
+    </message>
+    <message>
+        <source>Name</source>
+        <translation>ชื่อ</translation>
+    </message>
+    <message>
+        <source>Description</source>
+        <translation>คำอธิบาย</translation>
+    </message>
+    <message>
+        <source>Permissions</source>
+        <translation>สิทธิ์</translation>
+    </message>
+    <message>
+        <source>User</source>
+        <translation>ผู้ใช้</translation>
+    </message>
+    <message>
+        <source>Browser</source>
+        <translation>เบราว์เซอร์</translation>
+    </message>
+    <message>
+        <source>Logged in</source>
+        <translation>เข้าสู่ระบบเมื่อ</translation>
+    </message>
+    <message>
+        <source>Last active</source>
+        <translation>ใช้งานล่าสุด</translation>
+    </message>
+    <message>
+        <source>Expires</source>
+        <translation>หมดอายุ</translation>
+    </message>
+    <message>
+        <source>The user database could not be opened. See the Execution Log for details.</source>
+        <translation>เปิดฐานข้อมูลผู้ใช้ไม่ได้ ดูรายละเอียดในบันทึกการทำงาน</translation>
+    </message>
+    <message>
+        <source>Disabled</source>
+        <translation>ปิดใช้งาน</translation>
+    </message>
+    <message>
+        <source>Enabled</source>
+        <translation>เปิดใช้งาน</translation>
+    </message>
+    <message>
+        <source>Never</source>
+        <translation>ไม่เคย</translation>
+    </message>
+    <message>
+        <source>No accounts yet, so everyone still uses the shared WebUI login. Add an Admin account first.</source>
+        <translation>ยังไม่มีบัญชี ทุกคนจึงยังใช้การเข้าสู่ระบบ WebUI ร่วมกัน เพิ่มบัญชีผู้ดูแลก่อน</translation>
+    </message>
+    <message>
+        <source>Couldn&apos;t read the user database. %1</source>
+        <translation>อ่านฐานข้อมูลผู้ใช้ไม่ได้ %1</translation>
+    </message>
+    <message>
+        <source>Remove user</source>
+        <translation>ลบผู้ใช้</translation>
+    </message>
+    <message>
+        <source>Are you sure you want to remove the user &apos;%1&apos;?</source>
+        <translation>คุณแน่ใจหรือไม่ว่าต้องการลบผู้ใช้ &apos;%1&apos;?</translation>
+    </message>
+    <message>
+        <source>Remove role</source>
+        <translation>ลบบทบาท</translation>
+    </message>
+    <message>
+        <source>Are you sure you want to remove the role &apos;%1&apos;?</source>
+        <translation>คุณแน่ใจหรือไม่ว่าต้องการลบบทบาท &apos;%1&apos;?</translation>
+    </message>
+    <message>
+        <source>Enable</source>
+        <translation>เปิดใช้งาน</translation>
+    </message>
+    <message>
+        <source>Disable</source>
+        <translation>ปิดใช้งาน</translation>
+    </message>
+    <message>
+        <source>Log Out Everywhere</source>
+        <translation>ออกจากระบบทุกที่</translation>
+    </message>
+</context>
+<context>
+    <name>UserRoleDialog</name>
+    <message>
+        <source>Role</source>
+        <translation>บทบาท</translation>
+    </message>
+    <message>
+        <source>Name:</source>
+        <translation>ชื่อ:</translation>
+    </message>
+    <message>
+        <source>Description:</source>
+        <translation>คำอธิบาย:</translation>
+    </message>
+    <message>
+        <source>Gives control over the PC or qBittorrent itself.</source>
+        <translation>ให้สิทธิ์ควบคุมพีซีหรือ qBittorrent เอง</translation>
+    </message>
+    <message>
+        <source>Add Role</source>
+        <translation>เพิ่มบทบาท</translation>
+    </message>
+    <message>
+        <source>Edit Role</source>
+        <translation>แก้ไขบทบาท</translation>
+    </message>
+    <message>
+        <source>Enter a role name.</source>
+        <translation>ป้อนชื่อบทบาท</translation>
+    </message>
+    <message>
+        <source>Role</source>
+        <translation>บทบาท</translation>
+    </message>
+    <message>
+        <source>Name:</source>
+        <translation>ชื่อ:</translation>
+    </message>
+    <message>
+        <source>Description:</source>
+        <translation>คำอธิบาย:</translation>
+    </message>
+    <message>
+        <source>Gives control over the PC or qBittorrent itself.</source>
+        <translation>ให้สิทธิ์ควบคุมพีซีหรือ qBittorrent เอง</translation>
+    </message>
+    <message>
+        <source>Add Role</source>
+        <translation>เพิ่มบทบาท</translation>
+    </message>
+    <message>
+        <source>Edit Role</source>
+        <translation>แก้ไขบทบาท</translation>
+    </message>
+    <message>
+        <source>Enter a role name.</source>
+        <translation>ป้อนชื่อบทบาท</translation>
+    </message>
+</context>
+<context>
+    <name>WebUIActivityWidget</name>
+    <message>
+        <source>All</source>
+        <translation>ทั้งหมด</translation>
+    </message>
+    <message>
+        <source>Filter activity</source>
+        <translation>กรองกิจกรรม</translation>
+    </message>
+    <message>
+        <source>Export...</source>
+        <translation>ส่งออก...</translation>
+    </message>
+    <message>
+        <source>User:</source>
+        <translation>ผู้ใช้:</translation>
+    </message>
+    <message>
+        <source>Category:</source>
+        <translation>หมวดหมู่:</translation>
+    </message>
+    <message>
+        <source>Result:</source>
+        <translation>ผลลัพธ์:</translation>
+    </message>
+    <message>
+        <source>Time</source>
+        <translation>เวลา</translation>
+    </message>
+    <message>
+        <source>User</source>
+        <translation>ผู้ใช้</translation>
+    </message>
+    <message>
+        <source>Role</source>
+        <translation>บทบาท</translation>
+    </message>
+    <message>
+        <source>Category</source>
+        <translation>หมวดหมู่</translation>
+    </message>
+    <message>
+        <source>Action</source>
+        <translation>การกระทำ</translation>
+    </message>
+    <message>
+        <source>Result</source>
+        <translation>ผลลัพธ์</translation>
+    </message>
+    <message>
+        <source>The user database could not be opened. See the General tab for details.</source>
+        <translation>เปิดฐานข้อมูลผู้ใช้ไม่ได้ ดูรายละเอียดในแท็บทั่วไป</translation>
+    </message>
+    <message>
+        <source>Results (showing %1 out of %2)</source>
+        <translation>ผลลัพธ์ (แสดง %1 จาก %2)</translation>
+    </message>
+    <message>
+        <source>Copy</source>
+        <translation>คัดลอก</translation>
+    </message>
+    <message>
+        <source>Export WebUI activity</source>
+        <translation>ส่งออกกิจกรรม WebUI</translation>
+    </message>
+    <message>
+        <source>CSV files</source>
+        <translation>ไฟล์ CSV</translation>
+    </message>
+    <message>
+        <source>Couldn&apos;t save the file. Reason: %1</source>
+        <translation>บันทึกไฟล์ไม่ได้ สาเหตุ: %1</translation>
+    </message>
+    <message>
+        <source>All</source>
+        <translation>ทั้งหมด</translation>
+    </message>
+    <message>
+        <source>Filter activity</source>
+        <translation>กรองกิจกรรม</translation>
+    </message>
+    <message>
+        <source>Export...</source>
+        <translation>ส่งออก...</translation>
+    </message>
+    <message>
+        <source>User:</source>
+        <translation>ผู้ใช้:</translation>
+    </message>
+    <message>
+        <source>Category:</source>
+        <translation>หมวดหมู่:</translation>
+    </message>
+    <message>
+        <source>Result:</source>
+        <translation>ผลลัพธ์:</translation>
+    </message>
+    <message>
+        <source>Time</source>
+        <translation>เวลา</translation>
+    </message>
+    <message>
+        <source>User</source>
+        <translation>ผู้ใช้</translation>
+    </message>
+    <message>
+        <source>Role</source>
+        <translation>บทบาท</translation>
+    </message>
+    <message>
+        <source>Category</source>
+        <translation>หมวดหมู่</translation>
+    </message>
+    <message>
+        <source>Action</source>
+        <translation>การกระทำ</translation>
+    </message>
+    <message>
+        <source>Result</source>
+        <translation>ผลลัพธ์</translation>
+    </message>
+    <message>
+        <source>The user database could not be opened. See the General tab for details.</source>
+        <translation>เปิดฐานข้อมูลผู้ใช้ไม่ได้ ดูรายละเอียดในแท็บทั่วไป</translation>
+    </message>
+    <message>
+        <source>Results (showing %1 out of %2)</source>
+        <translation>ผลลัพธ์ (แสดง %1 จาก %2)</translation>
+    </message>
+    <message>
+        <source>Copy</source>
+        <translation>คัดลอก</translation>
+    </message>
+    <message>
+        <source>Export WebUI activity</source>
+        <translation>ส่งออกกิจกรรม WebUI</translation>
+    </message>
+    <message>
+        <source>CSV files</source>
+        <translation>ไฟล์ CSV</translation>
+    </message>
+    <message>
+        <source>Couldn&apos;t save the file. Reason: %1</source>
+        <translation>บันทึกไฟล์ไม่ได้ สาเหตุ: %1</translation>
     </message>
 </context>
 </TS>

@@ -141,6 +141,62 @@
         <source>The free IP to Country Lite database by DB-IP is used for resolving the countries of peers. The database is licensed under the Creative Commons Attribution 4.0 International License</source>
         <translation>De gratis IP to Country Lite database van DB-IP wordt gebruikt voor het oplossen van de landen van peers. De database is gelicenseerd onder de Creative Commons Attribution 4.0 International License.</translation>
     </message>
+    <message>
+        <source>This edition</source>
+        <translation>Deze editie</translation>
+    </message>
+    <message>
+        <source>Edition version:</source>
+        <translation>Versie van de editie:</translation>
+    </message>
+    <message>
+        <source>Based on:</source>
+        <translation>Gebaseerd op:</translation>
+    </message>
+    <message>
+        <source>Maintainer:</source>
+        <translation>Beheerder:</translation>
+    </message>
+    <message>
+        <source>qBittorrent project:</source>
+        <translation>qBittorrent-project:</translation>
+    </message>
+    <message>
+        <source>Kettle Edition is a personal build of qBittorrent that adds user accounts with roles for the WebUI and the desktop app, an activity log, and an installable WebUI with a phone layout. A kettle is a group of hawks soaring together. This is an unofficial build, not affiliated with the qBittorrent project.</source>
+        <translation>Kettle Edition is een persoonlijke build van qBittorrent die gebruikersaccounts met rollen toevoegt voor de WebUI en de desktop-app, een activiteitenlogboek en een installeerbare WebUI met telefoonindeling. Een kettle is een groep haviken die samen zweven. Dit is een onofficiële build, niet verbonden aan het qBittorrent-project.</translation>
+    </message>
+    <message>
+        <source>N/A</source>
+        <translation>n.v.t.</translation>
+    </message>
+    <message>
+        <source>This edition</source>
+        <translation>Deze editie</translation>
+    </message>
+    <message>
+        <source>Edition version:</source>
+        <translation>Versie van de editie:</translation>
+    </message>
+    <message>
+        <source>Based on:</source>
+        <translation>Gebaseerd op:</translation>
+    </message>
+    <message>
+        <source>Maintainer:</source>
+        <translation>Beheerder:</translation>
+    </message>
+    <message>
+        <source>qBittorrent project:</source>
+        <translation>qBittorrent-project:</translation>
+    </message>
+    <message>
+        <source>Kettle Edition is a personal build of qBittorrent that adds user accounts with roles for the WebUI and the desktop app, an activity log, and an installable WebUI with a phone layout. A kettle is a group of hawks soaring together. This is an unofficial build, not affiliated with the qBittorrent project.</source>
+        <translation>Kettle Edition is een persoonlijke build van qBittorrent die gebruikersaccounts met rollen toevoegt voor de WebUI en de desktop-app, een activiteitenlogboek en een installeerbare WebUI met telefoonindeling. Een kettle is een groep haviken die samen zweven. Dit is een onofficiële build, niet verbonden aan het qBittorrent-project.</translation>
+    </message>
+    <message>
+        <source>N/A</source>
+        <translation>n.v.t.</translation>
+    </message>
 </context>
 <context>
     <name>AbstractFileStorage</name>
@@ -1459,6 +1515,62 @@
         <location filename="../gui/advancedsettings.cpp" line="925"/>
         <source>Embedded tracker port</source>
         <translation>Poort ingebedde tracker</translation>
+    </message>
+    <message>
+        <source>Network</source>
+        <translation>Netwerk</translation>
+    </message>
+    <message>
+        <source>Storage</source>
+        <translation>Opslag</translation>
+    </message>
+    <message>
+        <source>Peers and trackers</source>
+        <translation>Peers en trackers</translation>
+    </message>
+    <message>
+        <source>Program behavior</source>
+        <translation>Programmagedrag</translation>
+    </message>
+    <message>
+        <source>Display and notifications</source>
+        <translation>Weergave en meldingen</translation>
+    </message>
+    <message>
+        <source>Network connection</source>
+        <translation>Netwerkverbinding</translation>
+    </message>
+    <message>
+        <source>Security and privacy</source>
+        <translation>Beveiliging en privacy</translation>
+    </message>
+    <message>
+        <source>Connection tuning</source>
+        <translation>Verbinding afstellen</translation>
+    </message>
+    <message>
+        <source>Saving and torrent files</source>
+        <translation>Opslaan en torrentbestanden</translation>
+    </message>
+    <message>
+        <source>Disk and memory</source>
+        <translation>Schijf en geheugen</translation>
+    </message>
+    <message>
+        <source>Peers and seeding</source>
+        <translation>Peers en seeden</translation>
+    </message>
+    <message>
+        <source>DHT and I2P</source>
+        <translation>DHT en I2P</translation>
+    </message>
+    <message>
+        <source>General</source>
+        <translation>Algemeen</translation>
+    </message>
+    <message>
+        <source>Trackers</source>
+        <translation>Trackers</translation>
     </message>
 </context>
 <context>
@@ -3480,6 +3592,22 @@ Ondersteunt de formaten:  S01E01, 1x1, 2017.12.31 en 31.12.2017 (datumformaten o
         <source>Remove torrent</source>
         <translation>Torrent verwijderen</translation>
     </message>
+    <message>
+        <source>This choice is remembered for the next removal.</source>
+        <translation>Deze keuze wordt onthouden voor de volgende verwijdering.</translation>
+    </message>
+    <message>
+        <source>Remove</source>
+        <translation>Verwijderen</translation>
+    </message>
+    <message>
+        <source>This choice is remembered for the next removal.</source>
+        <translation>Deze keuze wordt onthouden voor de volgende verwijdering.</translation>
+    </message>
+    <message>
+        <source>Remove</source>
+        <translation>Verwijderen</translation>
+    </message>
 </context>
 <context>
     <name>DownloadFromURLDialog</name>
@@ -3553,6 +3681,14 @@ Ondersteunt de formaten:  S01E01, 1x1, 2017.12.31 en 31.12.2017 (datumformaten o
         <location filename="../gui/executionlogwidget.cpp" line="99"/>
         <source>Clear</source>
         <translation>Wissen</translation>
+    </message>
+    <message>
+        <source>WebUI Activity</source>
+        <translation>WebUI-activiteit</translation>
+    </message>
+    <message>
+        <source>WebUI Activity</source>
+        <translation>WebUI-activiteit</translation>
     </message>
 </context>
 <context>
@@ -4726,6 +4862,46 @@ Minimale vereiste: %2.</translation>
         <location filename="../gui/mainwindow.cpp" line="1346"/>
         <source>Torrent Files</source>
         <translation>Torrentbestanden</translation>
+    </message>
+    <message>
+        <source>Kettle Edition %1 is available.</source>
+        <translation>Kettle Edition %1 is beschikbaar.</translation>
+    </message>
+    <message>
+        <source>qBittorrent Kettle Edition %1 is available. It is downloaded now and installed at 4:00 AM, or when qBittorrent starts next.</source>
+        <translation>qBittorrent Kettle Edition %1 is beschikbaar. Deze wordt nu gedownload en om 4:00 uur geïnstalleerd, of de volgende keer dat qBittorrent start.</translation>
+    </message>
+    <message>
+        <source>qBittorrent Kettle Edition %1 is available. It is downloaded now. Turn on &quot;Automatically install Kettle Edition updates&quot; in Options to install it.</source>
+        <translation>qBittorrent Kettle Edition %1 is beschikbaar. Deze wordt nu gedownload. Schakel &quot;Kettle Edition-updates automatisch installeren&quot; in bij Opties om te installeren.</translation>
+    </message>
+    <message>
+        <source>You have the latest qBittorrent Kettle Edition (%1).</source>
+        <translation>U hebt de nieuwste qBittorrent Kettle Edition (%1).</translation>
+    </message>
+    <message>
+        <source>Could not check for qBittorrent Kettle Edition updates. See the Execution Log for details.</source>
+        <translation>Kon niet controleren op updates voor qBittorrent Kettle Edition. Zie het uitvoeringslogboek voor details.</translation>
+    </message>
+    <message>
+        <source>Kettle Edition %1 is available.</source>
+        <translation>Kettle Edition %1 is beschikbaar.</translation>
+    </message>
+    <message>
+        <source>qBittorrent Kettle Edition %1 is available. It is downloaded now and installed at 4:00 AM, or when qBittorrent starts next.</source>
+        <translation>qBittorrent Kettle Edition %1 is beschikbaar. Deze wordt nu gedownload en om 4:00 uur geïnstalleerd, of de volgende keer dat qBittorrent start.</translation>
+    </message>
+    <message>
+        <source>qBittorrent Kettle Edition %1 is available. It is downloaded now. Turn on &quot;Automatically install Kettle Edition updates&quot; in Options to install it.</source>
+        <translation>qBittorrent Kettle Edition %1 is beschikbaar. Deze wordt nu gedownload. Schakel &quot;Kettle Edition-updates automatisch installeren&quot; in bij Opties om te installeren.</translation>
+    </message>
+    <message>
+        <source>You have the latest qBittorrent Kettle Edition (%1).</source>
+        <translation>U hebt de nieuwste qBittorrent Kettle Edition (%1).</translation>
+    </message>
+    <message>
+        <source>Could not check for qBittorrent Kettle Edition updates. See the Execution Log for details.</source>
+        <translation>Kon niet controleren op updates voor qBittorrent Kettle Edition. Zie het uitvoeringslogboek voor details.</translation>
     </message>
 </context>
 <context>
@@ -8515,6 +8691,190 @@ Controleer het uitvoeringslogboek op fouten.</translation>
         <source>Length Error</source>
         <translation>Lengte-fout</translation>
     </message>
+    <message>
+        <source>Search settings</source>
+        <translation>Instellingen zoeken</translation>
+    </message>
+    <message>
+        <source>No settings match</source>
+        <translation>Geen instellingen gevonden</translation>
+    </message>
+    <message>
+        <source>User Accounts</source>
+        <translation>Gebruikersaccounts</translation>
+    </message>
+    <message>
+        <source>Automatically install Kettle Edition updates</source>
+        <translation>Kettle Edition-updates automatisch installeren</translation>
+    </message>
+    <message>
+        <source>Status bar and log</source>
+        <translation>Statusbalk en logboek</translation>
+    </message>
+    <message>
+        <source>Files</source>
+        <translation>Bestanden</translation>
+    </message>
+    <message>
+        <source>Checking</source>
+        <translation>Controle</translation>
+    </message>
+    <message>
+        <source>Until the first user account is created, this login always works.</source>
+        <translation>Tot het eerste gebruikersaccount is aangemaakt, werkt deze aanmelding altijd.</translation>
+    </message>
+    <message>
+        <source>Allow this login when user accounts exist</source>
+        <translation>Deze aanmelding toestaan als er gebruikersaccounts zijn</translation>
+    </message>
+    <message>
+        <source>Access</source>
+        <translation>Toegang</translation>
+    </message>
+    <message>
+        <source>Changes to users, roles and logins apply at once. The settings below apply with OK or Apply.</source>
+        <translation>Wijzigingen aan gebruikers, rollen en aanmeldingen gelden direct. De instellingen hieronder gelden met OK of Toepassen.</translation>
+    </message>
+    <message>
+        <source>Logins and Activity Log</source>
+        <translation>Aanmeldingen en activiteitenlogboek</translation>
+    </message>
+    <message>
+        <source>0 means users are logged out after the session timeout.</source>
+        <translation>0 betekent dat gebruikers worden afgemeld na de sessietime-out.</translation>
+    </message>
+    <message>
+        <source>Keep users logged in for:</source>
+        <translation>Gebruikers aangemeld houden gedurende:</translation>
+    </message>
+    <message>
+        <source>Until session timeout</source>
+        <translation>Tot de sessietime-out</translation>
+    </message>
+    <message>
+        <source> days</source>
+        <translation> dagen</translation>
+    </message>
+    <message>
+        <source>Lock account after consecutive failures:</source>
+        <translation>Account vergrendelen na opeenvolgende mislukkingen:</translation>
+    </message>
+    <message>
+        <source>Keep WebUI activity log for:</source>
+        <translation>WebUI-activiteitenlogboek bewaren gedurende:</translation>
+    </message>
+    <message>
+        <source>lock for:</source>
+        <translation>vergrendelen gedurende:</translation>
+    </message>
+    <message>
+        <source>%1 works best with Windows dark mode</source>
+        <translation>%1 werkt het best met de donkere modus van Windows</translation>
+    </message>
+    <message>
+        <source>WebUI address</source>
+        <translation>WebUI-adres</translation>
+    </message>
+    <message>
+        <source>With the WebUI address set to %1, only this PC can reach the WebUI. Remote access, including through a reverse proxy on another machine, will stop working.
+
+Save anyway?</source>
+        <translation>Als het WebUI-adres %1 is, kan alleen deze pc de WebUI bereiken. Toegang op afstand, ook via een reverse proxy op een andere machine, stopt dan met werken.
+
+Toch opslaan?</translation>
+    </message>
+    <message>
+        <source>Search settings</source>
+        <translation>Instellingen zoeken</translation>
+    </message>
+    <message>
+        <source>No settings match</source>
+        <translation>Geen instellingen gevonden</translation>
+    </message>
+    <message>
+        <source>User Accounts</source>
+        <translation>Gebruikersaccounts</translation>
+    </message>
+    <message>
+        <source>Automatically install Kettle Edition updates</source>
+        <translation>Kettle Edition-updates automatisch installeren</translation>
+    </message>
+    <message>
+        <source>Status bar and log</source>
+        <translation>Statusbalk en logboek</translation>
+    </message>
+    <message>
+        <source>Files</source>
+        <translation>Bestanden</translation>
+    </message>
+    <message>
+        <source>Checking</source>
+        <translation>Controle</translation>
+    </message>
+    <message>
+        <source>Until the first user account is created, this login always works.</source>
+        <translation>Tot het eerste gebruikersaccount is aangemaakt, werkt deze aanmelding altijd.</translation>
+    </message>
+    <message>
+        <source>Allow this login when user accounts exist</source>
+        <translation>Deze aanmelding toestaan als er gebruikersaccounts zijn</translation>
+    </message>
+    <message>
+        <source>Access</source>
+        <translation>Toegang</translation>
+    </message>
+    <message>
+        <source>Changes to users, roles and logins apply at once. The settings below apply with OK or Apply.</source>
+        <translation>Wijzigingen aan gebruikers, rollen en aanmeldingen gelden direct. De instellingen hieronder gelden met OK of Toepassen.</translation>
+    </message>
+    <message>
+        <source>Logins and Activity Log</source>
+        <translation>Aanmeldingen en activiteitenlogboek</translation>
+    </message>
+    <message>
+        <source>0 means users are logged out after the session timeout.</source>
+        <translation>0 betekent dat gebruikers worden afgemeld na de sessietime-out.</translation>
+    </message>
+    <message>
+        <source>Keep users logged in for:</source>
+        <translation>Gebruikers aangemeld houden gedurende:</translation>
+    </message>
+    <message>
+        <source>Until session timeout</source>
+        <translation>Tot de sessietime-out</translation>
+    </message>
+    <message>
+        <source> days</source>
+        <translation> dagen</translation>
+    </message>
+    <message>
+        <source>Lock account after consecutive failures:</source>
+        <translation>Account vergrendelen na opeenvolgende mislukkingen:</translation>
+    </message>
+    <message>
+        <source>Keep WebUI activity log for:</source>
+        <translation>WebUI-activiteitenlogboek bewaren gedurende:</translation>
+    </message>
+    <message>
+        <source>lock for:</source>
+        <translation>vergrendelen gedurende:</translation>
+    </message>
+    <message>
+        <source>%1 works best with Windows dark mode</source>
+        <translation>%1 werkt het best met de donkere modus van Windows</translation>
+    </message>
+    <message>
+        <source>WebUI address</source>
+        <translation>WebUI-adres</translation>
+    </message>
+    <message>
+        <source>With the WebUI address set to %1, only this PC can reach the WebUI. Remote access, including through a reverse proxy on another machine, will stop working.
+
+Save anyway?</source>
+        <translation>Als het WebUI-adres %1 is, kan alleen deze pc de WebUI bereiken. Toegang op afstand, ook via een reverse proxy op een andere machine, stopt dan met werken.
+
+Toch opslaan?</translation>
+    </message>
 </context>
 <context>
     <name>PeerInfo</name>
@@ -8767,6 +9127,22 @@ Controleer het uitvoeringslogboek op fouten.</translation>
         <location filename="../gui/properties/peerlistwidget.cpp" line="309"/>
         <source>Copy IP:port</source>
         <translation>IP:poort kopiëren</translation>
+    </message>
+    <message>
+        <source>Reset auto width</source>
+        <translation>Automatische breedte herstellen</translation>
+    </message>
+    <message>
+        <source>Fit all non-hidden columns to their contents again, and forget the widths that were set by hand</source>
+        <translation>Alle zichtbare kolommen opnieuw aan hun inhoud aanpassen en handmatig ingestelde breedtes vergeten</translation>
+    </message>
+    <message>
+        <source>Reset auto width</source>
+        <translation>Automatische breedte herstellen</translation>
+    </message>
+    <message>
+        <source>Fit all non-hidden columns to their contents again, and forget the widths that were set by hand</source>
+        <translation>Alle zichtbare kolommen opnieuw aan hun inhoud aanpassen en handmatig ingestelde breedtes vergeten</translation>
     </message>
 </context>
 <context>
@@ -10157,6 +10533,14 @@ Deze plugins zijn uitgeschakeld.</translation>
         <source>Open link</source>
         <translation>Koppeling openen</translation>
     </message>
+    <message>
+        <source>Details</source>
+        <translation>Details</translation>
+    </message>
+    <message>
+        <source>Details</source>
+        <translation>Details</translation>
+    </message>
 </context>
 <context>
     <name>SearchController</name>
@@ -10511,6 +10895,70 @@ Deze plugins zijn uitgeschakeld.</translation>
         <source>Resize all non-hidden columns to the size of their contents</source>
         <translation>Alle niet-verborgen kolommen aanpassen aan de grootte van hun inhoud</translation>
     </message>
+    <message>
+        <source>%1 of %2 shown (%3 hidden)</source>
+        <translation>%1 van %2 getoond (%3 verborgen)</translation>
+    </message>
+    <message>
+        <source>%1 of %2 shown</source>
+        <translation>%1 van %2 getoond</translation>
+    </message>
+    <message>
+        <source>Searching: %1</source>
+        <translation>Zoeken: %1</translation>
+    </message>
+    <message>
+        <source>Finished: %1</source>
+        <translation>Voltooid: %1</translation>
+    </message>
+    <message>
+        <source>Search aborted: %1</source>
+        <translation>Zoekopdracht afgebroken: %1</translation>
+    </message>
+    <message>
+        <source>Reset auto width</source>
+        <translation>Automatische breedte herstellen</translation>
+    </message>
+    <message>
+        <source>Fit all non-hidden columns to their contents again, and forget the widths that were set by hand</source>
+        <translation>Alle zichtbare kolommen opnieuw aan hun inhoud aanpassen en handmatig ingestelde breedtes vergeten</translation>
+    </message>
+    <message>
+        <source>Unknown</source>
+        <translation>Onbekend</translation>
+    </message>
+    <message>
+        <source>%1 of %2 shown (%3 hidden)</source>
+        <translation>%1 van %2 getoond (%3 verborgen)</translation>
+    </message>
+    <message>
+        <source>%1 of %2 shown</source>
+        <translation>%1 van %2 getoond</translation>
+    </message>
+    <message>
+        <source>Searching: %1</source>
+        <translation>Zoeken: %1</translation>
+    </message>
+    <message>
+        <source>Finished: %1</source>
+        <translation>Voltooid: %1</translation>
+    </message>
+    <message>
+        <source>Search aborted: %1</source>
+        <translation>Zoekopdracht afgebroken: %1</translation>
+    </message>
+    <message>
+        <source>Reset auto width</source>
+        <translation>Automatische breedte herstellen</translation>
+    </message>
+    <message>
+        <source>Fit all non-hidden columns to their contents again, and forget the widths that were set by hand</source>
+        <translation>Alle zichtbare kolommen opnieuw aan hun inhoud aanpassen en handmatig ingestelde breedtes vergeten</translation>
+    </message>
+    <message>
+        <source>Unknown</source>
+        <translation>Onbekend</translation>
+    </message>
 </context>
 <context>
     <name>SearchPluginManager</name>
@@ -10808,6 +11256,14 @@ Deze plugins zijn uitgeschakeld.</translation>
         <source>Couldn&apos;t update &quot;%1&quot; search engine plugin. %2</source>
         <translation type="unfinished">Kon &quot;%1&quot; zoekmachineplugin niet bijwerken. %2</translation>
     </message>
+    <message>
+        <source>Install Kettle Plugins</source>
+        <translation>Kettle-plug-ins installeren</translation>
+    </message>
+    <message>
+        <source>Install Kettle Plugins</source>
+        <translation>Kettle-plug-ins installeren</translation>
+    </message>
 </context>
 <context>
     <name>SearchPluginSourceDialog</name>
@@ -10947,6 +11403,90 @@ Klik op de knop &quot;zoekplugins...&quot; rechtsonder in het venster om er een 
         <location filename="../gui/search/searchwidget.ui" line="58"/>
         <source>Stop</source>
         <translation>Stoppen</translation>
+    </message>
+    <message>
+        <source>Searches</source>
+        <translation>Zoekopdrachten</translation>
+    </message>
+    <message>
+        <source>Close the selected search</source>
+        <translation>Geselecteerde zoekopdracht sluiten</translation>
+    </message>
+    <message>
+        <source>Search for torrents...</source>
+        <translation>Zoeken naar torrents...</translation>
+    </message>
+    <message>
+        <source>Category to search in</source>
+        <translation>Categorie om in te zoeken</translation>
+    </message>
+    <message>
+        <source>Search engines to use</source>
+        <translation>Te gebruiken zoekmachines</translation>
+    </message>
+    <message>
+        <source>There aren&apos;t any search plugins installed.
+Click the &quot;Search plugins...&quot; button at the top right of the window to install some.</source>
+        <translation>Er zijn geen zoekplug-ins geïnstalleerd.
+Klik op de knop &quot;Zoekplug-ins...&quot; rechtsboven in het venster om er enkele te installeren.</translation>
+    </message>
+    <message>
+        <source>Type a search above and press Enter.</source>
+        <translation>Typ hierboven een zoekopdracht en druk op Enter.</translation>
+    </message>
+    <message>
+        <source>Refresh search</source>
+        <translation>Zoekopdracht vernieuwen</translation>
+    </message>
+    <message>
+        <source>Close search</source>
+        <translation>Zoekopdracht sluiten</translation>
+    </message>
+    <message>
+        <source>Close all searches</source>
+        <translation>Alle zoekopdrachten sluiten</translation>
+    </message>
+    <message>
+        <source>Searches</source>
+        <translation>Zoekopdrachten</translation>
+    </message>
+    <message>
+        <source>Close the selected search</source>
+        <translation>Geselecteerde zoekopdracht sluiten</translation>
+    </message>
+    <message>
+        <source>Search for torrents...</source>
+        <translation>Zoeken naar torrents...</translation>
+    </message>
+    <message>
+        <source>Category to search in</source>
+        <translation>Categorie om in te zoeken</translation>
+    </message>
+    <message>
+        <source>Search engines to use</source>
+        <translation>Te gebruiken zoekmachines</translation>
+    </message>
+    <message>
+        <source>There aren&apos;t any search plugins installed.
+Click the &quot;Search plugins...&quot; button at the top right of the window to install some.</source>
+        <translation>Er zijn geen zoekplug-ins geïnstalleerd.
+Klik op de knop &quot;Zoekplug-ins...&quot; rechtsboven in het venster om er enkele te installeren.</translation>
+    </message>
+    <message>
+        <source>Type a search above and press Enter.</source>
+        <translation>Typ hierboven een zoekopdracht en druk op Enter.</translation>
+    </message>
+    <message>
+        <source>Refresh search</source>
+        <translation>Zoekopdracht vernieuwen</translation>
+    </message>
+    <message>
+        <source>Close search</source>
+        <translation>Zoekopdracht sluiten</translation>
+    </message>
+    <message>
+        <source>Close all searches</source>
+        <translation>Alle zoekopdrachten sluiten</translation>
     </message>
 </context>
 <context>
@@ -11413,6 +11953,326 @@ Klik op de knop &quot;zoekplugins...&quot; rechtsonder in het venster om er een 
         <location filename="../gui/statsdialog.cpp" line="111"/>
         <source>%1 ms</source>
         <translation type="unfinished">%1 ms</translation>
+    </message>
+    <message>
+        <source>Copy</source>
+        <translation>Kopiëren</translation>
+    </message>
+    <message>
+        <source>Overview</source>
+        <translation>Overzicht</translation>
+    </message>
+    <message>
+        <source>Transfer</source>
+        <translation>Overdracht</translation>
+    </message>
+    <message>
+        <source>This session</source>
+        <translation>Deze sessie</translation>
+    </message>
+    <message>
+        <source>All time</source>
+        <translation>Altijd</translation>
+    </message>
+    <message>
+        <source>Downloaded:</source>
+        <translation>Gedownload:</translation>
+    </message>
+    <message>
+        <source>Uploaded:</source>
+        <translation>Geüpload:</translation>
+    </message>
+    <message>
+        <source>Share ratio:</source>
+        <translation>Deelverhouding:</translation>
+    </message>
+    <message>
+        <source>Current speed:</source>
+        <translation>Huidige snelheid:</translation>
+    </message>
+    <message>
+        <source>Activity</source>
+        <translation>Activiteit</translation>
+    </message>
+    <message>
+        <source>Torrents downloading:</source>
+        <translation>Torrents die downloaden:</translation>
+    </message>
+    <message>
+        <source>Torrents seeding:</source>
+        <translation>Torrents die seeden:</translation>
+    </message>
+    <message>
+        <source>Torrents stopped:</source>
+        <translation>Gestopte torrents:</translation>
+    </message>
+    <message>
+        <source>Torrents with errors:</source>
+        <translation>Torrents met fouten:</translation>
+    </message>
+    <message>
+        <source>Running for:</source>
+        <translation>Actief gedurende:</translation>
+    </message>
+    <message>
+        <source>History</source>
+        <translation>Geschiedenis</translation>
+    </message>
+    <message>
+        <source>Period</source>
+        <translation>Periode</translation>
+    </message>
+    <message>
+        <source>Today</source>
+        <translation>Vandaag</translation>
+    </message>
+    <message>
+        <source>Last 7 days</source>
+        <translation>Laatste 7 dagen</translation>
+    </message>
+    <message>
+        <source>This month</source>
+        <translation>Deze maand</translation>
+    </message>
+    <message>
+        <source>Last month</source>
+        <translation>Vorige maand</translation>
+    </message>
+    <message>
+        <source>Last 12 months</source>
+        <translation>Laatste 12 maanden</translation>
+    </message>
+    <message>
+        <source>Tracking since:</source>
+        <translation>Bijgehouden sinds:</translation>
+    </message>
+    <message>
+        <source>By month</source>
+        <translation>Per maand</translation>
+    </message>
+    <message>
+        <source>Month</source>
+        <translation>Maand</translation>
+    </message>
+    <message>
+        <source>Downloaded</source>
+        <translation>Gedownload</translation>
+    </message>
+    <message>
+        <source>Uploaded</source>
+        <translation>Geüpload</translation>
+    </message>
+    <message>
+        <source>Share ratio</source>
+        <translation>Deelverhouding</translation>
+    </message>
+    <message>
+        <source>WebUI downloads added, this month</source>
+        <translation>Via de WebUI toegevoegde downloads, deze maand</translation>
+    </message>
+    <message>
+        <source>Counts the requests that added a download. Apps without a login, such as Sonarr and Radarr, are shown as (localhost). Downloads added in the desktop window are not counted.</source>
+        <translation>Telt de verzoeken die een download hebben toegevoegd. Apps zonder aanmelding, zoals Sonarr en Radarr, worden getoond als (localhost). Downloads die in het desktopvenster zijn toegevoegd, worden niet geteld.</translation>
+    </message>
+    <message>
+        <source>Technical</source>
+        <translation>Technisch</translation>
+    </message>
+    <message>
+        <source>Disk</source>
+        <translation>Schijf</translation>
+    </message>
+    <message>
+        <source>Peers waiting on disk writes:</source>
+        <translation>Peers die wachten op schrijven naar schijf:</translation>
+    </message>
+    <message>
+        <source>Peers waiting on disk reads:</source>
+        <translation>Peers die wachten op lezen van schijf:</translation>
+    </message>
+    <message>
+        <source>Network</source>
+        <translation>Netwerk</translation>
+    </message>
+    <message>
+        <source>DHT nodes:</source>
+        <translation>DHT-knooppunten:</translation>
+    </message>
+    <message>
+        <source>Data discarded this session:</source>
+        <translation>Weggegooide gegevens deze sessie:</translation>
+    </message>
+    <message>
+        <source>Before tracking began</source>
+        <translation>Voordat het bijhouden begon</translation>
+    </message>
+    <message>
+        <source>Nothing added yet</source>
+        <translation>Nog niets toegevoegd</translation>
+    </message>
+    <message>
+        <source>Off</source>
+        <translation>Uit</translation>
+    </message>
+    <message>
+        <source>Copy</source>
+        <translation>Kopiëren</translation>
+    </message>
+    <message>
+        <source>Overview</source>
+        <translation>Overzicht</translation>
+    </message>
+    <message>
+        <source>Transfer</source>
+        <translation>Overdracht</translation>
+    </message>
+    <message>
+        <source>This session</source>
+        <translation>Deze sessie</translation>
+    </message>
+    <message>
+        <source>All time</source>
+        <translation>Altijd</translation>
+    </message>
+    <message>
+        <source>Downloaded:</source>
+        <translation>Gedownload:</translation>
+    </message>
+    <message>
+        <source>Uploaded:</source>
+        <translation>Geüpload:</translation>
+    </message>
+    <message>
+        <source>Share ratio:</source>
+        <translation>Deelverhouding:</translation>
+    </message>
+    <message>
+        <source>Current speed:</source>
+        <translation>Huidige snelheid:</translation>
+    </message>
+    <message>
+        <source>Activity</source>
+        <translation>Activiteit</translation>
+    </message>
+    <message>
+        <source>Torrents downloading:</source>
+        <translation>Torrents die downloaden:</translation>
+    </message>
+    <message>
+        <source>Torrents seeding:</source>
+        <translation>Torrents die seeden:</translation>
+    </message>
+    <message>
+        <source>Torrents stopped:</source>
+        <translation>Gestopte torrents:</translation>
+    </message>
+    <message>
+        <source>Torrents with errors:</source>
+        <translation>Torrents met fouten:</translation>
+    </message>
+    <message>
+        <source>Running for:</source>
+        <translation>Actief gedurende:</translation>
+    </message>
+    <message>
+        <source>History</source>
+        <translation>Geschiedenis</translation>
+    </message>
+    <message>
+        <source>Period</source>
+        <translation>Periode</translation>
+    </message>
+    <message>
+        <source>Today</source>
+        <translation>Vandaag</translation>
+    </message>
+    <message>
+        <source>Last 7 days</source>
+        <translation>Laatste 7 dagen</translation>
+    </message>
+    <message>
+        <source>This month</source>
+        <translation>Deze maand</translation>
+    </message>
+    <message>
+        <source>Last month</source>
+        <translation>Vorige maand</translation>
+    </message>
+    <message>
+        <source>Last 12 months</source>
+        <translation>Laatste 12 maanden</translation>
+    </message>
+    <message>
+        <source>Tracking since:</source>
+        <translation>Bijgehouden sinds:</translation>
+    </message>
+    <message>
+        <source>By month</source>
+        <translation>Per maand</translation>
+    </message>
+    <message>
+        <source>Month</source>
+        <translation>Maand</translation>
+    </message>
+    <message>
+        <source>Downloaded</source>
+        <translation>Gedownload</translation>
+    </message>
+    <message>
+        <source>Uploaded</source>
+        <translation>Geüpload</translation>
+    </message>
+    <message>
+        <source>Share ratio</source>
+        <translation>Deelverhouding</translation>
+    </message>
+    <message>
+        <source>WebUI downloads added, this month</source>
+        <translation>Via de WebUI toegevoegde downloads, deze maand</translation>
+    </message>
+    <message>
+        <source>Counts the requests that added a download. Apps without a login, such as Sonarr and Radarr, are shown as (localhost). Downloads added in the desktop window are not counted.</source>
+        <translation>Telt de verzoeken die een download hebben toegevoegd. Apps zonder aanmelding, zoals Sonarr en Radarr, worden getoond als (localhost). Downloads die in het desktopvenster zijn toegevoegd, worden niet geteld.</translation>
+    </message>
+    <message>
+        <source>Technical</source>
+        <translation>Technisch</translation>
+    </message>
+    <message>
+        <source>Disk</source>
+        <translation>Schijf</translation>
+    </message>
+    <message>
+        <source>Peers waiting on disk writes:</source>
+        <translation>Peers die wachten op schrijven naar schijf:</translation>
+    </message>
+    <message>
+        <source>Peers waiting on disk reads:</source>
+        <translation>Peers die wachten op lezen van schijf:</translation>
+    </message>
+    <message>
+        <source>Network</source>
+        <translation>Netwerk</translation>
+    </message>
+    <message>
+        <source>DHT nodes:</source>
+        <translation>DHT-knooppunten:</translation>
+    </message>
+    <message>
+        <source>Data discarded this session:</source>
+        <translation>Weggegooide gegevens deze sessie:</translation>
+    </message>
+    <message>
+        <source>Before tracking began</source>
+        <translation>Voordat het bijhouden begon</translation>
+    </message>
+    <message>
+        <source>Nothing added yet</source>
+        <translation>Nog niets toegevoegd</translation>
+    </message>
+    <message>
+        <source>Off</source>
+        <translation>Uit</translation>
     </message>
 </context>
 <context>
@@ -12106,6 +12966,22 @@ Kies een andere naam en probeer het opnieuw.</translation>
     <message>
         <source>Priority by shown file order</source>
         <translation type="vanished">Prioriteit volgens weergegeven bestandsvolgorde</translation>
+    </message>
+    <message>
+        <source>Reset auto width</source>
+        <translation>Automatische breedte herstellen</translation>
+    </message>
+    <message>
+        <source>Fit all non-hidden columns to their contents again, and forget the widths that were set by hand</source>
+        <translation>Alle zichtbare kolommen opnieuw aan hun inhoud aanpassen en handmatig ingestelde breedtes vergeten</translation>
+    </message>
+    <message>
+        <source>Reset auto width</source>
+        <translation>Automatische breedte herstellen</translation>
+    </message>
+    <message>
+        <source>Fit all non-hidden columns to their contents again, and forget the widths that were set by hand</source>
+        <translation>Alle zichtbare kolommen opnieuw aan hun inhoud aanpassen en handmatig ingestelde breedtes vergeten</translation>
     </message>
 </context>
 <context>
@@ -13190,6 +14066,22 @@ Kies een andere naam en probeer het opnieuw.</translation>
         <source>Column visibility</source>
         <translation>Kolom-zichtbaarheid</translation>
     </message>
+    <message>
+        <source>Reset auto width</source>
+        <translation>Automatische breedte herstellen</translation>
+    </message>
+    <message>
+        <source>Fit all non-hidden columns to their contents again, and forget the widths that were set by hand</source>
+        <translation>Alle zichtbare kolommen opnieuw aan hun inhoud aanpassen en handmatig ingestelde breedtes vergeten</translation>
+    </message>
+    <message>
+        <source>Reset auto width</source>
+        <translation>Automatische breedte herstellen</translation>
+    </message>
+    <message>
+        <source>Fit all non-hidden columns to their contents again, and forget the widths that were set by hand</source>
+        <translation>Alle zichtbare kolommen opnieuw aan hun inhoud aanpassen en handmatig ingestelde breedtes vergeten</translation>
+    </message>
 </context>
 <context>
     <name>TrackerStatusFilterWidget</name>
@@ -14056,6 +14948,22 @@ Kies een andere naam en probeer het opnieuw.</translation>
         <source>Super seeding mode</source>
         <translation>Super-seeding-modus</translation>
     </message>
+    <message>
+        <source>Reset auto width</source>
+        <translation>Automatische breedte herstellen</translation>
+    </message>
+    <message>
+        <source>Fit all non-hidden columns to their contents again, and forget the widths that were set by hand</source>
+        <translation>Alle zichtbare kolommen opnieuw aan hun inhoud aanpassen en handmatig ingestelde breedtes vergeten</translation>
+    </message>
+    <message>
+        <source>Reset auto width</source>
+        <translation>Automatische breedte herstellen</translation>
+    </message>
+    <message>
+        <source>Fit all non-hidden columns to their contents again, and forget the widths that were set by hand</source>
+        <translation>Alle zichtbare kolommen opnieuw aan hun inhoud aanpassen en handmatig ingestelde breedtes vergeten</translation>
+    </message>
 </context>
 <context>
     <name>UIThemeDialog</name>
@@ -14390,6 +15298,46 @@ Kies een andere naam en probeer het opnieuw.</translation>
         <source>WebAPI login failure. Reason: invalid credentials, attempt count: %1, IP: %2, username: %3</source>
         <translation>WebAPI aanmeldfout. Reden: ongeldige aanmeldgegevens. Aantal pogingen: %1, IP: %2, gebruikersnaam: %3</translation>
     </message>
+    <message>
+        <source>Something went wrong on the server. Details are in qBittorrent&apos;s log.</source>
+        <translation>Er is iets misgegaan op de server. Details staan in het logboek van qBittorrent.</translation>
+    </message>
+    <message>
+        <source>This account is locked after too many failed login attempts. Try again in %1 minute(s).</source>
+        <translation>Dit account is vergrendeld na te veel mislukte aanmeldpogingen. Probeer het over %1 minu(u)t(en) opnieuw.</translation>
+    </message>
+    <message>
+        <source>Your role (%1) doesn&apos;t allow this: %2.</source>
+        <translation>Uw rol (%1) staat dit niet toe: %2.</translation>
+    </message>
+    <message>
+        <source>Only an admin can remove the tag that says who added a torrent.</source>
+        <translation>Alleen een admin kan de tag verwijderen die aangeeft wie een torrent heeft toegevoegd.</translation>
+    </message>
+    <message>
+        <source>Only an admin can clear or replace all tags of a torrent that has a tag saying who added it.</source>
+        <translation>Alleen een admin kan alle tags wissen of vervangen van een torrent die een tag heeft die aangeeft wie hem heeft toegevoegd.</translation>
+    </message>
+    <message>
+        <source>Something went wrong on the server. Details are in qBittorrent&apos;s log.</source>
+        <translation>Er is iets misgegaan op de server. Details staan in het logboek van qBittorrent.</translation>
+    </message>
+    <message>
+        <source>This account is locked after too many failed login attempts. Try again in %1 minute(s).</source>
+        <translation>Dit account is vergrendeld na te veel mislukte aanmeldpogingen. Probeer het over %1 minu(u)t(en) opnieuw.</translation>
+    </message>
+    <message>
+        <source>Your role (%1) doesn&apos;t allow this: %2.</source>
+        <translation>Uw rol (%1) staat dit niet toe: %2.</translation>
+    </message>
+    <message>
+        <source>Only an admin can remove the tag that says who added a torrent.</source>
+        <translation>Alleen een admin kan de tag verwijderen die aangeeft wie een torrent heeft toegevoegd.</translation>
+    </message>
+    <message>
+        <source>Only an admin can clear or replace all tags of a torrent that has a tag saying who added it.</source>
+        <translation>Alleen een admin kan alle tags wissen of vervangen van een torrent die een tag heeft die aangeeft wie hem heeft toegevoegd.</translation>
+    </message>
 </context>
 <context>
     <name>WebUI</name>
@@ -14529,6 +15477,669 @@ Kies een andere naam en probeer het opnieuw.</translation>
         <source>&lt; 1m</source>
         <comment>&lt; 1 minute</comment>
         <translation>&lt; 1 m</translation>
+    </message>
+</context>
+<context>
+    <name>UpdateInstaller</name>
+    <message>
+        <source>Kettle Edition update</source>
+        <translation>Kettle Edition-update</translation>
+    </message>
+    <message>
+        <source>Kettle Edition was updated to %1.</source>
+        <translation>Kettle Edition is bijgewerkt naar %1.</translation>
+    </message>
+    <message>
+        <source>Kettle Edition updated</source>
+        <translation>Kettle Edition bijgewerkt</translation>
+    </message>
+    <message>
+        <source>Downloading Kettle Edition %1 (%2 changed files).</source>
+        <translation>Kettle Edition %1 wordt gedownload (%2 gewijzigde bestanden).</translation>
+    </message>
+    <message>
+        <source>Kettle Edition %1 is downloaded and ready to install.</source>
+        <translation>Kettle Edition %1 is gedownload en klaar om te installeren.</translation>
+    </message>
+    <message>
+        <source>Kettle Edition update</source>
+        <translation>Kettle Edition-update</translation>
+    </message>
+    <message>
+        <source>Kettle Edition was updated to %1.</source>
+        <translation>Kettle Edition is bijgewerkt naar %1.</translation>
+    </message>
+    <message>
+        <source>Kettle Edition updated</source>
+        <translation>Kettle Edition bijgewerkt</translation>
+    </message>
+    <message>
+        <source>Downloading Kettle Edition %1 (%2 changed files).</source>
+        <translation>Kettle Edition %1 wordt gedownload (%2 gewijzigde bestanden).</translation>
+    </message>
+    <message>
+        <source>Kettle Edition %1 is downloaded and ready to install.</source>
+        <translation>Kettle Edition %1 is gedownload en klaar om te installeren.</translation>
+    </message>
+</context>
+<context>
+    <name>UserAccountDialog</name>
+    <message>
+        <source>User</source>
+        <translation>Gebruiker</translation>
+    </message>
+    <message>
+        <source>Username:</source>
+        <translation>Gebruikersnaam:</translation>
+    </message>
+    <message>
+        <source>Role:</source>
+        <translation>Rol:</translation>
+    </message>
+    <message>
+        <source>Password:</source>
+        <translation>Wachtwoord:</translation>
+    </message>
+    <message>
+        <source>Confirm password:</source>
+        <translation>Wachtwoord bevestigen:</translation>
+    </message>
+    <message>
+        <source>Disable this account</source>
+        <translation>Dit account uitschakelen</translation>
+    </message>
+    <message>
+        <source>Edit User</source>
+        <translation>Gebruiker bewerken</translation>
+    </message>
+    <message>
+        <source>Leave empty to keep the current password</source>
+        <translation>Laat leeg om het huidige wachtwoord te behouden</translation>
+    </message>
+    <message>
+        <source>Add User</source>
+        <translation>Gebruiker toevoegen</translation>
+    </message>
+    <message>
+        <source>At least %1 characters</source>
+        <translation>Minstens %1 tekens</translation>
+    </message>
+    <message>
+        <source>Enter a username.</source>
+        <translation>Voer een gebruikersnaam in.</translation>
+    </message>
+    <message>
+        <source>The password must be at least %1 characters long.</source>
+        <translation>Het wachtwoord moet minstens %1 tekens lang zijn.</translation>
+    </message>
+    <message>
+        <source>The passwords don&apos;t match.</source>
+        <translation>De wachtwoorden komen niet overeen.</translation>
+    </message>
+    <message>
+        <source>User</source>
+        <translation>Gebruiker</translation>
+    </message>
+    <message>
+        <source>Username:</source>
+        <translation>Gebruikersnaam:</translation>
+    </message>
+    <message>
+        <source>Role:</source>
+        <translation>Rol:</translation>
+    </message>
+    <message>
+        <source>Password:</source>
+        <translation>Wachtwoord:</translation>
+    </message>
+    <message>
+        <source>Confirm password:</source>
+        <translation>Wachtwoord bevestigen:</translation>
+    </message>
+    <message>
+        <source>Disable this account</source>
+        <translation>Dit account uitschakelen</translation>
+    </message>
+    <message>
+        <source>Edit User</source>
+        <translation>Gebruiker bewerken</translation>
+    </message>
+    <message>
+        <source>Leave empty to keep the current password</source>
+        <translation>Laat leeg om het huidige wachtwoord te behouden</translation>
+    </message>
+    <message>
+        <source>Add User</source>
+        <translation>Gebruiker toevoegen</translation>
+    </message>
+    <message>
+        <source>At least %1 characters</source>
+        <translation>Minstens %1 tekens</translation>
+    </message>
+    <message>
+        <source>Enter a username.</source>
+        <translation>Voer een gebruikersnaam in.</translation>
+    </message>
+    <message>
+        <source>The password must be at least %1 characters long.</source>
+        <translation>Het wachtwoord moet minstens %1 tekens lang zijn.</translation>
+    </message>
+    <message>
+        <source>The passwords don&apos;t match.</source>
+        <translation>De wachtwoorden komen niet overeen.</translation>
+    </message>
+</context>
+<context>
+    <name>UserAccountsWidget</name>
+    <message>
+        <source>User Accounts</source>
+        <translation>Gebruikersaccounts</translation>
+    </message>
+    <message>
+        <source>Users</source>
+        <translation>Gebruikers</translation>
+    </message>
+    <message>
+        <source>People who can log in to the WebUI with their own username and password.</source>
+        <translation>Mensen die zich met hun eigen gebruikersnaam en wachtwoord kunnen aanmelden bij de WebUI.</translation>
+    </message>
+    <message>
+        <source>Add User...</source>
+        <translation>Gebruiker toevoegen...</translation>
+    </message>
+    <message>
+        <source>Edit...</source>
+        <translation>Bewerken...</translation>
+    </message>
+    <message>
+        <source>Remove</source>
+        <translation>Verwijderen</translation>
+    </message>
+    <message>
+        <source>Roles</source>
+        <translation>Rollen</translation>
+    </message>
+    <message>
+        <source>A role decides what its users are allowed to do.</source>
+        <translation>Een rol bepaalt wat de gebruikers ervan mogen doen.</translation>
+    </message>
+    <message>
+        <source>Add Role...</source>
+        <translation>Rol toevoegen...</translation>
+    </message>
+    <message>
+        <source>Logged In</source>
+        <translation>Aangemeld</translation>
+    </message>
+    <message>
+        <source>Browsers and devices where someone is logged in with a user account.</source>
+        <translation>Browsers en apparaten waar iemand is aangemeld met een gebruikersaccount.</translation>
+    </message>
+    <message>
+        <source>Log Out</source>
+        <translation>Afmelden</translation>
+    </message>
+    <message>
+        <source>Username</source>
+        <translation>Gebruikersnaam</translation>
+    </message>
+    <message>
+        <source>Role</source>
+        <translation>Rol</translation>
+    </message>
+    <message>
+        <source>Status</source>
+        <translation>Status</translation>
+    </message>
+    <message>
+        <source>Last login</source>
+        <translation>Laatste aanmelding</translation>
+    </message>
+    <message>
+        <source>Created</source>
+        <translation>Aangemaakt</translation>
+    </message>
+    <message>
+        <source>Name</source>
+        <translation>Naam</translation>
+    </message>
+    <message>
+        <source>Description</source>
+        <translation>Beschrijving</translation>
+    </message>
+    <message>
+        <source>Permissions</source>
+        <translation>Rechten</translation>
+    </message>
+    <message>
+        <source>User</source>
+        <translation>Gebruiker</translation>
+    </message>
+    <message>
+        <source>Browser</source>
+        <translation>Browser</translation>
+    </message>
+    <message>
+        <source>Logged in</source>
+        <translation>Aangemeld</translation>
+    </message>
+    <message>
+        <source>Last active</source>
+        <translation>Laatst actief</translation>
+    </message>
+    <message>
+        <source>Expires</source>
+        <translation>Verloopt</translation>
+    </message>
+    <message>
+        <source>The user database could not be opened. See the Execution Log for details.</source>
+        <translation>De gebruikersdatabase kon niet worden geopend. Zie het uitvoeringslogboek voor details.</translation>
+    </message>
+    <message>
+        <source>Disabled</source>
+        <translation>Uitgeschakeld</translation>
+    </message>
+    <message>
+        <source>Enabled</source>
+        <translation>Ingeschakeld</translation>
+    </message>
+    <message>
+        <source>Never</source>
+        <translation>Nooit</translation>
+    </message>
+    <message>
+        <source>No accounts yet, so everyone still uses the shared WebUI login. Add an Admin account first.</source>
+        <translation>Er zijn nog geen accounts, dus iedereen gebruikt nog de gedeelde WebUI-aanmelding. Voeg eerst een Admin-account toe.</translation>
+    </message>
+    <message>
+        <source>Couldn&apos;t read the user database. %1</source>
+        <translation>De gebruikersdatabase kon niet worden gelezen. %1</translation>
+    </message>
+    <message>
+        <source>Remove user</source>
+        <translation>Gebruiker verwijderen</translation>
+    </message>
+    <message>
+        <source>Are you sure you want to remove the user &apos;%1&apos;?</source>
+        <translation>Weet u zeker dat u de gebruiker &apos;%1&apos; wilt verwijderen?</translation>
+    </message>
+    <message>
+        <source>Remove role</source>
+        <translation>Rol verwijderen</translation>
+    </message>
+    <message>
+        <source>Are you sure you want to remove the role &apos;%1&apos;?</source>
+        <translation>Weet u zeker dat u de rol &apos;%1&apos; wilt verwijderen?</translation>
+    </message>
+    <message>
+        <source>Enable</source>
+        <translation>Inschakelen</translation>
+    </message>
+    <message>
+        <source>Disable</source>
+        <translation>Uitschakelen</translation>
+    </message>
+    <message>
+        <source>Log Out Everywhere</source>
+        <translation>Overal afmelden</translation>
+    </message>
+    <message>
+        <source>User Accounts</source>
+        <translation>Gebruikersaccounts</translation>
+    </message>
+    <message>
+        <source>Users</source>
+        <translation>Gebruikers</translation>
+    </message>
+    <message>
+        <source>People who can log in to the WebUI with their own username and password.</source>
+        <translation>Mensen die zich met hun eigen gebruikersnaam en wachtwoord kunnen aanmelden bij de WebUI.</translation>
+    </message>
+    <message>
+        <source>Add User...</source>
+        <translation>Gebruiker toevoegen...</translation>
+    </message>
+    <message>
+        <source>Edit...</source>
+        <translation>Bewerken...</translation>
+    </message>
+    <message>
+        <source>Remove</source>
+        <translation>Verwijderen</translation>
+    </message>
+    <message>
+        <source>Roles</source>
+        <translation>Rollen</translation>
+    </message>
+    <message>
+        <source>A role decides what its users are allowed to do.</source>
+        <translation>Een rol bepaalt wat de gebruikers ervan mogen doen.</translation>
+    </message>
+    <message>
+        <source>Add Role...</source>
+        <translation>Rol toevoegen...</translation>
+    </message>
+    <message>
+        <source>Logged In</source>
+        <translation>Aangemeld</translation>
+    </message>
+    <message>
+        <source>Browsers and devices where someone is logged in with a user account.</source>
+        <translation>Browsers en apparaten waar iemand is aangemeld met een gebruikersaccount.</translation>
+    </message>
+    <message>
+        <source>Log Out</source>
+        <translation>Afmelden</translation>
+    </message>
+    <message>
+        <source>Username</source>
+        <translation>Gebruikersnaam</translation>
+    </message>
+    <message>
+        <source>Role</source>
+        <translation>Rol</translation>
+    </message>
+    <message>
+        <source>Status</source>
+        <translation>Status</translation>
+    </message>
+    <message>
+        <source>Last login</source>
+        <translation>Laatste aanmelding</translation>
+    </message>
+    <message>
+        <source>Created</source>
+        <translation>Aangemaakt</translation>
+    </message>
+    <message>
+        <source>Name</source>
+        <translation>Naam</translation>
+    </message>
+    <message>
+        <source>Description</source>
+        <translation>Beschrijving</translation>
+    </message>
+    <message>
+        <source>Permissions</source>
+        <translation>Rechten</translation>
+    </message>
+    <message>
+        <source>User</source>
+        <translation>Gebruiker</translation>
+    </message>
+    <message>
+        <source>Browser</source>
+        <translation>Browser</translation>
+    </message>
+    <message>
+        <source>Logged in</source>
+        <translation>Aangemeld</translation>
+    </message>
+    <message>
+        <source>Last active</source>
+        <translation>Laatst actief</translation>
+    </message>
+    <message>
+        <source>Expires</source>
+        <translation>Verloopt</translation>
+    </message>
+    <message>
+        <source>The user database could not be opened. See the Execution Log for details.</source>
+        <translation>De gebruikersdatabase kon niet worden geopend. Zie het uitvoeringslogboek voor details.</translation>
+    </message>
+    <message>
+        <source>Disabled</source>
+        <translation>Uitgeschakeld</translation>
+    </message>
+    <message>
+        <source>Enabled</source>
+        <translation>Ingeschakeld</translation>
+    </message>
+    <message>
+        <source>Never</source>
+        <translation>Nooit</translation>
+    </message>
+    <message>
+        <source>No accounts yet, so everyone still uses the shared WebUI login. Add an Admin account first.</source>
+        <translation>Er zijn nog geen accounts, dus iedereen gebruikt nog de gedeelde WebUI-aanmelding. Voeg eerst een Admin-account toe.</translation>
+    </message>
+    <message>
+        <source>Couldn&apos;t read the user database. %1</source>
+        <translation>De gebruikersdatabase kon niet worden gelezen. %1</translation>
+    </message>
+    <message>
+        <source>Remove user</source>
+        <translation>Gebruiker verwijderen</translation>
+    </message>
+    <message>
+        <source>Are you sure you want to remove the user &apos;%1&apos;?</source>
+        <translation>Weet u zeker dat u de gebruiker &apos;%1&apos; wilt verwijderen?</translation>
+    </message>
+    <message>
+        <source>Remove role</source>
+        <translation>Rol verwijderen</translation>
+    </message>
+    <message>
+        <source>Are you sure you want to remove the role &apos;%1&apos;?</source>
+        <translation>Weet u zeker dat u de rol &apos;%1&apos; wilt verwijderen?</translation>
+    </message>
+    <message>
+        <source>Enable</source>
+        <translation>Inschakelen</translation>
+    </message>
+    <message>
+        <source>Disable</source>
+        <translation>Uitschakelen</translation>
+    </message>
+    <message>
+        <source>Log Out Everywhere</source>
+        <translation>Overal afmelden</translation>
+    </message>
+</context>
+<context>
+    <name>UserRoleDialog</name>
+    <message>
+        <source>Role</source>
+        <translation>Rol</translation>
+    </message>
+    <message>
+        <source>Name:</source>
+        <translation>Naam:</translation>
+    </message>
+    <message>
+        <source>Description:</source>
+        <translation>Beschrijving:</translation>
+    </message>
+    <message>
+        <source>Gives control over the PC or qBittorrent itself.</source>
+        <translation>Geeft controle over de pc of over qBittorrent zelf.</translation>
+    </message>
+    <message>
+        <source>Add Role</source>
+        <translation>Rol toevoegen</translation>
+    </message>
+    <message>
+        <source>Edit Role</source>
+        <translation>Rol bewerken</translation>
+    </message>
+    <message>
+        <source>Enter a role name.</source>
+        <translation>Voer een rolnaam in.</translation>
+    </message>
+    <message>
+        <source>Role</source>
+        <translation>Rol</translation>
+    </message>
+    <message>
+        <source>Name:</source>
+        <translation>Naam:</translation>
+    </message>
+    <message>
+        <source>Description:</source>
+        <translation>Beschrijving:</translation>
+    </message>
+    <message>
+        <source>Gives control over the PC or qBittorrent itself.</source>
+        <translation>Geeft controle over de pc of over qBittorrent zelf.</translation>
+    </message>
+    <message>
+        <source>Add Role</source>
+        <translation>Rol toevoegen</translation>
+    </message>
+    <message>
+        <source>Edit Role</source>
+        <translation>Rol bewerken</translation>
+    </message>
+    <message>
+        <source>Enter a role name.</source>
+        <translation>Voer een rolnaam in.</translation>
+    </message>
+</context>
+<context>
+    <name>WebUIActivityWidget</name>
+    <message>
+        <source>All</source>
+        <translation>Alle</translation>
+    </message>
+    <message>
+        <source>Filter activity</source>
+        <translation>Activiteit filteren</translation>
+    </message>
+    <message>
+        <source>Export...</source>
+        <translation>Exporteren...</translation>
+    </message>
+    <message>
+        <source>User:</source>
+        <translation>Gebruiker:</translation>
+    </message>
+    <message>
+        <source>Category:</source>
+        <translation>Categorie:</translation>
+    </message>
+    <message>
+        <source>Result:</source>
+        <translation>Resultaat:</translation>
+    </message>
+    <message>
+        <source>Time</source>
+        <translation>Tijd</translation>
+    </message>
+    <message>
+        <source>User</source>
+        <translation>Gebruiker</translation>
+    </message>
+    <message>
+        <source>Role</source>
+        <translation>Rol</translation>
+    </message>
+    <message>
+        <source>Category</source>
+        <translation>Categorie</translation>
+    </message>
+    <message>
+        <source>Action</source>
+        <translation>Actie</translation>
+    </message>
+    <message>
+        <source>Result</source>
+        <translation>Resultaat</translation>
+    </message>
+    <message>
+        <source>The user database could not be opened. See the General tab for details.</source>
+        <translation>De gebruikersdatabase kon niet worden geopend. Zie het tabblad Algemeen voor details.</translation>
+    </message>
+    <message>
+        <source>Results (showing %1 out of %2)</source>
+        <translation>Resultaten (%1 van %2 getoond)</translation>
+    </message>
+    <message>
+        <source>Copy</source>
+        <translation>Kopiëren</translation>
+    </message>
+    <message>
+        <source>Export WebUI activity</source>
+        <translation>WebUI-activiteit exporteren</translation>
+    </message>
+    <message>
+        <source>CSV files</source>
+        <translation>CSV-bestanden</translation>
+    </message>
+    <message>
+        <source>Couldn&apos;t save the file. Reason: %1</source>
+        <translation>Het bestand kon niet worden opgeslagen. Reden: %1</translation>
+    </message>
+    <message>
+        <source>All</source>
+        <translation>Alle</translation>
+    </message>
+    <message>
+        <source>Filter activity</source>
+        <translation>Activiteit filteren</translation>
+    </message>
+    <message>
+        <source>Export...</source>
+        <translation>Exporteren...</translation>
+    </message>
+    <message>
+        <source>User:</source>
+        <translation>Gebruiker:</translation>
+    </message>
+    <message>
+        <source>Category:</source>
+        <translation>Categorie:</translation>
+    </message>
+    <message>
+        <source>Result:</source>
+        <translation>Resultaat:</translation>
+    </message>
+    <message>
+        <source>Time</source>
+        <translation>Tijd</translation>
+    </message>
+    <message>
+        <source>User</source>
+        <translation>Gebruiker</translation>
+    </message>
+    <message>
+        <source>Role</source>
+        <translation>Rol</translation>
+    </message>
+    <message>
+        <source>Category</source>
+        <translation>Categorie</translation>
+    </message>
+    <message>
+        <source>Action</source>
+        <translation>Actie</translation>
+    </message>
+    <message>
+        <source>Result</source>
+        <translation>Resultaat</translation>
+    </message>
+    <message>
+        <source>The user database could not be opened. See the General tab for details.</source>
+        <translation>De gebruikersdatabase kon niet worden geopend. Zie het tabblad Algemeen voor details.</translation>
+    </message>
+    <message>
+        <source>Results (showing %1 out of %2)</source>
+        <translation>Resultaten (%1 van %2 getoond)</translation>
+    </message>
+    <message>
+        <source>Copy</source>
+        <translation>Kopiëren</translation>
+    </message>
+    <message>
+        <source>Export WebUI activity</source>
+        <translation>WebUI-activiteit exporteren</translation>
+    </message>
+    <message>
+        <source>CSV files</source>
+        <translation>CSV-bestanden</translation>
+    </message>
+    <message>
+        <source>Couldn&apos;t save the file. Reason: %1</source>
+        <translation>Het bestand kon niet worden opgeslagen. Reden: %1</translation>
     </message>
 </context>
 </TS>

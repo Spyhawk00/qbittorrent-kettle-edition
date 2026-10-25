@@ -227,6 +227,85 @@ The piece hash will be checked when it is requested for the first time by a peer
         <source>%1 needed · %2 free</source>
         <translation type="unfinished" />
     </message>
+    <message>
+        <source>Don&apos;t create subfolder</source>
+        <translation>Alt klasör oluşturma</translation>
+    </message>
+    <message>
+        <source>Never show again</source>
+        <translation>Bir daha asla gösterme</translation>
+    </message>
+    <message>
+        <source>Select None</source>
+        <translation>Hiçbirini Seçme</translation>
+    </message>
+    <message>
+        <source>Torrent options</source>
+        <translation>Torrent seçenekleri</translation>
+    </message>
+    <message>
+        <source>Your role saves torrents in the default folders.</source>
+        <translation>Rolünüz torrentleri varsayılan klasörlere kaydeder.</translation>
+    </message>
+</context>
+<context>
+    <name>AdvancedSettings</name>
+    <message>
+        <source>General</source>
+        <translation>Genel</translation>
+    </message>
+    <message>
+        <source>Network</source>
+        <translation>Ağ</translation>
+    </message>
+    <message>
+        <source>Storage</source>
+        <translation>Depolama</translation>
+    </message>
+    <message>
+        <source>Peers and trackers</source>
+        <translation>Kişiler ve izleyiciler</translation>
+    </message>
+    <message>
+        <source>Program behavior</source>
+        <translation>Program davranışı</translation>
+    </message>
+    <message>
+        <source>Display and notifications</source>
+        <translation>Görünüm ve bildirimler</translation>
+    </message>
+    <message>
+        <source>Network connection</source>
+        <translation>Ağ bağlantısı</translation>
+    </message>
+    <message>
+        <source>Security and privacy</source>
+        <translation>Güvenlik ve gizlilik</translation>
+    </message>
+    <message>
+        <source>Connection tuning</source>
+        <translation>Bağlantı ayarı</translation>
+    </message>
+    <message>
+        <source>Saving and torrent files</source>
+        <translation>Kaydetme ve torrent dosyaları</translation>
+    </message>
+    <message>
+        <source>Disk and memory</source>
+        <translation>Disk ve bellek</translation>
+    </message>
+    <message>
+        <source>Trackers</source>
+        <translation>İzleyiciler</translation>
+    </message>
+    <message>
+        <source>Peers and seeding</source>
+        <translation>Kişiler ve tohumlama</translation>
+    </message>
+    <message>
+        <source>DHT and I2P</source>
+        <translation>DHT ve I2P</translation>
+    </message>
 </context>
 <context>
     <name>CategoryFilterModel</name>
@@ -631,6 +710,14 @@ The piece hash will be checked when it is requested for the first time by a peer
         <source>More</source>
         <translation>Daha fazla</translation>
     </message>
+    <message>
+        <source>Change Password...</source>
+        <translation>Parolayı Değiştir...</translation>
+    </message>
+    <message>
+        <source>Signed in as</source>
+        <translation>Oturum açan kullanıcı</translation>
+    </message>
 </context>
 <context>
     <name>MainWindow</name>
@@ -937,6 +1024,34 @@ The piece hash will be checked when it is requested for the first time by a peer
     <message>
         <source>Resume Session</source>
         <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Global Speed Limits</source>
+        <translation>Genel Hız Sınırları</translation>
+    </message>
+    <message>
+        <source>Pause Session</source>
+        <translation>Oturumu duraklat</translation>
+    </message>
+    <message>
+        <source>Pause session</source>
+        <translation>Oturumu duraklat</translation>
+    </message>
+    <message>
+        <source>Resume Session</source>
+        <translation>Oturuma devam et</translation>
+    </message>
+    <message>
+        <source>Resume session</source>
+        <translation>Oturuma devam et</translation>
+    </message>
+    <message>
+        <source>Your account can&apos;t add torrents.</source>
+        <translation>Hesabınız torrent ekleyemiyor.</translation>
+    </message>
+    <message>
+        <source>[PAUSED]</source>
+        <translation>[DURAKLATILDI]</translation>
     </message>
 </context>
 <context>
@@ -2535,6 +2650,190 @@ sunucusu tarafından kullanılan etki alanı adlarına eklemelisiniz.
         <source>a@x.com;b@y.com,c@z.com - send two emails: the first to just a@x.com, the second to both b@y.com and c@z.com</source>
         <translation type="unfinished" />
     </message>
+    <message>
+        <source>0 means users are logged out after the session timeout.</source>
+        <translation>0, kullanıcıların oturum zaman aşımından sonra çıkış yapacağı anlamına gelir.</translation>
+    </message>
+    <message>
+        <source>Access</source>
+        <translation>Erişim</translation>
+    </message>
+    <message>
+        <source>All the above</source>
+        <translation>Yukarıdakilerin tümü</translation>
+    </message>
+    <message>
+        <source>Allow this login when user accounts exist</source>
+        <translation>Kullanıcı hesapları varken bu oturum açmaya izin ver</translation>
+    </message>
+    <message>
+        <source>Also save search results</source>
+        <translation>Arama sonuçlarını da kaydet</translation>
+    </message>
+    <message>
+        <source>Also when addition is cancelled</source>
+        <translation>Ayrıca ekleme iptal edildiğinde</translation>
+    </message>
+    <message>
+        <source>Any of the above</source>
+        <translation>Yukarıdakilerden herhangi biri</translation>
+    </message>
+    <message>
+        <source>Below normal</source>
+        <translation>Normalin altında</translation>
+    </message>
+    <message>
+        <source>Changes to users, roles and logins apply at once.</source>
+        <translation>Kullanıcılarda, rollerde ve oturum açmalarda yapılan değişiklikler hemen uygulanır.</translation>
+    </message>
+    <message>
+        <source>Don&apos;t create subfolder</source>
+        <translation>Alt klasör oluşturma</translation>
+    </message>
+    <message>
+        <source>Example:</source>
+        <translation>Örnek:</translation>
+    </message>
+    <message>
+        <source>I2P (experimental)</source>
+        <translation>I2P (deneysel)</translation>
+    </message>
+    <message>
+        <source>Keep WebUI activity log for:</source>
+        <translation>WebUI etkinlik günlüğünü tut:</translation>
+    </message>
+    <message>
+        <source>Keep unselected files in &quot;.unwanted&quot; folder</source>
+        <translation>Seçilmeyen dosyaları &quot;.unwanted&quot; klasöründe tut</translation>
+    </message>
+    <message>
+        <source>Keep users logged in for:</source>
+        <translation>Kullanıcıları oturumda tut:</translation>
+    </message>
+    <message>
+        <source>Language:</source>
+        <translation>Dil:</translation>
+    </message>
+    <message>
+        <source>Lock account after consecutive failures:</source>
+        <translation>Ardışık hatalardan sonra hesabı kilitle:</translation>
+    </message>
+    <message>
+        <source>Logins and Activity Log</source>
+        <translation>Oturum Açmalar ve Etkinlik Günlüğü</translation>
+    </message>
+    <message>
+        <source>Low</source>
+        <translation>Düşük</translation>
+    </message>
+    <message>
+        <source>Maximum active checking torrents:</source>
+        <translation>En fazla etkin denetlenen torrent:</translation>
+    </message>
+    <message>
+        <source>Medium</source>
+        <translation>Orta</translation>
+    </message>
+    <message>
+        <source>No settings match</source>
+        <translation>Eşleşen ayar yok</translation>
+    </message>
+    <message>
+        <source>Process memory priority:</source>
+        <translation>İşlem bellek önceliği:</translation>
+    </message>
+    <message>
+        <source>Save search tabs</source>
+        <translation>Arama sekmelerini kaydet</translation>
+    </message>
+    <message>
+        <source>Search UI</source>
+        <translation>Arama arayüzü</translation>
+    </message>
+    <message>
+        <source>Search settings</source>
+        <translation>Ayarlarda ara</translation>
+    </message>
+    <message>
+        <source>Service:</source>
+        <translation>Hizmet:</translation>
+    </message>
+    <message>
+        <source>Show console window</source>
+        <translation>Konsol pencereni göster</translation>
+    </message>
+    <message>
+        <source>Show the window when adding a torrent</source>
+        <translation>Torrent eklerken pencereyi göster</translation>
+    </message>
+    <message>
+        <source>Specify reverse proxy IPs (or subnets, e.g. 0.0.0.0/24) in order to use forwarded client address (X-Forwarded-For header). Use &apos;;&apos; to split multiple entries.</source>
+        <translation>Yönlendirilen istemci adresini (X-Forwarded-For başlığı) kullanmak için ters proksi IP&apos;lerini (veya alt ağları, örn. 0.0.0.0/24) belirtin. Birden çok girişi bölmek için &apos;;&apos; kullanın.</translation>
+    </message>
+    <message>
+        <source>Status bar and log</source>
+        <translation>Durum çubuğu ve günlük</translation>
+    </message>
+    <message>
+        <source>The WebUI activity log can be kept for 1 to 3650 days.</source>
+        <translation>WebUI etkinlik günlüğü 1 ila 3650 gün tutulabilir.</translation>
+    </message>
+    <message>
+        <source>The settings below apply with OK or Apply.</source>
+        <translation>Aşağıdaki ayarlar Tamam veya Uygula ile uygulanır.</translation>
+    </message>
+    <message>
+        <source>Tip: Encapsulate parameter with quotation marks to avoid text being cut off at whitespace (e.g., &quot;%N&quot;)</source>
+        <translation>İpucu: Metnin boşluktan kesilmesini önlemek için parametreyi tırnak işaretleri arasına alın (örn., &quot;%N&quot;)</translation>
+    </message>
+    <message>
+        <source>Transfer List</source>
+        <translation>Aktarım Listesi</translation>
+    </message>
+    <message>
+        <source>Until the first user account is created, this login always works.</source>
+        <translation>İlk kullanıcı hesabı oluşturulana kadar bu oturum açma her zaman çalışır.</translation>
+    </message>
+    <message>
+        <source>User Accounts</source>
+        <translation>Kullanıcı Hesapları</translation>
+    </message>
+    <message>
+        <source>Users can be kept logged in for 0 to 365 days.</source>
+        <translation>Kullanıcılar 0 ila 365 gün oturumda tutulabilir.</translation>
+    </message>
+    <message>
+        <source>Very low</source>
+        <translation>Çok düşük</translation>
+    </message>
+    <message>
+        <source>Warning! Data loss possible!</source>
+        <translation>Uyarı! Veri kaybı mümkün!</translation>
+    </message>
+    <message>
+        <source>When Default Save/Incomplete Path changed:</source>
+        <translation>Varsayılan Kaydetme/Tamamlanmamış Yolu değiştiğinde:</translation>
+    </message>
+    <message>
+        <source>Whitelist for filtering HTTP Host header values.
+In order to defend against DNS rebinding attack,
+you should put in domain names used by WebUI server.
+
+Use &apos;;&apos; to split multiple entries. Can use wildcard &apos;*&apos;.</source>
+        <translation>HTTP Anamakine üstbilgi değerlerini süzmek için beyaz liste.
+DNS&apos;i yeniden bağlama saldırılarına karşı savunmak için, Web Arayüzü
+sunucusu tarafından kullanılan etki alanı adlarına eklemelisiniz.
+
+Çoklu girişleri bölmek için &apos;;&apos; kullanın. &apos;*&apos; joker karakteri kullanılabilir.</translation>
+    </message>
+    <message>
+        <source>You changed the address, port or HTTPS setting of the WebUI. Saving moves the WebUI, so Options will save, close and reload the page, the same as OK. If the page doesn&apos;t come back, open the WebUI at its new address.\n\nSave anyway?</source>
+        <translation>WebUI&apos;nin adresini, bağlantı noktasını veya HTTPS ayarını değiştirdiniz. Kaydetmek WebUI&apos;yi taşır, bu yüzden Seçenekler Tamam gibi kaydedip kapanacak ve sayfayı yeniden yükleyecek. Sayfa geri gelmezse WebUI&apos;yi yeni adresinde açın.\n\nYine de kaydedilsin mi?</translation>
+    </message>
+    <message>
+        <source>lock for:</source>
+        <translation>kilitleme süresi:</translation>
+    </message>
 </context>
 <context>
     <name>PeerListWidget</name>
@@ -2963,6 +3262,10 @@ sunucusu tarafından kullanılan etki alanı adlarına eklemelisiniz.
         <source>Copy download URL</source>
         <translation type="unfinished" />
     </message>
+    <message>
+        <source>Copy path</source>
+        <translation>Yolu kopyala</translation>
+    </message>
 </context>
 <context>
     <name>ScanFoldersModel</name>
@@ -3075,6 +3378,142 @@ sunucusu tarafından kullanılan etki alanı adlarına eklemelisiniz.
     <message>
         <source>The time it takes from receiving a request from a peer until we're sending the response back on the socket</source>
         <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Activity</source>
+        <translation>Etkinlik</translation>
+    </message>
+    <message>
+        <source>All time</source>
+        <translation>Tüm zamanlar</translation>
+    </message>
+    <message>
+        <source>Before tracking began</source>
+        <translation>İzleme başlamadan önce</translation>
+    </message>
+    <message>
+        <source>By month</source>
+        <translation>Aya göre</translation>
+    </message>
+    <message>
+        <source>Counts the requests that added a download. Apps without a login, such as Sonarr and Radarr, are shown as (localhost). Downloads added in the desktop window are not counted.</source>
+        <translation>Bir indirme ekleyen istekleri sayar. Sonarr ve Radarr gibi oturum açmayan uygulamalar (localhost) olarak gösterilir. Masaüstü penceresinde eklenen indirmeler sayılmaz.</translation>
+    </message>
+    <message>
+        <source>Current speed:</source>
+        <translation>Geçerli hız:</translation>
+    </message>
+    <message>
+        <source>DHT nodes:</source>
+        <translation>DHT düğümleri:</translation>
+    </message>
+    <message>
+        <source>Data discarded this session:</source>
+        <translation>Bu oturumda atılan veri:</translation>
+    </message>
+    <message>
+        <source>Disk</source>
+        <translation>Disk</translation>
+    </message>
+    <message>
+        <source>History</source>
+        <translation>Geçmiş</translation>
+    </message>
+    <message>
+        <source>Last 12 months</source>
+        <translation>Son 12 ay</translation>
+    </message>
+    <message>
+        <source>Last 7 days</source>
+        <translation>Son 7 gün</translation>
+    </message>
+    <message>
+        <source>Last month</source>
+        <translation>Geçen ay</translation>
+    </message>
+    <message>
+        <source>Month</source>
+        <translation>Ay</translation>
+    </message>
+    <message>
+        <source>Nothing added yet</source>
+        <translation>Henüz bir şey eklenmedi</translation>
+    </message>
+    <message>
+        <source>Off</source>
+        <translation>Kapalı</translation>
+    </message>
+    <message>
+        <source>Overview</source>
+        <translation>Genel Bakış</translation>
+    </message>
+    <message>
+        <source>Peers waiting on disk reads:</source>
+        <translation>Diskten okumayı bekleyen kişiler:</translation>
+    </message>
+    <message>
+        <source>Peers waiting on disk writes:</source>
+        <translation>Diske yazmayı bekleyen kişiler:</translation>
+    </message>
+    <message>
+        <source>Period</source>
+        <translation>Dönem</translation>
+    </message>
+    <message>
+        <source>Request latency:</source>
+        <translation>İstek gecikmesi:</translation>
+    </message>
+    <message>
+        <source>Running for:</source>
+        <translation>Çalışma süresi:</translation>
+    </message>
+    <message>
+        <source>Share ratio</source>
+        <translation>Paylaşım oranı</translation>
+    </message>
+    <message>
+        <source>Share ratio:</source>
+        <translation>Paylaşım oranı:</translation>
+    </message>
+    <message>
+        <source>Technical</source>
+        <translation>Teknik</translation>
+    </message>
+    <message>
+        <source>This month</source>
+        <translation>Bu ay</translation>
+    </message>
+    <message>
+        <source>This session</source>
+        <translation>Bu oturum</translation>
+    </message>
+    <message>
+        <source>Today</source>
+        <translation>Bugün</translation>
+    </message>
+    <message>
+        <source>Torrents downloading:</source>
+        <translation>İndirilen torrentler:</translation>
+    </message>
+    <message>
+        <source>Torrents seeding:</source>
+        <translation>Tohumlanan torrentler:</translation>
+    </message>
+    <message>
+        <source>Torrents stopped:</source>
+        <translation>Durdurulan torrentler:</translation>
+    </message>
+    <message>
+        <source>Torrents with errors:</source>
+        <translation>Hatalı torrentler:</translation>
+    </message>
+    <message>
+        <source>Tracking since:</source>
+        <translation>İzleme başlangıcı:</translation>
+    </message>
+    <message>
+        <source>WebUI downloads added, this month</source>
+        <translation>WebUI ile eklenen indirmeler, bu ay</translation>
     </message>
 </context>
 <context>
@@ -3862,6 +4301,10 @@ sunucusu tarafından kullanılan etki alanı adlarına eklemelisiniz.
         <source>Content Path</source>
         <translation>İçerik Yolu</translation>
     </message>
+    <message>
+        <source>Remove all tags from selected torrents?</source>
+        <translation>Tüm etiketler seçilen torrent&apos;lerden kaldırılsın mı?</translation>
+    </message>
 </context>
 <context>
     <name>UpDownRatioDialog</name>
@@ -3917,6 +4360,14 @@ sunucusu tarafından kullanılan etki alanı adlarına eklemelisiniz.
         <source>Action when the limit is reached</source>
         <translation>Sınıra ulaşıldığında yapılacak eylem</translation>
     </message>
+    <message>
+        <source>Match all the limits</source>
+        <translation>Tüm sınırları eşleştir</translation>
+    </message>
+    <message>
+        <source>Match any limit</source>
+        <translation>Herhangi bir sınırı eşleştir</translation>
+    </message>
 </context>
 <context>
     <name>about</name>
@@ -3934,6 +4385,10 @@ sunucusu tarafından kullanılan etki alanı adlarına eklemelisiniz.
     <message>
         <source>Remove tracker</source>
         <translation>İzleyiciyi kaldır</translation>
+    </message>
+    <message>
+        <source>This choice is remembered for the next removal.</source>
+        <translation>Bu seçim bir sonraki kaldırma için hatırlanacak.</translation>
     </message>
 </context>
 <context>
@@ -4147,6 +4602,34 @@ sunucusu tarafından kullanılan etki alanı adlarına eklemelisiniz.
         <source>Select plugins</source>
         <translation>Eklentileri seç</translation>
     </message>
+    <message>
+        <source>Category to search in</source>
+        <translation>Aranacak kategori</translation>
+    </message>
+    <message>
+        <source>Close the selected search</source>
+        <translation>Seçili aramayı kapat</translation>
+    </message>
+    <message>
+        <source>Empty search pattern</source>
+        <translation>Boş arama örneği</translation>
+    </message>
+    <message>
+        <source>Search engines to use</source>
+        <translation>Kullanılacak arama motorları</translation>
+    </message>
+    <message>
+        <source>Search for torrents...</source>
+        <translation>Torrent ara...</translation>
+    </message>
+    <message>
+        <source>Searches</source>
+        <translation>Aramalar</translation>
+    </message>
+    <message>
+        <source>Type a search above and press Enter.</source>
+        <translation>Yukarıya bir arama yazın ve Enter&apos;a basın.</translation>
+    </message>
 </context>
 <context>
     <name>PluginSelectDlg</name>
@@ -4185,6 +4668,10 @@ sunucusu tarafından kullanılan etki alanı adlarına eklemelisiniz.
     <message>
         <source>Search plugins</source>
         <translation>Arama eklentileri</translation>
+    </message>
+    <message>
+        <source>Warning: Be sure to comply with your country&apos;s copyright laws when downloading torrents from any of these search engines.</source>
+        <translation>Uyarı: Bu arama motorlarının herhangi birinden torrent&apos;leri indirirken ülkenizin telif hakkı yasalarına uyulduğundan emin olun.</translation>
     </message>
 </context>
 <context>
@@ -4408,6 +4895,30 @@ sunucusu tarafından kullanılan etki alanı adlarına eklemelisiniz.
         <source>qBittorrent icon</source>
         <translation>qBittorrent simgesi</translation>
     </message>
+    <message>
+        <source>Based on:</source>
+        <translation>Temel alınan:</translation>
+    </message>
+    <message>
+        <source>Edition version:</source>
+        <translation>Sürüm numarası:</translation>
+    </message>
+    <message>
+        <source>Kettle Edition is a personal build of qBittorrent that adds user accounts with roles for the WebUI and the desktop app, an activity log, and an installable WebUI with a phone layout. A kettle is a group of hawks soaring together. This is an unofficial build, not affiliated with the qBittorrent project.</source>
+        <translation>Kettle Edition, qBittorrent&apos;in WebUI ve masaüstü uygulaması için rollü kullanıcı hesapları, bir etkinlik günlüğü ve telefon düzenli, kurulabilir bir WebUI ekleyen kişisel bir derlemesidir. Kettle, birlikte süzülen şahinlerden oluşan bir gruptur. Bu resmi olmayan bir derlemedir ve qBittorrent projesiyle bağlantısı yoktur.</translation>
+    </message>
+    <message>
+        <source>Maintainer:</source>
+        <translation>Bakımcı:</translation>
+    </message>
+    <message>
+        <source>This edition</source>
+        <translation>Bu sürüm</translation>
+    </message>
+    <message>
+        <source>qBittorrent project:</source>
+        <translation>qBittorrent projesi:</translation>
+    </message>
 </context>
 <context>
     <name>OptionDialog</name>
@@ -4509,6 +5020,46 @@ sunucusu tarafından kullanılan etki alanı adlarına eklemelisiniz.
     <message>
         <source>Open shared download window</source>
         <translation type="unfinished" />
+    </message>
+    <message>
+        <source>%1 of %2 shown</source>
+        <translation>%2 içinden %1 gösteriliyor</translation>
+    </message>
+    <message>
+        <source>%1 of %2 shown (%3 hidden)</source>
+        <translation>%2 içinden %1 gösteriliyor (%3 gizli)</translation>
+    </message>
+    <message>
+        <source>Close all searches</source>
+        <translation>Tüm aramaları kapat</translation>
+    </message>
+    <message>
+        <source>Close search</source>
+        <translation>Aramayı kapat</translation>
+    </message>
+    <message>
+        <source>Filter search results...</source>
+        <translation>Arama sonuçlarını süzün...</translation>
+    </message>
+    <message>
+        <source>Finished: %1</source>
+        <translation>Bitti: %1</translation>
+    </message>
+    <message>
+        <source>Refresh search</source>
+        <translation>Aramayı yenile</translation>
+    </message>
+    <message>
+        <source>Search aborted: %1</source>
+        <translation>Arama durduruldu: %1</translation>
+    </message>
+    <message>
+        <source>Search returned no results</source>
+        <translation>Arama hiç sonuç bulamadı</translation>
+    </message>
+    <message>
+        <source>Searching: %1</source>
+        <translation>Aranıyor: %1</translation>
     </message>
 </context>
 <context>
@@ -4647,6 +5198,10 @@ sunucusu tarafından kullanılan etki alanı adlarına eklemelisiniz.
     <message>
         <source>Blocked opening RSS article URL. Only http:// and https:// links can be opened.</source>
         <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Details</source>
+        <translation>Ayrıntılar</translation>
     </message>
 </context>
 <context>
@@ -4925,6 +5480,10 @@ Desteklenen biçimler: S01E01, 1x1, 2017.12.31 ve 31.12.2017 (Tarih biçimleri d
         <source>Import</source>
         <translation type="unfinished" />
     </message>
+    <message>
+        <source>Don&apos;t create subfolder</source>
+        <translation>Alt klasör oluşturma</translation>
+    </message>
 </context>
 <context>
     <name>TrackerFiltersList</name>
@@ -5114,6 +5673,26 @@ Desteklenen biçimler: S01E01, 1x1, 2017.12.31 ve 31.12.2017 (Tarih biçimleri d
         <source>Choose a log level...</source>
         <translation>Bir günlük seviyesi seçin...</translation>
     </message>
+    <message>
+        <source>Export...</source>
+        <translation>Dışa aktar...</translation>
+    </message>
+    <message>
+        <source>Filter activity</source>
+        <translation>Etkinliği süz</translation>
+    </message>
+    <message>
+        <source>Result:</source>
+        <translation>Sonuç:</translation>
+    </message>
+    <message>
+        <source>User:</source>
+        <translation>Kullanıcı:</translation>
+    </message>
+    <message>
+        <source>WebUI Activity</source>
+        <translation>WebUI etkinliği</translation>
+    </message>
 </context>
 <context>
     <name>TrackersFilterWidget</name>
@@ -5183,6 +5762,14 @@ Desteklenen biçimler: S01E01, 1x1, 2017.12.31 ve 31.12.2017 (Tarih biçimleri d
     <message>
         <source>Torrent share limits</source>
         <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Torrent share limits</source>
+        <translation>Torrent paylaşma sınırları</translation>
+    </message>
+    <message>
+        <source>Your role saves torrents in the default folders.</source>
+        <translation>Rolünüz torrentleri varsayılan klasörlere kaydeder.</translation>
     </message>
 </context>
 <context>
@@ -5282,6 +5869,14 @@ Desteklenen biçimler: S01E01, 1x1, 2017.12.31 ve 31.12.2017 (Tarih biçimleri d
     <message>
         <source>Invalid Username or Password.</source>
         <translation>Geçersiz Kullanıcı Adı veya Parola.</translation>
+    </message>
+    <message>
+        <source>A kettle is a group of hawks soaring together.</source>
+        <translation>Kettle, birlikte süzülen şahinlerden oluşan bir gruptur.</translation>
+    </message>
+    <message>
+        <source>Sign in</source>
+        <translation>Oturum aç</translation>
     </message>
 </context>
 <context>
@@ -5516,6 +6111,22 @@ Desteklenen biçimler: S01E01, 1x1, 2017.12.31 ve 31.12.2017 (Tarih biçimleri d
         <source>If checked, filenames starting with a period punctuation mark `.` will not be added to the created torrent.</source>
         <translation type="unfinished" />
     </message>
+    <message>
+        <source>Align to piece boundary for files larger than:</source>
+        <translation>Şundan daha büyük dosyaları parça sınırına hizala:</translation>
+    </message>
+    <message>
+        <source>Optimize alignment</source>
+        <translation>Hizalamayı en iyi duruma getir</translation>
+    </message>
+    <message>
+        <source>Private torrent (Won&apos;t distribute on DHT network)</source>
+        <translation>Özel torrent (DHT ağında dağıtılmayacak)</translation>
+    </message>
+    <message>
+        <source>Start seeding immediately</source>
+        <translation>Gönderimi hemen başlat</translation>
+    </message>
 </context>
 <context>
     <name>DownloadFromURLDialog</name>
@@ -5626,6 +6237,10 @@ Desteklenen biçimler: S01E01, 1x1, 2017.12.31 ve 31.12.2017 (Tarih biçimleri d
         <source>Failed to set speed limits</source>
         <translation type="unfinished" />
     </message>
+    <message>
+        <source>Speed limits</source>
+        <translation>Hız sınırları</translation>
+    </message>
 </context>
 <context>
     <name>ListWidget</name>
@@ -5636,6 +6251,10 @@ Desteklenen biçimler: S01E01, 1x1, 2017.12.31 ve 31.12.2017 (Tarih biçimleri d
     <message>
         <source>Resize</source>
         <translation>Yeniden Boyutlandır</translation>
+    </message>
+    <message>
+        <source>Reset Auto Width</source>
+        <translation>Otomatik genişliği sıfırla</translation>
     </message>
 </context>
 <context>
@@ -5651,6 +6270,10 @@ Desteklenen biçimler: S01E01, 1x1, 2017.12.31 ve 31.12.2017 (Tarih biçimleri d
     <message>
         <source>Rotate this API key? The current key will immediately stop working and a new key will be generated.</source>
         <translation>Bu API anahtarı döndürülsün mü? Şu anki anahtar hemen çalışmayı durduracak ve yeni bir anahtar oluşturulacaktır.</translation>
+    </message>
+    <message>
+        <source>Generate an API key? This key can be used to interact with qBittorrent&apos;s API.</source>
+        <translation>API anahtarı oluşturulsun mu? Bu anahtar, qBittorrent&apos;in API&apos;si ile etkileşimde bulunmak için kullanılabilir.</translation>
     </message>
 </context>
 <context>
@@ -5766,6 +6389,54 @@ Desteklenen biçimler: S01E01, 1x1, 2017.12.31 ve 31.12.2017 (Tarih biçimleri d
         <source>Remove torrent</source>
         <translation type="unfinished" />
     </message>
+    <message>
+        <source>Action when the limit is reached:</source>
+        <translation>Sınıra ulaşıldığında yapılacak eylem:</translation>
+    </message>
+    <message>
+        <source>Default (%1)</source>
+        <translation>Varsayılan (%1)</translation>
+    </message>
+    <message>
+        <source>From category</source>
+        <translation>Kategoriden</translation>
+    </message>
+    <message>
+        <source>From category (%1)</source>
+        <translation>Kategoriden (%1)</translation>
+    </message>
+    <message>
+        <source>Inactive seeding time:</source>
+        <translation>Etkin olmayan gönderim süresi:</translation>
+    </message>
+    <message>
+        <source>Match all the limits</source>
+        <translation>Tüm sınırları eşleştir</translation>
+    </message>
+    <message>
+        <source>Match any limit</source>
+        <translation>Herhangi bir sınırı eşleştir</translation>
+    </message>
+    <message>
+        <source>Mode:</source>
+        <translation>Kip:</translation>
+    </message>
+    <message>
+        <source>Ratio:</source>
+        <translation>Oran:</translation>
+    </message>
+    <message>
+        <source>Seeding time:</source>
+        <translation>Gönderim süresi:</translation>
+    </message>
+    <message>
+        <source>Set to</source>
+        <translation>Şuna ayarla</translation>
+    </message>
+    <message>
+        <source>Unlimited</source>
+        <translation>Sınırsız</translation>
+    </message>
 </context>
 <context>
     <name>TorrentContent</name>
@@ -5776,6 +6447,208 @@ Desteklenen biçimler: S01E01, 1x1, 2017.12.31 ve 31.12.2017 (Tarih biçimleri d
     <message>
         <source>Not available for folders</source>
         <translation type="unfinished" />
+    </message>
+</context>
+<context>
+    <name>UserAccounts</name>
+    <message>
+        <source>(this browser)</source>
+        <translation>(bu tarayıcı)</translation>
+    </message>
+    <message>
+        <source>A role decides what its users are allowed to do.</source>
+        <translation>Bir rol, kullanıcılarının neler yapabileceğini belirler.</translation>
+    </message>
+    <message>
+        <source>Add Role</source>
+        <translation>Rol Ekle</translation>
+    </message>
+    <message>
+        <source>Add Role...</source>
+        <translation>Rol Ekle...</translation>
+    </message>
+    <message>
+        <source>Add User</source>
+        <translation>Kullanıcı Ekle</translation>
+    </message>
+    <message>
+        <source>Add User...</source>
+        <translation>Kullanıcı Ekle...</translation>
+    </message>
+    <message>
+        <source>Are you sure you want to remove the role &apos;%1&apos;?</source>
+        <translation>&apos;%1&apos; rolünü kaldırmak istediğinizden emin misiniz?</translation>
+    </message>
+    <message>
+        <source>Are you sure you want to remove the user &apos;%1&apos;?</source>
+        <translation>&apos;%1&apos; kullanıcısını kaldırmak istediğinizden emin misiniz?</translation>
+    </message>
+    <message>
+        <source>At least %1 characters</source>
+        <translation>En az %1 karakter</translation>
+    </message>
+    <message>
+        <source>Browser</source>
+        <translation>Tarayıcı</translation>
+    </message>
+    <message>
+        <source>Browsers and devices where someone is logged in with a user account.</source>
+        <translation>Birinin kullanıcı hesabıyla oturum açtığı tarayıcılar ve cihazlar.</translation>
+    </message>
+    <message>
+        <source>Change Password</source>
+        <translation>Parolayı Değiştir</translation>
+    </message>
+    <message>
+        <source>Confirm password:</source>
+        <translation>Parolayı onayla:</translation>
+    </message>
+    <message>
+        <source>Created</source>
+        <translation>Oluşturulma</translation>
+    </message>
+    <message>
+        <source>Current password:</source>
+        <translation>Geçerli parola:</translation>
+    </message>
+    <message>
+        <source>Description</source>
+        <translation>Açıklama</translation>
+    </message>
+    <message>
+        <source>Description:</source>
+        <translation>Açıklama:</translation>
+    </message>
+    <message>
+        <source>Disable</source>
+        <translation>Devre dışı bırak</translation>
+    </message>
+    <message>
+        <source>Disable this account</source>
+        <translation>Bu hesabı devre dışı bırak</translation>
+    </message>
+    <message>
+        <source>Edit Role</source>
+        <translation>Rolü Düzenle</translation>
+    </message>
+    <message>
+        <source>Edit User</source>
+        <translation>Kullanıcıyı Düzenle</translation>
+    </message>
+    <message>
+        <source>Edit...</source>
+        <translation>Düzenle...</translation>
+    </message>
+    <message>
+        <source>Enable</source>
+        <translation>Etkinleştir</translation>
+    </message>
+    <message>
+        <source>Enter a role name.</source>
+        <translation>Bir rol adı girin.</translation>
+    </message>
+    <message>
+        <source>Enter a username.</source>
+        <translation>Bir kullanıcı adı girin.</translation>
+    </message>
+    <message>
+        <source>Expires</source>
+        <translation>Bitiş</translation>
+    </message>
+    <message>
+        <source>Gives control over the PC or qBittorrent itself</source>
+        <translation>Bilgisayarın veya qBittorrent&apos;in kendisinin denetimini verir</translation>
+    </message>
+    <message>
+        <source>Last active</source>
+        <translation>Son etkinlik</translation>
+    </message>
+    <message>
+        <source>Last login</source>
+        <translation>Son giriş</translation>
+    </message>
+    <message>
+        <source>Leave empty to keep the current password</source>
+        <translation>Geçerli parolayı korumak için boş bırakın</translation>
+    </message>
+    <message>
+        <source>Log Out</source>
+        <translation>Çıkış Yap</translation>
+    </message>
+    <message>
+        <source>Log Out Everywhere</source>
+        <translation>Her Yerden Çıkış Yap</translation>
+    </message>
+    <message>
+        <source>Logged In</source>
+        <translation>Oturum Açanlar</translation>
+    </message>
+    <message>
+        <source>Logged in</source>
+        <translation>Giriş zamanı</translation>
+    </message>
+    <message>
+        <source>New password:</source>
+        <translation>Yeni parola:</translation>
+    </message>
+    <message>
+        <source>No accounts yet, so everyone still uses the shared WebUI login. Add an Admin account first.</source>
+        <translation>Henüz hesap yok, bu yüzden herkes hâlâ ortak WebUI oturum açmasını kullanıyor. Önce bir Yönetici hesabı ekleyin.</translation>
+    </message>
+    <message>
+        <source>People who can log in to the WebUI with their own username and password.</source>
+        <translation>WebUI&apos;ye kendi kullanıcı adı ve parolasıyla giriş yapabilen kişiler.</translation>
+    </message>
+    <message>
+        <source>Permissions</source>
+        <translation>İzinler</translation>
+    </message>
+    <message>
+        <source>Role</source>
+        <translation>Rol</translation>
+    </message>
+    <message>
+        <source>Role:</source>
+        <translation>Rol:</translation>
+    </message>
+    <message>
+        <source>Roles</source>
+        <translation>Roller</translation>
+    </message>
+    <message>
+        <source>The password must be at least %1 characters long.</source>
+        <translation>Parola en az %1 karakter uzunluğunda olmalıdır.</translation>
+    </message>
+    <message>
+        <source>The passwords don&apos;t match.</source>
+        <translation>Parolalar eşleşmiyor.</translation>
+    </message>
+    <message>
+        <source>Users</source>
+        <translation>Kullanıcılar</translation>
+    </message>
+    <message>
+        <source>Your password was changed. Other browsers and devices where you were logged in have been logged out.</source>
+        <translation>Parolanız değiştirildi. Oturum açtığınız diğer tarayıcılardan ve cihazlardan çıkış yapıldı.</translation>
+    </message>
+</context>
+<context>
+    <name>WebUIActivity</name>
+    <message>
+        <source>Action</source>
+        <translation>Eylem</translation>
+    </message>
+    <message>
+        <source>Result</source>
+        <translation>Sonuç</translation>
+    </message>
+    <message>
+        <source>Role</source>
+        <translation>Rol</translation>
+    </message>
+    <message>
+        <source>Time</source>
+        <translation>Zaman</translation>
     </message>
 </context>
 </TS>

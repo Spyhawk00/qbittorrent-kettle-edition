@@ -141,6 +141,62 @@
         <source>The free IP to Country Lite database by DB-IP is used for resolving the countries of peers. The database is licensed under the Creative Commons Attribution 4.0 International License</source>
         <translation>पीयर देशों के समन्वय हेतु DB-IP द्वारा प्रदान निशुल्क IP to Country Lite डेटाबेस उपयोग में है। यह डेटाबेस Creative Commons Attribution 4.0 अंतर्राष्ट्रीय लाइसेंस के तहत है।</translation>
     </message>
+    <message>
+        <source>This edition</source>
+        <translation>यह संस्करण</translation>
+    </message>
+    <message>
+        <source>Edition version:</source>
+        <translation>संस्करण का वर्शन:</translation>
+    </message>
+    <message>
+        <source>Based on:</source>
+        <translation>आधारित:</translation>
+    </message>
+    <message>
+        <source>Maintainer:</source>
+        <translation>मेंटेनर:</translation>
+    </message>
+    <message>
+        <source>qBittorrent project:</source>
+        <translation>qBittorrent प्रोजेक्ट:</translation>
+    </message>
+    <message>
+        <source>Kettle Edition is a personal build of qBittorrent that adds user accounts with roles for the WebUI and the desktop app, an activity log, and an installable WebUI with a phone layout. A kettle is a group of hawks soaring together. This is an unofficial build, not affiliated with the qBittorrent project.</source>
+        <translation>Kettle Edition qBittorrent का एक निजी बिल्ड है जो WebUI और डेस्कटॉप ऐप के लिए भूमिकाओं वाले उपयोगकर्ता खाते, गतिविधि लॉग, और फ़ोन लेआउट वाला इंस्टॉल होने योग्य WebUI जोड़ता है। Kettle बाज़ों का वह झुंड है जो साथ उड़ता है। यह एक अनौपचारिक बिल्ड है, जिसका qBittorrent प्रोजेक्ट से कोई संबंध नहीं है।</translation>
+    </message>
+    <message>
+        <source>N/A</source>
+        <translation>उपलब्ध नहीं</translation>
+    </message>
+    <message>
+        <source>This edition</source>
+        <translation>यह संस्करण</translation>
+    </message>
+    <message>
+        <source>Edition version:</source>
+        <translation>संस्करण का वर्शन:</translation>
+    </message>
+    <message>
+        <source>Based on:</source>
+        <translation>आधारित:</translation>
+    </message>
+    <message>
+        <source>Maintainer:</source>
+        <translation>मेंटेनर:</translation>
+    </message>
+    <message>
+        <source>qBittorrent project:</source>
+        <translation>qBittorrent प्रोजेक्ट:</translation>
+    </message>
+    <message>
+        <source>Kettle Edition is a personal build of qBittorrent that adds user accounts with roles for the WebUI and the desktop app, an activity log, and an installable WebUI with a phone layout. A kettle is a group of hawks soaring together. This is an unofficial build, not affiliated with the qBittorrent project.</source>
+        <translation>Kettle Edition qBittorrent का एक निजी बिल्ड है जो WebUI और डेस्कटॉप ऐप के लिए भूमिकाओं वाले उपयोगकर्ता खाते, गतिविधि लॉग, और फ़ोन लेआउट वाला इंस्टॉल होने योग्य WebUI जोड़ता है। Kettle बाज़ों का वह झुंड है जो साथ उड़ता है। यह एक अनौपचारिक बिल्ड है, जिसका qBittorrent प्रोजेक्ट से कोई संबंध नहीं है।</translation>
+    </message>
+    <message>
+        <source>N/A</source>
+        <translation>उपलब्ध नहीं</translation>
+    </message>
 </context>
 <context>
     <name>AbstractFileStorage</name>
@@ -1459,6 +1515,62 @@
         <location filename="../gui/advancedsettings.cpp" line="925"/>
         <source>Embedded tracker port</source>
         <translation>सम्मिलित ट्रैकर का पोर्ट</translation>
+    </message>
+    <message>
+        <source>Network</source>
+        <translation>नेटवर्क</translation>
+    </message>
+    <message>
+        <source>Storage</source>
+        <translation>संग्रहण</translation>
+    </message>
+    <message>
+        <source>Peers and trackers</source>
+        <translation>सहकर्मी और ट्रैकर</translation>
+    </message>
+    <message>
+        <source>Program behavior</source>
+        <translation>प्रोग्राम का व्यवहार</translation>
+    </message>
+    <message>
+        <source>Display and notifications</source>
+        <translation>प्रदर्शन और सूचनाएँ</translation>
+    </message>
+    <message>
+        <source>Network connection</source>
+        <translation>नेटवर्क कनेक्शन</translation>
+    </message>
+    <message>
+        <source>Security and privacy</source>
+        <translation>सुरक्षा और गोपनीयता</translation>
+    </message>
+    <message>
+        <source>Connection tuning</source>
+        <translation>कनेक्शन ट्यूनिंग</translation>
+    </message>
+    <message>
+        <source>Saving and torrent files</source>
+        <translation>सहेजना और टोरेंट फ़ाइलें</translation>
+    </message>
+    <message>
+        <source>Disk and memory</source>
+        <translation>डिस्क और मेमोरी</translation>
+    </message>
+    <message>
+        <source>Peers and seeding</source>
+        <translation>सहकर्मी और सीडिंग</translation>
+    </message>
+    <message>
+        <source>DHT and I2P</source>
+        <translation>DHT और I2P</translation>
+    </message>
+    <message>
+        <source>General</source>
+        <translation>सामान्य</translation>
+    </message>
+    <message>
+        <source>Trackers</source>
+        <translation>ट्रैकर</translation>
     </message>
 </context>
 <context>
@@ -3464,6 +3576,22 @@ Supports the formats: S01E01, 1x1, 2017.12.31 and 31.12.2017 (Date formats also 
         <source>Remove torrent</source>
         <translation>टॉरेंट को हटायें</translation>
     </message>
+    <message>
+        <source>This choice is remembered for the next removal.</source>
+        <translation>यह चुनाव अगले हटाने के लिए याद रखा जाएगा।</translation>
+    </message>
+    <message>
+        <source>Remove</source>
+        <translation>हटाएँ</translation>
+    </message>
+    <message>
+        <source>This choice is remembered for the next removal.</source>
+        <translation>यह चुनाव अगले हटाने के लिए याद रखा जाएगा।</translation>
+    </message>
+    <message>
+        <source>Remove</source>
+        <translation>हटाएँ</translation>
+    </message>
 </context>
 <context>
     <name>DownloadFromURLDialog</name>
@@ -3537,6 +3665,14 @@ Supports the formats: S01E01, 1x1, 2017.12.31 and 31.12.2017 (Date formats also 
         <location filename="../gui/executionlogwidget.cpp" line="99"/>
         <source>Clear</source>
         <translation>साफ करें</translation>
+    </message>
+    <message>
+        <source>WebUI Activity</source>
+        <translation>WebUI गतिविधि</translation>
+    </message>
+    <message>
+        <source>WebUI Activity</source>
+        <translation>WebUI गतिविधि</translation>
     </message>
 </context>
 <context>
@@ -4699,6 +4835,46 @@ Minimum requirement: %2.</source>
         <location filename="../gui/mainwindow.cpp" line="1346"/>
         <source>Torrent Files</source>
         <translation>टाॅरेंट फाइलें</translation>
+    </message>
+    <message>
+        <source>Kettle Edition %1 is available.</source>
+        <translation>Kettle Edition %1 उपलब्ध है।</translation>
+    </message>
+    <message>
+        <source>qBittorrent Kettle Edition %1 is available. It is downloaded now and installed at 4:00 AM, or when qBittorrent starts next.</source>
+        <translation>qBittorrent Kettle Edition %1 उपलब्ध है। यह अभी डाउनलोड हो रहा है और सुबह 4:00 बजे या qBittorrent के अगली बार शुरू होने पर इंस्टॉल होगा।</translation>
+    </message>
+    <message>
+        <source>qBittorrent Kettle Edition %1 is available. It is downloaded now. Turn on &quot;Automatically install Kettle Edition updates&quot; in Options to install it.</source>
+        <translation>qBittorrent Kettle Edition %1 उपलब्ध है। यह अभी डाउनलोड हो रहा है। इसे इंस्टॉल करने के लिए विकल्प में &quot;Kettle Edition अपडेट अपने-आप इंस्टॉल करें&quot; चालू करें।</translation>
+    </message>
+    <message>
+        <source>You have the latest qBittorrent Kettle Edition (%1).</source>
+        <translation>आपके पास qBittorrent Kettle Edition का नवीनतम संस्करण (%1) है।</translation>
+    </message>
+    <message>
+        <source>Could not check for qBittorrent Kettle Edition updates. See the Execution Log for details.</source>
+        <translation>qBittorrent Kettle Edition अपडेट की जाँच नहीं हो सकी। विवरण के लिए निष्पादन लॉग देखें।</translation>
+    </message>
+    <message>
+        <source>Kettle Edition %1 is available.</source>
+        <translation>Kettle Edition %1 उपलब्ध है।</translation>
+    </message>
+    <message>
+        <source>qBittorrent Kettle Edition %1 is available. It is downloaded now and installed at 4:00 AM, or when qBittorrent starts next.</source>
+        <translation>qBittorrent Kettle Edition %1 उपलब्ध है। यह अभी डाउनलोड हो रहा है और सुबह 4:00 बजे या qBittorrent के अगली बार शुरू होने पर इंस्टॉल होगा।</translation>
+    </message>
+    <message>
+        <source>qBittorrent Kettle Edition %1 is available. It is downloaded now. Turn on &quot;Automatically install Kettle Edition updates&quot; in Options to install it.</source>
+        <translation>qBittorrent Kettle Edition %1 उपलब्ध है। यह अभी डाउनलोड हो रहा है। इसे इंस्टॉल करने के लिए विकल्प में &quot;Kettle Edition अपडेट अपने-आप इंस्टॉल करें&quot; चालू करें।</translation>
+    </message>
+    <message>
+        <source>You have the latest qBittorrent Kettle Edition (%1).</source>
+        <translation>आपके पास qBittorrent Kettle Edition का नवीनतम संस्करण (%1) है।</translation>
+    </message>
+    <message>
+        <source>Could not check for qBittorrent Kettle Edition updates. See the Execution Log for details.</source>
+        <translation>qBittorrent Kettle Edition अपडेट की जाँच नहीं हो सकी। विवरण के लिए निष्पादन लॉग देखें।</translation>
     </message>
 </context>
 <context>
@@ -8403,6 +8579,190 @@ Check the Execution Log for errors.</source>
         <source>Length Error</source>
         <translation>लम्बाई त्रुटि</translation>
     </message>
+    <message>
+        <source>Search settings</source>
+        <translation>सेटिंग खोजें</translation>
+    </message>
+    <message>
+        <source>No settings match</source>
+        <translation>कोई सेटिंग मेल नहीं खाती</translation>
+    </message>
+    <message>
+        <source>User Accounts</source>
+        <translation>उपयोगकर्ता खाते</translation>
+    </message>
+    <message>
+        <source>Automatically install Kettle Edition updates</source>
+        <translation>Kettle Edition अपडेट अपने-आप इंस्टॉल करें</translation>
+    </message>
+    <message>
+        <source>Status bar and log</source>
+        <translation>स्थिति पट्टी और लॉग</translation>
+    </message>
+    <message>
+        <source>Files</source>
+        <translation>फ़ाइलें</translation>
+    </message>
+    <message>
+        <source>Checking</source>
+        <translation>जाँच</translation>
+    </message>
+    <message>
+        <source>Until the first user account is created, this login always works.</source>
+        <translation>पहला उपयोगकर्ता खाता बनने तक यह लॉगिन हमेशा काम करता है।</translation>
+    </message>
+    <message>
+        <source>Allow this login when user accounts exist</source>
+        <translation>उपयोगकर्ता खाते होने पर भी इस लॉगिन की अनुमति दें</translation>
+    </message>
+    <message>
+        <source>Access</source>
+        <translation>पहुँच</translation>
+    </message>
+    <message>
+        <source>Changes to users, roles and logins apply at once. The settings below apply with OK or Apply.</source>
+        <translation>उपयोगकर्ताओं, भूमिकाओं और लॉगिन में बदलाव तुरंत लागू होते हैं। नीचे की सेटिंग ठीक है या लागू करें से लागू होती हैं।</translation>
+    </message>
+    <message>
+        <source>Logins and Activity Log</source>
+        <translation>लॉगिन और गतिविधि लॉग</translation>
+    </message>
+    <message>
+        <source>0 means users are logged out after the session timeout.</source>
+        <translation>0 का मतलब है कि सत्र समय-सीमा के बाद उपयोगकर्ता लॉग आउट हो जाते हैं।</translation>
+    </message>
+    <message>
+        <source>Keep users logged in for:</source>
+        <translation>उपयोगकर्ताओं को लॉग इन रखें:</translation>
+    </message>
+    <message>
+        <source>Until session timeout</source>
+        <translation>सत्र समय-सीमा तक</translation>
+    </message>
+    <message>
+        <source> days</source>
+        <translation> दिन</translation>
+    </message>
+    <message>
+        <source>Lock account after consecutive failures:</source>
+        <translation>लगातार विफलताओं के बाद खाता लॉक करें:</translation>
+    </message>
+    <message>
+        <source>Keep WebUI activity log for:</source>
+        <translation>WebUI गतिविधि लॉग रखें:</translation>
+    </message>
+    <message>
+        <source>lock for:</source>
+        <translation>लॉक करें:</translation>
+    </message>
+    <message>
+        <source>%1 works best with Windows dark mode</source>
+        <translation>%1 Windows के डार्क मोड के साथ सबसे अच्छा काम करता है</translation>
+    </message>
+    <message>
+        <source>WebUI address</source>
+        <translation>WebUI पता</translation>
+    </message>
+    <message>
+        <source>With the WebUI address set to %1, only this PC can reach the WebUI. Remote access, including through a reverse proxy on another machine, will stop working.
+
+Save anyway?</source>
+        <translation>WebUI पता %1 होने पर केवल यही PC WebUI तक पहुँच सकता है। दूसरी मशीन पर रिवर्स प्रॉक्सी समेत रिमोट पहुँच बंद हो जाएगी।
+
+फिर भी सहेजें?</translation>
+    </message>
+    <message>
+        <source>Search settings</source>
+        <translation>सेटिंग खोजें</translation>
+    </message>
+    <message>
+        <source>No settings match</source>
+        <translation>कोई सेटिंग मेल नहीं खाती</translation>
+    </message>
+    <message>
+        <source>User Accounts</source>
+        <translation>उपयोगकर्ता खाते</translation>
+    </message>
+    <message>
+        <source>Automatically install Kettle Edition updates</source>
+        <translation>Kettle Edition अपडेट अपने-आप इंस्टॉल करें</translation>
+    </message>
+    <message>
+        <source>Status bar and log</source>
+        <translation>स्थिति पट्टी और लॉग</translation>
+    </message>
+    <message>
+        <source>Files</source>
+        <translation>फ़ाइलें</translation>
+    </message>
+    <message>
+        <source>Checking</source>
+        <translation>जाँच</translation>
+    </message>
+    <message>
+        <source>Until the first user account is created, this login always works.</source>
+        <translation>पहला उपयोगकर्ता खाता बनने तक यह लॉगिन हमेशा काम करता है।</translation>
+    </message>
+    <message>
+        <source>Allow this login when user accounts exist</source>
+        <translation>उपयोगकर्ता खाते होने पर भी इस लॉगिन की अनुमति दें</translation>
+    </message>
+    <message>
+        <source>Access</source>
+        <translation>पहुँच</translation>
+    </message>
+    <message>
+        <source>Changes to users, roles and logins apply at once. The settings below apply with OK or Apply.</source>
+        <translation>उपयोगकर्ताओं, भूमिकाओं और लॉगिन में बदलाव तुरंत लागू होते हैं। नीचे की सेटिंग ठीक है या लागू करें से लागू होती हैं।</translation>
+    </message>
+    <message>
+        <source>Logins and Activity Log</source>
+        <translation>लॉगिन और गतिविधि लॉग</translation>
+    </message>
+    <message>
+        <source>0 means users are logged out after the session timeout.</source>
+        <translation>0 का मतलब है कि सत्र समय-सीमा के बाद उपयोगकर्ता लॉग आउट हो जाते हैं।</translation>
+    </message>
+    <message>
+        <source>Keep users logged in for:</source>
+        <translation>उपयोगकर्ताओं को लॉग इन रखें:</translation>
+    </message>
+    <message>
+        <source>Until session timeout</source>
+        <translation>सत्र समय-सीमा तक</translation>
+    </message>
+    <message>
+        <source> days</source>
+        <translation> दिन</translation>
+    </message>
+    <message>
+        <source>Lock account after consecutive failures:</source>
+        <translation>लगातार विफलताओं के बाद खाता लॉक करें:</translation>
+    </message>
+    <message>
+        <source>Keep WebUI activity log for:</source>
+        <translation>WebUI गतिविधि लॉग रखें:</translation>
+    </message>
+    <message>
+        <source>lock for:</source>
+        <translation>लॉक करें:</translation>
+    </message>
+    <message>
+        <source>%1 works best with Windows dark mode</source>
+        <translation>%1 Windows के डार्क मोड के साथ सबसे अच्छा काम करता है</translation>
+    </message>
+    <message>
+        <source>WebUI address</source>
+        <translation>WebUI पता</translation>
+    </message>
+    <message>
+        <source>With the WebUI address set to %1, only this PC can reach the WebUI. Remote access, including through a reverse proxy on another machine, will stop working.
+
+Save anyway?</source>
+        <translation>WebUI पता %1 होने पर केवल यही PC WebUI तक पहुँच सकता है। दूसरी मशीन पर रिवर्स प्रॉक्सी समेत रिमोट पहुँच बंद हो जाएगी।
+
+फिर भी सहेजें?</translation>
+    </message>
 </context>
 <context>
     <name>PeerInfo</name>
@@ -8655,6 +9015,22 @@ Check the Execution Log for errors.</source>
         <location filename="../gui/properties/peerlistwidget.cpp" line="309"/>
         <source>Copy IP:port</source>
         <translation>IP:पोर्ट की प्रतिलिपि बनायें</translation>
+    </message>
+    <message>
+        <source>Reset auto width</source>
+        <translation>स्वतः चौड़ाई रीसेट करें</translation>
+    </message>
+    <message>
+        <source>Fit all non-hidden columns to their contents again, and forget the widths that were set by hand</source>
+        <translation>सभी दिखाई देने वाले कॉलम को फिर से उनकी सामग्री के अनुसार बैठाएँ और हाथ से तय की गई चौड़ाई भूल जाएँ</translation>
+    </message>
+    <message>
+        <source>Reset auto width</source>
+        <translation>स्वतः चौड़ाई रीसेट करें</translation>
+    </message>
+    <message>
+        <source>Fit all non-hidden columns to their contents again, and forget the widths that were set by hand</source>
+        <translation>सभी दिखाई देने वाले कॉलम को फिर से उनकी सामग्री के अनुसार बैठाएँ और हाथ से तय की गई चौड़ाई भूल जाएँ</translation>
     </message>
 </context>
 <context>
@@ -10039,6 +10415,14 @@ Those plugins were disabled.</source>
         <source>Open link</source>
         <translation type="unfinished"></translation>
     </message>
+    <message>
+        <source>Details</source>
+        <translation>विवरण</translation>
+    </message>
+    <message>
+        <source>Details</source>
+        <translation>विवरण</translation>
+    </message>
 </context>
 <context>
     <name>SearchController</name>
@@ -10388,6 +10772,70 @@ Those plugins were disabled.</source>
         <source>Resize all non-hidden columns to the size of their contents</source>
         <translation>सभी गैर-ओझल स्तंभों का आकार उनकी अंतर्वस्तु के अनुसार बदलें</translation>
     </message>
+    <message>
+        <source>%1 of %2 shown (%3 hidden)</source>
+        <translation>%2 में से %1 दिखाए गए (%3 छिपे)</translation>
+    </message>
+    <message>
+        <source>%1 of %2 shown</source>
+        <translation>%2 में से %1 दिखाए गए</translation>
+    </message>
+    <message>
+        <source>Searching: %1</source>
+        <translation>खोज जारी: %1</translation>
+    </message>
+    <message>
+        <source>Finished: %1</source>
+        <translation>पूर्ण: %1</translation>
+    </message>
+    <message>
+        <source>Search aborted: %1</source>
+        <translation>खोज रोकी गई: %1</translation>
+    </message>
+    <message>
+        <source>Reset auto width</source>
+        <translation>स्वतः चौड़ाई रीसेट करें</translation>
+    </message>
+    <message>
+        <source>Fit all non-hidden columns to their contents again, and forget the widths that were set by hand</source>
+        <translation>सभी दिखाई देने वाले कॉलम को फिर से उनकी सामग्री के अनुसार बैठाएँ और हाथ से तय की गई चौड़ाई भूल जाएँ</translation>
+    </message>
+    <message>
+        <source>Unknown</source>
+        <translation>अज्ञात</translation>
+    </message>
+    <message>
+        <source>%1 of %2 shown (%3 hidden)</source>
+        <translation>%2 में से %1 दिखाए गए (%3 छिपे)</translation>
+    </message>
+    <message>
+        <source>%1 of %2 shown</source>
+        <translation>%2 में से %1 दिखाए गए</translation>
+    </message>
+    <message>
+        <source>Searching: %1</source>
+        <translation>खोज जारी: %1</translation>
+    </message>
+    <message>
+        <source>Finished: %1</source>
+        <translation>पूर्ण: %1</translation>
+    </message>
+    <message>
+        <source>Search aborted: %1</source>
+        <translation>खोज रोकी गई: %1</translation>
+    </message>
+    <message>
+        <source>Reset auto width</source>
+        <translation>स्वतः चौड़ाई रीसेट करें</translation>
+    </message>
+    <message>
+        <source>Fit all non-hidden columns to their contents again, and forget the widths that were set by hand</source>
+        <translation>सभी दिखाई देने वाले कॉलम को फिर से उनकी सामग्री के अनुसार बैठाएँ और हाथ से तय की गई चौड़ाई भूल जाएँ</translation>
+    </message>
+    <message>
+        <source>Unknown</source>
+        <translation>अज्ञात</translation>
+    </message>
 </context>
 <context>
     <name>SearchPluginManager</name>
@@ -10685,6 +11133,14 @@ Those plugins were disabled.</source>
         <source>Couldn&apos;t update &quot;%1&quot; search engine plugin. %2</source>
         <translation type="unfinished">खोज इन्जन प्लगिन &quot;%1&quot; अद्यतित नहीं हो सकी। %2</translation>
     </message>
+    <message>
+        <source>Install Kettle Plugins</source>
+        <translation>Kettle प्लगइन इंस्टॉल करें</translation>
+    </message>
+    <message>
+        <source>Install Kettle Plugins</source>
+        <translation>Kettle प्लगइन इंस्टॉल करें</translation>
+    </message>
 </context>
 <context>
     <name>SearchPluginSourceDialog</name>
@@ -10824,6 +11280,90 @@ Click the &quot;Search plugins...&quot; button at the bottom right of the window
         <location filename="../gui/search/searchwidget.ui" line="58"/>
         <source>Stop</source>
         <translation>रोकें</translation>
+    </message>
+    <message>
+        <source>Searches</source>
+        <translation>खोजें</translation>
+    </message>
+    <message>
+        <source>Close the selected search</source>
+        <translation>चुनी हुई खोज बंद करें</translation>
+    </message>
+    <message>
+        <source>Search for torrents...</source>
+        <translation>टोरेंट खोजें...</translation>
+    </message>
+    <message>
+        <source>Category to search in</source>
+        <translation>खोजने की श्रेणी</translation>
+    </message>
+    <message>
+        <source>Search engines to use</source>
+        <translation>उपयोग किए जाने वाले खोज इंजन</translation>
+    </message>
+    <message>
+        <source>There aren&apos;t any search plugins installed.
+Click the &quot;Search plugins...&quot; button at the top right of the window to install some.</source>
+        <translation>कोई खोज प्लगइन इंस्टॉल नहीं है।
+कुछ इंस्टॉल करने के लिए विंडो के ऊपर दाएँ &quot;खोज प्लगइन...&quot; बटन पर क्लिक करें।</translation>
+    </message>
+    <message>
+        <source>Type a search above and press Enter.</source>
+        <translation>ऊपर खोज लिखें और Enter दबाएँ।</translation>
+    </message>
+    <message>
+        <source>Refresh search</source>
+        <translation>खोज ताज़ा करें</translation>
+    </message>
+    <message>
+        <source>Close search</source>
+        <translation>खोज बंद करें</translation>
+    </message>
+    <message>
+        <source>Close all searches</source>
+        <translation>सभी खोजें बंद करें</translation>
+    </message>
+    <message>
+        <source>Searches</source>
+        <translation>खोजें</translation>
+    </message>
+    <message>
+        <source>Close the selected search</source>
+        <translation>चुनी हुई खोज बंद करें</translation>
+    </message>
+    <message>
+        <source>Search for torrents...</source>
+        <translation>टोरेंट खोजें...</translation>
+    </message>
+    <message>
+        <source>Category to search in</source>
+        <translation>खोजने की श्रेणी</translation>
+    </message>
+    <message>
+        <source>Search engines to use</source>
+        <translation>उपयोग किए जाने वाले खोज इंजन</translation>
+    </message>
+    <message>
+        <source>There aren&apos;t any search plugins installed.
+Click the &quot;Search plugins...&quot; button at the top right of the window to install some.</source>
+        <translation>कोई खोज प्लगइन इंस्टॉल नहीं है।
+कुछ इंस्टॉल करने के लिए विंडो के ऊपर दाएँ &quot;खोज प्लगइन...&quot; बटन पर क्लिक करें।</translation>
+    </message>
+    <message>
+        <source>Type a search above and press Enter.</source>
+        <translation>ऊपर खोज लिखें और Enter दबाएँ।</translation>
+    </message>
+    <message>
+        <source>Refresh search</source>
+        <translation>खोज ताज़ा करें</translation>
+    </message>
+    <message>
+        <source>Close search</source>
+        <translation>खोज बंद करें</translation>
+    </message>
+    <message>
+        <source>Close all searches</source>
+        <translation>सभी खोजें बंद करें</translation>
     </message>
 </context>
 <context>
@@ -11286,6 +11826,326 @@ Click the &quot;Search plugins...&quot; button at the bottom right of the window
         <location filename="../gui/statsdialog.cpp" line="111"/>
         <source>%1 ms</source>
         <translation type="unfinished">%1 मिलीसे०</translation>
+    </message>
+    <message>
+        <source>Copy</source>
+        <translation>कॉपी करें</translation>
+    </message>
+    <message>
+        <source>Overview</source>
+        <translation>अवलोकन</translation>
+    </message>
+    <message>
+        <source>Transfer</source>
+        <translation>स्थानांतरण</translation>
+    </message>
+    <message>
+        <source>This session</source>
+        <translation>यह सत्र</translation>
+    </message>
+    <message>
+        <source>All time</source>
+        <translation>अब तक</translation>
+    </message>
+    <message>
+        <source>Downloaded:</source>
+        <translation>डाउनलोड:</translation>
+    </message>
+    <message>
+        <source>Uploaded:</source>
+        <translation>अपलोड:</translation>
+    </message>
+    <message>
+        <source>Share ratio:</source>
+        <translation>साझाकरण अनुपात:</translation>
+    </message>
+    <message>
+        <source>Current speed:</source>
+        <translation>वर्तमान गति:</translation>
+    </message>
+    <message>
+        <source>Activity</source>
+        <translation>गतिविधि</translation>
+    </message>
+    <message>
+        <source>Torrents downloading:</source>
+        <translation>डाउनलोड हो रहे टोरेंट:</translation>
+    </message>
+    <message>
+        <source>Torrents seeding:</source>
+        <translation>सीडिंग कर रहे टोरेंट:</translation>
+    </message>
+    <message>
+        <source>Torrents stopped:</source>
+        <translation>रुके हुए टोरेंट:</translation>
+    </message>
+    <message>
+        <source>Torrents with errors:</source>
+        <translation>त्रुटि वाले टोरेंट:</translation>
+    </message>
+    <message>
+        <source>Running for:</source>
+        <translation>चालू रहने की अवधि:</translation>
+    </message>
+    <message>
+        <source>History</source>
+        <translation>इतिहास</translation>
+    </message>
+    <message>
+        <source>Period</source>
+        <translation>अवधि</translation>
+    </message>
+    <message>
+        <source>Today</source>
+        <translation>आज</translation>
+    </message>
+    <message>
+        <source>Last 7 days</source>
+        <translation>पिछले 7 दिन</translation>
+    </message>
+    <message>
+        <source>This month</source>
+        <translation>यह महीना</translation>
+    </message>
+    <message>
+        <source>Last month</source>
+        <translation>पिछला महीना</translation>
+    </message>
+    <message>
+        <source>Last 12 months</source>
+        <translation>पिछले 12 महीने</translation>
+    </message>
+    <message>
+        <source>Tracking since:</source>
+        <translation>ट्रैकिंग शुरू होने से:</translation>
+    </message>
+    <message>
+        <source>By month</source>
+        <translation>महीने के अनुसार</translation>
+    </message>
+    <message>
+        <source>Month</source>
+        <translation>महीना</translation>
+    </message>
+    <message>
+        <source>Downloaded</source>
+        <translation>डाउनलोड</translation>
+    </message>
+    <message>
+        <source>Uploaded</source>
+        <translation>अपलोड</translation>
+    </message>
+    <message>
+        <source>Share ratio</source>
+        <translation>साझाकरण अनुपात</translation>
+    </message>
+    <message>
+        <source>WebUI downloads added, this month</source>
+        <translation>WebUI से जोड़े गए डाउनलोड, इस महीने</translation>
+    </message>
+    <message>
+        <source>Counts the requests that added a download. Apps without a login, such as Sonarr and Radarr, are shown as (localhost). Downloads added in the desktop window are not counted.</source>
+        <translation>उन अनुरोधों को गिनता है जिन्होंने डाउनलोड जोड़ा। बिना लॉगिन वाले ऐप, जैसे Sonarr और Radarr, (localhost) के रूप में दिखते हैं। डेस्कटॉप विंडो में जोड़े गए डाउनलोड नहीं गिने जाते।</translation>
+    </message>
+    <message>
+        <source>Technical</source>
+        <translation>तकनीकी</translation>
+    </message>
+    <message>
+        <source>Disk</source>
+        <translation>डिस्क</translation>
+    </message>
+    <message>
+        <source>Peers waiting on disk writes:</source>
+        <translation>डिस्क पर लिखने की प्रतीक्षा में सहकर्मी:</translation>
+    </message>
+    <message>
+        <source>Peers waiting on disk reads:</source>
+        <translation>डिस्क से पढ़ने की प्रतीक्षा में सहकर्मी:</translation>
+    </message>
+    <message>
+        <source>Network</source>
+        <translation>नेटवर्क</translation>
+    </message>
+    <message>
+        <source>DHT nodes:</source>
+        <translation>DHT नोड:</translation>
+    </message>
+    <message>
+        <source>Data discarded this session:</source>
+        <translation>इस सत्र में छोड़ा गया डेटा:</translation>
+    </message>
+    <message>
+        <source>Before tracking began</source>
+        <translation>ट्रैकिंग शुरू होने से पहले</translation>
+    </message>
+    <message>
+        <source>Nothing added yet</source>
+        <translation>अभी तक कुछ नहीं जोड़ा गया</translation>
+    </message>
+    <message>
+        <source>Off</source>
+        <translation>बंद</translation>
+    </message>
+    <message>
+        <source>Copy</source>
+        <translation>कॉपी करें</translation>
+    </message>
+    <message>
+        <source>Overview</source>
+        <translation>अवलोकन</translation>
+    </message>
+    <message>
+        <source>Transfer</source>
+        <translation>स्थानांतरण</translation>
+    </message>
+    <message>
+        <source>This session</source>
+        <translation>यह सत्र</translation>
+    </message>
+    <message>
+        <source>All time</source>
+        <translation>अब तक</translation>
+    </message>
+    <message>
+        <source>Downloaded:</source>
+        <translation>डाउनलोड:</translation>
+    </message>
+    <message>
+        <source>Uploaded:</source>
+        <translation>अपलोड:</translation>
+    </message>
+    <message>
+        <source>Share ratio:</source>
+        <translation>साझाकरण अनुपात:</translation>
+    </message>
+    <message>
+        <source>Current speed:</source>
+        <translation>वर्तमान गति:</translation>
+    </message>
+    <message>
+        <source>Activity</source>
+        <translation>गतिविधि</translation>
+    </message>
+    <message>
+        <source>Torrents downloading:</source>
+        <translation>डाउनलोड हो रहे टोरेंट:</translation>
+    </message>
+    <message>
+        <source>Torrents seeding:</source>
+        <translation>सीडिंग कर रहे टोरेंट:</translation>
+    </message>
+    <message>
+        <source>Torrents stopped:</source>
+        <translation>रुके हुए टोरेंट:</translation>
+    </message>
+    <message>
+        <source>Torrents with errors:</source>
+        <translation>त्रुटि वाले टोरेंट:</translation>
+    </message>
+    <message>
+        <source>Running for:</source>
+        <translation>चालू रहने की अवधि:</translation>
+    </message>
+    <message>
+        <source>History</source>
+        <translation>इतिहास</translation>
+    </message>
+    <message>
+        <source>Period</source>
+        <translation>अवधि</translation>
+    </message>
+    <message>
+        <source>Today</source>
+        <translation>आज</translation>
+    </message>
+    <message>
+        <source>Last 7 days</source>
+        <translation>पिछले 7 दिन</translation>
+    </message>
+    <message>
+        <source>This month</source>
+        <translation>यह महीना</translation>
+    </message>
+    <message>
+        <source>Last month</source>
+        <translation>पिछला महीना</translation>
+    </message>
+    <message>
+        <source>Last 12 months</source>
+        <translation>पिछले 12 महीने</translation>
+    </message>
+    <message>
+        <source>Tracking since:</source>
+        <translation>ट्रैकिंग शुरू होने से:</translation>
+    </message>
+    <message>
+        <source>By month</source>
+        <translation>महीने के अनुसार</translation>
+    </message>
+    <message>
+        <source>Month</source>
+        <translation>महीना</translation>
+    </message>
+    <message>
+        <source>Downloaded</source>
+        <translation>डाउनलोड</translation>
+    </message>
+    <message>
+        <source>Uploaded</source>
+        <translation>अपलोड</translation>
+    </message>
+    <message>
+        <source>Share ratio</source>
+        <translation>साझाकरण अनुपात</translation>
+    </message>
+    <message>
+        <source>WebUI downloads added, this month</source>
+        <translation>WebUI से जोड़े गए डाउनलोड, इस महीने</translation>
+    </message>
+    <message>
+        <source>Counts the requests that added a download. Apps without a login, such as Sonarr and Radarr, are shown as (localhost). Downloads added in the desktop window are not counted.</source>
+        <translation>उन अनुरोधों को गिनता है जिन्होंने डाउनलोड जोड़ा। बिना लॉगिन वाले ऐप, जैसे Sonarr और Radarr, (localhost) के रूप में दिखते हैं। डेस्कटॉप विंडो में जोड़े गए डाउनलोड नहीं गिने जाते।</translation>
+    </message>
+    <message>
+        <source>Technical</source>
+        <translation>तकनीकी</translation>
+    </message>
+    <message>
+        <source>Disk</source>
+        <translation>डिस्क</translation>
+    </message>
+    <message>
+        <source>Peers waiting on disk writes:</source>
+        <translation>डिस्क पर लिखने की प्रतीक्षा में सहकर्मी:</translation>
+    </message>
+    <message>
+        <source>Peers waiting on disk reads:</source>
+        <translation>डिस्क से पढ़ने की प्रतीक्षा में सहकर्मी:</translation>
+    </message>
+    <message>
+        <source>Network</source>
+        <translation>नेटवर्क</translation>
+    </message>
+    <message>
+        <source>DHT nodes:</source>
+        <translation>DHT नोड:</translation>
+    </message>
+    <message>
+        <source>Data discarded this session:</source>
+        <translation>इस सत्र में छोड़ा गया डेटा:</translation>
+    </message>
+    <message>
+        <source>Before tracking began</source>
+        <translation>ट्रैकिंग शुरू होने से पहले</translation>
+    </message>
+    <message>
+        <source>Nothing added yet</source>
+        <translation>अभी तक कुछ नहीं जोड़ा गया</translation>
+    </message>
+    <message>
+        <source>Off</source>
+        <translation>बंद</translation>
     </message>
 </context>
 <context>
@@ -11977,6 +12837,22 @@ Please choose a different name and try again.</source>
     <message>
         <source>Priority by shown file order</source>
         <translation type="vanished">दृश्य फाइल क्रमानुसार प्राथमिकता</translation>
+    </message>
+    <message>
+        <source>Reset auto width</source>
+        <translation>स्वतः चौड़ाई रीसेट करें</translation>
+    </message>
+    <message>
+        <source>Fit all non-hidden columns to their contents again, and forget the widths that were set by hand</source>
+        <translation>सभी दिखाई देने वाले कॉलम को फिर से उनकी सामग्री के अनुसार बैठाएँ और हाथ से तय की गई चौड़ाई भूल जाएँ</translation>
+    </message>
+    <message>
+        <source>Reset auto width</source>
+        <translation>स्वतः चौड़ाई रीसेट करें</translation>
+    </message>
+    <message>
+        <source>Fit all non-hidden columns to their contents again, and forget the widths that were set by hand</source>
+        <translation>सभी दिखाई देने वाले कॉलम को फिर से उनकी सामग्री के अनुसार बैठाएँ और हाथ से तय की गई चौड़ाई भूल जाएँ</translation>
     </message>
 </context>
 <context>
@@ -13056,6 +13932,22 @@ Please choose a different name and try again.</source>
         <source>Column visibility</source>
         <translation>स्तंभ दृश्यता</translation>
     </message>
+    <message>
+        <source>Reset auto width</source>
+        <translation>स्वतः चौड़ाई रीसेट करें</translation>
+    </message>
+    <message>
+        <source>Fit all non-hidden columns to their contents again, and forget the widths that were set by hand</source>
+        <translation>सभी दिखाई देने वाले कॉलम को फिर से उनकी सामग्री के अनुसार बैठाएँ और हाथ से तय की गई चौड़ाई भूल जाएँ</translation>
+    </message>
+    <message>
+        <source>Reset auto width</source>
+        <translation>स्वतः चौड़ाई रीसेट करें</translation>
+    </message>
+    <message>
+        <source>Fit all non-hidden columns to their contents again, and forget the widths that were set by hand</source>
+        <translation>सभी दिखाई देने वाले कॉलम को फिर से उनकी सामग्री के अनुसार बैठाएँ और हाथ से तय की गई चौड़ाई भूल जाएँ</translation>
+    </message>
 </context>
 <context>
     <name>TrackerStatusFilterWidget</name>
@@ -13922,6 +14814,22 @@ Please choose a different name and try again.</source>
         <source>Super seeding mode</source>
         <translation>महास्रोत रीति</translation>
     </message>
+    <message>
+        <source>Reset auto width</source>
+        <translation>स्वतः चौड़ाई रीसेट करें</translation>
+    </message>
+    <message>
+        <source>Fit all non-hidden columns to their contents again, and forget the widths that were set by hand</source>
+        <translation>सभी दिखाई देने वाले कॉलम को फिर से उनकी सामग्री के अनुसार बैठाएँ और हाथ से तय की गई चौड़ाई भूल जाएँ</translation>
+    </message>
+    <message>
+        <source>Reset auto width</source>
+        <translation>स्वतः चौड़ाई रीसेट करें</translation>
+    </message>
+    <message>
+        <source>Fit all non-hidden columns to their contents again, and forget the widths that were set by hand</source>
+        <translation>सभी दिखाई देने वाले कॉलम को फिर से उनकी सामग्री के अनुसार बैठाएँ और हाथ से तय की गई चौड़ाई भूल जाएँ</translation>
+    </message>
 </context>
 <context>
     <name>UIThemeDialog</name>
@@ -14256,6 +15164,46 @@ Please choose a different name and try again.</source>
         <source>WebAPI login failure. Reason: invalid credentials, attempt count: %1, IP: %2, username: %3</source>
         <translation type="unfinished"></translation>
     </message>
+    <message>
+        <source>Something went wrong on the server. Details are in qBittorrent&apos;s log.</source>
+        <translation>सर्वर पर कुछ गड़बड़ हो गई। विवरण qBittorrent के लॉग में हैं।</translation>
+    </message>
+    <message>
+        <source>This account is locked after too many failed login attempts. Try again in %1 minute(s).</source>
+        <translation>बहुत ज़्यादा असफल लॉगिन प्रयासों के कारण यह खाता लॉक है। %1 मिनट बाद फिर कोशिश करें।</translation>
+    </message>
+    <message>
+        <source>Your role (%1) doesn&apos;t allow this: %2.</source>
+        <translation>आपकी भूमिका (%1) इसकी अनुमति नहीं देती: %2।</translation>
+    </message>
+    <message>
+        <source>Only an admin can remove the tag that says who added a torrent.</source>
+        <translation>केवल Admin वह टैग हटा सकता है जो बताता है कि टोरेंट किसने जोड़ा।</translation>
+    </message>
+    <message>
+        <source>Only an admin can clear or replace all tags of a torrent that has a tag saying who added it.</source>
+        <translation>केवल Admin ऐसे टोरेंट के सभी टैग साफ़ या बदल सकता है जिस पर जोड़ने वाले को बताने वाला टैग है।</translation>
+    </message>
+    <message>
+        <source>Something went wrong on the server. Details are in qBittorrent&apos;s log.</source>
+        <translation>सर्वर पर कुछ गड़बड़ हो गई। विवरण qBittorrent के लॉग में हैं।</translation>
+    </message>
+    <message>
+        <source>This account is locked after too many failed login attempts. Try again in %1 minute(s).</source>
+        <translation>बहुत ज़्यादा असफल लॉगिन प्रयासों के कारण यह खाता लॉक है। %1 मिनट बाद फिर कोशिश करें।</translation>
+    </message>
+    <message>
+        <source>Your role (%1) doesn&apos;t allow this: %2.</source>
+        <translation>आपकी भूमिका (%1) इसकी अनुमति नहीं देती: %2।</translation>
+    </message>
+    <message>
+        <source>Only an admin can remove the tag that says who added a torrent.</source>
+        <translation>केवल Admin वह टैग हटा सकता है जो बताता है कि टोरेंट किसने जोड़ा।</translation>
+    </message>
+    <message>
+        <source>Only an admin can clear or replace all tags of a torrent that has a tag saying who added it.</source>
+        <translation>केवल Admin ऐसे टोरेंट के सभी टैग साफ़ या बदल सकता है जिस पर जोड़ने वाले को बताने वाला टैग है।</translation>
+    </message>
 </context>
 <context>
     <name>WebUI</name>
@@ -14395,6 +15343,669 @@ Please choose a different name and try again.</source>
         <source>&lt; 1m</source>
         <comment>&lt; 1 minute</comment>
         <translation>&lt; 1 मिनट</translation>
+    </message>
+</context>
+<context>
+    <name>UpdateInstaller</name>
+    <message>
+        <source>Kettle Edition update</source>
+        <translation>Kettle Edition अपडेट</translation>
+    </message>
+    <message>
+        <source>Kettle Edition was updated to %1.</source>
+        <translation>Kettle Edition को %1 में अपडेट किया गया।</translation>
+    </message>
+    <message>
+        <source>Kettle Edition updated</source>
+        <translation>Kettle Edition अपडेट हो गया</translation>
+    </message>
+    <message>
+        <source>Downloading Kettle Edition %1 (%2 changed files).</source>
+        <translation>Kettle Edition %1 डाउनलोड हो रहा है (%2 बदली फ़ाइलें)।</translation>
+    </message>
+    <message>
+        <source>Kettle Edition %1 is downloaded and ready to install.</source>
+        <translation>Kettle Edition %1 डाउनलोड हो गया है और इंस्टॉल के लिए तैयार है।</translation>
+    </message>
+    <message>
+        <source>Kettle Edition update</source>
+        <translation>Kettle Edition अपडेट</translation>
+    </message>
+    <message>
+        <source>Kettle Edition was updated to %1.</source>
+        <translation>Kettle Edition को %1 में अपडेट किया गया।</translation>
+    </message>
+    <message>
+        <source>Kettle Edition updated</source>
+        <translation>Kettle Edition अपडेट हो गया</translation>
+    </message>
+    <message>
+        <source>Downloading Kettle Edition %1 (%2 changed files).</source>
+        <translation>Kettle Edition %1 डाउनलोड हो रहा है (%2 बदली फ़ाइलें)।</translation>
+    </message>
+    <message>
+        <source>Kettle Edition %1 is downloaded and ready to install.</source>
+        <translation>Kettle Edition %1 डाउनलोड हो गया है और इंस्टॉल के लिए तैयार है।</translation>
+    </message>
+</context>
+<context>
+    <name>UserAccountDialog</name>
+    <message>
+        <source>User</source>
+        <translation>उपयोगकर्ता</translation>
+    </message>
+    <message>
+        <source>Username:</source>
+        <translation>उपयोगकर्ता नाम:</translation>
+    </message>
+    <message>
+        <source>Role:</source>
+        <translation>भूमिका:</translation>
+    </message>
+    <message>
+        <source>Password:</source>
+        <translation>पासवर्ड:</translation>
+    </message>
+    <message>
+        <source>Confirm password:</source>
+        <translation>पासवर्ड की पुष्टि करें:</translation>
+    </message>
+    <message>
+        <source>Disable this account</source>
+        <translation>यह खाता अक्षम करें</translation>
+    </message>
+    <message>
+        <source>Edit User</source>
+        <translation>उपयोगकर्ता संपादित करें</translation>
+    </message>
+    <message>
+        <source>Leave empty to keep the current password</source>
+        <translation>वर्तमान पासवर्ड रखने के लिए खाली छोड़ें</translation>
+    </message>
+    <message>
+        <source>Add User</source>
+        <translation>उपयोगकर्ता जोड़ें</translation>
+    </message>
+    <message>
+        <source>At least %1 characters</source>
+        <translation>कम से कम %1 वर्ण</translation>
+    </message>
+    <message>
+        <source>Enter a username.</source>
+        <translation>उपयोगकर्ता नाम दर्ज करें।</translation>
+    </message>
+    <message>
+        <source>The password must be at least %1 characters long.</source>
+        <translation>पासवर्ड कम से कम %1 वर्णों का होना चाहिए।</translation>
+    </message>
+    <message>
+        <source>The passwords don&apos;t match.</source>
+        <translation>पासवर्ड मेल नहीं खाते।</translation>
+    </message>
+    <message>
+        <source>User</source>
+        <translation>उपयोगकर्ता</translation>
+    </message>
+    <message>
+        <source>Username:</source>
+        <translation>उपयोगकर्ता नाम:</translation>
+    </message>
+    <message>
+        <source>Role:</source>
+        <translation>भूमिका:</translation>
+    </message>
+    <message>
+        <source>Password:</source>
+        <translation>पासवर्ड:</translation>
+    </message>
+    <message>
+        <source>Confirm password:</source>
+        <translation>पासवर्ड की पुष्टि करें:</translation>
+    </message>
+    <message>
+        <source>Disable this account</source>
+        <translation>यह खाता अक्षम करें</translation>
+    </message>
+    <message>
+        <source>Edit User</source>
+        <translation>उपयोगकर्ता संपादित करें</translation>
+    </message>
+    <message>
+        <source>Leave empty to keep the current password</source>
+        <translation>वर्तमान पासवर्ड रखने के लिए खाली छोड़ें</translation>
+    </message>
+    <message>
+        <source>Add User</source>
+        <translation>उपयोगकर्ता जोड़ें</translation>
+    </message>
+    <message>
+        <source>At least %1 characters</source>
+        <translation>कम से कम %1 वर्ण</translation>
+    </message>
+    <message>
+        <source>Enter a username.</source>
+        <translation>उपयोगकर्ता नाम दर्ज करें।</translation>
+    </message>
+    <message>
+        <source>The password must be at least %1 characters long.</source>
+        <translation>पासवर्ड कम से कम %1 वर्णों का होना चाहिए।</translation>
+    </message>
+    <message>
+        <source>The passwords don&apos;t match.</source>
+        <translation>पासवर्ड मेल नहीं खाते।</translation>
+    </message>
+</context>
+<context>
+    <name>UserAccountsWidget</name>
+    <message>
+        <source>User Accounts</source>
+        <translation>उपयोगकर्ता खाते</translation>
+    </message>
+    <message>
+        <source>Users</source>
+        <translation>उपयोगकर्ता</translation>
+    </message>
+    <message>
+        <source>People who can log in to the WebUI with their own username and password.</source>
+        <translation>वे लोग जो अपने उपयोगकर्ता नाम और पासवर्ड से WebUI में लॉग इन कर सकते हैं।</translation>
+    </message>
+    <message>
+        <source>Add User...</source>
+        <translation>उपयोगकर्ता जोड़ें...</translation>
+    </message>
+    <message>
+        <source>Edit...</source>
+        <translation>संपादित करें...</translation>
+    </message>
+    <message>
+        <source>Remove</source>
+        <translation>हटाएँ</translation>
+    </message>
+    <message>
+        <source>Roles</source>
+        <translation>भूमिकाएँ</translation>
+    </message>
+    <message>
+        <source>A role decides what its users are allowed to do.</source>
+        <translation>भूमिका तय करती है कि उसके उपयोगकर्ता क्या कर सकते हैं।</translation>
+    </message>
+    <message>
+        <source>Add Role...</source>
+        <translation>भूमिका जोड़ें...</translation>
+    </message>
+    <message>
+        <source>Logged In</source>
+        <translation>लॉग इन</translation>
+    </message>
+    <message>
+        <source>Browsers and devices where someone is logged in with a user account.</source>
+        <translation>ब्राउज़र और डिवाइस जहाँ कोई उपयोगकर्ता खाते से लॉग इन है।</translation>
+    </message>
+    <message>
+        <source>Log Out</source>
+        <translation>लॉग आउट करें</translation>
+    </message>
+    <message>
+        <source>Username</source>
+        <translation>उपयोगकर्ता नाम</translation>
+    </message>
+    <message>
+        <source>Role</source>
+        <translation>भूमिका</translation>
+    </message>
+    <message>
+        <source>Status</source>
+        <translation>स्थिति</translation>
+    </message>
+    <message>
+        <source>Last login</source>
+        <translation>अंतिम लॉगिन</translation>
+    </message>
+    <message>
+        <source>Created</source>
+        <translation>बनाया गया</translation>
+    </message>
+    <message>
+        <source>Name</source>
+        <translation>नाम</translation>
+    </message>
+    <message>
+        <source>Description</source>
+        <translation>विवरण</translation>
+    </message>
+    <message>
+        <source>Permissions</source>
+        <translation>अनुमतियाँ</translation>
+    </message>
+    <message>
+        <source>User</source>
+        <translation>उपयोगकर्ता</translation>
+    </message>
+    <message>
+        <source>Browser</source>
+        <translation>ब्राउज़र</translation>
+    </message>
+    <message>
+        <source>Logged in</source>
+        <translation>लॉग इन किया</translation>
+    </message>
+    <message>
+        <source>Last active</source>
+        <translation>अंतिम सक्रियता</translation>
+    </message>
+    <message>
+        <source>Expires</source>
+        <translation>समाप्त होगा</translation>
+    </message>
+    <message>
+        <source>The user database could not be opened. See the Execution Log for details.</source>
+        <translation>उपयोगकर्ता डेटाबेस खुल नहीं सका। विवरण के लिए निष्पादन लॉग देखें।</translation>
+    </message>
+    <message>
+        <source>Disabled</source>
+        <translation>अक्षम</translation>
+    </message>
+    <message>
+        <source>Enabled</source>
+        <translation>सक्षम</translation>
+    </message>
+    <message>
+        <source>Never</source>
+        <translation>कभी नहीं</translation>
+    </message>
+    <message>
+        <source>No accounts yet, so everyone still uses the shared WebUI login. Add an Admin account first.</source>
+        <translation>अभी कोई खाता नहीं है, इसलिए सब अब भी साझा WebUI लॉगिन इस्तेमाल करते हैं। पहले एक Admin खाता जोड़ें।</translation>
+    </message>
+    <message>
+        <source>Couldn&apos;t read the user database. %1</source>
+        <translation>उपयोगकर्ता डेटाबेस पढ़ा नहीं जा सका। %1</translation>
+    </message>
+    <message>
+        <source>Remove user</source>
+        <translation>उपयोगकर्ता हटाएँ</translation>
+    </message>
+    <message>
+        <source>Are you sure you want to remove the user &apos;%1&apos;?</source>
+        <translation>क्या आप वाकई उपयोगकर्ता &apos;%1&apos; को हटाना चाहते हैं?</translation>
+    </message>
+    <message>
+        <source>Remove role</source>
+        <translation>भूमिका हटाएँ</translation>
+    </message>
+    <message>
+        <source>Are you sure you want to remove the role &apos;%1&apos;?</source>
+        <translation>क्या आप वाकई भूमिका &apos;%1&apos; को हटाना चाहते हैं?</translation>
+    </message>
+    <message>
+        <source>Enable</source>
+        <translation>सक्षम करें</translation>
+    </message>
+    <message>
+        <source>Disable</source>
+        <translation>अक्षम करें</translation>
+    </message>
+    <message>
+        <source>Log Out Everywhere</source>
+        <translation>हर जगह लॉग आउट करें</translation>
+    </message>
+    <message>
+        <source>User Accounts</source>
+        <translation>उपयोगकर्ता खाते</translation>
+    </message>
+    <message>
+        <source>Users</source>
+        <translation>उपयोगकर्ता</translation>
+    </message>
+    <message>
+        <source>People who can log in to the WebUI with their own username and password.</source>
+        <translation>वे लोग जो अपने उपयोगकर्ता नाम और पासवर्ड से WebUI में लॉग इन कर सकते हैं।</translation>
+    </message>
+    <message>
+        <source>Add User...</source>
+        <translation>उपयोगकर्ता जोड़ें...</translation>
+    </message>
+    <message>
+        <source>Edit...</source>
+        <translation>संपादित करें...</translation>
+    </message>
+    <message>
+        <source>Remove</source>
+        <translation>हटाएँ</translation>
+    </message>
+    <message>
+        <source>Roles</source>
+        <translation>भूमिकाएँ</translation>
+    </message>
+    <message>
+        <source>A role decides what its users are allowed to do.</source>
+        <translation>भूमिका तय करती है कि उसके उपयोगकर्ता क्या कर सकते हैं।</translation>
+    </message>
+    <message>
+        <source>Add Role...</source>
+        <translation>भूमिका जोड़ें...</translation>
+    </message>
+    <message>
+        <source>Logged In</source>
+        <translation>लॉग इन</translation>
+    </message>
+    <message>
+        <source>Browsers and devices where someone is logged in with a user account.</source>
+        <translation>ब्राउज़र और डिवाइस जहाँ कोई उपयोगकर्ता खाते से लॉग इन है।</translation>
+    </message>
+    <message>
+        <source>Log Out</source>
+        <translation>लॉग आउट करें</translation>
+    </message>
+    <message>
+        <source>Username</source>
+        <translation>उपयोगकर्ता नाम</translation>
+    </message>
+    <message>
+        <source>Role</source>
+        <translation>भूमिका</translation>
+    </message>
+    <message>
+        <source>Status</source>
+        <translation>स्थिति</translation>
+    </message>
+    <message>
+        <source>Last login</source>
+        <translation>अंतिम लॉगिन</translation>
+    </message>
+    <message>
+        <source>Created</source>
+        <translation>बनाया गया</translation>
+    </message>
+    <message>
+        <source>Name</source>
+        <translation>नाम</translation>
+    </message>
+    <message>
+        <source>Description</source>
+        <translation>विवरण</translation>
+    </message>
+    <message>
+        <source>Permissions</source>
+        <translation>अनुमतियाँ</translation>
+    </message>
+    <message>
+        <source>User</source>
+        <translation>उपयोगकर्ता</translation>
+    </message>
+    <message>
+        <source>Browser</source>
+        <translation>ब्राउज़र</translation>
+    </message>
+    <message>
+        <source>Logged in</source>
+        <translation>लॉग इन किया</translation>
+    </message>
+    <message>
+        <source>Last active</source>
+        <translation>अंतिम सक्रियता</translation>
+    </message>
+    <message>
+        <source>Expires</source>
+        <translation>समाप्त होगा</translation>
+    </message>
+    <message>
+        <source>The user database could not be opened. See the Execution Log for details.</source>
+        <translation>उपयोगकर्ता डेटाबेस खुल नहीं सका। विवरण के लिए निष्पादन लॉग देखें।</translation>
+    </message>
+    <message>
+        <source>Disabled</source>
+        <translation>अक्षम</translation>
+    </message>
+    <message>
+        <source>Enabled</source>
+        <translation>सक्षम</translation>
+    </message>
+    <message>
+        <source>Never</source>
+        <translation>कभी नहीं</translation>
+    </message>
+    <message>
+        <source>No accounts yet, so everyone still uses the shared WebUI login. Add an Admin account first.</source>
+        <translation>अभी कोई खाता नहीं है, इसलिए सब अब भी साझा WebUI लॉगिन इस्तेमाल करते हैं। पहले एक Admin खाता जोड़ें।</translation>
+    </message>
+    <message>
+        <source>Couldn&apos;t read the user database. %1</source>
+        <translation>उपयोगकर्ता डेटाबेस पढ़ा नहीं जा सका। %1</translation>
+    </message>
+    <message>
+        <source>Remove user</source>
+        <translation>उपयोगकर्ता हटाएँ</translation>
+    </message>
+    <message>
+        <source>Are you sure you want to remove the user &apos;%1&apos;?</source>
+        <translation>क्या आप वाकई उपयोगकर्ता &apos;%1&apos; को हटाना चाहते हैं?</translation>
+    </message>
+    <message>
+        <source>Remove role</source>
+        <translation>भूमिका हटाएँ</translation>
+    </message>
+    <message>
+        <source>Are you sure you want to remove the role &apos;%1&apos;?</source>
+        <translation>क्या आप वाकई भूमिका &apos;%1&apos; को हटाना चाहते हैं?</translation>
+    </message>
+    <message>
+        <source>Enable</source>
+        <translation>सक्षम करें</translation>
+    </message>
+    <message>
+        <source>Disable</source>
+        <translation>अक्षम करें</translation>
+    </message>
+    <message>
+        <source>Log Out Everywhere</source>
+        <translation>हर जगह लॉग आउट करें</translation>
+    </message>
+</context>
+<context>
+    <name>UserRoleDialog</name>
+    <message>
+        <source>Role</source>
+        <translation>भूमिका</translation>
+    </message>
+    <message>
+        <source>Name:</source>
+        <translation>नाम:</translation>
+    </message>
+    <message>
+        <source>Description:</source>
+        <translation>विवरण:</translation>
+    </message>
+    <message>
+        <source>Gives control over the PC or qBittorrent itself.</source>
+        <translation>PC या खुद qBittorrent पर नियंत्रण देता है।</translation>
+    </message>
+    <message>
+        <source>Add Role</source>
+        <translation>भूमिका जोड़ें</translation>
+    </message>
+    <message>
+        <source>Edit Role</source>
+        <translation>भूमिका संपादित करें</translation>
+    </message>
+    <message>
+        <source>Enter a role name.</source>
+        <translation>भूमिका का नाम दर्ज करें।</translation>
+    </message>
+    <message>
+        <source>Role</source>
+        <translation>भूमिका</translation>
+    </message>
+    <message>
+        <source>Name:</source>
+        <translation>नाम:</translation>
+    </message>
+    <message>
+        <source>Description:</source>
+        <translation>विवरण:</translation>
+    </message>
+    <message>
+        <source>Gives control over the PC or qBittorrent itself.</source>
+        <translation>PC या खुद qBittorrent पर नियंत्रण देता है।</translation>
+    </message>
+    <message>
+        <source>Add Role</source>
+        <translation>भूमिका जोड़ें</translation>
+    </message>
+    <message>
+        <source>Edit Role</source>
+        <translation>भूमिका संपादित करें</translation>
+    </message>
+    <message>
+        <source>Enter a role name.</source>
+        <translation>भूमिका का नाम दर्ज करें।</translation>
+    </message>
+</context>
+<context>
+    <name>WebUIActivityWidget</name>
+    <message>
+        <source>All</source>
+        <translation>सभी</translation>
+    </message>
+    <message>
+        <source>Filter activity</source>
+        <translation>गतिविधि फ़िल्टर करें</translation>
+    </message>
+    <message>
+        <source>Export...</source>
+        <translation>निर्यात करें...</translation>
+    </message>
+    <message>
+        <source>User:</source>
+        <translation>उपयोगकर्ता:</translation>
+    </message>
+    <message>
+        <source>Category:</source>
+        <translation>श्रेणी:</translation>
+    </message>
+    <message>
+        <source>Result:</source>
+        <translation>परिणाम:</translation>
+    </message>
+    <message>
+        <source>Time</source>
+        <translation>समय</translation>
+    </message>
+    <message>
+        <source>User</source>
+        <translation>उपयोगकर्ता</translation>
+    </message>
+    <message>
+        <source>Role</source>
+        <translation>भूमिका</translation>
+    </message>
+    <message>
+        <source>Category</source>
+        <translation>श्रेणी</translation>
+    </message>
+    <message>
+        <source>Action</source>
+        <translation>क्रिया</translation>
+    </message>
+    <message>
+        <source>Result</source>
+        <translation>परिणाम</translation>
+    </message>
+    <message>
+        <source>The user database could not be opened. See the General tab for details.</source>
+        <translation>उपयोगकर्ता डेटाबेस खुल नहीं सका। विवरण के लिए सामान्य टैब देखें।</translation>
+    </message>
+    <message>
+        <source>Results (showing %1 out of %2)</source>
+        <translation>परिणाम (%2 में से %1 दिखाए गए)</translation>
+    </message>
+    <message>
+        <source>Copy</source>
+        <translation>कॉपी करें</translation>
+    </message>
+    <message>
+        <source>Export WebUI activity</source>
+        <translation>WebUI गतिविधि निर्यात करें</translation>
+    </message>
+    <message>
+        <source>CSV files</source>
+        <translation>CSV फ़ाइलें</translation>
+    </message>
+    <message>
+        <source>Couldn&apos;t save the file. Reason: %1</source>
+        <translation>फ़ाइल सहेजी नहीं जा सकी। कारण: %1</translation>
+    </message>
+    <message>
+        <source>All</source>
+        <translation>सभी</translation>
+    </message>
+    <message>
+        <source>Filter activity</source>
+        <translation>गतिविधि फ़िल्टर करें</translation>
+    </message>
+    <message>
+        <source>Export...</source>
+        <translation>निर्यात करें...</translation>
+    </message>
+    <message>
+        <source>User:</source>
+        <translation>उपयोगकर्ता:</translation>
+    </message>
+    <message>
+        <source>Category:</source>
+        <translation>श्रेणी:</translation>
+    </message>
+    <message>
+        <source>Result:</source>
+        <translation>परिणाम:</translation>
+    </message>
+    <message>
+        <source>Time</source>
+        <translation>समय</translation>
+    </message>
+    <message>
+        <source>User</source>
+        <translation>उपयोगकर्ता</translation>
+    </message>
+    <message>
+        <source>Role</source>
+        <translation>भूमिका</translation>
+    </message>
+    <message>
+        <source>Category</source>
+        <translation>श्रेणी</translation>
+    </message>
+    <message>
+        <source>Action</source>
+        <translation>क्रिया</translation>
+    </message>
+    <message>
+        <source>Result</source>
+        <translation>परिणाम</translation>
+    </message>
+    <message>
+        <source>The user database could not be opened. See the General tab for details.</source>
+        <translation>उपयोगकर्ता डेटाबेस खुल नहीं सका। विवरण के लिए सामान्य टैब देखें।</translation>
+    </message>
+    <message>
+        <source>Results (showing %1 out of %2)</source>
+        <translation>परिणाम (%2 में से %1 दिखाए गए)</translation>
+    </message>
+    <message>
+        <source>Copy</source>
+        <translation>कॉपी करें</translation>
+    </message>
+    <message>
+        <source>Export WebUI activity</source>
+        <translation>WebUI गतिविधि निर्यात करें</translation>
+    </message>
+    <message>
+        <source>CSV files</source>
+        <translation>CSV फ़ाइलें</translation>
+    </message>
+    <message>
+        <source>Couldn&apos;t save the file. Reason: %1</source>
+        <translation>फ़ाइल सहेजी नहीं जा सकी। कारण: %1</translation>
     </message>
 </context>
 </TS>

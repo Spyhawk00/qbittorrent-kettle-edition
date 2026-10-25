@@ -145,6 +145,62 @@
         <source>The free IP to Country Lite database by DB-IP is used for resolving the countries of peers. The database is licensed under the Creative Commons Attribution 4.0 International License</source>
         <translation type="unfinished"></translation>
     </message>
+    <message>
+        <source>This edition</source>
+        <translation>Þessi útgáfa</translation>
+    </message>
+    <message>
+        <source>Edition version:</source>
+        <translation>Útgáfunúmer:</translation>
+    </message>
+    <message>
+        <source>Based on:</source>
+        <translation>Byggt á:</translation>
+    </message>
+    <message>
+        <source>Maintainer:</source>
+        <translation>Umsjónarmaður:</translation>
+    </message>
+    <message>
+        <source>qBittorrent project:</source>
+        <translation>qBittorrent-verkefnið:</translation>
+    </message>
+    <message>
+        <source>Kettle Edition is a personal build of qBittorrent that adds user accounts with roles for the WebUI and the desktop app, an activity log, and an installable WebUI with a phone layout. A kettle is a group of hawks soaring together. This is an unofficial build, not affiliated with the qBittorrent project.</source>
+        <translation>Kettle Edition er persónuleg smíð af qBittorrent sem bætir við notandareikningum með hlutverkum fyrir WebUI og skjáborðsforritið, virknisskrá og uppsetjanlegu WebUI með símaútliti. Kettle er hópur fálka sem svífa saman. Þetta er óopinber smíð sem tengist ekki qBittorrent-verkefninu.</translation>
+    </message>
+    <message>
+        <source>N/A</source>
+        <translation>Á ekki við</translation>
+    </message>
+    <message>
+        <source>This edition</source>
+        <translation>Þessi útgáfa</translation>
+    </message>
+    <message>
+        <source>Edition version:</source>
+        <translation>Útgáfunúmer:</translation>
+    </message>
+    <message>
+        <source>Based on:</source>
+        <translation>Byggt á:</translation>
+    </message>
+    <message>
+        <source>Maintainer:</source>
+        <translation>Umsjónarmaður:</translation>
+    </message>
+    <message>
+        <source>qBittorrent project:</source>
+        <translation>qBittorrent-verkefnið:</translation>
+    </message>
+    <message>
+        <source>Kettle Edition is a personal build of qBittorrent that adds user accounts with roles for the WebUI and the desktop app, an activity log, and an installable WebUI with a phone layout. A kettle is a group of hawks soaring together. This is an unofficial build, not affiliated with the qBittorrent project.</source>
+        <translation>Kettle Edition er persónuleg smíð af qBittorrent sem bætir við notandareikningum með hlutverkum fyrir WebUI og skjáborðsforritið, virknisskrá og uppsetjanlegu WebUI með símaútliti. Kettle er hópur fálka sem svífa saman. Þetta er óopinber smíð sem tengist ekki qBittorrent-verkefninu.</translation>
+    </message>
+    <message>
+        <source>N/A</source>
+        <translation>Á ekki við</translation>
+    </message>
 </context>
 <context>
     <name>AboutDlg</name>
@@ -1549,6 +1605,62 @@
     <message>
         <source>Check for software updates</source>
         <translation type="vanished">Athuga með hugbúnaðar uppfærslu</translation>
+    </message>
+    <message>
+        <source>Network</source>
+        <translation>Net</translation>
+    </message>
+    <message>
+        <source>Storage</source>
+        <translation>Geymsla</translation>
+    </message>
+    <message>
+        <source>Peers and trackers</source>
+        <translation>Jafningjar og rekjarar</translation>
+    </message>
+    <message>
+        <source>Program behavior</source>
+        <translation>Hegðun forrits</translation>
+    </message>
+    <message>
+        <source>Display and notifications</source>
+        <translation>Birting og tilkynningar</translation>
+    </message>
+    <message>
+        <source>Network connection</source>
+        <translation>Nettenging</translation>
+    </message>
+    <message>
+        <source>Security and privacy</source>
+        <translation>Öryggi og friðhelgi</translation>
+    </message>
+    <message>
+        <source>Connection tuning</source>
+        <translation>Fínstilling tengingar</translation>
+    </message>
+    <message>
+        <source>Saving and torrent files</source>
+        <translation>Vistun og torrent-skrár</translation>
+    </message>
+    <message>
+        <source>Disk and memory</source>
+        <translation>Diskur og minni</translation>
+    </message>
+    <message>
+        <source>Peers and seeding</source>
+        <translation>Jafningjar og dreifing</translation>
+    </message>
+    <message>
+        <source>DHT and I2P</source>
+        <translation>DHT og I2P</translation>
+    </message>
+    <message>
+        <source>General</source>
+        <translation>Almennt</translation>
+    </message>
+    <message>
+        <source>Trackers</source>
+        <translation>Rekjarar</translation>
     </message>
 </context>
 <context>
@@ -3638,6 +3750,22 @@ Supports the formats: S01E01, 1x1, 2017.12.31 and 31.12.2017 (Date formats also 
         <source>Remove torrent</source>
         <translation type="unfinished"></translation>
     </message>
+    <message>
+        <source>This choice is remembered for the next removal.</source>
+        <translation>Þetta val verður munað fyrir næstu fjarlægingu.</translation>
+    </message>
+    <message>
+        <source>Remove</source>
+        <translation>Fjarlægja</translation>
+    </message>
+    <message>
+        <source>This choice is remembered for the next removal.</source>
+        <translation>Þetta val verður munað fyrir næstu fjarlægingu.</translation>
+    </message>
+    <message>
+        <source>Remove</source>
+        <translation>Fjarlægja</translation>
+    </message>
 </context>
 <context>
     <name>DownloadFromURLDialog</name>
@@ -3739,6 +3867,14 @@ Supports the formats: S01E01, 1x1, 2017.12.31 and 31.12.2017 (Date formats also 
         <location filename="../gui/executionlogwidget.cpp" line="99"/>
         <source>Clear</source>
         <translation type="unfinished">Hreinsa</translation>
+    </message>
+    <message>
+        <source>WebUI Activity</source>
+        <translation>Virkni WebUI</translation>
+    </message>
+    <message>
+        <source>WebUI Activity</source>
+        <translation>Virkni WebUI</translation>
     </message>
 </context>
 <context>
@@ -5166,6 +5302,46 @@ Minimum requirement: %2.</source>
         <location filename="../gui/mainwindow.cpp" line="1346"/>
         <source>Torrent Files</source>
         <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Kettle Edition %1 is available.</source>
+        <translation>Kettle Edition %1 er tiltæk.</translation>
+    </message>
+    <message>
+        <source>qBittorrent Kettle Edition %1 is available. It is downloaded now and installed at 4:00 AM, or when qBittorrent starts next.</source>
+        <translation>qBittorrent Kettle Edition %1 er tiltæk. Hún er sótt núna og sett upp kl. 4:00 eða næst þegar qBittorrent ræsist.</translation>
+    </message>
+    <message>
+        <source>qBittorrent Kettle Edition %1 is available. It is downloaded now. Turn on &quot;Automatically install Kettle Edition updates&quot; in Options to install it.</source>
+        <translation>qBittorrent Kettle Edition %1 er tiltæk. Hún er sótt núna. Kveiktu á „Setja upp uppfærslur Kettle Edition sjálfkrafa“ í Valkostum til að setja hana upp.</translation>
+    </message>
+    <message>
+        <source>You have the latest qBittorrent Kettle Edition (%1).</source>
+        <translation>Þú ert með nýjustu qBittorrent Kettle Edition (%1).</translation>
+    </message>
+    <message>
+        <source>Could not check for qBittorrent Kettle Edition updates. See the Execution Log for details.</source>
+        <translation>Ekki tókst að athuga með uppfærslur á qBittorrent Kettle Edition. Sjá keyrsluskrána fyrir nánari upplýsingar.</translation>
+    </message>
+    <message>
+        <source>Kettle Edition %1 is available.</source>
+        <translation>Kettle Edition %1 er tiltæk.</translation>
+    </message>
+    <message>
+        <source>qBittorrent Kettle Edition %1 is available. It is downloaded now and installed at 4:00 AM, or when qBittorrent starts next.</source>
+        <translation>qBittorrent Kettle Edition %1 er tiltæk. Hún er sótt núna og sett upp kl. 4:00 eða næst þegar qBittorrent ræsist.</translation>
+    </message>
+    <message>
+        <source>qBittorrent Kettle Edition %1 is available. It is downloaded now. Turn on &quot;Automatically install Kettle Edition updates&quot; in Options to install it.</source>
+        <translation>qBittorrent Kettle Edition %1 er tiltæk. Hún er sótt núna. Kveiktu á „Setja upp uppfærslur Kettle Edition sjálfkrafa“ í Valkostum til að setja hana upp.</translation>
+    </message>
+    <message>
+        <source>You have the latest qBittorrent Kettle Edition (%1).</source>
+        <translation>Þú ert með nýjustu qBittorrent Kettle Edition (%1).</translation>
+    </message>
+    <message>
+        <source>Could not check for qBittorrent Kettle Edition updates. See the Execution Log for details.</source>
+        <translation>Ekki tókst að athuga með uppfærslur á qBittorrent Kettle Edition. Sjá keyrsluskrána fyrir nánari upplýsingar.</translation>
     </message>
 </context>
 <context>
@@ -8876,6 +9052,190 @@ Check the Execution Log for errors.</source>
         <source>Length Error</source>
         <translation type="unfinished"></translation>
     </message>
+    <message>
+        <source>Search settings</source>
+        <translation>Leita í stillingum</translation>
+    </message>
+    <message>
+        <source>No settings match</source>
+        <translation>Engar stillingar passa</translation>
+    </message>
+    <message>
+        <source>User Accounts</source>
+        <translation>Notandareikningar</translation>
+    </message>
+    <message>
+        <source>Automatically install Kettle Edition updates</source>
+        <translation>Setja upp uppfærslur Kettle Edition sjálfkrafa</translation>
+    </message>
+    <message>
+        <source>Status bar and log</source>
+        <translation>Stöðustika og skrá</translation>
+    </message>
+    <message>
+        <source>Files</source>
+        <translation>Skrár</translation>
+    </message>
+    <message>
+        <source>Checking</source>
+        <translation>Athugun</translation>
+    </message>
+    <message>
+        <source>Until the first user account is created, this login always works.</source>
+        <translation>Þar til fyrsti notandareikningurinn er búinn til virkar þessi innskráning alltaf.</translation>
+    </message>
+    <message>
+        <source>Allow this login when user accounts exist</source>
+        <translation>Leyfa þessa innskráningu þegar notandareikningar eru til</translation>
+    </message>
+    <message>
+        <source>Access</source>
+        <translation>Aðgangur</translation>
+    </message>
+    <message>
+        <source>Changes to users, roles and logins apply at once. The settings below apply with OK or Apply.</source>
+        <translation>Breytingar á notendum, hlutverkum og innskráningum taka gildi strax. Stillingarnar hér að neðan taka gildi með Í lagi eða Virkja.</translation>
+    </message>
+    <message>
+        <source>Logins and Activity Log</source>
+        <translation>Innskráningar og virknisskrá</translation>
+    </message>
+    <message>
+        <source>0 means users are logged out after the session timeout.</source>
+        <translation>0 þýðir að notendur eru skráðir út eftir tímamörk setunnar.</translation>
+    </message>
+    <message>
+        <source>Keep users logged in for:</source>
+        <translation>Halda notendum innskráðum í:</translation>
+    </message>
+    <message>
+        <source>Until session timeout</source>
+        <translation>Þar til tímamörk setunnar renna út</translation>
+    </message>
+    <message>
+        <source> days</source>
+        <translation> daga</translation>
+    </message>
+    <message>
+        <source>Lock account after consecutive failures:</source>
+        <translation>Læsa reikningi eftir samfelld mistök:</translation>
+    </message>
+    <message>
+        <source>Keep WebUI activity log for:</source>
+        <translation>Geyma virknisskrá WebUI í:</translation>
+    </message>
+    <message>
+        <source>lock for:</source>
+        <translation>læsa í:</translation>
+    </message>
+    <message>
+        <source>%1 works best with Windows dark mode</source>
+        <translation>%1 virkar best með dökkum ham Windows</translation>
+    </message>
+    <message>
+        <source>WebUI address</source>
+        <translation>Vistfang WebUI</translation>
+    </message>
+    <message>
+        <source>With the WebUI address set to %1, only this PC can reach the WebUI. Remote access, including through a reverse proxy on another machine, will stop working.
+
+Save anyway?</source>
+        <translation>Þegar vistfang WebUI er %1 kemst aðeins þessi tölva í WebUI. Fjaraðgangur, einnig í gegnum öfugan milliþjón á annarri vél, hættir að virka.
+
+Vista samt?</translation>
+    </message>
+    <message>
+        <source>Search settings</source>
+        <translation>Leita í stillingum</translation>
+    </message>
+    <message>
+        <source>No settings match</source>
+        <translation>Engar stillingar passa</translation>
+    </message>
+    <message>
+        <source>User Accounts</source>
+        <translation>Notandareikningar</translation>
+    </message>
+    <message>
+        <source>Automatically install Kettle Edition updates</source>
+        <translation>Setja upp uppfærslur Kettle Edition sjálfkrafa</translation>
+    </message>
+    <message>
+        <source>Status bar and log</source>
+        <translation>Stöðustika og skrá</translation>
+    </message>
+    <message>
+        <source>Files</source>
+        <translation>Skrár</translation>
+    </message>
+    <message>
+        <source>Checking</source>
+        <translation>Athugun</translation>
+    </message>
+    <message>
+        <source>Until the first user account is created, this login always works.</source>
+        <translation>Þar til fyrsti notandareikningurinn er búinn til virkar þessi innskráning alltaf.</translation>
+    </message>
+    <message>
+        <source>Allow this login when user accounts exist</source>
+        <translation>Leyfa þessa innskráningu þegar notandareikningar eru til</translation>
+    </message>
+    <message>
+        <source>Access</source>
+        <translation>Aðgangur</translation>
+    </message>
+    <message>
+        <source>Changes to users, roles and logins apply at once. The settings below apply with OK or Apply.</source>
+        <translation>Breytingar á notendum, hlutverkum og innskráningum taka gildi strax. Stillingarnar hér að neðan taka gildi með Í lagi eða Virkja.</translation>
+    </message>
+    <message>
+        <source>Logins and Activity Log</source>
+        <translation>Innskráningar og virknisskrá</translation>
+    </message>
+    <message>
+        <source>0 means users are logged out after the session timeout.</source>
+        <translation>0 þýðir að notendur eru skráðir út eftir tímamörk setunnar.</translation>
+    </message>
+    <message>
+        <source>Keep users logged in for:</source>
+        <translation>Halda notendum innskráðum í:</translation>
+    </message>
+    <message>
+        <source>Until session timeout</source>
+        <translation>Þar til tímamörk setunnar renna út</translation>
+    </message>
+    <message>
+        <source> days</source>
+        <translation> daga</translation>
+    </message>
+    <message>
+        <source>Lock account after consecutive failures:</source>
+        <translation>Læsa reikningi eftir samfelld mistök:</translation>
+    </message>
+    <message>
+        <source>Keep WebUI activity log for:</source>
+        <translation>Geyma virknisskrá WebUI í:</translation>
+    </message>
+    <message>
+        <source>lock for:</source>
+        <translation>læsa í:</translation>
+    </message>
+    <message>
+        <source>%1 works best with Windows dark mode</source>
+        <translation>%1 virkar best með dökkum ham Windows</translation>
+    </message>
+    <message>
+        <source>WebUI address</source>
+        <translation>Vistfang WebUI</translation>
+    </message>
+    <message>
+        <source>With the WebUI address set to %1, only this PC can reach the WebUI. Remote access, including through a reverse proxy on another machine, will stop working.
+
+Save anyway?</source>
+        <translation>Þegar vistfang WebUI er %1 kemst aðeins þessi tölva í WebUI. Fjaraðgangur, einnig í gegnum öfugan milliþjón á annarri vél, hættir að virka.
+
+Vista samt?</translation>
+    </message>
 </context>
 <context>
     <name>PeerInfo</name>
@@ -9136,6 +9496,22 @@ Check the Execution Log for errors.</source>
     <message>
         <source>&amp;No</source>
         <translation type="vanished">&amp;Nei</translation>
+    </message>
+    <message>
+        <source>Reset auto width</source>
+        <translation>Núllstilla sjálfvirka breidd</translation>
+    </message>
+    <message>
+        <source>Fit all non-hidden columns to their contents again, and forget the widths that were set by hand</source>
+        <translation>Aðlaga aftur allar sýnilegar dálka að innihaldi þeirra og gleyma breiddum sem voru stilltar handvirkt</translation>
+    </message>
+    <message>
+        <source>Reset auto width</source>
+        <translation>Núllstilla sjálfvirka breidd</translation>
+    </message>
+    <message>
+        <source>Fit all non-hidden columns to their contents again, and forget the widths that were set by hand</source>
+        <translation>Aðlaga aftur allar sýnilegar dálka að innihaldi þeirra og gleyma breiddum sem voru stilltar handvirkt</translation>
     </message>
 </context>
 <context>
@@ -10671,6 +11047,14 @@ Check the Execution Log for errors.</source>
         <source>Open link</source>
         <translation type="unfinished"></translation>
     </message>
+    <message>
+        <source>Details</source>
+        <translation>Nánar</translation>
+    </message>
+    <message>
+        <source>Details</source>
+        <translation>Nánar</translation>
+    </message>
 </context>
 <context>
     <name>ScanFoldersModel</name>
@@ -11062,6 +11446,70 @@ Check the Execution Log for errors.</source>
         <source>Resize all non-hidden columns to the size of their contents</source>
         <translation type="unfinished"></translation>
     </message>
+    <message>
+        <source>%1 of %2 shown (%3 hidden)</source>
+        <translation>%1 af %2 sýnt (%3 falið)</translation>
+    </message>
+    <message>
+        <source>%1 of %2 shown</source>
+        <translation>%1 af %2 sýnt</translation>
+    </message>
+    <message>
+        <source>Searching: %1</source>
+        <translation>Leita: %1</translation>
+    </message>
+    <message>
+        <source>Finished: %1</source>
+        <translation>Lokið: %1</translation>
+    </message>
+    <message>
+        <source>Search aborted: %1</source>
+        <translation>Leit hætt: %1</translation>
+    </message>
+    <message>
+        <source>Reset auto width</source>
+        <translation>Núllstilla sjálfvirka breidd</translation>
+    </message>
+    <message>
+        <source>Fit all non-hidden columns to their contents again, and forget the widths that were set by hand</source>
+        <translation>Aðlaga aftur allar sýnilegar dálka að innihaldi þeirra og gleyma breiddum sem voru stilltar handvirkt</translation>
+    </message>
+    <message>
+        <source>Unknown</source>
+        <translation>Óþekkt</translation>
+    </message>
+    <message>
+        <source>%1 of %2 shown (%3 hidden)</source>
+        <translation>%1 af %2 sýnt (%3 falið)</translation>
+    </message>
+    <message>
+        <source>%1 of %2 shown</source>
+        <translation>%1 af %2 sýnt</translation>
+    </message>
+    <message>
+        <source>Searching: %1</source>
+        <translation>Leita: %1</translation>
+    </message>
+    <message>
+        <source>Finished: %1</source>
+        <translation>Lokið: %1</translation>
+    </message>
+    <message>
+        <source>Search aborted: %1</source>
+        <translation>Leit hætt: %1</translation>
+    </message>
+    <message>
+        <source>Reset auto width</source>
+        <translation>Núllstilla sjálfvirka breidd</translation>
+    </message>
+    <message>
+        <source>Fit all non-hidden columns to their contents again, and forget the widths that were set by hand</source>
+        <translation>Aðlaga aftur allar sýnilegar dálka að innihaldi þeirra og gleyma breiddum sem voru stilltar handvirkt</translation>
+    </message>
+    <message>
+        <source>Unknown</source>
+        <translation>Óþekkt</translation>
+    </message>
 </context>
 <context>
     <name>SearchListDelegate</name>
@@ -11353,6 +11801,14 @@ Those plugins were disabled.</source>
         <source>Couldn&apos;t update &quot;%1&quot; search engine plugin. %2</source>
         <translation type="unfinished"></translation>
     </message>
+    <message>
+        <source>Install Kettle Plugins</source>
+        <translation>Setja upp Kettle-viðbætur</translation>
+    </message>
+    <message>
+        <source>Install Kettle Plugins</source>
+        <translation>Setja upp Kettle-viðbætur</translation>
+    </message>
 </context>
 <context>
     <name>SearchPluginSourceDialog</name>
@@ -11528,6 +11984,90 @@ Click the &quot;Search plugins...&quot; button at the bottom right of the window
     <message>
         <source>Search has finished</source>
         <translation type="vanished">Leit lokið</translation>
+    </message>
+    <message>
+        <source>Searches</source>
+        <translation>Leitir</translation>
+    </message>
+    <message>
+        <source>Close the selected search</source>
+        <translation>Loka völdu leitinni</translation>
+    </message>
+    <message>
+        <source>Search for torrents...</source>
+        <translation>Leita að torrentum...</translation>
+    </message>
+    <message>
+        <source>Category to search in</source>
+        <translation>Flokkur til að leita í</translation>
+    </message>
+    <message>
+        <source>Search engines to use</source>
+        <translation>Leitarvélar sem á að nota</translation>
+    </message>
+    <message>
+        <source>There aren&apos;t any search plugins installed.
+Click the &quot;Search plugins...&quot; button at the top right of the window to install some.</source>
+        <translation>Engar leitarviðbætur eru uppsettar.
+Smelltu á hnappinn „Leitarviðbætur...“ efst til hægri í glugganum til að setja upp.</translation>
+    </message>
+    <message>
+        <source>Type a search above and press Enter.</source>
+        <translation>Skrifaðu leit hér að ofan og ýttu á Enter.</translation>
+    </message>
+    <message>
+        <source>Refresh search</source>
+        <translation>Endurnýja leit</translation>
+    </message>
+    <message>
+        <source>Close search</source>
+        <translation>Loka leit</translation>
+    </message>
+    <message>
+        <source>Close all searches</source>
+        <translation>Loka öllum leitum</translation>
+    </message>
+    <message>
+        <source>Searches</source>
+        <translation>Leitir</translation>
+    </message>
+    <message>
+        <source>Close the selected search</source>
+        <translation>Loka völdu leitinni</translation>
+    </message>
+    <message>
+        <source>Search for torrents...</source>
+        <translation>Leita að torrentum...</translation>
+    </message>
+    <message>
+        <source>Category to search in</source>
+        <translation>Flokkur til að leita í</translation>
+    </message>
+    <message>
+        <source>Search engines to use</source>
+        <translation>Leitarvélar sem á að nota</translation>
+    </message>
+    <message>
+        <source>There aren&apos;t any search plugins installed.
+Click the &quot;Search plugins...&quot; button at the top right of the window to install some.</source>
+        <translation>Engar leitarviðbætur eru uppsettar.
+Smelltu á hnappinn „Leitarviðbætur...“ efst til hægri í glugganum til að setja upp.</translation>
+    </message>
+    <message>
+        <source>Type a search above and press Enter.</source>
+        <translation>Skrifaðu leit hér að ofan og ýttu á Enter.</translation>
+    </message>
+    <message>
+        <source>Refresh search</source>
+        <translation>Endurnýja leit</translation>
+    </message>
+    <message>
+        <source>Close search</source>
+        <translation>Loka leit</translation>
+    </message>
+    <message>
+        <source>Close all searches</source>
+        <translation>Loka öllum leitum</translation>
     </message>
 </context>
 <context>
@@ -11993,6 +12533,326 @@ Click the &quot;Search plugins...&quot; button at the bottom right of the window
         <location filename="../gui/statsdialog.cpp" line="111"/>
         <source>%1 ms</source>
         <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Copy</source>
+        <translation>Afrita</translation>
+    </message>
+    <message>
+        <source>Overview</source>
+        <translation>Yfirlit</translation>
+    </message>
+    <message>
+        <source>Transfer</source>
+        <translation>Flutningur</translation>
+    </message>
+    <message>
+        <source>This session</source>
+        <translation>Þessi seta</translation>
+    </message>
+    <message>
+        <source>All time</source>
+        <translation>Allur tími</translation>
+    </message>
+    <message>
+        <source>Downloaded:</source>
+        <translation>Sótt:</translation>
+    </message>
+    <message>
+        <source>Uploaded:</source>
+        <translation>Sent:</translation>
+    </message>
+    <message>
+        <source>Share ratio:</source>
+        <translation>Deilihlutfall:</translation>
+    </message>
+    <message>
+        <source>Current speed:</source>
+        <translation>Núverandi hraði:</translation>
+    </message>
+    <message>
+        <source>Activity</source>
+        <translation>Virkni</translation>
+    </message>
+    <message>
+        <source>Torrents downloading:</source>
+        <translation>Torrent í niðurhali:</translation>
+    </message>
+    <message>
+        <source>Torrents seeding:</source>
+        <translation>Torrent í deilingu:</translation>
+    </message>
+    <message>
+        <source>Torrents stopped:</source>
+        <translation>Stöðvuð torrent:</translation>
+    </message>
+    <message>
+        <source>Torrents with errors:</source>
+        <translation>Torrent með villur:</translation>
+    </message>
+    <message>
+        <source>Running for:</source>
+        <translation>Í gangi í:</translation>
+    </message>
+    <message>
+        <source>History</source>
+        <translation>Saga</translation>
+    </message>
+    <message>
+        <source>Period</source>
+        <translation>Tímabil</translation>
+    </message>
+    <message>
+        <source>Today</source>
+        <translation>Í dag</translation>
+    </message>
+    <message>
+        <source>Last 7 days</source>
+        <translation>Síðustu 7 dagar</translation>
+    </message>
+    <message>
+        <source>This month</source>
+        <translation>Þessi mánuður</translation>
+    </message>
+    <message>
+        <source>Last month</source>
+        <translation>Síðasti mánuður</translation>
+    </message>
+    <message>
+        <source>Last 12 months</source>
+        <translation>Síðustu 12 mánuðir</translation>
+    </message>
+    <message>
+        <source>Tracking since:</source>
+        <translation>Fylgst með frá:</translation>
+    </message>
+    <message>
+        <source>By month</source>
+        <translation>Eftir mánuðum</translation>
+    </message>
+    <message>
+        <source>Month</source>
+        <translation>Mánuður</translation>
+    </message>
+    <message>
+        <source>Downloaded</source>
+        <translation>Sótt</translation>
+    </message>
+    <message>
+        <source>Uploaded</source>
+        <translation>Sent</translation>
+    </message>
+    <message>
+        <source>Share ratio</source>
+        <translation>Deilihlutfall</translation>
+    </message>
+    <message>
+        <source>WebUI downloads added, this month</source>
+        <translation>Niðurhal bætt við í gegnum WebUI, þennan mánuð</translation>
+    </message>
+    <message>
+        <source>Counts the requests that added a download. Apps without a login, such as Sonarr and Radarr, are shown as (localhost). Downloads added in the desktop window are not counted.</source>
+        <translation>Telur beiðnir sem bættu við niðurhali. Forrit án innskráningar, eins og Sonarr og Radarr, birtast sem (localhost). Niðurhal sem bætt er við í skjáborðsglugganum er ekki talið.</translation>
+    </message>
+    <message>
+        <source>Technical</source>
+        <translation>Tæknilegt</translation>
+    </message>
+    <message>
+        <source>Disk</source>
+        <translation>Diskur</translation>
+    </message>
+    <message>
+        <source>Peers waiting on disk writes:</source>
+        <translation>Jafningjar sem bíða eftir skrifum á disk:</translation>
+    </message>
+    <message>
+        <source>Peers waiting on disk reads:</source>
+        <translation>Jafningjar sem bíða eftir lestri af diski:</translation>
+    </message>
+    <message>
+        <source>Network</source>
+        <translation>Net</translation>
+    </message>
+    <message>
+        <source>DHT nodes:</source>
+        <translation>DHT-hnútar:</translation>
+    </message>
+    <message>
+        <source>Data discarded this session:</source>
+        <translation>Gögnum hent í þessari setu:</translation>
+    </message>
+    <message>
+        <source>Before tracking began</source>
+        <translation>Áður en rakning hófst</translation>
+    </message>
+    <message>
+        <source>Nothing added yet</source>
+        <translation>Engu bætt við enn</translation>
+    </message>
+    <message>
+        <source>Off</source>
+        <translation>Slökkt</translation>
+    </message>
+    <message>
+        <source>Copy</source>
+        <translation>Afrita</translation>
+    </message>
+    <message>
+        <source>Overview</source>
+        <translation>Yfirlit</translation>
+    </message>
+    <message>
+        <source>Transfer</source>
+        <translation>Flutningur</translation>
+    </message>
+    <message>
+        <source>This session</source>
+        <translation>Þessi seta</translation>
+    </message>
+    <message>
+        <source>All time</source>
+        <translation>Allur tími</translation>
+    </message>
+    <message>
+        <source>Downloaded:</source>
+        <translation>Sótt:</translation>
+    </message>
+    <message>
+        <source>Uploaded:</source>
+        <translation>Sent:</translation>
+    </message>
+    <message>
+        <source>Share ratio:</source>
+        <translation>Deilihlutfall:</translation>
+    </message>
+    <message>
+        <source>Current speed:</source>
+        <translation>Núverandi hraði:</translation>
+    </message>
+    <message>
+        <source>Activity</source>
+        <translation>Virkni</translation>
+    </message>
+    <message>
+        <source>Torrents downloading:</source>
+        <translation>Torrent í niðurhali:</translation>
+    </message>
+    <message>
+        <source>Torrents seeding:</source>
+        <translation>Torrent í deilingu:</translation>
+    </message>
+    <message>
+        <source>Torrents stopped:</source>
+        <translation>Stöðvuð torrent:</translation>
+    </message>
+    <message>
+        <source>Torrents with errors:</source>
+        <translation>Torrent með villur:</translation>
+    </message>
+    <message>
+        <source>Running for:</source>
+        <translation>Í gangi í:</translation>
+    </message>
+    <message>
+        <source>History</source>
+        <translation>Saga</translation>
+    </message>
+    <message>
+        <source>Period</source>
+        <translation>Tímabil</translation>
+    </message>
+    <message>
+        <source>Today</source>
+        <translation>Í dag</translation>
+    </message>
+    <message>
+        <source>Last 7 days</source>
+        <translation>Síðustu 7 dagar</translation>
+    </message>
+    <message>
+        <source>This month</source>
+        <translation>Þessi mánuður</translation>
+    </message>
+    <message>
+        <source>Last month</source>
+        <translation>Síðasti mánuður</translation>
+    </message>
+    <message>
+        <source>Last 12 months</source>
+        <translation>Síðustu 12 mánuðir</translation>
+    </message>
+    <message>
+        <source>Tracking since:</source>
+        <translation>Fylgst með frá:</translation>
+    </message>
+    <message>
+        <source>By month</source>
+        <translation>Eftir mánuðum</translation>
+    </message>
+    <message>
+        <source>Month</source>
+        <translation>Mánuður</translation>
+    </message>
+    <message>
+        <source>Downloaded</source>
+        <translation>Sótt</translation>
+    </message>
+    <message>
+        <source>Uploaded</source>
+        <translation>Sent</translation>
+    </message>
+    <message>
+        <source>Share ratio</source>
+        <translation>Deilihlutfall</translation>
+    </message>
+    <message>
+        <source>WebUI downloads added, this month</source>
+        <translation>Niðurhal bætt við í gegnum WebUI, þennan mánuð</translation>
+    </message>
+    <message>
+        <source>Counts the requests that added a download. Apps without a login, such as Sonarr and Radarr, are shown as (localhost). Downloads added in the desktop window are not counted.</source>
+        <translation>Telur beiðnir sem bættu við niðurhali. Forrit án innskráningar, eins og Sonarr og Radarr, birtast sem (localhost). Niðurhal sem bætt er við í skjáborðsglugganum er ekki talið.</translation>
+    </message>
+    <message>
+        <source>Technical</source>
+        <translation>Tæknilegt</translation>
+    </message>
+    <message>
+        <source>Disk</source>
+        <translation>Diskur</translation>
+    </message>
+    <message>
+        <source>Peers waiting on disk writes:</source>
+        <translation>Jafningjar sem bíða eftir skrifum á disk:</translation>
+    </message>
+    <message>
+        <source>Peers waiting on disk reads:</source>
+        <translation>Jafningjar sem bíða eftir lestri af diski:</translation>
+    </message>
+    <message>
+        <source>Network</source>
+        <translation>Net</translation>
+    </message>
+    <message>
+        <source>DHT nodes:</source>
+        <translation>DHT-hnútar:</translation>
+    </message>
+    <message>
+        <source>Data discarded this session:</source>
+        <translation>Gögnum hent í þessari setu:</translation>
+    </message>
+    <message>
+        <source>Before tracking began</source>
+        <translation>Áður en rakning hófst</translation>
+    </message>
+    <message>
+        <source>Nothing added yet</source>
+        <translation>Engu bætt við enn</translation>
+    </message>
+    <message>
+        <source>Off</source>
+        <translation>Slökkt</translation>
     </message>
 </context>
 <context>
@@ -12734,6 +13594,22 @@ Please choose a different name and try again.</source>
         <location filename="../gui/torrentcontentwidget.cpp" line="471"/>
         <source>By shown file order</source>
         <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Reset auto width</source>
+        <translation>Núllstilla sjálfvirka breidd</translation>
+    </message>
+    <message>
+        <source>Fit all non-hidden columns to their contents again, and forget the widths that were set by hand</source>
+        <translation>Aðlaga aftur allar sýnilegar dálka að innihaldi þeirra og gleyma breiddum sem voru stilltar handvirkt</translation>
+    </message>
+    <message>
+        <source>Reset auto width</source>
+        <translation>Núllstilla sjálfvirka breidd</translation>
+    </message>
+    <message>
+        <source>Fit all non-hidden columns to their contents again, and forget the widths that were set by hand</source>
+        <translation>Aðlaga aftur allar sýnilegar dálka að innihaldi þeirra og gleyma breiddum sem voru stilltar handvirkt</translation>
     </message>
 </context>
 <context>
@@ -14067,6 +14943,22 @@ Please choose a different name and try again.</source>
         <source>Column visibility</source>
         <translation type="unfinished"></translation>
     </message>
+    <message>
+        <source>Reset auto width</source>
+        <translation>Núllstilla sjálfvirka breidd</translation>
+    </message>
+    <message>
+        <source>Fit all non-hidden columns to their contents again, and forget the widths that were set by hand</source>
+        <translation>Aðlaga aftur allar sýnilegar dálka að innihaldi þeirra og gleyma breiddum sem voru stilltar handvirkt</translation>
+    </message>
+    <message>
+        <source>Reset auto width</source>
+        <translation>Núllstilla sjálfvirka breidd</translation>
+    </message>
+    <message>
+        <source>Fit all non-hidden columns to their contents again, and forget the widths that were set by hand</source>
+        <translation>Aðlaga aftur allar sýnilegar dálka að innihaldi þeirra og gleyma breiddum sem voru stilltar handvirkt</translation>
+    </message>
 </context>
 <context>
     <name>TrackerLoginDialog</name>
@@ -15087,6 +15979,22 @@ Please choose a different name and try again.</source>
         <source>Rename...</source>
         <translation type="vanished">Endurnefna</translation>
     </message>
+    <message>
+        <source>Reset auto width</source>
+        <translation>Núllstilla sjálfvirka breidd</translation>
+    </message>
+    <message>
+        <source>Fit all non-hidden columns to their contents again, and forget the widths that were set by hand</source>
+        <translation>Aðlaga aftur allar sýnilegar dálka að innihaldi þeirra og gleyma breiddum sem voru stilltar handvirkt</translation>
+    </message>
+    <message>
+        <source>Reset auto width</source>
+        <translation>Núllstilla sjálfvirka breidd</translation>
+    </message>
+    <message>
+        <source>Fit all non-hidden columns to their contents again, and forget the widths that were set by hand</source>
+        <translation>Aðlaga aftur allar sýnilegar dálka að innihaldi þeirra og gleyma breiddum sem voru stilltar handvirkt</translation>
+    </message>
 </context>
 <context>
     <name>UIThemeDialog</name>
@@ -15429,6 +16337,46 @@ Please choose a different name and try again.</source>
         <source>WebAPI login failure. Reason: invalid credentials, attempt count: %1, IP: %2, username: %3</source>
         <translation type="unfinished"></translation>
     </message>
+    <message>
+        <source>Something went wrong on the server. Details are in qBittorrent&apos;s log.</source>
+        <translation>Eitthvað fór úrskeiðis á þjóninum. Nánari upplýsingar eru í skrá qBittorrent.</translation>
+    </message>
+    <message>
+        <source>This account is locked after too many failed login attempts. Try again in %1 minute(s).</source>
+        <translation>Þessi reikningur er læstur vegna of margra misheppnaðra innskráningartilrauna. Reyndu aftur eftir %1 mínútu(r).</translation>
+    </message>
+    <message>
+        <source>Your role (%1) doesn&apos;t allow this: %2.</source>
+        <translation>Hlutverk þitt (%1) leyfir þetta ekki: %2.</translation>
+    </message>
+    <message>
+        <source>Only an admin can remove the tag that says who added a torrent.</source>
+        <translation>Aðeins stjórnandi getur fjarlægt merkið sem sýnir hver bætti torrenti við.</translation>
+    </message>
+    <message>
+        <source>Only an admin can clear or replace all tags of a torrent that has a tag saying who added it.</source>
+        <translation>Aðeins stjórnandi getur hreinsað eða skipt út öllum merkjum torrents sem er með merki um hver bætti því við.</translation>
+    </message>
+    <message>
+        <source>Something went wrong on the server. Details are in qBittorrent&apos;s log.</source>
+        <translation>Eitthvað fór úrskeiðis á þjóninum. Nánari upplýsingar eru í skrá qBittorrent.</translation>
+    </message>
+    <message>
+        <source>This account is locked after too many failed login attempts. Try again in %1 minute(s).</source>
+        <translation>Þessi reikningur er læstur vegna of margra misheppnaðra innskráningartilrauna. Reyndu aftur eftir %1 mínútu(r).</translation>
+    </message>
+    <message>
+        <source>Your role (%1) doesn&apos;t allow this: %2.</source>
+        <translation>Hlutverk þitt (%1) leyfir þetta ekki: %2.</translation>
+    </message>
+    <message>
+        <source>Only an admin can remove the tag that says who added a torrent.</source>
+        <translation>Aðeins stjórnandi getur fjarlægt merkið sem sýnir hver bætti torrenti við.</translation>
+    </message>
+    <message>
+        <source>Only an admin can clear or replace all tags of a torrent that has a tag saying who added it.</source>
+        <translation>Aðeins stjórnandi getur hreinsað eða skipt út öllum merkjum torrents sem er með merki um hver bætti því við.</translation>
+    </message>
 </context>
 <context>
     <name>WebUI</name>
@@ -15726,6 +16674,669 @@ Please choose a different name and try again.</source>
     <message>
         <source>Log in</source>
         <translation type="obsolete">Skrá inn</translation>
+    </message>
+</context>
+<context>
+    <name>UpdateInstaller</name>
+    <message>
+        <source>Kettle Edition update</source>
+        <translation>Uppfærsla Kettle Edition</translation>
+    </message>
+    <message>
+        <source>Kettle Edition was updated to %1.</source>
+        <translation>Kettle Edition var uppfærð í %1.</translation>
+    </message>
+    <message>
+        <source>Kettle Edition updated</source>
+        <translation>Kettle Edition uppfærð</translation>
+    </message>
+    <message>
+        <source>Downloading Kettle Edition %1 (%2 changed files).</source>
+        <translation>Sæki Kettle Edition %1 (%2 breyttar skrár).</translation>
+    </message>
+    <message>
+        <source>Kettle Edition %1 is downloaded and ready to install.</source>
+        <translation>Kettle Edition %1 er sótt og tilbúin til uppsetningar.</translation>
+    </message>
+    <message>
+        <source>Kettle Edition update</source>
+        <translation>Uppfærsla Kettle Edition</translation>
+    </message>
+    <message>
+        <source>Kettle Edition was updated to %1.</source>
+        <translation>Kettle Edition var uppfærð í %1.</translation>
+    </message>
+    <message>
+        <source>Kettle Edition updated</source>
+        <translation>Kettle Edition uppfærð</translation>
+    </message>
+    <message>
+        <source>Downloading Kettle Edition %1 (%2 changed files).</source>
+        <translation>Sæki Kettle Edition %1 (%2 breyttar skrár).</translation>
+    </message>
+    <message>
+        <source>Kettle Edition %1 is downloaded and ready to install.</source>
+        <translation>Kettle Edition %1 er sótt og tilbúin til uppsetningar.</translation>
+    </message>
+</context>
+<context>
+    <name>UserAccountDialog</name>
+    <message>
+        <source>User</source>
+        <translation>Notandi</translation>
+    </message>
+    <message>
+        <source>Username:</source>
+        <translation>Notandanafn:</translation>
+    </message>
+    <message>
+        <source>Role:</source>
+        <translation>Hlutverk:</translation>
+    </message>
+    <message>
+        <source>Password:</source>
+        <translation>Lykilorð:</translation>
+    </message>
+    <message>
+        <source>Confirm password:</source>
+        <translation>Staðfesta lykilorð:</translation>
+    </message>
+    <message>
+        <source>Disable this account</source>
+        <translation>Gera þennan reikning óvirkan</translation>
+    </message>
+    <message>
+        <source>Edit User</source>
+        <translation>Breyta notanda</translation>
+    </message>
+    <message>
+        <source>Leave empty to keep the current password</source>
+        <translation>Skildu eftir autt til að halda núverandi lykilorði</translation>
+    </message>
+    <message>
+        <source>Add User</source>
+        <translation>Bæta við notanda</translation>
+    </message>
+    <message>
+        <source>At least %1 characters</source>
+        <translation>Að minnsta kosti %1 stafir</translation>
+    </message>
+    <message>
+        <source>Enter a username.</source>
+        <translation>Sláðu inn notandanafn.</translation>
+    </message>
+    <message>
+        <source>The password must be at least %1 characters long.</source>
+        <translation>Lykilorðið þarf að vera að minnsta kosti %1 stafir.</translation>
+    </message>
+    <message>
+        <source>The passwords don&apos;t match.</source>
+        <translation>Lykilorðin passa ekki saman.</translation>
+    </message>
+    <message>
+        <source>User</source>
+        <translation>Notandi</translation>
+    </message>
+    <message>
+        <source>Username:</source>
+        <translation>Notandanafn:</translation>
+    </message>
+    <message>
+        <source>Role:</source>
+        <translation>Hlutverk:</translation>
+    </message>
+    <message>
+        <source>Password:</source>
+        <translation>Lykilorð:</translation>
+    </message>
+    <message>
+        <source>Confirm password:</source>
+        <translation>Staðfesta lykilorð:</translation>
+    </message>
+    <message>
+        <source>Disable this account</source>
+        <translation>Gera þennan reikning óvirkan</translation>
+    </message>
+    <message>
+        <source>Edit User</source>
+        <translation>Breyta notanda</translation>
+    </message>
+    <message>
+        <source>Leave empty to keep the current password</source>
+        <translation>Skildu eftir autt til að halda núverandi lykilorði</translation>
+    </message>
+    <message>
+        <source>Add User</source>
+        <translation>Bæta við notanda</translation>
+    </message>
+    <message>
+        <source>At least %1 characters</source>
+        <translation>Að minnsta kosti %1 stafir</translation>
+    </message>
+    <message>
+        <source>Enter a username.</source>
+        <translation>Sláðu inn notandanafn.</translation>
+    </message>
+    <message>
+        <source>The password must be at least %1 characters long.</source>
+        <translation>Lykilorðið þarf að vera að minnsta kosti %1 stafir.</translation>
+    </message>
+    <message>
+        <source>The passwords don&apos;t match.</source>
+        <translation>Lykilorðin passa ekki saman.</translation>
+    </message>
+</context>
+<context>
+    <name>UserAccountsWidget</name>
+    <message>
+        <source>User Accounts</source>
+        <translation>Notandareikningar</translation>
+    </message>
+    <message>
+        <source>Users</source>
+        <translation>Notendur</translation>
+    </message>
+    <message>
+        <source>People who can log in to the WebUI with their own username and password.</source>
+        <translation>Fólk sem getur skráð sig inn í WebUI með eigin notandanafni og lykilorði.</translation>
+    </message>
+    <message>
+        <source>Add User...</source>
+        <translation>Bæta við notanda...</translation>
+    </message>
+    <message>
+        <source>Edit...</source>
+        <translation>Breyta...</translation>
+    </message>
+    <message>
+        <source>Remove</source>
+        <translation>Fjarlægja</translation>
+    </message>
+    <message>
+        <source>Roles</source>
+        <translation>Hlutverk</translation>
+    </message>
+    <message>
+        <source>A role decides what its users are allowed to do.</source>
+        <translation>Hlutverk ákveður hvað notendur þess mega gera.</translation>
+    </message>
+    <message>
+        <source>Add Role...</source>
+        <translation>Bæta við hlutverki...</translation>
+    </message>
+    <message>
+        <source>Logged In</source>
+        <translation>Innskráðir</translation>
+    </message>
+    <message>
+        <source>Browsers and devices where someone is logged in with a user account.</source>
+        <translation>Vafrar og tæki þar sem einhver er innskráður með notandareikningi.</translation>
+    </message>
+    <message>
+        <source>Log Out</source>
+        <translation>Skrá út</translation>
+    </message>
+    <message>
+        <source>Username</source>
+        <translation>Notandanafn</translation>
+    </message>
+    <message>
+        <source>Role</source>
+        <translation>Hlutverk</translation>
+    </message>
+    <message>
+        <source>Status</source>
+        <translation>Staða</translation>
+    </message>
+    <message>
+        <source>Last login</source>
+        <translation>Síðasta innskráning</translation>
+    </message>
+    <message>
+        <source>Created</source>
+        <translation>Búið til</translation>
+    </message>
+    <message>
+        <source>Name</source>
+        <translation>Heiti</translation>
+    </message>
+    <message>
+        <source>Description</source>
+        <translation>Lýsing</translation>
+    </message>
+    <message>
+        <source>Permissions</source>
+        <translation>Heimildir</translation>
+    </message>
+    <message>
+        <source>User</source>
+        <translation>Notandi</translation>
+    </message>
+    <message>
+        <source>Browser</source>
+        <translation>Vafri</translation>
+    </message>
+    <message>
+        <source>Logged in</source>
+        <translation>Skráði sig inn</translation>
+    </message>
+    <message>
+        <source>Last active</source>
+        <translation>Síðast virkur</translation>
+    </message>
+    <message>
+        <source>Expires</source>
+        <translation>Rennur út</translation>
+    </message>
+    <message>
+        <source>The user database could not be opened. See the Execution Log for details.</source>
+        <translation>Ekki tókst að opna notendagagnagrunninn. Sjá keyrsluskrána fyrir nánari upplýsingar.</translation>
+    </message>
+    <message>
+        <source>Disabled</source>
+        <translation>Óvirkur</translation>
+    </message>
+    <message>
+        <source>Enabled</source>
+        <translation>Virkur</translation>
+    </message>
+    <message>
+        <source>Never</source>
+        <translation>Aldrei</translation>
+    </message>
+    <message>
+        <source>No accounts yet, so everyone still uses the shared WebUI login. Add an Admin account first.</source>
+        <translation>Engir reikningar enn, svo allir nota enn sameiginlegu WebUI-innskráninguna. Bættu fyrst við stjórnandareikningi.</translation>
+    </message>
+    <message>
+        <source>Couldn&apos;t read the user database. %1</source>
+        <translation>Ekki tókst að lesa notendagagnagrunninn. %1</translation>
+    </message>
+    <message>
+        <source>Remove user</source>
+        <translation>Fjarlægja notanda</translation>
+    </message>
+    <message>
+        <source>Are you sure you want to remove the user &apos;%1&apos;?</source>
+        <translation>Ertu viss um að þú viljir fjarlægja notandann „%1“?</translation>
+    </message>
+    <message>
+        <source>Remove role</source>
+        <translation>Fjarlægja hlutverk</translation>
+    </message>
+    <message>
+        <source>Are you sure you want to remove the role &apos;%1&apos;?</source>
+        <translation>Ertu viss um að þú viljir fjarlægja hlutverkið „%1“?</translation>
+    </message>
+    <message>
+        <source>Enable</source>
+        <translation>Virkja</translation>
+    </message>
+    <message>
+        <source>Disable</source>
+        <translation>Gera óvirkan</translation>
+    </message>
+    <message>
+        <source>Log Out Everywhere</source>
+        <translation>Skrá út alls staðar</translation>
+    </message>
+    <message>
+        <source>User Accounts</source>
+        <translation>Notandareikningar</translation>
+    </message>
+    <message>
+        <source>Users</source>
+        <translation>Notendur</translation>
+    </message>
+    <message>
+        <source>People who can log in to the WebUI with their own username and password.</source>
+        <translation>Fólk sem getur skráð sig inn í WebUI með eigin notandanafni og lykilorði.</translation>
+    </message>
+    <message>
+        <source>Add User...</source>
+        <translation>Bæta við notanda...</translation>
+    </message>
+    <message>
+        <source>Edit...</source>
+        <translation>Breyta...</translation>
+    </message>
+    <message>
+        <source>Remove</source>
+        <translation>Fjarlægja</translation>
+    </message>
+    <message>
+        <source>Roles</source>
+        <translation>Hlutverk</translation>
+    </message>
+    <message>
+        <source>A role decides what its users are allowed to do.</source>
+        <translation>Hlutverk ákveður hvað notendur þess mega gera.</translation>
+    </message>
+    <message>
+        <source>Add Role...</source>
+        <translation>Bæta við hlutverki...</translation>
+    </message>
+    <message>
+        <source>Logged In</source>
+        <translation>Innskráðir</translation>
+    </message>
+    <message>
+        <source>Browsers and devices where someone is logged in with a user account.</source>
+        <translation>Vafrar og tæki þar sem einhver er innskráður með notandareikningi.</translation>
+    </message>
+    <message>
+        <source>Log Out</source>
+        <translation>Skrá út</translation>
+    </message>
+    <message>
+        <source>Username</source>
+        <translation>Notandanafn</translation>
+    </message>
+    <message>
+        <source>Role</source>
+        <translation>Hlutverk</translation>
+    </message>
+    <message>
+        <source>Status</source>
+        <translation>Staða</translation>
+    </message>
+    <message>
+        <source>Last login</source>
+        <translation>Síðasta innskráning</translation>
+    </message>
+    <message>
+        <source>Created</source>
+        <translation>Búið til</translation>
+    </message>
+    <message>
+        <source>Name</source>
+        <translation>Heiti</translation>
+    </message>
+    <message>
+        <source>Description</source>
+        <translation>Lýsing</translation>
+    </message>
+    <message>
+        <source>Permissions</source>
+        <translation>Heimildir</translation>
+    </message>
+    <message>
+        <source>User</source>
+        <translation>Notandi</translation>
+    </message>
+    <message>
+        <source>Browser</source>
+        <translation>Vafri</translation>
+    </message>
+    <message>
+        <source>Logged in</source>
+        <translation>Skráði sig inn</translation>
+    </message>
+    <message>
+        <source>Last active</source>
+        <translation>Síðast virkur</translation>
+    </message>
+    <message>
+        <source>Expires</source>
+        <translation>Rennur út</translation>
+    </message>
+    <message>
+        <source>The user database could not be opened. See the Execution Log for details.</source>
+        <translation>Ekki tókst að opna notendagagnagrunninn. Sjá keyrsluskrána fyrir nánari upplýsingar.</translation>
+    </message>
+    <message>
+        <source>Disabled</source>
+        <translation>Óvirkur</translation>
+    </message>
+    <message>
+        <source>Enabled</source>
+        <translation>Virkur</translation>
+    </message>
+    <message>
+        <source>Never</source>
+        <translation>Aldrei</translation>
+    </message>
+    <message>
+        <source>No accounts yet, so everyone still uses the shared WebUI login. Add an Admin account first.</source>
+        <translation>Engir reikningar enn, svo allir nota enn sameiginlegu WebUI-innskráninguna. Bættu fyrst við stjórnandareikningi.</translation>
+    </message>
+    <message>
+        <source>Couldn&apos;t read the user database. %1</source>
+        <translation>Ekki tókst að lesa notendagagnagrunninn. %1</translation>
+    </message>
+    <message>
+        <source>Remove user</source>
+        <translation>Fjarlægja notanda</translation>
+    </message>
+    <message>
+        <source>Are you sure you want to remove the user &apos;%1&apos;?</source>
+        <translation>Ertu viss um að þú viljir fjarlægja notandann „%1“?</translation>
+    </message>
+    <message>
+        <source>Remove role</source>
+        <translation>Fjarlægja hlutverk</translation>
+    </message>
+    <message>
+        <source>Are you sure you want to remove the role &apos;%1&apos;?</source>
+        <translation>Ertu viss um að þú viljir fjarlægja hlutverkið „%1“?</translation>
+    </message>
+    <message>
+        <source>Enable</source>
+        <translation>Virkja</translation>
+    </message>
+    <message>
+        <source>Disable</source>
+        <translation>Gera óvirkan</translation>
+    </message>
+    <message>
+        <source>Log Out Everywhere</source>
+        <translation>Skrá út alls staðar</translation>
+    </message>
+</context>
+<context>
+    <name>UserRoleDialog</name>
+    <message>
+        <source>Role</source>
+        <translation>Hlutverk</translation>
+    </message>
+    <message>
+        <source>Name:</source>
+        <translation>Heiti:</translation>
+    </message>
+    <message>
+        <source>Description:</source>
+        <translation>Lýsing:</translation>
+    </message>
+    <message>
+        <source>Gives control over the PC or qBittorrent itself.</source>
+        <translation>Veitir stjórn á tölvunni eða qBittorrent sjálfu.</translation>
+    </message>
+    <message>
+        <source>Add Role</source>
+        <translation>Bæta við hlutverki</translation>
+    </message>
+    <message>
+        <source>Edit Role</source>
+        <translation>Breyta hlutverki</translation>
+    </message>
+    <message>
+        <source>Enter a role name.</source>
+        <translation>Sláðu inn heiti hlutverks.</translation>
+    </message>
+    <message>
+        <source>Role</source>
+        <translation>Hlutverk</translation>
+    </message>
+    <message>
+        <source>Name:</source>
+        <translation>Heiti:</translation>
+    </message>
+    <message>
+        <source>Description:</source>
+        <translation>Lýsing:</translation>
+    </message>
+    <message>
+        <source>Gives control over the PC or qBittorrent itself.</source>
+        <translation>Veitir stjórn á tölvunni eða qBittorrent sjálfu.</translation>
+    </message>
+    <message>
+        <source>Add Role</source>
+        <translation>Bæta við hlutverki</translation>
+    </message>
+    <message>
+        <source>Edit Role</source>
+        <translation>Breyta hlutverki</translation>
+    </message>
+    <message>
+        <source>Enter a role name.</source>
+        <translation>Sláðu inn heiti hlutverks.</translation>
+    </message>
+</context>
+<context>
+    <name>WebUIActivityWidget</name>
+    <message>
+        <source>All</source>
+        <translation>Allt</translation>
+    </message>
+    <message>
+        <source>Filter activity</source>
+        <translation>Sía virkni</translation>
+    </message>
+    <message>
+        <source>Export...</source>
+        <translation>Flytja út...</translation>
+    </message>
+    <message>
+        <source>User:</source>
+        <translation>Notandi:</translation>
+    </message>
+    <message>
+        <source>Category:</source>
+        <translation>Flokkur:</translation>
+    </message>
+    <message>
+        <source>Result:</source>
+        <translation>Niðurstaða:</translation>
+    </message>
+    <message>
+        <source>Time</source>
+        <translation>Tími</translation>
+    </message>
+    <message>
+        <source>User</source>
+        <translation>Notandi</translation>
+    </message>
+    <message>
+        <source>Role</source>
+        <translation>Hlutverk</translation>
+    </message>
+    <message>
+        <source>Category</source>
+        <translation>Flokkur</translation>
+    </message>
+    <message>
+        <source>Action</source>
+        <translation>Aðgerð</translation>
+    </message>
+    <message>
+        <source>Result</source>
+        <translation>Niðurstaða</translation>
+    </message>
+    <message>
+        <source>The user database could not be opened. See the General tab for details.</source>
+        <translation>Ekki tókst að opna notendagagnagrunninn. Sjá flipann Almennt fyrir nánari upplýsingar.</translation>
+    </message>
+    <message>
+        <source>Results (showing %1 out of %2)</source>
+        <translation>Niðurstöður (sýni %1 af %2)</translation>
+    </message>
+    <message>
+        <source>Copy</source>
+        <translation>Afrita</translation>
+    </message>
+    <message>
+        <source>Export WebUI activity</source>
+        <translation>Flytja út virkni WebUI</translation>
+    </message>
+    <message>
+        <source>CSV files</source>
+        <translation>CSV-skrár</translation>
+    </message>
+    <message>
+        <source>Couldn&apos;t save the file. Reason: %1</source>
+        <translation>Ekki tókst að vista skrána. Ástæða: %1</translation>
+    </message>
+    <message>
+        <source>All</source>
+        <translation>Allt</translation>
+    </message>
+    <message>
+        <source>Filter activity</source>
+        <translation>Sía virkni</translation>
+    </message>
+    <message>
+        <source>Export...</source>
+        <translation>Flytja út...</translation>
+    </message>
+    <message>
+        <source>User:</source>
+        <translation>Notandi:</translation>
+    </message>
+    <message>
+        <source>Category:</source>
+        <translation>Flokkur:</translation>
+    </message>
+    <message>
+        <source>Result:</source>
+        <translation>Niðurstaða:</translation>
+    </message>
+    <message>
+        <source>Time</source>
+        <translation>Tími</translation>
+    </message>
+    <message>
+        <source>User</source>
+        <translation>Notandi</translation>
+    </message>
+    <message>
+        <source>Role</source>
+        <translation>Hlutverk</translation>
+    </message>
+    <message>
+        <source>Category</source>
+        <translation>Flokkur</translation>
+    </message>
+    <message>
+        <source>Action</source>
+        <translation>Aðgerð</translation>
+    </message>
+    <message>
+        <source>Result</source>
+        <translation>Niðurstaða</translation>
+    </message>
+    <message>
+        <source>The user database could not be opened. See the General tab for details.</source>
+        <translation>Ekki tókst að opna notendagagnagrunninn. Sjá flipann Almennt fyrir nánari upplýsingar.</translation>
+    </message>
+    <message>
+        <source>Results (showing %1 out of %2)</source>
+        <translation>Niðurstöður (sýni %1 af %2)</translation>
+    </message>
+    <message>
+        <source>Copy</source>
+        <translation>Afrita</translation>
+    </message>
+    <message>
+        <source>Export WebUI activity</source>
+        <translation>Flytja út virkni WebUI</translation>
+    </message>
+    <message>
+        <source>CSV files</source>
+        <translation>CSV-skrár</translation>
+    </message>
+    <message>
+        <source>Couldn&apos;t save the file. Reason: %1</source>
+        <translation>Ekki tókst að vista skrána. Ástæða: %1</translation>
     </message>
 </context>
 </TS>

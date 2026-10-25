@@ -141,6 +141,62 @@
         <source>The free IP to Country Lite database by DB-IP is used for resolving the countries of peers. The database is licensed under the Creative Commons Attribution 4.0 International License</source>
         <translation type="unfinished"></translation>
     </message>
+    <message>
+        <source>This edition</source>
+        <translation>Այս թողարկումը</translation>
+    </message>
+    <message>
+        <source>Edition version:</source>
+        <translation>Թողարկման տարբերակը՝</translation>
+    </message>
+    <message>
+        <source>Based on:</source>
+        <translation>Հիմնված է՝</translation>
+    </message>
+    <message>
+        <source>Maintainer:</source>
+        <translation>Պահպանող՝</translation>
+    </message>
+    <message>
+        <source>qBittorrent project:</source>
+        <translation>qBittorrent նախագիծ՝</translation>
+    </message>
+    <message>
+        <source>Kettle Edition is a personal build of qBittorrent that adds user accounts with roles for the WebUI and the desktop app, an activity log, and an installable WebUI with a phone layout. A kettle is a group of hawks soaring together. This is an unofficial build, not affiliated with the qBittorrent project.</source>
+        <translation>Kettle Edition-ը qBittorrent-ի անձնական կառուցվածք է, որը ավելացնում է դերերով օգտվողների հաշիվներ WebUI-ի և աշխատասեղանի հավելվածի համար, գործունեության մատյան և տեղադրվող WebUI՝ հեռախոսային դասավորությամբ։ Kettle-ը միասին սավառնող բազեների խումբ է։ Սա ոչ պաշտոնական կառուցվածք է և կապ չունի qBittorrent նախագծի հետ։</translation>
+    </message>
+    <message>
+        <source>N/A</source>
+        <translation>Հասանելի չէ</translation>
+    </message>
+    <message>
+        <source>This edition</source>
+        <translation>Այս թողարկումը</translation>
+    </message>
+    <message>
+        <source>Edition version:</source>
+        <translation>Թողարկման տարբերակը՝</translation>
+    </message>
+    <message>
+        <source>Based on:</source>
+        <translation>Հիմնված է՝</translation>
+    </message>
+    <message>
+        <source>Maintainer:</source>
+        <translation>Պահպանող՝</translation>
+    </message>
+    <message>
+        <source>qBittorrent project:</source>
+        <translation>qBittorrent նախագիծ՝</translation>
+    </message>
+    <message>
+        <source>Kettle Edition is a personal build of qBittorrent that adds user accounts with roles for the WebUI and the desktop app, an activity log, and an installable WebUI with a phone layout. A kettle is a group of hawks soaring together. This is an unofficial build, not affiliated with the qBittorrent project.</source>
+        <translation>Kettle Edition-ը qBittorrent-ի անձնական կառուցվածք է, որը ավելացնում է դերերով օգտվողների հաշիվներ WebUI-ի և աշխատասեղանի հավելվածի համար, գործունեության մատյան և տեղադրվող WebUI՝ հեռախոսային դասավորությամբ։ Kettle-ը միասին սավառնող բազեների խումբ է։ Սա ոչ պաշտոնական կառուցվածք է և կապ չունի qBittorrent նախագծի հետ։</translation>
+    </message>
+    <message>
+        <source>N/A</source>
+        <translation>Հասանելի չէ</translation>
+    </message>
 </context>
 <context>
     <name>AbstractFileStorage</name>
@@ -1435,6 +1491,62 @@
         <location filename="../gui/advancedsettings.cpp" line="925"/>
         <source>Embedded tracker port</source>
         <translation>Արգելված ուղղորդիչի դարպասը</translation>
+    </message>
+    <message>
+        <source>Network</source>
+        <translation>Ցանց</translation>
+    </message>
+    <message>
+        <source>Storage</source>
+        <translation>Պահոց</translation>
+    </message>
+    <message>
+        <source>Peers and trackers</source>
+        <translation>Ցանցորդներ և գրանցորդներ</translation>
+    </message>
+    <message>
+        <source>Program behavior</source>
+        <translation>Ծրագրի վարքագիծ</translation>
+    </message>
+    <message>
+        <source>Display and notifications</source>
+        <translation>Ցուցադրում և ծանուցումներ</translation>
+    </message>
+    <message>
+        <source>Network connection</source>
+        <translation>Ցանցային կապ</translation>
+    </message>
+    <message>
+        <source>Security and privacy</source>
+        <translation>Անվտանգություն և գաղտնիություն</translation>
+    </message>
+    <message>
+        <source>Connection tuning</source>
+        <translation>Կապի կարգավորում</translation>
+    </message>
+    <message>
+        <source>Saving and torrent files</source>
+        <translation>Պահպանում և տորրենտ ֆայլեր</translation>
+    </message>
+    <message>
+        <source>Disk and memory</source>
+        <translation>Սկավառակ և հիշողություն</translation>
+    </message>
+    <message>
+        <source>Peers and seeding</source>
+        <translation>Ցանցորդներ և սիդինգ</translation>
+    </message>
+    <message>
+        <source>DHT and I2P</source>
+        <translation>DHT և I2P</translation>
+    </message>
+    <message>
+        <source>General</source>
+        <translation>Ընդհանուր</translation>
+    </message>
+    <message>
+        <source>Trackers</source>
+        <translation>Գրանցորդներ</translation>
     </message>
 </context>
 <context>
@@ -3438,6 +3550,22 @@ Supports the formats: S01E01, 1x1, 2017.12.31 and 31.12.2017 (Date formats also 
         <source>Remove torrent</source>
         <translation>Հեռացնել torrent-ը</translation>
     </message>
+    <message>
+        <source>This choice is remembered for the next removal.</source>
+        <translation>Այս ընտրությունը կհիշվի հաջորդ հեռացման համար։</translation>
+    </message>
+    <message>
+        <source>Remove</source>
+        <translation>Հեռացնել</translation>
+    </message>
+    <message>
+        <source>This choice is remembered for the next removal.</source>
+        <translation>Այս ընտրությունը կհիշվի հաջորդ հեռացման համար։</translation>
+    </message>
+    <message>
+        <source>Remove</source>
+        <translation>Հեռացնել</translation>
+    </message>
 </context>
 <context>
     <name>DownloadFromURLDialog</name>
@@ -3511,6 +3639,14 @@ Supports the formats: S01E01, 1x1, 2017.12.31 and 31.12.2017 (Date formats also 
         <location filename="../gui/executionlogwidget.cpp" line="99"/>
         <source>Clear</source>
         <translation>Մաքրել</translation>
+    </message>
+    <message>
+        <source>WebUI Activity</source>
+        <translation>WebUI գործունեություն</translation>
+    </message>
+    <message>
+        <source>WebUI Activity</source>
+        <translation>WebUI գործունեություն</translation>
     </message>
 </context>
 <context>
@@ -4672,6 +4808,46 @@ Minimum requirement: %2.</source>
         <location filename="../gui/mainwindow.cpp" line="1346"/>
         <source>Torrent Files</source>
         <translation>Torrent ֆայլեր</translation>
+    </message>
+    <message>
+        <source>Kettle Edition %1 is available.</source>
+        <translation>Kettle Edition %1-ը հասանելի է։</translation>
+    </message>
+    <message>
+        <source>qBittorrent Kettle Edition %1 is available. It is downloaded now and installed at 4:00 AM, or when qBittorrent starts next.</source>
+        <translation>qBittorrent Kettle Edition %1-ը հասանելի է։ Այն ներբեռնվում է հիմա և կտեղադրվի ժամը 4:00-ին կամ qBittorrent-ի հաջորդ մեկնարկին։</translation>
+    </message>
+    <message>
+        <source>qBittorrent Kettle Edition %1 is available. It is downloaded now. Turn on &quot;Automatically install Kettle Edition updates&quot; in Options to install it.</source>
+        <translation>qBittorrent Kettle Edition %1-ը հասանելի է։ Այն ներբեռնվում է հիմա։ Տեղադրելու համար միացրեք Ընտրանքներում «Ինքնաբերաբար տեղադրել Kettle Edition-ի թարմացումները»։</translation>
+    </message>
+    <message>
+        <source>You have the latest qBittorrent Kettle Edition (%1).</source>
+        <translation>Դուք ունեք qBittorrent Kettle Edition-ի վերջին տարբերակը (%1)։</translation>
+    </message>
+    <message>
+        <source>Could not check for qBittorrent Kettle Edition updates. See the Execution Log for details.</source>
+        <translation>Չհաջողվեց ստուգել qBittorrent Kettle Edition-ի թարմացումները։ Մանրամասները տես կատարման մատյանում։</translation>
+    </message>
+    <message>
+        <source>Kettle Edition %1 is available.</source>
+        <translation>Kettle Edition %1-ը հասանելի է։</translation>
+    </message>
+    <message>
+        <source>qBittorrent Kettle Edition %1 is available. It is downloaded now and installed at 4:00 AM, or when qBittorrent starts next.</source>
+        <translation>qBittorrent Kettle Edition %1-ը հասանելի է։ Այն ներբեռնվում է հիմա և կտեղադրվի ժամը 4:00-ին կամ qBittorrent-ի հաջորդ մեկնարկին։</translation>
+    </message>
+    <message>
+        <source>qBittorrent Kettle Edition %1 is available. It is downloaded now. Turn on &quot;Automatically install Kettle Edition updates&quot; in Options to install it.</source>
+        <translation>qBittorrent Kettle Edition %1-ը հասանելի է։ Այն ներբեռնվում է հիմա։ Տեղադրելու համար միացրեք Ընտրանքներում «Ինքնաբերաբար տեղադրել Kettle Edition-ի թարմացումները»։</translation>
+    </message>
+    <message>
+        <source>You have the latest qBittorrent Kettle Edition (%1).</source>
+        <translation>Դուք ունեք qBittorrent Kettle Edition-ի վերջին տարբերակը (%1)։</translation>
+    </message>
+    <message>
+        <source>Could not check for qBittorrent Kettle Edition updates. See the Execution Log for details.</source>
+        <translation>Չհաջողվեց ստուգել qBittorrent Kettle Edition-ի թարմացումները։ Մանրամասները տես կատարման մատյանում։</translation>
     </message>
 </context>
 <context>
@@ -8375,6 +8551,190 @@ Check the Execution Log for errors.</source>
         <source>Length Error</source>
         <translation type="unfinished"></translation>
     </message>
+    <message>
+        <source>Search settings</source>
+        <translation>Որոնել կարգավորումներում</translation>
+    </message>
+    <message>
+        <source>No settings match</source>
+        <translation>Համապատասխան կարգավորում չկա</translation>
+    </message>
+    <message>
+        <source>User Accounts</source>
+        <translation>Օգտվողների հաշիվներ</translation>
+    </message>
+    <message>
+        <source>Automatically install Kettle Edition updates</source>
+        <translation>Ինքնաբերաբար տեղադրել Kettle Edition-ի թարմացումները</translation>
+    </message>
+    <message>
+        <source>Status bar and log</source>
+        <translation>Վիճակի գոտի և մատյան</translation>
+    </message>
+    <message>
+        <source>Files</source>
+        <translation>Ֆայլեր</translation>
+    </message>
+    <message>
+        <source>Checking</source>
+        <translation>Ստուգում</translation>
+    </message>
+    <message>
+        <source>Until the first user account is created, this login always works.</source>
+        <translation>Մինչև առաջին օգտվողի հաշվի ստեղծումը այս մուտքը միշտ աշխատում է։</translation>
+    </message>
+    <message>
+        <source>Allow this login when user accounts exist</source>
+        <translation>Թույլատրել այս մուտքը, երբ օգտվողների հաշիվներ կան</translation>
+    </message>
+    <message>
+        <source>Access</source>
+        <translation>Մուտք</translation>
+    </message>
+    <message>
+        <source>Changes to users, roles and logins apply at once. The settings below apply with OK or Apply.</source>
+        <translation>Օգտվողների, դերերի և մուտքերի փոփոխությունները կիրառվում են անմիջապես։ Ստորև կարգավորումները կիրառվում են Լավ կամ Կիրառել կոճակով։</translation>
+    </message>
+    <message>
+        <source>Logins and Activity Log</source>
+        <translation>Մուտքեր և գործունեության մատյան</translation>
+    </message>
+    <message>
+        <source>0 means users are logged out after the session timeout.</source>
+        <translation>0-ն նշանակում է, որ օգտվողները դուրս են գալիս սեանսի ժամկետի ավարտից հետո։</translation>
+    </message>
+    <message>
+        <source>Keep users logged in for:</source>
+        <translation>Օգտվողներին պահել մուտք գործած՝</translation>
+    </message>
+    <message>
+        <source>Until session timeout</source>
+        <translation>Մինչև սեանսի ժամկետի ավարտը</translation>
+    </message>
+    <message>
+        <source> days</source>
+        <translation> օր</translation>
+    </message>
+    <message>
+        <source>Lock account after consecutive failures:</source>
+        <translation>Արգելափակել հաշիվը հաջորդական ձախողումներից հետո՝</translation>
+    </message>
+    <message>
+        <source>Keep WebUI activity log for:</source>
+        <translation>Պահել WebUI գործունեության մատյանը՝</translation>
+    </message>
+    <message>
+        <source>lock for:</source>
+        <translation>արգելափակել՝</translation>
+    </message>
+    <message>
+        <source>%1 works best with Windows dark mode</source>
+        <translation>%1-ը ամենալավն է աշխատում Windows-ի մութ ռեժիմով</translation>
+    </message>
+    <message>
+        <source>WebUI address</source>
+        <translation>WebUI հասցե</translation>
+    </message>
+    <message>
+        <source>With the WebUI address set to %1, only this PC can reach the WebUI. Remote access, including through a reverse proxy on another machine, will stop working.
+
+Save anyway?</source>
+        <translation>Երբ WebUI հասցեն %1 է, միայն այս համակարգիչը կարող է հասնել WebUI-ին։ Հեռակա հասանելիությունը, այդ թվում՝ այլ մեքենայի հակադարձ պրոքսիի միջոցով, կդադարի աշխատել։
+
+Պահպանե՞լ ամեն դեպքում։</translation>
+    </message>
+    <message>
+        <source>Search settings</source>
+        <translation>Որոնել կարգավորումներում</translation>
+    </message>
+    <message>
+        <source>No settings match</source>
+        <translation>Համապատասխան կարգավորում չկա</translation>
+    </message>
+    <message>
+        <source>User Accounts</source>
+        <translation>Օգտվողների հաշիվներ</translation>
+    </message>
+    <message>
+        <source>Automatically install Kettle Edition updates</source>
+        <translation>Ինքնաբերաբար տեղադրել Kettle Edition-ի թարմացումները</translation>
+    </message>
+    <message>
+        <source>Status bar and log</source>
+        <translation>Վիճակի գոտի և մատյան</translation>
+    </message>
+    <message>
+        <source>Files</source>
+        <translation>Ֆայլեր</translation>
+    </message>
+    <message>
+        <source>Checking</source>
+        <translation>Ստուգում</translation>
+    </message>
+    <message>
+        <source>Until the first user account is created, this login always works.</source>
+        <translation>Մինչև առաջին օգտվողի հաշվի ստեղծումը այս մուտքը միշտ աշխատում է։</translation>
+    </message>
+    <message>
+        <source>Allow this login when user accounts exist</source>
+        <translation>Թույլատրել այս մուտքը, երբ օգտվողների հաշիվներ կան</translation>
+    </message>
+    <message>
+        <source>Access</source>
+        <translation>Մուտք</translation>
+    </message>
+    <message>
+        <source>Changes to users, roles and logins apply at once. The settings below apply with OK or Apply.</source>
+        <translation>Օգտվողների, դերերի և մուտքերի փոփոխությունները կիրառվում են անմիջապես։ Ստորև կարգավորումները կիրառվում են Լավ կամ Կիրառել կոճակով։</translation>
+    </message>
+    <message>
+        <source>Logins and Activity Log</source>
+        <translation>Մուտքեր և գործունեության մատյան</translation>
+    </message>
+    <message>
+        <source>0 means users are logged out after the session timeout.</source>
+        <translation>0-ն նշանակում է, որ օգտվողները դուրս են գալիս սեանսի ժամկետի ավարտից հետո։</translation>
+    </message>
+    <message>
+        <source>Keep users logged in for:</source>
+        <translation>Օգտվողներին պահել մուտք գործած՝</translation>
+    </message>
+    <message>
+        <source>Until session timeout</source>
+        <translation>Մինչև սեանսի ժամկետի ավարտը</translation>
+    </message>
+    <message>
+        <source> days</source>
+        <translation> օր</translation>
+    </message>
+    <message>
+        <source>Lock account after consecutive failures:</source>
+        <translation>Արգելափակել հաշիվը հաջորդական ձախողումներից հետո՝</translation>
+    </message>
+    <message>
+        <source>Keep WebUI activity log for:</source>
+        <translation>Պահել WebUI գործունեության մատյանը՝</translation>
+    </message>
+    <message>
+        <source>lock for:</source>
+        <translation>արգելափակել՝</translation>
+    </message>
+    <message>
+        <source>%1 works best with Windows dark mode</source>
+        <translation>%1-ը ամենալավն է աշխատում Windows-ի մութ ռեժիմով</translation>
+    </message>
+    <message>
+        <source>WebUI address</source>
+        <translation>WebUI հասցե</translation>
+    </message>
+    <message>
+        <source>With the WebUI address set to %1, only this PC can reach the WebUI. Remote access, including through a reverse proxy on another machine, will stop working.
+
+Save anyway?</source>
+        <translation>Երբ WebUI հասցեն %1 է, միայն այս համակարգիչը կարող է հասնել WebUI-ին։ Հեռակա հասանելիությունը, այդ թվում՝ այլ մեքենայի հակադարձ պրոքսիի միջոցով, կդադարի աշխատել։
+
+Պահպանե՞լ ամեն դեպքում։</translation>
+    </message>
 </context>
 <context>
     <name>PeerInfo</name>
@@ -8627,6 +8987,22 @@ Check the Execution Log for errors.</source>
         <location filename="../gui/properties/peerlistwidget.cpp" line="309"/>
         <source>Copy IP:port</source>
         <translation>Պատճենել IP:port-ը</translation>
+    </message>
+    <message>
+        <source>Reset auto width</source>
+        <translation>Վերակայել ինքնաշխատ լայնությունը</translation>
+    </message>
+    <message>
+        <source>Fit all non-hidden columns to their contents again, and forget the widths that were set by hand</source>
+        <translation>Նորից հարմարեցնել բոլոր տեսանելի սյունակները իրենց պարունակությանը և մոռանալ ձեռքով սահմանված լայնությունները</translation>
+    </message>
+    <message>
+        <source>Reset auto width</source>
+        <translation>Վերակայել ինքնաշխատ լայնությունը</translation>
+    </message>
+    <message>
+        <source>Fit all non-hidden columns to their contents again, and forget the widths that were set by hand</source>
+        <translation>Նորից հարմարեցնել բոլոր տեսանելի սյունակները իրենց պարունակությանը և մոռանալ ձեռքով սահմանված լայնությունները</translation>
     </message>
 </context>
 <context>
@@ -9985,6 +10361,14 @@ Check the Execution Log for errors.</source>
         <source>Open link</source>
         <translation type="unfinished"></translation>
     </message>
+    <message>
+        <source>Details</source>
+        <translation>Մանրամասներ</translation>
+    </message>
+    <message>
+        <source>Details</source>
+        <translation>Մանրամասներ</translation>
+    </message>
 </context>
 <context>
     <name>SearchController</name>
@@ -10334,6 +10718,70 @@ Check the Execution Log for errors.</source>
         <source>Resize all non-hidden columns to the size of their contents</source>
         <translation type="unfinished"></translation>
     </message>
+    <message>
+        <source>%1 of %2 shown (%3 hidden)</source>
+        <translation>Ցուցադրված է %1՝ %2-ից (%3 թաքնված)</translation>
+    </message>
+    <message>
+        <source>%1 of %2 shown</source>
+        <translation>Ցուցադրված է %1՝ %2-ից</translation>
+    </message>
+    <message>
+        <source>Searching: %1</source>
+        <translation>Որոնում՝ %1</translation>
+    </message>
+    <message>
+        <source>Finished: %1</source>
+        <translation>Ավարտվեց՝ %1</translation>
+    </message>
+    <message>
+        <source>Search aborted: %1</source>
+        <translation>Որոնումը ընդհատվեց՝ %1</translation>
+    </message>
+    <message>
+        <source>Reset auto width</source>
+        <translation>Վերակայել ինքնաշխատ լայնությունը</translation>
+    </message>
+    <message>
+        <source>Fit all non-hidden columns to their contents again, and forget the widths that were set by hand</source>
+        <translation>Նորից հարմարեցնել բոլոր տեսանելի սյունակները իրենց պարունակությանը և մոռանալ ձեռքով սահմանված լայնությունները</translation>
+    </message>
+    <message>
+        <source>Unknown</source>
+        <translation>Անհայտ</translation>
+    </message>
+    <message>
+        <source>%1 of %2 shown (%3 hidden)</source>
+        <translation>Ցուցադրված է %1՝ %2-ից (%3 թաքնված)</translation>
+    </message>
+    <message>
+        <source>%1 of %2 shown</source>
+        <translation>Ցուցադրված է %1՝ %2-ից</translation>
+    </message>
+    <message>
+        <source>Searching: %1</source>
+        <translation>Որոնում՝ %1</translation>
+    </message>
+    <message>
+        <source>Finished: %1</source>
+        <translation>Ավարտվեց՝ %1</translation>
+    </message>
+    <message>
+        <source>Search aborted: %1</source>
+        <translation>Որոնումը ընդհատվեց՝ %1</translation>
+    </message>
+    <message>
+        <source>Reset auto width</source>
+        <translation>Վերակայել ինքնաշխատ լայնությունը</translation>
+    </message>
+    <message>
+        <source>Fit all non-hidden columns to their contents again, and forget the widths that were set by hand</source>
+        <translation>Նորից հարմարեցնել բոլոր տեսանելի սյունակները իրենց պարունակությանը և մոռանալ ձեռքով սահմանված լայնությունները</translation>
+    </message>
+    <message>
+        <source>Unknown</source>
+        <translation>Անհայտ</translation>
+    </message>
 </context>
 <context>
     <name>SearchPluginManager</name>
@@ -10618,6 +11066,14 @@ Those plugins were disabled.</source>
         <source>Couldn&apos;t update &quot;%1&quot; search engine plugin. %2</source>
         <translation type="unfinished"></translation>
     </message>
+    <message>
+        <source>Install Kettle Plugins</source>
+        <translation>Տեղադրել Kettle պլագիններ</translation>
+    </message>
+    <message>
+        <source>Install Kettle Plugins</source>
+        <translation>Տեղադրել Kettle պլագիններ</translation>
+    </message>
 </context>
 <context>
     <name>SearchPluginSourceDialog</name>
@@ -10756,6 +11212,90 @@ Click the &quot;Search plugins...&quot; button at the bottom right of the window
         <location filename="../gui/search/searchwidget.ui" line="58"/>
         <source>Stop</source>
         <translation>Կանգնեցնել</translation>
+    </message>
+    <message>
+        <source>Searches</source>
+        <translation>Որոնումներ</translation>
+    </message>
+    <message>
+        <source>Close the selected search</source>
+        <translation>Փակել ընտրված որոնումը</translation>
+    </message>
+    <message>
+        <source>Search for torrents...</source>
+        <translation>Որոնել տորրենտներ...</translation>
+    </message>
+    <message>
+        <source>Category to search in</source>
+        <translation>Որոնման կատեգորիա</translation>
+    </message>
+    <message>
+        <source>Search engines to use</source>
+        <translation>Օգտագործվող որոնիչներ</translation>
+    </message>
+    <message>
+        <source>There aren&apos;t any search plugins installed.
+Click the &quot;Search plugins...&quot; button at the top right of the window to install some.</source>
+        <translation>Որոնման պլագիններ տեղադրված չեն։
+Տեղադրելու համար սեղմեք պատուհանի վերևի աջ մասի «Որոնման պլագիններ...» կոճակը։</translation>
+    </message>
+    <message>
+        <source>Type a search above and press Enter.</source>
+        <translation>Վերևում մուտքագրեք որոնում և սեղմեք Enter։</translation>
+    </message>
+    <message>
+        <source>Refresh search</source>
+        <translation>Թարմացնել որոնումը</translation>
+    </message>
+    <message>
+        <source>Close search</source>
+        <translation>Փակել որոնումը</translation>
+    </message>
+    <message>
+        <source>Close all searches</source>
+        <translation>Փակել բոլոր որոնումները</translation>
+    </message>
+    <message>
+        <source>Searches</source>
+        <translation>Որոնումներ</translation>
+    </message>
+    <message>
+        <source>Close the selected search</source>
+        <translation>Փակել ընտրված որոնումը</translation>
+    </message>
+    <message>
+        <source>Search for torrents...</source>
+        <translation>Որոնել տորրենտներ...</translation>
+    </message>
+    <message>
+        <source>Category to search in</source>
+        <translation>Որոնման կատեգորիա</translation>
+    </message>
+    <message>
+        <source>Search engines to use</source>
+        <translation>Օգտագործվող որոնիչներ</translation>
+    </message>
+    <message>
+        <source>There aren&apos;t any search plugins installed.
+Click the &quot;Search plugins...&quot; button at the top right of the window to install some.</source>
+        <translation>Որոնման պլագիններ տեղադրված չեն։
+Տեղադրելու համար սեղմեք պատուհանի վերևի աջ մասի «Որոնման պլագիններ...» կոճակը։</translation>
+    </message>
+    <message>
+        <source>Type a search above and press Enter.</source>
+        <translation>Վերևում մուտքագրեք որոնում և սեղմեք Enter։</translation>
+    </message>
+    <message>
+        <source>Refresh search</source>
+        <translation>Թարմացնել որոնումը</translation>
+    </message>
+    <message>
+        <source>Close search</source>
+        <translation>Փակել որոնումը</translation>
+    </message>
+    <message>
+        <source>Close all searches</source>
+        <translation>Փակել բոլոր որոնումները</translation>
     </message>
 </context>
 <context>
@@ -11218,6 +11758,326 @@ Click the &quot;Search plugins...&quot; button at the bottom right of the window
         <location filename="../gui/statsdialog.cpp" line="111"/>
         <source>%1 ms</source>
         <translation type="unfinished">%1 մվ</translation>
+    </message>
+    <message>
+        <source>Copy</source>
+        <translation>Պատճենել</translation>
+    </message>
+    <message>
+        <source>Overview</source>
+        <translation>Ակնարկ</translation>
+    </message>
+    <message>
+        <source>Transfer</source>
+        <translation>Փոխանցում</translation>
+    </message>
+    <message>
+        <source>This session</source>
+        <translation>Այս սեանսը</translation>
+    </message>
+    <message>
+        <source>All time</source>
+        <translation>Ամբողջ ժամանակ</translation>
+    </message>
+    <message>
+        <source>Downloaded:</source>
+        <translation>Ներբեռնված՝</translation>
+    </message>
+    <message>
+        <source>Uploaded:</source>
+        <translation>Վերբեռնված՝</translation>
+    </message>
+    <message>
+        <source>Share ratio:</source>
+        <translation>Կիսման հարաբերակցություն՝</translation>
+    </message>
+    <message>
+        <source>Current speed:</source>
+        <translation>Ընթացիկ արագություն՝</translation>
+    </message>
+    <message>
+        <source>Activity</source>
+        <translation>Գործունեություն</translation>
+    </message>
+    <message>
+        <source>Torrents downloading:</source>
+        <translation>Ներբեռնվող տորրենտներ՝</translation>
+    </message>
+    <message>
+        <source>Torrents seeding:</source>
+        <translation>Սիդող տորրենտներ՝</translation>
+    </message>
+    <message>
+        <source>Torrents stopped:</source>
+        <translation>Կանգնեցված տորրենտներ՝</translation>
+    </message>
+    <message>
+        <source>Torrents with errors:</source>
+        <translation>Սխալներով տորրենտներ՝</translation>
+    </message>
+    <message>
+        <source>Running for:</source>
+        <translation>Աշխատում է՝</translation>
+    </message>
+    <message>
+        <source>History</source>
+        <translation>Պատմություն</translation>
+    </message>
+    <message>
+        <source>Period</source>
+        <translation>Ժամանակահատված</translation>
+    </message>
+    <message>
+        <source>Today</source>
+        <translation>Այսօր</translation>
+    </message>
+    <message>
+        <source>Last 7 days</source>
+        <translation>Վերջին 7 օրը</translation>
+    </message>
+    <message>
+        <source>This month</source>
+        <translation>Այս ամիս</translation>
+    </message>
+    <message>
+        <source>Last month</source>
+        <translation>Անցյալ ամիս</translation>
+    </message>
+    <message>
+        <source>Last 12 months</source>
+        <translation>Վերջին 12 ամիսը</translation>
+    </message>
+    <message>
+        <source>Tracking since:</source>
+        <translation>Հետևում է սկսած՝</translation>
+    </message>
+    <message>
+        <source>By month</source>
+        <translation>Ըստ ամսվա</translation>
+    </message>
+    <message>
+        <source>Month</source>
+        <translation>Ամիս</translation>
+    </message>
+    <message>
+        <source>Downloaded</source>
+        <translation>Ներբեռնված</translation>
+    </message>
+    <message>
+        <source>Uploaded</source>
+        <translation>Վերբեռնված</translation>
+    </message>
+    <message>
+        <source>Share ratio</source>
+        <translation>Կիսման հարաբերակցություն</translation>
+    </message>
+    <message>
+        <source>WebUI downloads added, this month</source>
+        <translation>WebUI-ով ավելացված ներբեռնումներ, այս ամիս</translation>
+    </message>
+    <message>
+        <source>Counts the requests that added a download. Apps without a login, such as Sonarr and Radarr, are shown as (localhost). Downloads added in the desktop window are not counted.</source>
+        <translation>Հաշվում է ներբեռնում ավելացրած հարցումները։ Առանց մուտքի հավելվածները, ինչպես Sonarr-ն ու Radarr-ը, ցուցադրվում են որպես (localhost)։ Աշխատասեղանի պատուհանում ավելացված ներբեռնումները չեն հաշվվում։</translation>
+    </message>
+    <message>
+        <source>Technical</source>
+        <translation>Տեխնիկական</translation>
+    </message>
+    <message>
+        <source>Disk</source>
+        <translation>Սկավառակ</translation>
+    </message>
+    <message>
+        <source>Peers waiting on disk writes:</source>
+        <translation>Սկավառակի վրա գրելու սպասող ցանցորդներ՝</translation>
+    </message>
+    <message>
+        <source>Peers waiting on disk reads:</source>
+        <translation>Սկավառակից կարդալու սպասող ցանցորդներ՝</translation>
+    </message>
+    <message>
+        <source>Network</source>
+        <translation>Ցանց</translation>
+    </message>
+    <message>
+        <source>DHT nodes:</source>
+        <translation>DHT հանգույցներ՝</translation>
+    </message>
+    <message>
+        <source>Data discarded this session:</source>
+        <translation>Այս սեանսում դեն նետված տվյալներ՝</translation>
+    </message>
+    <message>
+        <source>Before tracking began</source>
+        <translation>Հետևելու սկսվելուց առաջ</translation>
+    </message>
+    <message>
+        <source>Nothing added yet</source>
+        <translation>Դեռ ոչինչ չի ավելացվել</translation>
+    </message>
+    <message>
+        <source>Off</source>
+        <translation>Անջատված</translation>
+    </message>
+    <message>
+        <source>Copy</source>
+        <translation>Պատճենել</translation>
+    </message>
+    <message>
+        <source>Overview</source>
+        <translation>Ակնարկ</translation>
+    </message>
+    <message>
+        <source>Transfer</source>
+        <translation>Փոխանցում</translation>
+    </message>
+    <message>
+        <source>This session</source>
+        <translation>Այս սեանսը</translation>
+    </message>
+    <message>
+        <source>All time</source>
+        <translation>Ամբողջ ժամանակ</translation>
+    </message>
+    <message>
+        <source>Downloaded:</source>
+        <translation>Ներբեռնված՝</translation>
+    </message>
+    <message>
+        <source>Uploaded:</source>
+        <translation>Վերբեռնված՝</translation>
+    </message>
+    <message>
+        <source>Share ratio:</source>
+        <translation>Կիսման հարաբերակցություն՝</translation>
+    </message>
+    <message>
+        <source>Current speed:</source>
+        <translation>Ընթացիկ արագություն՝</translation>
+    </message>
+    <message>
+        <source>Activity</source>
+        <translation>Գործունեություն</translation>
+    </message>
+    <message>
+        <source>Torrents downloading:</source>
+        <translation>Ներբեռնվող տորրենտներ՝</translation>
+    </message>
+    <message>
+        <source>Torrents seeding:</source>
+        <translation>Սիդող տորրենտներ՝</translation>
+    </message>
+    <message>
+        <source>Torrents stopped:</source>
+        <translation>Կանգնեցված տորրենտներ՝</translation>
+    </message>
+    <message>
+        <source>Torrents with errors:</source>
+        <translation>Սխալներով տորրենտներ՝</translation>
+    </message>
+    <message>
+        <source>Running for:</source>
+        <translation>Աշխատում է՝</translation>
+    </message>
+    <message>
+        <source>History</source>
+        <translation>Պատմություն</translation>
+    </message>
+    <message>
+        <source>Period</source>
+        <translation>Ժամանակահատված</translation>
+    </message>
+    <message>
+        <source>Today</source>
+        <translation>Այսօր</translation>
+    </message>
+    <message>
+        <source>Last 7 days</source>
+        <translation>Վերջին 7 օրը</translation>
+    </message>
+    <message>
+        <source>This month</source>
+        <translation>Այս ամիս</translation>
+    </message>
+    <message>
+        <source>Last month</source>
+        <translation>Անցյալ ամիս</translation>
+    </message>
+    <message>
+        <source>Last 12 months</source>
+        <translation>Վերջին 12 ամիսը</translation>
+    </message>
+    <message>
+        <source>Tracking since:</source>
+        <translation>Հետևում է սկսած՝</translation>
+    </message>
+    <message>
+        <source>By month</source>
+        <translation>Ըստ ամսվա</translation>
+    </message>
+    <message>
+        <source>Month</source>
+        <translation>Ամիս</translation>
+    </message>
+    <message>
+        <source>Downloaded</source>
+        <translation>Ներբեռնված</translation>
+    </message>
+    <message>
+        <source>Uploaded</source>
+        <translation>Վերբեռնված</translation>
+    </message>
+    <message>
+        <source>Share ratio</source>
+        <translation>Կիսման հարաբերակցություն</translation>
+    </message>
+    <message>
+        <source>WebUI downloads added, this month</source>
+        <translation>WebUI-ով ավելացված ներբեռնումներ, այս ամիս</translation>
+    </message>
+    <message>
+        <source>Counts the requests that added a download. Apps without a login, such as Sonarr and Radarr, are shown as (localhost). Downloads added in the desktop window are not counted.</source>
+        <translation>Հաշվում է ներբեռնում ավելացրած հարցումները։ Առանց մուտքի հավելվածները, ինչպես Sonarr-ն ու Radarr-ը, ցուցադրվում են որպես (localhost)։ Աշխատասեղանի պատուհանում ավելացված ներբեռնումները չեն հաշվվում։</translation>
+    </message>
+    <message>
+        <source>Technical</source>
+        <translation>Տեխնիկական</translation>
+    </message>
+    <message>
+        <source>Disk</source>
+        <translation>Սկավառակ</translation>
+    </message>
+    <message>
+        <source>Peers waiting on disk writes:</source>
+        <translation>Սկավառակի վրա գրելու սպասող ցանցորդներ՝</translation>
+    </message>
+    <message>
+        <source>Peers waiting on disk reads:</source>
+        <translation>Սկավառակից կարդալու սպասող ցանցորդներ՝</translation>
+    </message>
+    <message>
+        <source>Network</source>
+        <translation>Ցանց</translation>
+    </message>
+    <message>
+        <source>DHT nodes:</source>
+        <translation>DHT հանգույցներ՝</translation>
+    </message>
+    <message>
+        <source>Data discarded this session:</source>
+        <translation>Այս սեանսում դեն նետված տվյալներ՝</translation>
+    </message>
+    <message>
+        <source>Before tracking began</source>
+        <translation>Հետևելու սկսվելուց առաջ</translation>
+    </message>
+    <message>
+        <source>Nothing added yet</source>
+        <translation>Դեռ ոչինչ չի ավելացվել</translation>
+    </message>
+    <message>
+        <source>Off</source>
+        <translation>Անջատված</translation>
     </message>
 </context>
 <context>
@@ -11892,6 +12752,22 @@ Please choose a different name and try again.</source>
         <location filename="../gui/torrentcontentwidget.cpp" line="471"/>
         <source>By shown file order</source>
         <translation>Ըստ ցուցադրվող ֆայլի հերթականության</translation>
+    </message>
+    <message>
+        <source>Reset auto width</source>
+        <translation>Վերակայել ինքնաշխատ լայնությունը</translation>
+    </message>
+    <message>
+        <source>Fit all non-hidden columns to their contents again, and forget the widths that were set by hand</source>
+        <translation>Նորից հարմարեցնել բոլոր տեսանելի սյունակները իրենց պարունակությանը և մոռանալ ձեռքով սահմանված լայնությունները</translation>
+    </message>
+    <message>
+        <source>Reset auto width</source>
+        <translation>Վերակայել ինքնաշխատ լայնությունը</translation>
+    </message>
+    <message>
+        <source>Fit all non-hidden columns to their contents again, and forget the widths that were set by hand</source>
+        <translation>Նորից հարմարեցնել բոլոր տեսանելի սյունակները իրենց պարունակությանը և մոռանալ ձեռքով սահմանված լայնությունները</translation>
     </message>
 </context>
 <context>
@@ -12971,6 +13847,22 @@ Please choose a different name and try again.</source>
         <source>Column visibility</source>
         <translation>Սյունակների տեսանելիությունը</translation>
     </message>
+    <message>
+        <source>Reset auto width</source>
+        <translation>Վերակայել ինքնաշխատ լայնությունը</translation>
+    </message>
+    <message>
+        <source>Fit all non-hidden columns to their contents again, and forget the widths that were set by hand</source>
+        <translation>Նորից հարմարեցնել բոլոր տեսանելի սյունակները իրենց պարունակությանը և մոռանալ ձեռքով սահմանված լայնությունները</translation>
+    </message>
+    <message>
+        <source>Reset auto width</source>
+        <translation>Վերակայել ինքնաշխատ լայնությունը</translation>
+    </message>
+    <message>
+        <source>Fit all non-hidden columns to their contents again, and forget the widths that were set by hand</source>
+        <translation>Նորից հարմարեցնել բոլոր տեսանելի սյունակները իրենց պարունակությանը և մոռանալ ձեռքով սահմանված լայնությունները</translation>
+    </message>
 </context>
 <context>
     <name>TrackerStatusFilterWidget</name>
@@ -13837,6 +14729,22 @@ Please choose a different name and try again.</source>
         <source>Super seeding mode</source>
         <translation>Գերբաժանման գործելաձև</translation>
     </message>
+    <message>
+        <source>Reset auto width</source>
+        <translation>Վերակայել ինքնաշխատ լայնությունը</translation>
+    </message>
+    <message>
+        <source>Fit all non-hidden columns to their contents again, and forget the widths that were set by hand</source>
+        <translation>Նորից հարմարեցնել բոլոր տեսանելի սյունակները իրենց պարունակությանը և մոռանալ ձեռքով սահմանված լայնությունները</translation>
+    </message>
+    <message>
+        <source>Reset auto width</source>
+        <translation>Վերակայել ինքնաշխատ լայնությունը</translation>
+    </message>
+    <message>
+        <source>Fit all non-hidden columns to their contents again, and forget the widths that were set by hand</source>
+        <translation>Նորից հարմարեցնել բոլոր տեսանելի սյունակները իրենց պարունակությանը և մոռանալ ձեռքով սահմանված լայնությունները</translation>
+    </message>
 </context>
 <context>
     <name>UIThemeDialog</name>
@@ -14171,6 +15079,46 @@ Please choose a different name and try again.</source>
         <source>WebAPI login failure. Reason: invalid credentials, attempt count: %1, IP: %2, username: %3</source>
         <translation type="unfinished"></translation>
     </message>
+    <message>
+        <source>Something went wrong on the server. Details are in qBittorrent&apos;s log.</source>
+        <translation>Սերվերում ինչ-որ բան սխալ ընթացավ։ Մանրամասները qBittorrent-ի մատյանում են։</translation>
+    </message>
+    <message>
+        <source>This account is locked after too many failed login attempts. Try again in %1 minute(s).</source>
+        <translation>Այս հաշիվը արգելափակված է մուտքի չափազանց շատ ձախողված փորձերի պատճառով։ Կրկին փորձեք %1 րոպե հետո։</translation>
+    </message>
+    <message>
+        <source>Your role (%1) doesn&apos;t allow this: %2.</source>
+        <translation>Ձեր դերը (%1) դա չի թույլատրում՝ %2։</translation>
+    </message>
+    <message>
+        <source>Only an admin can remove the tag that says who added a torrent.</source>
+        <translation>Միայն Admin-ը կարող է հեռացնել պիտակը, որը ցույց է տալիս, թե ով է ավելացրել տորրենտը։</translation>
+    </message>
+    <message>
+        <source>Only an admin can clear or replace all tags of a torrent that has a tag saying who added it.</source>
+        <translation>Միայն Admin-ը կարող է մաքրել կամ փոխարինել այն տորրենտի բոլոր պիտակները, որն ունի ավելացնողին ցույց տվող պիտակ։</translation>
+    </message>
+    <message>
+        <source>Something went wrong on the server. Details are in qBittorrent&apos;s log.</source>
+        <translation>Սերվերում ինչ-որ բան սխալ ընթացավ։ Մանրամասները qBittorrent-ի մատյանում են։</translation>
+    </message>
+    <message>
+        <source>This account is locked after too many failed login attempts. Try again in %1 minute(s).</source>
+        <translation>Այս հաշիվը արգելափակված է մուտքի չափազանց շատ ձախողված փորձերի պատճառով։ Կրկին փորձեք %1 րոպե հետո։</translation>
+    </message>
+    <message>
+        <source>Your role (%1) doesn&apos;t allow this: %2.</source>
+        <translation>Ձեր դերը (%1) դա չի թույլատրում՝ %2։</translation>
+    </message>
+    <message>
+        <source>Only an admin can remove the tag that says who added a torrent.</source>
+        <translation>Միայն Admin-ը կարող է հեռացնել պիտակը, որը ցույց է տալիս, թե ով է ավելացրել տորրենտը։</translation>
+    </message>
+    <message>
+        <source>Only an admin can clear or replace all tags of a torrent that has a tag saying who added it.</source>
+        <translation>Միայն Admin-ը կարող է մաքրել կամ փոխարինել այն տորրենտի բոլոր պիտակները, որն ունի ավելացնողին ցույց տվող պիտակ։</translation>
+    </message>
 </context>
 <context>
     <name>WebUI</name>
@@ -14310,6 +15258,669 @@ Please choose a different name and try again.</source>
         <source>&lt; 1m</source>
         <comment>&lt; 1 minute</comment>
         <translation>&lt; 1ր</translation>
+    </message>
+</context>
+<context>
+    <name>UpdateInstaller</name>
+    <message>
+        <source>Kettle Edition update</source>
+        <translation>Kettle Edition-ի թարմացում</translation>
+    </message>
+    <message>
+        <source>Kettle Edition was updated to %1.</source>
+        <translation>Kettle Edition-ը թարմացվեց մինչև %1։</translation>
+    </message>
+    <message>
+        <source>Kettle Edition updated</source>
+        <translation>Kettle Edition-ը թարմացվեց</translation>
+    </message>
+    <message>
+        <source>Downloading Kettle Edition %1 (%2 changed files).</source>
+        <translation>Ներբեռնվում է Kettle Edition %1 (%2 փոխված ֆայլ)։</translation>
+    </message>
+    <message>
+        <source>Kettle Edition %1 is downloaded and ready to install.</source>
+        <translation>Kettle Edition %1-ը ներբեռնվել է և պատրաստ է տեղադրման։</translation>
+    </message>
+    <message>
+        <source>Kettle Edition update</source>
+        <translation>Kettle Edition-ի թարմացում</translation>
+    </message>
+    <message>
+        <source>Kettle Edition was updated to %1.</source>
+        <translation>Kettle Edition-ը թարմացվեց մինչև %1։</translation>
+    </message>
+    <message>
+        <source>Kettle Edition updated</source>
+        <translation>Kettle Edition-ը թարմացվեց</translation>
+    </message>
+    <message>
+        <source>Downloading Kettle Edition %1 (%2 changed files).</source>
+        <translation>Ներբեռնվում է Kettle Edition %1 (%2 փոխված ֆայլ)։</translation>
+    </message>
+    <message>
+        <source>Kettle Edition %1 is downloaded and ready to install.</source>
+        <translation>Kettle Edition %1-ը ներբեռնվել է և պատրաստ է տեղադրման։</translation>
+    </message>
+</context>
+<context>
+    <name>UserAccountDialog</name>
+    <message>
+        <source>User</source>
+        <translation>Օգտվող</translation>
+    </message>
+    <message>
+        <source>Username:</source>
+        <translation>Օգտանուն՝</translation>
+    </message>
+    <message>
+        <source>Role:</source>
+        <translation>Դեր՝</translation>
+    </message>
+    <message>
+        <source>Password:</source>
+        <translation>Գաղտնաբառ՝</translation>
+    </message>
+    <message>
+        <source>Confirm password:</source>
+        <translation>Հաստատել գաղտնաբառը՝</translation>
+    </message>
+    <message>
+        <source>Disable this account</source>
+        <translation>Անջատել այս հաշիվը</translation>
+    </message>
+    <message>
+        <source>Edit User</source>
+        <translation>Խմբագրել օգտվողին</translation>
+    </message>
+    <message>
+        <source>Leave empty to keep the current password</source>
+        <translation>Թողեք դատարկ՝ ընթացիկ գաղտնաբառը պահելու համար</translation>
+    </message>
+    <message>
+        <source>Add User</source>
+        <translation>Ավելացնել օգտվող</translation>
+    </message>
+    <message>
+        <source>At least %1 characters</source>
+        <translation>Առնվազն %1 նիշ</translation>
+    </message>
+    <message>
+        <source>Enter a username.</source>
+        <translation>Մուտքագրեք օգտանուն։</translation>
+    </message>
+    <message>
+        <source>The password must be at least %1 characters long.</source>
+        <translation>Գաղտնաբառը պետք է լինի առնվազն %1 նիշ։</translation>
+    </message>
+    <message>
+        <source>The passwords don&apos;t match.</source>
+        <translation>Գաղտնաբառերը չեն համընկնում։</translation>
+    </message>
+    <message>
+        <source>User</source>
+        <translation>Օգտվող</translation>
+    </message>
+    <message>
+        <source>Username:</source>
+        <translation>Օգտանուն՝</translation>
+    </message>
+    <message>
+        <source>Role:</source>
+        <translation>Դեր՝</translation>
+    </message>
+    <message>
+        <source>Password:</source>
+        <translation>Գաղտնաբառ՝</translation>
+    </message>
+    <message>
+        <source>Confirm password:</source>
+        <translation>Հաստատել գաղտնաբառը՝</translation>
+    </message>
+    <message>
+        <source>Disable this account</source>
+        <translation>Անջատել այս հաշիվը</translation>
+    </message>
+    <message>
+        <source>Edit User</source>
+        <translation>Խմբագրել օգտվողին</translation>
+    </message>
+    <message>
+        <source>Leave empty to keep the current password</source>
+        <translation>Թողեք դատարկ՝ ընթացիկ գաղտնաբառը պահելու համար</translation>
+    </message>
+    <message>
+        <source>Add User</source>
+        <translation>Ավելացնել օգտվող</translation>
+    </message>
+    <message>
+        <source>At least %1 characters</source>
+        <translation>Առնվազն %1 նիշ</translation>
+    </message>
+    <message>
+        <source>Enter a username.</source>
+        <translation>Մուտքագրեք օգտանուն։</translation>
+    </message>
+    <message>
+        <source>The password must be at least %1 characters long.</source>
+        <translation>Գաղտնաբառը պետք է լինի առնվազն %1 նիշ։</translation>
+    </message>
+    <message>
+        <source>The passwords don&apos;t match.</source>
+        <translation>Գաղտնաբառերը չեն համընկնում։</translation>
+    </message>
+</context>
+<context>
+    <name>UserAccountsWidget</name>
+    <message>
+        <source>User Accounts</source>
+        <translation>Օգտվողների հաշիվներ</translation>
+    </message>
+    <message>
+        <source>Users</source>
+        <translation>Օգտվողներ</translation>
+    </message>
+    <message>
+        <source>People who can log in to the WebUI with their own username and password.</source>
+        <translation>Մարդիկ, ովքեր կարող են մտնել WebUI իրենց օգտանունով և գաղտնաբառով։</translation>
+    </message>
+    <message>
+        <source>Add User...</source>
+        <translation>Ավելացնել օգտվող...</translation>
+    </message>
+    <message>
+        <source>Edit...</source>
+        <translation>Խմբագրել...</translation>
+    </message>
+    <message>
+        <source>Remove</source>
+        <translation>Հեռացնել</translation>
+    </message>
+    <message>
+        <source>Roles</source>
+        <translation>Դերեր</translation>
+    </message>
+    <message>
+        <source>A role decides what its users are allowed to do.</source>
+        <translation>Դերը որոշում է, թե ինչ կարող են անել նրա օգտվողները։</translation>
+    </message>
+    <message>
+        <source>Add Role...</source>
+        <translation>Ավելացնել դեր...</translation>
+    </message>
+    <message>
+        <source>Logged In</source>
+        <translation>Մուտք գործածներ</translation>
+    </message>
+    <message>
+        <source>Browsers and devices where someone is logged in with a user account.</source>
+        <translation>Դիտարկիչներ և սարքեր, որտեղ ինչ-որ մեկը մուտք է գործել օգտվողի հաշվով։</translation>
+    </message>
+    <message>
+        <source>Log Out</source>
+        <translation>Դուրս գալ</translation>
+    </message>
+    <message>
+        <source>Username</source>
+        <translation>Օգտանուն</translation>
+    </message>
+    <message>
+        <source>Role</source>
+        <translation>Դեր</translation>
+    </message>
+    <message>
+        <source>Status</source>
+        <translation>Կարգավիճակ</translation>
+    </message>
+    <message>
+        <source>Last login</source>
+        <translation>Վերջին մուտքը</translation>
+    </message>
+    <message>
+        <source>Created</source>
+        <translation>Ստեղծված է</translation>
+    </message>
+    <message>
+        <source>Name</source>
+        <translation>Անուն</translation>
+    </message>
+    <message>
+        <source>Description</source>
+        <translation>Նկարագրություն</translation>
+    </message>
+    <message>
+        <source>Permissions</source>
+        <translation>Թույլտվություններ</translation>
+    </message>
+    <message>
+        <source>User</source>
+        <translation>Օգտվող</translation>
+    </message>
+    <message>
+        <source>Browser</source>
+        <translation>Դիտարկիչ</translation>
+    </message>
+    <message>
+        <source>Logged in</source>
+        <translation>Մուտք է գործել</translation>
+    </message>
+    <message>
+        <source>Last active</source>
+        <translation>Վերջին ակտիվությունը</translation>
+    </message>
+    <message>
+        <source>Expires</source>
+        <translation>Լրանում է</translation>
+    </message>
+    <message>
+        <source>The user database could not be opened. See the Execution Log for details.</source>
+        <translation>Օգտվողների տվյալների բազան չհաջողվեց բացել։ Մանրամասները տես կատարման մատյանում։</translation>
+    </message>
+    <message>
+        <source>Disabled</source>
+        <translation>Անջատված</translation>
+    </message>
+    <message>
+        <source>Enabled</source>
+        <translation>Միացված</translation>
+    </message>
+    <message>
+        <source>Never</source>
+        <translation>Երբեք</translation>
+    </message>
+    <message>
+        <source>No accounts yet, so everyone still uses the shared WebUI login. Add an Admin account first.</source>
+        <translation>Դեռ հաշիվներ չկան, ուստի բոլորը դեռ օգտագործում են WebUI-ի ընդհանուր մուտքը։ Սկզբում ավելացրեք Admin հաշիվ։</translation>
+    </message>
+    <message>
+        <source>Couldn&apos;t read the user database. %1</source>
+        <translation>Օգտվողների տվյալների բազան չհաջողվեց կարդալ։ %1</translation>
+    </message>
+    <message>
+        <source>Remove user</source>
+        <translation>Հեռացնել օգտվողին</translation>
+    </message>
+    <message>
+        <source>Are you sure you want to remove the user &apos;%1&apos;?</source>
+        <translation>Իրո՞ք ուզում եք հեռացնել «%1» օգտվողին։</translation>
+    </message>
+    <message>
+        <source>Remove role</source>
+        <translation>Հեռացնել դերը</translation>
+    </message>
+    <message>
+        <source>Are you sure you want to remove the role &apos;%1&apos;?</source>
+        <translation>Իրո՞ք ուզում եք հեռացնել «%1» դերը։</translation>
+    </message>
+    <message>
+        <source>Enable</source>
+        <translation>Միացնել</translation>
+    </message>
+    <message>
+        <source>Disable</source>
+        <translation>Անջատել</translation>
+    </message>
+    <message>
+        <source>Log Out Everywhere</source>
+        <translation>Դուրս գալ ամենուր</translation>
+    </message>
+    <message>
+        <source>User Accounts</source>
+        <translation>Օգտվողների հաշիվներ</translation>
+    </message>
+    <message>
+        <source>Users</source>
+        <translation>Օգտվողներ</translation>
+    </message>
+    <message>
+        <source>People who can log in to the WebUI with their own username and password.</source>
+        <translation>Մարդիկ, ովքեր կարող են մտնել WebUI իրենց օգտանունով և գաղտնաբառով։</translation>
+    </message>
+    <message>
+        <source>Add User...</source>
+        <translation>Ավելացնել օգտվող...</translation>
+    </message>
+    <message>
+        <source>Edit...</source>
+        <translation>Խմբագրել...</translation>
+    </message>
+    <message>
+        <source>Remove</source>
+        <translation>Հեռացնել</translation>
+    </message>
+    <message>
+        <source>Roles</source>
+        <translation>Դերեր</translation>
+    </message>
+    <message>
+        <source>A role decides what its users are allowed to do.</source>
+        <translation>Դերը որոշում է, թե ինչ կարող են անել նրա օգտվողները։</translation>
+    </message>
+    <message>
+        <source>Add Role...</source>
+        <translation>Ավելացնել դեր...</translation>
+    </message>
+    <message>
+        <source>Logged In</source>
+        <translation>Մուտք գործածներ</translation>
+    </message>
+    <message>
+        <source>Browsers and devices where someone is logged in with a user account.</source>
+        <translation>Դիտարկիչներ և սարքեր, որտեղ ինչ-որ մեկը մուտք է գործել օգտվողի հաշվով։</translation>
+    </message>
+    <message>
+        <source>Log Out</source>
+        <translation>Դուրս գալ</translation>
+    </message>
+    <message>
+        <source>Username</source>
+        <translation>Օգտանուն</translation>
+    </message>
+    <message>
+        <source>Role</source>
+        <translation>Դեր</translation>
+    </message>
+    <message>
+        <source>Status</source>
+        <translation>Կարգավիճակ</translation>
+    </message>
+    <message>
+        <source>Last login</source>
+        <translation>Վերջին մուտքը</translation>
+    </message>
+    <message>
+        <source>Created</source>
+        <translation>Ստեղծված է</translation>
+    </message>
+    <message>
+        <source>Name</source>
+        <translation>Անուն</translation>
+    </message>
+    <message>
+        <source>Description</source>
+        <translation>Նկարագրություն</translation>
+    </message>
+    <message>
+        <source>Permissions</source>
+        <translation>Թույլտվություններ</translation>
+    </message>
+    <message>
+        <source>User</source>
+        <translation>Օգտվող</translation>
+    </message>
+    <message>
+        <source>Browser</source>
+        <translation>Դիտարկիչ</translation>
+    </message>
+    <message>
+        <source>Logged in</source>
+        <translation>Մուտք է գործել</translation>
+    </message>
+    <message>
+        <source>Last active</source>
+        <translation>Վերջին ակտիվությունը</translation>
+    </message>
+    <message>
+        <source>Expires</source>
+        <translation>Լրանում է</translation>
+    </message>
+    <message>
+        <source>The user database could not be opened. See the Execution Log for details.</source>
+        <translation>Օգտվողների տվյալների բազան չհաջողվեց բացել։ Մանրամասները տես կատարման մատյանում։</translation>
+    </message>
+    <message>
+        <source>Disabled</source>
+        <translation>Անջատված</translation>
+    </message>
+    <message>
+        <source>Enabled</source>
+        <translation>Միացված</translation>
+    </message>
+    <message>
+        <source>Never</source>
+        <translation>Երբեք</translation>
+    </message>
+    <message>
+        <source>No accounts yet, so everyone still uses the shared WebUI login. Add an Admin account first.</source>
+        <translation>Դեռ հաշիվներ չկան, ուստի բոլորը դեռ օգտագործում են WebUI-ի ընդհանուր մուտքը։ Սկզբում ավելացրեք Admin հաշիվ։</translation>
+    </message>
+    <message>
+        <source>Couldn&apos;t read the user database. %1</source>
+        <translation>Օգտվողների տվյալների բազան չհաջողվեց կարդալ։ %1</translation>
+    </message>
+    <message>
+        <source>Remove user</source>
+        <translation>Հեռացնել օգտվողին</translation>
+    </message>
+    <message>
+        <source>Are you sure you want to remove the user &apos;%1&apos;?</source>
+        <translation>Իրո՞ք ուզում եք հեռացնել «%1» օգտվողին։</translation>
+    </message>
+    <message>
+        <source>Remove role</source>
+        <translation>Հեռացնել դերը</translation>
+    </message>
+    <message>
+        <source>Are you sure you want to remove the role &apos;%1&apos;?</source>
+        <translation>Իրո՞ք ուզում եք հեռացնել «%1» դերը։</translation>
+    </message>
+    <message>
+        <source>Enable</source>
+        <translation>Միացնել</translation>
+    </message>
+    <message>
+        <source>Disable</source>
+        <translation>Անջատել</translation>
+    </message>
+    <message>
+        <source>Log Out Everywhere</source>
+        <translation>Դուրս գալ ամենուր</translation>
+    </message>
+</context>
+<context>
+    <name>UserRoleDialog</name>
+    <message>
+        <source>Role</source>
+        <translation>Դեր</translation>
+    </message>
+    <message>
+        <source>Name:</source>
+        <translation>Անուն՝</translation>
+    </message>
+    <message>
+        <source>Description:</source>
+        <translation>Նկարագրություն՝</translation>
+    </message>
+    <message>
+        <source>Gives control over the PC or qBittorrent itself.</source>
+        <translation>Տալիս է վերահսկում համակարգչի կամ հենց qBittorrent-ի վրա։</translation>
+    </message>
+    <message>
+        <source>Add Role</source>
+        <translation>Ավելացնել դեր</translation>
+    </message>
+    <message>
+        <source>Edit Role</source>
+        <translation>Խմբագրել դերը</translation>
+    </message>
+    <message>
+        <source>Enter a role name.</source>
+        <translation>Մուտքագրեք դերի անուն։</translation>
+    </message>
+    <message>
+        <source>Role</source>
+        <translation>Դեր</translation>
+    </message>
+    <message>
+        <source>Name:</source>
+        <translation>Անուն՝</translation>
+    </message>
+    <message>
+        <source>Description:</source>
+        <translation>Նկարագրություն՝</translation>
+    </message>
+    <message>
+        <source>Gives control over the PC or qBittorrent itself.</source>
+        <translation>Տալիս է վերահսկում համակարգչի կամ հենց qBittorrent-ի վրա։</translation>
+    </message>
+    <message>
+        <source>Add Role</source>
+        <translation>Ավելացնել դեր</translation>
+    </message>
+    <message>
+        <source>Edit Role</source>
+        <translation>Խմբագրել դերը</translation>
+    </message>
+    <message>
+        <source>Enter a role name.</source>
+        <translation>Մուտքագրեք դերի անուն։</translation>
+    </message>
+</context>
+<context>
+    <name>WebUIActivityWidget</name>
+    <message>
+        <source>All</source>
+        <translation>Բոլորը</translation>
+    </message>
+    <message>
+        <source>Filter activity</source>
+        <translation>Զտել գործունեությունը</translation>
+    </message>
+    <message>
+        <source>Export...</source>
+        <translation>Արտահանել...</translation>
+    </message>
+    <message>
+        <source>User:</source>
+        <translation>Օգտվող՝</translation>
+    </message>
+    <message>
+        <source>Category:</source>
+        <translation>Կատեգորիա՝</translation>
+    </message>
+    <message>
+        <source>Result:</source>
+        <translation>Արդյունք՝</translation>
+    </message>
+    <message>
+        <source>Time</source>
+        <translation>Ժամ</translation>
+    </message>
+    <message>
+        <source>User</source>
+        <translation>Օգտվող</translation>
+    </message>
+    <message>
+        <source>Role</source>
+        <translation>Դեր</translation>
+    </message>
+    <message>
+        <source>Category</source>
+        <translation>Կատեգորիա</translation>
+    </message>
+    <message>
+        <source>Action</source>
+        <translation>Գործողություն</translation>
+    </message>
+    <message>
+        <source>Result</source>
+        <translation>Արդյունք</translation>
+    </message>
+    <message>
+        <source>The user database could not be opened. See the General tab for details.</source>
+        <translation>Օգտվողների տվյալների բազան չհաջողվեց բացել։ Մանրամասները տես Ընդհանուր ներդիրում։</translation>
+    </message>
+    <message>
+        <source>Results (showing %1 out of %2)</source>
+        <translation>Արդյունքներ (ցուցադրված է %1՝ %2-ից)</translation>
+    </message>
+    <message>
+        <source>Copy</source>
+        <translation>Պատճենել</translation>
+    </message>
+    <message>
+        <source>Export WebUI activity</source>
+        <translation>Արտահանել WebUI գործունեությունը</translation>
+    </message>
+    <message>
+        <source>CSV files</source>
+        <translation>CSV ֆայլեր</translation>
+    </message>
+    <message>
+        <source>Couldn&apos;t save the file. Reason: %1</source>
+        <translation>Ֆայլը չհաջողվեց պահպանել։ Պատճառ՝ %1</translation>
+    </message>
+    <message>
+        <source>All</source>
+        <translation>Բոլորը</translation>
+    </message>
+    <message>
+        <source>Filter activity</source>
+        <translation>Զտել գործունեությունը</translation>
+    </message>
+    <message>
+        <source>Export...</source>
+        <translation>Արտահանել...</translation>
+    </message>
+    <message>
+        <source>User:</source>
+        <translation>Օգտվող՝</translation>
+    </message>
+    <message>
+        <source>Category:</source>
+        <translation>Կատեգորիա՝</translation>
+    </message>
+    <message>
+        <source>Result:</source>
+        <translation>Արդյունք՝</translation>
+    </message>
+    <message>
+        <source>Time</source>
+        <translation>Ժամ</translation>
+    </message>
+    <message>
+        <source>User</source>
+        <translation>Օգտվող</translation>
+    </message>
+    <message>
+        <source>Role</source>
+        <translation>Դեր</translation>
+    </message>
+    <message>
+        <source>Category</source>
+        <translation>Կատեգորիա</translation>
+    </message>
+    <message>
+        <source>Action</source>
+        <translation>Գործողություն</translation>
+    </message>
+    <message>
+        <source>Result</source>
+        <translation>Արդյունք</translation>
+    </message>
+    <message>
+        <source>The user database could not be opened. See the General tab for details.</source>
+        <translation>Օգտվողների տվյալների բազան չհաջողվեց բացել։ Մանրամասները տես Ընդհանուր ներդիրում։</translation>
+    </message>
+    <message>
+        <source>Results (showing %1 out of %2)</source>
+        <translation>Արդյունքներ (ցուցադրված է %1՝ %2-ից)</translation>
+    </message>
+    <message>
+        <source>Copy</source>
+        <translation>Պատճենել</translation>
+    </message>
+    <message>
+        <source>Export WebUI activity</source>
+        <translation>Արտահանել WebUI գործունեությունը</translation>
+    </message>
+    <message>
+        <source>CSV files</source>
+        <translation>CSV ֆայլեր</translation>
+    </message>
+    <message>
+        <source>Couldn&apos;t save the file. Reason: %1</source>
+        <translation>Ֆայլը չհաջողվեց պահպանել։ Պատճառ՝ %1</translation>
     </message>
 </context>
 </TS>

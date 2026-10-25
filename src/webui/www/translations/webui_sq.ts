@@ -223,6 +223,89 @@ The piece hash will be checked when it is requested for the first time by a peer
         <source>%1 needed · %2 free</source>
         <translation type="unfinished" />
     </message>
+    <message>
+        <source>All</source>
+        <translation>Të gjitha</translation>
+    </message>
+    <message>
+        <source>Don&apos;t create subfolder</source>
+        <translation>Mos krijo një nën-dosje</translation>
+    </message>
+    <message>
+        <source>Never show again</source>
+        <translation>Mos e shfaq më</translation>
+    </message>
+    <message>
+        <source>Select None</source>
+        <translation>Mos parazgjidh asgjë</translation>
+    </message>
+    <message>
+        <source>Torrent options</source>
+        <translation>Cilësimet e torrent-it</translation>
+    </message>
+    <message>
+        <source>Your role saves torrents in the default folders.</source>
+        <translation>Roli juaj i ruan torrentet te dosjet parazgjedhje.</translation>
+    </message>
+</context>
+<context>
+    <name>AdvancedSettings</name>
+    <message>
+        <source>General</source>
+        <translation>Të përgjithshme</translation>
+    </message>
+    <message>
+        <source>Network</source>
+        <translation>Rrjeti</translation>
+    </message>
+    <message>
+        <source>Storage</source>
+        <translation>Ruajtja</translation>
+    </message>
+    <message>
+        <source>Peers and trackers</source>
+        <translation>Kolegët dhe gjurmuesit</translation>
+    </message>
+    <message>
+        <source>Program behavior</source>
+        <translation>Sjellja e programit</translation>
+    </message>
+    <message>
+        <source>Display and notifications</source>
+        <translation>Shfaqja dhe njoftimet</translation>
+    </message>
+    <message>
+        <source>Network connection</source>
+        <translation>Lidhja me rrjetin</translation>
+    </message>
+    <message>
+        <source>Security and privacy</source>
+        <translation>Siguria dhe privatësia</translation>
+    </message>
+    <message>
+        <source>Connection tuning</source>
+        <translation>Rregullimi i lidhjes</translation>
+    </message>
+    <message>
+        <source>Saving and torrent files</source>
+        <translation>Ruajtja dhe skedarët torrent</translation>
+    </message>
+    <message>
+        <source>Disk and memory</source>
+        <translation>Disku dhe memoria</translation>
+    </message>
+    <message>
+        <source>Trackers</source>
+        <translation>Gjurmuesit</translation>
+    </message>
+    <message>
+        <source>Peers and seeding</source>
+        <translation>Kolegët dhe ndarja</translation>
+    </message>
+    <message>
+        <source>DHT and I2P</source>
+        <translation>DHT dhe I2P</translation>
+    </message>
 </context>
 <context>
     <name>CategoryFilterModel</name>
@@ -233,6 +316,10 @@ The piece hash will be checked when it is requested for the first time by a peer
     <message>
         <source>Uncategorized</source>
         <translation>Pa kategori</translation>
+    </message>
+    <message>
+        <source>All</source>
+        <translation>Të gjitha</translation>
     </message>
 </context>
 <context>
@@ -623,6 +710,18 @@ The piece hash will be checked when it is requested for the first time by a peer
         <source>More</source>
         <translation>Më shumë</translation>
     </message>
+    <message>
+        <source>Change Password...</source>
+        <translation>Ndrysho fjalëkalimin...</translation>
+    </message>
+    <message>
+        <source>Exit qBittorrent</source>
+        <translation>Dil nga qBittorrent</translation>
+    </message>
+    <message>
+        <source>Signed in as</source>
+        <translation>I futur si</translation>
+    </message>
 </context>
 <context>
     <name>MainWindow</name>
@@ -921,6 +1020,30 @@ The piece hash will be checked when it is requested for the first time by a peer
     <message>
         <source>Resume Session</source>
         <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Pause Session</source>
+        <translation>Ndal seancën përkohësisht</translation>
+    </message>
+    <message>
+        <source>Pause session</source>
+        <translation>Ndal seancën përkohësisht</translation>
+    </message>
+    <message>
+        <source>Resume Session</source>
+        <translation>Vazhdo seancën</translation>
+    </message>
+    <message>
+        <source>Resume session</source>
+        <translation>Vazhdo seancën</translation>
+    </message>
+    <message>
+        <source>Your account can&apos;t add torrents.</source>
+        <translation>Llogaria juaj nuk mund të shtojë torrente.</translation>
+    </message>
+    <message>
+        <source>[PAUSED]</source>
+        <translation>[NDALUR PËRKOHËSISHT]</translation>
     </message>
 </context>
 <context>
@@ -2503,6 +2626,138 @@ Use ';' to split multiple entries. Can use wildcard '*'.</source>
         <source>a@x.com;b@y.com,c@z.com - send two emails: the first to just a@x.com, the second to both b@y.com and c@z.com</source>
         <translation type="unfinished" />
     </message>
+    <message>
+        <source>0 means users are logged out after the session timeout.</source>
+        <translation>0 do të thotë se përdoruesit dalin pas skadimit të kohës së seancës.</translation>
+    </message>
+    <message>
+        <source>Access</source>
+        <translation>Qasja</translation>
+    </message>
+    <message>
+        <source>Allow this login when user accounts exist</source>
+        <translation>Lejo këtë hyrje kur ekzistojnë llogari përdoruesish</translation>
+    </message>
+    <message>
+        <source>Also save search results</source>
+        <translation>Ruaj edhe rezultatet e kërkimit</translation>
+    </message>
+    <message>
+        <source>Also when addition is cancelled</source>
+        <translation>Gjithashtu kur shtimi anulohet</translation>
+    </message>
+    <message>
+        <source>Below normal</source>
+        <translation>Nën normalitetin</translation>
+    </message>
+    <message>
+        <source>Changes to users, roles and logins apply at once.</source>
+        <translation>Ndryshimet te përdoruesit, rolet dhe hyrjet zbatohen menjëherë.</translation>
+    </message>
+    <message>
+        <source>Checking</source>
+        <translation>Kontrolli</translation>
+    </message>
+    <message>
+        <source>Don&apos;t create subfolder</source>
+        <translation>Mos krijo një nën-dosje</translation>
+    </message>
+    <message>
+        <source>Keep WebUI activity log for:</source>
+        <translation>Mbaj regjistrin e aktivitetit të WebUI për:</translation>
+    </message>
+    <message>
+        <source>Keep users logged in for:</source>
+        <translation>Mbaji përdoruesit të futur për:</translation>
+    </message>
+    <message>
+        <source>Lock account after consecutive failures:</source>
+        <translation>Kyç llogarinë pas dështimesh të njëpasnjëshme:</translation>
+    </message>
+    <message>
+        <source>Logins and Activity Log</source>
+        <translation>Hyrjet dhe regjistri i aktivitetit</translation>
+    </message>
+    <message>
+        <source>Low</source>
+        <translation>I ulët</translation>
+    </message>
+    <message>
+        <source>Medium</source>
+        <translation>Mesatar</translation>
+    </message>
+    <message>
+        <source>No settings match</source>
+        <translation>Asnjë cilësim nuk përputhet</translation>
+    </message>
+    <message>
+        <source>Process memory priority:</source>
+        <translation>Përparësia e kujtesës së procesit:</translation>
+    </message>
+    <message>
+        <source>Save search tabs</source>
+        <translation>Ruaj skedat e kërkimit</translation>
+    </message>
+    <message>
+        <source>Search settings</source>
+        <translation>Kërko te cilësimet</translation>
+    </message>
+    <message>
+        <source>Show the window when adding a torrent</source>
+        <translation>Shfaq dritaren kur shtohet një torrent</translation>
+    </message>
+    <message>
+        <source>Status bar and log</source>
+        <translation>Shiriti i gjendjes dhe regjistri</translation>
+    </message>
+    <message>
+        <source>The WebUI activity log can be kept for 1 to 3650 days.</source>
+        <translation>Regjistri i aktivitetit të WebUI mund të mbahet nga 1 deri në 3650 ditë.</translation>
+    </message>
+    <message>
+        <source>The settings below apply with OK or Apply.</source>
+        <translation>Cilësimet më poshtë zbatohen me Në rregull ose Zbato.</translation>
+    </message>
+    <message>
+        <source>Transfer List</source>
+        <translation>Lista e qarkullimeve</translation>
+    </message>
+    <message>
+        <source>Until the first user account is created, this login always works.</source>
+        <translation>Derisa të krijohet llogaria e parë e përdoruesit, ky hyrje funksionon gjithmonë.</translation>
+    </message>
+    <message>
+        <source>User</source>
+        <translation>Përdorues</translation>
+    </message>
+    <message>
+        <source>User Accounts</source>
+        <translation>Llogari përdoruesish</translation>
+    </message>
+    <message>
+        <source>Username:</source>
+        <translation>Emri i përdoruesit:</translation>
+    </message>
+    <message>
+        <source>Users can be kept logged in for 0 to 365 days.</source>
+        <translation>Përdoruesit mund të mbahen të futur nga 0 deri në 365 ditë.</translation>
+    </message>
+    <message>
+        <source>Very low</source>
+        <translation>Shumë i ulët</translation>
+    </message>
+    <message>
+        <source>Warning! Data loss possible!</source>
+        <translation>Kujdes! Mund të ketë humbje të dhënash!</translation>
+    </message>
+    <message>
+        <source>You changed the address, port or HTTPS setting of the WebUI. Saving moves the WebUI, so Options will save, close and reload the page, the same as OK. If the page doesn&apos;t come back, open the WebUI at its new address.\n\nSave anyway?</source>
+        <translation>Ndryshuat adresën, portën ose cilësimin HTTPS të WebUI. Ruajtja e lëviz WebUI, ndaj Opsionet do të ruajnë, mbyllen dhe ringarkojnë faqen, si me Në rregull. Nëse faqja nuk kthehet, hapni WebUI në adresën e re.\n\nTë ruhet gjithsesi?</translation>
+    </message>
+    <message>
+        <source>lock for:</source>
+        <translation>kyç për:</translation>
+    </message>
 </context>
 <context>
     <name>PeerListWidget</name>
@@ -2931,6 +3186,10 @@ Use ';' to split multiple entries. Can use wildcard '*'.</source>
         <source>Copy download URL</source>
         <translation type="unfinished" />
     </message>
+    <message>
+        <source>Transfer</source>
+        <translation>Transferim</translation>
+    </message>
 </context>
 <context>
     <name>ScanFoldersModel</name>
@@ -3043,6 +3302,146 @@ Use ';' to split multiple entries. Can use wildcard '*'.</source>
     <message>
         <source>The time it takes from receiving a request from a peer until we're sending the response back on the socket</source>
         <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Activity</source>
+        <translation>Aktiviteti</translation>
+    </message>
+    <message>
+        <source>All time</source>
+        <translation>Gjithë kohën</translation>
+    </message>
+    <message>
+        <source>Before tracking began</source>
+        <translation>Para se të fillonte gjurmimi</translation>
+    </message>
+    <message>
+        <source>By month</source>
+        <translation>Sipas muajit</translation>
+    </message>
+    <message>
+        <source>Counts the requests that added a download. Apps without a login, such as Sonarr and Radarr, are shown as (localhost). Downloads added in the desktop window are not counted.</source>
+        <translation>Numëron kërkesat që shtuan një shkarkim. Aplikacionet pa hyrje, si Sonarr dhe Radarr, shfaqen si (localhost). Shkarkimet e shtuara në dritaren desktop nuk numërohen.</translation>
+    </message>
+    <message>
+        <source>Current speed:</source>
+        <translation>Shpejtësia aktuale:</translation>
+    </message>
+    <message>
+        <source>DHT nodes:</source>
+        <translation>Nyje DHT:</translation>
+    </message>
+    <message>
+        <source>Data discarded this session:</source>
+        <translation>Të dhëna të hedhura në këtë seancë:</translation>
+    </message>
+    <message>
+        <source>Disk</source>
+        <translation>Disku</translation>
+    </message>
+    <message>
+        <source>History</source>
+        <translation>Historiku</translation>
+    </message>
+    <message>
+        <source>Last 12 months</source>
+        <translation>12 muajt e fundit</translation>
+    </message>
+    <message>
+        <source>Last 7 days</source>
+        <translation>7 ditët e fundit</translation>
+    </message>
+    <message>
+        <source>Last month</source>
+        <translation>Muajin e kaluar</translation>
+    </message>
+    <message>
+        <source>Month</source>
+        <translation>Muaji</translation>
+    </message>
+    <message>
+        <source>Nothing added yet</source>
+        <translation>Ende s&apos;është shtuar asgjë</translation>
+    </message>
+    <message>
+        <source>Off</source>
+        <translation>Çaktivizuar</translation>
+    </message>
+    <message>
+        <source>Overview</source>
+        <translation>Përmbledhje</translation>
+    </message>
+    <message>
+        <source>Peers waiting on disk reads:</source>
+        <translation>Kolegë që presin leximin nga disku:</translation>
+    </message>
+    <message>
+        <source>Peers waiting on disk writes:</source>
+        <translation>Kolegë që presin shkrimin në disk:</translation>
+    </message>
+    <message>
+        <source>Period</source>
+        <translation>Periudha</translation>
+    </message>
+    <message>
+        <source>Request latency:</source>
+        <translation>Vonesa e kërkesës:</translation>
+    </message>
+    <message>
+        <source>Running for:</source>
+        <translation>Në punë prej:</translation>
+    </message>
+    <message>
+        <source>Share ratio</source>
+        <translation>Raporti i ndarjes</translation>
+    </message>
+    <message>
+        <source>Share ratio:</source>
+        <translation>Raporti i ndarjes:</translation>
+    </message>
+    <message>
+        <source>Technical</source>
+        <translation>Teknike</translation>
+    </message>
+    <message>
+        <source>This month</source>
+        <translation>Këtë muaj</translation>
+    </message>
+    <message>
+        <source>This session</source>
+        <translation>Kjo seancë</translation>
+    </message>
+    <message>
+        <source>Today</source>
+        <translation>Sot</translation>
+    </message>
+    <message>
+        <source>Torrents downloading:</source>
+        <translation>Torrente që shkarkohen:</translation>
+    </message>
+    <message>
+        <source>Torrents seeding:</source>
+        <translation>Torrente që ndahen:</translation>
+    </message>
+    <message>
+        <source>Torrents stopped:</source>
+        <translation>Torrente të ndalur:</translation>
+    </message>
+    <message>
+        <source>Torrents with errors:</source>
+        <translation>Torrente me gabime:</translation>
+    </message>
+    <message>
+        <source>Tracking since:</source>
+        <translation>Gjurmim që nga:</translation>
+    </message>
+    <message>
+        <source>Transfer</source>
+        <translation>Transferim</translation>
+    </message>
+    <message>
+        <source>WebUI downloads added, this month</source>
+        <translation>Shkarkime të shtuara nga WebUI, këtë muaj</translation>
     </message>
 </context>
 <context>
@@ -3602,6 +4001,10 @@ Use ';' to split multiple entries. Can use wildcard '*'.</source>
         <source>N/A</source>
         <translation>J/Z</translation>
     </message>
+    <message>
+        <source>Checking</source>
+        <translation>Kontrolli</translation>
+    </message>
 </context>
 <context>
     <name>TransferListFiltersWidget</name>
@@ -3830,6 +4233,10 @@ Use ';' to split multiple entries. Can use wildcard '*'.</source>
         <source>Content Path</source>
         <translation type="unfinished" />
     </message>
+    <message>
+        <source>Remove all tags from selected torrents?</source>
+        <translation>Hiq të gjitha etiketat nga torrent-ët e zgjedhur?</translation>
+    </message>
 </context>
 <context>
     <name>UpDownRatioDialog</name>
@@ -3902,6 +4309,10 @@ Use ';' to split multiple entries. Can use wildcard '*'.</source>
     <message>
         <source>Remove tracker</source>
         <translation>Hiq gjurmuesin</translation>
+    </message>
+    <message>
+        <source>This choice is remembered for the next removal.</source>
+        <translation>Ky zgjedhje do të mbahet mend për heqjen e radhës.</translation>
     </message>
 </context>
 <context>
@@ -4115,6 +4526,30 @@ Use ';' to split multiple entries. Can use wildcard '*'.</source>
         <source>Select plugins</source>
         <translation type="unfinished" />
     </message>
+    <message>
+        <source>Category to search in</source>
+        <translation>Kategoria ku kërkohet</translation>
+    </message>
+    <message>
+        <source>Close the selected search</source>
+        <translation>Mbyll kërkimin e përzgjedhur</translation>
+    </message>
+    <message>
+        <source>Search engines to use</source>
+        <translation>Motorët e kërkimit për t&apos;u përdorur</translation>
+    </message>
+    <message>
+        <source>Search for torrents...</source>
+        <translation>Kërko torrente...</translation>
+    </message>
+    <message>
+        <source>Searches</source>
+        <translation>Kërkime</translation>
+    </message>
+    <message>
+        <source>Type a search above and press Enter.</source>
+        <translation>Shkruani një kërkim më sipër dhe shtypni Enter.</translation>
+    </message>
 </context>
 <context>
     <name>PluginSelectDlg</name>
@@ -4153,6 +4588,10 @@ Use ';' to split multiple entries. Can use wildcard '*'.</source>
     <message>
         <source>Search plugins</source>
         <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Enabled</source>
+        <translation>Aktivizuar</translation>
     </message>
 </context>
 <context>
@@ -4211,6 +4650,10 @@ Use ';' to split multiple entries. Can use wildcard '*'.</source>
     <message>
         <source>No</source>
         <translation>Jo</translation>
+    </message>
+    <message>
+        <source>Enabled</source>
+        <translation>Aktivizuar</translation>
     </message>
 </context>
 <context>
@@ -4288,6 +4731,10 @@ Use ';' to split multiple entries. Can use wildcard '*'.</source>
     <message>
         <source>Untagged</source>
         <translation type="unfinished" />
+    </message>
+    <message>
+        <source>All</source>
+        <translation>Të gjitha</translation>
     </message>
 </context>
 <context>
@@ -4375,6 +4822,30 @@ Use ';' to split multiple entries. Can use wildcard '*'.</source>
     <message>
         <source>qBittorrent icon</source>
         <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Based on:</source>
+        <translation>Bazuar në:</translation>
+    </message>
+    <message>
+        <source>Edition version:</source>
+        <translation>Versioni i botimit:</translation>
+    </message>
+    <message>
+        <source>Kettle Edition is a personal build of qBittorrent that adds user accounts with roles for the WebUI and the desktop app, an activity log, and an installable WebUI with a phone layout. A kettle is a group of hawks soaring together. This is an unofficial build, not affiliated with the qBittorrent project.</source>
+        <translation>Kettle Edition është një ndërtim personal i qBittorrent që shton llogari përdoruesish me role për WebUI dhe aplikacionin desktop, një regjistër aktiviteti dhe një WebUI të instalueshme me strukturë për telefon. Kettle është një grup skifterësh që fluturojnë së bashku. Ky është një ndërtim jozyrtar, pa lidhje me projektin qBittorrent.</translation>
+    </message>
+    <message>
+        <source>Maintainer:</source>
+        <translation>Mirëmbajtësi:</translation>
+    </message>
+    <message>
+        <source>This edition</source>
+        <translation>Ky botim</translation>
+    </message>
+    <message>
+        <source>qBittorrent project:</source>
+        <translation>Projekti qBittorrent:</translation>
     </message>
 </context>
 <context>
@@ -4477,6 +4948,38 @@ Use ';' to split multiple entries. Can use wildcard '*'.</source>
     <message>
         <source>Open shared download window</source>
         <translation type="unfinished" />
+    </message>
+    <message>
+        <source>%1 of %2 shown</source>
+        <translation>U shfaqën %1 nga %2</translation>
+    </message>
+    <message>
+        <source>%1 of %2 shown (%3 hidden)</source>
+        <translation>U shfaqën %1 nga %2 (%3 të fshehura)</translation>
+    </message>
+    <message>
+        <source>Close all searches</source>
+        <translation>Mbyll të gjitha kërkimet</translation>
+    </message>
+    <message>
+        <source>Close search</source>
+        <translation>Mbyll kërkimin</translation>
+    </message>
+    <message>
+        <source>Finished: %1</source>
+        <translation>U krye: %1</translation>
+    </message>
+    <message>
+        <source>Refresh search</source>
+        <translation>Rifresko kërkimin</translation>
+    </message>
+    <message>
+        <source>Search aborted: %1</source>
+        <translation>Kërkimi u ndërpre: %1</translation>
+    </message>
+    <message>
+        <source>Searching: %1</source>
+        <translation>Po kërkohet: %1</translation>
     </message>
 </context>
 <context>
@@ -4615,6 +5118,10 @@ Use ';' to split multiple entries. Can use wildcard '*'.</source>
     <message>
         <source>Blocked opening RSS article URL. Only http:// and https:// links can be opened.</source>
         <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Details</source>
+        <translation>Hollësi</translation>
     </message>
 </context>
 <context>
@@ -4892,6 +5399,14 @@ Supports the formats: S01E01, 1x1, 2017.12.31 and 31.12.2017 (Date formats also 
         <source>Import</source>
         <translation type="unfinished" />
     </message>
+    <message>
+        <source> days</source>
+        <translation> ditë</translation>
+    </message>
+    <message>
+        <source>Don&apos;t create subfolder</source>
+        <translation>Mos krijo një nën-dosje</translation>
+    </message>
 </context>
 <context>
     <name>TrackerFiltersList</name>
@@ -4934,6 +5449,10 @@ Supports the formats: S01E01, 1x1, 2017.12.31 and 31.12.2017 (Date formats also 
     <message>
         <source>Force start torrents</source>
         <translation type="unfinished" />
+    </message>
+    <message>
+        <source>All</source>
+        <translation>Të gjitha</translation>
     </message>
 </context>
 <context>
@@ -5081,6 +5600,30 @@ Supports the formats: S01E01, 1x1, 2017.12.31 and 31.12.2017 (Date formats also 
         <source>Choose a log level...</source>
         <translation type="unfinished" />
     </message>
+    <message>
+        <source>All</source>
+        <translation>Të gjitha</translation>
+    </message>
+    <message>
+        <source>Export...</source>
+        <translation>Eksporto...</translation>
+    </message>
+    <message>
+        <source>Filter activity</source>
+        <translation>Filtro aktivitetin</translation>
+    </message>
+    <message>
+        <source>Result:</source>
+        <translation>Rezultati:</translation>
+    </message>
+    <message>
+        <source>User:</source>
+        <translation>Përdoruesi:</translation>
+    </message>
+    <message>
+        <source>WebUI Activity</source>
+        <translation>Aktiviteti i WebUI</translation>
+    </message>
 </context>
 <context>
     <name>TrackersFilterWidget</name>
@@ -5150,6 +5693,14 @@ Supports the formats: S01E01, 1x1, 2017.12.31 and 31.12.2017 (Date formats also 
     <message>
         <source>Torrent share limits</source>
         <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Torrent share limits</source>
+        <translation>Kufizimet e shpërndarjes së torrent-it</translation>
+    </message>
+    <message>
+        <source>Your role saves torrents in the default folders.</source>
+        <translation>Roli juaj i ruan torrentet te dosjet parazgjedhje.</translation>
     </message>
 </context>
 <context>
@@ -5249,6 +5800,18 @@ Supports the formats: S01E01, 1x1, 2017.12.31 and 31.12.2017 (Date formats also 
     <message>
         <source>Invalid Username or Password.</source>
         <translation type="unfinished" />
+    </message>
+    <message>
+        <source>A kettle is a group of hawks soaring together.</source>
+        <translation>Kettle është një grup skifterësh që fluturojnë së bashku.</translation>
+    </message>
+    <message>
+        <source>Sign in</source>
+        <translation>Hyr</translation>
+    </message>
+    <message>
+        <source>Username</source>
+        <translation>Emri i përdoruesit</translation>
     </message>
 </context>
 <context>
@@ -5574,6 +6137,10 @@ Supports the formats: S01E01, 1x1, 2017.12.31 and 31.12.2017 (Date formats also 
         <source>Resize</source>
         <translation type="unfinished" />
     </message>
+    <message>
+        <source>Reset Auto Width</source>
+        <translation>Rivendos gjerësinë automatike</translation>
+    </message>
 </context>
 <context>
     <name>confirmRotateAPIKeyDialog</name>
@@ -5703,6 +6270,18 @@ Supports the formats: S01E01, 1x1, 2017.12.31 and 31.12.2017 (Date formats also 
         <source>Remove torrent</source>
         <translation type="unfinished" />
     </message>
+    <message>
+        <source>Action when the limit is reached:</source>
+        <translation>Veprimi kur arrihet limiti:</translation>
+    </message>
+    <message>
+        <source>Seeding time:</source>
+        <translation>Koha e shpërndarjes:</translation>
+    </message>
+    <message>
+        <source>Unlimited</source>
+        <translation>Pa limit</translation>
+    </message>
 </context>
 <context>
     <name>TorrentContent</name>
@@ -5713,6 +6292,228 @@ Supports the formats: S01E01, 1x1, 2017.12.31 and 31.12.2017 (Date formats also 
     <message>
         <source>Not available for folders</source>
         <translation type="unfinished" />
+    </message>
+</context>
+<context>
+    <name>UserAccounts</name>
+    <message>
+        <source>(this browser)</source>
+        <translation>(ky shfletues)</translation>
+    </message>
+    <message>
+        <source>A role decides what its users are allowed to do.</source>
+        <translation>Një rol përcakton çfarë lejohet të bëjnë përdoruesit e tij.</translation>
+    </message>
+    <message>
+        <source>Add Role</source>
+        <translation>Shto rol</translation>
+    </message>
+    <message>
+        <source>Add Role...</source>
+        <translation>Shto rol...</translation>
+    </message>
+    <message>
+        <source>Add User</source>
+        <translation>Shto përdorues</translation>
+    </message>
+    <message>
+        <source>Add User...</source>
+        <translation>Shto përdorues...</translation>
+    </message>
+    <message>
+        <source>Are you sure you want to remove the role &apos;%1&apos;?</source>
+        <translation>Jeni i sigurt që doni të hiqni rolin «%1»?</translation>
+    </message>
+    <message>
+        <source>Are you sure you want to remove the user &apos;%1&apos;?</source>
+        <translation>Jeni i sigurt që doni të hiqni përdoruesin «%1»?</translation>
+    </message>
+    <message>
+        <source>At least %1 characters</source>
+        <translation>Të paktën %1 shenja</translation>
+    </message>
+    <message>
+        <source>Browser</source>
+        <translation>Shfletuesi</translation>
+    </message>
+    <message>
+        <source>Browsers and devices where someone is logged in with a user account.</source>
+        <translation>Shfletues dhe pajisje ku dikush është futur me një llogari përdoruesi.</translation>
+    </message>
+    <message>
+        <source>Change Password</source>
+        <translation>Ndrysho fjalëkalimin</translation>
+    </message>
+    <message>
+        <source>Confirm password:</source>
+        <translation>Konfirmo fjalëkalimin:</translation>
+    </message>
+    <message>
+        <source>Created</source>
+        <translation>Krijuar</translation>
+    </message>
+    <message>
+        <source>Current password:</source>
+        <translation>Fjalëkalimi aktual:</translation>
+    </message>
+    <message>
+        <source>Description</source>
+        <translation>Përshkrimi</translation>
+    </message>
+    <message>
+        <source>Description:</source>
+        <translation>Përshkrimi:</translation>
+    </message>
+    <message>
+        <source>Disable</source>
+        <translation>Çaktivizo</translation>
+    </message>
+    <message>
+        <source>Disable this account</source>
+        <translation>Çaktivizo këtë llogari</translation>
+    </message>
+    <message>
+        <source>Edit Role</source>
+        <translation>Ndrysho rolin</translation>
+    </message>
+    <message>
+        <source>Edit User</source>
+        <translation>Ndrysho përdoruesin</translation>
+    </message>
+    <message>
+        <source>Edit...</source>
+        <translation>Ndrysho...</translation>
+    </message>
+    <message>
+        <source>Enable</source>
+        <translation>Aktivizo</translation>
+    </message>
+    <message>
+        <source>Enabled</source>
+        <translation>Aktivizuar</translation>
+    </message>
+    <message>
+        <source>Enter a role name.</source>
+        <translation>Shkruani një emër roli.</translation>
+    </message>
+    <message>
+        <source>Enter a username.</source>
+        <translation>Shkruani një emër përdoruesi.</translation>
+    </message>
+    <message>
+        <source>Expires</source>
+        <translation>Skadon</translation>
+    </message>
+    <message>
+        <source>Gives control over the PC or qBittorrent itself</source>
+        <translation>Jep kontroll mbi PC-në ose mbi vetë qBittorrent</translation>
+    </message>
+    <message>
+        <source>Last active</source>
+        <translation>Aktiv së fundi</translation>
+    </message>
+    <message>
+        <source>Last login</source>
+        <translation>Hyrja e fundit</translation>
+    </message>
+    <message>
+        <source>Leave empty to keep the current password</source>
+        <translation>Lëreni bosh për të mbajtur fjalëkalimin aktual</translation>
+    </message>
+    <message>
+        <source>Log Out</source>
+        <translation>Dil</translation>
+    </message>
+    <message>
+        <source>Log Out Everywhere</source>
+        <translation>Dil kudo</translation>
+    </message>
+    <message>
+        <source>Logged In</source>
+        <translation>Të futur</translation>
+    </message>
+    <message>
+        <source>Logged in</source>
+        <translation>Hyri më</translation>
+    </message>
+    <message>
+        <source>New password:</source>
+        <translation>Fjalëkalimi i ri:</translation>
+    </message>
+    <message>
+        <source>No accounts yet, so everyone still uses the shared WebUI login. Add an Admin account first.</source>
+        <translation>Ende nuk ka llogari, ndaj të gjithë përdorin ende hyrjen e përbashkët të WebUI. Shtoni së pari një llogari Admin.</translation>
+    </message>
+    <message>
+        <source>People who can log in to the WebUI with their own username and password.</source>
+        <translation>Njerëz që mund të hyjnë në WebUI me emrin e tyre të përdoruesit dhe fjalëkalimin.</translation>
+    </message>
+    <message>
+        <source>Permissions</source>
+        <translation>Lejet</translation>
+    </message>
+    <message>
+        <source>Role</source>
+        <translation>Roli</translation>
+    </message>
+    <message>
+        <source>Role:</source>
+        <translation>Roli:</translation>
+    </message>
+    <message>
+        <source>Roles</source>
+        <translation>Role</translation>
+    </message>
+    <message>
+        <source>The password must be at least %1 characters long.</source>
+        <translation>Fjalëkalimi duhet të ketë të paktën %1 shenja.</translation>
+    </message>
+    <message>
+        <source>The passwords don&apos;t match.</source>
+        <translation>Fjalëkalimet nuk përputhen.</translation>
+    </message>
+    <message>
+        <source>User</source>
+        <translation>Përdorues</translation>
+    </message>
+    <message>
+        <source>Username</source>
+        <translation>Emri i përdoruesit</translation>
+    </message>
+    <message>
+        <source>Username:</source>
+        <translation>Emri i përdoruesit:</translation>
+    </message>
+    <message>
+        <source>Users</source>
+        <translation>Përdorues</translation>
+    </message>
+    <message>
+        <source>Your password was changed. Other browsers and devices where you were logged in have been logged out.</source>
+        <translation>Fjalëkalimi juaj u ndryshua. Shfletuesit dhe pajisjet e tjera ku ishit futur u nxorën jashtë.</translation>
+    </message>
+</context>
+<context>
+    <name>WebUIActivity</name>
+    <message>
+        <source>Action</source>
+        <translation>Veprimi</translation>
+    </message>
+    <message>
+        <source>Result</source>
+        <translation>Rezultati</translation>
+    </message>
+    <message>
+        <source>Role</source>
+        <translation>Roli</translation>
+    </message>
+    <message>
+        <source>Time</source>
+        <translation>Ora</translation>
+    </message>
+    <message>
+        <source>User</source>
+        <translation>Përdorues</translation>
     </message>
 </context>
 </TS>

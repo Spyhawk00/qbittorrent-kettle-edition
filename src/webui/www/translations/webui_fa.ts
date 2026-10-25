@@ -223,6 +223,85 @@ The piece hash will be checked when it is requested for the first time by a peer
         <source>%1 needed · %2 free</source>
         <translation type="unfinished" />
     </message>
+    <message>
+        <source>Don&apos;t create subfolder</source>
+        <translation>ایجاد نکردن زیرشاخه</translation>
+    </message>
+    <message>
+        <source>Never show again</source>
+        <translation>دیگر نمایش نده</translation>
+    </message>
+    <message>
+        <source>Select None</source>
+        <translation>هیچ‌کدام</translation>
+    </message>
+    <message>
+        <source>Torrent options</source>
+        <translation>گزینه‌های تورنت</translation>
+    </message>
+    <message>
+        <source>Your role saves torrents in the default folders.</source>
+        <translation>نقش شما تورنت‌ها را در پوشه‌های پیش‌فرض ذخیره می‌کند.</translation>
+    </message>
+</context>
+<context>
+    <name>AdvancedSettings</name>
+    <message>
+        <source>General</source>
+        <translation>عمومی</translation>
+    </message>
+    <message>
+        <source>Network</source>
+        <translation>شبکه</translation>
+    </message>
+    <message>
+        <source>Storage</source>
+        <translation>ذخیره‌سازی</translation>
+    </message>
+    <message>
+        <source>Peers and trackers</source>
+        <translation>پییرها و ترکرها</translation>
+    </message>
+    <message>
+        <source>Program behavior</source>
+        <translation>رفتار برنامه</translation>
+    </message>
+    <message>
+        <source>Display and notifications</source>
+        <translation>نمایش و اعلان‌ها</translation>
+    </message>
+    <message>
+        <source>Network connection</source>
+        <translation>اتصال شبکه</translation>
+    </message>
+    <message>
+        <source>Security and privacy</source>
+        <translation>امنیت و حریم خصوصی</translation>
+    </message>
+    <message>
+        <source>Connection tuning</source>
+        <translation>تنظیم اتصال</translation>
+    </message>
+    <message>
+        <source>Saving and torrent files</source>
+        <translation>ذخیره و فایل‌های تورنت</translation>
+    </message>
+    <message>
+        <source>Disk and memory</source>
+        <translation>دیسک و حافظه</translation>
+    </message>
+    <message>
+        <source>Trackers</source>
+        <translation>ترکرها</translation>
+    </message>
+    <message>
+        <source>Peers and seeding</source>
+        <translation>پییرها و سید کردن</translation>
+    </message>
+    <message>
+        <source>DHT and I2P</source>
+        <translation>DHT و I2P</translation>
+    </message>
 </context>
 <context>
     <name>CategoryFilterModel</name>
@@ -623,6 +702,14 @@ The piece hash will be checked when it is requested for the first time by a peer
         <source>More</source>
         <translation>بیشتر</translation>
     </message>
+    <message>
+        <source>Change Password...</source>
+        <translation>تغییر گذرواژه...</translation>
+    </message>
+    <message>
+        <source>Signed in as</source>
+        <translation>واردشده با نام</translation>
+    </message>
 </context>
 <context>
     <name>MainWindow</name>
@@ -921,6 +1008,30 @@ The piece hash will be checked when it is requested for the first time by a peer
     <message>
         <source>Resume Session</source>
         <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Pause Session</source>
+        <translation>توقف موقت نشست</translation>
+    </message>
+    <message>
+        <source>Pause session</source>
+        <translation>توقف موقت نشست</translation>
+    </message>
+    <message>
+        <source>Resume Session</source>
+        <translation>ادامهٔ نشست</translation>
+    </message>
+    <message>
+        <source>Resume session</source>
+        <translation>ادامهٔ نشست</translation>
+    </message>
+    <message>
+        <source>Your account can&apos;t add torrents.</source>
+        <translation>حساب شما نمی‌تواند تورنت اضافه کند.</translation>
+    </message>
+    <message>
+        <source>[PAUSED]</source>
+        <translation>[متوقف موقت]</translation>
     </message>
 </context>
 <context>
@@ -2499,6 +2610,134 @@ Use ';' to split multiple entries. Can use wildcard '*'.</source>
         <source>a@x.com;b@y.com,c@z.com - send two emails: the first to just a@x.com, the second to both b@y.com and c@z.com</source>
         <translation type="unfinished" />
     </message>
+    <message>
+        <source>0 means users are logged out after the session timeout.</source>
+        <translation>۰ یعنی کاربران پس از پایان مهلت نشست از سیستم خارج می‌شوند.</translation>
+    </message>
+    <message>
+        <source>Access</source>
+        <translation>دسترسی</translation>
+    </message>
+    <message>
+        <source>Allow this login when user accounts exist</source>
+        <translation>اجازهٔ این ورود هنگام وجود حساب‌های کاربری</translation>
+    </message>
+    <message>
+        <source>Also save search results</source>
+        <translation>ذخیرهٔ نتایج جستجو هم</translation>
+    </message>
+    <message>
+        <source>Below normal</source>
+        <translation>کمتر از معمولی</translation>
+    </message>
+    <message>
+        <source>Changes to users, roles and logins apply at once.</source>
+        <translation>تغییرات کاربران، نقش‌ها و ورودها فوراً اعمال می‌شوند.</translation>
+    </message>
+    <message>
+        <source>Don&apos;t create subfolder</source>
+        <translation>ایجاد نکردن زیرشاخه</translation>
+    </message>
+    <message>
+        <source>Example:</source>
+        <translation>مثال:</translation>
+    </message>
+    <message>
+        <source>Keep WebUI activity log for:</source>
+        <translation>نگه داشتن گزارش فعالیت WebUI به مدت:</translation>
+    </message>
+    <message>
+        <source>Keep users logged in for:</source>
+        <translation>نگه داشتن کاربران در سیستم به مدت:</translation>
+    </message>
+    <message>
+        <source>Language:</source>
+        <translation>زبان:</translation>
+    </message>
+    <message>
+        <source>Lock account after consecutive failures:</source>
+        <translation>قفل حساب پس از شکست‌های پیاپی:</translation>
+    </message>
+    <message>
+        <source>Logins and Activity Log</source>
+        <translation>ورودها و گزارش فعالیت</translation>
+    </message>
+    <message>
+        <source>Low</source>
+        <translation>کم</translation>
+    </message>
+    <message>
+        <source>Medium</source>
+        <translation>متوسط</translation>
+    </message>
+    <message>
+        <source>No settings match</source>
+        <translation>تنظیمات منطبقی نیست</translation>
+    </message>
+    <message>
+        <source>Process memory priority:</source>
+        <translation>اولویت حافظهٔ فرایند:</translation>
+    </message>
+    <message>
+        <source>Save search tabs</source>
+        <translation>ذخیرهٔ زبانه‌های جستجو</translation>
+    </message>
+    <message>
+        <source>Search settings</source>
+        <translation>جستجوی تنظیمات</translation>
+    </message>
+    <message>
+        <source>Service:</source>
+        <translation>سرویس:</translation>
+    </message>
+    <message>
+        <source>Show the window when adding a torrent</source>
+        <translation>نمایش پنجره هنگام افزودن تورنت</translation>
+    </message>
+    <message>
+        <source>Status bar and log</source>
+        <translation>نوار وضعیت و گزارش</translation>
+    </message>
+    <message>
+        <source>The WebUI activity log can be kept for 1 to 3650 days.</source>
+        <translation>گزارش فعالیت WebUI را می‌توان از ۱ تا ۳۶۵۰ روز نگه داشت.</translation>
+    </message>
+    <message>
+        <source>The settings below apply with OK or Apply.</source>
+        <translation>تنظیمات زیر با تأیید یا اعمال، اعمال می‌شوند.</translation>
+    </message>
+    <message>
+        <source>Transfer List</source>
+        <translation>لیست انتقال</translation>
+    </message>
+    <message>
+        <source>Until the first user account is created, this login always works.</source>
+        <translation>تا زمانی که اولین حساب کاربری ساخته نشده، این ورود همیشه کار می‌کند.</translation>
+    </message>
+    <message>
+        <source>User</source>
+        <translation>کاربر</translation>
+    </message>
+    <message>
+        <source>User Accounts</source>
+        <translation>حساب‌های کاربری</translation>
+    </message>
+    <message>
+        <source>Users can be kept logged in for 0 to 365 days.</source>
+        <translation>کاربران را می‌توان از ۰ تا ۳۶۵ روز وارد نگه داشت.</translation>
+    </message>
+    <message>
+        <source>Very low</source>
+        <translation>خیلی کم</translation>
+    </message>
+    <message>
+        <source>You changed the address, port or HTTPS setting of the WebUI. Saving moves the WebUI, so Options will save, close and reload the page, the same as OK. If the page doesn&apos;t come back, open the WebUI at its new address.\n\nSave anyway?</source>
+        <translation>نشانی، درگاه یا تنظیم HTTPS مربوط به WebUI را تغییر دادید. ذخیره WebUI را جابه‌جا می‌کند، پس گزینه‌ها مانند تأیید، ذخیره می‌کنند، می‌بندند و صفحه را دوباره بارگذاری می‌کنند. اگر صفحه برنگشت، WebUI را در نشانی جدیدش باز کنید.\n\nبه هر حال ذخیره شود؟</translation>
+    </message>
+    <message>
+        <source>lock for:</source>
+        <translation>قفل برای:</translation>
+    </message>
 </context>
 <context>
     <name>PeerListWidget</name>
@@ -3039,6 +3278,142 @@ Use ';' to split multiple entries. Can use wildcard '*'.</source>
     <message>
         <source>The time it takes from receiving a request from a peer until we're sending the response back on the socket</source>
         <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Activity</source>
+        <translation>فعالیت</translation>
+    </message>
+    <message>
+        <source>All time</source>
+        <translation>کل زمان</translation>
+    </message>
+    <message>
+        <source>Before tracking began</source>
+        <translation>پیش از آغاز ردیابی</translation>
+    </message>
+    <message>
+        <source>By month</source>
+        <translation>بر اساس ماه</translation>
+    </message>
+    <message>
+        <source>Counts the requests that added a download. Apps without a login, such as Sonarr and Radarr, are shown as (localhost). Downloads added in the desktop window are not counted.</source>
+        <translation>درخواست‌هایی را که دانلود افزوده‌اند می‌شمارد. برنامه‌های بدون ورود، مانند Sonarr و Radarr، با (localhost) نشان داده می‌شوند. دانلودهای افزوده‌شده در پنجرهٔ رومیزی شمرده نمی‌شوند.</translation>
+    </message>
+    <message>
+        <source>Current speed:</source>
+        <translation>سرعت کنونی:</translation>
+    </message>
+    <message>
+        <source>DHT nodes:</source>
+        <translation>گره‌های DHT:</translation>
+    </message>
+    <message>
+        <source>Data discarded this session:</source>
+        <translation>داده‌های دورریخته در این نشست:</translation>
+    </message>
+    <message>
+        <source>Disk</source>
+        <translation>دیسک</translation>
+    </message>
+    <message>
+        <source>History</source>
+        <translation>تاریخچه</translation>
+    </message>
+    <message>
+        <source>Last 12 months</source>
+        <translation>۱۲ ماه گذشته</translation>
+    </message>
+    <message>
+        <source>Last 7 days</source>
+        <translation>۷ روز گذشته</translation>
+    </message>
+    <message>
+        <source>Last month</source>
+        <translation>ماه گذشته</translation>
+    </message>
+    <message>
+        <source>Month</source>
+        <translation>ماه</translation>
+    </message>
+    <message>
+        <source>Nothing added yet</source>
+        <translation>هنوز چیزی افزوده نشده</translation>
+    </message>
+    <message>
+        <source>Off</source>
+        <translation>خاموش</translation>
+    </message>
+    <message>
+        <source>Overview</source>
+        <translation>نمای کلی</translation>
+    </message>
+    <message>
+        <source>Peers waiting on disk reads:</source>
+        <translation>پییرهای منتظر خواندن از دیسک:</translation>
+    </message>
+    <message>
+        <source>Peers waiting on disk writes:</source>
+        <translation>پییرهای منتظر نوشتن روی دیسک:</translation>
+    </message>
+    <message>
+        <source>Period</source>
+        <translation>دوره</translation>
+    </message>
+    <message>
+        <source>Request latency:</source>
+        <translation>تأخیر درخواست:</translation>
+    </message>
+    <message>
+        <source>Running for:</source>
+        <translation>مدت اجرا:</translation>
+    </message>
+    <message>
+        <source>Share ratio</source>
+        <translation>نسبت اشتراک</translation>
+    </message>
+    <message>
+        <source>Share ratio:</source>
+        <translation>نسبت اشتراک:</translation>
+    </message>
+    <message>
+        <source>Technical</source>
+        <translation>فنی</translation>
+    </message>
+    <message>
+        <source>This month</source>
+        <translation>این ماه</translation>
+    </message>
+    <message>
+        <source>This session</source>
+        <translation>این نشست</translation>
+    </message>
+    <message>
+        <source>Today</source>
+        <translation>امروز</translation>
+    </message>
+    <message>
+        <source>Torrents downloading:</source>
+        <translation>تورنت‌های در حال دانلود:</translation>
+    </message>
+    <message>
+        <source>Torrents seeding:</source>
+        <translation>تورنت‌های در حال سید:</translation>
+    </message>
+    <message>
+        <source>Torrents stopped:</source>
+        <translation>تورنت‌های متوقف:</translation>
+    </message>
+    <message>
+        <source>Torrents with errors:</source>
+        <translation>تورنت‌های دارای خطا:</translation>
+    </message>
+    <message>
+        <source>Tracking since:</source>
+        <translation>ردیابی از:</translation>
+    </message>
+    <message>
+        <source>WebUI downloads added, this month</source>
+        <translation>دانلودهای افزوده‌شده با WebUI، این ماه</translation>
     </message>
 </context>
 <context>
@@ -3899,6 +4274,10 @@ Use ';' to split multiple entries. Can use wildcard '*'.</source>
         <source>Remove tracker</source>
         <translation>پاک کردن ترکر</translation>
     </message>
+    <message>
+        <source>This choice is remembered for the next removal.</source>
+        <translation>این انتخاب برای حذف بعدی به خاطر سپرده می‌شود.</translation>
+    </message>
 </context>
 <context>
     <name>downloadFromURL</name>
@@ -4111,6 +4490,34 @@ Use ';' to split multiple entries. Can use wildcard '*'.</source>
         <source>Select plugins</source>
         <translation type="unfinished" />
     </message>
+    <message>
+        <source>Category to search in</source>
+        <translation>دستهٔ جستجو</translation>
+    </message>
+    <message>
+        <source>Close the selected search</source>
+        <translation>بستن جستجوی انتخاب‌شده</translation>
+    </message>
+    <message>
+        <source>Empty search pattern</source>
+        <translation>الگوی جستجوی خالی</translation>
+    </message>
+    <message>
+        <source>Search engines to use</source>
+        <translation>موتورهای جستجوی مورد استفاده</translation>
+    </message>
+    <message>
+        <source>Search for torrents...</source>
+        <translation>جستجوی تورنت...</translation>
+    </message>
+    <message>
+        <source>Searches</source>
+        <translation>جستجوها</translation>
+    </message>
+    <message>
+        <source>Type a search above and press Enter.</source>
+        <translation>در بالا یک جستجو بنویسید و Enter بزنید.</translation>
+    </message>
 </context>
 <context>
     <name>PluginSelectDlg</name>
@@ -4149,6 +4556,10 @@ Use ';' to split multiple entries. Can use wildcard '*'.</source>
     <message>
         <source>Search plugins</source>
         <translation>جستجوی افزونه‌ها</translation>
+    </message>
+    <message>
+        <source>Warning: Be sure to comply with your country&apos;s copyright laws when downloading torrents from any of these search engines.</source>
+        <translation>هشدار: هنگام بارگیری تورنت از هر یک از این موتورهای جستجو ، حتماً از قوانین کپی رایت کشور خود پیروی کنید.</translation>
     </message>
 </context>
 <context>
@@ -4372,6 +4783,30 @@ Use ';' to split multiple entries. Can use wildcard '*'.</source>
         <source>qBittorrent icon</source>
         <translation type="unfinished" />
     </message>
+    <message>
+        <source>Based on:</source>
+        <translation>بر پایهٔ:</translation>
+    </message>
+    <message>
+        <source>Edition version:</source>
+        <translation>نسخهٔ ویرایش:</translation>
+    </message>
+    <message>
+        <source>Kettle Edition is a personal build of qBittorrent that adds user accounts with roles for the WebUI and the desktop app, an activity log, and an installable WebUI with a phone layout. A kettle is a group of hawks soaring together. This is an unofficial build, not affiliated with the qBittorrent project.</source>
+        <translation>Kettle Edition یک ساخت شخصی از qBittorrent است که حساب‌های کاربری با نقش برای WebUI و برنامهٔ رومیزی، گزارش فعالیت و یک WebUI قابل نصب با چیدمان گوشی اضافه می‌کند. Kettle گروهی از شاهین‌هاست که با هم اوج می‌گیرند. این ساخت غیررسمی است و به پروژهٔ qBittorrent ارتباطی ندارد.</translation>
+    </message>
+    <message>
+        <source>Maintainer:</source>
+        <translation>نگهدارنده:</translation>
+    </message>
+    <message>
+        <source>This edition</source>
+        <translation>این نسخه</translation>
+    </message>
+    <message>
+        <source>qBittorrent project:</source>
+        <translation>پروژهٔ qBittorrent:</translation>
+    </message>
 </context>
 <context>
     <name>OptionDialog</name>
@@ -4473,6 +4908,42 @@ Use ';' to split multiple entries. Can use wildcard '*'.</source>
     <message>
         <source>Open shared download window</source>
         <translation type="unfinished" />
+    </message>
+    <message>
+        <source>%1 of %2 shown</source>
+        <translation>%1 از %2 نمایش داده شد</translation>
+    </message>
+    <message>
+        <source>%1 of %2 shown (%3 hidden)</source>
+        <translation>%1 از %2 نمایش داده شد (%3 پنهان)</translation>
+    </message>
+    <message>
+        <source>Close all searches</source>
+        <translation>بستن همهٔ جستجوها</translation>
+    </message>
+    <message>
+        <source>Close search</source>
+        <translation>بستن جستجو</translation>
+    </message>
+    <message>
+        <source>Finished: %1</source>
+        <translation>پایان یافت: %1</translation>
+    </message>
+    <message>
+        <source>Refresh search</source>
+        <translation>تازه‌سازی جستجو</translation>
+    </message>
+    <message>
+        <source>Search aborted: %1</source>
+        <translation>جستجو متوقف شد: %1</translation>
+    </message>
+    <message>
+        <source>Search returned no results</source>
+        <translation>جستجو نتیجه ای نداشت</translation>
+    </message>
+    <message>
+        <source>Searching: %1</source>
+        <translation>در حال جستجو: %1</translation>
     </message>
 </context>
 <context>
@@ -4611,6 +5082,10 @@ Use ';' to split multiple entries. Can use wildcard '*'.</source>
     <message>
         <source>Blocked opening RSS article URL. Only http:// and https:// links can be opened.</source>
         <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Details</source>
+        <translation>جزئیات</translation>
     </message>
 </context>
 <context>
@@ -4888,6 +5363,10 @@ Supports the formats: S01E01, 1x1, 2017.12.31 and 31.12.2017 (Date formats also 
         <source>Import</source>
         <translation type="unfinished" />
     </message>
+    <message>
+        <source>Don&apos;t create subfolder</source>
+        <translation>ایجاد نکردن زیرشاخه</translation>
+    </message>
 </context>
 <context>
     <name>TrackerFiltersList</name>
@@ -5077,6 +5556,26 @@ Supports the formats: S01E01, 1x1, 2017.12.31 and 31.12.2017 (Date formats also 
         <source>Choose a log level...</source>
         <translation>انتخاب سطح گزارش...</translation>
     </message>
+    <message>
+        <source>Export...</source>
+        <translation>برون‌ریزی...</translation>
+    </message>
+    <message>
+        <source>Filter activity</source>
+        <translation>فیلتر فعالیت</translation>
+    </message>
+    <message>
+        <source>Result:</source>
+        <translation>نتیجه:</translation>
+    </message>
+    <message>
+        <source>User:</source>
+        <translation>کاربر:</translation>
+    </message>
+    <message>
+        <source>WebUI Activity</source>
+        <translation>فعالیت WebUI</translation>
+    </message>
 </context>
 <context>
     <name>TrackersFilterWidget</name>
@@ -5146,6 +5645,14 @@ Supports the formats: S01E01, 1x1, 2017.12.31 and 31.12.2017 (Date formats also 
     <message>
         <source>Torrent share limits</source>
         <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Torrent share limits</source>
+        <translation>محدودیت های اشتراک تورنت</translation>
+    </message>
+    <message>
+        <source>Your role saves torrents in the default folders.</source>
+        <translation>نقش شما تورنت‌ها را در پوشه‌های پیش‌فرض ذخیره می‌کند.</translation>
     </message>
 </context>
 <context>
@@ -5245,6 +5752,14 @@ Supports the formats: S01E01, 1x1, 2017.12.31 and 31.12.2017 (Date formats also 
     <message>
         <source>Invalid Username or Password.</source>
         <translation>نام کاربری یا کلمه عبور نامعتبر</translation>
+    </message>
+    <message>
+        <source>A kettle is a group of hawks soaring together.</source>
+        <translation>Kettle گروهی از شاهین‌هاست که با هم اوج می‌گیرند.</translation>
+    </message>
+    <message>
+        <source>Sign in</source>
+        <translation>ورود</translation>
     </message>
 </context>
 <context>
@@ -5453,6 +5968,22 @@ Supports the formats: S01E01, 1x1, 2017.12.31 and 31.12.2017 (Date formats also 
         <source>If checked, filenames starting with a period punctuation mark `.` will not be added to the created torrent.</source>
         <translation type="unfinished" />
     </message>
+    <message>
+        <source>Align to piece boundary for files larger than:</source>
+        <translation>تراز کردن مرز برای فایل های بزرگتر از:</translation>
+    </message>
+    <message>
+        <source>Optimize alignment</source>
+        <translation>بهینه سازی تراز</translation>
+    </message>
+    <message>
+        <source>Private torrent (Won&apos;t distribute on DHT network)</source>
+        <translation>تورنت خصوصی (در شبکه DHT توزیع نمی شود)</translation>
+    </message>
+    <message>
+        <source>Start seeding immediately</source>
+        <translation>شروع فوری سید‌کردن</translation>
+    </message>
 </context>
 <context>
     <name>DownloadFromURLDialog</name>
@@ -5563,6 +6094,10 @@ Supports the formats: S01E01, 1x1, 2017.12.31 and 31.12.2017 (Date formats also 
         <source>Failed to set speed limits</source>
         <translation type="unfinished" />
     </message>
+    <message>
+        <source>Speed limits</source>
+        <translation>محدودیت‌های سرعت</translation>
+    </message>
 </context>
 <context>
     <name>ListWidget</name>
@@ -5573,6 +6108,10 @@ Supports the formats: S01E01, 1x1, 2017.12.31 and 31.12.2017 (Date formats also 
     <message>
         <source>Resize</source>
         <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Reset Auto Width</source>
+        <translation>بازنشانی پهنای خودکار</translation>
     </message>
 </context>
 <context>
@@ -5703,6 +6242,14 @@ Supports the formats: S01E01, 1x1, 2017.12.31 and 31.12.2017 (Date formats also 
         <source>Remove torrent</source>
         <translation type="unfinished" />
     </message>
+    <message>
+        <source>Set to</source>
+        <translation>تنظیم کردن</translation>
+    </message>
+    <message>
+        <source>Unlimited</source>
+        <translation>نامحدود</translation>
+    </message>
 </context>
 <context>
     <name>TorrentContent</name>
@@ -5713,6 +6260,216 @@ Supports the formats: S01E01, 1x1, 2017.12.31 and 31.12.2017 (Date formats also 
     <message>
         <source>Not available for folders</source>
         <translation type="unfinished" />
+    </message>
+</context>
+<context>
+    <name>UserAccounts</name>
+    <message>
+        <source>(this browser)</source>
+        <translation>(این مرورگر)</translation>
+    </message>
+    <message>
+        <source>A role decides what its users are allowed to do.</source>
+        <translation>نقش تعیین می‌کند کاربرانش مجاز به چه کاری هستند.</translation>
+    </message>
+    <message>
+        <source>Add Role</source>
+        <translation>افزودن نقش</translation>
+    </message>
+    <message>
+        <source>Add Role...</source>
+        <translation>افزودن نقش...</translation>
+    </message>
+    <message>
+        <source>Add User</source>
+        <translation>افزودن کاربر</translation>
+    </message>
+    <message>
+        <source>Add User...</source>
+        <translation>افزودن کاربر...</translation>
+    </message>
+    <message>
+        <source>Are you sure you want to remove the role &apos;%1&apos;?</source>
+        <translation>آیا مطمئنید می‌خواهید نقش «%1» را حذف کنید؟</translation>
+    </message>
+    <message>
+        <source>Are you sure you want to remove the user &apos;%1&apos;?</source>
+        <translation>آیا مطمئنید می‌خواهید کاربر «%1» را حذف کنید؟</translation>
+    </message>
+    <message>
+        <source>At least %1 characters</source>
+        <translation>دست‌کم %1 نویسه</translation>
+    </message>
+    <message>
+        <source>Browser</source>
+        <translation>مرورگر</translation>
+    </message>
+    <message>
+        <source>Browsers and devices where someone is logged in with a user account.</source>
+        <translation>مرورگرها و دستگاه‌هایی که کسی با حساب کاربری در آن‌ها وارد شده است.</translation>
+    </message>
+    <message>
+        <source>Change Password</source>
+        <translation>تغییر گذرواژه</translation>
+    </message>
+    <message>
+        <source>Confirm password:</source>
+        <translation>تأیید گذرواژه:</translation>
+    </message>
+    <message>
+        <source>Created</source>
+        <translation>ساخته‌شده</translation>
+    </message>
+    <message>
+        <source>Current password:</source>
+        <translation>گذرواژهٔ کنونی:</translation>
+    </message>
+    <message>
+        <source>Description</source>
+        <translation>توضیح</translation>
+    </message>
+    <message>
+        <source>Description:</source>
+        <translation>توضیح:</translation>
+    </message>
+    <message>
+        <source>Disable</source>
+        <translation>غیرفعال کردن</translation>
+    </message>
+    <message>
+        <source>Disable this account</source>
+        <translation>غیرفعال کردن این حساب</translation>
+    </message>
+    <message>
+        <source>Edit Role</source>
+        <translation>ویرایش نقش</translation>
+    </message>
+    <message>
+        <source>Edit User</source>
+        <translation>ویرایش کاربر</translation>
+    </message>
+    <message>
+        <source>Edit...</source>
+        <translation>ویرایش...</translation>
+    </message>
+    <message>
+        <source>Enable</source>
+        <translation>فعال کردن</translation>
+    </message>
+    <message>
+        <source>Enter a role name.</source>
+        <translation>یک نام نقش وارد کنید.</translation>
+    </message>
+    <message>
+        <source>Enter a username.</source>
+        <translation>یک نام کاربری وارد کنید.</translation>
+    </message>
+    <message>
+        <source>Expires</source>
+        <translation>انقضا</translation>
+    </message>
+    <message>
+        <source>Gives control over the PC or qBittorrent itself</source>
+        <translation>کنترل رایانه یا خود qBittorrent را می‌دهد</translation>
+    </message>
+    <message>
+        <source>Last active</source>
+        <translation>آخرین فعالیت</translation>
+    </message>
+    <message>
+        <source>Last login</source>
+        <translation>آخرین ورود</translation>
+    </message>
+    <message>
+        <source>Leave empty to keep the current password</source>
+        <translation>برای نگه داشتن گذرواژهٔ کنونی خالی بگذارید</translation>
+    </message>
+    <message>
+        <source>Log Out</source>
+        <translation>خروج</translation>
+    </message>
+    <message>
+        <source>Log Out Everywhere</source>
+        <translation>خروج از همه‌جا</translation>
+    </message>
+    <message>
+        <source>Logged In</source>
+        <translation>واردشده‌ها</translation>
+    </message>
+    <message>
+        <source>Logged in</source>
+        <translation>زمان ورود</translation>
+    </message>
+    <message>
+        <source>New password:</source>
+        <translation>گذرواژهٔ جدید:</translation>
+    </message>
+    <message>
+        <source>No accounts yet, so everyone still uses the shared WebUI login. Add an Admin account first.</source>
+        <translation>هنوز حسابی نیست، پس همه هنوز از ورود مشترک WebUI استفاده می‌کنند. ابتدا یک حساب مدیر اضافه کنید.</translation>
+    </message>
+    <message>
+        <source>People who can log in to the WebUI with their own username and password.</source>
+        <translation>افرادی که می‌توانند با نام کاربری و گذرواژهٔ خودشان وارد WebUI شوند.</translation>
+    </message>
+    <message>
+        <source>Permissions</source>
+        <translation>مجوزها</translation>
+    </message>
+    <message>
+        <source>Role</source>
+        <translation>نقش</translation>
+    </message>
+    <message>
+        <source>Role:</source>
+        <translation>نقش:</translation>
+    </message>
+    <message>
+        <source>Roles</source>
+        <translation>نقش‌ها</translation>
+    </message>
+    <message>
+        <source>The password must be at least %1 characters long.</source>
+        <translation>گذرواژه باید دست‌کم %1 نویسه باشد.</translation>
+    </message>
+    <message>
+        <source>The passwords don&apos;t match.</source>
+        <translation>گذرواژه‌ها مطابقت ندارند.</translation>
+    </message>
+    <message>
+        <source>User</source>
+        <translation>کاربر</translation>
+    </message>
+    <message>
+        <source>Users</source>
+        <translation>کاربران</translation>
+    </message>
+    <message>
+        <source>Your password was changed. Other browsers and devices where you were logged in have been logged out.</source>
+        <translation>گذرواژهٔ شما تغییر کرد. مرورگرها و دستگاه‌های دیگری که در آن‌ها وارد شده بودید، خارج شدند.</translation>
+    </message>
+</context>
+<context>
+    <name>WebUIActivity</name>
+    <message>
+        <source>Action</source>
+        <translation>اقدام</translation>
+    </message>
+    <message>
+        <source>Result</source>
+        <translation>نتیجه</translation>
+    </message>
+    <message>
+        <source>Role</source>
+        <translation>نقش</translation>
+    </message>
+    <message>
+        <source>Time</source>
+        <translation>زمان</translation>
+    </message>
+    <message>
+        <source>User</source>
+        <translation>کاربر</translation>
     </message>
 </context>
 </TS>

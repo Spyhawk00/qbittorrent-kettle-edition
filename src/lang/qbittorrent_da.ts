@@ -141,6 +141,62 @@
         <source>The free IP to Country Lite database by DB-IP is used for resolving the countries of peers. The database is licensed under the Creative Commons Attribution 4.0 International License</source>
         <translation>Den frie IP to Country Lite database af DB-IP anvendes til bestemmelse af fællers lande. Databasen er bevilliget under Creative Commons Attribution 4.0 international licens</translation>
     </message>
+    <message>
+        <source>This edition</source>
+        <translation>Denne udgave</translation>
+    </message>
+    <message>
+        <source>Edition version:</source>
+        <translation>Udgavens version:</translation>
+    </message>
+    <message>
+        <source>Based on:</source>
+        <translation>Baseret på:</translation>
+    </message>
+    <message>
+        <source>Maintainer:</source>
+        <translation>Vedligeholder:</translation>
+    </message>
+    <message>
+        <source>qBittorrent project:</source>
+        <translation>qBittorrent-projektet:</translation>
+    </message>
+    <message>
+        <source>Kettle Edition is a personal build of qBittorrent that adds user accounts with roles for the WebUI and the desktop app, an activity log, and an installable WebUI with a phone layout. A kettle is a group of hawks soaring together. This is an unofficial build, not affiliated with the qBittorrent project.</source>
+        <translation>Kettle Edition er en personlig build af qBittorrent, der tilføjer brugerkonti med roller til WebUI og skrivebordsprogrammet, en aktivitetslog og en installerbar WebUI med telefonlayout. En kettle er en gruppe høge, der svæver sammen. Dette er en uofficiel build, som ikke er tilknyttet qBittorrent-projektet.</translation>
+    </message>
+    <message>
+        <source>N/A</source>
+        <translation>I/T</translation>
+    </message>
+    <message>
+        <source>This edition</source>
+        <translation>Denne udgave</translation>
+    </message>
+    <message>
+        <source>Edition version:</source>
+        <translation>Udgavens version:</translation>
+    </message>
+    <message>
+        <source>Based on:</source>
+        <translation>Baseret på:</translation>
+    </message>
+    <message>
+        <source>Maintainer:</source>
+        <translation>Vedligeholder:</translation>
+    </message>
+    <message>
+        <source>qBittorrent project:</source>
+        <translation>qBittorrent-projektet:</translation>
+    </message>
+    <message>
+        <source>Kettle Edition is a personal build of qBittorrent that adds user accounts with roles for the WebUI and the desktop app, an activity log, and an installable WebUI with a phone layout. A kettle is a group of hawks soaring together. This is an unofficial build, not affiliated with the qBittorrent project.</source>
+        <translation>Kettle Edition er en personlig build af qBittorrent, der tilføjer brugerkonti med roller til WebUI og skrivebordsprogrammet, en aktivitetslog og en installerbar WebUI med telefonlayout. En kettle er en gruppe høge, der svæver sammen. Dette er en uofficiel build, som ikke er tilknyttet qBittorrent-projektet.</translation>
+    </message>
+    <message>
+        <source>N/A</source>
+        <translation>I/T</translation>
+    </message>
 </context>
 <context>
     <name>AbstractFileStorage</name>
@@ -1459,6 +1515,62 @@
         <location filename="../gui/advancedsettings.cpp" line="925"/>
         <source>Embedded tracker port</source>
         <translation>Indlejret tracker-port</translation>
+    </message>
+    <message>
+        <source>Network</source>
+        <translation>Netværk</translation>
+    </message>
+    <message>
+        <source>Storage</source>
+        <translation>Lager</translation>
+    </message>
+    <message>
+        <source>Peers and trackers</source>
+        <translation>Modparter og trackere</translation>
+    </message>
+    <message>
+        <source>Program behavior</source>
+        <translation>Programmets opførsel</translation>
+    </message>
+    <message>
+        <source>Display and notifications</source>
+        <translation>Visning og notifikationer</translation>
+    </message>
+    <message>
+        <source>Network connection</source>
+        <translation>Netværksforbindelse</translation>
+    </message>
+    <message>
+        <source>Security and privacy</source>
+        <translation>Sikkerhed og privatliv</translation>
+    </message>
+    <message>
+        <source>Connection tuning</source>
+        <translation>Justering af forbindelse</translation>
+    </message>
+    <message>
+        <source>Saving and torrent files</source>
+        <translation>Gemning og torrentfiler</translation>
+    </message>
+    <message>
+        <source>Disk and memory</source>
+        <translation>Disk og hukommelse</translation>
+    </message>
+    <message>
+        <source>Peers and seeding</source>
+        <translation>Modparter og seeding</translation>
+    </message>
+    <message>
+        <source>DHT and I2P</source>
+        <translation>DHT og I2P</translation>
+    </message>
+    <message>
+        <source>General</source>
+        <translation>Generelt</translation>
+    </message>
+    <message>
+        <source>Trackers</source>
+        <translation>Trackere</translation>
     </message>
 </context>
 <context>
@@ -3463,6 +3575,22 @@ Supports the formats: S01E01, 1x1, 2017.12.31 and 31.12.2017 (Date formats also 
         <source>Remove torrent</source>
         <translation>Fjern torrent</translation>
     </message>
+    <message>
+        <source>This choice is remembered for the next removal.</source>
+        <translation>Dette valg huskes til næste fjernelse.</translation>
+    </message>
+    <message>
+        <source>Remove</source>
+        <translation>Fjern</translation>
+    </message>
+    <message>
+        <source>This choice is remembered for the next removal.</source>
+        <translation>Dette valg huskes til næste fjernelse.</translation>
+    </message>
+    <message>
+        <source>Remove</source>
+        <translation>Fjern</translation>
+    </message>
 </context>
 <context>
     <name>DownloadFromURLDialog</name>
@@ -3536,6 +3664,14 @@ Supports the formats: S01E01, 1x1, 2017.12.31 and 31.12.2017 (Date formats also 
         <location filename="../gui/executionlogwidget.cpp" line="99"/>
         <source>Clear</source>
         <translation>Ryd</translation>
+    </message>
+    <message>
+        <source>WebUI Activity</source>
+        <translation>WebUI-aktivitet</translation>
+    </message>
+    <message>
+        <source>WebUI Activity</source>
+        <translation>WebUI-aktivitet</translation>
     </message>
 </context>
 <context>
@@ -4698,6 +4834,46 @@ Minimum requirement: %2.</source>
         <location filename="../gui/mainwindow.cpp" line="1346"/>
         <source>Torrent Files</source>
         <translation>Torrent-filer</translation>
+    </message>
+    <message>
+        <source>Kettle Edition %1 is available.</source>
+        <translation>Kettle Edition %1 er tilgængelig.</translation>
+    </message>
+    <message>
+        <source>qBittorrent Kettle Edition %1 is available. It is downloaded now and installed at 4:00 AM, or when qBittorrent starts next.</source>
+        <translation>qBittorrent Kettle Edition %1 er tilgængelig. Den hentes nu og installeres kl. 4:00 eller næste gang qBittorrent starter.</translation>
+    </message>
+    <message>
+        <source>qBittorrent Kettle Edition %1 is available. It is downloaded now. Turn on &quot;Automatically install Kettle Edition updates&quot; in Options to install it.</source>
+        <translation>qBittorrent Kettle Edition %1 er tilgængelig. Den hentes nu. Slå &quot;Installer Kettle Edition-opdateringer automatisk&quot; til i Indstillinger for at installere den.</translation>
+    </message>
+    <message>
+        <source>You have the latest qBittorrent Kettle Edition (%1).</source>
+        <translation>Du har den nyeste qBittorrent Kettle Edition (%1).</translation>
+    </message>
+    <message>
+        <source>Could not check for qBittorrent Kettle Edition updates. See the Execution Log for details.</source>
+        <translation>Kunne ikke søge efter opdateringer til qBittorrent Kettle Edition. Se kørselsloggen for detaljer.</translation>
+    </message>
+    <message>
+        <source>Kettle Edition %1 is available.</source>
+        <translation>Kettle Edition %1 er tilgængelig.</translation>
+    </message>
+    <message>
+        <source>qBittorrent Kettle Edition %1 is available. It is downloaded now and installed at 4:00 AM, or when qBittorrent starts next.</source>
+        <translation>qBittorrent Kettle Edition %1 er tilgængelig. Den hentes nu og installeres kl. 4:00 eller næste gang qBittorrent starter.</translation>
+    </message>
+    <message>
+        <source>qBittorrent Kettle Edition %1 is available. It is downloaded now. Turn on &quot;Automatically install Kettle Edition updates&quot; in Options to install it.</source>
+        <translation>qBittorrent Kettle Edition %1 er tilgængelig. Den hentes nu. Slå &quot;Installer Kettle Edition-opdateringer automatisk&quot; til i Indstillinger for at installere den.</translation>
+    </message>
+    <message>
+        <source>You have the latest qBittorrent Kettle Edition (%1).</source>
+        <translation>Du har den nyeste qBittorrent Kettle Edition (%1).</translation>
+    </message>
+    <message>
+        <source>Could not check for qBittorrent Kettle Edition updates. See the Execution Log for details.</source>
+        <translation>Kunne ikke søge efter opdateringer til qBittorrent Kettle Edition. Se kørselsloggen for detaljer.</translation>
     </message>
 </context>
 <context>
@@ -8407,6 +8583,190 @@ Check the Execution Log for errors.</source>
         <source>Length Error</source>
         <translation>Fejl ved længde</translation>
     </message>
+    <message>
+        <source>Search settings</source>
+        <translation>Søg i indstillinger</translation>
+    </message>
+    <message>
+        <source>No settings match</source>
+        <translation>Ingen indstillinger passer</translation>
+    </message>
+    <message>
+        <source>User Accounts</source>
+        <translation>Brugerkonti</translation>
+    </message>
+    <message>
+        <source>Automatically install Kettle Edition updates</source>
+        <translation>Installer Kettle Edition-opdateringer automatisk</translation>
+    </message>
+    <message>
+        <source>Status bar and log</source>
+        <translation>Statuslinje og log</translation>
+    </message>
+    <message>
+        <source>Files</source>
+        <translation>Filer</translation>
+    </message>
+    <message>
+        <source>Checking</source>
+        <translation>Kontrol</translation>
+    </message>
+    <message>
+        <source>Until the first user account is created, this login always works.</source>
+        <translation>Indtil den første brugerkonto er oprettet, virker dette login altid.</translation>
+    </message>
+    <message>
+        <source>Allow this login when user accounts exist</source>
+        <translation>Tillad dette login, når der findes brugerkonti</translation>
+    </message>
+    <message>
+        <source>Access</source>
+        <translation>Adgang</translation>
+    </message>
+    <message>
+        <source>Changes to users, roles and logins apply at once. The settings below apply with OK or Apply.</source>
+        <translation>Ændringer af brugere, roller og logins træder i kraft med det samme. Indstillingerne nedenfor træder i kraft med OK eller Anvend.</translation>
+    </message>
+    <message>
+        <source>Logins and Activity Log</source>
+        <translation>Logins og aktivitetslog</translation>
+    </message>
+    <message>
+        <source>0 means users are logged out after the session timeout.</source>
+        <translation>0 betyder, at brugere logges ud efter sessionens timeout.</translation>
+    </message>
+    <message>
+        <source>Keep users logged in for:</source>
+        <translation>Hold brugere logget ind i:</translation>
+    </message>
+    <message>
+        <source>Until session timeout</source>
+        <translation>Til sessionens timeout</translation>
+    </message>
+    <message>
+        <source> days</source>
+        <translation> dage</translation>
+    </message>
+    <message>
+        <source>Lock account after consecutive failures:</source>
+        <translation>Lås konto efter fejl i træk:</translation>
+    </message>
+    <message>
+        <source>Keep WebUI activity log for:</source>
+        <translation>Behold WebUI-aktivitetslog i:</translation>
+    </message>
+    <message>
+        <source>lock for:</source>
+        <translation>lås i:</translation>
+    </message>
+    <message>
+        <source>%1 works best with Windows dark mode</source>
+        <translation>%1 fungerer bedst med Windows&apos; mørke tilstand</translation>
+    </message>
+    <message>
+        <source>WebUI address</source>
+        <translation>WebUI-adresse</translation>
+    </message>
+    <message>
+        <source>With the WebUI address set to %1, only this PC can reach the WebUI. Remote access, including through a reverse proxy on another machine, will stop working.
+
+Save anyway?</source>
+        <translation>Når WebUI-adressen er sat til %1, kan kun denne pc nå WebUI. Fjernadgang, også gennem en omvendt proxy på en anden maskine, holder op med at virke.
+
+Gem alligevel?</translation>
+    </message>
+    <message>
+        <source>Search settings</source>
+        <translation>Søg i indstillinger</translation>
+    </message>
+    <message>
+        <source>No settings match</source>
+        <translation>Ingen indstillinger passer</translation>
+    </message>
+    <message>
+        <source>User Accounts</source>
+        <translation>Brugerkonti</translation>
+    </message>
+    <message>
+        <source>Automatically install Kettle Edition updates</source>
+        <translation>Installer Kettle Edition-opdateringer automatisk</translation>
+    </message>
+    <message>
+        <source>Status bar and log</source>
+        <translation>Statuslinje og log</translation>
+    </message>
+    <message>
+        <source>Files</source>
+        <translation>Filer</translation>
+    </message>
+    <message>
+        <source>Checking</source>
+        <translation>Kontrol</translation>
+    </message>
+    <message>
+        <source>Until the first user account is created, this login always works.</source>
+        <translation>Indtil den første brugerkonto er oprettet, virker dette login altid.</translation>
+    </message>
+    <message>
+        <source>Allow this login when user accounts exist</source>
+        <translation>Tillad dette login, når der findes brugerkonti</translation>
+    </message>
+    <message>
+        <source>Access</source>
+        <translation>Adgang</translation>
+    </message>
+    <message>
+        <source>Changes to users, roles and logins apply at once. The settings below apply with OK or Apply.</source>
+        <translation>Ændringer af brugere, roller og logins træder i kraft med det samme. Indstillingerne nedenfor træder i kraft med OK eller Anvend.</translation>
+    </message>
+    <message>
+        <source>Logins and Activity Log</source>
+        <translation>Logins og aktivitetslog</translation>
+    </message>
+    <message>
+        <source>0 means users are logged out after the session timeout.</source>
+        <translation>0 betyder, at brugere logges ud efter sessionens timeout.</translation>
+    </message>
+    <message>
+        <source>Keep users logged in for:</source>
+        <translation>Hold brugere logget ind i:</translation>
+    </message>
+    <message>
+        <source>Until session timeout</source>
+        <translation>Til sessionens timeout</translation>
+    </message>
+    <message>
+        <source> days</source>
+        <translation> dage</translation>
+    </message>
+    <message>
+        <source>Lock account after consecutive failures:</source>
+        <translation>Lås konto efter fejl i træk:</translation>
+    </message>
+    <message>
+        <source>Keep WebUI activity log for:</source>
+        <translation>Behold WebUI-aktivitetslog i:</translation>
+    </message>
+    <message>
+        <source>lock for:</source>
+        <translation>lås i:</translation>
+    </message>
+    <message>
+        <source>%1 works best with Windows dark mode</source>
+        <translation>%1 fungerer bedst med Windows&apos; mørke tilstand</translation>
+    </message>
+    <message>
+        <source>WebUI address</source>
+        <translation>WebUI-adresse</translation>
+    </message>
+    <message>
+        <source>With the WebUI address set to %1, only this PC can reach the WebUI. Remote access, including through a reverse proxy on another machine, will stop working.
+
+Save anyway?</source>
+        <translation>Når WebUI-adressen er sat til %1, kan kun denne pc nå WebUI. Fjernadgang, også gennem en omvendt proxy på en anden maskine, holder op med at virke.
+
+Gem alligevel?</translation>
+    </message>
 </context>
 <context>
     <name>PeerInfo</name>
@@ -8659,6 +9019,22 @@ Check the Execution Log for errors.</source>
         <location filename="../gui/properties/peerlistwidget.cpp" line="309"/>
         <source>Copy IP:port</source>
         <translation>Kopiér IP:port</translation>
+    </message>
+    <message>
+        <source>Reset auto width</source>
+        <translation>Nulstil automatisk bredde</translation>
+    </message>
+    <message>
+        <source>Fit all non-hidden columns to their contents again, and forget the widths that were set by hand</source>
+        <translation>Tilpas alle viste kolonner til deres indhold igen, og glem de bredder, der er sat manuelt</translation>
+    </message>
+    <message>
+        <source>Reset auto width</source>
+        <translation>Nulstil automatisk bredde</translation>
+    </message>
+    <message>
+        <source>Fit all non-hidden columns to their contents again, and forget the widths that were set by hand</source>
+        <translation>Tilpas alle viste kolonner til deres indhold igen, og glem de bredder, der er sat manuelt</translation>
     </message>
 </context>
 <context>
@@ -10043,6 +10419,14 @@ Pluginsne blev deaktiveret.</translation>
         <source>Open link</source>
         <translation type="unfinished"></translation>
     </message>
+    <message>
+        <source>Details</source>
+        <translation>Detaljer</translation>
+    </message>
+    <message>
+        <source>Details</source>
+        <translation>Detaljer</translation>
+    </message>
 </context>
 <context>
     <name>SearchController</name>
@@ -10392,6 +10776,70 @@ Pluginsne blev deaktiveret.</translation>
         <source>Resize all non-hidden columns to the size of their contents</source>
         <translation>Ændr alle ikke-skjulte kolonner til deres indholds størrelse</translation>
     </message>
+    <message>
+        <source>%1 of %2 shown (%3 hidden)</source>
+        <translation>%1 af %2 vist (%3 skjult)</translation>
+    </message>
+    <message>
+        <source>%1 of %2 shown</source>
+        <translation>%1 af %2 vist</translation>
+    </message>
+    <message>
+        <source>Searching: %1</source>
+        <translation>Søger: %1</translation>
+    </message>
+    <message>
+        <source>Finished: %1</source>
+        <translation>Færdig: %1</translation>
+    </message>
+    <message>
+        <source>Search aborted: %1</source>
+        <translation>Søgning afbrudt: %1</translation>
+    </message>
+    <message>
+        <source>Reset auto width</source>
+        <translation>Nulstil automatisk bredde</translation>
+    </message>
+    <message>
+        <source>Fit all non-hidden columns to their contents again, and forget the widths that were set by hand</source>
+        <translation>Tilpas alle viste kolonner til deres indhold igen, og glem de bredder, der er sat manuelt</translation>
+    </message>
+    <message>
+        <source>Unknown</source>
+        <translation>Ukendt</translation>
+    </message>
+    <message>
+        <source>%1 of %2 shown (%3 hidden)</source>
+        <translation>%1 af %2 vist (%3 skjult)</translation>
+    </message>
+    <message>
+        <source>%1 of %2 shown</source>
+        <translation>%1 af %2 vist</translation>
+    </message>
+    <message>
+        <source>Searching: %1</source>
+        <translation>Søger: %1</translation>
+    </message>
+    <message>
+        <source>Finished: %1</source>
+        <translation>Færdig: %1</translation>
+    </message>
+    <message>
+        <source>Search aborted: %1</source>
+        <translation>Søgning afbrudt: %1</translation>
+    </message>
+    <message>
+        <source>Reset auto width</source>
+        <translation>Nulstil automatisk bredde</translation>
+    </message>
+    <message>
+        <source>Fit all non-hidden columns to their contents again, and forget the widths that were set by hand</source>
+        <translation>Tilpas alle viste kolonner til deres indhold igen, og glem de bredder, der er sat manuelt</translation>
+    </message>
+    <message>
+        <source>Unknown</source>
+        <translation>Ukendt</translation>
+    </message>
 </context>
 <context>
     <name>SearchPluginManager</name>
@@ -10689,6 +11137,14 @@ Pluginsne blev deaktiveret.</translation>
         <source>Couldn&apos;t update &quot;%1&quot; search engine plugin. %2</source>
         <translation type="unfinished">Kunne ikke opdatere &quot;%1&quot;-søgemotor-plugin. %2</translation>
     </message>
+    <message>
+        <source>Install Kettle Plugins</source>
+        <translation>Installer Kettle-plugins</translation>
+    </message>
+    <message>
+        <source>Install Kettle Plugins</source>
+        <translation>Installer Kettle-plugins</translation>
+    </message>
 </context>
 <context>
     <name>SearchPluginSourceDialog</name>
@@ -10828,6 +11284,90 @@ Klik på &quot;Søg efter plugins...&quot;-knappen nederst til højre i vinduet,
         <location filename="../gui/search/searchwidget.ui" line="58"/>
         <source>Stop</source>
         <translation>Stop</translation>
+    </message>
+    <message>
+        <source>Searches</source>
+        <translation>Søgninger</translation>
+    </message>
+    <message>
+        <source>Close the selected search</source>
+        <translation>Luk den valgte søgning</translation>
+    </message>
+    <message>
+        <source>Search for torrents...</source>
+        <translation>Søg efter torrents...</translation>
+    </message>
+    <message>
+        <source>Category to search in</source>
+        <translation>Kategori at søge i</translation>
+    </message>
+    <message>
+        <source>Search engines to use</source>
+        <translation>Søgemaskiner der skal bruges</translation>
+    </message>
+    <message>
+        <source>There aren&apos;t any search plugins installed.
+Click the &quot;Search plugins...&quot; button at the top right of the window to install some.</source>
+        <translation>Der er ingen søgeplugins installeret.
+Klik på knappen &quot;Søgeplugins...&quot; øverst til højre i vinduet for at installere nogle.</translation>
+    </message>
+    <message>
+        <source>Type a search above and press Enter.</source>
+        <translation>Skriv en søgning ovenfor, og tryk på Enter.</translation>
+    </message>
+    <message>
+        <source>Refresh search</source>
+        <translation>Opdater søgning</translation>
+    </message>
+    <message>
+        <source>Close search</source>
+        <translation>Luk søgning</translation>
+    </message>
+    <message>
+        <source>Close all searches</source>
+        <translation>Luk alle søgninger</translation>
+    </message>
+    <message>
+        <source>Searches</source>
+        <translation>Søgninger</translation>
+    </message>
+    <message>
+        <source>Close the selected search</source>
+        <translation>Luk den valgte søgning</translation>
+    </message>
+    <message>
+        <source>Search for torrents...</source>
+        <translation>Søg efter torrents...</translation>
+    </message>
+    <message>
+        <source>Category to search in</source>
+        <translation>Kategori at søge i</translation>
+    </message>
+    <message>
+        <source>Search engines to use</source>
+        <translation>Søgemaskiner der skal bruges</translation>
+    </message>
+    <message>
+        <source>There aren&apos;t any search plugins installed.
+Click the &quot;Search plugins...&quot; button at the top right of the window to install some.</source>
+        <translation>Der er ingen søgeplugins installeret.
+Klik på knappen &quot;Søgeplugins...&quot; øverst til højre i vinduet for at installere nogle.</translation>
+    </message>
+    <message>
+        <source>Type a search above and press Enter.</source>
+        <translation>Skriv en søgning ovenfor, og tryk på Enter.</translation>
+    </message>
+    <message>
+        <source>Refresh search</source>
+        <translation>Opdater søgning</translation>
+    </message>
+    <message>
+        <source>Close search</source>
+        <translation>Luk søgning</translation>
+    </message>
+    <message>
+        <source>Close all searches</source>
+        <translation>Luk alle søgninger</translation>
     </message>
 </context>
 <context>
@@ -11290,6 +11830,326 @@ Klik på &quot;Søg efter plugins...&quot;-knappen nederst til højre i vinduet,
         <location filename="../gui/statsdialog.cpp" line="111"/>
         <source>%1 ms</source>
         <translation type="unfinished">%1 ms</translation>
+    </message>
+    <message>
+        <source>Copy</source>
+        <translation>Kopiér</translation>
+    </message>
+    <message>
+        <source>Overview</source>
+        <translation>Oversigt</translation>
+    </message>
+    <message>
+        <source>Transfer</source>
+        <translation>Overførsel</translation>
+    </message>
+    <message>
+        <source>This session</source>
+        <translation>Denne session</translation>
+    </message>
+    <message>
+        <source>All time</source>
+        <translation>Alle tider</translation>
+    </message>
+    <message>
+        <source>Downloaded:</source>
+        <translation>Downloadet:</translation>
+    </message>
+    <message>
+        <source>Uploaded:</source>
+        <translation>Uploadet:</translation>
+    </message>
+    <message>
+        <source>Share ratio:</source>
+        <translation>Delingsforhold:</translation>
+    </message>
+    <message>
+        <source>Current speed:</source>
+        <translation>Aktuel hastighed:</translation>
+    </message>
+    <message>
+        <source>Activity</source>
+        <translation>Aktivitet</translation>
+    </message>
+    <message>
+        <source>Torrents downloading:</source>
+        <translation>Torrents der downloader:</translation>
+    </message>
+    <message>
+        <source>Torrents seeding:</source>
+        <translation>Torrents der seeder:</translation>
+    </message>
+    <message>
+        <source>Torrents stopped:</source>
+        <translation>Stoppede torrents:</translation>
+    </message>
+    <message>
+        <source>Torrents with errors:</source>
+        <translation>Torrents med fejl:</translation>
+    </message>
+    <message>
+        <source>Running for:</source>
+        <translation>Kørt i:</translation>
+    </message>
+    <message>
+        <source>History</source>
+        <translation>Historik</translation>
+    </message>
+    <message>
+        <source>Period</source>
+        <translation>Periode</translation>
+    </message>
+    <message>
+        <source>Today</source>
+        <translation>I dag</translation>
+    </message>
+    <message>
+        <source>Last 7 days</source>
+        <translation>Seneste 7 dage</translation>
+    </message>
+    <message>
+        <source>This month</source>
+        <translation>Denne måned</translation>
+    </message>
+    <message>
+        <source>Last month</source>
+        <translation>Sidste måned</translation>
+    </message>
+    <message>
+        <source>Last 12 months</source>
+        <translation>Seneste 12 måneder</translation>
+    </message>
+    <message>
+        <source>Tracking since:</source>
+        <translation>Sporing siden:</translation>
+    </message>
+    <message>
+        <source>By month</source>
+        <translation>Pr. måned</translation>
+    </message>
+    <message>
+        <source>Month</source>
+        <translation>Måned</translation>
+    </message>
+    <message>
+        <source>Downloaded</source>
+        <translation>Downloadet</translation>
+    </message>
+    <message>
+        <source>Uploaded</source>
+        <translation>Uploadet</translation>
+    </message>
+    <message>
+        <source>Share ratio</source>
+        <translation>Delingsforhold</translation>
+    </message>
+    <message>
+        <source>WebUI downloads added, this month</source>
+        <translation>Downloads tilføjet via WebUI, denne måned</translation>
+    </message>
+    <message>
+        <source>Counts the requests that added a download. Apps without a login, such as Sonarr and Radarr, are shown as (localhost). Downloads added in the desktop window are not counted.</source>
+        <translation>Tæller de anmodninger, der tilføjede en download. Apps uden login, som Sonarr og Radarr, vises som (localhost). Downloads tilføjet i skrivebordsvinduet tælles ikke.</translation>
+    </message>
+    <message>
+        <source>Technical</source>
+        <translation>Teknisk</translation>
+    </message>
+    <message>
+        <source>Disk</source>
+        <translation>Disk</translation>
+    </message>
+    <message>
+        <source>Peers waiting on disk writes:</source>
+        <translation>Modparter der venter på diskskrivning:</translation>
+    </message>
+    <message>
+        <source>Peers waiting on disk reads:</source>
+        <translation>Modparter der venter på disklæsning:</translation>
+    </message>
+    <message>
+        <source>Network</source>
+        <translation>Netværk</translation>
+    </message>
+    <message>
+        <source>DHT nodes:</source>
+        <translation>DHT-noder:</translation>
+    </message>
+    <message>
+        <source>Data discarded this session:</source>
+        <translation>Kasserede data i denne session:</translation>
+    </message>
+    <message>
+        <source>Before tracking began</source>
+        <translation>Før sporingen begyndte</translation>
+    </message>
+    <message>
+        <source>Nothing added yet</source>
+        <translation>Intet tilføjet endnu</translation>
+    </message>
+    <message>
+        <source>Off</source>
+        <translation>Fra</translation>
+    </message>
+    <message>
+        <source>Copy</source>
+        <translation>Kopiér</translation>
+    </message>
+    <message>
+        <source>Overview</source>
+        <translation>Oversigt</translation>
+    </message>
+    <message>
+        <source>Transfer</source>
+        <translation>Overførsel</translation>
+    </message>
+    <message>
+        <source>This session</source>
+        <translation>Denne session</translation>
+    </message>
+    <message>
+        <source>All time</source>
+        <translation>Alle tider</translation>
+    </message>
+    <message>
+        <source>Downloaded:</source>
+        <translation>Downloadet:</translation>
+    </message>
+    <message>
+        <source>Uploaded:</source>
+        <translation>Uploadet:</translation>
+    </message>
+    <message>
+        <source>Share ratio:</source>
+        <translation>Delingsforhold:</translation>
+    </message>
+    <message>
+        <source>Current speed:</source>
+        <translation>Aktuel hastighed:</translation>
+    </message>
+    <message>
+        <source>Activity</source>
+        <translation>Aktivitet</translation>
+    </message>
+    <message>
+        <source>Torrents downloading:</source>
+        <translation>Torrents der downloader:</translation>
+    </message>
+    <message>
+        <source>Torrents seeding:</source>
+        <translation>Torrents der seeder:</translation>
+    </message>
+    <message>
+        <source>Torrents stopped:</source>
+        <translation>Stoppede torrents:</translation>
+    </message>
+    <message>
+        <source>Torrents with errors:</source>
+        <translation>Torrents med fejl:</translation>
+    </message>
+    <message>
+        <source>Running for:</source>
+        <translation>Kørt i:</translation>
+    </message>
+    <message>
+        <source>History</source>
+        <translation>Historik</translation>
+    </message>
+    <message>
+        <source>Period</source>
+        <translation>Periode</translation>
+    </message>
+    <message>
+        <source>Today</source>
+        <translation>I dag</translation>
+    </message>
+    <message>
+        <source>Last 7 days</source>
+        <translation>Seneste 7 dage</translation>
+    </message>
+    <message>
+        <source>This month</source>
+        <translation>Denne måned</translation>
+    </message>
+    <message>
+        <source>Last month</source>
+        <translation>Sidste måned</translation>
+    </message>
+    <message>
+        <source>Last 12 months</source>
+        <translation>Seneste 12 måneder</translation>
+    </message>
+    <message>
+        <source>Tracking since:</source>
+        <translation>Sporing siden:</translation>
+    </message>
+    <message>
+        <source>By month</source>
+        <translation>Pr. måned</translation>
+    </message>
+    <message>
+        <source>Month</source>
+        <translation>Måned</translation>
+    </message>
+    <message>
+        <source>Downloaded</source>
+        <translation>Downloadet</translation>
+    </message>
+    <message>
+        <source>Uploaded</source>
+        <translation>Uploadet</translation>
+    </message>
+    <message>
+        <source>Share ratio</source>
+        <translation>Delingsforhold</translation>
+    </message>
+    <message>
+        <source>WebUI downloads added, this month</source>
+        <translation>Downloads tilføjet via WebUI, denne måned</translation>
+    </message>
+    <message>
+        <source>Counts the requests that added a download. Apps without a login, such as Sonarr and Radarr, are shown as (localhost). Downloads added in the desktop window are not counted.</source>
+        <translation>Tæller de anmodninger, der tilføjede en download. Apps uden login, som Sonarr og Radarr, vises som (localhost). Downloads tilføjet i skrivebordsvinduet tælles ikke.</translation>
+    </message>
+    <message>
+        <source>Technical</source>
+        <translation>Teknisk</translation>
+    </message>
+    <message>
+        <source>Disk</source>
+        <translation>Disk</translation>
+    </message>
+    <message>
+        <source>Peers waiting on disk writes:</source>
+        <translation>Modparter der venter på diskskrivning:</translation>
+    </message>
+    <message>
+        <source>Peers waiting on disk reads:</source>
+        <translation>Modparter der venter på disklæsning:</translation>
+    </message>
+    <message>
+        <source>Network</source>
+        <translation>Netværk</translation>
+    </message>
+    <message>
+        <source>DHT nodes:</source>
+        <translation>DHT-noder:</translation>
+    </message>
+    <message>
+        <source>Data discarded this session:</source>
+        <translation>Kasserede data i denne session:</translation>
+    </message>
+    <message>
+        <source>Before tracking began</source>
+        <translation>Før sporingen begyndte</translation>
+    </message>
+    <message>
+        <source>Nothing added yet</source>
+        <translation>Intet tilføjet endnu</translation>
+    </message>
+    <message>
+        <source>Off</source>
+        <translation>Fra</translation>
     </message>
 </context>
 <context>
@@ -11983,6 +12843,22 @@ Vælg venligst et andet navn og prøv igen.</translation>
     <message>
         <source>Priority by shown file order</source>
         <translation type="vanished">Prioritet efter vist fil-rækkefølge</translation>
+    </message>
+    <message>
+        <source>Reset auto width</source>
+        <translation>Nulstil automatisk bredde</translation>
+    </message>
+    <message>
+        <source>Fit all non-hidden columns to their contents again, and forget the widths that were set by hand</source>
+        <translation>Tilpas alle viste kolonner til deres indhold igen, og glem de bredder, der er sat manuelt</translation>
+    </message>
+    <message>
+        <source>Reset auto width</source>
+        <translation>Nulstil automatisk bredde</translation>
+    </message>
+    <message>
+        <source>Fit all non-hidden columns to their contents again, and forget the widths that were set by hand</source>
+        <translation>Tilpas alle viste kolonner til deres indhold igen, og glem de bredder, der er sat manuelt</translation>
     </message>
 </context>
 <context>
@@ -13067,6 +13943,22 @@ Vælg venligst et andet navn og prøv igen.</translation>
         <source>Column visibility</source>
         <translation>Synlighed for kolonne</translation>
     </message>
+    <message>
+        <source>Reset auto width</source>
+        <translation>Nulstil automatisk bredde</translation>
+    </message>
+    <message>
+        <source>Fit all non-hidden columns to their contents again, and forget the widths that were set by hand</source>
+        <translation>Tilpas alle viste kolonner til deres indhold igen, og glem de bredder, der er sat manuelt</translation>
+    </message>
+    <message>
+        <source>Reset auto width</source>
+        <translation>Nulstil automatisk bredde</translation>
+    </message>
+    <message>
+        <source>Fit all non-hidden columns to their contents again, and forget the widths that were set by hand</source>
+        <translation>Tilpas alle viste kolonner til deres indhold igen, og glem de bredder, der er sat manuelt</translation>
+    </message>
 </context>
 <context>
     <name>TrackerStatusFilterWidget</name>
@@ -13933,6 +14825,22 @@ Vælg venligst et andet navn og prøv igen.</translation>
         <source>Super seeding mode</source>
         <translation>Super seeding-tilstand</translation>
     </message>
+    <message>
+        <source>Reset auto width</source>
+        <translation>Nulstil automatisk bredde</translation>
+    </message>
+    <message>
+        <source>Fit all non-hidden columns to their contents again, and forget the widths that were set by hand</source>
+        <translation>Tilpas alle viste kolonner til deres indhold igen, og glem de bredder, der er sat manuelt</translation>
+    </message>
+    <message>
+        <source>Reset auto width</source>
+        <translation>Nulstil automatisk bredde</translation>
+    </message>
+    <message>
+        <source>Fit all non-hidden columns to their contents again, and forget the widths that were set by hand</source>
+        <translation>Tilpas alle viste kolonner til deres indhold igen, og glem de bredder, der er sat manuelt</translation>
+    </message>
 </context>
 <context>
     <name>UIThemeDialog</name>
@@ -14267,6 +15175,46 @@ Vælg venligst et andet navn og prøv igen.</translation>
         <source>WebAPI login failure. Reason: invalid credentials, attempt count: %1, IP: %2, username: %3</source>
         <translation>WebAPI-login mislykkedes. Årsag: ugyldige loginoplysninger, antal forsøg: %1, IP: %2, brugernavn: %3</translation>
     </message>
+    <message>
+        <source>Something went wrong on the server. Details are in qBittorrent&apos;s log.</source>
+        <translation>Noget gik galt på serveren. Detaljer står i qBittorrents log.</translation>
+    </message>
+    <message>
+        <source>This account is locked after too many failed login attempts. Try again in %1 minute(s).</source>
+        <translation>Denne konto er låst efter for mange mislykkede loginforsøg. Prøv igen om %1 minut(ter).</translation>
+    </message>
+    <message>
+        <source>Your role (%1) doesn&apos;t allow this: %2.</source>
+        <translation>Din rolle (%1) tillader ikke dette: %2.</translation>
+    </message>
+    <message>
+        <source>Only an admin can remove the tag that says who added a torrent.</source>
+        <translation>Kun en admin kan fjerne det tag, der fortæller, hvem der tilføjede en torrent.</translation>
+    </message>
+    <message>
+        <source>Only an admin can clear or replace all tags of a torrent that has a tag saying who added it.</source>
+        <translation>Kun en admin kan rydde eller erstatte alle tags på en torrent, der har et tag om, hvem der tilføjede den.</translation>
+    </message>
+    <message>
+        <source>Something went wrong on the server. Details are in qBittorrent&apos;s log.</source>
+        <translation>Noget gik galt på serveren. Detaljer står i qBittorrents log.</translation>
+    </message>
+    <message>
+        <source>This account is locked after too many failed login attempts. Try again in %1 minute(s).</source>
+        <translation>Denne konto er låst efter for mange mislykkede loginforsøg. Prøv igen om %1 minut(ter).</translation>
+    </message>
+    <message>
+        <source>Your role (%1) doesn&apos;t allow this: %2.</source>
+        <translation>Din rolle (%1) tillader ikke dette: %2.</translation>
+    </message>
+    <message>
+        <source>Only an admin can remove the tag that says who added a torrent.</source>
+        <translation>Kun en admin kan fjerne det tag, der fortæller, hvem der tilføjede en torrent.</translation>
+    </message>
+    <message>
+        <source>Only an admin can clear or replace all tags of a torrent that has a tag saying who added it.</source>
+        <translation>Kun en admin kan rydde eller erstatte alle tags på en torrent, der har et tag om, hvem der tilføjede den.</translation>
+    </message>
 </context>
 <context>
     <name>WebUI</name>
@@ -14406,6 +15354,669 @@ Vælg venligst et andet navn og prøv igen.</translation>
         <source>&lt; 1m</source>
         <comment>&lt; 1 minute</comment>
         <translation>&lt; 1 m</translation>
+    </message>
+</context>
+<context>
+    <name>UpdateInstaller</name>
+    <message>
+        <source>Kettle Edition update</source>
+        <translation>Kettle Edition-opdatering</translation>
+    </message>
+    <message>
+        <source>Kettle Edition was updated to %1.</source>
+        <translation>Kettle Edition blev opdateret til %1.</translation>
+    </message>
+    <message>
+        <source>Kettle Edition updated</source>
+        <translation>Kettle Edition opdateret</translation>
+    </message>
+    <message>
+        <source>Downloading Kettle Edition %1 (%2 changed files).</source>
+        <translation>Henter Kettle Edition %1 (%2 ændrede filer).</translation>
+    </message>
+    <message>
+        <source>Kettle Edition %1 is downloaded and ready to install.</source>
+        <translation>Kettle Edition %1 er hentet og klar til installation.</translation>
+    </message>
+    <message>
+        <source>Kettle Edition update</source>
+        <translation>Kettle Edition-opdatering</translation>
+    </message>
+    <message>
+        <source>Kettle Edition was updated to %1.</source>
+        <translation>Kettle Edition blev opdateret til %1.</translation>
+    </message>
+    <message>
+        <source>Kettle Edition updated</source>
+        <translation>Kettle Edition opdateret</translation>
+    </message>
+    <message>
+        <source>Downloading Kettle Edition %1 (%2 changed files).</source>
+        <translation>Henter Kettle Edition %1 (%2 ændrede filer).</translation>
+    </message>
+    <message>
+        <source>Kettle Edition %1 is downloaded and ready to install.</source>
+        <translation>Kettle Edition %1 er hentet og klar til installation.</translation>
+    </message>
+</context>
+<context>
+    <name>UserAccountDialog</name>
+    <message>
+        <source>User</source>
+        <translation>Bruger</translation>
+    </message>
+    <message>
+        <source>Username:</source>
+        <translation>Brugernavn:</translation>
+    </message>
+    <message>
+        <source>Role:</source>
+        <translation>Rolle:</translation>
+    </message>
+    <message>
+        <source>Password:</source>
+        <translation>Adgangskode:</translation>
+    </message>
+    <message>
+        <source>Confirm password:</source>
+        <translation>Bekræft adgangskode:</translation>
+    </message>
+    <message>
+        <source>Disable this account</source>
+        <translation>Deaktiver denne konto</translation>
+    </message>
+    <message>
+        <source>Edit User</source>
+        <translation>Rediger bruger</translation>
+    </message>
+    <message>
+        <source>Leave empty to keep the current password</source>
+        <translation>Lad feltet stå tomt for at beholde den nuværende adgangskode</translation>
+    </message>
+    <message>
+        <source>Add User</source>
+        <translation>Tilføj bruger</translation>
+    </message>
+    <message>
+        <source>At least %1 characters</source>
+        <translation>Mindst %1 tegn</translation>
+    </message>
+    <message>
+        <source>Enter a username.</source>
+        <translation>Angiv et brugernavn.</translation>
+    </message>
+    <message>
+        <source>The password must be at least %1 characters long.</source>
+        <translation>Adgangskoden skal være mindst %1 tegn lang.</translation>
+    </message>
+    <message>
+        <source>The passwords don&apos;t match.</source>
+        <translation>Adgangskoderne er ikke ens.</translation>
+    </message>
+    <message>
+        <source>User</source>
+        <translation>Bruger</translation>
+    </message>
+    <message>
+        <source>Username:</source>
+        <translation>Brugernavn:</translation>
+    </message>
+    <message>
+        <source>Role:</source>
+        <translation>Rolle:</translation>
+    </message>
+    <message>
+        <source>Password:</source>
+        <translation>Adgangskode:</translation>
+    </message>
+    <message>
+        <source>Confirm password:</source>
+        <translation>Bekræft adgangskode:</translation>
+    </message>
+    <message>
+        <source>Disable this account</source>
+        <translation>Deaktiver denne konto</translation>
+    </message>
+    <message>
+        <source>Edit User</source>
+        <translation>Rediger bruger</translation>
+    </message>
+    <message>
+        <source>Leave empty to keep the current password</source>
+        <translation>Lad feltet stå tomt for at beholde den nuværende adgangskode</translation>
+    </message>
+    <message>
+        <source>Add User</source>
+        <translation>Tilføj bruger</translation>
+    </message>
+    <message>
+        <source>At least %1 characters</source>
+        <translation>Mindst %1 tegn</translation>
+    </message>
+    <message>
+        <source>Enter a username.</source>
+        <translation>Angiv et brugernavn.</translation>
+    </message>
+    <message>
+        <source>The password must be at least %1 characters long.</source>
+        <translation>Adgangskoden skal være mindst %1 tegn lang.</translation>
+    </message>
+    <message>
+        <source>The passwords don&apos;t match.</source>
+        <translation>Adgangskoderne er ikke ens.</translation>
+    </message>
+</context>
+<context>
+    <name>UserAccountsWidget</name>
+    <message>
+        <source>User Accounts</source>
+        <translation>Brugerkonti</translation>
+    </message>
+    <message>
+        <source>Users</source>
+        <translation>Brugere</translation>
+    </message>
+    <message>
+        <source>People who can log in to the WebUI with their own username and password.</source>
+        <translation>Personer der kan logge ind på WebUI med deres eget brugernavn og adgangskode.</translation>
+    </message>
+    <message>
+        <source>Add User...</source>
+        <translation>Tilføj bruger...</translation>
+    </message>
+    <message>
+        <source>Edit...</source>
+        <translation>Rediger...</translation>
+    </message>
+    <message>
+        <source>Remove</source>
+        <translation>Fjern</translation>
+    </message>
+    <message>
+        <source>Roles</source>
+        <translation>Roller</translation>
+    </message>
+    <message>
+        <source>A role decides what its users are allowed to do.</source>
+        <translation>En rolle bestemmer, hvad dens brugere må gøre.</translation>
+    </message>
+    <message>
+        <source>Add Role...</source>
+        <translation>Tilføj rolle...</translation>
+    </message>
+    <message>
+        <source>Logged In</source>
+        <translation>Logget ind</translation>
+    </message>
+    <message>
+        <source>Browsers and devices where someone is logged in with a user account.</source>
+        <translation>Browsere og enheder, hvor nogen er logget ind med en brugerkonto.</translation>
+    </message>
+    <message>
+        <source>Log Out</source>
+        <translation>Log ud</translation>
+    </message>
+    <message>
+        <source>Username</source>
+        <translation>Brugernavn</translation>
+    </message>
+    <message>
+        <source>Role</source>
+        <translation>Rolle</translation>
+    </message>
+    <message>
+        <source>Status</source>
+        <translation>Status</translation>
+    </message>
+    <message>
+        <source>Last login</source>
+        <translation>Seneste login</translation>
+    </message>
+    <message>
+        <source>Created</source>
+        <translation>Oprettet</translation>
+    </message>
+    <message>
+        <source>Name</source>
+        <translation>Navn</translation>
+    </message>
+    <message>
+        <source>Description</source>
+        <translation>Beskrivelse</translation>
+    </message>
+    <message>
+        <source>Permissions</source>
+        <translation>Tilladelser</translation>
+    </message>
+    <message>
+        <source>User</source>
+        <translation>Bruger</translation>
+    </message>
+    <message>
+        <source>Browser</source>
+        <translation>Browser</translation>
+    </message>
+    <message>
+        <source>Logged in</source>
+        <translation>Logget ind</translation>
+    </message>
+    <message>
+        <source>Last active</source>
+        <translation>Sidst aktiv</translation>
+    </message>
+    <message>
+        <source>Expires</source>
+        <translation>Udløber</translation>
+    </message>
+    <message>
+        <source>The user database could not be opened. See the Execution Log for details.</source>
+        <translation>Brugerdatabasen kunne ikke åbnes. Se kørselsloggen for detaljer.</translation>
+    </message>
+    <message>
+        <source>Disabled</source>
+        <translation>Deaktiveret</translation>
+    </message>
+    <message>
+        <source>Enabled</source>
+        <translation>Aktiveret</translation>
+    </message>
+    <message>
+        <source>Never</source>
+        <translation>Aldrig</translation>
+    </message>
+    <message>
+        <source>No accounts yet, so everyone still uses the shared WebUI login. Add an Admin account first.</source>
+        <translation>Der er ingen konti endnu, så alle bruger stadig det fælles WebUI-login. Tilføj først en Admin-konto.</translation>
+    </message>
+    <message>
+        <source>Couldn&apos;t read the user database. %1</source>
+        <translation>Brugerdatabasen kunne ikke læses. %1</translation>
+    </message>
+    <message>
+        <source>Remove user</source>
+        <translation>Fjern bruger</translation>
+    </message>
+    <message>
+        <source>Are you sure you want to remove the user &apos;%1&apos;?</source>
+        <translation>Er du sikker på, at du vil fjerne brugeren &apos;%1&apos;?</translation>
+    </message>
+    <message>
+        <source>Remove role</source>
+        <translation>Fjern rolle</translation>
+    </message>
+    <message>
+        <source>Are you sure you want to remove the role &apos;%1&apos;?</source>
+        <translation>Er du sikker på, at du vil fjerne rollen &apos;%1&apos;?</translation>
+    </message>
+    <message>
+        <source>Enable</source>
+        <translation>Aktiver</translation>
+    </message>
+    <message>
+        <source>Disable</source>
+        <translation>Deaktiver</translation>
+    </message>
+    <message>
+        <source>Log Out Everywhere</source>
+        <translation>Log ud overalt</translation>
+    </message>
+    <message>
+        <source>User Accounts</source>
+        <translation>Brugerkonti</translation>
+    </message>
+    <message>
+        <source>Users</source>
+        <translation>Brugere</translation>
+    </message>
+    <message>
+        <source>People who can log in to the WebUI with their own username and password.</source>
+        <translation>Personer der kan logge ind på WebUI med deres eget brugernavn og adgangskode.</translation>
+    </message>
+    <message>
+        <source>Add User...</source>
+        <translation>Tilføj bruger...</translation>
+    </message>
+    <message>
+        <source>Edit...</source>
+        <translation>Rediger...</translation>
+    </message>
+    <message>
+        <source>Remove</source>
+        <translation>Fjern</translation>
+    </message>
+    <message>
+        <source>Roles</source>
+        <translation>Roller</translation>
+    </message>
+    <message>
+        <source>A role decides what its users are allowed to do.</source>
+        <translation>En rolle bestemmer, hvad dens brugere må gøre.</translation>
+    </message>
+    <message>
+        <source>Add Role...</source>
+        <translation>Tilføj rolle...</translation>
+    </message>
+    <message>
+        <source>Logged In</source>
+        <translation>Logget ind</translation>
+    </message>
+    <message>
+        <source>Browsers and devices where someone is logged in with a user account.</source>
+        <translation>Browsere og enheder, hvor nogen er logget ind med en brugerkonto.</translation>
+    </message>
+    <message>
+        <source>Log Out</source>
+        <translation>Log ud</translation>
+    </message>
+    <message>
+        <source>Username</source>
+        <translation>Brugernavn</translation>
+    </message>
+    <message>
+        <source>Role</source>
+        <translation>Rolle</translation>
+    </message>
+    <message>
+        <source>Status</source>
+        <translation>Status</translation>
+    </message>
+    <message>
+        <source>Last login</source>
+        <translation>Seneste login</translation>
+    </message>
+    <message>
+        <source>Created</source>
+        <translation>Oprettet</translation>
+    </message>
+    <message>
+        <source>Name</source>
+        <translation>Navn</translation>
+    </message>
+    <message>
+        <source>Description</source>
+        <translation>Beskrivelse</translation>
+    </message>
+    <message>
+        <source>Permissions</source>
+        <translation>Tilladelser</translation>
+    </message>
+    <message>
+        <source>User</source>
+        <translation>Bruger</translation>
+    </message>
+    <message>
+        <source>Browser</source>
+        <translation>Browser</translation>
+    </message>
+    <message>
+        <source>Logged in</source>
+        <translation>Logget ind</translation>
+    </message>
+    <message>
+        <source>Last active</source>
+        <translation>Sidst aktiv</translation>
+    </message>
+    <message>
+        <source>Expires</source>
+        <translation>Udløber</translation>
+    </message>
+    <message>
+        <source>The user database could not be opened. See the Execution Log for details.</source>
+        <translation>Brugerdatabasen kunne ikke åbnes. Se kørselsloggen for detaljer.</translation>
+    </message>
+    <message>
+        <source>Disabled</source>
+        <translation>Deaktiveret</translation>
+    </message>
+    <message>
+        <source>Enabled</source>
+        <translation>Aktiveret</translation>
+    </message>
+    <message>
+        <source>Never</source>
+        <translation>Aldrig</translation>
+    </message>
+    <message>
+        <source>No accounts yet, so everyone still uses the shared WebUI login. Add an Admin account first.</source>
+        <translation>Der er ingen konti endnu, så alle bruger stadig det fælles WebUI-login. Tilføj først en Admin-konto.</translation>
+    </message>
+    <message>
+        <source>Couldn&apos;t read the user database. %1</source>
+        <translation>Brugerdatabasen kunne ikke læses. %1</translation>
+    </message>
+    <message>
+        <source>Remove user</source>
+        <translation>Fjern bruger</translation>
+    </message>
+    <message>
+        <source>Are you sure you want to remove the user &apos;%1&apos;?</source>
+        <translation>Er du sikker på, at du vil fjerne brugeren &apos;%1&apos;?</translation>
+    </message>
+    <message>
+        <source>Remove role</source>
+        <translation>Fjern rolle</translation>
+    </message>
+    <message>
+        <source>Are you sure you want to remove the role &apos;%1&apos;?</source>
+        <translation>Er du sikker på, at du vil fjerne rollen &apos;%1&apos;?</translation>
+    </message>
+    <message>
+        <source>Enable</source>
+        <translation>Aktiver</translation>
+    </message>
+    <message>
+        <source>Disable</source>
+        <translation>Deaktiver</translation>
+    </message>
+    <message>
+        <source>Log Out Everywhere</source>
+        <translation>Log ud overalt</translation>
+    </message>
+</context>
+<context>
+    <name>UserRoleDialog</name>
+    <message>
+        <source>Role</source>
+        <translation>Rolle</translation>
+    </message>
+    <message>
+        <source>Name:</source>
+        <translation>Navn:</translation>
+    </message>
+    <message>
+        <source>Description:</source>
+        <translation>Beskrivelse:</translation>
+    </message>
+    <message>
+        <source>Gives control over the PC or qBittorrent itself.</source>
+        <translation>Giver kontrol over pc&apos;en eller selve qBittorrent.</translation>
+    </message>
+    <message>
+        <source>Add Role</source>
+        <translation>Tilføj rolle</translation>
+    </message>
+    <message>
+        <source>Edit Role</source>
+        <translation>Rediger rolle</translation>
+    </message>
+    <message>
+        <source>Enter a role name.</source>
+        <translation>Angiv et rollenavn.</translation>
+    </message>
+    <message>
+        <source>Role</source>
+        <translation>Rolle</translation>
+    </message>
+    <message>
+        <source>Name:</source>
+        <translation>Navn:</translation>
+    </message>
+    <message>
+        <source>Description:</source>
+        <translation>Beskrivelse:</translation>
+    </message>
+    <message>
+        <source>Gives control over the PC or qBittorrent itself.</source>
+        <translation>Giver kontrol over pc&apos;en eller selve qBittorrent.</translation>
+    </message>
+    <message>
+        <source>Add Role</source>
+        <translation>Tilføj rolle</translation>
+    </message>
+    <message>
+        <source>Edit Role</source>
+        <translation>Rediger rolle</translation>
+    </message>
+    <message>
+        <source>Enter a role name.</source>
+        <translation>Angiv et rollenavn.</translation>
+    </message>
+</context>
+<context>
+    <name>WebUIActivityWidget</name>
+    <message>
+        <source>All</source>
+        <translation>Alle</translation>
+    </message>
+    <message>
+        <source>Filter activity</source>
+        <translation>Filtrer aktivitet</translation>
+    </message>
+    <message>
+        <source>Export...</source>
+        <translation>Eksporter...</translation>
+    </message>
+    <message>
+        <source>User:</source>
+        <translation>Bruger:</translation>
+    </message>
+    <message>
+        <source>Category:</source>
+        <translation>Kategori:</translation>
+    </message>
+    <message>
+        <source>Result:</source>
+        <translation>Resultat:</translation>
+    </message>
+    <message>
+        <source>Time</source>
+        <translation>Tid</translation>
+    </message>
+    <message>
+        <source>User</source>
+        <translation>Bruger</translation>
+    </message>
+    <message>
+        <source>Role</source>
+        <translation>Rolle</translation>
+    </message>
+    <message>
+        <source>Category</source>
+        <translation>Kategori</translation>
+    </message>
+    <message>
+        <source>Action</source>
+        <translation>Handling</translation>
+    </message>
+    <message>
+        <source>Result</source>
+        <translation>Resultat</translation>
+    </message>
+    <message>
+        <source>The user database could not be opened. See the General tab for details.</source>
+        <translation>Brugerdatabasen kunne ikke åbnes. Se fanen Generelt for detaljer.</translation>
+    </message>
+    <message>
+        <source>Results (showing %1 out of %2)</source>
+        <translation>Resultater (viser %1 ud af %2)</translation>
+    </message>
+    <message>
+        <source>Copy</source>
+        <translation>Kopiér</translation>
+    </message>
+    <message>
+        <source>Export WebUI activity</source>
+        <translation>Eksporter WebUI-aktivitet</translation>
+    </message>
+    <message>
+        <source>CSV files</source>
+        <translation>CSV-filer</translation>
+    </message>
+    <message>
+        <source>Couldn&apos;t save the file. Reason: %1</source>
+        <translation>Filen kunne ikke gemmes. Årsag: %1</translation>
+    </message>
+    <message>
+        <source>All</source>
+        <translation>Alle</translation>
+    </message>
+    <message>
+        <source>Filter activity</source>
+        <translation>Filtrer aktivitet</translation>
+    </message>
+    <message>
+        <source>Export...</source>
+        <translation>Eksporter...</translation>
+    </message>
+    <message>
+        <source>User:</source>
+        <translation>Bruger:</translation>
+    </message>
+    <message>
+        <source>Category:</source>
+        <translation>Kategori:</translation>
+    </message>
+    <message>
+        <source>Result:</source>
+        <translation>Resultat:</translation>
+    </message>
+    <message>
+        <source>Time</source>
+        <translation>Tid</translation>
+    </message>
+    <message>
+        <source>User</source>
+        <translation>Bruger</translation>
+    </message>
+    <message>
+        <source>Role</source>
+        <translation>Rolle</translation>
+    </message>
+    <message>
+        <source>Category</source>
+        <translation>Kategori</translation>
+    </message>
+    <message>
+        <source>Action</source>
+        <translation>Handling</translation>
+    </message>
+    <message>
+        <source>Result</source>
+        <translation>Resultat</translation>
+    </message>
+    <message>
+        <source>The user database could not be opened. See the General tab for details.</source>
+        <translation>Brugerdatabasen kunne ikke åbnes. Se fanen Generelt for detaljer.</translation>
+    </message>
+    <message>
+        <source>Results (showing %1 out of %2)</source>
+        <translation>Resultater (viser %1 ud af %2)</translation>
+    </message>
+    <message>
+        <source>Copy</source>
+        <translation>Kopiér</translation>
+    </message>
+    <message>
+        <source>Export WebUI activity</source>
+        <translation>Eksporter WebUI-aktivitet</translation>
+    </message>
+    <message>
+        <source>CSV files</source>
+        <translation>CSV-filer</translation>
+    </message>
+    <message>
+        <source>Couldn&apos;t save the file. Reason: %1</source>
+        <translation>Filen kunne ikke gemmes. Årsag: %1</translation>
     </message>
 </context>
 </TS>

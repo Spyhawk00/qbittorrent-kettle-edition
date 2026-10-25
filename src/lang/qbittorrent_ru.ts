@@ -141,6 +141,62 @@
         <source>The free IP to Country Lite database by DB-IP is used for resolving the countries of peers. The database is licensed under the Creative Commons Attribution 4.0 International License</source>
         <translation>Для разрешения стран пиров используется бесплатная база данных IP to Country Lite от DB-IP. База лицензирована в соответствии со всемирной лицензией Creative Commons Attribution 4.0</translation>
     </message>
+    <message>
+        <source>This edition</source>
+        <translation>Эта версия</translation>
+    </message>
+    <message>
+        <source>Edition version:</source>
+        <translation>Версия редакции:</translation>
+    </message>
+    <message>
+        <source>Based on:</source>
+        <translation>Основана на:</translation>
+    </message>
+    <message>
+        <source>Maintainer:</source>
+        <translation>Сопровождающий:</translation>
+    </message>
+    <message>
+        <source>qBittorrent project:</source>
+        <translation>Проект qBittorrent:</translation>
+    </message>
+    <message>
+        <source>Kettle Edition is a personal build of qBittorrent that adds user accounts with roles for the WebUI and the desktop app, an activity log, and an installable WebUI with a phone layout. A kettle is a group of hawks soaring together. This is an unofficial build, not affiliated with the qBittorrent project.</source>
+        <translation>Kettle Edition — личная сборка qBittorrent, добавляющая учётные записи пользователей с ролями для WebUI и настольного приложения, журнал действий и устанавливаемый WebUI с макетом для телефона. Kettle — это стая ястребов, парящих вместе. Это неофициальная сборка, не связанная с проектом qBittorrent.</translation>
+    </message>
+    <message>
+        <source>N/A</source>
+        <translation>Н/Д</translation>
+    </message>
+    <message>
+        <source>This edition</source>
+        <translation>Эта версия</translation>
+    </message>
+    <message>
+        <source>Edition version:</source>
+        <translation>Версия редакции:</translation>
+    </message>
+    <message>
+        <source>Based on:</source>
+        <translation>Основана на:</translation>
+    </message>
+    <message>
+        <source>Maintainer:</source>
+        <translation>Сопровождающий:</translation>
+    </message>
+    <message>
+        <source>qBittorrent project:</source>
+        <translation>Проект qBittorrent:</translation>
+    </message>
+    <message>
+        <source>Kettle Edition is a personal build of qBittorrent that adds user accounts with roles for the WebUI and the desktop app, an activity log, and an installable WebUI with a phone layout. A kettle is a group of hawks soaring together. This is an unofficial build, not affiliated with the qBittorrent project.</source>
+        <translation>Kettle Edition — личная сборка qBittorrent, добавляющая учётные записи пользователей с ролями для WebUI и настольного приложения, журнал действий и устанавливаемый WebUI с макетом для телефона. Kettle — это стая ястребов, парящих вместе. Это неофициальная сборка, не связанная с проектом qBittorrent.</translation>
+    </message>
+    <message>
+        <source>N/A</source>
+        <translation>Н/Д</translation>
+    </message>
 </context>
 <context>
     <name>AbstractFileStorage</name>
@@ -1459,6 +1515,62 @@
         <location filename="../gui/advancedsettings.cpp" line="925"/>
         <source>Embedded tracker port</source>
         <translation>Порт встроенного трекера</translation>
+    </message>
+    <message>
+        <source>Network</source>
+        <translation>Сеть</translation>
+    </message>
+    <message>
+        <source>Storage</source>
+        <translation>Хранилище</translation>
+    </message>
+    <message>
+        <source>Peers and trackers</source>
+        <translation>Пиры и трекеры</translation>
+    </message>
+    <message>
+        <source>Program behavior</source>
+        <translation>Поведение программы</translation>
+    </message>
+    <message>
+        <source>Display and notifications</source>
+        <translation>Отображение и уведомления</translation>
+    </message>
+    <message>
+        <source>Network connection</source>
+        <translation>Сетевое соединение</translation>
+    </message>
+    <message>
+        <source>Security and privacy</source>
+        <translation>Безопасность и конфиденциальность</translation>
+    </message>
+    <message>
+        <source>Connection tuning</source>
+        <translation>Настройка соединений</translation>
+    </message>
+    <message>
+        <source>Saving and torrent files</source>
+        <translation>Сохранение и торрент-файлы</translation>
+    </message>
+    <message>
+        <source>Disk and memory</source>
+        <translation>Диск и память</translation>
+    </message>
+    <message>
+        <source>Peers and seeding</source>
+        <translation>Пиры и раздача</translation>
+    </message>
+    <message>
+        <source>DHT and I2P</source>
+        <translation>DHT и I2P</translation>
+    </message>
+    <message>
+        <source>General</source>
+        <translation>Главный</translation>
+    </message>
+    <message>
+        <source>Trackers</source>
+        <translation>Трекеры</translation>
     </message>
 </context>
 <context>
@@ -3480,6 +3592,22 @@ Supports the formats: S01E01, 1x1, 2017.12.31 and 31.12.2017 (Date formats also 
         <source>Remove torrent</source>
         <translation>Удалить торрент</translation>
     </message>
+    <message>
+        <source>This choice is remembered for the next removal.</source>
+        <translation>Этот выбор будет запомнен для следующего удаления.</translation>
+    </message>
+    <message>
+        <source>Remove</source>
+        <translation>Удалить</translation>
+    </message>
+    <message>
+        <source>This choice is remembered for the next removal.</source>
+        <translation>Этот выбор будет запомнен для следующего удаления.</translation>
+    </message>
+    <message>
+        <source>Remove</source>
+        <translation>Удалить</translation>
+    </message>
 </context>
 <context>
     <name>DownloadFromURLDialog</name>
@@ -3553,6 +3681,14 @@ Supports the formats: S01E01, 1x1, 2017.12.31 and 31.12.2017 (Date formats also 
         <location filename="../gui/executionlogwidget.cpp" line="99"/>
         <source>Clear</source>
         <translation>Очистить</translation>
+    </message>
+    <message>
+        <source>WebUI Activity</source>
+        <translation>Активность WebUI</translation>
+    </message>
+    <message>
+        <source>WebUI Activity</source>
+        <translation>Активность WebUI</translation>
     </message>
 </context>
 <context>
@@ -4726,6 +4862,46 @@ Minimum requirement: %2.</source>
         <location filename="../gui/mainwindow.cpp" line="1346"/>
         <source>Torrent Files</source>
         <translation>Торрент-файлы</translation>
+    </message>
+    <message>
+        <source>Kettle Edition %1 is available.</source>
+        <translation>Доступна Kettle Edition %1.</translation>
+    </message>
+    <message>
+        <source>qBittorrent Kettle Edition %1 is available. It is downloaded now and installed at 4:00 AM, or when qBittorrent starts next.</source>
+        <translation>Доступна qBittorrent Kettle Edition %1. Она скачивается сейчас и будет установлена в 4:00 или при следующем запуске qBittorrent.</translation>
+    </message>
+    <message>
+        <source>qBittorrent Kettle Edition %1 is available. It is downloaded now. Turn on &quot;Automatically install Kettle Edition updates&quot; in Options to install it.</source>
+        <translation>Доступна qBittorrent Kettle Edition %1. Она скачивается сейчас. Чтобы установить её, включите в Настройках «Устанавливать обновления Kettle Edition автоматически».</translation>
+    </message>
+    <message>
+        <source>You have the latest qBittorrent Kettle Edition (%1).</source>
+        <translation>У вас последняя версия qBittorrent Kettle Edition (%1).</translation>
+    </message>
+    <message>
+        <source>Could not check for qBittorrent Kettle Edition updates. See the Execution Log for details.</source>
+        <translation>Не удалось проверить обновления qBittorrent Kettle Edition. Подробности в журнале выполнения.</translation>
+    </message>
+    <message>
+        <source>Kettle Edition %1 is available.</source>
+        <translation>Доступна Kettle Edition %1.</translation>
+    </message>
+    <message>
+        <source>qBittorrent Kettle Edition %1 is available. It is downloaded now and installed at 4:00 AM, or when qBittorrent starts next.</source>
+        <translation>Доступна qBittorrent Kettle Edition %1. Она скачивается сейчас и будет установлена в 4:00 или при следующем запуске qBittorrent.</translation>
+    </message>
+    <message>
+        <source>qBittorrent Kettle Edition %1 is available. It is downloaded now. Turn on &quot;Automatically install Kettle Edition updates&quot; in Options to install it.</source>
+        <translation>Доступна qBittorrent Kettle Edition %1. Она скачивается сейчас. Чтобы установить её, включите в Настройках «Устанавливать обновления Kettle Edition автоматически».</translation>
+    </message>
+    <message>
+        <source>You have the latest qBittorrent Kettle Edition (%1).</source>
+        <translation>У вас последняя версия qBittorrent Kettle Edition (%1).</translation>
+    </message>
+    <message>
+        <source>Could not check for qBittorrent Kettle Edition updates. See the Execution Log for details.</source>
+        <translation>Не удалось проверить обновления qBittorrent Kettle Edition. Подробности в журнале выполнения.</translation>
     </message>
 </context>
 <context>
@@ -8515,6 +8691,190 @@ Check the Execution Log for errors.</source>
         <source>Length Error</source>
         <translation>Ошибка размера</translation>
     </message>
+    <message>
+        <source>Search settings</source>
+        <translation>Поиск настроек</translation>
+    </message>
+    <message>
+        <source>No settings match</source>
+        <translation>Нет подходящих настроек</translation>
+    </message>
+    <message>
+        <source>User Accounts</source>
+        <translation>Учётные записи</translation>
+    </message>
+    <message>
+        <source>Automatically install Kettle Edition updates</source>
+        <translation>Устанавливать обновления Kettle Edition автоматически</translation>
+    </message>
+    <message>
+        <source>Status bar and log</source>
+        <translation>Строка состояния и журнал</translation>
+    </message>
+    <message>
+        <source>Files</source>
+        <translation>Файлы</translation>
+    </message>
+    <message>
+        <source>Checking</source>
+        <translation>Проверка</translation>
+    </message>
+    <message>
+        <source>Until the first user account is created, this login always works.</source>
+        <translation>Пока не создана первая учётная запись, этот вход всегда работает.</translation>
+    </message>
+    <message>
+        <source>Allow this login when user accounts exist</source>
+        <translation>Разрешить этот вход, когда есть учётные записи</translation>
+    </message>
+    <message>
+        <source>Access</source>
+        <translation>Доступ</translation>
+    </message>
+    <message>
+        <source>Changes to users, roles and logins apply at once. The settings below apply with OK or Apply.</source>
+        <translation>Изменения пользователей, ролей и входов применяются сразу. Настройки ниже применяются кнопкой «ОК» или «Применить».</translation>
+    </message>
+    <message>
+        <source>Logins and Activity Log</source>
+        <translation>Входы и журнал действий</translation>
+    </message>
+    <message>
+        <source>0 means users are logged out after the session timeout.</source>
+        <translation>0 означает, что пользователи выходят после истечения времени сеанса.</translation>
+    </message>
+    <message>
+        <source>Keep users logged in for:</source>
+        <translation>Держать пользователей в системе:</translation>
+    </message>
+    <message>
+        <source>Until session timeout</source>
+        <translation>До истечения времени сеанса</translation>
+    </message>
+    <message>
+        <source> days</source>
+        <translation> дн.</translation>
+    </message>
+    <message>
+        <source>Lock account after consecutive failures:</source>
+        <translation>Блокировать учётную запись после подряд идущих неудач:</translation>
+    </message>
+    <message>
+        <source>Keep WebUI activity log for:</source>
+        <translation>Хранить журнал действий WebUI:</translation>
+    </message>
+    <message>
+        <source>lock for:</source>
+        <translation>блокировать на:</translation>
+    </message>
+    <message>
+        <source>%1 works best with Windows dark mode</source>
+        <translation>%1 лучше всего работает с тёмным режимом Windows</translation>
+    </message>
+    <message>
+        <source>WebUI address</source>
+        <translation>Адрес WebUI</translation>
+    </message>
+    <message>
+        <source>With the WebUI address set to %1, only this PC can reach the WebUI. Remote access, including through a reverse proxy on another machine, will stop working.
+
+Save anyway?</source>
+        <translation>Если адрес WebUI — %1, к WebUI сможет подключиться только этот компьютер. Удалённый доступ, в том числе через обратный прокси на другом компьютере, перестанет работать.
+
+Всё равно сохранить?</translation>
+    </message>
+    <message>
+        <source>Search settings</source>
+        <translation>Поиск настроек</translation>
+    </message>
+    <message>
+        <source>No settings match</source>
+        <translation>Нет подходящих настроек</translation>
+    </message>
+    <message>
+        <source>User Accounts</source>
+        <translation>Учётные записи</translation>
+    </message>
+    <message>
+        <source>Automatically install Kettle Edition updates</source>
+        <translation>Устанавливать обновления Kettle Edition автоматически</translation>
+    </message>
+    <message>
+        <source>Status bar and log</source>
+        <translation>Строка состояния и журнал</translation>
+    </message>
+    <message>
+        <source>Files</source>
+        <translation>Файлы</translation>
+    </message>
+    <message>
+        <source>Checking</source>
+        <translation>Проверка</translation>
+    </message>
+    <message>
+        <source>Until the first user account is created, this login always works.</source>
+        <translation>Пока не создана первая учётная запись, этот вход всегда работает.</translation>
+    </message>
+    <message>
+        <source>Allow this login when user accounts exist</source>
+        <translation>Разрешить этот вход, когда есть учётные записи</translation>
+    </message>
+    <message>
+        <source>Access</source>
+        <translation>Доступ</translation>
+    </message>
+    <message>
+        <source>Changes to users, roles and logins apply at once. The settings below apply with OK or Apply.</source>
+        <translation>Изменения пользователей, ролей и входов применяются сразу. Настройки ниже применяются кнопкой «ОК» или «Применить».</translation>
+    </message>
+    <message>
+        <source>Logins and Activity Log</source>
+        <translation>Входы и журнал действий</translation>
+    </message>
+    <message>
+        <source>0 means users are logged out after the session timeout.</source>
+        <translation>0 означает, что пользователи выходят после истечения времени сеанса.</translation>
+    </message>
+    <message>
+        <source>Keep users logged in for:</source>
+        <translation>Держать пользователей в системе:</translation>
+    </message>
+    <message>
+        <source>Until session timeout</source>
+        <translation>До истечения времени сеанса</translation>
+    </message>
+    <message>
+        <source> days</source>
+        <translation> дн.</translation>
+    </message>
+    <message>
+        <source>Lock account after consecutive failures:</source>
+        <translation>Блокировать учётную запись после подряд идущих неудач:</translation>
+    </message>
+    <message>
+        <source>Keep WebUI activity log for:</source>
+        <translation>Хранить журнал действий WebUI:</translation>
+    </message>
+    <message>
+        <source>lock for:</source>
+        <translation>блокировать на:</translation>
+    </message>
+    <message>
+        <source>%1 works best with Windows dark mode</source>
+        <translation>%1 лучше всего работает с тёмным режимом Windows</translation>
+    </message>
+    <message>
+        <source>WebUI address</source>
+        <translation>Адрес WebUI</translation>
+    </message>
+    <message>
+        <source>With the WebUI address set to %1, only this PC can reach the WebUI. Remote access, including through a reverse proxy on another machine, will stop working.
+
+Save anyway?</source>
+        <translation>Если адрес WebUI — %1, к WebUI сможет подключиться только этот компьютер. Удалённый доступ, в том числе через обратный прокси на другом компьютере, перестанет работать.
+
+Всё равно сохранить?</translation>
+    </message>
 </context>
 <context>
     <name>PeerInfo</name>
@@ -8767,6 +9127,22 @@ Check the Execution Log for errors.</source>
         <location filename="../gui/properties/peerlistwidget.cpp" line="309"/>
         <source>Copy IP:port</source>
         <translation>Копировать IP:порт</translation>
+    </message>
+    <message>
+        <source>Reset auto width</source>
+        <translation>Сбросить автоширину</translation>
+    </message>
+    <message>
+        <source>Fit all non-hidden columns to their contents again, and forget the widths that were set by hand</source>
+        <translation>Снова подогнать все видимые столбцы под их содержимое и забыть ширину, заданную вручную</translation>
+    </message>
+    <message>
+        <source>Reset auto width</source>
+        <translation>Сбросить автоширину</translation>
+    </message>
+    <message>
+        <source>Fit all non-hidden columns to their contents again, and forget the widths that were set by hand</source>
+        <translation>Снова подогнать все видимые столбцы под их содержимое и забыть ширину, заданную вручную</translation>
     </message>
 </context>
 <context>
@@ -10158,6 +10534,14 @@ Those plugins were disabled.</source>
         <source>Open link</source>
         <translation>Открыть ссылку</translation>
     </message>
+    <message>
+        <source>Details</source>
+        <translation>Подробности</translation>
+    </message>
+    <message>
+        <source>Details</source>
+        <translation>Подробности</translation>
+    </message>
 </context>
 <context>
     <name>SearchController</name>
@@ -10512,6 +10896,70 @@ Those plugins were disabled.</source>
         <source>Resize all non-hidden columns to the size of their contents</source>
         <translation>Подогнать все нескрытые столбцы к размеру их содержимого</translation>
     </message>
+    <message>
+        <source>%1 of %2 shown (%3 hidden)</source>
+        <translation>Показано %1 из %2 (скрыто %3)</translation>
+    </message>
+    <message>
+        <source>%1 of %2 shown</source>
+        <translation>Показано %1 из %2</translation>
+    </message>
+    <message>
+        <source>Searching: %1</source>
+        <translation>Поиск: %1</translation>
+    </message>
+    <message>
+        <source>Finished: %1</source>
+        <translation>Завершено: %1</translation>
+    </message>
+    <message>
+        <source>Search aborted: %1</source>
+        <translation>Поиск прерван: %1</translation>
+    </message>
+    <message>
+        <source>Reset auto width</source>
+        <translation>Сбросить автоширину</translation>
+    </message>
+    <message>
+        <source>Fit all non-hidden columns to their contents again, and forget the widths that were set by hand</source>
+        <translation>Снова подогнать все видимые столбцы под их содержимое и забыть ширину, заданную вручную</translation>
+    </message>
+    <message>
+        <source>Unknown</source>
+        <translation>Неизвестно</translation>
+    </message>
+    <message>
+        <source>%1 of %2 shown (%3 hidden)</source>
+        <translation>Показано %1 из %2 (скрыто %3)</translation>
+    </message>
+    <message>
+        <source>%1 of %2 shown</source>
+        <translation>Показано %1 из %2</translation>
+    </message>
+    <message>
+        <source>Searching: %1</source>
+        <translation>Поиск: %1</translation>
+    </message>
+    <message>
+        <source>Finished: %1</source>
+        <translation>Завершено: %1</translation>
+    </message>
+    <message>
+        <source>Search aborted: %1</source>
+        <translation>Поиск прерван: %1</translation>
+    </message>
+    <message>
+        <source>Reset auto width</source>
+        <translation>Сбросить автоширину</translation>
+    </message>
+    <message>
+        <source>Fit all non-hidden columns to their contents again, and forget the widths that were set by hand</source>
+        <translation>Снова подогнать все видимые столбцы под их содержимое и забыть ширину, заданную вручную</translation>
+    </message>
+    <message>
+        <source>Unknown</source>
+        <translation>Неизвестно</translation>
+    </message>
 </context>
 <context>
     <name>SearchPluginManager</name>
@@ -10810,6 +11258,14 @@ Those plugins were disabled.</source>
         <source>Couldn&apos;t update &quot;%1&quot; search engine plugin. %2</source>
         <translation type="unfinished">Не удалось обновить поисковый плагин «%1». %2</translation>
     </message>
+    <message>
+        <source>Install Kettle Plugins</source>
+        <translation>Установить плагины Kettle</translation>
+    </message>
+    <message>
+        <source>Install Kettle Plugins</source>
+        <translation>Установить плагины Kettle</translation>
+    </message>
 </context>
 <context>
     <name>SearchPluginSourceDialog</name>
@@ -10949,6 +11405,90 @@ Click the &quot;Search plugins...&quot; button at the bottom right of the window
         <location filename="../gui/search/searchwidget.ui" line="58"/>
         <source>Stop</source>
         <translation>Стоп</translation>
+    </message>
+    <message>
+        <source>Searches</source>
+        <translation>Поиски</translation>
+    </message>
+    <message>
+        <source>Close the selected search</source>
+        <translation>Закрыть выбранный поиск</translation>
+    </message>
+    <message>
+        <source>Search for torrents...</source>
+        <translation>Поиск торрентов...</translation>
+    </message>
+    <message>
+        <source>Category to search in</source>
+        <translation>Категория для поиска</translation>
+    </message>
+    <message>
+        <source>Search engines to use</source>
+        <translation>Используемые поисковики</translation>
+    </message>
+    <message>
+        <source>There aren&apos;t any search plugins installed.
+Click the &quot;Search plugins...&quot; button at the top right of the window to install some.</source>
+        <translation>Не установлено ни одного поискового плагина.
+Нажмите кнопку «Поисковые плагины...» в правом верхнем углу окна, чтобы установить их.</translation>
+    </message>
+    <message>
+        <source>Type a search above and press Enter.</source>
+        <translation>Введите запрос выше и нажмите Enter.</translation>
+    </message>
+    <message>
+        <source>Refresh search</source>
+        <translation>Обновить поиск</translation>
+    </message>
+    <message>
+        <source>Close search</source>
+        <translation>Закрыть поиск</translation>
+    </message>
+    <message>
+        <source>Close all searches</source>
+        <translation>Закрыть все поиски</translation>
+    </message>
+    <message>
+        <source>Searches</source>
+        <translation>Поиски</translation>
+    </message>
+    <message>
+        <source>Close the selected search</source>
+        <translation>Закрыть выбранный поиск</translation>
+    </message>
+    <message>
+        <source>Search for torrents...</source>
+        <translation>Поиск торрентов...</translation>
+    </message>
+    <message>
+        <source>Category to search in</source>
+        <translation>Категория для поиска</translation>
+    </message>
+    <message>
+        <source>Search engines to use</source>
+        <translation>Используемые поисковики</translation>
+    </message>
+    <message>
+        <source>There aren&apos;t any search plugins installed.
+Click the &quot;Search plugins...&quot; button at the top right of the window to install some.</source>
+        <translation>Не установлено ни одного поискового плагина.
+Нажмите кнопку «Поисковые плагины...» в правом верхнем углу окна, чтобы установить их.</translation>
+    </message>
+    <message>
+        <source>Type a search above and press Enter.</source>
+        <translation>Введите запрос выше и нажмите Enter.</translation>
+    </message>
+    <message>
+        <source>Refresh search</source>
+        <translation>Обновить поиск</translation>
+    </message>
+    <message>
+        <source>Close search</source>
+        <translation>Закрыть поиск</translation>
+    </message>
+    <message>
+        <source>Close all searches</source>
+        <translation>Закрыть все поиски</translation>
     </message>
 </context>
 <context>
@@ -11415,6 +11955,326 @@ Click the &quot;Search plugins...&quot; button at the bottom right of the window
         <location filename="../gui/statsdialog.cpp" line="111"/>
         <source>%1 ms</source>
         <translation type="unfinished">%1 мс</translation>
+    </message>
+    <message>
+        <source>Copy</source>
+        <translation>Копировать</translation>
+    </message>
+    <message>
+        <source>Overview</source>
+        <translation>Обзор</translation>
+    </message>
+    <message>
+        <source>Transfer</source>
+        <translation>Передача</translation>
+    </message>
+    <message>
+        <source>This session</source>
+        <translation>Этот сеанс</translation>
+    </message>
+    <message>
+        <source>All time</source>
+        <translation>Всё время</translation>
+    </message>
+    <message>
+        <source>Downloaded:</source>
+        <translation>Скачано:</translation>
+    </message>
+    <message>
+        <source>Uploaded:</source>
+        <translation>Отдано:</translation>
+    </message>
+    <message>
+        <source>Share ratio:</source>
+        <translation>Рейтинг раздачи:</translation>
+    </message>
+    <message>
+        <source>Current speed:</source>
+        <translation>Текущая скорость:</translation>
+    </message>
+    <message>
+        <source>Activity</source>
+        <translation>Активность</translation>
+    </message>
+    <message>
+        <source>Torrents downloading:</source>
+        <translation>Скачивается торрентов:</translation>
+    </message>
+    <message>
+        <source>Torrents seeding:</source>
+        <translation>Раздаётся торрентов:</translation>
+    </message>
+    <message>
+        <source>Torrents stopped:</source>
+        <translation>Остановлено торрентов:</translation>
+    </message>
+    <message>
+        <source>Torrents with errors:</source>
+        <translation>Торрентов с ошибками:</translation>
+    </message>
+    <message>
+        <source>Running for:</source>
+        <translation>Работает:</translation>
+    </message>
+    <message>
+        <source>History</source>
+        <translation>История</translation>
+    </message>
+    <message>
+        <source>Period</source>
+        <translation>Период</translation>
+    </message>
+    <message>
+        <source>Today</source>
+        <translation>Сегодня</translation>
+    </message>
+    <message>
+        <source>Last 7 days</source>
+        <translation>Последние 7 дней</translation>
+    </message>
+    <message>
+        <source>This month</source>
+        <translation>Этот месяц</translation>
+    </message>
+    <message>
+        <source>Last month</source>
+        <translation>Прошлый месяц</translation>
+    </message>
+    <message>
+        <source>Last 12 months</source>
+        <translation>Последние 12 месяцев</translation>
+    </message>
+    <message>
+        <source>Tracking since:</source>
+        <translation>Учёт ведётся с:</translation>
+    </message>
+    <message>
+        <source>By month</source>
+        <translation>По месяцам</translation>
+    </message>
+    <message>
+        <source>Month</source>
+        <translation>Месяц</translation>
+    </message>
+    <message>
+        <source>Downloaded</source>
+        <translation>Скачано</translation>
+    </message>
+    <message>
+        <source>Uploaded</source>
+        <translation>Отдано</translation>
+    </message>
+    <message>
+        <source>Share ratio</source>
+        <translation>Рейтинг раздачи</translation>
+    </message>
+    <message>
+        <source>WebUI downloads added, this month</source>
+        <translation>Загрузки, добавленные через WebUI, в этом месяце</translation>
+    </message>
+    <message>
+        <source>Counts the requests that added a download. Apps without a login, such as Sonarr and Radarr, are shown as (localhost). Downloads added in the desktop window are not counted.</source>
+        <translation>Считает запросы, добавившие загрузку. Приложения без входа, например Sonarr и Radarr, показываются как (localhost). Загрузки, добавленные в окне настольного приложения, не учитываются.</translation>
+    </message>
+    <message>
+        <source>Technical</source>
+        <translation>Технические данные</translation>
+    </message>
+    <message>
+        <source>Disk</source>
+        <translation>Диск</translation>
+    </message>
+    <message>
+        <source>Peers waiting on disk writes:</source>
+        <translation>Пиров ожидает записи на диск:</translation>
+    </message>
+    <message>
+        <source>Peers waiting on disk reads:</source>
+        <translation>Пиров ожидает чтения с диска:</translation>
+    </message>
+    <message>
+        <source>Network</source>
+        <translation>Сеть</translation>
+    </message>
+    <message>
+        <source>DHT nodes:</source>
+        <translation>Узлов DHT:</translation>
+    </message>
+    <message>
+        <source>Data discarded this session:</source>
+        <translation>Отброшено данных за сеанс:</translation>
+    </message>
+    <message>
+        <source>Before tracking began</source>
+        <translation>До начала учёта</translation>
+    </message>
+    <message>
+        <source>Nothing added yet</source>
+        <translation>Пока ничего не добавлено</translation>
+    </message>
+    <message>
+        <source>Off</source>
+        <translation>Выкл.</translation>
+    </message>
+    <message>
+        <source>Copy</source>
+        <translation>Копировать</translation>
+    </message>
+    <message>
+        <source>Overview</source>
+        <translation>Обзор</translation>
+    </message>
+    <message>
+        <source>Transfer</source>
+        <translation>Передача</translation>
+    </message>
+    <message>
+        <source>This session</source>
+        <translation>Этот сеанс</translation>
+    </message>
+    <message>
+        <source>All time</source>
+        <translation>Всё время</translation>
+    </message>
+    <message>
+        <source>Downloaded:</source>
+        <translation>Скачано:</translation>
+    </message>
+    <message>
+        <source>Uploaded:</source>
+        <translation>Отдано:</translation>
+    </message>
+    <message>
+        <source>Share ratio:</source>
+        <translation>Рейтинг раздачи:</translation>
+    </message>
+    <message>
+        <source>Current speed:</source>
+        <translation>Текущая скорость:</translation>
+    </message>
+    <message>
+        <source>Activity</source>
+        <translation>Активность</translation>
+    </message>
+    <message>
+        <source>Torrents downloading:</source>
+        <translation>Скачивается торрентов:</translation>
+    </message>
+    <message>
+        <source>Torrents seeding:</source>
+        <translation>Раздаётся торрентов:</translation>
+    </message>
+    <message>
+        <source>Torrents stopped:</source>
+        <translation>Остановлено торрентов:</translation>
+    </message>
+    <message>
+        <source>Torrents with errors:</source>
+        <translation>Торрентов с ошибками:</translation>
+    </message>
+    <message>
+        <source>Running for:</source>
+        <translation>Работает:</translation>
+    </message>
+    <message>
+        <source>History</source>
+        <translation>История</translation>
+    </message>
+    <message>
+        <source>Period</source>
+        <translation>Период</translation>
+    </message>
+    <message>
+        <source>Today</source>
+        <translation>Сегодня</translation>
+    </message>
+    <message>
+        <source>Last 7 days</source>
+        <translation>Последние 7 дней</translation>
+    </message>
+    <message>
+        <source>This month</source>
+        <translation>Этот месяц</translation>
+    </message>
+    <message>
+        <source>Last month</source>
+        <translation>Прошлый месяц</translation>
+    </message>
+    <message>
+        <source>Last 12 months</source>
+        <translation>Последние 12 месяцев</translation>
+    </message>
+    <message>
+        <source>Tracking since:</source>
+        <translation>Учёт ведётся с:</translation>
+    </message>
+    <message>
+        <source>By month</source>
+        <translation>По месяцам</translation>
+    </message>
+    <message>
+        <source>Month</source>
+        <translation>Месяц</translation>
+    </message>
+    <message>
+        <source>Downloaded</source>
+        <translation>Скачано</translation>
+    </message>
+    <message>
+        <source>Uploaded</source>
+        <translation>Отдано</translation>
+    </message>
+    <message>
+        <source>Share ratio</source>
+        <translation>Рейтинг раздачи</translation>
+    </message>
+    <message>
+        <source>WebUI downloads added, this month</source>
+        <translation>Загрузки, добавленные через WebUI, в этом месяце</translation>
+    </message>
+    <message>
+        <source>Counts the requests that added a download. Apps without a login, such as Sonarr and Radarr, are shown as (localhost). Downloads added in the desktop window are not counted.</source>
+        <translation>Считает запросы, добавившие загрузку. Приложения без входа, например Sonarr и Radarr, показываются как (localhost). Загрузки, добавленные в окне настольного приложения, не учитываются.</translation>
+    </message>
+    <message>
+        <source>Technical</source>
+        <translation>Технические данные</translation>
+    </message>
+    <message>
+        <source>Disk</source>
+        <translation>Диск</translation>
+    </message>
+    <message>
+        <source>Peers waiting on disk writes:</source>
+        <translation>Пиров ожидает записи на диск:</translation>
+    </message>
+    <message>
+        <source>Peers waiting on disk reads:</source>
+        <translation>Пиров ожидает чтения с диска:</translation>
+    </message>
+    <message>
+        <source>Network</source>
+        <translation>Сеть</translation>
+    </message>
+    <message>
+        <source>DHT nodes:</source>
+        <translation>Узлов DHT:</translation>
+    </message>
+    <message>
+        <source>Data discarded this session:</source>
+        <translation>Отброшено данных за сеанс:</translation>
+    </message>
+    <message>
+        <source>Before tracking began</source>
+        <translation>До начала учёта</translation>
+    </message>
+    <message>
+        <source>Nothing added yet</source>
+        <translation>Пока ничего не добавлено</translation>
+    </message>
+    <message>
+        <source>Off</source>
+        <translation>Выкл.</translation>
     </message>
 </context>
 <context>
@@ -12110,6 +12970,22 @@ Please choose a different name and try again.</source>
     <message>
         <source>Priority by shown file order</source>
         <translation type="vanished">В показанном порядке</translation>
+    </message>
+    <message>
+        <source>Reset auto width</source>
+        <translation>Сбросить автоширину</translation>
+    </message>
+    <message>
+        <source>Fit all non-hidden columns to their contents again, and forget the widths that were set by hand</source>
+        <translation>Снова подогнать все видимые столбцы под их содержимое и забыть ширину, заданную вручную</translation>
+    </message>
+    <message>
+        <source>Reset auto width</source>
+        <translation>Сбросить автоширину</translation>
+    </message>
+    <message>
+        <source>Fit all non-hidden columns to their contents again, and forget the widths that were set by hand</source>
+        <translation>Снова подогнать все видимые столбцы под их содержимое и забыть ширину, заданную вручную</translation>
     </message>
 </context>
 <context>
@@ -13194,6 +14070,22 @@ Please choose a different name and try again.</source>
         <source>Column visibility</source>
         <translation>Отображение столбцов</translation>
     </message>
+    <message>
+        <source>Reset auto width</source>
+        <translation>Сбросить автоширину</translation>
+    </message>
+    <message>
+        <source>Fit all non-hidden columns to their contents again, and forget the widths that were set by hand</source>
+        <translation>Снова подогнать все видимые столбцы под их содержимое и забыть ширину, заданную вручную</translation>
+    </message>
+    <message>
+        <source>Reset auto width</source>
+        <translation>Сбросить автоширину</translation>
+    </message>
+    <message>
+        <source>Fit all non-hidden columns to their contents again, and forget the widths that were set by hand</source>
+        <translation>Снова подогнать все видимые столбцы под их содержимое и забыть ширину, заданную вручную</translation>
+    </message>
 </context>
 <context>
     <name>TrackerStatusFilterWidget</name>
@@ -14060,6 +14952,22 @@ Please choose a different name and try again.</source>
         <source>Super seeding mode</source>
         <translation>Режим суперсида</translation>
     </message>
+    <message>
+        <source>Reset auto width</source>
+        <translation>Сбросить автоширину</translation>
+    </message>
+    <message>
+        <source>Fit all non-hidden columns to their contents again, and forget the widths that were set by hand</source>
+        <translation>Снова подогнать все видимые столбцы под их содержимое и забыть ширину, заданную вручную</translation>
+    </message>
+    <message>
+        <source>Reset auto width</source>
+        <translation>Сбросить автоширину</translation>
+    </message>
+    <message>
+        <source>Fit all non-hidden columns to their contents again, and forget the widths that were set by hand</source>
+        <translation>Снова подогнать все видимые столбцы под их содержимое и забыть ширину, заданную вручную</translation>
+    </message>
 </context>
 <context>
     <name>UIThemeDialog</name>
@@ -14394,6 +15302,46 @@ Please choose a different name and try again.</source>
         <source>WebAPI login failure. Reason: invalid credentials, attempt count: %1, IP: %2, username: %3</source>
         <translation>Ошибка входа WebAPI. Причина: неверные учётные данные, попыток: %1, IP: %2, имя пользователя: %3</translation>
     </message>
+    <message>
+        <source>Something went wrong on the server. Details are in qBittorrent&apos;s log.</source>
+        <translation>На сервере что-то пошло не так. Подробности в журнале qBittorrent.</translation>
+    </message>
+    <message>
+        <source>This account is locked after too many failed login attempts. Try again in %1 minute(s).</source>
+        <translation>Эта учётная запись заблокирована из-за слишком многих неудачных попыток входа. Повторите через %1 мин.</translation>
+    </message>
+    <message>
+        <source>Your role (%1) doesn&apos;t allow this: %2.</source>
+        <translation>Ваша роль (%1) этого не разрешает: %2.</translation>
+    </message>
+    <message>
+        <source>Only an admin can remove the tag that says who added a torrent.</source>
+        <translation>Только администратор может удалить метку, показывающую, кто добавил торрент.</translation>
+    </message>
+    <message>
+        <source>Only an admin can clear or replace all tags of a torrent that has a tag saying who added it.</source>
+        <translation>Только администратор может очистить или заменить все метки торрента, у которого есть метка с указанием добавившего.</translation>
+    </message>
+    <message>
+        <source>Something went wrong on the server. Details are in qBittorrent&apos;s log.</source>
+        <translation>На сервере что-то пошло не так. Подробности в журнале qBittorrent.</translation>
+    </message>
+    <message>
+        <source>This account is locked after too many failed login attempts. Try again in %1 minute(s).</source>
+        <translation>Эта учётная запись заблокирована из-за слишком многих неудачных попыток входа. Повторите через %1 мин.</translation>
+    </message>
+    <message>
+        <source>Your role (%1) doesn&apos;t allow this: %2.</source>
+        <translation>Ваша роль (%1) этого не разрешает: %2.</translation>
+    </message>
+    <message>
+        <source>Only an admin can remove the tag that says who added a torrent.</source>
+        <translation>Только администратор может удалить метку, показывающую, кто добавил торрент.</translation>
+    </message>
+    <message>
+        <source>Only an admin can clear or replace all tags of a torrent that has a tag saying who added it.</source>
+        <translation>Только администратор может очистить или заменить все метки торрента, у которого есть метка с указанием добавившего.</translation>
+    </message>
 </context>
 <context>
     <name>WebUI</name>
@@ -14533,6 +15481,669 @@ Please choose a different name and try again.</source>
         <source>&lt; 1m</source>
         <comment>&lt; 1 minute</comment>
         <translation>&lt; 1 м</translation>
+    </message>
+</context>
+<context>
+    <name>UpdateInstaller</name>
+    <message>
+        <source>Kettle Edition update</source>
+        <translation>Обновление Kettle Edition</translation>
+    </message>
+    <message>
+        <source>Kettle Edition was updated to %1.</source>
+        <translation>Kettle Edition обновлена до %1.</translation>
+    </message>
+    <message>
+        <source>Kettle Edition updated</source>
+        <translation>Kettle Edition обновлена</translation>
+    </message>
+    <message>
+        <source>Downloading Kettle Edition %1 (%2 changed files).</source>
+        <translation>Скачивается Kettle Edition %1 (изменённых файлов: %2).</translation>
+    </message>
+    <message>
+        <source>Kettle Edition %1 is downloaded and ready to install.</source>
+        <translation>Kettle Edition %1 скачана и готова к установке.</translation>
+    </message>
+    <message>
+        <source>Kettle Edition update</source>
+        <translation>Обновление Kettle Edition</translation>
+    </message>
+    <message>
+        <source>Kettle Edition was updated to %1.</source>
+        <translation>Kettle Edition обновлена до %1.</translation>
+    </message>
+    <message>
+        <source>Kettle Edition updated</source>
+        <translation>Kettle Edition обновлена</translation>
+    </message>
+    <message>
+        <source>Downloading Kettle Edition %1 (%2 changed files).</source>
+        <translation>Скачивается Kettle Edition %1 (изменённых файлов: %2).</translation>
+    </message>
+    <message>
+        <source>Kettle Edition %1 is downloaded and ready to install.</source>
+        <translation>Kettle Edition %1 скачана и готова к установке.</translation>
+    </message>
+</context>
+<context>
+    <name>UserAccountDialog</name>
+    <message>
+        <source>User</source>
+        <translation>Пользователь</translation>
+    </message>
+    <message>
+        <source>Username:</source>
+        <translation>Имя пользователя:</translation>
+    </message>
+    <message>
+        <source>Role:</source>
+        <translation>Роль:</translation>
+    </message>
+    <message>
+        <source>Password:</source>
+        <translation>Пароль:</translation>
+    </message>
+    <message>
+        <source>Confirm password:</source>
+        <translation>Подтвердите пароль:</translation>
+    </message>
+    <message>
+        <source>Disable this account</source>
+        <translation>Отключить эту учётную запись</translation>
+    </message>
+    <message>
+        <source>Edit User</source>
+        <translation>Изменить пользователя</translation>
+    </message>
+    <message>
+        <source>Leave empty to keep the current password</source>
+        <translation>Оставьте пустым, чтобы сохранить текущий пароль</translation>
+    </message>
+    <message>
+        <source>Add User</source>
+        <translation>Добавить пользователя</translation>
+    </message>
+    <message>
+        <source>At least %1 characters</source>
+        <translation>Не менее %1 символов</translation>
+    </message>
+    <message>
+        <source>Enter a username.</source>
+        <translation>Введите имя пользователя.</translation>
+    </message>
+    <message>
+        <source>The password must be at least %1 characters long.</source>
+        <translation>Пароль должен содержать не менее %1 символов.</translation>
+    </message>
+    <message>
+        <source>The passwords don&apos;t match.</source>
+        <translation>Пароли не совпадают.</translation>
+    </message>
+    <message>
+        <source>User</source>
+        <translation>Пользователь</translation>
+    </message>
+    <message>
+        <source>Username:</source>
+        <translation>Имя пользователя:</translation>
+    </message>
+    <message>
+        <source>Role:</source>
+        <translation>Роль:</translation>
+    </message>
+    <message>
+        <source>Password:</source>
+        <translation>Пароль:</translation>
+    </message>
+    <message>
+        <source>Confirm password:</source>
+        <translation>Подтвердите пароль:</translation>
+    </message>
+    <message>
+        <source>Disable this account</source>
+        <translation>Отключить эту учётную запись</translation>
+    </message>
+    <message>
+        <source>Edit User</source>
+        <translation>Изменить пользователя</translation>
+    </message>
+    <message>
+        <source>Leave empty to keep the current password</source>
+        <translation>Оставьте пустым, чтобы сохранить текущий пароль</translation>
+    </message>
+    <message>
+        <source>Add User</source>
+        <translation>Добавить пользователя</translation>
+    </message>
+    <message>
+        <source>At least %1 characters</source>
+        <translation>Не менее %1 символов</translation>
+    </message>
+    <message>
+        <source>Enter a username.</source>
+        <translation>Введите имя пользователя.</translation>
+    </message>
+    <message>
+        <source>The password must be at least %1 characters long.</source>
+        <translation>Пароль должен содержать не менее %1 символов.</translation>
+    </message>
+    <message>
+        <source>The passwords don&apos;t match.</source>
+        <translation>Пароли не совпадают.</translation>
+    </message>
+</context>
+<context>
+    <name>UserAccountsWidget</name>
+    <message>
+        <source>User Accounts</source>
+        <translation>Учётные записи</translation>
+    </message>
+    <message>
+        <source>Users</source>
+        <translation>Пользователи</translation>
+    </message>
+    <message>
+        <source>People who can log in to the WebUI with their own username and password.</source>
+        <translation>Люди, которые могут входить в WebUI со своим именем пользователя и паролем.</translation>
+    </message>
+    <message>
+        <source>Add User...</source>
+        <translation>Добавить пользователя...</translation>
+    </message>
+    <message>
+        <source>Edit...</source>
+        <translation>Изменить...</translation>
+    </message>
+    <message>
+        <source>Remove</source>
+        <translation>Удалить</translation>
+    </message>
+    <message>
+        <source>Roles</source>
+        <translation>Роли</translation>
+    </message>
+    <message>
+        <source>A role decides what its users are allowed to do.</source>
+        <translation>Роль определяет, что разрешено её пользователям.</translation>
+    </message>
+    <message>
+        <source>Add Role...</source>
+        <translation>Добавить роль...</translation>
+    </message>
+    <message>
+        <source>Logged In</source>
+        <translation>Вошли</translation>
+    </message>
+    <message>
+        <source>Browsers and devices where someone is logged in with a user account.</source>
+        <translation>Браузеры и устройства, где кто-то вошёл с учётной записью.</translation>
+    </message>
+    <message>
+        <source>Log Out</source>
+        <translation>Выйти</translation>
+    </message>
+    <message>
+        <source>Username</source>
+        <translation>Имя пользователя</translation>
+    </message>
+    <message>
+        <source>Role</source>
+        <translation>Роль</translation>
+    </message>
+    <message>
+        <source>Status</source>
+        <translation>Состояние</translation>
+    </message>
+    <message>
+        <source>Last login</source>
+        <translation>Последний вход</translation>
+    </message>
+    <message>
+        <source>Created</source>
+        <translation>Создана</translation>
+    </message>
+    <message>
+        <source>Name</source>
+        <translation>Название</translation>
+    </message>
+    <message>
+        <source>Description</source>
+        <translation>Описание</translation>
+    </message>
+    <message>
+        <source>Permissions</source>
+        <translation>Разрешения</translation>
+    </message>
+    <message>
+        <source>User</source>
+        <translation>Пользователь</translation>
+    </message>
+    <message>
+        <source>Browser</source>
+        <translation>Браузер</translation>
+    </message>
+    <message>
+        <source>Logged in</source>
+        <translation>Время входа</translation>
+    </message>
+    <message>
+        <source>Last active</source>
+        <translation>Последняя активность</translation>
+    </message>
+    <message>
+        <source>Expires</source>
+        <translation>Истекает</translation>
+    </message>
+    <message>
+        <source>The user database could not be opened. See the Execution Log for details.</source>
+        <translation>Не удалось открыть базу пользователей. Подробности в журнале выполнения.</translation>
+    </message>
+    <message>
+        <source>Disabled</source>
+        <translation>Отключена</translation>
+    </message>
+    <message>
+        <source>Enabled</source>
+        <translation>Включена</translation>
+    </message>
+    <message>
+        <source>Never</source>
+        <translation>Никогда</translation>
+    </message>
+    <message>
+        <source>No accounts yet, so everyone still uses the shared WebUI login. Add an Admin account first.</source>
+        <translation>Учётных записей пока нет, поэтому все по-прежнему используют общий вход WebUI. Сначала добавьте учётную запись администратора.</translation>
+    </message>
+    <message>
+        <source>Couldn&apos;t read the user database. %1</source>
+        <translation>Не удалось прочитать базу пользователей. %1</translation>
+    </message>
+    <message>
+        <source>Remove user</source>
+        <translation>Удалить пользователя</translation>
+    </message>
+    <message>
+        <source>Are you sure you want to remove the user &apos;%1&apos;?</source>
+        <translation>Вы действительно хотите удалить пользователя «%1»?</translation>
+    </message>
+    <message>
+        <source>Remove role</source>
+        <translation>Удалить роль</translation>
+    </message>
+    <message>
+        <source>Are you sure you want to remove the role &apos;%1&apos;?</source>
+        <translation>Вы действительно хотите удалить роль «%1»?</translation>
+    </message>
+    <message>
+        <source>Enable</source>
+        <translation>Включить</translation>
+    </message>
+    <message>
+        <source>Disable</source>
+        <translation>Отключить</translation>
+    </message>
+    <message>
+        <source>Log Out Everywhere</source>
+        <translation>Выйти везде</translation>
+    </message>
+    <message>
+        <source>User Accounts</source>
+        <translation>Учётные записи</translation>
+    </message>
+    <message>
+        <source>Users</source>
+        <translation>Пользователи</translation>
+    </message>
+    <message>
+        <source>People who can log in to the WebUI with their own username and password.</source>
+        <translation>Люди, которые могут входить в WebUI со своим именем пользователя и паролем.</translation>
+    </message>
+    <message>
+        <source>Add User...</source>
+        <translation>Добавить пользователя...</translation>
+    </message>
+    <message>
+        <source>Edit...</source>
+        <translation>Изменить...</translation>
+    </message>
+    <message>
+        <source>Remove</source>
+        <translation>Удалить</translation>
+    </message>
+    <message>
+        <source>Roles</source>
+        <translation>Роли</translation>
+    </message>
+    <message>
+        <source>A role decides what its users are allowed to do.</source>
+        <translation>Роль определяет, что разрешено её пользователям.</translation>
+    </message>
+    <message>
+        <source>Add Role...</source>
+        <translation>Добавить роль...</translation>
+    </message>
+    <message>
+        <source>Logged In</source>
+        <translation>Вошли</translation>
+    </message>
+    <message>
+        <source>Browsers and devices where someone is logged in with a user account.</source>
+        <translation>Браузеры и устройства, где кто-то вошёл с учётной записью.</translation>
+    </message>
+    <message>
+        <source>Log Out</source>
+        <translation>Выйти</translation>
+    </message>
+    <message>
+        <source>Username</source>
+        <translation>Имя пользователя</translation>
+    </message>
+    <message>
+        <source>Role</source>
+        <translation>Роль</translation>
+    </message>
+    <message>
+        <source>Status</source>
+        <translation>Состояние</translation>
+    </message>
+    <message>
+        <source>Last login</source>
+        <translation>Последний вход</translation>
+    </message>
+    <message>
+        <source>Created</source>
+        <translation>Создана</translation>
+    </message>
+    <message>
+        <source>Name</source>
+        <translation>Название</translation>
+    </message>
+    <message>
+        <source>Description</source>
+        <translation>Описание</translation>
+    </message>
+    <message>
+        <source>Permissions</source>
+        <translation>Разрешения</translation>
+    </message>
+    <message>
+        <source>User</source>
+        <translation>Пользователь</translation>
+    </message>
+    <message>
+        <source>Browser</source>
+        <translation>Браузер</translation>
+    </message>
+    <message>
+        <source>Logged in</source>
+        <translation>Время входа</translation>
+    </message>
+    <message>
+        <source>Last active</source>
+        <translation>Последняя активность</translation>
+    </message>
+    <message>
+        <source>Expires</source>
+        <translation>Истекает</translation>
+    </message>
+    <message>
+        <source>The user database could not be opened. See the Execution Log for details.</source>
+        <translation>Не удалось открыть базу пользователей. Подробности в журнале выполнения.</translation>
+    </message>
+    <message>
+        <source>Disabled</source>
+        <translation>Отключена</translation>
+    </message>
+    <message>
+        <source>Enabled</source>
+        <translation>Включена</translation>
+    </message>
+    <message>
+        <source>Never</source>
+        <translation>Никогда</translation>
+    </message>
+    <message>
+        <source>No accounts yet, so everyone still uses the shared WebUI login. Add an Admin account first.</source>
+        <translation>Учётных записей пока нет, поэтому все по-прежнему используют общий вход WebUI. Сначала добавьте учётную запись администратора.</translation>
+    </message>
+    <message>
+        <source>Couldn&apos;t read the user database. %1</source>
+        <translation>Не удалось прочитать базу пользователей. %1</translation>
+    </message>
+    <message>
+        <source>Remove user</source>
+        <translation>Удалить пользователя</translation>
+    </message>
+    <message>
+        <source>Are you sure you want to remove the user &apos;%1&apos;?</source>
+        <translation>Вы действительно хотите удалить пользователя «%1»?</translation>
+    </message>
+    <message>
+        <source>Remove role</source>
+        <translation>Удалить роль</translation>
+    </message>
+    <message>
+        <source>Are you sure you want to remove the role &apos;%1&apos;?</source>
+        <translation>Вы действительно хотите удалить роль «%1»?</translation>
+    </message>
+    <message>
+        <source>Enable</source>
+        <translation>Включить</translation>
+    </message>
+    <message>
+        <source>Disable</source>
+        <translation>Отключить</translation>
+    </message>
+    <message>
+        <source>Log Out Everywhere</source>
+        <translation>Выйти везде</translation>
+    </message>
+</context>
+<context>
+    <name>UserRoleDialog</name>
+    <message>
+        <source>Role</source>
+        <translation>Роль</translation>
+    </message>
+    <message>
+        <source>Name:</source>
+        <translation>Название:</translation>
+    </message>
+    <message>
+        <source>Description:</source>
+        <translation>Описание:</translation>
+    </message>
+    <message>
+        <source>Gives control over the PC or qBittorrent itself.</source>
+        <translation>Даёт управление компьютером или самим qBittorrent.</translation>
+    </message>
+    <message>
+        <source>Add Role</source>
+        <translation>Добавить роль</translation>
+    </message>
+    <message>
+        <source>Edit Role</source>
+        <translation>Изменить роль</translation>
+    </message>
+    <message>
+        <source>Enter a role name.</source>
+        <translation>Введите название роли.</translation>
+    </message>
+    <message>
+        <source>Role</source>
+        <translation>Роль</translation>
+    </message>
+    <message>
+        <source>Name:</source>
+        <translation>Название:</translation>
+    </message>
+    <message>
+        <source>Description:</source>
+        <translation>Описание:</translation>
+    </message>
+    <message>
+        <source>Gives control over the PC or qBittorrent itself.</source>
+        <translation>Даёт управление компьютером или самим qBittorrent.</translation>
+    </message>
+    <message>
+        <source>Add Role</source>
+        <translation>Добавить роль</translation>
+    </message>
+    <message>
+        <source>Edit Role</source>
+        <translation>Изменить роль</translation>
+    </message>
+    <message>
+        <source>Enter a role name.</source>
+        <translation>Введите название роли.</translation>
+    </message>
+</context>
+<context>
+    <name>WebUIActivityWidget</name>
+    <message>
+        <source>All</source>
+        <translation>Все</translation>
+    </message>
+    <message>
+        <source>Filter activity</source>
+        <translation>Фильтр действий</translation>
+    </message>
+    <message>
+        <source>Export...</source>
+        <translation>Экспорт...</translation>
+    </message>
+    <message>
+        <source>User:</source>
+        <translation>Пользователь:</translation>
+    </message>
+    <message>
+        <source>Category:</source>
+        <translation>Категория:</translation>
+    </message>
+    <message>
+        <source>Result:</source>
+        <translation>Результат:</translation>
+    </message>
+    <message>
+        <source>Time</source>
+        <translation>Время</translation>
+    </message>
+    <message>
+        <source>User</source>
+        <translation>Пользователь</translation>
+    </message>
+    <message>
+        <source>Role</source>
+        <translation>Роль</translation>
+    </message>
+    <message>
+        <source>Category</source>
+        <translation>Категория</translation>
+    </message>
+    <message>
+        <source>Action</source>
+        <translation>Действие</translation>
+    </message>
+    <message>
+        <source>Result</source>
+        <translation>Результат</translation>
+    </message>
+    <message>
+        <source>The user database could not be opened. See the General tab for details.</source>
+        <translation>Не удалось открыть базу пользователей. Подробности на вкладке «Общие».</translation>
+    </message>
+    <message>
+        <source>Results (showing %1 out of %2)</source>
+        <translation>Результаты (показано %1 из %2)</translation>
+    </message>
+    <message>
+        <source>Copy</source>
+        <translation>Копировать</translation>
+    </message>
+    <message>
+        <source>Export WebUI activity</source>
+        <translation>Экспорт действий WebUI</translation>
+    </message>
+    <message>
+        <source>CSV files</source>
+        <translation>Файлы CSV</translation>
+    </message>
+    <message>
+        <source>Couldn&apos;t save the file. Reason: %1</source>
+        <translation>Не удалось сохранить файл. Причина: %1</translation>
+    </message>
+    <message>
+        <source>All</source>
+        <translation>Все</translation>
+    </message>
+    <message>
+        <source>Filter activity</source>
+        <translation>Фильтр действий</translation>
+    </message>
+    <message>
+        <source>Export...</source>
+        <translation>Экспорт...</translation>
+    </message>
+    <message>
+        <source>User:</source>
+        <translation>Пользователь:</translation>
+    </message>
+    <message>
+        <source>Category:</source>
+        <translation>Категория:</translation>
+    </message>
+    <message>
+        <source>Result:</source>
+        <translation>Результат:</translation>
+    </message>
+    <message>
+        <source>Time</source>
+        <translation>Время</translation>
+    </message>
+    <message>
+        <source>User</source>
+        <translation>Пользователь</translation>
+    </message>
+    <message>
+        <source>Role</source>
+        <translation>Роль</translation>
+    </message>
+    <message>
+        <source>Category</source>
+        <translation>Категория</translation>
+    </message>
+    <message>
+        <source>Action</source>
+        <translation>Действие</translation>
+    </message>
+    <message>
+        <source>Result</source>
+        <translation>Результат</translation>
+    </message>
+    <message>
+        <source>The user database could not be opened. See the General tab for details.</source>
+        <translation>Не удалось открыть базу пользователей. Подробности на вкладке «Общие».</translation>
+    </message>
+    <message>
+        <source>Results (showing %1 out of %2)</source>
+        <translation>Результаты (показано %1 из %2)</translation>
+    </message>
+    <message>
+        <source>Copy</source>
+        <translation>Копировать</translation>
+    </message>
+    <message>
+        <source>Export WebUI activity</source>
+        <translation>Экспорт действий WebUI</translation>
+    </message>
+    <message>
+        <source>CSV files</source>
+        <translation>Файлы CSV</translation>
+    </message>
+    <message>
+        <source>Couldn&apos;t save the file. Reason: %1</source>
+        <translation>Не удалось сохранить файл. Причина: %1</translation>
     </message>
 </context>
 </TS>

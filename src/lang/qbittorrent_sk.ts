@@ -141,6 +141,62 @@
         <source>The free IP to Country Lite database by DB-IP is used for resolving the countries of peers. The database is licensed under the Creative Commons Attribution 4.0 International License</source>
         <translation>Bezplatná databáza IP to Country Lite od DB-IP sa používa na riešenie krajín peerov. Databáza je licencovaná podľa medzinárodnej licencie Creative Commons Attribution 4.0</translation>
     </message>
+    <message>
+        <source>This edition</source>
+        <translation>Toto vydanie</translation>
+    </message>
+    <message>
+        <source>Edition version:</source>
+        <translation>Verzia vydania:</translation>
+    </message>
+    <message>
+        <source>Based on:</source>
+        <translation>Založené na:</translation>
+    </message>
+    <message>
+        <source>Maintainer:</source>
+        <translation>Správca:</translation>
+    </message>
+    <message>
+        <source>qBittorrent project:</source>
+        <translation>Projekt qBittorrent:</translation>
+    </message>
+    <message>
+        <source>Kettle Edition is a personal build of qBittorrent that adds user accounts with roles for the WebUI and the desktop app, an activity log, and an installable WebUI with a phone layout. A kettle is a group of hawks soaring together. This is an unofficial build, not affiliated with the qBittorrent project.</source>
+        <translation>Kettle Edition je osobná zostava qBittorrentu, ktorá pridáva používateľské účty s rolami pre WebUI a desktopovú aplikáciu, protokol aktivity a inštalovateľné WebUI s rozložením pre telefón. Kettle je skupina jastrabov, ktoré spolu krúžia. Toto je neoficiálna zostava, ktorá nie je spojená s projektom qBittorrent.</translation>
+    </message>
+    <message>
+        <source>N/A</source>
+        <translation>N/A</translation>
+    </message>
+    <message>
+        <source>This edition</source>
+        <translation>Toto vydanie</translation>
+    </message>
+    <message>
+        <source>Edition version:</source>
+        <translation>Verzia vydania:</translation>
+    </message>
+    <message>
+        <source>Based on:</source>
+        <translation>Založené na:</translation>
+    </message>
+    <message>
+        <source>Maintainer:</source>
+        <translation>Správca:</translation>
+    </message>
+    <message>
+        <source>qBittorrent project:</source>
+        <translation>Projekt qBittorrent:</translation>
+    </message>
+    <message>
+        <source>Kettle Edition is a personal build of qBittorrent that adds user accounts with roles for the WebUI and the desktop app, an activity log, and an installable WebUI with a phone layout. A kettle is a group of hawks soaring together. This is an unofficial build, not affiliated with the qBittorrent project.</source>
+        <translation>Kettle Edition je osobná zostava qBittorrentu, ktorá pridáva používateľské účty s rolami pre WebUI a desktopovú aplikáciu, protokol aktivity a inštalovateľné WebUI s rozložením pre telefón. Kettle je skupina jastrabov, ktoré spolu krúžia. Toto je neoficiálna zostava, ktorá nie je spojená s projektom qBittorrent.</translation>
+    </message>
+    <message>
+        <source>N/A</source>
+        <translation>N/A</translation>
+    </message>
 </context>
 <context>
     <name>AbstractFileStorage</name>
@@ -1460,6 +1516,62 @@ Torrenty, ktoré majú iniciálne metadáta, budú pridané ako zastavené.</tra
         <location filename="../gui/advancedsettings.cpp" line="925"/>
         <source>Embedded tracker port</source>
         <translation>Port zabudovaného trackera</translation>
+    </message>
+    <message>
+        <source>Network</source>
+        <translation>Sieť</translation>
+    </message>
+    <message>
+        <source>Storage</source>
+        <translation>Úložisko</translation>
+    </message>
+    <message>
+        <source>Peers and trackers</source>
+        <translation>Peery a trackery</translation>
+    </message>
+    <message>
+        <source>Program behavior</source>
+        <translation>Správanie programu</translation>
+    </message>
+    <message>
+        <source>Display and notifications</source>
+        <translation>Zobrazenie a oznámenia</translation>
+    </message>
+    <message>
+        <source>Network connection</source>
+        <translation>Sieťové spojenie</translation>
+    </message>
+    <message>
+        <source>Security and privacy</source>
+        <translation>Zabezpečenie a súkromie</translation>
+    </message>
+    <message>
+        <source>Connection tuning</source>
+        <translation>Ladenie spojenia</translation>
+    </message>
+    <message>
+        <source>Saving and torrent files</source>
+        <translation>Ukladanie a súbory torrentov</translation>
+    </message>
+    <message>
+        <source>Disk and memory</source>
+        <translation>Disk a pamäť</translation>
+    </message>
+    <message>
+        <source>Peers and seeding</source>
+        <translation>Peery a seedovanie</translation>
+    </message>
+    <message>
+        <source>DHT and I2P</source>
+        <translation>DHT a I2P</translation>
+    </message>
+    <message>
+        <source>General</source>
+        <translation>Všeobecné</translation>
+    </message>
+    <message>
+        <source>Trackers</source>
+        <translation>Trackery</translation>
     </message>
 </context>
 <context>
@@ -3481,6 +3593,22 @@ Podporuje formáty: S01E01, 1x1, 2017.12.31 a 31.12.2017 (podporuje aj formáty 
         <source>Remove torrent</source>
         <translation>Odstrániť torrent</translation>
     </message>
+    <message>
+        <source>This choice is remembered for the next removal.</source>
+        <translation>Táto voľba sa zapamätá pre ďalšie odstránenie.</translation>
+    </message>
+    <message>
+        <source>Remove</source>
+        <translation>Odstrániť</translation>
+    </message>
+    <message>
+        <source>This choice is remembered for the next removal.</source>
+        <translation>Táto voľba sa zapamätá pre ďalšie odstránenie.</translation>
+    </message>
+    <message>
+        <source>Remove</source>
+        <translation>Odstrániť</translation>
+    </message>
 </context>
 <context>
     <name>DownloadFromURLDialog</name>
@@ -3554,6 +3682,14 @@ Podporuje formáty: S01E01, 1x1, 2017.12.31 a 31.12.2017 (podporuje aj formáty 
         <location filename="../gui/executionlogwidget.cpp" line="99"/>
         <source>Clear</source>
         <translation>Vyčistiť</translation>
+    </message>
+    <message>
+        <source>WebUI Activity</source>
+        <translation>Aktivita WebUI</translation>
+    </message>
+    <message>
+        <source>WebUI Activity</source>
+        <translation>Aktivita WebUI</translation>
     </message>
 </context>
 <context>
@@ -4727,6 +4863,46 @@ Minimálna verzia: %2.</translation>
         <location filename="../gui/mainwindow.cpp" line="1346"/>
         <source>Torrent Files</source>
         <translation>Torrent súbory</translation>
+    </message>
+    <message>
+        <source>Kettle Edition %1 is available.</source>
+        <translation>Je dostupná Kettle Edition %1.</translation>
+    </message>
+    <message>
+        <source>qBittorrent Kettle Edition %1 is available. It is downloaded now and installed at 4:00 AM, or when qBittorrent starts next.</source>
+        <translation>Je dostupná qBittorrent Kettle Edition %1. Sťahuje sa teraz a nainštaluje sa o 4:00 alebo pri ďalšom spustení qBittorrentu.</translation>
+    </message>
+    <message>
+        <source>qBittorrent Kettle Edition %1 is available. It is downloaded now. Turn on &quot;Automatically install Kettle Edition updates&quot; in Options to install it.</source>
+        <translation>Je dostupná qBittorrent Kettle Edition %1. Sťahuje sa teraz. Ak ju chcete nainštalovať, zapnite v Možnostiach „Automaticky inštalovať aktualizácie Kettle Edition“.</translation>
+    </message>
+    <message>
+        <source>You have the latest qBittorrent Kettle Edition (%1).</source>
+        <translation>Máte najnovšiu qBittorrent Kettle Edition (%1).</translation>
+    </message>
+    <message>
+        <source>Could not check for qBittorrent Kettle Edition updates. See the Execution Log for details.</source>
+        <translation>Nepodarilo sa skontrolovať aktualizácie qBittorrent Kettle Edition. Podrobnosti nájdete v protokole vykonávania.</translation>
+    </message>
+    <message>
+        <source>Kettle Edition %1 is available.</source>
+        <translation>Je dostupná Kettle Edition %1.</translation>
+    </message>
+    <message>
+        <source>qBittorrent Kettle Edition %1 is available. It is downloaded now and installed at 4:00 AM, or when qBittorrent starts next.</source>
+        <translation>Je dostupná qBittorrent Kettle Edition %1. Sťahuje sa teraz a nainštaluje sa o 4:00 alebo pri ďalšom spustení qBittorrentu.</translation>
+    </message>
+    <message>
+        <source>qBittorrent Kettle Edition %1 is available. It is downloaded now. Turn on &quot;Automatically install Kettle Edition updates&quot; in Options to install it.</source>
+        <translation>Je dostupná qBittorrent Kettle Edition %1. Sťahuje sa teraz. Ak ju chcete nainštalovať, zapnite v Možnostiach „Automaticky inštalovať aktualizácie Kettle Edition“.</translation>
+    </message>
+    <message>
+        <source>You have the latest qBittorrent Kettle Edition (%1).</source>
+        <translation>Máte najnovšiu qBittorrent Kettle Edition (%1).</translation>
+    </message>
+    <message>
+        <source>Could not check for qBittorrent Kettle Edition updates. See the Execution Log for details.</source>
+        <translation>Nepodarilo sa skontrolovať aktualizácie qBittorrent Kettle Edition. Podrobnosti nájdete v protokole vykonávania.</translation>
     </message>
 </context>
 <context>
@@ -8515,6 +8691,190 @@ Check the Execution Log for errors.</source>
         <source>Length Error</source>
         <translation>Chyba dĺžky</translation>
     </message>
+    <message>
+        <source>Search settings</source>
+        <translation>Hľadať v nastaveniach</translation>
+    </message>
+    <message>
+        <source>No settings match</source>
+        <translation>Žiadne zodpovedajúce nastavenia</translation>
+    </message>
+    <message>
+        <source>User Accounts</source>
+        <translation>Používateľské účty</translation>
+    </message>
+    <message>
+        <source>Automatically install Kettle Edition updates</source>
+        <translation>Automaticky inštalovať aktualizácie Kettle Edition</translation>
+    </message>
+    <message>
+        <source>Status bar and log</source>
+        <translation>Stavový riadok a protokol</translation>
+    </message>
+    <message>
+        <source>Files</source>
+        <translation>Súbory</translation>
+    </message>
+    <message>
+        <source>Checking</source>
+        <translation>Kontrola</translation>
+    </message>
+    <message>
+        <source>Until the first user account is created, this login always works.</source>
+        <translation>Kým sa nevytvorí prvý používateľský účet, toto prihlásenie vždy funguje.</translation>
+    </message>
+    <message>
+        <source>Allow this login when user accounts exist</source>
+        <translation>Povoliť toto prihlásenie, keď existujú používateľské účty</translation>
+    </message>
+    <message>
+        <source>Access</source>
+        <translation>Prístup</translation>
+    </message>
+    <message>
+        <source>Changes to users, roles and logins apply at once. The settings below apply with OK or Apply.</source>
+        <translation>Zmeny používateľov, rolí a prihlásení sa použijú okamžite. Nastavenia nižšie sa použijú tlačidlom OK alebo Použiť.</translation>
+    </message>
+    <message>
+        <source>Logins and Activity Log</source>
+        <translation>Prihlásenia a protokol aktivity</translation>
+    </message>
+    <message>
+        <source>0 means users are logged out after the session timeout.</source>
+        <translation>0 znamená, že sa používatelia po vypršaní časového limitu relácie odhlásia.</translation>
+    </message>
+    <message>
+        <source>Keep users logged in for:</source>
+        <translation>Ponechať používateľov prihlásených počas:</translation>
+    </message>
+    <message>
+        <source>Until session timeout</source>
+        <translation>Do vypršania časového limitu relácie</translation>
+    </message>
+    <message>
+        <source> days</source>
+        <translation> dní</translation>
+    </message>
+    <message>
+        <source>Lock account after consecutive failures:</source>
+        <translation>Zamknúť účet po po sebe idúcich zlyhaniach:</translation>
+    </message>
+    <message>
+        <source>Keep WebUI activity log for:</source>
+        <translation>Uchovávať protokol aktivity WebUI počas:</translation>
+    </message>
+    <message>
+        <source>lock for:</source>
+        <translation>zamknúť na:</translation>
+    </message>
+    <message>
+        <source>%1 works best with Windows dark mode</source>
+        <translation>%1 funguje najlepšie s tmavým režimom Windows</translation>
+    </message>
+    <message>
+        <source>WebUI address</source>
+        <translation>Adresa WebUI</translation>
+    </message>
+    <message>
+        <source>With the WebUI address set to %1, only this PC can reach the WebUI. Remote access, including through a reverse proxy on another machine, will stop working.
+
+Save anyway?</source>
+        <translation>Keď je adresa WebUI nastavená na %1, na WebUI sa dostane len tento počítač. Vzdialený prístup, vrátane prístupu cez reverzný proxy na inom počítači, prestane fungovať.
+
+Uložiť aj tak?</translation>
+    </message>
+    <message>
+        <source>Search settings</source>
+        <translation>Hľadať v nastaveniach</translation>
+    </message>
+    <message>
+        <source>No settings match</source>
+        <translation>Žiadne zodpovedajúce nastavenia</translation>
+    </message>
+    <message>
+        <source>User Accounts</source>
+        <translation>Používateľské účty</translation>
+    </message>
+    <message>
+        <source>Automatically install Kettle Edition updates</source>
+        <translation>Automaticky inštalovať aktualizácie Kettle Edition</translation>
+    </message>
+    <message>
+        <source>Status bar and log</source>
+        <translation>Stavový riadok a protokol</translation>
+    </message>
+    <message>
+        <source>Files</source>
+        <translation>Súbory</translation>
+    </message>
+    <message>
+        <source>Checking</source>
+        <translation>Kontrola</translation>
+    </message>
+    <message>
+        <source>Until the first user account is created, this login always works.</source>
+        <translation>Kým sa nevytvorí prvý používateľský účet, toto prihlásenie vždy funguje.</translation>
+    </message>
+    <message>
+        <source>Allow this login when user accounts exist</source>
+        <translation>Povoliť toto prihlásenie, keď existujú používateľské účty</translation>
+    </message>
+    <message>
+        <source>Access</source>
+        <translation>Prístup</translation>
+    </message>
+    <message>
+        <source>Changes to users, roles and logins apply at once. The settings below apply with OK or Apply.</source>
+        <translation>Zmeny používateľov, rolí a prihlásení sa použijú okamžite. Nastavenia nižšie sa použijú tlačidlom OK alebo Použiť.</translation>
+    </message>
+    <message>
+        <source>Logins and Activity Log</source>
+        <translation>Prihlásenia a protokol aktivity</translation>
+    </message>
+    <message>
+        <source>0 means users are logged out after the session timeout.</source>
+        <translation>0 znamená, že sa používatelia po vypršaní časového limitu relácie odhlásia.</translation>
+    </message>
+    <message>
+        <source>Keep users logged in for:</source>
+        <translation>Ponechať používateľov prihlásených počas:</translation>
+    </message>
+    <message>
+        <source>Until session timeout</source>
+        <translation>Do vypršania časového limitu relácie</translation>
+    </message>
+    <message>
+        <source> days</source>
+        <translation> dní</translation>
+    </message>
+    <message>
+        <source>Lock account after consecutive failures:</source>
+        <translation>Zamknúť účet po po sebe idúcich zlyhaniach:</translation>
+    </message>
+    <message>
+        <source>Keep WebUI activity log for:</source>
+        <translation>Uchovávať protokol aktivity WebUI počas:</translation>
+    </message>
+    <message>
+        <source>lock for:</source>
+        <translation>zamknúť na:</translation>
+    </message>
+    <message>
+        <source>%1 works best with Windows dark mode</source>
+        <translation>%1 funguje najlepšie s tmavým režimom Windows</translation>
+    </message>
+    <message>
+        <source>WebUI address</source>
+        <translation>Adresa WebUI</translation>
+    </message>
+    <message>
+        <source>With the WebUI address set to %1, only this PC can reach the WebUI. Remote access, including through a reverse proxy on another machine, will stop working.
+
+Save anyway?</source>
+        <translation>Keď je adresa WebUI nastavená na %1, na WebUI sa dostane len tento počítač. Vzdialený prístup, vrátane prístupu cez reverzný proxy na inom počítači, prestane fungovať.
+
+Uložiť aj tak?</translation>
+    </message>
 </context>
 <context>
     <name>PeerInfo</name>
@@ -8767,6 +9127,22 @@ Check the Execution Log for errors.</source>
         <location filename="../gui/properties/peerlistwidget.cpp" line="309"/>
         <source>Copy IP:port</source>
         <translation>Kopírovať IP:port</translation>
+    </message>
+    <message>
+        <source>Reset auto width</source>
+        <translation>Obnoviť automatickú šírku</translation>
+    </message>
+    <message>
+        <source>Fit all non-hidden columns to their contents again, and forget the widths that were set by hand</source>
+        <translation>Znova prispôsobiť všetky zobrazené stĺpce ich obsahu a zabudnúť ručne nastavené šírky</translation>
+    </message>
+    <message>
+        <source>Reset auto width</source>
+        <translation>Obnoviť automatickú šírku</translation>
+    </message>
+    <message>
+        <source>Fit all non-hidden columns to their contents again, and forget the widths that were set by hand</source>
+        <translation>Znova prispôsobiť všetky zobrazené stĺpce ich obsahu a zabudnúť ručne nastavené šírky</translation>
     </message>
 </context>
 <context>
@@ -10156,6 +10532,14 @@ Tieto moduly však boli vypnuté.</translation>
         <source>Open link</source>
         <translation>Otvoriť odkaz</translation>
     </message>
+    <message>
+        <source>Details</source>
+        <translation>Podrobnosti</translation>
+    </message>
+    <message>
+        <source>Details</source>
+        <translation>Podrobnosti</translation>
+    </message>
 </context>
 <context>
     <name>SearchController</name>
@@ -10509,6 +10893,70 @@ Tieto moduly však boli vypnuté.</translation>
         <source>Resize all non-hidden columns to the size of their contents</source>
         <translation>Zmeniť rozmery viditeľných stĺpcov podľa veľkosti ich obsahu</translation>
     </message>
+    <message>
+        <source>%1 of %2 shown (%3 hidden)</source>
+        <translation>Zobrazené %1 z %2 (%3 skrytých)</translation>
+    </message>
+    <message>
+        <source>%1 of %2 shown</source>
+        <translation>Zobrazené %1 z %2</translation>
+    </message>
+    <message>
+        <source>Searching: %1</source>
+        <translation>Hľadá sa: %1</translation>
+    </message>
+    <message>
+        <source>Finished: %1</source>
+        <translation>Dokončené: %1</translation>
+    </message>
+    <message>
+        <source>Search aborted: %1</source>
+        <translation>Hľadanie prerušené: %1</translation>
+    </message>
+    <message>
+        <source>Reset auto width</source>
+        <translation>Obnoviť automatickú šírku</translation>
+    </message>
+    <message>
+        <source>Fit all non-hidden columns to their contents again, and forget the widths that were set by hand</source>
+        <translation>Znova prispôsobiť všetky zobrazené stĺpce ich obsahu a zabudnúť ručne nastavené šírky</translation>
+    </message>
+    <message>
+        <source>Unknown</source>
+        <translation>Neznáme</translation>
+    </message>
+    <message>
+        <source>%1 of %2 shown (%3 hidden)</source>
+        <translation>Zobrazené %1 z %2 (%3 skrytých)</translation>
+    </message>
+    <message>
+        <source>%1 of %2 shown</source>
+        <translation>Zobrazené %1 z %2</translation>
+    </message>
+    <message>
+        <source>Searching: %1</source>
+        <translation>Hľadá sa: %1</translation>
+    </message>
+    <message>
+        <source>Finished: %1</source>
+        <translation>Dokončené: %1</translation>
+    </message>
+    <message>
+        <source>Search aborted: %1</source>
+        <translation>Hľadanie prerušené: %1</translation>
+    </message>
+    <message>
+        <source>Reset auto width</source>
+        <translation>Obnoviť automatickú šírku</translation>
+    </message>
+    <message>
+        <source>Fit all non-hidden columns to their contents again, and forget the widths that were set by hand</source>
+        <translation>Znova prispôsobiť všetky zobrazené stĺpce ich obsahu a zabudnúť ručne nastavené šírky</translation>
+    </message>
+    <message>
+        <source>Unknown</source>
+        <translation>Neznáme</translation>
+    </message>
 </context>
 <context>
     <name>SearchPluginManager</name>
@@ -10807,6 +11255,14 @@ Tieto moduly však boli vypnuté.</translation>
         <source>Couldn&apos;t update &quot;%1&quot; search engine plugin. %2</source>
         <translation type="unfinished">Nie je možné aktualizovať &quot;%1&quot; vyhľadávací plugin. %2</translation>
     </message>
+    <message>
+        <source>Install Kettle Plugins</source>
+        <translation>Nainštalovať pluginy Kettle</translation>
+    </message>
+    <message>
+        <source>Install Kettle Plugins</source>
+        <translation>Nainštalovať pluginy Kettle</translation>
+    </message>
 </context>
 <context>
     <name>SearchPluginSourceDialog</name>
@@ -10946,6 +11402,90 @@ Kliknite na tlačidlo &quot;Vyhľadávacie pluginy ...&quot; dole vpravo v okne,
         <location filename="../gui/search/searchwidget.ui" line="58"/>
         <source>Stop</source>
         <translation>Zastaviť</translation>
+    </message>
+    <message>
+        <source>Searches</source>
+        <translation>Hľadania</translation>
+    </message>
+    <message>
+        <source>Close the selected search</source>
+        <translation>Zavrieť vybrané hľadanie</translation>
+    </message>
+    <message>
+        <source>Search for torrents...</source>
+        <translation>Hľadať torrenty...</translation>
+    </message>
+    <message>
+        <source>Category to search in</source>
+        <translation>Kategória, v ktorej hľadať</translation>
+    </message>
+    <message>
+        <source>Search engines to use</source>
+        <translation>Používané vyhľadávače</translation>
+    </message>
+    <message>
+        <source>There aren&apos;t any search plugins installed.
+Click the &quot;Search plugins...&quot; button at the top right of the window to install some.</source>
+        <translation>Nie je nainštalovaný žiadny vyhľadávací plugin.
+Kliknutím na tlačidlo „Vyhľadávacie pluginy...“ vpravo hore v okne nejaké nainštalujete.</translation>
+    </message>
+    <message>
+        <source>Type a search above and press Enter.</source>
+        <translation>Zadajte hľadanie vyššie a stlačte Enter.</translation>
+    </message>
+    <message>
+        <source>Refresh search</source>
+        <translation>Obnoviť hľadanie</translation>
+    </message>
+    <message>
+        <source>Close search</source>
+        <translation>Zavrieť hľadanie</translation>
+    </message>
+    <message>
+        <source>Close all searches</source>
+        <translation>Zavrieť všetky hľadania</translation>
+    </message>
+    <message>
+        <source>Searches</source>
+        <translation>Hľadania</translation>
+    </message>
+    <message>
+        <source>Close the selected search</source>
+        <translation>Zavrieť vybrané hľadanie</translation>
+    </message>
+    <message>
+        <source>Search for torrents...</source>
+        <translation>Hľadať torrenty...</translation>
+    </message>
+    <message>
+        <source>Category to search in</source>
+        <translation>Kategória, v ktorej hľadať</translation>
+    </message>
+    <message>
+        <source>Search engines to use</source>
+        <translation>Používané vyhľadávače</translation>
+    </message>
+    <message>
+        <source>There aren&apos;t any search plugins installed.
+Click the &quot;Search plugins...&quot; button at the top right of the window to install some.</source>
+        <translation>Nie je nainštalovaný žiadny vyhľadávací plugin.
+Kliknutím na tlačidlo „Vyhľadávacie pluginy...“ vpravo hore v okne nejaké nainštalujete.</translation>
+    </message>
+    <message>
+        <source>Type a search above and press Enter.</source>
+        <translation>Zadajte hľadanie vyššie a stlačte Enter.</translation>
+    </message>
+    <message>
+        <source>Refresh search</source>
+        <translation>Obnoviť hľadanie</translation>
+    </message>
+    <message>
+        <source>Close search</source>
+        <translation>Zavrieť hľadanie</translation>
+    </message>
+    <message>
+        <source>Close all searches</source>
+        <translation>Zavrieť všetky hľadania</translation>
     </message>
 </context>
 <context>
@@ -11408,6 +11948,326 @@ Kliknite na tlačidlo &quot;Vyhľadávacie pluginy ...&quot; dole vpravo v okne,
         <location filename="../gui/statsdialog.cpp" line="111"/>
         <source>%1 ms</source>
         <translation type="unfinished">%1 ms</translation>
+    </message>
+    <message>
+        <source>Copy</source>
+        <translation>Kopírovať</translation>
+    </message>
+    <message>
+        <source>Overview</source>
+        <translation>Prehľad</translation>
+    </message>
+    <message>
+        <source>Transfer</source>
+        <translation>Prenos</translation>
+    </message>
+    <message>
+        <source>This session</source>
+        <translation>Táto relácia</translation>
+    </message>
+    <message>
+        <source>All time</source>
+        <translation>Celkom</translation>
+    </message>
+    <message>
+        <source>Downloaded:</source>
+        <translation>Stiahnuté:</translation>
+    </message>
+    <message>
+        <source>Uploaded:</source>
+        <translation>Odoslané:</translation>
+    </message>
+    <message>
+        <source>Share ratio:</source>
+        <translation>Pomer zdieľania:</translation>
+    </message>
+    <message>
+        <source>Current speed:</source>
+        <translation>Aktuálna rýchlosť:</translation>
+    </message>
+    <message>
+        <source>Activity</source>
+        <translation>Aktivita</translation>
+    </message>
+    <message>
+        <source>Torrents downloading:</source>
+        <translation>Sťahované torrenty:</translation>
+    </message>
+    <message>
+        <source>Torrents seeding:</source>
+        <translation>Seedované torrenty:</translation>
+    </message>
+    <message>
+        <source>Torrents stopped:</source>
+        <translation>Zastavené torrenty:</translation>
+    </message>
+    <message>
+        <source>Torrents with errors:</source>
+        <translation>Torrenty s chybami:</translation>
+    </message>
+    <message>
+        <source>Running for:</source>
+        <translation>Beží:</translation>
+    </message>
+    <message>
+        <source>History</source>
+        <translation>História</translation>
+    </message>
+    <message>
+        <source>Period</source>
+        <translation>Obdobie</translation>
+    </message>
+    <message>
+        <source>Today</source>
+        <translation>Dnes</translation>
+    </message>
+    <message>
+        <source>Last 7 days</source>
+        <translation>Posledných 7 dní</translation>
+    </message>
+    <message>
+        <source>This month</source>
+        <translation>Tento mesiac</translation>
+    </message>
+    <message>
+        <source>Last month</source>
+        <translation>Minulý mesiac</translation>
+    </message>
+    <message>
+        <source>Last 12 months</source>
+        <translation>Posledných 12 mesiacov</translation>
+    </message>
+    <message>
+        <source>Tracking since:</source>
+        <translation>Sledovanie od:</translation>
+    </message>
+    <message>
+        <source>By month</source>
+        <translation>Po mesiacoch</translation>
+    </message>
+    <message>
+        <source>Month</source>
+        <translation>Mesiac</translation>
+    </message>
+    <message>
+        <source>Downloaded</source>
+        <translation>Stiahnuté</translation>
+    </message>
+    <message>
+        <source>Uploaded</source>
+        <translation>Odoslané</translation>
+    </message>
+    <message>
+        <source>Share ratio</source>
+        <translation>Pomer zdieľania</translation>
+    </message>
+    <message>
+        <source>WebUI downloads added, this month</source>
+        <translation>Sťahovania pridané cez WebUI, tento mesiac</translation>
+    </message>
+    <message>
+        <source>Counts the requests that added a download. Apps without a login, such as Sonarr and Radarr, are shown as (localhost). Downloads added in the desktop window are not counted.</source>
+        <translation>Počíta požiadavky, ktoré pridali sťahovanie. Aplikácie bez prihlásenia, napríklad Sonarr a Radarr, sa zobrazujú ako (localhost). Sťahovania pridané v okne desktopovej aplikácie sa nepočítajú.</translation>
+    </message>
+    <message>
+        <source>Technical</source>
+        <translation>Technické</translation>
+    </message>
+    <message>
+        <source>Disk</source>
+        <translation>Disk</translation>
+    </message>
+    <message>
+        <source>Peers waiting on disk writes:</source>
+        <translation>Peeri čakajúci na zápis na disk:</translation>
+    </message>
+    <message>
+        <source>Peers waiting on disk reads:</source>
+        <translation>Peeri čakajúci na čítanie z disku:</translation>
+    </message>
+    <message>
+        <source>Network</source>
+        <translation>Sieť</translation>
+    </message>
+    <message>
+        <source>DHT nodes:</source>
+        <translation>Uzly DHT:</translation>
+    </message>
+    <message>
+        <source>Data discarded this session:</source>
+        <translation>Zahodené dáta v tejto relácii:</translation>
+    </message>
+    <message>
+        <source>Before tracking began</source>
+        <translation>Pred začatím sledovania</translation>
+    </message>
+    <message>
+        <source>Nothing added yet</source>
+        <translation>Zatiaľ nič nepridané</translation>
+    </message>
+    <message>
+        <source>Off</source>
+        <translation>Vypnuté</translation>
+    </message>
+    <message>
+        <source>Copy</source>
+        <translation>Kopírovať</translation>
+    </message>
+    <message>
+        <source>Overview</source>
+        <translation>Prehľad</translation>
+    </message>
+    <message>
+        <source>Transfer</source>
+        <translation>Prenos</translation>
+    </message>
+    <message>
+        <source>This session</source>
+        <translation>Táto relácia</translation>
+    </message>
+    <message>
+        <source>All time</source>
+        <translation>Celkom</translation>
+    </message>
+    <message>
+        <source>Downloaded:</source>
+        <translation>Stiahnuté:</translation>
+    </message>
+    <message>
+        <source>Uploaded:</source>
+        <translation>Odoslané:</translation>
+    </message>
+    <message>
+        <source>Share ratio:</source>
+        <translation>Pomer zdieľania:</translation>
+    </message>
+    <message>
+        <source>Current speed:</source>
+        <translation>Aktuálna rýchlosť:</translation>
+    </message>
+    <message>
+        <source>Activity</source>
+        <translation>Aktivita</translation>
+    </message>
+    <message>
+        <source>Torrents downloading:</source>
+        <translation>Sťahované torrenty:</translation>
+    </message>
+    <message>
+        <source>Torrents seeding:</source>
+        <translation>Seedované torrenty:</translation>
+    </message>
+    <message>
+        <source>Torrents stopped:</source>
+        <translation>Zastavené torrenty:</translation>
+    </message>
+    <message>
+        <source>Torrents with errors:</source>
+        <translation>Torrenty s chybami:</translation>
+    </message>
+    <message>
+        <source>Running for:</source>
+        <translation>Beží:</translation>
+    </message>
+    <message>
+        <source>History</source>
+        <translation>História</translation>
+    </message>
+    <message>
+        <source>Period</source>
+        <translation>Obdobie</translation>
+    </message>
+    <message>
+        <source>Today</source>
+        <translation>Dnes</translation>
+    </message>
+    <message>
+        <source>Last 7 days</source>
+        <translation>Posledných 7 dní</translation>
+    </message>
+    <message>
+        <source>This month</source>
+        <translation>Tento mesiac</translation>
+    </message>
+    <message>
+        <source>Last month</source>
+        <translation>Minulý mesiac</translation>
+    </message>
+    <message>
+        <source>Last 12 months</source>
+        <translation>Posledných 12 mesiacov</translation>
+    </message>
+    <message>
+        <source>Tracking since:</source>
+        <translation>Sledovanie od:</translation>
+    </message>
+    <message>
+        <source>By month</source>
+        <translation>Po mesiacoch</translation>
+    </message>
+    <message>
+        <source>Month</source>
+        <translation>Mesiac</translation>
+    </message>
+    <message>
+        <source>Downloaded</source>
+        <translation>Stiahnuté</translation>
+    </message>
+    <message>
+        <source>Uploaded</source>
+        <translation>Odoslané</translation>
+    </message>
+    <message>
+        <source>Share ratio</source>
+        <translation>Pomer zdieľania</translation>
+    </message>
+    <message>
+        <source>WebUI downloads added, this month</source>
+        <translation>Sťahovania pridané cez WebUI, tento mesiac</translation>
+    </message>
+    <message>
+        <source>Counts the requests that added a download. Apps without a login, such as Sonarr and Radarr, are shown as (localhost). Downloads added in the desktop window are not counted.</source>
+        <translation>Počíta požiadavky, ktoré pridali sťahovanie. Aplikácie bez prihlásenia, napríklad Sonarr a Radarr, sa zobrazujú ako (localhost). Sťahovania pridané v okne desktopovej aplikácie sa nepočítajú.</translation>
+    </message>
+    <message>
+        <source>Technical</source>
+        <translation>Technické</translation>
+    </message>
+    <message>
+        <source>Disk</source>
+        <translation>Disk</translation>
+    </message>
+    <message>
+        <source>Peers waiting on disk writes:</source>
+        <translation>Peeri čakajúci na zápis na disk:</translation>
+    </message>
+    <message>
+        <source>Peers waiting on disk reads:</source>
+        <translation>Peeri čakajúci na čítanie z disku:</translation>
+    </message>
+    <message>
+        <source>Network</source>
+        <translation>Sieť</translation>
+    </message>
+    <message>
+        <source>DHT nodes:</source>
+        <translation>Uzly DHT:</translation>
+    </message>
+    <message>
+        <source>Data discarded this session:</source>
+        <translation>Zahodené dáta v tejto relácii:</translation>
+    </message>
+    <message>
+        <source>Before tracking began</source>
+        <translation>Pred začatím sledovania</translation>
+    </message>
+    <message>
+        <source>Nothing added yet</source>
+        <translation>Zatiaľ nič nepridané</translation>
+    </message>
+    <message>
+        <source>Off</source>
+        <translation>Vypnuté</translation>
     </message>
 </context>
 <context>
@@ -12102,6 +12962,22 @@ Please choose a different name and try again.</source>
     <message>
         <source>Priority by shown file order</source>
         <translation type="vanished">Priorita podľa zobrazeného poradia súborov</translation>
+    </message>
+    <message>
+        <source>Reset auto width</source>
+        <translation>Obnoviť automatickú šírku</translation>
+    </message>
+    <message>
+        <source>Fit all non-hidden columns to their contents again, and forget the widths that were set by hand</source>
+        <translation>Znova prispôsobiť všetky zobrazené stĺpce ich obsahu a zabudnúť ručne nastavené šírky</translation>
+    </message>
+    <message>
+        <source>Reset auto width</source>
+        <translation>Obnoviť automatickú šírku</translation>
+    </message>
+    <message>
+        <source>Fit all non-hidden columns to their contents again, and forget the widths that were set by hand</source>
+        <translation>Znova prispôsobiť všetky zobrazené stĺpce ich obsahu a zabudnúť ručne nastavené šírky</translation>
     </message>
 </context>
 <context>
@@ -13186,6 +14062,22 @@ Please choose a different name and try again.</source>
         <source>Column visibility</source>
         <translation>Viditeľnosť stĺpcov</translation>
     </message>
+    <message>
+        <source>Reset auto width</source>
+        <translation>Obnoviť automatickú šírku</translation>
+    </message>
+    <message>
+        <source>Fit all non-hidden columns to their contents again, and forget the widths that were set by hand</source>
+        <translation>Znova prispôsobiť všetky zobrazené stĺpce ich obsahu a zabudnúť ručne nastavené šírky</translation>
+    </message>
+    <message>
+        <source>Reset auto width</source>
+        <translation>Obnoviť automatickú šírku</translation>
+    </message>
+    <message>
+        <source>Fit all non-hidden columns to their contents again, and forget the widths that were set by hand</source>
+        <translation>Znova prispôsobiť všetky zobrazené stĺpce ich obsahu a zabudnúť ručne nastavené šírky</translation>
+    </message>
 </context>
 <context>
     <name>TrackerStatusFilterWidget</name>
@@ -14052,6 +14944,22 @@ Please choose a different name and try again.</source>
         <source>Super seeding mode</source>
         <translation>Režim super seedovania</translation>
     </message>
+    <message>
+        <source>Reset auto width</source>
+        <translation>Obnoviť automatickú šírku</translation>
+    </message>
+    <message>
+        <source>Fit all non-hidden columns to their contents again, and forget the widths that were set by hand</source>
+        <translation>Znova prispôsobiť všetky zobrazené stĺpce ich obsahu a zabudnúť ručne nastavené šírky</translation>
+    </message>
+    <message>
+        <source>Reset auto width</source>
+        <translation>Obnoviť automatickú šírku</translation>
+    </message>
+    <message>
+        <source>Fit all non-hidden columns to their contents again, and forget the widths that were set by hand</source>
+        <translation>Znova prispôsobiť všetky zobrazené stĺpce ich obsahu a zabudnúť ručne nastavené šírky</translation>
+    </message>
 </context>
 <context>
     <name>UIThemeDialog</name>
@@ -14386,6 +15294,46 @@ Please choose a different name and try again.</source>
         <source>WebAPI login failure. Reason: invalid credentials, attempt count: %1, IP: %2, username: %3</source>
         <translation>WebAPI neúspešné prihlásenie. Dôvod: neplatné údaje, počet pokusov: %1, IP: %2, užívateľ: %3</translation>
     </message>
+    <message>
+        <source>Something went wrong on the server. Details are in qBittorrent&apos;s log.</source>
+        <translation>Na serveri sa niečo pokazilo. Podrobnosti sú v protokole qBittorrentu.</translation>
+    </message>
+    <message>
+        <source>This account is locked after too many failed login attempts. Try again in %1 minute(s).</source>
+        <translation>Tento účet je zamknutý kvôli príliš veľa neúspešným pokusom o prihlásenie. Skúste to znova o %1 min.</translation>
+    </message>
+    <message>
+        <source>Your role (%1) doesn&apos;t allow this: %2.</source>
+        <translation>Vaša rola (%1) to nepovoľuje: %2.</translation>
+    </message>
+    <message>
+        <source>Only an admin can remove the tag that says who added a torrent.</source>
+        <translation>Štítok, ktorý hovorí, kto pridal torrent, môže odstrániť len správca.</translation>
+    </message>
+    <message>
+        <source>Only an admin can clear or replace all tags of a torrent that has a tag saying who added it.</source>
+        <translation>Všetky štítky torrentu, ktorý má štítok s informáciou, kto ho pridal, môže vymazať alebo nahradiť len správca.</translation>
+    </message>
+    <message>
+        <source>Something went wrong on the server. Details are in qBittorrent&apos;s log.</source>
+        <translation>Na serveri sa niečo pokazilo. Podrobnosti sú v protokole qBittorrentu.</translation>
+    </message>
+    <message>
+        <source>This account is locked after too many failed login attempts. Try again in %1 minute(s).</source>
+        <translation>Tento účet je zamknutý kvôli príliš veľa neúspešným pokusom o prihlásenie. Skúste to znova o %1 min.</translation>
+    </message>
+    <message>
+        <source>Your role (%1) doesn&apos;t allow this: %2.</source>
+        <translation>Vaša rola (%1) to nepovoľuje: %2.</translation>
+    </message>
+    <message>
+        <source>Only an admin can remove the tag that says who added a torrent.</source>
+        <translation>Štítok, ktorý hovorí, kto pridal torrent, môže odstrániť len správca.</translation>
+    </message>
+    <message>
+        <source>Only an admin can clear or replace all tags of a torrent that has a tag saying who added it.</source>
+        <translation>Všetky štítky torrentu, ktorý má štítok s informáciou, kto ho pridal, môže vymazať alebo nahradiť len správca.</translation>
+    </message>
 </context>
 <context>
     <name>WebUI</name>
@@ -14525,6 +15473,669 @@ Please choose a different name and try again.</source>
         <source>&lt; 1m</source>
         <comment>&lt; 1 minute</comment>
         <translation>&lt; 1m</translation>
+    </message>
+</context>
+<context>
+    <name>UpdateInstaller</name>
+    <message>
+        <source>Kettle Edition update</source>
+        <translation>Aktualizácia Kettle Edition</translation>
+    </message>
+    <message>
+        <source>Kettle Edition was updated to %1.</source>
+        <translation>Kettle Edition bola aktualizovaná na %1.</translation>
+    </message>
+    <message>
+        <source>Kettle Edition updated</source>
+        <translation>Kettle Edition aktualizovaná</translation>
+    </message>
+    <message>
+        <source>Downloading Kettle Edition %1 (%2 changed files).</source>
+        <translation>Sťahuje sa Kettle Edition %1 (zmenených súborov: %2).</translation>
+    </message>
+    <message>
+        <source>Kettle Edition %1 is downloaded and ready to install.</source>
+        <translation>Kettle Edition %1 je stiahnutá a pripravená na inštaláciu.</translation>
+    </message>
+    <message>
+        <source>Kettle Edition update</source>
+        <translation>Aktualizácia Kettle Edition</translation>
+    </message>
+    <message>
+        <source>Kettle Edition was updated to %1.</source>
+        <translation>Kettle Edition bola aktualizovaná na %1.</translation>
+    </message>
+    <message>
+        <source>Kettle Edition updated</source>
+        <translation>Kettle Edition aktualizovaná</translation>
+    </message>
+    <message>
+        <source>Downloading Kettle Edition %1 (%2 changed files).</source>
+        <translation>Sťahuje sa Kettle Edition %1 (zmenených súborov: %2).</translation>
+    </message>
+    <message>
+        <source>Kettle Edition %1 is downloaded and ready to install.</source>
+        <translation>Kettle Edition %1 je stiahnutá a pripravená na inštaláciu.</translation>
+    </message>
+</context>
+<context>
+    <name>UserAccountDialog</name>
+    <message>
+        <source>User</source>
+        <translation>Používateľ</translation>
+    </message>
+    <message>
+        <source>Username:</source>
+        <translation>Používateľské meno:</translation>
+    </message>
+    <message>
+        <source>Role:</source>
+        <translation>Rola:</translation>
+    </message>
+    <message>
+        <source>Password:</source>
+        <translation>Heslo:</translation>
+    </message>
+    <message>
+        <source>Confirm password:</source>
+        <translation>Potvrdenie hesla:</translation>
+    </message>
+    <message>
+        <source>Disable this account</source>
+        <translation>Zakázať tento účet</translation>
+    </message>
+    <message>
+        <source>Edit User</source>
+        <translation>Upraviť používateľa</translation>
+    </message>
+    <message>
+        <source>Leave empty to keep the current password</source>
+        <translation>Ponechajte prázdne, aby zostalo súčasné heslo</translation>
+    </message>
+    <message>
+        <source>Add User</source>
+        <translation>Pridať používateľa</translation>
+    </message>
+    <message>
+        <source>At least %1 characters</source>
+        <translation>Aspoň %1 znakov</translation>
+    </message>
+    <message>
+        <source>Enter a username.</source>
+        <translation>Zadajte používateľské meno.</translation>
+    </message>
+    <message>
+        <source>The password must be at least %1 characters long.</source>
+        <translation>Heslo musí mať aspoň %1 znakov.</translation>
+    </message>
+    <message>
+        <source>The passwords don&apos;t match.</source>
+        <translation>Heslá sa nezhodujú.</translation>
+    </message>
+    <message>
+        <source>User</source>
+        <translation>Používateľ</translation>
+    </message>
+    <message>
+        <source>Username:</source>
+        <translation>Používateľské meno:</translation>
+    </message>
+    <message>
+        <source>Role:</source>
+        <translation>Rola:</translation>
+    </message>
+    <message>
+        <source>Password:</source>
+        <translation>Heslo:</translation>
+    </message>
+    <message>
+        <source>Confirm password:</source>
+        <translation>Potvrdenie hesla:</translation>
+    </message>
+    <message>
+        <source>Disable this account</source>
+        <translation>Zakázať tento účet</translation>
+    </message>
+    <message>
+        <source>Edit User</source>
+        <translation>Upraviť používateľa</translation>
+    </message>
+    <message>
+        <source>Leave empty to keep the current password</source>
+        <translation>Ponechajte prázdne, aby zostalo súčasné heslo</translation>
+    </message>
+    <message>
+        <source>Add User</source>
+        <translation>Pridať používateľa</translation>
+    </message>
+    <message>
+        <source>At least %1 characters</source>
+        <translation>Aspoň %1 znakov</translation>
+    </message>
+    <message>
+        <source>Enter a username.</source>
+        <translation>Zadajte používateľské meno.</translation>
+    </message>
+    <message>
+        <source>The password must be at least %1 characters long.</source>
+        <translation>Heslo musí mať aspoň %1 znakov.</translation>
+    </message>
+    <message>
+        <source>The passwords don&apos;t match.</source>
+        <translation>Heslá sa nezhodujú.</translation>
+    </message>
+</context>
+<context>
+    <name>UserAccountsWidget</name>
+    <message>
+        <source>User Accounts</source>
+        <translation>Používateľské účty</translation>
+    </message>
+    <message>
+        <source>Users</source>
+        <translation>Používatelia</translation>
+    </message>
+    <message>
+        <source>People who can log in to the WebUI with their own username and password.</source>
+        <translation>Ľudia, ktorí sa môžu prihlásiť do WebUI vlastným používateľským menom a heslom.</translation>
+    </message>
+    <message>
+        <source>Add User...</source>
+        <translation>Pridať používateľa...</translation>
+    </message>
+    <message>
+        <source>Edit...</source>
+        <translation>Upraviť...</translation>
+    </message>
+    <message>
+        <source>Remove</source>
+        <translation>Odstrániť</translation>
+    </message>
+    <message>
+        <source>Roles</source>
+        <translation>Roly</translation>
+    </message>
+    <message>
+        <source>A role decides what its users are allowed to do.</source>
+        <translation>Rola určuje, čo smú jej používatelia robiť.</translation>
+    </message>
+    <message>
+        <source>Add Role...</source>
+        <translation>Pridať rolu...</translation>
+    </message>
+    <message>
+        <source>Logged In</source>
+        <translation>Prihlásení</translation>
+    </message>
+    <message>
+        <source>Browsers and devices where someone is logged in with a user account.</source>
+        <translation>Prehliadače a zariadenia, kde je niekto prihlásený používateľským účtom.</translation>
+    </message>
+    <message>
+        <source>Log Out</source>
+        <translation>Odhlásiť</translation>
+    </message>
+    <message>
+        <source>Username</source>
+        <translation>Používateľské meno</translation>
+    </message>
+    <message>
+        <source>Role</source>
+        <translation>Rola</translation>
+    </message>
+    <message>
+        <source>Status</source>
+        <translation>Stav</translation>
+    </message>
+    <message>
+        <source>Last login</source>
+        <translation>Posledné prihlásenie</translation>
+    </message>
+    <message>
+        <source>Created</source>
+        <translation>Vytvorené</translation>
+    </message>
+    <message>
+        <source>Name</source>
+        <translation>Názov</translation>
+    </message>
+    <message>
+        <source>Description</source>
+        <translation>Popis</translation>
+    </message>
+    <message>
+        <source>Permissions</source>
+        <translation>Oprávnenia</translation>
+    </message>
+    <message>
+        <source>User</source>
+        <translation>Používateľ</translation>
+    </message>
+    <message>
+        <source>Browser</source>
+        <translation>Prehliadač</translation>
+    </message>
+    <message>
+        <source>Logged in</source>
+        <translation>Prihlásený</translation>
+    </message>
+    <message>
+        <source>Last active</source>
+        <translation>Posledná aktivita</translation>
+    </message>
+    <message>
+        <source>Expires</source>
+        <translation>Vyprší</translation>
+    </message>
+    <message>
+        <source>The user database could not be opened. See the Execution Log for details.</source>
+        <translation>Databázu používateľov sa nepodarilo otvoriť. Podrobnosti nájdete v protokole vykonávania.</translation>
+    </message>
+    <message>
+        <source>Disabled</source>
+        <translation>Zakázaný</translation>
+    </message>
+    <message>
+        <source>Enabled</source>
+        <translation>Povolený</translation>
+    </message>
+    <message>
+        <source>Never</source>
+        <translation>Nikdy</translation>
+    </message>
+    <message>
+        <source>No accounts yet, so everyone still uses the shared WebUI login. Add an Admin account first.</source>
+        <translation>Zatiaľ nie sú žiadne účty, takže všetci stále používajú spoločné prihlásenie WebUI. Najprv pridajte účet správcu.</translation>
+    </message>
+    <message>
+        <source>Couldn&apos;t read the user database. %1</source>
+        <translation>Databázu používateľov sa nepodarilo prečítať. %1</translation>
+    </message>
+    <message>
+        <source>Remove user</source>
+        <translation>Odstrániť používateľa</translation>
+    </message>
+    <message>
+        <source>Are you sure you want to remove the user &apos;%1&apos;?</source>
+        <translation>Naozaj chcete odstrániť používateľa „%1“?</translation>
+    </message>
+    <message>
+        <source>Remove role</source>
+        <translation>Odstrániť rolu</translation>
+    </message>
+    <message>
+        <source>Are you sure you want to remove the role &apos;%1&apos;?</source>
+        <translation>Naozaj chcete odstrániť rolu „%1“?</translation>
+    </message>
+    <message>
+        <source>Enable</source>
+        <translation>Povoliť</translation>
+    </message>
+    <message>
+        <source>Disable</source>
+        <translation>Zakázať</translation>
+    </message>
+    <message>
+        <source>Log Out Everywhere</source>
+        <translation>Odhlásiť všade</translation>
+    </message>
+    <message>
+        <source>User Accounts</source>
+        <translation>Používateľské účty</translation>
+    </message>
+    <message>
+        <source>Users</source>
+        <translation>Používatelia</translation>
+    </message>
+    <message>
+        <source>People who can log in to the WebUI with their own username and password.</source>
+        <translation>Ľudia, ktorí sa môžu prihlásiť do WebUI vlastným používateľským menom a heslom.</translation>
+    </message>
+    <message>
+        <source>Add User...</source>
+        <translation>Pridať používateľa...</translation>
+    </message>
+    <message>
+        <source>Edit...</source>
+        <translation>Upraviť...</translation>
+    </message>
+    <message>
+        <source>Remove</source>
+        <translation>Odstrániť</translation>
+    </message>
+    <message>
+        <source>Roles</source>
+        <translation>Roly</translation>
+    </message>
+    <message>
+        <source>A role decides what its users are allowed to do.</source>
+        <translation>Rola určuje, čo smú jej používatelia robiť.</translation>
+    </message>
+    <message>
+        <source>Add Role...</source>
+        <translation>Pridať rolu...</translation>
+    </message>
+    <message>
+        <source>Logged In</source>
+        <translation>Prihlásení</translation>
+    </message>
+    <message>
+        <source>Browsers and devices where someone is logged in with a user account.</source>
+        <translation>Prehliadače a zariadenia, kde je niekto prihlásený používateľským účtom.</translation>
+    </message>
+    <message>
+        <source>Log Out</source>
+        <translation>Odhlásiť</translation>
+    </message>
+    <message>
+        <source>Username</source>
+        <translation>Používateľské meno</translation>
+    </message>
+    <message>
+        <source>Role</source>
+        <translation>Rola</translation>
+    </message>
+    <message>
+        <source>Status</source>
+        <translation>Stav</translation>
+    </message>
+    <message>
+        <source>Last login</source>
+        <translation>Posledné prihlásenie</translation>
+    </message>
+    <message>
+        <source>Created</source>
+        <translation>Vytvorené</translation>
+    </message>
+    <message>
+        <source>Name</source>
+        <translation>Názov</translation>
+    </message>
+    <message>
+        <source>Description</source>
+        <translation>Popis</translation>
+    </message>
+    <message>
+        <source>Permissions</source>
+        <translation>Oprávnenia</translation>
+    </message>
+    <message>
+        <source>User</source>
+        <translation>Používateľ</translation>
+    </message>
+    <message>
+        <source>Browser</source>
+        <translation>Prehliadač</translation>
+    </message>
+    <message>
+        <source>Logged in</source>
+        <translation>Prihlásený</translation>
+    </message>
+    <message>
+        <source>Last active</source>
+        <translation>Posledná aktivita</translation>
+    </message>
+    <message>
+        <source>Expires</source>
+        <translation>Vyprší</translation>
+    </message>
+    <message>
+        <source>The user database could not be opened. See the Execution Log for details.</source>
+        <translation>Databázu používateľov sa nepodarilo otvoriť. Podrobnosti nájdete v protokole vykonávania.</translation>
+    </message>
+    <message>
+        <source>Disabled</source>
+        <translation>Zakázaný</translation>
+    </message>
+    <message>
+        <source>Enabled</source>
+        <translation>Povolený</translation>
+    </message>
+    <message>
+        <source>Never</source>
+        <translation>Nikdy</translation>
+    </message>
+    <message>
+        <source>No accounts yet, so everyone still uses the shared WebUI login. Add an Admin account first.</source>
+        <translation>Zatiaľ nie sú žiadne účty, takže všetci stále používajú spoločné prihlásenie WebUI. Najprv pridajte účet správcu.</translation>
+    </message>
+    <message>
+        <source>Couldn&apos;t read the user database. %1</source>
+        <translation>Databázu používateľov sa nepodarilo prečítať. %1</translation>
+    </message>
+    <message>
+        <source>Remove user</source>
+        <translation>Odstrániť používateľa</translation>
+    </message>
+    <message>
+        <source>Are you sure you want to remove the user &apos;%1&apos;?</source>
+        <translation>Naozaj chcete odstrániť používateľa „%1“?</translation>
+    </message>
+    <message>
+        <source>Remove role</source>
+        <translation>Odstrániť rolu</translation>
+    </message>
+    <message>
+        <source>Are you sure you want to remove the role &apos;%1&apos;?</source>
+        <translation>Naozaj chcete odstrániť rolu „%1“?</translation>
+    </message>
+    <message>
+        <source>Enable</source>
+        <translation>Povoliť</translation>
+    </message>
+    <message>
+        <source>Disable</source>
+        <translation>Zakázať</translation>
+    </message>
+    <message>
+        <source>Log Out Everywhere</source>
+        <translation>Odhlásiť všade</translation>
+    </message>
+</context>
+<context>
+    <name>UserRoleDialog</name>
+    <message>
+        <source>Role</source>
+        <translation>Rola</translation>
+    </message>
+    <message>
+        <source>Name:</source>
+        <translation>Názov:</translation>
+    </message>
+    <message>
+        <source>Description:</source>
+        <translation>Popis:</translation>
+    </message>
+    <message>
+        <source>Gives control over the PC or qBittorrent itself.</source>
+        <translation>Dáva kontrolu nad počítačom alebo nad samotným qBittorrentom.</translation>
+    </message>
+    <message>
+        <source>Add Role</source>
+        <translation>Pridať rolu</translation>
+    </message>
+    <message>
+        <source>Edit Role</source>
+        <translation>Upraviť rolu</translation>
+    </message>
+    <message>
+        <source>Enter a role name.</source>
+        <translation>Zadajte názov roly.</translation>
+    </message>
+    <message>
+        <source>Role</source>
+        <translation>Rola</translation>
+    </message>
+    <message>
+        <source>Name:</source>
+        <translation>Názov:</translation>
+    </message>
+    <message>
+        <source>Description:</source>
+        <translation>Popis:</translation>
+    </message>
+    <message>
+        <source>Gives control over the PC or qBittorrent itself.</source>
+        <translation>Dáva kontrolu nad počítačom alebo nad samotným qBittorrentom.</translation>
+    </message>
+    <message>
+        <source>Add Role</source>
+        <translation>Pridať rolu</translation>
+    </message>
+    <message>
+        <source>Edit Role</source>
+        <translation>Upraviť rolu</translation>
+    </message>
+    <message>
+        <source>Enter a role name.</source>
+        <translation>Zadajte názov roly.</translation>
+    </message>
+</context>
+<context>
+    <name>WebUIActivityWidget</name>
+    <message>
+        <source>All</source>
+        <translation>Všetko</translation>
+    </message>
+    <message>
+        <source>Filter activity</source>
+        <translation>Filtrovať aktivitu</translation>
+    </message>
+    <message>
+        <source>Export...</source>
+        <translation>Exportovať...</translation>
+    </message>
+    <message>
+        <source>User:</source>
+        <translation>Používateľ:</translation>
+    </message>
+    <message>
+        <source>Category:</source>
+        <translation>Kategória:</translation>
+    </message>
+    <message>
+        <source>Result:</source>
+        <translation>Výsledok:</translation>
+    </message>
+    <message>
+        <source>Time</source>
+        <translation>Čas</translation>
+    </message>
+    <message>
+        <source>User</source>
+        <translation>Používateľ</translation>
+    </message>
+    <message>
+        <source>Role</source>
+        <translation>Rola</translation>
+    </message>
+    <message>
+        <source>Category</source>
+        <translation>Kategória</translation>
+    </message>
+    <message>
+        <source>Action</source>
+        <translation>Akcia</translation>
+    </message>
+    <message>
+        <source>Result</source>
+        <translation>Výsledok</translation>
+    </message>
+    <message>
+        <source>The user database could not be opened. See the General tab for details.</source>
+        <translation>Databázu používateľov sa nepodarilo otvoriť. Podrobnosti nájdete na karte Všeobecné.</translation>
+    </message>
+    <message>
+        <source>Results (showing %1 out of %2)</source>
+        <translation>Výsledky (zobrazené %1 z %2)</translation>
+    </message>
+    <message>
+        <source>Copy</source>
+        <translation>Kopírovať</translation>
+    </message>
+    <message>
+        <source>Export WebUI activity</source>
+        <translation>Exportovať aktivitu WebUI</translation>
+    </message>
+    <message>
+        <source>CSV files</source>
+        <translation>Súbory CSV</translation>
+    </message>
+    <message>
+        <source>Couldn&apos;t save the file. Reason: %1</source>
+        <translation>Súbor sa nepodarilo uložiť. Dôvod: %1</translation>
+    </message>
+    <message>
+        <source>All</source>
+        <translation>Všetko</translation>
+    </message>
+    <message>
+        <source>Filter activity</source>
+        <translation>Filtrovať aktivitu</translation>
+    </message>
+    <message>
+        <source>Export...</source>
+        <translation>Exportovať...</translation>
+    </message>
+    <message>
+        <source>User:</source>
+        <translation>Používateľ:</translation>
+    </message>
+    <message>
+        <source>Category:</source>
+        <translation>Kategória:</translation>
+    </message>
+    <message>
+        <source>Result:</source>
+        <translation>Výsledok:</translation>
+    </message>
+    <message>
+        <source>Time</source>
+        <translation>Čas</translation>
+    </message>
+    <message>
+        <source>User</source>
+        <translation>Používateľ</translation>
+    </message>
+    <message>
+        <source>Role</source>
+        <translation>Rola</translation>
+    </message>
+    <message>
+        <source>Category</source>
+        <translation>Kategória</translation>
+    </message>
+    <message>
+        <source>Action</source>
+        <translation>Akcia</translation>
+    </message>
+    <message>
+        <source>Result</source>
+        <translation>Výsledok</translation>
+    </message>
+    <message>
+        <source>The user database could not be opened. See the General tab for details.</source>
+        <translation>Databázu používateľov sa nepodarilo otvoriť. Podrobnosti nájdete na karte Všeobecné.</translation>
+    </message>
+    <message>
+        <source>Results (showing %1 out of %2)</source>
+        <translation>Výsledky (zobrazené %1 z %2)</translation>
+    </message>
+    <message>
+        <source>Copy</source>
+        <translation>Kopírovať</translation>
+    </message>
+    <message>
+        <source>Export WebUI activity</source>
+        <translation>Exportovať aktivitu WebUI</translation>
+    </message>
+    <message>
+        <source>CSV files</source>
+        <translation>Súbory CSV</translation>
+    </message>
+    <message>
+        <source>Couldn&apos;t save the file. Reason: %1</source>
+        <translation>Súbor sa nepodarilo uložiť. Dôvod: %1</translation>
     </message>
 </context>
 </TS>

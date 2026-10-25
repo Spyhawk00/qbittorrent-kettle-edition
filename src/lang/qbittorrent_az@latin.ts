@@ -127,6 +127,62 @@
         <source>The free IP to Country Lite database by DB-IP is used for resolving the countries of peers. The database is licensed under the Creative Commons Attribution 4.0 International License</source>
         <translation>DB-IP tərəfindən pulsuz verilən İP to Country Lite məlumat bazası iştirakçıların ölkələrinin öyrənilməsi üçün istifadə olunur. Məlumat bazası Creative Commons Attribution 4.0 Beynəlxalq Lisenziyası altında lisenziyalanıb.</translation>
     </message>
+    <message>
+        <source>This edition</source>
+        <translation>Bu buraxılış</translation>
+    </message>
+    <message>
+        <source>Edition version:</source>
+        <translation>Buraxılış versiyası:</translation>
+    </message>
+    <message>
+        <source>Based on:</source>
+        <translation>Əsas götürülüb:</translation>
+    </message>
+    <message>
+        <source>Maintainer:</source>
+        <translation>Tərtibatçı:</translation>
+    </message>
+    <message>
+        <source>qBittorrent project:</source>
+        <translation>qBittorrent layihəsi:</translation>
+    </message>
+    <message>
+        <source>Kettle Edition is a personal build of qBittorrent that adds user accounts with roles for the WebUI and the desktop app, an activity log, and an installable WebUI with a phone layout. A kettle is a group of hawks soaring together. This is an unofficial build, not affiliated with the qBittorrent project.</source>
+        <translation>Kettle Edition, qBittorrent-in şəxsi qurulmasıdır: WebUI və masaüstü tətbiq üçün rolları olan istifadəçi hesabları, fəaliyyət jurnalı, quraşdırıla bilən və telefon düzəni olan WebUI əlavə edir. Kettle birlikdə süzən qartallar qrupudur. Bu qeyri-rəsmi qurulmadır və qBittorrent layihəsi ilə əlaqəsi yoxdur.</translation>
+    </message>
+    <message>
+        <source>N/A</source>
+        <translation>Yoxdur</translation>
+    </message>
+    <message>
+        <source>This edition</source>
+        <translation>Bu buraxılış</translation>
+    </message>
+    <message>
+        <source>Edition version:</source>
+        <translation>Buraxılış versiyası:</translation>
+    </message>
+    <message>
+        <source>Based on:</source>
+        <translation>Əsas götürülüb:</translation>
+    </message>
+    <message>
+        <source>Maintainer:</source>
+        <translation>Tərtibatçı:</translation>
+    </message>
+    <message>
+        <source>qBittorrent project:</source>
+        <translation>qBittorrent layihəsi:</translation>
+    </message>
+    <message>
+        <source>Kettle Edition is a personal build of qBittorrent that adds user accounts with roles for the WebUI and the desktop app, an activity log, and an installable WebUI with a phone layout. A kettle is a group of hawks soaring together. This is an unofficial build, not affiliated with the qBittorrent project.</source>
+        <translation>Kettle Edition, qBittorrent-in şəxsi qurulmasıdır: WebUI və masaüstü tətbiq üçün rolları olan istifadəçi hesabları, fəaliyyət jurnalı, quraşdırıla bilən və telefon düzəni olan WebUI əlavə edir. Kettle birlikdə süzən qartallar qrupudur. Bu qeyri-rəsmi qurulmadır və qBittorrent layihəsi ilə əlaqəsi yoxdur.</translation>
+    </message>
+    <message>
+        <source>N/A</source>
+        <translation>Yoxdur</translation>
+    </message>
 </context>
 <context>
     <name>AbstractFileStorage</name>
@@ -1402,6 +1458,62 @@
         <location filename="../gui/advancedsettings.cpp" line="886"/>
         <source>Embedded tracker port</source>
         <translation>Yerləşdirilmiş izləyici portu</translation>
+    </message>
+    <message>
+        <source>Network</source>
+        <translation>Şəbəkə</translation>
+    </message>
+    <message>
+        <source>Storage</source>
+        <translation>Yaddaş</translation>
+    </message>
+    <message>
+        <source>Peers and trackers</source>
+        <translation>İştirakçılar və izləyicilər</translation>
+    </message>
+    <message>
+        <source>Program behavior</source>
+        <translation>Proqramın davranışı</translation>
+    </message>
+    <message>
+        <source>Display and notifications</source>
+        <translation>Görünüş və bildirişlər</translation>
+    </message>
+    <message>
+        <source>Network connection</source>
+        <translation>Şəbəkə bağlantısı</translation>
+    </message>
+    <message>
+        <source>Security and privacy</source>
+        <translation>Təhlükəsizlik və məxfilik</translation>
+    </message>
+    <message>
+        <source>Connection tuning</source>
+        <translation>Bağlantının tənzimlənməsi</translation>
+    </message>
+    <message>
+        <source>Saving and torrent files</source>
+        <translation>Saxlama və torrent faylları</translation>
+    </message>
+    <message>
+        <source>Disk and memory</source>
+        <translation>Disk və yaddaş</translation>
+    </message>
+    <message>
+        <source>Peers and seeding</source>
+        <translation>İştirakçılar və göndərmə</translation>
+    </message>
+    <message>
+        <source>DHT and I2P</source>
+        <translation>DHT və I2P</translation>
+    </message>
+    <message>
+        <source>General</source>
+        <translation>Əsas</translation>
+    </message>
+    <message>
+        <source>Trackers</source>
+        <translation>İzləyicilər</translation>
     </message>
 </context>
 <context>
@@ -3299,6 +3411,22 @@ Bu formatlar dəstəklənir: S01E01, 1x1, 2017.12.31 və 31.12.2017 (Həmçinin 
         <source>Remove torrent</source>
         <translation>Torrenti silmək</translation>
     </message>
+    <message>
+        <source>This choice is remembered for the next removal.</source>
+        <translation>Bu seçim növbəti silmə üçün yadda saxlanılacaq.</translation>
+    </message>
+    <message>
+        <source>Remove</source>
+        <translation>Sil</translation>
+    </message>
+    <message>
+        <source>This choice is remembered for the next removal.</source>
+        <translation>Bu seçim növbəti silmə üçün yadda saxlanılacaq.</translation>
+    </message>
+    <message>
+        <source>Remove</source>
+        <translation>Sil</translation>
+    </message>
 </context>
 <context>
     <name>DownloadFromURLDialog</name>
@@ -3372,6 +3500,14 @@ Bu formatlar dəstəklənir: S01E01, 1x1, 2017.12.31 və 31.12.2017 (Həmçinin 
         <location filename="../gui/executionlogwidget.cpp" line="99"/>
         <source>Clear</source>
         <translation>Təmizləmək</translation>
+    </message>
+    <message>
+        <source>WebUI Activity</source>
+        <translation>WebUI fəaliyyəti</translation>
+    </message>
+    <message>
+        <source>WebUI Activity</source>
+        <translation>WebUI fəaliyyəti</translation>
     </message>
 </context>
 <context>
@@ -4483,6 +4619,46 @@ Minimum tələb olunan versiya: %2.</translation>
         <location filename="../gui/mainwindow.cpp" line="1321"/>
         <source>Torrent Files</source>
         <translation>Torrent faylları</translation>
+    </message>
+    <message>
+        <source>Kettle Edition %1 is available.</source>
+        <translation>Kettle Edition %1 mövcuddur.</translation>
+    </message>
+    <message>
+        <source>qBittorrent Kettle Edition %1 is available. It is downloaded now and installed at 4:00 AM, or when qBittorrent starts next.</source>
+        <translation>qBittorrent Kettle Edition %1 mövcuddur. İndi endirilir və saat 4:00-da və ya qBittorrent növbəti dəfə başlayanda quraşdırılır.</translation>
+    </message>
+    <message>
+        <source>qBittorrent Kettle Edition %1 is available. It is downloaded now. Turn on &quot;Automatically install Kettle Edition updates&quot; in Options to install it.</source>
+        <translation>qBittorrent Kettle Edition %1 mövcuddur. İndi endirilir. Quraşdırmaq üçün Seçimlərdə &quot;Kettle Edition yeniləmələrini avtomatik quraşdır&quot; seçimini aktiv edin.</translation>
+    </message>
+    <message>
+        <source>You have the latest qBittorrent Kettle Edition (%1).</source>
+        <translation>qBittorrent Kettle Edition-ın ən son versiyası sizdədir (%1).</translation>
+    </message>
+    <message>
+        <source>Could not check for qBittorrent Kettle Edition updates. See the Execution Log for details.</source>
+        <translation>qBittorrent Kettle Edition yeniləmələrini yoxlamaq mümkün olmadı. Ətraflı məlumat üçün İcra jurnalına baxın.</translation>
+    </message>
+    <message>
+        <source>Kettle Edition %1 is available.</source>
+        <translation>Kettle Edition %1 mövcuddur.</translation>
+    </message>
+    <message>
+        <source>qBittorrent Kettle Edition %1 is available. It is downloaded now and installed at 4:00 AM, or when qBittorrent starts next.</source>
+        <translation>qBittorrent Kettle Edition %1 mövcuddur. İndi endirilir və saat 4:00-da və ya qBittorrent növbəti dəfə başlayanda quraşdırılır.</translation>
+    </message>
+    <message>
+        <source>qBittorrent Kettle Edition %1 is available. It is downloaded now. Turn on &quot;Automatically install Kettle Edition updates&quot; in Options to install it.</source>
+        <translation>qBittorrent Kettle Edition %1 mövcuddur. İndi endirilir. Quraşdırmaq üçün Seçimlərdə &quot;Kettle Edition yeniləmələrini avtomatik quraşdır&quot; seçimini aktiv edin.</translation>
+    </message>
+    <message>
+        <source>You have the latest qBittorrent Kettle Edition (%1).</source>
+        <translation>qBittorrent Kettle Edition-ın ən son versiyası sizdədir (%1).</translation>
+    </message>
+    <message>
+        <source>Could not check for qBittorrent Kettle Edition updates. See the Execution Log for details.</source>
+        <translation>qBittorrent Kettle Edition yeniləmələrini yoxlamaq mümkün olmadı. Ətraflı məlumat üçün İcra jurnalına baxın.</translation>
     </message>
 </context>
 <context>
@@ -8084,6 +8260,190 @@ Check the Execution Log for errors.</source>
         <source>Length Error</source>
         <translation>Ölçü xətası</translation>
     </message>
+    <message>
+        <source>Search settings</source>
+        <translation>Parametrlərdə axtar</translation>
+    </message>
+    <message>
+        <source>No settings match</source>
+        <translation>Uyğun parametr yoxdur</translation>
+    </message>
+    <message>
+        <source>User Accounts</source>
+        <translation>İstifadəçi hesabları</translation>
+    </message>
+    <message>
+        <source>Automatically install Kettle Edition updates</source>
+        <translation>Kettle Edition yeniləmələrini avtomatik quraşdır</translation>
+    </message>
+    <message>
+        <source>Status bar and log</source>
+        <translation>Vəziyyət çubuğu və jurnal</translation>
+    </message>
+    <message>
+        <source>Files</source>
+        <translation>Fayllar</translation>
+    </message>
+    <message>
+        <source>Checking</source>
+        <translation>Yoxlanış</translation>
+    </message>
+    <message>
+        <source>Until the first user account is created, this login always works.</source>
+        <translation>İlk istifadəçi hesabı yaradılanadək bu giriş həmişə işləyir.</translation>
+    </message>
+    <message>
+        <source>Allow this login when user accounts exist</source>
+        <translation>İstifadəçi hesabları olduqda bu girişə icazə ver</translation>
+    </message>
+    <message>
+        <source>Access</source>
+        <translation>Giriş</translation>
+    </message>
+    <message>
+        <source>Changes to users, roles and logins apply at once. The settings below apply with OK or Apply.</source>
+        <translation>İstifadəçilər, rollar və girişlərdə dəyişikliklər dərhal tətbiq olunur. Aşağıdakı parametrlər Tamam və ya Tətbiq et ilə tətbiq olunur.</translation>
+    </message>
+    <message>
+        <source>Logins and Activity Log</source>
+        <translation>Girişlər və fəaliyyət jurnalı</translation>
+    </message>
+    <message>
+        <source>0 means users are logged out after the session timeout.</source>
+        <translation>0 istifadəçilərin sessiya vaxtı bitdikdə çıxış etməsi deməkdir.</translation>
+    </message>
+    <message>
+        <source>Keep users logged in for:</source>
+        <translation>İstifadəçiləri daxil olmuş saxla:</translation>
+    </message>
+    <message>
+        <source>Until session timeout</source>
+        <translation>Sessiya vaxtı bitənədək</translation>
+    </message>
+    <message>
+        <source> days</source>
+        <translation> gün</translation>
+    </message>
+    <message>
+        <source>Lock account after consecutive failures:</source>
+        <translation>Ardıcıl uğursuzluqlardan sonra hesabı kilidlə:</translation>
+    </message>
+    <message>
+        <source>Keep WebUI activity log for:</source>
+        <translation>WebUI fəaliyyət jurnalını saxla:</translation>
+    </message>
+    <message>
+        <source>lock for:</source>
+        <translation>kilid müddəti:</translation>
+    </message>
+    <message>
+        <source>%1 works best with Windows dark mode</source>
+        <translation>%1 Windows tünd rejimi ilə daha yaxşı işləyir</translation>
+    </message>
+    <message>
+        <source>WebUI address</source>
+        <translation>WebUI ünvanı</translation>
+    </message>
+    <message>
+        <source>With the WebUI address set to %1, only this PC can reach the WebUI. Remote access, including through a reverse proxy on another machine, will stop working.
+
+Save anyway?</source>
+        <translation>WebUI ünvanı %1 olduqda yalnız bu kompüter WebUI-yə çata bilər. Uzaq giriş, o cümlədən başqa kompüterdəki əks proksi vasitəsilə giriş dayanacaq.
+
+Yenə də saxlanılsın?</translation>
+    </message>
+    <message>
+        <source>Search settings</source>
+        <translation>Parametrlərdə axtar</translation>
+    </message>
+    <message>
+        <source>No settings match</source>
+        <translation>Uyğun parametr yoxdur</translation>
+    </message>
+    <message>
+        <source>User Accounts</source>
+        <translation>İstifadəçi hesabları</translation>
+    </message>
+    <message>
+        <source>Automatically install Kettle Edition updates</source>
+        <translation>Kettle Edition yeniləmələrini avtomatik quraşdır</translation>
+    </message>
+    <message>
+        <source>Status bar and log</source>
+        <translation>Vəziyyət çubuğu və jurnal</translation>
+    </message>
+    <message>
+        <source>Files</source>
+        <translation>Fayllar</translation>
+    </message>
+    <message>
+        <source>Checking</source>
+        <translation>Yoxlanış</translation>
+    </message>
+    <message>
+        <source>Until the first user account is created, this login always works.</source>
+        <translation>İlk istifadəçi hesabı yaradılanadək bu giriş həmişə işləyir.</translation>
+    </message>
+    <message>
+        <source>Allow this login when user accounts exist</source>
+        <translation>İstifadəçi hesabları olduqda bu girişə icazə ver</translation>
+    </message>
+    <message>
+        <source>Access</source>
+        <translation>Giriş</translation>
+    </message>
+    <message>
+        <source>Changes to users, roles and logins apply at once. The settings below apply with OK or Apply.</source>
+        <translation>İstifadəçilər, rollar və girişlərdə dəyişikliklər dərhal tətbiq olunur. Aşağıdakı parametrlər Tamam və ya Tətbiq et ilə tətbiq olunur.</translation>
+    </message>
+    <message>
+        <source>Logins and Activity Log</source>
+        <translation>Girişlər və fəaliyyət jurnalı</translation>
+    </message>
+    <message>
+        <source>0 means users are logged out after the session timeout.</source>
+        <translation>0 istifadəçilərin sessiya vaxtı bitdikdə çıxış etməsi deməkdir.</translation>
+    </message>
+    <message>
+        <source>Keep users logged in for:</source>
+        <translation>İstifadəçiləri daxil olmuş saxla:</translation>
+    </message>
+    <message>
+        <source>Until session timeout</source>
+        <translation>Sessiya vaxtı bitənədək</translation>
+    </message>
+    <message>
+        <source> days</source>
+        <translation> gün</translation>
+    </message>
+    <message>
+        <source>Lock account after consecutive failures:</source>
+        <translation>Ardıcıl uğursuzluqlardan sonra hesabı kilidlə:</translation>
+    </message>
+    <message>
+        <source>Keep WebUI activity log for:</source>
+        <translation>WebUI fəaliyyət jurnalını saxla:</translation>
+    </message>
+    <message>
+        <source>lock for:</source>
+        <translation>kilid müddəti:</translation>
+    </message>
+    <message>
+        <source>%1 works best with Windows dark mode</source>
+        <translation>%1 Windows tünd rejimi ilə daha yaxşı işləyir</translation>
+    </message>
+    <message>
+        <source>WebUI address</source>
+        <translation>WebUI ünvanı</translation>
+    </message>
+    <message>
+        <source>With the WebUI address set to %1, only this PC can reach the WebUI. Remote access, including through a reverse proxy on another machine, will stop working.
+
+Save anyway?</source>
+        <translation>WebUI ünvanı %1 olduqda yalnız bu kompüter WebUI-yə çata bilər. Uzaq giriş, o cümlədən başqa kompüterdəki əks proksi vasitəsilə giriş dayanacaq.
+
+Yenə də saxlanılsın?</translation>
+    </message>
 </context>
 <context>
     <name>PeerInfo</name>
@@ -8330,6 +8690,22 @@ Check the Execution Log for errors.</source>
         <location filename="../gui/properties/peerlistwidget.cpp" line="307"/>
         <source>Copy IP:port</source>
         <translation>İP portunu kopyalamaq</translation>
+    </message>
+    <message>
+        <source>Reset auto width</source>
+        <translation>Avtomatik eni sıfırla</translation>
+    </message>
+    <message>
+        <source>Fit all non-hidden columns to their contents again, and forget the widths that were set by hand</source>
+        <translation>Gizli olmayan bütün sütunları yenidən məzmunlarına uyğunlaşdır və əllə təyin edilmiş enləri unut</translation>
+    </message>
+    <message>
+        <source>Reset auto width</source>
+        <translation>Avtomatik eni sıfırla</translation>
+    </message>
+    <message>
+        <source>Fit all non-hidden columns to their contents again, and forget the widths that were set by hand</source>
+        <translation>Gizli olmayan bütün sütunları yenidən məzmunlarına uyğunlaşdır və əllə təyin edilmiş enləri unut</translation>
     </message>
 </context>
 <context>
@@ -9466,6 +9842,14 @@ Bu qoşmalar söndürülüb.</translation>
         <source>Open link</source>
         <translation>Keçidi açmaq</translation>
     </message>
+    <message>
+        <source>Details</source>
+        <translation>Təfərrüatlar</translation>
+    </message>
+    <message>
+        <source>Details</source>
+        <translation>Təfərrüatlar</translation>
+    </message>
 </context>
 <context>
     <name>SearchController</name>
@@ -9793,6 +10177,70 @@ Bu qoşmalar söndürülüb.</translation>
         <source>Resize all non-hidden columns to the size of their contents</source>
         <translation>Bütün gizli olmayan sütunların ölçüsünü tərkiblərinin ölçüsünə görə dəyişmək</translation>
     </message>
+    <message>
+        <source>%1 of %2 shown (%3 hidden)</source>
+        <translation>%1 / %2 göstərilir (%3 gizli)</translation>
+    </message>
+    <message>
+        <source>%1 of %2 shown</source>
+        <translation>%1 / %2 göstərilir</translation>
+    </message>
+    <message>
+        <source>Searching: %1</source>
+        <translation>Axtarılır: %1</translation>
+    </message>
+    <message>
+        <source>Finished: %1</source>
+        <translation>Bitdi: %1</translation>
+    </message>
+    <message>
+        <source>Search aborted: %1</source>
+        <translation>Axtarış dayandırıldı: %1</translation>
+    </message>
+    <message>
+        <source>Reset auto width</source>
+        <translation>Avtomatik eni sıfırla</translation>
+    </message>
+    <message>
+        <source>Fit all non-hidden columns to their contents again, and forget the widths that were set by hand</source>
+        <translation>Gizli olmayan bütün sütunları yenidən məzmunlarına uyğunlaşdır və əllə təyin edilmiş enləri unut</translation>
+    </message>
+    <message>
+        <source>Unknown</source>
+        <translation>Naməlum</translation>
+    </message>
+    <message>
+        <source>%1 of %2 shown (%3 hidden)</source>
+        <translation>%1 / %2 göstərilir (%3 gizli)</translation>
+    </message>
+    <message>
+        <source>%1 of %2 shown</source>
+        <translation>%1 / %2 göstərilir</translation>
+    </message>
+    <message>
+        <source>Searching: %1</source>
+        <translation>Axtarılır: %1</translation>
+    </message>
+    <message>
+        <source>Finished: %1</source>
+        <translation>Bitdi: %1</translation>
+    </message>
+    <message>
+        <source>Search aborted: %1</source>
+        <translation>Axtarış dayandırıldı: %1</translation>
+    </message>
+    <message>
+        <source>Reset auto width</source>
+        <translation>Avtomatik eni sıfırla</translation>
+    </message>
+    <message>
+        <source>Fit all non-hidden columns to their contents again, and forget the widths that were set by hand</source>
+        <translation>Gizli olmayan bütün sütunları yenidən məzmunlarına uyğunlaşdır və əllə təyin edilmiş enləri unut</translation>
+    </message>
+    <message>
+        <source>Unknown</source>
+        <translation>Naməlum</translation>
+    </message>
 </context>
 <context>
     <name>SearchPluginManager</name>
@@ -10019,6 +10467,90 @@ Onlardan bəzilərini quraşdırmaq üçün pəncərənin aşağı-sağındakı 
         <location filename="../gui/search/searchwidget.ui" line="58"/>
         <source>Stop</source>
         <translation>Dayandırmaq</translation>
+    </message>
+    <message>
+        <source>Searches</source>
+        <translation>Axtarışlar</translation>
+    </message>
+    <message>
+        <source>Close the selected search</source>
+        <translation>Seçilmiş axtarışı bağla</translation>
+    </message>
+    <message>
+        <source>Search for torrents...</source>
+        <translation>Torrent axtar...</translation>
+    </message>
+    <message>
+        <source>Category to search in</source>
+        <translation>Axtarış kateqoriyası</translation>
+    </message>
+    <message>
+        <source>Search engines to use</source>
+        <translation>İstifadə ediləcək axtarış mühərrikləri</translation>
+    </message>
+    <message>
+        <source>There aren&apos;t any search plugins installed.
+Click the &quot;Search plugins...&quot; button at the top right of the window to install some.</source>
+        <translation>Quraşdırılmış axtarış plagini yoxdur.
+Bir neçəsini quraşdırmaq üçün pəncərənin yuxarı sağındakı &quot;Axtarış plaginləri...&quot; düyməsini basın.</translation>
+    </message>
+    <message>
+        <source>Type a search above and press Enter.</source>
+        <translation>Yuxarıda axtarış yazın və Enter basın.</translation>
+    </message>
+    <message>
+        <source>Refresh search</source>
+        <translation>Axtarışı yenilə</translation>
+    </message>
+    <message>
+        <source>Close search</source>
+        <translation>Axtarışı bağla</translation>
+    </message>
+    <message>
+        <source>Close all searches</source>
+        <translation>Bütün axtarışları bağla</translation>
+    </message>
+    <message>
+        <source>Searches</source>
+        <translation>Axtarışlar</translation>
+    </message>
+    <message>
+        <source>Close the selected search</source>
+        <translation>Seçilmiş axtarışı bağla</translation>
+    </message>
+    <message>
+        <source>Search for torrents...</source>
+        <translation>Torrent axtar...</translation>
+    </message>
+    <message>
+        <source>Category to search in</source>
+        <translation>Axtarış kateqoriyası</translation>
+    </message>
+    <message>
+        <source>Search engines to use</source>
+        <translation>İstifadə ediləcək axtarış mühərrikləri</translation>
+    </message>
+    <message>
+        <source>There aren&apos;t any search plugins installed.
+Click the &quot;Search plugins...&quot; button at the top right of the window to install some.</source>
+        <translation>Quraşdırılmış axtarış plagini yoxdur.
+Bir neçəsini quraşdırmaq üçün pəncərənin yuxarı sağındakı &quot;Axtarış plaginləri...&quot; düyməsini basın.</translation>
+    </message>
+    <message>
+        <source>Type a search above and press Enter.</source>
+        <translation>Yuxarıda axtarış yazın və Enter basın.</translation>
+    </message>
+    <message>
+        <source>Refresh search</source>
+        <translation>Axtarışı yenilə</translation>
+    </message>
+    <message>
+        <source>Close search</source>
+        <translation>Axtarışı bağla</translation>
+    </message>
+    <message>
+        <source>Close all searches</source>
+        <translation>Bütün axtarışları bağla</translation>
     </message>
 </context>
 <context>
@@ -10472,6 +11004,326 @@ Onlardan bəzilərini quraşdırmaq üçün pəncərənin aşağı-sağındakı 
         <source>%1 ms</source>
         <comment>18 milliseconds</comment>
         <translation>%1 msan</translation>
+    </message>
+    <message>
+        <source>Copy</source>
+        <translation>Kopyala</translation>
+    </message>
+    <message>
+        <source>Overview</source>
+        <translation>İcmal</translation>
+    </message>
+    <message>
+        <source>Transfer</source>
+        <translation>Ötürmə</translation>
+    </message>
+    <message>
+        <source>This session</source>
+        <translation>Bu sessiya</translation>
+    </message>
+    <message>
+        <source>All time</source>
+        <translation>Bütün vaxt</translation>
+    </message>
+    <message>
+        <source>Downloaded:</source>
+        <translation>Endirilən:</translation>
+    </message>
+    <message>
+        <source>Uploaded:</source>
+        <translation>Yüklənən:</translation>
+    </message>
+    <message>
+        <source>Share ratio:</source>
+        <translation>Paylaşma nisbəti:</translation>
+    </message>
+    <message>
+        <source>Current speed:</source>
+        <translation>Cari sürət:</translation>
+    </message>
+    <message>
+        <source>Activity</source>
+        <translation>Fəaliyyət</translation>
+    </message>
+    <message>
+        <source>Torrents downloading:</source>
+        <translation>Endirilən torrentlər:</translation>
+    </message>
+    <message>
+        <source>Torrents seeding:</source>
+        <translation>Paylaşılan torrentlər:</translation>
+    </message>
+    <message>
+        <source>Torrents stopped:</source>
+        <translation>Dayandırılmış torrentlər:</translation>
+    </message>
+    <message>
+        <source>Torrents with errors:</source>
+        <translation>Xətası olan torrentlər:</translation>
+    </message>
+    <message>
+        <source>Running for:</source>
+        <translation>İşləmə müddəti:</translation>
+    </message>
+    <message>
+        <source>History</source>
+        <translation>Tarixçə</translation>
+    </message>
+    <message>
+        <source>Period</source>
+        <translation>Dövr</translation>
+    </message>
+    <message>
+        <source>Today</source>
+        <translation>Bu gün</translation>
+    </message>
+    <message>
+        <source>Last 7 days</source>
+        <translation>Son 7 gün</translation>
+    </message>
+    <message>
+        <source>This month</source>
+        <translation>Bu ay</translation>
+    </message>
+    <message>
+        <source>Last month</source>
+        <translation>Keçən ay</translation>
+    </message>
+    <message>
+        <source>Last 12 months</source>
+        <translation>Son 12 ay</translation>
+    </message>
+    <message>
+        <source>Tracking since:</source>
+        <translation>İzləmə başlanğıcı:</translation>
+    </message>
+    <message>
+        <source>By month</source>
+        <translation>Aylara görə</translation>
+    </message>
+    <message>
+        <source>Month</source>
+        <translation>Ay</translation>
+    </message>
+    <message>
+        <source>Downloaded</source>
+        <translation>Endirilən</translation>
+    </message>
+    <message>
+        <source>Uploaded</source>
+        <translation>Yüklənən</translation>
+    </message>
+    <message>
+        <source>Share ratio</source>
+        <translation>Paylaşma nisbəti</translation>
+    </message>
+    <message>
+        <source>WebUI downloads added, this month</source>
+        <translation>Bu ay WebUI ilə əlavə edilən endirmələr</translation>
+    </message>
+    <message>
+        <source>Counts the requests that added a download. Apps without a login, such as Sonarr and Radarr, are shown as (localhost). Downloads added in the desktop window are not counted.</source>
+        <translation>Endirmə əlavə edən sorğuları sayır. Sonarr və Radarr kimi girişsiz tətbiqlər (localhost) kimi göstərilir. Masaüstü pəncərədə əlavə edilən endirmələr sayılmır.</translation>
+    </message>
+    <message>
+        <source>Technical</source>
+        <translation>Texniki</translation>
+    </message>
+    <message>
+        <source>Disk</source>
+        <translation>Disk</translation>
+    </message>
+    <message>
+        <source>Peers waiting on disk writes:</source>
+        <translation>Diskə yazmağı gözləyən iştirakçılar:</translation>
+    </message>
+    <message>
+        <source>Peers waiting on disk reads:</source>
+        <translation>Diskdən oxumağı gözləyən iştirakçılar:</translation>
+    </message>
+    <message>
+        <source>Network</source>
+        <translation>Şəbəkə</translation>
+    </message>
+    <message>
+        <source>DHT nodes:</source>
+        <translation>DHT düyünləri:</translation>
+    </message>
+    <message>
+        <source>Data discarded this session:</source>
+        <translation>Bu sessiyada atılan məlumat:</translation>
+    </message>
+    <message>
+        <source>Before tracking began</source>
+        <translation>İzləmə başlamazdan əvvəl</translation>
+    </message>
+    <message>
+        <source>Nothing added yet</source>
+        <translation>Hələ heç nə əlavə edilməyib</translation>
+    </message>
+    <message>
+        <source>Off</source>
+        <translation>Söndürülüb</translation>
+    </message>
+    <message>
+        <source>Copy</source>
+        <translation>Kopyala</translation>
+    </message>
+    <message>
+        <source>Overview</source>
+        <translation>İcmal</translation>
+    </message>
+    <message>
+        <source>Transfer</source>
+        <translation>Ötürmə</translation>
+    </message>
+    <message>
+        <source>This session</source>
+        <translation>Bu sessiya</translation>
+    </message>
+    <message>
+        <source>All time</source>
+        <translation>Bütün vaxt</translation>
+    </message>
+    <message>
+        <source>Downloaded:</source>
+        <translation>Endirilən:</translation>
+    </message>
+    <message>
+        <source>Uploaded:</source>
+        <translation>Yüklənən:</translation>
+    </message>
+    <message>
+        <source>Share ratio:</source>
+        <translation>Paylaşma nisbəti:</translation>
+    </message>
+    <message>
+        <source>Current speed:</source>
+        <translation>Cari sürət:</translation>
+    </message>
+    <message>
+        <source>Activity</source>
+        <translation>Fəaliyyət</translation>
+    </message>
+    <message>
+        <source>Torrents downloading:</source>
+        <translation>Endirilən torrentlər:</translation>
+    </message>
+    <message>
+        <source>Torrents seeding:</source>
+        <translation>Paylaşılan torrentlər:</translation>
+    </message>
+    <message>
+        <source>Torrents stopped:</source>
+        <translation>Dayandırılmış torrentlər:</translation>
+    </message>
+    <message>
+        <source>Torrents with errors:</source>
+        <translation>Xətası olan torrentlər:</translation>
+    </message>
+    <message>
+        <source>Running for:</source>
+        <translation>İşləmə müddəti:</translation>
+    </message>
+    <message>
+        <source>History</source>
+        <translation>Tarixçə</translation>
+    </message>
+    <message>
+        <source>Period</source>
+        <translation>Dövr</translation>
+    </message>
+    <message>
+        <source>Today</source>
+        <translation>Bu gün</translation>
+    </message>
+    <message>
+        <source>Last 7 days</source>
+        <translation>Son 7 gün</translation>
+    </message>
+    <message>
+        <source>This month</source>
+        <translation>Bu ay</translation>
+    </message>
+    <message>
+        <source>Last month</source>
+        <translation>Keçən ay</translation>
+    </message>
+    <message>
+        <source>Last 12 months</source>
+        <translation>Son 12 ay</translation>
+    </message>
+    <message>
+        <source>Tracking since:</source>
+        <translation>İzləmə başlanğıcı:</translation>
+    </message>
+    <message>
+        <source>By month</source>
+        <translation>Aylara görə</translation>
+    </message>
+    <message>
+        <source>Month</source>
+        <translation>Ay</translation>
+    </message>
+    <message>
+        <source>Downloaded</source>
+        <translation>Endirilən</translation>
+    </message>
+    <message>
+        <source>Uploaded</source>
+        <translation>Yüklənən</translation>
+    </message>
+    <message>
+        <source>Share ratio</source>
+        <translation>Paylaşma nisbəti</translation>
+    </message>
+    <message>
+        <source>WebUI downloads added, this month</source>
+        <translation>Bu ay WebUI ilə əlavə edilən endirmələr</translation>
+    </message>
+    <message>
+        <source>Counts the requests that added a download. Apps without a login, such as Sonarr and Radarr, are shown as (localhost). Downloads added in the desktop window are not counted.</source>
+        <translation>Endirmə əlavə edən sorğuları sayır. Sonarr və Radarr kimi girişsiz tətbiqlər (localhost) kimi göstərilir. Masaüstü pəncərədə əlavə edilən endirmələr sayılmır.</translation>
+    </message>
+    <message>
+        <source>Technical</source>
+        <translation>Texniki</translation>
+    </message>
+    <message>
+        <source>Disk</source>
+        <translation>Disk</translation>
+    </message>
+    <message>
+        <source>Peers waiting on disk writes:</source>
+        <translation>Diskə yazmağı gözləyən iştirakçılar:</translation>
+    </message>
+    <message>
+        <source>Peers waiting on disk reads:</source>
+        <translation>Diskdən oxumağı gözləyən iştirakçılar:</translation>
+    </message>
+    <message>
+        <source>Network</source>
+        <translation>Şəbəkə</translation>
+    </message>
+    <message>
+        <source>DHT nodes:</source>
+        <translation>DHT düyünləri:</translation>
+    </message>
+    <message>
+        <source>Data discarded this session:</source>
+        <translation>Bu sessiyada atılan məlumat:</translation>
+    </message>
+    <message>
+        <source>Before tracking began</source>
+        <translation>İzləmə başlamazdan əvvəl</translation>
+    </message>
+    <message>
+        <source>Nothing added yet</source>
+        <translation>Hələ heç nə əlavə edilməyib</translation>
+    </message>
+    <message>
+        <source>Off</source>
+        <translation>Söndürülüb</translation>
     </message>
 </context>
 <context>
@@ -11097,6 +11949,22 @@ Başqa ad verin və yenidən cəhd edin.</translation>
         <location filename="../gui/torrentcontentwidget.cpp" line="476"/>
         <source>Priority by shown file order</source>
         <translation>Göstərilən fayl sırasına görə üstünlük</translation>
+    </message>
+    <message>
+        <source>Reset auto width</source>
+        <translation>Avtomatik eni sıfırla</translation>
+    </message>
+    <message>
+        <source>Fit all non-hidden columns to their contents again, and forget the widths that were set by hand</source>
+        <translation>Gizli olmayan bütün sütunları yenidən məzmunlarına uyğunlaşdır və əllə təyin edilmiş enləri unut</translation>
+    </message>
+    <message>
+        <source>Reset auto width</source>
+        <translation>Avtomatik eni sıfırla</translation>
+    </message>
+    <message>
+        <source>Fit all non-hidden columns to their contents again, and forget the widths that were set by hand</source>
+        <translation>Gizli olmayan bütün sütunları yenidən məzmunlarına uyğunlaşdır və əllə təyin edilmiş enləri unut</translation>
     </message>
 </context>
 <context>
@@ -12129,6 +12997,22 @@ Başqa ad verin və yenidən cəhd edin.</translation>
         <source>Column visibility</source>
         <translation>Sütunun görünməsi</translation>
     </message>
+    <message>
+        <source>Reset auto width</source>
+        <translation>Avtomatik eni sıfırla</translation>
+    </message>
+    <message>
+        <source>Fit all non-hidden columns to their contents again, and forget the widths that were set by hand</source>
+        <translation>Gizli olmayan bütün sütunları yenidən məzmunlarına uyğunlaşdır və əllə təyin edilmiş enləri unut</translation>
+    </message>
+    <message>
+        <source>Reset auto width</source>
+        <translation>Avtomatik eni sıfırla</translation>
+    </message>
+    <message>
+        <source>Fit all non-hidden columns to their contents again, and forget the widths that were set by hand</source>
+        <translation>Gizli olmayan bütün sütunları yenidən məzmunlarına uyğunlaşdır və əllə təyin edilmiş enləri unut</translation>
+    </message>
 </context>
 <context>
     <name>TrackerStatusFilterWidget</name>
@@ -12980,6 +13864,22 @@ Başqa ad verin və yenidən cəhd edin.</translation>
         <source>Super seeding mode</source>
         <translation>Super göndərmə rejimi</translation>
     </message>
+    <message>
+        <source>Reset auto width</source>
+        <translation>Avtomatik eni sıfırla</translation>
+    </message>
+    <message>
+        <source>Fit all non-hidden columns to their contents again, and forget the widths that were set by hand</source>
+        <translation>Gizli olmayan bütün sütunları yenidən məzmunlarına uyğunlaşdır və əllə təyin edilmiş enləri unut</translation>
+    </message>
+    <message>
+        <source>Reset auto width</source>
+        <translation>Avtomatik eni sıfırla</translation>
+    </message>
+    <message>
+        <source>Fit all non-hidden columns to their contents again, and forget the widths that were set by hand</source>
+        <translation>Gizli olmayan bütün sütunları yenidən məzmunlarına uyğunlaşdır və əllə təyin edilmiş enləri unut</translation>
+    </message>
 </context>
 <context>
     <name>UIThemeDialog</name>
@@ -13309,6 +14209,46 @@ Başqa ad verin və yenidən cəhd edin.</translation>
         <source>WebAPI login failure. Reason: invalid credentials, attempt count: %1, IP: %2, username: %3</source>
         <translation>WebAPI&apos;yə giriş xətası. Səbəb: yararsız istifadəçi məlumatları, cəhdlərin sayı: %1, İP: %2, istifadəçi adı: %3</translation>
     </message>
+    <message>
+        <source>Something went wrong on the server. Details are in qBittorrent&apos;s log.</source>
+        <translation>Serverdə nəsə xəta baş verdi. Ətraflı məlumat qBittorrent jurnalındadır.</translation>
+    </message>
+    <message>
+        <source>This account is locked after too many failed login attempts. Try again in %1 minute(s).</source>
+        <translation>Çox sayda uğursuz giriş cəhdinə görə bu hesab kilidlənib. %1 dəqiqə sonra yenidən cəhd edin.</translation>
+    </message>
+    <message>
+        <source>Your role (%1) doesn&apos;t allow this: %2.</source>
+        <translation>Rolunuz (%1) buna icazə vermir: %2.</translation>
+    </message>
+    <message>
+        <source>Only an admin can remove the tag that says who added a torrent.</source>
+        <translation>Torrenti kimin əlavə etdiyini göstərən etiketi yalnız admin silə bilər.</translation>
+    </message>
+    <message>
+        <source>Only an admin can clear or replace all tags of a torrent that has a tag saying who added it.</source>
+        <translation>Kimin əlavə etdiyini göstərən etiketi olan torrentin bütün etiketlərini yalnız admin silə və ya əvəz edə bilər.</translation>
+    </message>
+    <message>
+        <source>Something went wrong on the server. Details are in qBittorrent&apos;s log.</source>
+        <translation>Serverdə nəsə xəta baş verdi. Ətraflı məlumat qBittorrent jurnalındadır.</translation>
+    </message>
+    <message>
+        <source>This account is locked after too many failed login attempts. Try again in %1 minute(s).</source>
+        <translation>Çox sayda uğursuz giriş cəhdinə görə bu hesab kilidlənib. %1 dəqiqə sonra yenidən cəhd edin.</translation>
+    </message>
+    <message>
+        <source>Your role (%1) doesn&apos;t allow this: %2.</source>
+        <translation>Rolunuz (%1) buna icazə vermir: %2.</translation>
+    </message>
+    <message>
+        <source>Only an admin can remove the tag that says who added a torrent.</source>
+        <translation>Torrenti kimin əlavə etdiyini göstərən etiketi yalnız admin silə bilər.</translation>
+    </message>
+    <message>
+        <source>Only an admin can clear or replace all tags of a torrent that has a tag saying who added it.</source>
+        <translation>Kimin əlavə etdiyini göstərən etiketi olan torrentin bütün etiketlərini yalnız admin silə və ya əvəz edə bilər.</translation>
+    </message>
 </context>
 <context>
     <name>WebUI</name>
@@ -13448,6 +14388,680 @@ Başqa ad verin və yenidən cəhd edin.</translation>
         <source>&lt; 1m</source>
         <comment>&lt; 1 minute</comment>
         <translation>&lt; 1dəq</translation>
+    </message>
+</context>
+<context>
+    <name>SearchPluginSelectDialog</name>
+    <message>
+        <source>Install Kettle Plugins</source>
+        <translation>Kettle plaginlərini quraşdır</translation>
+    </message>
+    <message>
+        <source>Install Kettle Plugins</source>
+        <translation>Kettle plaginlərini quraşdır</translation>
+    </message>
+</context>
+<context>
+    <name>UpdateInstaller</name>
+    <message>
+        <source>Kettle Edition update</source>
+        <translation>Kettle Edition yeniləməsi</translation>
+    </message>
+    <message>
+        <source>Kettle Edition was updated to %1.</source>
+        <translation>Kettle Edition %1 versiyasına yeniləndi.</translation>
+    </message>
+    <message>
+        <source>Kettle Edition updated</source>
+        <translation>Kettle Edition yeniləndi</translation>
+    </message>
+    <message>
+        <source>Downloading Kettle Edition %1 (%2 changed files).</source>
+        <translation>Kettle Edition %1 endirilir (%2 dəyişmiş fayl).</translation>
+    </message>
+    <message>
+        <source>Kettle Edition %1 is downloaded and ready to install.</source>
+        <translation>Kettle Edition %1 endirildi və quraşdırmağa hazırdır.</translation>
+    </message>
+    <message>
+        <source>Kettle Edition update</source>
+        <translation>Kettle Edition yeniləməsi</translation>
+    </message>
+    <message>
+        <source>Kettle Edition was updated to %1.</source>
+        <translation>Kettle Edition %1 versiyasına yeniləndi.</translation>
+    </message>
+    <message>
+        <source>Kettle Edition updated</source>
+        <translation>Kettle Edition yeniləndi</translation>
+    </message>
+    <message>
+        <source>Downloading Kettle Edition %1 (%2 changed files).</source>
+        <translation>Kettle Edition %1 endirilir (%2 dəyişmiş fayl).</translation>
+    </message>
+    <message>
+        <source>Kettle Edition %1 is downloaded and ready to install.</source>
+        <translation>Kettle Edition %1 endirildi və quraşdırmağa hazırdır.</translation>
+    </message>
+</context>
+<context>
+    <name>UserAccountDialog</name>
+    <message>
+        <source>User</source>
+        <translation>İstifadəçi</translation>
+    </message>
+    <message>
+        <source>Username:</source>
+        <translation>İstifadəçi adı:</translation>
+    </message>
+    <message>
+        <source>Role:</source>
+        <translation>Rol:</translation>
+    </message>
+    <message>
+        <source>Password:</source>
+        <translation>Parol:</translation>
+    </message>
+    <message>
+        <source>Confirm password:</source>
+        <translation>Parolu təsdiqlə:</translation>
+    </message>
+    <message>
+        <source>Disable this account</source>
+        <translation>Bu hesabı deaktiv et</translation>
+    </message>
+    <message>
+        <source>Edit User</source>
+        <translation>İstifadəçiyə düzəliş et</translation>
+    </message>
+    <message>
+        <source>Leave empty to keep the current password</source>
+        <translation>Cari parolu saxlamaq üçün boş buraxın</translation>
+    </message>
+    <message>
+        <source>Add User</source>
+        <translation>İstifadəçi əlavə et</translation>
+    </message>
+    <message>
+        <source>At least %1 characters</source>
+        <translation>Ən azı %1 simvol</translation>
+    </message>
+    <message>
+        <source>Enter a username.</source>
+        <translation>İstifadəçi adı daxil edin.</translation>
+    </message>
+    <message>
+        <source>The password must be at least %1 characters long.</source>
+        <translation>Parol ən azı %1 simvol uzunluğunda olmalıdır.</translation>
+    </message>
+    <message>
+        <source>The passwords don&apos;t match.</source>
+        <translation>Parollar uyğun gəlmir.</translation>
+    </message>
+    <message>
+        <source>User</source>
+        <translation>İstifadəçi</translation>
+    </message>
+    <message>
+        <source>Username:</source>
+        <translation>İstifadəçi adı:</translation>
+    </message>
+    <message>
+        <source>Role:</source>
+        <translation>Rol:</translation>
+    </message>
+    <message>
+        <source>Password:</source>
+        <translation>Parol:</translation>
+    </message>
+    <message>
+        <source>Confirm password:</source>
+        <translation>Parolu təsdiqlə:</translation>
+    </message>
+    <message>
+        <source>Disable this account</source>
+        <translation>Bu hesabı deaktiv et</translation>
+    </message>
+    <message>
+        <source>Edit User</source>
+        <translation>İstifadəçiyə düzəliş et</translation>
+    </message>
+    <message>
+        <source>Leave empty to keep the current password</source>
+        <translation>Cari parolu saxlamaq üçün boş buraxın</translation>
+    </message>
+    <message>
+        <source>Add User</source>
+        <translation>İstifadəçi əlavə et</translation>
+    </message>
+    <message>
+        <source>At least %1 characters</source>
+        <translation>Ən azı %1 simvol</translation>
+    </message>
+    <message>
+        <source>Enter a username.</source>
+        <translation>İstifadəçi adı daxil edin.</translation>
+    </message>
+    <message>
+        <source>The password must be at least %1 characters long.</source>
+        <translation>Parol ən azı %1 simvol uzunluğunda olmalıdır.</translation>
+    </message>
+    <message>
+        <source>The passwords don&apos;t match.</source>
+        <translation>Parollar uyğun gəlmir.</translation>
+    </message>
+</context>
+<context>
+    <name>UserAccountsWidget</name>
+    <message>
+        <source>User Accounts</source>
+        <translation>İstifadəçi hesabları</translation>
+    </message>
+    <message>
+        <source>Users</source>
+        <translation>İstifadəçilər</translation>
+    </message>
+    <message>
+        <source>People who can log in to the WebUI with their own username and password.</source>
+        <translation>WebUI-yə öz istifadəçi adı və parolu ilə daxil ola bilən şəxslər.</translation>
+    </message>
+    <message>
+        <source>Add User...</source>
+        <translation>İstifadəçi əlavə et...</translation>
+    </message>
+    <message>
+        <source>Edit...</source>
+        <translation>Düzəliş et...</translation>
+    </message>
+    <message>
+        <source>Remove</source>
+        <translation>Sil</translation>
+    </message>
+    <message>
+        <source>Roles</source>
+        <translation>Rollar</translation>
+    </message>
+    <message>
+        <source>A role decides what its users are allowed to do.</source>
+        <translation>Rol istifadəçilərinin nə edə biləcəyini müəyyən edir.</translation>
+    </message>
+    <message>
+        <source>Add Role...</source>
+        <translation>Rol əlavə et...</translation>
+    </message>
+    <message>
+        <source>Logged In</source>
+        <translation>Daxil olanlar</translation>
+    </message>
+    <message>
+        <source>Browsers and devices where someone is logged in with a user account.</source>
+        <translation>İstifadəçi hesabı ilə daxil olunmuş brauzerlər və cihazlar.</translation>
+    </message>
+    <message>
+        <source>Log Out</source>
+        <translation>Çıxış</translation>
+    </message>
+    <message>
+        <source>Username</source>
+        <translation>İstifadəçi adı</translation>
+    </message>
+    <message>
+        <source>Role</source>
+        <translation>Rol</translation>
+    </message>
+    <message>
+        <source>Status</source>
+        <translation>Status</translation>
+    </message>
+    <message>
+        <source>Last login</source>
+        <translation>Son giriş</translation>
+    </message>
+    <message>
+        <source>Created</source>
+        <translation>Yaradılıb</translation>
+    </message>
+    <message>
+        <source>Name</source>
+        <translation>Ad</translation>
+    </message>
+    <message>
+        <source>Description</source>
+        <translation>Təsvir</translation>
+    </message>
+    <message>
+        <source>Permissions</source>
+        <translation>İcazələr</translation>
+    </message>
+    <message>
+        <source>User</source>
+        <translation>İstifadəçi</translation>
+    </message>
+    <message>
+        <source>Browser</source>
+        <translation>Brauzer</translation>
+    </message>
+    <message>
+        <source>Logged in</source>
+        <translation>Daxil olub</translation>
+    </message>
+    <message>
+        <source>Last active</source>
+        <translation>Son fəaliyyət</translation>
+    </message>
+    <message>
+        <source>Expires</source>
+        <translation>Bitir</translation>
+    </message>
+    <message>
+        <source>The user database could not be opened. See the Execution Log for details.</source>
+        <translation>İstifadəçi bazası açıla bilmədi. Ətraflı məlumat üçün İcra jurnalına baxın.</translation>
+    </message>
+    <message>
+        <source>Disabled</source>
+        <translation>Deaktiv</translation>
+    </message>
+    <message>
+        <source>Enabled</source>
+        <translation>Aktiv</translation>
+    </message>
+    <message>
+        <source>Never</source>
+        <translation>Heç vaxt</translation>
+    </message>
+    <message>
+        <source>No accounts yet, so everyone still uses the shared WebUI login. Add an Admin account first.</source>
+        <translation>Hələ hesab yoxdur, buna görə hamı hələ də ümumi WebUI girişindən istifadə edir. Əvvəlcə Admin hesabı əlavə edin.</translation>
+    </message>
+    <message>
+        <source>Couldn&apos;t read the user database. %1</source>
+        <translation>İstifadəçi bazası oxuna bilmədi. %1</translation>
+    </message>
+    <message>
+        <source>Remove user</source>
+        <translation>İstifadəçini sil</translation>
+    </message>
+    <message>
+        <source>Are you sure you want to remove the user &apos;%1&apos;?</source>
+        <translation>&apos;%1&apos; istifadəçisini silmək istədiyinizə əminsiniz?</translation>
+    </message>
+    <message>
+        <source>Remove role</source>
+        <translation>Rolu sil</translation>
+    </message>
+    <message>
+        <source>Are you sure you want to remove the role &apos;%1&apos;?</source>
+        <translation>&apos;%1&apos; rolunu silmək istədiyinizə əminsiniz?</translation>
+    </message>
+    <message>
+        <source>Enable</source>
+        <translation>Aktiv et</translation>
+    </message>
+    <message>
+        <source>Disable</source>
+        <translation>Deaktiv et</translation>
+    </message>
+    <message>
+        <source>Log Out Everywhere</source>
+        <translation>Hər yerdən çıxış</translation>
+    </message>
+    <message>
+        <source>User Accounts</source>
+        <translation>İstifadəçi hesabları</translation>
+    </message>
+    <message>
+        <source>Users</source>
+        <translation>İstifadəçilər</translation>
+    </message>
+    <message>
+        <source>People who can log in to the WebUI with their own username and password.</source>
+        <translation>WebUI-yə öz istifadəçi adı və parolu ilə daxil ola bilən şəxslər.</translation>
+    </message>
+    <message>
+        <source>Add User...</source>
+        <translation>İstifadəçi əlavə et...</translation>
+    </message>
+    <message>
+        <source>Edit...</source>
+        <translation>Düzəliş et...</translation>
+    </message>
+    <message>
+        <source>Remove</source>
+        <translation>Sil</translation>
+    </message>
+    <message>
+        <source>Roles</source>
+        <translation>Rollar</translation>
+    </message>
+    <message>
+        <source>A role decides what its users are allowed to do.</source>
+        <translation>Rol istifadəçilərinin nə edə biləcəyini müəyyən edir.</translation>
+    </message>
+    <message>
+        <source>Add Role...</source>
+        <translation>Rol əlavə et...</translation>
+    </message>
+    <message>
+        <source>Logged In</source>
+        <translation>Daxil olanlar</translation>
+    </message>
+    <message>
+        <source>Browsers and devices where someone is logged in with a user account.</source>
+        <translation>İstifadəçi hesabı ilə daxil olunmuş brauzerlər və cihazlar.</translation>
+    </message>
+    <message>
+        <source>Log Out</source>
+        <translation>Çıxış</translation>
+    </message>
+    <message>
+        <source>Username</source>
+        <translation>İstifadəçi adı</translation>
+    </message>
+    <message>
+        <source>Role</source>
+        <translation>Rol</translation>
+    </message>
+    <message>
+        <source>Status</source>
+        <translation>Status</translation>
+    </message>
+    <message>
+        <source>Last login</source>
+        <translation>Son giriş</translation>
+    </message>
+    <message>
+        <source>Created</source>
+        <translation>Yaradılıb</translation>
+    </message>
+    <message>
+        <source>Name</source>
+        <translation>Ad</translation>
+    </message>
+    <message>
+        <source>Description</source>
+        <translation>Təsvir</translation>
+    </message>
+    <message>
+        <source>Permissions</source>
+        <translation>İcazələr</translation>
+    </message>
+    <message>
+        <source>User</source>
+        <translation>İstifadəçi</translation>
+    </message>
+    <message>
+        <source>Browser</source>
+        <translation>Brauzer</translation>
+    </message>
+    <message>
+        <source>Logged in</source>
+        <translation>Daxil olub</translation>
+    </message>
+    <message>
+        <source>Last active</source>
+        <translation>Son fəaliyyət</translation>
+    </message>
+    <message>
+        <source>Expires</source>
+        <translation>Bitir</translation>
+    </message>
+    <message>
+        <source>The user database could not be opened. See the Execution Log for details.</source>
+        <translation>İstifadəçi bazası açıla bilmədi. Ətraflı məlumat üçün İcra jurnalına baxın.</translation>
+    </message>
+    <message>
+        <source>Disabled</source>
+        <translation>Deaktiv</translation>
+    </message>
+    <message>
+        <source>Enabled</source>
+        <translation>Aktiv</translation>
+    </message>
+    <message>
+        <source>Never</source>
+        <translation>Heç vaxt</translation>
+    </message>
+    <message>
+        <source>No accounts yet, so everyone still uses the shared WebUI login. Add an Admin account first.</source>
+        <translation>Hələ hesab yoxdur, buna görə hamı hələ də ümumi WebUI girişindən istifadə edir. Əvvəlcə Admin hesabı əlavə edin.</translation>
+    </message>
+    <message>
+        <source>Couldn&apos;t read the user database. %1</source>
+        <translation>İstifadəçi bazası oxuna bilmədi. %1</translation>
+    </message>
+    <message>
+        <source>Remove user</source>
+        <translation>İstifadəçini sil</translation>
+    </message>
+    <message>
+        <source>Are you sure you want to remove the user &apos;%1&apos;?</source>
+        <translation>&apos;%1&apos; istifadəçisini silmək istədiyinizə əminsiniz?</translation>
+    </message>
+    <message>
+        <source>Remove role</source>
+        <translation>Rolu sil</translation>
+    </message>
+    <message>
+        <source>Are you sure you want to remove the role &apos;%1&apos;?</source>
+        <translation>&apos;%1&apos; rolunu silmək istədiyinizə əminsiniz?</translation>
+    </message>
+    <message>
+        <source>Enable</source>
+        <translation>Aktiv et</translation>
+    </message>
+    <message>
+        <source>Disable</source>
+        <translation>Deaktiv et</translation>
+    </message>
+    <message>
+        <source>Log Out Everywhere</source>
+        <translation>Hər yerdən çıxış</translation>
+    </message>
+</context>
+<context>
+    <name>UserRoleDialog</name>
+    <message>
+        <source>Role</source>
+        <translation>Rol</translation>
+    </message>
+    <message>
+        <source>Name:</source>
+        <translation>Ad:</translation>
+    </message>
+    <message>
+        <source>Description:</source>
+        <translation>Təsvir:</translation>
+    </message>
+    <message>
+        <source>Gives control over the PC or qBittorrent itself.</source>
+        <translation>Kompüterə və ya qBittorrent-in özünə nəzarət imkanı verir.</translation>
+    </message>
+    <message>
+        <source>Add Role</source>
+        <translation>Rol əlavə et</translation>
+    </message>
+    <message>
+        <source>Edit Role</source>
+        <translation>Rola düzəliş et</translation>
+    </message>
+    <message>
+        <source>Enter a role name.</source>
+        <translation>Rol adı daxil edin.</translation>
+    </message>
+    <message>
+        <source>Role</source>
+        <translation>Rol</translation>
+    </message>
+    <message>
+        <source>Name:</source>
+        <translation>Ad:</translation>
+    </message>
+    <message>
+        <source>Description:</source>
+        <translation>Təsvir:</translation>
+    </message>
+    <message>
+        <source>Gives control over the PC or qBittorrent itself.</source>
+        <translation>Kompüterə və ya qBittorrent-in özünə nəzarət imkanı verir.</translation>
+    </message>
+    <message>
+        <source>Add Role</source>
+        <translation>Rol əlavə et</translation>
+    </message>
+    <message>
+        <source>Edit Role</source>
+        <translation>Rola düzəliş et</translation>
+    </message>
+    <message>
+        <source>Enter a role name.</source>
+        <translation>Rol adı daxil edin.</translation>
+    </message>
+</context>
+<context>
+    <name>WebUIActivityWidget</name>
+    <message>
+        <source>All</source>
+        <translation>Hamısı</translation>
+    </message>
+    <message>
+        <source>Filter activity</source>
+        <translation>Fəaliyyəti süz</translation>
+    </message>
+    <message>
+        <source>Export...</source>
+        <translation>İxrac et...</translation>
+    </message>
+    <message>
+        <source>User:</source>
+        <translation>İstifadəçi:</translation>
+    </message>
+    <message>
+        <source>Category:</source>
+        <translation>Kateqoriya:</translation>
+    </message>
+    <message>
+        <source>Result:</source>
+        <translation>Nəticə:</translation>
+    </message>
+    <message>
+        <source>Time</source>
+        <translation>Vaxt</translation>
+    </message>
+    <message>
+        <source>User</source>
+        <translation>İstifadəçi</translation>
+    </message>
+    <message>
+        <source>Role</source>
+        <translation>Rol</translation>
+    </message>
+    <message>
+        <source>Category</source>
+        <translation>Kateqoriya</translation>
+    </message>
+    <message>
+        <source>Action</source>
+        <translation>Əməliyyat</translation>
+    </message>
+    <message>
+        <source>Result</source>
+        <translation>Nəticə</translation>
+    </message>
+    <message>
+        <source>The user database could not be opened. See the General tab for details.</source>
+        <translation>İstifadəçi bazası açıla bilmədi. Ətraflı məlumat üçün Ümumi nişanına baxın.</translation>
+    </message>
+    <message>
+        <source>Results (showing %1 out of %2)</source>
+        <translation>Nəticələr (%2 içindən %1 göstərilir)</translation>
+    </message>
+    <message>
+        <source>Copy</source>
+        <translation>Kopyala</translation>
+    </message>
+    <message>
+        <source>Export WebUI activity</source>
+        <translation>WebUI fəaliyyətini ixrac et</translation>
+    </message>
+    <message>
+        <source>CSV files</source>
+        <translation>CSV faylları</translation>
+    </message>
+    <message>
+        <source>Couldn&apos;t save the file. Reason: %1</source>
+        <translation>Fayl saxlanıla bilmədi. Səbəb: %1</translation>
+    </message>
+    <message>
+        <source>All</source>
+        <translation>Hamısı</translation>
+    </message>
+    <message>
+        <source>Filter activity</source>
+        <translation>Fəaliyyəti süz</translation>
+    </message>
+    <message>
+        <source>Export...</source>
+        <translation>İxrac et...</translation>
+    </message>
+    <message>
+        <source>User:</source>
+        <translation>İstifadəçi:</translation>
+    </message>
+    <message>
+        <source>Category:</source>
+        <translation>Kateqoriya:</translation>
+    </message>
+    <message>
+        <source>Result:</source>
+        <translation>Nəticə:</translation>
+    </message>
+    <message>
+        <source>Time</source>
+        <translation>Vaxt</translation>
+    </message>
+    <message>
+        <source>User</source>
+        <translation>İstifadəçi</translation>
+    </message>
+    <message>
+        <source>Role</source>
+        <translation>Rol</translation>
+    </message>
+    <message>
+        <source>Category</source>
+        <translation>Kateqoriya</translation>
+    </message>
+    <message>
+        <source>Action</source>
+        <translation>Əməliyyat</translation>
+    </message>
+    <message>
+        <source>Result</source>
+        <translation>Nəticə</translation>
+    </message>
+    <message>
+        <source>The user database could not be opened. See the General tab for details.</source>
+        <translation>İstifadəçi bazası açıla bilmədi. Ətraflı məlumat üçün Ümumi nişanına baxın.</translation>
+    </message>
+    <message>
+        <source>Results (showing %1 out of %2)</source>
+        <translation>Nəticələr (%2 içindən %1 göstərilir)</translation>
+    </message>
+    <message>
+        <source>Copy</source>
+        <translation>Kopyala</translation>
+    </message>
+    <message>
+        <source>Export WebUI activity</source>
+        <translation>WebUI fəaliyyətini ixrac et</translation>
+    </message>
+    <message>
+        <source>CSV files</source>
+        <translation>CSV faylları</translation>
+    </message>
+    <message>
+        <source>Couldn&apos;t save the file. Reason: %1</source>
+        <translation>Fayl saxlanıla bilmədi. Səbəb: %1</translation>
     </message>
 </context>
 </TS>

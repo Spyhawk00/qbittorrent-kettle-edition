@@ -227,6 +227,85 @@ The piece hash will be checked when it is requested for the first time by a peer
         <source>%1 needed · %2 free</source>
         <translation type="unfinished" />
     </message>
+    <message>
+        <source>Don&apos;t create subfolder</source>
+        <translation>하위 폴더 만들지 않음</translation>
+    </message>
+    <message>
+        <source>Never show again</source>
+        <translation>다시 표시 안함</translation>
+    </message>
+    <message>
+        <source>Select None</source>
+        <translation>선택 없음</translation>
+    </message>
+    <message>
+        <source>Torrent options</source>
+        <translation>토렌트 옵션</translation>
+    </message>
+    <message>
+        <source>Your role saves torrents in the default folders.</source>
+        <translation>현재 역할은 토렌트를 기본 폴더에 저장합니다.</translation>
+    </message>
+</context>
+<context>
+    <name>AdvancedSettings</name>
+    <message>
+        <source>General</source>
+        <translation>일반</translation>
+    </message>
+    <message>
+        <source>Network</source>
+        <translation>네트워크</translation>
+    </message>
+    <message>
+        <source>Storage</source>
+        <translation>저장소</translation>
+    </message>
+    <message>
+        <source>Peers and trackers</source>
+        <translation>피어 및 트래커</translation>
+    </message>
+    <message>
+        <source>Program behavior</source>
+        <translation>프로그램 동작</translation>
+    </message>
+    <message>
+        <source>Display and notifications</source>
+        <translation>표시 및 알림</translation>
+    </message>
+    <message>
+        <source>Network connection</source>
+        <translation>네트워크 연결</translation>
+    </message>
+    <message>
+        <source>Security and privacy</source>
+        <translation>보안 및 개인정보</translation>
+    </message>
+    <message>
+        <source>Connection tuning</source>
+        <translation>연결 조정</translation>
+    </message>
+    <message>
+        <source>Saving and torrent files</source>
+        <translation>저장 및 토렌트 파일</translation>
+    </message>
+    <message>
+        <source>Disk and memory</source>
+        <translation>디스크 및 메모리</translation>
+    </message>
+    <message>
+        <source>Trackers</source>
+        <translation>트래커</translation>
+    </message>
+    <message>
+        <source>Peers and seeding</source>
+        <translation>피어 및 시딩</translation>
+    </message>
+    <message>
+        <source>DHT and I2P</source>
+        <translation>DHT 및 I2P</translation>
+    </message>
 </context>
 <context>
     <name>CategoryFilterModel</name>
@@ -631,6 +710,14 @@ The piece hash will be checked when it is requested for the first time by a peer
         <source>More</source>
         <translation>더 보기</translation>
     </message>
+    <message>
+        <source>Change Password...</source>
+        <translation>비밀번호 변경...</translation>
+    </message>
+    <message>
+        <source>Signed in as</source>
+        <translation>로그인한 사용자</translation>
+    </message>
 </context>
 <context>
     <name>MainWindow</name>
@@ -937,6 +1024,34 @@ The piece hash will be checked when it is requested for the first time by a peer
     <message>
         <source>Resume Session</source>
         <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Global Speed Limits</source>
+        <translation>전역 속도 제한</translation>
+    </message>
+    <message>
+        <source>Pause Session</source>
+        <translation>세션 일시 중지</translation>
+    </message>
+    <message>
+        <source>Pause session</source>
+        <translation>세션 일시 중지</translation>
+    </message>
+    <message>
+        <source>Resume Session</source>
+        <translation>세션 다시 시작</translation>
+    </message>
+    <message>
+        <source>Resume session</source>
+        <translation>세션 다시 시작</translation>
+    </message>
+    <message>
+        <source>Your account can&apos;t add torrents.</source>
+        <translation>이 계정은 토렌트를 추가할 수 없습니다.</translation>
+    </message>
+    <message>
+        <source>[PAUSED]</source>
+        <translation>[일시 중지됨]</translation>
     </message>
 </context>
 <context>
@@ -2535,6 +2650,190 @@ DNS 재결합 공격을 방어하기 위해
         <source>a@x.com;b@y.com,c@z.com - send two emails: the first to just a@x.com, the second to both b@y.com and c@z.com</source>
         <translation type="unfinished" />
     </message>
+    <message>
+        <source>0 means users are logged out after the session timeout.</source>
+        <translation>0은 세션 제한 시간이 지나면 사용자가 로그아웃된다는 뜻입니다.</translation>
+    </message>
+    <message>
+        <source>Access</source>
+        <translation>접근</translation>
+    </message>
+    <message>
+        <source>All the above</source>
+        <translation>위의 모든 것들</translation>
+    </message>
+    <message>
+        <source>Allow this login when user accounts exist</source>
+        <translation>사용자 계정이 있을 때도 이 로그인 허용</translation>
+    </message>
+    <message>
+        <source>Also save search results</source>
+        <translation>검색 결과도 저장</translation>
+    </message>
+    <message>
+        <source>Also when addition is cancelled</source>
+        <translation>또한 추가가 취소된 경우에도 삭제</translation>
+    </message>
+    <message>
+        <source>Any of the above</source>
+        <translation>위의 어느 것이든</translation>
+    </message>
+    <message>
+        <source>Below normal</source>
+        <translation>보통 이하</translation>
+    </message>
+    <message>
+        <source>Changes to users, roles and logins apply at once.</source>
+        <translation>사용자, 역할, 로그인 변경은 즉시 적용됩니다.</translation>
+    </message>
+    <message>
+        <source>Don&apos;t create subfolder</source>
+        <translation>하위 폴더 만들지 않음</translation>
+    </message>
+    <message>
+        <source>Example:</source>
+        <translation>예시:</translation>
+    </message>
+    <message>
+        <source>I2P (experimental)</source>
+        <translation>I2P (실험적)</translation>
+    </message>
+    <message>
+        <source>Keep WebUI activity log for:</source>
+        <translation>WebUI 활동 로그 보관 기간:</translation>
+    </message>
+    <message>
+        <source>Keep unselected files in &quot;.unwanted&quot; folder</source>
+        <translation>선택하지 않은 파일을 &quot;.unwanted&quot; 폴더에 보관하기</translation>
+    </message>
+    <message>
+        <source>Keep users logged in for:</source>
+        <translation>로그인 유지 기간:</translation>
+    </message>
+    <message>
+        <source>Language:</source>
+        <translation>언어:</translation>
+    </message>
+    <message>
+        <source>Lock account after consecutive failures:</source>
+        <translation>연속 실패 후 계정 잠금 횟수:</translation>
+    </message>
+    <message>
+        <source>Logins and Activity Log</source>
+        <translation>로그인 및 활동 로그</translation>
+    </message>
+    <message>
+        <source>Low</source>
+        <translation>낮음</translation>
+    </message>
+    <message>
+        <source>Maximum active checking torrents:</source>
+        <translation>최대 활성 확인 토렌트:</translation>
+    </message>
+    <message>
+        <source>Medium</source>
+        <translation>중간</translation>
+    </message>
+    <message>
+        <source>No settings match</source>
+        <translation>일치하는 설정 없음</translation>
+    </message>
+    <message>
+        <source>Process memory priority:</source>
+        <translation>프로세스 메모리 우선순위:</translation>
+    </message>
+    <message>
+        <source>Save search tabs</source>
+        <translation>검색 탭 저장</translation>
+    </message>
+    <message>
+        <source>Search UI</source>
+        <translation>검색 UI</translation>
+    </message>
+    <message>
+        <source>Search settings</source>
+        <translation>설정 검색</translation>
+    </message>
+    <message>
+        <source>Service:</source>
+        <translation>서비스:</translation>
+    </message>
+    <message>
+        <source>Show console window</source>
+        <translation>콘솔 창 표시</translation>
+    </message>
+    <message>
+        <source>Show the window when adding a torrent</source>
+        <translation>토렌트를 추가할 때 창 표시</translation>
+    </message>
+    <message>
+        <source>Specify reverse proxy IPs (or subnets, e.g. 0.0.0.0/24) in order to use forwarded client address (X-Forwarded-For header). Use &apos;;&apos; to split multiple entries.</source>
+        <translation>전달된 클라이언트 주소(X-Forwarded-헤더의 경우)를 사용하려면 역방향 프록시 IP(또는 서브넷, 예: 0.0.0.0/24)를 지정합니다. 여러 항목을 분할하려면 &apos;;&apos;를 사용하십시오.</translation>
+    </message>
+    <message>
+        <source>Status bar and log</source>
+        <translation>상태 표시줄 및 로그</translation>
+    </message>
+    <message>
+        <source>The WebUI activity log can be kept for 1 to 3650 days.</source>
+        <translation>WebUI 활동 로그는 1일에서 3650일까지 보관할 수 있습니다.</translation>
+    </message>
+    <message>
+        <source>The settings below apply with OK or Apply.</source>
+        <translation>아래 설정은 확인 또는 적용을 누르면 적용됩니다.</translation>
+    </message>
+    <message>
+        <source>Tip: Encapsulate parameter with quotation marks to avoid text being cut off at whitespace (e.g., &quot;%N&quot;)</source>
+        <translation>도움말: 텍스트가 공백에서 잘리지 않게 하려면 변수를 따옴표로 감싸십시오. (예: &quot;%N&quot;)</translation>
+    </message>
+    <message>
+        <source>Transfer List</source>
+        <translation>전송 목록</translation>
+    </message>
+    <message>
+        <source>Until the first user account is created, this login always works.</source>
+        <translation>첫 사용자 계정을 만들 때까지 이 로그인은 항상 작동합니다.</translation>
+    </message>
+    <message>
+        <source>User Accounts</source>
+        <translation>사용자 계정</translation>
+    </message>
+    <message>
+        <source>Users can be kept logged in for 0 to 365 days.</source>
+        <translation>사용자는 0일에서 365일까지 로그인 상태를 유지할 수 있습니다.</translation>
+    </message>
+    <message>
+        <source>Very low</source>
+        <translation>매우 낮음</translation>
+    </message>
+    <message>
+        <source>Warning! Data loss possible!</source>
+        <translation>경고! 데이터를 잃을 수 있습니다!</translation>
+    </message>
+    <message>
+        <source>When Default Save/Incomplete Path changed:</source>
+        <translation>기본 저장/불완전 경로가 변경된 경우:</translation>
+    </message>
+    <message>
+        <source>Whitelist for filtering HTTP Host header values.
+In order to defend against DNS rebinding attack,
+you should put in domain names used by WebUI server.
+
+Use &apos;;&apos; to split multiple entries. Can use wildcard &apos;*&apos;.</source>
+        <translation>HTTP 호스트 헤더 필터링에 대한 허용 목록입니다.
+DNS 재결합 공격을 방어하기 위해
+웹 UI 서버가 사용하는 도메인 이름을 넣어야 합니다.
+
+&apos;;&apos;를 사용해서 항목을 구분하며 와일드카드 &apos;*&apos;를 사용할 수 있습니다.</translation>
+    </message>
+    <message>
+        <source>You changed the address, port or HTTPS setting of the WebUI. Saving moves the WebUI, so Options will save, close and reload the page, the same as OK. If the page doesn&apos;t come back, open the WebUI at its new address.\n\nSave anyway?</source>
+        <translation>WebUI의 주소, 포트 또는 HTTPS 설정을 변경했습니다. 저장하면 WebUI가 이동하므로 옵션은 확인과 같이 저장하고 닫은 뒤 페이지를 다시 불러옵니다. 페이지가 돌아오지 않으면 새 주소로 WebUI를 여세요.\n\n그래도 저장하시겠습니까?</translation>
+    </message>
+    <message>
+        <source>lock for:</source>
+        <translation>잠금 시간:</translation>
+    </message>
 </context>
 <context>
     <name>PeerListWidget</name>
@@ -2963,6 +3262,10 @@ DNS 재결합 공격을 방어하기 위해
         <source>Copy download URL</source>
         <translation type="unfinished" />
     </message>
+    <message>
+        <source>Copy path</source>
+        <translation>복사 경로</translation>
+    </message>
 </context>
 <context>
     <name>ScanFoldersModel</name>
@@ -3075,6 +3378,142 @@ DNS 재결합 공격을 방어하기 위해
     <message>
         <source>The time it takes from receiving a request from a peer until we're sending the response back on the socket</source>
         <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Activity</source>
+        <translation>활동</translation>
+    </message>
+    <message>
+        <source>All time</source>
+        <translation>전체 기간</translation>
+    </message>
+    <message>
+        <source>Before tracking began</source>
+        <translation>추적 시작 전</translation>
+    </message>
+    <message>
+        <source>By month</source>
+        <translation>월별</translation>
+    </message>
+    <message>
+        <source>Counts the requests that added a download. Apps without a login, such as Sonarr and Radarr, are shown as (localhost). Downloads added in the desktop window are not counted.</source>
+        <translation>다운로드를 추가한 요청을 셉니다. Sonarr, Radarr처럼 로그인하지 않는 앱은 (localhost)로 표시됩니다. 데스크톱 창에서 추가한 다운로드는 세지 않습니다.</translation>
+    </message>
+    <message>
+        <source>Current speed:</source>
+        <translation>현재 속도:</translation>
+    </message>
+    <message>
+        <source>DHT nodes:</source>
+        <translation>DHT 노드:</translation>
+    </message>
+    <message>
+        <source>Data discarded this session:</source>
+        <translation>이 세션에서 버려진 데이터:</translation>
+    </message>
+    <message>
+        <source>Disk</source>
+        <translation>디스크</translation>
+    </message>
+    <message>
+        <source>History</source>
+        <translation>기록</translation>
+    </message>
+    <message>
+        <source>Last 12 months</source>
+        <translation>최근 12개월</translation>
+    </message>
+    <message>
+        <source>Last 7 days</source>
+        <translation>최근 7일</translation>
+    </message>
+    <message>
+        <source>Last month</source>
+        <translation>지난달</translation>
+    </message>
+    <message>
+        <source>Month</source>
+        <translation>월</translation>
+    </message>
+    <message>
+        <source>Nothing added yet</source>
+        <translation>아직 추가된 것이 없습니다</translation>
+    </message>
+    <message>
+        <source>Off</source>
+        <translation>꺼짐</translation>
+    </message>
+    <message>
+        <source>Overview</source>
+        <translation>개요</translation>
+    </message>
+    <message>
+        <source>Peers waiting on disk reads:</source>
+        <translation>디스크 읽기를 기다리는 피어:</translation>
+    </message>
+    <message>
+        <source>Peers waiting on disk writes:</source>
+        <translation>디스크 쓰기를 기다리는 피어:</translation>
+    </message>
+    <message>
+        <source>Period</source>
+        <translation>기간</translation>
+    </message>
+    <message>
+        <source>Request latency:</source>
+        <translation>요청 지연 시간:</translation>
+    </message>
+    <message>
+        <source>Running for:</source>
+        <translation>실행 시간:</translation>
+    </message>
+    <message>
+        <source>Share ratio</source>
+        <translation>공유 비율</translation>
+    </message>
+    <message>
+        <source>Share ratio:</source>
+        <translation>공유 비율:</translation>
+    </message>
+    <message>
+        <source>Technical</source>
+        <translation>기술 정보</translation>
+    </message>
+    <message>
+        <source>This month</source>
+        <translation>이번 달</translation>
+    </message>
+    <message>
+        <source>This session</source>
+        <translation>이 세션</translation>
+    </message>
+    <message>
+        <source>Today</source>
+        <translation>오늘</translation>
+    </message>
+    <message>
+        <source>Torrents downloading:</source>
+        <translation>다운로드 중인 토렌트:</translation>
+    </message>
+    <message>
+        <source>Torrents seeding:</source>
+        <translation>시딩 중인 토렌트:</translation>
+    </message>
+    <message>
+        <source>Torrents stopped:</source>
+        <translation>중지된 토렌트:</translation>
+    </message>
+    <message>
+        <source>Torrents with errors:</source>
+        <translation>오류가 있는 토렌트:</translation>
+    </message>
+    <message>
+        <source>Tracking since:</source>
+        <translation>추적 시작일:</translation>
+    </message>
+    <message>
+        <source>WebUI downloads added, this month</source>
+        <translation>WebUI로 추가된 다운로드, 이번 달</translation>
     </message>
 </context>
 <context>
@@ -3862,6 +4301,10 @@ DNS 재결합 공격을 방어하기 위해
         <source>Content Path</source>
         <translation>콘텐츠 경로</translation>
     </message>
+    <message>
+        <source>Remove all tags from selected torrents?</source>
+        <translation>선택한 토렌트에서 모든 태그를 제거하시겠습니까?</translation>
+    </message>
 </context>
 <context>
     <name>UpDownRatioDialog</name>
@@ -3917,6 +4360,14 @@ DNS 재결합 공격을 방어하기 위해
         <source>Action when the limit is reached</source>
         <translation>한계치에 도달했을 때의 조치</translation>
     </message>
+    <message>
+        <source>Match all the limits</source>
+        <translation>모든 제한에 맞추기</translation>
+    </message>
+    <message>
+        <source>Match any limit</source>
+        <translation>임의의 제한에 맞추기</translation>
+    </message>
 </context>
 <context>
     <name>about</name>
@@ -3934,6 +4385,10 @@ DNS 재결합 공격을 방어하기 위해
     <message>
         <source>Remove tracker</source>
         <translation>트래커 제거</translation>
+    </message>
+    <message>
+        <source>This choice is remembered for the next removal.</source>
+        <translation>이 선택은 다음 제거 때도 기억됩니다.</translation>
     </message>
 </context>
 <context>
@@ -4147,6 +4602,34 @@ DNS 재결합 공격을 방어하기 위해
         <source>Select plugins</source>
         <translation>플러그인 선택</translation>
     </message>
+    <message>
+        <source>Category to search in</source>
+        <translation>검색할 카테고리</translation>
+    </message>
+    <message>
+        <source>Close the selected search</source>
+        <translation>선택한 검색 닫기</translation>
+    </message>
+    <message>
+        <source>Empty search pattern</source>
+        <translation>검색 패턴 비우기</translation>
+    </message>
+    <message>
+        <source>Search engines to use</source>
+        <translation>사용할 검색 엔진</translation>
+    </message>
+    <message>
+        <source>Search for torrents...</source>
+        <translation>토렌트 검색...</translation>
+    </message>
+    <message>
+        <source>Searches</source>
+        <translation>검색</translation>
+    </message>
+    <message>
+        <source>Type a search above and press Enter.</source>
+        <translation>위에 검색어를 입력하고 Enter를 누르세요.</translation>
+    </message>
 </context>
 <context>
     <name>PluginSelectDlg</name>
@@ -4185,6 +4668,10 @@ DNS 재결합 공격을 방어하기 위해
     <message>
         <source>Search plugins</source>
         <translation>검색 플러그인</translation>
+    </message>
+    <message>
+        <source>Warning: Be sure to comply with your country&apos;s copyright laws when downloading torrents from any of these search engines.</source>
+        <translation>경고: 검색 엔진에서 토렌트를 다운로드할 때 해당 국가의 저작권법을 준수해야 합니다.</translation>
     </message>
 </context>
 <context>
@@ -4408,6 +4895,30 @@ DNS 재결합 공격을 방어하기 위해
         <source>qBittorrent icon</source>
         <translation>qBittorrent 아이콘</translation>
     </message>
+    <message>
+        <source>Based on:</source>
+        <translation>기반:</translation>
+    </message>
+    <message>
+        <source>Edition version:</source>
+        <translation>에디션 버전:</translation>
+    </message>
+    <message>
+        <source>Kettle Edition is a personal build of qBittorrent that adds user accounts with roles for the WebUI and the desktop app, an activity log, and an installable WebUI with a phone layout. A kettle is a group of hawks soaring together. This is an unofficial build, not affiliated with the qBittorrent project.</source>
+        <translation>Kettle Edition은 WebUI와 데스크톱 앱을 위한 역할 기반 사용자 계정, 활동 로그, 휴대폰 레이아웃을 갖춘 설치 가능한 WebUI를 추가한 qBittorrent의 개인 빌드입니다. Kettle은 함께 선회하는 매 무리를 뜻합니다. 이것은 비공식 빌드이며 qBittorrent 프로젝트와 관련이 없습니다.</translation>
+    </message>
+    <message>
+        <source>Maintainer:</source>
+        <translation>유지 관리자:</translation>
+    </message>
+    <message>
+        <source>This edition</source>
+        <translation>이 에디션</translation>
+    </message>
+    <message>
+        <source>qBittorrent project:</source>
+        <translation>qBittorrent 프로젝트:</translation>
+    </message>
 </context>
 <context>
     <name>OptionDialog</name>
@@ -4509,6 +5020,46 @@ DNS 재결합 공격을 방어하기 위해
     <message>
         <source>Open shared download window</source>
         <translation type="unfinished" />
+    </message>
+    <message>
+        <source>%1 of %2 shown</source>
+        <translation>%2개 중 %1개 표시</translation>
+    </message>
+    <message>
+        <source>%1 of %2 shown (%3 hidden)</source>
+        <translation>%2개 중 %1개 표시 (%3개 숨김)</translation>
+    </message>
+    <message>
+        <source>Close all searches</source>
+        <translation>모든 검색 닫기</translation>
+    </message>
+    <message>
+        <source>Close search</source>
+        <translation>검색 닫기</translation>
+    </message>
+    <message>
+        <source>Filter search results...</source>
+        <translation>필터 검색 결과…</translation>
+    </message>
+    <message>
+        <source>Finished: %1</source>
+        <translation>완료: %1</translation>
+    </message>
+    <message>
+        <source>Refresh search</source>
+        <translation>검색 새로 고침</translation>
+    </message>
+    <message>
+        <source>Search aborted: %1</source>
+        <translation>검색 중단됨: %1</translation>
+    </message>
+    <message>
+        <source>Search returned no results</source>
+        <translation>검색 결과가 없습니다</translation>
+    </message>
+    <message>
+        <source>Searching: %1</source>
+        <translation>검색 중: %1</translation>
     </message>
 </context>
 <context>
@@ -4647,6 +5198,10 @@ DNS 재결합 공격을 방어하기 위해
     <message>
         <source>Blocked opening RSS article URL. Only http:// and https:// links can be opened.</source>
         <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Details</source>
+        <translation>세부 정보</translation>
     </message>
 </context>
 <context>
@@ -4925,6 +5480,10 @@ Supports the formats: S01E01, 1x1, 2017.12.31 and 31.12.2017 (Date formats also 
         <source>Import</source>
         <translation type="unfinished" />
     </message>
+    <message>
+        <source>Don&apos;t create subfolder</source>
+        <translation>하위 폴더 만들지 않음</translation>
+    </message>
 </context>
 <context>
     <name>TrackerFiltersList</name>
@@ -5114,6 +5673,26 @@ Supports the formats: S01E01, 1x1, 2017.12.31 and 31.12.2017 (Date formats also 
         <source>Choose a log level...</source>
         <translation>로그 레벨 선정...</translation>
     </message>
+    <message>
+        <source>Export...</source>
+        <translation>내보내기...</translation>
+    </message>
+    <message>
+        <source>Filter activity</source>
+        <translation>활동 필터</translation>
+    </message>
+    <message>
+        <source>Result:</source>
+        <translation>결과:</translation>
+    </message>
+    <message>
+        <source>User:</source>
+        <translation>사용자:</translation>
+    </message>
+    <message>
+        <source>WebUI Activity</source>
+        <translation>WebUI 활동</translation>
+    </message>
 </context>
 <context>
     <name>TrackersFilterWidget</name>
@@ -5183,6 +5762,14 @@ Supports the formats: S01E01, 1x1, 2017.12.31 and 31.12.2017 (Date formats also 
     <message>
         <source>Torrent share limits</source>
         <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Torrent share limits</source>
+        <translation>토렌트 공유 제한</translation>
+    </message>
+    <message>
+        <source>Your role saves torrents in the default folders.</source>
+        <translation>현재 역할은 토렌트를 기본 폴더에 저장합니다.</translation>
     </message>
 </context>
 <context>
@@ -5282,6 +5869,14 @@ Supports the formats: S01E01, 1x1, 2017.12.31 and 31.12.2017 (Date formats also 
     <message>
         <source>Invalid Username or Password.</source>
         <translation>사용자 이름/암호가 올바르지 않습니다.</translation>
+    </message>
+    <message>
+        <source>A kettle is a group of hawks soaring together.</source>
+        <translation>Kettle은 함께 선회하는 매 무리를 뜻합니다.</translation>
+    </message>
+    <message>
+        <source>Sign in</source>
+        <translation>로그인</translation>
     </message>
 </context>
 <context>
@@ -5515,6 +6110,22 @@ Supports the formats: S01E01, 1x1, 2017.12.31 and 31.12.2017 (Date formats also 
         <source>If checked, filenames starting with a period punctuation mark `.` will not be added to the created torrent.</source>
         <translation type="unfinished" />
     </message>
+    <message>
+        <source>Align to piece boundary for files larger than:</source>
+        <translation>조각 경계로 정렬할 최소 파일 크기:</translation>
+    </message>
+    <message>
+        <source>Optimize alignment</source>
+        <translation>정렬 최적화</translation>
+    </message>
+    <message>
+        <source>Private torrent (Won&apos;t distribute on DHT network)</source>
+        <translation>비공개 토렌트 (DHT 네트워크로 배포 불가)</translation>
+    </message>
+    <message>
+        <source>Start seeding immediately</source>
+        <translation>즉시 시딩 시작</translation>
+    </message>
 </context>
 <context>
     <name>DownloadFromURLDialog</name>
@@ -5625,6 +6236,10 @@ Supports the formats: S01E01, 1x1, 2017.12.31 and 31.12.2017 (Date formats also 
         <source>Failed to set speed limits</source>
         <translation type="unfinished" />
     </message>
+    <message>
+        <source>Speed limits</source>
+        <translation>속도 제한</translation>
+    </message>
 </context>
 <context>
     <name>ListWidget</name>
@@ -5635,6 +6250,10 @@ Supports the formats: S01E01, 1x1, 2017.12.31 and 31.12.2017 (Date formats also 
     <message>
         <source>Resize</source>
         <translation>크기 조정</translation>
+    </message>
+    <message>
+        <source>Reset Auto Width</source>
+        <translation>자동 너비 초기화</translation>
     </message>
 </context>
 <context>
@@ -5650,6 +6269,10 @@ Supports the formats: S01E01, 1x1, 2017.12.31 and 31.12.2017 (Date formats also 
     <message>
         <source>Rotate this API key? The current key will immediately stop working and a new key will be generated.</source>
         <translation>API 키를 변경하시겠습니까? 현재 키는 즉시 작동을 멈추고 새 키가 생성됩니다.</translation>
+    </message>
+    <message>
+        <source>Generate an API key? This key can be used to interact with qBittorrent&apos;s API.</source>
+        <translation>API 키를 생성하시겠습니까? 이 키는 qBittorrent의 API와 상호 작용하는 데 사용할 수 있습니다.</translation>
     </message>
 </context>
 <context>
@@ -5765,6 +6388,54 @@ Supports the formats: S01E01, 1x1, 2017.12.31 and 31.12.2017 (Date formats also 
         <source>Remove torrent</source>
         <translation type="unfinished" />
     </message>
+    <message>
+        <source>Action when the limit is reached:</source>
+        <translation>한계에 도달했을 때의 조치 :</translation>
+    </message>
+    <message>
+        <source>Default (%1)</source>
+        <translation>기본값 (%1)</translation>
+    </message>
+    <message>
+        <source>From category</source>
+        <translation>카테고리에서</translation>
+    </message>
+    <message>
+        <source>From category (%1)</source>
+        <translation>카테고리 (%1)에서</translation>
+    </message>
+    <message>
+        <source>Inactive seeding time:</source>
+        <translation>비활성 시딩 시간 :</translation>
+    </message>
+    <message>
+        <source>Match all the limits</source>
+        <translation>모든 제한에 맞추기</translation>
+    </message>
+    <message>
+        <source>Match any limit</source>
+        <translation>임의의 제한에 맞추기</translation>
+    </message>
+    <message>
+        <source>Mode:</source>
+        <translation>모드:</translation>
+    </message>
+    <message>
+        <source>Ratio:</source>
+        <translation>비율 :</translation>
+    </message>
+    <message>
+        <source>Seeding time:</source>
+        <translation>시딩 시간 :</translation>
+    </message>
+    <message>
+        <source>Set to</source>
+        <translation>다음으로 설정</translation>
+    </message>
+    <message>
+        <source>Unlimited</source>
+        <translation>무제한</translation>
+    </message>
 </context>
 <context>
     <name>TorrentContent</name>
@@ -5775,6 +6446,208 @@ Supports the formats: S01E01, 1x1, 2017.12.31 and 31.12.2017 (Date formats also 
     <message>
         <source>Not available for folders</source>
         <translation type="unfinished" />
+    </message>
+</context>
+<context>
+    <name>UserAccounts</name>
+    <message>
+        <source>(this browser)</source>
+        <translation>(이 브라우저)</translation>
+    </message>
+    <message>
+        <source>A role decides what its users are allowed to do.</source>
+        <translation>역할은 그 사용자가 할 수 있는 일을 정합니다.</translation>
+    </message>
+    <message>
+        <source>Add Role</source>
+        <translation>역할 추가</translation>
+    </message>
+    <message>
+        <source>Add Role...</source>
+        <translation>역할 추가...</translation>
+    </message>
+    <message>
+        <source>Add User</source>
+        <translation>사용자 추가</translation>
+    </message>
+    <message>
+        <source>Add User...</source>
+        <translation>사용자 추가...</translation>
+    </message>
+    <message>
+        <source>Are you sure you want to remove the role &apos;%1&apos;?</source>
+        <translation>역할 &apos;%1&apos;을(를) 제거하시겠습니까?</translation>
+    </message>
+    <message>
+        <source>Are you sure you want to remove the user &apos;%1&apos;?</source>
+        <translation>사용자 &apos;%1&apos;을(를) 제거하시겠습니까?</translation>
+    </message>
+    <message>
+        <source>At least %1 characters</source>
+        <translation>%1자 이상</translation>
+    </message>
+    <message>
+        <source>Browser</source>
+        <translation>브라우저</translation>
+    </message>
+    <message>
+        <source>Browsers and devices where someone is logged in with a user account.</source>
+        <translation>사용자 계정으로 로그인한 브라우저와 기기입니다.</translation>
+    </message>
+    <message>
+        <source>Change Password</source>
+        <translation>비밀번호 변경</translation>
+    </message>
+    <message>
+        <source>Confirm password:</source>
+        <translation>비밀번호 확인:</translation>
+    </message>
+    <message>
+        <source>Created</source>
+        <translation>생성일</translation>
+    </message>
+    <message>
+        <source>Current password:</source>
+        <translation>현재 비밀번호:</translation>
+    </message>
+    <message>
+        <source>Description</source>
+        <translation>설명</translation>
+    </message>
+    <message>
+        <source>Description:</source>
+        <translation>설명:</translation>
+    </message>
+    <message>
+        <source>Disable</source>
+        <translation>비활성화</translation>
+    </message>
+    <message>
+        <source>Disable this account</source>
+        <translation>이 계정 비활성화</translation>
+    </message>
+    <message>
+        <source>Edit Role</source>
+        <translation>역할 편집</translation>
+    </message>
+    <message>
+        <source>Edit User</source>
+        <translation>사용자 편집</translation>
+    </message>
+    <message>
+        <source>Edit...</source>
+        <translation>편집...</translation>
+    </message>
+    <message>
+        <source>Enable</source>
+        <translation>활성화</translation>
+    </message>
+    <message>
+        <source>Enter a role name.</source>
+        <translation>역할 이름을 입력하세요.</translation>
+    </message>
+    <message>
+        <source>Enter a username.</source>
+        <translation>사용자 이름을 입력하세요.</translation>
+    </message>
+    <message>
+        <source>Expires</source>
+        <translation>만료</translation>
+    </message>
+    <message>
+        <source>Gives control over the PC or qBittorrent itself</source>
+        <translation>PC 또는 qBittorrent 자체에 대한 제어 권한을 줍니다</translation>
+    </message>
+    <message>
+        <source>Last active</source>
+        <translation>마지막 활동</translation>
+    </message>
+    <message>
+        <source>Last login</source>
+        <translation>마지막 로그인</translation>
+    </message>
+    <message>
+        <source>Leave empty to keep the current password</source>
+        <translation>현재 비밀번호를 유지하려면 비워 두세요</translation>
+    </message>
+    <message>
+        <source>Log Out</source>
+        <translation>로그아웃</translation>
+    </message>
+    <message>
+        <source>Log Out Everywhere</source>
+        <translation>모든 곳에서 로그아웃</translation>
+    </message>
+    <message>
+        <source>Logged In</source>
+        <translation>로그인됨</translation>
+    </message>
+    <message>
+        <source>Logged in</source>
+        <translation>로그인 시각</translation>
+    </message>
+    <message>
+        <source>New password:</source>
+        <translation>새 비밀번호:</translation>
+    </message>
+    <message>
+        <source>No accounts yet, so everyone still uses the shared WebUI login. Add an Admin account first.</source>
+        <translation>아직 계정이 없어 모두 공유 WebUI 로그인을 사용 중입니다. 먼저 Admin 계정을 추가하세요.</translation>
+    </message>
+    <message>
+        <source>People who can log in to the WebUI with their own username and password.</source>
+        <translation>자신의 사용자 이름과 비밀번호로 WebUI에 로그인할 수 있는 사람들입니다.</translation>
+    </message>
+    <message>
+        <source>Permissions</source>
+        <translation>권한</translation>
+    </message>
+    <message>
+        <source>Role</source>
+        <translation>역할</translation>
+    </message>
+    <message>
+        <source>Role:</source>
+        <translation>역할:</translation>
+    </message>
+    <message>
+        <source>Roles</source>
+        <translation>역할</translation>
+    </message>
+    <message>
+        <source>The password must be at least %1 characters long.</source>
+        <translation>비밀번호는 %1자 이상이어야 합니다.</translation>
+    </message>
+    <message>
+        <source>The passwords don&apos;t match.</source>
+        <translation>비밀번호가 일치하지 않습니다.</translation>
+    </message>
+    <message>
+        <source>Users</source>
+        <translation>사용자</translation>
+    </message>
+    <message>
+        <source>Your password was changed. Other browsers and devices where you were logged in have been logged out.</source>
+        <translation>비밀번호가 변경되었습니다. 로그인해 있던 다른 브라우저와 기기는 로그아웃되었습니다.</translation>
+    </message>
+</context>
+<context>
+    <name>WebUIActivity</name>
+    <message>
+        <source>Action</source>
+        <translation>동작</translation>
+    </message>
+    <message>
+        <source>Result</source>
+        <translation>결과</translation>
+    </message>
+    <message>
+        <source>Role</source>
+        <translation>역할</translation>
+    </message>
+    <message>
+        <source>Time</source>
+        <translation>시간</translation>
     </message>
 </context>
 </TS>

@@ -227,6 +227,85 @@ The piece hash will be checked when it is requested for the first time by a peer
         <source>%1 needed · %2 free</source>
         <translation type="unfinished" />
     </message>
+    <message>
+        <source>Don&apos;t create subfolder</source>
+        <translation>Älä luo alikansiota</translation>
+    </message>
+    <message>
+        <source>Never show again</source>
+        <translation>Älä näytä tätä uudelleen</translation>
+    </message>
+    <message>
+        <source>Select None</source>
+        <translation>Älä valitse mitään</translation>
+    </message>
+    <message>
+        <source>Torrent options</source>
+        <translation>Torrentin asetukset</translation>
+    </message>
+    <message>
+        <source>Your role saves torrents in the default folders.</source>
+        <translation>Roolisi tallentaa torrentit oletuskansioihin.</translation>
+    </message>
+</context>
+<context>
+    <name>AdvancedSettings</name>
+    <message>
+        <source>General</source>
+        <translation>Yleiset</translation>
+    </message>
+    <message>
+        <source>Network</source>
+        <translation>Verkko</translation>
+    </message>
+    <message>
+        <source>Storage</source>
+        <translation>Tallennus</translation>
+    </message>
+    <message>
+        <source>Peers and trackers</source>
+        <translation>Vertaiset ja seurantapalvelimet</translation>
+    </message>
+    <message>
+        <source>Program behavior</source>
+        <translation>Ohjelman toiminta</translation>
+    </message>
+    <message>
+        <source>Display and notifications</source>
+        <translation>Näyttö ja ilmoitukset</translation>
+    </message>
+    <message>
+        <source>Network connection</source>
+        <translation>Verkkoyhteys</translation>
+    </message>
+    <message>
+        <source>Security and privacy</source>
+        <translation>Turvallisuus ja yksityisyys</translation>
+    </message>
+    <message>
+        <source>Connection tuning</source>
+        <translation>Yhteyden hienosäätö</translation>
+    </message>
+    <message>
+        <source>Saving and torrent files</source>
+        <translation>Tallennus ja torrent-tiedostot</translation>
+    </message>
+    <message>
+        <source>Disk and memory</source>
+        <translation>Levy ja muisti</translation>
+    </message>
+    <message>
+        <source>Trackers</source>
+        <translation>Seurantapalvelimet</translation>
+    </message>
+    <message>
+        <source>Peers and seeding</source>
+        <translation>Vertaiset ja jakaminen</translation>
+    </message>
+    <message>
+        <source>DHT and I2P</source>
+        <translation>DHT ja I2P</translation>
+    </message>
 </context>
 <context>
     <name>CategoryFilterModel</name>
@@ -631,6 +710,14 @@ The piece hash will be checked when it is requested for the first time by a peer
         <source>More</source>
         <translation>Lisää</translation>
     </message>
+    <message>
+        <source>Change Password...</source>
+        <translation>Vaihda salasana...</translation>
+    </message>
+    <message>
+        <source>Signed in as</source>
+        <translation>Kirjautunut käyttäjänä</translation>
+    </message>
 </context>
 <context>
     <name>MainWindow</name>
@@ -937,6 +1024,34 @@ The piece hash will be checked when it is requested for the first time by a peer
     <message>
         <source>Resume Session</source>
         <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Global Speed Limits</source>
+        <translation>Yleiset nopeusrajoitukset</translation>
+    </message>
+    <message>
+        <source>Pause Session</source>
+        <translation>Keskeytä istunto</translation>
+    </message>
+    <message>
+        <source>Pause session</source>
+        <translation>Keskeytä istunto</translation>
+    </message>
+    <message>
+        <source>Resume Session</source>
+        <translation>Jatka istuntoa</translation>
+    </message>
+    <message>
+        <source>Resume session</source>
+        <translation>Jatka istuntoa</translation>
+    </message>
+    <message>
+        <source>Your account can&apos;t add torrents.</source>
+        <translation>Tilisi ei voi lisätä torrentteja.</translation>
+    </message>
+    <message>
+        <source>[PAUSED]</source>
+        <translation>[KESKEYTETTY]</translation>
     </message>
 </context>
 <context>
@@ -2535,6 +2650,170 @@ Use ';' to split multiple entries. Can use wildcard '*'.</translation>
         <source>a@x.com;b@y.com,c@z.com - send two emails: the first to just a@x.com, the second to both b@y.com and c@z.com</source>
         <translation type="unfinished" />
     </message>
+    <message>
+        <source>0 means users are logged out after the session timeout.</source>
+        <translation>0 tarkoittaa, että käyttäjät kirjataan ulos istunnon aikakatkaisun jälkeen.</translation>
+    </message>
+    <message>
+        <source>Access</source>
+        <translation>Käyttöoikeus</translation>
+    </message>
+    <message>
+        <source>Allow this login when user accounts exist</source>
+        <translation>Salli tämä kirjautuminen, kun käyttäjätilejä on</translation>
+    </message>
+    <message>
+        <source>Also save search results</source>
+        <translation>Tallenna myös hakutulokset</translation>
+    </message>
+    <message>
+        <source>Also when addition is cancelled</source>
+        <translation>Myös silloin, kun lisäys peruutetaan</translation>
+    </message>
+    <message>
+        <source>Below normal</source>
+        <translation>Alle normaali</translation>
+    </message>
+    <message>
+        <source>Changes to users, roles and logins apply at once.</source>
+        <translation>Käyttäjien, roolien ja kirjautumisten muutokset tulevat voimaan heti.</translation>
+    </message>
+    <message>
+        <source>Don&apos;t create subfolder</source>
+        <translation>Älä luo alikansiota</translation>
+    </message>
+    <message>
+        <source>Example:</source>
+        <translation>Esimerkki:</translation>
+    </message>
+    <message>
+        <source>I2P (experimental)</source>
+        <translation>I2P (kokeellinen)</translation>
+    </message>
+    <message>
+        <source>Keep WebUI activity log for:</source>
+        <translation>Säilytä WebUI-toimintaloki:</translation>
+    </message>
+    <message>
+        <source>Keep unselected files in &quot;.unwanted&quot; folder</source>
+        <translation>Säilytä valitsemattomat tiedostot &quot;.unwanted&quot;-kansiossa</translation>
+    </message>
+    <message>
+        <source>Keep users logged in for:</source>
+        <translation>Pidä käyttäjät kirjautuneina:</translation>
+    </message>
+    <message>
+        <source>Language:</source>
+        <translation>Kieli:</translation>
+    </message>
+    <message>
+        <source>Lock account after consecutive failures:</source>
+        <translation>Lukitse tili peräkkäisten epäonnistumisten jälkeen:</translation>
+    </message>
+    <message>
+        <source>Logins and Activity Log</source>
+        <translation>Kirjautumiset ja toimintaloki</translation>
+    </message>
+    <message>
+        <source>Low</source>
+        <translation>Matala</translation>
+    </message>
+    <message>
+        <source>Medium</source>
+        <translation>Keskitaso</translation>
+    </message>
+    <message>
+        <source>No settings match</source>
+        <translation>Ei vastaavia asetuksia</translation>
+    </message>
+    <message>
+        <source>Process memory priority:</source>
+        <translation>Prosessin muistin prioriteetti:</translation>
+    </message>
+    <message>
+        <source>Save search tabs</source>
+        <translation>Tallenna hakuvälilehdet</translation>
+    </message>
+    <message>
+        <source>Search settings</source>
+        <translation>Etsi asetuksista</translation>
+    </message>
+    <message>
+        <source>Service:</source>
+        <translation>Palvelu:</translation>
+    </message>
+    <message>
+        <source>Show console window</source>
+        <translation>Näytä konsoli-ikkuna</translation>
+    </message>
+    <message>
+        <source>Show the window when adding a torrent</source>
+        <translation>Näytä ikkuna torrentia lisättäessä</translation>
+    </message>
+    <message>
+        <source>Specify reverse proxy IPs (or subnets, e.g. 0.0.0.0/24) in order to use forwarded client address (X-Forwarded-For header). Use &apos;;&apos; to split multiple entries.</source>
+        <translation>Specify reverse proxy IPs (or subnets, e.g. 0.0.0.0/24) in order to use forwarded client address (X-Forwarded-For header). Use &apos;;&apos; to split multiple entries.</translation>
+    </message>
+    <message>
+        <source>Status bar and log</source>
+        <translation>Tilapalkki ja loki</translation>
+    </message>
+    <message>
+        <source>The WebUI activity log can be kept for 1 to 3650 days.</source>
+        <translation>WebUI-toimintalokia voi säilyttää 1–3650 päivää.</translation>
+    </message>
+    <message>
+        <source>The settings below apply with OK or Apply.</source>
+        <translation>Alla olevat asetukset tulevat voimaan OK- tai Käytä-painikkeella.</translation>
+    </message>
+    <message>
+        <source>Tip: Encapsulate parameter with quotation marks to avoid text being cut off at whitespace (e.g., &quot;%N&quot;)</source>
+        <translation>Tip: Encapsulate parameter with quotation marks to avoid text being cut off at whitespace (e.g., &quot;%N&quot;)</translation>
+    </message>
+    <message>
+        <source>Transfer List</source>
+        <translation>Siirtolista</translation>
+    </message>
+    <message>
+        <source>Until the first user account is created, this login always works.</source>
+        <translation>Kunnes ensimmäinen käyttäjätili on luotu, tämä kirjautuminen toimii aina.</translation>
+    </message>
+    <message>
+        <source>User Accounts</source>
+        <translation>Käyttäjätilit</translation>
+    </message>
+    <message>
+        <source>Users can be kept logged in for 0 to 365 days.</source>
+        <translation>Käyttäjät voivat pysyä kirjautuneina 0–365 päivää.</translation>
+    </message>
+    <message>
+        <source>Very low</source>
+        <translation>Erittäin matala</translation>
+    </message>
+    <message>
+        <source>Warning! Data loss possible!</source>
+        <translation>Varoitus! Tietojen menetys on mahdollista!</translation>
+    </message>
+    <message>
+        <source>Whitelist for filtering HTTP Host header values.
+In order to defend against DNS rebinding attack,
+you should put in domain names used by WebUI server.
+
+Use &apos;;&apos; to split multiple entries. Can use wildcard &apos;*&apos;.</source>
+        <translation>Whitelist for filtering HTTP Host header values.
+In order to defend against DNS rebinding attack,
+you should put in domain names used by WebUI server.
+
+Use &apos;;&apos; to split multiple entries. Can use wildcard &apos;*&apos;.</translation>
+    </message>
+    <message>
+        <source>You changed the address, port or HTTPS setting of the WebUI. Saving moves the WebUI, so Options will save, close and reload the page, the same as OK. If the page doesn&apos;t come back, open the WebUI at its new address.\n\nSave anyway?</source>
+        <translation>Muutit WebUI:n osoitetta, porttia tai HTTPS-asetusta. Tallennus siirtää WebUI:n, joten Asetukset tallentaa, sulkeutuu ja lataa sivun uudelleen kuten OK. Jos sivu ei palaa, avaa WebUI uudessa osoitteessa.\n\nTallennetaanko silti?</translation>
+    </message>
+    <message>
+        <source>lock for:</source>
+        <translation>lukitse:</translation>
+    </message>
 </context>
 <context>
     <name>PeerListWidget</name>
@@ -3075,6 +3354,142 @@ Use ';' to split multiple entries. Can use wildcard '*'.</translation>
     <message>
         <source>The time it takes from receiving a request from a peer until we're sending the response back on the socket</source>
         <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Activity</source>
+        <translation>Toiminta</translation>
+    </message>
+    <message>
+        <source>All time</source>
+        <translation>Kaikkiaan</translation>
+    </message>
+    <message>
+        <source>Before tracking began</source>
+        <translation>Ennen seurannan alkua</translation>
+    </message>
+    <message>
+        <source>By month</source>
+        <translation>Kuukausittain</translation>
+    </message>
+    <message>
+        <source>Counts the requests that added a download. Apps without a login, such as Sonarr and Radarr, are shown as (localhost). Downloads added in the desktop window are not counted.</source>
+        <translation>Laskee pyynnöt, jotka lisäsivät latauksen. Ilman kirjautumista toimivat sovellukset, kuten Sonarr ja Radarr, näkyvät muodossa (localhost). Työpöytäikkunassa lisättyjä latauksia ei lasketa.</translation>
+    </message>
+    <message>
+        <source>Current speed:</source>
+        <translation>Nykyinen nopeus:</translation>
+    </message>
+    <message>
+        <source>DHT nodes:</source>
+        <translation>DHT-solmut:</translation>
+    </message>
+    <message>
+        <source>Data discarded this session:</source>
+        <translation>Tässä istunnossa hylätty data:</translation>
+    </message>
+    <message>
+        <source>Disk</source>
+        <translation>Levy</translation>
+    </message>
+    <message>
+        <source>History</source>
+        <translation>Historia</translation>
+    </message>
+    <message>
+        <source>Last 12 months</source>
+        <translation>Viimeiset 12 kuukautta</translation>
+    </message>
+    <message>
+        <source>Last 7 days</source>
+        <translation>Viimeiset 7 päivää</translation>
+    </message>
+    <message>
+        <source>Last month</source>
+        <translation>Viime kuukausi</translation>
+    </message>
+    <message>
+        <source>Month</source>
+        <translation>Kuukausi</translation>
+    </message>
+    <message>
+        <source>Nothing added yet</source>
+        <translation>Mitään ei ole vielä lisätty</translation>
+    </message>
+    <message>
+        <source>Off</source>
+        <translation>Pois</translation>
+    </message>
+    <message>
+        <source>Overview</source>
+        <translation>Yleiskatsaus</translation>
+    </message>
+    <message>
+        <source>Peers waiting on disk reads:</source>
+        <translation>Levyltä lukua odottavat vertaiset:</translation>
+    </message>
+    <message>
+        <source>Peers waiting on disk writes:</source>
+        <translation>Levykirjoitusta odottavat vertaiset:</translation>
+    </message>
+    <message>
+        <source>Period</source>
+        <translation>Ajanjakso</translation>
+    </message>
+    <message>
+        <source>Request latency:</source>
+        <translation>Pyynnön viive:</translation>
+    </message>
+    <message>
+        <source>Running for:</source>
+        <translation>Käynnissä:</translation>
+    </message>
+    <message>
+        <source>Share ratio</source>
+        <translation>Jakosuhde</translation>
+    </message>
+    <message>
+        <source>Share ratio:</source>
+        <translation>Jakosuhde:</translation>
+    </message>
+    <message>
+        <source>Technical</source>
+        <translation>Tekninen</translation>
+    </message>
+    <message>
+        <source>This month</source>
+        <translation>Tämä kuukausi</translation>
+    </message>
+    <message>
+        <source>This session</source>
+        <translation>Tämä istunto</translation>
+    </message>
+    <message>
+        <source>Today</source>
+        <translation>Tänään</translation>
+    </message>
+    <message>
+        <source>Torrents downloading:</source>
+        <translation>Latautuvat torrentit:</translation>
+    </message>
+    <message>
+        <source>Torrents seeding:</source>
+        <translation>Jakavat torrentit:</translation>
+    </message>
+    <message>
+        <source>Torrents stopped:</source>
+        <translation>Pysäytetyt torrentit:</translation>
+    </message>
+    <message>
+        <source>Torrents with errors:</source>
+        <translation>Virheelliset torrentit:</translation>
+    </message>
+    <message>
+        <source>Tracking since:</source>
+        <translation>Seuranta alkoi:</translation>
+    </message>
+    <message>
+        <source>WebUI downloads added, this month</source>
+        <translation>WebUI:n kautta lisätyt lataukset, tässä kuussa</translation>
     </message>
 </context>
 <context>
@@ -3862,6 +4277,10 @@ Use ';' to split multiple entries. Can use wildcard '*'.</translation>
         <source>Content Path</source>
         <translation>Sisällön polku</translation>
     </message>
+    <message>
+        <source>Remove all tags from selected torrents?</source>
+        <translation>Poistetaanko valituista torrenteista kaikki tunnisteet?</translation>
+    </message>
 </context>
 <context>
     <name>UpDownRatioDialog</name>
@@ -3934,6 +4353,10 @@ Use ';' to split multiple entries. Can use wildcard '*'.</translation>
     <message>
         <source>Remove tracker</source>
         <translation>Poista seurantapalvelin</translation>
+    </message>
+    <message>
+        <source>This choice is remembered for the next removal.</source>
+        <translation>Tämä valinta muistetaan seuraavaa poistoa varten.</translation>
     </message>
 </context>
 <context>
@@ -4147,6 +4570,34 @@ Use ';' to split multiple entries. Can use wildcard '*'.</translation>
         <source>Select plugins</source>
         <translation>Valitse liitännäiset</translation>
     </message>
+    <message>
+        <source>Category to search in</source>
+        <translation>Haettava luokka</translation>
+    </message>
+    <message>
+        <source>Close the selected search</source>
+        <translation>Sulje valittu haku</translation>
+    </message>
+    <message>
+        <source>Empty search pattern</source>
+        <translation>Tyhjä hakulauseke</translation>
+    </message>
+    <message>
+        <source>Search engines to use</source>
+        <translation>Käytettävät hakukoneet</translation>
+    </message>
+    <message>
+        <source>Search for torrents...</source>
+        <translation>Hae torrentteja...</translation>
+    </message>
+    <message>
+        <source>Searches</source>
+        <translation>Haut</translation>
+    </message>
+    <message>
+        <source>Type a search above and press Enter.</source>
+        <translation>Kirjoita haku yläpuolelle ja paina Enter.</translation>
+    </message>
 </context>
 <context>
     <name>PluginSelectDlg</name>
@@ -4185,6 +4636,10 @@ Use ';' to split multiple entries. Can use wildcard '*'.</translation>
     <message>
         <source>Search plugins</source>
         <translation>Hakuliitännäiset</translation>
+    </message>
+    <message>
+        <source>Warning: Be sure to comply with your country&apos;s copyright laws when downloading torrents from any of these search engines.</source>
+        <translation>Varoitus: Muista noudattaa maasi tekijänoikeuslakeja, kun lataat torrentteja mistä tahansa näistä hakukoneista.</translation>
     </message>
 </context>
 <context>
@@ -4408,6 +4863,30 @@ Use ';' to split multiple entries. Can use wildcard '*'.</translation>
         <source>qBittorrent icon</source>
         <translation>qBittorrent-kuvake</translation>
     </message>
+    <message>
+        <source>Based on:</source>
+        <translation>Pohjana:</translation>
+    </message>
+    <message>
+        <source>Edition version:</source>
+        <translation>Julkaisun versio:</translation>
+    </message>
+    <message>
+        <source>Kettle Edition is a personal build of qBittorrent that adds user accounts with roles for the WebUI and the desktop app, an activity log, and an installable WebUI with a phone layout. A kettle is a group of hawks soaring together. This is an unofficial build, not affiliated with the qBittorrent project.</source>
+        <translation>Kettle Edition on qBittorrentin henkilökohtainen koonti, joka lisää rooleilla varustetut käyttäjätilit WebUI:lle ja työpöytäsovellukselle, toimintalokin sekä asennettavan WebUI:n puhelinasettelulla. Kettle on yhdessä leijuvien haukkojen parvi. Tämä on epävirallinen koonti, joka ei liity qBittorrent-projektiin.</translation>
+    </message>
+    <message>
+        <source>Maintainer:</source>
+        <translation>Ylläpitäjä:</translation>
+    </message>
+    <message>
+        <source>This edition</source>
+        <translation>Tämä versio</translation>
+    </message>
+    <message>
+        <source>qBittorrent project:</source>
+        <translation>qBittorrent-projekti:</translation>
+    </message>
 </context>
 <context>
     <name>OptionDialog</name>
@@ -4509,6 +4988,46 @@ Use ';' to split multiple entries. Can use wildcard '*'.</translation>
     <message>
         <source>Open shared download window</source>
         <translation type="unfinished" />
+    </message>
+    <message>
+        <source>%1 of %2 shown</source>
+        <translation>Näytetään %1 / %2</translation>
+    </message>
+    <message>
+        <source>%1 of %2 shown (%3 hidden)</source>
+        <translation>Näytetään %1 / %2 (%3 piilotettu)</translation>
+    </message>
+    <message>
+        <source>Close all searches</source>
+        <translation>Sulje kaikki haut</translation>
+    </message>
+    <message>
+        <source>Close search</source>
+        <translation>Sulje haku</translation>
+    </message>
+    <message>
+        <source>Filter search results...</source>
+        <translation>Suodata hakutulokset...</translation>
+    </message>
+    <message>
+        <source>Finished: %1</source>
+        <translation>Valmis: %1</translation>
+    </message>
+    <message>
+        <source>Refresh search</source>
+        <translation>Päivitä haku</translation>
+    </message>
+    <message>
+        <source>Search aborted: %1</source>
+        <translation>Haku keskeytettiin: %1</translation>
+    </message>
+    <message>
+        <source>Search returned no results</source>
+        <translation>Haku ei palauttanut tuloksia</translation>
+    </message>
+    <message>
+        <source>Searching: %1</source>
+        <translation>Haetaan: %1</translation>
     </message>
 </context>
 <context>
@@ -4647,6 +5166,10 @@ Use ';' to split multiple entries. Can use wildcard '*'.</translation>
     <message>
         <source>Blocked opening RSS article URL. Only http:// and https:// links can be opened.</source>
         <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Details</source>
+        <translation>Tiedot</translation>
     </message>
 </context>
 <context>
@@ -4925,6 +5448,10 @@ Nämä muodot ovat tuetut: S01E01, 1x1, 2017.12.31 ja 31.12.2017 (päiväysmuodo
         <source>Import</source>
         <translation type="unfinished" />
     </message>
+    <message>
+        <source>Don&apos;t create subfolder</source>
+        <translation>Älä luo alikansiota</translation>
+    </message>
 </context>
 <context>
     <name>TrackerFiltersList</name>
@@ -5114,6 +5641,26 @@ Nämä muodot ovat tuetut: S01E01, 1x1, 2017.12.31 ja 31.12.2017 (päiväysmuodo
         <source>Choose a log level...</source>
         <translation>Valitse lokitaso...</translation>
     </message>
+    <message>
+        <source>Export...</source>
+        <translation>Vie...</translation>
+    </message>
+    <message>
+        <source>Filter activity</source>
+        <translation>Suodata toimintaa</translation>
+    </message>
+    <message>
+        <source>Result:</source>
+        <translation>Tulos:</translation>
+    </message>
+    <message>
+        <source>User:</source>
+        <translation>Käyttäjä:</translation>
+    </message>
+    <message>
+        <source>WebUI Activity</source>
+        <translation>WebUI-toiminta</translation>
+    </message>
 </context>
 <context>
     <name>TrackersFilterWidget</name>
@@ -5183,6 +5730,14 @@ Nämä muodot ovat tuetut: S01E01, 1x1, 2017.12.31 ja 31.12.2017 (päiväysmuodo
     <message>
         <source>Torrent share limits</source>
         <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Torrent share limits</source>
+        <translation>Torrentin jakorajoitukset</translation>
+    </message>
+    <message>
+        <source>Your role saves torrents in the default folders.</source>
+        <translation>Roolisi tallentaa torrentit oletuskansioihin.</translation>
     </message>
 </context>
 <context>
@@ -5282,6 +5837,14 @@ Nämä muodot ovat tuetut: S01E01, 1x1, 2017.12.31 ja 31.12.2017 (päiväysmuodo
     <message>
         <source>Invalid Username or Password.</source>
         <translation>Virheellinen käyttäjätunnus tai salasana.</translation>
+    </message>
+    <message>
+        <source>A kettle is a group of hawks soaring together.</source>
+        <translation>Kettle on yhdessä leijuvien haukkojen parvi.</translation>
+    </message>
+    <message>
+        <source>Sign in</source>
+        <translation>Kirjaudu sisään</translation>
     </message>
 </context>
 <context>
@@ -5516,6 +6079,18 @@ Nämä muodot ovat tuetut: S01E01, 1x1, 2017.12.31 ja 31.12.2017 (päiväysmuodo
         <source>If checked, filenames starting with a period punctuation mark `.` will not be added to the created torrent.</source>
         <translation type="unfinished" />
     </message>
+    <message>
+        <source>Optimize alignment</source>
+        <translation>Optimoi kohdistus</translation>
+    </message>
+    <message>
+        <source>Private torrent (Won&apos;t distribute on DHT network)</source>
+        <translation>Yksityinen torrent (Ei jaeta DHT-verkossa)</translation>
+    </message>
+    <message>
+        <source>Start seeding immediately</source>
+        <translation>Käynnistä jako välittömästi</translation>
+    </message>
 </context>
 <context>
     <name>DownloadFromURLDialog</name>
@@ -5626,6 +6201,10 @@ Nämä muodot ovat tuetut: S01E01, 1x1, 2017.12.31 ja 31.12.2017 (päiväysmuodo
         <source>Failed to set speed limits</source>
         <translation type="unfinished" />
     </message>
+    <message>
+        <source>Speed limits</source>
+        <translation>Nopeusrajoitukset</translation>
+    </message>
 </context>
 <context>
     <name>ListWidget</name>
@@ -5636,6 +6215,10 @@ Nämä muodot ovat tuetut: S01E01, 1x1, 2017.12.31 ja 31.12.2017 (päiväysmuodo
     <message>
         <source>Resize</source>
         <translation>Muuta kokoa</translation>
+    </message>
+    <message>
+        <source>Reset Auto Width</source>
+        <translation>Nollaa automaattinen leveys</translation>
     </message>
 </context>
 <context>
@@ -5651,6 +6234,10 @@ Nämä muodot ovat tuetut: S01E01, 1x1, 2017.12.31 ja 31.12.2017 (päiväysmuodo
     <message>
         <source>Rotate this API key? The current key will immediately stop working and a new key will be generated.</source>
         <translation>Rotate this API avain? The current avain will immediately stop working and a new avain will be generated.</translation>
+    </message>
+    <message>
+        <source>Generate an API key? This key can be used to interact with qBittorrent&apos;s API.</source>
+        <translation>luo an API avain? This avain can be used to interact with qBittorrent&apos;s API.</translation>
     </message>
 </context>
 <context>
@@ -5766,6 +6353,10 @@ Nämä muodot ovat tuetut: S01E01, 1x1, 2017.12.31 ja 31.12.2017 (päiväysmuodo
         <source>Remove torrent</source>
         <translation type="unfinished" />
     </message>
+    <message>
+        <source>Ratio:</source>
+        <translation>Jakosuhde:</translation>
+    </message>
 </context>
 <context>
     <name>TorrentContent</name>
@@ -5776,6 +6367,208 @@ Nämä muodot ovat tuetut: S01E01, 1x1, 2017.12.31 ja 31.12.2017 (päiväysmuodo
     <message>
         <source>Not available for folders</source>
         <translation type="unfinished" />
+    </message>
+</context>
+<context>
+    <name>UserAccounts</name>
+    <message>
+        <source>(this browser)</source>
+        <translation>(tämä selain)</translation>
+    </message>
+    <message>
+        <source>A role decides what its users are allowed to do.</source>
+        <translation>Rooli määrää, mitä sen käyttäjät saavat tehdä.</translation>
+    </message>
+    <message>
+        <source>Add Role</source>
+        <translation>Lisää rooli</translation>
+    </message>
+    <message>
+        <source>Add Role...</source>
+        <translation>Lisää rooli...</translation>
+    </message>
+    <message>
+        <source>Add User</source>
+        <translation>Lisää käyttäjä</translation>
+    </message>
+    <message>
+        <source>Add User...</source>
+        <translation>Lisää käyttäjä...</translation>
+    </message>
+    <message>
+        <source>Are you sure you want to remove the role &apos;%1&apos;?</source>
+        <translation>Haluatko varmasti poistaa roolin ”%1”?</translation>
+    </message>
+    <message>
+        <source>Are you sure you want to remove the user &apos;%1&apos;?</source>
+        <translation>Haluatko varmasti poistaa käyttäjän ”%1”?</translation>
+    </message>
+    <message>
+        <source>At least %1 characters</source>
+        <translation>Vähintään %1 merkkiä</translation>
+    </message>
+    <message>
+        <source>Browser</source>
+        <translation>Selain</translation>
+    </message>
+    <message>
+        <source>Browsers and devices where someone is logged in with a user account.</source>
+        <translation>Selaimet ja laitteet, joissa joku on kirjautunut käyttäjätilillä.</translation>
+    </message>
+    <message>
+        <source>Change Password</source>
+        <translation>Vaihda salasana</translation>
+    </message>
+    <message>
+        <source>Confirm password:</source>
+        <translation>Vahvista salasana:</translation>
+    </message>
+    <message>
+        <source>Created</source>
+        <translation>Luotu</translation>
+    </message>
+    <message>
+        <source>Current password:</source>
+        <translation>Nykyinen salasana:</translation>
+    </message>
+    <message>
+        <source>Description</source>
+        <translation>Kuvaus</translation>
+    </message>
+    <message>
+        <source>Description:</source>
+        <translation>Kuvaus:</translation>
+    </message>
+    <message>
+        <source>Disable</source>
+        <translation>Poista käytöstä</translation>
+    </message>
+    <message>
+        <source>Disable this account</source>
+        <translation>Poista tämä tili käytöstä</translation>
+    </message>
+    <message>
+        <source>Edit Role</source>
+        <translation>Muokkaa roolia</translation>
+    </message>
+    <message>
+        <source>Edit User</source>
+        <translation>Muokkaa käyttäjää</translation>
+    </message>
+    <message>
+        <source>Edit...</source>
+        <translation>Muokkaa...</translation>
+    </message>
+    <message>
+        <source>Enable</source>
+        <translation>Ota käyttöön</translation>
+    </message>
+    <message>
+        <source>Enter a role name.</source>
+        <translation>Anna roolin nimi.</translation>
+    </message>
+    <message>
+        <source>Enter a username.</source>
+        <translation>Anna käyttäjänimi.</translation>
+    </message>
+    <message>
+        <source>Expires</source>
+        <translation>Vanhenee</translation>
+    </message>
+    <message>
+        <source>Gives control over the PC or qBittorrent itself</source>
+        <translation>Antaa hallinnan tietokoneeseen tai itse qBittorrentiin</translation>
+    </message>
+    <message>
+        <source>Last active</source>
+        <translation>Viimeksi aktiivinen</translation>
+    </message>
+    <message>
+        <source>Last login</source>
+        <translation>Viimeisin kirjautuminen</translation>
+    </message>
+    <message>
+        <source>Leave empty to keep the current password</source>
+        <translation>Jätä tyhjäksi pitääksesi nykyisen salasanan</translation>
+    </message>
+    <message>
+        <source>Log Out</source>
+        <translation>Kirjaa ulos</translation>
+    </message>
+    <message>
+        <source>Log Out Everywhere</source>
+        <translation>Kirjaa ulos kaikkialta</translation>
+    </message>
+    <message>
+        <source>Logged In</source>
+        <translation>Kirjautuneet</translation>
+    </message>
+    <message>
+        <source>Logged in</source>
+        <translation>Kirjautui</translation>
+    </message>
+    <message>
+        <source>New password:</source>
+        <translation>Uusi salasana:</translation>
+    </message>
+    <message>
+        <source>No accounts yet, so everyone still uses the shared WebUI login. Add an Admin account first.</source>
+        <translation>Tilejä ei ole vielä, joten kaikki käyttävät yhä yhteistä WebUI-kirjautumista. Lisää ensin ylläpitäjän tili.</translation>
+    </message>
+    <message>
+        <source>People who can log in to the WebUI with their own username and password.</source>
+        <translation>Henkilöt, jotka voivat kirjautua WebUI:hin omalla käyttäjänimellään ja salasanallaan.</translation>
+    </message>
+    <message>
+        <source>Permissions</source>
+        <translation>Oikeudet</translation>
+    </message>
+    <message>
+        <source>Role</source>
+        <translation>Rooli</translation>
+    </message>
+    <message>
+        <source>Role:</source>
+        <translation>Rooli:</translation>
+    </message>
+    <message>
+        <source>Roles</source>
+        <translation>Roolit</translation>
+    </message>
+    <message>
+        <source>The password must be at least %1 characters long.</source>
+        <translation>Salasanan on oltava vähintään %1 merkkiä pitkä.</translation>
+    </message>
+    <message>
+        <source>The passwords don&apos;t match.</source>
+        <translation>Salasanat eivät täsmää.</translation>
+    </message>
+    <message>
+        <source>Users</source>
+        <translation>Käyttäjät</translation>
+    </message>
+    <message>
+        <source>Your password was changed. Other browsers and devices where you were logged in have been logged out.</source>
+        <translation>Salasanasi vaihdettiin. Muut selaimet ja laitteet, joissa olit kirjautuneena, kirjattiin ulos.</translation>
+    </message>
+</context>
+<context>
+    <name>WebUIActivity</name>
+    <message>
+        <source>Action</source>
+        <translation>Toiminto</translation>
+    </message>
+    <message>
+        <source>Result</source>
+        <translation>Tulos</translation>
+    </message>
+    <message>
+        <source>Role</source>
+        <translation>Rooli</translation>
+    </message>
+    <message>
+        <source>Time</source>
+        <translation>Aika</translation>
     </message>
 </context>
 </TS>

@@ -227,6 +227,85 @@ The piece hash will be checked when it is requested for the first time by a peer
         <source>%1 needed · %2 free</source>
         <translation type="unfinished" />
     </message>
+    <message>
+        <source>Don&apos;t create subfolder</source>
+        <translation>Geen submap aanmaken</translation>
+    </message>
+    <message>
+        <source>Never show again</source>
+        <translation>Nooit meer weergeven</translation>
+    </message>
+    <message>
+        <source>Select None</source>
+        <translation>Niets selecteren</translation>
+    </message>
+    <message>
+        <source>Torrent options</source>
+        <translation>Torrent-opties</translation>
+    </message>
+    <message>
+        <source>Your role saves torrents in the default folders.</source>
+        <translation>Uw rol slaat torrents op in de standaardmappen.</translation>
+    </message>
+</context>
+<context>
+    <name>AdvancedSettings</name>
+    <message>
+        <source>General</source>
+        <translation>Algemeen</translation>
+    </message>
+    <message>
+        <source>Network</source>
+        <translation>Netwerk</translation>
+    </message>
+    <message>
+        <source>Storage</source>
+        <translation>Opslag</translation>
+    </message>
+    <message>
+        <source>Peers and trackers</source>
+        <translation>Peers en trackers</translation>
+    </message>
+    <message>
+        <source>Program behavior</source>
+        <translation>Programmagedrag</translation>
+    </message>
+    <message>
+        <source>Display and notifications</source>
+        <translation>Weergave en meldingen</translation>
+    </message>
+    <message>
+        <source>Network connection</source>
+        <translation>Netwerkverbinding</translation>
+    </message>
+    <message>
+        <source>Security and privacy</source>
+        <translation>Beveiliging en privacy</translation>
+    </message>
+    <message>
+        <source>Connection tuning</source>
+        <translation>Verbinding afstellen</translation>
+    </message>
+    <message>
+        <source>Saving and torrent files</source>
+        <translation>Opslaan en torrentbestanden</translation>
+    </message>
+    <message>
+        <source>Disk and memory</source>
+        <translation>Schijf en geheugen</translation>
+    </message>
+    <message>
+        <source>Trackers</source>
+        <translation>Trackers</translation>
+    </message>
+    <message>
+        <source>Peers and seeding</source>
+        <translation>Peers en seeden</translation>
+    </message>
+    <message>
+        <source>DHT and I2P</source>
+        <translation>DHT en I2P</translation>
+    </message>
 </context>
 <context>
     <name>CategoryFilterModel</name>
@@ -631,6 +710,14 @@ The piece hash will be checked when it is requested for the first time by a peer
         <source>More</source>
         <translation>Meer</translation>
     </message>
+    <message>
+        <source>Change Password...</source>
+        <translation>Wachtwoord wijzigen...</translation>
+    </message>
+    <message>
+        <source>Signed in as</source>
+        <translation>Aangemeld als</translation>
+    </message>
 </context>
 <context>
     <name>MainWindow</name>
@@ -937,6 +1024,34 @@ The piece hash will be checked when it is requested for the first time by a peer
     <message>
         <source>Resume Session</source>
         <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Global Speed Limits</source>
+        <translation>Algemene snelheidsbegrenzing</translation>
+    </message>
+    <message>
+        <source>Pause Session</source>
+        <translation>Sessie onderbreken</translation>
+    </message>
+    <message>
+        <source>Pause session</source>
+        <translation>Sessie onderbreken</translation>
+    </message>
+    <message>
+        <source>Resume Session</source>
+        <translation>Sessie hervatten</translation>
+    </message>
+    <message>
+        <source>Resume session</source>
+        <translation>Sessie hervatten</translation>
+    </message>
+    <message>
+        <source>Your account can&apos;t add torrents.</source>
+        <translation>Uw account kan geen torrents toevoegen.</translation>
+    </message>
+    <message>
+        <source>[PAUSED]</source>
+        <translation>[ONDERBROKEN]</translation>
     </message>
 </context>
 <context>
@@ -2535,6 +2650,190 @@ Gebruik ';' om meerdere items te splitsen. Jokerteken '*' kan gebruikt worden.</
         <source>a@x.com;b@y.com,c@z.com - send two emails: the first to just a@x.com, the second to both b@y.com and c@z.com</source>
         <translation type="unfinished" />
     </message>
+    <message>
+        <source>0 means users are logged out after the session timeout.</source>
+        <translation>0 betekent dat gebruikers worden afgemeld na de sessietime-out.</translation>
+    </message>
+    <message>
+        <source>Access</source>
+        <translation>Toegang</translation>
+    </message>
+    <message>
+        <source>All the above</source>
+        <translation>Alle bovenstaande</translation>
+    </message>
+    <message>
+        <source>Allow this login when user accounts exist</source>
+        <translation>Deze aanmelding toestaan als er gebruikersaccounts zijn</translation>
+    </message>
+    <message>
+        <source>Also save search results</source>
+        <translation>Ook zoekresultaten opslaan</translation>
+    </message>
+    <message>
+        <source>Also when addition is cancelled</source>
+        <translation>Ook wanneer toevoeging geannuleerd is</translation>
+    </message>
+    <message>
+        <source>Any of the above</source>
+        <translation>Een van bovenstaande</translation>
+    </message>
+    <message>
+        <source>Below normal</source>
+        <translation>Lager dan normaal</translation>
+    </message>
+    <message>
+        <source>Changes to users, roles and logins apply at once.</source>
+        <translation>Wijzigingen aan gebruikers, rollen en aanmeldingen gelden direct.</translation>
+    </message>
+    <message>
+        <source>Don&apos;t create subfolder</source>
+        <translation>Geen submap aanmaken</translation>
+    </message>
+    <message>
+        <source>Example:</source>
+        <translation>Voorbeeld:</translation>
+    </message>
+    <message>
+        <source>I2P (experimental)</source>
+        <translation>I2P (experimenteel)</translation>
+    </message>
+    <message>
+        <source>Keep WebUI activity log for:</source>
+        <translation>WebUI-activiteitenlogboek bewaren gedurende:</translation>
+    </message>
+    <message>
+        <source>Keep unselected files in &quot;.unwanted&quot; folder</source>
+        <translation>Niet-geselecteerde bestanden in &quot;.unwanted&quot;-map houden</translation>
+    </message>
+    <message>
+        <source>Keep users logged in for:</source>
+        <translation>Gebruikers aangemeld houden gedurende:</translation>
+    </message>
+    <message>
+        <source>Language:</source>
+        <translation>Taal:</translation>
+    </message>
+    <message>
+        <source>Lock account after consecutive failures:</source>
+        <translation>Account vergrendelen na opeenvolgende mislukkingen:</translation>
+    </message>
+    <message>
+        <source>Logins and Activity Log</source>
+        <translation>Aanmeldingen en activiteitenlogboek</translation>
+    </message>
+    <message>
+        <source>Low</source>
+        <translation>Laag</translation>
+    </message>
+    <message>
+        <source>Maximum active checking torrents:</source>
+        <translation>Maximaal aantal actieve controlerende torrents:</translation>
+    </message>
+    <message>
+        <source>Medium</source>
+        <translation>Gemiddeld</translation>
+    </message>
+    <message>
+        <source>No settings match</source>
+        <translation>Geen instellingen gevonden</translation>
+    </message>
+    <message>
+        <source>Process memory priority:</source>
+        <translation>Geheugenprioriteit van proces:</translation>
+    </message>
+    <message>
+        <source>Save search tabs</source>
+        <translation>Zoektabbladen opslaan</translation>
+    </message>
+    <message>
+        <source>Search UI</source>
+        <translation>UI doorzoeken</translation>
+    </message>
+    <message>
+        <source>Search settings</source>
+        <translation>Instellingen zoeken</translation>
+    </message>
+    <message>
+        <source>Service:</source>
+        <translation>Dienst:</translation>
+    </message>
+    <message>
+        <source>Show console window</source>
+        <translation>Consolevenster weergeven</translation>
+    </message>
+    <message>
+        <source>Show the window when adding a torrent</source>
+        <translation>Venster tonen bij het toevoegen van een torrent</translation>
+    </message>
+    <message>
+        <source>Specify reverse proxy IPs (or subnets, e.g. 0.0.0.0/24) in order to use forwarded client address (X-Forwarded-For header). Use &apos;;&apos; to split multiple entries.</source>
+        <translation>Geef reverse proxy IP&apos;s (of subnets, bijvoorbeeld 0.0.0.0/24) op om forwarded client adres te gebruiken (X-Forwarded-For header). Gebruik &apos;;&apos; om meerdere items te splitsen.</translation>
+    </message>
+    <message>
+        <source>Status bar and log</source>
+        <translation>Statusbalk en logboek</translation>
+    </message>
+    <message>
+        <source>The WebUI activity log can be kept for 1 to 3650 days.</source>
+        <translation>Het WebUI-activiteitenlogboek kan 1 tot 3650 dagen worden bewaard.</translation>
+    </message>
+    <message>
+        <source>The settings below apply with OK or Apply.</source>
+        <translation>De instellingen hieronder gelden met OK of Toepassen.</translation>
+    </message>
+    <message>
+        <source>Tip: Encapsulate parameter with quotation marks to avoid text being cut off at whitespace (e.g., &quot;%N&quot;)</source>
+        <translation>Tip: omring de parameter met aanhalingstekens om te vermijden dat tekst afgekapt wordt bij witruimte (bijvoorbeeld: &quot;%N&quot;)</translation>
+    </message>
+    <message>
+        <source>Transfer List</source>
+        <translation>Overdrachtlijst</translation>
+    </message>
+    <message>
+        <source>Until the first user account is created, this login always works.</source>
+        <translation>Tot het eerste gebruikersaccount is aangemaakt, werkt deze aanmelding altijd.</translation>
+    </message>
+    <message>
+        <source>User Accounts</source>
+        <translation>Gebruikersaccounts</translation>
+    </message>
+    <message>
+        <source>Users can be kept logged in for 0 to 365 days.</source>
+        <translation>Gebruikers kunnen 0 tot 365 dagen aangemeld blijven.</translation>
+    </message>
+    <message>
+        <source>Very low</source>
+        <translation>Zeer laag</translation>
+    </message>
+    <message>
+        <source>Warning! Data loss possible!</source>
+        <translation>Waarschuwing! Gegevensverlies mogelijk!</translation>
+    </message>
+    <message>
+        <source>When Default Save/Incomplete Path changed:</source>
+        <translation>Wanneer standaard opslagpad of onvolledig pad wijzigt:</translation>
+    </message>
+    <message>
+        <source>Whitelist for filtering HTTP Host header values.
+In order to defend against DNS rebinding attack,
+you should put in domain names used by WebUI server.
+
+Use &apos;;&apos; to split multiple entries. Can use wildcard &apos;*&apos;.</source>
+        <translation>Whitelist voor filteren van HTTP-host header-waarden.
+Om te verdedigen tegen een DNS-rebinding-aanval
+zet u er domeinnamen in die gebruikt worden door de WebUI-server.
+
+Gebruik &apos;;&apos; om meerdere items te splitsen. Jokerteken &apos;*&apos; kan gebruikt worden.</translation>
+    </message>
+    <message>
+        <source>You changed the address, port or HTTPS setting of the WebUI. Saving moves the WebUI, so Options will save, close and reload the page, the same as OK. If the page doesn&apos;t come back, open the WebUI at its new address.\n\nSave anyway?</source>
+        <translation>U hebt het adres, de poort of de HTTPS-instelling van de WebUI gewijzigd. Opslaan verplaatst de WebUI, dus Opties slaat op, sluit en laadt de pagina opnieuw, net als OK. Komt de pagina niet terug, open de WebUI dan op het nieuwe adres.\n\nToch opslaan?</translation>
+    </message>
+    <message>
+        <source>lock for:</source>
+        <translation>vergrendelen gedurende:</translation>
+    </message>
 </context>
 <context>
     <name>PeerListWidget</name>
@@ -2963,6 +3262,10 @@ Gebruik ';' om meerdere items te splitsen. Jokerteken '*' kan gebruikt worden.</
         <source>Copy download URL</source>
         <translation type="unfinished" />
     </message>
+    <message>
+        <source>Copy path</source>
+        <translation>Pad kopiëren</translation>
+    </message>
 </context>
 <context>
     <name>ScanFoldersModel</name>
@@ -3075,6 +3378,142 @@ Gebruik ';' om meerdere items te splitsen. Jokerteken '*' kan gebruikt worden.</
     <message>
         <source>The time it takes from receiving a request from a peer until we're sending the response back on the socket</source>
         <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Activity</source>
+        <translation>Activiteit</translation>
+    </message>
+    <message>
+        <source>All time</source>
+        <translation>Altijd</translation>
+    </message>
+    <message>
+        <source>Before tracking began</source>
+        <translation>Voordat het bijhouden begon</translation>
+    </message>
+    <message>
+        <source>By month</source>
+        <translation>Per maand</translation>
+    </message>
+    <message>
+        <source>Counts the requests that added a download. Apps without a login, such as Sonarr and Radarr, are shown as (localhost). Downloads added in the desktop window are not counted.</source>
+        <translation>Telt de verzoeken die een download hebben toegevoegd. Apps zonder aanmelding, zoals Sonarr en Radarr, worden getoond als (localhost). Downloads die in het desktopvenster zijn toegevoegd, worden niet geteld.</translation>
+    </message>
+    <message>
+        <source>Current speed:</source>
+        <translation>Huidige snelheid:</translation>
+    </message>
+    <message>
+        <source>DHT nodes:</source>
+        <translation>DHT-knooppunten:</translation>
+    </message>
+    <message>
+        <source>Data discarded this session:</source>
+        <translation>Weggegooide gegevens deze sessie:</translation>
+    </message>
+    <message>
+        <source>Disk</source>
+        <translation>Schijf</translation>
+    </message>
+    <message>
+        <source>History</source>
+        <translation>Geschiedenis</translation>
+    </message>
+    <message>
+        <source>Last 12 months</source>
+        <translation>Laatste 12 maanden</translation>
+    </message>
+    <message>
+        <source>Last 7 days</source>
+        <translation>Laatste 7 dagen</translation>
+    </message>
+    <message>
+        <source>Last month</source>
+        <translation>Vorige maand</translation>
+    </message>
+    <message>
+        <source>Month</source>
+        <translation>Maand</translation>
+    </message>
+    <message>
+        <source>Nothing added yet</source>
+        <translation>Nog niets toegevoegd</translation>
+    </message>
+    <message>
+        <source>Off</source>
+        <translation>Uit</translation>
+    </message>
+    <message>
+        <source>Overview</source>
+        <translation>Overzicht</translation>
+    </message>
+    <message>
+        <source>Peers waiting on disk reads:</source>
+        <translation>Peers die wachten op lezen van schijf:</translation>
+    </message>
+    <message>
+        <source>Peers waiting on disk writes:</source>
+        <translation>Peers die wachten op schrijven naar schijf:</translation>
+    </message>
+    <message>
+        <source>Period</source>
+        <translation>Periode</translation>
+    </message>
+    <message>
+        <source>Request latency:</source>
+        <translation>Vertraging van verzoek:</translation>
+    </message>
+    <message>
+        <source>Running for:</source>
+        <translation>Actief gedurende:</translation>
+    </message>
+    <message>
+        <source>Share ratio</source>
+        <translation>Deelverhouding</translation>
+    </message>
+    <message>
+        <source>Share ratio:</source>
+        <translation>Deelverhouding:</translation>
+    </message>
+    <message>
+        <source>Technical</source>
+        <translation>Technisch</translation>
+    </message>
+    <message>
+        <source>This month</source>
+        <translation>Deze maand</translation>
+    </message>
+    <message>
+        <source>This session</source>
+        <translation>Deze sessie</translation>
+    </message>
+    <message>
+        <source>Today</source>
+        <translation>Vandaag</translation>
+    </message>
+    <message>
+        <source>Torrents downloading:</source>
+        <translation>Torrents die downloaden:</translation>
+    </message>
+    <message>
+        <source>Torrents seeding:</source>
+        <translation>Torrents die seeden:</translation>
+    </message>
+    <message>
+        <source>Torrents stopped:</source>
+        <translation>Gestopte torrents:</translation>
+    </message>
+    <message>
+        <source>Torrents with errors:</source>
+        <translation>Torrents met fouten:</translation>
+    </message>
+    <message>
+        <source>Tracking since:</source>
+        <translation>Bijgehouden sinds:</translation>
+    </message>
+    <message>
+        <source>WebUI downloads added, this month</source>
+        <translation>Via de WebUI toegevoegde downloads, deze maand</translation>
     </message>
 </context>
 <context>
@@ -3862,6 +4301,10 @@ Gebruik ';' om meerdere items te splitsen. Jokerteken '*' kan gebruikt worden.</
         <source>Content Path</source>
         <translation>Inhoud-pad</translation>
     </message>
+    <message>
+        <source>Remove all tags from selected torrents?</source>
+        <translation>Alle labels van geselecteerde torrents verwijderen?</translation>
+    </message>
 </context>
 <context>
     <name>UpDownRatioDialog</name>
@@ -3917,6 +4360,14 @@ Gebruik ';' om meerdere items te splitsen. Jokerteken '*' kan gebruikt worden.</
         <source>Action when the limit is reached</source>
         <translation>Actie wanneer de limiet bereikt is</translation>
     </message>
+    <message>
+        <source>Match all the limits</source>
+        <translation>Overeenkomen met alle begrenzingen</translation>
+    </message>
+    <message>
+        <source>Match any limit</source>
+        <translation>Overeenkomen met om het even welke begrenzing</translation>
+    </message>
 </context>
 <context>
     <name>about</name>
@@ -3934,6 +4385,10 @@ Gebruik ';' om meerdere items te splitsen. Jokerteken '*' kan gebruikt worden.</
     <message>
         <source>Remove tracker</source>
         <translation>Tracker verwijderen</translation>
+    </message>
+    <message>
+        <source>This choice is remembered for the next removal.</source>
+        <translation>Deze keuze wordt onthouden voor de volgende verwijdering.</translation>
     </message>
 </context>
 <context>
@@ -4147,6 +4602,34 @@ Gebruik ';' om meerdere items te splitsen. Jokerteken '*' kan gebruikt worden.</
         <source>Select plugins</source>
         <translation>Plugins selecteren</translation>
     </message>
+    <message>
+        <source>Category to search in</source>
+        <translation>Categorie om in te zoeken</translation>
+    </message>
+    <message>
+        <source>Close the selected search</source>
+        <translation>Geselecteerde zoekopdracht sluiten</translation>
+    </message>
+    <message>
+        <source>Empty search pattern</source>
+        <translation>Leeg zoekpatroon</translation>
+    </message>
+    <message>
+        <source>Search engines to use</source>
+        <translation>Te gebruiken zoekmachines</translation>
+    </message>
+    <message>
+        <source>Search for torrents...</source>
+        <translation>Zoeken naar torrents...</translation>
+    </message>
+    <message>
+        <source>Searches</source>
+        <translation>Zoekopdrachten</translation>
+    </message>
+    <message>
+        <source>Type a search above and press Enter.</source>
+        <translation>Typ hierboven een zoekopdracht en druk op Enter.</translation>
+    </message>
 </context>
 <context>
     <name>PluginSelectDlg</name>
@@ -4185,6 +4668,10 @@ Gebruik ';' om meerdere items te splitsen. Jokerteken '*' kan gebruikt worden.</
     <message>
         <source>Search plugins</source>
         <translation>Zoekplugins</translation>
+    </message>
+    <message>
+        <source>Warning: Be sure to comply with your country&apos;s copyright laws when downloading torrents from any of these search engines.</source>
+        <translation>Waarschuwing: verzeker u ervan dat u voldoet aan de wetten op auteursrecht in uw land wanneer u torrents downloadt via een van deze zoekmachines.</translation>
     </message>
 </context>
 <context>
@@ -4408,6 +4895,30 @@ Gebruik ';' om meerdere items te splitsen. Jokerteken '*' kan gebruikt worden.</
         <source>qBittorrent icon</source>
         <translation>qBittorrent-pictogram</translation>
     </message>
+    <message>
+        <source>Based on:</source>
+        <translation>Gebaseerd op:</translation>
+    </message>
+    <message>
+        <source>Edition version:</source>
+        <translation>Versie van de editie:</translation>
+    </message>
+    <message>
+        <source>Kettle Edition is a personal build of qBittorrent that adds user accounts with roles for the WebUI and the desktop app, an activity log, and an installable WebUI with a phone layout. A kettle is a group of hawks soaring together. This is an unofficial build, not affiliated with the qBittorrent project.</source>
+        <translation>Kettle Edition is een persoonlijke build van qBittorrent die gebruikersaccounts met rollen toevoegt voor de WebUI en de desktop-app, een activiteitenlogboek en een installeerbare WebUI met telefoonindeling. Een kettle is een groep haviken die samen zweven. Dit is een onofficiële build, niet verbonden aan het qBittorrent-project.</translation>
+    </message>
+    <message>
+        <source>Maintainer:</source>
+        <translation>Beheerder:</translation>
+    </message>
+    <message>
+        <source>This edition</source>
+        <translation>Deze editie</translation>
+    </message>
+    <message>
+        <source>qBittorrent project:</source>
+        <translation>qBittorrent-project:</translation>
+    </message>
 </context>
 <context>
     <name>OptionDialog</name>
@@ -4509,6 +5020,46 @@ Gebruik ';' om meerdere items te splitsen. Jokerteken '*' kan gebruikt worden.</
     <message>
         <source>Open shared download window</source>
         <translation type="unfinished" />
+    </message>
+    <message>
+        <source>%1 of %2 shown</source>
+        <translation>%1 van %2 getoond</translation>
+    </message>
+    <message>
+        <source>%1 of %2 shown (%3 hidden)</source>
+        <translation>%1 van %2 getoond (%3 verborgen)</translation>
+    </message>
+    <message>
+        <source>Close all searches</source>
+        <translation>Alle zoekopdrachten sluiten</translation>
+    </message>
+    <message>
+        <source>Close search</source>
+        <translation>Zoekopdracht sluiten</translation>
+    </message>
+    <message>
+        <source>Filter search results...</source>
+        <translation>Zoekresultaten filteren...</translation>
+    </message>
+    <message>
+        <source>Finished: %1</source>
+        <translation>Voltooid: %1</translation>
+    </message>
+    <message>
+        <source>Refresh search</source>
+        <translation>Zoekopdracht vernieuwen</translation>
+    </message>
+    <message>
+        <source>Search aborted: %1</source>
+        <translation>Zoekopdracht afgebroken: %1</translation>
+    </message>
+    <message>
+        <source>Search returned no results</source>
+        <translation>Zoeken gaf geen resultaten</translation>
+    </message>
+    <message>
+        <source>Searching: %1</source>
+        <translation>Zoeken: %1</translation>
     </message>
 </context>
 <context>
@@ -4647,6 +5198,10 @@ Gebruik ';' om meerdere items te splitsen. Jokerteken '*' kan gebruikt worden.</
     <message>
         <source>Blocked opening RSS article URL. Only http:// and https:// links can be opened.</source>
         <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Details</source>
+        <translation>Details</translation>
     </message>
 </context>
 <context>
@@ -4925,6 +5480,10 @@ Ondersteunt de formaten:  S01E01, 1x1, 2017.12.31 en 31.12.2017 (datumformaten o
         <source>Import</source>
         <translation type="unfinished" />
     </message>
+    <message>
+        <source>Don&apos;t create subfolder</source>
+        <translation>Geen submap aanmaken</translation>
+    </message>
 </context>
 <context>
     <name>TrackerFiltersList</name>
@@ -5114,6 +5673,26 @@ Ondersteunt de formaten:  S01E01, 1x1, 2017.12.31 en 31.12.2017 (datumformaten o
         <source>Choose a log level...</source>
         <translation>Logniveau kiezen...</translation>
     </message>
+    <message>
+        <source>Export...</source>
+        <translation>Exporteren...</translation>
+    </message>
+    <message>
+        <source>Filter activity</source>
+        <translation>Activiteit filteren</translation>
+    </message>
+    <message>
+        <source>Result:</source>
+        <translation>Resultaat:</translation>
+    </message>
+    <message>
+        <source>User:</source>
+        <translation>Gebruiker:</translation>
+    </message>
+    <message>
+        <source>WebUI Activity</source>
+        <translation>WebUI-activiteit</translation>
+    </message>
 </context>
 <context>
     <name>TrackersFilterWidget</name>
@@ -5183,6 +5762,14 @@ Ondersteunt de formaten:  S01E01, 1x1, 2017.12.31 en 31.12.2017 (datumformaten o
     <message>
         <source>Torrent share limits</source>
         <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Torrent share limits</source>
+        <translation>Torrent-deelbegrenzing</translation>
+    </message>
+    <message>
+        <source>Your role saves torrents in the default folders.</source>
+        <translation>Uw rol slaat torrents op in de standaardmappen.</translation>
     </message>
 </context>
 <context>
@@ -5282,6 +5869,14 @@ Ondersteunt de formaten:  S01E01, 1x1, 2017.12.31 en 31.12.2017 (datumformaten o
     <message>
         <source>Invalid Username or Password.</source>
         <translation>Ongeldige gebruikersnaam of wachtwoord.</translation>
+    </message>
+    <message>
+        <source>A kettle is a group of hawks soaring together.</source>
+        <translation>Een kettle is een groep haviken die samen zweven.</translation>
+    </message>
+    <message>
+        <source>Sign in</source>
+        <translation>Aanmelden</translation>
     </message>
 </context>
 <context>
@@ -5511,6 +6106,22 @@ Ondersteunt de formaten:  S01E01, 1x1, 2017.12.31 en 31.12.2017 (datumformaten o
         <source>If checked, filenames starting with a period punctuation mark `.` will not be added to the created torrent.</source>
         <translation type="unfinished" />
     </message>
+    <message>
+        <source>Align to piece boundary for files larger than:</source>
+        <translation>Uitlijnen op deeltjes-grens voor bestanden groter dan:</translation>
+    </message>
+    <message>
+        <source>Optimize alignment</source>
+        <translation>Uitlijning optimaliseren</translation>
+    </message>
+    <message>
+        <source>Private torrent (Won&apos;t distribute on DHT network)</source>
+        <translation>Privétorrent (zal niet verdelen op het DHT-netwerk)</translation>
+    </message>
+    <message>
+        <source>Start seeding immediately</source>
+        <translation>Onmiddellijk beginnen seeden</translation>
+    </message>
 </context>
 <context>
     <name>DownloadFromURLDialog</name>
@@ -5621,6 +6232,10 @@ Ondersteunt de formaten:  S01E01, 1x1, 2017.12.31 en 31.12.2017 (datumformaten o
         <source>Failed to set speed limits</source>
         <translation type="unfinished" />
     </message>
+    <message>
+        <source>Speed limits</source>
+        <translation>Sneheidsbegrenzing</translation>
+    </message>
 </context>
 <context>
     <name>ListWidget</name>
@@ -5631,6 +6246,10 @@ Ondersteunt de formaten:  S01E01, 1x1, 2017.12.31 en 31.12.2017 (datumformaten o
     <message>
         <source>Resize</source>
         <translation>Vergroten/verkleinen</translation>
+    </message>
+    <message>
+        <source>Reset Auto Width</source>
+        <translation>Automatische breedte herstellen</translation>
     </message>
 </context>
 <context>
@@ -5646,6 +6265,10 @@ Ondersteunt de formaten:  S01E01, 1x1, 2017.12.31 en 31.12.2017 (datumformaten o
     <message>
         <source>Rotate this API key? The current key will immediately stop working and a new key will be generated.</source>
         <translation>Deze API-sleutel wijzigen? De huidige sleutel werkt dan niet meer en er wordt een nieuwe sleutel gegenereerd.</translation>
+    </message>
+    <message>
+        <source>Generate an API key? This key can be used to interact with qBittorrent&apos;s API.</source>
+        <translation>Een API-sleutel genereren? Deze sleutel kan worden gebruikt om te communiceren met de API van qBittorrent.</translation>
     </message>
 </context>
 <context>
@@ -5761,6 +6384,54 @@ Ondersteunt de formaten:  S01E01, 1x1, 2017.12.31 en 31.12.2017 (datumformaten o
         <source>Remove torrent</source>
         <translation type="unfinished" />
     </message>
+    <message>
+        <source>Action when the limit is reached:</source>
+        <translation>Actie wanneer de limiet bereikt is:</translation>
+    </message>
+    <message>
+        <source>Default (%1)</source>
+        <translation>Standaard (%1)</translation>
+    </message>
+    <message>
+        <source>From category</source>
+        <translation>Van categorie</translation>
+    </message>
+    <message>
+        <source>From category (%1)</source>
+        <translation>Van categorie (%1)</translation>
+    </message>
+    <message>
+        <source>Inactive seeding time:</source>
+        <translation>Niet-actieve seed-tijd:</translation>
+    </message>
+    <message>
+        <source>Match all the limits</source>
+        <translation>Overeenkomen met alle begrenzingen</translation>
+    </message>
+    <message>
+        <source>Match any limit</source>
+        <translation>Overeenkomen met om het even welke begrenzing</translation>
+    </message>
+    <message>
+        <source>Mode:</source>
+        <translation>Modus:</translation>
+    </message>
+    <message>
+        <source>Ratio:</source>
+        <translation>Verhouding:</translation>
+    </message>
+    <message>
+        <source>Seeding time:</source>
+        <translation>Seed-tijd:</translation>
+    </message>
+    <message>
+        <source>Set to</source>
+        <translation>Instellen op</translation>
+    </message>
+    <message>
+        <source>Unlimited</source>
+        <translation>Onbegrensd</translation>
+    </message>
 </context>
 <context>
     <name>TorrentContent</name>
@@ -5771,6 +6442,208 @@ Ondersteunt de formaten:  S01E01, 1x1, 2017.12.31 en 31.12.2017 (datumformaten o
     <message>
         <source>Not available for folders</source>
         <translation type="unfinished" />
+    </message>
+</context>
+<context>
+    <name>UserAccounts</name>
+    <message>
+        <source>(this browser)</source>
+        <translation>(deze browser)</translation>
+    </message>
+    <message>
+        <source>A role decides what its users are allowed to do.</source>
+        <translation>Een rol bepaalt wat de gebruikers ervan mogen doen.</translation>
+    </message>
+    <message>
+        <source>Add Role</source>
+        <translation>Rol toevoegen</translation>
+    </message>
+    <message>
+        <source>Add Role...</source>
+        <translation>Rol toevoegen...</translation>
+    </message>
+    <message>
+        <source>Add User</source>
+        <translation>Gebruiker toevoegen</translation>
+    </message>
+    <message>
+        <source>Add User...</source>
+        <translation>Gebruiker toevoegen...</translation>
+    </message>
+    <message>
+        <source>Are you sure you want to remove the role &apos;%1&apos;?</source>
+        <translation>Weet u zeker dat u de rol &apos;%1&apos; wilt verwijderen?</translation>
+    </message>
+    <message>
+        <source>Are you sure you want to remove the user &apos;%1&apos;?</source>
+        <translation>Weet u zeker dat u de gebruiker &apos;%1&apos; wilt verwijderen?</translation>
+    </message>
+    <message>
+        <source>At least %1 characters</source>
+        <translation>Minstens %1 tekens</translation>
+    </message>
+    <message>
+        <source>Browser</source>
+        <translation>Browser</translation>
+    </message>
+    <message>
+        <source>Browsers and devices where someone is logged in with a user account.</source>
+        <translation>Browsers en apparaten waar iemand is aangemeld met een gebruikersaccount.</translation>
+    </message>
+    <message>
+        <source>Change Password</source>
+        <translation>Wachtwoord wijzigen</translation>
+    </message>
+    <message>
+        <source>Confirm password:</source>
+        <translation>Wachtwoord bevestigen:</translation>
+    </message>
+    <message>
+        <source>Created</source>
+        <translation>Aangemaakt</translation>
+    </message>
+    <message>
+        <source>Current password:</source>
+        <translation>Huidig wachtwoord:</translation>
+    </message>
+    <message>
+        <source>Description</source>
+        <translation>Beschrijving</translation>
+    </message>
+    <message>
+        <source>Description:</source>
+        <translation>Beschrijving:</translation>
+    </message>
+    <message>
+        <source>Disable</source>
+        <translation>Uitschakelen</translation>
+    </message>
+    <message>
+        <source>Disable this account</source>
+        <translation>Dit account uitschakelen</translation>
+    </message>
+    <message>
+        <source>Edit Role</source>
+        <translation>Rol bewerken</translation>
+    </message>
+    <message>
+        <source>Edit User</source>
+        <translation>Gebruiker bewerken</translation>
+    </message>
+    <message>
+        <source>Edit...</source>
+        <translation>Bewerken...</translation>
+    </message>
+    <message>
+        <source>Enable</source>
+        <translation>Inschakelen</translation>
+    </message>
+    <message>
+        <source>Enter a role name.</source>
+        <translation>Voer een rolnaam in.</translation>
+    </message>
+    <message>
+        <source>Enter a username.</source>
+        <translation>Voer een gebruikersnaam in.</translation>
+    </message>
+    <message>
+        <source>Expires</source>
+        <translation>Verloopt</translation>
+    </message>
+    <message>
+        <source>Gives control over the PC or qBittorrent itself</source>
+        <translation>Geeft controle over de pc of over qBittorrent zelf</translation>
+    </message>
+    <message>
+        <source>Last active</source>
+        <translation>Laatst actief</translation>
+    </message>
+    <message>
+        <source>Last login</source>
+        <translation>Laatste aanmelding</translation>
+    </message>
+    <message>
+        <source>Leave empty to keep the current password</source>
+        <translation>Laat leeg om het huidige wachtwoord te behouden</translation>
+    </message>
+    <message>
+        <source>Log Out</source>
+        <translation>Afmelden</translation>
+    </message>
+    <message>
+        <source>Log Out Everywhere</source>
+        <translation>Overal afmelden</translation>
+    </message>
+    <message>
+        <source>Logged In</source>
+        <translation>Aangemeld</translation>
+    </message>
+    <message>
+        <source>Logged in</source>
+        <translation>Aangemeld</translation>
+    </message>
+    <message>
+        <source>New password:</source>
+        <translation>Nieuw wachtwoord:</translation>
+    </message>
+    <message>
+        <source>No accounts yet, so everyone still uses the shared WebUI login. Add an Admin account first.</source>
+        <translation>Er zijn nog geen accounts, dus iedereen gebruikt nog de gedeelde WebUI-aanmelding. Voeg eerst een Admin-account toe.</translation>
+    </message>
+    <message>
+        <source>People who can log in to the WebUI with their own username and password.</source>
+        <translation>Mensen die zich met hun eigen gebruikersnaam en wachtwoord kunnen aanmelden bij de WebUI.</translation>
+    </message>
+    <message>
+        <source>Permissions</source>
+        <translation>Rechten</translation>
+    </message>
+    <message>
+        <source>Role</source>
+        <translation>Rol</translation>
+    </message>
+    <message>
+        <source>Role:</source>
+        <translation>Rol:</translation>
+    </message>
+    <message>
+        <source>Roles</source>
+        <translation>Rollen</translation>
+    </message>
+    <message>
+        <source>The password must be at least %1 characters long.</source>
+        <translation>Het wachtwoord moet minstens %1 tekens lang zijn.</translation>
+    </message>
+    <message>
+        <source>The passwords don&apos;t match.</source>
+        <translation>De wachtwoorden komen niet overeen.</translation>
+    </message>
+    <message>
+        <source>Users</source>
+        <translation>Gebruikers</translation>
+    </message>
+    <message>
+        <source>Your password was changed. Other browsers and devices where you were logged in have been logged out.</source>
+        <translation>Uw wachtwoord is gewijzigd. Andere browsers en apparaten waarop u was aangemeld, zijn afgemeld.</translation>
+    </message>
+</context>
+<context>
+    <name>WebUIActivity</name>
+    <message>
+        <source>Action</source>
+        <translation>Actie</translation>
+    </message>
+    <message>
+        <source>Result</source>
+        <translation>Resultaat</translation>
+    </message>
+    <message>
+        <source>Role</source>
+        <translation>Rol</translation>
+    </message>
+    <message>
+        <source>Time</source>
+        <translation>Tijd</translation>
     </message>
 </context>
 </TS>

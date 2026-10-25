@@ -141,6 +141,62 @@
         <source>The free IP to Country Lite database by DB-IP is used for resolving the countries of peers. The database is licensed under the Creative Commons Attribution 4.0 International License</source>
         <translation>Baza e të dhënave e çelët falas IP në Country nga DB-IP përdoret për zgjidhjen e shteteve të kolegëve. Baza e të dhënave është e lejuar sipas lejes ndërkombëtare Creative Commons Attribution 4.0</translation>
     </message>
+    <message>
+        <source>This edition</source>
+        <translation>Ky botim</translation>
+    </message>
+    <message>
+        <source>Edition version:</source>
+        <translation>Versioni i botimit:</translation>
+    </message>
+    <message>
+        <source>Based on:</source>
+        <translation>Bazuar në:</translation>
+    </message>
+    <message>
+        <source>Maintainer:</source>
+        <translation>Mirëmbajtësi:</translation>
+    </message>
+    <message>
+        <source>qBittorrent project:</source>
+        <translation>Projekti qBittorrent:</translation>
+    </message>
+    <message>
+        <source>Kettle Edition is a personal build of qBittorrent that adds user accounts with roles for the WebUI and the desktop app, an activity log, and an installable WebUI with a phone layout. A kettle is a group of hawks soaring together. This is an unofficial build, not affiliated with the qBittorrent project.</source>
+        <translation>Kettle Edition është një ndërtim personal i qBittorrent që shton llogari përdoruesish me role për WebUI dhe aplikacionin desktop, një regjistër aktiviteti dhe një WebUI të instalueshme me strukturë për telefon. Kettle është një grup skifterësh që fluturojnë së bashku. Ky është një ndërtim jozyrtar, pa lidhje me projektin qBittorrent.</translation>
+    </message>
+    <message>
+        <source>N/A</source>
+        <translation>N/A</translation>
+    </message>
+    <message>
+        <source>This edition</source>
+        <translation>Ky botim</translation>
+    </message>
+    <message>
+        <source>Edition version:</source>
+        <translation>Versioni i botimit:</translation>
+    </message>
+    <message>
+        <source>Based on:</source>
+        <translation>Bazuar në:</translation>
+    </message>
+    <message>
+        <source>Maintainer:</source>
+        <translation>Mirëmbajtësi:</translation>
+    </message>
+    <message>
+        <source>qBittorrent project:</source>
+        <translation>Projekti qBittorrent:</translation>
+    </message>
+    <message>
+        <source>Kettle Edition is a personal build of qBittorrent that adds user accounts with roles for the WebUI and the desktop app, an activity log, and an installable WebUI with a phone layout. A kettle is a group of hawks soaring together. This is an unofficial build, not affiliated with the qBittorrent project.</source>
+        <translation>Kettle Edition është një ndërtim personal i qBittorrent që shton llogari përdoruesish me role për WebUI dhe aplikacionin desktop, një regjistër aktiviteti dhe një WebUI të instalueshme me strukturë për telefon. Kettle është një grup skifterësh që fluturojnë së bashku. Ky është një ndërtim jozyrtar, pa lidhje me projektin qBittorrent.</translation>
+    </message>
+    <message>
+        <source>N/A</source>
+        <translation>N/A</translation>
+    </message>
 </context>
 <context>
     <name>AbstractFileStorage</name>
@@ -1459,6 +1515,62 @@
         <location filename="../gui/advancedsettings.cpp" line="925"/>
         <source>Embedded tracker port</source>
         <translation>Porta e gjurmuesit të integruar</translation>
+    </message>
+    <message>
+        <source>Network</source>
+        <translation>Rrjeti</translation>
+    </message>
+    <message>
+        <source>Storage</source>
+        <translation>Ruajtja</translation>
+    </message>
+    <message>
+        <source>Peers and trackers</source>
+        <translation>Kolegët dhe gjurmuesit</translation>
+    </message>
+    <message>
+        <source>Program behavior</source>
+        <translation>Sjellja e programit</translation>
+    </message>
+    <message>
+        <source>Display and notifications</source>
+        <translation>Shfaqja dhe njoftimet</translation>
+    </message>
+    <message>
+        <source>Network connection</source>
+        <translation>Lidhja me rrjetin</translation>
+    </message>
+    <message>
+        <source>Security and privacy</source>
+        <translation>Siguria dhe privatësia</translation>
+    </message>
+    <message>
+        <source>Connection tuning</source>
+        <translation>Rregullimi i lidhjes</translation>
+    </message>
+    <message>
+        <source>Saving and torrent files</source>
+        <translation>Ruajtja dhe skedarët torrent</translation>
+    </message>
+    <message>
+        <source>Disk and memory</source>
+        <translation>Disku dhe memoria</translation>
+    </message>
+    <message>
+        <source>Peers and seeding</source>
+        <translation>Kolegët dhe ndarja</translation>
+    </message>
+    <message>
+        <source>DHT and I2P</source>
+        <translation>DHT dhe I2P</translation>
+    </message>
+    <message>
+        <source>General</source>
+        <translation>Të përgjithshme</translation>
+    </message>
+    <message>
+        <source>Trackers</source>
+        <translation>Gjurmuesit</translation>
     </message>
 </context>
 <context>
@@ -3462,6 +3574,22 @@ Supports the formats: S01E01, 1x1, 2017.12.31 and 31.12.2017 (Date formats also 
         <source>Remove torrent</source>
         <translation>Hiq torrent-in</translation>
     </message>
+    <message>
+        <source>This choice is remembered for the next removal.</source>
+        <translation>Ky zgjedhje do të mbahet mend për heqjen e radhës.</translation>
+    </message>
+    <message>
+        <source>Remove</source>
+        <translation>Hiq</translation>
+    </message>
+    <message>
+        <source>This choice is remembered for the next removal.</source>
+        <translation>Ky zgjedhje do të mbahet mend për heqjen e radhës.</translation>
+    </message>
+    <message>
+        <source>Remove</source>
+        <translation>Hiq</translation>
+    </message>
 </context>
 <context>
     <name>DownloadFromURLDialog</name>
@@ -3535,6 +3663,14 @@ Supports the formats: S01E01, 1x1, 2017.12.31 and 31.12.2017 (Date formats also 
         <location filename="../gui/executionlogwidget.cpp" line="99"/>
         <source>Clear</source>
         <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>WebUI Activity</source>
+        <translation>Aktiviteti i WebUI</translation>
+    </message>
+    <message>
+        <source>WebUI Activity</source>
+        <translation>Aktiviteti i WebUI</translation>
     </message>
 </context>
 <context>
@@ -4695,6 +4831,46 @@ Minimum requirement: %2.</source>
         <location filename="../gui/mainwindow.cpp" line="1346"/>
         <source>Torrent Files</source>
         <translation>Skedarë torrent</translation>
+    </message>
+    <message>
+        <source>Kettle Edition %1 is available.</source>
+        <translation>Kettle Edition %1 është i disponueshëm.</translation>
+    </message>
+    <message>
+        <source>qBittorrent Kettle Edition %1 is available. It is downloaded now and installed at 4:00 AM, or when qBittorrent starts next.</source>
+        <translation>qBittorrent Kettle Edition %1 është i disponueshëm. Po shkarkohet tani dhe do të instalohet në 4:00 ose herën tjetër që niset qBittorrent.</translation>
+    </message>
+    <message>
+        <source>qBittorrent Kettle Edition %1 is available. It is downloaded now. Turn on &quot;Automatically install Kettle Edition updates&quot; in Options to install it.</source>
+        <translation>qBittorrent Kettle Edition %1 është i disponueshëm. Po shkarkohet tani. Aktivizoni «Instalo automatikisht përditësimet e Kettle Edition» te Opsionet për ta instaluar.</translation>
+    </message>
+    <message>
+        <source>You have the latest qBittorrent Kettle Edition (%1).</source>
+        <translation>Keni versionin më të ri të qBittorrent Kettle Edition (%1).</translation>
+    </message>
+    <message>
+        <source>Could not check for qBittorrent Kettle Edition updates. See the Execution Log for details.</source>
+        <translation>S&apos;u kontrolluan dot përditësimet e qBittorrent Kettle Edition. Shihni regjistrin e ekzekutimit për hollësi.</translation>
+    </message>
+    <message>
+        <source>Kettle Edition %1 is available.</source>
+        <translation>Kettle Edition %1 është i disponueshëm.</translation>
+    </message>
+    <message>
+        <source>qBittorrent Kettle Edition %1 is available. It is downloaded now and installed at 4:00 AM, or when qBittorrent starts next.</source>
+        <translation>qBittorrent Kettle Edition %1 është i disponueshëm. Po shkarkohet tani dhe do të instalohet në 4:00 ose herën tjetër që niset qBittorrent.</translation>
+    </message>
+    <message>
+        <source>qBittorrent Kettle Edition %1 is available. It is downloaded now. Turn on &quot;Automatically install Kettle Edition updates&quot; in Options to install it.</source>
+        <translation>qBittorrent Kettle Edition %1 është i disponueshëm. Po shkarkohet tani. Aktivizoni «Instalo automatikisht përditësimet e Kettle Edition» te Opsionet për ta instaluar.</translation>
+    </message>
+    <message>
+        <source>You have the latest qBittorrent Kettle Edition (%1).</source>
+        <translation>Keni versionin më të ri të qBittorrent Kettle Edition (%1).</translation>
+    </message>
+    <message>
+        <source>Could not check for qBittorrent Kettle Edition updates. See the Execution Log for details.</source>
+        <translation>S&apos;u kontrolluan dot përditësimet e qBittorrent Kettle Edition. Shihni regjistrin e ekzekutimit për hollësi.</translation>
     </message>
 </context>
 <context>
@@ -8403,6 +8579,190 @@ Check the Execution Log for errors.</source>
         <source>Length Error</source>
         <translation type="unfinished"></translation>
     </message>
+    <message>
+        <source>Search settings</source>
+        <translation>Kërko te cilësimet</translation>
+    </message>
+    <message>
+        <source>No settings match</source>
+        <translation>Asnjë cilësim nuk përputhet</translation>
+    </message>
+    <message>
+        <source>User Accounts</source>
+        <translation>Llogari përdoruesish</translation>
+    </message>
+    <message>
+        <source>Automatically install Kettle Edition updates</source>
+        <translation>Instalo automatikisht përditësimet e Kettle Edition</translation>
+    </message>
+    <message>
+        <source>Status bar and log</source>
+        <translation>Shiriti i gjendjes dhe regjistri</translation>
+    </message>
+    <message>
+        <source>Files</source>
+        <translation>Skedarë</translation>
+    </message>
+    <message>
+        <source>Checking</source>
+        <translation>Kontrolli</translation>
+    </message>
+    <message>
+        <source>Until the first user account is created, this login always works.</source>
+        <translation>Derisa të krijohet llogaria e parë e përdoruesit, ky hyrje funksionon gjithmonë.</translation>
+    </message>
+    <message>
+        <source>Allow this login when user accounts exist</source>
+        <translation>Lejo këtë hyrje kur ekzistojnë llogari përdoruesish</translation>
+    </message>
+    <message>
+        <source>Access</source>
+        <translation>Qasja</translation>
+    </message>
+    <message>
+        <source>Changes to users, roles and logins apply at once. The settings below apply with OK or Apply.</source>
+        <translation>Ndryshimet te përdoruesit, rolet dhe hyrjet zbatohen menjëherë. Cilësimet më poshtë zbatohen me Në rregull ose Zbato.</translation>
+    </message>
+    <message>
+        <source>Logins and Activity Log</source>
+        <translation>Hyrjet dhe regjistri i aktivitetit</translation>
+    </message>
+    <message>
+        <source>0 means users are logged out after the session timeout.</source>
+        <translation>0 do të thotë se përdoruesit dalin pas skadimit të kohës së seancës.</translation>
+    </message>
+    <message>
+        <source>Keep users logged in for:</source>
+        <translation>Mbaji përdoruesit të futur për:</translation>
+    </message>
+    <message>
+        <source>Until session timeout</source>
+        <translation>Deri në skadimin e seancës</translation>
+    </message>
+    <message>
+        <source> days</source>
+        <translation> ditë</translation>
+    </message>
+    <message>
+        <source>Lock account after consecutive failures:</source>
+        <translation>Kyç llogarinë pas dështimesh të njëpasnjëshme:</translation>
+    </message>
+    <message>
+        <source>Keep WebUI activity log for:</source>
+        <translation>Mbaj regjistrin e aktivitetit të WebUI për:</translation>
+    </message>
+    <message>
+        <source>lock for:</source>
+        <translation>kyç për:</translation>
+    </message>
+    <message>
+        <source>%1 works best with Windows dark mode</source>
+        <translation>%1 funksionon më mirë me modalitetin e errët të Windows</translation>
+    </message>
+    <message>
+        <source>WebUI address</source>
+        <translation>Adresa e WebUI</translation>
+    </message>
+    <message>
+        <source>With the WebUI address set to %1, only this PC can reach the WebUI. Remote access, including through a reverse proxy on another machine, will stop working.
+
+Save anyway?</source>
+        <translation>Me adresën e WebUI të caktuar si %1, vetëm ky PC mund të arrijë te WebUI. Qasja nga larg, edhe përmes një ndërmjetësi të kundërt në një makinë tjetër, do të ndalojë së funksionuari.
+
+Të ruhet gjithsesi?</translation>
+    </message>
+    <message>
+        <source>Search settings</source>
+        <translation>Kërko te cilësimet</translation>
+    </message>
+    <message>
+        <source>No settings match</source>
+        <translation>Asnjë cilësim nuk përputhet</translation>
+    </message>
+    <message>
+        <source>User Accounts</source>
+        <translation>Llogari përdoruesish</translation>
+    </message>
+    <message>
+        <source>Automatically install Kettle Edition updates</source>
+        <translation>Instalo automatikisht përditësimet e Kettle Edition</translation>
+    </message>
+    <message>
+        <source>Status bar and log</source>
+        <translation>Shiriti i gjendjes dhe regjistri</translation>
+    </message>
+    <message>
+        <source>Files</source>
+        <translation>Skedarë</translation>
+    </message>
+    <message>
+        <source>Checking</source>
+        <translation>Kontrolli</translation>
+    </message>
+    <message>
+        <source>Until the first user account is created, this login always works.</source>
+        <translation>Derisa të krijohet llogaria e parë e përdoruesit, ky hyrje funksionon gjithmonë.</translation>
+    </message>
+    <message>
+        <source>Allow this login when user accounts exist</source>
+        <translation>Lejo këtë hyrje kur ekzistojnë llogari përdoruesish</translation>
+    </message>
+    <message>
+        <source>Access</source>
+        <translation>Qasja</translation>
+    </message>
+    <message>
+        <source>Changes to users, roles and logins apply at once. The settings below apply with OK or Apply.</source>
+        <translation>Ndryshimet te përdoruesit, rolet dhe hyrjet zbatohen menjëherë. Cilësimet më poshtë zbatohen me Në rregull ose Zbato.</translation>
+    </message>
+    <message>
+        <source>Logins and Activity Log</source>
+        <translation>Hyrjet dhe regjistri i aktivitetit</translation>
+    </message>
+    <message>
+        <source>0 means users are logged out after the session timeout.</source>
+        <translation>0 do të thotë se përdoruesit dalin pas skadimit të kohës së seancës.</translation>
+    </message>
+    <message>
+        <source>Keep users logged in for:</source>
+        <translation>Mbaji përdoruesit të futur për:</translation>
+    </message>
+    <message>
+        <source>Until session timeout</source>
+        <translation>Deri në skadimin e seancës</translation>
+    </message>
+    <message>
+        <source> days</source>
+        <translation> ditë</translation>
+    </message>
+    <message>
+        <source>Lock account after consecutive failures:</source>
+        <translation>Kyç llogarinë pas dështimesh të njëpasnjëshme:</translation>
+    </message>
+    <message>
+        <source>Keep WebUI activity log for:</source>
+        <translation>Mbaj regjistrin e aktivitetit të WebUI për:</translation>
+    </message>
+    <message>
+        <source>lock for:</source>
+        <translation>kyç për:</translation>
+    </message>
+    <message>
+        <source>%1 works best with Windows dark mode</source>
+        <translation>%1 funksionon më mirë me modalitetin e errët të Windows</translation>
+    </message>
+    <message>
+        <source>WebUI address</source>
+        <translation>Adresa e WebUI</translation>
+    </message>
+    <message>
+        <source>With the WebUI address set to %1, only this PC can reach the WebUI. Remote access, including through a reverse proxy on another machine, will stop working.
+
+Save anyway?</source>
+        <translation>Me adresën e WebUI të caktuar si %1, vetëm ky PC mund të arrijë te WebUI. Qasja nga larg, edhe përmes një ndërmjetësi të kundërt në një makinë tjetër, do të ndalojë së funksionuari.
+
+Të ruhet gjithsesi?</translation>
+    </message>
 </context>
 <context>
     <name>PeerInfo</name>
@@ -8655,6 +9015,22 @@ Check the Execution Log for errors.</source>
         <location filename="../gui/properties/peerlistwidget.cpp" line="309"/>
         <source>Copy IP:port</source>
         <translation>Kopjo IP:porta</translation>
+    </message>
+    <message>
+        <source>Reset auto width</source>
+        <translation>Rivendos gjerësinë automatike</translation>
+    </message>
+    <message>
+        <source>Fit all non-hidden columns to their contents again, and forget the widths that were set by hand</source>
+        <translation>Përshtati sërish të gjitha kolonat e dukshme me përmbajtjen e tyre dhe harro gjerësitë e caktuara me dorë</translation>
+    </message>
+    <message>
+        <source>Reset auto width</source>
+        <translation>Rivendos gjerësinë automatike</translation>
+    </message>
+    <message>
+        <source>Fit all non-hidden columns to their contents again, and forget the widths that were set by hand</source>
+        <translation>Përshtati sërish të gjitha kolonat e dukshme me përmbajtjen e tyre dhe harro gjerësitë e caktuara me dorë</translation>
     </message>
 </context>
 <context>
@@ -9925,6 +10301,14 @@ Check the Execution Log for errors.</source>
         <source>Open link</source>
         <translation type="unfinished"></translation>
     </message>
+    <message>
+        <source>Details</source>
+        <translation>Hollësi</translation>
+    </message>
+    <message>
+        <source>Details</source>
+        <translation>Hollësi</translation>
+    </message>
 </context>
 <context>
     <name>SearchController</name>
@@ -10274,6 +10658,70 @@ Check the Execution Log for errors.</source>
         <source>Resize all non-hidden columns to the size of their contents</source>
         <translation>Ndrysho madhësinë e të gjitha shtyllave jo të fshehura në madhësinë e përmbajtjes së tyre</translation>
     </message>
+    <message>
+        <source>%1 of %2 shown (%3 hidden)</source>
+        <translation>U shfaqën %1 nga %2 (%3 të fshehura)</translation>
+    </message>
+    <message>
+        <source>%1 of %2 shown</source>
+        <translation>U shfaqën %1 nga %2</translation>
+    </message>
+    <message>
+        <source>Searching: %1</source>
+        <translation>Po kërkohet: %1</translation>
+    </message>
+    <message>
+        <source>Finished: %1</source>
+        <translation>U krye: %1</translation>
+    </message>
+    <message>
+        <source>Search aborted: %1</source>
+        <translation>Kërkimi u ndërpre: %1</translation>
+    </message>
+    <message>
+        <source>Reset auto width</source>
+        <translation>Rivendos gjerësinë automatike</translation>
+    </message>
+    <message>
+        <source>Fit all non-hidden columns to their contents again, and forget the widths that were set by hand</source>
+        <translation>Përshtati sërish të gjitha kolonat e dukshme me përmbajtjen e tyre dhe harro gjerësitë e caktuara me dorë</translation>
+    </message>
+    <message>
+        <source>Unknown</source>
+        <translation>I panjohur</translation>
+    </message>
+    <message>
+        <source>%1 of %2 shown (%3 hidden)</source>
+        <translation>U shfaqën %1 nga %2 (%3 të fshehura)</translation>
+    </message>
+    <message>
+        <source>%1 of %2 shown</source>
+        <translation>U shfaqën %1 nga %2</translation>
+    </message>
+    <message>
+        <source>Searching: %1</source>
+        <translation>Po kërkohet: %1</translation>
+    </message>
+    <message>
+        <source>Finished: %1</source>
+        <translation>U krye: %1</translation>
+    </message>
+    <message>
+        <source>Search aborted: %1</source>
+        <translation>Kërkimi u ndërpre: %1</translation>
+    </message>
+    <message>
+        <source>Reset auto width</source>
+        <translation>Rivendos gjerësinë automatike</translation>
+    </message>
+    <message>
+        <source>Fit all non-hidden columns to their contents again, and forget the widths that were set by hand</source>
+        <translation>Përshtati sërish të gjitha kolonat e dukshme me përmbajtjen e tyre dhe harro gjerësitë e caktuara me dorë</translation>
+    </message>
+    <message>
+        <source>Unknown</source>
+        <translation>I panjohur</translation>
+    </message>
 </context>
 <context>
     <name>SearchPluginManager</name>
@@ -10558,6 +11006,14 @@ Those plugins were disabled.</source>
         <source>Couldn&apos;t update &quot;%1&quot; search engine plugin. %2</source>
         <translation type="unfinished"></translation>
     </message>
+    <message>
+        <source>Install Kettle Plugins</source>
+        <translation>Instalo shtojcat Kettle</translation>
+    </message>
+    <message>
+        <source>Install Kettle Plugins</source>
+        <translation>Instalo shtojcat Kettle</translation>
+    </message>
 </context>
 <context>
     <name>SearchPluginSourceDialog</name>
@@ -10696,6 +11152,90 @@ Click the &quot;Search plugins...&quot; button at the bottom right of the window
         <location filename="../gui/search/searchwidget.ui" line="58"/>
         <source>Stop</source>
         <translation>Ndalo</translation>
+    </message>
+    <message>
+        <source>Searches</source>
+        <translation>Kërkime</translation>
+    </message>
+    <message>
+        <source>Close the selected search</source>
+        <translation>Mbyll kërkimin e përzgjedhur</translation>
+    </message>
+    <message>
+        <source>Search for torrents...</source>
+        <translation>Kërko torrente...</translation>
+    </message>
+    <message>
+        <source>Category to search in</source>
+        <translation>Kategoria ku kërkohet</translation>
+    </message>
+    <message>
+        <source>Search engines to use</source>
+        <translation>Motorët e kërkimit për t&apos;u përdorur</translation>
+    </message>
+    <message>
+        <source>There aren&apos;t any search plugins installed.
+Click the &quot;Search plugins...&quot; button at the top right of the window to install some.</source>
+        <translation>S&apos;ka shtojca kërkimi të instaluara.
+Klikoni butonin «Shtojca kërkimi...» lart djathtas te dritarja për të instaluar disa.</translation>
+    </message>
+    <message>
+        <source>Type a search above and press Enter.</source>
+        <translation>Shkruani një kërkim më sipër dhe shtypni Enter.</translation>
+    </message>
+    <message>
+        <source>Refresh search</source>
+        <translation>Rifresko kërkimin</translation>
+    </message>
+    <message>
+        <source>Close search</source>
+        <translation>Mbyll kërkimin</translation>
+    </message>
+    <message>
+        <source>Close all searches</source>
+        <translation>Mbyll të gjitha kërkimet</translation>
+    </message>
+    <message>
+        <source>Searches</source>
+        <translation>Kërkime</translation>
+    </message>
+    <message>
+        <source>Close the selected search</source>
+        <translation>Mbyll kërkimin e përzgjedhur</translation>
+    </message>
+    <message>
+        <source>Search for torrents...</source>
+        <translation>Kërko torrente...</translation>
+    </message>
+    <message>
+        <source>Category to search in</source>
+        <translation>Kategoria ku kërkohet</translation>
+    </message>
+    <message>
+        <source>Search engines to use</source>
+        <translation>Motorët e kërkimit për t&apos;u përdorur</translation>
+    </message>
+    <message>
+        <source>There aren&apos;t any search plugins installed.
+Click the &quot;Search plugins...&quot; button at the top right of the window to install some.</source>
+        <translation>S&apos;ka shtojca kërkimi të instaluara.
+Klikoni butonin «Shtojca kërkimi...» lart djathtas te dritarja për të instaluar disa.</translation>
+    </message>
+    <message>
+        <source>Type a search above and press Enter.</source>
+        <translation>Shkruani një kërkim më sipër dhe shtypni Enter.</translation>
+    </message>
+    <message>
+        <source>Refresh search</source>
+        <translation>Rifresko kërkimin</translation>
+    </message>
+    <message>
+        <source>Close search</source>
+        <translation>Mbyll kërkimin</translation>
+    </message>
+    <message>
+        <source>Close all searches</source>
+        <translation>Mbyll të gjitha kërkimet</translation>
     </message>
 </context>
 <context>
@@ -11158,6 +11698,326 @@ Click the &quot;Search plugins...&quot; button at the bottom right of the window
         <location filename="../gui/statsdialog.cpp" line="111"/>
         <source>%1 ms</source>
         <translation type="unfinished">%1 ms</translation>
+    </message>
+    <message>
+        <source>Copy</source>
+        <translation>Kopjo</translation>
+    </message>
+    <message>
+        <source>Overview</source>
+        <translation>Përmbledhje</translation>
+    </message>
+    <message>
+        <source>Transfer</source>
+        <translation>Transferim</translation>
+    </message>
+    <message>
+        <source>This session</source>
+        <translation>Kjo seancë</translation>
+    </message>
+    <message>
+        <source>All time</source>
+        <translation>Gjithë kohën</translation>
+    </message>
+    <message>
+        <source>Downloaded:</source>
+        <translation>Shkarkuar:</translation>
+    </message>
+    <message>
+        <source>Uploaded:</source>
+        <translation>Ngarkuar:</translation>
+    </message>
+    <message>
+        <source>Share ratio:</source>
+        <translation>Raporti i ndarjes:</translation>
+    </message>
+    <message>
+        <source>Current speed:</source>
+        <translation>Shpejtësia aktuale:</translation>
+    </message>
+    <message>
+        <source>Activity</source>
+        <translation>Aktiviteti</translation>
+    </message>
+    <message>
+        <source>Torrents downloading:</source>
+        <translation>Torrente që shkarkohen:</translation>
+    </message>
+    <message>
+        <source>Torrents seeding:</source>
+        <translation>Torrente që ndahen:</translation>
+    </message>
+    <message>
+        <source>Torrents stopped:</source>
+        <translation>Torrente të ndalur:</translation>
+    </message>
+    <message>
+        <source>Torrents with errors:</source>
+        <translation>Torrente me gabime:</translation>
+    </message>
+    <message>
+        <source>Running for:</source>
+        <translation>Në punë prej:</translation>
+    </message>
+    <message>
+        <source>History</source>
+        <translation>Historiku</translation>
+    </message>
+    <message>
+        <source>Period</source>
+        <translation>Periudha</translation>
+    </message>
+    <message>
+        <source>Today</source>
+        <translation>Sot</translation>
+    </message>
+    <message>
+        <source>Last 7 days</source>
+        <translation>7 ditët e fundit</translation>
+    </message>
+    <message>
+        <source>This month</source>
+        <translation>Këtë muaj</translation>
+    </message>
+    <message>
+        <source>Last month</source>
+        <translation>Muajin e kaluar</translation>
+    </message>
+    <message>
+        <source>Last 12 months</source>
+        <translation>12 muajt e fundit</translation>
+    </message>
+    <message>
+        <source>Tracking since:</source>
+        <translation>Gjurmim që nga:</translation>
+    </message>
+    <message>
+        <source>By month</source>
+        <translation>Sipas muajit</translation>
+    </message>
+    <message>
+        <source>Month</source>
+        <translation>Muaji</translation>
+    </message>
+    <message>
+        <source>Downloaded</source>
+        <translation>Shkarkuar</translation>
+    </message>
+    <message>
+        <source>Uploaded</source>
+        <translation>Ngarkuar</translation>
+    </message>
+    <message>
+        <source>Share ratio</source>
+        <translation>Raporti i ndarjes</translation>
+    </message>
+    <message>
+        <source>WebUI downloads added, this month</source>
+        <translation>Shkarkime të shtuara nga WebUI, këtë muaj</translation>
+    </message>
+    <message>
+        <source>Counts the requests that added a download. Apps without a login, such as Sonarr and Radarr, are shown as (localhost). Downloads added in the desktop window are not counted.</source>
+        <translation>Numëron kërkesat që shtuan një shkarkim. Aplikacionet pa hyrje, si Sonarr dhe Radarr, shfaqen si (localhost). Shkarkimet e shtuara në dritaren desktop nuk numërohen.</translation>
+    </message>
+    <message>
+        <source>Technical</source>
+        <translation>Teknike</translation>
+    </message>
+    <message>
+        <source>Disk</source>
+        <translation>Disku</translation>
+    </message>
+    <message>
+        <source>Peers waiting on disk writes:</source>
+        <translation>Kolegë që presin shkrimin në disk:</translation>
+    </message>
+    <message>
+        <source>Peers waiting on disk reads:</source>
+        <translation>Kolegë që presin leximin nga disku:</translation>
+    </message>
+    <message>
+        <source>Network</source>
+        <translation>Rrjeti</translation>
+    </message>
+    <message>
+        <source>DHT nodes:</source>
+        <translation>Nyje DHT:</translation>
+    </message>
+    <message>
+        <source>Data discarded this session:</source>
+        <translation>Të dhëna të hedhura në këtë seancë:</translation>
+    </message>
+    <message>
+        <source>Before tracking began</source>
+        <translation>Para se të fillonte gjurmimi</translation>
+    </message>
+    <message>
+        <source>Nothing added yet</source>
+        <translation>Ende s&apos;është shtuar asgjë</translation>
+    </message>
+    <message>
+        <source>Off</source>
+        <translation>Çaktivizuar</translation>
+    </message>
+    <message>
+        <source>Copy</source>
+        <translation>Kopjo</translation>
+    </message>
+    <message>
+        <source>Overview</source>
+        <translation>Përmbledhje</translation>
+    </message>
+    <message>
+        <source>Transfer</source>
+        <translation>Transferim</translation>
+    </message>
+    <message>
+        <source>This session</source>
+        <translation>Kjo seancë</translation>
+    </message>
+    <message>
+        <source>All time</source>
+        <translation>Gjithë kohën</translation>
+    </message>
+    <message>
+        <source>Downloaded:</source>
+        <translation>Shkarkuar:</translation>
+    </message>
+    <message>
+        <source>Uploaded:</source>
+        <translation>Ngarkuar:</translation>
+    </message>
+    <message>
+        <source>Share ratio:</source>
+        <translation>Raporti i ndarjes:</translation>
+    </message>
+    <message>
+        <source>Current speed:</source>
+        <translation>Shpejtësia aktuale:</translation>
+    </message>
+    <message>
+        <source>Activity</source>
+        <translation>Aktiviteti</translation>
+    </message>
+    <message>
+        <source>Torrents downloading:</source>
+        <translation>Torrente që shkarkohen:</translation>
+    </message>
+    <message>
+        <source>Torrents seeding:</source>
+        <translation>Torrente që ndahen:</translation>
+    </message>
+    <message>
+        <source>Torrents stopped:</source>
+        <translation>Torrente të ndalur:</translation>
+    </message>
+    <message>
+        <source>Torrents with errors:</source>
+        <translation>Torrente me gabime:</translation>
+    </message>
+    <message>
+        <source>Running for:</source>
+        <translation>Në punë prej:</translation>
+    </message>
+    <message>
+        <source>History</source>
+        <translation>Historiku</translation>
+    </message>
+    <message>
+        <source>Period</source>
+        <translation>Periudha</translation>
+    </message>
+    <message>
+        <source>Today</source>
+        <translation>Sot</translation>
+    </message>
+    <message>
+        <source>Last 7 days</source>
+        <translation>7 ditët e fundit</translation>
+    </message>
+    <message>
+        <source>This month</source>
+        <translation>Këtë muaj</translation>
+    </message>
+    <message>
+        <source>Last month</source>
+        <translation>Muajin e kaluar</translation>
+    </message>
+    <message>
+        <source>Last 12 months</source>
+        <translation>12 muajt e fundit</translation>
+    </message>
+    <message>
+        <source>Tracking since:</source>
+        <translation>Gjurmim që nga:</translation>
+    </message>
+    <message>
+        <source>By month</source>
+        <translation>Sipas muajit</translation>
+    </message>
+    <message>
+        <source>Month</source>
+        <translation>Muaji</translation>
+    </message>
+    <message>
+        <source>Downloaded</source>
+        <translation>Shkarkuar</translation>
+    </message>
+    <message>
+        <source>Uploaded</source>
+        <translation>Ngarkuar</translation>
+    </message>
+    <message>
+        <source>Share ratio</source>
+        <translation>Raporti i ndarjes</translation>
+    </message>
+    <message>
+        <source>WebUI downloads added, this month</source>
+        <translation>Shkarkime të shtuara nga WebUI, këtë muaj</translation>
+    </message>
+    <message>
+        <source>Counts the requests that added a download. Apps without a login, such as Sonarr and Radarr, are shown as (localhost). Downloads added in the desktop window are not counted.</source>
+        <translation>Numëron kërkesat që shtuan një shkarkim. Aplikacionet pa hyrje, si Sonarr dhe Radarr, shfaqen si (localhost). Shkarkimet e shtuara në dritaren desktop nuk numërohen.</translation>
+    </message>
+    <message>
+        <source>Technical</source>
+        <translation>Teknike</translation>
+    </message>
+    <message>
+        <source>Disk</source>
+        <translation>Disku</translation>
+    </message>
+    <message>
+        <source>Peers waiting on disk writes:</source>
+        <translation>Kolegë që presin shkrimin në disk:</translation>
+    </message>
+    <message>
+        <source>Peers waiting on disk reads:</source>
+        <translation>Kolegë që presin leximin nga disku:</translation>
+    </message>
+    <message>
+        <source>Network</source>
+        <translation>Rrjeti</translation>
+    </message>
+    <message>
+        <source>DHT nodes:</source>
+        <translation>Nyje DHT:</translation>
+    </message>
+    <message>
+        <source>Data discarded this session:</source>
+        <translation>Të dhëna të hedhura në këtë seancë:</translation>
+    </message>
+    <message>
+        <source>Before tracking began</source>
+        <translation>Para se të fillonte gjurmimi</translation>
+    </message>
+    <message>
+        <source>Nothing added yet</source>
+        <translation>Ende s&apos;është shtuar asgjë</translation>
+    </message>
+    <message>
+        <source>Off</source>
+        <translation>Çaktivizuar</translation>
     </message>
 </context>
 <context>
@@ -11832,6 +12692,22 @@ Please choose a different name and try again.</source>
         <location filename="../gui/torrentcontentwidget.cpp" line="471"/>
         <source>By shown file order</source>
         <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Reset auto width</source>
+        <translation>Rivendos gjerësinë automatike</translation>
+    </message>
+    <message>
+        <source>Fit all non-hidden columns to their contents again, and forget the widths that were set by hand</source>
+        <translation>Përshtati sërish të gjitha kolonat e dukshme me përmbajtjen e tyre dhe harro gjerësitë e caktuara me dorë</translation>
+    </message>
+    <message>
+        <source>Reset auto width</source>
+        <translation>Rivendos gjerësinë automatike</translation>
+    </message>
+    <message>
+        <source>Fit all non-hidden columns to their contents again, and forget the widths that were set by hand</source>
+        <translation>Përshtati sërish të gjitha kolonat e dukshme me përmbajtjen e tyre dhe harro gjerësitë e caktuara me dorë</translation>
     </message>
 </context>
 <context>
@@ -12911,6 +13787,22 @@ Please choose a different name and try again.</source>
         <source>Column visibility</source>
         <translation>Dukshmëria e shtyllës</translation>
     </message>
+    <message>
+        <source>Reset auto width</source>
+        <translation>Rivendos gjerësinë automatike</translation>
+    </message>
+    <message>
+        <source>Fit all non-hidden columns to their contents again, and forget the widths that were set by hand</source>
+        <translation>Përshtati sërish të gjitha kolonat e dukshme me përmbajtjen e tyre dhe harro gjerësitë e caktuara me dorë</translation>
+    </message>
+    <message>
+        <source>Reset auto width</source>
+        <translation>Rivendos gjerësinë automatike</translation>
+    </message>
+    <message>
+        <source>Fit all non-hidden columns to their contents again, and forget the widths that were set by hand</source>
+        <translation>Përshtati sërish të gjitha kolonat e dukshme me përmbajtjen e tyre dhe harro gjerësitë e caktuara me dorë</translation>
+    </message>
 </context>
 <context>
     <name>TrackerStatusFilterWidget</name>
@@ -13777,6 +14669,22 @@ Please choose a different name and try again.</source>
         <source>Super seeding mode</source>
         <translation>Mënyra Super shpërndarje</translation>
     </message>
+    <message>
+        <source>Reset auto width</source>
+        <translation>Rivendos gjerësinë automatike</translation>
+    </message>
+    <message>
+        <source>Fit all non-hidden columns to their contents again, and forget the widths that were set by hand</source>
+        <translation>Përshtati sërish të gjitha kolonat e dukshme me përmbajtjen e tyre dhe harro gjerësitë e caktuara me dorë</translation>
+    </message>
+    <message>
+        <source>Reset auto width</source>
+        <translation>Rivendos gjerësinë automatike</translation>
+    </message>
+    <message>
+        <source>Fit all non-hidden columns to their contents again, and forget the widths that were set by hand</source>
+        <translation>Përshtati sërish të gjitha kolonat e dukshme me përmbajtjen e tyre dhe harro gjerësitë e caktuara me dorë</translation>
+    </message>
 </context>
 <context>
     <name>UIThemeDialog</name>
@@ -14111,6 +15019,46 @@ Please choose a different name and try again.</source>
         <source>WebAPI login failure. Reason: invalid credentials, attempt count: %1, IP: %2, username: %3</source>
         <translation type="unfinished"></translation>
     </message>
+    <message>
+        <source>Something went wrong on the server. Details are in qBittorrent&apos;s log.</source>
+        <translation>Diçka shkoi keq te serveri. Hollësitë janë te regjistri i qBittorrent.</translation>
+    </message>
+    <message>
+        <source>This account is locked after too many failed login attempts. Try again in %1 minute(s).</source>
+        <translation>Kjo llogari është kyçur pas shumë përpjekjesh të dështuara për hyrje. Provoni sërish pas %1 minutash.</translation>
+    </message>
+    <message>
+        <source>Your role (%1) doesn&apos;t allow this: %2.</source>
+        <translation>Roli juaj (%1) nuk e lejon këtë: %2.</translation>
+    </message>
+    <message>
+        <source>Only an admin can remove the tag that says who added a torrent.</source>
+        <translation>Vetëm një administrator mund të heqë etiketën që tregon kush e shtoi një torrent.</translation>
+    </message>
+    <message>
+        <source>Only an admin can clear or replace all tags of a torrent that has a tag saying who added it.</source>
+        <translation>Vetëm një administrator mund të pastrojë ose zëvendësojë të gjitha etiketat e një torrenti që ka një etiketë që tregon kush e shtoi.</translation>
+    </message>
+    <message>
+        <source>Something went wrong on the server. Details are in qBittorrent&apos;s log.</source>
+        <translation>Diçka shkoi keq te serveri. Hollësitë janë te regjistri i qBittorrent.</translation>
+    </message>
+    <message>
+        <source>This account is locked after too many failed login attempts. Try again in %1 minute(s).</source>
+        <translation>Kjo llogari është kyçur pas shumë përpjekjesh të dështuara për hyrje. Provoni sërish pas %1 minutash.</translation>
+    </message>
+    <message>
+        <source>Your role (%1) doesn&apos;t allow this: %2.</source>
+        <translation>Roli juaj (%1) nuk e lejon këtë: %2.</translation>
+    </message>
+    <message>
+        <source>Only an admin can remove the tag that says who added a torrent.</source>
+        <translation>Vetëm një administrator mund të heqë etiketën që tregon kush e shtoi një torrent.</translation>
+    </message>
+    <message>
+        <source>Only an admin can clear or replace all tags of a torrent that has a tag saying who added it.</source>
+        <translation>Vetëm një administrator mund të pastrojë ose zëvendësojë të gjitha etiketat e një torrenti që ka një etiketë që tregon kush e shtoi.</translation>
+    </message>
 </context>
 <context>
     <name>WebUI</name>
@@ -14250,6 +15198,669 @@ Please choose a different name and try again.</source>
         <source>&lt; 1m</source>
         <comment>&lt; 1 minute</comment>
         <translation>&lt; 1m</translation>
+    </message>
+</context>
+<context>
+    <name>UpdateInstaller</name>
+    <message>
+        <source>Kettle Edition update</source>
+        <translation>Përditësim i Kettle Edition</translation>
+    </message>
+    <message>
+        <source>Kettle Edition was updated to %1.</source>
+        <translation>Kettle Edition u përditësua në %1.</translation>
+    </message>
+    <message>
+        <source>Kettle Edition updated</source>
+        <translation>Kettle Edition u përditësua</translation>
+    </message>
+    <message>
+        <source>Downloading Kettle Edition %1 (%2 changed files).</source>
+        <translation>Po shkarkohet Kettle Edition %1 (%2 skedarë të ndryshuar).</translation>
+    </message>
+    <message>
+        <source>Kettle Edition %1 is downloaded and ready to install.</source>
+        <translation>Kettle Edition %1 u shkarkua dhe është gati për instalim.</translation>
+    </message>
+    <message>
+        <source>Kettle Edition update</source>
+        <translation>Përditësim i Kettle Edition</translation>
+    </message>
+    <message>
+        <source>Kettle Edition was updated to %1.</source>
+        <translation>Kettle Edition u përditësua në %1.</translation>
+    </message>
+    <message>
+        <source>Kettle Edition updated</source>
+        <translation>Kettle Edition u përditësua</translation>
+    </message>
+    <message>
+        <source>Downloading Kettle Edition %1 (%2 changed files).</source>
+        <translation>Po shkarkohet Kettle Edition %1 (%2 skedarë të ndryshuar).</translation>
+    </message>
+    <message>
+        <source>Kettle Edition %1 is downloaded and ready to install.</source>
+        <translation>Kettle Edition %1 u shkarkua dhe është gati për instalim.</translation>
+    </message>
+</context>
+<context>
+    <name>UserAccountDialog</name>
+    <message>
+        <source>User</source>
+        <translation>Përdorues</translation>
+    </message>
+    <message>
+        <source>Username:</source>
+        <translation>Emri i përdoruesit:</translation>
+    </message>
+    <message>
+        <source>Role:</source>
+        <translation>Roli:</translation>
+    </message>
+    <message>
+        <source>Password:</source>
+        <translation>Fjalëkalimi:</translation>
+    </message>
+    <message>
+        <source>Confirm password:</source>
+        <translation>Konfirmo fjalëkalimin:</translation>
+    </message>
+    <message>
+        <source>Disable this account</source>
+        <translation>Çaktivizo këtë llogari</translation>
+    </message>
+    <message>
+        <source>Edit User</source>
+        <translation>Ndrysho përdoruesin</translation>
+    </message>
+    <message>
+        <source>Leave empty to keep the current password</source>
+        <translation>Lëreni bosh për të mbajtur fjalëkalimin aktual</translation>
+    </message>
+    <message>
+        <source>Add User</source>
+        <translation>Shto përdorues</translation>
+    </message>
+    <message>
+        <source>At least %1 characters</source>
+        <translation>Të paktën %1 shenja</translation>
+    </message>
+    <message>
+        <source>Enter a username.</source>
+        <translation>Shkruani një emër përdoruesi.</translation>
+    </message>
+    <message>
+        <source>The password must be at least %1 characters long.</source>
+        <translation>Fjalëkalimi duhet të ketë të paktën %1 shenja.</translation>
+    </message>
+    <message>
+        <source>The passwords don&apos;t match.</source>
+        <translation>Fjalëkalimet nuk përputhen.</translation>
+    </message>
+    <message>
+        <source>User</source>
+        <translation>Përdorues</translation>
+    </message>
+    <message>
+        <source>Username:</source>
+        <translation>Emri i përdoruesit:</translation>
+    </message>
+    <message>
+        <source>Role:</source>
+        <translation>Roli:</translation>
+    </message>
+    <message>
+        <source>Password:</source>
+        <translation>Fjalëkalimi:</translation>
+    </message>
+    <message>
+        <source>Confirm password:</source>
+        <translation>Konfirmo fjalëkalimin:</translation>
+    </message>
+    <message>
+        <source>Disable this account</source>
+        <translation>Çaktivizo këtë llogari</translation>
+    </message>
+    <message>
+        <source>Edit User</source>
+        <translation>Ndrysho përdoruesin</translation>
+    </message>
+    <message>
+        <source>Leave empty to keep the current password</source>
+        <translation>Lëreni bosh për të mbajtur fjalëkalimin aktual</translation>
+    </message>
+    <message>
+        <source>Add User</source>
+        <translation>Shto përdorues</translation>
+    </message>
+    <message>
+        <source>At least %1 characters</source>
+        <translation>Të paktën %1 shenja</translation>
+    </message>
+    <message>
+        <source>Enter a username.</source>
+        <translation>Shkruani një emër përdoruesi.</translation>
+    </message>
+    <message>
+        <source>The password must be at least %1 characters long.</source>
+        <translation>Fjalëkalimi duhet të ketë të paktën %1 shenja.</translation>
+    </message>
+    <message>
+        <source>The passwords don&apos;t match.</source>
+        <translation>Fjalëkalimet nuk përputhen.</translation>
+    </message>
+</context>
+<context>
+    <name>UserAccountsWidget</name>
+    <message>
+        <source>User Accounts</source>
+        <translation>Llogari përdoruesish</translation>
+    </message>
+    <message>
+        <source>Users</source>
+        <translation>Përdorues</translation>
+    </message>
+    <message>
+        <source>People who can log in to the WebUI with their own username and password.</source>
+        <translation>Njerëz që mund të hyjnë në WebUI me emrin e tyre të përdoruesit dhe fjalëkalimin.</translation>
+    </message>
+    <message>
+        <source>Add User...</source>
+        <translation>Shto përdorues...</translation>
+    </message>
+    <message>
+        <source>Edit...</source>
+        <translation>Ndrysho...</translation>
+    </message>
+    <message>
+        <source>Remove</source>
+        <translation>Hiq</translation>
+    </message>
+    <message>
+        <source>Roles</source>
+        <translation>Role</translation>
+    </message>
+    <message>
+        <source>A role decides what its users are allowed to do.</source>
+        <translation>Një rol përcakton çfarë lejohet të bëjnë përdoruesit e tij.</translation>
+    </message>
+    <message>
+        <source>Add Role...</source>
+        <translation>Shto rol...</translation>
+    </message>
+    <message>
+        <source>Logged In</source>
+        <translation>Të futur</translation>
+    </message>
+    <message>
+        <source>Browsers and devices where someone is logged in with a user account.</source>
+        <translation>Shfletues dhe pajisje ku dikush është futur me një llogari përdoruesi.</translation>
+    </message>
+    <message>
+        <source>Log Out</source>
+        <translation>Dil</translation>
+    </message>
+    <message>
+        <source>Username</source>
+        <translation>Emri i përdoruesit</translation>
+    </message>
+    <message>
+        <source>Role</source>
+        <translation>Roli</translation>
+    </message>
+    <message>
+        <source>Status</source>
+        <translation>Gjendja</translation>
+    </message>
+    <message>
+        <source>Last login</source>
+        <translation>Hyrja e fundit</translation>
+    </message>
+    <message>
+        <source>Created</source>
+        <translation>Krijuar</translation>
+    </message>
+    <message>
+        <source>Name</source>
+        <translation>Emri</translation>
+    </message>
+    <message>
+        <source>Description</source>
+        <translation>Përshkrimi</translation>
+    </message>
+    <message>
+        <source>Permissions</source>
+        <translation>Lejet</translation>
+    </message>
+    <message>
+        <source>User</source>
+        <translation>Përdorues</translation>
+    </message>
+    <message>
+        <source>Browser</source>
+        <translation>Shfletuesi</translation>
+    </message>
+    <message>
+        <source>Logged in</source>
+        <translation>Hyri më</translation>
+    </message>
+    <message>
+        <source>Last active</source>
+        <translation>Aktiv së fundi</translation>
+    </message>
+    <message>
+        <source>Expires</source>
+        <translation>Skadon</translation>
+    </message>
+    <message>
+        <source>The user database could not be opened. See the Execution Log for details.</source>
+        <translation>Baza e përdoruesve s&apos;u hap dot. Shihni regjistrin e ekzekutimit për hollësi.</translation>
+    </message>
+    <message>
+        <source>Disabled</source>
+        <translation>Çaktivizuar</translation>
+    </message>
+    <message>
+        <source>Enabled</source>
+        <translation>Aktivizuar</translation>
+    </message>
+    <message>
+        <source>Never</source>
+        <translation>Kurrë</translation>
+    </message>
+    <message>
+        <source>No accounts yet, so everyone still uses the shared WebUI login. Add an Admin account first.</source>
+        <translation>Ende nuk ka llogari, ndaj të gjithë përdorin ende hyrjen e përbashkët të WebUI. Shtoni së pari një llogari Admin.</translation>
+    </message>
+    <message>
+        <source>Couldn&apos;t read the user database. %1</source>
+        <translation>Baza e përdoruesve s&apos;u lexua dot. %1</translation>
+    </message>
+    <message>
+        <source>Remove user</source>
+        <translation>Hiq përdoruesin</translation>
+    </message>
+    <message>
+        <source>Are you sure you want to remove the user &apos;%1&apos;?</source>
+        <translation>Jeni i sigurt që doni të hiqni përdoruesin «%1»?</translation>
+    </message>
+    <message>
+        <source>Remove role</source>
+        <translation>Hiq rolin</translation>
+    </message>
+    <message>
+        <source>Are you sure you want to remove the role &apos;%1&apos;?</source>
+        <translation>Jeni i sigurt që doni të hiqni rolin «%1»?</translation>
+    </message>
+    <message>
+        <source>Enable</source>
+        <translation>Aktivizo</translation>
+    </message>
+    <message>
+        <source>Disable</source>
+        <translation>Çaktivizo</translation>
+    </message>
+    <message>
+        <source>Log Out Everywhere</source>
+        <translation>Dil kudo</translation>
+    </message>
+    <message>
+        <source>User Accounts</source>
+        <translation>Llogari përdoruesish</translation>
+    </message>
+    <message>
+        <source>Users</source>
+        <translation>Përdorues</translation>
+    </message>
+    <message>
+        <source>People who can log in to the WebUI with their own username and password.</source>
+        <translation>Njerëz që mund të hyjnë në WebUI me emrin e tyre të përdoruesit dhe fjalëkalimin.</translation>
+    </message>
+    <message>
+        <source>Add User...</source>
+        <translation>Shto përdorues...</translation>
+    </message>
+    <message>
+        <source>Edit...</source>
+        <translation>Ndrysho...</translation>
+    </message>
+    <message>
+        <source>Remove</source>
+        <translation>Hiq</translation>
+    </message>
+    <message>
+        <source>Roles</source>
+        <translation>Role</translation>
+    </message>
+    <message>
+        <source>A role decides what its users are allowed to do.</source>
+        <translation>Një rol përcakton çfarë lejohet të bëjnë përdoruesit e tij.</translation>
+    </message>
+    <message>
+        <source>Add Role...</source>
+        <translation>Shto rol...</translation>
+    </message>
+    <message>
+        <source>Logged In</source>
+        <translation>Të futur</translation>
+    </message>
+    <message>
+        <source>Browsers and devices where someone is logged in with a user account.</source>
+        <translation>Shfletues dhe pajisje ku dikush është futur me një llogari përdoruesi.</translation>
+    </message>
+    <message>
+        <source>Log Out</source>
+        <translation>Dil</translation>
+    </message>
+    <message>
+        <source>Username</source>
+        <translation>Emri i përdoruesit</translation>
+    </message>
+    <message>
+        <source>Role</source>
+        <translation>Roli</translation>
+    </message>
+    <message>
+        <source>Status</source>
+        <translation>Gjendja</translation>
+    </message>
+    <message>
+        <source>Last login</source>
+        <translation>Hyrja e fundit</translation>
+    </message>
+    <message>
+        <source>Created</source>
+        <translation>Krijuar</translation>
+    </message>
+    <message>
+        <source>Name</source>
+        <translation>Emri</translation>
+    </message>
+    <message>
+        <source>Description</source>
+        <translation>Përshkrimi</translation>
+    </message>
+    <message>
+        <source>Permissions</source>
+        <translation>Lejet</translation>
+    </message>
+    <message>
+        <source>User</source>
+        <translation>Përdorues</translation>
+    </message>
+    <message>
+        <source>Browser</source>
+        <translation>Shfletuesi</translation>
+    </message>
+    <message>
+        <source>Logged in</source>
+        <translation>Hyri më</translation>
+    </message>
+    <message>
+        <source>Last active</source>
+        <translation>Aktiv së fundi</translation>
+    </message>
+    <message>
+        <source>Expires</source>
+        <translation>Skadon</translation>
+    </message>
+    <message>
+        <source>The user database could not be opened. See the Execution Log for details.</source>
+        <translation>Baza e përdoruesve s&apos;u hap dot. Shihni regjistrin e ekzekutimit për hollësi.</translation>
+    </message>
+    <message>
+        <source>Disabled</source>
+        <translation>Çaktivizuar</translation>
+    </message>
+    <message>
+        <source>Enabled</source>
+        <translation>Aktivizuar</translation>
+    </message>
+    <message>
+        <source>Never</source>
+        <translation>Kurrë</translation>
+    </message>
+    <message>
+        <source>No accounts yet, so everyone still uses the shared WebUI login. Add an Admin account first.</source>
+        <translation>Ende nuk ka llogari, ndaj të gjithë përdorin ende hyrjen e përbashkët të WebUI. Shtoni së pari një llogari Admin.</translation>
+    </message>
+    <message>
+        <source>Couldn&apos;t read the user database. %1</source>
+        <translation>Baza e përdoruesve s&apos;u lexua dot. %1</translation>
+    </message>
+    <message>
+        <source>Remove user</source>
+        <translation>Hiq përdoruesin</translation>
+    </message>
+    <message>
+        <source>Are you sure you want to remove the user &apos;%1&apos;?</source>
+        <translation>Jeni i sigurt që doni të hiqni përdoruesin «%1»?</translation>
+    </message>
+    <message>
+        <source>Remove role</source>
+        <translation>Hiq rolin</translation>
+    </message>
+    <message>
+        <source>Are you sure you want to remove the role &apos;%1&apos;?</source>
+        <translation>Jeni i sigurt që doni të hiqni rolin «%1»?</translation>
+    </message>
+    <message>
+        <source>Enable</source>
+        <translation>Aktivizo</translation>
+    </message>
+    <message>
+        <source>Disable</source>
+        <translation>Çaktivizo</translation>
+    </message>
+    <message>
+        <source>Log Out Everywhere</source>
+        <translation>Dil kudo</translation>
+    </message>
+</context>
+<context>
+    <name>UserRoleDialog</name>
+    <message>
+        <source>Role</source>
+        <translation>Roli</translation>
+    </message>
+    <message>
+        <source>Name:</source>
+        <translation>Emri:</translation>
+    </message>
+    <message>
+        <source>Description:</source>
+        <translation>Përshkrimi:</translation>
+    </message>
+    <message>
+        <source>Gives control over the PC or qBittorrent itself.</source>
+        <translation>Jep kontroll mbi PC-në ose mbi vetë qBittorrent.</translation>
+    </message>
+    <message>
+        <source>Add Role</source>
+        <translation>Shto rol</translation>
+    </message>
+    <message>
+        <source>Edit Role</source>
+        <translation>Ndrysho rolin</translation>
+    </message>
+    <message>
+        <source>Enter a role name.</source>
+        <translation>Shkruani një emër roli.</translation>
+    </message>
+    <message>
+        <source>Role</source>
+        <translation>Roli</translation>
+    </message>
+    <message>
+        <source>Name:</source>
+        <translation>Emri:</translation>
+    </message>
+    <message>
+        <source>Description:</source>
+        <translation>Përshkrimi:</translation>
+    </message>
+    <message>
+        <source>Gives control over the PC or qBittorrent itself.</source>
+        <translation>Jep kontroll mbi PC-në ose mbi vetë qBittorrent.</translation>
+    </message>
+    <message>
+        <source>Add Role</source>
+        <translation>Shto rol</translation>
+    </message>
+    <message>
+        <source>Edit Role</source>
+        <translation>Ndrysho rolin</translation>
+    </message>
+    <message>
+        <source>Enter a role name.</source>
+        <translation>Shkruani një emër roli.</translation>
+    </message>
+</context>
+<context>
+    <name>WebUIActivityWidget</name>
+    <message>
+        <source>All</source>
+        <translation>Të gjitha</translation>
+    </message>
+    <message>
+        <source>Filter activity</source>
+        <translation>Filtro aktivitetin</translation>
+    </message>
+    <message>
+        <source>Export...</source>
+        <translation>Eksporto...</translation>
+    </message>
+    <message>
+        <source>User:</source>
+        <translation>Përdoruesi:</translation>
+    </message>
+    <message>
+        <source>Category:</source>
+        <translation>Kategoria:</translation>
+    </message>
+    <message>
+        <source>Result:</source>
+        <translation>Rezultati:</translation>
+    </message>
+    <message>
+        <source>Time</source>
+        <translation>Ora</translation>
+    </message>
+    <message>
+        <source>User</source>
+        <translation>Përdorues</translation>
+    </message>
+    <message>
+        <source>Role</source>
+        <translation>Roli</translation>
+    </message>
+    <message>
+        <source>Category</source>
+        <translation>Kategoria</translation>
+    </message>
+    <message>
+        <source>Action</source>
+        <translation>Veprimi</translation>
+    </message>
+    <message>
+        <source>Result</source>
+        <translation>Rezultati</translation>
+    </message>
+    <message>
+        <source>The user database could not be opened. See the General tab for details.</source>
+        <translation>Baza e përdoruesve s&apos;u hap dot. Shihni skedën Të përgjithshme për hollësi.</translation>
+    </message>
+    <message>
+        <source>Results (showing %1 out of %2)</source>
+        <translation>Rezultate (shfaqen %1 nga %2)</translation>
+    </message>
+    <message>
+        <source>Copy</source>
+        <translation>Kopjo</translation>
+    </message>
+    <message>
+        <source>Export WebUI activity</source>
+        <translation>Eksporto aktivitetin e WebUI</translation>
+    </message>
+    <message>
+        <source>CSV files</source>
+        <translation>Skedarë CSV</translation>
+    </message>
+    <message>
+        <source>Couldn&apos;t save the file. Reason: %1</source>
+        <translation>Skedari s&apos;u ruajt dot. Arsyeja: %1</translation>
+    </message>
+    <message>
+        <source>All</source>
+        <translation>Të gjitha</translation>
+    </message>
+    <message>
+        <source>Filter activity</source>
+        <translation>Filtro aktivitetin</translation>
+    </message>
+    <message>
+        <source>Export...</source>
+        <translation>Eksporto...</translation>
+    </message>
+    <message>
+        <source>User:</source>
+        <translation>Përdoruesi:</translation>
+    </message>
+    <message>
+        <source>Category:</source>
+        <translation>Kategoria:</translation>
+    </message>
+    <message>
+        <source>Result:</source>
+        <translation>Rezultati:</translation>
+    </message>
+    <message>
+        <source>Time</source>
+        <translation>Ora</translation>
+    </message>
+    <message>
+        <source>User</source>
+        <translation>Përdorues</translation>
+    </message>
+    <message>
+        <source>Role</source>
+        <translation>Roli</translation>
+    </message>
+    <message>
+        <source>Category</source>
+        <translation>Kategoria</translation>
+    </message>
+    <message>
+        <source>Action</source>
+        <translation>Veprimi</translation>
+    </message>
+    <message>
+        <source>Result</source>
+        <translation>Rezultati</translation>
+    </message>
+    <message>
+        <source>The user database could not be opened. See the General tab for details.</source>
+        <translation>Baza e përdoruesve s&apos;u hap dot. Shihni skedën Të përgjithshme për hollësi.</translation>
+    </message>
+    <message>
+        <source>Results (showing %1 out of %2)</source>
+        <translation>Rezultate (shfaqen %1 nga %2)</translation>
+    </message>
+    <message>
+        <source>Copy</source>
+        <translation>Kopjo</translation>
+    </message>
+    <message>
+        <source>Export WebUI activity</source>
+        <translation>Eksporto aktivitetin e WebUI</translation>
+    </message>
+    <message>
+        <source>CSV files</source>
+        <translation>Skedarë CSV</translation>
+    </message>
+    <message>
+        <source>Couldn&apos;t save the file. Reason: %1</source>
+        <translation>Skedari s&apos;u ruajt dot. Arsyeja: %1</translation>
     </message>
 </context>
 </TS>
