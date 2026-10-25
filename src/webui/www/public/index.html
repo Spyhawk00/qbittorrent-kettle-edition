@@ -26,26 +26,35 @@
         <h1>QBT_TR(JavaScript Required! You must enable JavaScript for the WebUI to work properly)QBT_TR[CONTEXT=Login]</h1>
     </noscript>
     <div id="main">
-        <h1>QBT_TR(qBittorrent WebUI)QBT_TR[CONTEXT=Login]</h1>
-        <div id="logo" class="col">
-            <img src="images/qbittorrent-tray.svg" alt="qBittorrent logo">
+        <div id="panelheader">QBT_TR(Sign in)QBT_TR[CONTEXT=Login]</div>
+        <div id="panelbody">
+            <div id="brand">
+                <div id="logo">
+                    <img src="images/qbittorrent-tray.svg" alt="qBittorrent logo">
+                </div>
+                <div>
+                    <h1>qBittorrent</h1>
+                    <div id="edition">Kettle Edition</div>
+                </div>
+            </div>
+            <div id="formplace">
+                <form id="loginform">
+                    <div class="row">
+                        <label for="username">QBT_TR(Username)QBT_TR[CONTEXT=Login]</label><br>
+                        <input type="text" class="login-input" id="username" name="username" autocomplete="username" autocapitalize="none" autofocus required>
+                    </div>
+                    <div class="row">
+                        <label for="password">QBT_TR(Password)QBT_TR[CONTEXT=Login]</label><br>
+                        <input type="password" class="login-input" id="password" name="password" autocomplete="current-password" required>
+                    </div>
+                    <div class="row">
+                        <input type="submit" id="loginButton" value="QBT_TR(Login)QBT_TR[CONTEXT=Login]">
+                    </div>
+                </form>
+            </div>
+            <div id="error_msg"></div>
         </div>
-        <div id="formplace" class="col">
-            <form id="loginform">
-                <div class="row">
-                    <label for="username">QBT_TR(Username)QBT_TR[CONTEXT=Login]</label><br>
-                    <input type="text" class="login-input" id="username" name="username" autocomplete="username" autocapitalize="none" autofocus required>
-                </div>
-                <div class="row">
-                    <label for="password">QBT_TR(Password)QBT_TR[CONTEXT=Login]</label><br>
-                    <input type="password" class="login-input" id="password" name="password" autocomplete="current-password" required>
-                </div>
-                <div class="row">
-                    <input type="submit" id="loginButton" value="QBT_TR(Login)QBT_TR[CONTEXT=Login]">
-                </div>
-            </form>
-        </div>
-        <div id="error_msg"></div>
+        <div id="panelfooter">QBT_TR(A kettle is a group of hawks soaring together.)QBT_TR[CONTEXT=Login]</div>
     </div>
 </body>
 

@@ -43,6 +43,8 @@
 #include <QDialogButtonBox>
 #include <QEvent>
 #include <QFileDialog>
+#include <QFormLayout>
+#include <QGridLayout>
 #include <QGroupBox>
 #include <QHostAddress>
 #include <QKeyEvent>
@@ -279,6 +281,74 @@ namespace
         return key.first(4) + QString((key.length() - 10), QChar(u'•')) + key.last(6);
     }
 
+    // The captions (a label, a check box or a radio button) that have a box to fill in right after them in the
+    // same row of a grid or form layout, each with its box
+    QList<std::pair<QWidget *, QWidget *>> captionsBesideBoxes(QWidget *page)
+    {
+        const auto isBox = [](const QWidget *widget)
+        {
+            return qobject_cast<const QComboBox *>(widget) || qobject_cast<const QAbstractSpinBox *>(widget)
+                    || qobject_cast<const QLineEdit *>(widget);
+        };
+        const auto isCaption = [](const QWidget *widget)
+        {
+            if (const auto *label = qobject_cast<const QLabel *>(widget))
+                return (!label->wordWrap() && !label->text().isEmpty() && label->pixmap(Qt::ReturnByValue).isNull());
+            return (qobject_cast<const QCheckBox *>(widget) || qobject_cast<const QRadioButton *>(widget));
+        };
+
+        // only the first caption of a row counts, not the "Port:" after an address
+        QList<std::pair<QWidget *, QWidget *>> captions;
+        for (const QGridLayout *grid : asConst(page->findChildren<QGridLayout *>()))
+        {
+            QMap<int, std::pair<int, std::pair<QWidget *, QWidget *>>> firstOfRow;
+            for (int i = 0; i < grid->count(); ++i)
+            {
+                if (!isBox(grid->itemAt(i)->widget()))
+                    continue;
+
+                int row = 0, column = 0, rowSpan = 0, columnSpan = 0;
+                grid->getItemPosition(i, &row, &column, &rowSpan, &columnSpan);
+                if (column == 0)
+                    continue;
+
+                QWidget *caption = (grid->itemAtPosition(row, (column - 1)) ? grid->itemAtPosition(row, (column - 1))->widget() : nullptr);
+                if (!isCaption(caption))
+                    continue;
+                int captionRow = 0, captionColumn = 0;
+                grid->getItemPosition(grid->indexOf(caption), &captionRow, &captionColumn, &rowSpan, &columnSpan);
+                if (((captionColumn + columnSpan) == column) && (!firstOfRow.contains(row) || (column < firstOfRow[row].first)))
+                    firstOfRow[row] = {column, {caption, grid->itemAt(i)->widget()}};
+            }
+            for (const auto &entry : asConst(firstOfRow))
+                captions.append(entry.second);
+        }
+        for (const QFormLayout *form : asConst(page->findChildren<QFormLayout *>()))
+        {
+            for (int row = 0; row < form->rowCount(); ++row)
+            {
+                QLayoutItem *caption = form->itemAt(row, QFormLayout::LabelRole);
+                QLayoutItem *box = form->itemAt(row, QFormLayout::FieldRole);
+                if (caption && box && isCaption(caption->widget()) && isBox(box->widget()))
+                    captions.emplaceBack(caption->widget(), box->widget());
+            }
+        }
+        for (const QHBoxLayout *line : asConst(page->findChildren<QHBoxLayout *>()))
+        {
+            for (int i = 0; (i + 1) < line->count(); ++i)
+            {
+                QWidget *caption = line->itemAt(i)->widget();
+                QWidget *box = line->itemAt(i + 1)->widget();
+                if (isCaption(caption) && isBox(box))
+                {
+                    captions.emplaceBack(caption, box);
+                    break;
+                }
+            }
+        }
+        return captions;
+    }
+
     // Shortcuts for frequently used signals that have more than one overload. They would require
     // type casts and that is why we declare required member pointer here instead.
     void (QComboBox::*qComboBoxCurrentIndexChanged)(int) = &QComboBox::currentIndexChanged;
@@ -290,7 +360,6 @@ OptionsDialog::OptionsDialog(IGUIApplication *app, QWidget *parent)
     : GUIApplicationComponent(app, parent)
     , m_ui {new Ui::OptionsDialog}
     , m_storeDialogSize {SETTINGS_KEY(u"Size"_s)}
-    , m_storeHSplitterSize {SETTINGS_KEY(u"HorizontalSplitterSizes"_s)}
     , m_storeLastViewedPage {SETTINGS_KEY(u"LastViewedPage"_s)}
 {
     m_ui->setupUi(this);
@@ -322,6 +391,8 @@ OptionsDialog::OptionsDialog(IGUIApplication *app, QWidget *parent)
     setWindowTitle(tr("Preferences"));
 #endif
 
+    // the settings never get narrower than a line of "label: control" needs
+    m_ui->pageWidget->setMinimumWidth(100 * fontMetrics().averageCharWidth());
     m_ui->hsplitter->setCollapsible(0, false);
     m_ui->hsplitter->setCollapsible(1, false);
 
@@ -421,11 +492,6 @@ OptionsDialog::~OptionsDialog()
 {
     // save dialog states
     m_storeDialogSize = size();
-
-    QStringList hSplitterSizes;
-    for (const int size : asConst(m_ui->hsplitter->sizes()))
-        hSplitterSizes.append(QString::number(size));
-    m_storeHSplitterSize = hSplitterSizes;
 
     m_storeLastViewedPage = m_ui->tabSelection->currentRow();
 
@@ -1854,7 +1920,37 @@ void OptionsDialog::changePage(QListWidgetItem *current, QListWidgetItem *previo
         current = previous;
     m_ui->tabOption->setCurrentIndex(m_ui->tabSelection->row(current));
     m_ui->labelPageTitle->setText(current ? current->text() : QString());
+    alignFieldColumn();
     showFirstSearchMatch(false);
+}
+
+// The boxes to fill in start at the same distance from the left on every page, like the WebUI's Options
+void OptionsDialog::alignFieldColumn()
+{
+    QWidget *page = m_ui->tabOption->currentWidget();
+    const int index = m_ui->tabOption->currentIndex();
+    if (!page || !page->isVisible() || page->property("fieldsAligned").toBool()
+            || (index == TAB_ADVANCED) || (index == TAB_USERACCOUNTS))
+        return;
+    page->setProperty("fieldsAligned", true);
+
+    // as far as the widest caption of any page needs, with room for the indent some rows have
+    int widest = 0;
+    for (int i = 0; i < m_ui->tabOption->count(); ++i)
+    {
+        if ((i == TAB_ADVANCED) || (i == TAB_USERACCOUNTS))
+            continue;
+        for (const auto &row : asConst(captionsBesideBoxes(m_ui->tabOption->widget(i))))
+            widest = std::max(widest, row.first->sizeHint().width());
+    }
+    const int boxX = page->layout()->contentsMargins().left() + widest + (6 * fontMetrics().averageCharWidth());
+
+    for (const auto &row : asConst(captionsBesideBoxes(page)))
+    {
+        const int shift = boxX - row.second->mapTo(page, QPoint()).x();
+        if (shift > 0)
+            row.first->setMinimumWidth(row.first->width() + shift);
+    }
 }
 
 bool OptionsDialog::eventFilter(QObject *watched, QEvent *event)
@@ -2042,15 +2138,13 @@ void OptionsDialog::showFirstSearchMatch(const bool giveFocus)
 
 void OptionsDialog::loadSplitterState()
 {
-    // room for the longest page name with its icon
+    // the list of pages has one width, room for the longest page name with its icon, and cannot be dragged
     const int width = m_ui->tabSelection->sizeHintForColumn(0) + (2 * m_ui->tabSelection->frameWidth()) + (4 * fontMetrics().averageCharWidth());
-    const QStringList defaultSizes = {QString::number(width), QString::number(m_ui->hsplitter->width() - width)};
+    m_ui->sidebarWidget->setFixedWidth(width);
+    m_ui->hsplitter->setHandleWidth(0);
+    m_ui->hsplitter->handle(1)->setEnabled(false);
 
-    QList<int> splitterSizes;
-    for (const QString &string : asConst(m_storeHSplitterSize.get(defaultSizes)))
-        splitterSizes.append(string.toInt());
-
-    m_ui->hsplitter->setSizes(splitterSizes);
+    m_ui->hsplitter->setSizes({width, (m_ui->hsplitter->width() - width)});
 }
 
 void OptionsDialog::showEvent(QShowEvent *e)
@@ -2058,6 +2152,7 @@ void OptionsDialog::showEvent(QShowEvent *e)
     QDialog::showEvent(e);
 
     loadSplitterState();
+    alignFieldColumn();
 }
 
 void OptionsDialog::saveOptions() const

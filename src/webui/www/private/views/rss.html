@@ -3,7 +3,7 @@
     #rssView {
         background-color: var(--color-background-default);
         box-sizing: border-box;
-        padding: 8px;
+        padding: 4px; /* as far from the edges as the boxes of the Transfers tab */
         height: 100%;
         display: flex;
         flex-direction: column;
@@ -11,6 +11,7 @@
 
     #rssTopBar {
         flex-shrink: 0;
+        margin-bottom: 8px;
     }
 
     /* the bar of the phone layout, which css/Phone.css shows */
@@ -19,9 +20,20 @@
     }
 
     #rssContentView {
+        display: flex;
         width: 100%;
         flex-grow: 1;
         overflow: auto;
+    }
+
+    /* the same handle as between the sidebar and the torrent list of the Transfers tab; it sits in the 8 px between the panes */
+    .rssHandle {
+        background-image: url("images/handle-icon.svg");
+        background-position: center center;
+        background-repeat: no-repeat;
+        cursor: col-resize;
+        flex: none;
+        width: 8px;
     }
 
     #rssFeedFixedHeaderDiv .dynamicTableHeader,
@@ -56,7 +68,7 @@
     #rssFetchingDisabled {
         color: var(--color-text-red);
         font-style: italic;
-        line-height: 26px;
+        line-height: 28px;
         margin-left: 12px;
     }
 
@@ -64,17 +76,27 @@
         display: none;
     }
 
-    #centerRssColumn {
-        margin: 0 8px;
-    }
-
     #leftRssColumn,
     #centerRssColumn,
     #rightRssColumn {
-        float: left;
-        /* should be 16 px but due to rounding differences some browsers don't render that properly */
-        width: calc((100% - 17px) / 3);
         border: none;
+        flex: none;
+        /* a third each, until a handle is moved */
+        width: calc((100% - 16px) / 3);
+    }
+
+    #leftRssColumn {
+        width: var(--rss-left-width, calc((100% - 16px) / 3));
+    }
+
+    #centerRssColumn {
+        flex: 1;
+        min-width: 0;
+        width: auto;
+    }
+
+    #rightRssColumn {
+        width: var(--rss-right-width, calc((100% - 16px) / 3));
     }
 
     #rightRssColumn {
@@ -170,16 +192,18 @@
 
     #rssButtonBar {
         overflow: hidden;
-        height: 30px;
+        height: 28px; /* the same bar as on the Search tab */
     }
 
     #rssButtonBar button {
+        box-sizing: border-box;
+        height: 28px;
         padding: 3px 6px;
     }
 
     #rssButtonBar input {
         box-sizing: border-box;
-        height: 26px;
+        height: 28px;
         background-color: var(--color-background-default);
         background-image: url("../images/edit-find.svg");
         background-position: 2px;
@@ -264,6 +288,7 @@
                 </table>
             </div>
         </div>
+        <div class="rssHandle" id="rssLeftHandle"></div>
         <div id="centerRssColumn">
             <div id="rssArticleTableDiv" class="dynamicTableDiv">
                 <div id="rssArticleFixedHeaderDiv" class="dynamicTableFixedHeaderDiv">
@@ -278,6 +303,7 @@
                 </table>
             </div>
         </div>
+        <div class="rssHandle" id="rssRightHandle"></div>
         <div id="rightRssColumn">
             <div id="rssDetailsFixedHeaderDiv" class="dynamicTableFixedHeaderDiv">
                 <table class="dynamicTable unselectable">
@@ -344,7 +370,57 @@
         const rssFeedTable = new window.qBittorrent.DynamicTable.RssFeedTable();
         const rssArticleTable = new window.qBittorrent.DynamicTable.RssArticleTable();
 
+        // drag a handle to change the width of the feeds list or of the details; the articles list takes the rest
+        const setupHandles = () => {
+            const view = document.getElementById("rssContentView");
+            const minWidth = 120;
+            const setup = (handleId, columnId, otherColumnId, variable, prefKey, direction) => {
+                const handle = document.getElementById(handleId);
+                const column = document.getElementById(columnId);
+                const otherColumn = document.getElementById(otherColumnId);
+                // the articles list keeps at least the minimum width
+                const clampWidth = (width) => {
+                    const maxWidth = Math.max(minWidth, view.clientWidth - otherColumn.offsetWidth - 16 - minWidth);
+                    return Math.min(Math.max(width, minWidth), maxWidth);
+                };
+                const localPreferences = new window.qBittorrent.LocalPreferences.LocalPreferences();
+                try {
+                    const saved = Number(localPreferences.get(prefKey, 0));
+                    if (saved >= minWidth)
+                        view.style.setProperty(variable, `${saved}px`);
+                }
+                catch (err) {}
+
+                let startX = 0;
+                let startWidth = 0;
+                let dragging = false;
+                handle.addEventListener("pointerdown", (e) => {
+                    dragging = true;
+                    startX = e.clientX;
+                    startWidth = column.offsetWidth;
+                    handle.setPointerCapture(e.pointerId);
+                    e.preventDefault();
+                });
+                handle.addEventListener("pointermove", (e) => {
+                    if (dragging)
+                        view.style.setProperty(variable, `${clampWidth(startWidth + (direction * (e.clientX - startX)))}px`);
+                });
+                handle.addEventListener("pointerup", () => {
+                    if (!dragging)
+                        return;
+                    dragging = false;
+                    try {
+                        localPreferences.set(prefKey, column.offsetWidth);
+                    }
+                    catch (err) {}
+                });
+            };
+            setup("rssLeftHandle", "leftRssColumn", "rightRssColumn", "--rss-left-width", "rss_left_width", 1);
+            setup("rssRightHandle", "rightRssColumn", "leftRssColumn", "--rss-right-width", "rss_right_width", -1);
+        };
+
         const init = () => {
+            setupHandles();
             const pref = window.parent.qBittorrent.Cache.preferences.get();
 
             if (!pref.rss_processing_enabled)

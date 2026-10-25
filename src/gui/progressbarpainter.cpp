@@ -83,7 +83,9 @@ void ProgressBarPainter::paint(QPainter *painter, const QStyleOptionViewItem &op
 
     painter->save();
     const QStyle *style = m_dummyProgressBar.style();
-    style->drawPrimitive(QStyle::PE_PanelItemViewItem, &option, painter, option.widget);
+    // the background of the cell is drawn by the style of the list, so it looks like the other cells of the row
+    const QStyle *listStyle = option.widget ? option.widget->style() : style;
+    listStyle->drawPrimitive(QStyle::PE_PanelItemViewItem, &option, painter, option.widget);
     style->drawControl(QStyle::CE_ProgressBar, &styleOption, painter, &m_dummyProgressBar);
     painter->restore();
 }

@@ -504,12 +504,14 @@ const initializeWindows = () => {
             contentURL: "views/statistics.html?v=${CACHEID}",
             maximizable: false,
             padding: 10,
-            width: loadWindowWidth(id, 285),
-            height: loadWindowHeight(id, 415),
+            // a size saved for the old, narrower window would cut the tabs off
+            width: Math.max(loadWindowWidth(id, 460), 460),
+            height: Math.max(loadWindowHeight(id, 600), 600),
             onResize: window.qBittorrent.Misc.createDebounceHandler(500, (e) => {
                 saveWindowSize(id);
             }),
             onContentLoaded: () => {
+                window.qBittorrent.Statistics.init();
                 window.qBittorrent.Statistics.render();
             }
         });
@@ -1435,6 +1437,7 @@ const initializeWindows = () => {
             },
             toolbar: true,
             toolbarURL: "views/aboutToolbar.html?v=${CACHEID}",
+            maximizable: false,
             padding: 10,
             width: loadWindowWidth(id, 640),
             height: loadWindowHeight(id, 420),

@@ -29,8 +29,23 @@
 #pragma once
 
 #include <QDialog>
+#include <QElapsedTimer>
+#include <QList>
+#include <QPoint>
 
 #include "base/settingvalue.h"
+
+class QComboBox;
+class QGridLayout;
+class QGroupBox;
+class QLabel;
+class QTabWidget;
+class QVBoxLayout;
+
+namespace BitTorrent
+{
+    struct UsageHistory;
+}
 
 namespace Ui
 {
@@ -43,13 +58,71 @@ class StatsDialog final : public QDialog
     Q_DISABLE_COPY_MOVE(StatsDialog)
 
 public:
-  explicit StatsDialog(QWidget *parent);
-  ~StatsDialog() override;
+    explicit StatsDialog(QWidget *parent);
+    ~StatsDialog() override;
 
 private slots:
     void update();
 
 private:
+    QVBoxLayout *addPage(const QString &title);
+    QGroupBox *addSection(QVBoxLayout *page, const QString &title);
+    QLabel *addRow(QGroupBox *section, const QString &text);
+    void buildOverviewPage();
+    void buildHistoryPage();
+    void buildTechnicalPage();
+
+    void updateOverview();
+    void updateHistory();
+    void updateTechnical();
+    void updatePeriod(const BitTorrent::UsageHistory &history);
+    void updateMonths(const BitTorrent::UsageHistory &history);
+    void updateAddedTorrents();
+    void copyCurrentTab() const;
+
     Ui::StatsDialog *m_ui = nullptr;
+    QTabWidget *m_tabs = nullptr;
     SettingValue<QSize> m_storeDialogSize;
+    SettingValue<QPoint> m_storeDialogPosition;
+    SettingValue<int> m_storePeriod;
+
+    // Overview
+    QLabel *m_sessionDownloaded = nullptr;
+    QLabel *m_sessionUploaded = nullptr;
+    QLabel *m_sessionRatio = nullptr;
+    QLabel *m_allTimeDownloaded = nullptr;
+    QLabel *m_allTimeUploaded = nullptr;
+    QLabel *m_allTimeRatio = nullptr;
+    QLabel *m_currentSpeed = nullptr;
+    QLabel *m_torrentsDownloading = nullptr;
+    QLabel *m_torrentsSeeding = nullptr;
+    QLabel *m_torrentsStopped = nullptr;
+    QLabel *m_torrentsErrored = nullptr;
+    QLabel *m_peers = nullptr;
+    QLabel *m_runningFor = nullptr;
+
+    // History
+    QComboBox *m_period = nullptr;
+    QLabel *m_periodDownloaded = nullptr;
+    QLabel *m_periodUploaded = nullptr;
+    QLabel *m_periodRatio = nullptr;
+    QGroupBox *m_monthsSection = nullptr;
+    QGroupBox *m_addedSection = nullptr;
+    QLabel *m_trackingSince = nullptr;
+    QList<QLabel *> m_monthCells;
+    QList<QLabel *> m_addedCells;
+    bool m_addedDirty = true;
+
+    // Technical
+    QLabel *m_writeStarve = nullptr;
+    QLabel *m_readStarve = nullptr;
+    QLabel *m_queuedJobs = nullptr;
+    QLabel *m_jobsTime = nullptr;
+    QLabel *m_queuedBytes = nullptr;
+    QLabel *m_requestLatency = nullptr;
+    QLabel *m_totalBuffers = nullptr;
+    QLabel *m_cacheHits = nullptr;
+    QLabel *m_dhtNodes = nullptr;
+    QLabel *m_queuedAnnounces = nullptr;
+    QLabel *m_discarded = nullptr;
 };

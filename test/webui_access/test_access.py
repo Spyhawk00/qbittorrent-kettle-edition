@@ -561,6 +561,76 @@ class PermissionTests(AccessTestCase):
         self.assertEqual(status, 401)
 
 
+class StatisticsTests(AccessTestCase):
+    @classmethod
+    def setUpClass(cls):
+        super().setUpClass()
+        admin = Client(cls.qbt)
+        admin.login("morgan", "morgan-password")
+        admin.add_torrent("Stats-One")
+        admin.add_torrent("Stats-Two")
+
+    def server_state(self, client):
+        status, _, body = client.request("GET", "/api/v2/sync/maindata?rid=0")
+        self.assertEqual(status, 200)
+        return json.loads(body)["server_state"]
+
+    def test_server_state_keeps_old_fields_and_adds_the_new_ones(self):
+        state = self.server_state(self.client("victor"))
+        # Sonarr, Radarr and the WebUI read these, so they stay
+        for key in ("alltime_dl", "alltime_ul", "global_ratio", "total_peer_connections", "total_wasted_session",
+                    "dl_info_speed", "up_info_speed", "dht_nodes", "queued_io_jobs", "write_cache_overload",
+                    "queued_tracker_announces", "connection_status"):
+            self.assertIn(key, state)
+        for key in ("session_dl", "session_ul", "torrents_downloading", "torrents_seeding", "torrents_stopped",
+                    "torrents_errored", "uptime"):
+            self.assertIsInstance(state[key], int, key)
+            self.assertGreaterEqual(state[key], 0, key)
+        self.assertIsInstance(state["dht_enabled"], bool)
+        # the two torrents were added stopped
+        self.assertGreaterEqual(state["torrents_stopped"], 2)
+
+    def test_usage_history_has_days_and_months(self):
+        status, _, body = self.client("victor").request("GET", "/api/v2/transfer/usageHistory")
+        self.assertEqual(status, 200)
+        data = json.loads(body)
+        for key in ("today", "since"):
+            self.assertRegex(data[key], r"^\d{4}-\d{2}-\d{2}$")
+        self.assertLessEqual(data["since"], data["today"])
+        for entries in (data["days"], data["months"]):
+            for entry in entries:
+                self.assertRegex(entry["date"], r"^\d{4}-\d{2}-\d{2}$")
+                self.assertGreaterEqual(entry["downloaded"], 0)
+                self.assertGreaterEqual(entry["uploaded"], 0)
+        # months are keyed by their first day
+        self.assertTrue(all(entry["date"].endswith("-01") for entry in data["months"]))
+
+    def test_usage_history_needs_login(self):
+        self.assertIn(Client(self.qbt).request("GET", "/api/v2/transfer/usageHistory")[0], (401, 403))
+
+    def test_added_downloads_are_counted_per_name_for_those_who_may_read_the_log(self):
+        status, counts = self.client("morgan").access("addedTorrents")
+        self.assertEqual(status, 200)
+        added = {item["username"]: item["added"] for item in counts}
+        self.assertGreaterEqual(added.get("morgan", 0), 2)
+        self.assertEqual(counts, sorted(counts, key=lambda item: -item["added"]))
+        # a viewer may not read the activity log, so may not read this either
+        self.assertEqual(self.client("victor").access("addedTorrents")[0], 403)
+        # nothing is counted before the given time
+        status, counts = self.client("morgan").access("addedTorrents", since=str(time.time() + 3600))
+        self.assertEqual((status, counts), (200, []))
+
+    def test_the_statistics_window_has_its_tabs_and_every_id_the_script_uses(self):
+        client = self.client("victor")
+        page = client.request("GET", "/views/statistics.html")[2].decode()
+        script = client.request("GET", "/scripts/statistics.js")[2].decode()
+        for tab in ("Overview", "History", "Technical"):
+            self.assertIn(f'id="statistics{tab}Tab"', page)
+            self.assertIn(f'id="statistics{tab}Link"', page)
+        for element_id in set(re.findall(r'(?:setText|getElementById)\("([A-Za-z]+)"', script)):
+            self.assertIn(f'id="{element_id}"', page, element_id)
+
+
 class AdminApiTests(AccessTestCase):
     def test_non_admin_cannot_manage(self):
         alice = self.client("alice")
@@ -1364,6 +1434,18 @@ class NoAccountsTests(AccessTestCase):
         status, me = client.access("me")
         self.assertEqual(me["kind"], "shared")
         self.assertEqual(client.access("users")[0], 200)
+
+    def test_a_new_database_gets_the_default_roles(self):
+        # qBittorrent creates the database itself here, so these are its own built-in roles
+        _, roles = self.client(SHARED_USER, SHARED_PASSWORD).access("roles")
+        by_name = {role["name"]: role["permissions"] for role in roles["roles"]}
+        self.assertEqual(set(by_name), {"Admin", "Manager", "User", "Requester", "Downloader", "Viewer"})
+        self.assertEqual(by_name["Manager"], sorted(
+            ["add", "control", "delete", "edit", "qbt_log", "rss_manage", "rss_read", "search", "speed_limits", "view"]))
+        self.assertEqual(by_name["User"], ["add", "control", "edit", "rss_read", "search", "view"])
+        self.assertEqual(by_name["Requester"], ["add", "rss_read", "search", "view"])
+        self.assertEqual(by_name["Downloader"], ["download_files", "rss_read", "view"])
+        self.assertEqual(by_name["Viewer"], ["rss_read", "view"])
 
     def test_roles_can_be_edited_before_the_first_account_exists(self):
         # the "keep one admin" check only matters once there are accounts

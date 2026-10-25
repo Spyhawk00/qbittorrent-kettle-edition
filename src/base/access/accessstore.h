@@ -155,6 +155,8 @@ namespace Access
         QJsonObject queryActivity(const ActivityFilter &filter, int limit, int offset) const;
         void forEachActivity(const ActivityFilter &filter, const std::function<void (const QJsonObject &)> &callback
                 , int limit = -1) const;
+        // successful "add torrent" requests since the given time, per name, most first
+        QJsonArray countAddedTorrents(double since) const;
 
         void purge();
 

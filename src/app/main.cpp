@@ -140,11 +140,11 @@ namespace
     void showSplashScreen(Application *app)
     {
         const QPixmap splashImg(u":/icons/splash.png"_s);
-        QSplashScreen *splash = new QSplashScreen(splashImg);
+        QSplashScreen *splash = new QSplashScreen(splashImg, Qt::WindowStaysOnTopHint);
         splash->show();
-        // Stay up for at least 4 seconds, and until the main window exists so it doesn't just flash by
+        // Stay up for at least 1.5 seconds, and until the main window exists so it doesn't just flash by
         auto *timer = new QTimer(splash);
-        timer->setInterval(4s);
+        timer->setInterval(1500ms);
         QObject::connect(timer, &QTimer::timeout, splash, [app, splash, timer]
         {
             if (app->mainWindow())

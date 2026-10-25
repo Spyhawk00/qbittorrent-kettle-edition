@@ -736,6 +736,7 @@ SessionImpl::SessionImpl(QObject *parent)
     QMetaObject::invokeMethod(m_freeDiskSpaceChecker, &FreeDiskSpaceChecker::check);
 
     initMetrics();
+    m_uptimeTimer.start();
     loadStatistics();
 
     // initialize PortForwarder instance
@@ -6001,6 +6002,11 @@ const SessionStatus &SessionImpl::status() const
     return m_status;
 }
 
+qint64 SessionImpl::uptimeSeconds() const
+{
+    return m_uptimeTimer.elapsed() / 1000;
+}
+
 const CacheStatus &SessionImpl::cacheStatus() const
 {
     return m_cacheStatus;
@@ -6950,6 +6956,72 @@ void SessionImpl::handlePerformanceAlert(const lt::performance_alert *alert) con
             , u"https://libtorrent.org/reference-Alerts.html#enum-performance-warning-t"_s)), Log::INFO);
 }
 
+namespace
+{
+    const int USAGE_DAYS_KEPT = 400;
+
+    void addUsage(UsageHistory &history, const QDate &date, const qint64 downloaded, const qint64 uploaded)
+    {
+        for (UsageEntry *entry : {&history.days[date], &history.months[QDate(date.year(), date.month(), 1)]})
+        {
+            entry->downloaded += downloaded;
+            entry->uploaded += uploaded;
+        }
+    }
+
+    // one entry as "downloaded,uploaded" under its date
+    QVariantHash usageToVariant(const QMap<QDate, UsageEntry> &entries)
+    {
+        QVariantHash hash;
+        for (const auto &[date, entry] : entries.asKeyValueRange())
+            hash.insert(date.toString(Qt::ISODate), u"%1,%2"_s.arg(entry.downloaded).arg(entry.uploaded));
+        return hash;
+    }
+
+    QMap<QDate, UsageEntry> usageFromVariant(const QVariantHash &hash)
+    {
+        QMap<QDate, UsageEntry> entries;
+        for (const auto &[key, value] : hash.asKeyValueRange())
+        {
+            const QDate date = QDate::fromString(key, Qt::ISODate);
+            const QStringList numbers = value.toString().split(u',');
+            if (!date.isValid() || (numbers.size() != 2))
+                continue;
+            entries.insert(date, {.downloaded = numbers[0].toLongLong(), .uploaded = numbers[1].toLongLong()});
+        }
+        return entries;
+    }
+}
+
+// Adds what was moved since the last call to today's entries
+void SessionImpl::recordUsage() const
+{
+    const qint64 downloaded = m_status.allTimeDownload - m_usageLastDownloaded;
+    const qint64 uploaded = m_status.allTimeUpload - m_usageLastUploaded;
+    // the totals of this session are not counted yet
+    if ((downloaded < 0) || (uploaded < 0))
+        return;
+
+    const QDate today = QDate::currentDate();
+    addUsage(m_usageHistory, today, downloaded, uploaded);
+    m_usageLastDownloaded = m_status.allTimeDownload;
+    m_usageLastUploaded = m_status.allTimeUpload;
+
+    const QDate oldest = today.addDays(-USAGE_DAYS_KEPT);
+    m_usageHistory.days.erase(m_usageHistory.days.begin(), m_usageHistory.days.lowerBound(oldest));
+}
+
+UsageHistory SessionImpl::usageHistory() const
+{
+    // the saved history plus what was moved since the last save
+    UsageHistory history = m_usageHistory;
+    const qint64 downloaded = m_status.allTimeDownload - m_usageLastDownloaded;
+    const qint64 uploaded = m_status.allTimeUpload - m_usageLastUploaded;
+    if ((downloaded >= 0) && (uploaded >= 0))
+        addUsage(history, QDate::currentDate(), downloaded, uploaded);
+    return history;
+}
+
 void SessionImpl::saveStatistics() const
 {
     if (!m_isStatisticsDirty)
@@ -6960,6 +7032,11 @@ void SessionImpl::saveStatistics() const
         {u"AlltimeUL"_s, m_status.allTimeUpload}};
     std::unique_ptr<QSettings> settings = Profile::instance()->applicationSettings(u"qBittorrent-data"_s);
     settings->setValue(u"Stats/AllStats"_s, stats);
+
+    recordUsage();
+    settings->setValue(u"Stats/UsageSince"_s, m_usageHistory.since.toString(Qt::ISODate));
+    settings->setValue(u"Stats/UsageDays"_s, usageToVariant(m_usageHistory.days));
+    settings->setValue(u"Stats/UsageMonths"_s, usageToVariant(m_usageHistory.months));
 
     m_statisticsLastUpdateTimer.start();
     m_isStatisticsDirty = false;
@@ -6972,6 +7049,15 @@ void SessionImpl::loadStatistics()
 
     m_previouslyDownloaded = value[u"AlltimeDL"_s].toLongLong();
     m_previouslyUploaded = value[u"AlltimeUL"_s].toLongLong();
+
+    // the history starts on the day it is first saved, and nothing is counted before that
+    m_usageLastDownloaded = m_previouslyDownloaded;
+    m_usageLastUploaded = m_previouslyUploaded;
+    m_usageHistory.since = QDate::fromString(settings->value(u"Stats/UsageSince"_s).toString(), Qt::ISODate);
+    if (!m_usageHistory.since.isValid())
+        m_usageHistory.since = QDate::currentDate();
+    m_usageHistory.days = usageFromVariant(settings->value(u"Stats/UsageDays"_s).toHash());
+    m_usageHistory.months = usageFromVariant(settings->value(u"Stats/UsageMonths"_s).toHash());
 }
 
 void SessionImpl::updateTrackerEntryStatuses(lt::torrent_handle torrentHandle)

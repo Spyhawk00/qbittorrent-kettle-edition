@@ -69,6 +69,7 @@ private slots:
 
     void activityAction();
     void exportActivityAction();
+    void addedTorrentsAction();
 
     void usersAction();
     void createUserAction();

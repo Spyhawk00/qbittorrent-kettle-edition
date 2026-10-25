@@ -638,8 +638,14 @@ void SearchJobWidget::fillFilterComboBoxes()
 
 void SearchJobWidget::filterSearchResults(const QString &name)
 {
-    const QString pattern = (Preferences::instance()->getRegexAsFilteringPatternForSearchJob()
-        ? name : Utils::String::wildcardToRegexPattern(name));
+    QString pattern = name;
+    if (!Preferences::instance()->getRegexAsFilteringPatternForSearchJob())
+    {
+        // every word must be present, in any order and with other text in between
+        pattern = u"^"_s;
+        for (const QString &word : asConst(name.split(u' ', Qt::SkipEmptyParts)))
+            pattern += u"(?=.*(?:" + Utils::String::wildcardToRegexPattern(word) + u"))";
+    }
     m_proxyModel->setFilterRegularExpression(QRegularExpression(pattern, QRegularExpression::CaseInsensitiveOption));
     updateResultsCount();
 }
@@ -781,7 +787,7 @@ void SearchJobWidget::appendSearchResults(const QList<SearchResult> &results)
         m_searchListModel->insertRow(row);
 
         const auto setModelData = [this, row] (const int column, const QString &displayData
-                , const QVariant &underlyingData, const Qt::Alignment textAlignmentData = {})
+                , const QVariant &underlyingData, const Qt::Alignment textAlignmentData = (Qt::AlignLeft | Qt::AlignVCenter))
         {
             const QMap<int, QVariant> data =
             {

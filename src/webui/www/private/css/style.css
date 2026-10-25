@@ -33,6 +33,7 @@
     --toolbar-line: 2px solid hsl(0deg 0% 86%); /* as the lines of the desktop: soft and two rows thick on a light window */
     --color-shadow: hsl(0deg 0% 0% / 25%);
     --color-overlay: hsl(0deg 0% 0% / 30%);
+    --color-text-warning: hsl(40deg 100% 30%); /* a count that needs a look, like torrents with errors */
 
     & #torrentTrackersTableDiv tr {
         --color-tracker-disabled: hsl(240deg 4% 40%);
@@ -75,6 +76,7 @@
         --toolbar-line: 1px solid var(--color-border-default); /* one row, a lot brighter than the window, on a dark one */
         --color-shadow: hsl(0deg 0% 0% / 50%);
         --color-overlay: hsl(0deg 0% 0% / 50%);
+        --color-text-warning: hsl(43deg 74% 58%);
 
         & #torrentTrackersTableDiv tr {
             --color-tracker-disabled: hsl(240deg 6% 80%);
@@ -791,14 +793,17 @@ div.formRow {
     /* a darker grey than the list below it, as on the desktop */
     background-color: var(--color-background-section);
     border-bottom: 1px solid var(--color-border-default);
+    align-items: center;
+    box-sizing: border-box;
     cursor: pointer;
     display: flex;
     font-size: 1.1em;
     font-weight: bold;
     gap: 4px;
+    height: 25px; /* as tall as the headers of the tables on the other tabs */
     margin-bottom: 0;
     overflow: hidden;
-    padding: 3px 0 3px 8px;
+    padding: 0 0 0 8px;
     text-overflow: ellipsis;
     text-transform: uppercase;
     user-select: none;
@@ -1026,6 +1031,11 @@ td.noWrap {
     margin-left: -1px;
 }
 
+/* the icon is centered in the 8 px between the sidebar and the list */
+#filtersColumn_handle::before {
+    left: -3px;
+}
+
 .combo_priority {
     font-size: 1em;
     height: 1.5em;
@@ -1048,22 +1058,102 @@ td.statusBarSeparator::before {
     width: 1px;
 }
 
-/* Statistics window */
+/* Statistics window: tabs and sections like Options > Advanced */
 #statisticsContent {
-    & table {
-        background-color: var(--color-background-default);
-        margin-bottom: 6px;
-        padding: 6px 10px;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
 
-        & .statisticsValue {
-            text-align: right;
+    & #statisticsTabs {
+        font-size: inherit;
+        gap: 2px;
+        margin: 0;
+        overflow: visible;
+
+        & li a,
+        & li:first-child a {
+            background-color: var(--color-background-default);
+            border: 1px solid var(--color-border-outline);
+            border-bottom: 0;
+            color: var(--color-text-default);
+            margin: 0;
+            padding: 4px 12px;
+        }
+
+        & li.selected a::after {
+            content: none;
+        }
+
+        & li:hover a {
+            background-color: color-mix(in srgb, var(--color-text-default) 9%, var(--color-background-default));
+            color: var(--color-text-default);
+        }
+
+        & li.selected a {
+            background-color: var(--color-background-popup);
+            position: relative;
+            top: 1px;
+            z-index: 1;
         }
     }
 
-    & h3 {
-        color: var(--color-text-default);
-        margin-bottom: 1px;
-        padding: 2px;
+    & .statisticsPane {
+        background-color: var(--color-background-popup);
+        border: 1px solid var(--color-border-outline);
+        align-content: start;
+        display: grid;
+        flex: 1 1 auto;
+        gap: 20px;
+        min-height: 0;
+        overflow-y: auto;
+        padding: 8px;
+
+        &.invisible {
+            display: none;
+        }
+    }
+
+    & .statisticsTitle {
+        border-bottom: 1px solid var(--color-border-outline);
+        font-weight: bold;
+        margin-bottom: 6px;
+        padding-bottom: 4px;
+    }
+
+    & .statisticsNote {
+        margin-bottom: 4px;
+    }
+
+    & table {
+        width: 100%;
+
+        & td,
+        & th {
+            padding: 2px 0;
+        }
+
+        & th {
+            font-weight: bold;
+            text-align: left;
+        }
+
+        & .statisticsValue {
+            text-align: right;
+            user-select: text;
+        }
+
+        & .statisticsWarning {
+            color: var(--color-text-warning);
+        }
+    }
+
+    & select {
+        margin-bottom: 4px;
+    }
+
+    & .statisticsButtons {
+        margin-top: 8px;
+        text-align: right;
     }
 }
 
@@ -1091,7 +1181,7 @@ td.statusBarSeparator::before {
     display: flex;
     flex: 1;
     min-height: 0;
-    padding: 8px;
+    padding: 4px; /* as far from the edges as the boxes of the Transfers tab */
 }
 
 .red {
@@ -1127,9 +1217,19 @@ td.statusBarSeparator::before {
     align-items: center;
     align-self: stretch;
     display: flex;
+    flex-wrap: wrap;
     gap: 8px;
-    justify-content: space-between;
+    justify-content: flex-end;
     padding-left: 42px; /* lines the checkbox up with the message text, after the warning icon */
+}
+
+.modalDialog .deletionActions > #deleteFromDiskItem {
+    flex: 1 0 100%;
+}
+
+.deletionHint {
+    color: var(--color-text-disabled, GrayText);
+    padding-top: 2px;
 }
 
 .modalDialog .deletionActions .dialogButtons {

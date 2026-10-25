@@ -234,6 +234,7 @@ Colors come only from the --color-* tokens in style.css.
     .filterTitle {
         align-items: center;
         box-sizing: border-box;
+        height: auto;
         min-height: 40px;
     }
 
@@ -477,6 +478,7 @@ Colors come only from the --color-* tokens in style.css.
     #desktopFooter {
         height: 56px;
         padding-block: 0;
+        padding-inline: 8px; /* as far from the edge as the tool bar buttons */
     }
 
     #desktopFooter table {
@@ -963,6 +965,10 @@ Colors come only from the --color-* tokens in style.css.
             margin-top: 6px;
             min-height: 0;
             overflow: hidden;
+        }
+
+        .rssHandle {
+            display: none;
         }
 
         #leftRssColumn,

@@ -100,6 +100,9 @@ UserAccountsWidget::UserAccountsWidget(QWidget *parent)
     m_ui->treeUsers->sortByColumn(USER_NAME, Qt::AscendingOrder);
     m_ui->treeRoles->sortByColumn(ROLE_NAME, Qt::AscendingOrder);
     m_ui->treeSessions->sortByColumn(SESSION_LAST_ACTIVE, Qt::DescendingOrder);
+    m_ui->treeUsers->setColumnWidth(USER_NAME, 110);
+    m_ui->treeUsers->setColumnWidth(USER_ROLE, 90);
+    m_ui->treeUsers->setColumnWidth(USER_STATUS, 80);
     m_ui->treeUsers->setColumnWidth(USER_LAST_LOGIN, 150);
     m_ui->treeRoles->setColumnWidth(ROLE_DESCRIPTION, 320);
     m_ui->treeSessions->setColumnWidth(SESSION_BROWSER, 180);

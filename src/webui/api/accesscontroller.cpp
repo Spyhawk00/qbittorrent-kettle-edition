@@ -244,6 +244,17 @@ void AccessController::exportActivityAction()
     setResult(csv.toUtf8(), u"text/csv; charset=utf-8"_s, filename);
 }
 
+// GET param: since (seconds since 1970; the start of this month if missing)
+void AccessController::addedTorrentsAction()
+{
+    require(u"activity_log"_s);
+    const QDate today = QDate::currentDate();
+    const double since = params().contains(u"since"_s)
+        ? params()[u"since"_s].toDouble()
+        : QDateTime(QDate(today.year(), today.month(), 1), QTime(0, 0)).toSecsSinceEpoch();
+    guarded([&] { setResult(store()->countAddedTorrents(since)); });
+}
+
 // ---- users -------------------------------------------------------------------------------------
 
 void AccessController::usersAction()

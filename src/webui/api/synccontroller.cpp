@@ -112,6 +112,14 @@ namespace
     const QString KEY_TRANSFER_TOTAL_QUEUED_SIZE = u"total_queued_size"_s;
     const QString KEY_TRANSFER_TOTAL_WASTE_SESSION = u"total_wasted_session"_s;
     const QString KEY_TRANSFER_WRITE_CACHE_OVERLOAD = u"write_cache_overload"_s;
+    const QString KEY_TRANSFER_SESSION_DL = u"session_dl"_s;
+    const QString KEY_TRANSFER_SESSION_UL = u"session_ul"_s;
+    const QString KEY_TRANSFER_TORRENTS_DOWNLOADING = u"torrents_downloading"_s;
+    const QString KEY_TRANSFER_TORRENTS_SEEDING = u"torrents_seeding"_s;
+    const QString KEY_TRANSFER_TORRENTS_STOPPED = u"torrents_stopped"_s;
+    const QString KEY_TRANSFER_TORRENTS_ERRORED = u"torrents_errored"_s;
+    const QString KEY_TRANSFER_UPTIME = u"uptime"_s;
+    const QString KEY_TRANSFER_DHT_ENABLED = u"dht_enabled"_s;
 
     const QString KEY_SUFFIX_REMOVED = u"_removed"_s;
 
@@ -173,6 +181,15 @@ namespace
         map[KEY_TRANSFER_ALLTIME_DL] = atd;
         map[KEY_TRANSFER_ALLTIME_UL] = atu;
         map[KEY_TRANSFER_TOTAL_WASTE_SESSION] = sessionStatus.totalWasted;
+        map[KEY_TRANSFER_SESSION_DL] = sessionStatus.totalDownload;
+        map[KEY_TRANSFER_SESSION_UL] = sessionStatus.totalUpload;
+        const BitTorrent::TorrentCounts counts = BitTorrent::countTorrents(session->torrents());
+        map[KEY_TRANSFER_TORRENTS_DOWNLOADING] = counts.downloading;
+        map[KEY_TRANSFER_TORRENTS_SEEDING] = counts.seeding;
+        map[KEY_TRANSFER_TORRENTS_STOPPED] = counts.stopped;
+        map[KEY_TRANSFER_TORRENTS_ERRORED] = counts.errored;
+        map[KEY_TRANSFER_UPTIME] = session->uptimeSeconds();
+        map[KEY_TRANSFER_DHT_ENABLED] = session->isDHTEnabled();
         map[KEY_TRANSFER_GLOBAL_RATIO] = ((atd > 0) && (atu > 0)) ? Utils::String::fromDouble(static_cast<qreal>(atu) / atd, 2) : u"-"_s;
         map[KEY_TRANSFER_TOTAL_PEER_CONNECTIONS] = sessionStatus.peersCount;
 
@@ -487,6 +504,10 @@ void SyncController::updateFreeDiskSpace(const qint64 freeDiskSpace)
 //  - "queueing": queue system usage flag
 //  - "refresh_interval": torrents table refresh interval
 //  - "free_space_on_disk": Free space on the default save path
+//  - "session_dl", "session_ul": bytes downloaded / uploaded since program start
+//  - "torrents_downloading", "torrents_seeding", "torrents_stopped", "torrents_errored": torrent counts like the status filter
+//  - "uptime": seconds since program start
+//  - "dht_enabled": DHT usage flag
 // GET param:
 //   - rid (int): last response id
 void SyncController::maindataAction()

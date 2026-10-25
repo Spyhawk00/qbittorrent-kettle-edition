@@ -640,6 +640,10 @@ void UpdateInstaller::downloadNext()
 
 void UpdateInstaller::handleFileDownloaded(const Net::DownloadResult &result)
 {
+    // a download that is reported twice, or after the update was discarded, has nothing left to do
+    if (m_pendingFiles.isEmpty())
+        return;
+
     const FileEntry file = m_pendingFiles.first();
 
     if (result.status != Net::DownloadStatus::Success)

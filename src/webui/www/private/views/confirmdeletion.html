@@ -8,6 +8,7 @@
     <span class="deletionGridItem" id="deleteFromDiskItem">
         <input type="checkbox" id="deleteFromDiskCB">
         <label for="deleteFromDiskCB">QBT_TR(Also remove the content files)QBT_TR[CONTEXT=confirmDeletionDlg]</label>
+        <div class="deletionHint" id="deletionRememberHint">QBT_TR(This choice is remembered for the next removal.)QBT_TR[CONTEXT=confirmDeletionDlg]</div>
     </span>
     <div class="dialogButtons">
         <button type="button" id="confirmDeletionButton">QBT_TR(Remove)QBT_TR[CONTEXT=MainWindow]</button>
@@ -40,6 +41,8 @@
         // remembering the choice changes a setting
         const canRemember = !forceDeleteFiles && window.qBittorrent.Cache.account.can("delete_files")
             && window.qBittorrent.Cache.account.can("settings");
+        if (!canRemember)
+            document.getElementById("deletionRememberHint").classList.add("roleHidden");
 
         let deleteMessage;
         if (hashes.length === 1) {

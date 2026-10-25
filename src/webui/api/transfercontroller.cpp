@@ -28,6 +28,7 @@
 
 #include "transfercontroller.h"
 
+#include <QJsonArray>
 #include <QJsonObject>
 #include <QList>
 
@@ -89,6 +90,27 @@ void TransferController::infoAction()
         dict[KEY_TRANSFER_CONNECTION_STATUS] = sessionStatus.hasIncomingConnections ? u"connected"_s : u"firewalled"_s;
 
     setResult(dict);
+}
+
+// Returns what was moved per day and per month, as {"today": date, "since": date, "days": [...], "months": [...]}.
+// Each entry is {"date": "yyyy-MM-dd", "downloaded": bytes, "uploaded": bytes}.
+void TransferController::usageHistoryAction()
+{
+    const BitTorrent::UsageHistory history = BitTorrent::Session::instance()->usageHistory();
+    const auto toJson = [](const QMap<QDate, BitTorrent::UsageEntry> &entries)
+    {
+        QJsonArray array;
+        for (const auto &[date, entry] : entries.asKeyValueRange())
+        {
+            array.append(QJsonObject {{u"date"_s, date.toString(Qt::ISODate)}
+                , {u"downloaded"_s, entry.downloaded}, {u"uploaded"_s, entry.uploaded}});
+        }
+        return array;
+    };
+
+    setResult(QJsonObject {{u"today"_s, QDate::currentDate().toString(Qt::ISODate)}
+        , {u"since"_s, history.since.toString(Qt::ISODate)}
+        , {u"days"_s, toJson(history.days)}, {u"months"_s, toJson(history.months)}});
 }
 
 void TransferController::uploadLimitAction()

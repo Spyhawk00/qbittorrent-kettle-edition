@@ -73,7 +73,7 @@ namespace
             u"app/preferences"_s, u"app/defaultSavePath"_s,
             u"clientdata/load"_s, u"clientdata/store"_s,
             u"sync/maindata"_s, u"sync/torrentPeers"_s,
-            u"transfer/info"_s, u"transfer/getSpeedLimits"_s, u"transfer/speedLimitsMode"_s, u"transfer/uploadLimit"_s, u"transfer/downloadLimit"_s,
+            u"transfer/info"_s, u"transfer/usageHistory"_s, u"transfer/getSpeedLimits"_s, u"transfer/speedLimitsMode"_s, u"transfer/uploadLimit"_s, u"transfer/downloadLimit"_s,
             u"torrents/count"_s, u"torrents/info"_s, u"torrents/properties"_s, u"torrents/trackers"_s,
             u"torrents/webseeds"_s, u"torrents/files"_s, u"torrents/pieceHashes"_s, u"torrents/pieceStates"_s,
             u"torrents/pieceAvailability"_s, u"torrents/categories"_s, u"torrents/tags"_s,
@@ -194,8 +194,15 @@ QList<Access::DefaultRole> Access::defaultRoles()
 
     return {
         {u"Admin"_s, u"Full control, including settings and user management."_s, all},
+        {u"Manager"_s, u"Runs the downloads day to day. Can delete torrents, change speed limits, read the log and manage RSS. Can't delete files, change settings or choose save locations."_s
+            , {u"add"_s, u"control"_s, u"delete"_s, u"edit"_s, u"qbt_log"_s, u"rss_manage"_s, u"rss_read"_s
+                , u"search"_s, u"speed_limits"_s, u"view"_s}},
         {u"User"_s, u"Add and manage torrents. Can't delete, change settings or choose save locations."_s
             , {u"add"_s, u"control"_s, u"edit"_s, u"rss_read"_s, u"search"_s, u"view"_s}},
+        {u"Requester"_s, u"Search for and add torrents. Can't start, stop or change anything."_s
+            , {u"add"_s, u"rss_read"_s, u"search"_s, u"view"_s}},
+        {u"Downloader"_s, u"Read-only access, plus downloading finished files from the PC."_s
+            , {u"download_files"_s, u"rss_read"_s, u"view"_s}},
         {u"Viewer"_s, u"Read-only access."_s, {u"rss_read"_s, u"view"_s}},
     };
 }

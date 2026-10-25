@@ -1,78 +1,187 @@
 <div id="statisticsContent">
-    <h3>QBT_TR(User statistics)QBT_TR[CONTEXT=StatsDialog]</h3>
-    <table style="width:100%">
-        <tbody>
-            <tr>
-                <td>QBT_TR(All-time upload:)QBT_TR[CONTEXT=StatsDialog]</td>
-                <td id="AlltimeUL" class="statisticsValue"></td>
-            </tr>
-            <tr>
-                <td>QBT_TR(All-time download:)QBT_TR[CONTEXT=StatsDialog]</td>
-                <td id="AlltimeDL" class="statisticsValue"></td>
-            </tr>
-            <tr>
-                <td>QBT_TR(All-time share ratio:)QBT_TR[CONTEXT=StatsDialog]</td>
-                <td id="GlobalRatio" class="statisticsValue"></td>
-            </tr>
-            <tr>
-                <td>QBT_TR(Session waste:)QBT_TR[CONTEXT=StatsDialog]</td>
-                <td id="TotalWastedSession" class="statisticsValue"></td>
-            </tr>
-            <tr>
-                <td>QBT_TR(Connected peers:)QBT_TR[CONTEXT=StatsDialog]</td>
-                <td id="TotalPeerConnections" class="statisticsValue"></td>
-            </tr>
-        </tbody>
-    </table>
-    <h3>QBT_TR(Cache statistics)QBT_TR[CONTEXT=StatsDialog]</h3>
-    <table style="width:100%">
-        <tbody>
-            <tr>
-                <td>QBT_TR(Read cache hits:)QBT_TR[CONTEXT=StatsDialog]</td>
-                <td id="ReadCacheHits" class="statisticsValue"></td>
-            </tr>
-            <tr>
-                <td>QBT_TR(Total buffer size:)QBT_TR[CONTEXT=StatsDialog]</td>
-                <td id="TotalBuffersSize" class="statisticsValue"></td>
-            </tr>
-        </tbody>
-    </table>
-    <h3>QBT_TR(Performance statistics)QBT_TR[CONTEXT=StatsDialog]</h3>
-    <table style="width:100%">
-        <tbody>
-            <tr>
-                <td>QBT_TR(Write cache overload:)QBT_TR[CONTEXT=StatsDialog]</td>
-                <td id="WriteCacheOverload" class="statisticsValue"></td>
-            </tr>
-            <tr>
-                <td>QBT_TR(Read cache overload:)QBT_TR[CONTEXT=StatsDialog]</td>
-                <td id="ReadCacheOverload" class="statisticsValue"></td>
-            </tr>
-            <tr>
-                <td>QBT_TR(Queued I/O jobs:)QBT_TR[CONTEXT=StatsDialog]</td>
-                <td id="QueuedIOJobs" class="statisticsValue"></td>
-            </tr>
-            <tr>
-                <td>QBT_TR(Average time in queue:)QBT_TR[CONTEXT=StatsDialog]</td>
-                <td id="AverageTimeInQueue" class="statisticsValue"></td>
-            </tr>
-            <tr>
-                <td>QBT_TR(Total queued size:)QBT_TR[CONTEXT=StatsDialog]</td>
-                <td id="TotalQueuedSize" class="statisticsValue"></td>
-            </tr>
-            <tr>
-                <td title="QBT_TR(The time it takes from receiving a request from a peer until we're sending the response back on the socket)QBT_TR[CONTEXT=StatsDialog]">QBT_TR(Request latency:)QBT_TR[CONTEXT=StatsDialog]</td>
-                <td id="RequestLatency" class="statisticsValue"></td>
-            </tr>
-        </tbody>
-    </table>
-    <h3>QBT_TR(Tracker statistics)QBT_TR[CONTEXT=StatsDialog]</h3>
-    <table style="width:100%">
-        <tbody>
-            <tr>
-                <td>QBT_TR(Queued tracker announces:)QBT_TR[CONTEXT=StatsDialog]</td>
-                <td id="queuedTrackerAnnounces" class="statisticsValue"></td>
-            </tr>
-        </tbody>
-    </table>
+    <menu id="statisticsTabs" class="tab-menu">
+        <li id="statisticsOverviewLink" class="selected"><a>QBT_TR(Overview)QBT_TR[CONTEXT=StatsDialog]</a></li>
+        <li id="statisticsHistoryLink"><a>QBT_TR(History)QBT_TR[CONTEXT=StatsDialog]</a></li>
+        <li id="statisticsTechnicalLink"><a>QBT_TR(Technical)QBT_TR[CONTEXT=StatsDialog]</a></li>
+    </menu>
+
+    <div id="statisticsOverviewTab" class="statisticsPane">
+        <div class="statisticsSection">
+            <div class="statisticsTitle">QBT_TR(Transfer)QBT_TR[CONTEXT=StatsDialog]</div>
+            <table>
+                <tbody>
+                    <tr>
+                        <td></td>
+                        <th class="statisticsValue">QBT_TR(This session)QBT_TR[CONTEXT=StatsDialog]</th>
+                        <th class="statisticsValue">QBT_TR(All time)QBT_TR[CONTEXT=StatsDialog]</th>
+                    </tr>
+                    <tr>
+                        <td>QBT_TR(Downloaded:)QBT_TR[CONTEXT=StatsDialog]</td>
+                        <td id="SessionDL" class="statisticsValue"></td>
+                        <td id="AlltimeDL" class="statisticsValue"></td>
+                    </tr>
+                    <tr>
+                        <td>QBT_TR(Uploaded:)QBT_TR[CONTEXT=StatsDialog]</td>
+                        <td id="SessionUL" class="statisticsValue"></td>
+                        <td id="AlltimeUL" class="statisticsValue"></td>
+                    </tr>
+                    <tr>
+                        <td>QBT_TR(Share ratio:)QBT_TR[CONTEXT=StatsDialog]</td>
+                        <td id="SessionRatio" class="statisticsValue"></td>
+                        <td id="GlobalRatio" class="statisticsValue"></td>
+                    </tr>
+                    <tr>
+                        <td>QBT_TR(Current speed:)QBT_TR[CONTEXT=StatsDialog]</td>
+                        <td id="CurrentSpeed" class="statisticsValue" colspan="2"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="statisticsSection">
+            <div class="statisticsTitle">QBT_TR(Activity)QBT_TR[CONTEXT=StatsDialog]</div>
+            <table>
+                <tbody>
+                    <tr>
+                        <td>QBT_TR(Torrents downloading:)QBT_TR[CONTEXT=StatsDialog]</td>
+                        <td id="TorrentsDownloading" class="statisticsValue"></td>
+                    </tr>
+                    <tr>
+                        <td>QBT_TR(Torrents seeding:)QBT_TR[CONTEXT=StatsDialog]</td>
+                        <td id="TorrentsSeeding" class="statisticsValue"></td>
+                    </tr>
+                    <tr>
+                        <td>QBT_TR(Torrents stopped:)QBT_TR[CONTEXT=StatsDialog]</td>
+                        <td id="TorrentsStopped" class="statisticsValue"></td>
+                    </tr>
+                    <tr>
+                        <td>QBT_TR(Torrents with errors:)QBT_TR[CONTEXT=StatsDialog]</td>
+                        <td id="TorrentsErrored" class="statisticsValue"></td>
+                    </tr>
+                    <tr>
+                        <td>QBT_TR(Connected peers:)QBT_TR[CONTEXT=StatsDialog]</td>
+                        <td id="TotalPeerConnections" class="statisticsValue"></td>
+                    </tr>
+                    <tr>
+                        <td>QBT_TR(Running for:)QBT_TR[CONTEXT=StatsDialog]</td>
+                        <td id="RunningFor" class="statisticsValue"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <div id="statisticsHistoryTab" class="statisticsPane invisible">
+        <div class="statisticsSection">
+            <div class="statisticsTitle">QBT_TR(Period)QBT_TR[CONTEXT=StatsDialog]</div>
+            <select id="statisticsPeriod">
+                <option value="0">QBT_TR(Today)QBT_TR[CONTEXT=StatsDialog]</option>
+                <option value="1">QBT_TR(Last 7 days)QBT_TR[CONTEXT=StatsDialog]</option>
+                <option value="2" selected>QBT_TR(This month)QBT_TR[CONTEXT=StatsDialog]</option>
+                <option value="3">QBT_TR(Last month)QBT_TR[CONTEXT=StatsDialog]</option>
+                <option value="4">QBT_TR(Last 12 months)QBT_TR[CONTEXT=StatsDialog]</option>
+                <option value="5">QBT_TR(All time)QBT_TR[CONTEXT=StatsDialog]</option>
+            </select>
+            <table>
+                <tbody>
+                    <tr>
+                        <td>QBT_TR(Downloaded:)QBT_TR[CONTEXT=StatsDialog]</td>
+                        <td id="PeriodDL" class="statisticsValue"></td>
+                    </tr>
+                    <tr>
+                        <td>QBT_TR(Uploaded:)QBT_TR[CONTEXT=StatsDialog]</td>
+                        <td id="PeriodUL" class="statisticsValue"></td>
+                    </tr>
+                    <tr>
+                        <td>QBT_TR(Share ratio:)QBT_TR[CONTEXT=StatsDialog]</td>
+                        <td id="PeriodRatio" class="statisticsValue"></td>
+                    </tr>
+                    <tr>
+                        <td>QBT_TR(Tracking since:)QBT_TR[CONTEXT=StatsDialog]</td>
+                        <td id="TrackingSince" class="statisticsValue"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="statisticsSection">
+            <div class="statisticsTitle">QBT_TR(By month)QBT_TR[CONTEXT=StatsDialog]</div>
+            <table>
+                <tbody id="statisticsMonths">
+                    <tr>
+                        <th>QBT_TR(Month)QBT_TR[CONTEXT=StatsDialog]</th>
+                        <th class="statisticsValue">QBT_TR(Downloaded)QBT_TR[CONTEXT=StatsDialog]</th>
+                        <th class="statisticsValue">QBT_TR(Uploaded)QBT_TR[CONTEXT=StatsDialog]</th>
+                        <th class="statisticsValue">QBT_TR(Share ratio)QBT_TR[CONTEXT=StatsDialog]</th>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div id="statisticsAddedSection" class="statisticsSection invisible">
+            <div class="statisticsTitle">QBT_TR(WebUI downloads added, this month)QBT_TR[CONTEXT=StatsDialog]</div>
+            <div class="statisticsNote">QBT_TR(Counts the requests that added a download. Apps without a login, such as Sonarr and Radarr, are shown as (localhost). Downloads added in the desktop window are not counted.)QBT_TR[CONTEXT=StatsDialog]</div>
+            <table>
+                <tbody id="statisticsAdded"></tbody>
+            </table>
+        </div>
+    </div>
+
+    <div id="statisticsTechnicalTab" class="statisticsPane invisible">
+        <div class="statisticsSection">
+            <div class="statisticsTitle">QBT_TR(Disk)QBT_TR[CONTEXT=StatsDialog]</div>
+            <table>
+                <tbody>
+                    <tr>
+                        <td>QBT_TR(Peers waiting on disk writes:)QBT_TR[CONTEXT=StatsDialog]</td>
+                        <td id="WriteCacheOverload" class="statisticsValue"></td>
+                    </tr>
+                    <tr>
+                        <td>QBT_TR(Peers waiting on disk reads:)QBT_TR[CONTEXT=StatsDialog]</td>
+                        <td id="ReadCacheOverload" class="statisticsValue"></td>
+                    </tr>
+                    <tr>
+                        <td>QBT_TR(Queued I/O jobs:)QBT_TR[CONTEXT=StatsDialog]</td>
+                        <td id="QueuedIOJobs" class="statisticsValue"></td>
+                    </tr>
+                    <tr>
+                        <td>QBT_TR(Average time in queue:)QBT_TR[CONTEXT=StatsDialog]</td>
+                        <td id="AverageTimeInQueue" class="statisticsValue"></td>
+                    </tr>
+                    <tr>
+                        <td>QBT_TR(Total queued size:)QBT_TR[CONTEXT=StatsDialog]</td>
+                        <td id="TotalQueuedSize" class="statisticsValue"></td>
+                    </tr>
+                    <tr>
+                        <td title="QBT_TR(The time it takes from receiving a request from a peer until we're sending the response back on the socket)QBT_TR[CONTEXT=StatsDialog]">QBT_TR(Request latency:)QBT_TR[CONTEXT=StatsDialog]</td>
+                        <td id="RequestLatency" class="statisticsValue"></td>
+                    </tr>
+                    <tr>
+                        <td>QBT_TR(Total buffer size:)QBT_TR[CONTEXT=StatsDialog]</td>
+                        <td id="TotalBuffersSize" class="statisticsValue"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="statisticsSection">
+            <div class="statisticsTitle">QBT_TR(Network)QBT_TR[CONTEXT=StatsDialog]</div>
+            <table>
+                <tbody>
+                    <tr>
+                        <td>QBT_TR(DHT nodes:)QBT_TR[CONTEXT=StatsDialog]</td>
+                        <td id="DHTNodesCount" class="statisticsValue"></td>
+                    </tr>
+                    <tr>
+                        <td>QBT_TR(Queued tracker announces:)QBT_TR[CONTEXT=StatsDialog]</td>
+                        <td id="queuedTrackerAnnounces" class="statisticsValue"></td>
+                    </tr>
+                    <tr>
+                        <td>QBT_TR(Data discarded this session:)QBT_TR[CONTEXT=StatsDialog]</td>
+                        <td id="TotalWastedSession" class="statisticsValue"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <div class="statisticsButtons">
+        <button type="button" id="statisticsCopy">QBT_TR(Copy)QBT_TR[CONTEXT=StatsDialog]</button>
+    </div>
 </div>

@@ -461,6 +461,10 @@ namespace
                 return;
             }
 
+            // a handle that cannot be moved has no grip
+            if (!option->state.testFlag(State_Enabled))
+                return;
+
             const QPalette &palette = option->palette;
 
             constexpr int count = 6;
@@ -513,7 +517,42 @@ namespace
                 drawOutline(option, painter, 0);
                 return;
             }
+
+            // the Windows Vista style draws a selected row as a grey gradient with a dark edge while the list does not have the
+            // focus: a flat fill in the color of the selection, like the other styles
+            if (const auto *item = qstyleoption_cast<const QStyleOptionViewItem *>(option)
+                ; item && (element == PE_PanelItemViewItem) && (baseStyle()->name() == u"windowsvista"_s))
+            {
+                if (item->backgroundBrush.style() != Qt::NoBrush)
+                    painter->fillRect(item->rect, item->backgroundBrush);
+                if (item->state.testFlag(State_Selected))
+                {
+                    painter->fillRect(item->rect, item->palette.color(QPalette::Active, QPalette::Highlight));
+                }
+                else if (item->state.testFlag(State_MouseOver))
+                {
+                    QColor hover = item->palette.color(QPalette::Active, QPalette::Highlight);
+                    hover.setAlphaF(0.15);
+                    painter->fillRect(item->rect, hover);
+                }
+                return;
+            }
             QProxyStyle::drawPrimitive(element, option, painter, widget);
+        }
+
+        void drawControl(const ControlElement element, const QStyleOption *option, QPainter *painter, const QWidget *widget) const override
+        {
+            // (the text of a selected row is drawn in the color for the active window too)
+            if (const auto *item = qstyleoption_cast<const QStyleOptionViewItem *>(option)
+                ; item && (element == CE_ItemViewItem) && item->state.testFlag(State_Selected) && (baseStyle()->name() == u"windowsvista"_s))
+            {
+                QStyleOptionViewItem active {*item};
+                active.state |= State_Active;
+                active.palette.setCurrentColorGroup(QPalette::Active);
+                QProxyStyle::drawControl(element, &active, painter, widget);
+                return;
+            }
+            QProxyStyle::drawControl(element, option, painter, widget);
         }
     };
 

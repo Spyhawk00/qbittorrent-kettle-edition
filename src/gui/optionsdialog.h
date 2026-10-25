@@ -215,13 +215,13 @@ private:
     };
 
     void buildSearchIndex();
+    void alignFieldColumn();
     void searchSettings(const QString &text);
     void showFirstSearchMatch(bool giveFocus);
     bool isSearchMatch(const SearchEntry &entry) const;
 
     Ui::OptionsDialog *m_ui = nullptr;
     SettingValue<QSize> m_storeDialogSize;
-    SettingValue<QStringList> m_storeHSplitterSize;
     SettingValue<int> m_storeLastViewedPage;
 
     QPushButton *m_applyButton = nullptr;

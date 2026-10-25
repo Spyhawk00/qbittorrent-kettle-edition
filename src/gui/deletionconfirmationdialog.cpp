@@ -29,6 +29,7 @@
 
 #include "deletionconfirmationdialog.h"
 
+#include <QPalette>
 #include <QPushButton>
 #include <QStyle>
 
@@ -58,6 +59,17 @@ DeletionConfirmationDialog::DeletionConfirmationDialog(QWidget *parent, const in
     const int spacing = m_ui->horizontalLayout->spacing();
     m_ui->horizontalLayout_2->setContentsMargins((iconSize.width() + ((spacing >= 0) ? spacing : style()->pixelMetric(QStyle::PM_LayoutHorizontalSpacing))), 0, 0, 0);
 
+    // a forced "remove files" removal does not change the remembered choice
+    m_ui->labelRemember->setVisible(!defaultDeleteFiles);
+    // the note sits under the checkbox text, in a softer but still readable color
+    m_ui->labelRemember->setEnabled(true);
+    m_ui->labelRemember->setForegroundRole(QPalette::PlaceholderText);
+    m_ui->labelRemember->setIndent(style()->pixelMetric(QStyle::PM_IndicatorWidth) + style()->pixelMetric(QStyle::PM_CheckBoxLabelSpacing) + 2);
+    // more room around the content, with a clear gap above the buttons
+    const int margin = style()->pixelMetric(QStyle::PM_LayoutLeftMargin) * 3 / 2;
+    m_ui->verticalLayout->setContentsMargins(margin, margin, margin, margin);
+    m_ui->verticalLayout->setSpacing(margin);
+    m_ui->verticalLayoutChoice->setSpacing(2);
     m_ui->checkRemoveContent->setChecked(defaultDeleteFiles || Preferences::instance()->removeTorrentContent());
     m_ui->buttonBox->button(QDialogButtonBox::Ok)->setText(tr("Remove"));
     m_ui->buttonBox->button(QDialogButtonBox::Cancel)->setFocus();

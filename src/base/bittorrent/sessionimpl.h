@@ -458,6 +458,8 @@ namespace BitTorrent
         QList<Torrent *> torrents() const override;
         qsizetype torrentsCount() const override;
         const SessionStatus &status() const override;
+        qint64 uptimeSeconds() const override;
+        UsageHistory usageHistory() const override;
         const CacheStatus &cacheStatus() const override;
         bool isListening() const override;
 
@@ -667,6 +669,7 @@ namespace BitTorrent
 
         void saveStatistics() const;
         void loadStatistics();
+        void recordUsage() const;
 
         void updateTrackerEntryStatuses(lt::torrent_handle torrentHandle);
 
@@ -846,6 +849,11 @@ namespace BitTorrent
         mutable bool m_isStatisticsDirty = false;
         qint64 m_previouslyUploaded = 0;
         qint64 m_previouslyDownloaded = 0;
+        QElapsedTimer m_uptimeTimer;
+        // the all-time totals as they were when the history was last brought up to date
+        mutable qint64 m_usageLastDownloaded = 0;
+        mutable qint64 m_usageLastUploaded = 0;
+        mutable UsageHistory m_usageHistory;
 
         bool m_torrentsQueueChanged = false;
         bool m_needSaveTorrentsQueue = false;

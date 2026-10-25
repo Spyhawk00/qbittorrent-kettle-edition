@@ -42,6 +42,7 @@
 #include "torrentcontentremoveoption.h"
 #include "trackerentry.h"
 #include "trackerentrystatus.h"
+#include "usagestats.h"
 
 class QString;
 
@@ -481,6 +482,10 @@ namespace BitTorrent
         virtual QList<Torrent *> torrents() const = 0;
         virtual qsizetype torrentsCount() const = 0;
         virtual const SessionStatus &status() const = 0;
+        // seconds since the session was created
+        virtual qint64 uptimeSeconds() const = 0;
+        // what was moved per day and month, up to now
+        virtual UsageHistory usageHistory() const = 0;
         virtual const CacheStatus &cacheStatus() const = 0;
         virtual bool isListening() const = 0;
 

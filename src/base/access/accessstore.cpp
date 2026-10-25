@@ -902,6 +902,17 @@ void AccessStore::forEachActivity(const ActivityFilter &filter, const std::funct
         callback(activityObject(query, false));
 }
 
+QJsonArray AccessStore::countAddedTorrents(const double since) const
+{
+    QJsonArray counts;
+    QSqlQuery query = run(m_connectionName
+        , u"SELECT username, COUNT(*) AS added FROM activity WHERE endpoint = 'torrents/add' AND outcome = 'ok' "
+          "AND ts >= ? GROUP BY username ORDER BY added DESC, username COLLATE NOCASE"_s, {since});
+    while (query.next())
+        counts.append(QJsonObject {{u"username"_s, query.value(0).toString()}, {u"added"_s, query.value(1).toLongLong()}});
+    return counts;
+}
+
 void AccessStore::purge()
 {
     if (!m_isOpen)

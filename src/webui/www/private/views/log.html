@@ -1,7 +1,6 @@
 <style type="text/css">
     #logTopBar {
         flex-shrink: 0;
-        margin-top: 1em;
     }
 
     #logFilterBar,
@@ -9,8 +8,18 @@
         align-items: center;
         display: flex;
         flex-wrap: wrap;
-        gap: 2px;
-        height: 24px;
+        gap: 8px;
+        min-height: 28px; /* the same bar as on the Search and RSS tabs */
+    }
+
+    #logFilterBar select,
+    #logFilterBar input,
+    #logFilterBar button,
+    #activityFilterBar select,
+    #activityFilterBar input,
+    #activityFilterBar button {
+        box-sizing: border-box;
+        height: 28px;
     }
 
     #logFilterBar.invisible,
@@ -38,12 +47,17 @@
         display: flex;
         flex-direction: column;
         height: 100%;
-        padding: 0 20px;
+        box-sizing: border-box;
+        padding: 4px; /* as far from the edges as the boxes of the Transfers tab */
         overflow: auto;
     }
 
+    /* a box like the lists of the Search and RSS tabs */
     #logContentView {
+        background-color: var(--color-background-primary);
+        border: 1px solid var(--color-border-outline);
         flex-grow: 1;
+        min-height: 0;
         overflow: auto;
     }
 
@@ -60,14 +74,13 @@
         background-position: 2px;
         background-size: 1.5em;
         padding: 2px 2px 2px 2em;
-        margin-left: .3em;
         width: 237px;
         border: 1px solid var(--color-border-outline);
     }
 
     #logFilterSummary {
         overflow: auto;
-        margin: 1em 0 .5em;
+        margin: 8px 0;
     }
 
     #numFilteredLogs,

@@ -426,7 +426,7 @@ void Preferences::setStatusbarExternalIPDisplayed(const bool displayed)
 
 bool Preferences::isSplashScreenDisabled() const
 {
-    return value(u"Preferences/General/NoSplashScreen"_s, true);
+    return value(u"Preferences/General/NoSplashScreen"_s, false);
 }
 
 void Preferences::setSplashScreenDisabled(const bool b)
