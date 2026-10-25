@@ -100,11 +100,12 @@ VIAddVersionKey "ProductName" "qBittorrent Kettle Edition"
 VIAddVersionKey "CompanyName" "Spyhawk"
 VIAddVersionKey "LegalCopyright" "Copyright ©2006-2026 The qBittorrent project"
 VIAddVersionKey "FileDescription" "qBittorrent Kettle Edition - A Bittorrent Client"
-VIAddVersionKey "FileVersion" "${QBT_VERSION}"
+VIAddVersionKey "FileVersion" "${KETTLE_EDITION}"
+VIAddVersionKey "ProductVersion" "${KETTLE_EDITION}"
 
 ; VIProductVersion needs a 4 part version.
-; If QBT_VERSION contains less than 4 parts then VersionCompleteXXXX, will extend it with zeroes.
-${VersionCompleteXXXX} ${QBT_VERSION} VERSION_4_PART
+; If KETTLE_EDITION contains less than 4 parts then VersionCompleteXXXX, will extend it with zeroes.
+${VersionCompleteXXXX} ${KETTLE_EDITION} VERSION_4_PART
 VIProductVersion "${VERSION_4_PART}"
 
 ; The default installation directory.
